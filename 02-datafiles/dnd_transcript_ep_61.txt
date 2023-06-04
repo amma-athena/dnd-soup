@@ -1,0 +1,588 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>Samy â Darknet Diaries</title>
+	<meta name="description" content="Samy Kamkar is a hacker. And while he's done a lot of stuff, he's best known for creating the Samy Worm. Which spread its way through a popular social media site and had crazy results.  ">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Samy â Darknet Diaries">  
+	<meta name="twitter:description" content="Samy Kamkar is a hacker. And while he's done a lot of stuff, he's best known for creating the Samy Worm. Which spread its way through a popular social media site and had crazy results.  ">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/samyworm.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/61/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Samy â Darknet Diaries" />
+	<meta property="og:description"        content="Samy Kamkar is a hacker. And while he's done a lot of stuff, he's best known for creating the Samy Worm. Which spread its way through a popular social media site and had crazy results.  " />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/samyworm.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/61/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/samyworm.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/61/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="Samy â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/samyworm.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 61: Samy</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://traffic.megaphone.fm/ADV3775923435.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/61/",
+			   "title": "Ep 61: Samy"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/61">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[FULL TRANSCRIPT]</p>
+
+<p>JACK:	Hey, itâs Jack, host of the show.  When I was a kid, I got an ant farm for my birthday.  Itâs like, two panes of glass with some sand in between and you can watch the ants dig tunnels and go about their day.  It was really cool.  But when you get the ant farm, it doesnât contain any ants.  You have to order the ants and theyâre mailed to you.  The first thing I thought about when I was a kid and I heard about this was wait a minute, I can mail ants to anyone I want?  I think that is basically the hacker mindset; to completely ignore somethingâs intended use and find new ways to employ it.  Today weâre gonna talk with a hacker who sees the world this way, and weâll hear all the joy and trouble itâs brought him over the years.
+<!--more--></p>
+
+<p>JACK (INTRO):	[INTRO MUSIC] These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	Okay, today weâre gonna have a chat with someone so infamous he has his own worm named after him; the Samy worm.  Thatâs right; today weâre talking with Samy Kamkar.  Samy is a hacker in almost every way.  He does things heâs not supposed to do.  Heâs the kind of guy that thinks buttons are toys and you push them for fun just to see what they do which often ends up breaking something.</p>
+
+<p>SAMY:	I was never a malicious person at all.  All this hacking, all of this exploitation, itâs really about a puzzle.  To me, this was all a puzzle, a really fun puzzle.</p>
+
+<p>JACK:	Thereâs a lot of reasons to call Samy infamous but to tell his story, we need to go back to his childhood.</p>
+
+<p>SAMY:	[MUSIC] When I was nine years old, my mom bought me my first computer.  She sort of spent everything she had so Iâd have something to do during the summer.  She knew I loved computers; Iâd always go to the library with her or to her university and go and just spend all day at the library on the computers that they had.  Immediately, I went online and I started searching for the X-Files, which is obviously the best TV show of the time.  I found some message boards and that quickly became really frustrating to have to refresh and refresh and wait for people to update that message board.  Then, I found something called IRC, Internet Relay Chat.  I jumped on, I went into a channel and said hey, who wants to chat about the X-Files?  Immediately someone told me get out.</p>
+
+<p>Iâm thinking thatâs weird; this is a random person I donât know on the internet and theyâre telling me to do something?  No.  So, I told the guy no.  Then he said you have ten seconds to get out of this chat room.  I said no.  Ten seconds later, the brand-new computer that my mom spent everything on crashes.  I had a blue screen and I freaked out.  I had no idea what to do.  I pulled the power from the back of the computer.  I waited about half an hour for all the bad stuff to get out of the computer; I think thatâs what youâre supposed to do, and then I plugged it back in.  Fortunately, it came back up.  Everything was fine but really, with the adrenaline still rushing through my veins, I was thinking that is the coolest thing ever.  How do I do that?</p>
+
+<p>JACK:	[MUSIC] From that point forward, Samy was addicted to computers.  This was so fascinating to him.  He wanted to understand how this had been possible so he began studying computers and practicing programming.  Since he now had a computer at home, he got into video games, too.  Counter-Strike was his favorite game; you know, the first-person shooter?  He played it a lot.  [00:05:00] He was addicted to it.</p>
+
+<p>SAMY:	It was fun, I mean, it was a ton of fun.  I had a clan and was playing with a bunch of friends in high school.  I remember just one day I was playing and I heard some footsteps.  My computer has two speakers, one on the left side and one on the right side, so some stereo sound.  [FOOTSTEPS] I hear some footsteps coming from the right speaker.  Then I hear them panning to the left speaker, so that immediately tells me oh, thereâs someone behind me, âcause I canât see them in my visual field of view in the game.  Immediately, Iâm like wait, that means someone is behind me in the game.  This is a live person, someone else on the internet playing Counter-Strike with me, but I canât see them in my radar which means theyâre on the opposing team.  I wondered right then, couldnât I really use that information, that sound information on the computer itself?  Iâm sure that person killed me pretty quickly, but afterwards I exited Counter-Strike and I started looking into how can I pull that information?  Whatâs telling the computer to play footsteps on the right speaker rather than the left speaker?</p>
+
+<p>Because that means thereâs positional information there, that someone is on the right side versus the left side.  Sure enough, I started learning about packet sniffing, and then memory injection, and intercepting function calls within the DLLs of Counter-Strike itself, and intercepting basically everything between the binary, the Counter-Strike executable, and the DLLs that it used so that I could intercept things like footsteps.  Once I would hook that function, I was then able to get exact coordinates of everyone, because everyoneâs footsteps is actually being sent to you, at least within some range.  You will then get that and thatâs just telling your computer where to play that sound, but that location is exactly where that person is located.  At that point, I started using OpenGL at the time and just drawing where the user is on the map in a little heads-up display, in a little radar.  Then I started sort of jumping into writing Counter-Strike cheat software.  That was a lot of fun.</p>
+
+<p>JACK:	What were some of the cheats you could do?</p>
+
+<p>SAMY:	Just writing aim bots, so being automatically aiming at people, being able to make any smoke bomb or smoke grenade, or flash bang, just make those transparent to me.  I could go into a room that I knew was full of opposing team members and throw in a flash bang.  Theyâre all gonna see white for three seconds and Iâm gonna run in there and see absolutely nothing because Iâve hooked that function and said do nothing; just return out, do a return before you actually do any of the visualization to wipe my screen.  Little things like that became really fun.  I couldnât actually modify my health.  That was controlled by the server so I couldnât actually make myself invincible.  Adding zoom to every weapon, so weapons that didnât normally have zoom or might have a scope on them so youâd lose a lot of the screen because itâs now blacked out.  I would just remove those â thereâs no reason that a screen needs to be blacked out.  I would remove that.  Thereâs no reason that zoom should be better in one weapon and not the other, so I added zoom to all weapons.  This is all totally unfair, and pretty quickly it actually became not fun at all.  All the fun of the game went away entirely because all of a sudden it was practically god-mode.</p>
+
+<p>JACK:	Samy released the Counter-Strike cheats as open-source software.  He was beginning to get bored playing the game.  Then PunkBuster came out.  PunkBuster is a program thatâs designed to scan the memory to see if anyone is cheating in the game.  PunkBuster stopped Samy from using his cheats, but now the new game was for Samy to try to circumvent whatever PunkBuster was using to detect him.</p>
+
+<p>SAMY:	All of a sudden, this game was fun again because I was no longer playing the game.  I was now playing against these engineers on PunkBuster.  They were doing their own memory inspection; they were looking for my process.  They were doing all sorts of things to stop my cheats and other peopleâs cheats as well.  That became fun.  At that point, I was probably fifteen years old.  I was so attached to this that I stopped going to high school and I started updating my cheats because this was just so fun, and it would be cat and mouse.  I would release a new version that defeated their software and two days later, they would release a new version and then I would have to figure out what did they do?  How did they figure it out?  That was like, training.  It was sort of very rapid training in how does, at the very least, software networking work?  I think I probably learned a ton just during that short stint when I was writing this cheat software.</p>
+
+<p>JACK:	At sixteen, you dropped out of high school.</p>
+
+<p>SAMY:	Yeah.</p>
+
+<p>JACK:	What did you do after that?</p>
+
+<p>SAMY:	I wasnât good at school.  I didnât care about most classes so I did not do well.  I was not a good learner.  No one ever taught me how to learn something.  I think that was something that I learned later in life.  I just wish there were tools that were taught at school for me.  I think I would have been a much better student.  However, if Iâm enjoying something, then Iâll absolutely learn it, right, Iâll spend all my time on it.  Iâm still not necessarily a fast learner; Iâve always known that people can pick up stuff much faster than me but if thereâs something I enjoy, then Iâm just gonna spend all my time on it.  Iâm very persistent.</p>
+
+<p>JACK:	Samy was living at home with his mom in Los Angeles at the time.  She had recently lost her job and now that she was home more often, she noticed Samy wasnât going to school and told him if heâs not gonna go to school, he needs to get a job to help pay the rent.  So, Samy started applying for [00:10:00] any job he thought he could get.</p>
+
+<p>SAMY:	I got an e-mail out of the blue from a company in San Diego and said hey, we saw your cheat software, your Counter-Strike stuff.  [MUSIC] Will you be willing to contract and just write code for us remotely?  I was blown away.  I was like wait; someone will pay me to write code?  I thought this was just useful for basically writing cheat software.  I had no idea that you could use it for other things.  It was obvious that you could program things but I just didnât know someone would pay me money to do that.  I was really, really fortunate in getting that e-mail.  I started working with them and remotely writing code for them.  They never met me; we never even talked on the phone.</p>
+
+<p>It was just all over e-mail.  They said hey, do you want to move to San Diego and work full-time with us?  I said absolutely.  So, I took my momâs car and then I just drove down and I met them.  I think they were kind of weirded out because they didnât expect a fifteen-year old to show up.  They werenât even sure if that was legal.  I was like oh no, donât worry, I looked into it.  Itâs totally legal.  Hereâs a work permit that I got from my school, which was really just a work permit I had forged and printed out.  I just started working with this company down in San Diego.  That was really cool.  That allowed me to support myself and my mom, and she continued to live in LA but I got to start my own life down there which was really great.</p>
+
+<p>JACK:	That is incredible.  In San Diego as a teenager, Samy was working as a programmer but eventually took on the responsibilities of a systems administrator.  He was making pretty good money for his age.  Then someone in LA tried to recruit him to work at a startup.  This was the deal; quit your job and come work for us.  Initially we canât pay you but you can have some equity in the company and sleep on the founderâs couch while the startup gets off the ground.</p>
+
+<p>SAMY:	I said uh, well, thanks for that offer; no, no thank you.  He said well, what do you want to do with your life?  What do you want to do in the next few years?  I thought that was a really good question.  I honestly had not thought about it.  Itâs not something Iâd normally think about.  I thought about it for a while and I was like well, I want to learn how to start a company.  I want to learn how to start a successful company that employs people and works on cool projects.  He said okay, well, I just sold my last company for thirty million dollars cash.  Iâve started multiple companies.  Iâve done this before, so why donât you meet my co-founder and learn with me and you can handle the technical side?  I thought about that for a second and was like well, I probably wonât get that opportunity ever again, so I jumped in.  I said okay, letâs do that.  [MUSIC] I quit my job in San Diego, came back up to LA, slept on his couch, and thatâs when we started a company called Fonality.</p>
+
+<p>JACK:	Fonality was creating voiceover IP solutions for companies.  Samy wasnât getting paid at first.  He had some savings but was blowing through it pretty quick and living as cheap as possible, sleeping on a couch.  But eventually the company started making money which meant Samy started getting paid.</p>
+
+<p>SAMY:	Then, I think after we were actually making money, âcause we had become profitable at some point, and then I had a salary.  Then that salary grew as we became more profitable.  At some point I was really fortunate to be able to still support my mom and also have some nice toys.</p>
+
+<p>JACK:	Things were really looking good for Samy at this point.  He was nineteen years old, making great money at a company that he helped create.  Samy was a smart young lad, but eventually he got bored.  What do you get when you have a bored hacker?  Yeah, you guessed it; trouble.</p>
+
+<p>SAMY:	[MUSIC] Thatâs when I started playing with MySpace.  MySpace was the number one site on the internet and all my friends had it.  I held off for a while and then one day I said okay, pretty much all my friends have it so I should just go on there, make an account, see what this is about.  I made an account; I was like oh, this is pretty cool.  Itâs a social network.  You can post pictures and you can post on peopleâs â I guess you called them profiles back then.  We didnât call them walls.  Youâd have music that auto-played which is terrible.  You could do really awful CSS things to your page, but you could also do cool things and I really liked that.  I actually really appreciated the fact that you could style the page in any way you wanted.  You really could theme it and show a little personality.</p>
+
+<p>I thought that was really cool and not something you get to do everyday anymore.  I made a profile and at this point, pretty technically competent, or I felt that way.  I thought well, maybe I can make my profile cooler than some of my friendsâ, just more interesting or unique.  I started saying alright, well, I can do all the CSS stuff but how can I really do something interesting?  I started looking and I think I had gotten a digital camera and I found that the limitation on the profile pictures was â you could only have twelve photos.  I thought it would be funny just to have a thirteenth photo.  Itâs just a limitation that they had.  No one would really notice.  Youâd really have to think about it or know this limitation even to realize, but I thought that would be subtle and funny.</p>
+
+<p>JACK:	Samy figured out that the limitation on the number of photos that MySpace users were allowed to post was set by client-side validation.  He realized he could bypass this validation and talk directly to the API server, [00:15:00] and he could submit as many photos as he wanted to MySpace.  It worked.  Unbelievable.  So cool.  But now that he had bypassed one validation check, he wondered what else could he do?  When you look at a MySpace userâs profile, you can see what birthday they have displayed, what their favorite foods are, their music, and movies, but thereâs also a place to describe your relationship status.  It was a little drop-down box.  You could pick Single, Married, Engaged, or In a Relationship, but you were bound to only be able to pick one of these that were in the drop-down box.  There was no way to enter your own relationship status.</p>
+
+<p>SAMY:	I wanted mine to say In a Hot Relationship.  That would be funny.  Again, a subtle change.  You couldnât really do that, at least back then with that version of CSS, but I started playing around and said well, maybe I can execute JavaScript because JavaScript should be able to modify the DOM, modify the page in any way I want.  I started playing around and found that they pretty much blocked JavaScript in any possible way.  Then I started saying okay, well, maybe I can mess with the browser.  I started looking to exploit the browserâs interpretation of tags and found that yes, thereâs actually a way that I could execute JavaScript that technically isnât compliant with say, the W3C SAC of how HTML should be interpreted.  But browsers happen to be pretty lenient and they want web pages to work, even if the developer made an error.  I found a way to execute JavaScript within a CSS tag and then access some data somewhere else on the page and execute JavaScript code.  This was really cool, so this allowed me to now change my In a Relationship to In a Hot Relationship.</p>
+
+<p>JACK:	Wow, another fun and awesome win for Samy.  At this point, heâs conducted two hacks against MySpace and is looking to see what else he can do.  He realized that when he changed the relationship status, he could get the browser to execute whatever JavaScript he wanted.  But itâs not just that; he could get whoever visited his profile to execute the JavaScript code that he wrote.  To be able to control the browser of whoever visits his page?  This was a seriously big deal.</p>
+
+<p>SAMY:	At that point, itâs like what else could I do that could be fun?  I started playing around.  I was just doing silly things.  I wanted to see okay, if someone visits my profile and weâre not already friends, can I make them add me as a friend?  I could.  Then I found well, if I can control their browser, couldnât I just update their own profile?  I found yeah, whenever they visit my profile, I can make them update anything on their profile.  I didnât want to be malicious; I just wanted to do something that I thought was funny.  I made it so that if you visit my profile, not only would you add me as a friend, but then you would add âbut most of all, Samy is my heroâ to the bottom of your profile.  I thought that would be kind of funny.  After a few days, maybe a few of my friends would have it on their profiles and I could just be like hey, cool, point that out to them.</p>
+
+<p>I release this and a few days go by, and nothing really happens.  Virtually none of my friends have hit it because a lot of people arenât going to my profile.  I think okay, well, how do I make this spread a little faster?  Iâm thinking alright, if I can make you add me as a friend and add me as a hero to your profile, couldnât I just copy the code to your profile as well?  That way, if someone visits that profile, theyâll also add me as a friend, add me as a hero, and then the code will copy to their profile.  Within my friend group, it should probably hit them all within a week or so and thatâll be pretty funny.  Someone will complain and itâll get taken down and no big deal.  I launch it one night and I go to sleep.  I wake up hoping to get at least a couple of hits and unfortunately, I wake up to 10,000 new friends.</p>
+
+<p>JACK:	10,000 new friends?  Samy was just trying to have some fun.  He didnât intend to be malicious, but then it dawned on him; heâs actually created a virus on MySpace.  Anyone who visited his profile would immediately add him as a friend, but then the code to add Samy as a friend was copied to that personâs profile, so anyone who visited that personâs profile now had the code to add Samy as a friend.  It just kept spreading.  A virus that spreads itself like this is not just a virus; itâs a worm.  Samy has just created a MySpace worm and itâs spreading way beyond what he thought it would become; perhaps he could get a few dozen friends or even a hundred new friends, but now heâs got 10,000 new friends and itâs just constantly going up.</p>
+
+<p>SAMY:	At that point I just freak out.  I have no idea what to do.  Iâm sitting in my apartment and Iâm kind of baffled.  I realize oops, I just wrote a virus.  What should I do?  The problem with a virus is you canât just remove it.  I could remove it from my own profile but that doesnât mean itâs gonna stop spreading because itâs already spread to thousands of profiles.</p>
+
+<p>JACK:	Were you getting flooded with messages as well?  Like, you know, youâre just really popular at the same time as having friends?</p>
+
+<p>SAMY:	People were messaging me; they were like [00:20:00] hey, why are you on my profile?  Hey, every time I try to delete you, you come back.  Thatâs because every time they would delete me from their profile, it would return them to their own profile which re-executed the code, which re-added me as a friend.  They couldnât actually delete the virus either, themselves.  They really needed MySpace to do that.  At that point, Iâm like okay, itâs time for damage control, as much as I can do.  I e-mail MySpace anonymously.</p>
+
+<p>BOT:	Hi, Iâm a random user of MySpace.  I have no idea whatâs going on.  Thereâs some weird stuff on my profile.  It looks like a bunch of obfuscated code and Iâm not really sure what it does.</p>
+
+<p>SAMY:	But I think it does detailed explanation of exactly what was going on.  I think you could fix it by; hereâs a detailed explanation of exactly how to fix this problem.  I just prayed that they got it.  I just continued my day.  At that point, I really couldnât think.  I drove to the office.</p>
+
+<p>JACK:	The whole time he was at work, heâs looking at his MySpace profile and just watching the number of friends he has rising higher and higher and higher.</p>
+
+<p>SAMY:	It went 50,000, 100,000.  I could not think about anything.  It was just refreshing.  Went home; 500,000, 600,000.</p>
+
+<p>JACK:	600,000 new MySpace friends?  This is going way out of control.  This has to be stopped.  Samy tried to stop the worm by removing the code on his profile.</p>
+
+<p>SAMY:	I removed the code from my own profile but that doesnât do anything, right?  It only removes it so that anyone who visits my profile doesnât get it, but itâs already spreading from anyone else.  Once someone else has it, it would just continue to spread.  There was no other way to really control it.  MySpace would have to remove it themselves.</p>
+
+<p>JACK:	Samy goes off to work, does his shift, comes back home.</p>
+
+<p>SAMY:	600,000, 700,000.  It hits a million.  I just take a screenshot because now Iâm just like, thatâs a lot of people.  I had no idea that many people were even on MySpace.  I just had no idea how big it was.  I was hoping it would hit a hundred max over the course of a week or a month or something.  Once it hit 10,000, I knew I had done something wrong.  I was like oh, I did not think this through.  I was just freaked out the entire time.  I was super concerned because if it hit 10,000 overnight, then at that point it was obvious; oh yeah, itâs just gonna grow ridiculously out of proportion.  Now Iâm refreshing purely because Iâm curious how fast itâs spreading.  I refresh, I refresh, I refresh.  At this point itâs spreading at about 3,000 people per second.  As Iâm doing this little test of how fast itâs moving, I refresh once again and finally, my profileâs been taken down.  Iâm pretty happy about this.  Then I was wondering okay, the virus was probably out for about twenty hours and Iâm thinking alright, does it still say âSamy is my heroâ on other peopleâs profiles?</p>
+
+<p>How did they take this down?  [MUSIC] I go to someone elseâs profile and then I see that that profile is also down.  Iâm like, oh no.  So, I go to myspace.com, just to the website, and it says the whole site is down; the whole team is here working on it.  I felt absolutely awful.  I know what itâs like to have servers that are down and I would never want to do that to somebody and Iâm thinking okay, the number one site on the internet is down, and I also recall that MySpace had just been purchased by Fox for half a billion dollars.  I didnât really want Fox to come after me so I was like oh no, what do I do?  I thought about it and MySpace is in LA so maybe I should just drive over there with some coffee and donuts and be like hey guys, Iâm Samy.  Iâm so sorry.  Can I help do anything?  Can I write some SQL queries?  What can I do?  But I thought that would be a bad idea in case they were just really upset, which I would totally understand.  I was worried Iâd go to jail.  I had no idea what the ramifications of something like this was.  I really had no idea.</p>
+
+<p>JACK:	Did you tell anyone then?  What did your friends think of this at this point?  âCause I mean, the people you work with and stuff, did they know that day, like heyâ¦</p>
+
+<p>SAMY:	No.</p>
+
+<p>JACK:	â¦itâs going crazy.  Your friends, did they know?  And youâre like hey, and call one of them and say I think I just took MySpace down?</p>
+
+<p>SAMY:	I messaged like, one or two friends about it.  I actually remember explicitly one friend I messaged just before doing it and heâs like hey, donât do that.  He was much smarter than I was.  I think during the thing, I donât think I talked to anyone about it.  Maybe my girlfriend; I told her and she thought the whole thing was funny.  Really, back then, it was just a social network.  It was a small social network, right, nothing compared to the networks we have today like Facebook and Twitter.  Granted, it was the largest at the time but it was 2005; smart phones had not come out.  It was a much smaller â people on the internet just didnât seem as serious.</p>
+
+<p>JACK:	At this point, MySpace is down.  Like, the whole website.  Samy is worried and scared.  The team at MySpace is probably totally freaking out.  This was the largest social networking site in the world at the time, and itâs down because Samy decided to have a laugh?  This is not good.  Samyâs anxiety is growing every minute that the site is down.  He canât focus on real life right now.  Forget about work, forget about going out with friends.  What the heck happened to MySpace?  Was it his worm that took down MySpace?  How much trouble will he be in if it was?  Hours went by and the [00:25:00] site was still down.  He was getting more and more anxious as he kept refreshing the page, waiting for it to come back up.  Then, hours after the site went down, MySpace came back online.</p>
+
+<p>SAMY:	Actually, I feel very good that the site is up a few hours later.  At this point I donât really know what to do.  I sit around, I just start working on other things.  Iâm kind of just waiting for the police to come knock on my door.  A day goes by and a week goes by.  I start getting e-mails from random people on the internet; blog writers and magazines that are like hey, we heard about this worm you wrote.  Iâm like, I donât know what youâre talking about.  They said, is your name Samy?  Iâm was like yeah, my nameâs Samy but Iâm not sure what youâre talking about.  Then they sent me a picture and theyâre like, is this you?  It was my profile picture so of course itâs me.  Iâm like, okay, fine.  That was me.  They start asking me what was this about?  What was your intention?  I was like, this is just a prank gone terribly wrong.  They ask has MySpace contacted you?  I said no.  Have the police contacted you?  I said no.  A week goes by, two weeks, three months.  Finally, after three months, Iâm like okay, Iâm super fortunate.  No one from MySpace or the police or anything ever contacted me so Iâm really, really lucky.  I did something pretty dumb and Iâm never doing that again.  I got away scot-free.</p>
+
+<p>JACK:	What a lesson learned, huh?  To accidentally take down the largest social network in the world and not hear from MySpace or the police?  Lucky guy, because you know what?  Samyâs fingerprints are all over this worm.  I mean, the worm follows Samy and then the worm actually says above all, Samy is my hero, so it would be really easy for MySpace to track this back to Samy, but nothing.  So, Samy just goes back to his regular life, back to his job at Fonality which is starting to pay him even more now.  In fact, he was making enough to buy his dream car.</p>
+
+<p>SAMY:	I got a Porsche Boxter.</p>
+
+<p>JACK:	At the age of nineteen.  Anyway, he got a brand-new car and one day, heâs leaving his apartment.  He goes down the elevator to the parking garage.</p>
+
+<p>SAMY:	Iâm walking down to it.  [MUSIC] It was a brand-new car, and I see two guys basically standing next to it, or sitting on it.  Iâm like oh no, Iâm getting car-jacked.  Two more guys walk up behind me and then they say Samy?  I was like, oh no.  I realized that car jackers, they donât know your name.  They said Samy?  We have a search warrant for you.</p>
+
+<p>JACK:	This was a surprise.  Six months ago is when he launched the MySpace worm and now theyâre coming for him?  Ugh.  These were representatives from the Secret Serviceâs Electronic Crimes Task Force, the LA District Attorneyâs office, and the California Highway Patrol.  The Highway Patrol was there because they had suspicion that Samyâs fancy new car might have been stolen.  [MUSIC] The agents took Samy into custody and head back up to his apartment.</p>
+
+<p>SAMY:	We all walk up and as we go into my place, thereâs a dozen agents already there, going through everything.  What theyâre doing is theyâre taking everything, so anything that has data; CD, DVD, my laptop, my computer, my Xbox, even my iPod.  That was probably the worst; they took my iPod.  All my music was gone.  I love music so that was actually somewhat challenging because all my MP3s and any legitimate or illegitimate music I had was gone.  I was kind of terrified but also somewhat go with the flow.  Things happen in life and you deal with them.  Iâm just waiting for all this to be over and now Iâm reading the search warrant because I really want to find out is this about MySpace?  Is this about something else?  Is this about some computers I hacked into?  I had no idea.  Iâm reading through, reading through, and then finally I see the words myspace.com.  Okay, good.  So, itâs about that.  At least that was one was a prank.  Then Iâm reading, reading, reading, and then I see another address that theyâre allowed to search, and itâs my office.</p>
+
+<p>So, I ask them are you guys gonna search my office?  Theyâre like oh, weâre already there.  One of the agents asked me whatâs that on your counter?  So, in my living room there was a table and it had some equipment on it, some smart card reader/writer stuff, and some smart cards and stuff.  Heâs like, what are you doing with that?  At this point, Iâm thinking okay; the Secret Service agent just asked me what these smart cards are.  In my head Iâm like, should I tell them or should I lie about what this is?  My friend was staying at my apartment to work at my company.  I was showing him that I had hacked the laundry machines in our apartment building so that I could get free laundry.  I was basically cloning smart cards or replaying the information from a smart card to make it appear that it had more money than it did.  I decided I should not lie to these people so I just told them that and fortunately, they all just laughed.  Nothing else came of that.</p>
+
+<p>Afterwards, they collected everything and then they walked out.  Iâm like hey guys, are you taking me with you?  They said no, no, youâre not under arrest, at least for now.  I said oh, okay.  Then they walked away.  All of a sudden, I just had no computers.  I went to the office and fortunately, somehow the CEO was able to convince them that I was an intern and that I had no access to anything because when they came in, they said hey, what does Samy Kamkar have access to?  [00:30:00] The CEO was like well, everything.  Theyâre like alright guys, take everything.  This is a Cloud-based company, so you take everything.  Back then we ran all the servers, so they were about to take all of our servers which would just bankrupt us instantly.  Fortunately, he convinced them something else, that I was an intern or something weird, and they only took my stuff; just my computer and my phone.  At that point I got an attorney and we ended up basically fighting with the LA DA for about six months.</p>
+
+<p>JACK:	The Los Angeles DA charged Samy with modifying data on a remote machine.  In settlement talks, prosecutors proposed that Samy serve some time in prison and not be able to use his computer for the rest of his life.  Keep in mind that Samy was supporting his mother and as a high school dropout, his only skill set and his livelihood were entirely dependent on using a computer.  Samy was so bright and gifted and passionate about computers and technology and the internet and hacking.  You can imagine how scary it was for him to face the prospect of having to live the rest of his life without ever being able to use a computer again.</p>
+
+<p>SAMY:	[MUSIC] Probably the hardest part, really, the hardest part of anything, I think at least for me, is not knowing what an outcome will be.  I think itâs much easier to deal with maybe even the most challenging outcome if I know thatâs going to happen.  You just tell me okay, Iâm gonna go to the prison for the rest of my life, then I can at least mentally try to prepare for that but not knowing was just really difficult to deal with.  But ultimately, I took a plea agreement with them and the plea agreement was no prison time, so that was nice.  However, I would not be able to touch a computer for the rest of my life.  That was still in there, and probation indefinitely.  I would have to pay some restitution, Iâd have to do a ton of community service, like picking up so much trash.</p>
+
+<p>Glad I could really help make those streets cleaner.  But the silver lining was that if I was on good behavior, if my probation officer said I was a good person, after some number of years I could get everything removed.  As long as I completed my community service, I would be able to get rid of the probation and be a normal citizen again and be able to touch a computer and the internet.  I said okay, well, that at least is a known quantity.  I donât think Iâm going to be writing anymore viruses.  I can do a couple years of no computers, no internet.  So, I agree to that.  I was probably twenty at this point because this process was just such a long process.  One day, I went to court and all of a sudden, I can no longer touch a computer or touch the internet.  In fact, it also explicitly stated I could not access myspace.com, in case I was somehow able to access it without the internet or a computer.</p>
+
+<p>JACK:	That was it.  Samy had lost everything.  I mean, forget about the Porsche at this point because on top of all this, they gave him a $20,000 fine.  Between having to pay all the lawyers and the fine and still having to support his mom, yeah, he was almost completely wiped out, almost back to zero, living as cheap as possible.  But still, forget all that.  I donât think Samy cared about the money at this point.  He was back to trying to figure out what he should do with his entire life.  No internet for life?  Everything heâs been working towards, all his skills and knowledge, are useless now.  Samy had 720 hours of community service he had to complete, so every Saturday morning heâd get up at 5:00 a.m. and go clean trash on the side of the highway for years.  Even if he did six hours every Saturday, thatâs still just 300 hours a year.  Everything about Samyâs life was changed and he had to find new things to do that didnât involve a computer to keep himself busy.</p>
+
+<p>SAMY:	But I was really fortunate; I met new people.  I spent all that time just doing other things that I had never really spent time doing.  I went outside, I saw the sun.  I was like ah, itâs so bright, but I got used to it.  I made friends.  I turned twenty-one so I could start going out meeting people.  I started learning to socialize a lot more so it was really, really beneficial to me and something I wouldnât really change today.  I learned so much from that experience and I think it was good for someone so introverted and so stuck to a computer to be able to go out and experience other things.</p>
+
+<p>JACK:	So, Samy spent years of his life offline doing his community service and trying to socialize with his friends.  But the story doesnât end here.  After the break, Samy gets to use computers again.  [00:35:00] After two years of probation, Samy has served all 720 hours of his community service.  He had great behavior.  The probation officer didnât find anything wrong that Samy did and since he had such great behavior, they went back to court to see if he could get the probation lifted.</p>
+
+<p>SAMY:	After a few years, I went back to the court and said hey, my probation officer loves me.  It says Iâm her favorite client.  They said okay, you are allowed to touch computers again.  [MUSIC] That was a very interesting experience.  I felt really weird touching a computer afterwards.  You kind of just get used to the rules that youâre abiding by and itâs definitely an awkward feeling, jumping back in.</p>
+
+<p>JACK:	What happened on that day that you got it back?</p>
+
+<p>SAMY:	I definitely remember that day because I drove to the LA courthouse and after I left the courthouse, I drove to the Apple store and found whatever the latest top-of-the-line â I donât even think it was a MacBook.  It might have been a PowerBook at that time.  I bought the top-of-the-line PowerBook and I went to a coffeeshop.  I pulled it open, I connected to the WiFi, and I visited a couple websites.  I think I visited Slashdot just to see whatâs going on.  I just felt really weird and I just shut the laptop and I went to go hang out with friends.</p>
+
+<p>JACK:	This started the next chapter in Samyâs life.  Now that he was free to use the computer again, he eventually got back into it, way into it.  Even though he hadnât been allowed to use a computer for the last two years, he had spent that time thinking of all sorts of things he can do with them.</p>
+
+<p>SAMY:	During that time that I had no internet, I had no computers, I started thinking about new exploits, new ways to really manipulate more systems and exploit routers and exploit firewalls, and just had some concepts literally just in my head and I couldnât confirm whether they were accurate or not, whether they would work after I came back online.  I started thinking well, this stuff is fun.  Maybe I can do this stuff but not impact websites, not impact people negatively.  How can I investigate the technology around us, look for the vulnerabilities around us and then share that information publically in an entirely legal way?  People actually understand the problems and can use solutions.</p>
+
+<p>JACK:	So, just six months after Samy had completed his probation for hacking MySpace, it was 2018.  Samy was around twenty-one years old and he starts looking into hacking credit cards, specifically the NFC and RFID chips on them.</p>
+
+<p>SAMY:	Yeah, some other researchers and myself, we were looking at these NFC credit cards which are becoming a lot more ubiquitous today, but back then â it was kind of funny, they actually came out with these credit cards with NFC and pretty quickly â they were encrypted, some were encrypted.  However; you could actually just buy a chip with the decryption key.  You would just buy a chip from a company and you could then decrypt anyoneâs credit card, access their credit card info, and then literally steal stuff with it.  That was not my intention but I wanted to show that this stuff is not secure.  I just created a proof-of-concept that opened up this to some additional credit cards.  There were some other tools that did similar things for other types of credit cards.  I know mine was a VISA Chase card that no one had done this for yet.</p>
+
+<p>JACK:	How close to someone do you have to be to get their credit card details?  Does it work from far away?</p>
+
+<p>SAMY:	I havenât really experimented with how far you can do it.  Iâm not sure.  You do need to be close to them; itâs very easy to be within proximity of many, many people.  You just go to a crowded place and now you can steal many, many credit cards and then you can go home and buy a ton of stuff online or you can sell those credit cards online and steal money.</p>
+
+<p>JACK:	Even just bumping up against someone in a line, if they have an NFC or RFID vulnerable credit card in their pocket, that would be good enough to steal their credit card, right?</p>
+
+<p>SAMY:	Thatâs correct.</p>
+
+<p>JACK:	Thatâs such a trip.</p>
+
+<p>SAMY:	You know whatâs funny is after releasing that and demonstrating that, NFC then disappeared from our credit cards.  It only recently re-emerged in the past few years and now with much stronger cryptography and additional safeguards from these sorts of attacks.  However, there are other attacks.  It will always be cat and mouse.  Nothing is ever perfectly secure and to be fair, itâs much easier to be the attacker.</p>
+
+<p>JACK:	While Samy studied how to hack the chips within credit cards, he never did anything malicious with this.  He never actually stole anyoneâs credit cards that he didnât have permission to steal.  [MUSIC] Instead, he started blogging about this and teaching others about the safety involved with these products in an attempt to make them more secure.  From then on, Samy would continue to research the security of so many more things, but always in an ethical and safe way.  He would do this on his own equipment and disclose what he found to vendors.  For instance, Samy recently released a proof-of-concept to show how you can steal passwords and encryption keys by just listening.</p>
+
+<p>SAMY:	This sort of stuff has been done for years by [00:40:00] other people, by researchers, and Iâm just trying to see can I do this on a two-dollar chip or an Arduino that many people know how to use and many makers can just buy off the shelf, and then can they perform these types of attacks?  Thereâs attacks out there where researchers have demonstrated just taking a phone, a regular phone, putting it near a computer and when a computer is doing some sort of cryptographic operation and maybe itâs encrypting an e-mail, maybe itâs trying to send some Bitcoin, maybe itâs doing a financial transaction, maybe itâs logging into a bank.  When any of these things are being done and the processor is processing those instructions in a certain order, well, that processor requires power and different instructions require different amounts of power.  Addition will be less power than a multiplication which is really just a bunch of additions.</p>
+
+<p>You can then measure that power but if you have a phone, you can use the microphone.  Letâs say I put a phone next to someoneâs laptop and theyâre encrypting and e-mail with a secret key.  Well, when that CPU is pulling power from all these capacitors, those capacitors are going through this thing called electrostrictive effect and theyâre physically moving inside your computer.  Theyâre moving at a speed, a rate, against the circuit board inside that produces ultrasound.  [MUSIC] You and I canât hear ultrasound but the phones that we have, the mobile devices we have, those microphones actually can listen all the way into the ultrasound range.  If you have, say, an Android device with the microphone enabled and it listens to that ultrasound, you can then look at that sound, that amperage or the volume of the sound, and then correlate it and say well, the higher the sound, the more power those capacitors are using and feeding to the CPU.</p>
+
+<p>If I know itâs this much power for this long, well, I can do timing and power analysis and say well, that means youâre doing an addition here or youâre probably doing a jump or a branch here, or a comparison here.  This looks like youâre doing an AES encryption, a 128-bit key.  If youâre encrypting with a 0-bit versus a 1-bit, thatâs gonna take different instructions with a different amount of power and then I can fully recover that key.  Itâs pretty impressive, and these are the types of attacks that are really exploiting physical phenomena, things that a software developer might implement something perfectly, but thereâs still these other attacks.</p>
+
+<p>JACK:	Samy continued finding new areas to do security research in and at some point, he got interested in cookies.  [MUSIC] Cookies are what web browsers use to remember who you are so when you return to a website, they can log you in or show you content thatâs just for you.  Cookies are a tracking mechanism and browsers store these cookies on the userâs computer in a very specific location.  But as Samy looked into it, he was noticing some websites figured out a way to track users without storing the cookie in that traditional location.  For instance, some sites ran Flash to display fancy graphics.  Well, when you get to that website, the Flash video is downloaded and stored on your computer and the next time you go to that website, your browser checks to see if you already have that video or if you need to download it.</p>
+
+<p>SAMY:	But people were really concerned because some researchers found that some companies were using Flash to store cookies on peopleâs computers.  The benefit of this was that if a user deletes their normal cookies, their normal web browser cookies, which is what advertisers use to track you, well, then the Flash cookie was essentially acting as a backup and really surreptitiously because they obviously did that intentionally because they knew users might delete their normal cookies.  I was thinking well, your processorâs a pretty powerful piece of software.  It does a lot of things.  I wondered what other mechanisms where I could actually store information locally, and again, this is sort of a proof-of-concept to demonstrate what are all the ways that we can store information on a personâs computer whether they know it or not?</p>
+
+<p>I created this open-source JavaScript library called Evercookie.  It used normal cookies so it would essentially generate a random ID to track somebody, and then youâd store it in their normal cookies, youâd store it in Flash cookies.  But then I tried to find every possible other mechanism that you could use locally, so there was Silverlight, the new Silverlight storage, and then Java, and HTML 5 came out so then there was local storage and session storage, global storage, SQLite, local cache, your web history.  My friend Matt came up with a really cool idea of destroying the data in an image that would get cached and then you could actually read out the pixels in the image and then convert it back to an ID.  All sorts of stuff.  That was people like Matt and other people also started contributing to this project as itâs not entirely an open-source project on GitHub that anyone can actually contribute to.</p>
+
+<p>JACK:	This Evercookie project that Samy made really demonstrated how easy it is for websites to track their users even if they delete their cookies.  This was a really effective technique, so effective that when Snowden released a bunch of classified documents about what the NSA is doing, in there it even said that the NSA sometimes uses Evercookie to track its users through Tor.</p>
+
+<p>SAMY:	A couple people pointed out to me over the years that different governments have been using Evercookie to try to track people.  It definitely feels good that federal governments are using my software; granted, theyâre doing it for a reason that Iâm not into.  But I actually think the net gain of the entire project is extremely positive because what Evercookie really provided and still provides today, is an asset test.  Now, browsers essentially [00:45:00] can use Evercookie to see okay, does my private mode, does my incognito mode, does that provide the necessary protection to make it challenging to track this user at least using local storage mechanisms?  Before Evercookie, there was nothing like that so no one knew about many of these techniques.  Itâs very trivial for any company or government to then generate their own techniques.</p>
+
+<p>But by consolidating it into a very simple to use library and always trying to keep it up to date â people today are still updating Evercookie with new techniques.  Modern browsers that want to provide consumers and users and businesses privacy, it gives them that capability because they know okay, Iâve tested it at least against Evercookie which is sort of state-of-the-art and local storage mechanisms.  Evercookie canât track it, so at least it makes it very difficult.  Governments who are using it, theyâre really only able to track all browser users who donât upgrade their browsers or operating systems, where people who actually do care about their privacy, those people typically know to use modern, up-to-date software.  I think the overall net gain is extremely beneficial.</p>
+
+<p>JACK:	Letâs talk about Skyjack then, âcause I think this is a really cool project.  What is Skyjack?</p>
+
+<p>SAMY:	Skyjack started when I started hearing that Amazon was potentially going to use drones to deliver packages.  I thought that was really cool.  I think itâs really awesome that we have drones.  I think drones are super interesting.  Theyâre low-cost and theyâll probably enable a lot of really useful things for humans.  [MUSIC] However, I was somewhat concerned that that was the idea, I was like, delivering just packages because I donât really know if there was any security on drones.  I wasnât sure.  I really didnât know anything about drones so I went out and I bought the most ubiquitous consumer drone.  Then soon after, I also bought industrial drones, the type of drones that police use.  Immediately I started looking to see what are the protection mechanisms, at least in the consumer drone.  Immediately I found absolutely zero; literally none.  One drone was using essentially WiFi to be controlled and you could hijack that connection.</p>
+
+<p>You could only have one person controlling the drone at a time so if â I would just essentially kick that person off and then I would take over.  Then I would modify the droneâs software so that the person could never log back in and then I would have full control.  I found that I could do that, and then I started looking at more industrial drones and found that they did have encryption.  However, that encryption was not good at all.  Basically, if you sat on a radio frequency channel, essentially, itâs doing frequency-hopping.  The transmitter is jumping around to different frequencies for various reasons; partially security, partially to prevent jamming or if thereâs a lot of interference, that interference will disappear after it hops to the next frequency.  But that was also based off the encryption key.  I found if I could sit on a single frequency and I see two packets come in from that drone, essentially it would have hopped hundreds of times, and then I jump onto another frequency and I see it hop on that frequency two times.  All of that would typically take a couple seconds, tops.  I would then be able to reverse the key within a second.</p>
+
+<p>I would be able to understand what the encryption key is, and then I would be able to hop along and take over that drone as well.  At that point, I put all of this into an open-source project called Skyjack.  I put it on GitHub and I took a Raspberry Pi Linux computer, I put my software on it, I added some WiFi transceivers and some Sub-Gigahertz transceivers for the industrial drones.  You would then attach this Raspberry Pi to your own drone and youâd fly your own drone around.  While youâre flying your drone around, if Skyjack ever saw another drone on any of these wireless frequencies or within wireless range, it would then hijack and take over that drone.  You would now be in control of both drones.  In fact, any wireless drones that you found in the vicinity, you would take over all of them and youâd be controlling a swarm of zombie drones, entirely under your control from one transmitter.  That was the proof-of-concept there.  It was a really fun project, especially fun to be testing it.  Of course, I was testing only on my own drones that I owned, but it of course affected pretty much all models of all major drones at the time.</p>
+
+<p>JACK:	Now, Iâve flown a drone and one of the scariest feelings Iâve ever had is when you lose control of the thing and it just starts doing its own thing for whatever reason, right.  I mean, thatâs a little bit evil what youâre doing here.</p>
+
+<p>SAMY:	Iâm not taking over anyone elseâs drone; Iâve only taken over my own.</p>
+
+<p>JACK:	Okay, but giving the world the ability to do it?  I donât know.</p>
+
+<p>SAMY:	I would disagree with that statement because the world has always had that capability of doing it, right?  How do you know other people arenât doing it already?  I would actually suspect that there are plenty of organizations who are doing it.  Theyâre just not gonna tell you about it.  Theyâre not gonna put it on the internet.  Theyâre not gonna put it on GitHub and let you know that theyâre taking over peopleâs drones or that theyâve developed the software and hardware necessary to do it.  Theyâre just going to create that and theyâre going to stockpile it so that they can use it against people or companies or governments at their will.  Thatâs what we found when the NSA leaks came out; we found out that they were stockpiling all of these vulnerabilities including major, major vulnerabilities that affected many â and even the NSA that wants to protect America knows that everyoneâs running, say, Windows computer â or many people are running Windows computers.  They stockpiled Windows vulnerabilities, zero-days that nobody knew about.</p>
+
+<p>It was only when one of these databases from the NSA was leaked that [00:50:00] criminals were then able to use those exploits and actually attack many, many millions of computers around the internet, Americans and non-Americans.  I donât think it matters where youâre from.  What Iâm doing by releasing this stuff is demonstrating that yes, this is the issue and you can patch it.  If I donât release it, then the issue will continue to exist.  You might ask well, why donât I just directly communicate with the companies?  Often, I do and I found over time that when you communicate directly with companies, they typically donât resolve these sorts of things unless youâre talking maybe existing, specific software vulnerabilities in their architecture.  But if youâre saying hey, youâre not using encryption or youâre using it really wrong or itâs really the underlying protocol that is the issue, I found that thatâs when people donât actually resolve anything.</p>
+
+<p>Thatâs when I started releasing stuff publically and finding oh, if you release a cool proof-of-concept that demonstrates the real problem, the underlying, core problem, even if itâs not necessarily an issue with maybe the manufacturer but rather a problem with the underlying protocol and just assumptions that were made, there is enough public pressure that causes that company to then resolve that issue due to the public pressure, not due to the vulnerability itself because thatâs often what companies are trying to do and no fault to them; theyâre trying to do what their customers want.  Theyâre trying to do what might move the needle for them and I found that this is an effective and appropriate way, I believe, to move the needle in a direction that I believe will help many people overall rather than just the manufacturer or company or specific organization.</p>
+
+<p>JACK:	Has any company gotten upset with you and tried to come after you for some reason of disclosing vulnerabilities in their system publically?</p>
+
+<p>SAMY:	Iâve gotten cease-and-desists many times and that makes it extremely fortunate that the EFF, the Electronic Frontier Foundation, they have actually been very helpful to me.  Theyâre a non-profit of attorneys who are really just looking out for consumers and digital rights.  Your ability to have free speech online, your ability to inspect the software and hardware you use, the ability to own the things that you purchase.  There are companies who are trying to take this away from us but the EFF, Iâve been really fortunate where theyâve defended me in some of these regards.  Iâve never had to succumb to and actually agree to a cease-and-desist to this day.</p>
+
+<p>JACK:	[MUSIC] For the last decade, Samy has continued to take on very interesting projects; hacking into stuff and exposing vulnerabilities.  Like, another thing he found was that smart phones were tracking their users without their knowledge which was a revelation that led to a class action lawsuit.</p>
+
+<p>SAMY:	This all started because I was looking at, I think a beta version of Firefox at the time.  I was looking at the release notes and it talked about geo-location.  I said well, thatâs interesting.  Iâve always been interesting in location, like being able to locate where someone is whether itâs on their cell phone or their computer or their laptop or whatever.  Thereâs always been these geo-IP databases that sort of give you a geography but really, theyâre maybe accurate to the city but often not.  Even city accuracy is not that great.  I saw this thing about HTML 5 geo-location in a Firefox beta and I started investigating.  I wrote some code according to their API of how it worked.  I ran it and all of a sudden, my browser showed me exactly where I was.  Like, literally, it showed me the physical address of my home.  I was like, thatâs absolutely crazy.  Iâm on the laptop and my laptop does not have GPS.  I know that for a fact.  So, how does it know where I am?</p>
+
+<p>I started sniffing the packets to see where it was going and granted, you could just look at the source code.  Itâs Firefox, so itâs open-source.  After sniffing and I think maybe intercepting the TLS, I saw that itâs taking all of the wireless MAC addresses, all of the unique MAC addresses of all the routers around you, NAPs, and sending that to Google.  Even if your wireless routers are encrypted, and even if you donât have one and there are other people who have them, even if theyâre encrypted, the MAC address is a unique identifier that is unencrypted.  Your computer sends all of those to Google, and Google returns the exact location that youâre located.  Youâre also sending not only the wireless routers but the signal strength of each of them, so then they can actually perform whatâs called trilateration.  [MUSIC] Itâs like triangulation but essentially, they use that signal strength to then really accurately determine where you are.  Iâm like, this is absolutely crazy.  How are they figuring all this out?  I found that youâre basically sending all of these unique MAC addresses of all these routers around you and Google would send back your exact location.  Then, Iâm wondering well, how does Google know where all these routers are?</p>
+
+<p>I thought about it some and I thought about it some more, and I realized oh, thereâs these Google street-view cars and these Google street-view cars are driving around and they have cameras on them.  Thatâs where you get street-view from, that really helpful feature of Google Maps where you can see a street-view.  I realized that they must have computers and WiFi systems on there that are also monitoring for these WiFi MAC addresses and then correlating it with the GPS of the street-view car, and then uploading it all to Google.  Thatâs how theyâre getting this information.  I was like, thatâs really clever.  I started doing talks about this because I then found a way that I could essentially abuse that API and use it for myself whenever someone visits my website and I could see exactly where they were.  [00:55:00] I could even show them; youâd come to my website.  Without your authorization, I could then send your MAC address and find where you are.  I was talking about this in Bratislava in Slovakia, and afterwards someone said hey Samy, itâs interesting but fortunately this does not apply to us because Google street-view cars are not allowed here.  [MUSIC] Interesting, so Iâll just give it a shot and try running it just to confirm.</p>
+
+<p>Oddly enough, it still worked.  It actually worked very accurately.  I was like, wait a second.  I donât think Googleâs lying; I donât believe that theyâre doing something illegal.  I donât think they have street-view cars when they say theyâre not doing that, and you would notice.  Those cars would stick out with these massive sensors on top of them.  So, what else might Google have access to, especially in somewhere random like Bratislava?  I thought a little bit more and then realized oh wait, Android phones.  There are Android phones everywhere and I wonder if these Android phones are actually wardriving machines.  After reverse-engineering some binary blobs on Android devices, this was not actually in the source code that I could find.  I found these binaries that were essentially grabbing all WiFi MAC addresses and sending the signal strength of all these wireless routers up to Google, along with GPS coordinates.  Essentially, every Android phone in existence is a wardriving machine for Google thatâs grabbing all this information, grabbing all this location data.  So, even if you donât use an Android phone, other Android phones near you are then taking your routerâs information and sending it up with their location.</p>
+
+<p>JACK:	Samy also figured out that iPhones were doing the same thing but sending the data to Apple instead of Google.  Whatâs worse is that in some cases, this was happening even after users turned off the location services or GPS.</p>
+
+<p>SAMY:	Well, this was encrypted so it took a little time to really understand what was going on and reverse-engineer some of that stuff.  To really just demonstrate this as a fun proof-of-concept, I created a tool; really just a simple mobile app that behaved just like Google Maps.  I found that Google was actually doing something really clever with their information.  Not only were they collecting where everyone was at all times via Android devices, but thatâs also how they collect traffic.  Thatâs how you know whether a street is green, yellow, or red and whether thereâs traffic or not in Google Maps, is because all of the phones are constantly delivering their GPS location.  If you time that, if you say alright, Iâm here now and in ten seconds Iâm here, well, you can calculate the distance they traveled over that time and know how fast theyâre moving.  Thatâs how they get Google Maps traffic.</p>
+
+<p>JACK:	Samy thought about this for a minute and realized if the Android phones are the ones that are delivering data to Google and giving the traffic updates for the Google Maps, could he somehow exploit that?  Could he somehow trick Googleâs servers into thinking thereâs a traffic jam when thereâs really not?</p>
+
+<p>SAMY:	I created an app that was just like Google Maps.  Youâd start from point A and say Iâm at this location and I want to drive to wherever, to West Hollywood.  It would give you turn-by-turn directions but on those turn-by-turn directions of my route, it would simultaneously pretend to be thousands and thousands of other Android devices.  All those devices, all those fake devices, would send up information to Google saying hey, Iâm one of these Android devices and Iâm moving zero miles per hour.  All of a sudden, my route, the route that my app gave me, would turn red and black for everyone else and they would get diverted to different routes on Google Maps.  Hopefully, my route would be a little bit faster as there would be less cars on the road.  That was sort of my proof-of-concept of demonstrating this issue.  [MUSIC] Some of it is good to even continue even when youâve turned off these features, like location.</p>
+
+<p>JACK:	I love this hack.  To make it so wherever you drive, Google Traffic is diverting drivers to go away from you because itâs congested wherever you are, even though itâs not congested where you are.  Youâre just sending fake data to Google.  Itâs just brilliant.</p>
+
+<p>SAMY:	Yeah, itâs a proof-of-concept just to poke fun at the information and just demonstrate what this information is capable of doing.</p>
+
+<p>JACK:	While this is cool, the underlying issue here is that users were unknowingly sending their exact location to Google.  I donât know about you, but I donât personally like that Google knows exactly where my phone is at all times.  I just think itâs a violation of privacy of some sort.  You know what?  Iâm not the only one who thinks that.</p>
+
+<p>SAMY:	Yeah, so ultimately the biggest issue was that people werenât accepting that A, they were sending all this data up, so ultimately both Google and Apple had to appear on Capitol Hill because they previously said no, weâre not tracking you.  This research demonstrated that yes, in fact, they were tracking exactly where you are virtually at all times.  In some cases, against your consent when youâve turned off location services on Apple.  Again, those devices were still sending information that allowed full location of where you were because it was sending MAC addresses which they already knew where those were.  Itâs simply one-step correlation in a database they already have.  Itâs not really fair to say that theyâre not grabbing at information.  Ultimately, they did resolve these things.  Itâs funny; the same thing is still happening, right?  All these phones are still doing the same things.  The only difference is now you click OK when they say they do it.  But the benefit here is that for people who donât want this sort of technology to run, they can say no on their phone.  The scarier thing though is that even if you donât even have one of these phones, [01:00:00] itâs all the phones around that are still collecting that information of your router, of the devices on your network even though itâs somebody elseâs device.</p>
+
+<p>JACK:	I saw a video the other day about a guy who put like, a hundred Android cell phones all in a wagon and slowly walked down the road.  This triggered the Google location API thing to make it show that the road was really congested and made it turn red, as well.  It looks like this API is still under attack just by researchers and people doing weird stunts and stuff.  So, yeah, Samy has a pretty cool YouTube channel.  You should check that out.  Heâs also given a lot of talks at various conferences like jeez, all over the world.  How many talks have you given at this point, Samy?</p>
+
+<p>SAMY:	I donât know; maybe fifty or so.</p>
+
+<p>JACK:	Where are you working now after all this?  I mean, this is just such a whirlwind life youâve had so far.</p>
+
+<p>SAMY:	Iâve started a company called Openpath with some friends and weâve been growing quite a bit.  Iâve done some research in RFID and cloning badges and being able to demonstrate how to break into buildings many years ago.  We found that technology has not changed in the ten years since Iâve looked, wrote software that was able to clone badges and break into various levels of security for physical access for buildings.  We were sitting around and thinking well, why is it still a problem and itâs still inconvenient?  Why do I have to carry around this thick card in my wallet?  Iâm trying to get rid of my wallet.  We ended up building this business called Openpath where you can essentially have physically access control for businesses and buildings where A, you donât need a card.  You could use a card if you wanted but you could just use your phone.</p>
+
+<p>Your phone actually has really strong encryption.  We have things like TLS, we have AES, we have open encryption standards that people have been trying to break for many, many years and havenât, that are entirely open and can be inspected by anyone.  Weâre using those technologies to essentially unlock doors and you donât even need to pull your phone out.  You literally just get within Bluetooth range of one of these devices and you can walk right in as long as you have authorization.  Weâre trying to really make a modern and Cloud-based and secure way of getting into buildings that is just really convenient âcause Iâm just trying to get rid of the things in my wallet and this kind of technology, itâs just really interesting.</p>
+
+<p>JACK:	Yes, that technology is interesting but so much technology is interesting and we live in a time where technology is in abundance, all around us.  If you think about technology as much as Samy does, itâs like a playground for him; to be able to tinker with it all and take it apart, and put it back together in ways it was never intended.  Samyâs hacker mindset is still going strong today and it will probably be strong for decades more to come, provided he doesnât accidentally launch another worm and take down the largest social networking website once again.</p>
+
+<p>JACK (OUTRO):	[OUTRO MUSIC] A big thank you to Samy Kamkar for coming on and telling us all this.  To learn more about what Samyâs up to, check out his website.  Itâs samy.pl.  This show is created by me, a replicant, Jack Rhysider.  Production assistance from John Kalish.  Sound design by Andrew Meriwether.  The theme music was created by the mysterious Breakmaster Cylinder.  Even though some bro is gonna ask me how to make money on the darknet every time I say it, this is Darknet Diaries.</p>
+
+<p>[OUTRO MUSIC ENDS]
+[END OF RECORDING]</p>
+
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

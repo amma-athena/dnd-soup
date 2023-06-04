@@ -1,0 +1,563 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>Marq â Darknet Diaries</title>
+	<meta name="description" content="This is the story of Marq. Which involves passwords, the dark web, and police.">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Marq â Darknet Diaries">  
+	<meta name="twitter:description" content="This is the story of Marq. Which involves passwords, the dark web, and police.">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/tunnel.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/108/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Marq â Darknet Diaries" />
+	<meta property="og:description"        content="This is the story of Marq. Which involves passwords, the dark web, and police." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/tunnel.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/108/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/tunnel.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/108/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="Marq â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/tunnel.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 108: Marq</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://www.podtrac.com/pts/redirect.mp3/traffic.megaphone.fm/ADV2790084272.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/108/",
+			   "title": "Ep 108: Marq"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/108">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>JACK:	Back in 2010, there was a guy named Omar who worked at a car dealership in Austin, Texas.  He was twenty years old at the time and was trying to build his career up.  Well, for whatever reason, it didnât work out and the car dealership fired him.  Omar was mad.  I donât know why; he was furious for being fired.  He wanted revenge.  He wanted justice.  He felt like what they did to him was wrong and he wanted to fight back.  Omar knew the computers and systems at the car dealership because he had to know them to do his job.  So, after heâs fired, he checks to see if he still has access to the systems, but nope; the dealership disabled his account and he couldnât get in.  [MUSIC] But he had another employeeâs login who still worked there.  He was able to use this other employeeâs login to access the computers at this car dealership.  He logs in and looks around.  The first thing he goes for is their Web Tech Plus system.  See, if a customer is late paying their car payment, the dealership may repossess the car, which means theyâre gonna physically go and get that car back.  But this is hard and time-consuming.
+<!--more-->
+Car dealerships today can implement a feature which can remotely disable a car so that person canât use it until they pay their payment, and thatâs what this Web Tech Plus system did.  It remotely disabled cars from starting.  So, Omar gets into that system and starts typing customer names that he remembers, and he just starts clicking on them and disabling cars so they couldnât start.  He also starts making the cars honk continuously.  Phones started ringing at the car dealership.  People were calling in saying they can not start their car, and their car just keeps honking.  The dealership was baffled, thinking it must have been a mechanical error.  They were walking people through how to disconnect their car battery to make it stop honking, and then they were sending tow trucks out to pick up these cars and bring them to the dealership to take a look.  The dealership couldnât understand what was going on.  They were scratching their heads and had no clue why this was happening.  Omar kept logging in and disabling more cars.  Day after day, he was getting in and causing grief to their customers.</p>
+
+<p>At some point, he found a way to see all 1,100 cars that were connected to this system, and just started going down the list one at a time, disabling them.  The dealership kept getting phone call after phone call from angry customers saying their cars wonât start and it just keeps honking.  This continued to go on for five days.  A hundred people called the dealership with these problems.  The dealership reset all the passwords on the Web Tech system which stopped Omar from being able to get in and do any more.  That meant the madness stopped, too.  This gave the dealership a clue that it had something to do with that system.  They turned over the system logs to the Austin police who were able to track it back to a home internet connection that Omar had.  He was arrested for this, but I couldnât find what the punishment was that he got for this.  A remote kill switch for a car is a powerful piece of technology, and when thereâs such a powerful piece of technology that exists like that, itâs only a matter of time before it becomes abused.</p>
+
+<p>(INTRO):	[INTRO MUSIC] These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK: 	In this episode, weâre gonna hear a story from someone whoâs been in tech all their life.</p>
+
+<p>MARQ:	You can just call me Marq, of course.</p>
+
+<p>JACK:	Marq grew up in Florida, but he moved around as a kid.</p>
+
+<p>MARQ:	Iâm a military brat, so I lived in Korea.  My eighth-grade year in Korea, I had a computer programming class where we were learning Java.</p>
+
+<p>JACK:	Coding was a fun thing for him to do, and from there, he learned more about Windows, DNS, IP addresses, and all kinds of stuff.</p>
+
+<p>MARQ:	I want to say probably the next year when we got back to America, going into my ninth-grade year, thatâs when I started experimenting with Linux, once I got my own laptop.</p>
+
+<p>JACK:	From there, he heard about BackTrack and was drawn to different hacking tools.  [MUSIC] BackTrack was a Linux distribution system that came with hundreds of different hacker tools just pre-built into it like Metasploit, Aircrack, Burp Suite, SQL Map, stuff like that, which makes it easy to just get started playing around with some of these tools and see what they can do.  BackTrack has since become Kali Linux, which is still a popular hacking operating system.  So, this was a while ago, but this version of Linux made it easy to also access Tor, the darknet.  There was a Tor browser that came with it, so it was just as easy as loading it and waiting to connect to Tor, and then you were on the darknet.  When Marq was in high school, he heard about this and checked it out.</p>
+
+<p>MARQ:	Yeah, yeah.  You know, the dark web always seemed pretty enigmatic around that time.  You had Anonymous doing a lot of hacktivist things â going on, and a lot of times, depending on what they were doing, they would be using Tor.  So, thatâs when I first found out what Tor was.  I went on Tor a couple of times, but honestly I never did anything.  It always â I donât know, it just â back then I was never really â I had never really delved too deep into it, but I dabbled in it and just got on just to see how to work it and things like that.</p>
+
+<p>JACK:	He would check out the typical places; anonymous chat rooms, hacker forums, but he never really participated.  He was just lurking to see what was going on there.  After he graduated high school, he put his resume online and a recruiter from Oracle found it and reached out, and Oracle hired him.</p>
+
+<p>MARQ:	I worked on their point-of-sale software called Micros.  I was a support engineer.  So for example, you were a company; you called in and you had letâs say a check stuck in the system.  I would basically remote to the system and then connect to their SQL database.  Once youâre connected, itâs pretty simple.  A lot of times, depending on the issue, like I said, if itâs something like a stuck check, you can just go into the SQL database and then you can see the check, you can see the error, and you just write a couple of SQL commands to basically kick it out, and then just have them restart the POS system, and everything would work.</p>
+
+<p>JACK:	He worked there about a year and a half and decided to leave and go somewhere else.  This was his decision.</p>
+
+<p>MARQ:	After that, I went and worked at a local NOC, Network Operation Center, for a ISP.  I actually enjoyed that a lot as well because prior to that, I didnât know much about networking.  Now, I knew basic things about networking, [MUSIC] but from there, I actually learned quite a bit about networking.</p>
+
+<p>JACK:	A Network Operation Center, or NOC, is a place where people sit and watch the systems for any faults in the network.  If the internet goes down, this is who will be the first to know.  If a computer has a high CPU, then theyâll go in and check it out.  If a router isnât able to keep up with the amount of traffic thatâs going through it, theyâll see this alert and jump into action.  Marq gained a lot of IT experience working for this company, but then he decided to apply for a job at Microsoft.</p>
+
+<p>MARQ:	While I was at the NOC, I saw that they were hiring.  It was in Orlando, so it was like forty-five minutes away from where I currently resided.  I just put in for them as well.  I got a message back saying that they would be very interested.  So, I went through the interviewing process and I was hired.  At Microsoft, I was a Exchange engineer, so I helped mostly systems administrator, but I would help them with pretty much any Exchange issue.  So, it could be Exchange on-premises issues, it could be Office 365 issues, in the Cloud, or it could be hybrid setup issues as well.  I would pretty much help them with a variety of anything.</p>
+
+<p>JACK:	Exchange is the e-mail system that Microsoft sells, so Marq was really leveling up his skills in Exchange, too, understanding all the ins and outs of how to be an Exchange admin.  He liked his job there too, but was tired of Florida.</p>
+
+<p>MARQ:	I ended up moving just âcause I sort of wanted a chance of scenery.  Iâd been living in Florida for â since 2012, âcause Iâm originally from Florida.  I was doing high school in Georgia, then moved back to Florida, finished high school there, and thatâs when I was doing college and working in Florida.  So, I had an aunt who lived in Atlanta and she said hey, I think you might like living in Atlanta, and thereâs a lot of IT jobs out here as well.  It would be a good opportunity as well.  So, I said sure, Iâll move to Atlanta.  I ended up moving.</p>
+
+<p>JACK:	[MUSIC] Of course, once he gets to Atlanta, he looks around to try to find a job in tech.</p>
+
+<p>MARQ:	I worked at a MSP and I was a systems administrator.</p>
+
+<p>JACK:	Ah, now, this job is quite a powerful role.  First of all, this was at an MSP, or Managed Service Provider.  If a business doesnât have the people to take care of the computers in the network, they can hire an MSP to come in and do that work.  So, the MSP would be the ones who go in and patch and update and fix faults in the systems, and keep things running smooth.  This is what Marq did, too; he was assigned a few customers or companies, and in his customersâ networks were systems that he would need to take care of; Exchange servers, database servers, and domain controllers.</p>
+
+<p>MARQ:	I had access to everything, access to servers, yeah, access to literally everything.</p>
+
+<p>JACK:	Which is normal for a system administrator and even an MSP to have access to everything.  They need complete control over all the things in order to fix stuff when there are issues.  What was your relationship with the dark web at this point?</p>
+
+<p>MARQ:	So, during the time that I moved from Florida to Atlanta and I was waiting to â I was applying for different positions, thatâs when I started going on the dark web a little bit more, honestly probably just out of boredom.</p>
+
+<p>JACK:	Doing what?</p>
+
+<p>MARQ:	Nothing specific.  Again, just looking at stuff.  Around that time, I actually did [MUSIC] join a specific site.  I canât remember if that specific siteâ¦</p>
+
+<p>JACK:	The site he joins was a hacking forum, one that criminals would like to visit and post data dumps to that they had for sale, like credential lists, malware, ransomware for sale, or botnet seats available, this kind of thing.</p>
+
+<p>MARQ:	Then I would just look at postings of people saying what they were selling on the dark web.  There was even a website I came across where people would sell zero-days.  I thought that was pretty interesting.  But I never â again, I never still did anything at the time.  I was just more â looking more, but I was also engaging a little bit more.  So, if someone posted something that seemed a little interesting, I might respond that seems pretty cool, but still never taking it up a notch yet.</p>
+
+<p>JACK:	Yet.  Stay with us because after the break, he goes up several notches on the dark web.  Marq was working for an MSP as a system administrator during the day.  At night, he liked tinkering around with hacking tools, and he liked visiting hacker forums on the dark web sometimes.</p>
+
+<p>MARQ:	Then I started seeing more and more increasingly people selling databases of credit cards, hack usersâ information, passwords, e-mail addresses, just things like that, stuff that I â when I first delved into the dark web I didnât see as much, but now it seemed like no matter where you are on the dark web, there was a plethora of websites showing a variety of the same content.</p>
+
+<p>JACK:	Right, yeah.  So, why is this fascinating to you?</p>
+
+<p>MARQ:	Iâve always found hacking interesting.  Like I said, I never really tried to hack anyone or do anything previously before, but I always found it interesting.  Itâs a little mysterious and it seems like you have a little â you have power and knowledge that Iâd say a good ninety-something percent of the population donât have.  So, I always found it a little intriguing.</p>
+
+<p>JACK:	Was there something on these forums that youâre like, seeing people make a lot of money or just kind of attracted you to it, like man, if only?</p>
+
+<p>MARQ:	Yeah.  Itâs probably the money.  People were making tons and tons of money.  So, a lot of these people were in Signal or theyâd be using Telegram and theyâd be in different rooms.  You could join a room and youâd see the data that these people had available and how much money they were making, and they were making a lot of money.</p>
+
+<p>JACK:	People were making money selling database dumps or selling their coding skills, and others were buying dumps and using this data to steal stuff or phish people and get into accounts.  But Marq had absolutely no interest in participating in any of this.  He liked watching, just mostly out of curiosity.  He never hacked anyone before and knew that was wrong to do.  The worst thing on Marqâs record up until that point was just a speeding ticket.  He liked his job, too; he was a system administrator.  There was one guy at work who seemed to disagree with Marq [MUSIC] on how to do stuff.</p>
+
+<p>MARQ:	He was very knowledgeable in Exchange, but he â I would say he wanted to try and take shortcuts to do certain things, and I tried to explain to him that it couldnât be done that way.  Maybe he thought that I could possibly just do it, but I couldnât.  Then I do also remember there was one time he wanted me to write a PowerShell script for this specific client that was just way out of my zone.</p>
+
+<p>JACK:	A few weeks after that, out of the blue, they fired Marq.</p>
+
+<p>MARQ:	I was let go.  I was told I was let go because it just wasnât really working.  Thatâs what the â one of the owners of the company told me.  But there was really no specific reason that they provided besides that statement.</p>
+
+<p>JACK:	How did you feel about being let go?</p>
+
+<p>MARQ:	I was pretty upset, honestly.  So, once I left, I ended up moving to another part of Georgia where my friends and â where I had more friends.</p>
+
+<p>JACK:	What Marq is hesitant to say is that he went to see his best friend who had severe cancer.  Marq wanted to spend some time with him and make some final memories together.  So, he moved to that part of Georgia where his sick friend was, and some of his other friends lived there, too.  He was looking for a job there, but wasnât finding anything.  He was also running out of money.  [MUSIC] He was fired from his job in June of 2019, and in the two months after that, he moved on and wasnât really thinking about that old job at all.  But a few months after he was fired, something triggered him to think about it again, and this made him curious about something.</p>
+
+<p>MARQ:	I canât remember specifically why, either.  I just checked to see if I still had access to one of the servers where we administered several of our clients.  I still had access to everything.</p>
+
+<p>JACK:	At his last job, he was a sysadmin for a few clients.  To get to the clientsâ network, he had to log in through a central dashboard portal-like system.  From there, he could then connect to his clientsâ devices.  He had remembered his username and password to get into that dashboard when he worked there, and he tried to log into the portal, and it worked.  His account was not disabled when he was let go, and it was two months later now.  This is a huge failure of his former employer.</p>
+
+<p>MARQ:	Then of course, once you are on the platform to access each individual server, they had a username and then a password.</p>
+
+<p>JACK:	There were about five customersâ servers that he could connect to, but in order to connect to them, he had to know the username and password to get on them, which is different than his own username and password to log into the portal.  Itâs more like a shared one that the customer set up to allow this MSP to hop in and fix stuff.  But since he had been in those customersâ devices so many times in the past, he had the username and password memorized still.</p>
+
+<p>MARQ:	Thatâs when I delved into one of the servers.</p>
+
+<p>JACK:	[MUSIC] The username and password was still the same from when he was working there.  Now, this one is a little bit more tricky for this company to fix.  Obviously itâs a no-brainer to disable the logins for former employees when they quit or get fired, but changing all the shared passwords that they may have seen while working there is a bit more complex.  It would mean changing the passwords for all of Marqâs customers, because these were shared passwords that other system administrators used, too.  The more secure way to handle this is to create a different login for everyone who will access those systems, which when you work in an MSP, that can be over a hundred people who might need access, so a lot of NOCs and SOCs and managed service companies donât often have separate logins for everyone, because itâs a pain in the neck to get the customers to create new logins for every new hire and remove access for all former employees.  But perhaps they should, just to prevent situations like this.  So at this point, he has logged on as an administrator to an important server in one of the companies he used to be a sysadmin for.</p>
+
+<p>MARQ:	From there, one of the companies had a database of a lot of information, so Iâd say credit cards, banking information, because one of the customers was an accounting company.</p>
+
+<p>JACK:	But he doesnât steal it; he just wanted to see if he could gain access to some pretty important data that he shouldnât be allowed to access, and yeah, he can.  So, he sees that he can get there, but then he logs out and steps back and thinks about whatâs going on.</p>
+
+<p>MARQ:	[MUSIC] So, the first time I connected and realized just â not even connecting to a server, but just connecting to the hosting provider, I thought it was pretty odd that I still had access, for one.  Then two, I was like, I shouldnât be doing this.  So, I do remember the first time I logged out.  But just delving back into the dark web and going back on those specific sites that I was going to, it sort of â I donât know, makes you believe that you can do things that you shouldnât do.</p>
+
+<p>JACK:	Go on, what do you mean?</p>
+
+<p>MARQ:	Like I said, just seeing the amount of money that people were making, the type of things that people were doing.  There were even similar postings of people saying that I work at X company and I have such-and-such access and I would like to sell it, or â I remember even one person said I will give you access to the server and you can ransomware it; just pay me.  So, things like that.</p>
+
+<p>JACK:	Marq was broke.  His friend was actually dying of cancer.  Marq had no job and heâs spending his nights scrolling through these forums where people are buying and selling data dumps or just access to servers.</p>
+
+<p>MARQ:	So yeah, just going back on there more and more and seeing the type of stuff people was doing and the access I had led me to go back to the server, access it, and thatâs when I started to download quite a bit of the information from one of the servers.</p>
+
+<p>JACK:	He downloaded a lot of customer data that this company had, and this company did accounting for people, so they had not only names and addresses, but lots of financial information on lots of customers.</p>
+
+<p>MARQ:	This database had banking account information, tax return information, addresses.  For whatever reason, this accounting company also had people just take a picture of their driverâs license or credit card and debit card sometimes and just send it to them in an e-mail, which is a thing very insecure to do.  So, I would have access to all of that.  It was thousands and thousands of documents.  I want to say probably 15,000 documents in total.</p>
+
+<p>JACK:	[MUSIC] It was a juicy grab and Marq knew it, and thought surely someone would find this valuable.  So, Marq grabs what he can and logs out.  He takes a screenshot of a sample of the data, careful not to include the companyâs name, because he doesnât want them to know this happened, because if the company knew they had just been breached, they would start to investigate, and he didnât want that.  In fact, he did a few things to cover his tracks while in there.  Because he was logged in as an admin to the server, he could just delete the event logs which showed his login and download activities.  Hiding his tracks like this made him feel confident that theyâre never gonna know about this.</p>
+
+<p>MARQ:	I never honestly thought that they would know.  Because of the way the company was set up, basically I just didnât believe that or didnât think that anyone would realize that thatâs how I was getting the information.  Honestly, I donât know; it was stupid of me, but I just didnât think anyone would connect the dots at the time.</p>
+
+<p>JACK:	Now, keep in mind, he used to work at this MSP and manage this customerâs network, and so, he has a strong understanding of what they audit and how they go about finding security issues.  So, he was careful not to do things that he knew would raise alarms.  So, he takes the data he stole and posts a sample of it on a dark web hacking forum and says if you want to see the rest, itâll cost you $600 in Bitcoin.</p>
+
+<p>MARQ:	Yeah, yeah, basically that.  So, basically posted a screenshot, basically, of some of the content I had, and then posted it just as a sneak-peek to show people that I actually had the access, âcause a lot of times people may BS on the dark web and rip you off.  Once people started seeing that I was legitimate, then more and more people started requesting access to these documents, which was quite a bit of documents at the time.</p>
+
+<p>JACK:	Now, posting something like this, itâs like opening a box of venomous snakes that you canât close back up.</p>
+
+<p>MARQ:	Yeah, itâs a little scary because one, you went from the first step which is being on the dark web looking at stuff, being interested, to the next step which is I submitted a post saying I would do something illegal.  So, it is a little nerve-wracking, but itâs also a little bit of an adrenaline rush.  So yeah, it is â [MUSIC] made me very anxious, honestly, at the time.</p>
+
+<p>JACK:	He was giving a small sample of data for people to look at, and if they liked it, he was hoping they would come back and buy access to the rest.</p>
+
+<p>MARQ:	So, I remember one day I actually got someone who messaged me, and they wanted to purchase some of the documents.  So, I basically showed them another sneak-peek.  I had more access to more documents than what I had before, so I sent him another screenshot.</p>
+
+<p>JACK:	This buyer liked what they saw and agreed to pay the $600 in Bitcoin to see the rest.</p>
+
+<p>MARQ:	So, someone messaged me on that specific website and requested the information.  The $600, of course, was in Bitcoin.  Then yeah, they transferred the money to my wallet and I gave them the information they wanted.  But I made a big mistake there as well.  Well, of course, the biggest mistake was going on the dark web and doing this, but at the time, the mistake was I had two Bitcoin wallets; I had a personal one for just Bitcoin when I was investing in Bitcoin and stuff like that, and then another wallet where I was throwing my dark web stuff.  Any crypto or anything that I was given would be transferred to that wallet.  When the person on the dark web sent me their Bitcoin, I transferred it to my personal one where I do investing.  That was pretty dumb.</p>
+
+<p>JACK:	Right; the reason why this is a problem is because whenever he bought and sold Bitcoin with his other wallet, he did it through an exchange, which in the US, exchanges are required to know their customers by collecting personal information on them, like upload-a-picture-of-your-driverâs-license kind of info.  So, if the authorities were to somehow see that there was a transaction for $600 in Bitcoin, they could possibly follow that transaction to see his wallet was registered at an exchange, and then send that exchange a search warrant asking for information on who owns that wallet.  So, Iâm trying to figure out â in your mind here, the reason for this.  Is it fifty percent youâre pissed off at this company for firing you and fifty percent you want money?</p>
+
+<p>MARQ:	Yeah, it was more financial.  I had a lot of things going on personally at the time as well, too.  So, at the time I just needed money.  My best friend, he was dying from cancer.  I pretty much felt at the time I needed money so that I could go be with him and also do the last couple of things that he wanted to do before he passed.  So, that was one of the main reasons why I was doing some of the things I was doing.  [MUSIC] But it wasnât necessarily that I was that upset at the company for being fired.  I have worked at a job before and Iâve been let go.  I understand that things happen, so I wasnât necessarily that upset at the company.  It was just the monetary gain that I could get from the information that some of the customers had convinced me to do it.</p>
+
+<p>JACK:	If you had another job lined up and you didnât need the money, would this have even been a thing for you?</p>
+
+<p>MARQ:	No.  Nope.</p>
+
+<p>JACK:	There was only one buyer for this data dump, but by this point, Marq was all over the dark web, getting more familiar with different onion sites and who the players were.  One day while surfing around there, he sees something that was surprising.</p>
+
+<p>MARQ:	Some hackers I knew, they posted on a website on the dark web.  This wasnât really a forum, but it was a site where you could go on there and people could just anonymously post stuff or they could just go on there and request something.  But yeah, so one day Iâm on there.  These hackers that I know, they let me know that they posted some information regarding Ring.  Iâm like okay, what did they post?  So, I look and see, and they post a [MUSIC] credentials dump for about 1,500 customers of Ring, so this included their password, their username, and also their address.</p>
+
+<p>JACK:	Now, if you arenât aware what Ring is, itâs a doorbell webcam.  So, people buy it and they connect it outside their front door, and when someone approaches the door, you get an alert on your phone telling you someone is at your home.  But thatâs the weakness; you can view your camera from anywhere in the world.  Itâs connected to the internet, so you donât have to be home.  All you need is that username and password, and you can see whatâs on the camera.  Marq was looking at the posts of over 1,000 usernames and passwords of Ring camera users which had their address of where they lived.</p>
+
+<p>MARQ:	So, that was a little scary to me, because I â thatâs real world harm that could happen to people if you have their address and you can look through their cameras.  So, I did sign onto one of the accounts just to see if I could see through her Ring camera and see if this was real, and it was, this specific personâs camera.  I just logged in there randomly â was someone bringing in their trashcans up into the driveway.</p>
+
+<p>JACK:	Something about this was just going too far for Marq.  He had to say something to Ring to let them know about this, and so he did.  At first, they didnât respond, so he got connected with Zack Whittaker at TechCrunch who wrote an article about this.  Zack contacted twelve people on the list and told them their passwords, and they confirmed that was the correct password for their Ring camera.  Then Amazon, the parent company for Ring, responded to Marq and sorted it out.  I presume they changed the usersâ passwords.  Marq felt confident that he did the right thing here, getting these accounts cleaned up so they canât be abused.  He didnât even ask for a bounty reward; since the passwords were just sitting out there on a website for anyone to see, it wasnât like he posted it.  But at the same time, Marq still needed money, [MUSIC] and his original listing made him $600 so far, so he decided to make another post on this dark web forum.</p>
+
+<p>MARQ:	On the hosting provider, there was about four other servers, so I did make a post later on saying that I would sell access to the remaining servers.</p>
+
+<p>JACK:	What he would do, since he had admin access to these servers, was that he would make a new user account and give it RDP access from the internet so he could sell that username and password that he just made to someone else so they could log in and do whatever they wanted to that server.  He was basically selling backdoor access into a companyâs network, and what people might do with that is they might look for customer data to take, like a fresh database dump, or they might just straight-up ransomware the machine and try to make some money that way.  So, this kind of posting happens sometimes on these forums.  Did anybody purchase this from you?</p>
+
+<p>MARQ:	No, no one purchased that.  The only thing that someone purchased was me selling customer information.  Iâm not sure specifically why.  It seemed like on that site, especially at the time, more people were invested in buying information versus buying server access and then having to go in, put malware, and do things themselves.  People just wanted the information and then they could just sell it on the dark web.</p>
+
+<p>JACK:	Well, the person Marq sold this database dump to was a well-known IT security company called Binary Defense, founded by Dave Kennedy, and what they do is get on these forums, see posts like this, and buy the data.  Then they investigate the data to try to figure out who the victim was and who the person is that sold this to them, and then they just turned all that over to the FBI.  [MUSIC] Itâs whatâs known as a confidential informant.  So, the combination of the forensic investigation that Binary Defense did and turning that over to the FBI, the FBI quickly identified Marq was the person who sold this data.</p>
+
+<p>MARQ:	All I remember is one day in January, I was asleep.  I heard a noise at the door and I was thinking it was my girlfriend because she worked about five minutes down the street, so I thought she was coming home, but there was the deadbolt on the door.  So, the person was trying to open the door but didnât realize the deadbolt was on the door, and two seconds later, they just bust open the door.  I didnât realize specifically what was going on at the time âcause this is like, 6:00 AM, and I had literally just went to sleep.  But I remember rubbing my eyes and looking and saw it was the FBI.  Thatâs when I realized â I didnât put two and two together at first.  Like, I didnât realize specifically why they were there, but when they showed me the warrant and they started trying to ask questions, thatâs when I knew what it was for.</p>
+
+<p>JACK:	So, I mean, I imagine if theyâre busting down doors, theyâve got weapons drawn and theyâre pointing them at you.</p>
+
+<p>MARQ:	Yes, that was very frightening.  Iâve told people before whoâve asked me; it was like a scene out of Call of Duty.  It was very nerve-wracking.  I never want to go through anything like that again.  But yeah, they had guns aimed at me.  It was probably, say, about eight agents in there, all with guns aimed at me, and I was just on the ground with my hands up.</p>
+
+<p>JACK:	The police come in his home, take all his electronics; laptops, his iPhone, thumb drive, even some books on programming.  Oh, and they took his girlfriendâs MacBook, which she had nothing to do with any of this.</p>
+
+<p>MARQ:	They left my Raspberry Pi which I always thought was interesting.  But yeah, they turned the whole house upside-down looking for stuff.</p>
+
+<p>JACK:	Of course, the police were asking him a million questions and wanted him to unlock his iPhone and computer and stuff, but he refused to talk at all.  The only word he just kept repeating over and over was âlawyerâ.</p>
+
+<p>MARQ:	So, they took me down to the courthouse and once I was at the courthouse, I met my lawyer, who â I had a public defender.  So, I met her and she explained to me specifically what was going on, and thatâs when I had the feeling of [MUSIC] yeah, I messed up really bad.  So, I go to court.  The prosecutor is showing all the information and everything she has, and sheâs talking to the judge, but this is where I found it very weird; I think they made it seem like at the time specifically that I had access to maybe way more stuff than what I did.  I remember the prosecutor said that I had a whole criminal enterprise.  It seemed like she was trying to convince the judge that I had, I donât know, hundreds of thousands of dollars in Bitcoin.  But at the time, I didnât â I hardly had any Bitcoin because I had spent the Bitcoin that I had, so I didnât have hardly any Bitcoin.</p>
+
+<p>JACK:	He didnât like that they were making things up about him, and they were trying to say he had lots of money from doing this.  So, he pleads not guilty.  The judge sentenced him to house arrest while the prosecutors can build the case against him.  Sadly, while heâs in court dealing with this, his friend lost his battle against cancer and passed away.  Marq didnât even get to go to the funeral because he had court that day.  Eventually, the prosecutors for this case and the FBI turned up all the evidence which clearly showed that Marq had accessed the server and taken this data and sold it on the dark web.  They had a significant amount of data showing all of what he did.</p>
+
+<p>MARQ:	They pretty much had me dead to rights, you know?  There wasnât that much of a great defense.  I would say they tried to say that I did $900,000 in damage, which Iâd say was nowhere near that amount.  Later, that damage amount did come down to about $32,000.  So, nowhere near a million.</p>
+
+<p>JACK:	With all the evidence before him, he had no choice but to plead guilty to breaking in and stealing this data.  What helped though was that he had a very clean criminal history, and the whole Ring camera thing came up, too.  It actually looked good for him that he reported that problem to Amazon.  He had to go see a judge to receive his sentencing, and he told the judgeâ¦</p>
+
+<p>MARQ:	You know, I was sorry that I did this.  It was really stupid of me.  The owner of the MSP was actually there in court as well, so I did apologize to him and let him know that it was just very dumb of me to do this.  Iâm not a bad person.  I donât really want anyone to think that, but what I did was dumb.  Hacking isnât â hacking on your own devices, you know, you set up a router or something or you use Kali on your own devices, thatâs perfectly fine, but doing it to someone else, itâs not good.  The judge, he did grant me leniency because the feds, they were â they wanted me to be arrested and go to jail for about ten to twelve months.  He actually gave me thirty days, but the â counting the time that I had already served when I was arrested and held, it was really twenty-four days.  So, all-in-all, I just had to do â I was arrested for â I had to go to jail for [MUSIC] twenty-four days and three years of probation.  But he did say he didnât want to send me off for a long period of time because this was the only thing I had ever done, and Iâm â I explained to him I was trying to change my life around, go back to school for engineering.  I have a family as well, a son, so it wasnât something â like I said, Iâm not a malicious person, but what I did do was malicious, and there of course is repercussions for what you do.</p>
+
+<p>JACK:	When did you serve your sentencing?  Was it this year?</p>
+
+<p>MARQ:	Mm-hm.  It was in October, from October to November.</p>
+
+<p>JACK:	That was just two months ago.</p>
+
+<p>MARQ:	Yeah.</p>
+
+<p>JACK:	Well, last month.  So, you were in jail last month for this.</p>
+
+<p>MARQ:	Yes.</p>
+
+<p>JACK:	Marq is hoping to get another job in the IT space since this is what he knows best.  But he might have a really hard time finding something with a criminal record like this.  So, heâs currently going to school for electrical engineering.</p>
+
+<p>MARQ:	Yeah, yeah.  I hopefully plan to work on circuit boards and stuff like that, but I come from a family of engineers.  My uncleâs a engineer at NASA, my aunt works at NASA, so, yeah.</p>
+
+<p>JACK:	Insider threats is one of the biggest threats companies face today, and because of that, I wanted to bring on Lisa Forte.</p>
+
+<p>LISA:	Yes, you pronounced it correctly.  Most people in the UK pronounce it âFortâ, which is really annoying.  But Americans tend to pronounce it correctly, so thatâs good.</p>
+
+<p>JACK:	Lisa consults with companies to help them handle insider threats.  So first, I was just curious what she thought of this story.</p>
+
+<p>LISA:	Well, for a start, I mean, to still have your credentials working for months afterwards is a little bit crazy.  Those clearly should have been revoked.  But also, I think the crucial thing with all insider threats is to understand that nobody wakes up one morning kind of happy, satisfied, fulfilled, and decides Iâm going to attack my employer.  Itâs a process with many key moments and tipping points that lead to someone becoming an insider threat or, in this particular case, I suppose technically at the time he did it, he was an outsider.  But itâs no â thereâs no bad apple that exists in an organization.  These people, it tends to be a product of circumstances, timing, and personality, and when you combine all three, sometimes it can yield an insider threat.</p>
+
+<p>JACK:	What are the incentives on why insiders even become threats?</p>
+
+<p>LISA:	So, thereâs sort of three typical types of attack that we see with insider threats, and thatâs fraud, sabotage, and theft.  Ignoring fraud for a second, âcause itâs a little bit different from the other two, theft and sabotage tend to happen at the end of employment, so whether thatâs because theyâve been fired or whether theyâve been made redundant or whatever it is thatâs happened to them, those two attacks tend to happen at the end of that employment.  A lot of the motivation is really complex.  Sabotage tends to be very much motivated by vengeance or anger towards the employer, whereas theft often actually is a lot more complicated, and as in this case, it tends to be people who are in difficult situations, thereâs been a mounting amount of pressure, they probably are dissatisfied with their employer or see their employer as oh, well, they can afford it, they can lose this information.  Or even sometimes people think that the project that theyâve worked on is part theirs, and so they take a copy of it.  So, itâs really, really complicated and itâs very easy to just say these people are bad people, but itâs actually a product of a lot of circumstances that leads people to do these things.</p>
+
+<p>JACK:	You have any tips on how to combat this?</p>
+
+<p>LISA:	So, I would say if youâre looking at theft, there are certain departments that are going to be key for that.  Itâs the same with sabotage; only certain departments are going to be capable of doing those kinds of attacks, so increasing some monitoring around those employees in particular, so not your whole cohort of staff, but also making sure that youâre increasing some monitoring during those crucial periods.  So, theft and sabotage happen at the end of employment, so making sure that when someoneâs notice is handed in or theyâre fired or made redundant that you increase that monitoring at that crucial period, and make sure you communicate with your staff that thatâs happening so thereâs no cloak and daggers.</p>
+
+<p>JACK:	I find what Lisa is saying very interesting, because it reminds me of General David Petraeus.  Petraeus was director of the CIA, and before that, he had spent thirty-seven years in the army.  He was rock solid when it came to handling classified and top-secret information.  When someone dedicates their entire career to the US military, they probably are really great at keeping government secrets, and he was, until his marital situation started to unravel.  He was having an affair with someone and he was sharing classified information with her.  He even pled guilty of doing this, and I was shocked to hear this, because someone who is the director of the CIA must have had a rigorous background check and pass many interviews to get into that position.</p>
+
+<p>So to ultimately betray the same entity that employed him for thirty-seven years is crazy.  Oh, and a note here about how he was exchanging information is interesting; both him and his mistress had access to a single Gmail account, and they would write messages back and forth to each other on there, but they would never send these e-mails.  They would just keep them in the Drafts folder, so one person would go into the Drafts folder, read the message, and then delete it and write another message and keep that in the Drafts folder for the other person to see, so there werenât ever any records of e-mails being sent.  Crazy.  But what Petraeus taught me the most was it doesnât matter who you are, because even the leader of an organization might flip some day and become the next insider threat.</p>
+
+<p>(OUTRO):	[OUTRO MUSIC] A big thank-you to Marq for sharing this crazy story with us.  Oh, and thanks to Lisa Forte for jumping on and giving some good perspective, too.  Donât forget to check out darknetdiaries.com sometimes.  Every episode of this show has unique artwork, which if you havenât seen, you gotta go to the website and check it out.  Every episode also has full transcripts posted too, so if you didnât catch something, you can just go read about it there, and thereâs a link to the shop where you can buy shirts with all this artwork on it, too.  Also at the bottom of the page is an invite to the Darknet Diaries Discord server.  Weâve got 10,000 members there and we would love for you to come join us there, too.  Oh, and if youâre on Twitter, please find me there.  My name is @JackRhysider.  Iâd love to hear from you.  This show is made by me, a citizen of the Metaverse, Jack Rhysider.  Sound design was done by the sparkling Andrew Meriwether, and our theme music is by the mysterious Breakmaster Cylinder.  I renamed my printer the other day; itâs now called Bob Marley because itâs always jamming.  This is Darknet Diaries.</p>
+
+<p>[END OF RECORDING]</p>
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

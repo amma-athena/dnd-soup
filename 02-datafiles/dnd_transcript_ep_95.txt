@@ -1,0 +1,984 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>Jon & Brian's Big Adventure â Darknet Diaries</title>
+	<meta name="description" content="Jon and Brian are penetration testers. They're paid to break into buildings and hack into networks to test the security of those buildings. In this episode they bring us a story of when everything ...">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Jon & Brian's Big Adventure â Darknet Diaries">  
+	<meta name="twitter:description" content="Jon and Brian are penetration testers. They're paid to break into buildings and hack into networks to test the security of those buildings. In this episode they bring us a story of when everything ...">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/doorway.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/95/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Jon & Brian's Big Adventure â Darknet Diaries" />
+	<meta property="og:description"        content="Jon and Brian are penetration testers. They're paid to break into buildings and hack into networks to test the security of those buildings. In this episode they bring us a story of when everything goes wrong." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/doorway.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/95/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/doorway.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/95/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="Jon & Brian's Big Adventure â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/doorway.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 95: Jon & Brian's Big Adventure</h1>
+		
+		  <a href="/categories/#penetration test"><div class="button button-light">penetration test</div></a>
+		  &nbsp;
+		
+		  <a href="/categories/#social engineering"><div class="button button-light">social engineering</div></a>
+		  
+		
+		<p>22 June 2021 | 74:11</p>
+
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://www.podtrac.com/pts/redirect.mp3/traffic.megaphone.fm/ADV7510154272.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/95/",
+			   "title": "Ep 95: Jon & Brian's Big Adventure",
+			   "subtitle": "74:11"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			
+			    <p><a href="/transcript/95">Full Transcript</a></p>
+			
+
+			
+			
+
+			<p><img src="/imgs/doorway.jpg" alt="A person standing in a doorway" /></p>
+
+
+			<p>[START OF RECORDING]</p>
+
+<p>JACK:	Hey, itâs Jack, host of the show.  For a while, I was doing photography as a hobby.  I specifically liked taking pictures of old buildings.  My town had a lot of old buildings and sometimes at night I would go for a drive looking for an old building to photograph.  I liked going at night because it was quieter and I could light it the way I wanted, making extra drama or intrigue to it, and I just feel more active at night.  I took a drive towards the old part of town.  It was down by the river and the train tracks.  There was an abandoned train station which was cool, and an abandoned factory, but also a bunch of abandoned houses, some of which looked really interesting.  [MUSIC] I drove around there, slowly going through the area.  It was really quiet; no cars or people anywhere.  I guess this area of town turned more industrial.  There were factories all around because it was right on the river, and the train tracks made it easy to load up stuff and ship it out.  As I was driving around, I passed by a facility of some kind.  The place was huge; it covered a few blocks, actually.
+<!--more-->
+It was some kind of food processing plant.  One of the larger food distributors in the country was here.  Maybe some kind of cereal was made there or a beverage or something.  It was big enough.  It was a huge property with many big buildings on there, and this place was fortified like a prison.  Like, there were twenty-foot fences with barbed wire and a massive guard gate.  I drove up to the guard gate just to take a look, but then turned around and kept on cruising by because across the street there were some interesting-looking abandoned buildings and because nobody was around, I could go as slow as I wanted and just look at them.  I was driving around and I found an abandoned apartment a block away.  The front of it had partially fallen off and you could see through the wall to see the stairs going up.  It was wild.  I parked on the street and got out to take a look.  I first got out just to take a look around.  I didnât even have my camera out, and not one but two police cars swarmed right over to me.</p>
+
+<p>They jumped out of their cars and started asking me questions; what are you doing here?  Why are you here at night?  Why are you driving around this part of town?  I was like, what, what, what?  I donât understand.  Did I do something wrong?  Tell me, what did I do wrong?  But they kept grilling me.  They even called in more cops to come.  The situation was getting tense and I was scared.  There were three police cars here and literally no one else for like, a half-mile in any direction.  Was this a dead-drop location that some drug dealers used and the police were surveiling it, waiting for someone just to come?  Did someone commit a crime nearby and my car matched the description?  Surely there had to have been some kind of mix-up here.  I explained that Iâm just a hobby photographer here to take pictures, but they didnât seem to think that story was good enough.  They wanted to see my camera and what other photos were on it, but I hadnât taken any pictures yet, so my memory card was empty.  I asked them if someone had called the cops on me or what this was about, and thatâs when they asked me if I had anything to do with that food processing plant a block away.</p>
+
+<p>Thatâs when it all clicked in my head; me driving by that food processing plant, slowly just checking things out late at night, and then driving by it a few times, that was enough to make me look suspicious.  Food companies take security very seriously because sabotaging the food supply is a serious risk, so some security guard thought that something wasnât right with the way I was driving and called the police on me.  Then, yeah, this was such a big company in this part of town that the police were more than happy to come right away.  I was eventually let go but it took the police quite a while to be convinced that I was harmless.  I think the only reason they let me go is because there were reports of some other people racing cars a couple blocks over.  But this taught me a lesson that sometimes you have to be careful about looking suspicious near certain businesses or neighborhoods late at night.</p>
+
+<p>(INTRO):	[INTRO MUSIC] These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS] [00:05:00]</p>
+
+<p>JACK:	This is the story of Jon and Brianâs big adventure.  But who are Jon and Brian?</p>
+
+<p>BRIAN:	Iâll kick it off if thatâs cool.</p>
+
+<p>JACK:	This is Brian.</p>
+
+<p>BRIAN:	Iâm Brian Halbach.  Iâm one of the red-teamers here at RedTeam Security.</p>
+
+<p>JACK:	Ah yes, a red-teamer.  That means heâs an attacker in an attack training scenario.  In this case, companies hire him to attack their computer networks or try to physically sneak into a building and get into the network that way, because companies want to know if thereâs any way a real bad guy can get in, which means Brian has to be good at many things.</p>
+
+<p>BRIAN:	Physical pen testing, red-teaming, regular old pen testing.  I also really love social engineering over the phone and in person.</p>
+
+<p>JON:	My name is Jonathan Studebaker.</p>
+
+<p>JACK:	Jonathan is on the same team as Brian.  They both work at RedTeam Security.</p>
+
+<p>JON:	Just like Brian, I do a little bit of everything.  Primary background is in networks, internals, externals, pen tests, web apps, API tests, but also the physicals, the social engineering, phishing, stuff like that.</p>
+
+<p>JACK:	Now, when you get hired to break into a companyâs networks and buildings for a living, it can be exciting.  Theyâve gotta find ways to hack into the network or sneak into the building, get past security, and then get access to the most sensitive company information, and then get out with it.  Thatâs why I wanted to bring them on, to hear a story about when they had to do that.  They both are really good with computers.  They can write code, take over computers using exploits, and know quite a bit about tech.  On top of that, theyâre well-trained at bypassing physical security.  Theyâre good at getting locked doors open, avoiding cameras, and being able to sneak past stuff and social engineer their way into places.  This story theyâre about to share with us takes place when they were both sort of new at RedTeam Security.</p>
+
+<p>BRIAN:	This story was both of our big breaks into physical.  This is when we were earning our stripes and we were on our own.  So, in the past, I had always been the guy in the background.  I was the getaway driver in one case, or in another case, they â I was the sheep fed to the lions in essentially a social engineering attempt they knew was gonna fail.  But this was the first time that Jon and I were assigned a full mission and said alright, you guys are â youâve learned everything, youâve practiced, you know the stuff now.  Now, go out and apply it, and thatâs the â what weâll be talking about this time.</p>
+
+<p>JACK:	[MUSIC] A new assignment landed in their inboxes.  A company had hired them to test their security.  They wanted to see if these guys could find weaknesses in their physical security and get in somehow.</p>
+
+<p>BRIAN:	This one company did a lot of different things, so I canât even put them in one industry âcause they spanned multiple industries.  We were in charge of getting into their headquarters building which we deemed to be the last because that was actually the most protected.  They also had these remote different locations that people didnât actually work at but were â had sensitive technical things there that needed to be protected.  They had a whole perimeter intrusion detection system thatâs supposed to detect if somebody comes up.  They had all sorts of different types of security around these different areas.  They spent a lot of good money and they have people sitting there monitoring it 24/7, and thatâs where we come in.  They want us to point out some weaknesses, say hey, youâre doing good in this area but maybe this area could be beefed up a little bit more.</p>
+
+<p>JACK:	The assignment seemed pretty straightforward; try to break into their main headquarters and four other smaller locations.</p>
+
+<p>BRIAN:	Objective One is definitely, you know, can you get in?  Objective Two; we actually had two different things we could go â is either look for a network connection and we had a bag full of Raspberry Pis that we were able to plug in, or we also kinda had calling cards and we would just leave behind a calling card as proof that hey, we got this far.  âCause there are certain buildings that they had already tipped us off that hey, donât get into the networking area but just get into this spot over here so we can demonstrate impact to the people who get to decide budget, which is often a driving factor of these, and just show that we could get into this area.</p>
+
+<p>JACK:	Now, this was mostly a covert mission.  I mean, the company was paying them and the director of security knew about this, but pretty much no one else at this company knew they were coming, which meant that this was also a test for their security team to see if they could catch these guys as they tried to [00:10:00] break in.</p>
+
+<p>BRIAN:	Yeah, we had two contacts; we had the director of security and then somebody else that worked for him that â only those two knew that this was going on.  Everybody else didnât really know.</p>
+
+<p>JON:	I think itâs also important to mention how we communicate with those clients as weâre doing one of these engagements.  This goes for not just the execution but for the recon and the planning stage.  We communicate a lot with our clients through the entire experience.  As soon as we arrive in town, we send them a text or give them a phone call and say hey, weâre here, weâre gonna start at this place.  We give text updates as weâre going.  I think itâs a pretty important part to this whole thing to ensure the safety of everybody involved and make sure that we donât end up in a sticky situation like Brian was saying, going into the wrong door or doing something at the wrong time that could potentially not end well for somebody involved.</p>
+
+<p>JACK:	Okay, their marching orders were given, they knew what they needed to do, but thereâs a lot to do before jumping on a plane and heading to the location.</p>
+
+<p>BRIAN:	[MUSIC] So, yeah, to kinda prepare, we did some mapping out of the facilities and the different locations ahead of time using the advanced hacking tool Google Maps.  Yeah, we did a bunch of OSINT and kinda drew up oh, hey, this is â these are the different locations.  From these old pictures, it looks like thereâs cameras here and here, thereâs perimeter sensors here and here, these are the areas we can probably drive by.</p>
+
+<p>JON:	We also look at social media of employees, try to figure out what the dress codeâs like, are there any visible badges that we can see, anything that might be helpful.  A lot of stuff gets posted on social media and Instagram might have a photo of a company party but it could also provide insight like there is a room and right behind it, you can see â looks like maybe a server closet or something like that.  You know, so, OSINT is a huge piece that company websites often have lots of imagery or information thatâs beneficial.  I like to go to county assessor websites too because oftentimes you can find fairly detailed drawings of â if not a complete floor plan, at least partial.  It gives you some insight into the building and an idea of what youâre gonna be looking for when you go for the in-person recon.</p>
+
+<p>JACK:	They spend time collecting information about this company, all which is available publicly for anyone to see, anything that might give them a better knowledge of the building or the people inside.  This way they could be prepared, but they didnât find much on social media.  Perhaps this company had a policy not to post about work on social media because that could be a security risk.</p>
+
+<p>BRIAN:	I guess the one really good piece of information was they have a fleet of cars and trucks, and from these Google photos, we were able to see the color of their cars and trucks, so we were able to actually get a rental to potentially blend in.</p>
+
+<p>JACK:	Because they werenât finding any good information online that would give them a clear way in, they decided to fly out to this place in person to gather more information on the facilities.</p>
+
+<p>BRIAN:	Our first trip out there, before the trip for us to actually break in, was just us scoping everything out in person.  So, thatâs what we did first and we went and got a rental car and drove to these locations.</p>
+
+<p>JACK:	Now, what they aim to do here is to get a better understanding of each facility that they need to break into without breaking into any; just sort of drive by, take pictures, watch for patterns of whoâs coming and going and at what times.  Maybe this can give them a better plan for how to get in.</p>
+
+<p>BRIAN:	So, we were driving around the different locations and we waited until their business had closed up.  Yeah, we did a whole bunch of nighttime recon.  We went out to each of the five locations.  We were trying to take covert pictures, covert videos for noting all the important, different spots of the different perimeter protections they have in place, where all the cameras are, the different sensors they have and all that kinda stuff, and mapping it all out.  [MUSIC] Then in the morning, our point of contact sends us via text some nice pictures of our faces that their Security Operations Center took of us as we were driving around to all these different locations.</p>
+
+<p>JACK:	What?  They got busted in their recon phase?  This was not supposed to happen.  They didnât go on any of the properties.  They only drove by taking photos in a sort of covert way.</p>
+
+<p>BRIAN:	Actually, what they said what tipped them off was we drove by in the same rental car three times.  They had a security operator whoâs watching cameras and said hey, thereâs a rental car that is driving in circles around all of our locations.  Thatâs when they kinda got put on alert to hey, something weird might be happening.</p>
+
+<p>JACK:	So, their security team were able to use the cameras on the buildings to zoom in and get good, clear photos of both of them driving around.  Their cover was blown.</p>
+
+<p>BRIAN:	Yep, itâs like, you were trying to be covert but you still stood out and you got flagged.  So, at that point weâre like oh, shoot.  So, we actually went and we switched rental cars.  Weâre like hey, theyâre already on the lookout for this car and theyâre looking â theyâre on the lookout for us dressed the way we were, so we went and we drove â I donât know, we drove like an hour to the closest rental place and then said hey, we need a new car.  We came up with some BS excuse, got a new car that looked totally different, then also went and bought different clothes.  So, now we are in a car that looks like a local car that has local state plates on it, went to the local Walmart and bought clothes for the school that was in the same town in hopes that now weâre gonna blend in a little bit more âcause theyâre looking for somebody in a blue car driving around and now we are in a white car and we are wearing â and we have plates of the same state and weâre wearing completely different clothes that hopefully help us blend in, âcause â I got a hat for the local school and everything to make it look like I belonged.</p>
+
+<p>JON:	Even though we got caught, it was still super-useful information because it let us know that they had really phenomenal security cameras and a very vigilant security and staff who were looking out for things like this, and so, it really helped us plan for the execution stage, like how we avoid these cameras and how do we avoid being spotted?  Because I think when they took those pictures of us, we were about a block and a half away from the actual building.</p>
+
+<p>JACK:	Wow.</p>
+
+<p>JON:	Yeah, really phenomenal cameras, yeah.</p>
+
+<p>BRIAN:	They essentially had a very tall vantage point that they planted this amazing pan-tilt-zoom camera on and were probably able to zoom due to also the elevation, over half a mile, and get a nice, clear photo of the both of us.  Yeah, we realized hey, we need to get out of the vantage point of this tower that has this camera on it also.</p>
+
+<p>JACK:	Oh my gosh, these guys are really good.  Yeah, thereâs gotta be some stress going through your mind of like, oh my gosh, do we look like amateurs to this point of contact?  Are we totally burnt?  You know, youâve probably â running through your head like oh crap, we want to look good here and weâre already screwing up and we havenât even started.</p>
+
+<p>BRIAN:	Yeah, thatâs kind of exactly what I was thinking.  I was like oh, shoot, this guyâs gonna hate us.  Heâs gonna be like oh, we got some amateurs on here.  âCause, I mean, we also brought a camera that has a nice, long-range zoom on it.  Thereâs different techniques that we can use for covert observation.  We just read the situation wrong from our OSINT, thinking that hey, we know we need to blend in but we didnât think that we needed to go full stealth-mode on this whole recon operation.  So, yeah, a learning opportunity for us but honestly, it was just great on them for being able to recognize that hey, thereâs a weird rental car thatâs clearly circulating around our different locations.</p>
+
+<p>JACK:	Now, still at this time, only their point of contact knows what these guys are up to.  The actual security team inside has no idea that this is just a test and is treating this very seriously.  So, Brian and Jon took extra precautions to finish up their recon phase without being caught again and went back home.  They came up with a plan of action.  They told their point of contact everything; how theyâre gonna try to get in, what weaknesses they saw in their recon, and more.  At the same time, they waited a few weeks as a cool-down period, knowing that security team might be on high alert, looking for two guys driving by over and over, wondering what they were up to.  They got their plan approved and a date set for them to come back.  They specifically requested their point of contact notify local law enforcement so the police know that this is a test, because this was a major business in a somewhat small town, and so, the police might give extra-special attention at protecting a company like this.  So, with their plan approved, they started packing for the execution portion of this assignment, but what do you bring with you to try to break into a very high-security building?  Well, Jon and Brian have a checklist for that.</p>
+
+<p>BRIAN:	So, we actually have whatâs called a pack-in and pack-out list so that we donât actually forget things.  Oftentimes, we pack a lot more things than we think weâll need because weâd rather have it and not need it than all of a sudden be like oh, shoot, we really need this piece of equipment and then itâs a couple thousand miles away.  Jon, do you have the pack-in and pack-out list, orâ¦?  I think theyâreâ¦</p>
+
+<p>JON:	Yeah, Iâm gonnaâ¦</p>
+
+<p>BRIAN:	âCause then we can give you an actual list.</p>
+
+<p>JON:	[00:20:00] Alright, I did find that load-out list for this particular one.  [MUSIC] So, in this case, we brought some long-range RFID readers for cloning badges like entry-access badges, we packed a LANstar, we packed a Proxmark III for cloning RFID cards, we had a very small wireless router, we brought some shortwave radios for communication, a set of binoculars, a couple sets of night vision goggles.  We use those for a couple different purposes; one of which is seeing when itâs dark at night, but the other thing theyâre really great for is if the client has night vision cameras of their own.  They emit infrared light out of a little LED, typically, and you can see that with the night vision goggles, so pretty much stands out like a beacon.  We use that for night recon.  In this case, went to each location with those night vision goggles and looked around to see if we could see any interesting points of light that maybe shouldnât have been there that could have been cameras.  A bag of Raspberry Pisâ¦</p>
+
+<p>JACK:	A bag of Raspberry Pis; now, theyâre not bringing along tasty snacks.  A Raspberry Pi is a little computer which is super-cheap and itâs about the size of a wallet.  Its small size means you can plug it in and hide it behind a plant or a table so it wonât be seen.  Theyâve got these things pre-configured to phone home as soon as theyâre plugged in.  So, if they get into a building and they see an open Ethernet port, they can plug in their Raspberry Pi into the network and potentially have internal access into this network.</p>
+
+<p>JON:	Yeah, so, all the bypass tools for actually getting in, so we brought some under-the-door tools, brought some double door tools, we brought a couple of sets of lock picks, hand-held flashlights, cameras, GoPros.  Thereâs a tool that we refer to as a Shovit tool.  Itâs also known as aâ¦what do they call it, Brian?  A mini jim?</p>
+
+<p>BRIAN:	Yeah.</p>
+
+<p>JON:	Itâs kinda like a Slim Jim.  Itâs a thin piece of metal with a hook on it and we use it to bypass doors.  I brought a bunch of LAN cables, we also brought a whole bunch of disguise-type gear for social engineering like safety vestsâ¦</p>
+
+<p>BRIAN:	â¦hard hats.</p>
+
+<p>JON:	â¦hard hats, we brought a couple of ladders because some of the locations we were trying to get into had barbed wire fences.  That was really the only access in, was going over a fence.</p>
+
+<p>JACK:	Well, you canât take a ladder on a plane.</p>
+
+<p>JON:	Well, so, thereâs a couple of different solutions for that.  So, we have aâ¦itâs like a periscoping ladder that collapses down to a little â itâs about two feet by eighteen inches, maybe.  Itâll expand up to ten feet which is typically good enough to get over a fence.  Then we also bring a fire escape ladder sometimes for the getting down, âcause we can hook them on the top of the fence and then just go over and get down that way.</p>
+
+<p>BRIAN:	Or in the past, sometimes we would have so much equipment that we couldnât fit the periscoping ladder, so we would actually go to a hardware store, buy the ladder, buy other equipment, use it for breaking in, and then when weâre done, return it.</p>
+
+<p>JACK:	I just picture this place in your office somewhere that has all these tools and youâre just shopping around like oh yeah, weâre gonna need that, weâre gonna need that, letâs grab a couple of those.</p>
+
+<p>BRIAN:	Yeah.  We actually got a big old storage unit just full of physical equipment.  Yeah.  Fun stuff, fun toys.</p>
+
+<p>JON:	[MUSIC] So, I mentioned the barbed wire fences, so we also brought a heavy wool blanket.  Once we climb up with the ladder, we toss the wool blanket over, set down our other ladder on the other side, and then that allows us to get over there without ripping our clothes open or ourselves open.  We brought along a borescope, basically a little camera that interacts with our cell phones, lets us see sometimes under doors or just through small gaps or around corners.  Letâs see, we brought some lanyards along.  This is if we were able to successfully clone badges.  We brought a plug-spinner which is a tool.  If you pick a lock and if you accidentally pick the lock in the wrong direction where itâs either not gonna open the door or unlock the lock, a plug-spinner is a device thatâs got a spring in it and it basically â you pick your lock open and then insert the plug-spinner, and then when you release the spring, it spins it fast enough in the opposite direction that the pins wonât engage again.</p>
+
+<p>So, that can be a really handy tool.  Itâs also really handy to re-lock a door if you are leaving.  We also brought a [00:25:00] hinge pin tool which is basically a little spring-loaded piece of metal.  So, say you get to an â maybe an interior door but itâs locked and you â say itâs their secure room and the hinges are mounted on the wrong side; theyâre outside.  You can actually use this little spring-loaded tool, pop the pins out of the hinges, and then you can just take the door off.  We also brought some tools which are similar to the Shovit tool that I mentioned earlier.  Oh, a set of common keys which we also used on this engagement.  Thereâs certain keys that are used a lot from â so, Iâll give you an example.  Linear and DoorKing keys, so these are automated gate systems where youâre â you maybe go up and you enter in a pin on a pinpad, and itâll raise your gate up or open your gate.</p>
+
+<p>Well, these DoorKings and the Linears, theyâre very frequently keyed using basically a generic key that you can buy on eBay or Amazon.  So, we brought some of those along and managed to use those on this engagement.  Then, we also bring along other things like toolkits.  On occasion something breaks and we need to repair it.  Usually one of our tools is a problem, so we packed a multimeter in this case, and the reason for that is one of our long-range RFID readers was kinda fritzing out.  I think a wire was coming loose, and so, being able to troubleshoot that while youâre there and not having to try to track down a multimeter and figure out those issues or if you need a custom wrench for something or something like that, so bring that kinda stuff along.  I believe Brian brought his SEARAT.  Itâs on this list.</p>
+
+<p>BRIAN:	Yeah.  A SEARAT is just an entry tool thatâs typically used by fire departments.  Only in our case, weâre using it to get into places, different places.  Itâs kind of a all-in-one entry tool which is a lot of fun.  Itâs got the Shovit knife, a key blade, a window-breaker, gas shut-off, lots of other fun stuff.  Itâs your all-in-one entry tool, kind of.</p>
+
+<p>JACK:	Alright, so you â man, you guys really packed it in.  This sounds like five bags worth of stuff.</p>
+
+<p>BRIAN:	I think it was probably just two bags, but yes.  We had everything â everything kinda had its own little compartment and its spot, so we knew where to go to get different items so we wouldnât be scrambling in the dark.</p>
+
+<p>JACK:	Okay, so, at this point they did the recon, created a plan, got it approved, packed their bags, and flew to this town.  Stay with us because after the break, it all goes wrong.  Brian and Jon flew to the town where all five target buildings are located.  They arrive and get settled, and then start getting to work.</p>
+
+<p>BRIAN:	[MUSIC] We spent the entire day going around this town trying to find its â the employees of this company and clone their badges.</p>
+
+<p>JACK:	This would be great if they could get an employee badge.  These little badges typically contain RFID circuitry in them, so when waved at certain doors, itâll open the door.  Brian and Jon know they will need to try to get past doors, so having a badge to get in could be gold.  They brought an RFID cloning device, so they really just need to get close to someoneâs badge, like a foot or two away, and if they can do that, they can make a copy of it without that person knowing a copy was just made.</p>
+
+<p>BRIAN:	Which was â [00:30:00] normally itâs a very feasible activity.  Itâs a lot more difficult of an activity when thereâs a pandemic going on and youâre not supposed to be getting within six feet of people.  But our long-range reader was on the fritz and we needed to get about two feet away from them.</p>
+
+<p>JACK:	So, back up a second; how would you find someone who works there around town?</p>
+
+<p>BRIAN:	Oh, so, we staked out their headquarters and we waited for their employees to drive off for lunch or drive off for â to other locations throughout the city that theyâd have to go to do their jobs.  We would follow them in our car and then we would bump into them around town because, yeah, we donât want to tip our hand yet and try to just â well, everybody knew everybody at the headquarters, so we didnât want to tip our hand there.  So, we followed the employees as they would go around town and then clone their badges as they were waiting in line at a coffee shop or if they were going somewhere for lunch.</p>
+
+<p>JACK:	Oh, thatâs villainous, if you ask me.</p>
+
+<p>BRIAN:	Yes, it kind of is.</p>
+
+<p>JACK:	So, some poor guy is just, yeah, randomly picked âcause he was going for coffee and now heâs gonna be the door in.  So, were you able to get close enough to scan, or how did it â what happened there?</p>
+
+<p>BRIAN:	So, we had several occasions where we thought we were close enough to scan.  Our long-range reader is actually in a laptop bag and itâs â it vibrates when we get a read.  We never got a good read on the employees mostly because, well, because of the pandemic nobody was going into any coffee shops or restaurants.  People were just hitting up the drive-through or they were going in and out of a shop real quickly and we just werenât â and they were leaving the badges in the car or other areas and then we werenât ever able to get a good read which was very surprising.  Thatâs oftentimes our entry into all these locations is hey, we just got reads off of five different employees.  Well, the pandemic actually made a lot of companies more secure because of that.</p>
+
+<p>JACK:	What does it look like if you were â if I was the â your target and Iâm getting some coffee and I look behind me and I see you trying to read my badge, what does it look like when youâre doing that?  Are you just holding a bag, looking off in the distance or are you sitting at a table with a wire going to a bag and thatâs on a chair thatâs â youâre pushing closer and closer to me, orâ¦?</p>
+
+<p>BRIAN:	Well, normally these are pretty good long-range readers, so I donât even have to get that close to you.  If weâre in line in a coffee shop, if I can just step at the right angle to your badge, I can get a read.  So, Iâll just put my phone up; Iâll be on a phone call and kinda pace back and forth as Iâm talking on the phone, just naturally as somebody may in a coffee shop, try not to disturb everybody else, and just kinda pace around until I can feel my bag vibrate.  I donât have to hold it up.  I donât usually have to adjust it.  I can pull on the strap and let it go up and down if needed, if that will help.  But yeah, a lot of times Iâm just walking around with my laptop bag having a phone call and if I get close enough and get the right angle and Iâm a couple feet away, Iâll get a good read.</p>
+
+<p>JACK:	So, despite following multiple people out of the building, they didnât get to clone anyoneâs badge that day.  I guess the security tip here is if you donât want your badge to be cloned, donât bring it to public places like coffee shops.  So, they waited for night to hit up the first building.  Each of the buildings theyâre supposed to test are within fifteen miles of each other, and they were going to try to hit all five locations in the same night.</p>
+
+<p>BRIAN:	[MUSIC] We arranged the locations âcause we gotta pick which order we were gonna break into in.  We arranged them in the order that we thought would be most to least successful, hoping that we would start around midnight and then about 4:00 AM, that the SOC team â since itâs a 24-hour SOC and theyâre working 12-hour shifts, that their â itâs hopefully about the end of their 12-hour shift and theyâre gonna be getting sleepy at the end of it.  So, we wanted to target our last location in conjunction with when we were thinking the SOC team may be slipping.</p>
+
+<p>JACK:	The SOC, or S-O-C, stands for Security Operations Center.  This is where people are sitting watching cameras and computers for alerts in the network and facility.  This was actually a joint SOC which watches both physical and network security problems.  Jon and Brian know they have to defeat the people and computers and cameras in the SOC in order to be successful.  So, they figured the overnight team was probably smaller and maybe less focused, because staring at monitors all night when nothing is happening can be boring to the point where you start getting distracted.</p>
+
+<p>BRIAN:	Yeah, so, Location One was in a residential neighborhood and what they were trying to protect in this thing was this shed that held important equipment including radio and transmitting equipment [00:35:00] that would be bad if it was damaged by an outsider or if someone was able to put an implant in and take control of.</p>
+
+<p>JACK:	This was a facility that didnât have any staff.  It was basically just a locked shed, but with a tall fence with barbed wire around the perimeter.</p>
+
+<p>BRIAN:	It was actually in a residential area.  We were less concerned also about the police and more concerned about potentially the neighbors taking matters into their own hands, because this was also close to around the time of civil unrest in America.  So, I was more concerned about the neighbors thinking that Iâm some radical super-soldier breaking into their neighborhood instead of just me doing my little security testing, so weâre â I personally was more concerned about the neighbors for this one location than I was about the police, just âcause from our recon it looked like they had very minimal perimeter detections on this.  There was a sign that said there was cameras, but we didnât see any cameras.  We scoped out around it; there was a sign that said it had these other protections but we never saw anything being actually actively implemented.</p>
+
+<p>They had the signs there to say itâs there, but we didnât really think that it was.  [MUSIC] We showed up late at night when itâs dark, parked a couple blocks away and walked up to this area.  Thatâs when we noticed that the gate itself had such a big gap on it that if you just gave it a good tug, you could actually get â pass a whole person through this gate.  So, we never had to go over, didnât have to go over the barbed wire, didnât have to worry about setting off any sensors because once we were past it, our point of contactâs like oh, oh, you got â okay, I guess youâre already in there.  So, we didnât set off any sensors âcause nothing was ringing at the SOC.  But we hadnât accomplished our objective yet.  Just getting past the fence was not enough.  We needed to keep going, so thatâs when we went up to this shed that had all this equipment in it.</p>
+
+<p>JACK:	Now, even though it was dark out, this little building was well-lit, so anyone watching would clearly see two people going in.  On top of that, there were street lights making them visible, too.</p>
+
+<p>BRIAN:	So, we kinda needed to be fast because we didnât want to dilly-dally in this good, well-lit area where everyone can kinda see us.  So, yeah, we got through and kinda put our equipment on the side.  Then weâre like oh shoot, okay, how are we gonna get past this next thing which is now a set of doors?</p>
+
+<p>JACK:	There were two doors on this building but not like a double door.  It was two different doors which probably meant there were two different areas inside the building to get into.  They came to the first door which happened to be well-lit.  The door was very strong; it had a deadbolt on it.  They looked to see how well it was installed, but it was hung right.  There was no wiggle when you pull.  There were no gaps around the bottom or the sides to slide something into and try to unlock it from inside or the other side.  Itâs possible they could do something like pick the locks but that takes a while, and theyâre standing right under a light.  So, they just moved on to the other door to see if they could get that open.  The other door was not installed the same; it had a bit of a looser fit to it, so Jon had an idea.</p>
+
+<p>JON:	Yeah, so, in this particular case â so, with your typical door that youâd find, say, in â even your front door of your house; so, if you were to open the knob and look at there in â at the â kind of the end of the door, the latch part that seats in the frame, thereâs whatâs called a spring latch and then thereâs whatâs called a deadlatch.  Deadlatches have an extra little post that when itâs depressed, will prevent the latch from being pushed and essentially lets you in the door.  You can think of it kind of like â if youâve ever seen in the movies or possibly ever done it yourself, when somebody takes a credit card and they stick it in that gap in the door and it goes behind the curved part of the latch and pushes it open, thatâs essential what weâre doing.  But with a deadlatch thatâs properly hung, itâs not supposed to allow you to push that back in.  In this case, it wasnât properly hung and the deadlatch actually falls into the frame of the door which then allows that bypass tool to work.  Thatâs what we did; we basically credit-carded the door open.  Not with a credit card; we used a mini jim or a Quick Jim tool for it, but, you know.</p>
+
+<p>JACK:	This took Jon about twenty or thirty seconds to get it open, and once open, they just both slipped inside.</p>
+
+<p>BRIAN:	Weâre taking a look around inside and there wasnât really anything in this side of the shed.  It was mostly empty.</p>
+
+<p>JACK:	Huh, too bad.  Nothing in here of value; no equipment, no computers, no network jacks.  Time to go back out and try that other door again.  [00:40:00] But as they were walking out, they looked up at one of the walls.</p>
+
+<p>BRIAN:	[MUSIC] There was a set of keys tacked on the wall.  I go well, I wonder what those keys are for.  So, we looked at them and sure enough, the keys actually opened up the other door that was properly hung; the hinges werenât able to be popped, couldnât fit an under-the-door tool.  It would have been way too difficult to lock pick, but the keys were just right there, so we didnât have to worry about using any of those fancy bypass tools.  We could just take the key, unlock it, and then get into that actual secured area.</p>
+
+<p>JACK:	Bingo.  Now they go in the other side of this building, and this side had many valuable things in it.</p>
+
+<p>BRIAN:	Then, yeah, when we were inside of there, there were some network devices.  All the ports were actually occupied, so we werenât gonna plug anything in because we were supposed to demonstrate impact and demonstrate that something could be done, but this was also for some very important equipment, and we donât actually want to cause any harm.  So, took a bunch of pictures, left our calling card, decided not to plug in a Raspberry Pi because in order to plug in the Raspberry Pi, we have to unplug another piece of critical equipment which we deemed not worth it.</p>
+
+<p>JACK:	They also noticed a security panel in this facility which should be monitoring and alerting when the door was opened, but for whatever reason, that panel wasnât hooked up properly.  So, they pretty much knew they werenât detected at all.  There were no cameras and they didnât trigger any alarms.  So, they gathered their evidence, took their pictures, and locked up behind themselves.</p>
+
+<p>BRIAN:	Then again, I slipped through that gate.  Jon then slipped past the gate after me.  We got back into our rental car, let our contact know about everything we did and said hey, weâre onto our next location.</p>
+
+<p>JACK:	The first building was a complete and total success.  They got full access to the entire facility.  When they got back to their car, they had a mini-celebration, even.  It felt good.  They told their point of contact what they did, and they were moving on to the next building.  By the way, the point of contact, which is the director of security, decided to stay up all night to watch all this go down.  He was logged into his computer remotely from home, watching what the SOC was doing about all this.  So, he was texting back and forth with them, letting them know what the SOC had saw, and so far, they got in and out completely undetected.  This sort of impressed their point of contact and he was excited to see what they were gonna do in the second building.  They pulled up to it with their car.</p>
+
+<p>BRIAN:	[MUSIC] This one is in a much more remote area, so thereâs not really â thereâs just fields and fields behind it.  In front of it there was a country road and then across it, just more fields and fields again.  Itâs another remote location, multiple buildings, but theyâre all unmanned.  Even during the daytime, theyâre all unmanned.</p>
+
+<p>JON:	Although, there was another business that was next door to it, but they were closed in the evenings, so we didnât think itâd be an issue.</p>
+
+<p>BRIAN:	Yeah.  So, this one was a lot trickier and we had already done our recon to figure out our approach.  This one was not the same where, you know, you can just slip in the front gate.  This one was well-armed, multiple layers of perimeter defense and cameras.  This was actually one of the locations that when we drove by, we pulled into one of the side driveways and they snapped some nice, clear pictures of our face from that driveway.  So, we knew that they â those cameras were triggered to alert somebody if they pick somebody up driving into their area.  So, we needed to go with a different approach which we decided from our recon was gonna be from the rear of the facility.  We thought that this was gonna be a great approach because it had two layers of barbed wire fences but in the back, some of that fence was old and didnât have barbed wire.</p>
+
+<p>JACK:	So, they parked their car out of sight from the facility, they got out with their gear, and went around back of the building.  But when they arrived around back, it wasnât what they expected.</p>
+
+<p>BRIAN:	They have a brand-new fence on that area with newer and taller barbed wire.  So, that one threw us for a loop.</p>
+
+<p>JACK:	Apparently during that two-week cool-down period, someone saw this part of the fence was old and didnât have barbed wire, and so, it was replaced.  This company really did try hard to keep their buildings secure.  Okay, so the guysâ original plan was foiled.</p>
+
+<p>BRIAN:	Came up with a new plan.  Wasnât really hard to come up with because we could tell that all the cameras were focused so heavily on that front entrance that nobody was suspecting that someone was gonna climb over two layers of barbed wire fences through the back, which is exactly then what we were gonna do.</p>
+
+<p>JACK:	[MUSIC] Okay, makes sense.  The only way to get into this place undetected is to go through where there arenât any cameras pointed.  So, even though that area had two high barbed wire fences, it was the best choice.  It sounds risky, but they came prepared to climb fences.  In fact, it was pretty easy for them.  They had their ladder with them which made it easy to climb up, and they brought a thick wool blanket to throw on top of the barbed wire, which made it easy to go over.  Then they had an escape ladder that they could just hook on the top of the [00:45:00] fence and make it easy for them to get down.  Easy stuff.  They both go over the first fence no problem.</p>
+
+<p>BRIAN:	As weâre going up, the next fence actually had a shed in line with the fence that didnât have barbed wire over the top.  So weâre like hey, you know whatâs gonna be a lot easier than going over a whole ânother layer of barbed wire?  Letâs just climb on top of this shed and go over it.  So, that was our next step which sounds pretty easy.  Jon pops the ladder up, I climb up on top.  I got my bag full of equipment on me.  Jon then hands me the fire escape ladder which Iâm supposed to attach to the side and then climb down.  But in this case, I actually drop the fire escape ladder [MUSIC] on the ground, so now Iâm stuck on top of this shed on the other side.</p>
+
+<p>JACK:	Hm, Brian made it over both fences but now heâs stuck on top of this shed with no way down.  This shed is about twelve feet tall, too.  He stands up and looks around.  While on top of this shed, he looks at the neighboring property which has a building on it.</p>
+
+<p>BRIAN:	That building was owned by a university.  What we kinda forgot is universities have their own police department.  We never notified the university police department that we were doing this activity.  Nor did we tell the regular police hey, make sure you notify the university police.  It was kind of a little oversight.  So, Iâm up there and thatâs when I kinda realize oh shoot, I think there might be university police about two hundred feet away from me.  There was a university police car over there, but then it just kept driving.  But at this point my heart rate is up, adrenaline is up, Iâm on top of this shed and I think you know what?  Itâs only twelve feet.  It canât be that high up, and I jump.</p>
+
+<p>JACK:	He landed hard on the ground.  His feet twisted and buckled under him and he fell all the way down to the ground like a rag doll.  He doesnât remember if he screamed or not.</p>
+
+<p>BRIAN:	When I hit the ground, that â oh, that was a lot higher than I thought; I should have climbed down and come up with another plan or done something else, because I was in pain.</p>
+
+<p>JACK:	His feet in particular hurt a lot.  He sat on the ground holding them, rubbing them, trying to get comfortable.  But the pain wasnât going away.</p>
+
+<p>BRIAN:	Then Jon, yeah, called over to me from the other side of the fence by the shed and was like, are you okay?  I was like, Iâm just gonna sit here for a second.  I think I hurt my feet.  [MUSIC] So, finally Jon gets on top, pulled up the ladder, properly gets off the shed and onto the other side of the barbed wire fence.</p>
+
+<p>JACK:	Jon checks out Brian.  It was too hard to tell what exactly he hurt, but Jon helps Brian to his feet and Brian is able to stand up and move around slowly.  He thinks he can walk it off.</p>
+
+<p>BRIAN:	Weâre still in the blind spot of the cameras.  We have been informing the â our point of contact that â where we are.  Heâs like, youâre what?  We shouldnât have any blind spots.  But somehow we had managed to climb â or crawl into a blind spot of the cameras so we wouldnât be noticed, which luckily was by two sets of doors.</p>
+
+<p>JACK:	Jon goes up and inspects the doors but has no luck getting in.</p>
+
+<p>JON:	Yeah, I mean, none of our bypass tools worked.  We had â we eventually moved to lock picks which are usually the thing that we try last because theyâre slow and not always successful.  Even if you do get in with one, it can also be tricky to leave and leave the building secure, âcause you basically have to pick your way out.  So, theyâre always our last-ditch effort, but we gave it a try and we had limited success.  I think we got a false set on one of the last pins and I just couldnât get it all the way.  We never got into that building.</p>
+
+<p>BRIAN:	We were going at this one set of doors for a while and absolutely nothing.  Thatâs when the campus police actually pulled around again, but this time decided to do a much closer inspection of the area as they actually got out with flashlights and were walking around the perimeter of the building next to us.  So, we did have to hunker down for quite a bit of time.  It was while we were hunkering down that all of a sudden I realize wow, my feet really, really hurt.  Iâm like yeah, weâre gonna keep carrying on, but I think somethingâs â Iâm starting to get the notion that something is not right with my feet.</p>
+
+<p>JACK:	[MUSIC] Now, this was quite the secure facility.  They had to climb over two barbed wire fences just to get to this building, and thereâs another building here that they want to try to get into, but the [00:50:00] problem is the other building is on the other side of yet another barbed wire fence.  So, once the coast was clear, they put their ladder against the fence, threw the wool blanket up on top, and used the fire escape ladder to get onto the other side.  They both make it over the fence and to the other building.</p>
+
+<p>BRIAN:	The whole time I am aching in pain and Jon is trying to be as patient as possible, but we also canât be slow because we canât get picked up by cameras âcause we havenât been noticed yet.</p>
+
+<p>JACK:	They approach the building, trying to stay out of view of the cameras.</p>
+
+<p>BRIAN:	Yeah, we had to stay very low because of where we thought they were pointed and the angle that we assumed that they were pointed at.  We had to stay low to the ground to hopefully not be seen.</p>
+
+<p>JACK:	They take a look at the door to see if thereâs a way to bypass it.</p>
+
+<p>BRIAN:	Jon right away notices a weakness on it.  But we had to go a little bit slower this time because, yeah, on that first location, the security system was there but off.  It had little sensors on the top of the door where when this magnetic connection is broken, it will alert the security center that oh, hey, this door has been opened.  Itâs not supposed to be being opened.  So, we had to try to avoid that this time.  I was gonna try to place essentially some magnets into the correct location, some supermagnets, some very strong magnets, into the correct location so that when Jon was able to pop this door open, hopefully we donât set off the sensor.  Yeah, Jon did his magic again, was able to get this door open.  [BEEPING] Unfortunately âcause of the pain or just not paying close enough attention, I didnât have it placed right and I guess the sensor did trigger.</p>
+
+<p>JACK:	[MUSIC] When the alarm was triggered, someone in the SOC immediately saw it and began looking through the video footage of all the cameras around this building.  There was nothing on the cameras, though.  There were also cameras inside this building but strangely, none were actually pointed at this door.  So, the SOC only had an alert that the door was opened; nothing on the cameras inside or outside, and no activity from the gate, either.</p>
+
+<p>BRIAN:	We were going in the side door.  These cameras are all pointed straight down at kind of â at a hallway.  So, again, I stayed really low to the ground and the cameras didnât pick me up.  Somebody investigated the door being opened and flagged it as a false positive because they didnât rewind the camera long enough to see me slipping in through the door.  So, that was an interesting one because our point of contact at this point was also watching me.  Well, he had the cameras up himself and wasnât informing the SOC about all the operations going on.  He watched me and he actually let me know at one point oh, hey, I just saw your head pop up on camera.  It was actually when I tried to pop my head up and look through a window, so I know okay, as long as I stay lower than these windows, they shouldnât be able to see me.  Yeah, I was trying to find a network jack or something, but the only way to get to a network jack was actually to trigger another alarm.  So, instead, I found some other important pieces of equipment, took pictures to demonstrate that if I was a true bad guy, I could have damaged this, some bad things could have happened, hid a calling card then so that they know we were there, took some nice pictures, and decided to call it quits and get out.</p>
+
+<p>JACK:	Yeah, well, getting out required getting over some fences still, and with a hurt foot and the police on the prowl, itâs not as easy as the last one.</p>
+
+<p>BRIAN:	Yeah.  So, at this point we had to come up with another plan because our regular exfil plan was kinda thrown out the window.  So, we talked it over really quickly as we were crouched down behind a shed so that they wouldnât be able to see us, and kinda just readjusted how we were going to exit the area, and decided to take a â probably a little bit of a longer path.  But yeah, we found another exfil point that we thought we could get to and get out of without being seen, climb over both fences, and then essentially run really far to the side and then all the way up this other side road so we could get back to our car.  So yeah, we kinda regathered, we did our pack-out list, made sure we didnât forget any gear or equipment or forget to do anything that we needed.  Itâs really hard climbing ladders with two broken feet, I found out.  So, yeah, we â I was still able to do it but yeah, getting over that fence the second time is much harder than the first time.</p>
+
+<p>JACK:	They make it back to their car.  No mini-celebration this time; Brian was in too much pain.</p>
+
+<p>BRIAN:	Yeah, at this point, Iâm â [00:55:00] was I driving or were you driving?  You were driving âcause I was in too much pain.</p>
+
+<p>JON:	Yeah, I think I was driving.  I think at this point you were saying it was okay when your weight wasnât on it and you wanted to go to the next one and do it if you could.  So, we drove to the next location and got out of the car.</p>
+
+<p>BRIAN:	[MUSIC] Yeah, when we get to the next location, we get out.  I said yeah, letâs do this, packed up the backpack full of gear, make it, I donât know, thirty steps, and thatâs when I had to stop.  I look at Jon and Iâm like, youâre gonna have to do this one on your own.  Iâm in too much pain.  I canât move my feet without having shooting pain go up my legs at this point.</p>
+
+<p>JACK:	Brian transfers some of his gear to Jonâs bag and walks back to the car.  Brian will just be on lookout now and sit in the car, and keep the point of contact updated while Jon goes at it alone.</p>
+
+<p>JON:	Yeah, so, we kind of adjusted the game plan, we got out radios, and essentially â so, at this next location, it was, again, very well-lit.  They had good camera coverage from the front.  It was near a park as we mentioned before, but the whole back side of it was residential.  It was on a very major road, very busy, so we definitely didnât want to approach from the front.  There was just way too much risk of getting caught, so kind of went through the back along the fence line that bordered the residential housing.  Not well-lit back there, so there wasnât a whole lot going on.  I managed to get to the target building and there was a door there.  Again, pretty well-hung; none of our bypass tools worked on it.  I was in contact with Brian the whole time over radio and with our contact through text.  There was an alternate point of entry but I decided it was too risky to try on my own.  I would have had to go over another barbed wire fence.  There was just too much risk involved.  If I would have fallen in, Iâd have had nobody there for me or if anything had happened once I was inside, again, no backup.  So, I just tried the one door and â unsuccessfully for that one, but for the client it was a well-hung door with good coverage of lighting and cameras for the most part in the front part of the building.  You canât win them all.</p>
+
+<p>JACK:	Jon heads back to the car.  Itâs getting late now; itâs past 2:00 AM at least.  The point of contact is still awake and watching the SOC though, and still the SOC has not detected them.  Theyâve managed to stay in the shadows just well enough that nobody is aware that two buildings have been broken into and a third has been attempted.  They drive to the last two buildings.  Now, Targets 4 and 5 are actually very close to each other.  You can see one building from the other and they planned to just park near one and try to access both at once.  Now, these last two buildings are more like offices, not just sheds of equipment, so if they can get in these, theyâre expecting to see desks and regular office equipment in there.  In Building 5 is where the SOC is located, so the last building theyâre going to try to get into actually has the people in there who are trying to watch to make sure nobody gets into these buildings.  Itâs somewhere on these two buildings that has those long-range cameras that took their photo earlier.  So, arguably, these are the most secure buildings theyâre going to try to get into.</p>
+
+<p>JON:	[MUSIC] So, we were a little apprehensive about this one, or I was, at least, because, again, Brian couldnât walk at this point.  He was in the car.  We were talking to the client and they wanted me to proceed.  In this case, I approached from the back.  From the recon phase, we knew where most of their cameras were, and I approached in the shadows along a tree line and wasnât spotted at all.  The main entry for this â there was a chain-link fence, there was another gate, and it had a gap underneath it, and that seemed like a really easy way past the perimeter.  The downside was that there was a camera right next to it.  I just kinda took a roll of the dice and shuffled my way underneath and ran into the shadows, looked at my phone, told the contact I was in the perimeter.  He was like yeah, they didnât see you.  Youâre good at this point.  Go to the first building.  So, I kinda sat there and, you know, you get nervous during these things.  Itâs definitely an [01:00:00] adrenaline rush.  I kinda tried to breathe that off a little bit and then move to the first building.  First door I tried, I couldnât get in.  None of the bypass tools worked; well-hung, proper installation.  But the second door popped right open.  [MUSIC] No issues, except that as soon as I got inside, they had motion-activated lighting and significant camera coverage inside this building.  So, as soon as I popped the door open, all the lights turned on and I found myself staring a camera right in the face.</p>
+
+<p>JACK:	Yeah, not only did this building have cameras outside, but it had cameras inside too, specifically pointed at the door that Jon just opened.  Whatâs more is he triggered all the lights to come on inside and probably was ringing some kind of alarm when that door was opened.  Even if Jon ducked behind a desk right now, the SOC team could easily rewind the tape and see him standing there, staring at the camera.  So, whatâs a penetration tester do when theyâve been caught on camera?  Go for it.</p>
+
+<p>JON:	I pretty much just sprinted through the building taking pictures, trying to find a network port, trying to get into the target locations, managed to bypass another door with a under-door tool and get into a secure location.  At this point Iâm looking at my phone and the contactâs like, you got about thirty seconds until the cops are there.  Iâm like oh, shoot.</p>
+
+<p>JACK:	Wait, the actual cops are coming?  Oh yeah, the SOC has no idea this is just a test and are reacting like they normally would.  As it turns out, the SOC did see the alarm and they did check the camera footage and they did see Jon getting unauthorized entry into this building, so of course they would immediately call the cops, and they sprang into action.  So, time is ticking now.  What do you do in that thirty seconds, hide?  Go back the way you came?  Get on the roof or something?  But whatever the protocol is for this, you can throw that out the window because when thereâs adrenaline pumping and youâre scared, itâs really hard to make logical choices.</p>
+
+<p>JON:	Well, actually, first I ran to the door in the front building, thinking that I had another building to go to and that other door was closer.</p>
+
+<p>JACK:	He opens the front door and looks outside.</p>
+
+<p>JON:	I heard honking and I heard something going on.  I was like okay, Iâm in trouble; I need to go back out the back door that I came in.</p>
+
+<p>JACK:	What had happened is the person in the SOC who saw him at the building quickly jumped in the companyâs security truck, went to the front gate, unlocked it for the police, and then proceeded to drive to the building honking and flashing his lights.  This way when the police show up, they know exactly where to go.  There was so much ruckus going on that when Jon opened the front door, he just immediately turned around and went back inside and headed for the door he came in through.  So, he runs to the back door, gets it open, and goes outside.  But as soon as he gets out that door, the security truck comes zooming closer to him.</p>
+
+<p>JON:	Yeah, so the truck is coming at me with the lights on and I mean, I initially ducked down and tried to hide.  There was kind of a loading-dock-type situation and I got as low and close to the concrete as I could, thinking that maybe he didnât see me jump down, but he pulled up right next to me and â blasting his horn and flashing his lights.  So, at that point, my only way out was to jump back up on this dock and try to run in the opposite direction that he had come from.</p>
+
+<p>JACK:	He takes off running like a scared rabbit in headlights.  He darts around the corner and runs directly in front of two police cars.  The gig was up.  He stopped running and put his hands up.  The police get out and start asking him questions.</p>
+
+<p>JON:	Yeah, the very first thing that I did â other than putting my hands up â was, I have the letter in my front-left pocket.  Front-left cargo pocket and, yeah, so, he opened up my pocket, pulled it out, read it, made sure I was who I said I was, and yeah, so then I told him I want you to fake arrest me, which they did, and took me off-property.  That was kind of interesting âcause in the car ride over, the police officer was talking to me and heâs asking me all sorts of questions.  Heâs super-interested in this.  Heâs like, how did you get this job?  How many of these do you do in a year?  Do you guys do this all the time?  Do you do it around here all the time?  Just loads of questions.  I was just talking to him.  It was kind of a fun car ride, more fun than I would have expected in the back seat of a police car.</p>
+
+<p>BRIAN:	Jon just texted me and theyâre like yeah, meet us at this gas station.  So, I just drove, I donât know, a mile away, [01:05:00] got to the gas station, and yeah, the police were really friendly.  They had lots of fun questions, asked how my feet were doing âcause Jon told them that I got injured.  They were really nice and handled the whole situation very well since we were able to communicate with them ahead of time of what was gonna happen.</p>
+
+<p>JACK:	The police took a look at their authorization letter and called the number there.  They spoke to the point of contact to make sure that they should let these guys go and yeah, the police let them both go.  At this point, itâs like 3:00 or 4:00 AM.  Brianâs feet hurt really bad, so they decide to go to the emergency room which is like, a 45-minute drive away.</p>
+
+<p>BRIAN:	They originally took x-rays.  I cannot walk on my feet.  They tell me â âcause the painâs in my heels.  They said your heels arenât broken.  Iâm like, but I canât walk.</p>
+
+<p>JACK:	They gave him some painkiller meds and crutches, and they finally got back to their hotel at like, 8:00 AM and fell asleep.  But even though they only got to sleep at 8:00 AM, they both woke up at 11:00 AM to get back to work.  It was really hard to wake up after only three hours of sleep.</p>
+
+<p>BRIAN:	Yeah, lots of coffee.  Lots and lots of coffee and some lunch, and then we said hey, we still have â during our recon, there were still other vulnerabilities that were pretty prominent that weâre like hey, we want to go at this again.  We think we can get in another way during the daytime instead of doing this whole nighttime operation.</p>
+
+<p>JACK:	[MUSIC] See, they were banking on a few things; first, there would be an entirely different security team during the day, one that wouldnât recognize their faces or whatever.  Second, as far as the security team knew, these bad guys were caught and they were probably happy and relaxed that they had a successful apprehension of a real intruder.  They didnât test the fifth building at all.  How can you pay someone to test their headquarters and then you just not do it at all?  They had to at least try.  Jon was the first to try to get to the final building.  He noticed that one of the buildings was under construction so he got a hard hat and vest, put it on, and showed up.</p>
+
+<p>JON:	They had a access gate that required either a badge or a pin code.  Construction workers were getting in there.  I think they were even given either a temporary badge or something and so, I, just on foot, followed them through the gate once somebody opened it, like returning from a break or something like that, and just walked into the perimeter that way.  Once I was in the lot, it was all torn up âcause they were doing construction back there, but I didnât get any questions from any of the construction folks or anybody else and just approached the building, opened the door, and found myself in a hallway.  That hallway â so, it was kind of a T.  If you went to the end of it, there was a big garage full of the fleet vehicles and the other way went into an office building.  I tried to bypass that door but wasnât successful.  It was locked and so, I dropped a USB drop near it.  I took pictures and evidence.</p>
+
+<p>JACK:	Oh, right; dropping USB sticks.  They had actually been dropping USB sticks at every building that they entered just to see if anyone would pick it up and plug it in, and if so, that USB stick is programmed to just phone home back to Jon and Brianâs computer and make a reverse connection to that computer which would give them access to it.  Jon could only get into the entrance hallway of this building, though.  He wasnât able to get any other door open or go further in, so he walked back out and was walking around, looking for other ways in.  Maybe there was a door left open somewhere else or a window open.</p>
+
+<p>BRIAN:	In the meantime, I go â get on my crutches, dress like a local college student, and go into the front.  I was kinda doing a similar thing where, because thereâs a pandemic, there is no receptionist.  There is no front desk person to social engineer and talk to.  So, instead, we adjusted â or, I adjusted my pretext which is well, Iâm on crutches.  You canât get to a reception area because itâs actually locked off and physically â by two different doors, but thereâs actually a elevator right away as soon as you enter this building.  So, I was gonna make it seem like oh, Iâm on crutches; I need help going up the elevator âcause people on crutches take elevators.  But it ends up, you actually needed to badge-in to go up the elevator.  But we have a backup trick which is we were going to use a set of elevator keys that would work for that whole state that I had in my back pocket.</p>
+
+<p>JACK:	[MUSIC] He waited in the elevator for a few minutes to see maybe someone a few floors up will call the elevator and he could just go up and get off there, but since there was a pandemic, the place had minimal staff.  They saw in their recon that nobody takes the elevator right now.  So, he decided not to try the keys and inspect the lobby instead.  He walked around looking for any open Ethernet jacks to plug in a Raspberry Pi or a packet sniffer.</p>
+
+<p>BRIAN:	Yes, they â I was hoping there was gonna be one because they had a little [01:10:00] television screen on a rolling cart set up to give messages to people who would show up there.  I was really hoping that there was gonna be a computer that it was hooked up to and I could attach that LANstar, that network tap that we had talked about, and I was really hoping I could take advantage of that.  Unfortunately they used a different system that I was not used to and there was no â there was nothing to tap into.  So, they did a real good job there.  I did the same thing Jon did and just dropped a couple of malicious USBs.</p>
+
+<p>JACK:	Jon was still walking around the outside of the building looking for ways in.</p>
+
+<p>JON:	As I was walking around the building though, somebody from their SOC saw me on their cameras and somebody came out and started to confront me, at which point I basically just â I was kind of walking in the direction of the car already and so, I basically just pretended like I didnât hear him and kept walking.  Then we got in the car and took off.</p>
+
+<p>JACK:	They might think this is it; the engagement is over and theyâre done, they head back home, but nope, they donât head home.  They saw something that they wanted to go back and check out.  The first location had a big fence around it and a gate, and they noticed what type of gate control system was used to open and close that gate.  The model was DoorKing.  Thereâs a certain vulnerability they knew about with this type of gate control system.</p>
+
+<p>JON:	We talked to our contact about it and said hey, we noticed this.  Do you want us to see if we can get it to work?  Sure enough, the common key opened the faceplate to the DoorKing system and we were able to find the model number inside.  A quick Google search pulled up that specific model with a wiring diagram.  We carry a little jumper wire with us as part of our toolkit, and you just connect the appropriate terminals.  It basically acts like a little button, and we basically just hot-wired the gate, and it popped right open.</p>
+
+<p>JACK:	Huh.  Clever stuff, another vulnerability they can put into their report, a fun one at that.  A quick fix for this is just to change the key on the box.  These things often have a sort of default key that you can pick up fairly easy and try.  Yeah, once you get in the control panel, you can open it up.  After that, their engagement was over.  They got back on the plane and headed home, and once they got home, Brian saw his regular doctor who gave him an MRI scan and found out he fractured both heels.  So, he had to sit out for six weeks.  [MUSIC] During that time, they gave a debrief with the client.  They learned a bunch along the way.  For instance, they learned that if Brian had tried to use the key in the elevator, it would have triggered an alarm.  So, heâs lucky he decided not to do that.  Next, they learned that every single one of the USB sticks that they left behind got picked up and turned in.  Not a single person tried to plug one in.  The client was also happy to see that there were ways that they can improve security, too.  As far as the SOC goes, this was a great confidence booster for them to find a live one, get someone caught.  Overall, Brian and Jon were impressed at the security measures this company took.</p>
+
+<p>BRIAN:	Yeah, honestly, one of the best things was just having those diligent workers.  It ends up that during our recon, not only did the Security Operations Center notice that we were driving around with a rental car with plates from out of state, but because this was a tight-knit community, others from the community also noticed something was up and notified the friend of the friend that hey, weâre noticing something weird and you guys are probably the target just because we know our city.  So, yeah, their tight-knit community also helped keep them safe which is something weâre not used to seeing or hearing, so that one kind of took us for surprise.  But otherwise, they clearly took their door security very seriously because a lot of time, a lot of our simple, easy tricks were not as simple and easy as we were expecting them to be.</p>
+
+<p>JON:	I think a lot of the time when you hear about these types of physical security stories, you usually only hear about the successes, and those are great; you know, when they happen and itâs a secret agent and you get in and you accomplish it, and thatâs awesome, and they definitely happen.  But I would say that thereâs definitely failures too, and so much of it is thinking on your feet and just kind of rolling with the punches.  No amount of planning that you do is ever really gonna be sufficient.  Something always changes along the way.  The other thing that I donât ever hear anybody mention that does this is how physically and emotionally demanding it is.  It is exhausting, you know?  Weâre up starting an engagement at 10:30 and it goes until 8:00 the next morning.  Then three hours of sleep, and then doing more SE.  [01:15:00] I mean, you get the adrenaline going through you, you got your nerves going, and itâs hard work.  Itâs fun but itâs hard work, for sure.</p>
+
+<p>(OUTRO):	[OUTRO MUSIC] A big thank-you to Brian Halbach and Jonathan Studebaker for sharing this adventurous story with us.  Recently, they were both on ABC News where they showed the Nightline camera crew how all this looks when theyâre sneaking into places.  On top of that, thereâs another video of some other people at RedTeam Security who took cameras with them as they broke into an electrical power station.  If you want to see how this looks in action, check out the links in the show notes or at darknetdiaries.com.  Brian is still with RedTeam Security doing these pen tests, but Jon has since moved onto another company where heâs doing security architecture work now.  If you like this show, if it brings value to you, consider donating to it through Patreon.  By directly supporting this show, it helps keep ads at a minimum, it helps get people to make the show, and it tells me you want more of it.  Please visit patreon.com/darknetdiaries and consider supporting the show.  Thank you.  This show is made by me, the 56th KBOT, Jack Rhysider, sound design by the shell-prompt Andrew Meriwether, editing help this episode by the VGA-supported Damienne, and our theme music is by the sound-blaster, Breakmaster Cylinder.  Even though astronauts use Linux because you canât open Windows in space, this is Darknet Diaries.</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+
+
+			
+			<h3>Embed Episode</h3>
+			<p>Add this episode of Darknet Diaries to your own website with the following embed code:</p>
+
+<code>&lt;iframe frameborder="0" height="200" scrolling="no" src="https://playlist.megaphone.fm?e=ADV7510154272" width="100%"&gt;&lt;/iframe&gt;
+			</code>
+			
+
+
+			
+			
+				<br><br><h3>Transcript</h3>
+				<p>
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				  
+				     <p>[START OF RECORDING]</p>
+
+<p>JACK:	Hey, itâs Jack, host of the show.  For a while, I was doing photography as a hobby.  I specifically liked taking pictures of old buildings.  My town had a lot of old buildings and sometimes at night I would go for a drive looking for an old building to photograph.  I liked going at night because it was quieter and I could light it the way I wanted, making extra drama or intrigue to it, and I just feel more active at night.  I took a drive towards the old part of town.  It was down by the river and the train tracks.  There was an abandoned train station which was cool, and an abandoned factory, but also a bunch of abandoned houses, some of which looked really interesting.  [MUSIC] I drove around there, slowly going through the area.  It was really quiet; no cars or people anywhere.  I guess this area of town turned more industrial.  There were factories all around because it was right on the river, and the train tracks made it easy to load up stuff and ship it out.  As I was driving around, I passed by a facility of some kind.  The place was huge; it covered a few blocks, actually.</p>
+
+
+				   
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				</p>
+				<p><a href="/transcript/95">Read Full Transcript</a></p>
+			
+
+
+			<div class="wrap nextprevious">
+				<center>
+			  		
+			  		<a href="/transcript/94/" class="button button-light PageNavigation"><i class="fa fa-arrow-left" aria-hidden="true"></i> <span>Previous Episode</span></a>
+			  			  
+			  		
+			  		<a href="/transcript/96/" class="PageNavigation next button button-light"><span>Next Episode</span> <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+			  		
+			  	</center>
+			</div>
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

@@ -1,0 +1,622 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>Victor â Darknet Diaries</title>
+	<meta name="description" content="Victor looks for vulnerabilities on the web and reports them responsibly. This is the story about discloser number 5780.">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Victor â Darknet Diaries">  
+	<meta name="twitter:description" content="Victor looks for vulnerabilities on the web and reports them responsibly. This is the story about discloser number 5780.">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/victor.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/88/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Victor â Darknet Diaries" />
+	<meta property="og:description"        content="Victor looks for vulnerabilities on the web and reports them responsibly. This is the story about discloser number 5780." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/victor.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/88/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/victor.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/88/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="Victor â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/victor.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 88: Victor</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://www.podtrac.com/pts/redirect.mp3/traffic.megaphone.fm/ADV8060916299.mp3?updated=1616622377"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/88/",
+			   "title": "Ep 88: Victor"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/88">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[START OF RECORDING]</p>
+
+<p>JACK:	Real quick before we get started, this is like Part 2 or actually itâs Part 3 of a series.  Weâre talking with Victor in this episode whoâs part of the Guild of the Grumpy Old Hackers.  To learn who they are, you need to check out the episode before this.  In fact, Iâm gonna reference the last episode quite a bit in this episode but to understand what happened in the last episode, you really should listen to the episode before that.  So yeah, this is a three-parter which is intended for you to listen to Episode 86 first, called LinkedIn, then Episode 87, and now this one, Episode 88.  Alright, letâs do this.
+<!--more-->
+(INTRO):	[INTRO MUSIC] These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	So, weâre picking back up with one of the members of the Guild of the Grumpy Old Hackers.  Weâre talking with Victor and Iâm fascinated with his work.  Heâs known on Twitter as @0xDUDE and heâs made a life out of filing coordinated vulnerability disclosures.  Heâs a self-proclaimed janitor of the internet.  Victor is constantly scanning around, looking for vulnerabilities and reporting them.  Iâm not talking about a few reports here and there.  [MUSIC] So, your Twitter bio says 5,789 responsible disclosures.  What?  How?</p>
+
+<p>VICTOR:	Well, that started in 1998.</p>
+
+<p>JACK:	Thatâs a lot.  So, youâre talking â youâve been doing responsible disclosure for over twenty years?</p>
+
+<p>VICTOR:	Yeah, itâs twenty-two years now.  Yeah, yeah.</p>
+
+<p>JACK:	Alright, so letâs actually go back to his first vulnerability disclosure.  He used to go to a video store sometimes to rent movies when he was younger.  Before Netflix there were these stores that you could go in and browse for the movies and borrow one for the night or whatever.  This store wasnât far from his house.  Heâd head down there every Friday to pick up some movies for the weekend.  Problem was, everyone also had that same idea.</p>
+
+<p>VICTOR:	Friday evening, that was always rush hour.</p>
+
+<p>JACK:	[MUSIC] People piled into the store and pestered whoever was behind the counter.  Hey, is this movie in or hey, do you have this one yet?  Or, I want to watch this one; is it available?  Employees would have to stop whatever they were doing and try to answer all these questions.  They got fed up with that, so the store installed a computer that customers could use to look for the titles themselves.  But to Victor, this opened and unlocked computer which was connected to the storeâs network and inventory really caught his attention.  So, he got on it, but the computer was locked down and only gave users access to search the storeâs inventory on what was in stock.  You couldnât do anything else on this computer but Victor took that as a challenge to see if there was something else he could do on it.</p>
+
+<p>VICTOR:	That terminal, that was just a UNIX terminal and it was â didnât have any security.  With Ctrl + Shift + F1, I could break out of a shell and just get access to that system.</p>
+
+<p>JACK:	Bam, by just hitting Ctrl + Shift + F1, Victor could take over this computer.  He could slyly pull up his account, reserve movies, and add credits to his account.  He could see all the other peopleâs accounts too and take a look at what movies theyâd checked out.  Victor told the store that this new computer is a liability and they said there wasnât much they could do about it because the company that wrote the software is really out of business.  But the store took this warning and tried to fix the problem themselves which actually was kind of a joke to Victor.</p>
+
+<p>VICTOR:	The funny part was that a week later, the owner of that store says well, we fixed the security because they put a plastic layer â cover on the keyboard.</p>
+
+<p>JACK:	Basically, they just covered some of the keys with a shield to prevent people from typing certain keys like Shift, Ctrl, F1.  Victor told him that doesnât quite work, but the store disagreed.  [00:05:00] So, Victor set out to prove them wrong.</p>
+
+<p>VICTOR:	[MUSIC] I used a paperclip â two paperclips to get under the plastic and still pressing those buttons.</p>
+
+<p>JACK:	But Edward Papercliphands here screwed it up and he hit the wrong key.</p>
+
+<p>VICTOR:	I did like, Ctrl + F2 which was the option for reboot server, and the server did reboot but didnât start up anymore.</p>
+
+<p>JACK:	So, he was trying to prove to the store that the shield just didnât work but now he made it worse and crashed the system on accident.  He glanced over at the checkout counter.  The employees were trying to scan the barcodes on movies but it wasnât working.  It turned out this computer had more than one job and it wasnât just there to allow customers to search for movies.</p>
+
+<p>VICTOR:	They had to write down everything by hand, so I created a little traffic jam.</p>
+
+<p>JACK:	The store eventually got things up and running again and what Victor learned from this whole thing was finding vulnerabilities on computers is fun but if he was gonna do this kind of work, heâd have to be more cautious.</p>
+
+<p>VICTOR:	If I want to do the good thing, I have to be very careful.  I have to be very descriptive and I have to stay in conversation with the people who are responsible for the systems and find a fine line between being helpful and being obnoxious.</p>
+
+<p>JACK:	[MUSIC] It was about the same time that Victor found himself at a crossroads in life.  While he was working on these early vulnerability disclosures, this ethical hacking, he was also busy cracking software, which is illegal to circumvent the copyrighted protections on software.  He realized this ethical dilemma and he came to a realization.</p>
+
+<p>VICTOR:	If I keep going in this direction, I will get nowhere.  So it was like okay, what can I do to make it more useful, that I can help other people without getting in trouble and still doing cool things?  Because Iâm still accessing systems without permission, you know?  Thatâs still damn cool.</p>
+
+<p>JACK:	It was at this moment that Victor realized he needed to use his skills for good.  This meant he was gonna keep hacking and looking for vulnerabilities.  Heâd have to do it under a strict code of ethical conduct, though.  Heâd spent years practicing and honing his techniques to do this and yes, it is damn cool to still get to hack into systems and not get in trouble for it.  So, after college Victor began his career in IT.  He worked his way up from system administrator to network administrator and got a job with the Dutch government.  [MUSIC] Over the years he kept finding vulnerabilities and issuing these disclosures to people, kind of like a hobby.  But one day he realized he wanted to get even more serious about it.</p>
+
+<p>It was in 2016; him and a friend started a non-profit that was all about finding and reporting vulnerabilities.  They called it the GDI Foundation.  Their hope was that people in other countries would start GDI chapters and build a global network of volunteers working to help secure the internet.  Their mission is quote, âTo protect the free and open internet by trying to make it safe and by thus guarding the wellbeing of humans online, to ensure respect for all human intellectual freedom and to prevent and mitigate digital abuse.â  End quote.  Victor didnât mess around.  He asked for an entire year off from his day job and not just any year, either; it was 2016, a leap year.</p>
+
+<p>VICTOR:	Letâs do for one year, 366 days, nonstop finding vulnerabilities, as much as humanly possible.</p>
+
+<p>JACK:	Victor and his friends went all-in that year.  Thereâs a lot of insecure stuff on the internet; databases just left open with default credentials, servers wide open, and different services and ports that were not secured.  Itâs pretty sad how easy it is to find vulnerabilities out there.  But the tricky part is telling someone about it, trying to find who owns that server and the contact details of who this stuff belongs to.</p>
+
+<p>VICTOR:	After fifteen minutes investigating a database, most of the time you know of who the owner is.</p>
+
+<p>JACK:	[MUSIC] Once they know whoâs in charge of it, they send over a responsible disclosure e-mail outlining the problem and how to fix it.  After all that, GDI adds the database to a script thatâs constantly running.  It checks up on the database every so often just to see if stuff gets patched, or worse; if a hacker got in and stole some data or wiped the whole thing, because thatâs an option, too.  A hacker could just get in there and delete everything.  By the summer of 2016, just a couple months into this new GDI adventure, Victor was the database watchdog.</p>
+
+<p>VICTOR:	I think Iâve seen every open database at that moment that was connected to the internet.</p>
+
+<p>JACK:	Hereâs the basic process; databases run on a certain port, so MySQL, for example, runs on port 3306, and so he could just scan the internet or use a website like Shodan to first look for any IPs that have port 3306 open.  Then once he finds that, heâll try default usernames and passwords or maybe a handful of very weak passwords like the word âpasswordâ to see if thatâs it.  Yeah, from this alone, he was tripping over tons of open databases.  Some didnât even have passwords at all.  Then theyâd tell all the database owners that their stuff is insecure.  As their efforts grew, so did the number of people pitching in to help GDI.  [MUSIC] In the beginning, it was just Victor and his friends but almost fifty different volunteers have joined on [00:10:00] in the last five years.  In that time, the foundation has filed coordinated vulnerability disclosures on over a million security issues out there on the internet.</p>
+
+<p>VICTOR:	You can see us like the volunteer fire brigade or emergency help.  We want to prevent that people become a victim.  Weâre a group of volunteers that help prevent abuse by trying to report these systems that are already indexed by other sources as soon as possible.  Weâre just one of those many, many volunteering groups online that does these kind of things.</p>
+
+<p>JACK:	Victor could have called it good after starting up the GDI Foundation but no, heâs possessed and he takes his self-proclaimed role of the internet janitor seriously.  In 2019 he got involved with another non-profit.  This oneâs called the Dutch Institute for Vulnerability Disclosure, or DIVD, and Victorâs the chairman.  DIVD is a lot like GDI but itâs ran by Dutch researchers and they often scan computers in the Netherlands for vulnerabilities.</p>
+
+<p>VICTOR:	If we cannot find an organization within minutes, then we immediately take the entire collection and send it off to the ISP, the internet service provider, who gonna of course then send it back to their customers.</p>
+
+<p>JACK:	They sometimes find problems on the Dutch governmentâs network which is interesting because Victor works for the Dutch government.</p>
+
+<p>VICTOR:	By putting these communication frameworks in place and these agreements, we can prevent that vulnerabilities stay longer online.</p>
+
+<p>JACK:	Which is definitely a noble thing to do but letâs pump the brakes here for a second because thereâs a catch to doing all this do-gooding.  So, letâs talk about the ethics here for a second.</p>
+
+<p>VICTOR:	Yeah.</p>
+
+<p>JACK:	[MUSIC] You are actively looking for vulnerabilities in companies that arenât asking you to look for vulnerabilities.</p>
+
+<p>VICTOR:	Exactly.</p>
+
+<p>JACK:	Is there an ethics problem with that?</p>
+
+<p>VICTOR:	It depends who you ask.  For me, no.  For example, the work that we do is non-profit.  Itâs voluntarily and itâs to prevent that the people that we â or organization that we warn that theyâve become a victim.</p>
+
+<p>JACK:	Victor says what it really comes down to is what your aim is.</p>
+
+<p>VICTOR:	There is that fine line where you have to look what is the intention?  Am I going to access the system or account and starting showing it off or use it for my own benefit to show that I had access to it?  Or Iâm going to be as discreet as possible and try to inform you that this your issue; you need to fix this and this is what you can do to protect yourself?</p>
+
+<p>JACK:	So, if your purpose is to surf around the internet poking and prodding, looking for weaknesses but youâre not planning to tell anyone about it, well, you look a lot like a hacker whoâs up to no good.  But if you were going to coordinate with the person who you found the vulnerability with and tell them privately and they can fix it, well, then youâve crossed into the good side.  But where is that line, though?  The GDI Foundation and DIVD mark that line with a strict code of conduct and mission statements which is posted to their websites.  Hereâs an outline; first, they donât do this for profit.  They donât ask for any bounty reward or ransom for finding a vulnerability.  Theyâre non-profits and theyâre supported by donations and sponsors.  They donât launch attacks against networks that would degrade the service in any way.  They donât buy or sell stolen data.  They look for well-known vulnerabilities, stuff that doesnât require advanced skills or tools to exploit, and they only use passive scans and only push deeper if they find something.</p>
+
+<p>VICTOR:	We act on where there is smoke, there must be fire.  Iâm not going to kick in my neighborâs door because I think there is a fire while thereâs no smoke outside.  If there are no signals that thereâs something wrong, then there should not be a reason for me to start digging into it.</p>
+
+<p>JACK:	Finally â and this is important â they donât air peopleâs dirty laundry.  When they find a problem, it stays between them and the owner and they donât ask them to admit anything to the public.  They just ask that it gets fixed and then they move on.  Itâs great to have an ethical framework and a strict code of conduct but there can still be grey areas.  For example, this whole thing with Trumpâs Twitter in 2016; that did expose Trumpâs dirty laundry, so to speak.  It hit the news and everything but I think they preferred it if it was done quietly.  So, when youâve got the worldâs attention, you have to tread a little more carefully.  [MUSIC] Okay, so as promised, the story of Victorâs coordinated disclosure number 5,780.  See, I first interviewed the Grumpy Hackers back in October 2020, and I was gonna post this episode right around election time.  But then something happened which really put a twist in the story.  So, it was just a couple of weeks before the US presidential election.  Victorâs Twitter feed is crammed with election coverage and conspiracy theories.</p>
+
+<p>VICTOR:	Some people were getting, you know, these elections are rigged, people are going to try to mess with it, probably through the social media.  I was like okay, interesting.  Letâs see which social media accounts are all [00:15:00] involved with this election.</p>
+
+<p>JACK:	The presidential election of 2020 was a pretty volatile time.  Disinformation was spreading everywhere and yeah, if someone were to hack a political figureâs Twitter account, it could have some serious consequences.  So, Victor was curious about the security of the Twitter accounts for the presidential candidates.  He was looking at both their personal and official accounts.  The personal ones are like, @JoeBiden, @Mike_Pence, @realDonaldTrump, and have blue check marks which means Twitter has verified these people.  But then thereâs official accounts like @POTUS and @VP, and these have little a American flag followed by US Government Account.  So, how can you check the security of these accounts?  Well, it turns out if you type in the username and just a bogus password, itâll tell you two different messages depending on if you have two-factor authentication turned on or not.  Victor figured out these error codes which meant he could see if somebody had two-factor authentication on or not.  So, he went through a bunch of the presidential candidate Twitter accounts to see if they had extra security features turned on, like two-factor authentication.  Since he already knew everyoneâs username, he would just go to the Twitter login page, type in their username, and then some bogus password.</p>
+
+<p>VICTOR:	Letâs try Biden.  Well, okay.  Letâs try Pence.  Letâs try the VP account.</p>
+
+<p>JACK:	If it told him the error message which indicated this had two-factor authentication turned on, heâd just move onto the next one.</p>
+
+<p>VICTOR:	All those Twitter accounts are protected with extra security measures except Donald Trump.</p>
+
+<p>JACK:	Wait, what?  Donald Trumpâs personal Twitter account didnât have two-factor authentication turned on in 2020, as the sitting US president?  After everything that happened four years ago, you would think that he would have two-factor authentication turned on, right?  Well, he didnât.  The president of the US did not have two-factor authentication enabled on his Twitter account and when Victor typed in a bogus password, it just said thatâs the wrong password which meant he could try again, and again, and again.  Now, I only half-blame Trump here.  With all the stink that the Grumpy Old Hackers made about this in 2016, Twitter should have absolutely required two-factor authentication for all major accounts.  At least, the president of the US should have this required and enforced by Twitter, right?  Maybe everyone with over a million followers should be required to have two-factor authentication enabled, or heck, you could even enforce everyone with a blue check mark to have it on, too.</p>
+
+<p>Iâm just saying, any high-profile account is going to see attempts for people trying to login as them and this should warrant extra account security, right?  I asked the CEO of Twitter about this but he didnât respond.  But actually, Twitter published a blog post a month before this which says quote, âWeâre taking the additional step of proactively implementing account security measures for a designated group of high-profile election-related Twitter accounts in the US.  Starting today, these accounts will be informed via an in-app notification from Twitter of some of the initial account security measures we will be requiring or strongly recommending going forward.â  End quote.  They go on to say that these designated groups are people in the US Executive Branch which would be the president as well as other members of government and political journalists, so itâs clear that Twitter did take the steps to make this happen, but something clearly wasnât going as planned.  Again, the CEO of Twitter never got back to me on why.</p>
+
+<p>VICTOR:	This risk was there at that moment.  Why?  I donât know.  I would like to know.</p>
+
+<p>JACK:	A couple weeks before all this, Trump had been in the hospital for covid-19.  Maybe while he was there, a staffer was in charge of his Twitter and they just turned off two-factor authentication.  Or maybe Trump turned it off because he was just tired of all these extra steps to get logged in.</p>
+
+<p>VICTOR:	This guy is over seventy.  Heâs like, seventy-four.  My mother is the same age and has the same security sense.  She also keeps switching off two-factor authentication because itâs not convenient.  Itâs a hassle, itâs annoying.</p>
+
+<p>JACK:	[MUSIC] Whatever the reason, two-factor authentication was definitely turned off on @realDonaldTrumpâs account.  This was a problem for Victor just like it was in 2016.  This account was the mouthpiece of a powerful US president and should be locked down.  Victor was worried that a hacker could get in and do some kind of damage.</p>
+
+<p>VICTOR:	He can make a remark about an organization or a company that can influence the stock market or he could do damage from that because he has a lot of followers that will blindly believe anything that he writes.  For Trump, his Twitter account is everything to him.  Thatâs his way to communicate with people without being obstructed by mainstream media.</p>
+
+<p>JACK:	It felt like a weird cycle, like 2016 repeating itself.  At this point Victor could walk away from this whole thing because heâd submitted a responsible disclosure to Trump four years ago explaining this exact problem, and so it was up to Trumpâs team to fix it and keep it fixed.  [00:20:00] But obviously that wasnât happening, and not only is it happening again; itâs worse because this is now the sitting US president and his account is vulnerable weeks before an election.  This was ludicrous.  Victor couldnât let it go.  He smelled the smoke but wanted to see if there was fire.  Stay with us because after the break, he finds out.  Victor decided to try to login as Donald Trump on Twitter.  His first thought was to see if Trumpâs password was the same from 2016.  He sat down at his computer, closed his eyes, and typed in âyourefiredâ.  It didnât work.  Wrong password.  He took a break to think of another guess and glanced at his Twitter feed.</p>
+
+<p>VICTOR:	I saw a tweet pass by.  It was someone sharing the WiFi password of one of the Trump rallies.</p>
+
+<p>JACK:	[MUSIC] The tweet was a picture of some WiFi login credentials for a Trump rally.  The event had happened on October 13 in Johnstown, Pennsylvania.  Trumpâs team had set up a WiFi network at the rally.  The photo in the tweet showed the network ID was Make America Great Again and the password was âmaga2020!!â.</p>
+
+<p>VICTOR:	Thatâs interesting.  That was probably done by his â by Team Trump, you know, his support group.</p>
+
+<p>JACK:	Victor thought this might be a good next guess for Trumpâs Twitter account.  If Trumpâs people had a bunch of passwords to keep track of, they might reuse some or maybe theyâd use slightly different versions of the same password.  Victor gave this password a shot.  No.  He tried all lowercase; âmaga2020â.  No.  He tried with an uppercase M.  No.  For his fifth guess he typed in all lowercase âmaga2020!â and pressed Enter.  Twitter kind of hung there for a few seconds.</p>
+
+<p>VICTOR:	This took like, four or five seconds.  It was way longer â so I was like okay, great.  Iâm going to get the suspicious login error now because Iâm locked out.</p>
+
+<p>JACK:	Victor wasnât locked out and no error message appeared.  Instead, Trumpâs Twitter account loaded up on Victorâs screen.</p>
+
+<p>VICTOR:	It took me like, a few seconds to realize shit, it worked.</p>
+
+<p>JACK:	[MUSIC] Victor was logged into Twitter as the president of the United States, with 66 million followers.  Whoa.  He felt a surge of adrenaline.  He was totally shocked.  Was this actually happening?</p>
+
+<p>VICTOR:	My eyes go to the left corner where I see his username instead of my own.</p>
+
+<p>JACK:	Yes, this was happening again.  This is the second time Victor got into Trumpâs account.  Itâs like a bad dream, and it left him stunned.</p>
+
+<p>VICTOR:	I think I sit still for at least twenty seconds.</p>
+
+<p>JACK:	It was one of those âgo stare out the window and contemplate lifeâ kinda moments.  While it might seem like this could have been a victorious moment, it was less than ideal for Victor.</p>
+
+<p>VICTOR:	Because of all the people that I wanted this to work, it would have been nice if it was someone else.  I would have preferred if it was Biden but no, it was him.</p>
+
+<p>JACK:	Which frustrated Victor.</p>
+
+<p>VICTOR:	Thereâs a history; we had a history with this person where we reported something, we really saved his ass when it comes to reputation and we never, never got a thank you.  Even from the most horrible organizations in the world where we reported things, we got an okay or a thank-you back.</p>
+
+<p>JACK:	Not only was Victor salty about the way the 2016 disclosure went down, he was also in another ethical grey area now.  Normally when he submitted a vulnerability disclosure, [00:25:00] he wouldnât go back and test that vulnerability again.  But heâd crossed that line all to make sure that this powerful Twitter account was secure.  Victor felt uneasy.  He didnât want to mess anything up as he set about filing the second coordinated vulnerability disclosure.</p>
+
+<p>VICTOR:	That pressure alone, even when Iâm doing this for years is like oh, okay, I have to be very careful.  Donât do anything stupid.  Do the right thing, you know?  Not only for myself but also for everyone that does this kind of work or wants to do this or for the volunteers; if I do it wrong, thatâs it.  Thereâs no coming back.</p>
+
+<p>JACK:	There were a lot of lines he wanted to make sure he didnât cross.  [MUSIC] For instance, sending any kind of tweet as Trump was definitely not going to happen.  But also taking a peek at his messages was clearly unethical, too.  Victor fell back on the muscle memory of all the other disclosures heâs done before and executed his next steps with extreme precision.  He took a screenshot that he was logged in and then went to change the Twitter bio just to show he had access to be able to change the account details, then he checked the accountâs security settings to confirm two-factor authentication was off and took a screenshot of that, too.  In total, he was in the account for about ten minutes, then logged out.  Then he sent an e-mail to Trump outlining the problem, showing screenshots, listing his password, and what to do to fix it.  He didnât hear anything back for a while, so he kept tabs on the account to see if someone updated the security.</p>
+
+<p>VICTOR:	Every two hours going back, checking is it fixed?  No, itâs not fixed.  Okay.  Maybe I should start calling him because his mobile number is in his account.  Maybe I should call that.</p>
+
+<p>JACK:	Victor could see in the account settings a mobile number and called it.  It went directly to voicemail.  He tried calling it again; same thing.  He was desperate to get in touch with someone and to get this account fixed.  What was your opening remark to him if he was to answer hey, this is Donny.  Whatâs up?</p>
+
+<p>VICTOR:	Oh, good evening, sir.  I want to inform you that I tried to send you an e-mail with the subject regarding your Twitter account; can you please take a look at it?  You or your staff please respond to it and have a nice day.</p>
+
+<p>JACK:	Victor saved the number to his phone under Donald Trump and he tried calling it again, and again, and again.  He called it five times but never got through.  He also tried getting in touch with Trump through Twitter, Parler, LinkedIn, but no reply in any of these places.  He wasnât sure what to do next.  He thought about reaching out to a tech journalist and sharing the login credentials.</p>
+
+<p>VICTOR:	But that didnât feel right, either.</p>
+
+<p>JACK:	Remember, he doesnât want to air dirty laundry on someone that has poor security.  The ethical thing to do was to keep it quiet and to let Trumpâs people take care of this, not to get it published in any news outlet.  Trump was busy recovering from covid and strangely holding campaign rallies at the same time to try to get reelected.  Victor watched online as Trump gave a speech at one rally in Prescott, Arizona.  Suddenly, Trump started talking about hacking.</p>
+
+<p>TRUMP:	Scully got hacked, right?  Scully; he was a never-Trumper.  He got hacked.</p>
+
+<p>JACK:	Just to give some quick background here; Steve Scully was scheduled to moderate the second presidential debate which was just a few days away and heâs been with C-SPAN for like, thirty years but at some point he said publicly that heâd never vote for Trump himself.  Well, this resulted in Trump talking about this with Fox News that same day.</p>
+
+<p>MARIA:	The Commission on Presidential Debates announcing this morning that the second presidential debate will be virtual.  Are you saying you are not gonna participate?</p>
+
+<p>TRUMP:	No, Iâm not gonna waste my time on a virtual debate.  I have a host who I always felt was a nice guy but I see heâs a never-Trumper.  We do have some of them Maria, believe it or not, because they donât like to win.</p>
+
+<p>JACK:	Trump said some other negative things towards Scully too, [MUSIC] and the next day Scully tweeted publicly at Anthony Scaramucci and it said âdo you think I should respond to Trump?â  It was very out of norm for Scully.  It wasnât anything a moderator should have probably tweeted, so he came under pressure for this tweet.  Then Scully said his account was hacked and he didnât actually tweet that.  Thatâs what Trump is talking about here.  So, letâs listen again.</p>
+
+<p>TRUMP:	Scully got hacked, right; Scully.  He was a never-Trumper.  He got hacked.  You know, Iâve never known a person that said he got hacked that got hacked.  Nobody gets hacked.  To get hacked you need somebody with 197 IQ and he needs about 15% of your password, right?  Doesnât happen.  So, Scully got hacked.</p>
+
+<p>JACK:	What, seriously?  Nobody gets hacked?  This triggered Victor.</p>
+
+<p>VICTOR:	That was my snap moment.  That was my moment of come on, you know?  Enough is enough.  I tried you, I tried your family, your staff, your government.  Who do I have to ping across the ocean to get the message across?  This is ridiculous.</p>
+
+<p>JACK:	[MUSIC] Victor decided to go semi-public.  He tweeted at Trump with a vague message which said something likeâ¦</p>
+
+<p>VICTOR:	Do me a favor; respond to the e-mail.  Get that issue fixed.</p>
+
+<p>JACK:	A journalist saw this Tweet, and remembered that Victor had hacked Trumps account back in 2016, and decided to look into this. So journalists started questioning Victor and investigating.</p>
+
+<p>Oh and itâs interesting that second debate with Steve Scully was cancelled because Trump had covid and didnât want to do a virtual debate. But it turned out Scully lied and changed his story saying his account wasnât hacked and he just tweeted that in frustration but regretted it and tried to come up with a cover story. CSPAN actually suspended Scully for lying about that. Which meanâs Trump was right. Kinda. The mental calculus you have to do to understand what Trump is saying is dizzying. But remember he said</p>
+
+<p>TRUMP:	Scully got hacked, right; Scully.  You know, Iâve never known a person that said he got hacked that got hacked.  Nobody gets hacked.</p>
+
+<p>JACK:	And I mean, he has to know thatâs not true. His own Twitter account was hacked 2 times before this. And the first one he did admit it was hacked. So by his own logic, maybe he lied about his account being hacked when someone posted lil Wayne lyrics on it. But Iâll give him the benefit of the doubt and assume he knows that, but was trying to say something else, and it just came out wrong. And so what I think he might be trying to say is that Steve Scully is a liar. Which was true, and at the time Scully was still holding on to the story that his account was hacked. So if thatâs what Trump meant to say then he was right. Scully did lie about it.</p>
+
+<p>TRUMP:	To get hacked you need somebody with 197 IQ and he needs about 15% of your password, right?  Doesnât happen.  So, Scully got hacked.</p>
+
+<p>JACK:	But what the heck is all this crap about IQ and 15% of a password. This makes no sense to me and this quote made quite the rounds in the Twitter security community too. This is a riduculous thing to say, and really does highlight how little the president knew about computers and cyber security.</p>
+
+<p>JACK:	So anyway, journalists made some noise about Victorâs Tweet, which triggered a chain of events that ended with someone, from the Secret Service reaching out to Victor.</p>
+
+<p>VICTOR:	Looking back, that was not the correct thing to do because normally we donât do that.  I should have kept my mouth shut but was it necessary?  Yeah, there was no other way.</p>
+
+<p>JACK:	On the phone with the Secret Service, Victor was flabbergasted to find out they werenât aware of the 2016 Twitter hack he did on Trump.  I guess in 2016 Trump wasnât president yet, so he must have had a different group of people taking care of him then.  I donât know why they didnât know.</p>
+
+<p>VICTOR:	For me, that shows that even when you report things to our government, not everyone are always immediately aware of it.</p>
+
+<p>JACK:	Which can lead to history repeating itself like it was right then.  Victor forwarded his coordinated disclosure to the Secret Service.  They said theyâd investigate it and take care of things, and after he got off the phone, that was case closed for disclosure number 5,780.  Victor hacked Trump a second time.  Heâd felt good that heâd gotten through to someone in authority and that somebody was doing something about this.  But then, Twitter and the White House denied that all this happened.</p>
+
+<p>VICTOR:	What Twitter says is we donât see evidence in our log files.  Thatâs not denying it didnât happen if you take it very literally.  The White House was very clear from â this absolutely isnât true this never happened.</p>
+
+<p>JACK:	Twitter did say in a statement that was widely circulated by news outlets that they hadnât seen any evidence to corroborate the claim.  They also added that they upped security for high-profile election-related Twitter accounts in the US.  A quote from the White House Deputy Press Secretary Judd Deere also spread around.  He denied the claim, saying it was quote, âabsolutely not true.â  End quote.  But Victor had all this evidence and so, to see these denies was just flabbergasting to him.  I guess with the election so near, the White House just didnât want the bad press that Trumpâs password was âmaga2020!â  But now Victorâs name was all over this news story.  The wider world became aware of what he did and you might guess that not everyone thought he did the right thing.</p>
+
+<p>VICTOR:	You should have seen the DMs that I got.  Wow.</p>
+
+<p>JACK:	[MUSIC] What were they?</p>
+
+<p>VICTOR:	Most of them were very supportive but there were people that donât know me personally or know the work that I do and they reacted like, from why you do this, you are a fraud, you do it for the money, that kind of remarks.  Like okay, apparently you donât know me at all.  Fine; I respect your opinion.  But looking back, if I could have done differently â if I could have done this quietly, yeah, that would have been better for all parties involved.</p>
+
+<p>JACK:	Some people also called Victor out for doing unwanted pen tests against Trump, raising again the ethical question is it okay to test someoneâs security if they didnât ask for it?</p>
+
+<p>VICTOR:	To verify that someoneâs account or an election or a person itself is at risk, I donât see how thatâs an unwanted pen test.  If you look technically too long, then you are accessing a system without permission, true.  So, youâre breaking a rule but are you breaking a rule with the intention to do good?</p>
+
+<p>JACK:	Victor believed what he was doing was for the greater good, to help secure the presidentâs Twitter account.  He also said his definition of a pen test is to use any tool to get in and just stop at nothing.  He says he didnât do that.  He saw the potential of a problem and took limited action to investigate.</p>
+
+<p>VICTOR:	If the first try it would immediately give that error message, then I would have moved on and I would be busy doing something else.</p>
+
+<p>JACK:	If Trump had two-factor authentication turned on, this would have never even been a story and looking back at busy doing something else sure is a nice thought, because Victorâs saga with Trump was about to take a turn for the worse.  [MUSIC] It all started after US authorities reached out to the Dutch government and asked someone to take a look into Victorâs claims.</p>
+
+<p>VICTOR:	I was asked to testify, to show the evidence that I have, the way that the responsible disclosure was done, the investigation, the handling of it, the communication.</p>
+
+<p>JACK:	This was heavy.  This was a criminal investigation which I donât think the Dutch government took it upon themselves.  It seems to me that the White House was pushing the Dutch government to conduct this investigation.  For Victor, it wasnât a good look.  It was really stressful, too.  Yeah, sure, he was getting weird DMs and getting called out online but now he was under a criminal investigation in his own country.  There were major consequences for this.  If the public prosecutorâs office decided he was [00:35:00] guilty, this could be big problems for him, especially if he were to get extradited to the US.</p>
+
+<p>VICTOR:	I could lose my job.  Even â they say if youâre guilty but you will not be punished, that will be enough for me to lose my job because a civil servant is not allowed to have a criminal record.  When I cannot work for the government anymore, that means I have to stop my volunteer work that I do in my own free time, so I will lose everything.</p>
+
+<p>JACK:	[MUSIC] Victor says his employer with the Dutch government was nervous, too.  They knew Victor was passionate about cleaning up the internet, securing all those thousands of open ports and databases, but all this bad press about Trump was putting pressure on his employer, and sometimes that alone is enough to get you fired; simply that your employer doesnât want to go through the stress of handling this incident, because what Victor did was making some pretty big news.</p>
+
+<p>VICTOR:	When you enter the Twitter account of the president of the United States, that is something else.</p>
+
+<p>JACK:	This was all turning into a nightmare.  The pile-up of stress reminded Victor that just like in 2016, the timing of all this with the election just a few weeks away added extra stress to the situation.</p>
+
+<p>VICTOR:	It was the most horrible timing if it comes to a case like this.</p>
+
+<p>JACK:	When the Dutch High-Tech Crimes Unit came knocking, Victor spent hours answering their questions over the course of a day.</p>
+
+<p>VICTOR:	They want to make sure that I did everything according to the book, with the best intentions, as I say so.  I have to be able to prove that, of course.</p>
+
+<p>JACK:	Victor showed them everything; screenshots, e-mails, phone logs.  Everything that he showed was what he did, how he did it, and how he tried to get in touch with Trump, and he had to sign a witness statement.  He felt solid about how he handled it, though.  He had stuck to his strict code of conduct and hadnât done anything evil while in Trumpâs account.  There were things he was careful not to do.</p>
+
+<p>VICTOR:	Do not send DMs, do not put flags or tweet or anything else.  Donât do anything bad because that will be unexplainable.</p>
+
+<p>JACK:	He also felt good about working with the High-Tech Crimes Unit.  These arenât technology amateurs; theyâre experts too and have a good understanding of cyber-security.</p>
+
+<p>VICTOR:	For me, itâs nice to know that someone is handling â looking at the case, knowing exactly whatâs going on.</p>
+
+<p>JACK:	Yeah, because if someone had investigated this case and didnât understand the depth or nuances of the situation, this could have made Victor look like a criminal.  But Victor would have to put those good vibes aside because the ultimate decision about whether or not he committed a crime was resting with the public prosecutorâs office.  His professional life and non-profit work were left hanging in the balance for weeks.</p>
+
+<p>VICTOR:	[MUSIC] There is no more ethical way to do this.  If thereâs a better way to do it, sure, the next time weâll take certain steps, weâll do it probably different or hopefully better.  This was done in the best way possible at that moment.  Still, if it was with the best intention, youâre breaking the law because of a very good reason.  This case was on the line of okay, if you do this, then itâs acceptable; if you do that, then itâs not acceptable.  Where is the line?</p>
+
+<p>JACK:	What Victor did have going for him was his twenty-two-year history of ethical hacking and responsible disclosures.  The moment someone starts investigating him, theyâre gonna see his connection with the Dutch Institute for Vulnerability Disclosures and the GDI Foundation.  Maybe an investigator will think if we dig further, somethingâs gotta come up.  Yeah, thatâs just not the case with Victor.  He walks proudly on the ethical side of the line.</p>
+
+<p>VICTOR:	The good thing is that if you start looking for my name, this is how I always work, so for that part I was not worried.</p>
+
+<p>JACK:	After three weeks, the Dutch prosecutor made a decision.  They said yes, gaining unauthorized access to someone elseâs account is illegal in the Netherlands, but thereâs a special circumstance that allows for it which is responsible disclosure, and itâs supported by case law.  They confirmed that Victor had gotten into Trumpâs Twitter but carefully considered his intentions.  Their analysis revealed that Victorâs intentions were good and that he was free to go as an ethical hacker.  What a relief.  Itâs been a long road for Victor and the other Grumps too, from back in 2016.  Theyâve been nervous about their 2016 hack, concerned that if they came to the US like for Defcon or something that they might get detained or that Trump might be out to get them.  But then that nightmare went on repeat in 2020 and hung like a dark cloud over Victorâs head.  But finally it was all over and he had an official ruling to back up that his actions were ethical.</p>
+
+<p>VICTOR:	I am happy that this case got solved, that it got fixed.  I donât look at it as a successful, responsible disclosure.</p>
+
+<p>JACK:	This doesnât count towards one of the 5,789 responsible disclosures you have?</p>
+
+<p>VICTOR:	Yeah, it counts as one.  It is a case number.  It is case number 5,780 but it was not successful because the person to which address did not accept the message.  [00:40:00] I hope I will not find more Twitter accounts for US elections open anymore.  I donât think that â I think there is also a responsibility for platforms like Twitter, for everyone that has a verified account or a very important account should have two-factor authentication by default.  There are some worries about if they actually learned something about it.  What I do hope is that other peoples â read this story are like oh, I donât have such a good password either or I reuse this password also.  Maybe I should enable two-factor authentication.  So, if that happens based on this story, then I will be happy with the output of that.  I hope for the best.</p>
+
+<p>JACK:	Itâs hard to know whatâs changed for sure over at Twitter since this incident.  I guess Twitter banned Trump so that kinda fixes the problem, right?  You canât hack an account that doesnât exist.  But itâs not clear how much Twitter is enforcing this two-factor authentication requirement for political accounts or major influential accounts.  However, Victor and I tried to do this again by looking for accounts that donât have two-factor authentication turned on and we no longer see the message that used to be displayed.  No matter if someone has two-factor authentication turned on or not, you get the same error message when putting in the wrong password which is good.</p>
+
+<p>It means if someone was going to be like Victor but had malicious intent, theyâd have a harder time finding insecure accounts.  Victor hasnât slowed down since this incident.  Heâs still finding vulnerabilities and reporting them in a proper way.  In fact, heâs launching the DIVD Academy soon which aims to teach young adults IT security and research skills that he thinks schools arenât providing.  Him and the Guild of the Grumpy Old Hackers want to keep an eye on the younger generation to help guide them and coach them to be safe and responsible in this digital age.  They believe the youth are the future and want to help make the future a better place.</p>
+
+<p>(OUTRO):	[OUTRO MUSIC] A big thank you to Victor for sharing your adventures with us.  You can follow Victor on Twitter.  His name there is @0xDUDE and you can find links to this story on darknetdiaries.com.  The other day, someone told me they got into a rideshare and the driver was listening to Darknet Diaries when they got in, and the show was so interesting that they just made the driver keep driving around town until the episode was over.  If youâre that kind of listener that gets hooked on this show and love it when new episodes come out, please consider donating to it to show your support through Patreon.</p>
+
+<p>By giving, it sets a new standard of how you support content that you like and want to see more of.  Visit patreon.com/darknetdiaries to donate.  Thank you.  This show is made by me, the guy whoâs been wearing a mask all his life and doesnât even know how to take it off anymore, Jack Rhysider.  This episode was produced by the font-conscious Charles Bolte.  Original music and scoring for this episode was done by the melodic Garrett Tiedemann, editing help this episode by the true-type Damienne, and our theme music is done by the still-spinning Breakmaster Cylinder.  Even though Iâve got nothing against bots; some of my best friends are bots, this is Darknet Diaries.</p>
+
+<p>[OUTRO MUSIC ENDS]
+[END OF RECORDING]</p>
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

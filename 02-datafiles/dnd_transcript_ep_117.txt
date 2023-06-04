@@ -1,0 +1,670 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>Daniel the Paladin â Darknet Diaries</title>
+	<meta name="description" content="Daniel Kelley was equal parts mischievousness and clever when it came to computers. Until the day his mischief overtook his cleverness.">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Daniel the Paladin â Darknet Diaries">  
+	<meta name="twitter:description" content="Daniel Kelley was equal parts mischievousness and clever when it came to computers. Until the day his mischief overtook his cleverness.">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/underwater.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/117/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Daniel the Paladin â Darknet Diaries" />
+	<meta property="og:description"        content="Daniel Kelley was equal parts mischievousness and clever when it came to computers. Until the day his mischief overtook his cleverness." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/underwater.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/117/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/underwater.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/117/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="Daniel the Paladin â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/underwater.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 117: Daniel the Paladin</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://www.podtrac.com/pts/redirect.mp3/traffic.megaphone.fm/ADV2250596204.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/117/",
+			   "title": "Ep 117: Daniel the Paladin"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/117">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[START OF RECORDING]</p>
+
+<p>JACK:	 In 2014, a five-year-old hacked Xbox Live.  A five year old! Ya.  Hereâs what happened; [MUSIC] the family got an Xbox for Christmas.  The five-year-old was having fun playing games, and dad set it up with parental controls so the kid could only play a few games that were set aside for him.  But the kid saw some of the other games that dad was playing and wanted to play those, too.  He tried <!--more-->to get to those other games, but he couldnât; it was locked by dad.  But the kid didnât stop trying.  He understood that there were two different accounts; one for kids and one for dad.  So, he clicked on his dadâs account which prompted the kid for a password.  The kid didnât know the password.  Heck, he was five years old, so he didnât even know how to spell even if he knew the password.  But when he got to the password screen, the kid just hit space bar a bunch of times; tap, tap tap, then Enter, and magically, it worked.  Apparently there was a vulnerability in the Xbox parental controls that allowed someone to just type in all spaces to get out of the kidâs account, and the kid got into his dadâs games and played them.  When the kid could play his dadâs games, this is what he said.</p>
+
+<p>KID:	I was like, yeah!</p>
+
+<p>JACK:	He played them, wasnât very good at it, but then shut them off and went and did something else without his dad knowing, that little sneaker.  Then he did it again another day.  He bypassed parental controls, played the game he wasnât supposed to, and then shut it off before his dad found out.  But then his dad noticed someone was playing his games and was like, thatâs odd.  So, he asked the kid, hey, were you playing my stuff?  The kid started to worry a little.</p>
+
+<p>KID:	I got nervous.  He was gonna find out.</p>
+
+<p>JACK:	His dad realized the kid must be breaking out of the parental controls and asked him to demonstrate how he did it.  [INTRO MUSIC] So, the kid showed dad how you could just mash the space key a whole bunch of times to get to the other games.  His dad was dumbfounded and they reported this bug to Microsoft who fixed it, and they even credited the kid in the bug report as a security researcher involved with identifying it.</p>
+
+<p>(INTRO):	These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	This is the wild and strange story of Mr. Daniel Kelley.</p>
+
+<p>DANIEL:	So, I think itâs important to go back to 2013, 2014, because thatâs when a lot of this started that led up to the events that took place.  I had a normal childhood.  I really disliked school, had really low attendance, and my life pretty much resolved around online games.  So, Iâd go to school, Iâd come home, Iâd play online games, and Iâd basically do the same thing for months on end.  I used to be obsessed with a certain game called World of Warcraft.  On World of Warcraft, essentially, you had a PvP system.  I used to take this game really serious.</p>
+
+<p>JACK:	I picture you as a rogue.  When you were telling me this story, I was like, this guy is definitely a rogue and heâs a griefer; I can tell already.</p>
+
+<p>DANIEL:	No, no, thatâs not true.  I had a few characters, actually.  I used to play a lot of healers.  My main character was a Holy Paladin, but then I played Resto Druid for a bit.  Thatâs pretty much all I used to play, was healers.</p>
+
+<p>JACK:	I just donât picture you as either a paladin or a druid.  Thatâs so funny.</p>
+
+<p>DANIEL:	Yeah.</p>
+
+<p>JACK:	Daniel played a lot of World of Warcraft for thousands of hours, and during this time, he was really working hard to rank up in PvP.  This is player versus player skirmishes, where heâd get in a group of other players and battle against other players to see who was better.  He was very high-ranked and very competitive, spending as much time as possible playing this game.  Because he was high-ranked, he would often compete against the same teams who were around his rank.  One day, he got a strange message.</p>
+
+<p>DANIEL:	Before the match started, I received an in-game message which basically said something like goodbye.  [MUSIC] The game started, and my internet disconnected.  At the time, I didnât even realize that I had received the message.  It was only when I went back for my chat logs did I see the message.  Basically, we get to a point where weâd queue against the same team so much, and someone on my team would always go offline.  It would either be me or it would either be one of my teammates.  It got to a point where I ultimately realized that we have no chance of winning whatsoever.  So, I called one of the members of this specific team and asked them what they were doing, and they sort of made a joke out of it.  They didnât admit that they were doing anything, but they didnât say that they werenât doing anything.  So, after a while, I sort of â I went to Google and I started to search how to cheat on this game, basically.</p>
+
+<p>JACK:	He found a forum that talked about the different kinds of cheats and hacks.  He gets on the forum and asks them what could have caused him to be disconnected just before a match started.</p>
+
+<p>DANIEL:	I basically explained everything and I saw â asked people to make a suggestion on what he could be doing.  A lot of people started saying that there was a high probability that I was being DDossed.  Back then, I was like, twelve years old, so I really didnât understand the concept and I was not familiar with this at all.</p>
+
+<p>JACK:	So, he looks up what DDoS is and finds it stands for distributed denial of service, and this typically means flooding someone with so much traffic that they cannot get to the internet anymore; service is denied.  Okay, that made sense.  Someone may be flooding him with tons of packets and that made him go offline.  Then he found what a booter was, which is a type of hacking tool that does this kind of DDoS attack.  All you had to do was enter the victimâs IP address, and you could blast them off the internet.  But what didnât make sense to him was how did anyone know his IP address to attack him basically at home?  Thereâs nothing in the game that would show his IP to anyone.</p>
+
+<p>DANIEL:	So, I sort of interacted with the people that posted on that thread and asked them if they had any theories behind how he may be getting my IP address.</p>
+
+<p>JACK:	They came back and asked well, have you talked with any of your attackers over Skype in the past?  [MUSIC] Yeah, he had.  Remember?  He even called the guy up who he thought did this and asked him about it.  Well, as it turns out, back then when you called someone on Skype, it would store their IP address on your computer.  Then when hackers figured that out, they created a little tool called the Skype Resolver, and with this little tool, all you had to do is enter someoneâs Skype username and it would try to call them and then tell you what IP address they had.  So now he knows exactly what tools they used to find him and kick him offline.  So, now that he knows how itâs done, he gives it a try.</p>
+
+<p>DANIEL:	This is pretty much what I was doing when I was like, twelve.  So, I had a booter and Skype Resolver, and I decided to test this theory.  So, one night we queue against this team, I get his IP address, and I DDoS him.  It basically worked.  We won and I sort of realized that this is what he had been doing all along, because the effects were exactly the same.  At the very beginning, I only used to use it against their team, and I â to be honest, I didnât even tell the other two players what I was doing because I didnât want them to know.  It was really tempting to do it to every single team that we queued into, but I didnât do that because I had essentially achieved where I was through hard work and skill, and not cheating.  So, I wasnât about to ruin all the time that I had spent learning just so that I could cheat.</p>
+
+<p>JACK:	He wasnât using this attack that much, but with this knowledge of what it looks like when someone is attacked, he started noticing this happening more often.  In fact, a lot of the top-ranked teams had been using booters to force people to leave just when a match would begin so they could win easier.  This ruined the fun and the game for him, so he started playing it less.  But what this all did was it sparked his curiosity about hacking, so he went back to that forum that taught him how he was booted from World of Warcraft to see what other kinds of hacks there were out there.  This is where he learned about Google dorking.  [MUSIC] Google dorking is where you use Google as a vulnerability scanner.  What I mean is Google is a search engine, right?  But in order for it to be a search engine, it needs to go out and scan and spider its way across the entire internet, scooping up tons of data about websites along the way.</p>
+
+<p>Googleâs not specifically looking for vulnerabilities; itâs just grabbing whateverâs out there and putting it into a database so that when you search Google, it can present you with information about what you searched for.  So, you can search Google for specific things that are vulnerabilities in websites.  Like for instance, if you do a Google search for the term â
+intitle:index.of id_rsa -id_rsa.pubâ.  This is basically asking Google if they found any files on the internet called ID RSA, which typically stores a private key.  This file should never be out there on the internet and open for anyone to see.  Itâs like exposing your password.  Yet, Google has found tens of thousands of websites that clearly display their private keys for anyone to see.  These little clever searches were what Daniel was learning and it opened his eyes to tons of possibilities.  One day, he searched for a misconfigured admin portal and found one, and was able to log into this website as an admin.</p>
+
+<p>DANIEL:	So, it was a website belonging to a school.  I donât want to name the name of the website because it was over ten years ago, but what I ultimately did is defaced the website, âcause I just wanted to sort of â it was the first vulnerability that I ever found, so I was sort of intrigued that I found something like that to begin with.</p>
+
+<p>JACK:	What did you put on the website?</p>
+
+<p>DANIEL:	It was some stupid picture.  I think it was like â do you know the picture of the troll face?</p>
+
+<p>JACK:	Yeah.</p>
+
+<p>DANIEL:	Like, pretty much just left it there for a couple of days.  But the thing is, back then, I was really young.  [MUSIC] I was like â I think I was twelve or thirteen.  So, it was more I was doing it for fun, if that makes sense.</p>
+
+<p>JACK:	This was amazing.  This was legendary, at least to a thirteen-year-old.  He got onto a website and changed the picture to whatever he wanted.  He felt clever and powerful.</p>
+
+<p>DANIEL:	You honestly sorta feel â itâs like a sensation of euphoria, if that makes sense, almost like a really, really big achievement.  But the problem is, after youâve gained access to that system, you start to look for the next thing.  Itâs always the next thing because youâre always sort of chasing that feeling and trying to replicate what you just did.</p>
+
+<p>JACK:	So, he went back to Google, typing in search queries that would point him to different websites that were vulnerable.  Of course, when you type anything into Google, it gives you 100,000 hits, right?  So, he starts looking through the list of potential vulnerable sites, and as he was scrolling through, looking at the websites on the list, one stood out; microsoft.com.  Well, it was a subdomain of Microsoft, but still; this is a big company, so he followed the link to see if the site was vulnerable.</p>
+
+<p>DANIEL:	I found a cross-site scripting vulnerability in â on a subdomain in this login panel.  Essentially, it allowed me to inject JavaScript into that web page so I could craft, for example, a malicious link and then steal user accounts, if that makes sense.</p>
+
+<p>JACK:	But a cross-site scripting vulnerability is hard to actually exploit.  Finding it is one thing, but using it to actually attack someone is a bit tricky.  So, Daniel didnât want to use it to do any kind of malicious attack.  Instead, he just decided to tell Microsoft about it.</p>
+
+<p>DANIEL:	So, back then, Microsoft ran a responsible disclosure program.  I think it was one of the few companies back then that did, and I basically took the proof of concept and submitted it to Microsoftâs security team.  Within a couple of hours, they pretty â well, it was either a couple of hours or a couple of days.  They got back to me and triaged the vulnerability and basically confirmed the existence.</p>
+
+<p>JACK:	Did they give you anything, like a shirt?</p>
+
+<p>DANIEL:	No.  So, all they pretty much â so, the only real incentive I had was when I found the responsible disclosure program.  They were offering a page which allowed you â where they put peopleâs names on, where it was some type of security acknowledgement where you would submit a vulnerability and theyâd put your name on the website in returns â for submitting that vulnerability.  But back then, that type of thing was really cool to me because having your name on a website like Microsoft when youâre so young seemed really fascinating.  So, thatâs basically the only incentive that I used to submit the vulnerability, or the only source of motivation.</p>
+
+<p>JACK:	Yeah, so did they add your name to the thing?</p>
+
+<p>DANIEL:	Yeah.  So, my name was added a week or two later and is â it remains there to this day.</p>
+
+<p>JACK:	Very good.  So far, this is a great start for Daniel.  Replacing one image on a website?  Not too bad, but now finding a vulnerability on Microsoftâs website and reporting it to them?  Nice job.  On top of that, he was given a great big thank-you.  Even better.  This could be a great start to a prosperous career for Daniel.  If he keeps it up, submits a few more vulnerabilities to companies, he might start getting job offers, or he could be rewarded for responsibly disclosing bugs.</p>
+
+<p>DANIEL:	[MUSIC] Yeah, so, I pretty much started off with really positive intent.  After that initial submission with Microsoft, I basically applied the same â I started to wonder if other companies would offer some recognition or the same â or some type of reward.  So, I went through loads of Fortune 500 companies, started finding vulnerabilities, and I ultimately ended up submit â well, attempting to submit a lot of vulnerabilities to these Fortune 500 companies, but none of them ever really provided the same response as Microsoft, because they didnât run any official responsible disclosure programs.</p>
+
+<p>JACK:	Okay, so what did you do after telling them theyâve got a problem and theyâre not fixing it?</p>
+
+<p>DANIEL:	So, I â the vulnerabilities started to accumulate.  It got to a point where I was just sitting on all of these vulnerabilities.  I wasnât really sure what to do with them.  I just had them saved somewhere.  I kept doing it, kept accumulating vulnerabilities, I kept trying to reach out to these companies, but they â most of the time, they wouldnât respond.  So, two things would happen; either theyâd respond and nothing would come of it, or they would completely ignore your contact attempt.  But I saw â I started to accumulate all these vulnerabilities and I guess it got to a point where I decided that I was wasting my time.</p>
+
+<p>JACK:	[MUSIC] Now remember, Daniel learned these hacking techniques from a hacker forum, and he was learning more and more from there.  In fact, he was hanging out in chat rooms with them and stuff.  So, you can just imagine his eyes shifting and darting around between windows, right?  Heâd look at one screen which showed all the vulnerabilities he found, and then would check his e-mail to see if any of the companies replied that he reported vulnerabilities to, and nothing.  Then he looked at the hacker chatroom and the forums he was on, and then his eyes does the loop again; vulnerabilities, empty inbox, hacker forum.  He knows the people on this hacker forum loved finding stuff like this.</p>
+
+<p>DANIEL:	Obviously, those individuals werenât really â not all of them were ethical.  Not all of them were up to similar things that I was doing at that time.  They were up to malicious things.  But I ultimately ended up sharing all of the vulnerabilities with people that I had met on these forums.  They sort of started using these vulnerabilities with malicious intent, and I guess I joined them.</p>
+
+<p>JACK:	Now, keep in mind; at this point, Daniel has only found vulnerabilities.  He hadnât actually tried to exploit any of them.  Itâs equivalent to finding a window open on an office building at night, but not really looking in or reaching in to grab anything.  So, he tells the people on the forums hey, I found some vulnerabilities on some websites, and of course, they loved seeing this.  They went straight to trying to exploit it to see what kind of information they could get out of these companies.</p>
+
+<p>DANIEL:	So, theyâd exploit the vulnerabilities, theyâd gain some type of access, and then â so, theyâd escalate privileges and they would just really pivot around the networks or whatever they had gained access to.  Sometimes it would result in data being stolen, but mainly it was just keeping access at that point in time.  It was just to see what could really be done with the vulnerabilities, if that makes sense.  I guess they were just doing it to see what they could sort of accomplish.  There was no real intent, if that makes sense.  It was more like, letâs fuck around and sort of see what we can do.</p>
+
+<p>JACK:	[MUSIC] Were you participating in this?</p>
+
+<p>DANIEL:	So, after I shared the vulnerabilities, I pretty much decided to participate in it, yeah.</p>
+
+<p>JACK:	I guess heâs already participating hacking these sites just by sharing vulnerabilities with them.  Doing recon, finding vulnerabilities, and sharing that is all part of the process, right?  I pause here for a moment because Iâm trying to find the actual line that you have to cross to become a criminal.  Walking by a building just looking to see if it has any open windows at night isnât criminal behavior.  But what if you told a group of troublemakers about this way in you found?  Is that now criminal, just telling someone about a vulnerability you found with a company?  Itâs hard to say.</p>
+
+<p>DANIEL:	It depends where you are in the world.  Thereâs different computer laws pretty much in every different country.  I can only speak on behalf of the UK.  In the UK, the Computer Misuse Act is so vague that thereâs different interpretations of it.  Like, I read somewhere that the National Crime Agency has their own interpretation of the Computer Misuse Act.  So, I think it ultimately comes down to ethics.  If youâre going to report a vulnerability, [MUSIC] I think thereâs a law â like, we heard that youâre really gonna be prosecuted for trying to ethically disclose a vulnerability, but it doesnât always turn out that way.  In that time period, I must have reported twenty or thirty vulnerabilities, and I never received a negative response, not once.  It was either no response or a positive response.</p>
+
+<p>JACK:	Well, now Daniel was switching it up.  Instead of just finding vulnerabilities and reporting them to companies, he was now actively trying to exploit these vulnerabilities and hack into these companies and their websites, and trying to get into their systems and doing stuff he absolutely wasnât supposed to be doing.  This was all just for fun.  Occasionally, someone would take some data or download something, but for the most part, it was just a big thrill to find a way in and look around.  That was enough for these guys.  Iâm picturing you as â half of you is there to help.  Youâre like man, this stuff needs to be cleaned up.  Nobodyâs cleaning it up.  Here you go; you guys need to fix this stuff.  Then half of you is like, Iâm gonna have fun with what I have at the same time and just screw around with â like, if these companies arenât gonna be fixing stuff, I might as well jump in and see whatâs going on in there, and just take a look and get out.</p>
+
+<p>DANIEL:	Yeah, I think thatâs pretty much accurate.  I had no real â I wasnât on one side, if that makes sense.  I was on both.  Sometimes Iâd sort of mess around with a vulnerability and then sometimes Iâd try and disclose it.  I was never really â at that point in time, I was never really on one side, if that makes sense.</p>
+
+<p>JACK:	Yeah.  So, at that point you start going to college, I believe?</p>
+
+<p>DANIEL:	Yeah.  So, around that time, I started going to college.</p>
+
+<p>JACK:	Daniel completed his Level 2 coursework, which is sort of like high school in the US, and was wanting to go onto Level 3 courses, which is kind of like what you do after high school.  He finds a college near his parentsâ house in Wales, in the UK, and he signs up to study computers, which was his passion, clearly.</p>
+
+<p>DANIEL:	So, I complete this Level 2 course and then I apply for the Level 3 course.  I basically â Iâm informed that this Level 3 course consists of a lot of presentations and socially, you have to be â thereâs a lot of activities in this course that involve â thereâs a social element to them and back then, I was a really unhappy and awkward, fat teenager.  I really didnât like that at all.  I basically had access to this botnet.  It was essentially a Mirai botnet which had loads â so, someone online essentially gave me access to this botnet.</p>
+
+<p>JACK:	Did you pay for it?</p>
+
+<p>DANIEL:	No.  So, it was through someone I had met online and they gave me free access to it.</p>
+
+<p>JACK:	Now, what the Mirai botnet is best at is flooding an IP address with gobs of traffic, so much that it will take down a website.  Itâs very good at doing DDoS attacks.</p>
+
+<p>DANIEL:	They pretty much had a website, and on that website there was a panel where everyone would log in.  Thatâs how everyone used to access all of their work and their documents.  At the time, I had access to this botnet and [MUSIC] I guess I got really bored and decided to point it towards the college.  I essentially DDossed that college, but what I didnât know at the time is that the college was also hosting a lot of other networks.  It was basically one â so, it was one huge network that hosted a lot of services like police stations and quite a few things.  So, by DDossing this network, I had pretty much affected a lot of services, not just the college.  I ended up DDossing a lot more things than I really intended to.  But yeah, by DDossing that website, in effect, nobody could log in and nobody could really access their work or upload work or pretty much do their coursework.</p>
+
+<p>JACK:	Well, when the main portal that students used to log in to do their work was down, this resulted in Danielâs class getting canceled for the day, which was sort of what he wanted.  He didnât want to go to class, but he also didnât want to tell his parents that he didnât want to go to class.  So, this was the perfect excuse for him of why he wasnât going to class; school was canceled because the computers were out of order.  Once the scheduled time for his class was over, he turned the attack off.  [MUSIC] Well, that worked out in his favor for the day, but then the next week rolls around and he has classes again.  Since attacking the school with a botnet resulted in class being canceled last time, he decided to launch the attack again.  Again, this took the computers down and it resulted in classes being canceled.  This seemed to be working.  So, every time he had to go to class, heâd just attack the school.</p>
+
+<p>DANIEL:	So, at the very beginning, I used to pretty much just do it in hour intervals.  I would DDoS the network for an hour or two, usually in the morning when everyone would go into the college, and quite quickly theyâd find out that the network was offline, and theyâd cancel everything for that day.</p>
+
+<p>JACK:	Daniel had mixed feelings about all this.  On one hand, he was relieved that he didnât have to do any presentations at school.  But on the other hand, he felt bad for attacking a school and ruining it for other students.  But then his curiosity was growing, wondering how many more days can the school be canceled because of this?  Surely it canât go on forever, right?  Theyâre not gonna cancel the whole semester, will they?  It sort of made him curious on how theyâre gonna resolve this.  How do you defend against a Mirai botnet?  How tough is the school to be able to stand up to it?  So, he continued to attack the school.</p>
+
+<p>DANIEL:	I think in total, I must have done it well over thirty times.  It became a constant thing.  I would pretty much do it every day.  So, whenever the network would come back up, I would just hit it again, and it became a constant thing.  They used to send â they would cancel lessons for weeks at a time because nobody could do anything, pretty much.  So, basically, one morning â so, I was sleeping and I remember opening my eyes [MUSIC] to two police officers standing in my bedroom doorway.  Obviously at this point, I was still living with my parents because I was quite young.  But I remember opening my eyes to these two police officers standing in my bedroom doorway, and they sort of said to me you need to come downstairs.  I pretty much went downstairs; they â I sat down on a couch and they were going through everything.</p>
+
+<p>They were going through my computer, they were taking all of the electronics, pretty much all the devices in the house.  At that time, I was cautioned and arrested for DDossing the college, pretty much.  So, when I â basically, when I was arrested, even though they came to arrest me for the college DDoS, there was a lot of other material on my hard drive that they wouldnât have been aware of.  They only became aware of it when they inspected my devices.  So, when I previously discussed where I was hacking websites for fun, that was all still on my hard drive.  So, what had happened is they had come to my house, arrested me for DDossing the college.  They kept me in a police station for a couple of hours.  They interviewed me.  I was released on bail but during that bail period, when they inspected my computers, they would have then found all the other material, which would have allowed them to charge me with more things, like the â all the Computer Misuse charges.</p>
+
+<p>JACK:	Once the police discovered all this new evidence of crimes that Daniel committed, they re-arrested him and charged him with thirteen more offenses.  They brought him down to the police station and interview him.  They asked him lots of questions about the stuff they found on his computers.  They let him go home and they investigated some more, and they brought him back to the station and interviewed him some more.  This goes on and on for months.  They finally issue him a court date where the judge will decide what his punishment will be.</p>
+
+<p>DANIEL:	So, this is where it gets a bit tricky.  So, basically when they issued me with that court date â so, they issued me with a court date; I think it was the following year.  During that time period, after I had been released from the police station, I pretty much decided to re-offend, and thatâs where it starts to get a bit more complicated, because thenâ¦</p>
+
+<p>JACK:	Why do you say it like that?  I decided to re-offend?  Was it that clear in your head that like, Iâm gonna go re-offend?  It just seems like a weird thing to say.</p>
+
+<p>DANIEL:	Honestly, no, it wasnât really that clear.</p>
+
+<p>JACK:	He had about five months before he was due in court.  Now, the cops still had all his computers.  They confiscated those months ago and kept them for evidence.  So, Daniel convinced his parents that he needed a computer in order to resume his life.</p>
+
+<p>DANIEL:	[MUSIC] By removing my devices, what they had done is sort of stripped my existence.  I was fulfilling all of my needs through the internet.  I had no other activities.  I used to socialize through the internet, I used to have fun through the internet, entertainment through the internet.  Basically, I ended up committing more offenses on bail.  I canât really explain why, but what happened â what ultimately happened is that I resumed everything as if nothing had happened.  I managed to convince my parents to buy me a new device.  I went out, logged in to all of these â I logged into the communities that I was already established in, and I just continued.  My criminality essentially â from that point onwards, my criminality essentially escalated from low-level offending to blackmail, fraud, and computer hacking.  There was this three-month period where I basically went on this hacking spree, and I acted in a group and I acted on my own.  I sort of would hack into websites, I would steal the data, and I would then try and blackmail the founder or the â whoever was behind the website for money.</p>
+
+<p>JACK:	Once he found his way back into the groups he was in and he got all his old tools set up again, there was no stopping him.  He went right back to his old ways, because, as the old saying goesâ¦</p>
+
+<p>MUSIC:	[MUSIC/LYRICS] In for a penny, in for a pound, you should never jump off the merry-go-round.  In for a penny, in for a poundâ¦[CONâT]</p>
+
+<p>JACK:	Now, there was no effort to do responsible disclosure.  His intention was just to figure out how to make money with all the hacking he was doing.  The easiest thing that came to mind was extortion.  I hacked you; pay me or else, kinda stuff.  He didnât have his hands on any kind of ransomware, or he might have tried to use that.  But what he would do was find a website with vulnerabilities, exploit them, maybe take some data from them, and then e-mail the owner of the site demanding money, or else heâll publish this data that he stole and publish the vulnerabilities on how he got in.  Sometimes he didnât even exploit the site and steal data; sometimes heâd just tell them that he found a severe vulnerability on their site and will publish it unless they pay him.  What Daniel was asking was anywhere between five and forty Bitcoin.  A Bitcoin then was only worth about $200, so he was demanding anywhere from $1,000 to $10,000.  Of course, companies werenât paying, so sometimes heâd escalate the situation and would get personal data from site employees and show them how he was going to publish their information unless he pay them.  These were some serious threats to these companies, so of course, they were reporting all this to the authorities.  But Daniel was hitting companies in countries all over the world; Canada, the US, Australia.  Did any of these work?</p>
+
+<p>DANIEL:	So, one of the blackmails worked, and I pretty much ended up extracting about Â£5,000 out of an Australian company.  [MUSIC] We basically sent an e-mail to this â the CEO of this company and we said if you donât pay, weâre going to release all the customer data and weâre also going to publish the source code, which would then make their product a bit useless.  After we sent that e-mail, thatâs when they decided to pay.</p>
+
+<p>JACK:	Now, hereâs why you shouldnât pay people when they try to extort you like this.  As soon as this company paid Daniel, he just wrote back to them and demanded even more money, saying I found even more stuff; pay me more.  You canât trust criminals to be honorable in this situation.</p>
+
+<p>DANIEL:	So, along with blackmail, I was putting some of the data that I had stolen up for sale.  I was trying to sell them on various forums and tried to make money that way.  So, I made a couple of hundred of pounds, but I never really made a lot of money.</p>
+
+<p>JACK:	Now, getting even this little bit of money, it was like jet fuel for Daniel.  It was amazing that his system worked, and he was getting paid for hacking.  He just had to hack more and extort more, and heâd get paid more.  So, he kept on the hunt for more vulnerabilities and was going crazy with all kinds of hacking and extortion attempts.</p>
+
+<p>DANIEL:	The companies became a lot bigger, the websites became a lot bigger, and the blackmail â the sums demanded with the blackmail became a lot bigger as well.  Eventually, one of the companies that we â well, that I sort of hit was TalkTalk.</p>
+
+<p>JACK:	Oh, TalkTalk.  This is a British telecom company.  They provide cell phone and internet services.  Itâs a big company in the UK.  But this TalkTalk incident was quite the thing.  [MUSIC] It all started one evening when Daniel logged into the hacking forum that he frequented.  In fact, he was such a regular at this hacking forum that he was a moderator there.</p>
+
+<p>DANIEL:	On one evening, a user makes a post and he basically â heâs asking for assistance in exploiting this vulnerability in TalkTalk.  What heâs effectively found is an SQL injection on a subdomain but he doesnât know how to exploit it, so he sort of posted it on this forum asking for help.  Thatâs when Iâve come across it.</p>
+
+<p>JACK:	This user posted a vulnerability for a pretty big telecom company and had no idea how severe this was.  Some savvy users on the site pretty quickly were able to exploit this vulnerability and actually get into TalkTalkâs network and start moving around and stealing data.  Daniel was seeing the frenzy that was stirring from this forum post.  This was really bad for TalkTalk.</p>
+
+<p>DANIEL:	This thread got posted and loads of people started sharing it.  It went everywhere.  It went over other forums, it went over Java, it went over IRC.  I think at that time, there must have been well over twenty people that had this vulnerability in their possession, for sure.  There were just so many people exploiting this vulnerability.  So much data was stolen from TalkTalk that it was really unbelievable.  Even people â so, people on darknet markets even started selling the data.  It was pretty much everywhere.  So, I took the vulnerability and I initially shared it with someone on IRC.  They had pretty much decided to dump as much data as possible.  There was something like sixty-four databases, and theyâd stolen â I think it was 100,000 records before the website went offline and they couldnât dump any more data.  That person then sent me that data on the server.</p>
+
+<p>JACK:	The next day, this was all over the news.  Hereâs a clip from the BBC.</p>
+
+<p>HOST:	Some breaking news; in the last hour, police are investigating after a significant and sustained cyber-attack on the website of the company TalkTalk.  We actually have the CEO of TalkTalk, Dido Harding, here.  First of all, Dido Harding, how many people are affected?</p>
+
+<p>DIDO:	We donât know for certain, but weâre taking the precaution tonight of contacting all four million of our customers.</p>
+
+<p>HOST:	But you didnât do â the attack was yesterday.</p>
+
+<p>DIDO:	The attack started yesterday.  We brought down all of our websites yesterday lunchtime.  We spent the last twenty-four hours with the Metropolitan Police and various security experts trying to get to the bottom of what has happened.</p>
+
+<p>JACK:	Good luck trying to get to the bottom of this one.  Twenty different people just breached your network.  But not Daniel; Daniel has only seen the forum post and told a friend to check this out.  His friend is the one who got in and downloaded the database.  But at this point in Danielâs life, he was actively extorting companies left and right.  So, he looked at the data that his friend took from TalkTalk and got an idea.</p>
+
+<p>DANIEL:	[MUSIC] So, I had access to this data and I basically decided to gather all of the e-mails from the data and â so, the staff e-mails, the employee e-mails, and the CEOâs e-mail addresses, and I decided to send a ransom demand basically demanding Bitcoin in exchange for me not to release this data.</p>
+
+<p>JACK:	The CEO of TalkTalk, Dido Harding, did in fact get his e-mail, and I know this because hereâs another clip from the BBC a few days later.</p>
+
+<p>DIDO:	Itâs a live criminal investigation.  All I can say is that I had and personally received a contact from someone purporting, as I say â I donât know whether they are or are not â to be the hacker looking for money.</p>
+
+<p>JACK:	The CEO didnât reply to Daniel.  Instead, she just turned over his e-mail to the Metropolitan Police who got right to work investigating this case.  Iâve heard from a few listeners that they donât like it when I have teenage hackers on this show.  But let me tell you why I think this is important.  This isnât some cringe roll-your-eyes kind of story; ah yeah, a teenager hacked some company.  Big whoop.  This guy isnât even that good of a hacker.  Anyone could have done this.  Maybe, but this whole TalkTalk incident resulted in $70 million in damage to TalkTalk.  They saw scores of customers cancel their service because of this.  Their stock tumbled, and the CEO had to appear before parliament to give testimony as to why their security failed.  This was a huge problem for TalkTalk, which meant it was a huge problem for the highly-skilled, talented IT staff that worked to secure TalkTalk.</p>
+
+<p>DIDO:	We would receive whatâs called denial-of-service attacks on our network every week.</p>
+
+<p>JACK:	This is their adversary, a teenager who wants to make some money from your one slip-up that you had on a server that came over when TalkTalk acquired another company.  What Iâm saying is this is really important and you canât ignore this kind of adversary.  You canât roll your eyes and ignore this kind of attack, because this kind of attack can destroy your company and bring it to its knees.  This TalkTalk incident is such a big story that I actually spent a whole episode on it.  That was Episode 4, so if you want to know all the details of what went down in the TalkTalk incident, go check out Episode 4.  Anyway, as the hack died down in the news, a few weeks go by.</p>
+
+<p>DANIEL:	One evening in November, I was driving and I had a phone call from my dad.  On the phone, all I can hear in the background is someone saying my name and then saying not to tell me something.  [MUSIC] But my dad had basically told me that there was police waiting in my house and they wanted to speak to me.  So, I initially â a part of me sort of knew what it was about at that point.  I wasnât that naive.  I sort of knew what it was about, so I pretty much turned the car around and drove home.</p>
+
+<p>JACK:	When you turned that car around and you were driving home, what was going on in your head as you were driving home?</p>
+
+<p>DANIEL:	I wasâ¦</p>
+
+<p>JACK:	Like, were you â I canât imagine you listening to your favorite music and just jamming â dancing around.</p>
+
+<p>DANIEL:	No, definitely not, no.  I honestly got lost in my own world.  On the way home, I just had so many thoughts going through my head that I really didnât know what to think.  A part of me really didnât want it to be real, even though I knew â obviously then, I pretty much knew what it was, because there was no other reason for them to come back.  A part of me was just like, wishing that it wasnât real and that it was all not reality.  Itâs really hard to explain.  I was just lost in my own world.  There were no â there wasnât panic.  I guess I was just focused on getting back to my house.</p>
+
+<p>JACK:	He arrives home.  Now, keep in mind, he lives in a small, quiet town out in Wales.</p>
+
+<p>DANIEL:	Thereâs like, four police vans, twenty police officers, thereâs multiple agencies, thereâs undercover police officers.  You could tell it was a lot more serious this time.  The whole street was closed and it literally looked like a murder scene.  I parked my car, I walked past the police officers because they didnât recognize me.  I walked into the house, and then my parents told me that this was me.  A part of me thinks that they were expecting something a lot more serious, because at first they didnât even recognize me.  There were agencies from â so, there was the National Crime Agency, there was the Metropolitan Police, there was my local cyber-crime unit.</p>
+
+<p>JACK:	They go through the house, seizing all his computer equipment just like before.</p>
+
+<p>DANIEL:	So, they put me in the back of a undercover police van.  They put me in between two police officers, and they pretty much escorted us through town.  They had their blue lights on.  There was one car in front of us, one car behind us, and we pretty much just flew through my town center.  They closed off roundabouts, they closed off roads, and we must have literally got to the police station in minutes.</p>
+
+<p>JACK:	Now, at this point, heâs around seventeen years old.  They interviewed him and asked him what happened.  Then they let him go back home so they can investigate further.  [MUSIC] They bring him back to the police station and charge him with twenty offenses.  They were charging him with attempting to extort Dido Harding, and they apparently found some of the other offenses he did on the other companies too, which gave Daniel a clue on how they found him.</p>
+
+<p>DANIEL:	So, when I sent the extortion e-mail to TalkTalk, I used Tor.  I used an anonymous e-mail provider.  But around that time, I was obviously still blackmailing other companies.  What I had done is I had hacked and blackmailed another company without using Tor; I only used a VPN.  What I had done is I had reused a Bitcoin address for the TalkTalk extortion and the other companiesâ extortion, so they had pretty much managed to use a Bitcoin address to link those two offenses together, and then they had investigated the smaller hack.  Because I was only using a VPN, presumably the VPN provider turned over my IP address.</p>
+
+<p>JACK:	This case was bigger than what the local police station of Wales could handle, so they took him to the Metropolitan Police in London, about four hours away.  About two months after being arrested, he finally gets to go to the magistrate court in London.</p>
+
+<p>DANIEL:	I go to my first court hearing.  In effect, Iâm then remanded into custody from that magistratesâ court.</p>
+
+<p>JACK:	Which means he had to go to jail, but only for a week or two.  But this was his first time in jail, and he did not like the experience.</p>
+
+<p>DANIEL:	After those seven to ten days, I pretty much decided that I wasnât built for prison, and it was honestly one of the worst weeks of my life.  I was pretty much a cyber criminal.  I was there on computer hacking charges and blackmail.  Then to be put in a cell with someone that was doing five years for armed robbery is really â itâs a huge shock to the system âcause you honestly donât expect to be sharing a cell with someone â like, thatâs really serious offending.  So, I pretty much decided from that point on that I was never gonna re-offend again.  I think thatâs when it really hit me, that â just those seven to ten days, I decided you know what, Iâm never gonna re-offend again.  Itâs not worth anything to go through that experience again.</p>
+
+<p>JACK:	Now, this week he spent in jail was not his whole punishment.  Iâm confused on how things go in the UK, but my theory is since he had previous charges for hacking the school and he did all this extortion stuff while he was out on bail, the court didnât want him to break more laws, so they threw him in jail just to give him a taste of what prison life is like, and this worked.  This shock to his system made Daniel not want to re-offend again, because if this was gonna be his consequences, he did not want to make it any worse.  [MUSIC] So, he gets out on bail and has to wait for his court date where theyâre going to figure out what his full sentence is gonna be.  Now, when heâs out on bail, the judge put a lot of restrictions on Daniel.</p>
+
+<p>DANIEL:	A lot of them were really bizarre.  I was banned from Python, the programming language, I had to register all of my devices with my local police, I was banned from using Tor, I was banned from using VPNs.  I was pretty much banned from a lot of technology.  Like, I couldnât delete my internet history.  But the only one that really stands out is being banned from Python.  I couldnât really understand why they decided to put that as part of my bail conditions.  But yeah, I had all of these bail conditions on me and thatâs pretty much what I had to live by for like, months.  After spending that week in prison, I sort of had an epiphany and realized that no matter what happens in my life, I never want to be in this place again.  So when I was released on â when I was bailed from prison, a part of me didnât even want to touch computers again.  I would have found it a lot easier just to not use computers ever again if it meant not going through that week.  But as weeks went by, I sort of â I guess I got bored and I ended up buying another computer.</p>
+
+<p>JACK:	He eventually got back into hacking, looking for vulnerabilities on websites.  But this time, it was completely different.  He was serious that he was done offending and was abiding by his bail conditions, because what he wanted to do was use his hacking skills for good, and he started doing responsible vulnerability disclosures for companies, finding problems and then quietly reporting it to them, not exploiting any of it, not stealing anything, and not extorting anyone.  He wasnât even asking for a reward; he was simply trying to make right all the wrongs he did by helping companies secure their systems better.</p>
+
+<p>DANIEL:	I started engaging in all of these bug bounty programs.  I started engaging in responsible disclosure.  [MUSIC] Pretty much every day, I was reporting vulnerabilities in all types of systems while on bail.  So, in my head at the time, I sort of realized that any good that I could do would be considered during my sentencing hearing.  So, itâs basically called mitigation.  So, you can do a lot of good things and then your lawyers can go to the judge and go look, these are all the good things about this defendant and this is why you should give him less of a prison sentence or no prison sentence at all.  So, I pretty much decided to engage in responsible disclosure, report all of these vulnerabilities to these entities, and pretty much every day for two years.</p>
+
+<p>JACK:	He was finding a lot of stuff and reporting it.  One place he liked reporting bugs to was MITREâs CVE program.</p>
+
+<p>DANIEL:	What I would do is I would take an open-source project, I would find a vulnerability, I would then contact the vendor, Iâd inform the vendor, and after theyâve patched the vulnerability, the vendor â Iâd then ask the vendor for permission to sort of file this proof-of-concept along with a publication to this awarding body called Citra, and they would then publicly issue a CVE ID for this project affected.</p>
+
+<p>JACK:	Nice; heâs responsible for finding many CVEs.  Thatâs pretty good.  CVEs are like a list of known vulnerabilities in products.  When the vulnerability you found is big enough to merit its own CVE, it means that itâs now going to be integrated into antivirus tools, vulnerability scanners, and more security tools to detect when someone else is exploiting this application.  So, not only was he privately helping vendors fix bugs, but he was also helping the professional security community be able to identify those bugs if anyone were to do what he did.  Did you get paid for any of these bugs that you found?</p>
+
+<p>DANIEL:	So, I was doing this with no real financial intent.  I was just doing this for the sole â on the sole principle of it contributing to less of a prison sentence.  But sometimes, a lot of companies would offer me money regardless, and what I would do is Iâd accept the financial rewards and I just sort of accumulated the money.  The money then went to re-encompensating my â the victims of my offending.</p>
+
+<p>JACK:	Over the course of this time, while he was waiting for his sentencing court date, he found vulnerabilities in lots of companies.  I mean lots.  He always simply asked for a thank-you letter or a letter of recommendation from helping someone.  This was the most valuable reward he wanted, and he got a lot of letters.  He sent them to me to see, too.  The PDF he gave me is over 300 pages long of just really nice things companies have said about Daniel.  For instance, here, let me read one.  Dear Dan, Deutsche Bank appreciates your ongoing efforts in searching and responsibly communicating IT security vulnerabilities.  You showed us a cross-site scripting vulnerability we had on our website, and we thank you for your dedication to the task of increasing internet security and wish you all the best for your future endeavors.  Signed, the CISO of Deutsche Bank.  The list of companies that he found vulnerabilities in and reported them and got thank-you letters for is really long.  [MUSIC] Here, Iâll have Daniel tell you a bunch of places that sent him thank-you letters.</p>
+
+<p>DANIEL:	The Crown Court Digital Case System, the National Crime Agency, the Ministry of Justice, the parliament website, University of Cambridge, the Australian National University, Stanford University, Yahoo, GCHQ, Royal Air Force, DBS Bank, AT&amp;T, S3, BBC, Sony, Deutsche Telekom, United Nations, Duke University, Adobe, AOL, Telegram, Sage, Amazon.  Tell me when to stop.</p>
+
+<p>JACK:	Well, Iâmâ¦ [LAUGHING]</p>
+
+<p>DANIEL:	Thereâs thousands.</p>
+
+<p>JACK:	At first I was like oh, this guyâs just getting universities and schools; thatâs easy.  But then I heard GCHQ and I was like wait, and then it just keeps going.  So, how â what wasâ¦</p>
+
+<p>DANIEL:	No, thereâs some real â even though the bulk of them are cross-site scripting vulnerabilities, there are some really serious vulnerabilities that are aborted.</p>
+
+<p>JACK:	Okay, soâ¦</p>
+
+<p>DANIEL:	I thinkâ¦</p>
+
+<p>JACK:	So, these ones that you listed, this is â they confirmed okay, thank you, and sent you a letter of thanks?</p>
+
+<p>DANIEL:	So, these â yeah, Iâve had actual letters from the directors and CEOs of these entities where theyâve said â theyâve acknowledged the vulnerability and theyâve said thanks.</p>
+
+<p>JACK:	The GCHQ, that comes as a surprise as you were listing things.  What happened there?</p>
+
+<p>DANIEL:	So, GCHQ basically published this open-source project called CyberChef.</p>
+
+<p>JACK:	Yep, Iâve used it.</p>
+
+<p>DANIEL:	When they â yeah, when they first published it, there was a git based XSS in it, pretty much.</p>
+
+<p>JACK:	Okay, so this was just a vulnerability and one of the open-source tools that GCHQ puts out.  It wasnât a vulnerability into their main database or something.  But still, itâs pretty cool to have a letter of appreciation from GCHQ, isnât it?  One day while doing all this, Daniel came across another vulnerability that someone found on TalkTalkâs site.  Daniel confirmed the vulnerability was still valid and immediately reached out to someone.  But this time, instead of telling a friend about it, he reported this to the authorities and shortly after that, it got fixed.  So, in a way, he even helped TalkTalk become more secure.  Daniel had truly changed his ways and was on a serious dedicated mission to help as many companies as possible.  He even did some math to try to quantify it all.</p>
+
+<p>DANIEL:	[MUSIC] The total amount of my offending was probably â like, TalkTalk alone was $79 million.  If you combine everything else, it probably was closer to $100 million.  But when you really look at all the companies that Iâve disclosed vulnerabilities in â like, thereâs 5,000 â thereâs over 5,000 companies.  Then you take some of the submissions which are like, P1 vulnerabilities and ISPs and banks.  You can only logically assume that Iâve probably saved more money for those companies than the damage that I caused, because for â I had a vulnerability on â I had a RCE on Virgin Media, and that was a more critical vulnerability than the vulnerability that I discovered on TalkTalk.  If that had been exploited, then presumably it would have had the same effect as it had on TalkTalk.  So, I think itâs really fair to say that after submitting all these vulnerabilities, over 5,000 vulnerabilities, I honestly can confidently say that Iâve probably saved a lot more money for companies than my offending ever caused in terms of damage.  Because there were so many charges and my case was so complicated, I was going to court and they must have told me five or six times that the next time I would come to court, I would be sentenced.</p>
+
+<p>Except, every time that I would go to court, I would never be sentenced and there would be some legal dispute about a charge or something.  So, I sort of had to live the experience of thinking that I was gonna be sentenced five to six times.  When that kept happening, it really started to play on my mental health.  I got really depressed, basically, because it was a really stressful situation to be in.  My lawyers were telling me okay, youâre gonna get twelve and a half years, youâre gonna get five years.  A part of me just wanted it to stop completely, so I would pretty much just go home and I would honestly do nothing.  I would spend months â I would spend pretty much all day just in bed waiting for my next sentencing hearing.  It was like being locked â it was essentially like being in limbo.  I would just wait for the next date to the next date, and thatâs pretty much how I lived the last two years on bail.  My entire life just resolved around these dates that were being set.  Eventually, it got to a point where I was so depressed that I lost over seven stone in weight and I became emaciated.  I used to be really overweight.  I pretty much lost half of my body weight, and I started to get really depressed.  I stopped eating and eventually my legal team took notice and they started to refer me to doctors and psychiatrists.</p>
+
+<p>JACK:	He pleaded guilty to ten or eleven of these charges brought against him, but they were trying to charge him with things he didnât actually do, and this caused some disputes.</p>
+
+<p>DANIEL:	At this point, there was a huge dispute between a lot of psychiatrists and doctors saying whether I was even fit to go to trial, because I was â I intended on pleading not guilty to these new allegations, because Iâm actually innocent.  I didnât actually commit them.  There were days that Iâd even wake up and I wouldnât be able to remember my own name.  So, after this huge dispute of seeing loads of psychiatrists and doctors, they essentially deemed me not fit to go to trial.  So, the prosecution essentially wasted a lot of taxpayersâ money for no reason.</p>
+
+<p>JACK:	So, with him not able to stand trial to dispute the charges against him, the court had no choice but to simply charge him with whatever they thought he was guilty of and sentence him.  His sentencing date kept getting pushed back, but eventually came after four years of waiting.  It really was four years?</p>
+
+<p>DANIEL:	Yeah.  So, I was â my â I was arrested for the TalkTalk hack in 2015, November, and then I was sentenced in 2019 in June.</p>
+
+<p>JACK:	By this point, he was twenty-one years old.</p>
+
+<p>DANIEL:	Sentencing comes and essentially, it comes down to whether Iâm gonna go to a hospital or prison.  What the judge had essentially did is gotten the head of the healthcare unit in HMP Belmarsh to take responsibility for me.  She was at my sentencing hearing and when I was being sentenced, the judge put my â so, he read out twelve-and-a-half years.</p>
+
+<p>JACK:	Twelve-and-a-half years in prison is what the judge said was his punishment.  Oof.  Fourteen years is the maximum for extortion crimes, so it couldnât really get much worse for him.  But this was only the starting point.  Quickly, Danielâs lawyer jumps up and says to the judge that Daniel has had excellent behavior while on bail and has not re-offended.  [MUSIC] This made the judge happy and reduced the sentence a little.  Then Daniel pulled out hundreds of positive letters he received from helping all those companies improve their security, and the judge was particularly impressed by this and lowered the sentence some more.  His lawyer kept coming up with other reasons on why Daniel deserves a lower sentence, and the judge kept lowering it.</p>
+
+<p>DANIEL:	He read out twelve-and-a-half years and then he went ten years, nine years, seven years.  It essentially got to four years.</p>
+
+<p>JACK:	Four years prison time was his final sentence that he received for this criminal behavior.  Now, in the UK, you only serve half your time in prison and the other half out in the community, sort of like parole in the US.  When it was at the end there and they said four years, what was going through your mind?</p>
+
+<p>DANIEL:	Honestly, at that time, I was just in a â I was in a state of shock because I couldnât actually get over the fact that heâd read out twelve years to begin with.  Once I heard that figure, I really â I sorta just went numb and my mind just sorta went blank.  It was almost like an out-of-body experience.  I couldnât actually believe that he had read out twelve years.  It was only really after Iâd been taken down under the courts that I really started to consider the possibility of doing two â well, four years in prison.</p>
+
+<p>JACK:	They immediately whisk him off to prison directly from court, but first he had to get some healthcare to get his mental state back to normal.  But once he was showing signs of stability, they put him in the main cell block with the other prisoners.  But just when he got used to the routine, they put him on a bus and moved him to another prison, a super-max prison, even.  Of course, when you go to a new prison, all the other prisoners want to know what you did to get there.  He tells them the truth and says hey, look up my name if you donât believe me.  So, they did.</p>
+
+<p>DANIEL:	A lot of them actually thought that I stole Â£70 million from TalkTalk.  They didnât realize that I â that was the damage cost.  Anyway, I have loads of gang members asking me to hack their phones.  Theyâre asking me to hack the county, hack the prison.</p>
+
+<p>JACK:	He got on pretty well with the other prisoners.  They liked him since he didnât pose as any threat to them, and they thought he was smart with computers.  [MUSIC] But the prison guards and staff did not like him.  They were afraid of what he might do if he used any of the computers in prison.  They must have gotten word from someone else too, because they just didnât treat him well.  For instance, they randomly searched his prison cell frequently, much more frequently than any of the other prisoners when he was there.  He knew something was off because he just couldnât figure out why he was being treated differently.  One morning at 5:00 AM, he gets woken up by some guards telling him get out, weâre searching your cell.  Of course, he gets out and looks around and sees there are some other cells being raided, but theyâre all people he knew in prison.  Out of all the prisoners, why is it him and just the people he knows that are getting raided?  It didnât make sense.</p>
+
+<p>DANIEL:	When they raid your cell, they just rip everything apart.  They tip the bed apart, they â I was even â so, I go back to my cell and I was even told that they were using screwdrivers and stuff to take furniture apart to see if I was hiding anything.  I get back to my cell, I clean everything up, and funnily enough, there was a razor that I didnât even know that was in the cell from the previous occupant and they just put it on the table and left it there almost to send a message to say look, we found something.  But I really didnât even know it was in the cell, so there we go.  So, what that essentially did was make me become even closer friends with these â they just â they were all part of a gang, in effect, so I become close friends with these people.  Two days later, my cell opens again, 7:00 AM, and they say right, youâre being drug test.  Come with us.  I donât take drugs, okay?  Drug tested; come with us.  So, I go for some drug test.  On the piece of paper that they give me, it says itâs randomly allocated, except itâs not randomly allocated because you can see the coincidence, right?  But thatâs how they were abusing the system.  They were saying it was just randomly allocated.  Itâs a load of bullshit.  They were just trying to cause me inconvenience, I think, or they had some source of intelligence; someone probably said something.</p>
+
+<p>I didnât take drugs, but thatâs how intelligence works.  So, I â negative on the drug test.  Then Christmas Eve comes.  [MUSIC] So, Christmas Eve morning, my cell opens at 6:00 AM and they tell me â two prison officers tell me youâre being transferred.  I said, okay.  At first I was like okay, maybe this isnât a bad thing.  Where to?  They say HMP Bristol.  Now, HMP Bristol is a really bad prison, okay?  Itâs a Victorian old prison.  Itâs in England and itâs not really a prison anyone wants to go to, especially over Christmas.  It was their way of ruining my Christmas and throwing me out of that prison as fast as they could.  But anyway, after they tell me Iâm being transferred to HMP Bristol, everyoneâs out of their cells and these gang members figure out whatâs going on, and they convince me that itâs really â I sort of â I was 50/50; a part of me â I didnât want to go to Bristol, but I knew I didnât have a choice, because I couldnât just stay in Berwyn because theyâd now remove â like, they removed that option.  If I stayed there, they would have just took me to segregation or something.  So, one of these gang members essentially convinces me to put a â so, take a safety razor and put it in my mouth, okay?</p>
+
+<p>What essentially that does is it invokes a safer custody issue, âcause that essentially means that â itâs like self-harm.  The prison officers canât touch you.  I put a â so, I â this guy â this is completely out of character, by the way.  Iâm not some irrational person that goes around self-harming, and Iâm not saying that self-harm is irrational; Iâm just saying Iâm not the type of person to do that.  I donât put razors in my mouth and all of this type of thing.  It was only when that suggestion was made to me that I did it, so I put a safety razor in my mouth âcause these gang members had convinced me to do it, and Iâm sorta â I just â I put it in my mouth and I looked at the prison officer, and I said Iâm not moving.  Anyway, everyoneâs locked up.  Well, they tried to lock everyone up, and â âcause â because this is taking place in my cell, and all the prisoners essentially refuse, because thereâs a huge crowd outside my cell and theyâve worked out whatâs going on.  Because I was on good terms with these prisoners, they thought it was really unfair.  It was my first time in prison, I was in for computer hacking, and it was really unfair to transfer me to a prison like HMP Bristol on Christmas Eve.  So, they refused.  Prisoners start smashing the wing up.</p>
+
+<p>They started smashing the kiosk and in effect, a really small riot starts.  Someone threw a fridge off the top landing and all the prison officers left the wing.  I was oblivious to this at this time because I was in my cell, but I â so later on â so, when this is happening, all the prison officers leave their cell â leave the wing, sorry, and everything goes quiet.  All the prisoners are just there rioting, Iâm sitting my cell, Iâve got a razor in my mouth, and weâre just sort of sitting, yeah.  So, I go by the door frame and forty-five seconds later, less than a minute, about eight prison officers wearing riot gear come marching onto the wing.  I can see them coming onto the wing.  Theyâve got riot shields, theyâve got batons, and theyâre all kitted up.  Theyâre walking towards me.  I sort of realize that if I didnât drop this razor and comply in the next thirty seconds, they were gonna force me to comply.  So, I spat the razor out and I said look, Iâm going.  Take me to where you want to go.</p>
+
+<p>JACK:	They transferred him to another prison and he spent a few months there.  It was much worse than the other two he was in, but he gets through it and finishes his prison sentence.  So, you spent how long in prison?</p>
+
+<p>DANIEL:	So, I did two years in prison.</p>
+
+<p>JACK:	When did you get out?</p>
+
+<p>DANIEL:	June last year.</p>
+
+<p>JACK:	Since getting out of prison, he still has to do two years of probation and he has to follow all the rules set forth on him.  He can use a computer and the internet, but he has restrictions, and he hopes to someday get a regular above-board job doing cyber security.  So, last question.</p>
+
+<p>DANIEL:	Yeah.</p>
+
+<p>JACK:	Whatâs your biggest regret?</p>
+
+<p>DANIEL:	Probably blackmailing people.</p>
+
+<p>JACK:	Why?</p>
+
+<p>DANIEL:	I donât really â so, I donât regret the hacking aspect of what I did.  I just think that my offending became really twisted when I started blackmailing people, because thatâs where it became really personal.  I think thatâs ultimately what sent me to prison.  I think just hacking systems is completely different in comparison to blackmail.</p>
+
+<p>(OUTRO):	[OUTRO MUSIC] Thanks to Daniel Kelley for sharing this story with us.  This show is made by me, your friendly moderator, Jack Rhysider.  Sound design was done by the too-weird Andrew Meriwether, and our theme music is by the mysterious Breakmaster Cylinder.  Oh, and hey, if you ever have questions about TCPIP, I know the pro to call.  Get it?  Protocol?  Forget it.  This is Darknet Diaries.</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

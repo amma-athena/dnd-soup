@@ -1,0 +1,720 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>Hot Swaps â Darknet Diaries</title>
+	<meta name="description" content="This is the story of Joseph Harris. When he was a young teen he got involved with stealing video game accounts and selling them for money. This set him on a course where he flew higher and higher u...">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Hot Swaps â Darknet Diaries">  
+	<meta name="twitter:description" content="This is the story of Joseph Harris. When he was a young teen he got involved with stealing video game accounts and selling them for money. This set him on a course where he flew higher and higher u...">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/hanging.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/118/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Hot Swaps â Darknet Diaries" />
+	<meta property="og:description"        content="This is the story of Joseph Harris. When he was a young teen he got involved with stealing video game accounts and selling them for money. This set him on a course where he flew higher and higher until he got burned." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/hanging.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/118/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/hanging.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/118/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="Hot Swaps â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/hanging.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 118: Hot Swaps</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://www.podtrac.com/pts/redirect.mp3/traffic.megaphone.fm/ADV6115005049.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/118/",
+			   "title": "Ep 118: Hot Swaps"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/118">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[START OF RECORDING]</p>
+
+<p>JACK:	 When I was in college I had some interests, and among them were gambling and programming.  Specifically I liked craps, where you throw the dice, and the Pearl programming language.  Now, the thing about craps is that there are so many different kinds of bets you can do.  Itâs a little dizzying how much there is, so I decided to make a little program that rolls the dice thousands, millions of times to try to simulate the game to find an effective betting strategy.  [MUSIC] First, I tried the typical betting strategy; putting money on the Pass Line, placing odds, and then rolling the dice.  After a 100,000 rolls, the game showed that I had a massive amount of debt, definitely not a good strategy for the long run.  So, then I tried placing money right on numbers, betting on the Come Line, the Field, all the things.  None had a positive result.  All put me in debt, which is expected, right?  The house always wins.  The game is designed that way.  Thereâs no way around it.  But maybe there was.
+<!--more-->
+I mean, the game of craps was invented in the 1700s, and they didnât have a computer to simulate all the possible betting variations to see if one would work, right?  So, perhaps my little program could discover some surefire betting strategy, one where the player always wins in the long run.  So, I kept trying night after night, running new betting simulations and algorithms and trying to find something.  Eventually, I tried playing around with Buy bets.  Buying the two or ten will result in double your money if it hits, and I ran this simulation 100,000 times, and guess what?  The program showed Iâd made a positive amount of money.  What?  I ran it again and again, and it showed the betting strategy was working.  This was a surefire way to make money in craps in the long-term.  So, I immediately went online and I found an online casino, and I opened an account and began betting this strategy.  But it wasnât winning; I was losing money, and I noticed something.  I forgot to calculate the vig.</p>
+
+<p>When you place this bet, the house charges you 5% to buy it.  I didnât know that, so my program was wrong and gave me wrong results.  But this made me think hold on, there are a lot of rules in craps.  Surely one of these online casinos screwed up the logic of the rules and has an error.  I mean, itâs just a human who programmed it, and how much could they possibly know about craps to program it effectively?  So, I started opening account after account on all these different online casinos and looking at the craps games to see if they followed the rules, and yeah, every one of them did follow the rules, [INTRO MUSIC] and I never found a way to make money on craps.  My interest in gambling sort of dried up after that, but man, I sure tried.</p>
+
+<p>(INTRO):	These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	So, a while back, I did Episode 112.  Itâs called Dirty Coms, which does a little peek behind the curtain on whoâs doing SIM-swapping today and how theyâre doing it, and you should probably listen to that one first before this one, but you donât need to.  One of the people I mention in that episode who was doing this was Joseph Harris.  Well, after the episode aired, Joseph reached out to me and told me I got some of the parts wrong about him.  So, I went back and just deleted all mentions of him altogether, because it turns out in my research, I didnât realize there were two different Joseph Harrises and I was getting one mixed up with the other, and ugh, it was a problem.  But while I was clearing things up with him, I asked him hey, youâve got quite the story.  Do you want to come on the show and tell us?  He said yes.</p>
+
+<p>JOSEPH:	Where would you like to start?  I could go all the way back how I kinda got into hacking or I could start right at the tail end of it, where it all started with the big hack.</p>
+
+<p>JACK:	Yeah, so, howâd you get into it?  This is my guess; video games.  You decided to figure out some sort of cheat or hack into them, and â or a way to manipulate it in a way that it shouldnât be, and then that just kept going.</p>
+
+<p>JOSEPH:	Thatâs pretty accurate.  So, Iâm not sure if youâve heard of a small little game called RuneScape or Club Penguin.</p>
+
+<p>JACK:	These are some online multiplayer games he was playing when he was eleven and twelve years old.  As you play any online multiplayer game, you start to see how some people have some really cool accounts.  Either theyâre a high level or they have hard-to-get items; itâs just rare stuff thatâs sought after.  Eventually, Joseph learned that thereâs a whole secondary market for these accounts.  Some video game accounts were selling for $500 to $1,000 US dollars, real money, which was a lot back then for a twelve-year-old.  He dabbled in trying to manipulate the game to try to get some free items and that sort of worked, but he thought hm, maybe thereâs just a way to take over someone elseâs account and sell it.</p>
+
+<p>JOSEPH:	So, originally, I started kind of as a social engineer finding out ways to dox these accounts and then trick the e-mail providers into resetting their Yahoo, their AOL, whatever their provider was, and then just take the accounts and then sell them for money.</p>
+
+<p>JACK:	Heâd dox the player to take over their account.  Okay, letâs look at this.  [MUSIC] What he means by dox here is he wanted to know what their name and e-mail address was that was connected to their in-game account.  He might figure this out by asking people in the game hey, I have this really cool thing I want to show you; can I e-mail it to you?  Or something to tease out this information from someone.  Once he knew their e-mail address and name, he could start looking them up online to try to find where they lived.  Then he tried to call up their e-mail provider to try to convince them that itâs his account.</p>
+
+<p>JOSEPH:	AOL, for example, theyâd reset passwords with your â theyâd ask hey, whatâs your first name, last name?  Youâd tell them that, which â thatâs not pretty hard to give, and then they would ask whatâs your security question?  You didnât need to know that because afterwards theyâd ask okay, whatâs your address?  You would only have to provide them a correct zip code and theyâd straight-up reset the password for you.  So, it was a lot easier back then, but essentially, all you need to know is someoneâs name and address and you can completely take over their AOL account.</p>
+
+<p>JACK:	So, thatâs what he was doing when he was twelve, trying to social engineer the e-mail providers to reset the password so he could get access to that e-mail account.  Whatâs little Joseph do once he gets into someoneâs e-mail account?  Well, he resets the password for their RuneScape or Club Penguin account so that he could get access to that in-game playerâs account.  Then heâd change the e-mail address associated with it and sell it.  What was your highest one that your sold?</p>
+
+<p>JOSEPH:	I think I sold â my highest was $1,500 I sold for this one account, and that was the highest amount I just sold for all at once and got $1,500 from it.</p>
+
+<p>JACK:	What was that for?  RuneScape?</p>
+
+<p>JOSEPH:	That was actually for Club Penguin, but RuneScape I had some pretty big sales, too.  But I would sell the gold, so I would get a couple hundred if I had a decent amount of gold, or I would just â it wasnât like an individual sale at once.  It would be a slow, gradual sale for the RuneScape stuff.  But the Club Penguin was the $1,500.  Like, closing deal, just one account, sold it for $1,500.</p>
+
+<p>JACK:	Hm, just hearing that alone makes me pause because in this scenario, we donât have a hacker trying to break into some corporation.  We have a pretty clever social engineer trying to hack their way into your e-mail account.  When the crosshairs are pointed at just regular people, individuals like you and me, suddenly it feels like the wind changes and the air gets colder.  I mean, are your accounts secured to the point that it would withstand this?  Imagine if someone wanted to get into your e-mail account and called Google or Yahoo to pretend to be you and tried to get your account reset.  You think your defenses will hold, right?  I mean, we seem to be putting a lot of trust into the person who works at the e-mail provider, that they arenât susceptible to social engineering attacks in this scenario, and it all comes down to that, I guess.  [MUSIC] But it sounds like they are vulnerable to this kind of attack.  Now, all this happened a while back, like ten years ago, and since then, e-mail providers have made it harder for people to reset their passwords this way.  I mean, thereâs two-factor authentication now and secondary passwords, and all this was added because it was getting abused by people like Joseph.</p>
+
+<p>JOSEPH:	I start transitioning to these original usernames.  Like, for example, say I had â wanted Doc on Xbox.  That might be worth some money because itâs short, or if I got the name Game or something, Elite, something like that, thatâs worth money and thereâs a larger community based around it, and thereâs most â multiple sites where people want these OG usernames.  So, I start â Club Penguin, I was kinda over it.  It wasnât making as much money because I had taken as many accounts as I could, really, so I started â and there was a bigger community around these things, so I started morphing to these OGs, and suddenly I learn about Bitcoin, be â and I think Bitcoin, wow, this is great.  This is like, 2012, 2013.  Iâm like, this is great because before with PayPal, sometimes people would reverse on me, or sometimes Iâd have people calling up PayPal getting their money back.  But in this case, Bitcoin was peer-to-peer.  Someone could send me money; they canât take it back, so I love the idea of crypto and Bitcoin.  Thatâs essentially how I got into it, but then I started realizing okay, why donât I start going after these people that actually might have Bitcoin and stuff like that?  Thatâs when I kinda â it wasnât just me having this idea, but thatâs where the whole Bitcoin idea â because once you get the money, you get to keep it, essentially.  So, then I start transitioning from OG usernames to oh wow, why donât I just take e-mails of people that have Bitcoin?</p>
+
+<p>JACK:	[MUSIC] Oh, whoa, this is so much more serious.  Taking someoneâs video game account is one thing, but trying to steal their Bitcoin?  Thatâs taking this to a new level.  Itâs straight-up robbing them at this point.  He already had all the skills he needed to do this.  Heâd start by looking for people posting about Bitcoin and then try to figure out what their e-mail was, perhaps phishing them if he couldnât figure it out, and then heâd learn what their name and address was, and heâd try to call up the e-mail provider to trick them into resetting the password for him.  From there, he was rooting around their e-mails, looking for anything related to Bitcoin that he could steal.  But the problem was, he wasnât finding anyone good to target.  Heâd find people who had Bitcoin, but they didnât have money on an exchange, or he couldnât get into their e-mail.  He needed some help.</p>
+
+<p>JOSEPH:	Someone had found a GMX vulnerability.</p>
+
+<p>JACK:	[MUSIC] GMX is an e-mail service based in Germany, and what he had was a vulnerability that let him take over any e-mail address that he wanted at GMX.  Well, this was great for Joseph.  It made the process so much easier.  Now he didnât have to call anyone to get it reset; he could do it all himself.  Now, this vulnerability is somewhat interesting, so let me explain to you how it works.  Essentially, itâs session manipulation.  You needed two GMX accounts, one thatâs brand-new that you can log into, and then the target account that you want to log into.  So, you start by logging into your own account, then open a new browser, go to GMX, and say you want to reset the password on your target account.  But just before clicking the reset button, you need to put an active session that you have on your other account into this browser to make it look like youâre already logged in.  Now when you click reset password, it sees that you have an already logged-in session and it just lets you reset the password.  This was a pretty serious vulnerability on GMX.  Imagine just being able to take over anyoneâs account you wanted.  He tested it and it worked, and so now he was on the hunt to find GMX users who had Bitcoin.</p>
+
+<p>JOSEPH:	I didnât know how to target these people or who to really go for, so I was just using Google and typing in like, keywords âBitcoinâ and âGMXâ.</p>
+
+<p>JACK:	With a few Google searches, he started seeing people talk about Bitcoin on forums that had GMX e-mail addresses, so heâd use this vulnerability, get into that personâs e-mail account, and start looking for anything Bitcoin-related.  But over and over when he did this, he just wasnât finding anything, until one day he does find someone who has an account on a Bitcoin exchange.</p>
+
+<p>JOSEPH:	I got into their blockchain wallet and I remember seeing like, twenty, twenty-five Bitcoin, which at the time was like, 5k and I was freaking out because 5k was a lot of money.  I was seventeen at the time.  But he had a secondary backup phrase, so I couldnât actually withdraw the money.  So I was basically just sitting on this account and couldnât withdraw any of the money.</p>
+
+<p>JACK:	Ah, so close.  A secondary passphrase was used which screwed him up, but this was close enough that he knew he was on the right path.  He just needed to keep looking, and eventually he was going to find some money.</p>
+
+<p>JOSEPH:	Okay, so there was this site called Cryptsy which was an altcoin trading website back in 2013 through like â I think they actually got seized because the guy scammed out or something.  There was a legal case with it, actually.  I think he took all the peopleâs money.  But thatâs a different story.  But essentially, it used to be a very popular altcoin trading platform.  I got into someoneâs Cryptsy account and they had $1,000 in â I donât even remember what altcoin it was.  Itâs definitely not one thatâs around today.  But they had that; I exchanged it for Bitcoin, and then I exchanged that Bitcoin for PayPal.</p>
+
+<p>JACK:	That was his first crypto-heist; $1,000.  The way he would get the Bitcoin into his PayPal wallet was using LocalBitcoins.  This is a site where you could just connect with another person on the internet who wants to trade Bitcoin with you.  In this case, he found someone who he could send Bitcoin to, and they would send him money through PayPal.  It worked.</p>
+
+<p>JOSEPH:	Itâs like a natural high.  I could compare it to a feeling of a drug feeling.  It was a rush for sure.  This is still 2014.  Iâm still under eighteen, Iâm still kind of a new person to these things.  After that, I didnât have much success with it.  I was actually making more money selling these usernames still.  So, my focus still wasnât like oh, cryptoâs an easy way to get rich yet.  It was still like hey, you know, thatâs cool; thereâs a chance you can do stuff with it, but I was still looking at these usernames.  But then in 2015, that sort of changed a bit.</p>
+
+<p>JACK:	[MUSIC] A major event happened that would turn out to be a gold mine for Joseph.  The website BTCE had suffered a data breach.  BTCE is a crypto exchange.  You could go there and buy Bitcoin, sell Bitcoin and a bunch of other types of cryptocurrency, too.  Well, in 2015, their user database was stolen by someone.  No money was stolen, just the user details, and this included the username, the password hash, the address, and how much Bitcoin was in their wallet.</p>
+
+<p>JOSEPH:	I knew some people that Iâm not sure if youâve heard of them; Lizard Squad.</p>
+
+<p>JACK:	Yeah.</p>
+
+<p>JOSEPH:	 But they had access to the database.  In 2015, one of their members hit me up and started asking me if I could help them get into these accounts, because I was very good with AOL and Yahoo still.  I still could social engineer into them pretty well.  So, they started listing me off these Bitcoin e-mails on â they were on BTCE that â with â and also, the thing about BTCE, it showed their balance.  So, they could link me people with 100,000 Bitcoin and essentially, Iâd have their e-mail; Iâd just try to break into their e-mail.</p>
+
+<p>JACK:	Now, keep in mind, he didnât have access to this BTCE database dump.  That would have been like the motherload to him.  But he was happy to work with the people who did have access to it to try to steal Bitcoin from the specific users they gave him.</p>
+
+<p>JOSEPH:	My first one that I got for them was this Yahoo.  It was one of the bigger ones on the list and it had six figures in crypto in it.  At the time, it was probably thousands of Bitcoin because Bitcoinâs a lot lower, but it had six figures in it.  I got into the Yahoo, I reset the BTCE, and there was another PIN code.  Itâs basically, you have to enter this passcode to access the funds.  I donât know the passcode, so I pass it to my friend who gave me it, and he says heâs gonna send the fake ID.  Iâm not sure what happened after that.</p>
+
+<p>JACK:	When he handed it over, the person he was working with said they lost access to that account and didnât get any money from it.  Joseph just wasnât sure if that was true or they were just saying that so they wouldnât have to pay him his cut of the stolen funds.  But the person who had the BTC database kept working with Joseph, giving him one or two accounts at a time to see if he could actually steal Bitcoin from them.</p>
+
+<p>JOSEPH:	But it was â at the time, I think I made $10,000 to $20,000.  It wasnât like a â I mean, Bitcoin was a lot lower at the time, but still, it was about $10,000 to $20,000 from BTCE stuff.</p>
+
+<p>JACK:	That was going alright, but he was only getting a trickle of targets from this list.  He definitely wanted his hands on the whole database so he could just go hog wild in there.  I mean, a database full of usernames, e-mail addresses, and how much crypto they had would have been golden for Joseph, the guy whoâs been getting into e-mail accounts for years.  But he couldnât get his hands on the database, [MUSIC] so he went back to stealing usernames from people.</p>
+
+<p>JOSEPH:	Think about Twitter, Instagram, stuff like that.</p>
+
+<p>JACK:	Heâd get into the e-mail associated with their account and reset their Twitter password, and then get into those accounts and sell those to other people.  He was definitely playing hard in this account market too, becoming well-known for having some pretty incredible accounts.  You have so much stuff going on.</p>
+
+<p>JOSEPH:	Oh, yeah.  Yeah, itâs â I mean, this â it starts in 2010 where Iâm social engineering stuff, and it goes all the way to 2018.  Thatâs an eight-year kinda thing.</p>
+
+<p>JACK:	Weâre about halfway through this spree of his, so stay with us because weâre gonna take a quick break, but when we come back, everything goes off the rails.  So, I mean, whatâs your moral compass like at this point?</p>
+
+<p>JOSEPH:	Well, nowadays itâsâ¦</p>
+
+<p>JACK:	Not now; Iâm talking about when, whereâ¦</p>
+
+<p>JOSEPH:	Oh, at the time?</p>
+
+<p>JACK:	Yeah, when you were doing BTCE kinda stuff.</p>
+
+<p>JOSEPH:	It sort of kinda of got into the natural order of what â who cares; itâs online.  Itâs sort of like, when Iâm doing these acts online, I donât feel guilty at all.  I remember in the early days I kinda felt guilty about it, but you know, youâre looking behind a computer screen.  Iâm would never be able to rob someone at gunpoint with a gun, but Iâm looking behind a computer screen.  I donât see who Iâm hurting.  I mean, now I can obviously see itâs wrong, but back then I honestly didnât really have a moral compass.  I was willing to go the lengths to get these peopleâs accounts, and I didnât feel guilty about it.  Iâm not staring them in the face.  Iâm just essentially able to take these accounts, and Iâm not sweating about it.  I sleep fine at night.  Iâm taking money and itâs â the last thing on my mind is oh, I should feel bad about that.  Itâs a terrible mindset to have looking back at it, but I was â that was my mindset at the time.  There wasnât really a solid moral compass when it came to my online activities.  I never swatted people; that was a moral compass for me where â because I always thought people could get hurt if someone did that, so I never did anything physically to possibly put someone in danger.  But when it came to taking peopleâs e-mails or doing stuff to people online, there was really no moral compass.</p>
+
+<p>JACK:	Oh, interesting.  So, physically hurting anyone was the line.  Youâre like, Iâm not going past that.</p>
+
+<p>JOSEPH:	Yes.</p>
+
+<p>JACK:	There was a lot of swatting going on.  The circles you were in, people were swatting like crazy because thatâs justâ¦</p>
+
+<p>JOSEPH:	Right, and I have been swatted a few times, and I just â I always heard stories about people dying over swatting, and honestly, that was my limit.  I donât want anyone getting hurt because of one of my actions.</p>
+
+<p>JACK:	Wait, you got swatted?</p>
+
+<p>JOSEPH:	Oh, yeah.  Definitely around that time.  I got a Skype message and the person said hey, you have @darkness on Twitter.  Youâre gonna give it to me or Iâm gonna swat you.  I basically just said no, Iâm not gonna do that, absolutely not, playing the tough guy attitude.  Said okay, youâre gonna get swatted.  So, Iâm a little on edge.  They posted my address; I know they have the capability.</p>
+
+<p>JACK:	How do you think they got your address?</p>
+
+<p>JOSEPH:	Well, I mean, I used to register domain names, so I might have not always had the best opsec.  I obviously didnât in some cases when I was younger, and if they can find an old domain I registered when I was fourteen, fifteen, they â my address was public on those at the time.  So basically, yeah, I hear â I â expecting it.  I hear banging on the door and then I rush up from the basement all the way there.  Then my mom says go downstairs; you need to hide down there.  I said no, the â this is the police.  Her facial expression changed âcause she thought we were getting robbed or something.  But sheâs like, okay.  Iâm like, we just need to go out.  So, we go out.  Itâs the swat team.  They line us up against the house, pointing guns at our back, and then eventually they realize there was no hostage.  Apparently I had â according to the swatter, I had killed my sister, which I donât even have a sister or any siblings, amongst other things, and that I would shoot any police officer that would come in the door.  So, they obviously realized that was a false flag, and I basically just said someone online wanted my username.  Theyâre like oh, okay, and they just left after that.</p>
+
+<p>JACK:	I mean, at some point, your parents have to, I donât know, notice something, right?  Like okay, so thereâs swatting going on, youâve got some strange amount of money.  Like, what are you spending this money on?  Is it noticeable by your parents?</p>
+
+<p>JOSEPH:	No.  My money â I more just saved it, had in my PayPal.  Yeah, Iâd buy stuff like video games or card â cards and stuff like that, but I wasnât going out buying the new designer outfit or anything like that.  So, it wasnât very noticeable to my parents that I had money.</p>
+
+<p>JACK:	Like, Pokemon cards?</p>
+
+<p>JOSEPH:	Yu-Gi-Oh, actually.  I was a Yu-Gi-Oh kid as a kid, and there was these rare cards, so yeah, Iâd buy Yu-Gi-Oh cards.</p>
+
+<p>JACK:	Okay, so, what did you parents say from â at this?  Are they privy at all to your whole thing?</p>
+
+<p>JOSEPH:	My parents know Iâm into these accounts, they know I have these.  They donât necessarily know that Iâm just straight-up stealing them, but they know people want my accounts and theyâre willing to go to strange lengths, but theyâre not really suspicious.  They trust me as their son.  Theyâre not like Joseph, what are you up to down there?  You up to no good?  That thought never crossed their mind.  My family has always been very supportive of me and never really â you know, always had trust in me.  There was discipline in my family, but they werenât super uptight discipline.  They werenât questioning and taking away stuff from me.</p>
+
+<p>JACK:	Yeah, I mean, itâs kind of a good excuse, right?  You tell your parents yeah, I mean, this is my Twitter account.  Somebody wanted it; what am I gonna do?  It totally separates you from the whole rest of the illegal activity youâre doing, and it doesnât â itâs not even about the illegal activity.  So, the first time the cops come to your house, itâs because you were a victim, not even a criminal.</p>
+
+<p>JOSEPH:	Yeah, exactly.</p>
+
+<p>JACK:	Itâs kind of ironic.</p>
+
+<p>JOSEPH:	The first time the cops come to my house, Iâm a victim, you know?  [MUSIC] It would only be about â it would be about six, seven months later where the cops actually show up to my house for something illegal, and suddenly Iâm not the victim; Iâm the perpetrator.</p>
+
+<p>JACK:	Yeah.  Yeah, andâ¦</p>
+
+<p>JOSEPH:	But thatâs not about SIM-swapping.  Thatâs about taking an Instagram account.</p>
+
+<p>JACK:	Okay, letâs go into it.  What happens when the cops come back?</p>
+
+<p>JOSEPH:	Alright.  Okay, so, I had â in 2015 there was â Iâm sure you know thereâs sort of a â certain accounts with big followings get â you can make money off them if you â by promoting people.  Like, if I have a big page with millions of followers, people pay me to shout out their products.  So, in about 2015, I had broken into an AOL account of this guy that had this massive car page on Instagram, had over three million followers, and I had just taken it from him.  Then I had â I had the account for about two weeks before he got it back, but I had made a little money off it.  I had actually linked my friendâs phone number to the account.  So eventually, this guy â most people, you steal their account, theyâre not going to go the extra mile, but this guy had a vengeance out for me.  He put in his own money to get the people to investigate into it.  Eventually, they traced that phone number to my friend, and then my friend to me.  They still didnât have any â enough reason to arrest me or anything, but they had enough to get a warrant on my house and essentially seize all my computers.</p>
+
+<p>JACK:	They said they were going to look through his devices to see if they could find any evidence of him committing crimes.  They didnât charge him with anything because they didnât have enough evidence, and they were going to look through his computers to see if they could find something on him.  Of course, his computer was full of chat logs and evidence of him stealing accounts and Bitcoin, and when that day winds down and he goes back to his room, he has no computers at all to work on.</p>
+
+<p>JOSEPH:	Actually, my friend comes by and just drops off his computer.  Funny enough, I had actually just ordered a new computer a week earlier, and that comes in, too.  So, I get my â I get access to the internet again within â less than twenty-four hours.  That doesnât really scare me at all.  Iâm still gun-ho to do stuff, you know?</p>
+
+<p>JACK:	Okay, so you have â or, did you continue to try to take and sell usernames at that point, or youâre likeâ¦?</p>
+
+<p>JOSEPH:	Yeah, but I stayed away from those big million-follower accounts.  So, I still continued usernames, but those million-follower accounts, I had stayed away from.  I was sort of a little shy with those.  Then it was that same year where I finally got ahold of that BTCE e-mail list.  Someone I knew â I had helped a guy get into a Sprint account, and in return he gave me that BTCE e-mail list.  So, now I have control of the e-mail list and suddenly I can start going through the list and trying to take accounts.</p>
+
+<p>JACK:	This was the golden list, the list of peopleâs names, e-mail addresses, and how much cryptocurrency they had at the BTCE exchange.  Of course, Joseph was very happy to get this list.</p>
+
+<p>JOSEPH:	Oh yes, definitely, 100%.  Iâm nineteen at the time, so Iâm out of high school.  So, I can do this all day, essentially.  Yeah, it was a really big deal for me to have that, because I thought that was the pinnacle of getting stuff.</p>
+
+<p>JACK:	[MUSIC] Heâd combed through the list, looking for accounts that had a lot of Bitcoin in it, and then looked to see what e-mail addresses were associated to that.  Now, as you know, typically when you log into an e-mail account, all you need is an e-mail address and a password.  So, he first wanted to see if he could figure out the password.  Joseph was getting more savvy in the hacking scene, and he signed up for a website which let you put in an e-mail address and it would search all the public database breaches out there and tell you any cracked passwords that were associated with that e-mail address.</p>
+
+<p>JOSEPH:	Youâd search in the e-mail into this leak site, and it would display the public passwords of them.  So essentially, Iâm copying these passwords, Iâm trying them with variants.  Like, if the passwordâs âcooldog122â, I might try âkooldogâ with a K or maybe âcooldog122!â with an exclamation point at the end and just hoping â Iâd try a few variants of â that are commonly â Iâve found commonly associated and then just try to sign into the e-mail account.  An interesting one where people thought they were being slick is I remember commonly seeing something like a password, like a complex password, and then maybe an @ symbol, and then paypalcom.  Eventually, I just pieced together oh, for linkedin.com, itâs linkedincom.  For MySpace, itâs myspacecom.  Let me just use their common password and then letâs try yahoocom.  Oh, yahoocom works.  So, theyâre just using a vary â their common password with basically just the site afterwards, and that was actually a common strategy it seemed like a decent amount of people were using.  So, I kinda picked up on it and always tried it.</p>
+
+<p>JACK:	Oh wow, thatâs interesting.  So, even though people were using different passwords on every site which is what you should be doing, the way they were changing it was guessable, and Joseph was able to piece this together and make some money from this.</p>
+
+<p>JOSEPH:	Just to see if I can get lucky, and in some cases, I did.  There was a few accounts where I got lucky and I entered the password correctly and just straight-up reset their account.  Iâd say in that little run, I made about thirty Bitcoin or so, which at the time was about $10,000 to $15,000.</p>
+
+<p>JACK:	Hm, well, after a while, this list had grown cold.  It got passed around a lot, and all the accounts with big Bitcoin had already been drained or moved.  He was getting into accounts, opening the lid, and seeing nothing in there.  So, lots of hacking, but not many hits.</p>
+
+<p>JOSEPH:	So, Iâm doing that, but itâs at that point where Iâm sort of â I had a group of friends who was suddenly targeting different people.  They were saying BTC isnât the move; instead, we should start targeting altcoin investors.</p>
+
+<p>JACK:	So, while Bitcoin is sort of the flagship cryptocurrency, there are many other cryptocurrencies out there.  Anyone who wants to start their own cryptocurrency can, and thereâs lots of money that gets poured into these altcoins.  Now, around then, Joseph was seeing the people in his circle starting to get into SIM-swapping.  This is where you can try to take over someoneâs phone so they could then reset the password on an e-mail account.  Well, since Joseph was literally in the business of resetting passwords and getting into e-mail accounts, it made sense for him to start learning how to do SIM-swapping and see how that can be added to his tool belt.  So, he started dabbling with it.</p>
+
+<p>JOSEPH:	Back then, SIM-swapping was fairly easy.  You could â you would â back then, they would ask for the last four digits of social.  Oh hey â Iâm calling up AT&amp;T; hey, Iâm trying to â I just got a new cell phone, I have a new SIM card, Iâm trying to activate my device on that SIM card.  Theyâd say okay, well, whatâs your name?  Youâd say it, then theyâd ask for your last four social security number.  Youâd give it to them, and thereâs â you can buy basically almost anyoneâs social security number off the dark web for essentially three bucks, so you just buy their social at three bucks and call up AT&amp;T, Verizon, T-Mobile, and theyâll just activate the device for you.  So, itâs really easy.</p>
+
+<p>JACK:	But while Joseph did it a few times, he wasnât doing it that much really, until he got in with this group of online criminals who were doing SIM-swaps to steal peopleâs cryptocurrencies.  Specifically, this group was focused on people with a certain kind of altcoin.</p>
+
+<p>JOSEPH:	Augur, which was the first ERC-20 token to be featured on the Ethereum blockchain; it was essentially the first Ethereum altcoin on the blockchain.  I believe the persons I was involved with actually targeted that company and they got a list of all the pre-sale investors, basically everyone who had deposited money when they were launching.  So, they had the list of all the basically ICO investors, and it would show their addressâ¦</p>
+
+<p>JACK:	Howâd they get that?</p>
+
+<p>JOSEPH:	I think they actually SIM-swapped the people in Augur and I believe they had it uploaded on Google Drive or something just to keep â a spreadsheet, essentially.</p>
+
+<p>JACK:	Thatâs wild, all the SIM-swapping that happens, âcause you know, SIM-swapping to get an @ account, yeah, okay, I covered that, SIM-swapping to get some Bitcoin, but now here we go; SIM-swapping just to get a database.</p>
+
+<p>JOSEPH:	Right.</p>
+
+<p>JACK:	Even if you get a SIM-swap, how are you gonna get the database?  You gonnaâ¦?</p>
+
+<p>JOSEPH:	You see, they must have reset the personâs Gmail, and Iâm not sure they were necessarily looking for that.  Itâs hit or miss sometimes with these things.  You can do all this work and still not make money, which is â youâre not gonna get everything first try, but they got these Augur people and they must have had their spreadsheet backed up with Google Drive and â or something basically to easily keep track of it.  They download this, and this is even more valuable.  This shows Ethereum address â itâs like essentially the BTCE thing.  It shows Ethereum address, their â how much money they bought, and their e-mail.</p>
+
+<p>JACK:	[MUSIC] Whoa, did you follow that?  When this Augur cryptocoin initially launched, there was a pre-sale where investors could buy some early.  The CEO of Augur was saving all these investorsâ names in a spreadsheet and storing it on Google Drive.  This group then SIM-swapped the CEO, probably just looking to steal some crypto, but instead went into his Google Drive account and found the spreadsheet of all the initial investors; their e-mail and how much Augur they bought.  This list was amazing for this particular group of criminals.  Joseph was seeing these people go down the list, targeting every one of the whales, trying hard to get into each of their accounts.  He wanted to do it too, but they wouldnât give him the list.  It was too valuable for them.  He did help this group get into other crypto-related accounts though, and he says at the time, AOL and Yahoo e-mails were the easiest to break into because it didnât take much for him to call up and convince them that he was the owner of the account to get the password reset.  Letâs just reenact one of these calls, right?  So, you call up Yahoo and they say yes, Yahoo, how can I help you?  What do you do?</p>
+
+<p>JOSEPH:	Okay, [MUSIC] hi, Iâm Joseph Harris.  Iâm trying to reset my Yahoo e-mail address.  Okay, whatâs your e-mail?  Docman123@yahoo.  Pull up the account; okay, we need you to verify your security question answer on file, and â or you have a card on file that you can verify.  Now, what I would do before I would call Yahoo in a lot of cases was Iâd call up the billing department; call up Yahoo, say hey, Iâm trying to add a card to my Yahoo account.  Iâm actually thinking about making a purchase, Yahoo small business.  I need to make sure my cardâs on file.  Theyâd say okay, you donât have a card on file.  Iâm like weird; I thought I just added it.  Like, would you like you â me to add the card for you?  So, you give them a fake Visa.  It doesnât have to be valid at all.  It doesnât actually bill anything.  Just give them a fake Visa, give them a security code, and they register on the account, then call back the regular Yahoo support.  Hi; oh, we see you have a card on file.  Could you verify the last four digits of the card for it?  You know that Visa because you added it.</p>
+
+<p>Tell them the last four digits of the card; okay, we have success â theyâd actually say congratulations, which I always thought was funny, because if someone who lost access to their e-mail, why would they want to be congratulated?  But for me, congratulations; you got the account, essentially.  So, I always thought it was a funny word choice.  Theyâd say congratulations, we can add an alternate e-mail to you, we can do this, and what I would do is Iâd say these security question answers I have on file, theyâre â I think someone might know them.  Could you transfer me to a manager so I can update them permanently in the system?  Theyâd transfer me to a manager and I would tell them these security questions, theyâre compromised.  Someone else knows them.  Could you update them on file?  I would call them and they would essentially permanently update the original security questions answers.  So, if docman1337@yahoo is trying to get their account back, they call.  Whatâs your â whatâs the name of your first pet?  Oh, my first pet is this.  Thatâs not what we have on file.  They canât even get their Yahoo back because Iâve updated their original questions with a manager, so now they canât even get their e-mail address back.</p>
+
+<p>JACK:	Man, heâs scary.  This worked very well for him to get into these e-mail accounts, and at the time, he was getting into a lot of them.  He didnât have any other job, so he would just focus on this all day.  So, he was mastering the dark art of e-mail compromise, but because he was doing this often, he would always be on the lookout for easier ways to do it, such as looking for bugs in some of these e-mail providers.  One day, he found a bug in Gmail which let him reset anyoneâs password.  See, at the time, if you told Google that you forgot your password, it would look at your cookie history to see if you ever logged into that account before.  If you didnât have a session cookie from the past, it would ask you some really hard questions to do the account reset.  But if it did see that you had a cookie from a past login, it would only ask you some easy questions to let you back into the account, because it probably meant that you were the rightful owner.  [MUSIC] So, Joseph decided to make fake cookies.</p>
+
+<p>JOSEPH:	My bug was essentially â I was able to get it so it would appear that way for any account.  So, when I tried to reset a password on the form, it would show that I had signed into that e-mail before, so now suddenly when I reset the password, the form is registering as this person is signed into this e-mail right now.  If they fill out a basic amount of information, we either give it back to them, or in some cases they would just straight-up let you change your password right away.  It was so heavily reliant on cookies back then that even if you had the wrong answers filled out, it would still let you reset the password because itâs like, this personâs signed into the account right now.  It just would reset for it.</p>
+
+<p>It was a terrible bug with Google.  It was never publicly disclosed.  It wasnât like it was big news.  Iâm sure if it was big news, Google would be getting all kinds of stuff for that, but it was never â it was sort of â I found it and I told a few friends, but it was never a public bug that everyone was doing.  So, Google eventually fixed that after about a month, but for a whole month, yeah, you could essentially â as long as the account wasnât two-step, you could basically just â you could do the trick and then you could essentially just reset anyoneâs Gmail.  Some cases it didnât work, but â and most cases it would just reset the Gmail account with not knowing any information, because it registered that your cookies â essentially that you were signed into the Gmail account right now, sort of speaking, your cookies are attached to this Google account.</p>
+
+<p>JACK:	So you see, there were lots of different tricks he was using to get into accounts, but it doesnât stop there.  This group was giving him users to target, and they were heavy into SIM-swapping to get into e-mails and accounts.  So, he was learning how to SIM-swap pretty well, too.  So, once you get someoneâs Yahoo account, it â you probably get in the zone; itâs probably go, go, go time.  What are you doing?  [MUSIC] Lock the door, put the headphones on, letâs go.  What is it thatâs going on?</p>
+
+<p>JOSEPH:	Iâm typically looking for â if it was crypto, Iâm obviously looking for their crypto wallet.  Do they have a backup?  Do they have a form I can reset?  Thatâs actually what Iâmâ¦</p>
+
+<p>JACK:	Do you have a certain tool thatâs looking through the e-mail?</p>
+
+<p>JOSEPH:	No, Iâm manually searching it because I donât want to miss anything.  A tool, they can miss something, but Iâm going through â if itâs a crypto person, Iâm going through every e-mail, any lead that could possibly lead to something because I donât want a machine to miss it, so Iâm just manually looking through.  Yeah, itâs time consuming, but if youâre â go through it too quick, youâre gonna overlook something that could lead to something else.</p>
+
+<p>JACK:	So, rattle off the first five searches you might do.</p>
+
+<p>JOSEPH:	Well, if itâs â if it was â depending on with Yahoo, for something else, I would be looking at their Google Cloud, their OneDrive account and try to see if they have any pictures or backups saved there.  But with Yahoo, they have Yahoo Documents, so I might be looking through your Yahoo Documents or I might be searching keywords relating to crypto, something like that.  Yahoo Documents; see if they have any backup.  If Iâm looking â if I know specifically they have an Ethereum wallet, I might search up the keyword âEthereum wallet JSONâ and see if they have the Ethereum wallet backup there.</p>
+
+<p>JACK:	Now, another place he liked digging through was peopleâs Google Drive or OneDrive.  These are private storage places that people use to put sensitive information on so you donât lose it, and he would find ways into this and start looking around for interesting stuff there.</p>
+
+<p>JOSEPH:	A lot of people do store their seeds and their private keys in their e-mail.  Itâs a terrible habit to have, but back then especially, youâd see people that would write down their private keys in their Cloud storage or something like that, or have their backup taken a photo of and be in Yahoo Photos, something like that.</p>
+
+<p>JACK:	Whatâs the trick to try to find these things?  Are you just looking for seed phrase andâ¦?</p>
+
+<p>JOSEPH:	Yeah, or â yeah, exactly, Iâm just going through, looking through Sent inbox, seeing if they have sent themselves an e-mail.  I might do from this e-mail to my e-mail, see if they did that, going through photos, just manually searching, making sure I donât miss anything.</p>
+
+<p>JACK:	So, youâre also looking through Dropbox and any other place that they mightâ¦</p>
+
+<p>JOSEPH:	Oh, of course.  If I can get into their Apple account â if someone hasnât turned off their sync settings, automatically if they take a photo of my seed, Iâm gonna see it in the iCloud unless they change their settings, and not everyoneâs gonna go into their iCloud and disable it so it syncs to iCloud.  Most people have their sync option on so if they take a photo, I can see that photo of whatever they took in their iCloud.</p>
+
+<p>JACK:	Ooh, most of the time, both Android and Apple phones will automatically send photos taken on the phone to Google Photos or iCloud.  Because Joseph knew this, he would get into there and look through the photos taken on the phone to try to find anything good.  Some people donât even know their photos are synced this way, and this makes me pause to think too, because what if heâs not there to steal cryptocurrency?  What if heâs there to steal nudes or incriminating photos or just private stuff that you donât want leaked?  This is way too easy for someone to get into the photos taken on my phone.  I think the problem here is that we want phones with cool features that are easy to use.  Sure, you could set your phone to not back up the photos to the cloud, but now youâve gotta find a way to backup these photos yourself somewhere, which is a lot more work.  Itâs harder to do.  So, we opt for easier methods to do things even though theyâre less secure.  Eventually, Joseph got his hands on the full list of Augur investors and was going wild with that.  He had lots of ways into accounts, but sometimes they would all fail, and thatâs when he had to try to SIM-swap it.</p>
+
+<p>JOSEPH:	[MUSIC] I have a burner Android phone that cost me twenty, thirty bucks that I ordered off eBay or some site, or got off Craigslist.  I have a SIM card that I just paid and bought online from eBay or some reseller, and I got a phone.  Iâve just called up AT&amp;T or Verizon, verified my details, and gave them my SIM card, and now I have the phone in my hand and Iâm going on gmail.com and Iâm typing in the personâs e-mail, and then I see a phone option; Iâm typing in that phone number and Iâm getting a text directly to that phone in my hand, reading off that code, typing it in my web browser, resetting that personâs e-mail password.</p>
+
+<p>JACK:	He scored a lot while doing all this.</p>
+
+<p>JOSEPH:	These were still early days, so itâs basically like â Iâm not making too much.  Iâm making â I hadnât made six figures yet even, but by 2017, at the end of the year, I had made six figures.  But at the time, these were a couple $10,000s at a time kinda hits, and crypto wasnât â this is still 2016, the start of 2017, so crypto hasnât done that little 2017 bull run yet.  Ethereum, for example, was still under $10.</p>
+
+<p>JACK:	But this little spree started to wind down.  The list of whales to attack was dwindling, the Gmail bug that he found got fixed, and the phone companies were starting to get more strict at stopping SIM-swap attacks.  They were now requiring people to know the account number or security number or something else to swap it.  So, simming suddenly just became too hard to do.  Now, most of this crypto he stole, he would just cash it out right away using LocalBitcoins, but as 2017 came around, the price of crypto rose dramatically and he decided to just start keeping  a bunch of it and hold it.  Without even doing anything, he was watching his money double and triple in value that year.  [MUSIC] One day, he came across an account that he wanted to get info from, and he found the phone number associated to it.  But it was a Verizon number, and Verizon just upped their security, making it too hard to do a SIM-swap with them anymore.</p>
+
+<p>JOSEPH:	So, Iâm trying to reset a Verizon.  Theyâre gung-ho on this passcode or account number, and so, I start to think, account number; how can I get that?  Is there a bug I can find to get this account number or something?  I decide to look for a bug that might disclose the account number.  I look through pages; Iâm not finding anything, then I think what about the quick page thing, where â thereâs pages with AT&amp;T and Verizon where you quickly pay your bill and you donât need access to the account; you just enter your phone number.  So, I look at this quick page page, I enter a targets â a Verizon â some random guyâs Verizon number, and then I look at the page.  It has the account number, but itâs not fully disclosed.  But then Iâm like, why donât I look a little deeper?  So, I look into the sources and I find a â I look in and I find a JavaScript variable that has the account number just completely disclosed right there.  So, Iâm now able â Iâve found in the JavaScript that the account numberâs completely there, so I call right back up to Verizon and instantly get the account with that account number that was just disclosed to me.  Now, essentially, Iâm pretty much the only one in this community thatâs able to do Verizons, because this was when the social stuff got patched.  So essentially, Iâm like the go-to guy to reset these Verizons accounts because Iâm the only one who knows how to do them because Iâm the only one that has this bug to basically find the account number.</p>
+
+<p>JACK:	Huh.  I want to linger here for a second.  Joseph found a page on Verizonâs website which lets you put in someoneâs phone number to pay their bill.  Then, if he inspected the source code, he could see their account number.  Is this a data breach?  Yes, Iâd say it is.  The account number should not be known publicly.  Even Verizon knew that, and thatâs why they asked for that number before porting a SIM card over.  So, the fact that you could go to this website and just get the account number of any phone number you wanted is a data breach.  But the thing is, defenders or security professionals like myself have a hard time visualizing what a data breach like this can actually cause damage to.  So what if someone knows my Verizon account number?  What are they gonna do, pay my bill with it?  But I read something the other day that I think captures this problem.</p>
+
+<p>Iâm going to reference the Marine Corps doctrine on war fighting.  MCDP 1; yeah, I sometimes do read Marine Corps manuals on war fighting, and thereâs this section which talks about the science, art, and dynamic of war, and the section ends by saying this, quote, âWe thus conclude that the conduct of war is fundamentally a dynamic process of human competition, requiring both the knowledge of science and the creativity of art, but driven ultimately by the power of human will.â  End quote.  This sounds exactly like what hackers do.  Defending and attacking a network is a human competition.  Whoâs better at their job?  This doctrine goes on about how creativity plays a big part in winning a war.  You have to be able to visualize what could possibly happen, and hereâs an example of a hacker being able to visualize and be more creative than the defenders.  Joseph possess a strong creative force.  Itâs remarkable what he can do with just a little bit of user data.</p>
+
+<p>JOSEPH:	Yeah, like oh, what can we do with account number?  Okay, ha, ha, yeah, they know the account number.  So, you look at this like okay, this is such a little breach, [MUSIC] but this one little breach is basically the key to take over anyoneâs Verizon account.</p>
+
+<p>JACK:	Itâs scary to think about, because when you give this little piece of user data to someone like Joseph whoâs skilled at SIM-swapping and stealing crypto, it could mean hundreds of thousands or millions of dollars in stolen money from users, and the weird thing is, Verizon isnât even going to be blamed when their users get their money stolen.  I donât know, I guess Iâm just surprised to see such creativity and enormous human will that some attackers have.  This wasnât the only time he found a vulnerability on a cell provider; he also found a bug on T-Mobileâs website.</p>
+
+<p>JOSEPH:	So, essentially what I did is I had a compromised account number to a T-Mobile account, so I signed in with someone elseâs T-Mobile account and I just started looking through the HTTP traffic.  I was looking through requests, Iâm visiting every single URL and just basically getting a full scope of the requests being sent out, and I stumble upon the WSG one, which is a new one, and I notice it has the T-Mobile ID field in it, and it has my â the phone number of the person Iâm signed into.  So, I just â to â it was a very simple thing; I just test it with someone elseâs phone where I disclose their info.  I also said â and then I started trying different values after that, so instead of MSIDN, Iâd try T-Mobile ID, and then I could search them by their e-mail address.  So, I was just figuring out these different parameters I could use to pull different information or pull up information based off account number or e-mail address or phone number, and thatâs â and it would just display their information.</p>
+
+<p>JACK:	Iâm proper impressed with this.  I mean, heâs capturing packets, changing the data on it, and replaying them.  Thatâs not some basic skills there.  Heâs got some real hacking chops to figure that out.  But what this did is it allowed him to read text messages for other T-Mobile users without having to SIM-swap them, because he was changing the IMSI number.  Joseph was getting pretty dangerous.  Heâs mastered how to get into peopleâs e-mails, heâs cornered the market on SIM-swapping certain carriers, heâs finding some pretty juicy vulnerabilities, and heâs absolutely ruthless about stealing peopleâs cryptocurrencies.  He starts learning about how to find even bigger accounts to go after, because since crypto was booming, it meant there were a lot of newly-minted millionaires, and Joseph was laser-eyed focused on who they were and was targeting them.  [MUSIC] Sure enough, he got into an account which had over a million dollars in cryptocurrency, and he stole it.</p>
+
+<p>JOSEPH:	At this time, I was a crypto millionaire.  There was a hack I did that I made millions of dollars essentially by finding a backup seed.</p>
+
+<p>JACK:	This was a big score, his biggest yet.  He canât go into details about this one though, but it was exciting for sure.  He was walking taller and on a new high for about a week, because thatâs when the cops showed up.</p>
+
+<p>JOSEPH:	So, they actually went to my old house, my momâs, where they basically said we want to see Joseph.  She gave them my new address and gave me a call, a heads-up, that they were on the way.  So, I was kind of prepared, but they were â I kinda just put my computer somewhere where I â I didnât have time to get rid of it or anything, but I just kinda put it to the side.  They knocked and they said Joseph Harris, youâre under arrest.  Honestly, Iâm not â I asked, is this about â I knew there was that other charge.  Like, is this about the Instagram thing?  They said yes.  Then essentially, they took me to the near police station.  I was booked, took fingerprints, and then essentially after that, they let me go on a $500 bail.</p>
+
+<p>JACK:	What?  He was arrested for stealing that Instagram account from a while back and the cops had no clue he had stolen a million dollars a week earlier.  So, he got a misdemeanor charge and was let go on a $500 bail.  Yeah, and I mean, did that scare you at all or were you just like ha, ha!</p>
+
+<p>JOSEPH:	It was sort of like a ha, ha moment in a way, but I did get super careful after that.  Any time I would use a computer, I just started destroying them, completely just removing all â any computers I had â I went probably through like, five Macs within nine months and probably destroyed a couple PCs while I was at it.  I was just â I would â âcause honestly, how they got me was they had done forensics on my computer and even though I had â thought I had deleted everything, they were â obviously they could still dig into the RAM and see oh, this person had Skype logs, so even though heâs deleted everything, we can use advanced forensics and find all that heâs been doing.  So, I wasnât like â I wasnât even gonna risk getting caught at that point.  I was not gonna risk anything.  Iâm doing bigger bucks.  I can afford to buy new Macs.  Iâm just gonna completely smash, scatter these parts in dumpsters and â or wherever I can and just not have physical evidence.</p>
+
+<p>JACK:	Well, tell me about this smash.  Was this a social event or did you â what wasâ¦?</p>
+
+<p>JOSEPH:	Oh, it wasnât â I just â it wasnât a social event.  It was just me using tools and smashing computers and then putting them in trash bags and throwing them in different areas not near my house.  So, I mean, that was just my way of saying okay, well, even if I get arrested, thereâs gonna be no physical evidence.  My idea was I just donât want anyone to get ahold of my computers, because I know they got advanced forensics and Iâm not gonna take any risks with that.</p>
+
+<p>JACK:	Yeah, I just imagine you taking it to a party and saying hey, everyone, give it a good stomp.</p>
+
+<p>JOSEPH:	I was living with my roommates at the time, so I did have some â they didnât know exactly what I was doing; they knew something was up, Iâm sure, but they helped me smash them, but they werenât exactly sure what they were smashing.  So, I just â I need to get rid of this; like okay Joseph, sure, you know?  So, there was sort of these things where my friend would get out the chain â not chainsaw; itâs some sort of tool and basically drill into it.  It might have been a drill, but I donât remember completely.  Yeah, we destroyed it.  I remember us playing around with magnets too, so there was sort of that, but it wasnât â something like that, essentially.  It wasnât one of those things to flex; it was more, I donât want this to be evidence.  I gotta get rid of it.</p>
+
+<p>JACK:	[MUSIC] By this point, he had graduated high school and moved out on his own.  The story he told his parents was that he was a Bitcoin investor.  Since it skyrocketed that year, it was a believable story and it was partially true.  So, his parents trusted that he was doing well, and he started getting more sophisticated with laundering his Bitcoin, too.  See, when you steal someoneâs Bitcoin, itâs hard to cash it out without it being tracked to you.  All the exchanges require KYC, or Know Your Customer, and you have to give them a valid photo ID and tell them who you are and all this kinda stuff.  So, if there is a crypto-heist or some funny business, the feds can track that crypto to an exchange and then get the exchange to tell them who cashed out with it.  In fact, Joseph did have an account at an exchange, Coinbase, under his real name, and he was cashing out on some of these licks.  But he could do that because he was cleaning the money first before putting it into his account and cashing it out.</p>
+
+<p>JOSEPH:	[MUSIC] Well, so, the basic idea is I was paying to have these German Binance accounts created, a thousand bucks or so.  At the time, I had a lot of money, so a thousand bucks or so.  So, Iâd pay a thousand bucks for a couple of these people that â this guy I knew knew a bunch of German people, so I would have him create these Binance accounts for me and I would essentially slowly launder the money through those.  Iâd change the crypto to Monero, then Iâd take the Monero out, send the Monero to my Monero address, then send the Monero to another Monero address I did.  Iâm sure you know Monero is a privacy coin, so it doesnât show up on the blockchain.  So basically, once â thatâs basically money laundering 101 with crypto.  You need to get your crypto to Monero, then you need to send your Monero to another address so thereâs no transaction.  Suddenly, you buy, say, Bitcoin again with Monero or Ethereum; thereâs no way to tell where that Monero came from originally because itâs not public on the blockchain.  So essentially, once you buy that Ethereum, all that shows is that someone bought Ethereum with Monero, but we have no idea where this Monero came from, so they canât do blockchain analysis and then track oh wait, this came from this hack and this hack.  But all they see is someoneâs used Monero to buy this, but thereâs no proof that I got that illegally.  Thereâs no proof.  Iâm just a Monero user.</p>
+
+<p>JACK:	Makes sense.  So, youâve got some money coming into Coinbase, youâre cashing out, putting it in your bank account, you got a apartment or a house or something?</p>
+
+<p>JOSEPH:	I have a house with four roommates.  Not a big house; at the time, Iâm still living within my means, you know?  You see all these crazy stories and I, honestly, I always kinda look down on it.  Iâd see people going to LA, posting their ads, and Iâd kinda be like oh, Iâve never been really the party type, myself.  I was more just kind of like â I had this money, I was saving it.  I wasnât being â I was buying stuff; like, I bought some usernames and stuff, but I wasnât going out buying Lamborghinis and stuff like that.</p>
+
+<p>JACK:	Yeah, so, you are doing all this work in an office setting or in your bedroom or what?</p>
+
+<p>JOSEPH:	I have a little basement area.  I have a decent little computer setup, and Iâm just kinda doing it in there.  Thereâs a big TV that I bought; I got a TV I can watch.  I got some game consoles if I want to play some Xbox, and obviously I got my computer right there.  So, I also have a good Mac because Iâve always been â I always like bringing my Mac and doing stuff on my Mac, too, so those are my main setup.  I got my big PC downstairs and I got my Mac that I use around the house.</p>
+
+<p>JACK:	Iâm just trying to picture it, right?</p>
+
+<p>JOSEPH:	Letâs just put it this way; that house, itâs a small little house.  Itâs just kinda crazy to think â my friends used to joke about it now, but itâs like, millions of dollars was stolen in that house.  Just crazy to think some small little house, not even a major place, but the amount of money that was stolen just in the basement of some â itâs not an expensive house; itâs probably worth 100k, 200k, and itâs four people paying for rent.  Iâm not paying â Iâm not going out buying a penthouse or anything.  Itâs just kinda odd to think oh, wow, there was millions of dollars that was laundered and stolen through that house.</p>
+
+<p>JACK:	Did you have an exit strategy in mind?  Did you say okay, Iâm gonna only steal this much money and then I think Iâm gonna hang it up, or what wasâ¦?</p>
+
+<p>JOSEPH:	That was sort of it, but itâs just that â like you said before, that rush.  One second you are not a millionaire; you have thousands of dollars or 100k, but youâre not a millionaire.  Then within two seconds, ten seconds, you instantly have two million dollars, three million dollars, just within a minute.  Itâs that rush.  Itâs like an insane natural high that youâre like, whoa.</p>
+
+<p>JACK:	When you have that rush, when you make it and itâs like oh my gosh, I just did it; I just have a extra two million dollars, what do you do to maybe celebrate or what do you after that to just kind of let it linger andâ¦?</p>
+
+<p>JOSEPH:	Probably just go out with my friends, play video games, get some food, honestly.  I remember after my first million-dollar one, I had my friend and we went to Fazoliâs.  Itâs an Italian place, and that was my celebration.</p>
+
+<p>JACK:	Fazoliâs gives you free bread sticks.  Letâs go â hey, I just got a million dollars; letâs go get some free bread sticks, guys, on me, on me.</p>
+
+<p>JOSEPH:	Yeah, of course it was on me, yeah.  I wasnât having my friend pay.  So, at this point, itâs like youâre insane and also itâs just a very big rush.  Itâs enjoyable, and youâve already made your millions of dollars so now itâs more like youâre not even stressing about getting the money.  Youâre like, I can do this until I make another one.  At this point, cryptoâs starting to crash.  I donât know if you remember, but in 2018, Ethereum went from near $1,500 and it started going down, slowly down to $600.  So suddenly, my money â Iâm losing â every time cryptoâs dropping, Iâm losing six figures.  Thatâs how much I had.  Any time Iâd â it would start drop â my millions was going down.  I was losing $100,000, $200,000, $300,000 at a time because I had so much that any time it dropped, Iâd lose a lot of money.  So, that was start â even though I stole this money, that was starting to wear on my mind.  Like, oh, wow, my moneyâs going down.  So, Iâm getting a rush from doing this and my moneyâs going down.  Why donât I keep doing it?</p>
+
+<p>JACK:	[MUSIC] So, up until now, if you had control of someoneâs phone number and wanted to get into their Gmail account, you could just tell Gmail hey, reset my password, and typically, the backup way into a Gmail was to get a text to your phone with a link to reset the password.  But Gmail added a new security feature which somehow messed this up, so SIM-swapping someone to try to get into their Gmail account just wasnât working well anymore.</p>
+
+<p>JOSEPH:	Basically, Gmail was starting to get a little strict.  Youâd try to SIM-swap someone and it wasnât letting you because it would give you these unrecognized device errors.  So, people were not being able to do Gmails.  But I had actually found a bug with â by using a web debugger and SIM-swapping that I could actually make it appear as if Iâve signed into the device before.  Remember how I had done that with Gmail before to be able to reset passwords?  But here, if I controlled someoneâs SIM and had the SIM device, I could also do it so that I could essentially appear as if I was signing into the accounts.  Itâs not only the forms letting me reset with just a phone number, not â like, Iâm completely bypassing GAuth and two-step, which is now in the picture.  So, I have this bug to do this stuff and I hear about this Crowd Machine guy.</p>
+
+<p>JACK:	This Crowd Machine guy; heâs talking about the owner and CEO of a crypto company called Crowd Machine.  Now, by this point, Joseph has moved his sights higher.  Instead of targeting people with crypto, why not target companies that have crypto?  Because theyâll have way more.  [MUSIC] You can go onto websites like CoinMarketCap and see who the biggest whales are in crypto, and you can see which wallets have over a million dollars.  Itâs right there for anyone to see, because the blockchain is a public ledger.  Joseph found a certain wallet that had a lot of this Crowd Machine altcoin in it, and it was so much that Joseph thought for sure it must be owned by either the company or the CEO.  So, he set his sights on the CEO of Crowd Machine, thinking surely he must have access to these big wallets somehow.</p>
+
+<p>JOSEPH:	He has two-step security on it.  He has GAuth, he has an alternate e-mail.  Normally this guyâs not targetable, but I decide to try my bug on him.  So, at this time, I was thinking â normally when I did SIM-swaps, I would let other people do the SIM for me.  Like, theyâd hold the SIM, but in this case I was a little upset about a breakup, so I was just kind of in ruthless mode.  I was like, I want to make a lot of money, I want to do this, I want to do that, and I start seeing my friend Joel get arrested, and there was â they got him by tracking the cell phone.  Like, kinda location, they could see where he was.</p>
+
+<p>JACK:	Okay, so Joel Ortiz was the first ever person to be arrested and convicted for SIM-swapping.  Apparently he stole $23 million from someone using a SIM-swap attack.  Joel is currently facing ten years in prison for this.  Joseph knew him and didnât want to be arrested in the same way by being identified because of what cell towers he was connecting to.  So, to do this SIM-swap, Joseph drove far away from his home in Missouri [MUSIC] all the way to Oklahoma.</p>
+
+<p>JOSEPH:	Yeah, so Oklahomaâs about â I went to Oklahoma city.  Thatâs about a eight to nine-hour drive.  Itâs not too far.  Maybe itâs a little less than that.  So, I â we drive down to Oklahoma.  My cousinâs driving me, and he doesnât stay long.  He drops me off.  Well, actually, he stays the first day and I go to Walmart to buy a cell phone, just a cheap cell phone, which â that was my first mistake.  Normally I buy these things on eBay.  Keep in mind, I havenât held SIM â I havenât held the phone in a while, so Iâm a little outdated with how to do it.</p>
+
+<p>JACK:	What he means is this group he was with got so big that some people specialized in SIM-swaps, and you could just tell them the number you wanted and they would do the SIM-swap.  Then when you went to do the password reset, youâd just ask them for the text message and they would tell you whatâs on the phone.  Thatâs what he normally would do when he needed to do a SIM-swap, but for this particular one, he wanted to do it himself, maybe because he had this Gmail bug that he found that he didnât want to share with anyone.</p>
+
+<p>JOSEPH:	So, essentially, Iâm just â like I said, a lot of the times, you know these people probably have a lot of money, but you donât necessarily know how they store it.  So, I call â this time, I call up AT&amp;T and I ask to activate it.  They gave me a little trouble at first, but eventually I got them to activate the SIM card.  Then I do my vulnerability to try to make it so that it appears as if Iâve signed in again.  I pull off the bug.</p>
+
+<p>JACK:	[MUSIC] Okay, at this point, heâs in the account.  He has control over the CEOâs phone and his Gmail account, all from within this hotel room.</p>
+
+<p>JOSEPH:	This is all in a hotel room, yeah.  Iâm alone in a hotel room, Iâm â Iâve been alone for about five days, so Iâm starting to get a little antsy and kind of nervous and Iâm upset about the breakup.  I get it activated, I use my bug to bypass two-step, and I reset the code with just â the account with just the phone number.  Iâm excited because I had done it before with another thing, but I had never done it to bypass GAuth, so Iâm like wow, this bugâs even more effective than I thought.  So, I sign in and I start looking through his stuff.  Now, Iâm seeing some interesting e-mails, but I decide to go to Google Drive.  Iâm looking through his files and thatâs when I see a backup to MetaMask numeric passphrase, which is â I forget how many.  I think itâs like, twelve characters.  Itâs a twelve-character word.  I donât know exactly what itâs for, but Iâm guessing itâs for Ethereum.  So, I put that new numeric passphrase in MetaMask, it loads up the wallet, and I see he has $3 million in his own coin there.</p>
+
+<p>JACK:	Joseph now has full control of this wallet.  With just a few clicks of the mouse, he can transfer $3 million of this crypto coin to his own wallet.  So, he takes a moment to just look at this.  A tiny smile flashes across his face and he grabs it all, all $3 million worth of this Crowd Machine cryptocoin.</p>
+
+<p>JOSEPH:	But Iâm like, surely thereâs more stuff.  So, I start â Iâm â his accountâs a super admin on his G Suite, so I go through his users and I find the tech guy, the guy who built an automated system to send out the investors their coin.  So, I reset his ad â his account, and I get into the techâs guy thing, and I see that heâs â he has a script that basically automates the process of sending out these coins to the investors.  But his bad fault is he backed up his source code for this on Google Drive.</p>
+
+<p>JACK:	The source code shows exactly how to pull money out of the main wallet for this company, step-by-step.  So, now all Joseph has to do is read whatâs in the source code and follow it to transfer the money to his own wallet.  So, he cracks it open to take a look, and sitting right there in the source code was the private key for the main Crowd Machine wallet.  He loads this private key up into his wallet, which gives him control of that wallet.</p>
+
+<p>JOSEPH:	I access the private key and it has about $17 million in it.</p>
+
+<p>JACK:	That is, $17 million US worth of this Crowd Machine cryptocurrency.  Whoa, this was by far the most heâs ever had control of.  But at this point, itâs still sitting in their wallet, and of course, he wants to move it to his wallet so only he would be able to control this money.</p>
+
+<p>JOSEPH:	So, I see that this wallet has $17 million in it, and I already have $3 million, so I have $20 million in total.  But I decide that â I donât know what this moral compass was.  Me thinking back to it, it makes no sense, but I decide Iâm not gonna take everything from them.  I just take $15 million from them and I leave $5 million still in the crowdsale wallet.</p>
+
+<p>JACK:	What do you think the reason was?</p>
+
+<p>JOSEPH:	I think the reason was a slight bit of guilt.  Like, do I completely want to take these people completely dry?  Do I â or just leave them with something, I think was my mindset, which looking back at it is, Iâm gonna tank their coin anyways.  Why wouldnât I just take it all?  But I do feel at the time I felt slightly bad about just robbing them for everything.  Thatâs the biggest hit Iâd done; $20 million is a lot of money, so Iâm thinking do I â it was â I think it was flawed logic and it was just rushed, but I do believe that there was a bit of guilt there that I didnât want to take everything from them.  So, thatâs honestly what I believe.  I still donât know why, because itâs like, I should have just â if I had done it again, I probably â I donât know how it would have gone, but it just â logically it doesnât make sense for me to only take $15 million, but I do believe there was a bit of guilt about taking such a large amount, and hence, I left $5 million for them, which in retrospect doesnât make much sense, but I guess I just didnât want to clean them dry.</p>
+
+<p>JACK:	So, he grabs a total worth of $15 million worth of this crypto coin and closed it all up and shut down for the night.  Whoa, what a lick; $15 million.  Heâs pumped and amazed.  But he realizes something; [MUSIC] this is an altcoin.  Specifically, itâs a Ethereum-based ERC-20 token.  Because itâs Ethereum-based, he can exchange it directly for Ethereum.  But the more he exchanges, the lower the coin will go.  Thatâs because of how liquidity pools work and stuff.  So essentially, the more he takes out, the more the price goes down.  He realizes heâs not gonna be able to get anywhere near $15 million if he takes it all out this way.  So, he comes up with a plan and tries to make a deal with the people he just robbed.</p>
+
+<p>JOSEPH:	Thatâs correct.  I sent them an e-mail saying hey, I obviously control the â like, a large portion of your token sales.  If I was to sell this off, itâs clearly going to cause a lot of damage to your token.  You wonât come back from this.  Instead of me crashing your token and completely ruining your company, thereâs an easier alternative; you can send me $8 million in Bitcoin to my address and in return, I will return the $14 million I stole.  As a token of good faith, Iâve sent $1 million back to the crowdsale wallet.</p>
+
+<p>JACK:	Huh, interesting proposal.  Clearly, the company saw that they had $15 million in their coins stolen, and Joseph knew they raised tens of millions of dollars from their ICO.  Would they want to save their coin or let it crash?  Just this week, I saw a news story that a company called Rari got hacked and lost $80 million, and they offered a $10 million, no-questions-asked reward to whoever returned the money.  So, these things do happen, but Crowd Machine never replied to Joseph.  Instead, they were busy dialing the police.  After a day or two of waiting, Joseph decided to just start exchanging this coin for Ethereum.  Just as he expected, this caused the price of the coin to start going down.  By the time he exchanged all his coins for Eth, what he had in his wallet was just a few hundred thousand dollars, nowhere near the $14 million that he started with.  Of course, now all the investors are mad that the coin just tanked.</p>
+
+<p>JOSEPH:	So, that was the part I was at, and obviously I was a little bummed out about the way it turned out.  It could have turned out a lot better.  I made some mistakes; I was low on sleep, so I wanted to get out of Oklahoma.  So, I had my cousin come to pick me up from Oklahoma and the person who dropped me off.  [MUSIC] He gets there, we chill, and then the next day, we get ready to leave.  Iâm supposed to check out on a Tuesday, but instead I decide Iâm â this is just weird, Iâm getting outta there, so I â so we leave, and actually, I forgot to mention this part, but when we were checking out, I talked to the thing, and the â I remember the hotel guests who were checking us out were being kind of â acting a bit weird to us.  Like, they seemed nervous or they knew â seemed like they knew something was up or something.</p>
+
+<p>I remember getting in my cousinâs car because we were gonna stop by Walmart to get some supplies to get rid of this stuff, and I remember seeing the person â as soon as I leave, the person at the hotel checkout goes to a van.  They literally went to a van.  I waved at them; they didnât wave back.  So, I thought okay, thatâs kinda weird.  I get to the Walmart and I see a police car parked out.  That kinda spooks me a little, but Iâm like okay, whatever.  So, I go through the Walmart, get the supplies, and then my cousin has to fill up his car on gas.  So, we pull into the gas station.  I remember my cousin telling me his last thoughts before it all happened was, itâs a beautiful day.  But I was sitting in the passenger seat, and then an undercover agent points a gun at the car windshield, says get out of the car.  My initial thoughts are Iâm being robbed, so I get out of the car and instead of being robbed, Iâm now handcuffed and the person shows his badge.  Heâs part of the Secret Service.</p>
+
+<p>JACK:	What happens to your cousin?</p>
+
+<p>JOSEPH:	So, thatâs actually a really tragic part about it.  He actually â because he was driving me, he actually got booked too, and his mugshot was featured on the front page of some articles as well.  He was released two days later, but Iâve always felt terrible about that.  I think it was kinda bad police work and media because he wasnât even there at the time that the hack was taking place.  So, it was sort of just â unfortunately, he just kinda got â I think he knew kinda what I was up to, but itâs just â unfortunately he got kinda flung into the mix.  Iâve always felt bad about that.</p>
+
+<p>JACK:	Okay, so they put you in the back of the police car, they drive you to the station, they interview you, you answer questions.</p>
+
+<p>JOSEPH:	Thatâs correct, but Iâm not telling them any information.  Iâm really â Iâm trying â in my head, Iâm trying to beat around the bush to see what they got on me.  Theyâre asking me these questions and Iâm not giving them the answers.  I can tell theyâre unhappy, then finally they â I just get sick of the interview.  I say you know what?  Iâm going to back out here.  Honestly, you guys â Iâm â whatever.  Do whatever.  Iâm not gonna answer any more questions without a lawyer.  They kinda look at me and said now, is that â are you sure thatâs the route you want to take?  Because the mediaâs gonna get this soon and you can help us or you can â you might be able to help us or something.  I just, at the time, Iâm like, Iâm not â Iâm obviously not gonna rat on my friends or anyone that they might be interested in, so I just say nope, weâre done here.  I go back to an Oklahoma jail cell, which I donât know if you know, but Oklahomaâs kind of notorious for a bad jail.</p>
+
+<p>JACK:	This time, the police question him and did not let him go home.  They kept him in jail for the entire investigation which took months, which is kind of surprising to me that they kept him in jail without giving him any kind of verdict.</p>
+
+<p>JOSEPH:	Keep in mind, I was one of the first that was arrested.  There was Joel followed by Ricky; both two I knew, and then Xavier, who I wasnât really aware of but â too much.  I knew him, but not personally.  Essentially, what happened is I was sent to jail.  Our appeal happens, the bailâs set at $14 million.  My lawyerâs initial reaction is we need to get this bail lowered because we need to get him out on bail.  That was strenuous.  I was in jail from September to December before my bail hearing was finally here.  The judge does lower it to $1 million, but at the time, they donât have everything set.  They donât know what to do with us yet.  They donât know what sentences theyâre giving out.  Essentially, the judge said â the DA said that I was â essentially said the story that I was one of the â probably one of the best hackers in America and that if I got released, that I would basically be free to do whatever.  They could strike computer [inaudible], but that wouldnât really stop me.  So, they were explaining this story that if I got out, even if they banned me from the internet while I was facing trial, Iâd still be able to find a way to access the internet and could â and I believe the word they used was I was a threat to the state of California.</p>
+
+<p>JACK:	California because thatâs where the victim was.  When Crowd Machine was robbed, they quickly called the police who investigated, and that led them to Oklahoma, and Crowd Machine is based in California.  So, the prosecutors of this case were all in California, and they put him on a plane and fly him over to California to be tried.  Strangely enough, the jail that he went to in California was where Joel Ortiz was being kept, [MUSIC] the first person ever to be arrested for SIM-swapping, and Joseph knew this guy.</p>
+
+<p>JOSEPH:	Yeah, we were both locked â at this time, they were putting us â this is a state charge, which Iâm very grateful it was a state charge, because if it was a federal charge, I probably would have had much more time and I wouldnât have got that half-time.  But we were all â we all basically committed crimes to people in San Jose.  There was a special task force called REACT who investigates SIM crimes and kinda pioneered the whole arresting stuff.  They were the ones that made the first initial SIM crime request.  Theyâre pretty smart with what they do with that stuff, and they were able to get us.  So, Joel was arrested by REACT.  Ricky was a state charge in Florida, Xavier was arrested by REACT, and then I was arrested by REACT.  Me, Joel, and Xavier were all sent to Elmwood which is basically the San Jose facility for corrections, which is â itâs not a prison; itâs a jail.  So, we were â basically, they were â any charge, then Cali.  We were all getting sent to Elmwood.  So, Joel was in the pod next to me.  I was in the dorm environment, so we talked behind the â there was a courtyard that connected the two dorms and you could talk through the door, so â in prison they called â or jail they called Joel Bitcoin, so on my way to court one day, I heard them saying Bitcoin.  Iâm like, is his name Joel?  Iâm like, yeah.  Heâs like, heâs in that pod there.  So, I had one of them basically get him to come to the door and then we had a brief little conversation there.</p>
+
+<p>JACK:	Do you remember how they caught you?</p>
+
+<p>JOSEPH:	I know exactly how they caught me.  Remember that bug I told you on how I was able to reset Gmails with two-step?</p>
+
+<p>JACK:	Yeah.</p>
+
+<p>JOSEPH:	So, when I was doing it with the web debugger, I must have let my â the hotelâs IP connect to the phone briefly, the Android device I was using.  So, the hotel IP, when pointing out the bug, they were able to pull that off.  Very terrible mistake; I have VPNs everywhere else, but Iâm pretty â they said thatâs how they got me, the IP address.  So, I think for a brief moment, that hotel IP registered to that phone, and then they subpoenaed the hotel and I think my name was â I donât know how.  Obviously a few of my friends have got arrested, so maybe they mentioned Doc is Joseph Harris.  Essentially, Iâm pretty sure â I mean, if Joseph Harris is someone who they think may be involved with crypto crimes is staying at a hotel where $14 million happened, wow, thatâs odd.  Oh, and also, we got Walmart surveillance footage of him buying the phone.  We donât have his name because he paid with cash, but we know he went to Walmart and bought a phone, and we also know someone at this hotel where Joseph Harris is staying performed this hack.  So, it was those two pieces of evidence.  Also if you remember, I said I was going to destroy all that technology, including the phone I used to hold the SIM-swap.  That was on me, of course, in the car while we were â we were literally â if it had been thirty minutes earlier or thirty minutes later, Iâm â that technology would have been gone, completely destroyed.  So, it was honestly â and that case might have not had as much hold if they hadnât found the device used to perpetrate the hacks.  So, they basically caught me red-handed.</p>
+
+<p>JACK:	What did jail teach you?  What did you learn there?</p>
+
+<p>JOSEPH:	Well, first of all, it was just â itâs sort of a reality check, you know?  We take so much for granted; walking to Dollar General, getting snacks, going to the movies, hanging out with friends.  Your freedomâs gone.  Jail, in some ways, is worse than prison because jail, youâre in this waiting period.  I mean, thereâs more dangerous people in prison, but jail, thereâs not much to do at all.  In prison, you can get stuff like iPads and certain things, walkmans to pass the day.  You can go to church and do certain things, activities, and the jail cell I was in, there was barely nothing to do.  The only thing I could do was â I worked out a bit and I read books.  But itâs just such a reality check.  Your freedomâs gone.  So, the biggest thing I learned about this; if I keep on with this, my freedomâs gone.</p>
+
+<p>JACK:	The prosecutors looked through all his devices; his computer, his phone.  They even read through the text messages that he had with his girlfriend at the time, and they were surprised to see that a majority  of what he stole was still in his possession, since he wasnât spending it wildly.  Crowd Machine had some strange messaging to its investors, not being completely honest with what was going on.  Joseph went to court and in the end, he was found guilty and was sentenced to sixteen months in prison.</p>
+
+<p>JOSEPH:	The fact that I was willing to give up all my money, the fact that I wasnât this person that was going out partying, the fact that I was someone who apparently the DA said was not â didnât seem like an awful person, was sweet to my girlfriend at the time, and then also the fact that the Crowd Machine people werenât being completely honest with the prosecutor, I think all these three things factored into me getting a very light sentence, which compared to some of these guys, sixteen months is very light and Iâve always been grateful for that.  So, itâs always been sort of a nah, you got a second chance.  You got lucky in this situation.  If that ever happens again, youâre not gonna be getting lucky, so â and of course, thereâs the morale side of that.  Some of your morals start to come back when you can look in your face, look what you did, look at the people youâre hurting.  So, I think all that â yeah, I definitely learned a lot of lessons.  Since then, I havenât committed any more crimes.  Iâve had no run-ins with the laws and Iâve obviously â I still do hacking, but in an ethical side of things.</p>
+
+<p>JACK:	[MUSIC] Since getting out of prison, Joseph has been looking for vulnerabilities on websites and reporting them.  He found a big on one Xbox Live and another big vulnerability with Microsoft and a Google bug that would have made him a lot of money if he was still breaking into e-mail addresses.  But he doesnât want to break the law anymore, so when he finds these vulnerabilities, he reports them ethically and responsibly through a bug bounty program, and these companies appreciate that heâs reporting these vulnerabilities to them and actually paying him for it, which is what heâs doing mainly now to get by.  But something I was thinking about was what if he stashed away some of that crypto before going to jail?  Itâs gone up so much since he was arrested and he could have came out mega-rich.  But his lawyer convinced him itâs way better to turn over everything, since heâd get a shorter sentence for cooperating.</p>
+
+<p>JOSEPH:	I mean, I could have played it differently.  I could have gone to jail, maybe done five, ten years, and came out.  I would have been â say I got five years or something, half-time, do two years, six months, I could have been out by now and been a crypto-millionaire still.  So yeah, that very much was a possibility for me.  It just wasnât a route I wanted to personally take.  Iâd rather get out in my eight months time, sixteen months with half, and just move that all behind, because what I learned is my freedomâs more important than millions of dollars in crypto.  At least, for me thatâs how it is.</p>
+
+<p>JACK:	Thereâs some lessons learned for me from listening to this.  First, this REACT task force only took three days to find and arrest Joseph after Crowd Machine called them, and that is some pretty quick moving.  It sounds like they know how to investigate these cases and are getting better at capturing cyber criminals who steal crypto assets.  So, if youâre a victim of one of these kind of cyber-heists, see if thereâs a REACT task force in your state and reach out to them.  Theyâve got the ability to work with tech companies to gather clues that could lead to catching the person.  [MUSIC] Next, it sounds like if you have any crypto assets or digital assets of value, do not store it on the Cloud.  For a long time, we used to say donât keep your crypto at an exchange in case that exchange goes down or leaves town.  If you donât have your private keys, then itâs not your crypto.  So, itâs already not recommended to leave stuff on the exchange, but now I want to take it a step further and say donât store any private keys or seed phrases digitally or in the Cloud.</p>
+
+<p>If you took a picture of your private key, that picture might be in your Cloud storage and if someone got in there and looked at it, game over; you just lost it all.  If youâre storing seed phrases in a text file or even in a password vault, thatâs also something these digital robbers are laser-focused on and will go through every one of your files looking for that.  So, the recommended thing to do is put your seed phrase in some fire-resistant device or container and store it in a safe.  Also, we should be more protective of our social media accounts.  Thereâs a big industry of people trying to steal these and sell them.  So, make sure youâre enabling two-factor authentication to protect these and donât make the second factor a text message.  Make it a Google Authenticator or some hardware token like a YubiKey, and secure your e-mail and all important accounts like this.  Youâve really got to fortify your digital life, and e-mail should be your priority.  You donât want anybody getting in there and rummaging through your private stuff.  Above all, donât click on any links that seem too good to be true, because people are trying to phish you all the time, and they want to steal whatever digital assets you have that are of value.  So, be super cautious about all links that people send you.  Good luck.</p>
+
+<p>(OUTRO):	[OUTRO MUSIC] A big thank you to Joseph Harris for sharing this story with us.  Joseph is the fourth person ever to be arrested for SIM-swapping, and itâs wild to be watching how modern crimes are springing up and being introduced into the world.  If you want to hear more about SIM-swapping and other digital heists, check out Episode 112 called Dirty Coms.  If you like this show, if it brings value to you, consider donating to it through Patreon.  By directly supporting this show, it helps keep ads at a minimum and it tells me you want more of it, so please visit patreon.com/darknetdiaries and consider supporting the show.  Thank you.  This show is made by me, the plug, Jack Rhysider.  Sound design by the ringer, Andrew Meriwether, and editing help this episode by the holder, Damienne.  Our theme music is by the 120 volt, Breakmaster Cylinder.  I think I lost an electron.  Yep, Iâm positive.  This is Darknet Diaries.</p>
+
+<p>[END OF RECORDING]</p>
+
+<p>[TRANSCRIBED BY LEAH HERVOLY]</p>
+
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

@@ -1,0 +1,507 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>3 Alarm Lamp Scooter â Darknet Diaries</title>
+	<meta name="description" content="A talk at Defcon challenged people to find a way to destroy a hard drive. A young man was inspired by this challenge and was determined to find a way to destroy a hard drive. But this is not a typi...">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="3 Alarm Lamp Scooter â Darknet Diaries">  
+	<meta name="twitter:description" content="A talk at Defcon challenged people to find a way to destroy a hard drive. A young man was inspired by this challenge and was determined to find a way to destroy a hard drive. But this is not a typi...">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/3alarm.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/39/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="3 Alarm Lamp Scooter â Darknet Diaries" />
+	<meta property="og:description"        content="A talk at Defcon challenged people to find a way to destroy a hard drive. A young man was inspired by this challenge and was determined to find a way to destroy a hard drive. But this is not a typical young man, with a typical plan." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/3alarm.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/39/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/3alarm.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/39/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="3 Alarm Lamp Scooter â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/3alarm.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 39: 3 Alarm Lamp Scooter</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://traffic.megaphone.fm/ADV8534430497.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/39/",
+			   "title": "Ep 39: 3 Alarm Lamp Scooter"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/39">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[FULL TRANSCRIPT]</p>
+
+<p>JACK:	[MUSIC] Psst.  Hey you, I got a story for you but itâs a secret one.  Itâs about a mission, a plan thatâs so confidential that nobody is allowed to know about it.  The secrecy of the plan is even more important than the safety of executing the plan itself.  Are you ready for it?  What would you do if you had a few million dollars and were convinced that inter-continental missiles were soon going to be hurdling towards your city?  You could pack up and run but these might be nuclear warheads.  Running might not help.  Itâs best to shelter in place but your house is no match for missiles.  You need to go underground into a bunker, a bomb shelter.  You search online and see some bomb shelters you can buy.  Theyâre not too crazy expensive.  You can afford it; youâre a millionaire.  But remember, secrecy first.  If you buy a bomb shelter and deliver it to your house, everyone will know your place is the place to go to during an attack.  Yeah, that wonât work.  Thereâs gotta be a better solution to this, one where nobody would ever know about, but also one that when you put safety second, you risk human life.
+<!--more--></p>
+
+<p>JACK (INTRO):	[INTRO MUSIC] These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	A quick warning up front here, this episode is graphic, rated R.  It has bad language and strong violent imagery.  In fact, two listeners have wrote to me saying I need to put a stronger warning here so consider yourself warned.  This one might be too much for some audiences.  This story is about a young man named Daniel Beckwitt.  He grew up in a house in Bethesda, Maryland.  Actually, it was 5212 Danbury Road and he was fascinated with electronics growing up and decided to go for an electrical engineering degree from University of Illinois.  He got a place to stay right on campus and was studying for his undergraduate degree.  This was around 2011.  He was fascinated with tech at a young age and as a teenager he loved to play with phone phreaking.  This is basically hacking phones.  But while at university he learned about a magical internet money called Bitcoin.  [MUSIC] Back in 2011, Bitcoin was practically brand-new.</p>
+
+<p>It had only been around for a year or two but still at that time, you could buy it and sell it and mine it.  Daniel started mining Bitcoin.  This is where you get some graphics cards together and have them run computations and calculations to keep the Bitcoin network up.  In exchange for doing this you get to keep some Bitcoin for helping.  Daniel had an interesting way of seeing the world.  He was a little fearful of the government and because the government regulated money, he liked the idea of a decentralized currency. He believed this was the money of the future so he got more and more into Bitcoins.  Once he mined enough of it, he started trading it like stocks to try to get more; selling high, buying low.  You know what?  He got pretty good at this.  By the summer of 2011 he felt confident enough about his knowledge of Bitcoin to travel to Las Vegas, Nevada and give a talk about Bitcoin at Defcon, the largest hacking conference in the world.</p>
+
+<p>DANIEL:	First Iâd just like to thank everyone for coming out and making this great [00:05:00] Defcon.  This has been my first Defcon and Iâve really enjoyed it.  Had a lot of great speakers here and itâs been fabulous attending and just hope speaking is half as fun.  Anyway, my handleâs Skunkworks and today Iâm gonna be talking to you about hacking global economy with GPUs or How I Learned to Stop Worrying and Love Bitcoin.</p>
+
+<p>JACK:	[BACKGROUND CONV.] In this talk heâs wearing a pair of sunglasses either to look cool or as a disguise.  Heâs got short hair and a black shirt.  He didnât call himself Daniel, of course.  His speaker name was Skunkworks.  Back at the time of that talk, the price of Bitcoin was fluctuating between $8 and $30.  Jeez, if I only had the vision that Daniel had and bought up a ton of Bitcoin then, Iâd be in a Lamborghini right now.  Anyway, the talk was good.  He explained Bitcoin pretty well and he did a good job for his first presentation at Defcon.  At the same Defcon conference, an entirely different group of guys also gave a talk.</p>
+
+<p>SHANE:	This is a story about how we lost an eye.  Just to be clear, thatâs me with a microscope.  The sunâs in the air and Iâm looking at a hard drive platter which happens to be very shiny.  Itâs really fucking bright.  Anyway, that joke fell flat so weâre gonna keep on trucking.  [LAUGHTER]</p>
+
+<p>JACK:	[BACKGROUND CONV.] This one was presented by Shane Lawson, Bruce Potter, and Deviant Olaf, three veteran speakers of hacker conferences, so they packed the room.  This talk had a premise; they wanted a way to destroy a hard drive remotely.  They wanted to know the best way to do that.</p>
+
+<p>SHANE:	What weâd really like to do is have a way to remotely destroy a drive, just make the drive go away.  We wanted complete goddamn drive destruction, like a pile of slag.  Our first thought was thermite.</p>
+
+<p>JACK:	This guyâs also talked a little about Bitcoin too, but made fun of it.</p>
+
+<p>SHANE:	Someone explained Bitcoins to me the other night in a bar and I thought it was a joke.</p>
+
+<p>JACK:	Anyway, they created a little challenge with the goal of destroying a hard drive.</p>
+
+<p>SHANE:	The rules of the game that we were trying to do up in Anchorage is destroying a drive in the following fashion; one, you have a 1U server.  You have 1U above and below to install whatever the hell you want in the rack.  When you fire the hard drive, you have sixty seconds to destroy it.  You must not set off fire suppression, smoke sensors, seismic sensors âcause weâre near banks, must not harm other systems in the rack, and you must not harm the humans that happen to be nearby when youâre lighting off your thermite or magnesium or something like that.</p>
+
+<p>JACK:	[BACKGROUND CONV.] Sure, they could destroy a hard drive by using some kind of wiper virus on it or just deleting everything, or encrypting it.  But there was something more fun about taking on the challenge of physically destroying a hard drive remotely.  Because however it gets destroyed, itâs probably going to be fun to watch.  Itâs gotta be a spectacle.  Their goal was to take a computer, mount it in a server rack, and somehow physically destroy the hard drive remotely.  Okay, but this isnât so easy.  Deviant Olaf, one of the speakers at this presentation, went over a few ways to blow up a hard drive using gun powder and thermite.  But he explained all kinds of limitations this would bring, one being you need a big blast to trigger some of these explosives and thermite is hard to work with because it just melts through everything and can potentially cause explosions.</p>
+
+<p>DEVIANT:	What have we learned today, kids?  We have learned that itâs possible to do incendiary things, or boomiary things to your drives.  You do not want the emergency crews to come out.  We do not want you going home and burning shit down.  We do not want you sent to a frickinâ ER.  We do not want you making new friends.  [LAUGHTER] At least not if youâre gonna blame us for it.  If you really think this is up your fucking alley, there are plenty of resources online if you want to be stupid.</p>
+
+<p>JACK:	[BACKGROUND CONV.] They tried burning the drives, grinding the drives, used chemicals to somehow melt the drives or other incendiary attempts but most of these tests were unsuccessful.  Hard drives are hard and they didnât want any leftover data on the drive because even if a few bytes of data were left over, that could be the password to something important like your Bitcoin wallet.  But they did find that fire would actually burn the hard drives fairly effectively.</p>
+
+<p>SHANE:	The idea that we came up with was affixing a glow plug for a motorbike to the end of a propane torch and then use a servo to open said propane torch and then lighting the propane torch remotely with an Arduino and an Ethernet connection.</p>
+
+<p>DEVIANT:	By god, the most difficult way ever to light a propane torch.</p>
+
+<p>SHANE:	YEAH.  [LAUGHTER]</p>
+
+<p>JACK:	But they just couldnât figure out how to do this.</p>
+
+<p>SHANE:	Hereâs the kicker; we failed.  We failed in a big gnarly, nasty way.  You sat through forty-five minutes of fucking failure.  Hereâs the deal though.  The first person that makes a device that meets the challenge requirements that we have and does not harm themselves or sue us will get free access to Shmoocon 2012.</p>
+
+<p>JACK:	[MUSIC] Daniel Beckwitt, the guy who gave the talk on Bitcoin, was in the audience at this talk, watching it and feeling inspired by the challenge.  He thought for sure he could destroy a [00:10:00] hard drive better than these guys did because he was fascinated with chemistry and explosives and electronics and he had some ideas on how to do this.  On top of that he wanted to win the prize that was free Shmoocon tickets.  Which by the way, Shmoocon is a hacker conference in Washington, DC not too far from where he grew up.  He went back home and tried a few different things.  First, he tried lye and to try to do a chemical burn on the hard drives.  This didnât quite work.  Then he tried to use high-voltage electrical shock on it.  He used pieces from a microwave to do this.  Remember, he was an electrical engineering student so he knew his way around this kind of stuff.  This would destroy the platters of the hard drive but when it was in the hard drive case itself, it didnât destroy it the way he wanted.  He decided to see what he could do with thermite.</p>
+
+<p>Thermiteâs like a metal powder and if you apply enough heat to it, you can ignite it and itâll burn so hot that itâll melt certain metals.  It burns at like, 3,000 degrees Fahrenheit or more.  Itâs sometimes used to weld train tracks together because it can heat up a metal to become molten and then fit right in between the cracks of the tracks.  Then when it cools, it bonds it together.  Since a hard drive is made of metal, the theory is that thermite would simply melt the metal and then leave just a puddle behind of where the hard drive was.  Daniel found an article on Hackaday of someone doing this and decided to try to follow the instructions.  Safety first, though.  Daniel purchased a full fire proximity suit from eBay and a pair of gloves that were rated to withstand 2,000 degrees Fahrenheit.  For about 170 bucks he had all the PPE or Personal Protective Equipment required to do something like this.  He also pulled out his chemistry book from freshman year and started to review what exothermic reactions are and that kind of stuff.  Then he went online and purchased some thermite.  But when the thermite arrived, so did company.</p>
+
+<p>The campus police somehow got word that this student was purchasing thermite and paid Daniel a visit.  Daniel showed the police the Shmoocon challenge and that he was only trying to win the challenge.  The police saw that the challenge was real and since owning thermite wasnât actually illegal, the police let him carry on.  He wanted to be safe with this experiment and was concerned about fire and explosions and things getting out of hand.  He decided to dig a pit in his back yard to do his experiments in.  This was a four-foot-deep pit about two feet wide.  He also kept multiple fire extinguishers nearby.  With everything ready he placed the hard drive in the dug-out pit, added the thermite on top of it, put on his PPE, and he was all ready.  Three, two, one.  Ignition.  [MUSIC] Sparks shot everywhere.  Flames leapt up.  The iron in the thermite turned molten and grew so hot that it melted right through the hard drive underneath it.  It was amazing to watch and absolutely obliterated the hard drive.  This was really cool and Daniel wanted to improve this.  He kept trying it over and over to make it more effective.</p>
+
+<p>After a few attempts he found that the perfect amount of thermite to destroy a hard drive was one kilogramâs worth.  Great.  Thatâs working very effectively but it didnât quite work within the bounds of the challenge which was to not set off smoke alarms or destroy anything else in the rack.  The thermite reaction produced a lot of smoke so he began getting deeper into chemistry and exothermic reactions to try to figure out how to burn something as hot as thermite but keeping it contained.  He found another version of thermite which was made up of a chemical compound calcium sulfate.  This burned just as hot as thermite but with less smoke.  He purchased some of it and took it to his test pit and tried to burn a hard drive.  But this wasnât as effective since it didnât create enough slag as the metal-based thermite and itâs the slag that was turning the hard drive into molten metal.  He started making his own thermite mixtures to try to find something that would be effective.  He added various oxidizers and fuels.  He would add little bits to see if it helped at melting the hard drive and if so, he would add a little bit more of that.</p>
+
+<p>He actually did around three hundred different tests to find a perfect solution.  What he found was a mixture of 37% thermite, 37% calcium sulfate thermite, and 25% potassium nitrate.  This mixture would be the best he could find that had an easy way to ignite, it burned hot enough, it created enough slag, and didnât cause a lot of smoke.  Excellent. But the challenge is still to be able to set this off in a data center without burning down the whole data center.  He did some experiments with fire-rated drywall.  He built a box of this drywall that would fit in a server rack and on the box, he added a HEPA filter which filtered out the smoke.  After a few attempts he got it work.  Within this small box he was able to set off a thermite reaction and burn a hard drive without producing any smoke or setting anything else on fire in the rack.  This satisfied all the requirements of the challenge so Daniel presented his research to the three guys who laid down this challenge.  Sure enough, he won the prize; free tickets to Shmoocon.  Yes!  Daniel felt good.  On top of that, he got to present [00:15:00] his entire experimentation process on how he did it at Shmoocon 2012.</p>
+
+<p>DANIEL:	My pseudo name is Skunkworks and today Iâm going to be talking to you about hard drive anti-forensics.  My talkâs entitled And Thatâs How I Didnât Lose an Eye: Emergency Data Destruction.  First, a little bit about me; Iâm an undergrad in electrical engineering at a major US research university. I do a lot of, well, an insane amount of my own R and D outside of school in my basement in suburban Maryland.  Iâm experienced in basically everything from non-destructive entry to Kuda VoIPed Tesla coils.  Iâm just a tinkerer.  I love building stuff.  Thatâs why I took on the Shmoo groupâs hard drive Data Destruction Challenge and succeeded in it.  Iâm cutting class to speak at Shmoocon, actually.  I had to cut Friday double-E class to make the flight out.</p>
+
+<p>JACK:	Thermite is exciting and Daniel was excited to give this talk and get recognized for his R and D.  Again, he wore the same outfit on stage; dark sunglasses, short hair, black shirt.  After the conference he went back to school, all the way to University of Illinois.  He took more classes there and was studying hard.  He was twenty years old back in 2012.  I donât know why but he allegedly caused destruction to schoolâs property. He was taking a course, ECE329 which stood for Electrical and Computer Engineering.  He put a key-logger on the professorâs computer.  This is a little physical device that you put in between the keyboard and the computer and it records every keystroke that computer makes.  It saves them in a file and Daniel could then retrieve the device later.  This gave Daniel access to the professorâs e-mail.  Sifting through the e-mails, he found the final exam as an attachment.  Daniel tried to jump on this opportunity to make some cash.</p>
+
+<p>Using the professorâs e-mail, he sent an e-mail to all the students in the class saying quote, âECE329 exam for sale.  Sale ends at 6 p.m. tonight and you will be refunded if some white knight snitches to the damn professors.  But we can all cooperate, am I right?â  End quote.  Signed the ECE Hacker.  Next, for some bizarre reason that I still donât understand, Daniel allegedly put superglue and metal chips into the locks of the science lab and in the i-card readers, rendering them completely unusable.  Maybe he was trying to buy some time or keep someone out of there, or maybe make it so the locks wouldnât shut the door anymore so he could go in whenever he wanted.  I donât know.  At this point the professor noticed these e-mails that were sent from his account, but he didnât write them.  He contacted the campus police.  [MUSIC] The police investigated and found several posts on Reddit by someone calling themselves ECE Hacker.  As they investigated, they found three more computers in the lab that had key-loggers on them.  The ECE Hacker post led them to a blog of a person called Skunkworks.  The blog listed hacking into schools as one of his hobbies and had a picture of Daniel on it.</p>
+
+<p>From here the police were able to identify Daniel and issue a search warrant for his apartment.  The search revealed many more key-logging devices and they found superglue and metal bits.  Daniel was arrested January 2013.  He was charged with criminal damage to government-supported property, computer fraud, and forgery.  Seven different charges in all.  For a twenty-one-year-old as he was at the time, these were some pretty serious and scary consequences.  He accepted a plea deal and agreeing to plead guilty to computer fraud to have the other charges dropped.  This got him a conviction of two yearâs probation so he avoided a prison sentence this time.  In 2013, fresh from his computer fraud conviction in Illinois and now on probation, Daniel moved back to Bethesda in Maryland and to the house where he grew up at 5212 Danbury Road.  Still owned by his father, Daniel lived there alone and it seemed like he had his head down and out of any hacking activity while serving his probation period.  Back in 2013, Bitcoin was hovering at around $100.  It was still a new and weird idea.  Only crazy people were buying it then.  Who would ever pay $100 for some fake internet money?</p>
+
+<p>[MUSIC] Well, Daniel would and he was still heavy into Bitcoin; mining it, and buying it, and selling it, and trading it, and making a profit.  When it was on the rise, he held it and when it was going down, he sold it.  For those who remember, 2013 was actually a stellar year for Bitcoin.  Between August and December of that year, Bitcoin rose from $100 to $1,000, gaining in value of ten times in just four months.  Anyone who was holding during those four months made out big-time.  Daniel was holding but then Bitcoin crashed again, but Daniel would focus on this a lot so when it went down, he pulled out and then he would buy when it started to come up again.  Over the next two years he became a pretty skilled Bitcoin day-trader.  He amassed himself a Bitcoin collection equal to one million dollars.  Daniel, at just twenty-five years old, was a Bitcoin millionaire.</p>
+
+<p>Around this time Daniel changed his [00:20:00] hacker name from Skunkworks to 3 Alarm Lamp Scooter which is an obscure reference from a Neal Stephenson novel.  But he clearly didnât forget and move on from the Shmoocon Data Destruction Contest.  In 2016 he presented his second talk at Shmoocon convention in Washington, DC, this time as 3 Alarm Lamp Scooter.  Again, not using his real name.  When he came on stage, he wasnât wearing the usual sunglasses and black shirt.  He came onstage wearing his full fire proximity suit, including a face visor, a hood, gloves, and it was all shimmering and quite a spectacle.  His talk was titled This Message Will Self-Destruct in 10 Seconds.  He discussed once again effective ways of destroying hard drives.</p>
+
+<p>DANIEL:	Okay, so why are you all intently staring at some weird dude in a fire proximity suit out to deliver a talk entitled This Message Will Self-Destruct in 10 Seconds: Avoiding Bilateral Nucleation?  Well, the short answer is the Shmoo works in mysterious ways.</p>
+
+<p>JACK:	His talks is full of humor and chemistry but itâs a little dry and in the weeds.  Daniel sounds really smart but is losing the audience.  Here, see if you can follow him.</p>
+
+<p>DANIEL:	Anyways, reactions proceeding faster in the fuel burning with only atmospheric oxygen required or only their own supply of an oxidizer, and the reaction energies maximized for a given amount of reactants when the fuel to oxidize a ratio is totally cumetric and there isnât a limiting reactant.  Well, how are we going to take non-volatile memory and turn it quite literally into volatile memory?  Everything becomes volatile if you heat it up enough.</p>
+
+<p>JACK:	The audience doesnât appear too taken with Daniel but they do liven up when he does give some demonstrations and videos near the end.  But whatâs interesting about these demonstrations, other than blowing up hard drives with homemade thermite, is where these controlled fires were filmed.  This wasnât the same two-foot-wide pit in his backyard from a few years earlier.  This appears to be filmed in a tunnel of some kind.  The walls were about five or six feet high and there was dirt all around.  Heâs obviously been very busy creating more exothermic reactions and has a new location where heâs doing this.  During this time, Daniel started becoming more concerned about the future; with the new president in office and the rising political climate, he was beginning to think that some kind of catastrophic attack against the US might be inevitable.  Maybe North Korea or China was going to attack with nuclear weapons.  Maybe a terrorist attack would unleash an EMP.  For some reason, Daniel could not get these thoughts out of his mind and his fear and paranoia grew along with his Bitcoin fortune.</p>
+
+<p>DANIEL:	Anyways, I think weâre about done on time now so Iâll turn it over to the EFF so that they can let you know about the latest legislative groupings by our misguided government toward the Orwellian tyranny of a global panopticon powered by signals intelligence.  Alright?  3 Alarm Lamp Scooter out.  [APPLAUSE]</p>
+
+<p>JACK:	Someone close to him told me that Daniel had a lot of knowledge about pharmaceuticals.  If you say a drug, he could tell you what company makes that drug or what chemical compound was in it.  I donât know what this means but I found it interesting that he has these deep wells of information.  He came back to Defcon in August 2016 to give another talk.  Again, he used 3 Alarm Lamp Scooter as his name and showed up on stage wearing the hood of his fire proximity suit, completely obscuring how he looks.  You canât recognize him at all.</p>
+
+<p>DANIEL:	Iâm 3 Alarm Lamp Scooter and today Iâm giving a talk on DIY nuke-proofing.</p>
+
+<p>JACK:	Okay.  Heâs about to give a talk on how to create a DIY nuclear shelter.</p>
+
+<p>DANIEL:	Thereâs more fear, uncertainty, and doubt surrounding nuclear weapons than perhaps any other technology out there, especially their hypothetical capabilities in electronic warfare.  To really grasp the assault of nuclear weapons and the threat landscape that has been there in the past, we have to go back to a quick remedial physic lesson.  Weâve got two different isotopes of uranium that are important to all this.  One of them is Uranium 235.  The other is Uranium 238.  They differ by three neutrons and that is why they have differing mass.  The real short version of this â I had a lot more prepared, but you can use whatâs called the Kinetic Isotope Effect to separate the lighter from the heavier uranium.  The lighter uranium, 235, actually is whatâs called fissile material.  If you hit it with a neutron it can sustain a nuclear reaction if itâs enriched above around 5%, usually.</p>
+
+<p>JACK:	What the heck is he talking about? Iâve taken physics classes and chemistry classes and this is way over my head. Daniel has apparently been very busy studying nuclear weapons and its capabilities.  Heâs now showing us pictures of different bombs.</p>
+
+<p>DANIEL:	The device on the right there is called Fat Man.  That was a plutonium implosion-style device.  Again, you need a nuclear reactor to build that; pretty difficult to come up with the plutonium.</p>
+
+<p>JACK:	He then starts talking about what countries have nukes and giving us a full history lesson on nuclear weapons.</p>
+
+<p>DANIEL:	There was the UK, France, China, India, Pakistan, etc.  [00:25:00] I kind of call them all the Nuclear Also Rans.  Most of them didnât do anything too necessarily innovative.</p>
+
+<p>JACK:	He even goes on to talk about what scientists made these weapons.  The talk goes on and on.  He starts talking about EMP, and lasers, and other weapons that countries have.</p>
+
+<p>DANIEL:	As much as I hate to agree with Donald Trump on the issue of nuclear arms control, I think the totality of the evidence may point to being up shit creek, for lack of a better term.</p>
+
+<p>JACK:	Itâs hard to hear but he just said that weâre up shit creek regarding countries having WMDs.  Finally, towards the end of his talk, he starts telling us about ways to protect yourself.</p>
+
+<p>DANIEL:	Believe it or not, something like a trash can can give you forty or fifty decibels of shielding if you tape it up properly so it doesnât act as a slot antenna.  High-altitude electromagnetic pulse projection â oh, we got time?</p>
+
+<p>MOD:	Alright, how are we doing?  Weâre done.</p>
+
+<p>DANIEL:	Okay, shoot.</p>
+
+<p>MOD:	Okay.  Thank you.</p>
+
+<p>DANIEL:	Okay.  Thanks a lot.  [APPLAUSE]</p>
+
+<p>JACK:	Wait, what?  The moderator at Defcon just came onstage and cut him off, saying his time was over.  He spent this whole talk explaining about the dangers of nuclear weapons but just when he was about to tell us how to build a bunker, they took him offstage.  They took him offstage specifically because he was out of time but his slide did say The Only Winning Move is to Dig Deeper.  [MUSIC] Turns out, Daniel had been very busy working on a new project.  He obviously did a lot of research to prepare for this presentation.  He studied a lot about nuclear weapons and EMPs.  He was very knowledgeable about this but somewhere in the process of all this he started figuring out ways to protect against it.  He started reading things like the Army Technical Manual 5-858-6 which has a full section on underground nuclear tunnel experiments.  He went on to study what the different layers of soil are and what different soil types there are and he studied more about excavation.  Specifically, how to make tunnels and how to fortify their walls.  He found research papers from the University of Washington that went over various kinds of earth-retaining structures.</p>
+
+<p>He examined the field manuals on how to dig through certain kinds of soils and he started learning about the difference between laterite, humus, and sub-soils.  He looked up where the water table was and how deep the bedrock was where he was living.  When Daniel combined his fear of major attacks happening to his city and his knowledge of digging, he came up with a new plan.  While living alone at his fatherâs house in 5212 Danbury Road in Bethesda, Maryland, he was gonna turn his house into a nuclear bunker.  Either Daniel or his father or probably both of them were collectors.  When they acquired pretty much anything, they kept it; buckets, chairs, toys, pots, pans, clothes, building materials, tools, light fixtures, paintings, hoses, computers, trash, you name it.  This was all stuff that you would find at Danielâs house.  Upstairs in the house, downstairs in the house, in the basement, piles of this stuff were everywhere; sometimes five feet high, sometimes all the way up to the ceiling.  A lot of it was just trash, too.  If you saw the photos of his house you might even say a hoarder lives there.  He began collecting even more stuff to prepare for a disaster, like food and survival gear.</p>
+
+<p>He loaded all this into his basement but this wasnât enough.  He wanted something that could withstand a blast and protect him in the event of a major nuclear incident or an EMP blast.  To make a bomb shelter he decided he needed to go underground and not just in his basement.  I donât know for sure what happened but I did look at a lot of pictures and I can take a pretty good guess at what I think happened down in his basement.  I think to start, he went to a far corner of his basement and brought a jackhammer or some sort of concrete saw or something with him and began chinking out a hole in the concrete foundation.  It looks like he knocked out about a three-foot by three-foot square into the basement floor. Under the concrete floor of the basement was dirt so he started digging it up, filling bucket after bucket with dirt and bringing it outside, dumping it out, and then going in and digging up more.  This had to be a very slow and painstaking process that would tire him out.  [MUSIC] By October of 2016 Daniel was most definitely in full-swing of building this secret tunnel.  To Daniel this needed to be extremely secret.  Nobody would be allowed to know what was going on here, not any neighbors or friends.</p>
+
+<p>He would take extra precautions to make sure no one was aware of his operation, probably doing things like dumping buckets of dirt out at night and buying tools with cash and unloading equipment in the dark.  As Daniel dug up the tunnel, it started to go deeper and deeper underground.  At first a light in the basement was all he needed to see what he was doing but as the hole got deeper, he needed to shine the light further down there.  He had to get an extension cord and lower a light down into the hole.  But as the hole grew deeper, the air down there got worse.  But because digging is one thing; yeah, you get [00:30:00] dusty, but I bet sometimes heâd hit a solid rock and Iâve seen what happens when you try to break through rock.  Thereâs a lot of dust so Daniel rigged up some ventilation ducts, perhaps one to push fresh air down in there and one maybe to suck that dusty air out.  Eventually he dug the hole deep enough, around fifteen feet down, and two or three feet wide, just enough to fit a ladder and himself to get down in there.  But this would just be the entry though; from here he made a turn.</p>
+
+<p>Instead of going down he started digging in another direction, probably still filling bucket after bucket, hoisting them up into the basement with ropes and pulleys and then probably emptying it out in the yard and then coming back down for more.  This process was slow and painstaking but he was making progress. Before long he had two branches to the tunnel down there, and one was big enough to make into a livable space.  He dragged a bedroll down there and brought some food and water and tested to see if he could live down there. He had clean air, extension cords bringing him electricity, and food and water down there.  It was rough at first so Daniel improved it.  He rigged it up with WiFi and brought a TV down there.  He even added a door to one arm of the tunnel for privacy.  He brought some extra blankets to be warm and eventually it became a comfortable enough living space, something that would suit him in case there was a major attack.  He was becoming happy with it.  It was a good start and the vision was starting to take shape but Daniel wanted something bigger.</p>
+
+<p>[MUSIC] I imagine this process was agonizingly slow.  If he had help digging it would go a lot faster so he decided to hire someone to help him but he was very fearful that whoever he hired would then know the location of this bomb shelter and in a disaster, he didnât want them coming over.  But Daniel really didnât want anyone to know about this so he hired a guy named Douglas to come help do some digging and somehow blindfolded him so he wouldnât know where the tunnels were.  Douglas was a twenty-year old guy and had an old dog and agreed to help dig the tunnels if he could bring his dog with.  In the fall of 2016, Douglas and his dog worked down in the tunnels, digging out more space and expanding their reach for about six months.  Douglas liked Daniel and thought he was clever and smart, but by April 2017 Douglas had enough.  He was bored of the work and was getting concerned for the health of his elderly dog.  He parted from Daniel and the tunnels on friendly terms.  This left Daniel with a problem; he needed a new tunnel digger.  He went online and found a helper willing to dig tunnels.  A twenty-year old man named Askia Khafra.</p>
+
+<p>[MUSIC] Askia had dreams.  He had a great idea to start an online business and needed some cash to get it going.  Daniel agreed to invest $5,000 into his online business if he would help dig the tunnels.  This was on top of some kind of daily pay but there was a catch.  Because Daniel was so paranoid about anyone knowing about the underground bunker, he went to great lengths to keep the location secret from Askia.  First of all, Askia only lived four miles away from Danielâs house where the tunnels were being dug but Daniel wouldnât just give him the address.  Instead heâd drive him over blindfolded.  But Daniel knew that if he blindfolded someone and just drove them four miles that person would know the tunnels are nearby and might even be able to sense the exact location based on the turns.  Daniel had a trick.  Daniel would pick Askia up from his home four miles away and drive him out to Manassas in Virginia, thirty-nine miles away.  Once there Daniel would then give Askia a pair of blacked-out goggles which he was to put on for the rest of the journey.</p>
+
+<p>With Askia wearing these he couldnât see anything or where they were driving and Daniel would then drive Askia almost right back to where they started at his house in Bethesda.  He would then take Askia out of the car, lead him into the house, and down into the basement.  Only then he could take the goggles off.  By this point the tunnels were even more elaborate.  First, theyâd go down and below Danielâs house about twenty feet and then theyâd stretch out in different directions like arms.  There were a few different corridors, and passageways, and rooms, basically.  Inside the tunnels was lighting, heating, air circulation, and there was a couple dedicated spaces for a fridge, a bed, a TV, a microwave, a computer, video game consoles, WiFi systems.  Some areas were even locked and kept secret and there were different levels that had floors that could be raised or dropped down.  The tunnels were so long at this point, to get proper lighting and electrical tools down in there, they had to daisy-chain some extension cords to make them reach.  With all the refrigerators and TVs down there, this put a big load on the cables.  He sent Askia down there and showed him the ropes, literally.</p>
+
+<p>You had to practically rappel down into the tunnel to get to know how the operation worked.  Dirt and rocks were likely filled up in buckets and then Daniel would empty those and bring them back.  Oh, and one more thing; Daniel took even more steps to hide the location from Askia.  Askia had a phone but it didnât work so well underground like that so Daniel provided WiFi but he set the WiFi up with a VPN which made [00:35:00] Askia believe he was in Virginia.  With the hours of driving to get there, this seemed logical.  Askia thought he was in Virginia.  Askia got to work digging and he thought it was okay work.  Every now and then heâd snap a photo and post it to Facebook or send it to his girlfriend of him down there.  In these photos heâs wearing full protective equipment.  [MUSIC] Heâs got a helmet on, a respirator to keep the dust out, eye protection, hearing protection, and gloves.  I think he went down there and worked for a few days at a time.  I think he slept down there, ate down there, watched TV down there, played video games, and when he had to go to the bathroom there was a bucket system for that because he was absolutely not allowed to come upstairs to the regular bathroom.</p>
+
+<p>Danielâs paranoia was just too much for that.  After a few days of digging, Daniel would put the blacked-out goggles back on and drive him back home.  Askiaâs parents and girlfriend knew what he was doing for Daniel but were not that keen on it.  Askiaâs parents tried to persuade him to stop seeing Daniel and stop working in the tunnels.  They didnât like the strange routine that Daniel kept carrying out with Askia to get him there and that he had to live down there.  Askia described the tunnels to his girlfriend as one hundred feet long and fifteen feet deep.  He said there was areas that were locked and he wasnât allowed to go in but Askia kept going back to help Daniel dig.  The earth that far deep was in some places very rocky, if not solid rock, and this likely meant that the tunnel was fairly secure.  It was a huge pain in the neck to break the rock to dig so Askia didnât think that the tunnel would probably collapse.  Because Daniel provided good personal protection equipment and there was decent entertainment and food down there, it was good enough for the now twenty-one-year old Askia.</p>
+
+<p>On September 10th, 2017 at about 2:00 p.m. Askia was working in the tunnels while Daniel was upstairs in the house.  Askia smelled smoke in the tunnels and sent Daniel a text message telling him about it.  Daniel came downstairs into the basement and looked around.  He saw that a circuit had tripped in the electrical box.  This made the tunnels dark and Askia couldnât see what he was doing down there.  Daniel inspected the wiring and tried to find the source of the smoke but remember, Danielâs house and basement is a bit cluttered you could say.  Stuff was piled everywhere and it wasnât easy to move things around and inspect the job site. Itâs unclear and Iâm not exactly sure but I think Daniel couldnât locate the problem and just switched the circuit breaker back on and went upstairs.  About two hours later, now 4:30 in the afternoon, Daniel smelled smoke again and went back down to look.  This time a fire had erupted in the basement and the piles of stuff all over the basement and other things started catching fire.  [MUSIC] Daniel tried to put the fire out but it already had grown too large to manage it.  He tried to get Askia out but it was too much.  It was too hot.  There was too much smoke.  Daniel was choking on the smoke.  He was coughing and gagging.  His lungs were burning.</p>
+
+<p>He tried to get down low but this didnât help much.  Maybe he should just get out of there.  He shouted for Askia.  When the smoke just grew too much, Daniel ran out of there and called 911.  I think at this time Askia was down in the tunnels washing up after a long day of work and so he had taken his clothes off and he was in the middle of putting new clothes back on when he heard Daniel shouting out that thereâs a fire.  [MUSIC] Askia ran to the tunnel entrance and looked up into the basement.  There he could see the smoke and he could hear the fire.  He didnât want to be trapped in the tunnel with a fire going on so he climbed up the fifteen-foot-tall ladder and into the basement.  Naked, he almost immediately started coughing.  The smoke was thick.  He had seen this basement before to get down in the tunnels but the smoke and fire and junk everywhere just disoriented him.</p>
+
+<p>He didnât know exactly how to get out and now heâs in a smoke-filled room thatâs on fire.  Itâs full of garbage and trash and old bicycles and clothes, and just a ton of junk.  Thereâs no windows in this place.  He tried to make his way out of the basement but he was lost and he had to jump through flames to make it to the other side of the room which would just scorch his body.  It wasnât easy to get around.  He started to panic and the smoke grew thicker.  It was dense, ugly smoke.  Askia was coughing hard.  The heat was intense; his lungs were burning.  Askia kept looking for a way out through the maze of burning junk and trash in the basement.  One of the neighbors was named Bruce Leshan and he happened to be a news reporter for WUSA9 and saw the smoke and ran over.  He tells us his story.</p>
+
+<p>BRUCE:	I was the first person on the scene of the fire.  I tried to get into the burning house to rescue Khafra but it was just too dangerous and when I yelled in [00:40:00] âare you in there?  Is anybody in there?â  There was no response.</p>
+
+<p>JACK:	When the fire department arrived, they found Daniel outside breathless and panicked.  He was telling them thereâs someone inside who I couldnât get out.  Daniel was suffering from smoke inhalation and some skin burns.  The fire crews frantically made their way into the burning house, looking for Askia.  They went down into the basement and just feet from the exit, they found his naked body laying there.  The fire fighters tried to help Askia but it was too late.  The smoke and fire was all too much for him and he died just minutes before the fire fighters found him.  [MUSIC] Days after the fire, the county came to the house and boarded it up and put a notice on the door that said This Building is Unsafe to Enter.  The tunnels were believed to be two hundred feet long at this point so the neighbors were concerned that the tunnels were under their house.  The city was concerned the tunnel was under the road.  But it was too risky to go down there and map it out.  I imagine Daniel felt terrible that this electrical accident caused young Askia to die.</p>
+
+<p>But after all, it was just an accident so what more can you do?  Askiaâs parents didnât accept that though, and they pressed charges against Daniel.  Eight months after the fire, on May 25th, 2018, Daniel was arrested and charged with second-degree depraved-heart murder and involuntary manslaughter.  Depraved-heart is an unusual charge.  A second-degree murder is a murder that is not premeditated or deliberate.  A depraved-heart murder falls under this second-degree charge, but to be found guilty of a depraved-heart murder means you have had to take an extreme risk with someone elseâs life, taking a risk you are aware of that could result in injury or death.  If that risk you are aware of is extreme enough and someone dies from that, then you could be found guilty of a depraved-heart murder.  This is what Daniel was faced with.  Was he aware that the conditions he made Askia work under were extremely risky?  Was Daniel showing reckless disregard for human life?  The jury would have to decide.  A month later and Daniel secured a bond for $100,000.  His defense attorney said the fire was a tragic accident and not a criminal act and that Askia was not forced into the tunnels.  Hereâs his attorney.</p>
+
+<p>ATTâN:	He was not held against his will.  That guy posted pictures of him in the tunnels in his garb and shared with his friends on Twitter and Facebook.  Look at those things.</p>
+
+<p>JACK:	Iâve looked over some of the presentations Daniel put together. Specifically, the one on DIY nuke-proofing was really impressive.  In this presentation Daniel listed a lot of safety precautions that must be considered such as what kind of soil types need support and what kind of support works best, and that egg-shaped tunnels have the least likely chance of collapsing.  He mentioned that you have to constantly be checking for any deformations on the ground above where the tunnels are and always be looking for cracks in walls and add support whenever you see one.  He talked about what kind of ventilation you need, especially when running gas engines down there, and what kind of water pumps are required in case of flooding.  He even mentioned in his research that itâs highly recommended that you call 811 to get someone from the city to come show you where the gas lines are on your property because digging into one of these will probably kill you.  Itâs really impressive how much safety precautions Daniel was aware of.  I canât say for sure how much of this was put into practice but I feel like he probably did most of it since he didnât want any tunnels to collapse himself.</p>
+
+<p>At the same time Daniel faced a wave of further legal action.  Montgomery County filed a lawsuit to get the tunnels filled in and the house demolished.  Askiaâs parents filed a Civil Wrongful Death Lawsuit, blaming Daniel for his actions for the death of their son.  The lawsuit filed by the county revealed some pretty interesting information about the tunnels.  Not only does the county believe the tunnels extend beyond the edge of Danielâs property, but they fear the tunnels reach under the public road.  How far did they go towards neighboring houses, theyâre asking?  Investigators still felt it was too dangerous to investigate the tunnels.  They just canât get themselves in there properly to take a look.  Really, no one but Daniel knows how deep and long these tunnels are.  State Attorney John McCarthy called these tunnels a danger to life and limb and he said that even robots canât be used to explore them because the tunnels were designed on different levels.  Robots need a nice, level surface to roll on.  Montgomery County, desperate to know the state of the tunnels, wants Daniel to employ an experienced structural engineer to assess them.</p>
+
+<p>They want a 3-D model made to show the extent of the tunnels and they want markers put above the ground to highlight exactly how far the tunnels go, and a clear plan to get them safely filled and the house torn down.  On April 10th of this year, 2019, eighteen months after the fire killed Askia, Daniel went on trial.  Twelve jurors listened to seven days of the prosecutionâs case.  [00:45:00] The State Prosecution alleged that Danielâs tunnels, hoarding, and haphazard electrical chain providing power to the tunnels, were all to blame.  As far as the prosecution was concerned, Daniel knew the risk and was fully aware of the dangerous situation in the tunnels.  The situation that he had put Askia in but still didnât do anything when it was clear that the danger was imminent.  This, they said, made Daniel responsible for Askiaâs death.  Fire fighters who attended the scene described Danielâs house as a hoarderâs paradise.  County firefighter Don Boyd said that both the first and second floors were piled with three to four feet of items and debris.  Down in the basement these piles rose to five to seven feet with narrow pathways which made moving difficult and doorways hidden.  He told the jury it took over three weeks for a twenty-four-man team of firefighters to clear everything out.</p>
+
+<p>That says a lot about how much stuff was collected in that house.  In trial, the prosecutors also pulled up Danielâs talk at Shmoocon.  They were especially keen to point out his descriptions on how to make thermite and destroy computer data that had been obtained by hacking.  A lesson on how to get away with computer hacking, they said, all presented while wearing his full fire-retardant suit.  After the fire, investigators found various materials; liquids and chemicals inside the house.  Now, chances are a lot of that was used in his data destruction experiments for Shmoocon but the authorities, taken with Danielâs past, were really wondering what Daniel was up to.  The local media in Maryland really jumped all over this case.  Throughout the two-week trial there were a ton of articles and they called Daniel a wealthy stock trader, a millionaire, a computer whiz, and a paranoid computer hacker.  Even his own defense attorney, Robert Bonsib, described Daniel as being a very interesting person.  He said quote, âMr. Beckwitt is an unusual individual.  He participates in online communities with interesting theories on world events.  Some could call him conspiratorial.â  End quote.</p>
+
+<p>The defense actually submitted a motion to the judge for Daniel to be acquitted and the trial be dismissed.  The judge denied this immediately, saying this case was similar to employers who must provide a safe working environment for their employees.  The trial continued.  In explanation for building the tunnels, Danielâs attorney said Daniel had concerns about inter-continental ballistic missiles so he started this project to create a secure bunker.  He compared Danielâs vision to this nuclear bomb shelter similar to what people would build in their backyard during the Cold War.  Douglas Hart, the guy who worked in the tunnels before Askia, testified for the defense.  He revealed too, that he was led into the basement to the entrance of the tunnels wearing dark glasses with tape over the lenses.  This was after being driven around in a car so he couldnât identify the locations of the tunnels.  But Daniel himself did not take the stand to testify and Iâm quite sure the risks of what the prosecution would ask him while up there on the stand, considering his past and his paranoia, were just too high to be chancing.  The defense kept their case pretty simple.</p>
+
+<p>They said these events were a terrible accident and they repeated that Daniel can not be held criminally responsible for an accident.  Montgomery County prosecutors, on the other hand, told the jury that Danielâs behavior showed a total disregard for public safety.  Not only that, but his actions created a death trap which he walked Askia right into.  On April 23rd, 2019, the jury retired to deliberate.  In just twenty-four hours they came back with their verdicts.  They found Daniel guilty of both second-degree depraved-heart murder and involuntary manslaughter.  [MUSIC] In June 2019, the judge sentenced Daniel Beckwitt to nine years in prison for the death of Askia.  Now that the criminal trial is complete, the civil lawsuits filed by Montgomery County and Askiaâs parents will move forward.  Theyâre probably going to knock down his house and fill in those tunnels soon.  Daniel has a few more legal battles to go.  Looking over all the information I have, I still feel like something is missing.  Hearing that the tunnels were dug just for a bomb shelter doesnât feel like the whole story.  I feel like there was something more to those tunnels and thereâs still more secrets that Daniel is holding.</p>
+
+<p>Iâve been in a lot of tunnels myself and the pictures of this one remind me much more of the mines Iâve been in and less like bomb shelters.  It just makes me think maybe Daniel was digging for something else down in the dirt, looking for something down there.  Daniel has a lot of raw intelligence.  Itâs very impressive, actually.  But fear and paranoia can bring down even the smartest and brightest among us.  Fear divides us.  Itâs what makes our neighbors and friends enemies.  Basing your beliefs because of fear, or finding friends because you share the same fears seems normal but it can tear us apart.  Daniel built his tunnels based on fear and it was a lot of work.  Imagine if he spent that energy on something positive and not out of fear.  He could have made advancements in chemistry or helped hundreds of people [00:50:00] with something.  Prepping for an emergency is a good idea.  Everyone should be ready to handle a few weeks without water and power but Daniel took this prepping too far.  If two hundred feet of tunnels werenât enough, what was?  If you keep building tunnels DIY style like this, eventually something will go terribly, terribly wrong.  Danielâs work, while under the influence of fear, ended up with him in prison and Askia dead.  I like to quote the truth wherever I find it and hereâs something that Master Yoda taught me about fear.</p>
+
+<p>YODA:	Fear is the path to the dark side.  Fear leads to anger.  Anger leads to hate.  Hate leads to suffering.</p>
+
+<p>JACK:	Hereâs another thing Buffalo Springfield taught me about paranoia and fear.</p>
+
+<p>BUFFALO:	[MUSIC] Paranoia strikes deep.  Into your life it will creep.  Starts when youâre always afraid.  Step out of line, the man come and take you away.  We better stop.  Hey, whatâs that sound?</p>
+
+<p>JACK (OUTRO):	[OUTRO MUSIC] Youâve been listening to Darknet Diaries.  If you find this show valuable, please consider donating on Patreon.  You can get an ad-free feed there and bonus episodes are starting to roll out.  Donating there really helps this show a lot.  This episode is created by me, your friendly ticket-jockey, Jack Rhysider.  Research and writing help for this episode was by Fiona Guy; editing help by the dark Duchess Damien.  Theme music was created by the head-bobbing Breakmaster Cylinder.  See you in two weeks.</p>
+
+<p>[OUTRO MUSIC ENDS]
+[END OF RECORDING]</p>
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

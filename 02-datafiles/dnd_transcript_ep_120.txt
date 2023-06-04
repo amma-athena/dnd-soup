@@ -1,0 +1,481 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>Voulnet â Darknet Diaries</title>
+	<meta name="description" content="This is the story about when Mohammed Aldoub, AKA Voulnet, found a vulnerability on Virus Total and Tweeted about it.">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Voulnet â Darknet Diaries">  
+	<meta name="twitter:description" content="This is the story about when Mohammed Aldoub, AKA Voulnet, found a vulnerability on Virus Total and Tweeted about it.">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/voulnet.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/120/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Voulnet â Darknet Diaries" />
+	<meta property="og:description"        content="This is the story about when Mohammed Aldoub, AKA Voulnet, found a vulnerability on Virus Total and Tweeted about it." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/voulnet.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/120/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/voulnet.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/120/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="Voulnet â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/voulnet.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 120: Voulnet</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://www.podtrac.com/pts/redirect.mp3/traffic.megaphone.fm/ADV4496618276.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/120/",
+			   "title": "Ep 120: Voulnet"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/120">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[START OF RECORDING]</p>
+
+<p>JACK:	 A few years back, I used to play this really stupid mobile game.  I donât even remember what it was called.  You had a party of fighters and you level them up or something.  But the thing was, in the game there was a online chat option, and at any moment you could look at the people chatting to see what theyâre talking about in the game.  Well, if youâve played any game that has online chat options, you know how toxic it can be, and this place was no exception.  People were selling in-game gold that wasnât even possible; it was just all scams, because there was no way to send gold to anyone in the game.  There was just some real vile hatred spewed all over the place.  The thing is, the people that did this felt like they could just hide behind their username that they created a minute ago, because the worst case scenario is that they just might get banned from the game.  But I was a network security engineer, and I wanted to see if there was a way to learn more about the people that were saying rude stuff in chat.  [MUSIC] So, I started a packet capture on my phone.  All network traffic coming in and out of the phone was captured, and then I started looking through it.
+<!--more-->
+It wasnât easy; itâs like looking for a needle in a haystack, but eventually I found what the packets looked like when they sent chat messages to me, and it was not encrypted which made it easy to crack the packet open and see exactly what was in those messages.  Amazingly enough, the network traffic showed a lot more information about that user who was chatting than what was showed in-game.  In the game, all you see is a personâs username.  Thereâs no way to see anything more about them.  But the packets showed their username and user ID, which was just a very long number.  Now, I was also noticing this game was interacting with one of their servers, and I saw how the game would look up user details, so I crafted my own packet to send to their server to look up a user, and whoa, the server gave me their e-mail address and IP address.  With an IP, I can look up their general location of where they are in the world.  So, armed with this, I went back into the game and waited for someone to start saying rude, horrible stuff.  There was this one guy being a real jerk, spamming all kinds of rude stuff, calling people names, and it was just not nice.  I told him hey, stop being rude or else.</p>
+
+<p>Heâs like, or else what?  Iâm like, or else Iâll tell everyone here your real name.  I already know everything about you.  It was then when I grabbed all the packets from this chat, found his user ID, put it into the website, got his e-mail and IP address.  Actually, from there, I looked up his e-mail on Google and got his first and last name.  Well of course, he called my bluff, knowing thereâs no way in-game to see someoneâs real name.  In fact, he never even entered his real name in the game, so how would I know it?  So, now he starts aiming his attacks towards me, calling me names and taunting me.  So, I think I remember his name was Evan, so I started just writing âEvanâ in the chat room over and over and over.  Just that word, âEvanâ, âEvanâ, âEvanâ.  He stopped chatting for a minute.  He was like, who are you?  Iâm like, are you gonna be nice now or do you want me to say your last name, too?  He tested me by saying go ahead, I donât believe you know it.  So, I dropped the first part of his e-mail address in chat, and he stopped talking for a minute.  Then he asked, Adam?  Is that you?  [INTRO MUSIC] Iâm like, no, dude.  Iâm not Adam.  Iâm the guy whoâs just trying to stop you from being rude.  Go find a hobby that doesnât include being mean to people.  I guess this spooked him, because he logged out of the game and I never saw him again.</p>
+
+<p>(INTRO):	These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	For this story, weâre headed to the Middle East.</p>
+
+<p>MOHAMMED:	So, my name is Mohammed Aldoub.  In Arabic, we spell it Ù.ÙØ­ÙØ¯ Ø§ÙØ¯ÙØ¨.</p>
+
+<p>JACK:	Yeah, so where are you now?</p>
+
+<p>MOHAMMED:	In Kuwait, as always.  Itâs where Iâm from.</p>
+
+<p>JACK:	Mohammed is in his thirties now, but ever since he was a teenager, he was fascinated with computers.</p>
+
+<p>MOHAMMED:	Well, Kuwait generally is a very connected society, so itâs extremely easy to get hooked on early.  With my, letâs say age group, with the internet entering our houses in the late nineties, getting hooked early on on technology, it was â I think it was very straightforward.  But then I actually entered the Kuwait University, the College of Engineering, and the Computer and Software Engineering Department, so I graduated as an engineer of that aspect.  But then after graduation, I actually went into cyber security.  So, my entry into cyber security was around 2010.</p>
+
+<p>JACK:	He got a job in the government of Kuwait securing systems, and pretty early on, he saw the importance of the internet and securing all the stuff on it.</p>
+
+<p>MOHAMMED:	In my earlier years, around 2010 and â11, I actually got introduced to the late Dan Kaminsky, and his guidance was really amazing on how a new-and-upcoming person like me would do to get properly into cyber security.  I think with the emergence of social media and it taking the political and the public scene in Kuwait by storm, it was just natural for me to use that platform to discuss cyber security, provide awareness.</p>
+
+<p>JACK:	[MUSIC] Mohammed has built quite the Twitter following.  His name there is Voulnet, and he wonât tell me what that means, but Voulnet is what he goes by.  Today he has 73,000 followers, but to get there, he shared a lot of knowledge about security on Twitter.</p>
+
+<p>MOHAMMED:	I did many â I would say tweet storm is where I take a certain malware sample that is just fresh, currently being used to attack some entity in the Gulf region, then I would go live in Twitter, trying to analyze the malware, how it works, what it does to the systems.  So, it was kinda something that we do for the community, for the crowd.  People would love it.  People would engage with it.</p>
+
+<p>JACK:	After college, he was able to get a job with the Kuwaiti government.  He was tasked with doing things like securing systems, analyzing malware, and other cyber security work.  He was getting good at security, scaling up, and his popularity was growing on Twitter.  With that, new doors started to open up for him.</p>
+
+<p>MOHAMMED:	Then at 2018, I actually left that government job, and then I did my first official cyber security training, which was abroad.  It was in the Netherlands, so I went on to give a malware â an Android malware analysis course for the Dutch police, actually.  So, it was kinda interesting because that was the official â the first official training that I delivered outside of Kuwait to an audience in Europe.</p>
+
+<p>JACK:	He particularly liked training.  Teaching people new things is fun, so he looked around for more training opportunities.</p>
+
+<p>MOHAMMED:	I actually got accepted into Black Hat as a trainer, and that was â for me, that was a dream come true.  I never thought â usually, in my earlier years doing the government work, I would dream of visiting Black Hat, you know?</p>
+
+<p>JACK:	[MUSIC] Black Hat is an annual security conference in Las Vegas which takes place the week before Defcon, and Black Hat is more geared towards security professionals and the people who want to learn how to secure their systems better.  The training there I hear is pretty good, so to be selected as a trainer made Mohammed feel proud.  Specifically, he was planning on teaching a course about securing API endpoints.  But the year was 2019, and he got word that he was going to be a trainer in the early part of that year, like February or March.  But Black Hat doesnât come until August, so he had five months to prepare.  Itâs in those five months that this story takes place, a story that changed his life.  Now, one thing Mohammed likes doing is examining the latest malware, and specifically he was interested in malware that was somehow used in Kuwait, where he lived.</p>
+
+<p>MOHAMMED:	So, of course being in the Gulf region, there were many interesting threat actors especially from, for example, Iran, from other countries, from Israel, other entities and countries in the world.  So, obviously the Gulf region was heavily targeted, and so, it was usually something regular that we tried to hunt for threats, tried to look for state actors attacking certain entities.</p>
+
+<p>JACK:	As a government employee, he would sometimes get sent some malware to analyze, which was cool.  But because he quit his job, he needed to find a new place to keep tabs on the latest malware going around in Kuwait.</p>
+
+<p>MOHAMMED:	One of the best avenues to look for such things is through using VirusTotal.</p>
+
+<p>JACK:	VirusTotal; this is a fascinating website.  [MUSIC] Okay, so the free service they offer is that if you find some malware, you can upload it to their site and itâll tell you what type of malware it is.  This is really helpful for security teams to get information about any malware they found on their network.  I mean, think about it; suppose your computerâs running poorly.  You open up Task Manager and see a service running on there and you wonder, is this supposed to be here?  Well, you can grab it, upload it to VirusTotal, and itâll tell you if any antiviruses considered this to be harmful and any extra information about that malware.  So yeah, security teams all over are constantly uploading malware to this site.  But if you have a premium membership, you get a bonus feature; if someone uploads some malware to VirusTotal and itâs a file that itâs never seen before, then you can get an alert.  So, security researchers might be interested to see what this new file might contain, and they can download it and analyze it.  Mohammed loved this feature.</p>
+
+<p>MOHAMMED:	I would use it to actually look for attacks that are targeting Kuwait, malware samples being uploaded from Kuwait, from other countries in the region, because they would be of interest to my line of work, obviously.</p>
+
+<p>JACK:	As he said before, heâd sometimes grab some malware from this site, VirusTotal, and begin live-streaming as he examines it to look to see whatâs in it.  Because he spoke Arabic, it also helped him understand threats targeting the Gulf region better, too.  He found some pretty interesting stuff this way and would tweet about it, and then see some major security companies publishing alerts about it shortly after.  This is what I would call security research.</p>
+
+<p>MOHAMMED:	Yeah, in March, the end of March 2019, Iâm doing that usual threat hunting work.  I found a sample that resembled some sort of a banking malware [MUSIC] that was uploaded from Kuwait.</p>
+
+<p>JACK:	Okay, already this is interesting.  Mohammed saw that some never-before-seen malware was uploaded to VirusTotal, and downloaded it, looked at it, and found it was targeting a bank.  It didnât say what bank, but Mohammed had a pretty good hunch that this was some sort of banking malware.  So, heâs looking at this completely unknown malware targeting a bank that was uploaded from somewhere in Kuwait.  Fascinating, right?  Well, if you think thatâs fascinating, you might be a geek.  Not many people on the planet are looking through brand-new malware uploaded to VirusTotal, trying to figure out whatâs going on there, but this is what Mohammed does, because he loves discovering this new stuff, because it poses all kinds of questions; what bank was this for?  Did the victim upload it or the person who created this malware upload it?  Did it actually infect something and steal any money?  What does it do?  This is why people like following him on Twitter, because he digs up some pretty interesting stuff sometimes.</p>
+
+<p>MOHAMMED:	So, I came onto â downloaded and analyze it, and actually discussed on Twitter, submitted the hashes for that piece of malware so that anybody in the region could search for those hashes in their environment and see if they got that attack or that malware.</p>
+
+<p>JACK:	Okay, so, he started a Twitter thread, and at the time, he had around 40,000 followers on Twitter.  He wrote, quote, âFor those interested in banking security, these are some highly-probable indicators of compromise from the local banking SWIFT attack that you might have heard about.â  End quote.  [MUSIC] Now, in the news at the time, there were some other stories going around about banks getting hacked and money stolen using the SWIFT money transfer system.  Mohammed saw this malware and had a hunch that it might somehow be related to those attacks, and felt like it was important to tweet about what he was finding.  He went on and posted file names and file hashes on Twitter, and you can think of a file hash sort of like a fileâs fingerprint.  Instead of posting the files themself on Twitter, he posted the hash.  Thatâs so other people can look through their file hashes to check if they have this malware on their systems, too.  Posting file hashes like this is preferred, because itâs not posting any sensitive data thatâs in the malware, just in case it contained a password or an IP address or something related to the victim.</p>
+
+<p>MOHAMMED:	So, interestingly, I found some strings in those pieces of malware that I think would be beneficial for people to use to search for in their environment, which is what I shared.</p>
+
+<p>JACK:	So, one technique for analyzing malware is to run the command âstringsâ on it.  This will search the malware for any human-readable words, and it just spits out a list of words for you to see.  This might give you some clues as to whatâs going on, like any internal notes left in the code or other information that is human-readable.  Mohammed looked at the code for human-readable words, and one word stood out for him; GBKADMIN.  [MUSIC] Why does this malware have the word GBKADMIN in it?  Is that a username?  Is that the name of the malware?  Is GBKADMIN something important?  He had no idea and just decided to tweet it, telling his followers take note that the malware has GBKADMIN in it, and that might mean something.</p>
+
+<p>MOHAMMED:	So, the malware sample itself didnât really point at a certain bank with certainty.</p>
+
+<p>JACK:	Which made him feel confident that his Twitter posts were fine.  Heâs not naming a bank, heâs careful not to post any sensitive information, so he posted a bunch of stuff he found, had some conversations with people about it, and then sort of closed up his research into this and was done with it, moving on to other things.  After all, he didnât work in the banking sector, so all he could do is just warn other people that thereâs some banking malware going around in Kuwait, and since heâs done that, he can now do something else.  Not much more for him to do about this.  Well, a few days later, we saw a tweet from the Gulf Bank of Kuwaitâs Twitter account saying they had a service disruption.  This service disruption resulted in them losing $9 million.</p>
+
+<p>MOHAMMED:	Yeah, 2.8 million Kuwaiti dinars.</p>
+
+<p>JACK:	Very interesting that the Gulf Bank of Kuwait was reporting a problem.</p>
+
+<p>MOHAMMED:	[MUSIC] Yeah, I realized that something definitely was off because this thing doesnât happen normally to all banks, you know, a problem in your transaction with that kind of big loss, and then the bank publicly talking about it.  So, obviously something was really off there.  Thatâs why it got the attention of the country.  Like, everyone in Kuwait was talking about it.  What did the Gulf Bank mean by that statement?</p>
+
+<p>JACK:	This was a very interesting tweet that Mohammed was reading.  The Gulf Bank suffered a service disruption that resulted in a loss of $9 million, two days after Mohammed found some banking malware uploaded by someone in Kuwait?  Hm.  Mohammed was starting to put the pieces together.</p>
+
+<p>MOHAMMED:	Of course I did those pieces together, but I was â I did put them in my mind, but I was very careful not to actually â came up with the conclusion in public that would try to publicly link these two incidents, because there wasnât much â there wasnât a lot of, letâs say, concrete proof for me to be able to do that.  So, it really â it was eerily, I would say, familiar.  It sounded like thereâs a possible connection there.</p>
+
+<p>JACK:	But yeah, he didnât say anything publicly about any theories that he had that might connect the malware he found to Gulf Bank.  He just watched Twitter talk about it, and he observed.  Okay, so, the Gulf Bank is Kuwaitâs fourth-largest bank.  At the time, they self-reported that they had $2.25 billion in capital and that losing $9 million was only less than half a percent of their total capital.  But again, I want to emphasize the word âlosingâ here, not âstealingâ or ârobbedâ.  The Gulf Bank never did say the money was stolen or that they were robbed, only that there was a service disruption that resulted in them losing millions of Kuwaiti dinars.  Well, a few days after that, the next news we saw from the bank was that they fired their general manager of IT without explaining publicly why.  The general manager seemed particularly surprised by this and said it was unjust that they asked him to leave.  Something big at the bank was happening, and they werenât being transparent about what it was.</p>
+
+<p>And I want to add in here, that the only reason why I know that the bankâs general manager of IT said about him being fired was because of the amazing reporting that Sean Lyngaas did at CyberScoop news. He did an article about Mohammadâs story which is how I know about any of this.</p>
+
+<p>The next week, Mohammed goes to a security event in Kuwait to hang out with other people in infosec and socialize.  But while heâs at this event socializing, his phone rings.</p>
+
+<p>MOHAMMED:	[MUSIC] I got a call; someone from the cyber crime department.  He told me cyber, letâs say branch of the police where they handle complaints related to cyber crime.</p>
+
+<p>JACK:	They told him that thereâs a possibility that the Gulf Bank is going to complain to the police about his tweets, the ones that talk about the malware that he found on VirusTotal, and they asked him to come down so that they can question him.  He agrees to be there, but was nervous about this whole thing now.</p>
+
+<p>MOHAMMED:	Well, of course you would, because that bank is powerful and because I was extremely careful in my wording of all the research that I did not to include anything that would link obviously to a certain entity or certain bank, that I was talking in general, mentioning things that are already de-anonymized like password hashes, talking about malware attacks in general, or talking about certain malware without attributing it to a certain entity by name.  So, legally I was in the clear, I regard myself, what I have, letâs say concluded or guessed at the back of my mind.  So, I went to the questioning and they asked me, are those your tweets?  I say, yes.  Did you mean â the Gulf Bank made a complaint; did you mean them in your, for example, tweet?  No; I said no, I didnât mention them, didnât mean them in my tweets, and thatâs â that was the end of the questioning.</p>
+
+<p>JACK:	Okay, so maybe this is a routine part of the investigation where the bank is just doing their due diligence by following up any clues or leads about the incident.  Since Mohammed had tweeted about the banking malware he found, maybe there was more to it, so thatâs why the police were questioning him.  After talking with them, he felt relieved and thought well, thatâs probably the end of that.</p>
+
+<p>MOHAMMED:	It was then that interesting things happened, actually.  [MUSIC] Around that time, I had to go to the USA accompanying my wife because she was visiting her mother who was being treated and was very sick in the United States.  So, I flew to the US, and while I was in the US, I got a call that I need to be present for an investigation by the public prosecution.</p>
+
+<p>JACK:	They wanted him present for an investigation because they wanted to ask him more questions about what he knew about this incident at the Gulf Bank.  Did he know more than what he was tweeting about?  This second round of questioning was a little worrisome for him, but he knew he was innocent and wanted to cooperate.  So, he told them that heâs in the US helping take care of a sick family member and he canât come on the date they requested, but heâll be happy to come in as soon as he gets back to Kuwait.  He even showed them his return ticket on when heâll be back, and they said okay, no problem.  So, he finished up his trip to the US and went back to Kuwait, and went to talk with the investigators.  But they said because he didnât show up on the date they requested, heâs now being charged.</p>
+
+<p>MOHAMMED:	Because the public prosecution went on with the investigation, didnât wait for my arrival, I was regarded as in â as abstentious, so it was â I was accused of, letâs say, charging the Kuwaiti law, which means abuse of a mobile device, which means that you have used a mobile device to do something bad.  It was the way the Kuwaiti law was, letâs say, worded, and that I was disclosing trade secrets of the complaintant.</p>
+
+<p>JACK:	What?  Mohammedâs tweets have now led him to being accused of abusing a mobile phone device and leaking trade secrets?  Something has clearly gone very wrong.</p>
+
+<p>MOHAMMED:	I was worried, but there wasnât a thing I could do about it.  So, the only thing I could do about it was to prepare a solid defense.</p>
+
+<p>JACK:	So, he hires a lawyer to help make sure he navigates this criminal charge properly.  When a big bank is bringing down charges against you and theyâve reported that theyâve lost $9 million, you want to take this very seriously even if youâre completely innocent.  So, he was being very cautious, and there was part of him wondering how much of this is related to hacking and how much of this is related to the violation of free speech laws in Kuwait?</p>
+
+<p>MOHAMMED:	[MUSIC] So, Iâm not really a lawyer, but generally the constitution of Kuwait gives a big blanket for freedom of speech, but then it says according to the laws.  Then the laws go on to specify the general protections of the constitution.  So, we have laws for cyber crimes, we have laws for print, we have laws for live media, like, example; videos, television, radio.  We also have the state security laws.  All of these laws contribute to, letâs say, further restriction of freedom of speech.  So, there are public figures in Kuwait that you cannot, letâs say for example, talk about in any, letâs say, bad manner regardless of your intent.  There are limits to what you can talk.</p>
+
+<p>You canât, for example, letâs say, use hate speech against religious or political minorities.  So, it goes on and on about the political aspects, the religious aspects, or restrictions on free speech, and also the cyber crime part of that.  The cyber crime law was actually interesting because it came out in 2014 and it was supposed to address cyber crimes or crimes that were related to cyber security, like hacking, for example, or fraud.  But then it came to be abused by lawyers, by people to actually accuse anyone who talk badly about you.  So, if you were a government official, if you were a social media figure and someone was trying to talk about you in a way you donât like, you can go and then try to sue them according to that law.  Many times it would result in verdicts where people have to pay fines.  I think my case was an example of that, because I didnât actually do any wrongdoing.</p>
+
+<p>JACK:	Interesting.  So, it sounds like if someone says something damaging towards your company or you, you can take them to court and possibly get them to pay a fine for what they said.  So, Mohammed read over his tweets a few more times very carefully, trying to find if he said anything negative towards the Gulf Bank.  But he didnât even mention the Gulf Bank in his tweets at all, so he felt confident that he didnât do anything wrong.  He did mention the word GBKADMIN, though.  Wait a minute; GBK.  Does that stand for Gulf Bank of Kuwait?  [MUSIC] Huh.  Even if it did, he didnât know that at the time.  His trial date was set for July 2019.  Now, August, the month after his trial date, is when Black Hat was going to occur in the US, and Mohammed was scheduled to give a training session at that conference.  So, he wanted to wrap up this trial so that he could go to the US and give his training.  So, he goes to court in July.  Just the public prosecutor was there.  The lawyer for the bank didnât even show up.  Mohammed had been planning with his lawyer what to say.</p>
+
+<p>MOHAMMED:	Then we provided a really solid defense.  We, letâs say, discussed this aspect that first of all, itâs already protected speech.  Second of all, it didnât mention any bank by name, it didnât mention specifically any trademark by the bank, and that the fact that itâs absolutely not a secret because the bank already discussed that thereâs a problem that happened; thereâs a problem in their system that resulted in loss of millions of dollars.  So, there was no secret that thereâs something wrong happening at the bank already.  On top of that, there was no â any kind of contractual agreement between me and the bank that would result in me having any secret shared between me and them.  So, I think I would come upon by, letâs say, through public sources, which are, of course, not considered secrets.</p>
+
+<p>JACK:	He says the judge looked convinced and seemed to be on his side, so he prepares his flight to Las Vegas to attend Black Hat.  He first had to fly to New York and then to Vegas.</p>
+
+<p>MOHAMMED:	[MUSIC] The night before my flight to New York, I received a strange [PHONE VIBRATING] phone call and a telegram, you know, that â an encrypted phone call and telegram.  But then when I answered, it was someone very suspicious in the way theyâre talking.  Theyâre trying to kinda ask about the incident that happened at the bank, and then it tried to say I have some information about the hack that happened in that bank, trying to do â tried to pull my string.  I felt that someone was trying to pull my leg into discussing this incident, trying to find, trying to entrap me.  So, I realized that this is either someone who is totally crazy or I would be actually crazy not to think that this was some entrapment attempt by someone.  By who?  I donât know.  A bank doesnât really do that.  Who would try to do that?  I have no idea who would benefit from that.  However, I played it cool, told them that this is a legal matter; it should be taken to legal authorities, blah, blah, blah.  Then I hung up.  What was really suspicious for me is that why would someone try to target me, try to entrap me in that fashion?  Did I really anger some real powerful folks?  Was that tweet that much, letâs say, strong against whoever that was compromised?  Did the bank really get some pressure from people who linked my tweet to the incident at the bank?  I still donât know who is that person to this day, but of course, as I said before, it would be crazy not to think it was some sort of related entrapment attempt.</p>
+
+<p>JACK:	That was strange, and it rekindled his worry about the case, but he still went to the US.  While in Vegas, his lawyer contacted him and told him the judge had a verdict on the case.</p>
+
+<p>MOHAMMED:	In the end, it was clear for the judges that it was absolutely not in violation of any law in Kuwait.</p>
+
+<p>JACK:	So, he was cleared of all wrongdoing, which is great news to receive while youâre in Vegas, right?  Mohammed tells me he didnât attend any parties there because he was so focused on delivering his training and just wanted to get back to Kuwait as soon as it was over.  So, when he got back to Kuwait, he checked in with his lawyer and all seemed quiet.  All was good, and he was glad to have this behind him.  That was August.  September then comes and it passes, and then in October, he gets another message.</p>
+
+<p>MOHAMMED:	Yeah, the lawyer sends me over WhatsApp that they have appealed.</p>
+
+<p>JACK:	[MUSIC] Again, it was the public prosecutors who wanted to investigate this further.  His lawyer explains this is just a matter of formalities.  If the prosecutors bring him to the appeals court and heâs still found innocent, then they can say theyâve exhausted all options in this case and they can leave it be.  This makes it look like the prosecutors worked really hard to solve this case, and since this was just a formality, there was no new evidence on him or any new charges.  But Mohammed was still worried about it.  I mean, at the least, heâs having to spend all this money on legal fees to help him out.  Appeals court took over a year because coronavirus kept delaying the courts.  Waiting for your trial is always nerve-wracking no matter how confident you are that youâre not guilty of anything.  But the trial date finally came, and the judge looked at his case.</p>
+
+<p>MOHAMMED:	I was cleared immediately, like on the spot.</p>
+
+<p>JACK:	[MUSIC] This gave Mohammed a big sigh of relief.  This meant it was finally over.  Yeah, since then, two years later, itâs still over.  Thereâs been no more calls from the police about this.  But what a wild ride that this has resulted in just from finding some malware on VirusTotal and tweeting about what you found.  Now, during that time, there was a large rash of bank robberies happening all over the world.  Someone was going around, usually sending phishing e-mails to banking employees, hacking into the bank, and then targeting the SWIFT network to steal millions of dollars from banks.  Many of these worked.  The United Nations investigated this and published a report, and this report says the government of North Korea is responsible for robbing banks in Bangladesh, Chile, Costa Rica, The Gambia, Guatemala, India, Liberia, Malaysia, Malta, Nigeria, Poland, the Republic of Korea, Slovenia, South Africa, Tunisia, Vietnam, and Kuwait.</p>
+
+<p>[MUSIC] Right there, in black and white, this UN investigation report says that in March 2019, a bank in Kuwait was robbed by the government of North Korea.  Thatâs the exact same month and year that the Gulf Bank announced that they had a service disruption and lost $9 million.  This UN report does not say which bank in Kuwait was robbed, but it does say the amount stolen was $49 million.  So, thatâs a big mismatch of numbers, which means either the Gulf Bank was not robbed but really did have some kind of weird disruption that made them lose millions of dollars, which means a totally different bank got robbed the same month and year in Kuwait, or the Gulf Bank of Kuwait was not telling the truth, saying it was a service disruption when really it was a robbery, saying it was $9 million when really it was $49 million.  We donât know the truth to the story.</p>
+
+<p>MOHAMMED:	Yeah.  So, there is this variance between the Gulf Bank tweet and the whatever bank the UN report was trying to hint at.  So, either it targeted a different bank, or maybe thereâs more to the story than â that was put in the public sources.</p>
+
+<p>JACK:	I mean, you donât need to comment on this, but I was just thinking it through, right?</p>
+
+<p>MOHAMMED:	Yeah.  If it looks like a duck and it walks like a duck, smells like a duckâ¦</p>
+
+<p>(OUTRO):	[OUTRO MUSIC] A big thank you to Mohammed Aldoub.  You can find him on Twitter; his name there is @Voulnet, V-O-U-L-N-E-T.  While youâre on Twitter, why donât you give a follow to @DarknetDiaries?  This show is made by me, the space bard, Jack Rhysider.  Sound design is done by the deletist, Andrew Meriwether.  Editing help this episode by Shift+Ctrl Damienne, and our theme music is by the escapist, Breakmaster Cylinder.  How do you add flavor to an algorithm?  Toss in a boolean cube.  This is Darknet Diaries.</p>
+
+<p>[END OF RECORDING]</p>
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

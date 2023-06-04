@@ -1,0 +1,443 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>The Carder â Darknet Diaries</title>
+	<meta name="description" content="A carding kingpin was tracked by the Secret Service. Listen to how the Secret Service built a case against him and what they did about it.">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="The Carder â Darknet Diaries">  
+	<meta name="twitter:description" content="A carding kingpin was tracked by the Secret Service. Listen to how the Secret Service built a case against him and what they did about it.">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/roman.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/32/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="The Carder â Darknet Diaries" />
+	<meta property="og:description"        content="A carding kingpin was tracked by the Secret Service. Listen to how the Secret Service built a case against him and what they did about it." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/roman.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/32/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/roman.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/32/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="The Carder â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/roman.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 32: The Carder</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://traffic.megaphone.fm/ADV9889785443.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/32/",
+			   "title": "Ep 32: The Carder"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/32">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[FULL TRANSCRIPT]</p>
+
+<p>JACK:	A stolen credit card can be worth hundreds of dollars.  Itâs actual money.  When hackers steal thousands of them, they donât have the time or capability to cash out on all these cards so they turn to online marketplaces to sell their cache of stolen cards.  In this episode weâll track down a hacker whoâs stealing credit cards and selling them.
+<!--more--></p>
+
+<p>JACK (INTRO):	[INTRO MUSIC]  These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	Carderâs Market, Carder Planet, Carding World.  [DARK MUSIC]  In 2007 these were the websites youâd go to to buy stolen credit cards.  People would join the site.  Sometimes thereâs a registration fee.  Theyâd look at the forum to find posts of things they want to buy and then agree to buy some stolen credit cards.  But the process isnât straightforward.  Your credit card and PayPal are not accepted here.  They require too much identifying information to process these transactions.  Itâs too risky.  This is very illegal.  Western Union is doable but itâs not instant and Bitcoin wasnât around yet in 2007, so Liberty Reserve was the best option to transfer money.  This is sort of like PayPal but they donât require much identification to make an account.  Money can be transferred electronically, quickly and easily, and almost anonymously.</p>
+
+<p>You send your money to the person selling stolen credit cards and tell them what you want, and theyâll send you the credit card dumps.  A credit card dump is the digital information stored in the credit card like name, expiration date, card number, and the bank info.  This by itself can sometimes be used to make purchases but some people will buy card writers and actually turn a blank credit card into a stolen credit card.  Then they try to buy things like gift cards at stores to convert the stolen money into something more legal.  You can buy credit card dumps anywhere from one dollar to $40 each depending on where you live and how much info you get with it.  But youâve got to be careful.  Some cards you buy might be old, expired, or already cancelled due to someone else using it, or it being reported stolen.  You really need to find a good vendor that you can trust.  As you can imagine some vendors are better than others.  They have a high success rate like 60%, 80%, and they have a big inventory.</p>
+
+<p>Some have fresher cards that were just stolen yesterday so finding good credit card dump vendors is highly sought after.  But you know who else is really interested in these vendors?  The US Secret Service.  [MUSIC]  The Secret Service has two main objectives.  First is to protect the president, vice president, their families, and ex-presidents, and their second objective is to investigate criminal activity relating to financial and payment industries within the US.  Secret Service is very tuned into the illegal carding markets.  You can bet your bottom dollar that they know about every one of them.  Theyâre on there, making accounts, exploring the site, watching key players buying credit cards, and taking notes.  Because what these carding websites are doing is very illegal.  Not only is stealing someoneâs credit card illegal but then selling that is also illegal, and then someone else using the stolen credit card is illegal too.  It doesnât matter where in the world theyâre doing it from; theyâre stealing money from US companies.</p>
+
+<p>While these carding markets are often operated in other countries, US banks are frequently the ones having their customerâs cards get stolen, making US citizens, banks, and shops victims of these crimes.  The US Secret Service has a mission to find these criminals and bring them to justice.  The Secret Service went on to one of these sites, CardingWorld.cc, and they started looking to see whoâs selling dumps.  They found one vendor rising up in popularity.  Their name was nCux.  nCux would come up on the forum and go crazy selling dumps.  Theyâd say American Express cards; $1, VISA, Mastercard, Discover; $5 per dump, minimum $1,000 order, 60-80% valid rate.  Theyâd post this frequently on Carding World and a few other forums.  The Secret Service started to build a case on this person.  [MUSIC]  They started examining the history of nCux by looking at other forums posts and their online activity.  The Secret Service started finding a lot of clues about this person.</p>
+
+<p>They determined nCux is a Russian word pronounced âseekâ and it means âpsycho.â  They tracked his username back a few years and found they were first selling stolen identities online, things like name, birthday, and social.  Then in 2005 nCux switched to selling more profitable stuff; credit card dumps.  Investigators searched more and discovered nCuxâs identity.  Itâs unclear how they found this but they discovered his name was Roman Seleznev and he was living in Vladivostok, Russia.  The Secret Service went to Russia and met with the FSB to see if they can help track him down.  The FSB was formally the KGB and they conduct criminal investigations.  When the Secret Service met with them and started asking about Roman Seleznev, the FSB offered no help at all, like almost suspiciously unhelpful, which sent the Secret Service back home.  Very soon after that meeting, nCux announced one last dump for sale and that theyâre quitting the carding world.  After that, nCux went completely dark.  The trail to find him had gone cold.</p>
+
+<p>A few months after that in April 2010, the owner of CardingWorld.cc was arrested and the servers were seized.  This gave the Secret Service a few extra clues and more incriminating evidence.  They found an e-mail address for nCux and some other information.  But the FSB and Russian government refused to cooperate to help capture him.  Even if he was arrested in Russia, there was no extradition treaty with the US so thereâd be no way to bring him to the US for a trial.  Around the same time, the Secret Service was watching another illegal carding market called Carder.su and out of nowhere a new vendor showed up there named Track2.  [MUSIC]  Their forum post read, âHi, dear customers.  We glad to present our new shop of dumps.  We selling dumps only stolen by us.  This means we are first hands owner.â  They were even offering a 48-hour exchange for new dumps if the one you had was bad.  This really caught the attention of the Secret Service.  Who is this new vendor and where are they stealing cards from?</p>
+
+<p>But what was really odd is this brand new vendor was marked by the admins as being a trusted vendor.  This is a hard-to-earn rank on the site and this person had it on day one.  Also, this Track2 person became the only dump vendor on the site.  Other vendors were being removed from the site.  Something odd was definitely with this Track2 person so the Secret Service began watching them very closely.  In May of 2010, the same time all this is going on, the Secret Service investigator in the state of Washington was sitting at his desk investigating a case.  His name was Detective Dunn.  The phone rang on Detective Dunnâs desk.  Schlotzskyâs Deli in Coeur dâAlene, Idaho was reporting it had been hacked and he had to go investigate.  Detective Dunn had previously worked with the Seattle Police Department investigating computer crimes and was good at doing digital forensics so he took a trip down to Schlotzskyâs Deli to investigate.  [MUSIC]  He arrived at the deli and on the front counter where the customers order their food were two registers next to a soda fountain.</p>
+
+<p>These were touch screen displays powering the menu software but also handling credit card transactions.  As Detective Dunn examined the registers closer he found theyâre just regular Windows computers running the cash register software.  He found they both had malware running on them called Kameo with a K.  The malware would listen for keystrokes made and look for credit cards being swiped and then transmit that data to a server in Russia.  The detective had determined this malware had been present on the computer for six months.  He examined the event logs and the internet history and determined that somebody had installed this malware by browsing to a website, downloading it, and installing it that way.  This meant that the malware was put there by someone who had control of that computer.  Detective Dunn wasnât sure what that meant and wondered if an employee installed the malware.  About a month later, a person in Ohio gets arrested for attempting to buy things with stolen credit cards.  The Secret Service was contacted and were given a forensic image of the computer.  They looked through the computer and found a bunch of stolen credit cards on it.</p>
+
+<p>[MUSIC]  They ran a report on each of these cards to see if thereâs a common purchase point because if a lot of these cards have charges in the same physical place, then chances are that place might be where the cards got stolen from.  The reports came back and there was a common purchase point; Schlotzskyâs Deli in Coeur dâAlene, Idaho.  The Secret Service contacted  Detective Dunn, the agent who investigated that Schlotzskyâs Deli hack and gave him a forensic image of the PC to see if he could make any connections between the two cases.  Detective Dunn examined the PC and found credit cards were bought from two different websites, Bulba.cc and Track2.name.  This was the same Track2 from that Carder.su forum.  You know; that suspicious trusted vendor?  This computer contained ICQ chat logs with someone named Track2.  This gave the Secret Service the ability to chat with Track2.  The detective then started looking at these two carding websites, Bulba.cc and Track2.name.  First of all, they look identical except for two different background colors.</p>
+
+<p>The detective started chatting with Track2 over ICQ to learn more and he found out that Track2.name was where untrusted customers go to buy stolen cards.  Then once youâre trusted or you pay a $1,000 registration fee, you can then be invited to Bulba.cc, a more elite carder site.  The detective determined the websites were probably owned by the same person and he logged into the site and looked around.  He found thousands of credit cards for sale here claiming to be 90% from the US with a 60% valid rate.  He also found that in order to buy cards here you have to use Liberty Reserve to transfer the money.  The detective looked at the Whois records for these two websites.  Each website in the world has to be registered and the registration information is public for anyone to see.  This information can be faked, though.  But the Whois data on the websites said they were registered by two different Yahoo e-mail addresses.  The detective filed a warrant and sent it to Yahoo, the company, so he could see the e-mails for this address.</p>
+
+<p>See, the FBI and Secret Service can request from Yahoo to view e-mails for certain people if a warrant is processed.  Then itâll be reviewed by Yahoo and theyâll supply the e-mails to the feds and they wonât even tip off the user, either.  But getting a warrant and access to e-mails takes a while to process so the detective had to just sit there and wait for it to be ready.  [MUSIC]  While waiting for the warrant to go through, Detective Dunn got a call from the Boeing Engineers Credit Union or BECU in Seattle.  The BECU was reporting that a number of fraudulent charges have showed up on some credit cards with the common purchase point of the Broadway Grill right in Capitol Hill in Seattle.  Since the detective was in Seattle he drove over to the restaurant and started conducting a forensic analysis of the computers there.  Their cash registers were Windows computers running a credit card processing software.  These computers had the same Kameo malware that the detective found on the Schlotzskyâs Deli computers.</p>
+
+<p>The malware was slightly different, though.  This one would grab copies of the cards being processed and stick it into a text file and then send that text file to the exact same server in Russia.  This text file contained 33,000 credit cards in clear text.  Detective Dunn was shocked and the Broadway Grill had no idea they had even been hacked.  The detective did more forensics investigations on the computers and found the malware was installed the same way, too; by someone getting access to this computer and browsing to a website, downloading it, and installing it.  The detective ran a report on the credit cards in the text file and the report showed that within a day or two of the cards being stolen they already had fraudulent charges on them from around the world.  This meant that whoever stole these cards had a way to move them quick.  About the same time, the warrant for those yahoo e-mails completed and Detective Dunn got a copy of the inbox for the addresses used to register Bulba.cc and Track2.name.</p>
+
+<p>He found a lot of e-mails for transactions through Liberty Reserve which indicated the account numbers this person had there.  He also found an e-mail about a PayPal account.  PayPal does require you to provide a real name and this e-mail said this PayPal account belonged to Roman Seleznev.  [MUSIC]  The same Roman Seleznev that was nCux, the big-time carder the Secret Service was tracking years ago but went dark.  Now they were able to connect the dots and see that nCux and Track2 and Bulba were all the same person.  Not only did the names match but the physical address matched, the ICQ number matched, the web money accounts matched.  Roman didnât disappear; he probably got tipped off by the FSB that the Secret Service were after him and he just changed his name.  Now the Secret Service was once again hot on the trail to bring down this big-time carder, Roman Seleznev.  Detective Dunn continued reading through the e-mails he found and found one indicating Roman was renting a server from a company called Hop One in Virginia.</p>
+
+<p>A warrant was issued right away to request a pen trap and a backup copy of the server.  Hop One complied with this search and provided a copy of the server which was done without any disruptions since it was a virtual server.  The detective looked at the data on the server.  First he found there were over 400,000 credit card dumps stored on this server.  Thatâs a lot.  That alone is worth millions of dollars and it seemed like Roman was selling a lot of these.  The detective started finding some hacking tools on the server.  This server was being used to mass-scan the internet looking for computers that have port 3389 open, or Remote Desktop.  Windows machines have the capability to connect to them remotely.  This is called Remote Desktop.  The tools on the server were actively looking for computers with this service exposed to the internet.</p>
+
+<p>Then once the scanner found the computer on the internet was running Remote Desktop, they would then attempt to brute force login to it by cycling through thousands of commonly-used usernames and passwords.  Then if the password had been guessed correctly, the hacker can access the computer as if they were sitting right in front of it.  This is a sloppy, noisy, and easy way to hack into computers but it seemed to be working.  The reality is that nobody should have Remote Desktop exposed to the internet like that yet thousands of computers were which might also mean they werenât using good passwords, either.  The detective was able to put the pieces together now.  Roman would hack into Windows computers that he would find exposed online, see if theyâre running any kind of credit card processing software and if so, heâd install malware on it to scrape the cards off it and then send it to his server.</p>
+
+<p>Itâs actually not that sophisticated of a hack.  The detective also issued a pen trap on the server.  With this he could see the metadata about the traffic going in and out of that server.  Things like IP addresses, ports, and volume of traffic, but not the full packet capture.  Upon putting a pen trap on the server they found hundreds of computers around the world are connecting to the server and uploading credit card data to it.  [MUSIC]  He examined what IPs are connecting to it and found that most of them are restaurants; places like Grand Central Baking, Z Pizza, Jetâs Pizza, Mountain Mikeâs, Extreme Pizza, Cosa Mia, and Dayâs Jewelers.  Detective Dunn started visiting any of these places that were local to Washington State where he was based out of.  First he went to Grand Central Baking right in downtown Seattle.  Yeah, sure enough, same situation.  Similar point of sale software, similar malware, logs showed Remote Desktop connection, and then the malware was downloaded.</p>
+
+<p>The detective also checked out another local Seattle place called Mad Pizza which had been communicating to the Hop One server.  Both locations he visited had also been hacked.  One had malware on it for four months, the other, six months.  Then the detective drove down to a little town called Yelm in Washington to visit Cosa Mia.  But he didnât go for the all-you-can-eat spaghetti.  Instead he was hungry to see what was on their point of sales computers.  Once again, all the same signs.  Remote Desktop enabled on it, malware installed, and it was scraping credit cards and sending them to either Ukraine or this Hop One server.  At this point Detective Dunn had visited five restaurants, all of which had been hacked in the same way presumably by Roman Seleznev.  They all had the same signs and were communicating to the same servers.  Some of these restaurants had no clue they were hacked until the Secret Service came to their door.</p>
+
+<p>Others had been notified by a payment card processor that a theft had occurred.  The Secret Service had poured through even more e-mails that were in Romanâs inbox.  They were able to determine his phone number, his Russian address, that he had a wife and a young daughter, and even that he had a second house in Indonesia that he would sometimes vacation to.  At this point the evidence was clear and overwhelming.  Roman Seleznev was allegedly hacking into hundreds of restaurants and shops around the world, stealing credit cards, and selling them on his two websites Bulba.cc and Track2.name.  In March 2011, Roman Seleznev was indicted which means the Secret Service had enough evidence on him that they were accusing him of doing these crimes.  But the feds couldnât catch up with him since he was in Russia and the feds there werenât cooperating with the US.  The Secret Service investigated Roman some more and discovered his father was Valery Seleznev, a deputy of the Russian Duma which is the Russian parliament.  This big-time hacker and carder had a father with a lot of political juice that can protect him.</p>
+
+<p>This explains why Roman went dark right after the Secret Service met with the FSB in Moscow.  With his father in this position, this was going to make it even harder to catch Roman.  [MUSIC]  The Secret Service continued to monitor the Bulba.cc and Track2.name websites.  They saw at one point a total of 747,000 credit cards were for sale on the site.  Detective Dunn bought sixteen of them off the site, specifically for the local credit union BECU so he can analyze them closely.  Sure enough, this gave him leads to even more local places that may have been hacked.  The detective monitored the site for the next few weeks to try to see how many cards were being bought in a week.  It was around 96,000 cards so within a weekâs time Roman had brought in 2.4 million US dollars.</p>
+
+<p>This was a big-time operation.  The Secret Service was able to track Romanâs whereabouts using two different techniques.  First, well, they had access to his e-mail so they could see any flight plans he had and all this kind of stuff.  But second, they found he used the Hop One server to do his personal web browsing on, and it was on that server that he would often purchase flights.  This also gave the Secret Service his passport number.  In April 2011, Roman and his wife took a vacation to Marrakech in Morocco.  The Secret Service had learned he was in Morocco and started trying to figure out ways to capture him while heâs there.  Roman and his wife went for dinner in the Argana CafÃ©, a very popular restaurant for tourists in Marrakech.  Roman and his wife were at a table upstairs overlooking the square.  While theyâre enjoying their fancy dinner, the unthinkable happened.  [EXPLOSION, SCREAMING]</p>
+
+<p>REPORTER:	A massive explosion has ripped through a busy cafÃ© in the Moroccan city of Marrakech, killing at least fifteen people and wounding twenty others.  The Argana restaurant on Jemaa el-Fnna Square is popular with tourists.  Ten foreigners have been confirmed dead.  Authorities suspect a suicide bombing after nails were found in one of the dead bodies.  If proved to be the work of Islamic militants, it would be Moroccoâs biggest terrorist attack since suicide bombings killed forty-five people in Casablanca eight years ago.</p>
+
+<p>JACK:	The blast ripped the cafÃ© apart all around where Roman was sitting.  Shrapnel and parts of the building came down right on his head, hitting him hard.  He was thrown into the back of an ambulance and taken to the airport where he was medevaced all the way back to Russia.  [MUSIC]  For the next few months no new credit card dumps showed up on his websites.  Customers started complaining they werenât getting dumps.  Someone was replying by saying things like well, the boss is ill.  You have to wait.  Nine months later, both Bulba.cc and Track2.name had shut down completely.  Roman Seleznev went dark once again and the Secret Service wasnât sure what his condition was.  They thought heâs probably still alive and needing time to recover but if he does get better heâll probably want to spend some time in his vacation home in Indonesia.  They started getting prepared in case that happened.</p>
+
+<p>They also saw he likes to travel through South Korea to get there so they issued some warrants for him in Korea.  But then the Secret Service got a tip saying Roman Seleznev has just arrived in Germany.  Quickly they started booking plane tickets to go there.  They were calling up Interpol trying to find someone to help arrest him, but just then they found out the passport numbers didnât match and it was a different Roman Seleznev altogether.  Roman did go to Indonesia to take short trips but he was buying plane tickets last minute to avoid being tracked.  He took direct flights and didnât go through Korea like he normally did.  Thereâs no extradition treaty in Indonesia either, so the feds just didnât have a way to capture him there.  The Secret Service was getting impatient.  They tried to lure him to Australia but that didnât work either.  They just had to wait and be patient and watch for him to make some kind of mistake.  About a year goes by and then another carding site opens up called 2pac.cc.</p>
+
+<p>[MUSIC]  This one had a huge inventory of credit card dumps.  One reason for this is because it was also a reseller.  When the Home Depot and Neiman Marcus were hit with their massive credit card breaches, those hackers were selling the dumps on 2pac.cc and getting 50% of the sales.  Pretty quickly this attracted the attention of the Secret Service who started investigating who might be behind 2pac.cc.  In May 2013 the Secret Service, Department of Homeland Security, and the IRS Criminal Investigation Unit had been fed up with Liberty Reserve and decided to shut it down.  They arrested the owner and seized the site.  This was a Costa Rica based company and it was being charged with processing money used for illegal purposes.  I think itâs illegal to process money if you know the money is being used for criminal activities and Liberty Reserve attracted a lot of criminals.</p>
+
+<p>With the Liberty Reserve site in the hands of the Secret Service, they started going through the transactions that were in the database and this gave the Secret Service a lot more information about him.  They found Romanâs old accounts and added up the transactions and found he had over 15 million dollars in incoming transactions.  They followed the accounts further and noticed some were recently active.  As they investigated they found information that connected Roman Seleznev to be the person behind the 2pac.cc website.  These transactions also gave the Secret Service more relevant information about Roman like his most recent address and phone numbers.  On July 1st, 2014, the Secret Service got a tip that Roman was in the Maldives.  The problem though is that the Maldives doesnât have an extradition treaty with the US either, so they arenât going to help the US in capturing him.</p>
+
+<p>Roman was smart and knew exactly what countries he could go to in order to avoid being caught, but the Secret Service spoke to the Maldives police and explained how important this case was.  The Maldives government agreed that if the Secret Service would catch him, they would expel him to allow the Secret Service to take him.  The Secret Service immediately jumped on a plane and headed to the Maldives.  [MUSIC]  Roman had been taking a high class vacation around the islands and the Secret Service was hot on his tail.  First he stayed in the nicest room possible in a fancy hotel which cost around $20,000 for just a few days.  Then he took a small plane to a private beach on another island which is where he was.  The Secret Service thought heâll probably come back to the International Airport to return to Russia so they waited for him at the airport.  Two days later Roman, his wife, and his daughter landed in a small plane at the airport and tried to switch planes to go to Russia.  But the Secret Service caught him just in time.</p>
+
+<p>They showed him the arrest warrant and placed cuffs on him.  Roman reminded the Secret Service that the Maldives donât have an extradition treaty with the US.  But the Maldivian police just stood there and watched the whole thing happen.  The Secret Service through a jacket over Romanâs wrist to hide that he was handcuffed and walked him through the airport.  They took the luggage he had which contained the following: a Sony Vaio Ultrabook running Windows 8, an iPhone, an iPad, a Samsung phone, and his identifications.</p>
+
+<p>The Secret Service were able to confirm the passport number and address of his identifications and they all matched the same Roman Seleznev that theyâve been tracking for all these years.  They escorted him to a private jet, leaving his wife and daughter behind.  The Secret Service took Roman directly to Guam, a US territory, and put him right in prison.  The Secret Service kept his laptop powered on the whole way back home but it was password protected.  They explained to Roman the long list of evidence they had gathered on him for the last ten years.  A news crew caught up with Roman while in prison in Guam.  Hereâs Roman.</p>
+
+<p>ROMAN:	The Secret Service took me from Maldives Republic on private jet to Guam.  They tell me Iâm arrested and I need to go to court.  Iâm not guilty, no.</p>
+
+<p>JACK:	Because Roman continued to plead innocent the case had to go to trial.  Roman was not fully recovered from the bombing incident in Morocco and needed daily medicine.  After a while in Guam he was taken to Washington State where the Secret Service continued to investigate.  The Secret Service needed the password to access his laptop.  They had already been going through his past e-mails and the e-mails had a familiar pattern.  He frequently used the username smaus1 on many of his accounts.  Registering to buy movie tickets online, username smaus1; registering to buy flowers online, username smaus1.  The movie ticket website he registered at had terrible security.  Upon registering at this site they sent him a welcome e-mail which displayed his username and password in clear text.  The password he used was ochko123 which is Russian for butthole.  This gave the Secret Service a username and password to try on Romanâs laptop.</p>
+
+<p>What do you know, it worked first try.  The very first password guess the Secret Service made was correct; ochko123.  This was a big failure for Roman.  To reuse passwords like this and to use such a simple one on his personal laptop while being a big carding kingpin?  Not a good idea.  The Secret Service took forensic copies of the laptop and gave it to Romanâs lawyers.  The first thing the investigators found was that there were 1.7 million credit card dumps on his laptop.  Thatâs a lot of stolen credit cards to take with you on vacation but Romanâs lawyers looked over the forensic copy and saw something else.  They pointed out that some of the incriminating files had a Last Modified date that was after his arrest.</p>
+
+<p>The lawyers was indicating the evidence was planted there by the Secret Service but the Secret Service tried to explain that antivirus and normal system processes update some of the timestamps while in connected standby, but the lawyers stuck to this as part of their case.  The Secret Service had to continue to do forensic work to build a case against Roman.  First they saw that 2pac.cc website had no admin activity since the date of Romanâs arrest.  Also, some Liberty Reserve e-mails connected Roman to 2pac.cc, too.  Then on the laptop they found more evidence, things like documents that Roman wrote on how to use stolen credit cards and they also found that before Roman would travel he would search for warrants and police reports about him to see if he was wanted in the US.  He wasnât just searching for his name either but all his aliases and old names like Bulba and nCux.</p>
+
+<p>The laptop also had a plain text password file which gave the Secret Service access to everything Roman had; the website, the hacking servers, and the servers he used to store dumps on.  This gave the Secret Service a ton of more evidence.  Forensics experts investigated the laptop closer and they looked at network logs, users, and system activity.  They looked at the registry keys and the system resource usage monitor.  They found the last WiFi connection on the laptop was at that fancy hotel in the Maldives and he was logged into the laptop with the username smaus1 and the last application he used was a Tor browser.  The computer forensics team also tried to see what deleted files they could dig up.  Of course they checked out the Recycling Bin but they also looked in the slack space.  When a file is deleted on a computer, itâs not really wiped.</p>
+
+<p>The computer just kind of forgets thereâs a file there and then says that part of the disc is available to write again, so if data doesnât overwrite that part of the disc, then deleted files can still be there.  Thatâs what the slack space is.  The forensics team took a grueling task of trying to drudge up any deleted files that were in the slack space.  This computer was running Windows 8 and had the Volume Shadow Copy Service enabled.  This takes snapshots of the computer over time to allow the user to restore to an older version.  Secret Service looked through the Volume Shadow Copy and found the same incriminating files proving these files were there before the arrest.  The Secret Service also had his phones which showed him the phone numbers, locations, and photos where he was.  These phones also had logins to his Cloud storage which contained even more sensitive documents.</p>
+
+<p>Roman continued to plead innocent and demanded he talk to his father who is a member of the Russian Parliament.  Roman has just gone from a life of luxury and riches to now having nothing.  He wasnât happy with this situation at all and needed to make a plan.  He was able to talk to his father in Russia.  The Secret Service listened in on the calls and overheard some of their plans to get Roman free.  [MUSIC]  First Romanâs father, a member of the Russian Parliament, tried to use his political juice to get him home but this didnât work.  Then the plan was to pay off prosecutors.  After all, Roman was worth millions of dollars so they had quite a lot to try to spring him out with.  Hereâs a transcript of the call.  His Father:  We can just pay them all in advance and thatâs it.  Roman:  It is what Iâm saying.  Offer them this.  His Father:  Yes, Iâm leaning towards this.  I think this is an option.  Roman:  Just make sure they know how much money they will get right away would be what theyâd get in a whole year.</p>
+
+<p>Later, the prosecutors did get a bribe of around ten million dollars to release him.  The prosecutors did not accept this and it only added to his case.  Then the phone calls between him and his dad grew stranger.  They would say things like you know that thing we talked about that weâre not allowed to talk about?  Yeah.  Itâs not true, okay?  Then his father told him he was going to visit some doctors and then the doctors will visit Roman soon to explain the rest, and something about using Uncle Andre to create a miracle.  The Secret Service thought maybe this was some kind of code for an escape plan.  Around the same time, for some strange reason, the prosecutors all started getting banned from entering Russia.  Maybe Romanâs father was banning them out of spite or something.  During this time Roman went through six different lawyers.</p>
+
+<p>Some were quitting because he was very hard to work with and some Roman was firing because he didnât like what they were suggesting.  The lawyers were suggesting he takes a plea deal, like gives the Secret Service some information about carding criminals and work out a deal to do very little time.  But Roman refused to cooperate with any plea deal and kept trying to find a different way out of prison.  Romanâs dad was also trying to get him to stall and to give him more time to make a plan, suggesting he get sick or fire another lawyer to postpone the trial.  After three years of being held in prison, his trial day finally came.  Roman ran out of ways to stall and delay the trial.  He was being charged with forty counts of criminal activity and Roman was pleading innocent.  His lawyers had only two positions to defend him with.  First, that the files on his laptop were tampered with but the Secret Service was able to prove the files were there in the Volume Shadow Copies before the arrest.</p>
+
+<p>Second, the defense attorney was saying the arrest in the Maldives was illegal and essentially kidnapping, accusing the US that this is a retaliation because Russia is harboring Snowden.  The trial took about one and a half weeks and after the jurors though it over for about three hours, they found Roman Seleznev guilty.  [MUSIC]  He was found guilty on thirty-eight out of forty counts.  This included ten counts of wire fraud, nine counts of obtaining information from a protected computer, two counts of aggravated identity theft, fifteen counts of possessing unauthorized equipment, and eight counts of international damage to protected computers.  He was accused of hacking into a pizzeria in Duvall, Washington but the jury found him not guilty for doing that.  At this point Roman finally started to try to get a plea deal worked out but it was too late.</p>
+
+<p>There are guidelines suggesting on how long of a prison sentence a person should get whoâs guilty of this many crimes.  The guidelines were off the charts, suggesting he gets life in prison.  But Romanâs lawyers tried to talk the judge down to not very many years, but because Roman refused to cooperate and continuously lied to prosecutors the judge did not see favorably on him and gave him twenty-seven years of prison time for his crimes.  Roman was thirty-two when he was sentenced meaning heâll get out when heâs almost sixty, missing most of his daughterâs life and half of his own.  Roman was still recovering from his injuries from the bombing years ago and he had to take daily medication for it because it damaged his head.  The lawyer thought Roman was so sick that twenty-seven years is a life sentence.  The lawyer said quote, âHeâs not going to live that long.  Heâs going to die in jail.  Iâm certain of that.â  End quote.</p>
+
+<p>The Secret Service had to go through the 1.7 million credit cards found on Romanâs laptop and inform each bank of the theft.  Those cards belonged to 3,700 different banks and each of them were called.  In total the Secret Service counted that Roman had hacked into 400 different restaurants and shops to steal credit cards from, many of which were locally-owned businesses.  Looking through the court transcripts, I see that Roman also hacked into zoos across the US and one of them he hacked into and stole credit cards from was the Phoenix Zoo which is crazy to me because Iâve actually been there.  I tried to look up what Phoenix news outlets covered this hack and only one small tech website did.  My guess is that the zoo never went public with this breach and when the evidence about it came up years later in Romanâs trial, it was just too old to be a news story anymore.</p>
+
+<p>Now, you might be wondering why so many of these small and local businesses had Remote Desktop exposed to the internet.  Well, a few of the owners came to court to testify.  They said they had it open like that because their IT support team needed it open to troubleshoot issues.  Actually, a lot of these businesses had the same password because the same IT support group reused passwords for many of these businesses.  Each of the victim companies had to spend a lot of money to fix these security issues; first they had to remove the malware, then upgrade some equipment like putting a VPN device in place so tech support can connect to them securely.  But when you incur a credit card breach like this, the credit card companies start getting into your business.  See, in order to process credit cards you must be compliant with the payment card industry, or PCI.</p>
+
+<p>This is ran by VISA and MasterCard and stuff, so the PCI requires audits to be conducted on the network also.  On top of all that, because they werenât compliant with PCI, they were fined anywhere from $5,000 to $30,000.  At a minimum this breach cost each of these small businesses $20,000 and some much higher.  Then to top it all off, if the story got out, customers would stop coming in fear of getting their card stolen.  The Broadway Grill in Seattle had just changed ownership right before this hack and this was a major setback for the new owners.  They spent tens of thousands of dollars to fix the security issues on their systems.  They also felt a big hit from customers who were afraid to come use their credit cards there.  They suffered a lot of ridicule and shaming over this.  After being there for 22 years, this hack ultimately caused the Broadway Grill to shut down and declare bankruptcy.  But wait, thereâs more to this story.</p>
+
+<p>Two other states had indictments for Roman Seleznev and wanted to try him, too.  Remember how it was really suspicious that Roman, or Track2, was a trusted vendor on Carder.su the day he opened an account?  Remember when he was the only vendor selling dumps on that site?  Yeah, some feds in Las Vegas thought this was suspicious enough and accused Roman of being the owner of Carder.su.  They brought Roman to trial for this.  Sure enough, it was true.  Roman pleaded guilty to these charges which resulted in him having to pay 50 million dollars in restitution which was the same amount believed to have been made from selling cards on the website.  Then once that was over, federal court in Atlanta, Georgia took a shot at Roman, too.  Federal prosecutors there claimed Roman, along with 14 other people, hacked into RBS Worldpay which is a payment processor in Atlanta.</p>
+
+<p>In 2008 the hackers got in, stole thousands of credit cards, then gave it to fourteen different cashers around the world.  These people would write the dumps to blank credit cards and then go to ATMs and just go through card after card, taking out as much money as they could until the ATM was out of money.  Then they move on to the next one.  Within 12 hours of the breach, the cashers were able to hit 280 cities, cashing out for more than nine million dollars total.  Roman was accused of stealing two million dollars himself.  The federal court in Atlanta brought Roman to trial on this and Roman pleaded guilty to this, too.  This resulted in fourteen more years of prison time and another two million dollars in restitution.  Today Roman sits in a medium security prison in North Carolina, still recovering from his head injury, still dreaming about seeing his family again someday, and probably still wishing he was back home in Russia.</p>
+
+<p>JACK (OUTRO):	[OUTRO MUSIC]  Youâve been listening to Darknet Diaries.  For show notes and links check out darknetdiaries.com.  Thanks to all the people who have given on Patreon, I now have a bonus episode for people there so if you want more of this show, donate on Patreon and Iâll be regularly releasing bonus episodes to supporters there.  This show is made by me, skid rock, Jack Rhysider.  Theme music is made by the helmet-wearing Breakmaster Cylinder.  See you again in two weeks.</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+<p>Transcription performed by Leah Hervoly
+www.leahtranscribes.com</p>
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

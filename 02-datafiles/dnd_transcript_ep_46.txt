@@ -1,0 +1,815 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>XBox Underground (Part 2) â Darknet Diaries</title>
+	<meta name="description" content="This is the story about the XBox hacking scene and how a group of guys pushed the hacking a little too far.">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="XBox Underground (Part 2) â Darknet Diaries">  
+	<meta name="twitter:description" content="This is the story about the XBox hacking scene and how a group of guys pushed the hacking a little too far.">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/xbox2.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/46/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="XBox Underground (Part 2) â Darknet Diaries" />
+	<meta property="og:description"        content="This is the story about the XBox hacking scene and how a group of guys pushed the hacking a little too far." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/xbox2.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/46/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/xbox2.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/46/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="XBox Underground (Part 2) â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/xbox2.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 46: XBox Underground (Part 2)</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://traffic.megaphone.fm/ADV7236741619.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/46/",
+			   "title": "Ep 46: XBox Underground (Part 2)"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/46">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[FULL TRANSCRIPT]</p>
+
+<p>JACK:	Just real quick before we get started, this is Part 2 of the series on XBox Underground, so listen to Part 1 first before this one.  Alright, letâs get started.  [MUSIC] One of my favorite Greek myths is the story of Icarus.  He was a young boy stuck on an island.  His father made a pair of wings made out of wax and feathers for him to fly away.  Icarus put on the wings and was able to fly around.  His father told him not to fly too high or too low.  Icarus took off and flew away, but forgot about his fatherâs warning and flew too close to the sun.  The wax melted and his wings fell apart.  He free-fell and plunged into the sea below and drowned.</p>
+
+<p>JACK (INTRO):	[INTRO MUSIC] These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]
+<!--more--></p>
+
+<p>JACK:	Alright, letâs recap real quick.  We left off with this XBox Underground hacking crew having full access to dozens of networks of video game companies like Epic, Activision, EA, Bungee, Microsoft, Zombie Studios, and Steam.  Weâre going to be hearing more from Skitzo who was sort of watching this whole thing from afar.</p>
+
+<p>SKITZO:	Itâs not just the XBox that defined this group.  The XBox put it on the map.  Itâs all the other fucking shenanigans that brought it together.</p>
+
+<p>JACK:	Of course, we have Sanad, whoâs loving the fact that he can play early-release versions of XBox games, but also at the same time, a little worried that things might be going a little too far.</p>
+
+<p>SANAD:	Yeah, exactly.</p>
+
+<p>JACK:	Then thereâs Dylan, whoâs just hacking into everything he can, sort of on a total rampage.  But at the same time, heâs willing to share this story with us.</p>
+
+<p>DYLAN:	Where do we begin?</p>
+
+<p>JACK:	There are other hackers involved, too; thereâs David whoâs doing a lot of Halo modding and heâs fascinated with everything Microsoft.  Then thereâs Nathan whoâs part of the scene.  Heâs really smart and helps him out sometimes.  Then thereâs Justin May, or MTW, who got arrested at PAX but is still active in the group.  Then thereâs other characters like Austin and Anthony who are also doing their own hacks.  But theyâre all only after video games though, and source code.  They all pretty much agreed not to steal any credit cards or empty any PayPal accounts or make any money with this hacking.  For the most part, they didnât dig into any personal data, either.</p>
+
+<p>One of the networks they had access to was Microsoft itself, the makers of the XBox.  David was particularly interested in seeing what new stuff Microsoft was doing, and perhaps had a weird fantasy about someday working for the team behind the XBox.  They put a lot of focus into poking around this network.  They had a few valid logins for the XBox Developerâs Network and theyâd log in with different accounts to see what different developers had access to.  One day, Dylan logged into an account and noticed a new folder that this developer had access to but other developers didnât.</p>
+
+<p>DYLAN:	[MUSIC] It was like okay, this is not something thatâs normally there.  We click on this.  It was like it wasnât â it was just called Durango.</p>
+
+<p>JACK:	Dylan was looking through this developerâs account which displayed different kinds of hardware components that they had access to.  The developer had access to an XBox 360 system, the XBox Kinect, now this Durango system.  Hm.  Whatâs a Durango, he thought?</p>
+
+<p>DYLAN:	We had no idea what it was.</p>
+
+<p>JACK:	Maybe this was some kind of secret project Microsoft was working on.</p>
+
+<p>DYLAN:	We were like, well thatâs a bit odd.  We navigated there.</p>
+
+<p>JACK:	In this server was a SharePoint website.  After playing around with the URLs of the SharePoint site, they were able to see a listing of a lot of files.</p>
+
+<p>DYLAN:	That gave us access to hey, these internal documents.</p>
+
+<p>JACK:	Of course, they start grabbing these documents; spec sheets, photos, driver software, source code, and more.  They share all this information with their circle of hackers and someone figures it out.  This is the specs for the new [00:05:00] XBox which would be later known as the XBox One, but at that time, it was simply code-named Durango.  This hacker group was holding in their hands all of the ingredients and blueprints of the next XBox that Microsoft was working on.</p>
+
+<p>DYLAN:	We had two pictures of the internals, or the back of the machine, and the internals, and one picture of just the case.  Then we had the software itself which was their recovery software.  That kind of gave us the basis for okay, letâs just try and build the hardware.  [MUSIC] What we found out was they were using a Supermicro case and if you know anything about the XBox 360, it was previously using a Mac Pro G5 at the time.  These were just off-the-shelf kind of things.</p>
+
+<p>JACK:	Now, when a group of hackers who are becoming experts at reverse-engineering software and are able to look through machine code, and had a few clues to go by, of course they began trying to figure out what hardware it would take to run the software.</p>
+
+<p>DYLAN:	Really, we just went into the drivers, saw what the drivers they were using, and compared them to what we saw in the pictures, cross-referenced it, cross-referenced the specs of the machine, an idea of what processor they were using, what graphics card they were using, and pretty soon we had this identical hardware list.</p>
+
+<p>JACK:	Everyone is thinking the same thing at this point; letâs build a Durango.</p>
+
+<p>SANAD:	They just started going on Newegg and finding all the parts on there.</p>
+
+<p>JACK:	People started pitching in to help buy the parts and put these things together.  Nathan volunteered to get all the parts shipped to his house, and heâd build the thing.</p>
+
+<p>SANAD:	Nathan got all the parts from Newegg.  He puts it together and he installs Durango OS on it.</p>
+
+<p>JACK:	It worked.  Nathan had in his hands pretty much the exact prototype to the next XBox gaming system which nobody had yet except for a few Microsoft developers.  This was incredible.  I mean, this is something every tech magazine on the planet wished they had, and here this small group of hackers had it and was just keeping it quiet amongst themselves.  It was expensive to make though, and didnât do much more than a regular XBox, so the group decided to sell it off.  Nathan was happy to do this since he needed some money to pay for college.  The group starts asking around the people they know to see if anyone would be interested in buying it.  They did find a buyer, another hacking group heavy into modding XBoxes.  They wanted it.  They were willing to pay $5,000 for this counterfeit Durango.</p>
+
+<p>DYLAN:	Okay, so yeah, the buyer paid â I believe it was five grand US.  Yeah, they internationally bank-transferred it to me while I was actually abroad.  We didnât even think this would happen but yeah, it happens, so we were like okay, well, time to send them the hardware.</p>
+
+<p>JACK:	Nathan had this unit and the buyer wanted them to send it to Seychelles, an island off the coast of Africa.  Justin volunteered to ship it there.  Remember Justin, right?  Heâs the one who got arrested at PAX.  Justin and Nathan lived in Delaware and Maryland, so not really that far from each other.</p>
+
+<p>DYLAN:	He goes to meet up with Justin, or MTW, and he hands off the unit to MTW to ship out.  Now, why they did it that way, I have no idea.</p>
+
+<p>JACK:	Justin may have been scamming the post office.  Somehow, he was able to get super-cheap shipping.  He was able to convince people hey, let me ship it.  Itâll be a lot cheaper if I do it.  Justin gets the package and ships it off.</p>
+
+<p>DYLAN:	Somehow it never got to the destination.</p>
+
+<p>JACK:	Justin was the last one to see that Durango.  It just disappeared after that.  What really went on here?  Some speculate it could have just been lost in shipping, or maybe the FBI intercepted it.  Maybe Justin was an informant for the FBI and the whole thing was just set up to make Justin look good as an informant.  Nobody knows.  Now, actually, Sanad didnât know any of this was going on at the time.</p>
+
+<p>SANAD:	Hereâs the thing; they would do stuff and then when shit went wrong, thatâs when they would tell me.  Iâm just like, why would you tell me now?  You know what I mean?  âCause I was obviously the older one out of all of them so I have a little more street smarts, so to say.  When certain things seem off and your gut is telling you somethingâs off, then itâs off.  Justin just, I donât know what it was about him, but he always gave me this weird feeling that he was always up to something fishy.</p>
+
+<p>JACK:	But even if people thought Justin was fishy, they still shared various sensitive stuff with him and even though this whole selling of a Durango was shady and really weird, Dylan thought letâs do it again.  [MUSIC] He decided to make a second one and sell it.</p>
+
+<p>DYLAN:	[00:10:00] We didnât actually make a second one.  Thatâs the interesting thing.  I decided okay, well, we got these photos from when we posted about it before.  I was like well, I might as well put it on eBay and see what attention I can get from it.</p>
+
+<p>JACK:	So, you took the photos from the first one you built and you stuck it on eBay?</p>
+
+<p>DYLAN:	We took the photos which had my username at the time on it, and we stuck it on eBay.</p>
+
+<p>JACK:	When Sanad heard about this, he wasnât happy.</p>
+
+<p>SANAD:	Oh, I was pretty ticked off.  I even mentioned to them that I was ticked off.  I told them to stop.  I tried to be as cautious as possible but there was only so much I could do.  I couldnât control the other people.</p>
+
+<p>JACK:	The Durango listing on eBay started getting bids like crazy.  The listing went viral.  It quickly rose past $5,000, past $10,000.  People just kept bidding on it.  It rose all the way to $20,000.  Thatâs when I believe eBay cancelled the auction.  This was a counterfeit item and coveted Microsoft intellectual property.  But it was with this that the world became known that the code name for the new XBox was Durango.  This eBay listing pissed off David.  This was too risky and bold of Dylan.  This caught a ton of media attention.  For sure Microsoft was going to investigate how this got stolen or created, and they might start coming after him.  David got angry and stopped talking to Dylan.</p>
+
+<p>DYLAN:	It turned into such a headache because hereâs the flip side of it; imagine youâre a partner of Microsoft and youâre seeing that your shit may not be that secure on Microsoftâs side.  We want to do audits, we want audits and security, we want logs.  How can we trust you guys?  Think of the IT team, or security personnels with each respective department.  Think of the jobs that were lost, the uncomfortable conversations, the millions of dollars spent trying to mitigate this problem.  Itâs not fun.</p>
+
+<p>JACK:	Microsoft did start investigating this big-time and perhaps they were aware of this hacking long before this, but now they had a smoking gun that something was getting stolen from the strongholds of Microsoft.  This wasnât good for anyone. Microsoft assigned a senior security executive named Miles Hawkes to start investigating the case.  A few weeks later the first person falls; Nathan Leroux.  This is the guy who was creating some in-game gold in some games, and he was participating in some of the hacks for these companies, and he was the one who put the Durango together.  The FBI paid him a visit.</p>
+
+<p>SANAD:	I believe him and Dylan were on a video chat or something, and he got raided during that video chat.</p>
+
+<p>DYLAN:	I donât believe I was on a call with him when he was getting raided, no.  He was on an anime marathon.  He was watching it for probably over a day, yeah.  When the police showed up, you could see us, you could see his mug shot.  He was completely out of it, yeah.  Thatâs kind of the reasoning behind why he looks so shitty in his mug shot because he really didnât get any sleep.</p>
+
+<p>JACK:	The FBI had a long and serious talk with Nathan.  Who knows what they talked about though, and how long it really was?  Perhaps they even confiscated all of Nathanâs computers.  This was a very intense situation for Nathan.  From then on out, he was scared straight.  He completely disappeared from the hacking scene and he moved to a new place.  He got a straight-and-narrow job in a small game development studio.  [MUSIC] From here, things started to break up.  There was new air among the group and things had gotten out of hand.  It was uncontrollable; there was just too many digital tracks left everywhere.  People were getting angry with each other and growing apart.  David and Anthony feuded over something and split apart.  Sanad went quiet and kept his nose out of trouble.  Dylan, well, Dylan just kept at it.</p>
+
+<p>DYLAN:	I think at that point we were very much done.  We knew we went too deep.  We knew somethingâs gonna happen eventually and I think I kind of took this route of self-destruction where I just was like, you know what?  Fuck it.</p>
+
+<p>JACK:	A few others pushed on, too.  Before Nathan got arrested, he taught Anthony what he knows about creating in-game money and selling it.  Thereâs a popular EA game called FIFA.  Itâs a soccer game and itâs hugely popular around the world.  In the game are coins that you can use to buy extra things like jerseys and improve your players.  Millions of people play the game all the time and they want more FIFA [00:15:00] coins to improve their team.  Even today, buying and selling FIFA coins is highly lucrative.  Nathan found a way to create in-game coins and sell them to people for real money, but he wasnât really good at it.  It was crude and there wasnât really a good way to do it.  But now that Anthony wasnât really talking to David anymore, Anthony decided to take what Nathan taught him and try to improve it.  Austin, who was part of the group too, joined up and started helping Anthony make FIFA coins.</p>
+
+<p>SANAD:	They found a way to reverse-engineer the executable to basically have the server spit out unlimited coins.  Then they were selling them to some guy in China.</p>
+
+<p>JACK:	This was working like, really well.  Anthony and Austin started making good money doing this.  Because they had hacked into EA and stole source code for FIFA, it made it a lot easier for them to reverse-engineer how to hack it.  This was growing more and more profitable every day.  They would spend all their time creating FIFA coins and selling them.  Meanwhile, back at Microsoft, the investigation as to who was selling the Durangos on eBay heated up.  Miles Hawkes, the senior security executive at Microsoft, was making some progress.  Somehow, they traced Dylanâs eBay account all the way back to his house in Perth, Australia.  Miles gets on a plane and heads down under.</p>
+
+<p>DYLAN:	[MUSIC] Yeah, he was their private eye, I guess we will say.  I mean, one day he just ended up at the house of my parentsâ and I think I wasnât there at the time.  He actually came back the next day and I found out, so I was there for this second time.  He came, he wanted to just lay down theyâre not there to prosecute anyone, theyâre not law enforcement.  They donât care too much.  They just want to know whatâs going on.  I guess thatâs where we kind of opened up.  Myself and David actually gave them what we knew, what we had, how things were done, how people got onto XBox Live.  He kind of took all this info, went back, and that was really it.</p>
+
+<p>SKITZO:	Miles visited Howdy.  Howdy basically said that he didnât do shit.  I believe he surrendered a kit or two that he had in his garage in plain view.  Howdy had this weird dream that he was gonna get a job at Microsoft to do what God knows.  But Howdy claimed that he could offer people up in exchange for a job and Miles said thanks for the kits man, gotta go.</p>
+
+<p>JACK:	Around this time back in Delaware, Justin, or MTW, the hacker who got arrested at PAX, he was running a major scam operation.  Hereâs what he was up to.  [MUSIC] When you buy a Cisco router and it goes bad, you can call the support line and ask them to do a replacement.  This is called an RMA.  Because they want you to get your network back up and running as quickly as possible, they send you a replacement router right away.  Youâre supposed to put your old broken router in the box and send it back to them.  Justin knew this and figured out a way to trick Cisco into processing an RMA for him even though he didnât have a router to send back.  Cisco would ship him a brand-new device and he would turn around and sell it.  This left Cisco high and dry without any returned device.  He was doing this with the Microsoft surface devices, too.</p>
+
+<p>Like, he was doing this hundreds of times, making huge amounts of cash, enough to buy a BMW Coupe for $60,000.  Justin was telling David and Dylan and the rest of the crew all about these scams he was doing.  Dylan didnât seem to really care if Justin was an informant because Dylan was sharing tons of information with him anyways.  To David, the scams proved Justin was still trustworthy.  The amount of scamming that he was doing was way beyond what the feds should be allowing him to do if they were watching him.  Even if David didnât trust Justin, itâs better the devil you know than the devil you donât.  Maybe itâs a good idea to keep an eye on Justin, keep him close.  David was attending University of Toronto in Canada, but he was planning a trip to the US.  He wanted to go to the annual Defcon conference in Las Vegas, Nevada in the US.</p>
+
+<p>David told Justin about his plans to go to Vegas and right after that, unknown to David, an indictment was created in the US for him.  [MUSIC] The indictment had sixteen counts of criminal activity including fraud, identity theft, and conspiracy to steal trade secrets.  The indictment listed Sanad, Nathan, and David as co-conspirators.  The feds seemed to be moving forward with this case but why now?  Maybe the feds figured out Davidâs plans to go to the US.  Maybe it was just time for this operation to crash.  I donât know.  However, a closer look at the indictment does reveal something interesting; thereâs another person in the indictment only known as Person A.  A lot of evidence in the [00:20:00] indictment was provided by this Person A, and in fact, the indictment even says that Person A did some of the hacking in the group too, which means they were part of this crew.</p>
+
+<p>Now we know for sure there is a snitch among the group, and they were tipping off the feds.  The indictment said this Person A was a resident of Delaware.  For some reason though, David cancelled his trip to Vegas and Defcon.  Maybe he got nervous about crossing borders or maybe some other things in his life took precedence, but he just didnât go.  Thereâs a new character that shows up at this point, an eighteen-year-old named Arman.  Arman lived near Redmond, Washington.  You know whatâs in Redmond, Washington, right?  Microsoftâs headquarters.  Arman was extremely fascinated with XBoxes and had been following whatâs going on in the scene.  Armanâs mom was dating a guy who worked at Microsoft.  Heâd often come over to Armanâs house after work wearing the Microsoft employee badge, and Arman devised a plan.</p>
+
+<p>He acquired a badge cloner and when his momâs boyfriend came back, he was able to make a duplicate copy of that Microsoft employee badge.  With a functioning badge to get into the Microsoft building, he decided to go in there and walk around.  To look the part, Arman dressed like a regular employee, wearing clothes with Microsoft logos on it, and looking like he belonged.  He went down into the headquarters in the middle of the day, swiped his badge, and got in.  He first just wandered around, taking in the sights and sounds.  He was particularly in awe of just being there.  He was in the belly of the beast of the place he obsessed over.  This was where they made the XBox, and some of his favorite video games were made right here in this building.  It was cool just seeing the place. I admit, Iâve been on that campus too, and I felt a sense of awe.</p>
+
+<p>Thereâs like, a soccer field right in the middle of campus and free sodas for everyone.  The sheer brainpower thatâs walking around there is extraordinary.  For about a year, Arman would come and go on the Microsoft campus, becoming familiar with it and learning the layout better and better, all while using a rogue employee badge.  Arman dreamed about one day working at Microsoft.  He applied for a position at one of Microsoftâs vendors as a quality assurance tester.  He continued to dress in Microsoft swag and go on campus and wander around the offices.  Eventually he found the office where the engineers and developers were working on the Durango.  As he walked through the offices, he spotted one of the actual Durangos.  Whoa.  This was a real, authentic, official Microsoft XBox One prototype.</p>
+
+<p>Arman spent the last year infiltrating this campus, and it was at this moment that he knew what to do with his access.  He waited until the coast was clear, grabbed one of these Durangos he found, shoved it in his backpack, and quickly left the building.  Amazing.  He got all the way home and unloaded the console.  He had a fully working authentic Durango now.  He was absolutely brimming with excitement from the rush of this.  Itâs really hard to contain this kind of excitement; he reached out to Austin, one of the members of this XBox Underground, to tell him about it.  At this point, Austin kind of was done doing things with XBox Underground and was making a shift to selling FIFA coins with Anthony.  Arman told Austin that he had an authentic Durango and he wanted to know if Austin wanted one, too.  Austin asked at what price?  Arman wanted logins to the XBox Developer Network and a few thousand dollars for it.</p>
+
+<p>Austin called up Dave in Ontario and told him about Arman.  Dave was baffled by this deal but was too curious to turn it down.  They were put in touch with each other.  Dave and Austin both agreed to buy one so Arman formed a new plan.  [MUSIC] In September 2012, Arman gets dressed in his full Microsoft attire and gets a big, oversized backpack, and he gets ready to go into the headquarters.  He waits until about 9:00 p.m., walks up to the building, swipes his badge, and heâs in.  Business as usual, no problem.  He knows the place well so he knows where to go to try to look for Durangos.  Heâs walking through the office looking for them.  Heâs getting nervous, heâs getting sweaty palms, heâs looking around a lot.  He hears footsteps; he dives into a cubicle and waits for the footsteps to go away.  As soon as the footsteps go away, he scurries up the stairs to the fifth floor where he thinks he can find the Durangos.</p>
+
+<p>When he opens the door to the fifth floor, itâs totally dark.  Perfect, he thought.  He starts walking through the office in the dark, but some motion detectors sensed him and the lights flicked right on.  This spooked him so he goes back into the stairwell and down two flights of stairs.  He opens the door into the office and wanders around there, walking through [00:25:00] rows of cubicles.  He finally comes across a cubicle with a pair of Durangos in it.  Sitting on top of one of them is a black, high-heeled shoe.  He looks around.  Nobodyâs there.  He grabs both Durangos, jams them in his backpack and takes off for the door, leaving the black high-heeled shoe right there on the floor.  He goes into the lobby, walks to the door, goes outside, finds his car, and drives home.  Success.  Arman ships the two Durangos to Dave and Austin and gets his cash and logins.</p>
+
+<p>Awesome, he thought.  Dave was amazed too, but then Arman got a call from that Microsoft vendor that he applied to saying he got the job as a quality assurance tester.  Whoa.  Iâll take it, Arman said, and went to work for them.  Microsoft discovered these three Durangos were now stolen and started investigating.  [MUSIC] They found some security footage showing Arman leaving the building, and this was enough to identify Arman and get him arrested.  Microsoft wanted the Durangos back really bad, and Arman was only eighteen and was scared of the legal troubles he was facing.  He begged David and Austin to return the Durangos.  Back in Australia, Dylan did some thinking and thought you know what?  Maybe itâs time to tell Epic heâs the hacker.  He called them up and told them hi, Iâm the one who hacked you.</p>
+
+<p>DYLAN:	Basically that.  I actually went back to the IT guyâs, the original IT guyâs Gmail, looked at the phone number linked to his account, and I called his personal mobile.  As a naive kid, I believe I probably said something like oh, Iâm the guy who hacked you.  I donât think they took it too seriously.  They were like oh, well, they were trying to F with us or something.  But then I kind of mentioned â it was like no, no, can we sort this out?  Thatâs where we made a disclosure; not a responsible disclosure because I canât be a responsible asshole at that point in time, but it was definitely a disclosure nonetheless.  They actually said â and this was â if theyâll confirm that or not, theyâll say the FBI would not help them at all, so they were pretty happy with the fact that we at least gave them the information that they wanted all along.</p>
+
+<p>JACK:	Dylan had the audacity to ask for a reward for telling Epic how he hacked into them.  Dylan even gave them his address in Australia.</p>
+
+<p>DYLAN:	Yeah.  I asked them, I was like â I just said can I have some swag or something?  I guess I ended up with a poster, a signed poster.  Yeah.  Probably the first kind of reward I ever got.  Itâs still funny because itâs like, we did all these things wrong but we still got rewarded in the end.</p>
+
+<p>JACK:	Since that eBay listing, Sanad distanced himself from the group, but he did have the Durango software and wanted to see if he could get it working on one of his own computers.</p>
+
+<p>SANAD:	I realized that you can install Durango OS on any type of hardware.  It didnât have to be that specific hardware.  I put it on a Gateway blade server and it loaded completely fine.</p>
+
+<p>JACK:	This was exciting for Sanad, to be able to play around on the XBox One long before it came out for the public?  So cool.</p>
+
+<p>SANAD:	There was always one problem with the counterfeit Durangos; the video driver from the Durango OS for some weird reason didnât work properly with the cards that youâd buy from retail.  The picture was always shifted.  There was no way to center it.  I tried to mess with it a little bit âcause it was based off of Windows 8 at the time.  I even tried taking the drivers from Windows 8 and popping them in there, trying to see if I could fix it.  [00:30:00] No matter what I did, it stayed that way.</p>
+
+<p>JACK:	Sanad kept tinkering with this video issue and is still playing on those dev kits, playing stolen games and a lot of retail games, too.  At this point he actually has a massive collection of gaming consoles and games.</p>
+
+<p>SANAD:	One day out of the blue, somebody on IRC messages me.  I canât remember his handle but he was talking to me about stuff.  I had my guard up.  This guy messages me and he starts talking about Durango stuff.  [MUSIC] I thought maybe he was trying to get the software off me to make his own Durango.  He was like no, no, no, I already have the software; I got it from Nathan.</p>
+
+<p>JACK:	Remember, Nathan was raided and arrested earlier.</p>
+
+<p>SANAD:	Iâm like okay.  Then heâs like, oh, Nathanâs sitting with me.  Iâm like okay, âcause he had a Baltimore IP address.  I kind of was still weirded out by it but then he started talking about some internal XBox 360 boot loader that got leaked and he even sent me the file.  Then he tried to explain what it was but he really didnât know what he was talking about.  I guess he had somebody else hop on and explain it as quote, unquote, âNathan,â and then it made more sense to what it was.  Then Iâm like let me see the picture of your Durango.  He takes a picture with â he wrote out his alias and a timestamp on it.</p>
+
+<p>I look at the screen and the one problem that we could never fix was apparently working for him which was the video issue.  I asked him about it and heâs like oh, I figured out a way to reassign the drivers and blah, blah, blah.  To me it just seemed off.  My response to him was I think youâre a UC.  He just starts going off on me.  Heâs like you think Iâm an undercover?  This, that, whatever.  I mean, letâs be realistic; if I say to somebody, I think youâre a UC, how many people are gonna know that stands for undercover?  I was just like alright.  Iâm like, this dudeâs totally a cop so I stop talking to him.</p>
+
+<p>JACK:	A couple of days go by.  He doesnât hear anything from that guy anymore but then comes a day that Sanad will always remember.</p>
+
+<p>SANAD:	It was December 4th, 2012 at 5:30 in the morning.  [MUSIC] I have insomnia issues so I was taking sleeping meds at the time.  For some weird reason they didnât kick in until like 3:30 in the morning.  Two hours later, I wake up to loud banging on my door.  Iâm just like who is it?  Theyâre like, itâs the police, open up, open up.  Iâm thinking police?  Maybe the house is on fire or something, maybe something happened or something, you know what I mean?  I go to open my door and they had kicked and banged it so hard that the doorknob jammed.  Iâm just like, I canât open it.  Theyâre like, stand back.  Next thing I know the door flings open.  I see a shield and then guns pointed at my face.  Iâm in my boxers, mind you, so I just put my hands up in the air instantly.</p>
+
+<p>JACK:	Itâs the FBI.  Now, Sanad is Middle Eastern and he thought all this is probably for the hacking but he didnât want to admit anything before he knew for sure.</p>
+
+<p>SANAD:	They pull me outside and itâs freezing cold.  Like I said, itâs in December.  My neighbors are driving by thinking that I killed the president or something because of how many FBI agents they sent to my house.  It had to have been at least four dozen.  There was close to fifty agents there.  It was insane.  Iâm like whatâs going on?  Whatâs going on?  The Special Agent in charge was like oh, weâve gotta finish clearing the house and then weâll pull you back in and weâll talk to you.  Iâm like, okay.  They pull us in; it was me and my dad which by the way, my dadâs like, heâs not dark skinned but heâs got a really tan complexion.  He looked like he was a ghost.  He was just white.  They have him in the family room and me in the kitchen.  Theyâre asking my dad, you know, your son took the project Durango.  My dadâs like, the truck?</p>
+
+<p>He had no idea what the hell they were talking about.  They were like your son stole millions and millions of dollars and this, that, and whatever.  My dadâs like no, he didnât.  Heâs like, I would know if my son had millions and millions of dollars.  I told the agent Iâm like, he doesnât know anything.  Stop bothering him.  You guys arenât gonna get anything out of him âcause he really doesnât know anything.  They stop questioning him.  Then they go to me and theyâre like alright, theyâre like, we want to show you something.  He pulls out a little manilla folder and the first thing he pulls out is a picture of the Durango.  Iâm like okay, well, he probably [00:35:00] obviously saw that on eBay or something.  Then he starts talking about Epic Games and Valve, and all this, that, and whatever.  Then he pulls out chat logs between me and other people.  Thatâs when I realized somebody set us up.</p>
+
+<p>JACK:	Now remember, Nathan was also raided by the FBI.  You might think that all these chat logs were something they took from Nathanâs computers.</p>
+
+<p>SANAD:	No, they had logs from dating way before Nathan.</p>
+
+<p>JACK:	This was not something Nathan would have had.  It would have been someone who was around much earlier than that.  Sanad knew that someone in their circle had to have been an informant tipping off the FBI, providing chat logs and screenshots to them, giving up real names and locations for people.  Sanad was pissed.</p>
+
+<p>SANAD:	The level of anxiety was through the roof.  It was just so much going on.  These guys with masks came in the house and went right to my room.  It was insane.  The only time Iâve ever seen anything like that was in the movies.</p>
+
+<p>JACK:	The FBI began confiscating everything from Sanad.  He had a lot of stuff, too.  First the FBI started taking all of the XBox dev kits from Sanad.</p>
+
+<p>SANAD:	There was quite a bit, probably around twenty of them.</p>
+
+<p>JACK:	Jeez, thatâs a lot of dev kits.  He had three retail XBoxes too, and a ton of other games and consoles.</p>
+
+<p>SANAD:	Yeah, they took a Dreamcast, they took a Nintendo 64, they took â I had a binder with a whole bunch of internal Microsoft disks and internal Sony disks and stuff like that that they took.  There was a whole bunch of miscellaneous stuff they took.  They got so lazy or tired or whatever of writing stuff down that they started labeling stuff like âbag of microchips,â âbag of CDs.â  There was just so much stuff.  They were literally there for like, five hours clearing up everything.  My seizure list was four pages hand-written.</p>
+
+<p>One of the agents goes oh, my buddy does this thing where he gets all the old Sega Genesis games and stuff like that, and he plays them.  He has a whole bunch on one thing.  Iâm like yeah, those are emulators and ROMs and Iâm pretty sure thatâs piracy.  Then the agent in charge was like hey, weâre not talking about that right now.  Iâm looking at him like, so itâs okay if you guys do it but as soon as somebody else does it, itâs not okay?  I was a little ticked off.  I was having anxiety and I was taking Klonopin at the time for my anxiety.  He literally wouldnât give me my medication.  He sat the pill bottle in front of him and said these could be anything.</p>
+
+<p>JACK:	They also found some drugs that Sanad had.</p>
+
+<p>SANAD:	Yeah, I had some pot.  The agent pulls my bowl out and brings it to me and heâs like whatâs in this?  I said pot.  He goes, Iâm gonna have it tested.  Iâm like, okay.  He calls up the local narcotics people and they come and they scrape a little off it and heâs like yeah, itâs pot.  He literally just left everything where it was.  He left the pot and the bowl right on my desk when they left.</p>
+
+<p>JACK:	Sanad smoked cigarettes and weed but wasnât really into any other drugs.  All this was just on a casual and small scale.  I donât know if the police just overlooked it or didnât care, or felt sorry for him but yeah, they left the pot.  After the FBI finished seizing everything, they didnât take him to jail.  They let him stay home and said theyâll follow up with him later for next steps.  They left a search warrant with Sanad to keep and he wanted to show the others this search warrant.</p>
+
+<p>SANAD:	I posted it on Facebook and Dylan saw it and decided to dox the Special Agent in charge, and the judge from Newark that signed the search warrant.  He put a hit out on both of them.  He put a hit out on some forum on the Special Agent in charge and the judge.  I donât know if it was a joke or you know, but still, it made me look really, really bad.</p>
+
+<p>DYLAN:	I went about discovering who they were, their personal information.  Yeah, I probably did dox them a bit because I believe I actually posted a text file with their information.</p>
+
+<p>JACK:	Dylan did talk about putting a hit on the agents but this was just some sick joke that this young kid did.  Nothing ever came of it.</p>
+
+<p>DYLAN:	As far as federal agents went, that was a stupid thing for me to say, but I did actually say it, yeah.</p>
+
+<p>JACK:	You kind of have this attitude of when the shit gets bad, you kind of justâ¦</p>
+
+<p>DYLAN:	Dig the hole deeper.  Yeah, that used to be the general way I dealt with things, I think.  I was a naÃ¯ve kid.   I think it kind of shows how careless I was, how out there I was.</p>
+
+<p>JACK:	[MUSIC] When a computer experiences a [00:40:00] kernel panic, thereâs no telling what it might do.  It might crash.  It might corrupt files.  It might reboot.  It might not do anything.  But when Dylan would have a kernel panic, you couldnât predict what he would do, either.  Despite all of this going on, Dylan was still hacking into places everywhere because itâs an absolute thrill to get into places youâre not supposed to get into and grab stuff youâre not supposed to see, and play games youâre not supposed to play.  One night, Dylan, still only seventeen years old, was focused on trying to hack into a game studio.  His late-night hacking sessions were typical and this one lasted all the way to when the sun started to come up the next day.</p>
+
+<p>DYLAN:	I noticed oh, itâs pretty early in the morning and thereâs police outside the house.  [MUSIC] I guess this panic set in.  I was like, shit.  There was at least a dozen armed police.  They were armed; they werenât just normal police officers so I knew shit, somethingâs up.</p>
+
+<p>JACK:	Itâs always so weird to me to hear that hackers get this huge army coming after them.</p>
+
+<p>DYLAN:	I think itâs still even to the day, youâre a hacker.  Obviously, youâre a very dangerous person.</p>
+
+<p>JACK:	The police have their weapons drawn and start approaching the house.</p>
+
+<p>DYLAN:	I realized this is game-over.  I powered off as many machines as I could, hid one of my laptops inside the roof cavity.  I was like oh fuck, oh fuck, oh fuck.  They initially knocked.  They were actually about to ram the door but one of my parents actually opened it, I believe, to which they quickly searched the entire house to make sure it was all clear.  They apprehended me.  Yeah, so then we ended up sitting down.  They wanted to â they told me basically what itâs for.  I went, okay.  I was very quiet to them.  I didnât really have anything to say.  I guess I was even more maybe arrogant, maybe you could say, towards them.</p>
+
+<p>It took them a good â Iâd say it was a good several hours they spent seizing everything.  Basically, it was any hardware at first, followed by any documentation.  They took school bags; they took whatever they could.  I actually purchased a few servers at auction which I didnât power these up yet, but when I actually got them, they had their hard drives but no RAM.  To this day I have no idea if they had anything on them.  All I know was they came from the Ministry of Defense.  It was the Department of Defenseâs [inaudible].  They had their asset stickers there.  It didnât look good.  The guy thatâs being done for X, Y, and Z to do with IT happens to have these military servers.</p>
+
+<p>JACK:	Dylan had three XBox dev kits, one retail XBox.  They took his Blackberry, two MacBooks, an iMac.</p>
+
+<p>DYLAN:	Yeah, then my actual PC itself.  Quite a lot was taken.  I think we estimated about probably $50,000, a hundred grand maybe worth of hardware.</p>
+
+<p>JACK:	You might be wondering how Dylan could afford all this stuff at seventeen.  I wondered this too, and Dylan didnât admit publically to me how he acquired the money.  My guess is that Dylan did things outside of hacking and got away from his computer from time to time and figured out a way to make money like other rebellious seventeen-year-olds would.  The police took Dylan down to the station to be processed.  They tried to get a recorded confession from him while he was there.</p>
+
+<p>DYLAN:	I believe they asked are you gonna talk?  I just didnât even look at them.  I didnât say anything, didnât look at them.</p>
+
+<p>JACK:	He didnât really cooperate that well with the police.</p>
+
+<p>DYLAN:	I think I was pissed off, actually.  I think I was more pissed off that I was caught.  As naÃ¯ve as it sounds, I think it was just we thought weâd get caught but then when we did get caught it was a bit of a surprise.  I donât think it was the sort of surprise that someone whoâs scared; it was sort of surprises well, finally.</p>
+
+<p>JACK:	He knew he went too far and this day was coming.  I think at this point he just wanted this whole thing to be over with.</p>
+
+<p>DYLAN:	Honestly, I think that was really where itâs at because we did so much that we just wanted it over.  There was no easy way out.  Everyone had that kind of attitude; how do we [00:45:00] make our exit âcause weâre too loud.  Everyone knows.  How do we exit?</p>
+
+<p>JACK:	The police arrested Dylan and would keep him there unless he paid his bail.</p>
+
+<p>DYLAN:	Yeah, so as soon as I was released on bail, on minor reconnaissance, basically, I actually went straight to the Apple store and tweeted from one of their Macs that I was arrested and raided.  You think youâd learn, right, after getting arrested.  No, it went from there.  It was like no, okay, Iâm just gonna basically tweet about it.  I was like hey, I got raided.</p>
+
+<p>JACK:	This arrest scared Dylan and he stopped hacking for a while after that.  He came home to absolutely no computers. The police even found the one hiding in his ceiling so he just spent some time thinking about this whole thing for a while.  [MUSIC] Meanwhile, back in Canada, Dave is still attending University of Toronto and still doing some hacking.  He had a Volkswagen Golf R at the time.  He loved that car.  He souped it up a lot, too.  It looked slick.  He wanted to buy a new bumper for it, make it look even cooler.  He found a place in the states who was willing to sell it to him but for some reason, they wouldnât ship to Canada.  Justin offered to have it shipped to his house.  Dave was paranoid about entering the US.</p>
+
+<p>He planned many trips there but cancelled them last minute.  But for some reason, he decided this time heâs going to go through with it.  David liked this plan; they would ship the bumper to Justinâs house and David would drive eight hours down to Delaware and pick up the bumper, grab a bite to eat with Justin, drive back.  Davidâs father was also in on the plan so they could take turns driving.  David and his father get the family car ready and off they go.  They head south from Toronto and go across the bridge into New York State.  They have to go through a border patrol checkpoint.  They stop the car at the checkpoint.  The guard there takes their driverâs license and looks at it.  They run it through the computer.  After a few minutes the guard comes back to the car and says whatâs Xenon?  Xenon was Davidâs hacker name.  This was his online name, his Twitter name, forum handles, and so much more was connected to this name.</p>
+
+<p>Davidâs heart sank.  The blood rushed out of his face.  He was puzzled that this checkpoint guard knew this.  He tried to explain to the guard that itâs nothing and he tried to play it cool.  But before he knew it, a few men in dark uniforms started approaching the car.  Davidâs dad said somethingâs wrong.  Step out of the vehicle, one agent shouted and David and his father were whisked into a detention room.  They told his father that his son was not coming back to Canada for a long time.  His father was sad and couldnât believe this, and put his head in his hands.  David tried to say itâs gonna be okay dad, but his father couldnât hear him.</p>
+
+<p>David was arrested by the US police and taken to jail.  David was taken into custody in a jail in Delaware and there he took a plea deal to help educate the companies he hacked to show them how he got in.  David was cooperative and helpful at explaining how these exploits were used.  Prosecutors were even a little impressed with how much knowledge he had as a young man to be able to do all this.  Meanwhile over in New Jersey, Sanad is just trying to live his life.</p>
+
+<p>SANAD:	It was the end of September and I get a phone call.  [MUSIC] It was some agent from Newark.  Heâs like hey, are you gonna be home tomorrow as October 1st?  I was like yeah, why?  Heâs like oh, weâre just gonna come bring back some of your stuff that we didnât need for the case and blah, blah, blah.  Iâm just like alright, well you guys are in Newark.  I could totally come pick it up.  Heâs like no, no, itâs no big deal.  Weâll come tomorrow and weâll drop it off.  Heâs like, thatâs our job.  Iâm like, okay.  8:30 in the morning, my doorâs getting banged on.  Theyâre like arrest warrant, arrest warrant.  They sent like, fifteen, twenty agents to come arrest me when I would have gladly went over there and they could have just arrested me, like, self-turned-in.  I donât know why they went through all that trouble.  It almost seems like they wanted to go out for the ride.  They lock me up that day.  They bring me to Delaware to arraign me.</p>
+
+<p>JACK:	Sanad absolutely hated being in jail and asked to be let out on bail.  Heâd rather be put on probation or anything.  He wanted to be out of there.  They told him if they let him out, heâd have to be under strict conditions.</p>
+
+<p>SANAD:	At the time I was like, I donât care what the conditions are.  Just get me out of here.</p>
+
+<p>JACK:	They agree and let him out on probation.</p>
+
+<p>SANAD:	I meet up with the probation officer in Delaware.  Heâs like, youâre gonna be on an ankle monitor, itâs gonna be GPS monitored.  Weâre not gonna do the phone line one âcause we want to know where you are at all times.  Thereâs no [00:50:00] computer access, no internet access, no internet capable devices, no video games, blah, blah, blah.  Heâs like, youâre gonna submit to drug tests and this, that, whatever.  Iâm like, okay.</p>
+
+<p>JACK:	Sanad was happy to be out of jail but quickly lost himself.</p>
+
+<p>SANAD:	[MUSIC] Little did I know how hard it would be to completely go from having internet in your life to not having it at all.</p>
+
+<p>JACK:	He wasnât even allowed to have cable TV since that could also be used for internet.  He got real bored, real quick.  Somehow during this time, he finally got a copy of the indictment that was against him.</p>
+
+<p>SANAD:	I get a copy of the indictment and I start reading about Person A from Wilmington, Delaware.  We all only knew one person from Wilmington, Delaware; Justin.</p>
+
+<p>JACK:	Sanad was pretty upset that Justin would do that but at the same time, he wasnât surprised since the whole incident at PAX, heâs always been very suspicious.  But this solved the mystery of when he was raided that so many chat logs were in his file.  But combine this with the boredom of his probation conditions, things werenât going well for Sanad.</p>
+
+<p>SANAD:	I was literally a prisoner in my home.  It was insane.  I started losing it a little bit.  I got to the point where I just didnât even want to charge the ankle monitor anymore, and I was just sick and tired of it.  I started losing it.  My friends were afraid to come see me.  I got so bored I couldnât live with myself anymore.  I was just like you know what?  Iâm just not gonna charge this bracelet anymore.  I stopped charging it.  The first time, I get a phone call at like 3:00 in the morning.  Itâs my pre-trial officer.  Sheâs like, you need to plug your bracelet in and charge it up right now.  Iâm like alright, whatever.  I charge it.</p>
+
+<p>A few days later I decide to stop charging it again.  Then April 1st of 2014, the phone starts ringing early in the morning.  Iâm like, who the hellâs calling at this time?  I go to the family room, I pick up the phone, and this one guyâs like yeah, weâre the US Marshalls in the New Jersey State Police.  We have an arrest warrant for Mr. Nesheiwat.  Iâm like, itâs April 1st; somebodyâs gotta be playing a trick on me.  I look out the window and there was a US Marshall standing right there.  I open the door, he just walks right in, and he pulls out the chains and everything.  Heâs like, youâre coming with us.</p>
+
+<p>JACK:	During Sanadâs probation, David was still in jail.  The police put David in the back of a van to drive him to court to talk to a judge, some pre-hearing thing.  But thereâs someone else in the back seat too, a twenty-year-old white guy; lanky, freckled, long hair.  David recognized him.  It was Nathan.  Nathan had been arrested too and now all three of them were in custody facing court appearances.  This was the first time David met Nathan in person and here they are in the back of a police van.  After Nathan was raided, he was done with hacking.  It freaked him out and now that he was arrested on the way to court, this freaked him out all over again.  He wasnât taking this well.  David told him that it was Dylan who took this all too far.  Dylanâs an asshole.  David even told Nathan you can rat on me or do whatever because you donât deserve this shit.  Letâs just do what we gotta do and get outta here.</p>
+
+<p>David felt bad for Nathan because of all the people in the group, Nathan was the least involved and had one of the best futures ahead of him.  The three of them would go in front of a judge many times, this time with just a set bail.  David opted out of getting out on bail but Nathan did want out.  The judge did grant him bail.  Nathan paid his bail and went to live with his parents in Maryland.  He had to wear an ankle monitor at all times and report his whereabouts frequently.  While living there, Nathan grew increasingly paranoid.  He was scared.  He didnât want to go to prison.  He thought he wasnât tough enough for it.  He thought he was going to get raped or murdered there.  It was just too much to bear the thought of it, so on June 16 he clipped off his ankle monitor and made a run for it.</p>
+
+<p>[MUSIC] He paid a friend to drive him four hundred miles north to the border of Canada.  There they would try to smuggle him into Canada somehow.  They drove seven hours to the border and they arrived at the checkpoint.  They tried to act as inconspicuous as possible; just gonna pass right on through.  But for some reason the car was stopped by the guards at the checkpoint.  Theyâre just a few hundred feet from the border.  Canada was so close.  Border guards werenât letting them in though, and started coming to the car.  Nathan panicked and got out of the car and started running for the border.  He was on the bridge and on the other side of the river was Canada.  If only he could get there, everything would be okay.  He ran as fast as he could, even [00:55:00] contemplating jumping off the bridge at one point, but the border guards caught up to him and surrounded him.</p>
+
+<p>To Nathan, jail was not an option at all.  In a moment of total fear and rage, he pulled out a knife out of his pocket and began stabbing himself all over, including the neck, until he collapsed.  Nathan woke up in an intensive care unit in Ontario, Canada.  He had wounds and bandages all over but he soon stabilized.  They took him back to the US and put him back in jail.  I can only imagine the deep depression that Nathan must have felt being there.  I mean, it seems like he would rather die than go to jail.  They took him to the very place he hated most of all.  If you had to pick between jail and death and you got both, how terrible would you feel?  Such a horror.  Now he has to stay in jail and wait for his court hearing.  [MUSIC] David, Sanad, and Nathan were all back in jail at this point, some of them returning for a second time.  They were all being held in the same jail but really werenât allowed to see each other.</p>
+
+<p>SANAD:	Nathan I met before Dave.  They brought him to put him into a suicide watch room which was on the unit I was in.  As soon as I saw him â he looked way different.  He had a scar on his neck close to his cheekbone, almost.  I guess he tried to cut his own throat.  His hair was very short.  Iâve never seen his hair short like that.  They had him on suicide watch.  They wouldnât let me talk to him.  A few days later they sent him to a different unit.  Then I met Dave when we went to go to our plea hearing.  When I walked on the elevator, the first thing he said to me was hey, Sonic.</p>
+
+<p>JACK:	Sonic is Sanadâs hacker name.  This was the first time the two of them met in real life.</p>
+
+<p>SANAD:	We both rode on the same van together, we sat in the same bullpen together.  I mean, I had nothing to say at first.  Then when we sat in the van and started talking, he was like you know Person A is Justin, right?  Iâm like yeah, I know.</p>
+
+<p>JACK:	They all waited in jail for about a year for their trial to begin.  The three of them come together for their trial; Sanad, Nathan, and David.</p>
+
+<p>SANAD:	We ended up pleading guilty to conspiracy and the two charges were unlawful access to a secure computer network and criminal copyright infringement.</p>
+
+<p>JACK:	Sanad was worried that heâd have to go to prison for five years but the judge told him he only had to serve eighteen months in prison.  The judge also told David that he had eighteen months in prison.  But the judge gave Nathan twenty-four months.  After Sanad and Nathan were sentenced, they were put in a holding cell together.  Sanadâs sentenced included time served and since he already was in jail for fifteen months, this meant he only had to do another three months before getting out.  That wasnât so bad.  Nathan wasnât taking this at all.</p>
+
+<p>SANAD:	It was pretty bad.  Nathan was crying, like a lot.  I actually felt really bad for him.  I tried to talk to him a little bit and he just really didnât want to hear it.  He was very distraught.</p>
+
+<p>JACK:	David, Sanad, and Nathan were all locked up in prison to serve out their time.  Back on the other side of the globe in Perth, Dylan was facing a world of legal battles.</p>
+
+<p>DYLAN:	I guess I pled not guilty to the sense that they tried to hit me with everything when it wasnât everything that I did.  At the start they put a lot of false charges on me.</p>
+
+<p>JACK:	They were saying he had child exploitation material on his computers and other things that he didnât actually have or do.  Waiting for his trial seemed to take forever.  He battled with courts for three years.</p>
+
+<p>DYLAN:	What was happening was I wanted a trial by jury and they didnât really like that, but that was my legal right so this hearing was for it go from the Childrenâs Court to move to the District Court.</p>
+
+<p>JACK:	This again delayed all kinds of stuff and caused more complications for the courts.</p>
+
+<p>DYLAN:	They basically said okay, so weâre gonna move it.  No one really objected it.  But weâre gonna take your passport.  [MUSIC] Before then, I was able to travel.  I was able to do whatever I wanted.  I was traveling, even.  I had no problem going abroad and back.  But all of a sudden, three years later, Iâm a flight risk?  It was an odd way to do it.  I guess what I didnât like was I was losing my freedom there.  Three years later, youâre already passed what you did as a kid.  Youâre not focused on that anymore.  Yeah, so they basically wanted to take my passport.  Within forty-eight hours I had to surrender it.  Within six hours I was on my way to Dubai.</p>
+
+<p>JACK:	Where were you trying to â what was your destination?</p>
+
+<p>DYLAN:	My destination was [01:00:00] one of three countries.  I ended up with the Czech Republic.</p>
+
+<p>JACK:	âCause thatâs where you have some roots, right?</p>
+
+<p>DYLAN:	Thatâs where I have citizenship, yeah.</p>
+
+<p>JACK:	Oh, okay.</p>
+
+<p>DYLAN:	As a citizen, there was â you canât really be extradited as a citizen.</p>
+
+<p>JACK:	Dylanâs mom was originally from the Czech Republic but moved to Perth.  In fact, Dylan was a Czech citizen so he felt safe to hide out there for a while.  At first it was fine, no police.  The Australian government didnât actually try to come after him.  Hm.  This might work.</p>
+
+<p>DYLAN:	Until they eventually actually charged my mother.  Because she was on my bail application, they charged her with perversion of justice.</p>
+
+<p>JACK:	His mom was being blamed for driving him to the airport and giving him money to leave.  Dylan says he used his own money and took a taxi to the airport, but he wasnât there to testify so the jury believed she was guilty.  They sent her to prison.</p>
+
+<p>DYLAN:	Eighteen months for perversion of justice for not even what was alleged, but just because the jury believed.</p>
+
+<p>JACK:	Dylanâs mom served a full eighteen months in prison and then was released.</p>
+
+<p>DYLAN:	She could have had a new trial but I guess itâs the sense of you just want it all done with.</p>
+
+<p>JACK:	Jeez.</p>
+
+<p>DYLAN:	Yeah, itâs kind of the harsh reality of everything.  Someoneâs gotta go down for something.</p>
+
+<p>JACK:	Your poor mom, though.</p>
+
+<p>DYLAN:	I know, I know.  For something that she didnât even do.</p>
+
+<p>JACK:	Sheâs gotta hate you at this point.  What is your relationship now?</p>
+
+<p>DYLAN:	Itâs great.  Itâs not bad.  I donât think anyone holds it against me.  I think everyone that sees it is that â these police misused their power.  They abused it a bit further than they should have, took it a bit too far, and thatâs just how it was.  If you ask them now, theyâre not actively pursuing me.  They donât care about me.  I sometimes put it as Iâm probably the most unwanted fugitive.</p>
+
+<p>JACK:	Since then Dylan has never been convicted, nor served any prison time for his hacking, nor has he ever returned to Australia, the place where he spent his entire life living.</p>
+
+<p>DYLAN:	I lost quite a lot in this.  Yeah, it hits a toll on you, always.</p>
+
+<p>JACK:	Now Dylan is living in the UK and isnât worried about all his past catching up to him.  He thinks that enough time has passed and if something was gonna happen, it would have happened by now.  He even gives talks openly at conferences and discusses what he did.  Itâs weird to me, I know, but perhaps you just canât catch everyone sometimes.  There were a lot of people in this hacking circle and half got away.  Dylan was one who got away, and now that the Statute of Limitations are up in the US, which is the only one who really wanted him, then it actually does seem over.  Currently, heâs working as a security researcher in the UK and he applies his knowledge to help find vulnerabilities in other companies.  But everything he does is now legal.</p>
+
+<p>DYLAN:	100% legal, 100% above board.  I keep very good records of conversations, very good records and logs of what we access, what we do.</p>
+
+<p>JACK:	Yeah, somehow, he has no fear at all about police coming after him anymore.</p>
+
+<p>DYLAN:	Look, Iâve worked with police.  Iâm active in the community.  I go to every single InfoSec convention, London XYZ, you know.  Iâm not hiding âcause Iâm not doing anything wrong.  I did something when I was a kid, when I was a teenager, an underage teenager.  It was wrong.  I learned from that.  I donât judge someone on their past.  I think judge someone on their present.  We all do stupid things in our past.  We canât change that but we can always make a better picture for ourselves.</p>
+
+<p>JACK:	[MUSIC] As Sanad sat in prison and looked over his court documents, something didnât add up.  Austin was added to his indictment as a co-conspirator.  Heâs the one who was doing a lot of hacking with them and then went off to make FIFA coins with Anthony.  Austin was listed as a co-conspirator in the indictment and was also facing charges.  Okay, this makes sense but somethingâs missing here; where was Austin?  He was actually in court, but very briefly, and wasnât arrested and didnât get sentenced even though it lists him as a co-conspirator.</p>
+
+<p>SANAD:	I kept wondering why Austin never got locked up.  His sentencing was supposed to be around the time I was supposed to be getting released.  He never had sentencing.  I never knew that he was bringing in those four other people on that case.</p>
+
+<p>JACK:	There was a separate case going on.  When Austin and Anthony were hacking the FIFA game to make [01:05:00] coins and sell them, they got some people pretty angry and the police went after Austin.  But Austin didnât serve time for that case, either.  Instead, Anthony and a few other guys were brought to court for that case.</p>
+
+<p>SANAD:	He gave up four people in exchange for his time.</p>
+
+<p>JACK:	Skitzo thinks that Austin may have bribed his way out of jail.  But for whatever reason, Austin was let go and Anthony was left high and dry, holding a mountain of legal problems.  The courts wanted to convict Anthony of one count of conspiracy to commit wire fraud.  Anthonyâs lawyers were hopeful that they could get the case thrown out because it clearly said in EAâs terms that FIFA coins had no monetary value.  Acquiring them and selling them should not have violated any laws.  But Anthony had sold a lot of coins, millions of dollars worth, along with a few other people who were involved.  Anthony was still a bit worried.  As his trial date got closer and after seeing David, Sanad, and Nathan end up in prison, he got more nervous about what would happen to him.  He had to wait for months for his court day to come.  The waiting was stressful and depressing for Anthony.  By this time, Sanad had been released from prison for a while.</p>
+
+<p>SANAD:	I was talking to another friend of mine and weâre just talking about everything.  Actually, I asked him; I said oh, howâs Anthony doing?  You still talk to him?  Heâs like, Anthonyâs dead.  Iâm like, what?  Heâs like yeah, he died.  Iâm like, get outta here.  You must be joking or something.  Then I started reading articles online and stuff and it was a reality.</p>
+
+<p>JACK:	Anthony died from a mix of alcohol and medication.  Those close to him say it was not suicide.</p>
+
+<p>SANAD:	I mean, honestly, it still has me kind of screwed up.</p>
+
+<p>JACK:	Anthony was twenty-seven years old when he died and was worth four million dollars, which Iâm pretty sure he got that by selling those FIFA coins.  It was that lucrative.  When the crew learned about Anthonyâs death and put the pieces together, they thought Austin probably turned him in.  This created a new sense of bitterness towards Austin.</p>
+
+<p>SANAD:	Austin, I never liked.  I talked to him one time.  He came into the picture way after me.  I never liked the kid.  It wasnât that I didnât trust him; I just didnât like him.</p>
+
+<p>JACK:	At this point all three of them, Sanad, David, and Nathan were all done with prison and they were out.  There was various levels of probation for all of them.  David went back to Canada and still wonders how all this got out of hand.  He just wanted to play around but things just went too far.  He went back to school and finished his degree, and he still owns that VW Golf R.  Heâs trying to build a career in security.  But Nathan didnât have such a good experience after prison.  In fact, the last few years were particularly rough on him.  Nathanâs incredibly smart.  Some in the circle even call him a genius.</p>
+
+<p>DYLAN:	I really saw Nathan as a very great person, very talented programmer, very kind, really.</p>
+
+<p>JACK:	His family wasnât able to fully pay for his schooling but during all that hacking, he was going to University of Maryland.  In fact, Nathan wasnât even hacking that much with the group.</p>
+
+<p>DYLAN:	Nathan didnât play a big role in it but Nathan was still part of the core group at the time.</p>
+
+<p>JACK:	He focused more on school even though he could barely afford it.  When they sold the Durango, Dylan gave him a cut of the sales.  While Dylan spent his money getting more computers, Nathan spent his share on something else.</p>
+
+<p>DYLAN:	He decided to stick his money into his college fees.</p>
+
+<p>JACK:	He was really just part of the family, and such a nice guy.  They felt bad that Nathan not only had to go through all this, but got even more of a sentence.  David even told them back in the van, you donât deserve this shit.  Rat on me or do whatever you have to.  While Nathan was out on bail living in Maryland with his family, he came out and told his family he was gay.  After professing his homosexuality, he lost some of the support he needed which is another reason he tried to run for the Canadian border.  When he got caught and was brought back to the place he hated more than anything in life, he actually came out as transgender and started identifying as a woman.  Nathan began calling herself Holly.  To spend two years in prison as a male identifying as a female has to be really, really rough.  Itâs like doing prison on hard mode.</p>
+
+<p>Without the support she needed from loved ones, it must have been horrible for Holly.  It makes sense why she had such a hard time after the sentencing.  When she got out of prison, Holly didnât see a positive future ahead for herself.  I donât know what the situation was, whether she had a bad probation officer or a bad home life situation, but [01:10:00] it got extremely depressing for her.  You can feel especially depressed if it feels like no one cares for you.  About a year after Holly was let out of prison, she ended up in Fresno, California.  From there, she met up with another woman and they decided to do something together.  They got some supplies and checked into a Motel 6.  Well, Iâll let the local Fresno news station, KSEE 24 explain the rest.</p>
+
+<p>REPORTER:	You can see it right behind me, this Motel 6 now surrounded by police, fire engines, and Chief Jerry Dyer just briefed us minutes ago.  He says that two motel workers were smelling toxic fumes coming from a motel room.  This call came in as a possible hazmat situation.  According to Chief Dyer, itâs some sort of sulfuric acid.</p>
+
+<p>CHIEF:	Also confirmed that thereâs two deceased females.  There is some type of a chemical-making process inside.  There appeared to be respirators on the two females.  Weâre not certain at this point whether or not this is a murder-suicide or maybe a double suicide or accidental death.</p>
+
+<p>JACK:	[MUSIC] While all these people were getting arrested and sent to prison, Justin, or MTW, or Person A continued to scam Cisco and Microsoft by requesting replacements for devices he didnât have.  He was pulling in tons of cash doing this, too, and somehow, he was doing this under the watchful eye of the feds.  But now that the feds caught everyone they were after, they didnât have a need for Justin anymore.  I think they revoked his free pass.  Justin got arrested and pled guilty to thirty-five counts of mail fraud and laundering.   The court documents showed that he issued hundreds and hundreds of returns, or RMAs, like Cisco 3850 switches and Microsoft Surfaces.</p>
+
+<p>The records indicate he made about $300,000 from these scams.  Justin is currently sitting in a jail waiting for his sentencing hearing.  He could be facing years in prison for all this scamming he did.  [MUSIC] When Sanad got out of prison, he had to go through probation.  He had to check with a probation officer and follow strict rules.  But he didnât get along with this probation officer at all.  After prison, Sanad got a full-time job and started going to school full-time.  But the probation officer kept pushing him.</p>
+
+<p>SANAD:	She had the nerve to tell me you could do more with yourself.  Like, I donât know how much more you want me to do.  Not many people will work full-time and go to school full-time as is.</p>
+
+<p>JACK:	One of the terms of his probation was that he would be allowed to use a computer if he went to school, but his probation officer refused to let him use one.</p>
+
+<p>SANAD:	You know how hard it is to go through college without a computer?</p>
+
+<p>JACK:	During this time, the probation officer visits Sanad at his home a bunch of times and checks on him, but he starts just hating how sheâs treating him.</p>
+
+<p>SANAD:	She kept pushing my buttons, pushing my buttons, pushing my buttons.  Everything that I would ever ask her would always be a no.  For example, I would want to go down and see my sister in Virginia or something, and itâs no.  She would come up with the craziest reasons to why she wouldnât let me do anything.  It was December of 2015, the whole thing in San Bernardino had happened.  I just started this job at a vaper shop, Iâm there for a few weeks, and these two guys come in.  As soon as I saw them, Iâm just like, these guys are federal agents.  We go to the back room in the shop and they sit across the table from me and Iâm sitting down.  They start asking me questions.  Theyâre like oh, can you tell us about your encrypted chatting and your chatting over XBox Live and PlayStation network, and all this stuff.</p>
+
+<p>Iâm like, thatâs all in my paperwork.  Theyâre like oh, this is completely different from the Baltimore investigation.  Iâm like, why do I feel like Iâm being interrogated?  Iâm not sure if itâs because the whole thing with Dylan leaking the information on the Special Agent and the judge.  They wouldnât show me their actual badges with the names on them.  They just showed me their little shields.  Then he was like, Iâm Agent So-and-so and this is Agent So-and-so.  Weâre from the JTTF and I had no clue what the hell the JTTF was.  Iâm like, whatâs the JTTF?  Heâs like, the Joint Terrorism Task Force.  He says this; my heart literally stopped for a couple seconds.  My mouth dropped.  I was in complete shock.  Why are these people here?  He starts talking about the San Bernardino thing and all this other stuff.  I stop him and Iâm like, honestly, Iâm like, I feel like you guys are just [01:15:00] here because Iâm Middle Eastern.</p>
+
+<p>JACK:	Suddenly Sanad feels like heâs being interrogated as a possible terrorist and it really bothers him.  Under the Patriot Act, suspected terrorists can be treated very differently than regular criminals, but Sanadâs boss stands up for him and she starts telling them hey, heâs already served his time.  Leave him alone.  So, they leave but Sanad finds out that the two agents first had a chat with the probation officer who told them to go visit him at work.  This really bothered Sanad so much more.</p>
+
+<p>SANAD:	Like, youâve been to my house so many times and you know Iâm not a violent person.  Why didnât you just tell them to come to my house and talk to me?  Why would you let them come to my job?  When I confront her about it and she saw how upset I was, she had the nerve to tell me well, you just need to move on from this.</p>
+
+<p>JACK:	The pressure from this probation officer was just growing more and more for Sanad.  It was just too much for him to handle at this point.  [MUSIC] Even though he was living at home and his dad was there for him, Sanad was in a dark place.  It was a really bad time, even worse than prison.</p>
+
+<p>SANAD:	I was depressed.  They put me through so much that I was just sick and tired of it.</p>
+
+<p>JACK:	The pressure was enormous.  The depression was unignorable.  Everyone has a breaking point and this was Sanadâs breaking point.  He couldnât deal with this anymore so he bought some heroin, too much for any one person to need.  One night when the depression got too bad and everything was just too much, he fixed up some needles.</p>
+
+<p>SANAD:	I tried to overdose on opiates, specifically heroin.</p>
+
+<p>JACK:	He loaded up the needle with what he knew was too much, then he shot up.  He closed his eyes.  Everything went dark.  He fell over onto the floor.  His dad was home at the time.</p>
+
+<p>SANAD:	Yeah, they heard a thump and then they went to my room.  They found me laying on the floor, unconscious.</p>
+
+<p>JACK:	His father called 911 and the paramedics arrived quickly and injected him with Narcan, a medication used to block the effects of opioids.  Within a few minutes, the Narcan kicked in and Sanad came back to.</p>
+
+<p>SANAD:	Oh God, it was the most painful feeling in my life.  I honestly felt like I got hit by a truck.  My whole body just felt so sore and achy.  It was an extremely horrible feeling.</p>
+
+<p>JACK:	They took him to the hospital for treatment and his probation officer visited him there.  Sanad asked if sheâs going to violate him for taking the drugs but she told him no, she wonât.  He takes it easy for a while to recover from this incident.</p>
+
+<p>SANAD:	There was a family wedding that my family wanted me to go with them to.  It was out of state.  It was in New York so I had to get permission.  So, I call her up to ask her for permission and thatâs when she was like, weâre not letting you go out of state.  Weâre violating you.  Mind you, where I was going was only an hour away from where I lived anyway.</p>
+
+<p>JACK:	The violation is bad on probation.  It means you might have to go back to prison or serve some jail time, or get more probation.  Whatever the violation was, Sanad was not seeing a bright future for himself.</p>
+
+<p>SANAD:	It got to the point where I was like well, theyâre violating me, I might as well just get as high as possible.  [MUSIC] Things started getting really out of hand.  I literally went into the court room beyond blitzed.  It just got really, really bad so they put me in Essex County for three weeks, and then they put me in a rehab program in Newark, New Jersey which honestly, that place was a complete joke.  It was literally a money mill.</p>
+
+<p>JACK:	Sanad spends four months in rehab then gets to come home.  But the rehab worked though; heâs feeling clean, heâs got no urges to take any drugs.  Heâs doing good.  But then he gets sick.</p>
+
+<p>SANAD:	I get yearly bronchitis so I coughed so hard one day that one of my ribs snapped.  It was the most painful feeling Iâve ever had in my life.  I canât even stress how painful it was.  I go to the hospital.  The orthopaedist puts me on Oxycodone and Iâm on it for quite some time.  Before Iâm supposed to get off, I tell the probation officer, Iâm like look, I need to go on something, [01:20:00] Suboxone or something to slowly come off this.  Iâm like, if you guys cut me off this, Iâm going to get sick.</p>
+
+<p>JACK:	People who are on opioids like Oxycodone for even just five days have a high percentage of becoming addicted to other opioids like heroin.  He asked his probation officer for help coming off of it so he doesnât relapse.</p>
+
+<p>SANAD:	Sheâs like no, youâre just trying to use it as a crutch, and thatâs all youâre trying to do.  Her boss is agreeing with her.  He straight up called me a frequent flier.  She gives me this hard time and basically, they kick me out.  Theyâre like no, weâre not doing it.  Of course, I get sick, and the only thing I knew that would take away that feeling was more opiates.  Oxycodoneâs not very easy to find on the street.  The only thing I knew what to get was heroin because thatâs the easiest thing to find in New Jersey.</p>
+
+<p>JACK:	Sanad begins doing heroin to get his fix but soon after that, the probation officer finds out heâs on it.  She shows no sympathy for him and brings him directly to court to see a judge.</p>
+
+<p>SANAD:	When I went to court, the judge was like, I understand you broke your rib and I know how painful that can be, but Iâm doing this to save your life.  Then she gave me nine months in federal prison and another year of probation.</p>
+
+<p>JACK:	Sanad serves his nine months in prison which he has many more stories about being in the SHU, and other issues that went on there.  When he gets out, he gets permission to move to West Virginia to live with his sister.  Perhaps a change of scenery will help him serve his probation better.</p>
+
+<p>SANAD:	Honestly, my probation officer down here is awesome.  She does not bother me.  Sheâs basically like, look, just pass your drug tests.  Donât catch any new charges, donât use any unauthorized computers, weâre good.</p>
+
+<p>JACK:	Yeah, so tell me about your computer usage today.  What are you allowed to use computer-wise?</p>
+
+<p>SANAD:	The smart phone that Iâm talking to you on, and it has monitoring software on it.</p>
+
+<p>JACK:	[MUSIC] In the last eight years, Sanad has not been able to use any technology other than this phone heâs allowed to use.  No video games at all.  No video games for eight years.  But in August of 2019, just last month, his probation was done.  He served all his time and now he can go and play video games if he wants.  He said that on midnight of that night he was gonna go play Halo.  In case youâre wondering how I made this episode, Sanadâs phone sucks and since thatâs all I could talk to him with, I found a person in West Virginia to help.  Her name is Diane.  She had a mic and was willing to record this interview for me.  I appreciate Dianeâs patience.</p>
+
+<p>SANAD:	Iâll let her know.  He said he really appreciates your patience.</p>
+
+<p>DYLAN:	Sure.</p>
+
+<p>JACK:	Oh, and Sanad has been sober for a year now and feeling much better about life.  All this brings us to today.  Wow, what a magical time to look back and see what the XBox had to go through to become what it is today.  The XBox hacker scene in the 2010âs was a special era to be part of.</p>
+
+<p>SKITZO:	I really donât think something like this will ever happen again, of how fucking wild and insane it was.  It was anarchy.</p>
+
+<p>JACK:	Why wouldnât it happen again?</p>
+
+<p>SKITZO:	On the console side shitâs locked down like a motherfucker now.</p>
+
+<p>JACK:	Thatâs âcause someone ruined it.</p>
+
+<p>SKITZO:	Yeah, we did.  Thanks, MTW.  No, but I mean, as I said, the overlap of groups and communities and stuff like that, the wild west that PartnerNet was.  Things now are on The Wild List and stuff like that.  Security is taken to a different level.  Based on the Microsoft side of things, thereâs no dev kits anymore.  Thereâs no specialty or proprietary-made units anymore.  Security is a huge, huge focus now and rightfully so.  Itâs been how many years since the XBox One has been released, and you donât really hear anything being done.  Not to say that there isnât work being done in the background, Iâm sure there is, but itâs not public.  You donât really hear much of anything public.  From what Iâve heard, itâs a very tight-knit group and even at that point itâs â not much is being done progress-wise that is worth this shit, letâs put it that way.  If Iâm wrong, so be it, but this is what has been conveyed to me.</p>
+
+<p>JACK (OUTRO):	[OUTRO MUSIC] Youâve been listening to Darknet Diaries.  Thank you so much to Sanad, Dylan, and Skitzo for sharing this amazing, incredible story with us.  You guys are unbelievable.  Oh, yeah, bunnie, thank you too.  [01:25:00] Think this story is too crazy to be true?  Well, this was actually the cover article for Wired Magazine back in the May 2018 issue which was written by Brendan Koerner, so thanks Brendan for all your work you did on that story, too.  But you can also go to darknetdiaries.com where you can see links to news articles, photos, indictments, and all kinds of court documents that I had to meticulously comb through to fact-check this story.  Amazingly enough, it all checks out.  Hey Dylan, I heard you got harassed by a vendor once and got kind of shoved and pushed around.  You want to tell us that story?</p>
+
+<p>DYLAN:	Okay, yeah.  Where do we begin?</p>
+
+<p>JACK:	Oh, actually, wait.  Letâs do this; thatâll be a bonus episode that will be available for Patreon users in a few weeks so if you want to hear that story, go to patreon.com/darknetdiaries and look for it in a couple weeks.  This episode was created by me, the best warthog driver you ever did see, yee-haw, Jack Rhysider.  Editing assistance is from my personal Cortana Damienne.  The theme music and other songs for this episode was created by Breakmaster Chief Cylinder.  [ANGRY ROBOT NOISES]</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

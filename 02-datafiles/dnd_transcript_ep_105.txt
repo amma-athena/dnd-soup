@@ -1,0 +1,610 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>Secret Cells â Darknet Diaries</title>
+	<meta name="description" content="Joseph Cox, Senior Staff Writer at Motherboard, joins us to talk about the world of encrypted phones.">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Secret Cells â Darknet Diaries">  
+	<meta name="twitter:description" content="Joseph Cox, Senior Staff Writer at Motherboard, joins us to talk about the world of encrypted phones.">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/snakecell.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/105/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Secret Cells â Darknet Diaries" />
+	<meta property="og:description"        content="Joseph Cox, Senior Staff Writer at Motherboard, joins us to talk about the world of encrypted phones." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/snakecell.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/105/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/snakecell.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/105/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="Secret Cells â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/snakecell.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 105: Secret Cells</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://www.podtrac.com/pts/redirect.mp3/traffic.megaphone.fm/ADV1226932290.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/105/",
+			   "title": "Ep 105: Secret Cells"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/105">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[START OF RECORDING]</p>
+
+<p>JACK:	Iâm mad.  Iâm honestly really upset about the current state of our mobile phone options.  I want privacy and security when it comes to my communication devices, and I often lie to myself and say thatâs the single most important feature of a phone.  I donât want anyone eavesdropping on what I do when Iâm on my phone, but the reality is, every single thing I do on my phone is being recorded and sent somewhere.</p>
+
+<!--more-->
+<p>[MUSIC] See, the two biggest smart phones out there are Googleâs Android and Appleâs iPhone.  Something like 95% of all phones out there are either Android or Apple phones, and Iâm telling you both are huge data collectors.  Googleâs privacy policy says it logs your phone numbers, calling party numbers, forwarding numbers, time and date of calls, duration of calls, SMS routing information, types of calls, and your IP address.</p>
+
+<p>Apple collects your account information, device information, contact details, browsing history, search history, and your location.  This is not privacy.  On top of that, there are so many apps and websites out there that are fiendishly trying to get all my data, and the phoneâs operating system could do quite a bit to stop my data from just leaking out, but they donât do enough.  Like, I canât stand using normal text messaging anymore or a standard browser on these phones, because neither are private.  But thatâs all fine and good.  Actually, I donât even care if Google and Apple does that.  But hereâs the part where Iâm mad; Iâm mad that thereâs no good options for privacy-focused phones out there.  You canât walk into any of the mobile phone stores and say hey, I want a phone that actually respects my privacy.</p>
+
+<p>None of the mobile phone stores carry privacy-focused phones.  We are currently facing [MUSIC] an all-out war, and weâre losing.  The war is all about our privacy.  Marketing companies want to get to know us intimately so they can run targeted ads just for you.  If you have a death in the family, the OfficeMax marketing team will take note, and if you get pregnant, Target will send you coupons for baby items.  But how does Target know that youâre pregnant?  Well, itâs because they saw you buying unscented soaps and lotions, and yeah, they have statisticians watching your buying habits, and some stores track your phoneâs Wi-Fi signals and watch where you stop and look at certain items or sections of the store.</p>
+
+<p>Yes, when your purchase things at stores, they will store all the items you buy and create a whole dossier on you and your buying habits and likes and wants and desires.  Thatâs just retail stores.  There are actual adversaries that we have that are all trying to find our private information, too.  Itâs an all-out war.  When a war like this is waged, the very last thing I want is for my own device thatâs in my pocket to be on the enemyâs side.  One of the first things you learn about when youâre getting into information security is the CIA triad, and this stands for confidentiality, integrity, and availability.  These are the three main pillars of security, and I believe that both Android and Apple violate our confidentiality the entire time the phone is on, and sometimes even when the phone is off.</p>
+
+<p>But I lie to myself when I say that privacy is the most important feature when it comes to buying a phone, because I always end up buying one of these phones that logs, collects, and sells my data instead of one thatâs actually private.  So, if Iâm being real, features and functionalities really are the most important aspect of buying a phone for me, even though Iâm so privacy-focused.  But Iâm still mad that thereâs a lack of options out there for an actual secure phone thatâs for me, one thatâs stable, updated, works good, and just has some basic features that respect my privacy.  There are some privacy-focused phones out there, but unfortunately these privacy-focused phones have some dark secrets.</p>
+
+<p>(INTRO):	[INTRO MUSIC] These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	Now, Iâm not the only one out there who wants a secure phone.  Thereâs quite a market for this type of thing, and because of that, there are companies that make private phones.  One of the first popular ones to show up on the scene was a phone called Phantom Secure.</p>
+
+<p>JOSEPH:	Yeah.  Phantom is certainly the first major one.  There were others potentially slightly earlier or at least around about the same time which were particularly popular in Europe.</p>
+
+<p>JACK:	Oh, and for this episode, I have the legendary Joseph Cox to give us a tour of the world of encrypted phones.</p>
+
+<p>JOSEPH:	Iâm Joseph Cox, Senior Staff Writer at Motherboard, which is the technology section of Vice.</p>
+
+<p>JACK:	Joseph has done amazing investigative journalism work in this area, getting deep into the world of encrypted phones.  Heâs spoken directly with insiders, users, heâs acquired these phones himself when he can, and heâs combed through so many court cases.  Heâs the perfect tour guide for this.  So, what is Phantom Secure?</p>
+
+<p>JOSEPH:	Phantom Secure was a so-called encrypted phone firm started in the mid-aughts.  All they would do, essentially, was take a BlackBerry, load it with sort of custom PGP-encrypted e-mail software, and then sell that to clients.  They also introduced a feature where you can remotely wipe what was stored on the phone.  Of course, we all know about Apple and iCloud, and apps like maybe the Find My phone feature or maybe wipe your phone remotely.  This was more, if it lands in the wrong hands, our company will take care of it for you.</p>
+
+<p>JACK:	Those were the only two features.  Let me say them again; a way to e-mail people securely using PGP and a way to remotely wipe the phone.  Thatâs it.  These phones couldnât even text someone or make a phone call.  In fact, Phantom Secure phones were physically modified so that wasnât even possible.</p>
+
+<p>JOSEPH:	Yes, they removed the microphone, the GPS, and the camera.  Thatâs what a lot of these companies do, and of course they vary case by case, but they do try to lock them down in some way, in both software and in hardware.</p>
+
+<p>JACK:	Actually, now that I think about it, I kinda like the idea of no microphone in my phone.  I donât like making phone calls, and it gives me the peace of mind that my mic canât spy on me.  Okay, but when you have a phone that has no mic or camera and the only thing you can do is e-mail someone, that should mean itâs really cheap, right?</p>
+
+<p>JOSEPH:	Exactly the opposite.  These phones could go for anywhere between $1,000 to $2,000 to $3,000 depending on the company, and thatâs for a yearly subscription to the service.  These people arenât just selling a piece of hardware or a phone; theyâre also selling basically your spot in the network.  If your colleagues, for lack of a better way of putting it, are using a Phantom Secure phone, well, you need to be on a Phantom Secure device as well, and you need to buy your way into that network.</p>
+
+<p>JACK:	Oh, yeah.  Explain that a little bit more.  So, could people without Phantom Secure phones communicate at all to people with Phantom Secure phones?</p>
+
+<p>JOSEPH:	So, originally, a lot of these companies did allow phones to communicate with each other, so maybe youâd have a Phantom device and you could communicate with â just hypothetically â another one from a company called Sky, letâs say.  Eventually though, some of these companies did decide to lock each other out.</p>
+
+<p>JACK:	[MUSIC] Okay, so this is worse than I thought.  You canât just e-mail whomever you like.  You can only e-mail other users of Phantom Secure.  I wouldnât even call this e-mail at this point; itâs just a device that has a secure way of messaging other people who have the same device.</p>
+
+<p>JOSEPH:	The person who created Phantom Secure was Vince Ramos.  He was a business man from Canada.  He worked for a phone company.  Family members I spoke to earlier said that he won employee of the month awards.  By all standards, he was just an upstanding guy trying to make a buck, basically.  But of course, he wanted to be something of an entrepreneur and he came up with this idea for Phantom Secure, making these secure devices themselves to then sell.  He starts doing this.  He sells them just by word-of-mouth, really, in the Canadian nightlife scene.  So, maybe VIPs would get them, some athletes, some rappers.</p>
+
+<p>Apparently, according to people who sold the phones at the time, thatâs what they told me.  It grew from that into a larger business.  So, it started as this word-of-mouth thing, but eventually it found a new market, specifically in Australia.  This is just where Phantom really took off.  It exploded across the country.  It got introduced to organized crime elements there and they just went crazy for it.  They were buying these phones, but of course, eventually Ramos realized that criminals were buying these devices, but he didnât do anything to stop it, and that may have been his failing decision.</p>
+
+<p>JACK:	If privacy was my top concern, I think I would consider a phone like this.  But itâs just lacking too many features for me.  But letâs be clear; thereâs nothing illegal about making or selling or owning a secure phone.  It doesnât even matter if criminals use it or not.  I mean, criminals use iPhones, right?  So, can you charge Apple with a crime?  Apple has to know that there must be many criminals using their phones, right?  So even if theyâre aware that criminals use their product, it still isnât illegal to sell it to them.  The same with Phantom Secure; even though they were selling these encrypted phones, no police or criminal investigation was taking place to find the owner, Vince Ramos, because everything was legal, until there was a crime committed where Phantom Secure hindered the investigation.</p>
+
+<p>JOSEPH:	[MUSIC] One of the earliest published cases of this actually happening was where a Phantom Secure device was implicated in the assassination of somebody in a biker gang there.  Law enforcement werenât able to get information because this sort of device had been used.  But as you say, selling a phone is not illegal.  Making a secure communications device is not illegal.  What happened though is that when investigators dug in, they found that at least some of the distributors knew that they were providing encrypted communication devices to criminal entities, individual criminals or larger organized crime groups.</p>
+
+<p>JACK:	So, the police discovered this Phantom Secure phone that was part of this assassination and started to investigate the company a little closer.  What are these phones?  Whoâs selling them?  Whoâs buying them?</p>
+
+<p>JOSEPH:	Yeah, itâs Australia and then also the Canadians started to notice they were bumping into the phones as well, presumably in the local crime market, obviously where Phantom Secure and Vince Ramos were from in the country.  They also encountered it, and then it seems the Americans started finding the phones themselves in their own investigations as well.</p>
+
+<p>JACK:	How were they encountering this?</p>
+
+<p>JOSEPH:	Itâs usually when they will bust somebody.  They will go and they will try to grab the phone.  They want to gather evidence and see who else theyâve been communicating with or of course, their own incriminating texts, perhaps.  They go to the phone and itâs already been wiped.  Somebody has wiped it.  In these cases, itâs going to have been Phantom Secure.  Someone has contacted the company saying hey, my phone has been seized by the feds.  Please, could you wipe it?  Phantom Secure, as part of their business, offers that.  At one point, the Royal Canadian Mounted Police actually went undercover and they pretended to be a drug trafficker whose phone had been seized.  They said very explicitly, hi, there are discussions of drug deals on my phone; please remove them, of course showing that Phantom Secure was willing to destroy evidence, essentially.</p>
+
+<p>JACK:	Ah, there it is; the Canadian authorities posed as criminals, telling Phantom Secure hey look, Iâve got some criminal activity on my phone and I need you to wipe it.  Can you do it?  Phantom Secure was happy to do it.  That means Phantom Secure knew they were destroying criminal evidence.  Thatâs a sticky situation for them to be in.  I mean, imagine youâre working at a grocery store and someone wants to buy a lighter, and they specifically tell you as youâre ringing them up that theyâre gonna use this lighter to go burn the building down across the street.</p>
+
+<p>Do you sell them the lighter?  Because thatâs what a store does; they sell lighters.  Or do you refuse because they said theyâre going to commit a crime with it.  Perhaps a grocery store is protected in this way, but what if someone you know asks to borrow a lighter from you to burn a building down?  You could be in trouble for giving them a lighter if you knew thatâs what they were going to do with it.  In this case, where the Canadian authorities asked Phantom Secure to delete criminalsâ evidence, itâs hard to know if this was enough to prove that Phantom Secure knowingly was helping criminals.</p>
+
+<p>It wasnât enough for the Royal Canadian Mounted Police to arrest him, because years and years go by, and the company continued to operate and grow without a problem.  The team was growing, too; as the phones were entering more countries, they needed more distributors to pass the phones out in those areas.  Over time, more criminals were being arrested in Canada with Phantom Secure phones on them.  But hereâs the thing; in Canada, even if youâre selling phones to criminals and marketing it to them and you know theyâre committing crimes with your devices, there isnât a law in Canada which they would be violating.</p>
+
+<p>JOSEPH:	No, as far as I know, and I donât think he was really breaking a law in Australia, either.  Iâve spoken to Australian lawyers and Australian lawyers who defend people involved in the encrypted phone industry in that country, and theyâve told me this business is legal.  Same in Canada.  As weâve said, the Canadians didnât just arrest Vince Ramos there and then.</p>
+
+<p>JACK:	But itâs not legal to knowingly aid and help criminals in the USA.  Once some phones started showing up in crime scenes in California and the US authorities started investigating the company, thatâs when things started to unravel for Phantom Secure.</p>
+
+<p>JOSEPH:	When they saw the phones, my understanding is that one of the people implicated told them hey look, this is how we get the phones.  This is how the business operates.  That triggered something of a light bulb in the San Diego FBI, and then thatâs when they started much more earnestly looking into Phantom Secure and in their eyes, realizing it was an actual criminal organization that they should target in and of itself.</p>
+
+<p>JACK:	[MUSIC] The FBI was not happy about these encrypted devices and wanted to learn more.  Thatâs when they started investigating this company and found heaps of evidence suggesting that Vince Ramos and Phantom Secure knowingly met with buyers who would say theyâre going to use the phones to commit crimes.</p>
+
+<p>JOSEPH:	Particularly, Phantom was not vetting its distributors or its resellers enough.  So, it would give these people power to sell the phones to whoever they want, and then it would turn out there would be criminal elements buying them, right?  Then when this is brought to Vince Ramosâ attention, he kind of â either he doesnât do anything with it or unfortunately puts his fingers in his ears and sorts of â sort of turns a blind eye to the issue as well.</p>
+
+<p>JACK:	As more crimes were committed by people using Phantom Secure, it frustrated the authorities even more.</p>
+
+<p>JOSEPH:	Australia and Canada, they basically set up a plan which is that well, itâs all well and good if people say that criminals are using these phones, but we need to show that the CEO, Vince Ramos, also knows that and potentially will lean into that market as well.  So, a confidential human source, a CHS, in the FBI and the DOJâs turn of phrase, someone close to Ramos who was a distributor, convinces the CEO to come to Las Vegas for a meeting, saying I have these guys who are really, really big.  They want to buy a large order of phones.  So, they set up a meeting in a Las Vegas hotel suite.  Vince Ramos goes in, and these drug traffickers are sat there and theyâre saying, we know you removed the GPS functionality from the phone, but we have a problem with snitches, basically, right?</p>
+
+<p>What if, they hypothesized, could you maybe also turn the phone into a tracking device if we needed to kill one of our snitches?  They didnât say it exactly like that; Iâm paraphrasing, but when you read the transcript, thatâs the quite clear context of whatâs going on.  Ramos doesnât seem to really push against that idea.  But the key thing that really seals Vince Ramosâ fate is when the drug traffickers say we donât know you.  We donât know if we can trust you.  Why should we trust you?  In so few words.  Vince Ramos says well, look, look; I know you donât know me, but this is what I made it for.  I made it exactly for this, apparently meaning drug trafficking, is how the FBI said.  That was it, basically.  After that quote, prosecutors and the FBI would be able to say look, he has no problem selling to drug traffickers deliberately and knowingly.  They had what they needed, basically, on tape.</p>
+
+<p>JACK:	Around this time, it appears that Vince Ramos met with members of the Sinaloa Cartel, which is a major drug trafficking cartel in Mexico.</p>
+
+<p>JOSEPH:	On February 8th, 2018, it appears that Vince Ramos is just traveling for business and heâs just had a meeting.  Heâs sending a text message to one of his associates and he says, we are fucking rich, man.  I swear, you better go fucking appreciate it.  Get the fucking Range Rover, brand-new, âcause I just closed a lot of business.  This week, man, Sinaloa Cartel; thatâs what up, and my boy is Punjabi cartel.  Lol.  So, this text message does seemingly suggest that he met with people from the Sinaloa Cartel and either offered them phones or did sell them phones or something like that, but this is one of the key pieces of evidence that later appears in the criminal complaint against him, a screenshot of the text message.</p>
+
+<p>JACK:	So, by this time, the FBI has enough information to arrest Ramos.  But they sort of wait a year before they do anything, perhaps to collect even more information.  My theory is that the FBI wanted time to think about what to do with these encrypted phones.  One option is to try to arrest Vince and take down the whole company.  Another option though might be to try to find a way to infiltrate the network so they can read the messages and have a jump on criminals using it.  These phones were sort of a watering hole for criminals and would be a major source of information if they could somehow get access to the messages or customer data.  But eventually one of the FBI agents posed as a drug trafficker and invited Vince Ramos out to Las Vegas, Nevada to discuss business.</p>
+
+<p>JOSEPH:	But this time, when Ramos walked into a hotel suite, itâs â there arenât drug traffickers waiting for him; itâs the FBI and the attorneyâs office.  They tell him whatâs happening, obviously.  We have charges ready for you, but we want to make you an offer.  We want you to put a backdoor into Phantom Secure.  We want to see who the customers are and what theyâre saying.  That is the ultimate goal here, right?  They could try and take down the company, but law enforcement really wants to see whatâs actually going on there so they can prosecute the end users.  Vince Ramos declines.  Some people I spoke to said itâs because he puts the privacy of his clients first.  Others said that well, actually, he didnât have the technical know-how to do that because thatâs the CTOâs job.  [MUSIC] He is more the business guy.  Regardless, he refuses and doesnât put the backdoor in.</p>
+
+<p>JACK:	Now, this is a part of the story which gets weird for me.  Vince actually traveled to Vegas with his wife and child who were staying in another room in the same hotel.  This meeting with Vince went on for a long time.  They didnât quite arrest him, and he was cooperating with them by talking openly about Phantom Secure and how the company operated.  But there was something the FBI wanted and didnât want to let him go until they got it.  There were four or five agents there.  Some were FBI, some were international agents.  They ordered food to the room and he could use the toilet there.  Vince and the FBI agents spent the entire day together, all in this hotel room.</p>
+
+<p>At night, they even let him go see his wife and child and say goodnight, and then bringing him back to the room for more questioning.  Eventually, Vince and a few agents fell asleep while one or two agents stood guard all night, making sure Vince didnât leave.  Then the next day, after breakfast was brought to the room, Vince was questioned more by the FBI agents.  This is just so weird for me, for the FBI to question someone for days in a hotel room.  Like, why not take him down to the police station and question him there?  Why keep him trapped in this room without officially arresting him?</p>
+
+<p>JOSEPH:	I think it was because they really wanted or were hoping that this would be a more live operation.  This wasnât the end of it.  This wasnât letâs arrest him, letâs get a confession or whatever we can and letâs prosecute the guy.  They were hoping, it seems, that this could live on for a little bit longer, and they needed him out.  They say they did eventually get a backdoor into Phantom Secure.  They needed to not raise suspicion.  He needed to be out.  He needed to be free to talk to people, eventually, if they did get a backdoor in.</p>
+
+<p>JACK:	So, the FBI continued to pressure him to give them a backdoor into Phantom Secure.  I presume that they showed him the evidence that they had on him and gave him hardball-type options of like hey, look; youâre either gonna go to prison or youâre gonna let us in.  Even though he wasnât letting them in, it seemed like the FBI really wanted to get in.  So, instead of arresting him and taking him to the police station, they just kept interrogating him all the way through the night into Day 3.  They gave him more breaks to see his family down the hall sometimes.  His wife said he looked like a ghost, and maybe this is why he was talkative and cooperative, because his wife and kids were just down the hall and he didnât want to lose them.</p>
+
+<p>The FBI continued to try to persuade him to give them some kind of access to the network.  They wanted to see who the users were and any data Phantom Secure had on them, because this phone did have the remote-wipe capability, so it was able to interact with the customersâ devices in some ways.  But Ramos still didnât give them access.  [MUSIC] Eventually, the interrogation went into the third night and into the fourth day.  Vince fell asleep in the suite and the agents were so tired at this point, they all fell asleep at the same time, too.  But Vince woke up during the night, and he got up and looked around the room, and saw everyone was asleep.</p>
+
+<p>JOSEPH:	When all of the agents were asleep, Ramos, he sees a moment to escape and in a seemingly quick change of heart, he flees the hotel.  Embarrassingly for these agents who have been guarding and talking to this guy for days now, the guy theyâve been hunting for years has left.  Heâs out the door.</p>
+
+<p>JACK:	He stopped in one last time to say goodbye to his wife and contacted an associate who picked him up by car, and the two of them were gone.  Vince immediately tried to get to Canada, and he thought he wouldnât be able to get through airport security, so they decided to drive from Nevada all the way across the country to Washington state.  When they got to Bellingham, Washington, about twenty miles from the border of Canada, Vince parted ways with his driver and was preparing his last leg to get across the Canadian border.</p>
+
+<p>JOSEPH:	He was on the run.  He was trying to evade law enforcement for some time until eventually they caught up with him in a cafe.  Apparently it was a very unceremonious scene.  They spoke to the cafe owner who said that several serious men â serious-looking men came into the cafe, they seemingly saw Vince Ramos sat in the corner, they went outside, made a phone call, and then a large group of men arrived, go up to Vince, and he doesnât fight.  He just stands up, puts his hands behind his back, and heâs led into the police car.  That is finally the end for him, at least.</p>
+
+<p>JACK:	Vince was arrested and brought to court in the US under RICO charges.  RICO stands for Racketeer Influenced and Corrupt Organizations.  The case hinged on whether they could prove that Phantom Secure was knowingly helping criminals.  But the prosecutors had ample evidence showing that Vince knowingly sold phones to criminals and was helping support them.  Vince told the judge, quote, âI would be lying if I said I wasnât aware of whatâs going on.  The reality was that I turned a blind eye and didnât want to face reality.  I was making money and providing for my wife and children.â  End quote.</p>
+
+<p>JOSEPH:	At least according to one estimate from the Royal Canadian Mounted Police in 2016, they believe that Phantom was making something like $32 million from the sale of these phones.  Then eventually, I believe another estimate from the FBI was closer to $80 million in selling these devices.  Vince Ramos, they bought apartments, cars, cryptocurrency as well.  So, they were making a lot of money from this operation.</p>
+
+<p>JACK:	The courts found Vince guilty and sentenced him to nine years in prison.  Not for making secure phones, but for helping criminals commit crimes with them.</p>
+
+<p>JOSEPH:	[MUSIC] I think he could have gotten more than that, but he did cooperate somewhat and this was his first offense.  The judge even said that he appears to be a very upstanding person, a successful businessman, but he applied it to the wrong industry, ultimately.</p>
+
+<p>JACK:	Weâre gonna take a quick break here, but stay with us because thereâs more to these encrypted phones that I think youâd be interested in hearing about.  So, Phantom Secure started somewhere around 2006, and the feds took it down in 2018, but Phantom Secure phones did little in the way of innovation in those twelve years, sticking mainly with secure e-mail as their main feature.  As technology was exploding, people wanted secure phones that did more than just e-mail.  So, in 2016, a new encrypted phone company sprung up.  This one was called Encrochat.</p>
+
+<p>JOSEPH:	Encrochat was another encrypted phone company, but it was more clearly based on Android, and it had some of the more bells and whistles and features that Phantom was lagging behind on, so it was much more of a instant messaging platform when you used these devices.  It also had a wipe functionality.</p>
+
+<p>JACK:	Okay, this one might be more my style.  I like the idea that you can do more things with it.  But now, my problem is Iâve never heard of this company.  Their phones arenât in my local mobile phone shops, and there arenât many trustworthy reviews of the phone online.  Thatâs because Encrochat seemed to want to get these into the hands of criminals, and they werenât meant for widespread adoption.  Encrochat phones were getting distributed in Europe and in the UK, and authorities were starting to see these phones turn up in investigations, so much that the UK police were coming up with procedures when arresting people who had Encrochat phones on them.</p>
+
+<p>JOSEPH:	Theyâve encountered these devices and theyâve got smart to the fact that they need to deal with them very, very quickly.  So, theyâll grab the Encrochat device.  If itâs open, they will immediately start taking photos of the text messages, the images on there, almost manually archiving the material before it gets wiped, and then they will also put it in some sort of Faraday bag âcause theyâre basically against the clock when it comes to, well, we donât know if somebody has reported this phone to Encrochat â is in the hands of law enforcement and a wipe command could be coming at any time.  The cops really have to act super quickly to try to grab evidence before it disappears entirely.</p>
+
+<p>JACK:	Criminals were using Encrochat more and more in Europe to communicate between other criminals to facilitate drug trafficking and assassination plots.</p>
+
+<p>JOSEPH:	The UK police, the National Crime Agency, they had been investigating Encrochat âcause they keep coming across these devices in their own investigations.  The French police are then looking into the company as well because it turns out at least one of the servers of Encrochat is actually located in France on a â in an OVH data center.  The French come up with what I think is a highly-controversial plan.  [MUSIC] They decide to â rather than just try to identify the owners and shut down the company, they want to push malware to the end points, to the actual Encrochat devices themselves.</p>
+
+<p>JACK:	So, these Encrochat phones did receive updates to patch security issues and introduce new features, and one of the servers used to update the phones was located in France.  So, the French police got a warrant to access the data center and Encrochatâs server.  They got into it and made an exact copy of it, and they left the server running untouched.  This was the secret mission that they didnât want Encrochat knowing about.  They took their cloned copy back to the lab to study it.</p>
+
+<p>They learned how this server sends updates to Encrochat phones, and this gave them an idea.  What if they could put their own update on the server that all phones would download?  This could result in the French police having hooks in Encrochat phones.  So, that was the plan that the French police went with.  They studied this clone and figured out how the updates worked, and wrote some malware and even tested this with their clone to make sure that the phone got the updates and sent the data to the police.</p>
+
+<p>JOSEPH:	They figured that out, they then went back to the server, I believe, and then pushed this malicious update to the Encrochat devices.</p>
+
+<p>JACK:	French police were successfully able to plant malware on thousands of Encrochat usersâ phones.</p>
+
+<p>JOSEPH:	Now, this piece of malware, it would silently send copies of the messages sent and received.  It would potentially grab GPS locations, but it sort of depends on well, did this device actually have GPS?  Did this one not?  That sort of thing.  But the main thing, of course, is that it captured message content, and that would include the username of the person who sent this message, and of course, all of the discussions about drugs and money laundering and assassinations and Bitcoin laundering as well.</p>
+
+<p>JACK:	What the French authorities did here is astonishing.  They hacked into the servers of this company to spy on its users.  [MUSIC] Well, yes, you can point out that most of the users were criminals.  I still think this is controversial.  Just because a company makes a privacy-focused secure phone doesnât mean itâs just for criminals.  Like I keep saying, I want a phone like this because I find the current eavesdropping done on my phone today to be disgusting.  I want peace of mind knowing that my messages are not being snooped on and they are only going to who I want them to go to.  Thereâs nothing illegal about having privacy.  Yet, the French police have violated the privacy of Encrochatâs users because they thought this would give them an advantage while stopping crime.</p>
+
+<p>JOSEPH:	It was probably the first time that law enforcement had really infiltrated one of these companies into the content of the actual communications on a really global scale.  I mean, the French, they hacked into phones everywhere, and obviously they didnât just limit the malware distribution to inside France.  They did it to all Encrochat devices around the world.</p>
+
+<p>JACK:	In case you were wondering how the police were able to see these secure messages, well, they had their malware on the phone itself, so when the phones send and receive messages, it has to be unencrypted so the person can read them.  Thatâs when these messages were copied and sent to the French police.  But Iâve really gotta hand it to the French police, here.  This is some impressive high-tech police work; to be able to reverse-engineer how a server sends updates to phones and then create the update for it and push it out, and not just any update but a full, stealthy spyware toolkit, and then create a collection server to receive all this data captured from the phones, then to put this malware back onto the server and push it to users?  This is amazing work that they did.</p>
+
+<p>JOSEPH:	Yeah.  Exactly, pushing a malicious update, it brings up all of these arguments of well, maybe we canât trust updates, which of course we need to do to remain secure, and of course Encrochat is an unusual case.  This is not a mainstream popular consumer device, but it does still show the lengths to which law enforcement will go.  I mean, here, yes, it was French law enforcement, but it appears that the law used, at least in some capacity, was a national security law and it was the military â sort of the police arm of the French military that was involved as well.  So, as court cases have come out and obviously defendants have tried to get information, the French basically arenât talking because they use the national security exemption to not release any information about the malware.</p>
+
+<p>JACK:	Right, yes.  To this day, the French havenât disclosed any details about how they did this, and have kept it quiet.  But thatâs kinda getting ahead of ourselves.  When they were doing this, they had to be extremely stealthy and secretive to not tip their hands that they were in these phones, snooping on people, and it worked.  [MUSIC] As soon as they pushed the malware to the phones, they immediately started seeing chat messages coming into their servers.  Eventually, they would collect millions of chat messages this way.  Not all of their users were French citizens.</p>
+
+<p>These were chat messages from people all over the world.  I think itâs pretty crazy that the French police were planting spyware on phones all over the world and collecting private messages from users who werenât even in France.  Well, the internet doesnât have physical borders, so I can see why this is a difficult problem to solve.  But reports show that the French police infected 50% of all Encrochat users worldwide, which is still thousands of users.</p>
+
+<p>JOSEPH:	So, the French figure out how to distribute all of these messages theyâve been getting, and without getting too technical, they have to navigate a load of European laws.  We give it to the Dutch and then we give it to the British and they basically join some sort of task force or group so we can share the data.  But the long and short of it is that they give the content of these messages to various law enforcement agencies around the world, and they start digging through them.  The things that are immediately flagged are threats to life.  If any sort of system that the cops are using detects this person may be threatened soon or may even be potentially assassinated soon, hereâs information we can act on immediately, whereas the rest is more used to build up cases.  Iâve seen some of these documents from Encrochat cases.</p>
+
+<p>Theyâre not really court documents available in the public docket; theyâre more available to the prosecution and the defense.  But itâs extraordinary how detailed they are.  There is, this person spoke to this person about this shipment of cocaine.  Hereâs a whole paragraph of them discussing well, we need to get our Bitcoin guy involved to launder the proceeds.  Hereâs another paragraph about where weâre storing the cocaine.  Itâs just, they were essentially looking over the shoulder of organized crime in their real time.  This would be fascinating to see even if it was just a ordinary phone tap, as it used to be, but here itâs the proceeds from malware.  Clearly, these people, these alleged organized criminals, thought they could speak with such impunity that they â some of them barely even used code words.  Itâs like, hereâs the coke.  Hereâs all the drugs.  Here is where weâre hiding it.  Itâs just extraordinary how blatant it is.</p>
+
+<p>JACK:	Still, Encrochat was unaware that their phones were infiltrated.  Business and crime went on like normal, which is just what the French police wanted.  But when some of the more serious crimes were being planned through these chat messages, the police in the UK started arresting some users.</p>
+
+<p>JOSEPH:	Operation Venetic, I think, is â they â the NCA was already doing sort of organized crime busts under that name, and then when the Encrochat data came in, I believe they put it under that umbrella as well, but hundreds of people arrested.  That really follows the whole gambit of criminal hierarchy; youâll have individual dealers and sort of mid-tier up to allegedly the higher levels as well.  Itâs a big thing in the UK for their gangsters to leave the country, and of course, a lot of them go to Spain which is very popular, or increasingly Dubai as well.  Of course, those phones were potentially compromised as well.  So, you donât just have people on the ground in the UK being investigated by the UK police, but potentially some of the higher-tier people overseas as well.</p>
+
+<p>JACK:	After some arrests started happening, Encrochat suspected something was wrong and began looking at their infrastructure for clues.</p>
+
+<p>JOSEPH:	So, Encrochat, or the owners of Encrochat, actually discover that something odd is going on on their network.  [MUSIC] They do seem to discover some sort of malicious activity, so they push out a message to their user base saying thereâs been an unauthorized takeover of our domain, probably by law enforcement.  We recommend that you essentially destroy your device and were exploring what to do next.  I saw that message pop up on some crime blogs at the time, and then somebody else sent me the same message, and that helped verify it.</p>
+
+<p>Thatâs when I got into the story, and I thought Iâd reach out to somebody I know connected to Encrochat, and they sent a very lengthy statement.  I think it was one whole page saying that weâre a legitimate company, weâre been unfairly targeted, and weâre going to see what we can do about this.  We didnât hear back from them after that.  We donât know exactly what the owners are doing now, and the French police actually said weâve been unable to identify the owners of Encrochat.  If you are that owner, please come forward.  I donât know if that person has come forward.</p>
+
+<p>JACK:	It just seems kind of surprising that they canât figure out who makes these phones, because you just find well, where do I buy them?  Okay, thereâs this dealer.  Where are you getting them from?  Oh, I canât say, orâ¦?  No, here I get it from this guy here.  Then you go to that guy and say okay, whoâs giving you the phones, right?  You just go â you just follow the phones.</p>
+
+<p>JOSEPH:	Yeah.  We published a piece after the shutdown with some leaked e-mails I got which do name several people involved with Encrochat.  I think it names the various companies involved in the corporate structure.  We didnât name the person who is mentioned in the e-mails because of course, they could potentially face threats or harm because if they were heavily involved with Encrochat and all these people have been arrested, we donât want to contribute or amplify that name in case of harm.  But yes, I find it unlikely or doubtful that the police donât have any sort of leads on the owners of Encrochat.  I mean, if we can get e-mails about it, imagine what law enforcement can do.</p>
+
+<p>JACK:	So, once Encrochat discovered someone was in their network and phones, they shut the whole thing down.  A few days after it was shut down, in the summer of 2020, thatâs when the French police announced themselves that theyâre the ones who infiltrated Encrochat.  But still today, we donât know what happened to the owners of Encrochat.  But if they are arrested, it will be interesting to watch what happens, because once again, making an encrypted phone is legal.  It all comes down to whether or not they knowingly were selling to criminals.</p>
+
+<p>JOSEPH:	I still think itâs controversial for law enforcement to deploy malware en masse, you know, and beyond their own borders.  There were just so many factors at play, which is that [MUSIC] we donât know necessarily where all of these devices are located.  Maybe in this case they did, but generally speaking, you may not always know that, especially because itâs all hidden.  You donât necessarily know if all of the users of these devices are criminal in nature, and the French prosecutors admitted that later when they said that only 90% were believed to be criminal.  What happened to the other 10% of people who were hacked, you know?</p>
+
+<p>JACK:	Oh yes, very interesting.  I bet there were many legal disputes about whether this kind of data-collection was legal.  Criminal cases in the US can be thrown out if the police illegally obtain evidence.  So yeah, what about the people who werenât criminals that got wrapped up in this and spied on?  Do they have a case on their hands that they could claim that their privacy was violated by the police?  Maybe, but citizens going up against governments like this rarely ends in favor of the citizen, and it definitely isnât going anywhere when the person who got spied on isnât even from France.  There are more encrypted phone companies out there.  Another one I find fascinating is called Sky ECC.</p>
+
+<p>JOSEPH:	Sky is one of these encrypted phone companies, again, which kind of tries to position itself more as a platform.  Theyâll have messaging and potentially other chat functions as well; your e-mail.  They were particularly popular all over, really.  Whenever youâre looking into these encrypted phone firms, Sky often comes up among criminal elements.</p>
+
+<p>JACK:	Skyâs website doesnât look like itâs marketing to criminals.  Like, it doesnât even use a dark theme on it.  Itâs got a nice blue and white look, and it just feels friendly and modern.  The website lists the features of the phone, saying itâs got a self-destruct messaging capability, group chat, and can even do audio messages.  Thereâs even testimonials from customers.  In no way when I look at this website do I think itâs marketed towards criminals.</p>
+
+<p>JOSEPH:	Yeah, a guy called Jean-Francois ran Sky.  Some people call it Sky Secure, some people call it Sky Global.  It sort of depends where in the world youâre buying it with all these distant distributors and agents.  But the San Diego FBI, after Phantom, they start looking at Sky as well.  Theyâre clearly highly motivated to investigate these sort of companies.</p>
+
+<p>JACK:	Not only was the San Diego police investigating Sky, but other European police agencies were too, because once again, these encrypted phones were showing up at crime scenes over and over.  So, the police started tugging at the threads to see where these phones lead.</p>
+
+<p>JOSEPH:	[MUSIC] Then we start seeing some very strange stuff coming out of Europe and Belgium, more specifically, that authorities there are claiming that theyâve managed to decrypt or crack â it really depends on which translation you read, but theyâve managed to get the content of messages from Sky phones.</p>
+
+<p>JACK:	Whoa, the Belgian police were somehow able to see the contents of these secure messages that the Sky phone users were sending?  Thatâs huge.  How could they â how did they manage to do that?  It wasnât clear.  We didnât know.  But the Belgian police were starting to make arrests of people based on messages they were seeing on the phones.  In fact, the Belgian police said they intercepted 500 million messages from Sky users, and arrested forty-eight people.  So, Sky began investigating to try to figure out what happened.  They did not see any signs of infiltration, so they issued a statement saying itâs not possible that the police did this, and thereâs no evidence of infiltration.  They told their customers that theyâre not working with the police in any way.</p>
+
+<p>JOSEPH:	But then the reporting comes out and I speak to Sky itself, actually, [MUSIC] and what they say is that somebody introduced fake Sky devices to the markets in Europe.  So, these werenât actually the quote, unquote, ârealâ Sky devices.  They were ones that had some sort of fake or malicious app that then gathered the text messages and provided them to authorities.</p>
+
+<p>JACK:	The details are scarce on this, but if I were to connect the dots, I would guess that the authorities got ahold of some brand-new phones, then installed their own versions of the secure chat apps that would collect chat logs and send that to the police.  These werenât the official Sky chat apps that were supposed to be secure.  Instead, it was the policeâs version they made and just disguised it to look like the Sky chat apps.  Then they somehow gave these phones to Sky distributors to sell to their customers.  I would call this a supply chain attack.</p>
+
+<p>Phones were somehow intercepted between where they were made and the customers who were buying them, which is a wild and scary attack; to think that the person youâre buying these devices from might be selling you a phone that was compromised by the police and didnât even know it?  So, if Iâm putting one and one together here, Belgium said they infiltrated part of the network and arrested 160 people, and Sky is saying somebodyâs putting out fake phones or fake apps to â that has some sort of malware or something on it, it sounds like the Belgian police may have been the ones who did that.</p>
+
+<p>JOSEPH:	Potentially, yes.  But honestly, we just donât know at this point.  Itâs so unclear and itâs one of the cases we probably know the least about even though itâs one of the more popular encrypted phone companies, for sure.</p>
+
+<p>JACK:	I think this is a sign that the police are becoming pretty sophisticated at fighting crime.  The French authorities are advanced enough to be able to put malware on thousands of peopleâs phones, and now potentially the Belgian police are doing supply chain attacks?  Itâs a wild new world weâre in.  Well, after this incident, the US Department of Justice indicted one of the owners of the Sky encrypted phone company, which means the DOJ believes they have enough evidence to bring this person to trial and prove they have violated RICO laws.</p>
+
+<p>JOSEPH:	I contact a source at the company and I say hey, can I just get a comment on this indictment?  They say sorry, what indictment is that?  I send them the PDF and they go silent.  Clearly I was the one who told them there was this indictment against their company.  We donât speak for a little while.  Eventually Jean-Francois comes out with a statement, provides it to us that they really vehemently deny the charges against the company and about him specifically, and theyâre gonna fight it.  According to their statement or one of the most recent ones, they are really actually gonna try and fight this in court.  So, completely different to the Phantom Secure case; theyâre not cooperating and really thinking that itâs an unjust charge against them.</p>
+
+<p>JACK:	Once again, that court case is going to hinge on one thing, whether Sky knew they were selling to criminals to help them commit crimes.</p>
+
+<p>JOSEPH:	Yes; the way that the US will prosecute one of these under RICO is if they can prove that Sky or anyone else sold these phones deliberately to facilitate criminal activity and knowingly did that.  We honestly have no idea if the DOJ has that sort of information.  Iâm gonna guess the DOJ wouldnât file an indictment based on absolutely nothing, but we have to see what evidence they have eventually, [MUSIC] and we havenât seen that yet, and Jean-Francois is gonna fight the case, is my understanding.</p>
+
+<p>JACK:	So, we looked at Phantom Secure, Encrochat, and Sky ECC, but thereâs so many more encrypted phone companies out there.  Theyâre all coming and going.  Itâs hard to keep track of them, which means thereâs no lack of wild stories that happen with these companies.  Another story I find fascinating is one that comes from an encrypted phone company called Ennetcom.</p>
+
+<p>JOSEPH:	So, yeah, Ennetcom was one of these early encrypted phone companies that were using BlackBerries.  Pretty popular at the time, especially in Europe, and this was sort of the first â for lack of a better word â takedown of an encrypted phone company that I saw and I reported on at the time.  In this case, Dutch police were able to get the content of the messages which was very unusual at the time.</p>
+
+<p>Eventually it came out, it appears that there was some sort of misconfiguration with how Ennetcom encrypted these communications.  Authorities managed to get hold of the server, and I think it was potentially â the keys were also stored on the server, and they were able to decrypt the communications like that.  So, it advertises itself as end-to-end encrypted, but that wasnât really the case if they were able to get hold of the server and then actually obtain the contents of communications that way.  It was an implementation issue, basically.</p>
+
+<p>JACK:	Wow, again, the European police are really blowing my mind here with their attack capabilities.  To find an implementation flaw in Ennetcomâs communication network and to exploit that to be able to relay messages back to the police is really incredible work.  This resulted in the Dutch police collecting and decrypting three million messages sent over Ennetcomâs devices.  Ennetcom must have been furious over this [MUSIC] but were quiet about it.</p>
+
+<p>JOSEPH:	We didnât hear much at all.  I mean, I think the authorities, they shut down the network themselves at the time.  I remember the owner of Ennetcom had some very expensive-looking lawyers when I went to their website and tried to chat to them for a bit.  But no, they kind of fizzled out and they kind of faded into obscurity along with the owner.  Meanwhile, everybody moves onto the other companies as well at the time.  Thereâs still business to be done for these guys.</p>
+
+<p>JACK:	Yes, this is offensive operations being carried out by the police.  They are actively hacking into and infiltrating networks, servers, and phones in order to collect evidence on criminals.  This is way different than what I previously imagined the police were doing in regards to computers, which I thought they were doing more forensic-type computer work, trying to look through the logs of a seized device to figure out what someone did, and thatâs totally different work than hacking into a network covertly, placing malware on it, and collecting user data.  So, the police must have had to put a lot of time and effort and resources just into building the team which would be capable of doing this.</p>
+
+<p>JOSEPH:	Yeah, totally.  This must be a real thorn in their side if theyâre willing to contribute this time, resources, expertise to disrupting or shutting down or ultimately getting to the contents of the communications of these phones.  As I mentioned, while everybodyâs been looking at Facebook, Messenger, and WhatsApp, this is the real stuff thatâs been going on with the organized crime people.</p>
+
+<p>JACK:	Clear that up for me.  What do you mean?  What is everyone looking at Facebook and Messengerâ¦?</p>
+
+<p>JOSEPH:	Sure, so â sorry.  I just mean very generally that when we have the so-called going dark debate among law enforcement and civil liberties, advocates, and just your privacy advocates, that sort of thing, a lot of the commentary is on popular consumer devices.  You know, the San Bernardino Apple case where the DOJ tried to legally force Apple to unlock the phone, the case where the DOJ tried to secretly get Facebook to somehow bug an encrypted communication, and then various laws potentially impacting the security of WhatsApp.  Thereâs a lot of discussion around that, and then more recently, a lot of stuff around child sexual abuse imagery and catching people [MUSIC] who are using consumer devices for that sort of thing.</p>
+
+<p>I mean, in my opinion, the so-called going dark debate is really happening with these encrypted phones.  This is where law enforcement are being very aggressive with their techniques, both in a legislative sense when it comes to RICO and using that, and in a technical sense when theyâre deploying malware en masse.  If weâre gonna have this conversation around what sort of access should law enforcement have to private messages, what sort of messages should be available to authorities, whatâs off-limits, whatâs on-limits, I donât know what the outcome of that discussion is, and as â my place as a journalist is not really to say where it should go, but I do think that people should be including this sort of stuff in that conversation, because itâs real-world case studies of this going on.</p>
+
+<p>JACK:	Thereâs another encrypted phone company called MPC, and this one is crazy.</p>
+
+<p>JOSEPH:	MPC is, in my opinion, the most interesting encrypted phone company.  Weâve had these stories of tech entrepreneurs or just business people deciding to make these encrypted phone firms.  Maybe they want the money, maybe they care about privacy, maybe itâs a mix, whatever.  Here, MPC is a company made by organized crime for organized crime.</p>
+
+<p>Itâs run, as we found talking to multiple sources in and around the industry, that itâs run by two serious top-tier gangsters, colloquially known as the brothers from Scotland.  They deal with a lot of the drug trade going into Scotland and then obviously beyond its borders as well.  They did use Ennetcom for a while, but then they decided to â well, no; we donât want to trust our security to this company.  Why donât we make our own?  They did that with MPC, but they also see an opportunity; if people want to work with us, they need to use our phones.  So, theyâll sell the devices as well.  It actually became a business opportunity in its own right, and actually running this company to then sell the devices to other organized criminals as well.  Itâs diversifying their portfolio, essentially.</p>
+
+<p>JACK:	Well, nobody really knew who was running it at first, but because it was run by gangsters, they conducted their business differently than the others.  For instance, they didnât like the competition that was in the encrypted phone market, so they started threatening their distributors who also sold their competitorsâ phones.</p>
+
+<p>JOSEPH:	[MUSIC] One of the people I spoke to was threatened to be killed because they were selling a competitorâs phones in the same sort  of area that MPC was also involved in.  At least one person was slashed, my understanding, where you take a knife and you slash their cheeks so their mouth has a very large cut on it.  Thatâs the sort of violence that these people were perpetrating as well as intimidating phone calls and that sort of thing.</p>
+
+<p>JACK:	At some point, MPC messaged Joseph out of the blue.</p>
+
+<p>JOSEPH:	They were asking me hey, do you do reviews of encrypted phones or anything like that?  Just what anybody would do with an iPhone; you know, a sort of normal tech outlet where they send you the new iPhone and you review it or whatever.  I donât do that.  Thatâs just not the sort of work I do.  I said if you send me the phone, Iâll look at it, but Iâm not going to be paid for a review, âcause they were offering payment and obviously thatâs unethical.  I said sure.  They never ended up sending the phone, but they were clearly trying to establish some sort of legitimacy in the space by getting journalists or anybody else just to write what they thought about the device.  I should say that the MPC did say just do an honest review or whatever, but thatâs a very unusual dynamic to then â for a company you then later find out is run by top-tier organized crime.</p>
+
+<p>JACK:	The police started investigating MPC and they also said this is very unusual for an organized crime group to create their own encrypted phone business.  But the story gets even darker after that.</p>
+
+<p>JOSEPH:	[MUSIC] So, one of the other ways beyond trying to get reviews from journalists that MPC was trying to get marketing was just sort of these brand deals.  Thereâs a fairly famous former-criminal-turned-blogger-turned-sort of-journalist in Amsterdam called Martin Kok.  Heâs out of prison after murder convictions and he writes on his blog called Butterfly Crime.  There, he makes a lot of enemies.  He will name people, he will say what various crime elements are up to.  There were lots of attempts on his life.  You can go on YouTube and you can check out â the Dutch police showed a car bomb that was targeted against him, and itâs a truly huge explosion that they â they do a controlled explosion just to get rid of the bomb.  Anyway, MPC worked with Martin for some branding.  Itâs like hey, just tweet some photos of you wearing this MPC shirt and the phones, and we can run adverts on your website, that sort of thing.</p>
+
+<p>Eventually, MPC say well, letâs keep this business relationship going.  Why donât you meet with one of our associates?  Him and the associate, they go to a sex club on the outskirts of Amsterdam.  Thereâs CCTV footage of Martin Kok walking around with somebody down the streets of Amsterdam, and a man in a hoodie runs up behind him, puts a gun to Martinâs head, and for some reason, he â Martin isnât shot.  Maybe the guy freaks out, maybe the trigger jams or whatever, but he points the gun; it doesnât work, and then he runs away.  Thatâs the first attempt on his life that day.  Then when they eventually leave sort of blurry-eyed from the sex club and Martin Kok is getting into his car, a man jumps from the bushes and shoots him and kills him.  We were told shortly after that or some time after that that this was an assassination with the consent and the help of MPC, the phone company, and by extension, the brothers who ran that company.</p>
+
+<p>JACK:	Whoa.  Now, thatâs scary.  I suppose it means you canât trust an encrypted phone company thatâs run by criminals.  It also means that MPC is clearly breaking laws, while some of these other phone companies, itâs not so clear.  Which, yeah, itâs going to cause them to be investigated by the police, and theyâre gonna want to probably shut this company down.  So, the police started investigating MPC to figure out whoâs running it, and this did lead them to find out itâs being run by some known criminal brothers in Scotland, and this revealed their identities.</p>
+
+<p>JOSEPH:	Yes, so my source provided the name of the two brothers beforehand; James Gillespie and his brother as well.  Then, the police do announce that.  They announce the two names of them and their various associates as well.  Later on, they arrest one of the associates in South America, I believe.  But at the moment, it seems that the brothers â at least from my understanding â are still on the run.  Yeah.</p>
+
+<p>JACK:	Ah, so they went into hiding.</p>
+
+<p>JOSEPH:	Yes, yeah.  Thereâs some reporting on crime blogs that theyâre also in South America, but thereâs â itâs hard to say.  These people may move around.  These are highly-technical, highly-resourced individuals, right?  I doubt theyâre gonna stay in one place for too long.</p>
+
+<p>JACK:	But when one secure phone company goes down, it just seems like two more pop up.</p>
+
+<p>JOSEPH:	A constant theme with these companies is that one â once one shuts down either of their own volition or law enforcement hacks them or otherwise carry out â carries out an operation against them, these criminal users or users in general, they still need a phone, so they will go to another one.  So, when Encrochat was closed, another company called Omerta did a sort of discount offer where you could either get phones cheap or buy one get one free, or something like that.  Presumably, maybe some people went over to that.  When Phantom shut down, a lot of the user base was absorbed by Sky, and then also by Ciphr as well.  Ciphr is still going.  Itâs probably the biggest or at least the most established and longest-living encrypted phone company that is still going right now.  But is Ciphr being investigated?  Probably in some capacity, right?  Itâs been going on for so long that maybe they could be the next target.</p>
+
+<p>JACK:	Thereâs another encrypted phone out there that looks really promising.  Itâs called ANOM, kind of short for anonymous, and it has a cool dual-boot thing.  Check this out; when you boot it up, it asks for a pin to unlock it.  Thatâs normal, right?  If you type it in, you see normal apps like Instagram, Facebook, Tinder, Netflix, even Candy Crush.  But if you try to click on any of these apps, they just donât work.  Theyâre just dummy apps to make the phone look normal.  What you need to do is reboot the phone, but this time enter a different pin code.  When you enter the second secret pin, it unlocks access to a secret area of the phone.  But there are only three apps in this secret area, and at first glance, they look boring.  One is a clock and the other is a calculator.  The third is device settings.  The secret is to open the calculator app which then asks you for your ANOM ID and password.  Once you get in there, you can send and receive encrypted messages.</p>
+
+<p>This phone is slick and stealthy, and more clever than you realize.  ANOM started up in I think 2019 and it was first introduced in Australia.  Specifically, people who typically distributed encrypted phones were getting these and passing them around.  People were slowly adopting them and using them.  Eventually, they made their way into other countries.  Criminals, yeah, they like these phones, and started using them.  [MUSIC] But ANOM had a secret.  It wasnât what people thought it was.  It was a honeypot created entirely by the FBI to snoop, spy, and gather incriminating evidence from criminals.  They worked with the Australian law enforcement to spy on Australian criminals, too.  But this posed some massive challenges for the FBI.  What are the legalities of marketing and selling spy phones like this?  How do you even create a shady underground encrypted phone company without it being so good that it goes mainstream?  Clearly, the FBI wanted in Phantom Secure phones, but didnât get in.  This may have been where they got the idea.</p>
+
+<p>If they canât find a way in, they can make their own phone.  This was dubbed Operation Trojan Shield in the FBI, and their ANOM phones were able to collect 27 million messages from its users.  We donât know how many arrests this resulted in, but itâs yet another incredible amount of resources that law enforcement has spent to try to infiltrate encrypted, secure phones.  But man, now that weâve taken this tour of the world of encrypted phones, I feel like I canât trust them.  In four of these stories, law enforcement infiltrated the chats.  I donât want the police reading my chats.  So many of these phones seem like itâs just for criminals to use, and I donât want that, either.  I just want a secure phone that doesnât vacuum up all my data, and Iâm not a criminal; I just like privacy.  Thereâs got to be some kind of phone out there for me.</p>
+
+<p>JOSEPH:	There was Silent Circle, which is of course, is a slightly different user base and that is made by Phil Zimmermann, the creator of PGP.  They have this platform where you have silent text which is obviously text messages, and then if you get an encrypted e-mail or something as well, and they had the black phone.  This communications platform essentially, they did try to sell to governments.  I think Iâve seen some â I believe it was the US Navy contracts and that sort of thing.  So, that isnât the same sort of space, but I donât know if criminals would gravitate towards that because theyâll see oh, itâs working with the government; then they canât be trusted.  You know, that sort of thing.  So many of these criminals will be better off with a fully up-to-date iPhone or a fully up-to-date Android device if itâs a higher-tier one with Signal installed and just use that, or Wickr, or whatever.</p>
+
+<p>JACK:	So, Wickr and Signal, and thereâs Wire, too.  These are apps that you can get on your Android and Apple devices that lets you call and message people, and it uses end-to-end encryption, which means anyone in-between wonât be able to decipher the messages, including the companies of Signal, Wickr, or Wire themselves.  If security and privacy is important to you, which it should be, you should move your communications to one of these apps.  Signal seems to be the most popular, where you probably already have friends and family using it.  [MUSIC] But what about securing the phone itself?  Well, I guess weâre gonna have to go with iPhone or Android on this, but you should do things to lock it down.  To start with, keep them updated.  Updates fix vulnerabilities, and I think what weâve learned in this story is that authorities will exploit vulnerabilities to gather evidence, and some of these companies just werenât very good at securing their own infrastructure.</p>
+
+<p>I mean, it sounds like Ennetcom left the keys to their server out in the open, and these little startup companies arenât going to have the resources to properly secure their networks and devices to be able to withstand attacks from law enforcement.  However, a big company like Apple and Google do have the resources to keep things secure from outsiders getting in.  Now, if youâre going to get an Android device, I recommend getting the Google Pixel over the other Android phones, since Google makes the Pixel phones and the Android operating system.  This means the latest security updates will be available on the Pixel first.  These updates can take a long time to trickle down into other makers like Samsung or OnePlus phones.  Iâve seen some phones sold in stores that are so far behind on Android updates that the software is already end-of-life on brand-new phones.  So, you want to get closest to the source with Android, which is getting the Google Pixel.  But one big security flaw still with these phones is SIM-swapping.</p>
+
+<p>This is where criminals will call up your phone company and impersonate you to tell them to move your phone number to their phone.  Once a criminal gets control of your phone number, they can get into a ton of your accounts, and itâs a horrible problem to try to figure out.  So, because of this, I use an iPod Touch as my phone.  Joseph actually taught me this and wrote a great article on how to do this, because the iPod touch doesnât have a SIM card.  Itâs Wi-Fi only, so itâs impossible to SIM-swap me.  I use a combination of Google voice and other apps to get the iPod touch to be a regular phone when it has a Wi-Fi signal, and this is what I use as my primary work phone.  Honestly, the only app I use on it is Signal, which allows me to text and make calls securely using end-to-end encryption.  If you want to go even deeper to lock down your phones like I do, I highly recommend the book Extreme Privacy: What It Takes to Disappear, by Michael Bazzell.  This is a massive book which is all about how to secure your digital life.  Itâs fantastic, and Iâll have a link in the episode description if youâre interested.</p>
+
+<p>(OUTRO):	[MUSIC] A big thank you to Joseph Cox, senior staff writer at Viceâs Motherboard.  Thereâs always news coming out about these encrypted phones, and Joseph is always all over it.  So, you should definitely follow him on Twitter to stay updated.  If you like this show, if it brings value to you, consider donating to it through Patreon.  By directly supporting this show, it helps keep ads at a minimum, it helps get new people to make the show, and it tells me that you want more of it.  So, please visit patreon.com/darknetdiaries and consider supporting the show.  Thank you.  This show is made by me, the decompiled Jack Rhysider.  Editing help and sound design by the cipher-sweet Andrew Meriwether.  Our theme music is by the elliptical curve known as Breakmaster Cylinder.  In the future, everyone will have fifteen minutes of privacy.  This is Darknet Diaries.</p>
+
+<p>[MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

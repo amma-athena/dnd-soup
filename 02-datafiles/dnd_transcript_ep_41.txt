@@ -1,0 +1,539 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>Just Visiting â Darknet Diaries</title>
+	<meta name="description" content="Join JekHyde and Carl on a physical penetration test, a social engineering engagagement, a red team assessment. Their mission is to get into a building they shouldn't be allowed, then plant a rogue...">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Just Visiting â Darknet Diaries">  
+	<meta name="twitter:description" content="Join JekHyde and Carl on a physical penetration test, a social engineering engagagement, a red team assessment. Their mission is to get into a building they shouldn't be allowed, then plant a rogue...">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/justvisiting.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/41/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Just Visiting â Darknet Diaries" />
+	<meta property="og:description"        content="Join JekHyde and Carl on a physical penetration test, a social engineering engagagement, a red team assessment. Their mission is to get into a building they shouldn't be allowed, then plant a rogue computer they can use to hack into the network from a safe place far away." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/justvisiting.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/41/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/justvisiting.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/41/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="Just Visiting â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/justvisiting.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 41: Just Visiting</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://traffic.megaphone.fm/ADV5671687285.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/41/",
+			   "title": "Ep 41: Just Visiting"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/41">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[FULL TRANSCRIPT]</p>
+
+<p>JACK:	[MUSIC] Hey, itâs Jack, host of the show.  A few years back I went to Silicon Valley to do some training.  While visiting, I decided to visit Google.  I didnât know anyone there and they didnât know I was coming.   I just wanted to park and walk around the building and see what it looked like.  A co-worker and I used Google Maps and found it.  There it was, the main headquarters for Google.  Actually, they call it the Googleplex, the place where e-mails are stored, browsing history, map locations, itâs all there.  Not to mention the source code for so many products, too.  If that data isnât in these buildings, the people who work in these buildings have access to that data.  We find the place; we pull into the parking lot.  No guard gate in the parking lot.  Cool.  We park the car and as soon as I get out, thereâs a bunch of bicycles just parked everywhere.  No chain or locks, and these bikes are all super colorful; red seat, yellow body, green fenders, blue handlebars.  Iâve heard about these.  These are the free Gbikes.  Googleplex is so big and employees need to get across the campus so they put these free bikes everywhere for employees to ride.
+<!--more--></p>
+
+<p>I have no idea why every single bike isnât stolen every night from this place but whatever.  My friend and I walk past these bikes and up to the Google offices.  The campus reminds me of a university; instead of one giant office building, itâs many smaller buildings spread out all over the place with sidewalks going everywhere. We walk onto the campus between some buildings.  We get among the buildings into a courtyard.  Thereâs a sand volleyball court with a game being played right in front of me and I can see across the street, thereâs a Google athletic field where a soccer game is going on.  There are people on Google bikes just whizzing by us, and we found a giant android robot statue.  I took a selfie and we hung out on the campus for a minute.  A lot of engineers and technical people were just walking on past us.  I wondered what they did.  Security seemed nonexistent.  I decided to go into one of the buildings so I followed someone inside an office.  But it didnât matter because there was no badge reader or security to keep me from just walking in by myself.  It was weird.  It was too easy, like I was walking into a trap or something so I just turned around and walked out.  I went into another building.</p>
+
+<p>This was a cafeteria of some kind.  It seemed like there was free food for employees and I donât know but it seemed like anyone could just walk in and grab a burger.  The experience was wild.  Iâve never seen a corporate environment like this before and it made me question my lame office job.  But it was super fun to visit the Googleplex.  The next day after training, because we had so much fun at Google, my friend and I wanted to go to the Facebook campus to check it out.  [MUSIC] Google Maps made it look like the campus was in the similar style; eleven buildings all spread out with a central courtyard and sidewalks everywhere.  We cruise on in the parking lot.  No fence or guards to keep us out.  Cool.  We park and here at Facebook, we see a ton of blue bikes.  Just like at Google, these are free bikes for Facebook employees to use to get from building to building.  We decided to try to go into one of the buildings.  We walk on up, grab the handle.  Doorâs unlocked, right on.  We go in but immediately a security guard asks us what our business is.</p>
+
+<p>We say weâre just here to use the bathroom.  She tells us no and to leave; thereâs no restroom here.  We beg her to use the restroom but she says no, we have to go.  We decided to walk around the buildings and try to find a way into this inner courtyard but this campus is a little different.  Between each building is a high-security fence keeping you from going into the courtyard.  We go around to the next building.  Same thing; big fence, locked.  Canât get in.  The next building, another fence locked.  At this point Iâm becoming really curious whatâs in their center courtyard and amongst their buildings and I want to get in and see it.  I say to my friend okay, the next gate we get to, if itâs locked, Iâm gonna just wait there and tailgate someone in.  He says okay and waits for me down at the end of the sidewalk.  I stand near the gate looking at my phone, trying to be inconspicuous.  Someone comes up to the gate.  They swipe their badge.  The gate opens.  I follow him into the courtyard.  Yes, itâs working!</p>
+
+<p>I close the gate behind me, then I realize Iâm trapped.  To get into the courtyard thereâs another gate.  You need to get through two different gates to get in.  One uses a badge and the other uses something else.  When the guy ahead of me saw that I tailgated him in, he quickly went through that second gate and closed it behind him.  I was now stuck between the two gates.  I couldnât get into the courtyard because that gate was locked so my only option was to go back out the same gate I came in, so I did.  Security at Facebook thwarted my half-assed attempt at getting in.  Not bad, but if I was a professional social engineer, I bet this would have gone down totally differently.</p>
+
+<p>JACK (INTRO):	[INTRO MUSIC] These are true stories from the dark [00:05:00] side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	Today weâre gonna hear from a social engineer named JekHyde.</p>
+
+<p>JEK:	My name is JekHyde and I am a physical penetration tester and social engineer.  I work with a Red Team of technical hackers and I gain physical access to buildings so that we can use that access to exploit their â maybe itâs personal information weâre after or credit cards, stuff we shouldnât get our hands on.</p>
+
+<p>JACK:	Yep, yep.  You got it.  JekHyde is gonna share a story with us about how she broke into a building.  I always think itâs fun to tag along with these kind of stories and listen to what their job is like.  JekHyde is her hacker name, you could say.  Kind of like a play on the whole Dr. Jekyll and Mr. Hyde story.  One person but two different personalities.  But Jek wasnât always doing this kind of work.</p>
+
+<p>JEK:	I actually was introduced to this line of work while I was working as a journalist.  I studied journalism in Dallas and I got involved with the Dallas Hackers Community because they were making some waves.  I was introduced to the concept of penetration testing first and then a friend told me about physical penetration testing and I was like you get to break into buildings for a living?  Thatâs crazy.  He was like yeah, well I donât particularly like to do it.  Itâs nerve-wracking and I have to lie to people and itâs just all kind of scary.  I said well, if you get a job you donât want, I would love to try my hand at it.  I was almost kind of joking, half-joking.  He was like oh, if you really mean it, I think I could probably get you on some jobs.  I was like oh man, okay.</p>
+
+<p>JACK:	[MUSIC] A security assessment company offered Jek a contractor assignment to try to physically break into a building that they had permission to test the security on.</p>
+
+<p>JEK:	I went in to do this test and I got in on my first try which was wild to me at the time, because a secure facility is secure, right?  That became clear to me that that wasnât always the case.  I got in and I got back out to my car and I called my friend back and I was like I need more of this in my life.  Iâm addicted.  [MUSIC] Iâve been doing this for three or four years now.</p>
+
+<p>JACK:	But the thing that surprises me about that story is that you basically did it without any real security or any real training at all to know how to do this.  Is that how itâ¦?</p>
+
+<p>JEK:	That is correct.  I am an APT, my friend, with no training.</p>
+
+<p>JACK:	What makes you feel like you have what it takes to do this, or what does it take to do this?</p>
+
+<p>JEK:	That is a really interesting question.  In order to do physical penetration testing or social engineering, I think the biggest quality a person has to have is confidence that you can do it.  I can break into that building.  I can convincingly lie to someone because if you are not confident, that comes off in the way you hold yourself and the way your voice sounds.  It becomes unconvincing to other people if you donât believe it yourself.  I think my time as â my time in theatre and my time in journalism learning how to talk to people, learning what questions to ask, how to put people at ease, that probably is what set me up for a successful career in physical penetration testing and social engineering.</p>
+
+<p>JACK:	Actually, Iâve heard this before.  Jek said she had a background [00:10:00] in theatre as well as journalism and other penetration testers have told me to get good at social engineering, take an improv class or an acting class because there, theyâll teach you how to become someone else and be convincing.  Youâll learn how to react to really zany situations and be able to get through it cool and calm.  Yeah, acting does play a big part in sneaking into places.  Now if you couldnât tell, Jek is female and she sometimes uses this to her advantage while doing these social engineering missions.  She also uses different costumes.</p>
+
+<p>JEK:	Yeah.  I have several different disguises that I can switch out my appearance relatively quickly on-site if I need to.  I have wigs, I have glasses, I have different changes of clothes, things that I will be able to remove and apply quickly, different types of makeup and maybe a prosthetic mole or something along those lines but my favorite toy, my favorite tool that I use on these engagements that if I can use it, I do, is my pregnancy prosthetic.  I have a big belly that is filled with silicone and it has Velcro straps that I will use to wrap around my waist and stick it to my stomach and it makes me go from this 125 pound, pretty unimpressive person to oh my goodness, I am eight months pregnant and would you please get the door for me?  When I have that option and I do use it, it works 100% of the time.</p>
+
+<p>JACK:	Oh my gosh, thatâs so evil.  Now I see why sheâs JekHyde.  Dr. Jekyll is a good person but Mr. Hyde is sometimes shockingly evil.  Can you imagine seeing a woman whoâs eight months pregnant coming down the hallway holding her back and her belly, asking you to kindly hold open the door, and you just close it in her face and say badge in like everyone else, lady? Itâs like what are we supposed to do in these situations?</p>
+
+<p>JEK:	One of the things that I think most pregnant women or men who have had pregnant women in their lives have experienced is pregnancy brain and so I can pretend like oh man, Iâm feeling foggy.  Pregnancy brain, Iâve forgotten my badge or Iâve forgotten this piece of information.  Oh my goodness, can you believe I cannot remember my password?  People are very sympathetic to that.  Again, itâs exploiting the human factor.  People are very eager to help people who are in distress.  Not just pregnant women but older people or somebody who is either disabled or maybe theyâre temporarily injured and they have a cast or theyâre in a wheelchair or something along those lines.  We want to be helpful people and thatâs what a lot of bad guys take advantage of.  You have these scams against older folks all the time who get calls supposedly from their grandkids; grandma, Iâm in jail, or grandpa, Iâm in the hospital, I need money.  Thatâs what we try to emulate, is this malicious actor who doesnât care about peopleâs feelings.  Theyâre just in it for themselves.</p>
+
+<p>JACK:	Itâs true.  A lot of scam artists do target the weak and elderly people who have no chance against them.  Itâs evil and sick.  Okay, so Iâm properly freaked out now already by Jek.  Iâm confident that sheâs evil enough to do something crazy to get into any building.  Letâs go along with her on a mission, a physical penetration test, a social engineering engagement.  A Red Team assessment.</p>
+
+<p>JEK:	[MUSIC] We were hired to do a physical for an international manufacturing business.  The way a lot of companies do their headquarters is theyâll have a headquarters in different countries if theyâre an international corporation.  This particular headquarters was in a Spanish-speaking country and it was where we were hired to do this physical.  It was a Spanish-speaking country and I do not speak Spanish.  When I heard that there was a physical component to this test and they wanted us to plant a rogue device, I was like okay, we gotta bring Carl on.  Carl not only focuses on the rogue devices and dropboxes, we called them at the time, but he is also a Spanish speaker.</p>
+
+<p>CARL:	I was at least a little bit, enough to get by which is what was necessary for this one.  Iâm Carl.  I basically do the hardware and our rogue [00:15:00] device side.  Jek essentially gets me into the building and then I install the devices and so weâve been on several of these little trips together now and itâs been a good time.  The story weâre about to recite is one of my actual first physicals and so thereâs a certain aspect to the emotion of that.  When youâre used to being a nerd behind a computer for so long and then youâre out in front of the adversary, itâs a little different.</p>
+
+<p>JACK:	The objective is to break into this manufacturing plant in a Spanish-speaking country, plant a rogue device so that they can try to use it to hack into the company, and then get out.  They have permission from the head of security to conduct this intrusion which is to assess the security of the facility.  The team consists of JekHyde and Carl.  Jek is a physical penetration tester.  Sheâs an expert at sneaking into places that she shouldnât be in.  Carl is the hacker.  Heâs an Offensive Security Certified Professional which is a training course and certification that teaches you how to hack computers.  Heâs a coder and he knows his way around operating systems really well.  But most of all, Carl has a real passion for computers and breaking into stuff.  The two together make a very dangerous pair.</p>
+
+<p>JEK:	When we get a client, the first thing I want is an address of the building that they want tested.  Then the first place I go after that is Google Maps.  [MUSIC] I am looking at this from birdâs eye view, satellite images, Iâm looking at it from a street view.  I want to know everything I can just looking at the building from the outside.  What I found looking at this building on Google Maps was that there was basically a fence or a wall surrounding the thing.  It was not just any fence; it was actually a palisade-style fence with this curved top and this three-pronged very aggressive topper.</p>
+
+<p>JACK:	There were two entrances to get into this building, one for trucks and deliveries and the other was for workers.  From Google Maps she could see that these two entrances had a guard shack right next to the entrance which would watch that everyone used their badge to get into the turnstile and into the building.</p>
+
+<p>JEK:	This was a pretty aggressive security situation where there was a pretty intimidating fence, there was a guard checkpoint, and I found photos of the badge readers online because people post everything on social media.  I knew what kind of badge system they were using.</p>
+
+<p>JACK:	Jekâs first thought was okay, maybe they can find a nearby coffee shop, see somebody with a badge to this place, bump into them casually, clone the badge in the process, and then walk away.  But when she started getting the badge-cloning devices together, she had second thoughts.</p>
+
+<p>JEK:	This stuff looks kind of intimidating and you donât want to be carrying it through airport security in countries where things might not be as safe as they are here in the US.  Unfortunately bringing my badge-cloning equipment wasnât an option for this particular job.  We were gonna have to figure out okay, maybe thereâs a way that we could jump over this fence.  Maybe if we found a tree or a dark spot.  It didnât seem particularly well-lit at night and so I was like okay, maybe jumping this thing might be an option.  It wasnât concertina wire and Iâm a relatively â we both are relatively physically fit people so we were kind of playing with that idea.  We were like okay, thatâs definitely an option.</p>
+
+<p>JACK:	Jek and Carl did some more passive reconnaissance and decided to fly to the location to try to find a way in.  [MUSIC] They arrive and decide to scope out the place from a distance to see if they could find any weak spots in security where they could just sneak into the building.</p>
+
+<p>JEK:	When we got there though, we performed on-site reconnaissance and when we got there, we realized that this guard â there were three guard booths around the facility and they were all manned 24/7.  On top of that there was a police watch that did rounds around this facility in the neighborhood around it at night.  We knew right away â we were like okay, thereâs no way weâre jumping this fence.  Itâs just not gonna happen.</p>
+
+<p>JACK:	Okay.  The manufacturing company seems to have their security in order; lots of cameras, and guards, and fences, and turnstiles, and only two entry points.  Gosh, this is going to be hard.  Walking [00:20:00] in off the street doesnât seem to be an option here.  Youâre not gonna get in this building without a badge and if you try to go up and lie to the guard who may not even speak your language and you get caught, the whole engagement is blown.</p>
+
+<p>JEK:	And potentially face angry law enforcement officers and guards whose language we donât speak, orâ¦</p>
+
+<p>JACK:	Or they can use a completely different strategy to get into this place.</p>
+
+<p>JEK:	We started looking at our options and this was the Plan B that we had been building up before we got in-country that we were going to lean back on if we decided that a more covert infiltration wasnât going to be an option.  When I was doing reconnaissance, I looked at a lot of social media accounts.  I looked at LinkedIn, and Facebook, and Instagramâs a big one, and just plain Google, Googling your company in the country itâs in.  What Iâm looking for is a mark.</p>
+
+<p>JACK:	In social engineering lingo, a mark is the victim person, a person who you think is just gullible enough to be tricked into doing something for you.  Jek is going to do a bamboozle on someone and she needs to find that perfect victim.  Sheâs going to places like LinkedIn and seeing what people are into.  Sheâs looking for people who might be somehow eager for acceptance or they show a lot of vanity, or maybe thereâs just somebody whoâs really greedy.  If Jek can find someone like this, she can try to trick them into doing work for her.  After researching this long enough, she found someone, a mark who she chose because of their idealism.</p>
+
+<p>JEK:	This person had single-handedly put together a coalition of their co-workers and started up a food bank.  He convinced them to not only volunteer at this food bank but donate their time and resources to help building it up, and theyâve become a movement in their community to help feed the hungry.  That became where I focused my attention on these people.</p>
+
+<p>JACK:	I think I just saw Jek turn into Mr. Hyde.  Sheâs choosing the people who set up a charity as her mark.  Sheâs planning on exploiting their caring and good-hearted natures so she can get into this building.  Ooh, thatâs evil.</p>
+
+<p>JEK:	We built up this pretext that I was a woman named Bridget and Carl was this guy named Ted and we were both involved in the department of our company back at the headquarters in the United States.  What we did was we put a phish together, a phishing e-mail with a domain that looked a lot like our target companyâs domain.  Instead of targetcompany.com it was targetcompany-communityresources.com.  Then Bridget and Ted, these two fake people, went back and forth talking to each other talking about this conference that was going on in that country for our company.  We were talking back and forth as if we were going to this conference.  Hey Ted, are you going to that conference in November?  He was like yeah, the whole familyâs coming.  Weâre looking forward to it.  Iâll see you there.  I would respond yeah, thatâs fantastic, we should swing by and see our offices, our headquarters in-country while weâre there.  He says yeah, that sounds like a fantastic idea.  Actually, thereâs a team there that put together a food bank that I would really love to meet.</p>
+
+<p>JACK:	Now Jek is acting like Bridget and Carl is acting like Ted and they are both acting like they help with charitable activities from the corporate office in these e-mails.  But so far these e-mails have only gone back and forth between Jek and Carl.  This is just to build up the pretext.  See, a pretext is a cloak, itâs a disguise that hides who you really are.  It has to be believable.  By sending e-mails back and forth between them, it builds this up because they are about to forward the whole e-mail chain to the mark.</p>
+
+<p>JEK:	I said the day before we were planning this breach, hey Ted, have you reached out to that team yet because you speak Spanish and I thought you were gonna go ahead and see if we can maybe go meet these awesome people who created this awesome food bank program.  Ted goes oh dang, I hope we arenât too late.  Weâre not in the country for very much longer.  He puts together this phish in Spanish and he goes hey, my nameâs Ted, Iâm a project manager based out of the headquarters for our company in the states and I heard about the inspiring work youâre doing and weâre really proud.</p>
+
+<p>CARL:	Put in a line to the extent [00:25:00] of âIf you canât feed a hundred people then just feed just one from Mother Theresa.â  That really connects.  Itâs a good sentiment in any case but it really brought the entire phish together.  It just sits there nicely at the bottom of the e-mail and itâs like putting the bow on top of the present.  Thatâs essentially the picture that we were trying to paint, is we were very interested in this food bank and we were similar-minded individuals that had a same similar goal of community outreach, and we were interested in staying at a location there.</p>
+
+<p>JACK:	Okay, honestly, would you fall for this?  We often shame people who fall for phishing scams and we say things like I would never fall for something like that.  But imagine if you had poured your heart into starting something and now some big-time people are contacting you wanting to meet.  You might just be so excited that you miss the little signs like the e-mail address isnât right or that this e-mail has a sense of urgency to it.  Weâre all a little narcissistic and we want others to appreciate the work we do.  Something like this feels like youâre finally getting that recognition that you deserve, especially when Bridget and Ted have actually researched a lot about what you do and seem to know exactly what youâve been doing.  This is not some mass e-mail.  This one is extremely personal and targeted.  I think anyone would have a really hard time defending against this.  Now, they send this e-mail chain to the mark.  The mark works in this building that they want access to.  This e-mail did not contain any malware or a shady link.  It just asked if theyâre willing to meet.  After they send the e-mail, they wait.  Keep in mind, theyâre already in the country not too far from the building that theyâre trying to break into.  Theyâre just sitting at the hotel crafting this whole scheme.  After the break weâll hear what the reply was.  After Jek and Carl forward the e-mail, they wait for the reply.</p>
+
+<p>JEK:	They replied within minutes saying oh my goodness, yes, we would love to show you around and tell you about our program.  I want you to meet all of these different people on the team and we can show you where we pick up donations.  They were just extremely enthusiastic.</p>
+
+<p>JACK:	[MUSIC] This was exactly what Jek and Carl were hoping for.  They couldnât sneak into the building but now theyâve got someone inside inviting them in and willing to show them around.  These two are evil but really good.  This did impact Carl.  He thought this was messed up to exploit someoneâs good nature like that.</p>
+
+<p>CARL:	That was the biggest thing that was the hardest to shake out of my mind.  I guess the mantra that you keep on going back to is you know what?  If a good guy can do this, a bad guy can do this and if a bad guy can do this the ramifications are gonna be far more severe.  Yeah, I guess it shows you that youâre human.  It matters that youâre making those connections, youâre using a method like this.  It kinda sucks but if it makes the client better and it means that a bad guy canât perform a similar action, then I guess itâs why we do this.</p>
+
+<p>JACK:	While it didnât feel right, they went along with it using a slimy but solid exploit, the charitable side of humans.  Okay, so this mark and these people that theyâre exploiting are overjoyed that someone from corporate wants to see their food bank that they started at work that they actually offer a car to come out and pick Jek and Carl up from the hotel.  They agree to be picked up the next day but now Jek and Carl have a lot of work to do.  They need to really become Bridget and Ted as best as they can.  In fact, they picked two people who actually did work in the company named Bridget and Ted in an attempt to blend in even better.</p>
+
+<p>CARL:	In the previous few days we had some extensive study time into these personalities that we were developing and going as detailed as okay, weâd quiz each other.  Where did I go to college?  Whatâs my wifeâs name?  Whatâs my husbandâs [00:30:00] name?  What did I study?  Favorite activities?  It was a huge cram session and youâre just kind of hoping that all that fit into your head and youâre hoping that the right fact is gonna come out of your mouth at the right time.</p>
+
+<p>JACK:	The next day comes.  The mark or the employee at the company sends a car to come get them.  But to throw them off, they have the car sent to a different hotel.</p>
+
+<p>JEK:	That is exactly what happened.  They offered to pick us up and we didnât want to bring them right to where we were just in case things went wrong and they figured out that we were not who we said we were while we were still in the country.  We didnât want them to connect us back to that.  We were staying at a medium-rate hotel and we had them pick us up at the nicest hotel in town.  The driver drove us to that site, the headquarters, and we were given visitor badges which were RFID visitor badges and just like that, we were led in.</p>
+
+<p>JACK:	[MUSIC] Let me just back up for a second.  When I was trying to think of a way into this building, I never would have thought that somebody was going to come pick them up at the hotel and take them into the building and give them valid badges to get in and show them around.  This is unbelievable.</p>
+
+<p>JEK:	Honestly there was a moment where we didnât know if we were walking into a trap, if maybe theyâd figured out what we were doing or that we werenât who we said we were âcause we just picked out people on LinkedIn who we kind of looked like who did the jobs of the people we were trying to pretend to be.  There was always the chance that maybe they reached out through internal channels and figured out that we were not who we said we were.  There was a tense moment right as we walked inside, right as we were about to be greeted by our mark where we werenât sure but then they welcomed us with open arms and were extremely excited to have us there so it was clear that they trusted us.  They thought we were who we said we were.  For the next three or four hours we hung out with these people.</p>
+
+<p>JACK:	[MUSIC] When they came on-site, Jek had a small purse and Carl had a backpack.  Jek didnât have anything special in her purse but Carl had a rogue device and a laptop and he was constantly looking for a moment to get away and to go plug this into the network and try hacking into the place.  But the team kept giving them a full extensive tour of the whole facility.</p>
+
+<p>CARL:	In this three or four hours when we were in the building, weâre talking with them about community outreach and all of this, and in a way that kind of made it easier because being genuinely interested in that, it comes from the heart so it makes you come off more genuine.  I donât think they really suspected too much there.  Had we had to talk about something too scientific like nuclear propulsion or something, we probably would have been outed a lot faster.  It was nice to have a pleasant chat but going back to what we were saying before, we have that sitting in the back of your head like oh man, am I just a terrible person for being here right now?  Because what youâre saying, itâs like a triple-layer cake.  What youâre saying is true and you actually believe it but that middle layer is well, Iâm here for doing something completely different.  Iâm actually malicious even though Iâm talking about a good subject right now.  Then you get that third tier like well, you know what, itâs for the best anyways.  Thereâs a ton of emotion going through you at the time but it was pretty extensive for about three or four hours.</p>
+
+<p>JEK:	Yeah, and we were â Iâm actually kind of lucky that we did speak different languages.  Carl and I speak a little bit of Spanish, he more so than I.  They spoke a little bit of English.  If there was any awkwardness or a difficulty communicating, if we slipped up a little bit, there was always that language barrier that we could fall back on.  Like oh no, you must have misunderstood me.</p>
+
+<p>JACK:	Theyâre there hours and hours on site but their hosts were so good that they never let Jek or Carl out of sight the whole time.</p>
+
+<p>JEK:	Even when one of us excused ourselves to go to the bathroom, there was somebody popping up who was like oh, let me show you where to go.  I was like are you going to come to the bathroom with me too?  But they didnât.  As weâre walking out, Iâm like dang it, thereâs just no â I canât get away.</p>
+
+<p>JACK:	[MUSIC] At this point the tour is over and the host took Jek and Carl to the front door to say goodbye and to turn their badges in.  Drats, they thought.  They spent all day here and didnât accomplish what they came to do which was to plant that rogue [00:35:00] device somewhere.  Think quick; what else can you do?  Theyâre now at the front at security, about to leave the building, and the guard is asking them to turn in their badges.</p>
+
+<p>JEK:	Carl handed over his badge and I legitimately, for about two seconds, had misplaced where Iâd put my badge in my bag.  I was like you know what?  Iâm just gonna run with this.  Iâm was like oh no, I seem to have lost that visitor badge you gave me.  I misplaced it.  I must have left it somewhere.</p>
+
+<p>CARL:	Iâm just standing there looking casual, Iâm maybe putting the right amount of distress in like oh no, you lost your badge, thatâs so rude of us visitors.  We should know better.</p>
+
+<p>JEK:	They were like oh no, no problem.  No problem.  Itâs fine.  Thank you so much for coming to visit and keep in touch.  I was let out a larger gate towards the side of the building and we were home free and I also had a visitor badge.</p>
+
+<p>JACK:	The hosts arranged a driver and a car to take them back to that fancy hotel that they werenât actually staying at.  They get let out and they take their guest badge back to their hotel room and plan out the next steps.  They now have a complete layout of the building since they were given an extensive tour of it.  They know their way around pretty well now and they have a badge that will let them in through the courtyard gate, and through the turnstile, and into the building.  They also know the itinerary of the host that gave them the tour and know exactly when theyâd be tied up the next day.  They waited until the next day to revisit the site, this time unchaperoned.</p>
+
+<p>JEK:	We were able to return around midmorning when they had mentioned they were going to be in meetings all day.</p>
+
+<p>JACK:	They both arrive at the building and walk up to the turnstile.  They know that when you swipe it, one person is allowed through the turnstile which kind of makes it impossible to tailgate someone.</p>
+
+<p>CARL:	Well, I think when we did that at the time, I think there was either nobody in the booth or they werenât looking the right way so I know that I was super nervous about this.  I went through and I used the badge first.</p>
+
+<p>JACK:	Carl gets in and he turns around and hands the badge back to Jek.  She swipes it and she gets in.  Now theyâre both in no problem.</p>
+
+<p>JEK:	They did not have a one swipe, one entry protocol with their badge readers so we were both able to get in with the same card by just passing it back through the turnstile.</p>
+
+<p>JACK:	Now their only objective here is to plant that rogue device in the network and leave.  This rogue device is like a dropbox; it has a way for Carl to access it from outside the building and to get into it.  If that device is on a good network port, this would allow him to try hacking into the network all night long safely from his hotel or from anywhere in the world.  He just needs to find a good spot to stick it.</p>
+
+<p>CARL:	From our tour the day before we had noticed that there were some conference rooms.  They were fully occupied and we couldnât get away from our hosts anyways but this next day, because fortunately there were extensive meetings, a lot of these conference rooms were empty.</p>
+
+<p>JACK:	Jek and Carl pop into one of the conference rooms and close the door.  Carl quickly starts pulling gear out of his backpack; the rogue device, the laptops, some cables.</p>
+
+<p>JEK:	We were trying to look as normal as possible so I have Carl sitting on one side of the table and I was playing lookout but as casually as possible.</p>
+
+<p>JACK:	The rogue device that Carl pulls out is an ODROID-C2.  Itâs a mini-computer about the size of a pack of cards, runs Linux.  Itâs kind of like a Raspberry Pi.  Heâs customized it to give it a mobile internet connection so as soon as itâs powered up, Carl can connect to it from anywhere in the world.  Then he takes the internet port and plugs it into a network port in this conference room.  But heâs not seeing much traffic go by on this port.</p>
+
+<p>CARL:	If I donât see substantial traffic that makes it worthwhile and not enough host, itâs not gonna be worthwhile.  For example, if there are a lot of Sysco phones and there arenât any Windows workstations or Linux servers, or just a sparse amount of traffic in general, if I donât have a point to â or any data to leverage my device on in the network, thereâs no point in planting it there.</p>
+
+<p>JACK:	Often what corporate offices do is have a separate network for phones and for workstations.  A phone network is often locked down to just allow phone traffic through.  Carl is using a program called tcpdump to watch what traffic is being broadcast on this network.  Heâs just seeing phones.  Drats, this portâs not going to work.  He might be able to find a better port somewhere else that has a lot of workstations or servers plugged into it.</p>
+
+<p>CARL:	I know that I have to essentially pack everything up and then tell Jek well, hey, Iâm sorry, weâre gonna have to go onto the next room.  Then we just try the next one.</p>
+
+<p>JACK:	[MUSIC] They pack up and casually leave the conference room.  They find another room and go in that.  Again, Carl [00:40:00] unloads his gear and Jek acts casually and keeps a lookout.  Carl connects into his dropbox and begins his attack.</p>
+
+<p>CARL:	When we first log into the dropbox, we just want to see whatâs going across the wire.  A lot of it is really passive listening.  Iâm not actually giving myself an IP initially.  Iâm just passively listening layer 2, layer 3, and watching stuff go by.  We wait as long as campaign time-wise, as long as we can afford to wait.  Itâs kind of a gamble based on within that one or two minutes. Iâm looking at the traffic; if I decide yeah, weâll go with this one or no, letâs try the next one.  Then Iâm looking at MAC addresses flying by, Iâm looking at what kind of workstations, if weâre looking at Linux boxes, if weâre looking at Windows 10, Windows 7.  Then when I feel like dropping down to the wire, Iâll statically assign an IP and just drop myself down and then change the MAC address to make myself look like the workstations Iâve been observing.  Then Iâll also change the TTL so if Iâm pinged, Iâll also look like a Windows workstation instead of having it come back as Linux.</p>
+
+<p>JACK:	But again, nothing good is on this port either.  Heâs not seeing any workstations or servers or anything interesting as heâs listening to whatâs on the wire.  This isnât gonna work.  Maybe he can find something better.  The team once again picks up all the gear and goes to find another room to try again.  Theyâre starting to get a little worried that the conference rooms might be all locked down.</p>
+
+<p>CARL:	Well, thereâs a little bit of fear that starts to eat at your mind a little bit.  Like oh no, but each one in this floor might be a dead port.  But the third one, something was different.  I did notice in the first two, the port was a little bit dustier but I thought you know what?  Weâre here, Iâm gonna go for it.  Iâm gonna try it.  The third one, the port looked a little bit cleaner which is probably a better signal that people have been plugging in and out of it.  [MUSIC] It worked and I was pretty relieved.</p>
+
+<p>JACK:	After the third conference room, when Carl plugged in, he immediately saw workstation traffic.  Bingo.  This is the port he was looking for.  From here, he can probably gain access to one of those workstations and then keep pivoting up to main servers.  Heâd be able to do all this from his hotel or even back home in the office.  Their plan is just leave this device and do just that because itâs too risky to stay in this conference room for hours and hours and hours trying to hack into the place.  Itâs best to leave the rogue device, get out, and then hack into it later.</p>
+
+<p>CARL:	Then itâs a matter of obfuscating the device as much as possible to make it blend in and look like it belongs there.  Luckily there were a fair amount of cables underneath the table.  In some businesses you like to look all clean and tidy, but in our scenario, we love it when people just leave trash everywhere and have cables going all over the place and just terrible cable management.  I can tuck a device in there and itâll look pretty benign.  If weâre lucky weâll sometimes find onsite some stickers from rummaging around from the IT department that we can slap on there and make it look official or weâll print some out ahead of time thatâll say Company Name, IT Department, Please Donât Remove.  It makes it look a little bit more official.</p>
+
+<p>JACK:	With this rogue device in place hidden neatly under the table amidst the ratâs nest of cables, the team packs up and begins heading out.  This is all they came to do so itâs time to leave.</p>
+
+<p>CARL:	Yep, yeah, itâs time to pack up and walk out casually and hope that you donât get caught on the one-yard line before you get into the end-zone, really.  That would be the worst thing possible to have somebody stop you while your device is planted and just trace everything back and have your campaign fail at that moment.  We casually walk out and that was that.</p>
+
+<p>JACK:	They even give their visitor badge to the guard on the way out since it felt like the end of their mission.  At this point they had an Uber come pick them up and drive them back to the hotel with a feeling of accomplishment.</p>
+
+<p>CARL:	Well, itâs a feeling of success as far as the time that I was given to build this device, the device works, the time I was given to research this location, thatâs paid off.  The trust put into me in the client to perform this and their interest and perform a service, thatâs worked.  I guess itâs a relief of you know what, whatever we can do remotely to this device, that will be what it will be but as far as the physical goes, weâve earned what was spent to bring us here.  Weâve upheld our end of the bargain so that feels good, and especially it being my first physical and not being very used to twisting people and creating the mirage and all of that.  It felt good to not be arrested in a foreign country on my first attempt.</p>
+
+<p>JEK:	We were in the car afterwards and Iâm feeling the rush.  Iâm like yes, we did it.  I feel good about this.  [00:45:00] We got our teammates back home the access that they need and I look over at Carl and heâs just got his head in his hands.  I was like whatâs wrong?  He was like, those poor people.</p>
+
+<p>CARL:	That really kind of weighed heavily on me.  Man, our hosts were so gracious and they were so passionate about their project that it felt bad that underneath it all, we were essentially lying to them about our purpose there and thatâs something that even with X amount of rationale, itâs an inescapable feeling.</p>
+
+<p>JEK:	It was kind of a wake-up call moment for me and I knew what we were doing was not great.  But Iâm glad that he recalled me to that because Iâve been doing this for so long, I sometimes can lose sight of that.  He keeps me grounded.  That was exactly what I told him, was look, we are pretend bad guys and there are real bad guys out there.  We can feel bad about this, thatâs fine, but weâre a vaccination and shots suck.</p>
+
+<p>JACK:	Using the rogue device, the team did find more vulnerabilities in this network which got them domain administrator access into the network.</p>
+
+<p>CARL:	Even though itâs current year, sometimes people still have unencrypted credentials flying around their network.  With sufficient amount of monitoring on the wire, credentials were recovered that allowed us to pivot into multiple systems and then we eventually escalated up to DA.  We were able to extract all of the valuable information that youâre looking for in a situation like this as far as credit cards and PCI and all of that.</p>
+
+<p>JACK:	All within a few days of recon, and a few days of actual exploitation, this team successfully got in, put the rogue device in, and gained full access to the network.  Incredible.  The team wraps up their findings and puts it all into a report and gets on a conference call to explain everything to the client whoâs the head of security for this organization.</p>
+
+<p>JEK:	Thereâs always a little bit of awkwardness.  Thereâs always a little bit of shock.  I think a lot of people assume that itâs gonna end up better for them and speak better of their security than it ends up being.  In this particular case, it was very personal because it involved very little of their physical security.  Their physical security held up quite well under the circumstances.  If we were malicious actors in-country, thereâs a potential that we could have made our way covertly past their security.  But what we did was we exploited the human factor and that hurts a little bit more.  We not only have to explain the situation to the folks who received our report, but then they had to go down and debrief this team.</p>
+
+<p>JACK:	Because the team felt bad that they exploited these people, they tried to make something positive from all this and they really pushed hard to have the corporate headquarters connect with this food bank project and get acknowledgment and help from corporate.  That did, in fact, happen.  The headquarters was happy to see the food bank project and they helped give it more resources and recognition to make it even more of a success.</p>
+
+<p>JEK:	In this particular case, the big thing that they could improve was their security awareness within the company, doing things like double-checking domain names.  When people put pressure on you to do something quickly to give them access to a piece of information or a file, or a physical location quickly, that should raise some red flags for you.  Thatâs exactly what we did in this case, was we showed up in-country and said hey, weâre only gonna be here for a couple more days and weâre off to this conference so if you want to meet us and you want this food bank project to be noticed and maybe get a little bit more funding for it, you need to meet with us soon.  You need to give us an answer soon.  We took advantage of that.</p>
+
+<p>JACK:	You know what?  The people who started this food bank project, the marks that got social engineered by Jek and Carl, this is a story theyâre always going to remember.  This is a story theyâll share with everyone.  A story like that will certainly travel around the company about the two evil penetration testers who exploited such good people and whoever hears the story will think twice about what a bad guy is actually capable of.  These people still work on their food bank project but [00:50:00] now they validate their guests a little closer before showing them around.  Hopefully this is a good lesson they learned which at the end, makes security a little better.</p>
+
+<p>JACK (OUTRO):	[OUTRO MUSIC] Youâve been listening to Darknet Diaries.  A big thanks to JekHyde and Carl for sharing this amazing story with us.  You can follow Jek on Twitter.  Her handle there is @hydens33k.  Oh, and about this podcast; Iâm about to rebrand this whole thing, new podcast artwork, new website, new stickers, everything. Iâm super excited about that so look for it soon, TM.  Want to discuss this podcast with other listeners?  You can.  You can join us over at Reddit at reddit.com/r/darknetdiaries or on Discord at discord.io/darknetdiaries.  See you there.  This episode is created by me, the one-eyed, one-horned, flying purple packet-eater, Jack Rhysider.  Theme music was created by the shrimp-sampler Breakmaster Cylinder.  See you in two weeks.</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

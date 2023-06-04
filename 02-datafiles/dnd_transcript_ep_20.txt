@@ -1,0 +1,623 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>mobman â Darknet Diaries</title>
+	<meta name="description" content="Chances are, if you were downloading shady programs in the early 2000's, you were infected with malware he wrote called SubSeven. Hacking changed mobman's life. Hear how it happened by listening to...">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="mobman â Darknet Diaries">  
+	<meta name="twitter:description" content="Chances are, if you were downloading shady programs in the early 2000's, you were infected with malware he wrote called SubSeven. Hacking changed mobman's life. Hear how it happened by listening to...">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/mobman.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/20/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="mobman â Darknet Diaries" />
+	<meta property="og:description"        content="Chances are, if you were downloading shady programs in the early 2000's, you were infected with malware he wrote called SubSeven. Hacking changed mobman's life. Hear how it happened by listening to this episode.<br><br>Image for this episode created by <a href='https://www.instagram.com/dr4w1ngluc4s/'>dr4w1ngluc4s</a>. Check out his Instagram to see some amazing artwork!<br><br> Check out the podcasts <a href='http://vansounds.org/'>Van Sounds</a> and <a href='https://www.truecrimeisland.com/'>True Crime Island</a>" />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/mobman.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/20/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/mobman.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/20/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="mobman â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/mobman.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 20: mobman</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://traffic.megaphone.fm/ADV1679665922.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/20/",
+			   "title": "Ep 20: mobman"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/20">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[FULL TRANSCRIPT]</p>
+
+<p>JACK:	Computers arenât always right.  They make mistakes, encounter errors, and crash.  Sometimes the errors can be frustrating especially when the computer is at a big company and it makes a billing error that says you owe them $1,000.  When that corporation wonât admit itâs their mistake and insists you pay for the bill that you didnât create, this can be infuriating.  But what can you do when you try to fight it but the corporation refuses to admit itâs their problem?  Well, some hackers know exactly what to do.
+<!--more--></p>
+
+<p>JACK (INTRO):	[INTRO MUSIC]  These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	Hey.</p>
+
+<p>MOBMAN:	Yo, what up?</p>
+
+<p>JACK:	You want to tell us your name?</p>
+
+<p>MOBMAN:	Everybody calls me Mobman.</p>
+
+<p>JACK:	Hacking changed Mobmanâs life but to understand how it changed his life, we need to go back to when he was just a kid.</p>
+
+<p>MOBMAN:	Alright so I started off, Iâm a little kid.  Iâm like, eight, nine years old.  Got a Nintendo, you know, the old NES square box, blow in the cartridge, push it in a few times.  I was addicted to video games, like nonstop.  Iâd sneak out in the middle of the night and go play it while my mom is asleep.</p>
+
+<p>JACK:	His mom would catch him doing this and take his Nintendo away.  Little Mobman was addicted, soâ¦</p>
+
+<p>MOBMAN:	Iâll go find it and then skip school just to play the video games.  Very sneaky kid.  I was like, the devil.  Eventually she took a hammer and smashed the shit out of the Nintendo.  That was my first computer, so I got to see the insides, look at it, take it all apart, try to figure out how to get it back to working and stuff.  That did not happen.  It did not get fixed but I learned a little bit about it.  The next thing was I got a computer.  [MUSIC]  I started playing a game called Ultima Online.  Itâs a massive multiplayer roleplaying game.  A lot of people now, they would be able to relate to it as like World of Warcraft.  Ultimate Online, if you die they can take all your stuff and pretty much leave you naked and bare.</p>
+
+<p>JACK:	As you might have guessed Mobman became addicted to Ultima Online.  As a teenager he found himself playing it every chance he could.</p>
+
+<p>MOBMAN:	The computer breaks.  Momâs like, I ainât paying somebody to fix it âcause you broke it like, three or four other times.  I had to learn how to fix all that stuff and how the actual operating system works.</p>
+
+<p>JACK:	He gets it working again and starts taking an interest in computers and learned how to do a little programming and troubleshoot problems on the computer.  But still heâd find himself playing Ultima Online all the time and back then to be online, you needed a phone and modem to connect to the internet so heâd often hear his mom shoutingâ¦</p>
+
+<p>MOBMAN:	Phoneâs busy.  I know youâre on that damn game.  Blah, blah, blah.  Sheâll go and disconnect the phone so Iâll go outside.  I found the little phone box thing and Iâll splice the cables of the neighbors and run them into ours so then I could use their telephone.</p>
+
+<p>JACK:	After years of playing Ultima Online and using his computer every day for hours a day, he started to become pretty good at computers.  He started visiting some of the more popular online bulletin boards and chat rooms and learning how to do different hacks like making free phone calls and stuff.  He started learning that software has exploits so what does he do?</p>
+
+<p>MOBMAN:	In Ultima Online â so me and my buddies, weâll sit out there and weâll figure out ways to exploit the game.  Weâll hide out in front of peopleâs houses, stealth our way, which you basically turn invisible.  Weâll wait outside somebodyâs house, their door.  When they opened it, then weâll just walk inside their door, invisible, and wait for them to leave [00:05:00] and then steal all their shit.  We built our own scams.  Like, weâll pull up the trading window to trade somebody for stuff and then weâll close it.  Their stuff will be too heavy and itâll fall and drop on the ground or they canât move and weâll just kill them and then take it.</p>
+
+<p>Eventually we bought a boat in the game.  You could have a boat; you could sail around and do shit.  There was a little cargo bay in front of the boat and you could store your shit in it.  It works like a house; you have to have a key or whatever, you can open and close the â lock it so you canât get in.  But we learned if you park a boat at the bow in front of another bow of another boat and youâre standing out in your boat, apparently your privileges of your boat links over to their boat and you could like, open their cargo and take all their shit.  We spent a couple weeks just going and hitting every boat on the whole damn server and stealing everybodyâs stuff.</p>
+
+<p>JACK:	Players could open tickets and complain on the forums but Mobman and his pirating friends never got caught doing this.  They made a lot of in-game money stealing from all these players and he wanted to show off his epic loot so he made a website showcasing what he had.</p>
+
+<p>MOBMAN:	Weâd take snippets of the game and thatâs how I started learning action script and Flash.  Iâd put some music behind it and release them all up online on our GeoCities websites.  Then we used to hack each otherâs websites and take them down and stuff.</p>
+
+<p>JACK:	In the 90s when you played Ultima Online, it asks if you want to save your login so you donât have to type it in next time.  If you do this it actually saves your username and password in a clear text file called uo.cfg.</p>
+
+<p>MOBMAN:	We figured that out and weâre like oh cool, so if we get other peopleâs uo.config file, âcause thereâs some idiots at school that play it, we could log in as them.</p>
+
+<p>JACK:	Now we have all the ingredients for a fresh-baked hack.  Mobman is now one part computer tech, two parts griefer, one part programmer, and a dash of greediness.  His mission is to somehow take that uo.cfg file from other players online.  He mixed all this together and created a pretty clever program.</p>
+
+<p>MOBMAN:	Itâs a remote-access tool.  It was a Trojan horse virus.</p>
+
+<p>JACK:	He built a program that would allow him to take control of another computer.</p>
+
+<p>MOBMAN:	You could open and close a CD ROM.  You could flip the screen.  You could hide the start button.  You could move the mouse on their screen, click around, you could open up their C-drive, change their wallpaper.  There was a whole bunch of other stuff.</p>
+
+<p>JACK:	He also connected it to ICQ, a common messaging app back then.</p>
+
+<p>MOBMAN:	When they get infected with it, itâll send you an ICQ message and itâll tell you their IP address and that theyâre online.</p>
+
+<p>JACK:	Mobman called his virus Sub7.  Now that he spent some time creating it, it was time to put it to work.</p>
+
+<p>MOBMAN:	In Ultima Online weâll stand by a bank.  Weâll go buy their â oh, man, we got â âcause we were rich in the game.  We had castles and millions of gold and all of our characters were badass because of our thievery and stealing everybodyâs stuff from the boats and the other things and killing everybody and stuff.  People were like, how did you get all that stuff?  We were like oh, no, we made this little program and it gives you unlimited gold.  Weâre like hey, do you want it?  They were like yeah, yeah, yeah.  Weâre like cool, whatâs your ICQ?  Weâll send it over to you.</p>
+
+<p>So weâll message them and then weâll send them the EXE and then weâll put up an error code.  File Not Found, Error, OK Cancel, or whatever and then weâll send them the thing.  Theyâll run it and theyâll be like oh, it didnât work.  It gave me some error.  Then theyâll run it again, infecting themselves again, and then run it again and then they infected themselves like, three or four â people infect themselves like, ten times before they figure out oh, I guess it just doesnât work.  Iâm like oh, man, I must have missed a file, I forgot to send it to you, then you give up or whatever.  Then they go off on their own merry, merry way.  Then you remove them off of ICQ and be like oh, sorry, I guess the hack didnât work.</p>
+
+<p>JACK:	Once that player is infected Mobman would swoop in and grab the uo.cfg file which contained the username and password of that player.</p>
+
+<p>MOBMAN:	Youâre looking for other cheater â people that want to cheat in the game.  You tell them that you have the cheat for them.  I think that still goes on to this day.  You see Minecraft and all those other stupid â YouTube videos out there are like oh, we got this hack; you get free gold.  Or wall hacks and shit.  All those are infected with some type of malware or whatnot.  You can scan them.  Itâs the same typical thing.  Thatâs just how we came up with doing this stuff back then.</p>
+
+<p>Nobody else was doing that, keep in mind.  We came up with that method to say hey, youâre gonna get cheats.  Here you go, [00:10:00] hereâs the file; run it.  Theyâll log in and then â thereâs some stories.  Iâll log in and people will log in real quick, take all their stuff.  Iâll have a couple guys standing by the bank.  Weâll just steal all their things, go to their house, and then Iâll go and delete their characters.  These people spend years leveling up their dudes and stuff and Iâd just delete â confirm Yes or No, yes, gone.  Thereâs no recovery.  Itâs over.  I would probably commit suicide if that happened to my account.</p>
+
+<p>JACK:	Youâre so cold, man.</p>
+
+<p>MOBMAN:	Dude, I look back and itâs like, oh my god, those poor little kids.  You know?  Itâs so bad.  So Iâll delete all their shit and then weâll make a new character, dress it up with a skirt or something, whatever, just fuck with them.  Then they eventually figure it out.</p>
+
+<p>JACK:	What they figured out is that theyâve been hacked and that somebody logged into their account, stole all their items, and deleted their character.  This would be a character that they had worked on for years and itâs all of a sudden gone.  High-level players that were wiped out by Mobman and hit with this Sub7 virus must have felt a level of rage like no other.</p>
+
+<p>MOBMAN:	But they canât prove or know anything.  I canât even keep up.  I get so many people â I had so many people that I had coming back to me where I could go and log into their accounts.  Not just their accounts in UO but I could log into their computers.  Now, I donât really log into computers but there were a couple times where some of them had webcams and Iâll turn on their webcam âcause that was another option.  You could turn on their webcam and watch them.  I see their moms be up on their computer watching some sexual stuff, you know?  I could tell you some stories about that.</p>
+
+<p>JACK:	This Sub7 virus was working really well for Mobman.  He was able to social engineer dozens of players to install the virus and he was able to take tons of in-game items and gold from them.</p>
+
+<p>MOBMAN:	Right, so I started getting overwhelmed in the UO.  I started making so much bank, so much money, and being awesome and getting all these people and stuff like that.  I wanted to share it with my other buddies, my friends that were in my clan, or guild that we had.  I sent it to those ding dongs on ICQ.  Iâm like hereâs the client, hereâs how you use it, go start sending it to people.  Do what I do.  Yâall have been hanging out; you all see how it works and stuff âcause weâre all on ICQ.  They started using it and then sending it to people and then apparently they sent it to their friends and their friends sent it to their friends.</p>
+
+<p>Then they built the fucking website and started giving it away to everybody and stuff like that.  The next thing I know, everybody knows about Sub7.  I see other idiots in UO like hey, you want to get a cheat?  Blah, blah, blah.  Iâm like sure, yeah, whatâs your ICQ number?  Theyâll try to send it to me and infect me with it.  Iâm like, thatâs fucking pretty awesome.  Iâm gonna have a talk with my friends because I told them not to give it out but they did.  They gave it out and spread it.  Iâm not the one that gave it away to everybody if you will, or made the website or anything.  That was my ding dong juvenile delinquent friends.</p>
+
+<p>JACK:	Even though Sub7 was created to steal Ultima Online log ins, Mobman had built a lot of features into it like the ability to grab any file, change files, upload files, and turn the webcam on.  Sub7 started to spread and was used by all kinds of different people for all kinds of different reasons.  Some students would infect their teachers with it and change their grades.</p>
+
+<p>MOBMAN:	They sent it to their friend and theyâre playing the cup holder game, opening, closing the CD ROM.  They got them inspired and interested in computers âcause they have to learn social engineering.  You have to convince somebody to open the file and run it.  It got people learning about the operating systems.</p>
+
+<p>JACK:	But some people already knew how computers worked and took this to the next level, infecting dozens and hundreds of people at a time.</p>
+
+<p>MOBMAN:	You could attach it to anything, though.  First thereâs a button like Browse and then you pick an executable like Calculator.  Then you click Meld and itâll meld the malware with the executable and the executable will still run and act normal except it has â Sub7 infects you when you run it.</p>
+
+<p>JACK:	I started thinking about some of the stuff I downloaded back in the warez days.  Iâm pretty sure I probably downloaded this.</p>
+
+<p>MOBMAN:	Oh yeah, you got infected.</p>
+
+<p>JACK:	As a kid I did download a lot of shitty things and ran them.  As I think back, [00:15:00] I do remember getting my grandmaâs computer infected with the Sub7 virus and having to learn how to wipe it off.  I never thought Iâd ever meet the maker of that virus that hit me in 2002.  This is why even today you should never run a program that you donât trust because it could infect you with Sub7 or another Trojan.  This malware that Mobman made was spreading all over the internet like an unchecked disease.  Mobman only used Sub7 to steal Ultima Online logins for himself.  He never used it to steal anyoneâs credit cards, bank statements, or anything like that.</p>
+
+<p>MOBMAN:	I just donât like stealing credit card â you know, money or things from them.  âCause Ultima Online I didnât think of it like that because it was virtual.  It was on the internet.  I think of my grandma.  I always get the image of my little old lady grandma and if somebody would rob her I would kill that person.  Know what I mean?</p>
+
+<p>JACK:	Mobman finished high school with good grades but his obsession with video games grew stronger.  Because he was tapping into his neighborâs phone lines and spending all night on the computer, his relationship with his parents evaporated.</p>
+
+<p>MOBMAN:	Yeah, they donât ever talk to me, during all that whole time.  I was disowned as a child.</p>
+
+<p>JACK:	Because of this he hardly ever went home.</p>
+
+<p>MOBMAN:	No, I wasnât.  Most of the time I was staying over at my girlfriendâs apartment or whatever, or out over at friendsâ houses couch-surfing, trying to get on that internet.</p>
+
+<p>JACK:	He was drawn like a moth to a flame.  He would go wherever he could find free internet access.</p>
+
+<p>MOBMAN:	Video games ruined my â Ultima Online ruined my life, or my early livelihood.  Iâm like, eighteen at this â or I was about to turn eighteen and I got a cell phone.  I was seventeen.  They let me sign the contract âcause theyâre idiots.  I thought you had to be eighteen to sign a legal binding contract.  I got a phone bill; it was like, $900 and thatâs a lot of money.</p>
+
+<p>JACK:	He looks at the bill and it says he called Kansas and some other states for an ungodly amount of time.</p>
+
+<p>MOBMAN:	I never â I donât know anybody in Kansas or Arkansas or wherever the hell â I didnât make these calls.</p>
+
+<p>JACK:	He decides to refute the bill with AT&amp;T.</p>
+
+<p>MOBMAN:	Let me call them up and see what the hell this $900 charge is.  They said I called somebody in Kansas or Wisconsin.  I donât even know anybody up in that state.  I did not call somebody up there for twenty hours.  You need to remove this $900 bill charge on my phone.  Theyâre like no, sir.  Weâre not gonna do that.  You made that call and youâre gonna have to pay it or weâre not gonna give you service.  Iâm like, weâll Iâm not even eighteen.  You signed this contract so I donât have to pay it anyway.  Theyâre like, well then weâre gonna disconnect you altogether.  Iâm like well, Iâm just gonna log in and change it myself.  Theyâre like, we got smarter people working here than you.  Youâre a young punk kid and stuff, blah, blah, blah.  So I hang up.</p>
+
+<p>JACK:	By this point Mobman has developed a complex because of his previous online exploits.  He was thinking to himselfâ¦</p>
+
+<p>MOBMAN:	I made this Sub7.  I fucking own everything in Ultima Online, the greatest game ever.</p>
+
+<p>JACK:	After he hangs up with AT&amp;T he feels powerless against this large corporation.  He honestly didnât make the calls they claimed he did and thereâs nothing he can do about it except pay it.  Rage brews inside him.  He just heard AT&amp;T tell him that their systems are too secure for him to hack into.</p>
+
+<p>MOBMAN:	Iâm like oh, really?  They think theyâre smarter and better than me, that they can push me around?  I didnât make these calls.  I get on my vengeful, upset â I see red.</p>
+
+<p>JACK:	Mobman got a list of AT&amp;T phone numbers that had modems on them.  He could use his computer to dial the number and see if it connected.  [DIALING]  This is called wardialing.  He would go down the list dialing number after number to see if it connected to any computer in the AT&amp;T network.</p>
+
+<p>MOBMAN:	I sat all night logging into different PBXs, calling up all kinds of weird exchanges.  I get into a couple of them.</p>
+
+<p>JACK:	Every once in a while he would connect to an AT&amp;T system and amazingly enough the systems he accessed did not have a username or password.  When you dialed into it, it would immediately give you a command prompt.</p>
+
+<p>MOBMAN:	Yeah, it just throws you in.  Dude, thereâs no fucking security back then man, thereâs no nothing ever.</p>
+
+<p>JACK:	This was an operating system Mobman had never seen before, some weird, AT&amp;T terminal or something so he didnât know any commands.</p>
+
+<p>MOBMAN:	Iâm typing like, question mark and help and stuff.  It gives you a little list of commands.  You type in that command and type help.  You keep getting lists of different stuff and try to figure out what everything freaking does.  [00:20:00]</p>
+
+<p>JACK:	He keeps getting access to one system after another and heâs exploring and learning the AT&amp;T network, studying it, mapping it.  He keeps going deeper.</p>
+
+<p>MOBMAN:	Man, if they had Red Bulls back then Iâd be just on more Red Bulls.  It was a natural high.  Itâs like, I donât know, youâre just doing it.  Itâs like the whole world closed off.  I get enveloped, enclosed into that â itâs me, the computer, thatâs it.  You could be â house is on fire and I wouldnât even know.</p>
+
+<p>JACK:	Mobman spends eight hours gaining access into AT&amp;Tâs network, slowly making progress but still nothing significant yet.</p>
+
+<p>MOBMAN:	Eventually I typed in the wrong command.</p>
+
+<p>JACK:	At that same moment the computer he dialed into went offline.</p>
+
+<p>MOBMAN:	Nothing worked.  Then I tried dialing some of the other numbers that I was able to connect to prior in some of the other machines and they were all off, too.  Then I thought it was me, so I tried calling in from a different address.  That didnât work.  Then I decided to give them a call, call AT&amp;T customer support again, see if they can fix my phone bill.  I got them on the line and again, weâre not fixing your bill, blah, blah, blah, you made these calls.  Iâm like, I did not, blah, blah, blah, but hey, howâs your allâs network over there in California and Nevada and stuff?  Theyâre like well we just have a big network outage over there.  Itâs been out for a couple hours.</p>
+
+<p>JACK:	He realized the commands he typed on that computer had caused a major outage at AT&amp;T.</p>
+
+<p>MOBMAN:	Apparently it rewrote the firmware on it and bricked one of these central switching PBXs which happened to run like, the whole west coast telephone systems or something.  Iâm like oh, really?  Well, if you want to know why, Iâll tell you if you fix my phone bill.  I start bragging.  I bragged to them; I sit there and I tell them what I did and all this stuff.  Obviously I gave them my name, my phone number, and all that.  [LAUGHING]</p>
+
+<p>JACK:	Obviously thatâs one of the situations you probably reflected back on a lot.  What do you think about that now?</p>
+
+<p>MOBMAN:	Yeah, donât be an idiot.  Nowadays obviously youâve got VPNs and all that shit.  If you want to do something illegal, I could definitely get away with stuff if I want to now but I donât.  I donât do anything illegal.</p>
+
+<p>JACK:	Mobman told AT&amp;T how he hacked into their systems, gave his name and phone number, and waited for them to call him back so that they could remove the charges from his phone bill.  He sat there after hanging up.</p>
+
+<p>MOBMAN:	Iâm still upset.  They didnât fix my shit.  I hacked all their stuff.  Iâm waiting for them to call me back.  I just get back on and keep trying to do other shit, hack and do stuff.  Then I think I went and played some Ultima Online afterwards.</p>
+
+<p>JACK:	A few days go by.  Still no call back from AT&amp;T.</p>
+
+<p>MOBMAN:	Yeah my friends, my girlfriend, and my mom got a visit from a detective or an FBI guy or something and left them their business cards.  I was like oh shit, oh shit, [00:25:00] what am I gonna do?  I had a job; I forgot what I was doing.  I was working at Taco Bell or some shit and these detective people were looking for me.  I was worried that Iâm gonna get picked up, Iâm gonna get arrested, I donât know whatâs happening.  I said alright, well let me confront it.  I had lots of friends, computer friends.  One of them lived in Washington and there was a library in Washington and apparently that library had a database, a little computer that was like the White Pages.  You could type in anybodyâs name or phone number, reverse-look up, front look up, sideways, whatever you want to do.  It has everybodyâs information.</p>
+
+<p>JACK:	Mobman uses this computer to look up the information on the detective thatâs looking for him.</p>
+
+<p>MOBMAN:	I get his house phone number and his address and stuff.  I call him at his house, at like 3:00 in the morning.  Heâs asleep but he answers the phone.  Iâm like hey, whatâs up?  I heard you were looking for me.  Heâs like yeah, I just want to talk to you about AT&amp;T.  They said that you were having some issues with them and I think â why donât you meet me up and get a cup of coffee and we can go over this stuff?  Iâm like dude, Iâm not stupid.  Youâve been looking for me for like a month and knocking on all my friendâs doors and shit.  I think youâre gonna arrest me so Iâm not gonna meet up with you with some coffee.  Iâm not stupid.</p>
+
+<p>Heâs like alright, yeah, I get it.  You are wanted.  Iâm gonna have to take you in.  Where are you?  Iâll come and get you.  Iâm like, Iâm not gonna tell you where I am.  Iâm not stupid; again, Iâll reiterate that.  But however, I get my paycheck Friday and Iâll meet you at my girlfriendâs apartment complex on Saturday at the pool and Iâll turn myself in.  Heâs like okay, well, where do you work?  Iâm like dude, really?  Then I hang up.</p>
+
+<p>JACK:	He wanted to do the right thing.  He didnât want to be a criminal or a fugitive.  He just wanted to face his problem.  He thought he might go to jail so he spent the next few days stashing all his computer files in safe spots all around the internet and sorting out any loose ends.</p>
+
+<p>MOBMAN:	I was like alright.  I went and got my paycheck and I went in that Saturday and went to the pool.  I went and walked in there.  They came like, they had SWAT team there.  A bunch of dudes with machine guns surrounded me, basically, and put me inâ¦</p>
+
+<p>JACK:	What did you think as soon as you saw a SWAT team?</p>
+
+<p>MOBMAN:	Iâm frozen.  Iâm just like, standing there.  What am I gonna do?  Pull out my nine and start shooting at them?</p>
+
+<p>JACK:	No, I mean, I would just be so scared.  Like, why are there people pointing guns at me?</p>
+
+<p>MOBMAN:	I donât know!  I donât care.  Itâs cool.  My girlfriend, sheâs there walking up.  They let me kiss and hug my girlfriend goodbye.  They gave me my cell phone.  Theyâre letting me make calls in the back of the cop car.  Iâm calling up my buddies; Iâm like yeah, Iâm going to jail.  Write me a letter or something.  Then they took me to jail.</p>
+
+<p>JACK:	His girlfriend was not happy to see him arrested at her pool.</p>
+
+<p>MOBMAN:	Yeah, she was sad but she was good.  She came to the jail and visited me a lot, and all that stuff.</p>
+
+<p>JACK:	Mobman was questioned and taken to jail.</p>
+
+<p>MOBMAN:	It sunk in the first couple days, like two or three days.  Itâs like man, Iâm missing people, blah, blah, blah.  But then it becomes like a whole different world inside of jail.  It has its own ecosystem, if you will.  You start learning all the stuff in there and whatnot.  I was like, the pretty cool guy in jail.  Iâm a young, skinny, nerdy fucking dude but nobody fucked with me at all because I was the cool hacker guy that could like, when they get out we could all hook up and make lots of money and do shit.  Everybody wanted to be my friend.</p>
+
+<p>I had it made; I was good at chess.  I learned Pinochle, played Dominoes, I got sent to Lockdown a few times.  That was fun, got to hang out with all the murderer people.  Yeah, it was an experience.  It opens your eyes.  I learned how to become humble and very respectful [00:30:00] in there.</p>
+
+<p>JACK:	Strangely enough he was still able to get on a computer while in jail.</p>
+
+<p>MOBMAN:	Some of the guards there, the officers, they were going to school for computers or they had a computer there and they want to learn stuff.  Whoâs the guy they come and talk to about learning things?  This guy.</p>
+
+<p>JACK:	Which was a lot of fun for Mobman.</p>
+
+<p>MOBMAN:	Hell, yeah!  They let me go hang out, play on the computer, show them things.  There was the law library.  Law library was amazing.  That had the internet but you couldnât get on the internet so I had to hack the computer locally.  I remember how I did that, was Magnifying Glass.  Yeah, magnify.exe.  I deleted Magnify and renamed cmd.exe to magnify and then I went back to the login screen.  You hit Windows + H and it brings up the accessibility magnify which was actually command prompt and system-launched it for me.  Now I have admin of their little law library computer.  Then I got everybodyâs name, address, all the â I mean well, not everybody but all the correctional officers.  Got into their HR department and got all their information, printed that out, signed up for pretty much every magazine on the planet.  Like, the mail that I got every day was bags, like those big garbage bags full of mail.</p>
+
+<p>JACK:	Howâd you pay for that?</p>
+
+<p>MOBMAN:	Cash on delivery, bro, back then.  You signed up, sample subscription, whatever, done.  Every magazine.  Back then magazines were a thing.  There was, I donât know, thousands a day.  The jail people got upset and came to my cell and had a talking with me and wanted to know how I did it all or they were gonna charge me with more crimes.  I sat down with their IT guy, some old dude, and showed him that his computer skills were lacking and how I did all that, which was fine.  I got to be on a computer and do things here and there.</p>
+
+<p>JACK:	He spent five months in jail and it was time for his trial.</p>
+
+<p>MOBMAN:	I get a public defender.  Pretender is what we call them, public pretenders.  Theyâre scaring me.  Theyâre like dude, youâre going to prison for fifteen years.  We got all the evidence that we need.  We got you, we got AT&amp;T saying that you called them saying that you called them and told them that you did this.  I was scared though, and I wanted to get out of jail.  Theyâre like if you sign here, you can get out tonight.  Weâll put you on probation, done.  Or we go to trial and youâll lose.  I mean, the public defender is like youâll lose and youâll go to prison for fifteen years but if youâd plead out the here, weâll lower your charge down to a third-degree felony instead of a second-degree felony and weâll let you out tonight and you can go home.</p>
+
+<p>Iâm like, alright.  So I signed and pled out.  But then I didnât get to go home that night âcause the judge wanted to have a whole ânother hearing for restitution.  Iâm like, whatâs that word?  Whatâs restitution mean?  Itâs like oh, thatâs the money youâve gotta pay back for the damages youâve caused.  Itâs a lot of money so weâre gonna have a whole hearing on that.  Whatâs a good time there, court reporter person?  Oh, next month weâve got an opening.  Oh, cool, alright well send him back to jail and weâll see him next month.  So I sit in jail, wait a month, come back, restitution hearing.  Yay, I get out today, whatever the fuck yâall want to say, I want to pay.  I donât care.</p>
+
+<p>But their lawyers didnât show up, the AT&amp;T ding dongs.  They were like oh, well can we get a continuance?  Lawyers couldnât make it today.  I stand up.  Iâm like, fuck no.  I pled out a month ago.  I should have been out a month ago.  Iâm not going back into jail because these guys canât be respectful enough to the court to show up when you told them to be here.  Then the judge is like you know what, youâre right.  If they wanted any money from you, theyâre going to have to sue you.  Click.  No restitution.  Then I did the little deuces sign, deuces!  And then I got to get out.  [MUSIC] I got out and left.  [00:35:00]</p>
+
+<p>I went to find the nearest ashtray to find a cigarette butt to smoke.  Then I went to McDonalds and got a cheeseburger for free because I told them that I ordered something the other day and it was â âcause I just got out of jail.  I didnât have no money.  I ordered something the other day and they forgot to give me a cheeseburger in the bag.  Theyâre like alright, here you go.  Iâm like, sweet, cheeseburger.  Social engineering.  Then I went to go live at the Salvation Army.</p>
+
+<p>JACK:	Mobman had nowhere to go after getting out of jail so he was homeless for a while with no money and had to start from scratch.  His friends were all gone and his mom wanted nothing to do with him.</p>
+
+<p>MOBMAN:	Well because she was a police officer and I was a convicted felon at that time. She kind of disowned me so I lived on my own, did day labour digging ditches.  It was cool, I went out on one, they had a submarine once at â parked at the thing and it was in for cleaning.  It was some old Russian sub or something and we had to chip off the barnacles.  It was pretty fun.  Yeah, laying sod, doing whatever, eventually saved some money, got a little apartment, got another job.</p>
+
+<p>JACK:	He was starting to pick his life back up and be productive again but then something happened.</p>
+
+<p>MOBMAN:	I seen a crime happening one day while I was walking down the street, but it was pretty bad.  Somebody was getting their ass whupped and there was a knife and all kinds of other stuff.  Iâm like oh, hereâs a pay phone.  Let me call 911.  Let me be a good citizen to save this personâs life.  I do that, cops come and they want to come over and talk to me. They ask for my ID and stuff.  Lo and behold, I had a warrant out for my arrest.</p>
+
+<p>Apparently I violated probation âcause I was on probation and I never had a probation officer or checked in or did anything that I was supposed to do.  I got arrested.  They took me to jail.  They didnât take the other dude to jail, by the way.  They let him off.  They just gave him a court date, the guy that was like, killing somebody.  But I get to go to jail because I violated my probation which is fine, itâs the law.  I went to jail, sat in jail, had to wait, go to court.  Then Iâm like, I donât want to get put on probation again and apparently I canât do it.  Theyâre like, weâll weâre gonna put you on it again.</p>
+
+<p>Alright, cool.  So I get put on probation again.  This time I actually get checked in, meet with the dude and everything.  Heâs like well youâve gotta get a job, youâve gotta do this, youâve gotta do that.  Iâm like fuck that.  Put me back in jail.  So I went back to jail.  Then I tell the judge, I told you I didnât want to get put on probation.  Just tell me how much time I gotta do and Iâll do it.  Donât put me on probation.  Heâs like alright, well youâve gotta do a year.  Iâm like alright, cool.  Iâm already been sitting in here for six months so alright, a couple more months to go, done.  âCause you get extra bonus days âcause I was a trustee and I did good stuff and you get good behaviour.  So you really do like, eight months out of the twelve months for a year.  I did my year, got out, free and clean, done.</p>
+
+<p>JACK:	He gets back out, starts over from scratch again doing day labour, earning a little bit at a time, and saving up for an apartment.</p>
+
+<p>MOBMAN:	Iâve actually met a chick, moved down to Fort Lauderdale with her.  She had some money so I lived with her.  I didnât really have to buy or pay anything or whatever.  Then I got a job running Cat 5 cable or whatever.  Then they were working on poker software and their programmers were idiots.  I would look over their shoulder and see what theyâre doing âcause Iâm running all the cables and Iâd go and help them fix their little problem theyâre having that day.  Eventually the boss, heâs seen me doing that and heâs like hey, you wanna just work here?  Iâm like cool, yeah.</p>
+
+<p>So I started.  I was the assistant IT guy.  Eventually I stayed with the company and everything and I became one of the head dudes there.  My knowledge has skyrocketed from working there.  Then I went back to college.  I started going to school.  I put myself through college to get a degree, which is pretty much worthless; didnât learn a lot while I was working there.  And I was getting certifications.  So like, two hundred different Microsoft CERTs later, I took one like every other day just for kicks and giggles âcause theyâre free.  Iâm like cool, Iâm gonna take all these CERTs.  I was taking CERTs like, [00:40:00] every day.  It was fun.</p>
+
+<p>JACK:	The place he was working at was an online casino but it was at this time that some harsh online gambling regulations went into effect in the US so the business started to wobble and he knew he needed to move onto something new.</p>
+
+<p>MOBMAN:	I eventually got into an argument and left that company and went and started my own.  I made a cyber-security company and then I sold that company to McAfee.</p>
+
+<p>JACK:	Thatâs John McAfee who started the McAfee antivirus software but John is no longer part of McAfee and is doing his own ventures.  But still, Mobman made some pretty good money selling his company to John.</p>
+
+<p>MOBMAN:	Yeah, I bought a house and car and paid off all my debts, student loans.  I moved to Alabama.</p>
+
+<p>JACK:	Mobman has just been living a nice, relaxing life for the last few years, which brings us up to now.</p>
+
+<p>MOBMAN:	Now Iâm just hanging out, looking for a job.  Iâm in Huntsville, Alabama and the scenery here is all DOD.  Everybody has clearance, secret clearance and all that.  Obviously me with my criminal past, I donât have the clearances.  A lot of people wonât touch me or hire me so I do contract work.  Iâm actually looking into maybe even starting a recruitment company because I know so many people and I like to help.  Iâm really good at making resumes and getting placed and knowing if somebodyâs full of shit or not.  But I think Iâm probably gonna be one of them people where I just have to keep doing my own companies and my own thing unless somebody gives me a chance to show them Iâm not a criminal.  A lot of companies are scared of me.</p>
+
+<p>JACK:	Oh, and remember Sub7?  Apparently while he was in jail and homeless and struggling, that malware became really popular.  Thousands of people started becoming familiar with it.</p>
+
+<p>MOBMAN:	Oh, this is more than thousands.  I know nowadays millions of people know about Sub7 âcause I know itâs still being used in China and India and a few other places.  Itâs very, very weird to see that itâs still out there in the wild and working to this day.</p>
+
+<p>JACK:	After a while, Mobman would go and attend security and hacker conferences.</p>
+
+<p>MOBMAN:	Then I started seeing the impact that it had on the industry and changing a lot of the people.  Iâll go to Defcon or whatnot and people come up to me; theyâre like oh man, youâre Sub7.  Everybody tells me a story about their use of Sub7.  Some people that run these billion dollar cyber-security companies, they come up to me and theyâre billionaires.  Theyâre like dude, you got me â the one that got me into computers.  I wouldnât be where I was today without Sub7.  Iâm like, you owe me a beer.  Theyâre like, whatever you want man, letâs go to the bar.  Everythingâs on me.  Itâs cool âcause Iâm poor, or I was.</p>
+
+<p>JACK: 	Itâs hard to tell but some people claim that Sub7 was the first remote access tool that became popular with hackers.  A few other Trojans came out around the same time.</p>
+
+<p>MOBMAN:	With that, itâs history, kind of historical software.</p>
+
+<p>JACK:	A few years back Mobman saw an article online and it said that AT&amp;T found an error in their billing system which ended up in a class action lawsuit.  It said the errors in their billing system dated all the way back to when Mobman was erroneously hit with that $900 phone bill.</p>
+
+<p>MOBMAN:	Iâm like yep.  Iâve been saying that for years.  Iâve been telling them their shit was broken for years.  So yeah, AT&amp;T, burn in hell.  When they come on my lawn and they ask me if I want to get AT&amp;T internet itâs like, I feel bad for that sales guy.  So I trolled him.</p>
+
+<p>JACK:	What did you say to him?</p>
+
+<p>MOBMAN:	Dude, I go down and file restraining orders, or else, against them.  If they send me one letter in the mail, I go down and file something at the court house.  Iâm livid against that company.  I just donât like â see, the only thing I learned â I donât have no anger issues or anything.  The only thing that ever upsets me in life â you can do whatever you want to me.  You accuse me of something I did not do, I get upset but Iâve learned to control it.  Iâm not gonna go and hack you or do something.  Thatâs the only thing that really pisses me off in life, is being accused of something I didnât do.  It upsets me when I go to a lot of companies and they think that Iâm gonna do this and this and that.  Or if they upset me Iâm gonna fuck all their shit up or something.  Thatâs ridiculous but whatever.  It is what it is.</p>
+
+<p>JACK:	[MUSIC] [00:45:00] Wait a minute, wait a minute, one more thing.  I have an addendum to this story.  After I published this episode an article was written about this episode, basically calling the whole thing made up.  It says this guy who says heâs Mobman is not the guy who created Sub7.  Another guy did it but we donât know who.  I struggled with this for a year, trying to figure out exactly what the truth was. Was the article telling the truth or Mobman?  Now, to fact check this story I contacted some people that know Mobman personally.</p>
+
+<p>They said yes, he did create Sub7.  Then I talked to a few people, not just one.  Mobman was also featured in Rolling Stone magazine which says he did create it.  But thatâs about all the fact-checking I did, but this article is saying otherwise.  The article is written by a guy named Ill Will and Ill Will goes on to say that he was there in the scene when Sub7 was hitting the streets.  Ill Will remembers when it came out and the guy claiming to have made it twenty years ago was Romanian. He had a Greek background and even put Romanian in the code.  Mobman isnât Romanian and canât explain why Romanian is in the code or if it is at all.  Ill Will canât track down the real maker of Sub7 and how could you?  It was twenty years ago.  Neither can I.</p>
+
+<p>Mobman stands firm on his claim that he wrote Sub7 but Ill Will says it wasnât him.  Last month I went to Defcon.  While I was there I met Mobman in person for the first time and we hung out. Heâs totally crazy and constantly joking around but I kind of learned why they call him Mobman; everyone knows him.  As we walked the halls people everywhere were stopping and saying hi, and Iâd ask how they know him.  Some from way back and some from when he lived in Florida.  Wherever he would hang out, Mobman attracted a mob around him, hence Mobman.  The fact that so many people vouch for him being the creator of Sub7 really had me convinced but then while also at Defcon on a totally different night, I ran into Ill Will and I spoke with him in length about this subject.</p>
+
+<p>Ill Will is a fan of this show and he finds the episodes accurate and entertaining.  The only episode he has the beef with is this one, the Mobman one.  We talked and talked.  Ill Will swears that this isnât the guy who wrote it and has some things to sort of prove it.  I spoke with Ill Willâs friends, too.  They were also in the scene at the time and they also claim it wasnât him.  At least half a dozen people gave me stories as evidence as to why. So I just donât know.  Mobman says Ill Will is lying.  Ill Will says Mobman is lying.  Thereâs some proof from both sides but at this point I donât know for sure.  I just wanted to add this in the end here as part of a full disclosure that this case is sort of still open.</p>
+
+<p>JACK (OUTRO):	[OUTRO MUSIC] Youâve been listening to Darknet Diaries.  If you want to help support this show, head on over to darknetdiaries.com/love.  There youâll find the best ways to support this show including the link to the Patreon page and a shop where you can buy t-shirts and stickers.  This show is made entirely by me, Jack Rhysider and the theme music is by the mysterious Breakmaster Cylinder.</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+<p>Transcription performed by Leah Hervoly
+www.leahtranscribes.com</p>
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

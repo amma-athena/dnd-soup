@@ -1,0 +1,603 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>Sam the Vendor â Darknet Diaries</title>
+	<meta name="description" content="Sam Bent, a.k.a. DoingFedTime, brings us a story of what it was like being a darknet market vendor.">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Sam the Vendor â Darknet Diaries">  
+	<meta name="twitter:description" content="Sam Bent, a.k.a. DoingFedTime, brings us a story of what it was like being a darknet market vendor.">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/sam.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/132/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Sam the Vendor â Darknet Diaries" />
+	<meta property="og:description"        content="Sam Bent, a.k.a. DoingFedTime, brings us a story of what it was like being a darknet market vendor." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/sam.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/132/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/sam.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/132/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="Sam the Vendor â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/sam.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 132: Sam the Vendor</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/chrt.fm/track/G481GD/traffic.megaphone.fm/ADV5039649769.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/132/",
+			   "title": "Ep 132: Sam the Vendor"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/132">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[START OF RECORDING]</p>
+
+<p>JACK:	Hey! Hi, Iâm Jack, and Iâm back. I took a three-month break; I really needed it, but itâs springtime now, so yeah, itâs time to come out of hibernation and get back to work, so letâs do this. Oh, and from now on, you can expect new episodes of the show to come out on the first Tuesday of every month. [INTRO MUSIC] In this episode, we get into a story about darknet marketplaces. That means listener discretion is advised. Weâre certainly gonna get into drugs this episode and who knows what else, so letâs just say this one is rated R, and this is your warning.
+<!--more-->
+(INTRO):	[INTRO MUSIC] These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	So, letâs start out with your name. [CROSSTALK] So, what do you want to be known for â known as on here as well? Because you may want a moniker or something.</p>
+
+<p>SAM:	Oh, no. So, my name is Sam Bent. Itâs a matter of public record. Also mostly known as DoingFedTime online and killab; that was my hacker alias for a while. Also 12189082, which is almost like talking to Jean Valjean, but thatâs â so, that was my fed number. So, thatâs â I got a couple aliases.</p>
+
+<p>JACK:	Okay, well, maybe that gave the story away a little bit, but whatever. Now you know Sam spent some time in federal prison, and honestly, sometimes when I talk with criminals on this show, I get a little nervous and have to lay down some boundaries. Iâm assuming your criminal spree is over, but I do notâ¦</p>
+
+<p>SAM:	It is.</p>
+
+<p>JACK:	â¦want to know about any future things you may be cooking up that may be illegalâ¦</p>
+
+<p>SAM:	Nah.</p>
+
+<p>JACK:	â¦because it puts me in an awkward spot, butâ¦</p>
+
+<p>SAM:	Yeah, definitely not, definitely not. Just us like â even if I had mentioned something to you, federally you are literally part of a conspiracy now and you can get up to ten years, so I take it very seriously. Even when I was incarcerated, I would have guys who would walk up to me and theyâd be like, oh, when I get out Iâm gonna sell coke right this time. Iâd be like, listen, mate, get the fuck away from me, you know? What is wrong with you, you dumb â like, youâre guaranteed to come back, you know? Itâs like, I donât want to hear anything about any of that. So, I absolutely understand that. Thatâs great that you have that mindset of, you know, donât try to involve me in anything.</p>
+
+<p>JACK:	[MUSIC] Okay, so when Sam was in his twenties, he was living in Vermont and was getting good at computers. He had a job fixing computers for a while, and then he started a little business doing computer repair for other people. Now, as Sam got more into technology, of course he noticed and heard things like Silk Road and darknet marketplaces and Tor and Bitcoin, because when youâre a tech enthusiast, you go and you check these things out.</p>
+
+<p>SAM:	I had had this exposure to cryptocurrencies and to the darknet in general for a long time because I had been in information technology and cyber security. I did a lot of residential work, mainly, but I was always â that was always kind of my thing. I loved computers. I remember when Silk Road had came out; I honestly â I thought it was a scam. I thought it was a bunch of feds that ran it and it was just a big â it was just a big sting operation. Then as time went on and I learned a little bit more about it, I realized it wasnât.</p>
+
+<p>JACK:	Silk Road was a website on the darknet that let you buy and sell drugs â among other things â illegal drugs. The whole thing was anonymized so it protects buyers and sellers. That way the police would have a hard time finding who the users were. An interesting use of technology, but Sam didnât really care about Silk Road at all. He was not interested in buying drugs from it or selling drugs on it. So, Sam was in his twenties and had a girlfriend for ten years that he was living with.</p>
+
+<p>SAM:	We were arguing about peas. My daughter got â âcause I had two step-daughters and a son. I had made them dinner and when I had given them dinner, my ex was like, oh, you gave her too many peas. I was like, I donât think so. She was like, you know â and sheâs like, oh, well, you obviously did; look at the plate. I was like, well, itâs the same number of scoops. Sheâs like, youâre an asshole. Iâm a logician; like, my personality type is INTP, so Iâm a logician. So, I donât really get emotionally invested. So, I was like, I disagree. I think youâre wrong. Itâs the same amount of scoops, as the other kidâs. So, it really aggravated her and she basically told me â she was like, I cheated on you seven years ago.</p>
+
+<p>[MUSIC] She was a super-miserable person for those seven years because her guilt ate at her, and she would take that out on everyone else. She would basically never be home and when she was, she was just a nightmare to deal with. So, when she ended up telling me that, I was like, awesome. This is my chance to basically tell her to go to hell, and I used that opportunity to break up with her. But living in rural Vermont and doing these small computer jobs, I definitely didnât make a ton of money. It was my own company. It was called Worldwide Computer Consultants. It was a startup. I didnât have a ton of money, so I was like, well, I need to make money. If I want to move out and I want to have a good house for my children to live in, I need at least two hundred grand.</p>
+
+<p>JACK:	Okay, so weâve all been in this situation, right, where life throws us a curveball and suddenly we need money? Maybe not two hundred grand, but still, I can relate to being in a bad spot where money can fix a lot of my problems, but I have no idea how Iâm gonna get it. Not only does he need money, but breakups are hard to go through, especially after being with someone for ten years. [MUSIC] Sometimes when we break up with someone, we have a tendency to go back to our old ways. So, what were Samâs old ways?</p>
+
+<p>SAM:	[MUSIC] Prior to living in Vermont, I had lived in Rhode Island, and prior to living in Rhode Island, I lived in Massachusetts. So, like most people, they move from these states for whatever reasons; economic reasons, job opportunities, right? So, I was in Massachusetts. I caught my first case; it was assault and battery with intent to murder.</p>
+
+<p>JACK:	Geez, dude. I donât know the full story of what happened here, partially because Sam never told the police everything, either. What I do know is that he was seventeen at the time and there were two other guys who were also part of this. Everyone ran, and Sam was the only one who got caught. Anyway, this landed Sam in jail for a while, and while he was there he was sent to the SHU a few times â solitary confinement â one for possessing a lighter because heâs a smoker and one for making a knife to defend himself in case another inmate attacked him. In this period of his life, he was a drug user, and when he got out of jail, he even got charges for possessing marijuana. He got into some more serious drugs and moved out of Massachusetts to Rhode Island.</p>
+
+<p>SAM:	I had been in Rhode Island for a while, and when I lived in Rhode Island, I sold â itâs been way over the statute of limitations at this point, but I sold coke, powdered cocaine, and weed and stuff. I moved up to Vermont âcause I was like â I was tired of doing that kind of stuff âcause itâs a rough life, you know? Itâs no joke. So, I moved up to Vermont. I moved up to Vermont, I got my high school diploma. From there I continued on, and â with my education. When I came up to Vermont, I couldnât turn a computer on. If you were like, turn this computer on, I wouldnât be able to turn it on. I couldnât reformat one, I couldnât de-frag a hard drive. I couldnât do anything. I didnât know anything about it. So, I spent the next ten years educating myself about computers and technology.</p>
+
+<p>JACK:	So, Samâs old ways was a lot of drug-related stuff and even running from the law. Sam has learned a lot since then, specifically that there are now online drug marketplaces. Old Sam was about to catch up with new Sam. Silk Road, the leading darknet market, was raided and shut down by the feds in 2013, but this didnât make darknet marketplaces go away. No, Silk Road was replaced with like, four other markets, and people just flocked to those. When Sam was going through this breakup in 2017, a popular market at the time was Hansa. [MUSIC] Sam was particularly fascinated by this site, so he spent long nights reading through many listings and posts on there, trying to learn as much as he could about darknet marketplaces.</p>
+
+<p>SAM:	So, I had hopped on their site and I was on their site for a while, and I started making posts. How I ended up establishing my name was just helping as many people as I could and calling out the people that I knew were scammers. So, you had a ton of people, obviously, that are on that forum or any darknet forums that are trying to get people to conduct transactions with them outside of the Esper system. So, if someoneâs like, oh, Iâm looking for this vendor; he had a pound of weed â hypothetically â he had a pound of weed for twelve hundred bucks. Youâd see some shark come in and be like, oh, I have this weed and I bought it in bulk and Iâll sell it to you for six hundred bucks a pound. This guy is just a random person.</p>
+
+<p>Like, youâre never gonna get anything. Heâs there to rob you. He might even be a fed and heâs just there to try to get your address, you know? Heâll rob you too, but heâll get your address, too. So, I used to call those people out. Like, if youâre â if you said that to someone on the forum â youâre like, oh, I can beat his price, Iâm like, you donât have that vendor star or you canât prove that youâre a legit vendor. Like, you canât provide assigned PGP message saying youâre vendor XYZ from this market. I would be like, dude, youâre a fucking fraud. Youâre trying to rip this dude off, you know? They used to hate that âcause I would call them out. [MUSIC] I made 5,000 posts in a month on Hansa, and that was how I established my name. Hansa came out with a policy where they were like, listen, you canât post on our forums unless youâre a buyer or a vendor.</p>
+
+<p>JACK:	At this point, Sam was neither a buyer or seller.</p>
+
+<p>SAM:	So, I was like, son of a bitch. So, there was a big carder; he was like, listen, man, I know you been on the forums, you do a lot of good. He was like, if you â are you gonna buy something? That way you can stay on the forums. I was like, well, I understand Bitcoin, I understand all that, but Iâm not completely sure yet that if I hop on LocalBitcoins that I can buy Bitcoins and have it be completely anonymous, and for me thatâs a major risk. To me, it was like, itâs not worth the cost of being able to post on the forums. So, I was like, oh, itâs a bad hit. Iâm not gonna be able to post on the forums. He was like, no, man, Iâll send you some Bitcoin and just buy a â technically, that was my first purchase on the darknet, was a stolen credit card. So, he had sent me the money for it.</p>
+
+<p>I had bought it off him as 2happytimes. Then once I bought it, I was now a buyer, so I could talk on the forums. So, Iâm like, yeah, I solved that problem. Thatâs awesome. So, I sent him his stolen credit card number back. I was like, here, man, I donât need this. Iâm not gonna do anything with it. Iâm good, you know? So, I was like, sweet; now I can post on the forums, though. So, I kept posting on the forums and then about a month or so later, it was like, I wanted to become a vendor. So, I go to become a vendor and he was like, hey, listen, man, if you want to become a vendor, Iâll front you that two hundred bucks to do it âcause I know you donât want to go buy Bitcoin and youâre â he called me paranoid about it. I was like, yeah, alright, thatâs awesome. Yeah, I appreciate you sticking your neck out. Itâs two hundred bucks and he probably makes that in an hour. But I thought that was really cool.</p>
+
+<p>JACK:	Hansa required something like $200 be paid if you wanted to create a vendor account, and now that he had this, [MUSIC] Sam was all set to start a new chapter in his life as a darknet market vendor. He didnât jump right into it, though. He was very cautious about everything. For one, he knew a lot about opsec, or how to remain private online, from his knowledge of cyber security and computers. But then, having spent months reading thousands of posts on Hansa really helped him get embedded into the darknet market culture.</p>
+
+<p>This is a tough culture to pierce; thereâs little trust in some areas and a lot of trust in others, which makes it feel like youâre part of a criminal family at times. He had made friends and connections and started a reputation without even buying or selling a single item. He made some observations during that time; number one, nobody uses their real name on the darknet. In fact, everyone is trying hard to hide from their real identity. Number two, you can assume everyone is a criminal or a federal agent. Three, the feds are actively looking to take down the criminals, and he would pay attention to all those methods on how the feds were catching people. So, other peopleâs missteps became his rules to live by. Do you remember what you sold for â at first?</p>
+
+<p>SAM:	Yeah, so, it was moonshine and cannabis.</p>
+
+<p>JACK:	But where were you getting the cannabis?</p>
+
+<p>SAM:	I was growing it. Yep, so I had imported seeds from the EU. I had gotten some Master Kush seeds and I refined them. I had studied â so, I had studied botany for probably about fifteen years, so I went â I taught myself about macro nutrients, micro nutrients, deep-water cultures, ScrOGs, all this kinda stuff; aeration and nutrient deficiencies and how to tell nutrient deficiencies in plants. So, I had learned all this stuff and I had wanted to cultivate cannabis for the longest time.</p>
+
+<p>JACK:	Yeah, howâd it go on Hansa? How was your first dip into the vendor pool?</p>
+
+<p>SAM:	Yeah, so, I want to say on the first week I made about three hundred bucks, then the second week it was probably about $500. [MUSIC] So, it was definitely â it was a slow start, but had I not spent that month making those posts, I would have had no sales.</p>
+
+<p>JACK:	His big idea was that he really wanted to be the manufacturer and seller. His theory was that this is how you could maximize your profits.</p>
+
+<p>SAM:	So, Iâm like, you know, if Iâm the manufacturer and Iâm the retailer, my ROI will be insane. So, with my moonshine, I could spend $10 to $14 and I could turn that into $100 at a minimum. Then if I made apple pie brandy from that, multiply that by five, and that was my return, was five hundred bucks.</p>
+
+<p>JACK:	Now, Sam was trying to be business savvy, too, trying to find ways to cut costs. Like, shipping supplies can easily start adding up.</p>
+
+<p>SAM:	So, for me, one thing I came to find out was that USPS â on their website, you can order free supplies, right? So, if you want bubble wrap, instead of buying bubble wrap from Amazon with your credit card, having it sent to your house and going through a ton of it, you can order envelopes from USPS or pick them up in person, right? Now you donât have a credit card purchase for one less of your shipping supplies, anyway. Then I would take â I would order generic catalogs that were really big like Grainger that had 500 to 2,000 pages in them, and I would tear out the pages, crumple them up into a ball, and throw them in there. I would pack it â so, thereâs no packing peanuts, so now I donât have to buy that on Amazon. I would make sure that my â âcause whatever youâre sending out, thatâs one end that you can get popped. But you buying supplies is just as dangerous, right? So, all â you have to factor in all those things. If you can factor those things in and make sure that they have no overhead, even better, âcause now youâre more profitable.</p>
+
+<p>JACK:	He also made a lot of very careful steps just to get onto the Hansa darknet market. Like, when you get on social media, chances are you just turn on your phone or your computer and youâre already logged into the site, just like where you were before. But you donât want to do that with darknet marketplaces, because suppose you get caught by the cops and they take your computer and open it and they can just see that youâre logged in as a vendor on the site? [MUSIC] Thatâs some smoking evidence that theyâd have on you. So, Sam would try to hide his tracks so that it looked like he was never even on a darknet marketplace to begin with. For one, he would never use his home internet connection to do illegal things online.</p>
+
+<p>He lived up on a hill, and so, he pointed his antenna down the hill towards the neighborâs house and was able to figure out a way to get onto their network. He used the Tails Linux operating system, which has some extra security features. But the thing about the Tails operating system is that it gets completely wiped every time you reboot or shut down and has no memory of what youâve done before, which means every morning when Sam needed to log in and check his orders, he would have to reload Tails and re-enter his PGP key and his Bitcoin key and do all that in order to authenticate and do business on the site. But hereâs another problem; having possession of those two private keys would prove to the feds that heâs the vendor on the site. So, he needed to protect those keys very well, and he stored them both on a little USB flash drive.</p>
+
+<p>SAM:	I would have my flash drive that I would always keep on me, and I kept it on me because first off, you have to figure â Iâm a moonshiner, so thereâs 170 proof alcohol around me at all times. So, itâs possible for me at any time to take this flash drive out of my pocket, pour 170 proof alcohol on it and light it and hopefully melt it to a point where it canât be recovered. But really, obviously, thatâs not a guarantee. Itâs not like I have thermite sitting around, even though that was an idea of mine at one point.</p>
+
+<p>JACK:	Also because he lived up on a hill, he could watch and see if anyone was coming for quite a ways away.</p>
+
+<p>SAM:	I would do regular perimeter checks, so â probably four a day. I would walk around, I would look through almost every window in the house and just kinda look at what was going on outside, you know? Was there a car parked down the street? There were times where I saw a car parked down the street. Yeah, thereâs a ton of stuff. I wouldnât have a cell phone and I wouldnât â if you had a cell phone and you somehow knew me and I knew you well enough where I trusted you enough to come to my house, your cell phone stays in the car.</p>
+
+<p>JACK:	Dang. Things get really intense when youâre a darknet market vendor. Friends arenât allowed to bring cell phones to your house and you have to always have a plan in the back of your mind on how to burn the USB stick that youâre always carrying with you all the time. Weâre gonna take a quick commercial break, but stay with us because despite all this planning and safety precautions, something goes seriously wrong. What about â which carrier do you use?</p>
+
+<p>SAM:	Oh, for packages?</p>
+
+<p>JACK:	Yeah.</p>
+
+<p>SAM:	USPS only.</p>
+
+<p>JACK:	Why?</p>
+
+<p>SAM:	Because itâs run by the federal government, which means they require a warrant to open it. If you ship DHL, UPS, FedEx â any of those are private companies. They can open your package at will, whereas with USPS, they require a warrant and they need reasonable suspicion with probable cause in order to apply for that search warrant and have the federal judge sign off on their ability to even open that package.</p>
+
+<p>JACK:	[MUSIC] Okay, so for the government to open your package, they need reasonable suspicion and probable cause. Hm. So, whatâs that? What does the government think a suspicious package looks like? Well, this is obviously something Sam wanted to know.</p>
+
+<p>SAM:	Making a package safe to ship was actually â it was kinda difficult because they try to make it as generic as possible so that they can classify almost any package as suspicious. So, if you use, quote, unquote, âtoo much tapeâ â whatâs too much tape? Well, thatâs arbitrary. Itâs up to them. So, if you use too much tape, if you have a fake return address, if you have a handwritten address, if itâs not an official USPS box. Right? All of these; a fraudulent return address, a fake sender address. All of these things culminate to create a suspicious package. Then pairing them together makes it so you can add up these individual variables to make it something where now you can say you have probable cause and plead that case to a federal judge and hopefully give â heâll grant you a warrant to open it up.</p>
+
+<p>JACK:	Now, when you have all these packages that you need to ship out, it becomes a big task. You canât just hand them all to the mail carrier whoâs coming to your house. You need to somehow anonymously send them without a way for them to be traced back to you. So, a public mailbox on the street corner might be good. You could just put the stamps on it and put it in there. But thatâs kinda hard to do when youâve got a bottle of moonshine that youâre trying to ship. But the thing is is you just donât want to put all your letters in one mailbox, either, or make one mailbox the one that you always use. Sam was already really busy making moonshine, growing cannabis, and packaging everything up and dealing with the orders.</p>
+
+<p>SAM:	I donât have time to ship packages, so I had reached out to my cousin. So, I contacted my cousin who, at the time, lived in Rhode Island and she worked at a dead-end job. I said hey, listen, I got a plan. Do you want to come up for a weekend and Iâll talk to you about it? She drove up that weekend and I told her â âcause Iâm not gonna talk about selling drugs on the internet over the phone, you know? [LAUGHS] I had told her about it and I said, listen, how itâll be is like, I will pay you a certain percentage; 5% of whatever Iâm shipping out, 5% of that profit margin for that package is yours, plus a standard fee. Weâll do, like, $5 a package, plus the percentage, plus gas money, all the expenses, car payments. We had a spare bedroom so if she wanted, she could live there. So, she had â very well taken care of. Plus unlimited alcohol, moonshine, weed, shrooms, ecstasy, acid. Basically whatever you want, you can take. So, that was kinda the arrangement that I had. Then she would go and I would â in the morning I would wake up, I would check my orders, I would print out addresses on thermal labels â because thermal labels donât use microprinting, which means my IP address wonât be on that label.</p>
+
+<p>JACK:	Okay, so I want to pause here and just do a little fact-check. Itâs true that printers typically put some dots on every page they print. These are almost invisible and these dots mainly go unnoticed by most people. This is presumably to track the paper back to which printer printed it, but itâs not exactly certain what information is encoded in those little dots. I donât think your IP address shows up in it, but itâs more like a little signature of which printer it came from. I think this is to help law enforcement trace counterfeit money to see if it came from the same origin. So, while itâs probably smart to not use a printer that does this, Iâm not sure how effective this step was to actually hide his tracks.</p>
+
+<p>SAM:	For me, I would â I bought a thermal printer because with a thermal printer, it doesnât use ink; it uses thermal paper and thereâs no microprinting with those. So, in the morning I would wake up, I would print out â like, letâs say Iâm sending you half a pound of weed. I print out your address and on the back of it I write âhalf a pound of weedâ. The package of a half a pound of weed, I have it sealed up in my clean room. I have my fake return addresses, slap it on there, and I slap a destination address on that box and I throw away the back side of the label which says âhalf a poundâ. So, one of the things my cousin was concerned about â she was like, if Iâm sending out these packages and the FBI fingerprints them, theyâll see my fingerprints. I was like, yeah, itâs true. Itâs not false; itâs true. She was like, well, thatâs kind of an issue, right? I was like, no, âcause at the end of the day, if youâre at the post office and you touch a box, you have â you still have plausible deniability, right?</p>
+
+<p>Now, if your fingerprints are inside one of those â the plastic that seals the drugs or on the inside of the box, not so much. So, for me, I would seal the package â âcause Iâm working with it on the inside of it. I would seal it and I would have two or three pairs of latex gloves on. I bleached the area that I did it in on a regular basis to make sure thereâs no DNA. Like, thereâs a ridiculous amount of stuff that goes into this â and then actually packaging it up. So, letâs say Iâm packaging up just an ounce of weed. Iâm taking a sandwich bag, Iâm putting the cannabis in there, Iâm sealing it up, getting the air out as best I can, and then Iâm taking that and Iâm wiping it down with rubbing alcohol with a new pair of gloves. I would stick it inside a vacuum seal bag, I would vacuum-seal that bag, and then I would dip that whole bag in a solution of rubbing alcohol, let it dry off, then I would seal it in another bag. Then the last bag that I would seal it in would be whatâs called a visual barrier. A visual barrier is just a â itâs a vacuum seal bag thatâs a solid color so you canât see through it.</p>
+
+<p>So, I would vacuum-seal this last bag and I â off my thermal printer I would print off a label that says âOrganic Dried Fruitâ and I would slap it on that visual barrier. Now, if I hand this to you, you look at it and you squeeze it, it feels like dried fruit but you canât see it âcause of the visual barrier. So, if law enforcement or a postal employee was curious about what was in a box and stepped on the box to look inside of it, like oh, it was an accident; we didnât â we stepped on the box by accident, you can step on this box all day and that visual barrier is not gonna â itâs a visual barrier, so you could literally open the box and what youâre seeing is just this thing that says âOrganic Dried Fruitâ. You have to open this box and cut through this two-mil-thick-plastic in order to get the other plastic out, and even then, itâs still so opaque that you canât see what it actually is. So, you have to go through all these layers to see what it actually is. Now, the reason I would do that is because you have a thing called permeation.</p>
+
+<p>So, I could take a pound of weed, I can put it in a bag, I can stick it in a PVC pipe, and I can stick it in a block of concrete, stick that block of concrete in a gas tank, and if I leave it there for long enough, a drug-sniffing dog will smell that smell of that cannabis through the metal of the gas tank, the gas in the tank, the concrete, the PVC pipe, and the plastic bag because it permeates out, right? âCause nothing in this world is actually solid. Itâs all held together by atoms but nothing is technically solid, right? Even the inside of an atom is comprised of basically nothing, right, but empty space. So, permeation goes through everything and anything. Some substances it takes longer. Now, mind you, I donât have to put it in concrete or steel or any of this crazy stuff that you see a lot of the cartels do that are shipping large quantities because at the end of the day, I use two to three-day shipping, you know? Itâs sealed in four layers, so it doesnât have time to permeate those bags in order for a dog to be able to smell it, and I can assure you thereâs no microscopic residue on the outside of it because Iâve changed my gloves and Iâve killed whatever it is with rubbing alcohol and completely cleaned it multiple times on that same package.</p>
+
+<p>JACK:	[MUSIC] Okay, thereâs one more precaution to take around the shipping labels.</p>
+
+<p>SAM:	So, every three packages would have a different return address because one of the alerts for law enforcement is a fraudulent return address. So, I had to find a database of legitimate return addresses and â me, like â if youâre an honest guy, right, like youâre an honest citizen, you â nine-to-five guy, you donât break the law, youâre not evil that I know. So, I didnât want to send out a bunch of coke with Jackâs return address because if I did that, it might not be the best thing. Department of Homeland Security busts down your door at 6:00 AM, you miss work or someone tells your boss about how they saw you getting raided, you lose your job. What are you gonna say? Oh, I didnât do it? Everyone says that. The stigma, the trauma that your kids are gonna have, all that kinda stuff, that goes hand-in-hand with it.</p>
+
+<p>So, for me, I needed a list of people that I could find, and my solution for that was looking at the sex offender registry and finding Level 3 sex offenders, the worst sex offenders, and putting their name as the return address. What this did was it made it so it was a legitimate address, a legitimate return address where I could be pretty sure â not guaranteed but reasonably sure â that kids didnât live at and that if this guy got raided, I didnât really care âcause I have no sympathy for chomos. Thatâs what they call them in federal prison, is child molesters or pedos, as they call them on the darknet and everywhere else. So, I was like, at the end of the day it was a great list to have âcause no matter where Iâm shipping from in the country, there are sex offenders, and I didnât feel guilty about using them for my nefarious purposes because at one point they had used someone else for their nefarious purposes, you know? [MUSIC] I just saw it as karma.</p>
+
+<p>JACK:	Now, this is when heâd hand over the packages to his cousin, and he told her to ship these out. But there were certain rules that he told her to follow.</p>
+
+<p>SAM:	Each post office, at a maximum, would have three packages going out, right? So, if we were shipping nine packages that day, she would probably be visiting three or more post offices. So, our maximum was three packages per post office. So, she would go, she would ship out these packages from these three different post offices, she would get receipts, and she would bring them back, and I would cross off the name of that town. Then the next day I would pick a different county, right? Thatâs how I rotated. But itâs also how I ensured that I did not visit that same post office for at least six months, âcause I figured if the feds are gonna â the feds â now, say we ship out this package from this post office. The feds catch it and theyâre like, well, we didnât get any video footage so weâre gonna set up shop; weâre gonna do surveillance. Thatâs what they do, right? Weâre gonna set up surveillance at this location.</p>
+
+<p>Have fun, âcause weâre not gonna be back for six months. How big is your budget? Weâre not sending out five-gallon buckets of fentanyl. In fact, the most dangerous â the most harmful drug that I shipped, I think, was alcohol. Other people would say it was powdered cocaine. I think â I â honestly, I think alcohol is worse even though itâs legal. But I didnât sell heroin, I didnât sell â I didnât sell meth, I didnât sell fentanyl. I tried not to sell drugs that I thought took peopleâs souls. I tried to sell what I considered to be party drugs. Again, people would be like, thatâs â youâre just trying to rationalize your bad behavior, and you could absolutely say that. I wouldnât contest it. I wouldnât say itâs wrong. Thatâs what it is, but at the end of the day, for me, that was my moral line, you know? I was proud of myself for even having one, âcause thereâs a lot of guys that donât.</p>
+
+<p>JACK:	Huh, itâs always fascinating to me to see what moral lines people draw in the sand and donât cross. Youâd think being a criminal just means fuck the rules, be all punk about it, but you just heard Sam talk about a lot of the rules that he follows to stay safe and secure. But adding rules just for moral reasons is interesting to me. One was that Sam would only use registered Level 3 sex offenders as his return addresses because he thought it would be wrong to put a good citizen down as a return address. Another was that while Sam sold a lot of different drugs, there were some that he wouldnât sell, the ones that took your soul away from you. He also didnât want to sell to kids, but he had no way of checking that.</p>
+
+<p>SAM:	Well, so, thatâs the thing, right? Everyoneâs anonymous. Itâs kinda like if I sell a knife on Amazon, how do I know youâre over eighteen?</p>
+
+<p>JACK:	[MUSIC] Thatâs the thing; doing this as your job, you really do need a moral code because the stuff you see on these sites gets dark fast, and some things that are for sale really make you question where you stand on a lot of stuff. Like, should there even be a market where you can buy and sell anything? Stolen items, counterfeits, forbidden items, poisons, weapons, and of course, drugs? Sam was only involved with the drugs part.</p>
+
+<p>SAM:	All of us have an inherent right to our own bodies, you know? If you want to go eat McDonalds for the rest of your life and become 400 pounds and die of a heart attack, youâre free to do so as an American, you know? Iâm of the belief that if you want to do drugs, you should be free to do so. As an American, you have a right to put whatever you want in your body, no â unless someone else owns your body, no one has the right to tell you what to do with it. Itâs like me telling you you canât wear your glasses over your eyes; you have to wear them on your forehead. Who am I? I have no right to your property. Who am I to tell you what to do? So, that was kind of my contention on that whole thing.</p>
+
+<p>JACK:	This is a libertarian way of looking at the world. Libertarians want to maximize autonomy and minimize the governmentâs involvement in your life. Ross Ulbricht, the creator of the first big darknet marketplace, Silk Road, was a libertarian, too. He had to be in order to run a marketplace like Silk Road. He thought people should be allowed to make their own choices of what drugs they can buy, even if theyâre illegal drugs. But then weapons started showing up on Silk Road, and it really made Ross take a long, hard look into his soul to figure out what rules should be around weapons. He ultimately decided that itâs gonna be prohibited to sell anything whose purpose was to harm or defraud. So, Silk Road didnât allow weapons or child sexual abuse material or even stolen credit cards on the site. Again, I find it very fascinating what criminals wonât touch due to ethical reasons. I could never run or operate or even admin a darknet marketplace. Iâd get stressed out, turn old, and die in like, one week.</p>
+
+<p>Just this week in my town there was a warning poster I saw stuck in a bathroom of a coffee shop downtown and it said, âLook out, thereâs a bad batch going around. Make sure to carry Narcan and test your drugs.â Itâs talking about fentanyl. Just this week I saw in my town there were two fentanyl-related deaths; one guy found dead in a bathroom and the other overdosed in a jail cell. See, fentanyl is an opioid, a painkiller, but itâs fifty times more potent than morphine, and itâs just incredibly powerful. But because itâs so potent, people can easily take too much and die, which is a problem on its own, but whatâs scary to me is people donât always know theyâre taking it. One darknet market vendor was simply selling Xanax and oxycodone. Now, people buying this stuff think thatâs what theyâre getting. But no, this seller was lacing the Xanax and oxycodone with fentanyl. So, if some dad who just had tennis elbow or something needed some heavy-duty painkillers, he could wait a month for a doctor visit and then get a prescription and then go to the pharmacy and get it, or he could just order it on a darknet marketplace and have it in four days.</p>
+
+<p>But thatâs dangerous because he could get one laced with fentanyl and run a huge risk of overdosing on it. We hear stories of people dying from fentanyl all the time, and this is why itâs important to test the drugs you get. There are fentanyl strips that you can get where you can test to see if the drug you bought has fentanyl in it. This is why I could never be a darknet market admin; if I knew there were people lacing deadly things into drugs that shouldnât be there and killing people, Iâd feel obligated to figure out who the hell that person was that sold it. That guy who was selling that laced oxycodone got arrested and was put in prison for twenty years. He is very likely responsible for a few deaths. So, some vendors on these darknet marketplaces really donât give a fuck. Despite all the illegal stuff that Sam was doing, itâs good to see that he wasnât misleading his customers or lacing them with deadly ingredients, and he had rules that he was following.</p>
+
+<p>SAM:	For me, it was like, no international shipments, no selling stuff that â you know, heroin, meth, fentanyl, things that kill people, and not ripping people off, giving them the best-quality product that I could source on a global scale.</p>
+
+<p>JACK:	Okay, so one thing that you should be clear about from the beginning if youâre going to be a darknet market vendor is you need a goal, because things can get crazy deep down in the darknet and if youâre not clear of what youâre doing down there, you could get swept up in the undertow.</p>
+
+<p>SAM:	My only goal with this was to make like, two hundred grand, âcause in Vermont you could buy a house for relatively cheap. You can find a cheap house for like, a hundred grand. So it was like, I buy a $100,000-house and I have $100,000 left which will let me pay the taxes and live off of it for long enough until I can find something to keep me afloat permanently. But it was like, between my cousinâs fee that I paid her and having to upgrade my cannabis setup and upgrade my alcohol and pay for shipping and kind of evolve with the business, I always found myself always reinvesting. So, if I sold something, I made eight hundred bucks off of it, I would be like, alright, four hundred bucks is gonna be for shipping fees and the other four hundred of that is gonna be for gas money for my cousin to ship $400 worth of stuff, hopefully. So, I made enough to make a profit, but between my cousin and my ex, who I was still living with, I never got to that $200,000 line. Now, I did get to a point where, towards the end, your money starts to come in exponentially. So, basically the first week was like, $300. Second week was probably $500, and then I had weeks where it was nothing. Then you have weeks where you got Bitcoin and guess what? Bitcoin dropped 20% in value. So, now you gotta hold that âtil it goes back up at least to that â at least 20%. Iâm not a millionaire; I donât have a lot of money, so having that being held, it kills you.</p>
+
+<p>JACK:	I learned about Sam because he gave a talk at Defcon last year. In his talk, he had a clear warning for others; donât drink and type.</p>
+
+<p>SAM:	[LAUGHING] Yes, absolutely, yeah. Itâs more dangerous than drinking and driving, absolutely, yeah.</p>
+
+<p>JACK:	Whatâs the danger here?</p>
+
+<p>SAM:	What happens is that complacency. So, you get comfortable at a certain point with me. Just like me and you might know each other in year â in a few years in IRC, right? Then you get wasted one night and, you know, I call you by your handle and you say oh, no, man, itâs cool; just call me Jack. Right? Itâs like in that situation but on the darknet, right, where I very well could be a fed. Now I know something. I know an identifying piece of information about you and maybe Iâve seen you say something a certain way thatâs unique to a certain area. Now I know what your first name is and around about where you are. As time goes on, there will be more information leaks that I can capitalize on to figure it out, and thatâs why I said â to answer your question, thatâs why I said donât drink and type, because whatever complacency you have is exponentially increased, which means the chances of you basically being a data leak on yourself increases exponentially with that.</p>
+
+<p>JACK:	What kind of payment were you accepting?</p>
+
+<p>SAM:	So, yeah, Bitcoin. Bitcoin only. Yeah, that was it.</p>
+
+<p>JACK:	Okay, so washing money is what I want to know. What did you do to cash out?</p>
+
+<p>SAM:	Super easy. Yeah, thatâs probably one of the easiest things to do. [MUSIC] I think the simplest way to cash out is with drugs. People be like, what the hell? So, itâs super easy. Hereâs the thing, right? Around where I live, a really â a grade â good, good, good ounce of weed might run you like, $225, $250. So, on the darknet, I can go and buy thirty bucks an ounce. Like, my cash-out would be like, buy a bunch of this weed and anyone that I knew in my area that I knew was a social butterfly and I knew weâd keep their mouth shut, I would turn around and I would say hey, man, listen; I will sell you a pound of this weed for sixteen hundred bucks and Iâll give it to you upfront. Now, thatâs a hundred bucks an ounce. Again, the typical price in that area was $225, $250. This guy can turn around â sell ounces for $150, undercut everyone by almost a hundred bucks and make a good amount of money, and he didnât even have to put up any money. He would be able to do that and come back with that in like, a week to two weeks. So, Iâm getting cash from all different sources.</p>
+
+<p>JACK:	His theory was that if this person got caught, they wouldnât snitch on him because he was giving them good deals. Besides using this method to turn his cryptocurrency into cash, he also would exchange his Bitcoin for Monero, which is more private than Bitcoin and harder to track, and then heâd cash out his Monero. Okay, so at this point heâs posted a lot to forums and is a buyer and is a seller on some markets, and heâs becoming well-known and even starts working for one of the darknet markets. [MUSIC] Specifically he was doingâ¦</p>
+
+<p>SAM:	Dispute resolution. So, basically when you would have a customer who would dispute a sale and you would have a vendor who would either agree or dispute it, then I would manage some of the â sometimes on some of those markets I would manage those disputes and I would be the one to decide, like, do you get a refund, do you not get a refund, do you get a percentage of a refund? Like, how is that figured out? We would do that by looking at obviously the reputation of both the buyer and the seller, but we would also look at the account age, we would look and see if they had accounts on other darknet markets, how reputable they were.</p>
+
+<p>JACK:	On top of doing that, because he was so involved with the community, one darknet marketplace asked if he wanted to do PR for them, and he took that job. It was a small job; it didnât pay much, but since he was already very active in the forums and stuff, he could just keep an eye on any negative posts about his marketplace and he would try to make that seem more positive. Now at this point, one of the more popular forums to talk about darknet markets was actually Reddit. The subreddit r/darknetmarkets had 180,000 members. This is where Sam would hang out and see what chatter was going on about darknet markets. One day, someone made a post about the market Sam was doing PR for. The person posting it was going by the name Hugbunter, a play on the words âbug hunterâ. Hugbunter found an exposed config file on the darknet market site.</p>
+
+<p>SAM:	He put it on Reddit. He didnât put the actual page; like, he didnât leak anything. He was responsible in his disclosure and he contacted the admins. He was like, hey, you guys have a IP leak. They just kinda gaslit him and theyâre like, oh yeah, weâll discuss it. Two weeks later heâs like, oh, this is a security issue. Theyâre like, yeah, alright, whatever. You know? He was posting about it on Reddit, so Iâm trying to chill him out from posting about it on Reddit because Iâm in charge of PR. I had went on as a representative and said, you know, yeah, that is our honeypot. [LAUGHING] You know? Weâre glad that you were able to showcase that, âcause now we can show people how strong our security is that we also have offensive measures built in. He was like, oh, thatâs not true, thatâs not true. Iâm like â we went back and forth and we argued for a long time.</p>
+
+<p>JACK:	So, thatâs how Sam got to know Hugbunter, by trying to gaslight him over chat messages. Well, over time, Sam got to know Hugbunter more, and yeah, the conversation continued into other things. One thing they talked a bunch about was Reddit. Yeah, just Reddit itself, because some users were getting banned from Reddit trying to sell things right on Reddit instead of a darknet marketplace, and it became a big thing to talk about. Like, how much is Reddit going to allow on their site? Weâre talking about illegal buying and selling of stuff here.</p>
+
+<p>SAM:	He had come up with the idea; like, oh, letâs mirror it and have this forum on the darknet so worst-case scenario, thereâs a fallback.</p>
+
+<p>JACK:	[MUSIC] So, the idea was born; take the darknet marketâs subreddit and make it sort of a dedicated Reddit-like site on the darknet. Hugbunter got to work building it.</p>
+
+<p>SAM:	He coded the site. He did all of that, and his job was to be a background admin. My job coming on was to be an admin and actually do stuff on the actual forum, because I had a laundry list of credentials of sites that I had worked at before.</p>
+
+<p>JACK:	The site that Hugbunter created was called Dread. They didnât allow users to buy or sell anything, but just, letâs talk about darknet markets. They advertised this new site on Reddit to let people know that hey, thereâs a fallback place to go if Reddit goes down. Sure enough, that prediction came true. In 2018, Reddit posted some new rules to their site saying that theyâre not gonna allow users to exchange certain items. The items forbidden to be exchanged on Reddit were firearms, drugs, sex, stolen goods, personal information, fake IDs, and counterfeit money. Apparently Reddit had noticed a lot of people were buying and selling these things on their site and took a big move to ban communities who were involved in this. This resulted in Reddit shutting down the whole r/darknetmarkets forum. This suddenly made the Dread forum explode with new users and went on to be one of the biggest forums on the darknet, and Sam had a front-row seat to it all as the first admin to Dread.</p>
+
+<p>SAM:	No one ever comes to my house. No one comes to my house. So, the only people that ever came to my house or people who knocked on the door â and they try to sell paintings. âCause again, where Iâm living, itâs an affluent area, right? So, people would knock on the door, try to sell paintings, or theyâd knock on the â like, Jehovahâs Witnesses would come and knock on the door.</p>
+
+<p>JACK:	Mm-hm.</p>
+
+<p>SAM:	[MUSIC] So, I get a knock on the door. So, itâs like, 7:15 in the morning. So, I just got my coffee, so Iâm sipping my coffee. I walk to the door and I open the door, and thereâs this dude standing there and heâs got a bulletproof vest, heâs got a badge thatâs sewn into the bulletproof vest that â Iâve never seen this badge before. Heâs holding up a piece of paper. Heâs like, hi, my nameâs so-and-so. Iâm a Special Agent with the Department of Homeland Security, and this is a federal search warrant. Iâm like â Iâm sitting there and Iâm holding my coffee and Iâm looking back at this guy, and Iâm looking at the thirty people that are behind this guy that have MP-5s and ski masks with skulls on them on. Iâm like â this is before Covid, so seeing someone with a mask is weird. You know what I mean?</p>
+
+<p>So, I see all these people behind this guy and theyâre all looking through the windows and all this other nonsense. I was like, oh, okay. I guess you want to come in then, huh? He was like, yeah. I was like, alright. So, as he starts walking in, Iâm like, listen; thereâs two adult females â oneâs my cousin and oneâs my ex â and then there are three children in the house. âCause I donât want them â they like to play like theyâre in Iraq, you know? I donât want them running through, pointing an MP-5 at my sons or my daughter, and scaring the shit out of them. I want them to know whoâs in there so theyâre not scared, âcause if theyâre not scared, they might be a little bit more relaxed when going â and they were. They were â they were pretty courteous and calm, and that was my first interaction with them.</p>
+
+<p>JACK:	Just as a step back here, kids in the house with the whole drug labâ¦</p>
+
+<p>SAM:	Yeah, thereâs no lab, and it was â the room that I had the cannabis in was separate from the main house. So, that wasnât something that they were around.</p>
+
+<p>JACK:	And the packaging and all that, they never went around that?</p>
+
+<p>SAM:	Right, and that was in a clean room. Right, yeah, so they donât see any of that. All the narcotics that I have were kept in a safe in there.</p>
+
+<p>JACK:	Okay. Alright, so they come through, they see all this stuff?</p>
+
+<p>SAM:	Yeah. So, what they do is they raid; they go through, they find the â so, alright, so moving back a little bit. One thing my â that my cousin had been worried about was â she was like, alright, letâs say we do this and we get caught. I was like, listen, if we get caught, itâs because I screwed up. Iâm in charge of everything, you know? Iâm in charge of the security, Iâm in charge of everything that goes on. So, if something doesnât go right, then itâs my fault. So, I was like, listen, if they come and they raid us, Iâll tell them it was all me. âCause at the end of the day, why am I not? If I donât, then theyâre gonna put it on everyone. So, when they came in, they searched and theyâre going through. They come and they see me; theyâre like, oh, any drugs in the house?</p>
+
+<p>I was like, yeah, theyâre upstairs. Theyâre in my safe. Theyâre all mine. Iâm a darknet vendor. They were like, what? [LAUGHING] They were blown away. But again, I had an agreement with my cousin prior to this that if this happened, this worst-case scenario â we had a ton of contingency plans. Thatâs a part of having good operational security and having good information security policies. Itâs like, do you have an incident response policy at your work? So did we, you know? This was agreed to prior to anything. So, that was the thing; if we get raided, I admit everything was mine, and I did. Said, listen, Iâm a darknet vendor. Everythingâs mine. Theyâre like, whatâs the combination of the safe? Gave them the combo. What am I gonna do, say no? Theyâre gonna open it anyways.</p>
+
+<p>JACK:	The police were apparently unprepared to make any sort of arrests at that point, so they left, created an indictment, and then they set a date for his arraignment.</p>
+
+<p>SAM:	So, I go for my arraignment, right? So, now I move out of the house I was in to an â a different apartment. So, this â the Department of Homeland Security showed up on the day of my arraignment to that old house, âcause they didnât know I moved. They wanted to arrest me there and bring me into court in handcuffs. But I didnât live there anymore and the geniuses didnât know I didnât live there anymore. The rockstars they are, they had no clue where I was. So, my ex had told them, oh, he moved and this is the address. By the time they got to this address, I was already halfway to the federal courthouse to go turn myself in to the US Marshals for my arraignment. They said, listen, in the time that you were a vendor â I think it was â in total it was like, a year and a half or two years. They were like, in the short time that you were a vendor, you have crawled into more crevices and learned more about this culture and seeped into this culture than weâve been able to do in six years.</p>
+
+<p>Because in my short period of time, I inserted myself into the community and ended up working with these markets and starting up Dread. I had become â I had made myself an indispensable part of the community by contributing, you know, and contributing in meaningful ways, and thatâs what made me valuable to the community at the end of the day. They said, hey, listen, someone with your knowledge, we could absolutely use that and going forward, weâd like to bring you a laptop and you can continue taking orders and vending. Youâre not actually gonna be sending drugs, but just gathering information. I was like man, Iâm â what? Iâm good. Remember, I had been to county before, right? I had been to state prison. But nah, Iâm set, man. Iâm like, yo, are you kidding me? I worked with cartels, dude. You know what I mean? I worked with multiple cartels. You think Iâm gonna tell on people? Iâm good. I have a family, man. You know what I mean? I did this for my family; now you think Iâm gonna risk their lives to get out of whatever punishmentâs coming? Youâre delusional. Iâd die for them. Iâd kill for them. Theyâre my family, you know what I mean? So, they â obviously they didnât like that.</p>
+
+<p>JACK:	So, Sam and his cousin were able to go back home while the case was being built, and they set a date for when he was supposed to show up in court. At this point, Sam had moved out and was living in a small apartment. Now, at some point during his time as a darknet market vendor, his cousin introduced him to a lady. Sam and her chatted a lot online and over the phone, but never in person or even using video calls. They became really close and good friends, flirtatious at times, even.</p>
+
+<p>SAM:	She didnât know â obviously she didnât know anything about what I was doing âcause it would be an â I considered it to be a massive opsec risk, right, to tell her. So, I just told her that I had a business and I wasnât specific about it. We learned a lot about each other as I was doing my vending, and she was completely unaware of it. After I got raided, I lost all my electronics, so I lost her number; I lost all her info. So, I had to go find it all, and my cousin was able to do it through her Facebook. I remember contacting her and being like â she was like, oh, you havenât talked to me in four days. Is there an issue? I was like, no, I got raided by the feds. You know? Itâs like â you know those dudes that break up with a woman and tell her that, oh, Iâm a spy. You know what I mean? I was like, I got raided by the Department of Homeland Security. They came in thirty deep on cooperation with the state police. The Cyber Crimes Task Force came in.</p>
+
+<p>Sheâs like, yeah, alright, whatever, Sam. Listen, if you donât want to talk to me, you just tell me. [LAUGHING] I was like, I swear to god I got raided by the Department of Homeland Security. Obviously she ended up learning that it was true, that my phone did get taken, and then she ended up moving from where she was living up to â up here with me. âCause I told her â I was like, listen, I have this indictment. I was like, just forget about me. Iâm probably gonna do twenty years. âCause we wanted to get married. We had learned â we had fell in love by talking to each other and we fell in love intellectually. I didnât know what she looked like and I didnât think she knew what I looked like. We had spent two years talking together and I had hated â I wouldnât take a selfie âcause of my opsec, you know what I mean? [LAUGHING] So, after I got raided, I ended up talking to her; I sent her a selfie âcause now â whoâs gonna raid me now, you know? She was like, oh, I know â I knew you looked like that âcause your cousin had showed me a picture of you a while ago.</p>
+
+<p>I was like, are you kidding me? I was like â basically she sent me a picture of herself and she was like, way out of my league, you know? She was like â like, dude, Iâm like a three. You know? She was an easy ten, you know? I was like, what the hell? She was like, itâs â who cares? She was like, youâre handsome. I was like, alright, youâre â whatever, Iâm not gonna argue with you. I donât think so. I got impostor syndrome. Iâm like, no way. I was like, listen, Iâm gonna get twenty years. I was like, you know, just forget about me. We can be friends and stuff. She was like, listen, itâs not all about you. I was like, what? She was like, I love you. Iâm not â I donât care how long you got. That was pretty incredible for me. But it was â I had had people in the past who had been in my life who had said they would stick with me through a prison term and they didnât. So, I was very leery of it and thatâs why I kind of just didnât want her to have to deal with that. I knew how much pain and agony it was gonna be going forward, and she did. Man, it was crazy. She stuck with me through my â everything; through my sentencing, through my actual prison incarceration, everything.</p>
+
+<p>JACK:	[MUSIC] They moved in together and waited for his court date. Now, of course, Sam is super-curious how they caught him. He took so many precautions. Where did he go wrong? So, he looked through his discovery, which is the evidence that the feds had on him, and there were three words that he saw on there; Operation Dark Gold.</p>
+
+<p>SAM:	Towards the end, I found this one vendor on the darknet called Gold, G-O-L-D. What he would do is he would charge you five to ten percent and you would send him your Bitcoin and he would send you cash in the mail. I loved that system.</p>
+
+<p>JACK:	Nice, a new way to turn your Bitcoin into cash; just give it to someone and theyâll send you the cash in the mail. This bypasses the crypto exchanges who like to collect a lot of your personal information. This went on well for Sam and Gold for a while, but then something happened where Gold got arrested and the feds asked him the same thing they asked Sam. Hey, you know a lot about this community; would like you to work for us or go to jail? Gold agreed to work with the feds, which became Operation Dark Gold. So, thatâs when Sam sent him some Bitcoin and he sent Sam some cash. But this didnât make any sense to Sam. No, this wasnât right. What law did he break here? Itâs legal to send your buddy Bitcoin and they give you cash for it. There is nothing wrong with that. So, he told the feds thereâs no crime to exchange Bitcoin for cash.</p>
+
+<p>SAM:	The United States Attorneyâs big thing was you paid ten percent to cash out your Bitcoin, and that shows criminal intent. I was like â the one thing I said to my defense lawyer â Iâm like, dude, you know there are Bitcoin ATMs that charge ten percent, right? Itâs not â that makes no sense, you know?</p>
+
+<p>JACK:	So, this still wasnât adding up for Sam. Were the feds just making up crimes to get a search warrant? Because if they did get a search warrant under false reasons, then perhaps this case can be thrown out. So, Sam kept seeking answers.</p>
+
+<p>SAM:	So, what actually happened was my cousin got complacent. What she was doing is she would go to the post office with twelve packages. Remember what I said; three packages would have one return address on them. The next three would have a different return address from a different town. So, sheâs going there with â our agreed-upon number was three packages and that those three packages have the same return address. Now sheâs going to the post office with twelve, fifteen, twenty packages. Remember, every three packages has a different return address. So, sheâs going there in some cases with six different return addresses. So, theyâre like, what the hell is this? But again, that is not enough for a warrant. Itâs suspicious and itâs reasonable suspicion, but it is not probable cause. So, what ended up happening was the United States Postal Inspector just cut open a package with no warrant, cut open the visual barrier, cut open the three layers of vacuum seal, and he found some coke. Then they used that coke to apply for a federal search warrant for the house after they followed my cousin back to the house.</p>
+
+<p>JACK:	Hm.</p>
+
+<p>SAM:	So, for the longest time I was angry at my cousin âcause I was like, you didnât follow the security policy and now youâre potentially costing me two hundred years in prison because you were too lazy to drive. Even though you billed for it, you were too lazy to do your job and drive to these different post offices. I came to the realization that at the end of the day, itâs not her fault. Itâs my fault. I was in charge, right? It was on me to supervise her and I didnât do a good enough job doing that, and thatâs why we got raided. So, even â my opsec at the end of the day and my information security policies were so on point that I would have never had an issue with law enforcement.</p>
+
+<p>JACK:	So, to kinda prove that, Hansa went down â your stuff is all over that database. That was taken over by the feds.</p>
+
+<p>SAM:	Yep.</p>
+
+<p>JACK:	They did a massive arrest through that.</p>
+
+<p>SAM:	Yep.</p>
+
+<p>JACK:	Hundreds of people in the US. Hansa was European, but they did a lotâ¦</p>
+
+<p>SAM:	Operation Bayonet, yeah.</p>
+
+<p>JACK:	Mm-hm. They did hundreds of arrests in the US for dealers, mostly vendors. You werenât one of them, so that kinda proves that you were â opsec was tight.</p>
+
+<p>SAM:	Right, right. So, I had gotten â in my discovery â I had gotten times when I looked through my discovery and the feds actually bought drugs off me, like, twenty times. They bought coke, they bought LSD, they bought cannabis. The only thing they didnât buy was moonshine, but they bought pretty much everything. There was nothing from â there was no fingerprints, thereâs no hair, not even microscopic DNA. Thereâs nothing. At the end of the day, again, it was like, that smallest little thing is what caused it and that was her complacency and my being overwhelmed, doing all these jobs, having my attention so divided that I did not do a proper job in monitoring her and making sure that she was doing her job correctly. [MUSIC] What ended up happening was my lawyer had applied for whatâs called a Frankâs Hearing. A Frankâs Hearing is when you can show law enforcement broke the law in order to catch you. This was my security policy from the start. It was like, if you guys are gonna catch me, Iâm gonna make this maze so complicated that youâre gonna have to jump over a wall in order to do it.</p>
+
+<p>Then of course itâs that whole thing you see on Law &amp; Order where itâs like, oh, fruit of the poisonous tree; they broke the law in order to do this, so everythingâs invalidated, and that was another part of my plan. Thatâs why I was ready to admit to it so readily. I knew my rights. I knew I wasnât under any obligation to talk. I knew that I was better off asking for a lawyer, but I also knew that they would most likely have to break the law in order to bust me. If thatâs the case and I admit to everything and they get everything, everythingâs got. Thereâs nothing else they can do. If everything from that arrest â from that original search warrant is thrown out, thereâs no case. Now keep in mind, the feds have a conviction rate of 99%. They donât lose. Itâs like you playing chess with me and I tell you all my pawns are queens. Iâm not gonna lose, you know? So, thatâs what itâs like playing them. So now I got this Frankâs Hearing scheduled. Now, that said, with this Frankâs Hearing scheduled â a Frankâs Hearing is very difficult to get. Itâs super, super hard to get. So, the United States Attorney, contacts my lawyer and tells her, I donât want to go to this Frankâs Hearing.</p>
+
+<p>So, my lawyer contacts me. Sheâs like, oh, he said he doesnât want to go to this Frankâs Hearing. I was like, yeah, I bet he doesnât want to go to this Frankâs Hearing. Weâre gonna prove everything that they â first off, everything you got was â it was done so illegally. So, I guess you â he told her â he was like, listen, tell him that if he pleads guilty, Iâll give him a maximum of 108 months, which is like, nine years. So, if he doesnât and we go to this Frankâs Hearing, heâll get nine of the ten of his charges dropped but he wonât get his conspiracy charge dropped. I was like, well, whatâs he mean? She was like, oh, did you read your PSR? So, a PSR is a pre-sentence report. Itâs basically the background of your whole life. So, I was like, no. So, I went and I looked at it. It was like, Page 15. On that page it said my cousinâs proffer. So, when I had first gotten arraigned â after I got out, I got released on my own recognizance. After I got out, my lawyer had called me up and she was like, oh, do you want to come in and do a proffer? I was like, whatâs a proffer?</p>
+
+<p>She was like, well, a proffer is when you come in and you tell them what you did, who you worked for, who bought off you, who did what, what vendors that you worked with and what you know about them. I was like, yo, man, that sounds kinda like snitching to me. She was like, well, we donât call it that. I was like, well, the people I work with would. You know what I mean? No, Iâm not doing that. Thatâs a death sentence for not just me, but my family. But aside from that, Iâm just not on that kinda time. Iâm good, you know? Iâm not gonna put people in a box âcause Iâm scared about being in a box. You know? Like, what I â Iâm a man, so what I did â Iâll accept responsibility for it. So, sheâs like, alright. So, when they were like, oh, did you read your PSR? Go read Page 15 or whatever. I went back and I see my cousinâs proffer. Immediately I know what a proffer is now. [LAUGHING] I go through it and it says, like, your cousin proffered on you. She confessed to all this stuff, like all â like, he had me send these packages out. I didnât know what was in the packages. Iâm like, you got a percentage of every â everything that was in the package you got a percentage of, you know? You helped me with the labels. What? It was just completely mind-blowing.</p>
+
+<p>JACK:	What I understand a proffer agreement to be is where you admit to what youâve done to get a reduced sentence. With his cousin, the information she provided in the proffer was enough to make it so she didnât get any prison time at all. It was good for her, but bad for Sam. Sam was upset because he told her to admit to nothing and heâd take full blame for it. I donât know what made her deviate from the plan. Perhaps she just wanted to get rid of a guilty conscience. Samâs big plan was if the cops raid the house and take everything, and even if he admitted to everything, he was going to prove to the judge that the cops broke the law to get evidence on him, which would make his case invalid. He thought this would work because Operation Dark Gold wasnât enough evidence and the post office opened a package without a warrant, and that was a big deal. If he could prove they broke the law, then he thought it would mean that they would have to throw out all this evidence on him and let him go.</p>
+
+<p>But this plan backfired. His cousin told all, giving the prosecutors more evidence. So, heâs faced with a new decision; either get a Frankâs Hearing to prove that the police broke the law to bust him â which may or may not go his way and even if it did go his way, heâd still have a conspiracy charge that could get him twenty to thirty years in prison â or simply admit to being guilty, take a plea deal, and get a maximum of nine years in prison. Suddenly the Frankâs Hearing seemed like more of a gamble and the nine years seemed like the better option. So, he took the plea deal and admitted he was guilty. Somewhere around this time, his girlfriend and him got married, and they were living together, waiting for the big sentencing hearing. The sentencing day came and the judge sentenced him to sixty months in prison, which is five years.</p>
+
+<p>During his time in prison his wife would visit him frequently, giving him hope and encouragement to stay positive. Sam was due to be released from prison in 2024, but he educated himself in the law library in prison and applied for compassionate release, which he was granted and let out after only serving eighteen months in prison instead of the five years he was supposed to serve. When he got out, his wife was right there waiting for him, happy he was out of prison. After he got out of prison, he wanted to help others fight the law, and went back to school and graduated and became a paralegal, which is what heâs doing now. He even wrote a book about how to write a compelling, compassionate release motion, and heâs also making YouTube videos and blog posts and giving talks about his story.</p>
+
+<p>(OUTRO):	[OUTRO MUSIC] A big thank you to Sam Bent, AKA DoingFedTime, AKA killab, AKA 2happytimes2â¦you can learn more about him by visiting the website doingfedtime.com, or search for Doingfedtime on YouTube. Iâm going to be releasing new episodes of this show every month from now on, so Iâll see you next month. This show is made by me, the cowboy coder, Jack Rhysider, editing help this episode by Tristan Ledger, mixing done by Proximity Sound, and our theme music is done by the rollerblading Breakmaster Cylinder. Why did the capacitor kiss the diode? He couldnât resist her. This is Darknet Diaries.</p>
+
+<p>[END OF RECORDING]</p>
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

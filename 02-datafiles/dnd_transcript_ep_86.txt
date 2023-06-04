@@ -1,0 +1,449 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>The LinkedIn Incident â Darknet Diaries</title>
+	<meta name="description" content="In 2012, LinkedIn was the target of a data breach. A hacker got in and stole millions of user details. Username and password hashes were then sold to people willing to buy. This episode goes over t...">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="The LinkedIn Incident â Darknet Diaries">  
+	<meta name="twitter:description" content="In 2012, LinkedIn was the target of a data breach. A hacker got in and stole millions of user details. Username and password hashes were then sold to people willing to buy. This episode goes over t...">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/attacked.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/86/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="The LinkedIn Incident â Darknet Diaries" />
+	<meta property="og:description"        content="In 2012, LinkedIn was the target of a data breach. A hacker got in and stole millions of user details. Username and password hashes were then sold to people willing to buy. This episode goes over the story of what happened." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/attacked.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/86/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/attacked.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/86/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="The LinkedIn Incident â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/attacked.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 86: The LinkedIn Incident</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://www.podtrac.com/pts/redirect.mp3/traffic.megaphone.fm/ADV4528606086.mp3?updated=1614641437"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/86/",
+			   "title": "Ep 86: The LinkedIn Incident"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/86">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[START OF RECORDING]</p>
+
+<p>JACK:	You ever get fascinated with the cyber-crime supply chain?  Itâs never a solo hacker doing the whole thing; thereâs a lot of layers to this onion.  So, letâs say a hacker breaks into a place and steals a bunch of information from some company.  Well, next heâll typically want to sell that data to make some money and do it again, so now youâve got to find a buyer.  But before we even get to the buyer of stolen data, thereâs sometimes brokers involved, people who have negotiated deals between hackers and buyers.  So you might go to one of these brokers, offer a percentage for selling the database to someone.  Now itâs on them to find someone.
+<!--more-->
+But when the broker finds a buyer, sometimes one side doesnât trust the other so they bring in a trusted third party, an underground escrow agent if you will, who will wait for both the cash and the database and then make the trade.  Okay, but then what does the buyer do with this database dump?  Well, if itâs full of e-mail addresses, they might use it to send spam to people.  But of course, the spammer isnât selling anything themselves.  Theyâre typically promoting someone elseâs business; a porn website or a pharmacy.  Itâs just fascinating for me to think about that sometimes.  Itâs never about the data breach itself but what happens to that data after its stolen.</p>
+
+<p>(INTRO):	[INTRO MUSIC] These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK: 	Iâm sure you all know what LinkedIn is, right?  Itâs the social network for professionals.  You pretty much start your account by posting your resume of where you worked and what you did there.  You can use the site to look for jobs and connect with other professionals in your field.  Itâs pretty popular in the US.  In 2012, a person wanted to hack into LinkedIn and get as much user data as they could, but how are you going to get into the network of LinkedIn?  This is a major Silicon Valley company made by some really skilled engineers and administrators.  They would certainly be following all the latest best practices for securing a network by doing things like securing the front door to the network by putting a big firewall up to block all non-critical traffic from coming in and inspecting it for malicious activity.  Then theyâll conduct security audits on all the internet-facing systems to make sure thereâs no security holes.</p>
+
+<p>Of course, theyâll be running state-of-the-art monitoring tools and antivirus tools to watch for any intrusions.  They did all that; the front doors of LinkedInâs network was airtight.  So, the hacker would have to find another way in.  [MUSIC] He knew that engineers at LinkedIn had access to the corporate network when they were remote.  I mean, today itâs obvious that a lot of companies have remote employees but back in 2012 there were LinkedIn employees who had remote access into the network.  That is, they didnât have to be physically in the office in order to access the database or other critical systems.  So, the hacker set out to figure how exactly do some engineers get remote access into the network?  He concluded they must be getting in through a VPN.  A VPN is a way to securely connect into a remote network.  The traffic is encrypted from the edge of the corporate network all the way to the userâs computer, wherever they are in the world.  Thatâs just it; if thereâs a backdoor entrance for employees only, it would also mean that the hacker could try to get in through that.</p>
+
+<p>So, the hacker starts looking on LinkedInâs website for people who worked there; engineers, system administrators, anyone who might have access into that VPN.  So, he looked around for a victim which by the way, this is the reason why I donât like posting my information on LinkedIn, because you can easily search for all the people who work in a specific company and then figure out who the admins are there who are probably posting things like oh, Iâm good at Cisco firewalls and Oracle databases, and they might even be posting what versions of Oracle theyâre good at which is a clue to any hacker to know what to expect once they get in.  But what this means is that itâs pretty easy to find a target and narrow your sights on them by just looking at whoâs on LinkedIn.  This hacker found a LinkedIn engineer who probably had remote VPN access as well as access to the database inside, and the hacker zeroed in on this guy.  [MUSIC] The hacker saw this engineerâs LinkedIn profile and on his profile there was a URL to this engineerâs personal website.  Basically, it was like this engineerâs name.com.</p>
+
+<p>The hacker went to the website to check it out.  It was just a basic About Me-type blog; it said hello, Iâm a site reliability engineer at LinkedIn and here are my hobbies and things.  The hacker poked around here for a bit but couldnât find anything to exploit.  But he looked at where the site was hosted and it was hosted on a residential IP address.  Hm, it seemed like this LinkedIn site reliability engineer was [00:05:00] running a web server out of his house.  This means there are open ports from the internet into his computers.  The hacker thought well, hm, if I can get into this engineerâs home computer, this might give me a way into LinkedIn.  So, he looked to see if there are any other websites also hosted at this IP address, and he found one called cockeyed.com.  He browsed around here and this is a much bigger blog-type website.  Cockeyed.com was a site ran by this engineerâs friend.  He just hosted it for him.  Thereâs videos of pranks and pictures and itâs basically a blog.  But this site was built using PHP as the back-end technology.</p>
+
+<p>The hacker started looking for ways to exploit this site.  He found a way to upload files to the site and he uploaded a couple malicious PHP files.  One was specifically called madnez.php.  Now, if a hacker can upload their own PHP program to your website and get that program to execute, then the hacker can take over that computer thatâs hosting the website, because when you go to view the file through a browser, itâs going to execute whatever code is in that PHP program, and you can configure it to give you remote access to that computer.  Thatâs just what this file did.  The hacker got shell access to the website cockeyed.com which was being hosted in the same place this LinkedIn engineerâs personal blog was hosted.  Once he got into the web server, he started scanning for other IPs in the network and found one, an iMac computer.  He found that this iMac had an open SSH port which allows people to connect to that iMac.  So, he started trying to brute-force login to that iMac.  For the username, he used a first initial and the last name of the LinkedIn engineer and he just started hammering away, trying thousands and thousands of passwords, looking for one that worked.  This was all happening in February of 2012.</p>
+
+<p>For days, this web server was attacking the iMac, all within this engineerâs house without the engineer knowing it.  After a few days of trying thousands of passwords, one worked.  [MUSIC] He got a hit for a valid username and password, so the hacker logged into that iMac with this and looked around.  First he realized this is a personâs personal iMac.  Itâs not a LinkedIn computer or even an official work computer.  Then he discovered that this web server that he got into was running on this iMac.  Yeah, it was actually running on a virtual machine in the iMac and I find this fascinating because in essence, the virtual machine was the only thing exposed to the internet, but the hacker got into the virtual machine and then got into the host computer from there.  Itâs fascinating to me because this shouldnât happen, but the way he did it was through the virtual IP interface.  Because I always wonder how itâs possible to escape out of a virtual machine and onto the host computer, and hereâs an example of when a hacker did that.</p>
+
+<p>After looking around the iMac for a while, the hacker stumbled upon the keys to the kingdom.  Literally; he found a private key to LinkedIn.  This was the key that the engineer could use to log into LinkedIn with.  See, when you log into certain systems, you could use a username and a password but another option is to use public and private keys, where the public key is put on the server you need to access and your private key is on your own computer so when you connect to the server, you authenticate using the keys.  This is all done automatically and saves you from having to type passwords.  But when the hacker saw the private key, he snagged it right away.  But where does this private key connect to?  Well, the hacker had to look around a little bit more to find out, and thatâs when he found a set of VPN profiles that allowed this personâs iMac to connect to LinkedIn.  The profile contained everything they needed to connect; the server name, the IP address, the username.</p>
+
+<p>The only thing missing was the private key which the hacker just got.  [MUSIC] The hacker then took this VPN profile and credentials and connected directly into LinkedInâs VPN server.  Now, hereâs where the hacker made a major mistake; [00:10:00] he made this connection into LinkedIn from his home which was in Moscow, Russia.  LinkedIn is in California.  Well, there was nothing to stop this connection coming in from Moscow though, so he just got right in.  From here, he was able to find his way around the network, looking for the user database, and he found it.  He was able to log into that and grab the username, password hash, and e-mail addresses of as many LinkedIn users as he could.  After that, he logged out and disappeared.  LinkedIn had just been breached but they didnât know it yet and they wouldnât find out for another three months.  The first moment when LinkedIn learned about this was through a forum called insidepro.com.  This was an underground criminal forum where you could buy and sell stolen data from hacks.  Someone was offering LinkedIn user data for sale there.</p>
+
+<p>The team at LinkedIn saw this and immediately sprang into action.  [MUSIC] First, they needed to verify that the data being sold online was real LinkedIn user data.  They compared what was in that sample database with their own database and sure enough, the hashes matched.  The horror and the fear you get when confirming that youâve just been breached, itâs indescribable.  Now, LinkedInâs response for something like this is a four-step process.  First you confirm, contain, remediate, and do post-mortem.  They just confirmed that they were breached.  Next is for them to contain the problem.  Is the hacker still in the network?  What did they steal?  How did they get in?  Can we block them from getting in again?  All these questions needed immediate answers.  LinkedIn engineers and security team took over a conference room and called it a War Room.  Something like forty to sixty people from LinkedIn were all working on this incident.  They were flying in from foreign countries to help.  They had the security team involved hunting through events and logs, looking for evidence.  They had SREs, or site reliability engineers, and theyâre combing through their systems looking for traces of unauthorized activity.  There were lawyers present.</p>
+
+<p>Their Chief Internet Security Officer was present and active, doing all kinds of triage.  Other executives were in the room too because this was the most important thing going on at LinkedIn at the time.  The atmosphere was heavy and intense.  The first clue they got was from the VPN logs.  The LinkedIn security team saw that one of their California-based engineers had logged into the VPN from Moscow numerous times.  So, they called him in for an interview.  Hey, have you been to Russia lately?  No.  Did you use any kind of Russian proxy lately?  No.  Did you give anyone in Russia your login details?  No.  The security team was on the trail.  This was a major clue.  They found out that this engineer had been connecting to the corporate network from his home iMac and Iâm gonna guess that probably wasnât allowed.  But the security team asked him to bring that iMac in for an examination.  So, letâs back up a month, actually.  So, a month before LinkedIn even knows this happened, the hacker was looking through the database that he stole.  It contained e-mail addresses, usernames, and password hashes.</p>
+
+<p>This isnât the password itself; itâs a representation of the password after it goes through an algorithm.  So, in other words, you couldnât see anyoneâs password in this dump.  But the hacker wanted to find a way to crack these passwords, so he posted a few of the hashes to a forum asking for help on how to crack them.  When LinkedIn was investigating this, they saw that old post which matched the hashes that were in their database.  The situation was getting worse for LinkedIn.  Theyâre now seeing that the hacker is actively trying to crack usersâ hashes.  Unfortunately for LinkedIn, they werenât yet salting their password hashes.  Salting password hashes is an extra step that you do to make cracking hashes even harder.  They were in the process of doing this but when you have hundreds of millions of users, itâs not easy to get it done.  [MUSIC] At LinkedIn, they have different designations for how serious an incident is.  Code Yellow is something that is some kind of technical risk like a server running over capacity or theyâre not sure how to scale it properly, or a degradation of service that isnât causing a whole outage but could at any moment.</p>
+
+<p>Code Yellows happen every few months or so there but as the LinkedIn team investigated this, they determined this incident was a Code Red, meaning it was business-impacting and because they were already seeing user data leaked to the internet, it meant this threat was certain and it could be at any moment that the LinkedIn database dump was revealed to the world.  I believe at the time it was only available to whoever would buy it and it wasnât freely available for anyone to look at.  This creates a tense and scary moment for any security team; not knowing [00:15:00] what or how much got stolen and not knowing what the thieves plan on doing with it.  Thereâs a level of anxiety here especially because this was already hitting the news media who was announcing this hack to the world.  Lots of different teams were pulling logs and saving them for incident responders to comb through.  Itâs best to have logging turned on so you can sort of go back in time and see what happened where.  One problem though is that thereâs now a lot of logs to go through and if you think about the millions of users who are on the site every day, trying to find a needle in a haystack is tricky.</p>
+
+<p>I think the day they discovered this or the day after is when LinkedIn called the FBI to inform them of this breach.  The FBI was very responsive.  They asked for logs and started interviewing people right away.  [MUSIC] LinkedIn saw that IPs were connecting in from Moscow, and so they took that IP and started tracing it through the network.  Where did it go?  What did it access?  They were looking through SSH logs, Wiki logs, server access logs, and they saw connections from that IP which told them what user agent the hackerâs computer had.  The user agent can tell you things like operating system, browser type, and version.  The hackerâs user agent was unique.  It actually had the word Sputnik in the end which isnât normal.  Sputnik is the name of the first satellite to be put in orbit by the Russians and this user agent just wasnât seen by anyone before that which makes me wonder if the hacker put it there as sort of a signature.  With this extra information, engineers can now search logs for that particular user agent to see if that has any hits for it, because maybe the hacker wasnât using the same IP every time.</p>
+
+<p>Maybe they had come in from different IPs and different channels and different VPNs or something, but if there was a matching user agent, then you could know that thatâs probably the same person.  Next, they looked at the public website to LinkedIn to see if anyone with a matching IP or a matching user agent was logged into any userâs account on linkedin.com.  Sure enough, there was some activity.  The same IP and user agent was seen logging into thirty different LinkedIn accounts through the public website.  This meant that the hacker had cracked some passwords that was in the data and was logging into LinkedIn with those users.  This certainly elevated the concern for LinkedIn.  Back in Moscow, the hacker did in fact have a rather beefy GPU farm.  See, cracking password hashes is process-intensive.  You have to cycle through millions of passwords, hash them, and see if those hashes match the hash in the database.  If so, youâve found a password.  Graphics cards, GPUs, are particularly good at doing a lot of these little calculations like this.  They can do a lot of simultaneous things at once.  So, the hacker was running the database dump through this password-cracking station he had, and when heâd get a match on someone that he found interesting, heâd try logging into LinkedIn to verify it, and it did in fact work.</p>
+
+<p>He was logging into linkedin.com as different users.  Back at LinkedIn, engineers started checking the database servers.  They took the information they discovered and searched the logs to see if anyone had logged into the database servers with these IPs, username, or user agent.  The database LinkedIn used at the time was Oracle which was on a UNIX machine.  So, they looked to see if anyone connected to it using SSH and sure enough, they did.  There were logs of the hacker logging into the database server and then accessing the database and running queries in that database.  To get this far into the investigation took LinkedIn six weeks.  [MUSIC] Iâm talking an active War Room, Code Red situation for six weeks solid with multiple teams, dozens of people looking through thousands of servers, combing through millions of logs.  It just takes a lot of time.  During this time, they forced LinkedIn employees to change their passwords.  They created a whole new account for the engineer who initially got hacked with that iMac computer, and they rebuilt servers to make sure there were no traces left on the system.  Also, it appears that LinkedIn announced this breach as soon as they could to the public to inform their users that something bad has happened.</p>
+
+<p>HOST1:	LinkedIn users beware; the business social network says some of its usersâ passwords have been stolen and leaked onto the internet.</p>
+
+<p>HOST2:	A hacking group rocked online network LinkedIn this week by publishing almost six and a half million user passwords to the site.</p>
+
+<p>JACK:	6.5 million LinkedIn user accounts were claimed to be on some hacker forums.  However, not all 6.5 million passwords were visible and the dump seemed to only be in the hands of a few people at the time, with just a sample of it posted publicly.  Now, the posting and the investigation all happened in June 2012, but my research shows the hacker got into the network back in March of that year, a whole three months earlier which means LinkedIn had no idea of this breach until it showed up on this public forum.  [00:20:00] So, the hacker did this hack back in March 2012 but in May of 2012, before LinkedIn even knew they were breached, he hacked into another website too and Iâm not exactly sure what steps he did here, but Iâve got high confidence of how it went.   So, by May of 2012, the hacker had already cracked quite a few hashes in the database that he stole from LinkedIn and was testing some of these logins by logging into LinkedIn with those usernames, and it was working.  My theory is that he went through the cracked passwords looking for anyone that worked for a big IT company as an engineer or admin, because this hacker was in the business of selling massive databases to make money.  So, this was his thing.</p>
+
+<p>Looking through his cracked passwords, he found a quality assurance engineer who worked at Dropbox.  He tested that the password worked by logging into this Dropbox engineerâs LinkedIn account.  Yep, he got in no problem.  Now, this Dropbox engineer has stated on the record that yes, in fact, he was reusing passwords at the time.  His Twitter, Facebook, LinkedIn, and Google accounts all had the same password, so this hacker actually gained access to a ton of this engineerâs accounts.  [MUSIC] But did this engineer use the same password where he worked too, at Dropbox?  I donât know for sure but the hacker was able to login as the engineer at Dropbox.  I mean, he was able to get into the corporate network with this login either through a VPN or an admin web portal; Iâm not sure.  Obviously I shouldnât need to tell you this, but itâs not a good idea to reuse passwords for this exact reason.  Now, this quality assurance engineer didnât have access to files that users stored on their Dropbox accounts but he did have access to usersâ metadata, information about their accounts and stuff, because he would sometimes need to look into issues that users were facing.</p>
+
+<p>The thing is, if a hacker has this guyâs login information, then the hacker can access anything this engineer can.  So, the hacker got in and grabbed all the user data he could that this engineer had access to which consisted of usernames, e-mail addresses, hashed and salted passwords.  Then the hacker transferred this to himself and got out.  A month later, the FBI was investigating this LinkedIn breach.  One of the things they looked for was to see if that IP address or user agent was logging into any LinkedIn accounts as users of the site.  Sure enough, there were logs indicating that the same person had logged into about thirty different LinkedIn user accounts, meaning the hacker had cracked the usernames and passwords for these LinkedIn users and was testing it to verify it worked.  One of those accounts belonged to a Dropbox employee and I donât know if it was the same quality assurance engineer but the FBI saw that connection and thought maybe Dropbox might be the next target.  So, the FBI called Dropbox to tell them this information and even gave them IPs and user agents to look for.</p>
+
+<p>Dropbox looked through their logs and confirmed that yeah, those IPs did connect in as a quality assurance engineer and got into the corporate network.  [MUSIC] Once Dropbox did confirm there was unauthorized access into the network, they immediately set up a War Room to handle the incident.  This is basically like Command Central, a place where all data can be combined and up-to-date information is relayed to.  Now, at the time in 2012, Dropbox had just under 150 employees working there and just like at LinkedIn, this was the biggest thing going on at Dropbox at the time, so it was practically an all-hands-on-deck response.  Dropbox had over twenty people working on this incident but they knew they needed even more help, so they started hiring more security incident responders to just come on in and help.  They first discovered that someone had unauthorized access into the corporate network of Dropbox.  This seemed contained though, as the connections didnât seem to make it into their production portion where dropbox.com was ran out of.</p>
+
+<p>This was in the corporate side.  While this is still a big deal to have someone lurking around in your corporate network, they werenât able to see the crown jewels of what data users were storing in their Dropbox accounts.  Now, specifically they were seeing that a Dropbox engineer was connecting into the Dropbox network from Russia, then once they connected, they went to the internal Dropbox Wiki which has information on how to troubleshoot certain things and other technical details about Dropboxâs network.  The Dropbox team kept examining the logs.  They saw which Dropbox engineer had his username and password stolen and went through the logs to see if there was any other suspicious activity around that.  This engineer had an account at dropbox.com, so they looked at his recent activity and it shows that he invited another Dropbox user to join his Dropbox team.  The thing is, the Dropbox engineer did not invite [00:25:00] that user, so this means the hacker got into the engineerâs Dropbox account and then invited himself to see that engineerâs files.  After they had their accounts linked up, the Dropbox engineerâs account transferred some large files to the hackerâs Dropbox.</p>
+
+<p>When Dropbox looked into what these files were, it was a list of twenty million Dropbox user details; e-mail, username, and salted password hashes.  This made Dropbox aware that not only were they breached but the hacker stole at least twenty million user details from their customers.  But they still werenât sure how the hacker got these or even if it was from Dropbox at all.  The next victim here is a company called Formspring.  This is a social networking site which is focused on asking questions.  Think of it like a place thatâs dedicated to ask-me-anything-type interviews.  In 2012 they had 30 million registered users and in June of 2012, the hacker got one of the admin usernames and passwords from Formspringâs server and logged in using SSH.  My guess is that he got this login from the LinkedIn data too, but Iâm not sure on that.  He also logged into one of the web admin panels using the same username.  He was able to install a malicious program called madnez.php on the server so that he could get back in anytime he wanted.  Itâs the same madnez.php that was found on that iMac.  He found their internal Wiki and did a search there for hashed passwords.</p>
+
+<p>I guess what he was looking for was information about them or where theyâre stored or something.  Using the web admin panel, he was able to run SQL commands on the database and grabbed a large amount of user info, specifically e-mails, usernames, and salted password hashes, then he logged out.  That was in June.  [MUSIC] On July 9th, someone posted a database dump of Formspring users on some underground forum.  It contained 420,000 accounts.  Someone saw this and contacted a journalist.  The e-mail addresses in the dump contained the word Formspring in them a lot, like user+formspring@gmail.com, that kind of stuff.  So, the journalist called up Formspring to get some answers.  Formspring had no idea they were breached and had no idea how this database got on the forum, but this turned into an all-hands-on-deck situation for them, too.  They only had a few dozen people working there at the time but everyone who was technical got involved with this investigation.  When one journalist posted about it, soon many more journalists were calling, so the marketing team had to get involved too, trying to handle PR.</p>
+
+<p>First, the Formspring security team needed to confirm the data.  They took the 420,000 users and compared it to their database and it was a match.  It certainly was their data.  Next, they started looking for anomalous activity.  Thatâs when they found someone had SSHâd into the server from a Russian IP.  They took the IP and looked at more logs which indicated that this user logged into the web admin portal and from there, they were able to see what the user agent was for the person who accessed it.  They also saw this hacker accessed the Wiki and placed madnez.php on the web server and ran some SQL queries from the admin control panel.  They discovered all this in about one day.  I guess their environment was just a lot smaller than LinkedIn to be able to get through it all quicker.  Once Formspring confirmed that they had an intrusion, they needed to contain it.  They changed the username that was used to login, deleted madnez.php, put more rules in place to change passwords more frequently, and set up monitoring rules to look for logins that werenât from where the admin lives, and then totally destroyed and rebuilt certain servers that they knew the hacker had been on.</p>
+
+<p>On top of that, they notified all their users that a breach had occurred.  They told users what data had been stolen and had them change their passwords immediately.  The day after they discovered this breach, the FBI called them and said hey, heard you had a break-in.  Can we see what happened?  Formspring sent the FBI all the logs they could to assist in the investigation.  A few weeks later, Formspring had everything back to normal and things were working just fine again.  But this story isnât over; one guy hacked into three major websites and the FBI is now on the trail.  Youâve got to hear what happens next.  Stay with us.  [00:30:00] At this point, the FBI was aware of all three of these cases.  Someone had breached LinkedIn, Dropbox, and Formspring all from the same IPs and same user agents with a trail connecting it all.  Pretty much the day LinkedIn found out that theyâd been breached, they called the FBI and the FBI began interviewing people at LinkedIn and collecting logs from them.  They saw that the hacker had connected from multiple IPs in Russia.  They also saw the user agent with the word Sputnik in it.  LinkedIn was sending them hard drives full of logs to examine and feeding them all the information they were finding.</p>
+
+<p>They even supplied an image of the engineerâs iMac that got hacked to the FBI.  While reviewing all this data, the FBI found something crucial in the logs.  [MUSIC] They knew what IP and user agent the hacker had, so they looked at all the people who logged into linkedin.com, the public website, in the last few years.  They found a person named Jammiro Quatro.  This person had registered for a LinkedIn account way before this hack and had the same IP and user agent as the hacker.  This could be gold.  Like I said, users of LinkedIn often post their full resume there, so if this user had information about himself posted on his account, it could wrap up this whole story really quick.  But Jammiro had a blank LinkedIn account.  He wasnât associated to any company and he didnât have a single connection or friend on LinkedIn.  But to create a LinkedIn account you need an e-mail address, so the FBI looked to see what e-mail address registered this account and it was chinabig01@gmail.com.  The FBI thought this might be the e-mail address of the hacker.</p>
+
+<p>Now, the FBI had quite a few IP addresses that they were considering suspicious with this, but they narrowed down their interest to five that may be owned by the hacker, and all of them were in Russia.  If this had been in the US, the FBI could issue a subpoena to an ISP and get information on who pays the bill for that connection and get answers almost immediately.  But things work differently when the FBI wants information from an ISP in Russia.  There is a thing called the Mutual Legal Assistance Treaty, or MLAT.  MLAT was set up to allow foreign nations to cooperate in helping criminal investigations by supplying law enforcement with internet service subscriber info.  So, the FBI requested from Russia subscriber records through MLAT to see whose IPs those were.  But this is not a fast process; it takes eight months to five years to get subscriber info through MLAT, so the FBI had to wait for a while on this.  [MUSIC] In the meantime, they started cross-referencing the LinkedIn data with Dropbox and Formspring data.  In all three attacks they found similar IOCs, or indicators of compromise; the same IPs, the same user agents, the same browser and OS.</p>
+
+<p>Once again, they looked for users on those sites from those IPs who registered for an account before this hack took place.  Dropbox also had a user registered with chinabig01@gmail.com.  That person was named Jammis Gurus, a bit different from the Jammiro Quatro from LinkedIn.  Formspring also had a user registered as chinabig01@gmail.com, too.  Because there were so many similar indicators on all three breaches, the FBI was starting to believe that this chinabig01 e-mail address might have been owned by the hacker.  So, the next step is the FBI contacted Google, the owners of Gmail, and issued a search warrant to get any information on that user.  See, Google is a US company, so itâs fairly easy for the FBI to get information from a US-based company.  Actually, I think they have to comply with law enforcement in this kind of way, and Google loves collecting logs on its users, so they had plenty to share.  [MUSIC] First, the FBI saw that whoever was connecting to the server had the same IPs and user agents as the intruder who got into the other companies.  Next, the FBI agent was able to see what search terms this person Googled while logged into their account.</p>
+
+<p>Here are some of those search terms; WordPress vulnerabilities, TrueCrypt hack, Oracle export utility, EMS data export for Oracle.  The userâs Google activity also showed them visiting a few sites like insiderpro.com which was the forum that these database dumps were getting posted to.  The user also visited articles which talked about the LinkedIn hack.  Then the FBI took a look in their inbox and looked at what e-mails they had and saw a welcome e-mail to Vimeo, a video file-sharing website.  So, he requested information from Vimeo which also came back with matching user agents and IP addresses.  The FBI also saw evidence that this person was logging into some LinkedIn accounts which were employees of automattic.com.  Now, Automattic is the parent company to WordPress.  [00:35:00] The FBI contacted Automattic and requested to see any login activity from these Russian IPs and sure enough, there were some login activities.  Someone from Russia was logging in with different Automattic employee usernames and passwords.  Itâs unclear what exactly the hacker stole out of Automatticâs site, if anything, but it is clear he got in multiple times with different Automattic engineersâ usernames.  The FBI agent then saw a welcome e-mail to afraid.org.</p>
+
+<p>This is a website which offers dynamic DNS services.  Itâs a US-based company, so the FBI agent issued a search warrant to get data on who owned the account related to chinabig01.  The name on this account came back as âZopaqwe1â, and afraid.org also showed that whoever was accessing the site had the user agent with Sputnik in it, too.  The FBI did a Google search on this âZopaqwe1â which is a strange and unique word, and found a user registered on an online gaming site called kongregate.com.  The FBI requested user details here and confirmed the user agent and IPs matched, but also discovered the user had registered a credit card on that site and had purchased some game credits.  The FBI tried to trace the bank details of that card but it led them to a bank in Russia which they could not get extra information on.  However, they did look to see what e-mail address was registered with this âZopaqwe1â Kongregate account, and the e-mail for this user was r00talka@mail.ru.  Now, since mail.ru is hosted in Russia, the FBI couldnât issue a subpoena for that, either.  But the FBI Googled the beginning of that e-mail address, r00talka, and found a Gmail user with the same name, r00talka@gmail.com.</p>
+
+<p>[MUSIC] So, the FBI issued a search warrant with Google to get information on that Google user, and Google responded with more information.  The first thing they saw was what Google searches that user had searched for, and they were searching for things like LinkedIn hack, MySQL count fields, change Mac address WiFi Windows 7.  There were also some Google Map searches that this user did.  They saw the user searched for a dentist in Moscow and some other map searches in Russia.  Next, the FBI agent was able to look at e-mails for this r00talka Gmail account.  He saw this person had registered an account at VKontakte which is like the Russian version of Facebook.  The site would e-mail you anytime someone messaged you there and there were people messaging him asking about hacking e-mail accounts and different relationship-type stuff that was going on.  But here, everyone is referring to him as Zhenya and everyone only spoke Russian to him.  By this point, the subscriber records for that IP address came back from the MLAT request to Russia and it showed IPs were owned by two people, and it gave their physical address.</p>
+
+<p>Yevgeniy Nikulin had one IP and someone else had the other.  Yevgeniy lived on the same street that this person was doing Google Map searches on, so the FBI started looking up information about Yevgeniy and found photos of what he looks like.  They compared those photos with the person on VKontakteâs account and they looked like the same person.  The VK account was for a person who went by the name Zhenya which is actually a common nickname for people named Yevgeniy.  Iâm not sure how but the FBI investigation led them to a Russian guy named Kislitsin.  [MUSIC] Kislitsin has been known in the past to broker deals between hackers and people buying database dumps.  The FBI found Kislitsinâs e-mail address which was a Hotmail address owned by Microsoft, so they issued a search warrant with Microsoft to see what was in his inbox.  There, the FBI saw e-mails going back and forth with the buyer of the Formspring data.  The buyer ultimately decided to buy the dump for an equivalent of 7,100 US dollars.  Iâm not sure how much data was in there though; somewhere between 400,000 and 30 million user records.</p>
+
+<p>Supposedly, the person who bought this was half-Belgian and half-Turkish, and whatâs really strange is they used a middle man for this cash deal and he was also involved with the E-Trade and Scottrade hacks which I talked about in Episode 76, Knaves Out.  The FBI indicted Kislitsin as a co-conspirator to this but ultimately was unable to capture him.  However, the FBI was able to arrange a meeting with him in the Russian embassy in Moscow.  So, they visited with this Kislitsin guy and he gave them a lot of information, not only information about this case but information on a few other cases the FBI was investigating, too.  While meeting with Kislitsin, he told them that Yevgeniy Nikulin was the person who broke into Dropbox and still had access to it and had the Formspring [00:40:00] data, all with the goal to sell the database dumps on the black market for money.  This was enough information for the FBI to issue an indictment for Yevgeniy.  Multiple trails led right to him, but would they be able to catch him?  Stay with us through the break to find out.</p>
+
+<p>So, who is Yevgeniy Nikulin?  Well, heâs Russian, from Moscow, born in 1987, so that made him twenty-five years old in 2012.  Yevgeniy loves cars so much that he started a business in Moscow buying luxury cars and renting them out to people, and it was from that where he was often seen driving Maseratis, Lamborghinis, and Bentleys around town in Russia.  I donât know where all this hacking started for him.  Details of his past are foggy.  I imagine he got into IT and computers like anyone else; probably started with playing video games and then wanting to hack the video games or cheat, or maybe wanting to change his grades in school or wanting to just mess around with his friends by hacking into them like it was a game.  Who knows why he got started in hacking?  But by 2012 he was pretty familiar with how computers worked and how to exploit them.  From reading about him, I also feel like his online life overlapped with some of these pretty notorious Russian cyber-criminals.  He knew some of the other big hackers.  Maybe they taught him.</p>
+
+<p>Maybe they were hanging out in the same forums or something and maybe Yevgeniy wanted to be part of that hacking world that they were part of, because after all, he liked expensive things and was seeing some of the Russian hackers making gravy from their digital exploits.  The FBI issued an indictment for Yevgeniy Nikulin but the problem was, he was in Russia and Russia was not going to arrest Yevgeniy for the FBI.  Even if Russia did arrest him, heâs not gonna get extradited to the US for trial.  So, the FBI had to wait.  They knew the exact address of where Yevgeniy lived but had no way to go into Russia to get him.  Now, up until this point, the world had thought the LinkedIn data breach was for 6.5 million users because after all, thatâs what was posted on insiderpro.com and whatâs more is that LinkedIn never clarified how many accounts got stolen.  But in May 2016, someone posted that they had even more LinkedIn credentials for sale.  They claimed to have 117 million user details from LinkedIn and was selling it for just over $2,000 in Bitcoin.  This triggered a whole new news cycle.</p>
+
+<p>HOST3:	Morning topic; Americaâs money.  A security breach at LinkedIn turns out to be much bigger than first thought.</p>
+
+<p>HOST4:	Thatâs right.  The social network for business now says a hacker stole 117 million user passwords in the 2012 breach, far more than the original estimate of about 6.5 million.</p>
+
+<p>JACK:	I think about all the users of LinkedIn.  Yes, of course; professionals looking to network, but also many top executives have accounts there.  I mean, after all, if your business is listed there, shouldnât the leader of that business be on there too?  But on top of that, you have government officials on there.  Lawmakers are there, members of congress, FBI agents, NSA agents, senators, and yes, even the president of the United States.  Barack Obama made his account in 2007 when he was running for president and was president in 2012 when this happened.  [MUSIC] This news swept through lots of circles and impacted a lot of people.  Whatâs more is this new dump contained a lot of cracked passwords that anyone can see in plain text.  It wasnât that LinkedIn stored passwords in plain text but the hackers were able to find ways to crack a lot of the passwords that were in there.</p>
+
+<p>Oh, and in fact, we got to see what the most common passwords that got cracked were.  Iâll read you the top six [00:45:00] most common passwords that LinkedIn users were using in 2012.  The most common was simply â123456â.  Over 700,000 users had used this password because yes, LinkedInâs minimum password length was six characters at the time.  The next most popular password was âLinkedInâ, then the password âpasswordâ, then â123456789â, then â12345678â, then â111111â.  People use bad passwords and youâre telling me some of those users are using the same passwords on multiple sites?  On top of that, theyâre using the same password at work?  Ugh, itâs outrageous.  A few months after that, in October 2016, the FBI got the break they were waiting for.  Yevgeniy Nikulin was spotted in Prague, in the Czech Republic.  With the indictment all processed and things ready to go, the Czech police tracked him to a restaurant where he was eating with his girlfriend.  Thereâs bodycam footage of the police arresting him.  Here, have a listen.</p>
+
+<p>POLICE:	[CZECH]</p>
+
+<p>JACK:	Thereâs actually not much to listen to, so Iâll describe whatâs going on.  Yevgeniy and his girlfriend are sitting at a restaurant.  From the video, I see about three police officers coming in and they tell him to stay calm and put his hands where they can see them.  Yevgeniy puts his hands on the table and they ask him to stand up and walk backwards towards the officer.  Yevgeniy does exactly that.  Then they pat him down, take some things out of his pockets and handcuff him, all while the other officer is making sure the girlfriend isnât getting up.  Itâs all done very quietly and without any fuss, and Yevgeniy was taken to a Prague jail.  For the next two years, Yevgeniyâs lawyers fought to keep him from getting extradited to the US.  I wasnât able to get a second confirmation on this but his lawyer said the FBI was trying to pin Yevgeniy for hacking Hillary Clintonâs e-mails at the time and was trying to get him to confess to that.  Eventually, two years after his arrest, in 2018 the Czech Republic did extradite him to the US for a trial.  Yeah, I went through the court records and I never saw one reference to Hillary Clinton in there.</p>
+
+<p>The US had nine charges on him; computer intrusion, aggravated identity theft, conspiracy, and an international transmission of information causing damage to a protected computer.  The victims of this case were listed as LinkedIn, Dropbox, and Formspring.  But hereâs why I love this story so much; Yevgeniy pleaded innocent on all these charges.  [MUSIC] He claimed he didnât do any of this and why is that my favorite part?  Because it means this case had to go to trial which means witnesses, evidence, FBI testimony, and so much more becomes public record.  To research this story, I got the pleasure of reading hundreds of pages of court transcripts.  It was glorious to hear all the details from victims and law enforcement.  We rarely hear these things.  Like, there were three people from LinkedIn who all testified, explaining how the hacker got in and what their incident response plan was.  There were three people from Dropbox giving testimony, and the CEO from Formspring explained everything he saw.  On top of that, there were three FBI agents and a Secret Service agent who all gave testimony on how they were able to link all these pieces together and track him down.</p>
+
+<p>Itâs only from all this that we know anything about this story other than what youâve seen in the headlines.  I mean, I reached out to LinkedIn multiple times and the FBI multiple times to get someone to tell me about this story but nobody wanted to talk because I get it; what company wants to come on this show and tell me about the worst thing thatâs ever happened to their company?  No one.  So, itâs just really rare for us to see all the details of what happened written out so wonderfully.  This trial started in early 2020 but then the pandemic hit and the trial was delayed like, three months.  During that time, the Secret Service arrested a hacker suspected for breaking into the SEC, Oleksandr Yaremenko.  When they arrested him, they got access to his laptop and on it was all kinds of evidence on Yevgeniy; pictures of him, videos of him, chat messages with him, e-mails to him, tons more evidence.  But itâs weird though because by 2020, Yevgeniy had been in jail for four years which if you think about it, thatâs 13% of his life that heâs been in prison without anyone deciding on whether heâs guilty or not.  This took a mental toll on him for sure.</p>
+
+<p>He barely spoke any English.  He would sometimes shove guards or medical examiners or just try to walk out of the place sometimes.  He made a mess in his cell by getting toilet paper wet and throwing it up on the ceiling.  He kept asking the judge for permission to have a Game Boy or a PSP to play.  Yevgeniy didnât testify himself.  He had an interpreter in the court room saying everything to him.  The whole time, he kept [00:50:00] saying he had nothing to do with this but the trial started up and there was quite a lot of evidence connecting him to the incidents.  Just to recap the trail here, IPs that accessed the victimsâ networks were registered to his name specifically.  The IP used to steal data from LinkedIn led to a certain browser user agent, and that was associated to a LinkedIn account with a Gmail address, and that e-mail was registered at afraid.org which had a username that was on kongregate.com, and that person bought things with a bank card, and that bank card matched to other things that Yevgeniy bought.  On top of that, there was Kislitsin who said that Yevgeniy did this, and Yaremenkoâs computer which had more evidence.  On July 10th, 2020, the trial concluded.</p>
+
+<p>The jury found him guilty on all nine counts.  The judge then sentenced him to 88 months in prison which is just over seven years, and they also ordered him to pay 1.7 million dollars in restitution for the damage he caused to the companies he hacked.  Oh, and after that, he has to do three years of supervised release which Iâm not quite sure how that works if youâre not a citizen of the US.  [MUSIC] So, what do we learn from this story?  Well, it sounds like in 2012, these victim companies werenât doing user behavior anomaly detection.  Like, if a user VPNs in from California and then an hour later that same user VPNs in from Russia, that should trigger an alert, right?  Yeah, well, it didnât.  The technology at the time didnât really do that kind of correlation.  Now thereâs better tools for monitoring user behavior analytics and I think tools like that have a lot of potential.  Next, itâs crazy to me that some people use the same password for their LinkedIn account as their work accounts.  Donât reuse passwords like that.  Use a complex, unique password for every account you have.  The best way to do that is to use a password manager.  They arenât hard to use, so go get one.</p>
+
+<p>I have a affiliate link to one in the show notes if you just want a good recommendation.  Itâs also worth noting that these companies seemed to have exceptional logging turned on and when they learned about this breach, they were able to archive those logs and do system snapshots right away to preserve any data that can be used forensically.  Iâve seen a lot of companies just not log properly and it just always really bothers me.  Oh, and that LinkedIn engineer who was hosting those two websites on his home computer, heâs moved those websites to host them on Linode now which is one of our sponsors.  I think one of the lessons he learned from this was that opening ports from the internet into your home network can be dangerous.  It exposes your computer to a world full of chaos which can ultimately result in someone getting access to your home network.  I do think about that a lot in this story; if he wasnât hosting those little websites at home, he probably wouldnât have been the way in for this hacker.</p>
+
+<p>Itâs also interesting to see that bad guys target employees at their house, because that network is often not as strong as the corporate network.  But hereâs the crazy part of all this; remember that LinkedIn dump of 117 million user details that showed up in 2016?  Later on that year, it just hit the public for anyone to see, so anyone can go look in the LinkedIn database to see what is in there, and there are still many people who did not change their passwords or changed it to something and then just changed it right back to what it was before that.  What about all those people who reused passwords on all the other sites?  Like, yeah, I changed my LinkedIn password âcause I was told to, but I didnât change all the other six things that use that same password.  Thatâs where we pick up in the next episode.  Someone finds a password in the LinkedIn database and has quite a story to tell about that.</p>
+
+<p>(OUTRO):	[OUTRO MUSIC] Hey, do you know about the Darknet Diaries shop?  Listen, I love coming up with new shirt designs.  Every month I throw a few more up in the shop.  These shirts look great; one is of Medusa but sheâs got Ethernet cables coming out of her head instead of snakes, and thereâs one that looks like a bouquet of flowers but the flowers are actually made of computer cables.  Another one is of an archer whoâs shooting an arrow but the arrow looks like a USB symbol.  Youâve got to see these shirts for yourself to understand what Iâm saying, so visit shop.darknetdiaries.com and find some shirts.  Iâm an independent creator who loves bringing this show to you free of charge every two weeks but what really helps me keep on that schedule are my Patreon supporters.  These are people who donate money to the show every month to help keep it going.  If you want to show your support for this show, please visit patreon.com/darknetdiaries and consider donating.  Thank you.  This show is made by me, the chief biscuit-dunker, Jack Rhysider.  Sound design by the dream alchemist, Andrew Meriwether.  Editing help this episode by the wizard of light bulb moments, Damienne, and our theme music is by the phonic magician, Breakmaster Cylinder.  Even though when you ASCII stupid question, you get a stupid ANSI.  This is Darknet Diaries.  [00:55:00]</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

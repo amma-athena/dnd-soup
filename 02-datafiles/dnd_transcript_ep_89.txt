@@ -1,0 +1,545 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>Cybereason: Molerats in the Cloud â Darknet Diaries</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Cybereason: Molerats in the Cloud â Darknet Diaries">  
+	<meta name="twitter:description" content="">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/cybereason.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/89/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Cybereason: Molerats in the Cloud â Darknet Diaries" />
+	<meta property="og:description"        content="" />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/cybereason.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/89/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/cybereason.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/89/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="Cybereason: Molerats in the Cloud â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/cybereason.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 89: Cybereason: Molerats in the Cloud</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://www.podtrac.com/pts/redirect.mp3/traffic.megaphone.fm/ADV5669454087.mp3?updated=1616364432"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/89/",
+			   "title": "Ep 89: Cybereason: Molerats in the Cloud"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/89">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[START OF RECORDING]</p>
+
+<p>JACK:	Hey there, did I surprise you?  I release episodes of this show every other week.  Thatâs two episodes a month, right?  So, why do we have an episode here, in the off-week?  Well, thereâs this company called Cybereason who are big fans of this show and they wanted to bring you an extra episode.  So, a deal was made which means this entire episode is brought to you by Cybereason.  Iâve never done anything like this before and so I want to be clear; this episode is only here because Cybereason sponsored it.  But Iâm excited because itâs a fantastic story that links back to one of my most popular episodes.  Youâre gonna hear from their CEO who has quite the back story and later in the episode, weâre gonna hear a story from their threat research team who investigates and uncovers malicious activity, and theyâll tell us about a time when they found a threat actor lurking in someoneâs e-mails.  They spent months tracking that threat actor which they called Molerats in the Cloud.
+<!--more-->
+(INTRO):	[INTRO MUSIC] These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	Okay, so letâs get started.  Can you just tell us your name and who are you?</p>
+
+<p>LIOR:	Hi, Iâm Lior Div, the CEO and co-founder of Cybereason.</p>
+
+<p>JACK:	Yeah, I got the CEO of Cybereason on for this.  Iâm not messing around here; going right to the top.  But the reason why I wanted to talk with Lior is not so much to hear about his company, but Iâm fascinated with what he did before that.</p>
+
+<p>LIOR:	Basically, my story starts at the age of sixteen.  For years I really wanted to be a combat pilot.</p>
+
+<p>JACK:	Hereâs the thing; Lior grew up in Israel and itâs mandatory for everyone in Israel to serve in the military.  So, he knew he was going in and was hoping he would be picked to fly jets.</p>
+
+<p>LIOR:	So basically, there is a very rigorous kind of list of tests that you need to go through.  So, at the beginning, we were I think probably a thousand people that â doing the first test.  I did not â knew back then kind of the test is for which unit or for what occupation specifically.  After that, they cut it by half and it was five hundred people, then from the five hundred they cut it again to a hundred people.  From the hundred people, they choose twenty people and out of the twenty, they choose four.</p>
+
+<p>JACK:	He did not get assigned to become a combat pilot, though.  Lior was assigned to work in Unit 8200.</p>
+
+<p>LIOR:	At the beginning, I was very disappointed because I had a very clear vision of what I want to do.  Hindsight 20/20, Iâm super happy that I was chosen to go to the 8200 Unit and not to do other things.  I think that in a sense, they knew better than I am â what I am better at and direct me to this direction.  I think that after all the tests that they did, they know you very well.  Iâm joking sometimes when Iâm saying probably they know you better than you know yourself.</p>
+
+<p>JACK:	So, no matter what youâre assigned to do in the Israeli military, you must first do basic training.  You have to wear the military gear, do your push-ups and running, and learn how to use a weapon and that sort of thing.  But once all thatâs done, he reported for duty with Unit 8200 which is sort of like Israeliâs version of the NSA.</p>
+
+<p>LIOR:	Back then, I did not â knew that â were talking about the 8200 Unit.  It was super classified.  This is before the days that you could read all about this unit on Wikipedia.  [MUSIC] I think that only a month after I joined the army, I realized that weâre talking about this unit and kind of starting to understand what the unit is all about.  This unit is basically focusing on the field of signal intelligence.</p>
+
+<p>JACK:	So, he joined Unit 8200 back in the late 90s.  Yeah, it was a very secret organization back then.  Not only did the world not know about it but even people who worked in 8200 could not even tell their family what unit they were working in.  As a kid, Lior was fascinated with wireless technology and especially how cell phones worked.</p>
+
+<p>LIOR:	For me, it was fascinating because itâs like, all those things that I was fascinated as a kid to really understand how things â works and try to manipulate them.  Suddenly there is a full unit thatâs focusing on this field, very smart people and very creative.  But the story is not ending there; itâs just starting there.  The unit have a very unique way to take people right out of high school and basically teach them all the things that they need to do in order to be an expert in something.  At the beginning you are not an expert but you gain your knowledge, so in my case it basically was six months of very, very rigorous training, that every week we were learning something different.  In the end of this week, you need to have a test.  If you pass the test, you can go home.  If not, you stay and you need to pass the test.  There is no option not to pass it.  Youâre ending up to have a very, very large understanding and knowledge when itâs come to technology, everything from how a cellular network works, how the internet works.  You know, how a computer works and what do you need to know in order to write a Python script, write code, and so on so forth.</p>
+
+<p>JACK:	He canât go into specifics about what he did there but whatâs public knowledge about Unit 8200 is that theyâre the signals intelligence branch of the Israeli military.  So, theyâre code-makers and code-breakers.  In the modern era, theyâre using computers and technology to collect intelligence which sometimes means hacking into the adversary.  Lior was part of an advanced persistent threat, or nation state actor.  From the inside he was learning a lot about how cyber-attacks work.  He spent six years in Unit 8200.  The requirement is only to stay a year or two but Lior was really into it, so he stayed longer.  He was promoted to officer and even captain before leaving.</p>
+
+<p>LIOR:	The 8200, that was kind of the beginning of my career.  After six years in the army, I went to the university.  Over there, itâs kind of in the reverse; over there, you are getting your knowledge or the theoretical knowledge that you need but probably you already know the majority of it because of your hands-on experience.</p>
+
+<p>JACK:	From there he got a job at a tech startup which got bought out by a larger company.</p>
+
+<p>LIOR:	Then, basically I established my own company.  This company eventually was a company that focused in the field of hacking, cracking, reverse-engineering, you name it.  Eventually, this company was providing services to different government agencies.</p>
+
+<p>JACK:	This company would provide services for intelligence agencies in Israel.  So, Lior got to work with some pretty secret and classified missions there, learning advanced ways to hack, crack, reverse-engineer, and more, and providing these services to intelligence agencies.</p>
+
+<p>LIOR:	So, the work that we used to do is â sometimes Iâm joking about it â is take things that by definition that they are impossible and make them possible.  Usually whatâs happening â you have a mission that you need to get information or you need to manipulate information or you need to gain access to a specific type of knowledge and in order to get it, first you have to understand where this knowledge is â exist.  But then once you understand that thing, you have to plan and execute an operation basically soup to nuts.  [MUSIC] For example, you will have a team that focus in deception, meaning that if it wants to go into an asset and collect information â but you know that they are gonna protect themselves very good.</p>
+
+<p>JACK:	Okay, I find this interesting; when hackers use deception as part of their methods.  Liorâs team had a mission to get into someoneâs computer but if he just launches an attack from his office, that can easily be traced back to him so he doesnât want to do that.  The target canât know who he is, so he has to be tricky.  One way to be deceptive is to get his team to distract the target.</p>
+
+<p>LIOR:	Letâs say that they are doing a massive DDoS attack on them; they will think that this is whatâs happening but on the back end of this DDoS attack, actually there is the real hacking going on and somebody has managed to install letâs say a piece of software on one of their machines and have the initial access.</p>
+
+<p>JACK:	Ah, thatâs an interesting way to do it.  When youâre breaking into an adversaryâs computer, you want to be as quiet and sneaky as possible, right?  Well, Lior here decided to do the opposite.  He wanted to ring alarms but he wanted to ring so many alarms that when he did break into the computer, he would just be able to hide in the noise which is one way to get in undetected.</p>
+
+<p>LIOR:	But usually, most of the stories are stopping when weâre talking about the initial access but in reality the penetration, the first act of going in and have a foothold in an environment, this is just the beginning of an operation.  Thatâs not the end.  Usually from that point there is a very lengthy process that you have to do in order to first understand where did you land, what asset do you have, and then to â the ability to move from one machine to another machine in order to keep â map the environment.  The most important piece is to really locate the data that you need and start to collect it.</p>
+
+<p>Even once you find the data and you manage to collect it, the operation is not ended because then you have to exfiltrate the data outside of organization and thatâs, by itself, can be a separate operation to do because just to get the data, this is one thing but the ability to take it out, itâs another thing.  But this is another false notion that people think that the operation is starting and ending and then hackers goes out and thatâs it, but in reality when you talk about government against government, once you manage to go in, you want to stay in.  You donât want to go out and you want to have the ability to keep collecting information and you want the ability to keep doing it.  Even if somebody finds you and you need to clear the environment and go out, you want to make sure that you have backdoors to go in every time again and again.</p>
+
+<p>JACK:	According to Liorâs bio, it says heâs an expert in hacking operations, forensics, reverse-engineering, malware analysis, cryptography, and evasion.  Yeah, evasion; thatâs the practice of not being caught or stopped, like evading antivirus detections and hiding your tracks and being unseen in the network.  But yeah, looking back at the experience he got from being in Unit 8200 and then formal studies of computer science at a university and then working with intelligence agencies to conduct secret missions, yeah, Iâd say Lior is an expert hacker.</p>
+
+<p>LIOR:	As part of my time in those different units, I received a medal of honor for one of â it was a very strategic operation that we needed to plan and execute.  Needless to say that we cannot go through the details of it.  Maybe one day we will be but for me, it was fascinating to understand that with enough creativity and ingenuity, you can manipulate almost any network that exists out there and almost bend physics to your benefits.  For me, to be part of this type of capabilities, itâs kind of proving to yourself.  But itâs not just about me; itâs about the team, that we were working together, that if you really want to achieve something and you have the time and resources and creativity, you can almost bend physics to your benefit.  I think that in that situation, we managed to do that.  I was super proud of the team and the execution of the mission back then.</p>
+
+<p>JACK:	Whatâs interesting is Lior was helping the Israeli intelligence units when Stuxnet was going on.  If youâre not familiar with Stuxnet, check out Episode 29.  But this was an attack on an Iranian nuclear enrichment facility in order to thwart their enrichment process.  This virus literally made its way into the centrifuges to degrade them which is just phenomenal because nothing in the enrichment facility was connected to the internet, so how could hackers get all the way into the centrifuges and then have this malware run all by itself without any remote control?  Thatâs just incredible.  Now, of course Stuxnet is classified super tight, but the circumstantial evidence shows that the US and Israel were behind this attack.  So, I just wonder if Lior had anything to do with that.  But of course, I canât ask him.  But he does think that Stuxnet changed the world.</p>
+
+<p>LIOR:	I think that Stuxnet was the first time that people got a real demonstration of how you can leverage software and code in order to achieve military or government goals.  That was the first time that people managed to see in the large scale the ability to leverage in order to create a link between the cyber world into the physical world and actually to achieve results in the physical world while youâre leveraging software.  âTil that point, it was no real big demonstration of this capability.  It was a lot of theoretical one.  If weâre talking about an isolated network, air gapped and it has no connection to the internet, then itâs become almost like magic.  The fascinating thing was that this virus or worm was not manually operated, meaning it was dormant and once itâs understood that itâs on the target machine, it started to run automatically and do whatever itâs â need to do.  Zero communication to the outside world.</p>
+
+<p>The combination of all those things together kind of created â I believe sparked the imagination of people and for me and my two co-founder, we just knew that from that moment people will understand that there is a different type of problem out there, that weâre not talking about IT security anymore, that when there is attackers that â kind of really determined to go after a target, they will be able to do that.  We knew from our personal background that this is the reality and itâs not a mystery.  So, for us, we decided that this is time to basically do something because we knew to â that â kill that moment, the adversary has an advantage and we said to ourselves we have to reverse the adversary advantage.  We have to give back the power to the defenders in order to do something.  In order to do that, we said look, weâre gonna take the massive amount of years that we have and really understand how hackers â works, like really, by viewing it from the first-row seat and take all the knowledge that we have and â to be able to create something new, a new mindset.</p>
+
+<p>JACK:	What he determined is defenders donât have enough indicators to detect attacks.  I mean, if Lior was able to bypass antivirus, evade intrusion detection tools and then plant himself in a system for a long period of time without being detected, then yeah, he knows defenders are unable to detect him and whatâs more, he knows exactly where to look to be detected.  While traditionally defending teams look for indicators of compromise which could be a known bad IP address or malicious packets or malware present, Lior and his team started looking for malicious indicators of behavior which are signs that a malicious actor is conducting their operation.</p>
+
+<p>LIOR:	Basically, we invented the new method and the method is operation-centric. We call it the Malop, the malicious operation approach.  The Malop approach; basically assume that the hackers has many steps to do in an environment.  This is not just the act of penetrating into the environment, and we are gonna meet the hackers whenever they are.  So, every step that they are gonna do, we are gonna anticipate the step and weâre gonna be there and collect the information before they are doing anything.  In a sense, think about it that you just put the camera in every room, every door, and you record everything.  You know that if youâre starting to see a behavior that is bad, you can say hey, right now there is a malicious operation going on here.  So, itâs not about the malware; itâs about the Malop that you want to find.  Itâs not about the gun; itâs about the people thatâs using the gun.</p>
+
+<p>JACK:	I like this.  This sounds like user behavior analytics to me, and this is where you watch to see what users typically do and then alert when they do something thatâs out of their typical activity.  Like, if Charles from accounting typically accesses the same six systems every day to do his work and then suddenly starts trying to connect to some other peoplesâ computers that heâs never connected to before ever, this behavior is abnormal and worth looking into.</p>
+
+<p>LIOR:	[MUSIC] Basically what you need â you need the ability to collect massive amount of data in real time and then analyze the data as that data is coming through the system and to make quick decision that can rely on a lot of data that we collected from the past.  But this technology was not exist, so basically between 2012 to May 2015, we invested heavily of building a new technology.  This is a in-memory graph processing technology, that this is kind of the secrets behind Cybereason.  Many people think that we are just an endpoint company but in reality, if you look behind the curtain, we are a big data analytic company that can really analyze massive amount of data in real time and to find malicious operation in organization and not just the malware.</p>
+
+<p>JACK:	So, Cybereason was born.  Lior and his co-founders developed this method for collection and analysis.  In order for this to work effectively, he needs to install a little tool on every computer in a company to collect data and send it to Cybereason.  This is called endpoint detection.  Actually, I think they call it endpoint protection because the tool doesnât just detect but also stops attacks.  They got this thing up and running.  Cybereason was officially ready and they started telling people about their solution.</p>
+
+<p>LIOR:	It was a big cellular network that approached us and said look, we think that we are under attack.  Weâre not sure.  We see artifact.  We have every technology that exist out there but we cannot point a finger of whatâs really going on.</p>
+
+<p>JACK:	Okay, their first customer.  They were seeing some weird activity and they think a hacker was in the network but they couldnât find him.  So, it was go-time for Cybereason.  This was the first real test.  Time to get in the network, install this software on every computer in the whole company, and see if this method of detection actually works.  But this was a big company.</p>
+
+<p>LIOR:	It took us a few days to deploy 50,000 sensor on every basically machine that they have on-premise, in the Cloud, everything that they owned.  The systemâs starting to run and for us, that was kind of the first demonstration to see itâs live.</p>
+
+<p>JACK:	They got everything installed and were collecting tons of data from this company and analyzing it.  But all was quiet.</p>
+
+<p>LIOR:	The first days after we installed the system, we did not â saw anything.  We asked them; itâs like, did you guys install it on every machine that you have?  It took them a while to admit that they did not install it everywhere.</p>
+
+<p>JACK:	[MUSIC] Ah, right; I get a kick out of this because some companies only focus their security on certain systems in the network.  This reminds me of a personal story.  For a while, I was a security engineer and I was collecting logs and analyzing them for malicious activity.  I found this one system was showing signs of infection and I reported it to the IT team.  You know what they said?  Thatâs impossible, because that IP doesnât exist on our network.  So, I traced the packets all the way back to where the system was and I showed them where it was, and they still didnât believe me.  They didnât take any action on fixing this infected system because they were sure there was no such computer in their network with that IP.  But after a few weeks of insisting that it does exist, they finally took a look and found it.  It was a computer that was not authorized to be plugged into the network and it wasnât using the IP scheme the company uses, and thatâs a big problem that some companies face; they have no idea what computers are even in their network.  Anyway, Lior was able to convince this company they needed to install the endpoint software on all the computers.</p>
+
+<p>LIOR:	Once they decided to deploy it everywhere, immediately weâre starting to see those artifacts of hacking operation or malicious operation going on.  For us, it was massive excitement because that was the first time that we saw a large-scale attack on a massive network.  Think about it; thereâs 50,000 endpoints connected.  Itâs a cellular network so itâs very big.  We were ecstatic because we knew that this is not just the proof that the system works; this is the proof that the method of finding malicious operation is better than just to try to find this tool or that tool, because they saw the tools that the hackers used but they could not tailor it to a story in order to be able to say hey, this is the story of whatâs going on right now.  In a sense, the malicious operation for us is the ability to tell a story of what hackers are doing inside your environment.  The most important thing is to prevent them of doing it.</p>
+
+<p>JACK:	Were you on that call when you called to tell them okay, we found a hacker in your network?</p>
+
+<p>LIOR:	Yeah, itâsâ¦</p>
+
+<p>JACK:	Well, how did that go?</p>
+
+<p>LIOR:	The call with them, it was a very interesting call because we basically told them look, we know that there is adversarial activity right now.  By then, we managed to prove that this is a group from China doing it.  Itâs reached to the point that we knew who is the person that write the code.  The people that wrote the code, they made a major mistake and in one of the files that they compiled, that â they leave the debugs, basically comments, and we managed to reverse-engineer and see all their comments.  That enabled us to tie it back to a company in China that later on, itâs enabled us to tie it back to a specific individual that was the owner of it, and then we managed to prove that it was the Chinese government behind this attack.  [MUSIC] For us, it was fascinating.  On the call, we kind of came with the full presentation of hey, this is the group thatâs attacking you.  This is what they are doing.  This is how they are doing it.  They kind of at the beginning did not really â believed us.</p>
+
+<p>I think that the turning point in the conversation was when Yonatan, my co-founder, said to them look, we know that they stole the key to the castle.  Basically, they have the password, the admin password for every system that you have.  They started to laugh and they said look, we replaced the admin password two days ago.  It canât be.  Basically, he gave them the password and then I think that it was almost three minutes of quiet in the call and then they realized that itâs not just we managed to find this group of hackers; we really managed to identify every step of the thing that they did all the way to understand which password they are using, and this is kind of the hackers use, and they, in that point of time, they just understood that they were owned.</p>
+
+<p>JACK:	This was a success.  Their first customer.  Not only did they find this adversary but they were also able to figure out who, why, and what data was touched in the network.  Cybereason had spent three years getting to this point and now they knew their product worked, and started building all kinds of extra tools and services on top of that.  Like, not only do they have a tool to detect what malicious activity is happening in the network but they also have a full response team to go in and fix those issues, too.  Then on top of that, they have a threat intelligence team to do research on emerging threats.</p>
+
+<p>LIOR:	We are not just â know whatâs going on out there, meaning whatâs going on with each and every one of the attacker.  What we are trying to do in a very aggressive way is to find how they are hacking, to find their tactics and techniques and to expose them to the world.  Because once you do something like this, you basically throw the attackers back sometimes half a year, sometimes a year.  Depends what you manage to find.  So, donât be surprised that itâs like, every once in a while Cybereason is releasing major research that basically kill the ability of this group to operate now for another year.  Weâre a big believer it does make our customersâ base safer but itâs â make the world a safer world.  This is kind of part of the mission of Cybereason, is to reverse the adversary advantage.</p>
+
+<p>JACK:	Weâll take a quick break here but stay with us because after the break, weâll hear a story from their threat research team and how they discovered a new piece of malware thatâs really interesting.  Now, itâs always fascinating to me when a security company exposes a certain threat actor in the world because itâs always a good story.  Thereâs some shady activity group going on and a security company finds it, researches it, figures out what happens, and then lets the world know about it.  Cybereason has so many of these stories where they faced off against adversaries.  So, I asked Assaf to come on to tell us one of these stories.</p>
+
+<p>ASSAF:	My name is Assaf Dahan.  I am heading the Nocturnus Threat Research Team at Cybereason.</p>
+
+<p>JACK:	[MUSIC] Thereâs this team inside Cybereason which is called Nocturnus.  The Nocturnus team are security researchers who hunt through the massive data theyâve collected to try to find new threats nobodyâs ever seen before.  So, for instance, suppose some computer is demonstrating indicators of malicious behavior but an antivirus scan canât find any vulnerabilities, so they narrow down what app or process of that system is doing bad stuff, and that might lead them to discover an unknown piece of malware, malware that was just created by an adversary recently that has never been seen before in the security community.  This is what the Nocturnus team lives for.  Now, theyâll reverse-engineer that and dissect every part of the malware to try to figure out everything about it; who made it?  Where did it come from?  What does it do?  So, this is where Assaf enters the scene and begins to investigate.  Just â Iâm curious; how many languages do you speak?</p>
+
+<p>ASSAF:	Okay, I speak ten languages.  Not all at â on the same level or the same level of fluency but yeah, I speak ten languages.</p>
+
+<p>JACK:	Ten â and how does that fit into doing threat research?</p>
+
+<p>ASSAF:	Actually, it fits in quite well.  I think one of the most important things to keep in mind when working in the field of threat intelligence or threat research is that beyond the technical aspect of how a certain malware works or uncovering an infrastructure, you have to tie it to a global context or a geopolitical context for instance, in that matter, or other research papers that we publish.  So, the ability to have firsthand, almost unmediated linguistic capabilities is quite helpful.  In our team, we â I think if we combine all the languages, we speak like fifteen languages.  Iâm accounting for ten of those, but â so, it helps, yeah.  It really helps, especially if you go on the darknet, there are different hacking forums, there is some slang that is unique for hackers, or just reading documents whether itâs phishing lure content and others, so it really gives you some understanding or better grasp of what is actually going on beyond the technical aspects of how the bits and bytes of how a certain malware works.</p>
+
+<p>JACK:	Assaf has been with Cybereason for five years now and back in early 2020 is when he saw something interesting, a loose thread worth tugging at.</p>
+
+<p>ASSAF:	[MUSIC] Back then, we started noticing some interesting-looking phishing lures that were quite politically-charged, targeted Middle Eastern entities.  Letâs call it that way, and they were very much focused on targeting Arabic speakers.</p>
+
+<p>JACK:	The phishing e-mails were written in Arabic and they were from a group called The Popular Front of the Liberation of Palestine, which I donât understand Middle Eastern cultural politics all that much, but from Wikipedia it looks like this is a group thatâs fighting to retake Palestine back.  So, this group sent out phishing e-mails with malicious software attached.  Or did they?  Upon closer analysis, it looks like the e-mails didnât actually come from that group but it was made to look like it was coming from them in order to get their targets to read the e-mails and open the attachment.</p>
+
+<p>ASSAF:	We believe â itâs our assessment that they targeted political figures within the Palestinian authority that associated with Fatah, with the Fatah movement, as well as other political entities in the Middle East.  So, that was back in February 2020 and thatâs where we â when we discovered the Spark backdoor.</p>
+
+<p>JACK:	Hold on, Iâm reading more on Wikipedia here and Iâm finding this fascinating.  Palestine is a sovereign state that controls the Gaza Strip and West Bank which both border Israel.  Yes, there are many land disputes between Israel and Palestine but thereâs also internal disputes just within Palestine itself.  I mean, look at what happened in 2007 at the Battle of Gaza.  At the time, the Gaza Strip was controlled by Fatah, but Hamas, another faction within Palestine, waged a military-style attack against Palestine itself in an attempt to take over the state.  So, you had Fatah and Hamas fighting to the death over who would be in control of the Gaza Strip.  It was bloody and Hamas took over.  You see, the geopolitical aspect of all this is complicated.  But Assaf grew up in Israel with multicultural parents and speaks ten languages, so he understands this pretty well.  Again, he saidâ¦</p>
+
+<p>ASSAF:	They targeted political figures within the Palestinian authority that associated with the Fatah movement as well as other political entities in the Middle East.</p>
+
+<p>JACK:	The e-mails say things likeâ¦</p>
+
+<p>ASSAF:	For instance, it shows details; âCrown prince held secret meeting with Israeli prime ministerâ, or âDetails of the crown prince meeting with the US secretary of stateâ.</p>
+
+<p>JACK:	So, just from looking at the contents of these e-mails alone, we can already see that having a strong geopolitical understanding has a role in doing this threat research.  [MUSIC] But anyway, they examine these e-mails and the e-mails have an attachment which is an executable file, but the filename ends in .doc.exe and it has an icon which looks like a regular Microsoft Word document.  But when you double-click on that, it actually installs the backdoor or malware, and then it actually opens a Word doc, a decoy document, as they say.  This wasnât really using any advanced vulnerability to get the malware installed on the system but the Cybereason endpoint monitoring tools spotted this backdoor which they called Spark.</p>
+
+<p>ASSAF:	Itâs a malware.  Itâs a fully-fledged application that runs on the victimâs endpoints, usually â could be laptops or a desktop and it gives the attacker pretty much full access to the computer or the endpoint.  They can run different commands, they can use it to steal information, to control in a â if they choose to, they can also control the machine, they can download additional payloads, secondary payloads, which we see often, and basically harvest any information.  This is â itâs actually more of a â when you think about it, itâs more of a spyware, actually.  Itâs a tool that enables the attackers to carry out espionage attacks on their target.</p>
+
+<p>JACK:	When they discover malware like this, they first check to see if this has been documented before.  One popular malware repository is virustotal.com.  You could send it there and theyâll tell you if theyâve ever seen it before.  But that doesnât work very well for Arabic-written malware, so they checked other sources and they determined they were dealing with a brand-new piece of malware.</p>
+
+<p>ASSAF:	That happened in February 2020.  Around letâs say October, November 2020, we started noticing new activity.  [MUSIC] Weâve been monitoring them since the discovery of Spark.  Theyâve had different campaigns going on at the same time but around October, November, we also noticed new tools that were never used or seen before being used in this specific campaign.  What drew our attention was actually the geopolitical context.  We started seeing different phishing lure documents pertaining to the Israeli peace process normalization between these â well, Israel and the Saudis, the Emirates, and other content that is more related to internal Palestinian domestic affairs.</p>
+
+<p>JACK:	When doing threat research, you sometimes pull on a string and a whole fishing net comes up with it.  The Cybereason Nocturnus team was uncovering a whole bunch of this threat actorâs infrastructure.  It wasnât just phishing e-mails and the Spark malware, but now theyâre seeing different kinds of malware and more e-mail addresses of interest and watching how the hackers were communicating with this malware, and so many more things to look into.</p>
+
+<p>ASSAF:	Basically, we started following a trail of evidence.  [MUSIC] So, we know that the operators sent a phishing PDF to their victims.  That PDF contained a simple link to either a Dropbox or a Google Drive archive file that was stored on either of those platforms.  That archive file, whether itâs a zip or arj, it doesnât matter, contained the backdoors.  One backdoor was Spark.  The other backdoor was SharpStage which Iâm gonna talk about later, and the third one was DropBook.</p>
+
+<p>JACK:	Okay, interesting.  Whoever these hackers were, were not using the same malware for every target.  They had three different backdoors that they were trying to get installed on their victimsâ computers; Spark, SharpStage, and DropBook.  These would all allow hackers to take full control over their victimsâ computers.  This gave them even more stuff to reverse-engineer and to look for clues and what other tools the hackers might be using, and who they were.  Now, these viruses were interesting.  Letâs first look at SharpStage.</p>
+
+<p>ASSAF:	[MUSIC] Basically, once itâs installed on the victimâs machine, they can control the machine, they can run arbitrary commands, fetch information, but whatâs interesting about it is the exfiltration method is using a Dropbox client, so they â the code itself, in the code itself we found an implementation of a Dropbox client.</p>
+
+<p>JACK:	Once the hacker gets the information they needed from that computer theyâre in, they need to download that data.  You want to do that secretly so nobody notices youâre doing it, so how do you hide in the shadows of the wires?  Well, they used Dropbox and sometimes Google Drive because so many people use Dropbox; it would look like normal traffic and blend right in without detection.  Pretty clever.</p>
+
+<p>ASSAF:	Another interesting thing that we saw is that the backdoor itself was targeting Arabic-speaking users, so one of the first things that the malware does was to check whether Arabic language was installed on the infected machine.  If it wasnât installed, the malware wouldnât work, so it also â itâs also a clever way to avoid most sandboxes, so if you uploaded it to VirusTotal or other online sandboxes, it simply wouldnât run because that default language is English, something that I think people need to be more aware of âcause sometimes files may seem benign or they may seem like theyâre not doing much but once you dive into the code, you can see the reason behind it.  That was SharpStage.  The second backdoor that we discovered was DropBook and I think this is by far â I think the most interesting one.</p>
+
+<p>JACK:	Okay, so this malware called DropBook was very similar.  Once itâs installed, it gives the hacker remote backdoor access into that computer and it exfiltrates that data through Dropbox.  But whatâs interesting with this one is how the hackers were able to control it remotely.  See, every piece of malware must get instructions on what it should do once itâs installed.  Sometimes itâs hard-coded in the malware itself but other times, malware reaches out to another system to get those commands, asking what should I do?  That remote system will then tell them what to do.  You might think these remote systems issuing commands to backdoor viruses are some secret and elaborate server somewhere, right?  Well, as it turned out with DropBook, it was just using Facebook to send commands to the malware.</p>
+
+<p>ASSAF:	They actually used a Facebook fake account, so they created fake accounts on Facebook.  Literally, when you look at the account, as you can see in our blog, there are â I mean, these accounts donât have any friends, interests, almost like zero details.  But what they do have is â they have posts that contain very obscure content.  Some of it is letâs say it could be encryption keys or it could be a Dropbox API key, but we also found Windows commands that â to run for creating persistence and other things like that.  So, that was I think one of the most I guess striking or shocking pieces that we uncovered during this investigation.  Not only they were using letâs say Dropbox or Google Drive to hide in plain sight, if you will, but that â I mean, a lot of threat actors do that but they actually implemented a C2 communication channel using Facebook fake accounts which I think is pretty cool.</p>
+
+<p>JACK:	He calls it pretty cool.  Itâs weird how defenders have a certain respect for the attackers and how they work, because there really are so many similarities between the two, you know?  Both the hackers and defenders love technology.  Theyâre both computer geeks.  They love learning about ways to exploit systems.  The only thing thatâs different is their motive on what to use computers for.  To be able to hunt for bad guys all day and to try to unravel their entire plot and expose them, thatâs pretty exciting.</p>
+
+<p>ASSAF:	[MUSIC] Well, first of all, the geopolitical aspect was quite interesting because as an Israeli, you canât be â you canât stay indifferent, I guess, to what was going on at the same time.  If weâre talking about October, November 2020, it was right around the same time where Israel, with the help of the US, were signing peace accords or normalizations agreements with Arab countries like the Emirates.  There were talks with the Saudis and so on.  So, you read about it in the news which is exciting on its own coming from my part of the world, but once you see an actual attack that abuses this and you see that there are political entities, letâs call it that way, that are trying to get intelligence, using those backdoors as spyware to carry out espionage campaigns, about that topic made it super interesting.  I mean, when we find something that is that exciting, we pull all-nighters, we sometimes work weekends.  Not because Iâm a slave driver or I make anyone put in extra hours; itâs just, itâs so exciting and weâre on it.  As I told before, Iâve been in this business for over fifteen years now.  I still â when I wake up in the morning, I have this â I guess curiosity.  I think thatâs the main drive.  Itâs to solve problems, to solve mysteries.  To me, really uncovering new activity is very exciting.</p>
+
+<p>JACK:	They spent about ten months at this point tracking this threat actor, connecting dots, watching activity, and they have a fairly good understanding of what this group is doing, what their motivation is, and what tools they use.  Once Assaf and his team gets to this stage, they can use the research they just did to enrich the Cybereason tools to make it so their endpoint detection tools can spot the activity much quicker and more effectively.  Of course, they consult with the customer too to let them know that they found this activity and this is what was going on, but the Nocturnus team doesnât just stop there.  Theyâre a curious bunch of people, and so the question on everyoneâs mind is who would do such a thing?  Who exactly is behind this targeted hacking campaign?</p>
+
+<p>Now, the victims appear to be highly targeted.  [MUSIC] This is not the result of some massive spam campaign.  No; specific individuals were sent these phishing e-mails to lure them into opening the attachment.  One way to try to figure out whoâs behind an attack is to take everyone who could possibly have done this and put them all together on a spreadsheet or something.  Eliminate all the ones that seem unlikely, so for instance, you might get a list of the usual suspects here; cyber-criminals, hacktivists, governments around the world, mercenaries for hire, and other APT groups.  But now what?  Well, the hacks didnât seem to be financially motivated, and cyber-criminals typically are in it to make money.  You can sort of rule out that whole group.  Next, youâre starting to look at who would have interest in these Arabic-speaking political figures.</p>
+
+<p>Well, thereâs probably a bunch of nations around the world who simply donât have any interest with Palestine, so you can probably rule them out.  Now youâre left looking for who would have the motivation and the ability to hack into these people, and it narrows down the list even further.  Now, again, you see why itâs so important to have geopolitical awareness to sort through all this.  I canât imagine the mental calculus that must go into figuring this out.  Just asking the question who would want to attack Palestine?  Well, a lot of people, including people in Palestine themselves.  I mean, just in 2007 they had a coup where Hamas used force to take over part of Palestine.  Iâm sure that left a lot of unhappy residents there.  So, this gets pretty sticky to figure out.  But there were some clues that led Cybereason to believe they were dealing with a threat actor called a Molerat.</p>
+
+<p>ASSAF:	[MUSIC] We knew that theyâre a Arabic-speaking, politically-motivated group that has operated in the Middle East since 2012.  They mostly targeted the Middle East and North Africa region but weâve seen them also target parliaments, for instance, in the US and Europe.  But most of their agenda seems around government entities, political activists, politician diplomats.</p>
+
+<p>JACK:	Because the team at Cybereason understood the threat actors in this geopolitical space, they started looking more into what this Molerat group does.</p>
+
+<p>ASSAF:	Molerats is quite a well-defined activity group and â or, some would call it adversary, right?  The profile that â there have been reports on them for years, okay, so thereâs a lot of information about their modus operandi, like how they work, what malware do they use, who are their targets.</p>
+
+<p>JACK:	Okay, so letâs look at some of those reports.  FireEye calls this group Molerats but Kaspersky calls this same group the Gaza Cyber Gang.  According to FireEye, their first attack was against the Israeli government where they were able to take down the internet for the Israeli police force.  That campaign looked a lot like this one; a highly interesting e-mail was sent to a specific target with the attachment that looked like a Word doc, and when you opened it, it installed the backdoor.  It was a different backdoor they used back then but still, their tactics, techniques, and procedures were the same.  But looking from there, I count fifty-one different threat intelligence reports by various security companies who have investigated Molerats in the last nine years.  When you have a bunch of reports that lists a lot of different targets and you can see who the threat actors were trying to hack into, it starts to paint a picture as to who they might be.  [MUSIC] They have mostly targeted people in Palestine and Israel but theyâve also targeted the US and UK and a few other countries.</p>
+
+<p>But I did my best to look through these reports and never once do I see them list members of Hamas as their targets, but they do target Fatah.  Hamas is the current acting government party of the Gaza Strip, a part of Palestine.  Fatah controls the West Bank, the other part of Palestine.  But Hamas and Fatah both struggle for power in Palestine.  So, from my research, my conclusion is that Molerats is somehow allied with Hamas.  Now, Hamas doesnât have many allies.  I think only Qatar and Turkey have showed public support for them, but this activity doesnât lend way for me to believe that Molerats is from Qatar or Turkey.  Cybereason didnât want to get into the specifics of who Molerats are exactly or who they might even be, because nobody knows for sure and they donât want to suggest something thatâs incorrect.  So, Iâm not sure to what degree Molerats might be connected with Hamas, if at all.  But the evidence does suggest that they have aligned adversaries.</p>
+
+<p>ASSAF:	So, once we looked at the evidence of this new campaign and we correlate it to our previous discoveries and we correlate it to other intelligence reports that were published in the threat intel community and you look at the victims and you look at â you consider geopolitical events, you can say that with, I donât know, moderate to high confidence that itâs likely Molerats who is behind it.  But again, Iâll state that thereâs never or there â itâs very rare to have 100% attribution if youâre not in intelligence agencies.  Thatâs why we always leave a margin for errors.  But thatâs true for almost any intelligence report that you read that comes out of a vendor.</p>
+
+<p>JACK:	So, itâs fascinating to me that Molerats were targeting high-up Fatah officials and stealing and collecting information from them.</p>
+
+<p>ASSAF:	In this context, the intelligence may give them leverage in certain negotiations or letâs say if youâre not invited to the table, right, to take part of the discussion, you want to know whatâs going on on that â on the table, what was said there.  There could be many reasons why a certain entity would want to carry out an espionage operation.  It could be to â but definitely to give them the advantage of knowing what they shouldnât know, and then they can do different things with that knowledge.</p>
+
+<p>JACK:	[MUSIC] Thatâs some shady, underhand, bad-guy behavior for sure; to hack into political opponentsâ computers just to spy on them, but thatâs what so many governments around the world are doing now.  Itâs common knowledge that the NSA hacks into foreign governments all the time.  I guess the point is donât trust anyone online, friends or enemies.  So, itâs fascinating to see how Cybereason is able to track these groups and publish reports on them, and this helps make the world more secure because in their report, they show tons of different indicators and signs that you might have Molerats in your network.  So, antivirus companies all over can create new signatures in their products and security companies can detect their presence much quicker.  But on top of that, all this research makes Cybereason, the detection tools, more enriched and robust at detecting bad behavior in the network.</p>
+
+<p>ASSAF:	Our product is, first and foremost of all â donât kill me for the buzzwords, right â but is AI-based using machine learning algorithms and mostly behavior â is based on behavioral detection.  There are teams in Cybereason that are â I mean, thatâs their daily job, to write detection rules based off behavior.  The Nocturnus team, my team, as an intelligence team, we would pinpoint or we flag certain techniques as letâs say more relevant or more interesting than others, but there are a lot of teams that work together in Cybereason to make sure that we are able to detect things behaviorally regardless to whether itâs a known or unknown threat.</p>
+
+<p>LIOR:	This is not just a big data analytic platform.</p>
+
+<p>JACK:	This is Lior again, the CEO of Cybereason.</p>
+
+<p>LIOR:	Today, Cybereason is operating in the EPP world; EDR, XDR, and NDR.  Basically, everything that related to detection and response anywhere in a big enterprise environment, we know how to find and understand if there is hacking activity over there and then basically prevent it.  So today, Cybereason has â we call it the Defense Platform.  Itâs the most comprehensive platform that exists.  Really cover â enterprises.  We call it from endpoint to everywhere.  Really, the ability to see everything that hackers can do in an environment, monitor it 24 by 7 and finding those malicious operation with the operation-centric approach.  We found out that the organization that â implementing and using this approach, basically they are not just more safer; they are basically future-ready to deal with any attack.</p>
+
+<p>JACK:	Okay, yeah.  Tell me about the products you have and what solutions you have.</p>
+
+<p>LIOR:	Today we have full protection on the endpoint.  The way that Cybereason think about protecting an organization; we call it from endpoint to everywhere, so it started by deploying the sensor on every endpoint that the company has.  Over there, we have everything from antivirus, next-gen antivirus, anti-ransomware, anti-virus attack, really the ability to prevent everything that is malicious on those endpoints.  But weâre not stopping there.  This is just the beginning.  Then we know how to collect data from each and every one of those system in real time.  We collect all the data, unfiltered, send this data into our Cloud architecture, and over there weâre running the graph processing in real time.  Basically, we collect data from every endpoint that the organization has and then weâre analyzing all the data in real time.</p>
+
+<p>Basically, what we are doing; we are creating â building the network of relationship between everything to everything.  So, every process thatâs communicating with another process, every connection thatâs going in and out of the environment.  Think about it as a big graph that weâre basically painting while the data is flowing.  So, this has really enabled us to really understand the interaction of every process, every machine, every user with the world and within the inner groups.  So, every deviation from abnormality, we know how to identify and we call it evidence.  So, letâs say that the process usually communicated with x amount of processes and suddenly itâs deviating from the normality.  Weâre â mark it as evidence.  Letâs say that there is a connection between two computers that usually are not communicated; started to become communicated.  Weâre gonna mark it as evidence as well.</p>
+
+<p>So, the system is collecting endless amount of evidence as the data flows through the system, and then try to evolve the evidence to suspicions, basically to correlate multiple evidence together to a suspicion.  Once there is enough suspicions, then we collect them and correlate them to a malicious operation.  When Cybereason is triggering hey, there is a malicious operation right now and we stopped it, we can tell the full story of whatâs happened, so this has really enabled us to go back and show you all the points and everything that the hackers did in order to be able to really understand what they did, then we show how we blocked it, and then you can basically improve your capability in order to do better in the future.</p>
+
+<p>JACK:	So, are you still disappointed you didnât get to fly fighter jets?</p>
+
+<p>LIOR:	Running Cybereason every day, itâs like flying a jet every day.  So, you donât need to do it in reality.  You can do it in the cyber world.</p>
+
+<p>(OUTRO):	[OUTRO MUSIC] A big thank-you to Cybereason for sponsoring this episode.  They obviously have a very sharp and skilled team over there which is doing a great job at making their customers more secure.  Remember their first customer they had when they found a whole bunch of malicious activity in the network?  Yeah, well, all these years later, theyâre still a customer of Cybereason.  Cybereason doesnât just operate in the Middle East.  They have offices all over the world; Boston, Tokyo, London, Tel Aviv, and France.  If youâre interested in learning more or even want a demo of their products, visit cybereason.com.  This show is made by me, the pizza rat, Jack Rhysider.  Sound design this episode by the memory-intensive Andrew Meriwether, editing help this episode by the backlit Damienne, and our theme music is by the perpetual machine known as Breakmaster Cylinder.  Even though when I was a little kid I used to watch cartoons where bears lived up in the clouds, but the reality is Molerats live in the Clouds.  This is Darknet Diaries.</p>
+
+<p>[END OF RECORDING]</p>
+
+<p>(www.leahtranscribes.com)</p>
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

@@ -1,0 +1,657 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>Chartbreakers â Darknet Diaries</title>
+	<meta name="description" content="Something is wrong with the Apple Podcasts top charts. As a podcaster, this personally annoyed and intrigued me. I investigate how this is happening and who is behind it. For show notes visit https...">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Chartbreakers â Darknet Diaries">  
+	<meta name="twitter:description" content="Something is wrong with the Apple Podcasts top charts. As a podcaster, this personally annoyed and intrigued me. I investigate how this is happening and who is behind it. For show notes visit https...">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/chartbreakers.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/27/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Chartbreakers â Darknet Diaries" />
+	<meta property="og:description"        content="Something is wrong with the Apple Podcasts top charts. As a podcaster, this personally annoyed and intrigued me. I investigate how this is happening and who is behind it. <br><br>For show notes visit <a href='https://darknetdiaries.com/episode/27'>https://darknetdiaries.com</a>.<br><br>This episode was sponsored by Nord VPN. Visit <a href='https://nordvpn.com/darknet'>https://nordvpn.com/darknet</a> and use promo code 'darknet'." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/chartbreakers.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/27/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/chartbreakers.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/27/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="Chartbreakers â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/chartbreakers.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 27: Chartbreakers</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://traffic.megaphone.fm/ADV5783978660.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/27/",
+			   "title": "Ep 27: Chartbreakers"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/27">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[FULL TRANSCRIPT]</p>
+
+<p>JACK:	[MUSIC]  One day a crow became jealous of a raven.  [CAWING]  Thatâs because people listen to what ravens say, but not crows.  What the raven says is important because itâs a bird of omen and it can foretell the future.  Because of this, the raven is held in great respect.  The crow really wanted to get the same attention and reputation as the raven so one day he saw some travellers coming down the road and flew down to a tree by the roadside and cawed out as loud as he could.  [CROW CAWING]  The travellers were nervous and in dismay hearing the calls from this black bird.  They feared it might be a bad omen until one of them who knew the difference between a crow and a raven said to his companions itâs alright, my friends.  We can go on without fear.  Itâs only a crow and it means nothing.  This is one of Aesopâs fables.  The moral; those who pretend to be something they arenât only makes themselves look ridiculous but maybe it also means those who are capable of knowing the difference between a crow and a raven will be better off in life.
+<!--more--></p>
+
+<p>JACK (INTRO):	[INTRO MUSIC]  These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	You ever get curious about something you hear or see and scratch at it a little just to learn more?  [MUSIC]  But the more you look into it, you realize the weirder it becomes and nobody seems to know anything about it.  The itch just grows and grows and before you know it you realize youâve been going down a rabbit hole for three months investigating clues and keeping a journal full of notes and questions and for every answer you get it just raises more questions.  So you keep digging and digging and desperately trying to find answers and it just totally consumes you.  Yeah, that happened to me and Iâm about to tell you what happened.  Itâs a black hat story but itâs a different kind of black hat story than the usual ones I tell.  Bear with me on this one.  Itâs more like a personal research project I did, or you could say this is my first attempt at doing investigative journalism.</p>
+
+<p>Itâs obvious that Iâm a podcaster but check this out.  Over half my listeners listen to me on Apple Podcast, or otherwise known as iTunes, but not just my show.  60% of all podcast listeners are on Apple Podcast.  This is huge.  Apple totally dominates the podcasting market.  Now within the Apple Podcast app, or iTunes, is a list of the top podcasts which is a list of the most popular podcasts for the day.  This is a highly sought after and prestigious list to be on.  Being on this list means first that you made it as a podcaster but second, that youâll get a big bump in your listeners.  When I first launched this podcast I was so desperate to be on the list and I was telling all my friends rate and review my show on iTunes even if they donât even listen to it.  I started watching this list obsessively to see if I was on it, where I was, and who else was there ahead of me.</p>
+
+<p>Every day I checked this list and I even kept a spreadsheet of whoâs there and stuff.  I guess you could say I became obsessed with this list.  I began examining it, listening to most of the shows on it and learning exactly how someone gets on the list.  I started seeing some patterns.  High-ranked shows were often from big networks like NPR, Wonder, and Gimlet or from celebrity hosts like Joe Rogan, Tim Ferriss, or Malcolm Gladwell.  This makes sense; these shows can market a podcast easily because of their existing status.  They can promote it on their other podcasts or from their million plus Twitter followers.  See the thing is, Apple will never tell us the algorithm on how to be on their top podcast list.  This is a secret because as soon as we know it, people will be able to exploit the algorithm and cheat it to gain ranks.  But even though theyâll never spill the beans, I started developing a couple theories on what the algorithm might be.</p>
+
+<p>As I was doing that something strange happened.  Out of nowhere a totally unknown obscure podcast hit the Top 200 podcasts for the whole nation.  It wasnât made by a celebrity.  It didnât have any big branding support.  It wasnât from any network.  They had no social media presence, no website, and no mention anywhere on Google.  Whatâs more is that they had no ratings and no reviews and no, it wasnât a brand-new show.  It had been out for two years and had fifty episodes.  Even if a show is remotely popular itâs going to have one review or rating.  For this one to be around for two years with neither was really odd.  How in the world did this completely obscure show rise above 99% Invisible, Radiolab, or Reply All and make it all the way to Number 50 on the charts?  There must have been a glitch or a bug or something on the charts.  Okay, whatever.</p>
+
+<p>But as time went on I saw another show do the same thing.  Shows after shows were rising up the charts, hanging out in the Top 200 of all podcasts for about a week and then dying off entirely.  Some shows were understandable; they had a strong launch but people didnât like it and they fell off.  Some of these shows had no web presence, had zero reviews, and zero [00:05:00] ratings.  [MUSIC]  I even listened to some of these suspicious podcasts and all of them were low quality and some downright terrible.  Something was really weird.  Whatever they were doing wasnât fair.  These shows are doing something to break the charts, to corrupt it.  Other shows are busting their butt and making amazing shows and earning their seat the top of the charts but then these shows would somehow just hack their way up.  The more I looked, the more shows I saw all over the place, sometimes as much as thirty shows at once were all suspiciously up there.</p>
+
+<p>Iâd tell you their names but literally none of these shows are anything youâve ever heard of.  Theyâre just so obscure and so small but I took notes.  For the last ten years my day job has been detecting when a hacker is in the network.  Itâs my specialty to spot anomalies and Iâve learned to trust that little man inside me that notices when something doesnât add up.  He feels like a knot is in my stomach.  Right now I was feeling like I swallowed a lump of concrete.  Ever since I started this podcast Iâve been studying up on marketing strategies.  At this point Iâve listened to hundreds of hours of podcasts about marketing and read dozens of books about marketing.  Iâve kind of become good at it.  I started reaching out to these suspicious podcasts that were rated high on the charts, asking what their marketing strategies were because whatever it was, it was totally off my radar.  I got silence.  None of them replied.  All were very tight-lipped.  I started looking into this more, trying to find articles on this and any information.  Some people had theories about what was going on but nothing concrete.  I was glued to the news about podcasting, looking for anything about this.  Then I saw one guy take matters into his own hands, so I called him up.</p>
+
+<p>JOHN:	My nameâs John Perotti.  Iâm the manager of podcast production at WBUR and I make podcasts.</p>
+
+<p>JACK:	WBUR is the largest NPR station in Boston and John spent the last five years making podcasts with them.</p>
+
+<p>JOHN:	I still work on Modern Love with the New York Times.  I work on Last Seen, our podcast with the Boston Globe.</p>
+
+<p>JACK:	By the way, the podcast Last Seen is amazing.  Itâs about an art heist and oh my gosh, I bet you would really love it.  John doesnât just work on podcasts, though.  Heâs been working on NPR shows like Car Talk since way back.</p>
+
+<p>JOHN:	Iâve pretty much worked everywhere I can possibly work here in Boston.</p>
+
+<p>JACK:	John saw something one day and got curious.</p>
+
+<p>JOHN:	I got a LinkedIn message from a podcast promoter from Bangladesh who said hey, Iâm an expert.  I can promote your podcast.  You know, whatever, I just figured it was your usual junk mail.  I screwed around with the person a little bit.  They were asking $5 and then I thought you know, for $5 Iâll give it a shot.  [MUSIC]  I PayPalâd this person five bucks and I said hey look, I have this podcast.  Hereâs our RSS feed, hereâs the $5.  Go for it.  Now Iâm gonna put that this is an aside but itâs a very important one; this is not a podcast I work on professionally.  This is just something that me and my friends had made like a year and half ago.  It had three hundred downloads.  Thereâs no way this podcast should be on the charts.</p>
+
+<p>No reviews, no nothing, right.  I come in the next day, this is a Friday, and the guy says hey, todayâs â itâs go-time.  Itâs gonna happen.  I start watching and my podcast starts climbing the charts.  Still no reviews, still three hundred â nothing really seemed to have changed in my analytics but boom, starts rising, rising on the Arts charts.  90, 50, 60.  It makes it all the way up to Number 2 on the Arts charts midday and Number 55 on the All Categories charts.  Then the guy sends me another message and says hey, you want to set up a monthly payment plan?  I can keep your podcast up here, which I definitely didnât do.  I just kind of let it fall down and it took about three days to fall completely off the charts again.</p>
+
+<p>JACK:	Wow, Number 55 for All Categories in the whole nation for $5.  Thatâs incredible.  Thereâs sub categories on the charts but I donât care about those.  Itâs the All Categories that matters to me.  This is the big one.  This is the golden ticket.  By being ranked in All Categories potentially means your podcast is going to start blowing up.  John got his totally unknown show to rank 55 for just five bucks, beating out other shows like S-Town, Freakonomics, Lore, and Marc Maron.  How did they do it?  Letâs be clear here, this isnât a podcast promotion at all.  This isnât getting real listeners to listen to your show and have it organically rise up the charts.  Itâs not marketing to some mass audience or getting new listeners.  This is chart manipulation or algorithm hacking or something else.  John wasnât sure how they were doing it and neither was I but it was at this point that I became determined to figure out what was going on here.</p>
+
+<p>Like I said, my marketing game is strong and my fascination with hacking is even stronger so I just really wanted to know what was going on here.  Whatâs the trick?  How do you hack the charts?  I was also curious who was behind all this.  [MUSIC]  [00:10:00] Iâm on LinkedIn too and I set my profile there to say Iâm a podcaster and guess what.  Out of nowhere the exact same person who messaged John also messaged me.  I had a million questions for them but their English wasnât very good and they kept repeating the same thing.  Sir, Iâm an expert podcast promoter.  Order me and Iâll make your podcast top rank.  It was about this time I got another person message me on LinkedIn.  Same scenario, they claimed to be an expert promoter and told me to order them.  In the next few weeks two more people messaged me on LinkedIn and then another on Facebook.  I had to start organizing these details better so I broke out an old journal.  You know, one of those that youâre given at a conference with the elastic band and the pen?</p>
+
+<p>I started writing down these peopleâs names and any information I had on them.  Each of them wanted me to order them so I asked where do I even order you from?  They all pointed me to their Fiverr accounts.  Fiverr is a website where you can go hire freelancers to do work for you.  Sure enough, if you go on Fiverr and you search for podcast iTunes top rank, youâll see dozens of people offering podcast promotion on iTunes.  I examined these pages.  I opened up twenty tabs of similar podcast promotions.  The pricing structure was almost all the same and the English was all not very good.  They claimed to all give top rank on iTunes charts.  As I compared them up, every account had two strange commonalities.  First of all, all the accounts were created just a few days or weeks ago.  Second, all the accounts were from Bangladesh, specifically Dhaka, the capital of Bangladesh.</p>
+
+<p>I took a lot of screenshots and notes from Fiverr which generated a lot of new questions.  Why were they all from Bangladesh and what exactly is their secret?  I went back to the people on LinkedIn and asked a bunch of questions.  Whatâs the tactic?  How long have you been doing this?  Where are you from and how does it work?  I kept getting the run-around of answers, almost like CAN messages.  They would almost always say the same thing in response; sir, Iâm an expert podcast promoter.  Order me and Iâll give you top rank.  Nothing helpful or concrete.  It was time to take this to the next level.  [MUSIC]  I asked one if I could call him and he said no, no, no calls.  The second one I asked said no, too.  The next guy I talked to was named Henry Bin.  I messaged him a lot on LinkedIn and I learned his name isnât Henry, itâs Rakibul.  I asked Rakibul if I could talk to him on Skype.  He said okay.  [SKYPE CALLING]</p>
+
+<p>JACK:	Hello?</p>
+
+<p>RAKIBUL:	Hello, sir.</p>
+
+<p>JACK:	Hi, this is Jack.</p>
+
+<p>RAKIBUL:	Yeah.  Thank you for adding me.</p>
+
+<p>JACK:	Yes, of course.  Youâre in Dhaka?</p>
+
+<p>RAKIBUL:	Yeah.  I am from Dhaka.</p>
+
+<p>JACK:	Okay, great.  I talked to Rakibul for a while.  Heâs a nice guy, super sweet, studies Sociology at the university.  When I asked him how he does his promotion he tells me.</p>
+
+<p>RAKIBUL:	Sir, I subscribe the Apple ID on iTunes.</p>
+
+<p>JACK:	He tells me this is his full time job.  Even though heâs trying to get his degree from the university, he makes all his money doing this.</p>
+
+<p>RAKIBUL:	I do it minimum sixteen hours a day.</p>
+
+<p>JACK:	I asked where he learned how to do this and he started to tell me that he learned it fromâ¦</p>
+
+<p>RAKIBUL:	One of our brothers.</p>
+
+<p>JACK:	Can you give me his name?</p>
+
+<p>RAKIBUL:	Actually, I donât know that name.  I learned it from my friend.</p>
+
+<p>JACK:	This is a little suspicious.  He said his brother taught it to him but when I asked his name, he didnât know it and said it was a friend instead.  I asked him if he could introduce me to the person who taught him but he told me thatâs not possible because the guy who trained him made Rakibul promise to never tell anyone where he learned it from.  Oh, really?  Like, this just made the mystery deeper.  Too many secrets.  I felt like our conversation was getting circular and so I got off the phone with him.  I scribbled a lot more notes down in my journal and went back to looking at other podcast promoters.  Another guy was lighting me up on LinkedIn.  His name was Sho Hag.  I got on the phone with him.</p>
+
+<p>SHO:	Sir, I have minimum 1,000 or more worldwide team.  They will download promotion and listen.</p>
+
+<p>JACK:	Wow, 1,000 people?  Thereâs no way he has 1,000 people working for him around the world.  But is this a clue?  Does he have 1,000 Apple IDs or something and he uses that to subscribe with?  More notes taken.  Iâm starting to feel like Carmen Sandiego now.  I then asked him if heâs promoting any shows currently and he told me heâs promoting the Number 2 show in technology.  Okay, I show Number 2 as [CENSORED].</p>
+
+<p>SHO:	Yes, yes, yes.</p>
+
+<p>JACK:	Thatâs the one youâre promoting?</p>
+
+<p>SHO:	Yes, sir.  Yes, sir.  Iâm giving you the URL.</p>
+
+<p>JACK:	This was a show that had some ratings and reviews but its history showed it just appeared on the charts out of nowhere, all of a sudden, passing by my show, the Wall Street Journal podcast, and even Reply All.  No, itâs not part of any network or has any celebrity hosts so it just seemed really strange that the show was ranked so high.  I asked Sho Hag over and over exactly how do you promote podcasts?</p>
+
+<p>SHO:	I told you, I have a team.</p>
+
+<p>JACK:	He stuck with the same story every time.</p>
+
+<p>SHO:	Sir, I told you.  My worldwide [00:15:00] team, they subscribe, download, and listens.</p>
+
+<p>JACK:	I asked for another clue.  Is there an office that you guys work out of?  Can you show me a picture of this room with all these devices?</p>
+
+<p>SHO:	Okay, one sec.  Iâll take a picture and will give you.</p>
+
+<p>JACK:	He sent me a photo.  It looks like heâs in an internet cafÃ© setting with three guys sitting in plastic chairs using laptops.  I had no idea if these were really people heâs working with or not but it doesnât matter.  This is a clue and maybe a big one.  So I printed this photo out and tacked it to my wall.  I then asked him who taught you how to do this?</p>
+
+<p>SHO:	Sir, I have a big brother.  I worked many years ago.</p>
+
+<p>JACK:	He says his big brother taught him but when I asked if I could meet him, Sho Hag started selling me his services again saying heâs a top-notch promoter and thereâs no need to meet his brother.  He kept asking me for money so at this point I let him go.  I watched the charts and sure enough the show he was promoting fell off three days later.  I tore pages out of my notebook and tacked them to the wall, too.  [MUSIC]  I broke out some red string and started connecting some dots.  My wall now has a picture, people, places, tactics, and strings outlining the whole operation.  What still seemed missing though is why every promoter I met was in Bangladesh.  Is there some mastermind behind this whole thing?  I went back to Rakibul and asked him to show me his equipment and he sent me a photo of four laptops.  One was completely off but the other three had iTunes opened on it and our chat window was on one.  Another picture for the wall.  Now I have an equipment section.  Then I get another message on LinkedIn from another promoter.  I ask if we can talk on Skype.  [SKYPE CALLING]</p>
+
+<p>JACK:	Hello?</p>
+
+<p>PROMOTER:	Hello, hi.  Whatâs up?</p>
+
+<p>JACK:	Hello.  How are you today, sir?</p>
+
+<p>PROMOTER:	Yeah, Iâm fine.  And you?</p>
+
+<p>JACK:	Good.  I talked with him for a while.  He asked that I donât use his name.  Itâs the first time heâs ever talked to anyone in the US.</p>
+
+<p>PROMOTER:	O-M-G, my first time.</p>
+
+<p>JACK:	He was kind of enjoying the experience.  I told him Iâm a journalist trying to do a story on people who are gaming the charts.  I hear you clicking a lot right now.  Are you promoting right now?</p>
+
+<p>PROMOTER:	Yeah, promoting right now.</p>
+
+<p>JACK:	I ask him to explain how itâs done and he tells me everything in so much more detail than anyone else.</p>
+
+<p>PROMOTER:	Suppose you have a podcast, okay?</p>
+
+<p>JACK:	Click connect, sign in with an Apple ID, go to the podcast URL, subscribe, and look for the button on the far right next to the episode.</p>
+
+<p>PROMOTER:	Then you have to click Get button.</p>
+
+<p>JACK:	Clicking Get on all the episodes queues up all the downloads at once in the background.  This counts towards your podcast ranking.  So just click Get on every episode in the whole feed.  No need to wait between clicks or listen to anything.  Then wait a while after downloading all episodes.  Wait aboutâ¦</p>
+
+<p>PROMOTER:	One minute.</p>
+
+<p>JACK:	Then stop the downloads, log out, and log in with a new Apple ID and do it again.  I asked  him how many Apple IDs he has.</p>
+
+<p>PROMOTER:	Yeah, I have ten thousand Apple ID, I have.</p>
+
+<p>JACK:	He uses ten thousand Apple IDs to do this with and he actually offered to give me the list.</p>
+
+<p>PROMOTER:	If you wanted to do that, Iâll give you Apple ID, no problem.</p>
+
+<p>JACK:	Youâd give me the username and password?</p>
+
+<p>PROMOTER:	Yeah, yeah, yeah.</p>
+
+<p>JACK:	Okay.</p>
+
+<p>PROMOTER:	Okay, this is Microsoft Excel sheet and Iâll give you, no problem.</p>
+
+<p>JACK:	What a nice guy.  These Bangladeshis were all so kind.  Secretive, but kind.  I asked him how many times does someone need to do this to get ranked on the All Categories chart?</p>
+
+<p>PROMOTER:	Fifty, sixty.  Yeah.  Sometimes thirty, forty.</p>
+
+<p>JACK:	[MUSIC]  This is very interesting.  Only fifty subscribers to get on the All Categories chart?  This is so fascinating because thereâs over 500,000 shows in Apple Podcast and now I have a new sense of how good the Top 200 shows are.  I mean, if what heâs saying is true then theoretically the top shows are only getting about fifty new subscribers a day which doesnât seem like that much and thatâs actually a surprise to me.  I felt like this was a lot of information for my wall so I thanked him for his time and got off the phone.  I became curious if promoters would tell me which shows theyâre promoting so I asked all of the ones I was talking to, what podcasts are you promoting right now?  This took a little convincing but some of them did send me the shows theyâre promoting.  All were highly ranked but seemed very suspiciously high ranked.  Bad cover art, lame descriptions, low effort shows.</p>
+
+<p>Iâd rather not name any of these shows but theyâre probably ones youâve never heard of.  I collected all this information and I started noticing trends, patterns, and behaviors that these podcasts were exhibiting.  I stared using different tools and websites to help identify shows with these same indicators.  This led me to discover many more shows that were gaming the charts.  I began getting really good at spotting shows doing fake promotions.  I found four fairly popular shows on the charts that had indicators they may be gaming the charts, too.  So far itâs been easy to spot really small shows because their numbers are just so low, but this was new because these shows were actually popular so it made it a lot harder to detect.  One show was ran by a popular author and the other was interviewing big-time celebrities.  It was really shocking to see [00:20:00] how some of these shows that appear legit might actually be faking their way to the top.</p>
+
+<p>I couldnât tell for sure but that little man inside me knew something was off with these shows.  At this point someone on Twitter with the name John Watson started tweeting.  His photo was of a young, clean-cut white guy and he was claiming to be an expert podcast promoter.  He was proudly posting screenshots of the shows he was promoting, out there in the public for everyone to see.  I looked at the tweet.  He was claiming to promote three of the four shows I had just identified as potentially gaming the charts, shows you might even recognize but I doubt you would listen to.  I reached out to the three shows asking about this and one did get back to me.  They said yes, he did hire someone from Bangladesh to do this and it was a mistake.  He even did an episode on his podcast about this.</p>
+
+<p>I looked up his show and itâs a show about the mistakes heâs made in life that have made him stronger.  I kind of found it funny and was happy to see he was redeeming himself.  Letâs just say the other two shows refused to speak on the record but the thing is, is seeing this tweet and getting that one other podcaster to admit that he was doing it really solidified my belief that the other ones most likely were, too.  I messaged this promoter, John Watson, asking if we could talk on Skype.  Wait, I just realized John Watson is Sherlock Holmesâ sidekick.  Gosh, is someone messing with me?  Well, the gameâs afoot now.  [MUSIC] Johnâs Twitter picture is of a young, fashionable white guy with good-looking hair and John is claiming to be promoting three big podcasts that triggered three of my indicators for potentially gaming the charts.  Iâm hoping John is some native English speaker, maybe the guy who started it all.  After what seems like months I finally get him to talk on the phone.  [SKYPE CALLING]</p>
+
+<p>JACK:	Hello?</p>
+
+<p>JISON:	Hello?</p>
+
+<p>JACK:	Hello, are you there?</p>
+
+<p>JISON:	[Inaudible] this now.</p>
+
+<p>JACK:	Nope, not a native English speaker.  He tells me heâs from Bangladesh and his name isnât John, itâs Jison.  I look up at my wall of people and faces and realize every single one of them have given me a fake name at first.</p>
+
+<p>JISON:	Sir, I have a worldwide team.</p>
+
+<p>JACK:	Sir, I have a worldwide team.  They can market your podcast and provide real and organic customers.</p>
+
+<p>JISON:	â¦real and organic customers.</p>
+
+<p>JACK:	He says heâs promoted fifteen podcasts and charged $500 a month and says he has a lot of repeat customers.  If this is true, Jison has pulled in over $5,000 doing this.  Thatâs a lot for Dhaka.  He goes on to tell me that he can deliver 1,000 new subscribers a month which will be enough to get me in the Top 200.  I asked Jison specifically how he gets so many new subscribers.  He tells me.</p>
+
+<p>JISON: 	Actually itâs a secret becauseâ¦</p>
+
+<p>JACK:	He says itâs a secret because if he told me I wouldnât need to hire promoters.  I ask him the burning question, the question nobody wants to tell me the answer to.  Where did you learn this from?</p>
+
+<p>JISON:	Sir, in the past I learned from my boss.  Heâs the best podcast promoter in my country.  Heâs not only my country, in the world I think, because I love him so much.</p>
+
+<p>JACK:	Whatâs his name?</p>
+
+<p>JISON:	MD Monowar, sir.</p>
+
+<p>JACK:	Say again?</p>
+
+<p>JISON:	His name is MD Monowar, sir.</p>
+
+<p>JACK:	MD Monowar.  Finally going up the chain.  I drew a big question mark on an index card, wrote Monowar on it and tacked it to my wall.  I listened further.</p>
+
+<p>JISON:	Heâs the person fromâ¦</p>
+
+<p>JACK:	Monowar is the first person who discovered how iTunes podcast promotions worked.  After that he trains up young people.  At this point everyone who learned about podcast promotion learned it from him, so weâre in love with him so much.</p>
+
+<p>JISON:	Love him so much.</p>
+
+<p>JACK:	Out of nowhere our Skype call drops but the new card I just put on the wall, I remove it and I put it above all the others now, thinking this might be the main guy, the one who started this whole thing and popularized this in Bangladesh.  MD Monowar.  Maybe he has all the secrets, all the answers.  Maybe heâd even teach me all the tactics.  I turned all my focus to finding him.  Could I do it from the other side of the planet?  I barely have any information other than his name.  Even if I did find him, would he tell me anything?  After the break we talk about books, we hear from Seth Godin.</p>
+
+<p>SETH:	Hey.</p>
+
+<p>JACK:	And maybe Monowar.  Maybe.  [MUSIC]  I feel like Iâm deep in this rabbit hole now so I decide to take a drive.  I head over to the bookstore and just start browsing around.  The first rack of books I saw was titled New York Times Bestseller List.  List; my eyes narrowed.  You ever get so deep into something that everywhere you look you just canât stop seeing it?  Or if all you have is a hammer, everything looks like a nail?  I was now wondering is it possible to corrupt the New York Times Bestseller List?  Right there in the bookstore I got on Twitter and messaged Phil Stamper.  Phil works for a big book publisher in New York which gives him early access to the list but not only that, Phil is an up and coming author so heâs glued to the [00:25:00] list, always watching whatâs coming and going on it.  I asked him what it means to be on the list.</p>
+
+<p>PHIL: 	Whatâs important about the list is that you kind of get the reputation immediately because you can put that on your next book.  Number One New York Times Bestselling Author or just Bestselling Author if you didnât hit Number 1.  There are always movie deals that come from books on the list.  Itâs a mix of prestige but then also it turns into real sales because you walk into any Barnes &amp; Noble or any airport bookstore and theyâre going to have their bestsellers up there.  It starts to trickle down and effect really the entire perception of what books are good.</p>
+
+<p>JACK:	By getting your book on the list you could skyrocket your career and fill up your bank account.  I asked him if heâs ever heard of a book that was gaming the system or cheating the charts.  He said that one day a book did show up on the list and it was very suspicious.</p>
+
+<p>PHIL:	What was weird about this was none of my publishing friends, none of my author friends, none of my agent friends knew anything about this publisher who had never published before, or this author, or this book.  When you Google it you couldnât even find information about it.</p>
+
+<p>JACK:	To Phil this was really strange.</p>
+
+<p>PHIL:	I went on a deep dive because any time something like this happens I kind of feel compelled to figure out the source.</p>
+
+<p>JACK:	Iâll save you some details.  Phil didnât find any reason why the book was on the list and he was truly baffled by this.</p>
+
+<p>PHIL:	It just doesnât â in no world would that be possible.</p>
+
+<p>JACK:	He decided to ask for help.</p>
+
+<p>PHIL:	I started putting it on Twitter, just questioning it.  I wanted to know what this publisher was doing.  This was their debut novel.</p>
+
+<p>JACK:	Phil has a modest Twitter following, a few thousand people.  He pointed out these strange things and wondered what his followers would think of this.</p>
+
+<p>PHIL:	I walked away from my desk for a few minutes and I came back to 20,000 notifications.  [MUSIC]  Iâve never in my life had something like that happen.  It exploded.</p>
+
+<p>JACK:	A lot of people were finding this really suspicious, too.  Another author, Jeremy West, started investigating this too and was sharing what he found with Phil.</p>
+
+<p>PHIL:	As that started picking up traction, thatâs when booksellers started reaching out.  They came to us.  They explained that there were some unusual buying patterns that they noticed for this book.</p>
+
+<p>JACK:	Book stores were contacting Phil and Jeremy telling them that they were getting weird calls.  Somebody was calling and asking if the store reports their sales to the New York Times and if they did, the caller would order a bunch of these books.  Exactly 29 of them, which is one less than what is considered a bulk order which is reported differently.  Phil looked at the number of sales for this book and it hadâ¦</p>
+
+<p>PHIL:	18,000 copies for the first week.</p>
+
+<p>JACK:	For a book to sell 18,000 copies in the first week is considered a sensation, especially for first-time authors and has every right to climb the charts.  But it sounded like a lot of these books were being purchased by the same person or group.  A lot of news agencies reached out to Phil and asked him to do news interviews and discuss what he knew.  The news of this story spread fast.</p>
+
+<p>PHIL:	Within eight hours of my initial tweets the Times, they had made changes to the list.  It was kind of an unprecedented move.  They donât really make changes.</p>
+
+<p>JACK:	That was it.  The book was removed from the bestseller list after 23 hours of being there.  Journalists from Vulture followed up on this story next to try to figure out what happened.  [MUSIC]  The author denied doing anything shady to game the charts but this Vulture journalist couldnât let the story go and kept asking more questions.  The author said she had a lot of pre-orders for the books by going to conventions to hype it up and was preparing to go on a book tour and sell her books through the website.  When the book was published she needed to fill those pre-orders and stock up on her own books.  The author says she called around to bookstores asking if they reported sales to the New York Times and if they did, sheâd buy them up.  Because selling books at a convention doesnât count as book sales for the New York Times, and she wanted it to count.</p>
+
+<p>She says she sold 13,000 books as pre-orders and on her book tour.  The other 5,000 through her website.  But in the book sales world this is an astonishingly high number for the first week, too high for a new author like this.  It was just very suspicious.  While people investigated this story, clues led to a book marketing company called ResultSource.  This company has hit the news before in scandalous ways.  They have historically been accused of gaming the New York Times Bestseller List.  After reading a lot of articles, it seems that ResultSource has been able to get books on the New York Times Bestseller List for about $200,000 presumably by buying the books like the way you just heard Phil tell us about.  Now, $200,000 seems like a lot but done right, you could get a million dollars back in sales.  It appears this marketing company has figured out the algorithm and has done this many times in the past.</p>
+
+<p>The author admitted to talking with ResultSource [00:30:00] but never admitted to hiring them.  She said she did hire a marketing company but she wouldnât say which one because sheâs under an NDA.  For Phil, this book stood out only because it was a first-time author and first-time publisher and no visible marketing.  This made it easy to spot but imagine if a celebrity were to do this.  It would be almost impossible to notice any suspicious activity going on.  Yes, there are stories of celebrities actually hacking their way onto the New York Times Bestseller List.  I pondered what this means as I went back home.  I sat in my chair and looked up at my wall.  Oh, yeah, my wall.  MD Monowar, the black hat mastermind of iTunes.  I started looking for him again.  The MD is short for Mohammed which is a very common first name in Bangladesh.</p>
+
+<p>I had his full name and searched for him on Facebook but thereâs a lot of Monowars in Bangladesh.  I couldnât tell which one was him so I friended up every single podcast promoter I could find on Facebook, waited a few days for them to accept my friend request, and then looked up Monowar again.  This time I was able to find one Monowar who had a lot of common friends as me, the same podcast promoters I just friended.  I read through his account details.  It says he founded a company called Podcast Secrets.  Wait, the company is called Podcast Secrets?  When I asked all the promoters where they learned this from they told me it was a secret.  Now I find out the company is called Podcast Secrets.  Talk about the clues being right in front of my face and not even knowing it.  Iâm like, the worst investigative journalist ever.  Podcast Secrets has a website.  I look at it.  It says they do podcast promotion as a service.</p>
+
+<p>I feel like Iâm finally getting somewhere.  This has to be the main guy.  He looks cool; heâs stylish, heâs hip, maybe like twenties, tech-savvy.  Iâve gotta talk to him.  I message him on Facebook.  Do you do podcast promotion?  Almost immediately he writes back no.  I ask well, do you teach others how to do podcast promotion?  He replies who are you?  [MUSIC]  I tell him I want to learn how to do podcast promotion and he asks me how did you find me?  I asked if we could speak on the phone.  He says maybe but puts me through a strange series of checks.  First he asks for my phone number.  I give it to him.  He calls it and immediately hangs up.  He asks what number just called me.</p>
+
+<p>I give him the number.  Then he asked what city my phone number is from.  I tell him.  Itâs like heâs validating me or something.  He then says we can talk on Skype now.  I connect with him on Skype but then he tells me heâll talk to me in twenty minutes.  I wait so impatiently, staring at my notebook, running my fingers over the strings and pictures on my wall.  Itâs all adding up.  This guy has to be someone important to this whole operation.  He knows so many of the promoters.  Jison says heâs loved by many people and heâs acting really suspicious.  He is the secret.  Waiting is killing me.  He finally calls me.  [SKYPE CALLING]  Hello?</p>
+
+<p>MONOWAR:	[FOREIGN LANGUAGE] [SKYPE HANGS UP]</p>
+
+<p>JACK:	After a few seconds and some gibberish he hangs up on me.  What the heck is happening here?  I donât know if heâs getting cold feet or what.  I try messaging him.  No response.  Did I get too close to the top?  Does he not speak English?  Did I just lose my best lead yet?  Did I say something wrong?  Whatâs going on?  [SKYPE CALLING]  My phoneâs ringing.  Hello?</p>
+
+<p>MONOWAR:	Hello.</p>
+
+<p>JACK:	How are you today?</p>
+
+<p>MONOWAR:	Yeah, Iâm good.  Iâm sorry, my WiFi disconnected.</p>
+
+<p>JACK:	Oh, he had WiFi problems.  Okay.  Phew.  I ask if he does any kind of podcast promotion.</p>
+
+<p>MONOWAR:	Yes, I do podcast promotion but not like the others.  Sir, could you please tell me about how did you find me on Facebook?</p>
+
+<p>JACK:	He says he doesnât do promotions like the others.  What does that mean?  This guyâs English is far better than the others I talked to and he sounds sharper and smarter than the others, someone who may be able to crack the iTunes ranking algorithm.  Do you teach other people how to do podcast promotions?</p>
+
+<p>MONOWAR:	No, sir.  [Inaudible] who is this seller who tell you this information?  Could you please tell me a name?</p>
+
+<p>JACK:	I tell Monowar how I found him.  I talk to him for a long while.  I actually begin to really like him.  Heâs smart and kind and cool.  If I lived in Bangladesh Iâd want to be his friend.  He says heâs not a podcast promoter but instead an editor and producer of podcasts.  I felt like he knew more than what he was saying, though.  He did know a lot about podcast promotion so I asked him where he learned it from.  How did you learn to do this?  Who taught you?</p>
+
+<p>MONOWAR:	I got this information from other client.  He gave me this information first.  Iâm trying to work on Fiverr but a few days later Fiverr already banned my Fiverr account.</p>
+
+<p>JACK:	Iâm pretty sure this is a big clue so letâs unpack it.  First he says he learned this from another client.  You know, one other podcast promoter told me the exact same thing.  It might just be possible that a podcaster came up with this idea and just wanted to hire cheap labor in Bangladesh to do it for them.  Second, he says [00:35:00] his Fiverr account was banned.  I write all this in red ink for my wall to follow-up on later.  I ask Monowar many times if he teaches others because remember Jison said this is the guy who taught him and many others.  But this was his typical response.</p>
+
+<p>MONOWAR:	No sir, I donât teach others to because of â they are doing fake work on Fiverr and I donât like that.  I already stopped this work and trying to do audio editing and audio correction.</p>
+
+<p>JACK:	I ask him again where he learned this from.</p>
+
+<p>MONOWAR:	I also learned from another guyâs â from another country, first time and started working.  But I think this is not valuable work for me.  Iâm not getting work.  Therefore sir, I already stopped my Fiverr account.  I already stopped all this work.</p>
+
+<p>JACK:	I was starting to believe him at this point.  He made a lot of really great points and this work is shady and not creative or satisfying but since I had him on the phone, I asked him more stuff.  How do you do it?</p>
+
+<p>MONOWAR:	I just download the episode, thatâs it.  Just download the episode.  Thatâs it.  But sir, please do not do for yourself because if you do this method, then iTunes definitely bans your podcast.</p>
+
+<p>JACK:	He kept trying to convince me not to promote my own podcast like this.  He even tried to talk me out of using other people from Bangladesh since it could get my show banned.</p>
+
+<p>MONOWAR:	Some peopleâs doing this work for money.  This is not creative and real work.</p>
+
+<p>JACK:	I went back to my old notes one more time.  I clicked on all the Fiverr links I had saved from before and the links werenât working, none of them.  I switched browsers and tried again.  Nothing.  I could browse Fiverr just fine but all the promoters had their accounts banned.  Monowar told me his Fiverr account got banned, too.  I asked Fiverrâs customer support whatâs up with this and they responded by saying theyâre going through and banning these accounts because itâs against the terms and conditions that Apple has.  Since it violates that, it violates their own rules.  I looked up Appleâs terms and conditions for iTunes and read it.  I could only find one thing in there about this.  It says you may not use iTunes to plan or engage in any manipulative activity.  I guess gaming the charts could be considered engaging in manipulative activity, so okay.</p>
+
+<p>I reached out to Apple for clarification or a comment but they referred me to a PR team which didnât get back to me.  In fact Apple has been mostly quiet on this matter.  I could only find one public comment that they had about this and it was in their 2018 Apple Worldwide Development Conference.  Hereâs what they said.  âWeâre continually refreshing and managing our directory, automatically retiring shows which run afoul of our directory content guidelines such as those with spamming content or shows seeking to manipulate the top charts.  Donât do that.  Just please, donât do that.â  Actually, thereâs no mention about chart manipulation in their directory content guidelines at all, so this doesnât technically go against that but it still could be seen as going against the Apple media services terms and conditions.  I have no visibility into what Apple has done about this but from my point of view, down in the muck for four months I havenât found any shows that got kicked out for doing this.</p>
+
+<p>I asked all the promoters if theyâve ever heard of a podcaster complain because they got their show kicked out and they all said no.  The bigger shows that I think may still be gaming the charts are still there in the Top 30.  Right now today as I make this, I just counted and I found well over a dozen shows that are just cheating the charts like this.  Four of them were in the All Categories alone.  I hope Apple can figure out a way to detect this and update the algorithm or else they risk losing credibility.  The New York Times takes their list very seriously and when they received evidence of some shady activity going on they removed that book from the list.  Apple should also take their charts seriously too, or else their reputation may suffer.  But hereâs the thing; I donât think itâs right for Apple to kick out shows for doing this because someone could use this as a weapon.</p>
+
+<p>I could hire one of these promoters to promote one of my rival shows and get them kicked out of Apple podcast which would then make me climb the charts because it would eliminate the shows above me.  I just really want Apple to put filters in place to nullify this or change how the algorithm works.  One thing thatâs missing from my wall of cards and string is ratings and reviews.  This wasnât mentioned at all by any podcast promoter and like I said, I was seeing shows at the top of the charts with zero ratings and reviews so these donât matter whatsoever for getting a podcast to rise up the charts.  Iâm pretty positive on this, too.  This is great because imagine if it did matter.  How many horrible and phony ratings and reviews weâd see all over podcasts; it would just wreck the credibility of the system altogether.  I talked with Rob at Libsyn, a podcast hosting provider, and he says ratings and reviews are only good  for making onto the Whatâs Hot chart and nothing else.</p>
+
+<p>I find this worth mentioning because thereâs so many podcasters today asking you to leave a rating or review because they think it helps them climb the charts, but it doesnât.  [00:40:00] Look, I still think you should leave a review because it totally makes that podcasterâs day but if they say it helps more people find their show, tell them about this episode.  Now that I know about this, Iâm never gonna ask you, my listeners, to leave a rating and review because whatâs the point?  Iâd much rather you tell a friend directly to listen to this show because itâs much more effective.  I sat back in my chair and looked at the big wall of notes, pictures, and string, and compared it to all the strategies everyone told me.  At this point I feel like I have a good grip on whatâs going on here.  There are basically two different strategies; one is just to subscribe a lot using a bunch of different Apple IDs and the other is to subscribe and download by clicking the Get button.</p>
+
+<p>You apparently only need to do this thirty to fifty times a day to get ranked.  Iâm not entirely convinced that downloading episodes helps your ranking at all.  I think thatâs done more to hide this activity and make it look like a real person has subscribed and listened to a bunch of episodes.  After researching this heavily for four months, Iâm pretty sure the algorithm to be ranked on the charts is simply number of new subscribers a day and week.  Thatâs it.  Itâs actually quite simple.  Ratings, reviews, and downloads simply arenât needed to rank up in the Apple Podcast charts.  Oh, and as to why thereâs so many secrets about all this, I think an American podcaster or two figured this out and then hired and taught people in Bangladesh to do this.  Even if it was just an experiment at first, and when it worked they kept it going but only if the promoter promised to never tell anyone where they learned it from or who theyâre promoting.  But in my quest to learn more I got some promoters to spill some names to me and some were actually big podcasts.</p>
+
+<p>When I spoke to those larger podcasts, some of them did admit to me privately that they did in fact use promoters but they donât anymore.  Thatâs probably because they actually got big doing this and donât need it anymore.  Now as to why this is so popular only in Bangladesh, I think if a podcaster taught someone there then the technique just got passed around between brothers and friends.  See the thing is, IT freelance work is exploding in Bangladesh.  Itâs now the third-largest sourced country for freelance IT workers according to Upwork.  Itâs very popular with people under twenty-five because they can work cheaply, they understand IT, and all they need is a computer and internet.  When you plant a seed like this in a place like that, it grows quickly.  I just think thatâs why thereâs so many promoters from there.  After taking this journey I found yet another list that was corruptible.</p>
+
+<p>I read an article about a guy who created a fake restaurant on Trip Advisor and did a lot of fake reviews on it.  He kept reviewing it every day and in no time his nonexistent restaurant was the top-rated place to eat in all of London.  His phone was ringing constantly from people wanting reservations so how far does this chart manipulation go?  Whatâs next?  Top-selling products on Amazon?  Top-seller games on Steam?  Top-rated apps on my phone?  Even my Netflix queue seems suspicious now.  Are all these corruptible?  Maybe, but this kind of chart manipulation isnât new.  This is whatâs known as black hat marketing.  I told you this was a black hat story, remember?  Black hat marketing is where marketers will do something against the terms of service to gain an advantage over others.  One example is to post a video to Reddit and then buy a bunch of upvotes for that post.  You can buy like, 100 upvotes for twenty bucks and that could be enough to get people to notice it and it ends up hitting the front page of Reddit.</p>
+
+<p>Now youâve got scores of people watching your video or visiting your website.  This is the world of black hat marketing and itâs been around for a long time.  The trick is, just like you heard, figure out the algorithm for getting on the list and then figure out a way to cheat the algorithm.  But pretty much all black hat marketing leaves you at risk of being banned on the very place youâre trying to be popular.  Itâs a risky path to take.  The path is not always so black and white.  You donât always know if youâre doing a black hat marketing strategy or a white hat marketing strategy and people sometimes fall for the wrong trap, especially when youâre seeing services so easily available on sites like Fiverr.  Places like that shouldnât allow any black hat techniques at all so podcasters who are trying to make it, they see this opportunity and go for it.  This is why I donât want to call any of them out.  They might not even know what theyâre getting themselves into.  Someone who taught me a lot about marketing is Seth Godin and he has a few books that actually did hit The New York Times Bestseller List.  Seth said something the other day on his podcast Akimbo that really put me in deep thought.  Iâll give him the final word here.</p>
+
+<p>SETH:	In my industry one of the big industries is are you a New York Times Bestseller?  I got off that merry-go-round ten years ago and Iâm glad I did.  The New York Times Bestseller list is famously corrupt.  It is really easy to buy your way onto the list.  I would argue at any given time, a quarter to a third of the books in the nonfiction section have bought their way there.  You donât buy your way there by paying The New York Times.  Itâs not corrupt like that.  Itâs corrupt because if you organize around buying masses of books from the right bookstores on the right day you can send a signal [00:45:00] to the editors who put together the list.  They will misinterpret that signal and put you on the list.  The point is, once you realize that a signal has been corrupted you have a choice.  You can embrace the fact that itâs corrupted because other people are still looking at the signal or you can walk away and invent new, more honest signals that you want to live with.</p>
+
+<p>The point of this rant is that I think we need to do both.  I think at most organizations you shouldnât show up at a job interview in a Hawaiian shirt and shorts.  You need to pay the price to pronk, to show that youâre a poison frog, to waste resources on your interview suit because youâre trying to show people that you are culturally aware and willing to overinvest in a certain kind of signal.  But as we move forward and the world becomes ever more connected, as we invite more and more people to where they rightfully belong, with a seat at the table, where diversity creates value, weâre gonna have to discard so many of the old signals and embrace new ones, ones that are more relevant and useful going forward.  Thanks for listening.  Weâll see you next time.</p>
+
+<p>JACK (OUTRO): 	[OUTRO MUSIC]  Youâve been listening to Darknet Diaries.  Thanks for sticking with me on this one.  I had a lot of fun investigating it and making it.  A big thank you goes out to our guest, John Perotti and Phil Stamper.  Also a big thanks to Seth Godin for being such an inspiration and giving me permission to use his voice here.  Seth has a new book out.  Itâs called This is Marketing and I just canât wait to read it.  Many, many more thanks goes to Kevin Goldberg at Discoverpods, James Cridland at Podnews, Rob Walch at Libsyn, and Dave at chartable.com for helping me research this story.  This show is made by me, the felonious phisher, Jack Rhysider and the theme music is by the harmonious Breakmaster Cylinder.  Break it down.</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+<p>Transcription performed by Leah Hervoly
+www.leahtranscribes.com</p>
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

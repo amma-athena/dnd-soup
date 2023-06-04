@@ -1,0 +1,676 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>Hacker Giraffe â Darknet Diaries</title>
+	<meta name="description" content="In late November 2018, a hacker found over 50,000 printers were exposed to the Internet in ways they shouldn't have been. He wanted to raise awareness of this problem, and got himself into a whole ...">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Hacker Giraffe â Darknet Diaries">  
+	<meta name="twitter:description" content="In late November 2018, a hacker found over 50,000 printers were exposed to the Internet in ways they shouldn't have been. He wanted to raise awareness of this problem, and got himself into a whole ...">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/giraffe.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/31/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Hacker Giraffe â Darknet Diaries" />
+	<meta property="og:description"        content="In late November 2018, a hacker found over 50,000 printers were exposed to the Internet in ways they shouldn't have been. He wanted to raise awareness of this problem, and got himself into a whole heap of trouble." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/giraffe.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/31/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/giraffe.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/31/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="Hacker Giraffe â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/giraffe.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 31: Hacker Giraffe</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://traffic.megaphone.fm/ADV7422385695.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/31/",
+			   "title": "Ep 31: Hacker Giraffe"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/31">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[FULL TRANSCRIPT]</p>
+
+<p>JACK:	Today weâre going to talk with a wanted man.</p>
+
+<p>GIRAFFE:	Hi.  Iâm Hacker Giraffe.</p>
+
+<p>JACK:	Heâs responsible for doing some hacking thatâs hit the news in the last few months.
+<!--more--></p>
+
+<p>GIRAFFE:	Which are all hacks made to raise awareness about open devices and at the same time promote a YouTuber that I liked, which is PewDiePie.  This is actually quite surreal for me âcause just three months ago I was introduced to your podcast right, and I was listening.  I was like damn, what if I end up on one of these podcasts?  Itâs just so surreal for me because I totally did not expect any of this to happen.  The last month of my life is a complete turn of events, really.</p>
+
+<p>DAVY:	You best start believinâ in hacker stories, Mr. Giraffe.  Youâre in one.</p>
+
+<p>JACK (INTRO):	[INTRO MUSIC]  These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [OUTRO MUSIC ENDS]</p>
+
+<p>JACK:	Just as a quick warning up top here, there are a few cuss words in this episode so if thatâs an issue for you, you might want earmuffs.  As we listen to our guest tell his story I want you to try to figure something out.  Is he a good guy or a bad guy?  An ass or a bro?  And where exactly did he go wrong?  Heâs not exactly a master hacker but heâs learning.  By the time he was in high school he had an obsession with computers.</p>
+
+<p>GIRAFFE:	I had an enthusiasm with technology news and computer news and a lot of people didnât seem to share.  I always kind of felt out of place âcause everybody else wants to talk about cars, football, and stuff like that.  Iâm just like no.  I want to talk about any of that.  I just want to talk about computers and have you seen the latest news and latest tech?  Oh look, somebody hacked I donât know what, and stuff like that.  I guess thatâs how it started.  Then people actually started saying oh, hereâs The Hacker and my local nickname kind of â between my friends, I was The Hacker.  I guess thatâs how it kind of grew on me.</p>
+
+<p>HAGRID:	Youâre a hacker, Harry.</p>
+
+<p>HARRY:	Iâm a what?</p>
+
+<p>HAGRID:	A hacker and a thumpinâ good âun, Iâd wager, once youâre trained up a little.</p>
+
+<p>JACK:	This was when he was young, though.  He was simply known as The Hacker among his friends but he did earn the title of Hacker in high school because he was actually hacking into stuff.</p>
+
+<p>GIRAFFE:	The school is running Windows XP.  Just fire up good old Metasploit and just line a couple shelves, mess with the teachers and stuff like that.</p>
+
+<p>JACK:	Messing with the teachers by hacking into their machines.  What a jerk.  But wait, he actually didnât change his grade or didnât steal any files.  He didnât dox the whole schoolâs faculty.  He had access to this stuff but instead he just messed with the teachers like changing their desktop background and stuff.  So yeah, itâs not cool to hack into the teacherâs computer but it kind of was a harmless prank.  He kept learning more about hacking and computers.</p>
+
+<p>GIRAFFE:	Being public and you need WiFi, so you just crack open one of the hot spots that are nearby, things like that, just really small.  Itâs like the equivalent of party tricks really, but hacking.</p>
+
+<p>JACK:	You ever go to a place like a hotel or airport and when you connect to the WiFi there it asks you to pay to get on the internet?  You ever try to figure out way to get around that and get on the internet without paying?  Thatâs the kind of stuff The Hacker was doing in those days.  Years go by of him doing various things like this.  Heâs becoming better at coding, better at computers, better at hacking.  But of course he likes hanging out on Reddit and playing video games, too.  For those of you who are redditors, do you think if we look at your favorite subreddits weâd be able to tell what kind of person you are?  Iâm personally always hanging out in the Podcasting subreddits, and then I like checking out the Crappy Design subreddit, and Tech Support Gore, and Cable Fail.  Can you get a sense of who I am through that?</p>
+
+<p>These are The Hackerâs favorite subreddits: the Hacking subreddit, well, of course.  Programmer Humor.  Okay, funny IT jokes.  I like those, too.  Humans Being Bros.  Oh yeah, wholesome stories and gifs of people doing nice things; good.  Dank Memes.  So he likes his memes dank.  Okay, to each his own.  Made Me Smile.  Again, a nice wholesome subreddit.  He also likes the subreddit Iâm Going To Hell for This.  Yeah, these jokes are a little too soon or are unfair but really funny anyways, making you feel like you might end up going to hell for laughing at it.  For instance thereâs a joke on there that says These Were Stephen Hawkingâs Last Words:  [WINDOWS SHUT-DOWN SOUND] Yeah, funny but tasteless.  What can you say about a person who likes all these things at once?  Maybe that heâs one part computer nerd, one part wholesome, one part dark.  What does this recipe create?  [MUSIC]  Thereâs one more thing that The Hacker also likes; PewDiePie.</p>
+
+<p>GIRAFFE:	Right, so PewDiePie is a Swedish YouTuber and plays games, makes jokes, and makes me [00:05:00] laugh.</p>
+
+<p>JACK:	Heâs not just some Swedish YouTuber.  Heâs the single most popular YouTuber in the world.  In September of last year, four months ago, he had 65 million subscribers which is just phenomenal.  I mean, these are bigger numbers than some mass media outlets get and heâs just an independent creator.  Heâs just some goofy guy who posts a lot of memes, internet jokes, and mispronounces a lot of stuff, makes fun of a lot of people, and plays video games.  He gets into some trouble sometimes too when he says things that arenât politically correct which outrages some people, but it only makes his channel bigger when that happens.  In my opinion, I think PewDiePieâs content is low-quality and heâs sometimes insensitive.  If you donât think heâs insensitive, then why does he do apology videos sometimes?  I mean, listen to this.</p>
+
+<p>PEWDIEPIE:	Iâm disappointed in myself because it seems like Iâve learned nothing from all these past controversies.  Iâm really sorry if I offended, hurt, or disappointed anyone.</p>
+
+<p>JACK:	I counted four apology videos like this where he felt he did an oopsie so bad that he needed to say sorry to millions of people.  Yeah, because heâs so popular a lot of people look up to him and are influenced by him.  I mean jeez, I just realized Iâve never put memes in my podcast before and already this episode has two crappy ones and it must be because Iâve watched so many of his damn videos that I feel like itâs a normal thing to do now.  Even Iâm influenced by him.  Ugh, I canât believe Iâm talking about PewDiePie this much.  You have no idea how many videos I had to sit through to research this episode.  I want that time back and now YouTube is giving me PewDiePie as suggested videos to watch next.  Aah!  I do not want to know any more about PewDiePie.  But thereâs stuff to learn in this story so stick with me.  [MUSIC]  Two years ago PewDiePie was the first YouTuber to hit 50 million subscribers and heâs been the most subscribed-to channel for years.</p>
+
+<p>While there are a lot of companies that create YouTube videos, the independent creators is what makes YouTube so amazing.  We expect high quality, top-notch stuff from companies but technology had advanced in such a way that anyone can create a YouTube channel and teach, or do funny things, or make art.  Itâs sometimes better than what big companies can do.  The YouTube community has always been about the independent creator; fostering them, promoting them, and putting the spotlight on them.  But lately YouTube has been sort of dropping this ball.  Theyâve been working more closely with companies to bring in more sponsors and to enforce copyright violations closer.  But look, YouTube has 1.8 b-b-billion users log in each month.  Holy cow, thatâs a lot of people.  When you have that many people watching and creating and uploading videos, itâs impossible to enforce anything effectively.</p>
+
+<p>A lot of YouTubers are being hit with copyright violations or strikes against their channel when they did nothing wrong.  I really feel like once something grows to a certain size you just lose control of it.  The independent creators are being enraged over all this YouTube drama of strikes and accounts being banned for really dumb reasons.  For instance, I saw a musician write an original song and then someone else used that song in their video and then did a copyright strike against the original musician saying they stole it from that video.  Ridiculous.  Itâs not the YouTube we all grew to love but thereâs no other good alternative so we keep hoping that YouTube changes.  Anyways, during the height of all this YouTube drama, PewDiePie posts a video.</p>
+
+<p>PEWDIEPIE:	Another YouTube channel is taking over.  Thatâs right, in no less than in November this year PewDiePie will not be the biggest channel on YouTube.  We must fight back.  Who is this T-Series channel?  This channel will pass PewDiePie.  [HIGH-PITCHED TALKING]  Iâm number one.  Iâm number one.  Iâm throwing my glove at you, T-Series.  Fight me IRL to the death.  No boxing glove and helmets.  Iâm talking about to the death here.  Wait, they have 46 billion views?  Itâs an Indian channel?  Itâs an Indian channel?  Itâs an Indian channel?</p>
+
+<p>JACK:	This other YouTube channel named T-Series was projected to pass by PewDiePie in just two monthsâ time.  Their subscriber rate was so much higher than PewDiePie, which could make them the most-subscribed channel on YouTube.  But who is this T-Series?  Itâs a music record label company based in India.  [MUSIC]  And theyâre rapidly posting like, three new music videos a day from many of the top performers there.  Since India has such a big population, their subscriber count is exploding, outpacing everyone.  Back to PewDiePie.</p>
+
+<p>PEWDIEPIE:	Let it be clear.  I donât care, okay?  The thing is Iâve expressed that I donât want to be the number one channel on YouTube for a long time, okay?  I would prefer if someone else passes me.  If T-Series was an actual individual and not a company, I would gladly congratulate them on becoming number one.</p>
+
+<p>JACK:	I believe this is the real rallying cry here.  This is not a war to keep PewDiePie on top.  Itâs a fight between the independent creators and the takeover of a company becoming the most subscribed channel.  While an independent creator is on top, it forces YouTube to acknowledge that its users like content from independent creators more than companies.  Some fear that if a major company is the most subscribed-to channel, then this seals the coffin for YouTube working even more closely with companies and less [00:10:00] with indie creators.  Anyways, you can believe that or not but thatâs what a lot of people rallied behind.  Who doesnât like watching a good competition?  This race became heated and exciting.  Major celebrities started tweeting to subscribe to PewDiePie.  With sixty-five million subscribers, Pewds was able to motivate a lot of people to help him stay on top.  Everyone began chanting the same thing.</p>
+
+<p>YOUTUBER1:	Do me this one favor.  If this is the last thing you do, subscribe to PewDiePie.  Do not let T-Series win.</p>
+
+<p>YOUTUBER2:	Tell your grandmas.  Thatâs right, both of them, to subscribe to PewDiePie.</p>
+
+<p>YOUTUBER3:	Hello gang, do our Logang family proud and subscribe to our Swedish leader man, PewDiePie.</p>
+
+<p>JACK:	I even bet that someone in the last four months has told you to subscribe to PewDiePie, or youâve seen it in your feed at some point.  Thatâs how big this has become.  PewDiePie was getting a massive bump of new subscribers, like over 50,000 new subscribers a day.  But despite everyoneâs greatest efforts, it wasnât working.  T-Series kept gaining ground, inching closer and closer to becoming the top channel.  So PewDiePie created a music video in an attempt to compete with T-Series, a music video channel, on their own turf.</p>
+
+<p>PEWDIEPIE:	[MUSIC]  I donât like you, T-Series.  Nothing personal kid, but I must go all out just this once.  Bobâs over gone, whichever will it be?  Sit the fuck down T-Series.  Iâm here to spill the real tea.  You trying to D[L1] through me for a spot on number one, but youâre India.  You lose, so best think you havenât won.  When Iâm through with you, weâre gonna be completely fucking done âcause we only just begun.  I review you zero.  Bye, bitch, gone.  So come on T-Series, looking hungry for some drama?  Here, let me serve you bitch lasagna.  Bitch lasagna, bitch lasagna.  T-Series say nothing but bitch lasagna.  Bitch lasagnaâ¦</p>
+
+<p>JACK:	This video blew up and currently has over 100 million views which is twenty times more than the average video he gets.  It was epic and hilarious actually, and it significantly brought awareness of this race and boosted the growth of PewDiePieâs channel even more.  Higher and higher it soared.  Keep in mind itâs reaching new heights that nobody has ever hit before.  But T-Series was right behind him, around 67 million subscribers.  The race almost became a dead heat.  As soon as PewDiePie would hit 70 million subscribers, T-Series would have 70 million the next day.  When PewDiePie hit 75 million, T-Series hit 75 million two days later.  Each channel was getting a massive 120,000 new subscribers every day which is just unbelievable growth.  This wasnât the only thing the YouTube community was doing to teach YouTube a lesson.</p>
+
+<p>In December, the same time that all this was going on, YouTube published an annual mash-up video called Rewind.  It was supposed to put a spotlight on the creators but the YouTube community hated it.  They felt it catered more towards sponsors and didnât represent the community at all.  That video quickly became the worldâs most disliked video of all time.  It currently has over fifteen million dislikes.  When YouTube itself tries to make a video to be a spotlight on the community, and the community downvotes it more than any other video in history, it sends a powerful message to YouTube.  There was this fervor at the time that the users were trying to show YouTube they need to pay more attention to what the community wants.  The race between T-Series and PewDiePie was growing more intense now.  PewDiePie was just barely holding on top; PewDiePie knew he wouldnât last and he was running out of trap cards to play so he turned to his viewers and saidâ¦</p>
+
+<p>PEWDIEPIE:	This sub gap is getting closer.  Do something!</p>
+
+<p>JACK:	[MUSIC]  This brings us back to The Hacker.  As you heard earlier, heâs a fan of PewDiePie and well, a hacker.</p>
+
+<p>GIRAFFE:	This really wasnât a project that was planned.  There was zero planning in this.  I was just trying to have some fun.  I was bored.  I think the most dangerous thing is a bored hacker, to be honest.  Iâm usually lurking around Shodan.  Itâs the search engine for connected devices.</p>
+
+<p>JACK:	Yeah, this is a website that scans the entire internet to see if any well-known ports are open and makes that database searchable for anyone to see.  If you go to shodan.io you can easily find security cameras to watch remotely, Telnet ports that are open, and a whole bunch of other stuff that shouldnât be on the internet.  Its goal is to help us be aware of how insecure the internet is.</p>
+
+<p>GIRAFFE:	Iâm usually just searching around looking for something to mess with.  I was really looking for is there a protocol that should never, ever be open to the public-facing internet?</p>
+
+<p>JACK:	While bored one night he did some research to try to find anything new to look at on Shodan.</p>
+
+<p>GIRAFFE:	I came across this article for IT admins thatâs like, these protocols should never escape your network.  The thing that caught my attention was a network printer.</p>
+
+<p>JACK:	He found that printers often listen on three ports and if these ports were exposed to the internet it may mean that someone can print to that machine from anywhere in the world.  He searched Shodan to see if any computers had port 9100 open, 515, and 631.</p>
+
+<p>GIRAFFE:	The total was above 800,000.</p>
+
+<p>JACK:	He was horrified by this.  Why in the world are 800,000 printers [00:15:00] directly on the internet ready and listening for anyone in the world to send print commands to it?  He became very interested in this to see if he could do something with these.</p>
+
+<p>GIRAFFE:	At that point I was really messing around.  I wanted to go for the low-hanging fruit.  I wanted to go for the easiest thing possible.  The easiest thing to mess around with was the ones open on port 9100 which were around 50,000 in total.</p>
+
+<p>JACK:	This port is the easiest to use.  Thereâs no authentication or encryption; you simply send your PDF file to the port with the command to print and the printer will print it.  He messed around with this a little and his initial tests seemed to be working.  His packets were sent and there were no errors but it was hard to tell if anything actually printed.</p>
+
+<p>GIRAFFE:	I literally had no way of finding out if it was working.</p>
+
+<p>JACK:	Being the curious little researcher that he is, he looked to see if there were any tools that could help him with this and sure enough there was one.  A German college student wrote a master thesis on doing security testing against printers and wrote a program called PRET and made it freely available for anyone on GitHub.</p>
+
+<p>GIRAFFE:	I found PRET, which is the Printer Exploitation Toolkit and it showed me that hey, if you find a printer thatâs open on port 9100 this tool can connect and you can do all kinds of things like list the files, reset the printer, and all kinds of stuff.  But the thing that caught my attention was the actual print.</p>
+
+<p>JACK:	Sure enough it worked like a charm.  He realized he could make a little program to cycle through all the printers and send a message to 50,000 people.  Now, I wonder what would you do in this situation?  Letâs say you stumbled upon the capability of being able to print any message you wanted to 50,000 printers at once?  What do you do?  Do you report it to someone?  Who though, the printer companies?  Do you write it up and post it to your social media?  Iâm genuinely curious what you would do in this situation, so curious that Iâm going to take a pause here, drive downtown, and ask people on the streets what theyâd do.  [TRAFFIC]  Can I ask you a quick question for a podcast?</p>
+
+<p>MVOL.1:	Whatâs up?</p>
+
+<p>JACK:	Alright, so imagine youâre on the internet and youâre clicking around and you find that 50,000 printers are exposed to the internet in a way they shouldnât be and you have the ability to print whatever you want to 50,000 printers.  What would you do in that situation?  Would you print something?  Would you report it someone?</p>
+
+<p>MVOL.1: 	I honestly donât think that I would care enough to do anything.  I would just move on with my day.</p>
+
+<p>FVOL.1:	Oh, I barely have anything I would like to say to 300 people on Facebook let alone send out a message to 50,000 people.</p>
+
+<p>FVOL.2:	I think itâs unethical to use somebody elseâs equipment without their permission.  Maybe Iâd put it in the hands of the media.  I mean, what else would I print to somebody elseâs printer other than a message like secure your damn printer?  You know?</p>
+
+<p>MVOL.2:	I would print Out with the Negative and In with the Positive.</p>
+
+<p>FVOL.3:	Despite ethics, I would definitely send all the book manuscripts by Andreas Antonopoulos to them, the manuscripts for his undrafted speeches.  Then he has a couple longer ones that â one that explains Bitcoin and one that explains Ethereum.</p>
+
+<p>JACK:	So youâd print like, a hundred page book on everyoneâs printer?</p>
+
+<p>FVOL.3:	That might be a jerk thing to do but I think the message is real.  Maybe I could just find a shorter summary like the whitepaper and an explanation of it for Bitcoin and for Ethereum.  [BACKGROUND LAUGHING]</p>
+
+<p>MVOL.3:	Knowing as little as I do about the whole thing, probably what I would do from a moral standpoint is I would send somebody â each one of those printers saying this is not secure and you probably want to do something about it.</p>
+
+<p>FVOL.3:	However, if they receive an unsolicited message about something like Blockchain, they would already be aware of that fact.</p>
+
+<p>JACK:	Would you print something?</p>
+
+<p>FVOL.4:	No.</p>
+
+<p>JACK:	Why not?</p>
+
+<p>FVOL4:	I think I would not print anything because that seems kind of weird and maybe a misuse of resources.  I really like trees and thatâs a lot of paper.</p>
+
+<p>MVOL4:	Well first I would print a bunch of obnoxious memes to every printer on there and then Iâd report it.</p>
+
+<p>MVOL5:	Iâd probably request a reward for it.  Nah, not hold a hostage or nothing but just request a reward for turning something in.  As long as I got something out of it, you know?</p>
+
+<p>JACK:	Thank you for that.  You all have a lot of wildly different opinions on what you would do in this situation.  What did the hacker do?  He decided to print something.  [MUSIC]  His primary goal was to make people aware that their printers were vulnerable.  But then while doing that, why not help out a YouTuber he likes?  He typed up a PDF.  It said, âAttention:  PewDiePie is in trouble and needs your help to defeat T-Series.  Unsubscribe from T-Series and subscribe to PewDiePie.â  The letter goes on to say, âSmile.  The world is a great place.  Never mind, itâs 2018 and weâre all gonna die.  Pro tip: your printer is exposed to the internet.  [00:20:00] Please fix that.â</p>
+
+<p>GIRAFFE:	At the bottom it said, âGreetings from your friendly giraffe.â  It was just something that just came off the top of my head, really.  I had no intention of actually taking credit for it at all.  It was just supposed to be something funny and then thatâs it.  People will forget about it in like, three or four days.</p>
+
+<p>JACK:	Now that he had a list of 50,000 IPs in a text file, the PRET tool all set, he just needed to make a simple program to loop through them all and print the PDF.  He created a very short bash script to do this.</p>
+
+<p>GIRAFFE:	It was like, four IP in the text file and I provided the text file.  That was the first line.  The second line is literally just calling the tool with the IP and Print PDF as the command.  Itâs just one line.  Then the third line is just to end the forward loop.</p>
+
+<p>JACK:	All it took to do this was three lines of code.  Three lines.  To find the 50,000 printers was a simple search for port 9100 that anyone can do on Shodan.  I mean, this sounds really easy to do.</p>
+
+<p>GIRAFFE:	Yes, this is quite literally zero skill required.  Yeah.</p>
+
+<p>JACK:	That just makes me think of this.</p>
+
+<p>COMMâD:	You are without doubt the worst hacker Iâve ever heard of.</p>
+
+<p>SPARROW:	But you have heard of me.</p>
+
+<p>JACK:	Now, the moment of truth.  Heâs got everything built and is ready to hit Print on 50,000 printers.  He just needs to hit Enter.</p>
+
+<p>GIRAFFE:	[MUSIC]  There were a thousand things going through my mind.  Is this gonna work?  Should I even do this?  Am I doing this properly?  There was even this programmer voice inside me like dude, this script is trash.  You should just make another one.  There was this sense of hesitation âcause I knew that there was kind of no going back, really.  I mean there technically really was; I could have just stopped the script at like, ten printers but I knew that once it was running I wouldnât have stopped it.  I did hesitate.  That hesitation was for maximum five seconds and then I was like nope, this is way too cool.  I press Enter.</p>
+
+<p>JACK:	[MUSIC]  His script would connect to one printer at a time, send it a PDF, and tell it to print.  Each connection took a while to complete.  He would sit there and watch the count go up on how many print jobs he sent.</p>
+
+<p>GIRAFFE:	It does provide some output.  It just added a couple of statistics.  It was like weâve reached IP 500 out of 50,000.  âCause I could actually tell if a printer printed successfully or if it did fail to connect.  There were some improvements that I was doing on the fly.  I feel so sorry for the first 500 printers, Iâd say, âcause Iâve run the script like seven to eight times âcause every time Iâd just be like no, I donât like this.  Iâd change it and itâd just go over the list again.  I was also renaming the printers.  On the LCD it would say Hacked.</p>
+
+<p>JACK:	Once he finally got the script built the way he wanted it, he let it run.  And run it did.  It successfully printed to 100 printers and then 1000 printers and then 10,000 printers.  This was taking a long time for it to reach that many printers, hours and hours.  He was nervous and excited that it was working.</p>
+
+<p>GIRAFFE:	I was seriously just refreshing Twitter.  I typed in PewDiePie printer, and in another tab printer hack, and in another tab PewDiePie print.  Just completely refreshing; somebody tweet about this.  I want to see if this is working.  The number is going up.  The numberâs like you said, the numberâs hitting 10K, itâs hitting 20K.  Where are the tweets?  I think around halfway is when â around like, 23 to 22K is when the tweets actually started rolling out.  The very first tweet I saw was a woman saying that their local police station printed this paper out of the ticket counter.  I was like what?  I had zero concerns whatsoever about any consequences.  I was so into it âcause yes, this is working.  This is so cool.  Iâve gotta tell everybody that this is working.</p>
+
+<p>JACK:	He got up out of his chair and started pacing back and forth in the room, hovering over his computer, texting his friends telling them whatâs going on.</p>
+
+<p>GIRAFFE:	Everyone was like yeah, okay.  Cool, dude.  Nobody really showed any interest but I was having the time of my life.</p>
+
+<p>JACK:	More people were tweeting about their printer telling them to subscribe to PewDiePie.</p>
+
+<p>GIRAFFE:	I just left it running.  It honestly took around 24 to 28 hours to actually complete the full 50,000 IPs.</p>
+
+<p>JACK:	But this was so exciting for him that he didnât sleep or get to any of the real life stuff he needed to do that day.</p>
+
+<p>GIRAFFE:	I completely forgot about any work that I had to do.  I was so pulled into this.  I was like this is working and as you said Iâm pacing back and forth.  This is crazy.  How is this actually happening?  This is so simple.  I couldnât believe how simple this was.  Thatâs the thing, exactly like you said, it requires zero skill.  It completely blew my mind [00:25:00] that this was actually working and that the number was actually hitting something pretty close to 50,000.  I was like, no way.  Thereâs no way this is actually happening.  There was a mix of the rush; I was like oh, I am gonna be so famous.  I need to make a Twitter account.  I need to get behind this.</p>
+
+<p>I have to take credit for this âcause a lot of people were blaming PewDiePie at first, like hey, why are you doing this?  They were serious about it so I was like no, okay, I have to take credit and I have to properly explain.  âCause Iâve seen what happens when people do anonymous hacks.  The media goes crazy.  I really didnât want somebody to publish an article saying that Iâm some sort of Russian crazy spy agency trying to â Iâm hacking into your printers and Iâm printing this funny paper but Iâm actually stealing all your money, or some crazy conspiracy theory.  No, this was just your everyday, normal, coincidental Shodan find.  I created the Twitter account.</p>
+
+<p>JACK:	Thus, the Hacker Giraffe was born.  This was what he called his Twitter account.</p>
+
+<p>GIRAFFE:	I started tweeting at the people who were posting the pics, hey, itâs me.  [MUSIC]  What happened first is people were DMing me, like oh dude, how do I fix my printer?  It was really slow at first.  Then it skyrocketed.  It skyrocketed the moment one Twitter account has a huge follower base and you tweeted about it.  I got media in my DM sending me hey, you want to write a story about this?  It blew up in the span of like, six hours from the moment that tweet happened.  The Twitter account literally went from like zero followers to something like 20K in about six to ten hours.</p>
+
+<p>JACK:	For me at least, this is where I think the Hacker Giraffe made a mistake.  I think he agrees, too.</p>
+
+<p>GIRAFFE:	It was a horrible idea.  Yes, it was a horrible idea.</p>
+
+<p>JACK:	Taking credit for the hack, leaning into this whole thing; that is playing with fire.  What he did was technically illegal and now heâs taking credit for it?  This canât end well and it doesnât.  After the break weâll hear how everything unravels and falls apart.  [MUSIC]  More and more people started tweeting about this, shocked and outraged that printers were promoting PewDiePie now.  News agencies started picking up on this story and he started getting private messages on Twitter from the media.</p>
+
+<p>GIRAFFE:	The first one was The Verge.  They reached out for a comment and then they wrote it out.  They published it instantly.</p>
+
+<p>JACK:	Someone Hacked Printers Worldwide Urging People to Subscribe to PewDiePie.</p>
+
+<p>GIRAFFE:	That was the very first article.</p>
+
+<p>JACK:	Hacker Giraffeâs popularity grew quickly.  More and more news agencies started publishing stories about these printers.</p>
+
+<p>GIRAFFE:	I was drowning in DMs.  I think a lot of media sources couldnât actually reach out for a comment and they just started rolling out their own articles.  But it was crazy the amount of articles.  A Google search would show up one article and then an hour later it was five, to six, to seven.  They were sticking this whole PewDiePie super hardcore fan image on me.  Yes, sure, I do like the guy genuinely, like I enjoy his content.  I would call myself a fan.  Iâm not a like, a die-hard fan.  I was like no, thatâs not the point here.  You just completely went over the actual point which is the printers.  For godâs sake, what do I have to do to make you guys pay attention to the actual devices?</p>
+
+<p>JACK:	This newfound status he had was intoxicating.</p>
+
+<p>GIRAFFE:	I was just baffled.  I was completely baffled.  This is insane.  Again, just pacing around my house.  This is crazy.  Iâm calling up my friends and was like thereâs an article about me.  I was just like every other normal person.  I wasnât popular.  I wasnât anything, just your average person, really.  Just maximum like 50 followers on Twitter or something.  It was such a new experience.  If I said something on Twitter, people instantly responded.  There was this whole audience.  It was complete euphoria, really.</p>
+
+<p>JACK:	Needless to say, that night the Hacker Giraffe did not sleep at all.  He kept tweeting that heâs going to sleep but then heâd just come right back online.</p>
+
+<p>GIRAFFE:	There was no sleep.  I was so pulled into that Twitter account.  I was, no joke, every five minutes I had to open and tweet something or just check my notifications, check the replies, check the DMs.  The rush of popularity completely overwhelmed me.  Literally, every five minutes I opened my phone and Iâd look at the Twitter account.  Okay, anything new?  Should I tweet something?  Do I say something funny?  Do I try to pull off oh, look at me, Iâm the greatest hacker alive, stuff like that?  I kept saying okay, Iâm logging off, goodnight guys.  [00:30:00] Then Iâm like alright, Iâm back.  Here I am; hereâs another tweet.</p>
+
+<p>JACK:	After waiting 24 hours for all the 50,000 printers to print and then spending another long time on Twitter basking in his newfound popularity, the Hacker Giraffe finally crashed and fell asleep.  By this time the news had spread even further and wider.  The story ran on all these sites; The Verge, ZDNet, Forbes, The Hacker News, Threatpost, Wired, and Gadget, NBC, Vice News, The Register, and IGN published the story.  Not to mention the dozens of smaller news agencies and YouTube channels that also talked about it.  This was seemingly huge.  Thatâs what amazes me about this story; this is a lot of coverage for such a simple hack.  I mean, thereâs some big breaches that come out but only make it onto a couple news sites and really arenât talked about that much.  I wonder why this one was so popular.</p>
+
+<p>GIRAFFE:	Thatâs the secret; it was the PewDiePie thing.  Honestly if you think about it, this really would have gotten at maximum just an article on some security news site and thatâs it.  If it was just a plain oh look, printers are printing out.  But it was because of the PewDiePie.  You know how much the media loves PewDiePie.  I really think that without the whole PewDiePie message it wouldnât have spread this much but it did spread because it had PewDiePieâs name on it, in a sense.</p>
+
+<p>JACK:	Oh, I see now.  Hacker Giraffe just wanted to spread awareness that some printers were vulnerable but simply sending that message to some printers probably wouldnât have made that much coverage so Hacker Giraffeâs trick was to put PewDiePieâs name on it which helped this problem get so much more attention which would make a lot of people double-check their printer settings.  I even checked mine.  This is actually a brilliant awareness strategy.</p>
+
+<p>OFFICER:	Thatâs got to be the best hacker Iâve ever seen.</p>
+
+<p>COMMâD:	So it would seem.</p>
+
+<p>JACK:	You might be wondering why so many printers are exposing themselves to the internet like this, and it all comes down to UPnP.  [MUSIC]  This is otherwise known as Universal Plug and Play and hereâs what happens; networked devices like printers can reach out to the router and request that port 9100 be opened so people can print to it.  The router automatically opens that port without any user interaction.  But the problem is it opens it too much.  Maybe it should only open it to internal networks but instead it opens it up to the world.  Itâs a technology thatâs in many home routers to help make your life easier and it does.  There are a lot of devices in our homes that need people to connect to it so having UPnP automatically configure this stuff can be helpful.</p>
+
+<p>Things like Chromecast, gaming consoles, WiFi hotspots, and printers all need connections to it and the router needs to permit those connections.  But these printers that Hacker Giraffe found were all likely exposed to the internet because either the printer asked for too much to be opened or the router opened too much automatically.  So whoâs responsible for fixing this?  The printer makers?  I guess.  The router makers?  Yeah, them too.  But what about the users who could have configured this properly but didnât?  Itâs a combination of all these things and we all just want our tech to work when we buy it.  This is what happens when we expect stuff to work right out of the box.  It works too well and opens you up to more serious problems so letâs take this lesson from Hacker Giraffe and all go check your UPnP settings on your home router.</p>
+
+<p>Iâve completely disabled that setting on mine.  When Hacker Giraffe woke up he went right back to Twitter, again in euphoria for being so popular and seeing his work get so much coverage.  Heâs actually published security research before but only four people read it.  Now heâs got thousands, no, millions of people noticing the vulnerabilities that heâs found and exposed.  He really did want people to fix their printers and he was happy to see so many people talking about it.  I followed up with a few people who tweeted that their printers were hacked.  They all told me they fixed it right away.  But most of the conversations were about PewDiePie and somewhat ignoring the UPnP issue altogether, kind of assuming the hacker did something elite or magical and didnât even bother checking their home printers.  Hacker Giraffe tried to use his newfound popularity to guide the conversations back to how to secure your own systems and to teach people about security.  He started doing a live stream to teach people.</p>
+
+<p>GIRAFFE:	When I did the very first audio live stream, people were jumping in, people were commenting on it live.  I was like oh, I love this.  This is so much fun.  That first day kind of sparked me to make more accounts so now there was a Patreon, now there was Discord, now there was Reddit account and all kinds of fun, really.</p>
+
+<p>JACK:	He started thinking maybe this could be his life now.  He was attending college at the time but this hacking incident was way more exciting than thinking about class right now, but neglecting his classwork caused a lot of problems.</p>
+
+<p>GIRAFFE:	Yes, I was gonna give you a very [inaudible] and be ignoring the things I had to do in college was the biggest mistake, probably.  I really did suffer a blowback from it.  At that time I really didnât care.  It felt like my whole life was set up for me.  Iâm gonna be so famous [00:35:00] and Iâm just gonna live off of doing more of these, doing research publically and all this kind of stuff.  I was living this insane fantasy where I was gonna be king of the world and at the time the Twitter account just kept fuelling that fantasy and more articles came out.  It just kept fueling that fantasy.  This voice of consequence in my mind was just completely crushed by dude, look how many followers Iâm getting, look how many people are tweeting at me, and look at all the articles.  I was on a rush for I think about three to four days.  I guess it kind of calmed down after that, really.  It started calming down after three to four days, maybe even a week.</p>
+
+<p>JACK:	A lot of people were blaming PewDiePie so he became aware of this hack, too.</p>
+
+<p>GIRAFFE:	He followed me on Twitter and he mentioned me on Twitter.  Then his editor Brad came up and told me that youâre gonna be in the next video.  I was completely losing my mind.  I was like dude, no way.</p>
+
+<p>PEWDIEPIE:	Can you believe this?  Someone hacked printers worldwide urging people to subscribe to PewDiePie.  Thank you, printers.  Very cool.  See?  This is what Iâm talking about.  Even printers are doing their part.  The message was basically printed and told people to number one, unsubscribe from T-Series.  Number two, subscribe to PewDiePie.  âPro tip: your printer is exposed to the internet.  Please fix that.  Greetings from a friendly giraffe.â  This is made by the Hacker Giraffe.  This is getting more media attention than anything Iâve seen in recent memory revolving me, at least.  It was featured in a ton of different media websites; IGN, Wired.  I love this one âcause it says, âPrinters were exploited for PewDiePie propaganda.â</p>
+
+<p>Obviously this raises awareness because a lot of peopleâs printers could easily be exploited and actually cause damage.  The Giraffe said that he could have targeted more but decided not to and he also mentioned that I killed two birds with one stone; raised awareness for this issue and helped PewDiePie get a slight edge.  Thatâs what I need.  Thatâs what Iâm talking about.  All this support to keep me on top is so funny.  I love it.  Please keep it up.  Just donât do anything illegal, okay?  âCause that will look bad on me.  Thatâs the only reason.</p>
+
+<p>GIRAFFE:	Hearing him talk about me raising awareness, he said all kinds of nice things like heâs doing this to raise awareness, itâs this great job, your printers are exposed and you should fix it.  It was honestly, it was cool.  Thatâs the best way to describe it.  It was cool.</p>
+
+<p>JACK:	[MUSIC]  You might think that remotely printing to a printer is not that big of a deal and itâs not that impressive of a hack.  But consider this.  The Printer Exploitation Tool Kit, or PRET, has more options than just printing.  Historically, Iâve discovered that printers are very insecure.  Theyâre usually left with default passwords; they often act as mail relays, and DNS relays, which opens them up to abuse.  They sometimes store a copy of all the files that were printed in its internal hard drive.  I even was at a talk at Defcon once where they demonstrated how you can send a malicious PDF to a printer and get command line access to the printer.</p>
+
+<p>GIRAFFE:	Yeah, and PRET actually did that.  PRET would generate malicious PDFs for you and you could actually get terminal access onto the printer.  You could legitimately change files, download files, run commands.  You could do whatever you wanted.  Like you said, you could gain access to the thing.  This printer could legitimately be a gateway into the actual inner network, in a sense.  You can actually use it as a proxy or VPN of sorts to actually jump into a network.  Or worse, you can write your own botnet and just infect all these printers with that botnet and youâd have 800,000 bots at your disposal.</p>
+
+<p>JACK:	This attack could be much more serious than simply printing something like this.  Itâs an issue that deserves more awareness and more people looking into the problem.  After a few days of basking in his newfound popularity, the Hacker Giraffe was seeing another guy copying him and hacking printers, too.  Their name was User.</p>
+
+<p>GIRAFFE:	I accused him of being a copycat.  I reached out to him and I was like hey dude, youâre copying what Iâm doing.  Donât do that.  Itâs not cool.  Then we kind of discussed through DMs and we came to the conclusion that this guy actually knew what he was doing.  He was basically doing the same idea but executing it way differently.  Iâm like hey dude, thatâs pretty cool, your stuff.  We came together after seeing a few articles came out and then nobody really did anything about it.  We were like okay, we have the rest of the 800,000 printers.  We have two other protocols that we havenât really tested.  Letâs go for it.  This is when I wrote the actual code for the [00:40:00] other protocols and we ran it.  We hit the full 800,000 IP addresses, like the whole thing.  [MUSIC]  We went through the full 800,000 with the same message again.  It was the same message just altered a bit differently, this time with our actual Twitter handles, me and User.  Thatâs when the BBC article came out.  That was the first actual major news source to cover it.</p>
+
+<p>JACK:	Again, this brought his popularity even higher still.  Thousands more people were following him, now.</p>
+
+<p>GIRAFFE:	It was again, that renewed sense of euphoria.  Like oh yeah, this is happening again.  There was this feeling that oh no, my popularity is kind of dying and itâs kind of stale on my Twitter right now.  âCause itâs been a week and I havenât really done anything.  Okay, weâve gotta fix this.  This whole sense of loneliness was creeping back in again.  Like oh, Iâm just going to be forgotten now.  So there was that hidden incentive that I guess I kind of lied to myself; I said no, no, this not for popularity.  This is totally â like oh yeah, people secure printers, whatever.</p>
+
+<p>JACK:	But the higher his online euphoria was, the lower his excitement was for real life which gave him depression.</p>
+
+<p>GIRAFFE:	The real life compared to this online persona was exactly as you said; it was such a depressing comparison.  Youâre like oh, I have to go back to my normal life now where itâs just gonna be this one person all by himself doing stuff and hoping to achieve something.  But I have this online persona.  I have this audience that I can grow on.  I can use this and grow.  It wasnât only popularity.  It was kind of this loneliness that hey, thereâs a lot of people that I can talk to online now that pushed me further to be absorbed into that whole persona, the Hacker Giraffe persona.</p>
+
+<p>JACK:	This took a serious toll on him.  He ended up failing one of his college classes.  His friends were getting sick of him talking about this constantly and the real world just wasnât as sparkly and fun as his online persona was.  This created a profound sense of loneliness and to top it off he was getting a lot of hate messages and harassment, too.</p>
+
+<p>GIRAFFE:	I was getting a lot of negative DMs on Twitter, yes, definitely.  The negative DMs had categories, right.  It was either some other hacker on Twitter calling me a script kitty and theyâre like dude, you just downloaded a script off GitHub and all youâre going is doing on Shodan.  Youâre just stealing other peopleâs work and youâre a nobody.  Then it was people who had been affected who were like why are you doing this?  I donât care.  Leave my shit alone.  Youâre such an asshole.  Why do you keep doing this?  Then it was the other people who were angry about the PewDiePie part, people who were like dude, why are you promoting this racist asshole, this Nazi?  Are you a Nazi too, is that what youâre trying to say?  Is that where your conscience lies?</p>
+
+<p>JACK:	The Hacker Giraffe was riding an emotional rollercoaster.  So many ups, so many downs.  While the ups were great, he wasnât handling the downs well at all.  When you become an overnight success itâs hard to know how to handle this kind of popularity.  This added to his depression.  He had a large audience now and he wanted to demonstrate something else that was vulnerable.  He didnât know what else to exploit, though.  He didnât want to harass those 800,000 printers anymore.</p>
+
+<p>GIRAFFE:	Weâll literally just be assholes if we just go over the same range again.  We just go over the same printers again and okay, people will definitely get the wrong message.</p>
+
+<p>JACK:	He found a lot of Minecraft servers that were open but didnât think it was a good idea.  But then he came across the Chromecast.  This is a simple little device that plugs into your TV and lets you control what plays on the TV using a phone or computer.  Hacker Giraffe looked into this and started seeing ports for Chromecast were in fact open all over the world.</p>
+
+<p>GIRAFFE:	What happened was hey, Chromecasts are actually a viable target.  I decided to go in and see okay, what exactly can we do with Chromecast?  Is it just changing videos?  After a lot of research I came across the port 8008 and 8443 which is basically the SSO version of 8008.  I tried to figure out okay, this webserver is open.  This API is open.  What exactly can we pull from it?  [MUSIC]  Not only was it just exposing information that could be relatively sensitive and not only could you reset, reboot, rename, connect it to your own WiFi with it, it was just something that very clearly should not be open to the internet.</p>
+
+<p>JACK:	These Chromecasts were also exposed to the internet because of UPnP.  [00:45:00] The Chromecast requests from the router to open these ports to that things can talk to it but it was opening up way too much.  Anyone in the world can connect to a Chromecast on a poorly secured network and start playing TV shows.</p>
+
+<p>GIRAFFE:	I was originally thinking of playing Black Mirror on so many Chromecasts but I feel like a Black Mirror episode randomly playing on Chromecast would have spooked people way more.  We just went with the safest option which was YouTube, which is an app that we knew was installed.  It had to be installed on the Chromecast âcause it comes by default.  Itâs super easy for us to just point it at a YouTube vid.  At that time I asked someone in my discord server, I was like hey, whoâs good with video editing?  I need a very quick video.  Just give me a ten, fifteen second video.  Let it play Bitch Lasagna in the background and make it very obvious that this is about Chromecasts âcause we wanted to minimize the PewDiePie element.  We wanted like hey, this is really about Chromecasts.  This is not about PewDiePie.  Thatâs why in the video, the PewDiePie thing is the very last thing.</p>
+
+<p>JACK:	This video told the people to visit a website which explains how to secure your network.  He did a search on Shodan to find a list of IPs to run this against and it returned a list of 120,000 potentially vulnerable Chromecasts.  [MUSIC]  But in this list were not just Chromecasts.  Apparently Google Home Devices were also opening up this port and they had an API, too.  He found you could connect to the Google Home Device and see how much noise the microphone is picking up.</p>
+
+<p>GIRAFFE:	Noise level?  Seriously?  Is that something that really should just be open to the internet?  âCause if I was a criminal and I was physically near that Google Home, I could actually figure out if there was anybody at home by checking the noise level.  If it was dead silent then I knew theyâre either asleep or nobodyâs home.  Thatâs the kind of thing that was going through my head.</p>
+
+<p>JACK:	He definitely wanted to expose this issue and make it into a big deal so it gets fixed but his friends were not happy that he was planning another attack.</p>
+
+<p>GIRAFFE:	A lot of them actually tried to stop me from doing the Cast tech.  Theyâre like dude, thatâs it.  Just drop it.  Youâve been safe so far, the attention died out.  Just let it die and fade off into â fade off.  Donât try to come back with another hack.  But I guess my ego and like I said, wanting to go through that euphoria again.  Again, that sense of loneliness and isolation, itâs like no, I want to get back.  I have to do another thing.  There was more hesitation.  There was much more hesitation this time.  The other voice won eventually, the voice of just go with it.  It won.</p>
+
+<p>JACK:	Him and User had everything ready, the list of 120,000 vulnerable Chromecasts, the video, the script, and he even built a website with live statistics of the hack.  He tweeted that Chromecasts were next.  He got on his Discord chat room and told everyone to get ready.</p>
+
+<p>GIRAFFE:	There was even a countdown to when it would start.  Everybody was in the server.  They were like alright, three, two, one, launch.</p>
+
+<p>JACK:	[MUSIC]  The script started going through the list of IPs, playing the YouTube video.  Hundreds of Chromecasts not only were playing the video, but also the device was being renamed.  The live website was displaying the number of devices rising higher and higher.  Soon, thousands of Chromecasts had played the video but all of a sudden the number stopped rising.</p>
+
+<p>GIRAFFE:	Five minutes, or five to ten minutes into our attack, Google actually disabled the ability to play YouTube videos over their HDP API.  It was just completely â you couldnât.</p>
+
+<p>JACK:	Google had somehow gotten word that this was going on and they issued an emergency patch to all Chromecasts in the middle of this hack.  They removed the ability to play YouTube videos over the API.  This stopped the whole operation.</p>
+
+<p>GIRAFFE:	But I quickly started researching what are other alternate ways â âcause my Chromecast was still working.  I could still send the YouTube videos so there must be something else going on.  I found out another port, port 8009 which uses Googleâs own protocol.  I started reading up on that.  I was under so much pressure because the number of Chromecasts being forced to play the video is not going up âcause theyâre not playing the video anymore.  I quickly modified the script and I was like okay, I saw in the library that lets me talk to this port 8009.  I plugged it into the script and I restarted it.</p>
+
+<p>JACK:	[MUSIC]  After switching to this port, the whole thing was working again and the numbers were rising again.  The video was now playing on 10,000 Chromecasts, then 20,000 Chromecasts.  30, 40, 50, 60,000 Chromecasts were all playing the video explaining how your Chromecast was vulnerable.  To do that many only took about an hour.</p>
+
+<p>GIRAFFE:	When we were almost done, when there was around 10,000 Chromecasts left, they removed the YouTube video.</p>
+
+<p>JACK:	[00:50:00] Google can do this because they own YouTube.  Within an hour of the attack being launched, the video had been removed by them.</p>
+
+<p>GIRAFFE:	They gave me a strike.  They gave me a full strike.  They were like hey, weâre clearly pissed.  Donât do this.  I was like okay, whatever.  There was just 10,000 left.  Iâm just gonna rename them and call it a day.</p>
+
+<p>JACK:	In total he was able to play the video on 65,000 Chromecasts and renamed another 8,000 of them to say Subscribe to PewDiePie.  This again hit many news cycles which gave him thousands of more followers on Twitter and more patrons and more attention.  But at the same time it gave him a lot more haters.</p>
+
+<p>GIRAFFE:	There were death threats and people were like Iâm gonna dedicate my life to finding out where you are, who you are, and come and get you.  A lot of people were like Iâm gonna make sure that you get in trouble for this.  That was slowly adding onto this background voice that was screaming youâre gonna get yourself in trouble.</p>
+
+<p>JACK:	A few days after the Cast hack he was on his Discord chat server.  Someone sent him a private message.</p>
+
+<p>GIRAFFE:	Who told me that hey, the FBIâs building a case against you.  You gotta go dark, just stop this right now.  At that point it really didnât matter how much evidence they provided âcause they didnât really provide any evidence.  They just said it.  But it just set off all of a sudden this voice of youâre gonna get in trouble, was so amplified.  It was such a contrast.  One second Iâm just living my life, Iâm happy and everything, and then the next second Iâm in full panic attack mode.</p>
+
+<p>JACK:	This gave him a severe panic attack.  All of a sudden all the fear and worry that was in the back of his head was all he could think about.  The idea of FBI agents visiting him particularly scared him.  He thought the worst that would happen is to be banned from Twitter or something and he hadnât really thought about law enforcement coming after him.  But something about this private message made it all too real of a possibility.  He quickly started deleting everything he could, removing all evidence of everything.  He deleted his Reddit account, all his tweets.  He deleted his Discord server and his Discord account.  He deleted the Patreon page and the PayPal address linked to it and he wiped everything on his hard drives, too.  He went onto Twitter to post goodbye to everyone.  He saidâ¦</p>
+
+<p>GIRAFFE:	Iâm sorry for everyone and Iâm sorry for everything I did.  I donât plan on coming back and please donât copy me.  Please donât do what I did.  It is not worth it.  I canât take this anymore.  I typed up that whole Pastebin goodbye message and I posted it.</p>
+
+<p>JACK:	He then took down his Twitter account and went completely dark.  Just like, that he was gone.</p>
+
+<p>GIRAFFE:	There was nothing left and I just sat there by myself just trying to calm myself down.  I stopped checking the internet and I was like alright, I just need to calm down.  Itâs going to be okay.  A lot of people, my friends especially, they were calling me and they were like dude, we saw what happened to your Twitter.  Are you okay and everything?  It took a day for me to calm down from the panic attack âcause I was completely irresponsive from everyone.  Anybody who tried to talk to me just received the same statement over and over; Iâm in trouble, Iâm gonna get caught, theyâre coming after me, Iâve done such a big mistake, and this was never worth it.</p>
+
+<p>Until the first day passed and I was still super scared when I woke up, super alert from everything, super scared from everything.  I went into this extreme state of depression.  [MUSIC]  I was reading the articles roll out saying that oh, Hacker Giraffe quit, people calling me a coward for backing out, people saying look, thatâs what you get.  Thatâs what you deserve.  The worst thing is that people couldnât reach out for a comment right, so they just had to come up with their own story and own reason why everything happened.</p>
+
+<p>JACK:	Hacker Giraffe spent almost two weeks in this severe depression, isolating himself in his room, trying to ignore the whole thing as hard as he could.  After some time he had finally calmed down from all this.</p>
+
+<p>GIRAFFE:	I can go out and I actually did go out for the first time in two weeks.  It was kind of like hey, Iâm on the road to recovery right now.</p>
+
+<p>JACK:	This whole story took place in the last two months starting late November 2018.  Itâs amazing how so much has happened in such a short period.  Listening to Hacker Giraffe tell his story, it kind of sounds like hacking is like a drug.  Thereâs such a rush and a high when it first happens and you forget about the real world for days.  Then you start to come down and feel terrible and need a new bump to feel happy again.  Iâm hoping he really has quit this persona entirely.</p>
+
+<p>A week ago Hacker Giraffe logged into his Twitter account [00:55:00] to check it one last time and leave a few last words, then logged out possibly for the last time ever, unless the urge to get another high from hacking is overwhelming and heâs drawn to the sweet glow of popularity again.  As for PewDiePie heâs still just barely beating T-Series.  Itâs been neck and neck every day.  Since Hacker Giraffe started, PewDiePie has gained an extra 17 million subscribers and surely some of those people subscribed because of Hacker Giraffe.  Thereâs a comic I read once.  âYou can be famous, you can be a criminal, but you canât be a famous criminal and still expect to have your freedom.â</p>
+
+<p>JACK (OUTRO):	[OUTRO MUSIC] Youâve been listening to Darknet Diaries.  Thanks to the Hacker Giraffe for giving us the whole story.  For show notes and links, check out darknetdiaries.com.  This show is made by me, the hacker, hacker hippo, Jack Rhysider and theme music is by the hungry Breakmaster Cylinder.</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+<p>Transcription performed by Leah Hervoly
+www.leahtranscribes.com
+[L1]</p>
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

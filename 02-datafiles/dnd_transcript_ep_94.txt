@@ -1,0 +1,579 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>Mariposa Botnet â Darknet Diaries</title>
+	<meta name="description" content="Chris Davis has been stopping IT security threats for decades. In this episode he tells a few tales of some threats that he helped stop.">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Mariposa Botnet â Darknet Diaries">  
+	<meta name="twitter:description" content="Chris Davis has been stopping IT security threats for decades. In this episode he tells a few tales of some threats that he helped stop.">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/butterfly.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/94/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Mariposa Botnet â Darknet Diaries" />
+	<meta property="og:description"        content="Chris Davis has been stopping IT security threats for decades. In this episode he tells a few tales of some threats that he helped stop." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/butterfly.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/94/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/butterfly.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/94/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="Mariposa Botnet â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/butterfly.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 94: Mariposa Botnet</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://www.podtrac.com/pts/redirect.mp3/traffic.megaphone.fm/ADV3093716691.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/94/",
+			   "title": "Ep 94: Mariposa Botnet"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/94">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[START OF RECORDING]</p>
+
+<p>JACK: 	Hey, itâs Jack, host of the show.  I was talking with some online criminals the other day, which I guess I talk to criminals a lot.  Itâs kinda weird.  But someone told me a story that really put me in deep thought.  Okay, so, the story goes â and I have no way of confirming this is true, but this guy swears itâs true; he told me that he knows this guy, an online scammer, hacker, criminal guy who was caught and arrested in 2016.  Now, at that time, Bitcoin was just worth $600 per coin.  The police seize everything from this guy; his computers, his phones, all electronics, CDs, thumb drives, everything.  But they didnât take his notebook and in that notebook was the private key to his Bitcoin wallet.  He was able to stash it in a safe place before going to prison.  Currently heâs still in prison and Bitcoin has risen above $30,000 per coin.  This guyâs wallet has eighteen Bitcoins in it.  Heâs due to get out next year and the police still donât know about his hidden Bitcoin.  It was only worth $10,000 when he got arrested, but today itâs worth almost a million dollars.  All heâll need to do to get that Bitcoin is to find the private key in that notebook he wrote down five years ago.  Thatâs such a trip for me to think about, a criminal losing everything, starting from scratch, but the day he walks out of jail, heâll be a millionaire all because he was able to hold onto that Bitcoin the whole time.
+<!--more-->
+(INTRO):	[INTRO MUSIC] These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	Today, we hear a story from Chris Davis and like many people in this podcast, his story starts out in high school.</p>
+
+<p>CHRIS:	Itâs funny; I actually didnât finish high school which was a bit weird.  I dropped out in grade eleven and moved out on my own.  I started picking up odd jobs working on peopleâs computers and pulling cable through ceilings and stuff like that to network small offices, and that sort of turned into a career path for me.</p>
+
+<p>JACK:	Chris grew up in Canada and his home life was rough.  He ventured out on his own at a young age and he somehow was able to get by.  At the same time, he loved computers and learning about protocols and coding and operating systems and networks.</p>
+
+<p>CHRIS:	I went from that to a lot of contract work.  I ended up with a contract working for the federal government which turned into a bigger job working for the federal government in Canada.  Did that for many years.</p>
+
+<p>JACK:	What was â where did you work there?</p>
+
+<p>CHRIS:	Well, I worked in a lot of different areas.  Some of it I canât talk about; some of it I can.  Itâd beâ¦</p>
+
+<p>JACK:	Was it like, intelligence?  Were you doing Canadian top-secret intelligence stuff?</p>
+
+<p>CHRIS:	Some of it was.  A lot of it was doing cyber-security related red team work, so weâre doing exploitation or attack simulations.  Iâve done that type of work for just about every major government department in the federal government.</p>
+
+<p>JACK:	Whoa, whoa, whoa, letâs slow down here.  Chris really didnât want to talk about his time working for Canadaâs intelligence agencies, but you know what?  This is common for everyone Iâve met whoâs worked there.  I can barely get anyone to even say what department they worked in, and the same goes for the UK, too.  Iâve met people who are a part of GCHQ but wonât peep a word of it with me.  But that wonât stop me from looking into it more.  So, what is NSAâs equivalent in Canada?  Well, itâs called the Communications Security Establishment, or CSE.  Yeah, itâs pretty secretive of what goes on in there, but Iâve found a recruitment video, so letâs take a listen.</p>
+
+<p>HOST1:	[MUSIC] You may be the smartest person on your block.  You may have the best marks in the history of your program.  You may have written some of the most robust code ever, speak and write ten languages fluently, or be scarily bright in math, physics, or engineering, but we have just one question for you.  Can you keep a secret?  We are the Communications Security Establishment Canada.  Weâre serious, really serious about our mission.  We provide the government of Canada with foreign signals intelligence and protect information of national interest through leading-edge technology.  We do all this while facing the increasingly complex threat of cyber-terrorism.  But back to the keeping a secret part; [00:05:00] you see, that motherload of information weâve talked about has enormous strategic and economic value to Canada.  As you can imagine, it is highly prized by those who would create chaos and threaten our safety and security.  How we protect it is top-secret.</p>
+
+<p>JACK:	I donât know if Chris worked at CSE or not and I donât know if he was a full-time employee or just a contractor.  I guess heâs good at keeping secrets though, huh?  But all I have to go by is the statement that he just said a moment ago, that he wasâ¦</p>
+
+<p>CHRIS:	â¦doing exploitation or attack simulations, so Iâve done that type of work for just about every major government department in the federal government.</p>
+
+<p>JACK:	Yeah, I guess the citizens of Canada must really trust the government.  Yeah, we know we canât ask what youâre doing and we know you canât tell us, but we just assume youâre on the good side, I guess.  Thereâs no transparency at all.</p>
+
+<p>CHRIS:	Youâre right, thereâs much less transparency.  I think weâre more laid back than our American friends.  I think there are people that certainly donât trust the government and there are some â there are sort of some freedom of information-type acts and whatever but I think that all-in-all, youâre right; weâre just a little more laid back about that stuff.  But anything that you do for the security services in Canada thatâs â or in the intelligence space gets sealed for 101 years or something.</p>
+
+<p>JACK:	So, you can imagine what kind of exposure and skills he picked up doing this kind of work.  Now, somewhere in this time he gets married and still has a burning desire to learn more about computers, tech, hacking, whatever.</p>
+
+<p>CHRIS:	So, when Iâd get home from work, Iâd be on the computer trying to learn more, trying to see what the bad guys are up to, and this guy, Curador, [MUSIC] was bragging about all the different e-commerce sites heâd compromised and was publishing peopleâs personal credit card information online.  He was just being a jackass.</p>
+
+<p>JACK:	A person named Curador had posted online that he broke into different e-commerce websites, stole a bunch of credit cards, and then posted them to his own websites for anyone to use.  Curador was really bragging about what he did and how bad the security was for the places he hacked into.  He actually called himself the saint of e-commerce, and he would call up radio shows and boast about what he did.</p>
+
+<p>HOST2:	[MUSIC] Welcome to Internet News Radio.  Curador said he likes to compare himself to the main character in the movie The Saint.</p>
+
+<p>CURADOR:	Basically itâs my delusions of grandeur coming into full view.</p>
+
+<p>HOST3:	Youâve got potentially several law enforcement agencies in several countries tracking you.</p>
+
+<p>CURADOR:	Yeah.  It doesnât concern me at all.  They couldnât, theyâre bad law enforcement.</p>
+
+<p>CHRIS:	I donât know, it just sort of bothered me that he was being â he was bragging so much and being so full of himself.  I noticed he hit a couple of Canadian companies and for some reason that triggered me, I guess.  [MUSIC] I started going after him.</p>
+
+<p>JACK:	Ah, interesting challenge, huh?  Can someone who develops exploits and carries out hacks for the Canadian government track and find this arrogant criminal?  Chris was on the trail.  Step one is to look at the logs, but news agencies and victims werenât publishing logs, so he had to go get them himself.</p>
+
+<p>CHRIS:	Phone people up and say hey, can I help you with the problem you have?  Iâm not gonna charge you anything.  I just want to try to catch this guy.  More often than not theyâre like yeah, sure, have access to the inside of my network, have access to my logs.  I wrote a bunch of firewall rules for one of them, helped a guy with â do some filtering on his router and, whatever.  Yeah, they just really hand me access to whatever I asked for.</p>
+
+<p>JACK:	He was able to get the network logs and web server logs of this criminal activity, and this was a wake-up call for these e-commerce sites.  They werenât familiar with all the things that criminals could do and thought they had secured their sites very well, so they appreciated the help from Chris.  He started discovering things from these logs.</p>
+
+<p>CHRIS:	He would hide himself a little bit when heâd breach a site, and then heâd come back later and not hide.  So, when heâd come back later, it did look like normal web traffic.  It didnât look like part of the breach, but when you take three or four of them together and you go hm, why within half an hour or an hour of the breach â before itâs published, before anybody knows about it, is there always this same IP address from Wales showing up to look around the site?</p>
+
+<p>JACK:	This is the power of looking at multiple victimsâ logs, trying to correlate them. Using geolocation, Chris figured out that Curador was somewhere in the UK.  Next, Chris looked at what exploits he was using.</p>
+
+<p>CHRIS:	The exploits he was using were vulnerabilities that were discovered by a friend of mine named Jeff Forrestal, so I knew exactly how this kid was doing it.  I went to the RCMP in Ottawa and they didnât seem to want to do anything with it.  [00:10:00] Then one of the victims that was in Pennsylvania I guess had called their local field office of the FBI.  I got a phone call at lunch one day from this FBI agent who said hey, I hear youâre working on this.  Can you share what you got?  I said sure, and I kinda became friends with the SA and shared everything.  They took it from there and worked with the various police forces in the UK, and showed up at his door one early morning and made the arrest.</p>
+
+<p>Then I got a phone call from him at like, 6:00 in the morning that day and he said hey, we made the arrest, and thanks very much, and the FBI is doing a press release on this.  I tried very hard to get your name in that release but they donât want to acknowledge that somebody else helped us.  He said so, Iâm not saying this but if you were to put out your own press release, that might be a good idea.  I had a friend of mine that was a journalist for one of the major papers in Canada and I called him and I said, what should I do?  Heâs like, Iâm writing your press release for you right now; Iâll send it out.  I said okay, and then all these TV trucks and stuff showed up at my house and gave my career a bit of a boost there in the late 90s or right around 2000.</p>
+
+<p>JACK:	Now, almost immediately after the arrest, PBS Frontline decided to do an episode on this.</p>
+
+<p>HOST4:	[MUSIC] Due to the graphic â[SCRAMBLED CHANNELS]</p>
+
+<p>HOST5:	Made possible by contributions to your PBS station from viewers like you.  Thank you.</p>
+
+<p>JACK:	I found an old VHS recording of this episode.  Now, this happened back in the winter of 2000 and guess what?  Chris is in the video.</p>
+
+<p>HOST6:	Chris Davis tracked him, following electronic footprints around the world without leaving his computer terminal, and he caught him and notified the FBI.</p>
+
+<p>CHRIS:	Their bragging got to me.  I just wanted to say okay, look, youâre really not this good.  Youâre not as good as you think you are.  Iâm guessing I have a really good idea how youâre doing this.</p>
+
+<p>JACK:	The FBI and UK police figured out what ISP owned the IP that did these attacks from and asked that ISP for information on what customer was using that IP during the time of the attacks.  From here, the authorities found the home address of Curador, who was in a little town in Wales in the UK.</p>
+
+<p>CHRIS:	A little town called Clynderwen just outside of Cardiff.</p>
+
+<p>HOST6:	[MUSIC] UK headquarters for the villain Curador turned out to be a bedroom in rural Wales, littered with broken computers and new age books, pop cans and ash trays, and a TV set where twice a day a bored teenager indulges an addiction to reruns of the 60s spy series The Saint.  Curador is Raphael Gray, eighteen years old.</p>
+
+<p>JACK:	They arrested him and took him to a nearby town to be processed, then they let him to go to face a judge later on.  But then the producers of PBS Frontline had this idea.  They thought what if Chris and Curador could meet up in person?</p>
+
+<p>CHRIS:	They said hey, can we fly you to Wales to go meet this guy that you helped the FBI arrest?  I was like okay, I guess so.  Is that normal?  Is that what weâre supposed to do?  Weâre supposed to go hang out with the guy after we bust him?  Okay.  So, they flew me to Wales, put me up in this fancy hotel.</p>
+
+<p>JACK:	So, Chris and the team from Frontline went to Curadorâs home in Wales.</p>
+
+<p>CHRIS:	This is your room?</p>
+
+<p>CURADOR:	Yeah.</p>
+
+<p>HOST6:	Heâs remarkably friendly considering that just weeks earlier heâd opened his door to be swarmed by a squad of police officers and an FBI agent.</p>
+
+<p>CURADOR:	All-in-all there was like, ten of us in this room all crowded round, but there was less floor space in here than there is now, a lot less.  So, theyâre all crammed in here.  Four of them wore plain clothes and there was one guy wearing a sort of grey trench coat looking very disheveled, unshaven, and could seriously look like he had some jet lag.</p>
+
+<p>CHRIS:	Iâm guessing thatâs FBI, yeah?</p>
+
+<p>CURADOR:	Yeah.  That was confirmed later on.  He wouldnât admit it to begin with.  He claimed to be a Welsh police officer with a strong accent.</p>
+
+<p>HOST6:	Raphael sees himself as a fairly typical hacker, not so much a crook as a nuisance.</p>
+
+<p>CURADOR:	I think obviously Iâm just a very nosey person.  Iâm like your nosey neighbor on steroids, basically.  There is a lot of adrenaline, if nothing else, while youâre trying to track it down.  Iâll sometimes do â Iâll spend two days solidly trying to do something without sleep, without anything, just constantly trying to do it.  When you finally get through, the relief is â not just from the fact you got in, but now you can sleep.  Your body is just literally crying out in relief from every possible avenue.</p>
+
+<p>HOST6:	They are explorers, tirelessly traveling, fueled on caffeine, looking in cyber windows, trying cyber doorknobs because theyâre bored or just because they can.</p>
+
+<p>JACK:	[MUSIC] But what â so, what was it like meeting this guy?</p>
+
+<p>CHRIS:	It was â you know, it was weird, obviously.  He really seemed like kind of a charming, goofy, kinda nerdy kid.  He was eighteen.  [00:15:00] He did not come from a rich family or probably have a lot of wonderful options of fun things to do in the small town that he lived in.  I think we do see a lot of cyber-crime born out of a lack of career options and socioeconomic issues in various places around the world.  I think it was a little bit of that.  I kinda felt sorry for him a bit, I guess.  He definitely could have made better choices but when youâre eighteen, youâre â you do dumb things when youâre eighteen.  We all do.</p>
+
+<p>JACK:	Yeah.</p>
+
+<p>CHRIS:	Yeah, I think I liked him.  That was really all there was to it.  We kinda got along.  We didnât stay in touch or anything.  Iâd love to know what heâs up to now.</p>
+
+<p>JACK:	Did you feel bad for getting this kid arrested?  Itâs obviously his actions, but how do you â do you deal with that mentally?</p>
+
+<p>CHRIS:	Yeah, I did a little bit, I guess.  I think that it was â he was doing something wrong and needed to stop, and that was the way to make it stop.  I donât feel bad about that.  I feel bad â I donât feel bad about what I did.  I feel empathy for the situation he was in, I think.  I also â I made dumb choices when I was eighteen.  Not like that; I didnât end up in jail or anything, but you feel for the guy, right?</p>
+
+<p>JACK:	This was all going on while he was in Canada working as a contractor.</p>
+
+<p>CHRIS:	Anyway, I left that and went down to Austin, Texas in 2005 and joined Dell.  I was the technical lead for their security team for a few years.  It was a very small team.  There was like, five or six of us for pretty much all of global security for Dell.  As you could imagine, that was pretty stressful.  It was 100,000 employees and 80,000 computers on the wire at any given second.  I think Dellâs budget at the time in the mid-2000s, they probably spent more on coffee than they did on cyber-security, so it was a bit of a uphill battle.  Then I had a friend of mine at Georgia Tech, a guy named David Dagon who was starting a anti-botnet company called Damballa.  We chatted and he said hey, why donât you come out to Atlanta?  I canât pay you as much but itâll be more fun.  I said absolutely, get me the hell outta here.</p>
+
+<p>JACK:	He took a pay cut and moved to Atlanta to help this startup.  But after doing that for a while, his wife convinced him to move back to Ottawa, the capital of Canada, and once there, he started a company called Defense Intelligence.</p>
+
+<p>CHRIS:	Which was focused a lot more on defense and blue-team-type work than the attack stuff.  Our focus was compromised detection and compromised mitigation.</p>
+
+<p>JACK:	Now, one of the things about being a network defender is that you have to constantly keep an eye on what the bad guys are doing, what tools are out there, their techniques, and what services criminals like using.  Chris likes to stay a step ahead of the bad guys by knowing all this.</p>
+
+<p>CHRIS:	One of the things that Iâve done over the last several years, [MUSIC] the last, well, fifteen years or whatever of my life has been building relationships with people that own infrastructure that bad guys love to use.  So, it could be domain registrars, dynamic DNS providers, hosting providers.  Those relationships which start out with me meeting them at a conference and buying a beer, Iâve sort of moved those into more formal arrangements where weâve got contracts in place and I can get access to data around what bad guys are up to, particularly in how they set up the infrastructure used prior to an attack.  At that time, I was really good friends â still am really good friends â with a guy that owns a very large dynamic DNS provider which I wonât name just âcause I donât want to burn him.  So, one of the things that I would do is I would review the authoritative main server traffic flowing in and out of his environment to look for new spikes, new patterns which is often indicative of a new botnet growing.</p>
+
+<p>JACK:	So, Chris took a look at some of the logs from this DNS provider and found something interesting.  He was noticing that at a certain time of day, there was a huge spike of traffic all going to a few domains.  [MUSIC] So, why would you see a spike in traffic?  Well, maybe itâs a news site thatâs covering breaking news or a big sale at an online store or some sports website thatâs playing a live game.  But spikes like that are more like plateaus; they jump up at first but then stay high for an hour or so and then die down.  What Chris saw was a spike that hundreds of thousands of computers were calling a certain website, but only for like, one second and then stopping.  [00:20:00] Huh, why would they do that all in sync at the same exact moment, then stop?  He looked at the domains that these computers were calling, and they were weird.  One was butterfly.bigmoney.biz.  Another was quertasdf.sinip.es.  These were not news sites or even popular sites at all.  When Chris would go to them, they displayed nothing on their website, so why were hundreds of thousands of computers going to these seemingly empty sites at the same time?</p>
+
+<p>CHRIS:	Sort of were able to start to put together a picture of ooh, this is a really big botnet.  It wasnât just one botnet; it was actually multiple botnets sort of under one umbrella.</p>
+
+<p>JACK:	The reason why there are a bunch of computers hitting all these domains at the same time is because those were infected computers looking for commands of what they should do next.  Those servers they were reaching out to are known as command and control servers, and when you have a lot of infected machines that all get their commands from a central server, this is a botnet.  [MUSIC] He was able to work with some friends and see what malware was used here, and systems were being infected with something called the Butterfly Bot.  Now, Butterfly Bot was somewhat already known but it really wasnât doing much out there.  So, it seemed like someone might have taken the Butterfly Bot malware toolkit and was building a botnet with it.  Chris looked at the command and control server logs a little bit more and determined that whoever was running this botnet was probably somewhere in Spain.  So, Chris combined the Butterfly Bot and the botmasters being in Spain, and called this the Mariposa botnet, which means Butterfly in Spanish.</p>
+
+<p>CHRIS:	We went ahead working with Panda.</p>
+
+<p>JACK:	Panda Security is an antivirus company in Spain, and he figured they might be able to help since they battle stuff like this all the time in Spain.</p>
+
+<p>CHRIS:	We leaned on them to help with some language barrier stuff and to help us analyze the binaries.  So, they helped â we kinda put together this working group called the Mariposa Working Group which was Panda, ourselves, Georgia Tech, and a few other folks.</p>
+
+<p>JACK:	Collectively, the group combined their powers to try to stop the Mariposa botnet which was growing in size.  Over a million computers were now infected at this point, and it was pretty dangerous.</p>
+
+<p>CHRIS:	It was capable of doing a lot of different things.  It was capable of distributed denial-of-service attacks, keystroke logging, credential theft, and the different botmasters were using it for different things.  We did see a lot of DDoS attacks.  By default, the credential theft would occur as soon as the thing was installed.  Iâve never been one to really focus on the features of the piece of malware.  To quote George Kurtz at CrowdStrike, he once said âIf someoneâs shooting at you, do you turn around and dig the bullet out of the wall and try to figure out what caliber it is?â  So, Iâve always thought about that and thought no, you probably want to know who the guy is and why heâs shooting at you.  So, thatâs the features and functionality; well, it gives a bad guy remote access to your computer to do whatever he wants.  Thatâs bad.</p>
+
+<p>JACK:	Right, this thing was ugly, so the working group wanted to end it.  But how do you stop a botnet?  It has hundreds of thousands of computers, if not millions of computers connected to it.  What are you gonna do, go through every one and disinfect it?  No, thatâs not gonna work.  But remember, they all call back to that central command and control server for instructions.  So, their theory was if they could take over or take down those command and control servers, that would render this botnet ineffective.</p>
+
+<p>CHRIS:	[MUSIC] The plan was that we were going to take all the command and control domains that we knew about which was, again, multiple botnets under one umbrella that we were calling Mariposa, and we were gonna take all of their command and control domains away at the same time, two days before Christmas, I think, if I remember right.  Maybe it was the 21st or the 22nd of December.</p>
+
+<p>JACK:	One of the things Chris is good at is connecting with other companies to work together, so he reached out to the DNS providers that this botnet was using.  Chris showed them that these domains were being abusive, and the DNS provider took those domains down, which effectively neutralized this botnet.  Infected systems could no longer send their stolen data back to the central server or get further instructions.  So, those systems were still infected, but at least they werenât leaking data or doing anything more.</p>
+
+<p>CHRIS:	We went ahead and did that; we pointed it all to our sinkhole, and thatâs when we started to notice exactly how big the botnet was.  It was huge.  âCause when you take the command and control domains away and you point them to your sinkhole, you get to see all the victims trying to communicate with command and control.  I think in the first twenty-four hours, we had fourteen million unique IP addresses hit the sinkhole.  It was the biggest botnet I had ever seen in my life and it still is.</p>
+
+<p>JACK:	Wow, thatâs a lot.  This was a win for the Mariposa Working Group.  Next, Chris was trying to investigate who was behind this botnet.  Were they state sponsored?  Were they criminals?  What clues in the malware and command and control servers might lead them to [00:25:00] figure this out?  Working with Panda and some other researchers, he was able to figure out who had been connected to the command and control servers as admins.  From there, he was able to trace this back to some IPs that belonged to an ISP.  Again, it was somewhere in Spain.  He somehow got the ISP to tell him who that IP address was registered to, which gave him names, phone numbers, and e-mail addresses of the people suspected to be behind the Mariposa botnet.</p>
+
+<p>CHRIS:	We kinda put this together in a nice report, sent it to Guardia Civil which was the federal police force in Spain, also in coordination with the FBI.  They went and arrested these two guys.</p>
+
+<p>JACK:	These guys apparently had some nice things in their home, with no real means to prove where they got it from.  It seemed like these were the guys behind this, or at least they were some kind of criminals.  But now that the police had arrested them, Chris and everyone else pretty much wiped their hands with this and went back to work.  [MUSIC] But then a few days later, Chrisâ internet goes down.</p>
+
+<p>CHRIS:	We had fiber run to the office and our fiber provider â we noticed that the internet was down and our fiber provider started phoning us and said hey, weâre getting a huge amount of traffic destined to your â I think we had a /24 of IP space or something.  We were like, oh.  Then he was like oh shit, this is really bad.  This just dropped part of the university.  It just dropped a government office.  Weâre starting to lose connectivity all over the place.</p>
+
+<p>JACK:	They quickly start looking at the traffic and notice something; the Mariposa botnet was back online and it was attacking them directly.  But how is this possible?  The guys behind the Mariposa botnet were arrested.</p>
+
+<p>CHRIS:	They went and made the arrest and they released them the same day.  The Guardia Civil went and made the arrest of these two fellows and seized some equipment, apparently.  At the time, I guess they werenât really familiar with cyber-crime in Spain and didnât have a lot of policies and procedures on what to do, so they â I think they held them for twenty-four hours and then they released these two people.  Those two people managed to get one or two of the command and control domains back the next day.</p>
+
+<p>JACK:	Iâm not sure how they got it back, but if you could somehow send one more command to all the infected systems that thereâs a new command and control server, then suddenly the botmaster has control of everything again.  I guess they planned for something like this and conducted their contingency plan.</p>
+
+<p>CHRIS:	Then they leveraged it to create a massive DDoS attack against us in Ottawa which took out our fiber provider, part of a university, a couple government offices.  A lot of different businesses suddenly had no internet for about an hour and a half, two hours.</p>
+
+<p>JACK:	See, both Chris and the team at Panda Security were proud of their takedown and arrest, and so they published reports about this Mariposa botnet and how they were able to take it down.  Well, they guys that got arrested saw the report and they knew exactly who to seek revenge on for getting them arrested.</p>
+
+<p>CHRIS:	Then after we managed to wrestle it back from them and stop the DDoS, I think it was like, three days later they showed up at Panda Labâs headquarters looking for jobs.</p>
+
+<p>JACK:	What?  What?  Really?</p>
+
+<p>CHRIS:	Yeah.  Yeah.  Yeah, I get a message from Pedro Bustamante who ran the research lab at Panda Antivirus.  He goes, youâre never gonna effing believe this.  I said, what?  Heâs like, these guys showed up this morning looking for jobs, both of them.</p>
+
+<p>JACK:	Wow, thatâs audacious, huh?  To build a massive criminal botnet and then ask for a job at the security company who took you down, all while still waging a major attack on Chrisâ company.  Well, because they didnât stop their criminal behavior, the police arrested them again and the botnet was sinkholed once again.  Once they were arrested again, that was that.  Chris was done with this incident.</p>
+
+<p>CHRIS:	Yeah, it sort of went out of my hands.  I know the FBI and Guardia Civil did a big press release.  I think we got thanked in that, so that was nice.  Then, yeah, it was sort of out of my hands.  I would get these inquiries from the FBI every now and again for some updates and victim counts from the sinkhole or can you send us over a dump of log data, and that was about it.</p>
+
+<p>JACK:	In the end, the Spanish police discovered this botnet was ran by a cyber-gang called the DDT.  A guy named Ruiz was the leader and Rivera and Rios were also part of it.  I believe they served some time in jail in Spain for their actions, and that was the last we heard about the Mariposa botnet.  Or was it?</p>
+
+<p>CHRIS:	Fast-forward a couple years later and I get a phone call from the FBI saying hey, can you come to Slovenia to testify at this trial?</p>
+
+<p>JACK:	[MUSIC] Come to Slovenia?  But these guys were all from Spain; whatâs Slovenia have to do with this?  [00:30:00] Well, as it turns out, the guys arrested in Spain didnât actually write the Butterfly Bot.  They bought it from a guy in Slovenia, a guy named Iserdo, and Iserdo was arrested for being the creator of this malware.  So, hereâs the next big question, is this guy created the malware itself but did not build this Mariposa botnet.  He just created the malware.  So, thereâs this â I mean, how do you feel about this?  Just because a person creates â Smith &amp; Wesson canât be tried for all the murders that have happened with Smith &amp; Wesson weapons, right?  So, what do you think of how this works?</p>
+
+<p>CHRIS:	Well, I think that thereâs intent and one of the things that cyber-criminals â a lot of them make the same mistake over and over again which is Iâm gonna build this thing and Iâm gonna say hey, youâre only allowed to use this to test your own stuff.  Whatever, but the intent of the code is to be stealthy, to hide, to do this, to do that.  Itâs to commit cyber-crime.  Itâs pretty obvious that that was the intent of the Butterfly kit.  Then on top of that, they got logs of him having conversations with people about the cyber-crime theyâre committing using his tool.  Then theyâve got them â people paying him for the tool, saying Iâm about to use this for cyber-crime, and him taking their money.  It was a lot of different laws that were broken there.  It wasnât just he built a kit and had nothing to do with it.</p>
+
+<p>JACK:	The FBI was assisting with this investigation because Slovenia was kind of new to investigating cyber-crime, and so the FBI was more of an observer and just helping out with the case.  So, Chris went to Slovenia to testify about what he witnessed going on with the Mariposa botnet and how the Butterfly Bot worked.  In the end, Slovenia courts found Iserdo guilty, and he had to serve almost five years in prison.  When Iserdo got out of prison in 2017, Bitcoin was booming.  It just crossed $10,000 per coin for the first time, and so he immediately jumped into Bitcoin.  He built a website called NiceHash which was one of the more popular mining pools for Bitcoin miners.  [MUSIC] Basically when youâre mining Bitcoin, doing anything on your own is quite hard, but if you pool together with a bunch of other people, then you have a much higher chance of making money at it.  So, he created a mining pool that anyone can join and contribute their computing power to it to make some Bitcoin.</p>
+
+<p>This NiceHash mining pool that Iserdo made worked really well.  In fact, in 2017, I was actually mining using NiceHash myself.  I didnât know it was ran or started by the guy who was a convicted criminal at the time, though.  At the end of 2017, just as Bitcoin was hitting $13,000 per coin, NiceHash announced they had 4,700 Bitcoin stolen from their wallet.  This was about 60 million dollars that were owed to their users.  Iserdo said they were victim to a phishing attack.  They tried to pay it back, but it took them three years to pay all those stolen Bitcoin back.  I didnât get hit by this because when I was mining, I would just immediately withdraw my Bitcoin as soon as I earned it.  After Chris ran Defense Intelligence for a while, he started a new company which was acquired by Endgame.  Then he started another company which was acquired by CrowdStrike.  About six years ago, he started a new company called Hyas.</p>
+
+<p>CHRIS:	So, Hyas focuses on the infrastructure that bad guys like to use and the relationships that we have with those infrastructure providers to better identify attacks before they happen.  So, you can think about any time that an adversary wants to set up a new botnet, they have to get servers for command and control, they have to generally buy domain names.  If youâre creating a phishing attack, you have to set up a website that looks like Bank of America.  So, what weâve done is built relationships with the various providers where we see high rates of recidivism, where we see the bad guys go back to often, over and over again, and we leverage those relationships to tag and track those bad actors and identify campaigns before they become campaigns.</p>
+
+<p>JACK:	He then gives his customers the ability to search through some of the logs that he sort of has exclusive access to so that people can track and identify threat actors.  One day, Chris was looking at his own tool and noticed something unusual.</p>
+
+<p>CHRIS:	[MUSIC] We originally noticed â again, much like Mariposa â spikes in traffic at the authoritative level.  This was a combination of [00:35:00] registrar partners and dynamic DNS partners where we saw traffic spikes that were indicative of a botnet growing.  But what was most interesting is who the victims appeared to be in the early stages.  So, where were we seeing the traffic originate from and the patterns of behavior?  A normal person wonât sit at a keyboard and hit Enter every two minutes and thirty-two seconds over and over again all day.  Thatâs not human behavior, right?  So, when we see a domain lookup every one minute and thirty seconds to the second when the cache â when the TTO expires, when the cache expires, we see that cache refresh occur over the course of, say, twenty hours, we know that thereâs probably a computer inside that environment thatâs compromised with something, particularly if the domain theyâre looking up happens to be a known command and control for a piece of malware or various pieces of malware.  We saw that type of traffic.</p>
+
+<p>JACK:	Okay, so thereâs a potential botnet on the rise again, or something.  They see a lot of computers on the internet are showing signs of infection since theyâre all acting in synchronicity again.  So, Chris wanted to know what computers are being infected by this.  When he saw what computers were infected, it really surprised him.</p>
+
+<p>CHRIS:	[MUSIC] It was Franceâs power grid, like a bunch of nuclear power stations.  Then we noticed traffic â as we zeroed in on this group of command and control domains, we noticed that it was also Franceâs rail system, hospitals, banks, water treatment systems.  It was basically critical infrastructure.  It was really, really â there was very little that wasnât critical infrastructure that was beaconing to these command and control systems.</p>
+
+<p>JACK:	Whoa, a lot of critical infrastructure related to France was infected by some kind of botnet?  Thatâs not good.  He wondered if the botmaster had purposefully infected French computers or if the botmaster even knew he had infected these systems at all.  Sometimes botmasters donât know what theyâve infected; they just launch a virus to the world and whoever gets hit gets hit.  Itâs like spray and pray.  So, he dives into this investigation on his own, but started showing some of the people he worked with what he found, and others were getting curious too and helped investigate.  Together, they looked at the malware involved and they studied the command and control infrastructure and tried to map out what this criminal has done and how sophisticated they were.  From adding up all these bits, he felt confident that this hacker was sort of mid-level, acting alone, and probably not state-sponsored.  Once he had enough evidence of whatâs going on here, he then reached out to the French authorities.</p>
+
+<p>CHRIS:	Reaching out to the French authorities was a very difficult process.  We didnât get a lot of response from anybody.  I went on some of my trust groups and mailing lists and reached out and didnât get a lot of response from people.  So, we actually ended up going to the FBI âcause we work with them so much and saying can you help us with this?  So, we sent them our report.  They reviewed it to make sure we werenât crazy and they werenât going to embarrass themselves.  They reviewed it, verified our findings, and then they reached out to the French government from their legal attache at the US embassy in Paris and delivered our report to them.  Then we never heard anything from them since.</p>
+
+<p>JACK:	But just because he didnât hear from the French authorities doesnât mean he canât poke further.  Chris contacted the dynamic DNS provider which was controlling the command and control server from his botnet and asked for more information on that user.  The DNS provider gave more information to Chris.  He then had a user agent, an IP address, and an e-mail address that was used to connect to that userâs account.  Chris used geolocation to try to figure out where the hacker was located, and it pointed to Morocco.</p>
+
+<p>CHRIS:	[MUSIC] Google-searching that e-mail address, we found that he had a outdoor camping company outside of Morocco that would take foreigners on these desert tours.  Yeah, so we were able to tie it back to that, and that he ran that out of his house and had his home address listed.  Yeah, so, we were able to really put it down to exactly where he lived.</p>
+
+<p>JACK:	Because the attacker was in Morocco, Chris called him the Kasbah Hacker and published a report on this.  Some researchers saw this report that Chris and Hyas put out and looked into it further.  They saw the name of the hacker and started searching around the internet for him.  They found that he was also taking credit for submitting different security bugs to Apple and Dell and Microsoft.  This gave an extra clue that the person was familiar with hacking, finding bugs, and using them.  They also found he used to run a computer repair business, and then found his e-mail address was a registered user on some criminal hacking forum.  This gave them a new username to scour the internet for, and his LinkedIn profile showed that heâs a penetration tester and programmer.  At this point itâs pretty clear [00:40:00] they found the person who completely hacked into Franceâs power grid, trains, and even nuclear facilities.  He was happy to report this to the French authorities, but it didnât look like they were doing much with this.</p>
+
+<p>CHRIS:	So, at the point where you hand it over to law enforcement, thereâs not a lot you can do past that.  You kinda have to hope that theyâre gonna do their job and stop the bad guy.  It seemed like France really was â not really interested in doing anything about it.  I went back and looked at some traffic earlier today for those same command and control domains.  There still is French infrastructure that is repeatedly looking up the command and control domain every three minutes, twenty-four hours a day.</p>
+
+<p>JACK:	Hm.  So, that tells me that system never got cleaned.</p>
+
+<p>CHRIS:	Right.  Thatâs exactly right, or it gotâ¦</p>
+
+<p>JACK:	Which also tells me â I mean, I donât know if you had that submitted in your report that got to the French authorities, but it seems to infer that the French authorities didnât action this.</p>
+
+<p>CHRIS:	Thatâs exactly what Iâm inferring, yes.</p>
+
+<p>JACK:	Oh, my god.</p>
+
+<p>CHRIS:	I tried to be nice about it but thatâs exactly what Iâm saying, is that the FBI walked over and handed this to the French authorities and they, I donât know, put it in their trash bin.</p>
+
+<p>JACK:	This isnât the case of one missed memo, either.  This entire thing was written up by the journalist Brian Krebs who published a pretty detailed article on this.  Krebs has a huge reader base which would absolutely have French people reading it, so you would think this would get the attention of the French authorities, right?  But I donât know.  Now, the French critical infrastructure wasnât the only thing hit.  One of the big banks in France was also infected, too.  Chris also listed this bank in the report that he submitted to the French authorities, but decided to also reach out to the bank directly and just tell them.</p>
+
+<p>CHRIS:	I talked to one of the security guys at one of the big banks in France that was affected.  They cleaned things up very quickly.  Then afterwards, I donât know, maybe three weeks or so after the FBI had handed the report to the French authorities, I reached back out to my contact at the French bank and said oh, have you heard from the French authorities about this?  âCause youâre listed in the report.  He said no, no, we havenât heard anything but we cleaned it up; thanks very much.  I was like sure, no problem.  Yeah, so, three weeks later, the authorities hadnât reached out to one of their largest banks that was actively breached.</p>
+
+<p>JACK:	Hm.  Iâm not sure whatâs going on here with the French authorities.  Is France just not able to respond to these kinds of attacks or did they arrest the guy and therefore feel like this eradicated the threat?  Itâs a mystery that I never got an answer to.  But I sure hope they clean those systems and patch whatever vulnerability was used to infect those systems, because hacking will continue until security improves.</p>
+
+<p>(OUTRO):	[OUTRO MUSIC] 	A big thank you to Chris Davis for sharing his stories with us.  You can learn more about his company Hyas by visiting H-Y-A-S.com.  Are you the kind of person who turns this show on to listen to it just before bed but then end up getting so into it that you canât fall asleep for like, a whole hour?  Well, if thatâs you, then I want you to consider donating to the show through Patreon.  This show obviously gives you some pretty good entertainment, so why not directly support it to show your thanks?  Visit patreon.com/darknetdiaries and consider donating.  Thanks.  This show is made by me, the Digimon, Jack Rhysider.  Sound design was done by the ear-turner Andrew Meriwether, editing is done by the AI known as Damienne, and our theme music is done by the potato-smasher Breakmaster Cylinder.  Even though when something calls itself server-less, you and I both know thereâs really a server back there somewhere doing all the work, this is Darknet Diaries.</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

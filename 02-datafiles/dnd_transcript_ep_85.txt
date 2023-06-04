@@ -1,0 +1,767 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>Cam the Carder â Darknet Diaries</title>
+	<meta name="description" content="This is the story of Cam Harrison, aka kilobit and his rise and fall as a prominent carder.">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Cam the Carder â Darknet Diaries">  
+	<meta name="twitter:description" content="This is the story of Cam Harrison, aka kilobit and his rise and fall as a prominent carder.">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/camcarder.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/85/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Cam the Carder â Darknet Diaries" />
+	<meta property="og:description"        content="This is the story of Cam Harrison, aka kilobit and his rise and fall as a prominent carder." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/camcarder.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/85/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/camcarder.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/85/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="Cam the Carder â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/camcarder.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 85: Cam the Carder</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://www.podtrac.com/pts/redirect.mp3/traffic.megaphone.fm/ADV1623934512.mp3?updated=1612748120"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/85/",
+			   "title": "Ep 85: Cam the Carder"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/85">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[START OF RECORDING]</p>
+
+<p>JACK:	I have this theory that if you ever go to Western Union or use a Western Union, you probably have an interesting story as to why.  Hereâs my Western Union story.  This one time I had a job and while working there, I got to be friends with a co-worker.  His name was Billy Ray.  Billy Ray was a wild, crazy older guy who had so many stories that I didnât even know if they were true or made up or what.  I would sometimes hang out with Billy Ray after work.  He had an unusual way of looking at the world; he was pretty suspicious and didnât trust anyone.  He had a lot of street smarts too, and he always made sure to keep an eye on me to help me stay out of trouble, too.  [MUSIC] One day after work which was pay day, Billy Ray asked if I could drive him home.  I said sure.  We hop in my car.  He says hey, on the way home, can we stop by Western Union?  I said Billy Ray, thereâs nothing good for you at Western Union.  Trust me, you donât want to go there.  He said no, no, no, I have to send money back home to my ma in Milwaukee.  I said fine, so we drive to Western Union.  I park on the street right in front.
+<!--more-->
+I tell him listen, Iâm gonna wait here in the car until you get out.  He gets out and goes in.  Now, my car was a little weird.  The back license plate was my legal, normal license plate but the state I lived in didnât require a front license plate.  So, Iâm like well, you know what?  Iâm gonna put a novelty plate on the front if itâs not required, so I put on this license plate that said AREA 51 and it looked like it was from the state of Nevada.  Well, while I was parked there, a cop drove by, saw my AREA 51 plate and laughed.  Then as he went by, he looked back and saw a different plate on the back.  Well, the cop didnât like this and swung back around and parked right behind me on the street in front of Western Union.  He gets out, comes to my car, asks about my two different license plate.  I said oh yeah, oneâs just a fake plate âcause I donât need that one on the front.  He said look, thatâs just wrong.  Donât put a fake license plate on your car.</p>
+
+<p>I told him okay, as soon as I get home, Iâll take it off.  So, he takes my license and registration back to his police car to check if I was wanted for anything.  Well, at this point, Billy Ray comes out of Western Union and comes into my car and says alright, letâs go.  I said well, I gotta wait a minute.  He asks why.  I said well, thereâs a cop behind us.  Heâs like, did you do something wrong?  He looks back and sees the cop coming to the car.  Billy Ray starts flipping out.  He starts shouting nonsense like I knew you were a criminal; I knew from the first minute when I saw you.  What are you, an axe murderer?  What did you do?  I said Billy Ray, why did you get in the car when there was a cop behind me?  Didnât you look first?  He was upset.  He got all fidgety and didnât know what to do.  He asked me should I run?  How bad is this?  I said calm down; Iâll sort this out.  I can hear him start to hyperventilate.  The cop comes up to the window, hands me my license and registration and says have a good day.  I started to drive off.  I explained to Billy that I had a novelty plate that the cop didnât like.  From then on, Billy Ray never asked me for a ride home again.</p>
+
+<p>(INTRO):	[INTRO MUSIC] These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	[MUSIC] Real quick warning before we get started; this episode has some strong language and may not be appropriate for all listeners.  If youâre sensitive to explicit language, you may want to skip this one.  So, itâs fairly common that when I post an episode, there seems to always be someone who messages me afterwards saying hey, Iâm familiar with that story.  They say something like oh, I used to work there or I knew that guy.  Itâs wild but I love hearing any extra bits of detail that I might have missed.  Thatâs how I met this guy, our guest [00:05:00] today.  After publishing Episode 32 titled The Carder, I got a message from a guy named Cameron.  Cam told me I actually got some of the details wrong in that story.  I said how do you know?  He said because he was part of that operation.  This led us to some phone calls to discuss more.</p>
+
+<p>CAM:	Itâs kind of a weird situation, you know, where Iâm at and everything.</p>
+
+<p>JACK:	The more I talked with Cam, the more I learned how crazy his story was.</p>
+
+<p>CAM:	But Iâm kinda weird about it anyway just talking in general with a bunch of people around and then on top of that, like I was saying with the cameras and everything, it just kinda sketches me out a little bit.  It really feels uncomfortable, butâ¦</p>
+
+<p>JACK:	But youâre in the yard of a halfway house; is that what it is?</p>
+
+<p>CAM:	Yeah, Iâm actually at a halfway house.  I did about â a little over â right at about eight years in prison.</p>
+
+<p>JACK:	Oh, well, I guess you know the ending now; eight years in prison, currently in a halfway house which is where we talked over the phone.</p>
+
+<p>CAM:	Now, we have this train about to terrorize us.</p>
+
+<p>JACK:	I hear it.</p>
+
+<p>CAM:	You heard it?</p>
+
+<p>JACK:	[TRAIN BELLS] Yeah.  Itâs coming closer.</p>
+
+<p>CAM:	Yeah, you hear it, huh?</p>
+
+<p>JACK:	You hear that thing all night long?</p>
+
+<p>CAM:	Yes.</p>
+
+<p>JACK:	Gah.</p>
+
+<p>CAM:	They choose the worst fucking property that they can buy, I guess.  Itâs like a cheap â [TRAIN HORN].  Itâs always â all the jails and it seems like almost every jail [TRAIN HORN], every fine establishment like this place is [TRAIN HORN] usually next to a train track.</p>
+
+<p>JACK:	I just wanted to mention this train part because if youâre driving and you hear a train go by, it might be from this podcast.  So, after having chats with him and going back and forth with phone calls, I looked through his indictment and tried to piece together exactly what he did and who he was.  Iâll be honest; Cam wasnât who I was expecting.  Yeah, itâs interesting hearing from you âcause I wasnât sure if you were gonna have a Russian accent or where youâre from, soâ¦</p>
+
+<p>CAM:	I grew up in Augusta, Georgia.</p>
+
+<p>JACK:	[MUSIC] Letâs start at the beginning, or at least back to high school.  His first experience with this side of the internet came when Cam was a teenager.  Cam was selling stuff on eBay to make a little money and his eBay account got hacked.  Someone sent him a phishing e-mail and he fell for it.  He entered his password on the hackerâs website and not on eBayâs.  The hackers then used his password and logged into his eBay account and quickly changed his password and e-mail so he couldnât get in.  He saw that someone listed some fake laptops for sale on his account.</p>
+
+<p>CAM:	Yeah, I couldnât actually understand at the time for the life of me why anyone would do that.</p>
+
+<p>JACK:	In high school, Cam was into computers and would download some pirated movies, too.  One day he realized he could put his computer skills to use at school.  Cam was falling behind at school and wanted to change his grades.  He couldnât actually figure out how to hack into his grades but he did hack into the schoolâs website and messed around a lot.  He made a mistake by telling some people about this prank, and that got him suspended.</p>
+
+<p>CAM:	I learned a quick lesson; to watch who you talk to.</p>
+
+<p>JACK:	That wasnât the last time Cam hacked his school, though.  Cam took a CAD class in high school and he spent the whole class messing around with his friend.  Since he wasnât doing his assignments, he came up with an idea; steal someone elseâs work.  He used Sub7 which is a Trojan to attack the guyâs computer in front of him.  He got the guyâs IP, logged in, took all his work, and then just changed his name on the work and printed it out and turned it in and got an A for the class.  Cam made fake report cards, too.  He would use Photoshop, design it up, write whatever grades he wanted, and make it look official and then sell it to other students.  These Photoshop skills would prove to be pretty useful later on because Cam was about to enter the world of fake IDs.  Do you, the listener, remember when you were seventeen or twenty, just one year away from being able to buy cigarettes or alcohol or do some adult-age thing?</p>
+
+<p>That wait is very hard for some people, including Cam.  He went online and found a place to buy a fake ID.  He ordered one.  To make a fake ID look right, you have to send your real photo in.  So, he sent a photo of himself and got it in the mail.  It was kinda crappy looking; the cuts around the corners were off and it just didnât look right.  But he thought ah, what the heck, Iâll try it.  He gave it a shot.  One day he went to the store to try to use his fake ID to buy a pack of cigarettes but the store didnât buy it and confiscated his fake ID.  The plan failed but by this point, Cam had really analyzed what an ID should look like and researched how all this was done and decided he could probably make a better fake ID himself.  This was the decision that sent him on a new trajectory in life.</p>
+
+<p>CAM:	[MUSIC] I told myself that Iâm not gonna buy another piece of crap ID.  Iâm just gonna make one.</p>
+
+<p>JACK:	If youâre wondering how a high school kid could just decide to make a decent fake ID, you should know that Cam wasnât just an ordinary high school kid.  He was deep into computers and he started hanging around [00:10:00] some pretty shady forums and chat rooms.  He became a regular on Counterfeit Library, and thatâs a place that could teach people how to make fake diplomas and IDs.</p>
+
+<p>CAM:	Counterfeit Library was like a precursor to ShadowCrew or CarderPlanet or any of those forums around then.</p>
+
+<p>JACK:	Whoa, the guys from ShadowCrew; Iâll have to do a whole episode on ShadowCrew one day because thatâs a crazy story all by itself.  But basically ShadowCrew was a website, a chat room, a forum, and on the forum you could trade illegal things.  Picture a typical darknet marketplace but before the darknet existed and before Bitcoin existed.  On ShadowCrew, you could buy fake degrees and fake diplomas and stolen credit card numbers and fake IDs.  Cam wasnât on that website yet âcause that website didnât exist but he was in the chat rooms with the people who would later go on to make ShadowCrew.  Cam started learning how to make fake IDs through this chat room and he downloaded templates and learned about materials.  He eventually figured out a process that worked and made his own fake ID.  So, eventually he was producing some pretty convincing cards for himself.  His picture was on it but with a fake name and a fake address.  It looked pretty good, better than the one he ordered, at least.  Cam was living with his dad at the time.  As a teenager, Cam wanted cool stuff to show off at school or something.</p>
+
+<p>CAM:	Clothes, shoes.  When I became old enough to drive, a car.</p>
+
+<p>JACK:	He realized to buy this stuff, he would need to find a way to make money.  So, Cam came up with an idea; he could sell fake IDs to kids at school.  He got a fellow student to be his frontman and his friends would make deals and Cam would make the cards.</p>
+
+<p>CAM:	Youâd chill a cartridge up with an adhesive, like a glue sort of adhesive, and you could print with the templates onto the laminates the design for the hologram.  It would print basically the glue for the design of the hologram and then youâd have the right mixture of these powders for different â whatever state would be a different mixture of gold and silver, whatever, and then youâd sprinkle it on it.  It would stay to the adhesive and now that was your holo-pouch.  Now, those laminates would have a magstripe on them too for California or for Texas, you know, for the states that it applied to or whatever.</p>
+
+<p>JACK:	His local business was going well but Cam wanted to sell more cards and make more money, so he took his business online and started selling the fake IDs on internet forums.  Something strange started happening.  [MUSIC] People were buying lots of fake IDs.  Like, one guy would buy dozens of fake IDs with the same picture, just lots of different names and addresses.  This would be like, $1,000 worth of fake IDs.  Cam couldnât figure out why but he just kinda shrugged and made them and shipped them and let the mystery go.  But then one day he got a clue; one day a guy ordering a bunch of fake IDs from him made an intriguing offer.</p>
+
+<p>CAM:	He said I can either pay you $1,000 or I could send you $2,000 carded Western Union.  Which one do you prefer?  Of course, Iâve been hearing and reading about people carding Western Union and things like that, but I didnât realize â it was the first interaction with somebody that was actually doing it, I guess.</p>
+
+<p>JACK:	Cam put the pieces together.  This guy was carding.  Carding is when you use stolen credit card details to buy something either digitally or by counterfeiting a physical version of the card.  You can use these for anything; shopping online, cashing out at ATMs, or sending money to someone through Western Union.  What this guy was offering is he would send Cam $2,000 through Western Union but it would be from a stolen credit card.  This is more risky for Cam because itâs illegal to receive money that you know is stolen, so he had to make the choice; $1,000 in clean money or $2,000 in stolen money?</p>
+
+<p>CAM:	I was just really curious and kind of I guess fascinated by all the stuff that people were talking about on there.  But at the time it was really â I didnât really believe for sure that a lot of people were really doing all this stuff.  You know what I mean?  It kinda just seemed like okay, for real; are they actually doing this?  Then it was a whole different ball game back then.  Things were pretty much wide open.</p>
+
+<p>JACK:	Cam had known about carding before, or at least heâd heard of it.  But one day, he found physical evidence of it.  He was at an ATM and near the ATM was a plastic credit card on the ground.  He picked it up and noticed something strange; the text on it was black and blurry and the embossed numbers just didnât look right.  Cam thought for sure this was a counterfeit credit card.</p>
+
+<p>CAM:	I was just kinda like, wow.  It kinda made me think okay, so I guess some of this stuff really is going on, you know, if I just found one of these on there.  So, out of curiosity, I just kept it and held onto it.</p>
+
+<p>JACK:	Cam dabbled with trying to make fake credit cards himself.  While making these fake IDs, he got ahold of an MSR which is a magstripe encoder, or you can think of it as the device that writes information to a credit card.</p>
+
+<p>CAM:	The reason I needed one at the time was for coding IDs.  That was the only âmy only interest at that time.  I wanted my IDs to scan.  It was Texas and California were two states I was making, and I needed them scanned, so I wanted an MSR.  [00:15:00] But at the time, they costed like $600 or $700 so I brought it up in the channel and somebody mentioned man, just card it.  That kinda sparked my interest where I messaged him like, what do you mean, card it?</p>
+
+<p>JACK:	This really sparked Camâs interest.  He wasnât sure what they meant by just card it.  But he looked into it and was able to get his hands on a full.</p>
+
+<p>CAM:	Itâs basically a CVV, a card with a CVV; the expiration but also the name, address, phone number, date of birth, motherâs maiden name, social security number.  Itâs a full info, a full.</p>
+
+<p>JACK:	Not just Track 2; gotcha.</p>
+
+<p>CAM:	Yeah.  So, itâs actually what â the dumps, you have the tracks of data.  This is just for online purchases or over the phone or whatever.  Itâs the account information but also included is the motherâs maiden name, social security number, date of birth.  So they call it a full, a full info.</p>
+
+<p>JACK:	He was naive at the time and thought by just having a full it would allow him to buy whatever he wanted.  So, he gave it a shot; tried to buy something.  But the transactions never went through.  He tried a few times but this full didnât work at all for some reason, so Cam wasnât sure if carding was real or not until this guy offered to send him some cash through Western Union using a stolen credit card.</p>
+
+<p>CAM:	Now, looking back, the risk probably was â should have been a little more concerning but I was just excited to do it, so of course I took the $2,000 of the carded Western Union.</p>
+
+<p>JACK:	[MUSIC] That meant Cam had to pick up the money in person.  Now, Western Union is a way to transfer money from one person to another.  You can call them on the phone, give your credit card details to them, and tell them whoâs going to pick up the money.  Theyâll take the money out of the credit card and when the person comes in and presents proper ID, then Western Union will give them the money.  There are official Western Union shops out there but this is such a popular service that itâs often seen in grocery stores and gas stations in the US and around the world.  So, he makes a fake ID, puts a picture of himself in it but uses a fake name and address and everything, and then tells the guy to send money to this fake name he just invented.</p>
+
+<p>So, the guy calls up Western Union, gives them the stolen credit card numbers, and sends $2,000 to this fake name that Cam gave.  Western Union took the money out of the credit cards and held it for Cam to come get.  Cam gets word the money is there but he didnât have a car, so his friendâs girlfriend drove him to Western Union.  He goes in, fills out the form, gives that ID to the lady at the counter, and the lady picks up the ID and looks at it and looks at Cam.  Cam starts to get nervous.  Heâs committing fraud and he knows it.  Any mistake could get him caught and in trouble.  Since he made the ID himself, he knew just how many mistakes it had.  But she doesnât notice any problems; she counts out the money, hands him the cash, and he walks out of the store $2,000 richer.</p>
+
+<p>CAM:	It was kind of I guess a rush or whatever you want to call it.  Itâs kind of a odd feeling.  Itâs kind of a thrill.</p>
+
+<p>JACK:	The guy Cam was working with online was impressed at how well the transaction had gone.  He wanted to keep buying fake IDs from Cam but he had another proposal.</p>
+
+<p>CAM:	Heâs like hey, I want to keep buying them from you but also, heâs like hey, a matter of fact, do you just want to start picking up transfers for me?  âCause youâre the perfect drop guy.  You make the IDs yourself.</p>
+
+<p>JACK:	Cam was the perfect guy to do this; a rebellious teenager, good at computers, good at making counterfeit IDs, and whoâs interested in the whole carding scene.  He could quickly whip up a new ID whenever he needed to go drive and pick up some cash, and then his job was to act like someone else for five minutes, hand them the fake ID, and wait for them to give him cash.  He agreed to this plan and all of a sudden something clicked in Camâs head.  Now he understood why people needed multiple IDs with the same picture.  They werenât sixteen-year-olds buying fake IDs to drink and smoke.  They were using IDs to card.  Cam was no longer peering into the dark world of carding.  He realized he was already living it.</p>
+
+<p>CAM:	[MUSIC] I took the offer.  I said yeah, actually, no problem.</p>
+
+<p>JACK:	So, they start working together.  Cam would make a few fake IDs for himself and tell the guy what info was on the ID, and the guy would call Western Union, give them stolen credit card details and tell Cam itâs ready.  Cam would then go down to any Western Union and pick up the cash.  The plan was actually working pretty well.  Cam started making some real money from this.  Every day he worked with the guy, he made about $5,000 and thatâs a lot for anyone, but especially a highschooler.</p>
+
+<p>CAM:	I was making obviously more money than Iâve ever made in my life âcause I was only in high school at the time, making thousands of dollars a day.  Now, I will say that he was a little older than me so he was more disciplined, and so he actually understood that it was something that probably wasnât gonna last forever.</p>
+
+<p>JACK:	Then Cam and the guy had a falling out.  Their agreement just fizzled out somehow and all of a sudden Cam was back to where he started.  But now he had a taste of the dark life.  Cam liked the money that was coming in and he was still selling fake IDs.  But those $5,000 days were gone.  Cam didnât like being cut off from this, [00:20:00] so he decided to take what he learned and go into business of his own.  [MUSIC] The only problem was Cam didnât have the skills to card yet.  He understood the idea and the concepts of it but wasnât sure about the means and methods to actually do it.</p>
+
+<p>He could make fake IDs and pick up the money, but his partner had always acquired the stolen cards and made the money transfers.  He needed to get some stolen cards.  He needed more credit card information.  He needed help.  So, he turned to the place that always helped him before, the forums and the chat rooms of Counterfeit Library which was now just about forming into ShadowCrew.  He had the skills and ability to withdraw money from a stolen credit card but he didnât have the stolen credit cards.  He turned to the forum to figure that out, and thereâs the option of buying them or becoming a casher.  But the problem is, people in these forums were not always very trusting.  They were hesitant to work with Cam.</p>
+
+<p>CAM:	Actually, I kinda faked it.  I faked it âtil I made it, kinda.  I just kinda said that I know how to do this.  I had a general idea of what the guy was doing that I was working with but of course, I hadnât done it.  I didnât have any experience, so I know just from reading guides and tutorials and stuff on ShadowCrew and whatnot that I know kinda what heâs doing, but I havenât done it. I just kinda bullshit my way through it until started advertising in the channel that I know how to do it.</p>
+
+<p>JACK:	Cam found a couple of guys from Kosovo, a country in Southeast Europe.  These guys were looking for someone like him.  They had acquired a lot of stolen credit cards.  Who knows where they got them?  But they were looking for anyone online who was willing to be a casher, someone to take these stolen credit cards and figure out a way to pull money out of them and then keep half of that and send the other half back to the guys in Kosovo.</p>
+
+<p>CAM:	Somebody hits me up like hey, look, we want to try you out.</p>
+
+<p>JACK:	The Kosovo guys give him a test.  They send him the full details of five stolen credit cards.  The plan was that Cam would cash out on these cards and send half the money back to the guys in Kosovo.  Cam did some research on the best way to try to charge these cards and gave it a shot.  [TICKING, MUSIC] His plan was to call Western Union and give them the credit card details over the phone and try to send money to one of his fake identities.  He tried to get cash from the first card but that card was declined.  Shoot.  He hung up the phone, waited a while, and called back and tried another card.  But that card was declined, too.  The third card was declined and the fourth card declined, too.  Shoot, this wasnât working.  He was worried that if all five of the cards were no good, then it might make him look bad because what do you tell the Kosovo guys, that all the cards were bad?  Would they even believe you or would they say no way, we gave you good cards, man; you must have just cashed them out and kept the money?  They could ruin his reputation.  Cam wanted to work with these guys but their cards were not working.  He crossed his fingers and tried the fifth card.  To his surprise, it went through.  He was able to send $500 through Western Union to one of his fake names.</p>
+
+<p>CAM:	I went, picked up the $500 myself and made a decision just to send all of it to them and say that that was actually for two orders, you know what I mean?  I kinda bullshit my way a little bit, saying that two of them worked out, one failed, or whatever it was.  I didnât know that somebody actually being straight up and legit with them period was a huge valuable â having somebody in the United States obviously grabbed their attention because back then there was a huge problem, especially on these IRC networks, with ripping, just people just running â you know, they just say theyâre gonna do this, they never do it, so obviously these people anticipated that they thought that was what was gonna happen.</p>
+
+<p>JACK:	Finding good cashers is hard.  Some cashers suck at what theyâre doing.  Others take the credit card numbers and cash out and just keep the money.  Itâs hard to build trust in these circles.  People with huge amounts of stolen credit cards need a large network of cashers.  They donât want to send a ton of cards to the first person willing to do it.  They need to find people who are smart at getting money out of the cards and are honest about sending back their cut of it.  So, when the Kosovo guys saw money coming back from this first round, this made them happy and were willing to send Cam some more cards.  So, Cam would continue to cash out on the new cards and send back half the money to the Kosovo guys.  The Kosovo guys became really happy with Cam.</p>
+
+<p>CAM:	[MUSIC] So now theyâre gonna flood me with whatever I want, so it was a good decision on my part because now I have absolutely no problem with getting cards âcause theyâd give me literally whatever the hell I asked for.</p>
+
+<p>JACK:	Once Cam would get the cash out of the cards, he would send half back to the guys in Kosovo.  To do this, he used a service called eGold.  This is basically sending money through the internet because Bitcoin wasnât a thing yet, so this was an anonymous way to send money.  Camâs business was starting to shape up.  He was getting tons of card details from the Kosovo guys and cashing out stolen cards as much as he wanted all day long.  He pretty much had an unlimited supply of cards and he could keep half of whatever he took out.  He became so successful, he started expanding that business.  Soon, he had [00:25:00] people doing pick-ups for him.  He was learning new techniques and he figured out ways to social engineer some of the banks connected to the cards.  He would call the bank and he would pose as the actual cardholder and get the bank to switch phone numbers to his burner phone.  His trick was to use the address of abandoned houses and switch the address and phone number to that.  This way if any potential fraudulent charges were flagged, the bank would call his number to confirm did you make this charge?  He would say yep, and the money would go through.</p>
+
+<p>CAM:	But nowadays this wouldnât work.  Nowadays, they got flags for an address being changed within thirty days or things like that.</p>
+
+<p>JACK:	I think âcause thatâs because someone ruined it.</p>
+
+<p>CAM:	Right.  Somebody, you know.  I donât know who.</p>
+
+<p>JACK:	Now, all this time, Cam was still doing all this through Western Union.  He would call them on the phone, give them the card details, and they would charge it and make it ready for him to pick up with his fake ID.  He would sometimes go to the same place to pick up his money a few times, and he did try to go out to different places which meant sometimes taking a road trip and visiting Western Unions far away.  But Cam knew it was also possible to take money from these cards by just using an ATM to withdraw money.  The only problem was he didnât know how to do that.  To start, the ATMs require a physical plastic card.  Cam had dabbled with this in the past but never did figure out how to get these cards working right.  So, how do you get the card details printed on a physical card?  At the time, there werenât very good tutorials on how to do that.  The people who taught him seemed to just be guessing on how to do it and itâs really quite difficult.  [MUSIC] See, on a credit card, there are multiple pieces of information.  A card has Track 1 data and Track 2 data.  In these tracks is the information that machines need to process the card.  Then on top of that, thereâs CVV1 and CVV2 data on a credit card.</p>
+
+<p>Now, one of these is only in the magstripe data.  So, the only way to get it is to actually scan the card and see whatâs there.  So unless you have that, this gets really hard.  But not impossible.  But this track data is obfuscated and confusing to figure out.  Itâs encoded in a weird way and it has lots of extra bits and characters which mean different things, so even though he had the credit card data, he needed to figure out how to encode it properly to be functioning Track 1 and Track 2 data when it gets swiped.  I mean, just to give you an idea how weird this is, Track 2 data uses a five-bit scheme; four data bits plus one parity bit.  Now, with four data bits, you have sixteen possible characters, right?  But itâs not hexadecimal.  Zero through nine are valid characters but then it uses colons, semicolon, greater than, less than, equal, question mark, and dot.  Yeah, figuring out how to get these characters written into the card properly is tricky.</p>
+
+<p>But Cam wanted to figure it out, so he started getting supplies.  Getting the blank credit cards and the card reader is easy.  Anyone can buy this stuff on eBay and even Amazon sells it today.  But the expensive and tricky part is the software used to write the cards properly.  So, Cam spent hours trying to turn his blank cards into real, usable credit cards.  Heâd try a few different cards and write stuff on them and then drive to an ATM and swipe them.  But none were valid.  So, heâd go home and try some different methods of writing the data to it and then drive to the ATMs and try again.  But it never worked.  The machines always gave him errors.  Cam was getting pretty discouraged about this and was about to give up, until one day he put his card in the machine and it recognized it.  It asked him how much money he wanted.  He asked for the max amount of money, and it just shot out at him.  It worked.</p>
+
+<p>CAM:	I used to always remember the kid off the movie Terminator 2.  They were pulling money out of the ATM machine or whatever.</p>
+
+<p>JOHN:	Withdraw 3-0-0 bucks.  Come on baby, come on, come on, come on.  Yes!</p>
+
+<p>CAM:	Some twenties flew out in the little tray.  The first time that happened, it was like holy shit.  Youâre taking some numbers which basically just came off the internet, you know what Iâm saying?</p>
+
+<p>JACK:	From then on, cashing ATMs became a regular part of his routine.  But it didnât always work for him.  The encoding was still not right.  Something wasnât perfect.  When you go to do these pickups at Western Union and this one at the ATM, are you wearing disguises or do you do it at night or do you have a trick?</p>
+
+<p>CAM:	No, I mean, now, you would â I would obviously wear a hat and some basic stuff like that but what I learned actually over the times, the cameras donât really matter that much, especially if youâre out of town.  Now, the reason I say that is because surprisingly, a lot of the times I guess itâs never reported.  Itâs like how I was saying Iâd go back to the same Western Union a lot and the guy, still to the day, at least right before I locked up, would still say hey to me; how you doing?  Howâs business going?  Stuff like that.  Over years, I picked up and also sent god knows how many.  I used to send a lot of money, too, you know, at him, but also pick up a lot of money.  So, I donât know how many times I had picked up, and with different names, all sorts of different names and Iâd be using shit.  I mean, he still recognized me and would still say hey, how you doing?  I mean, it wasâ¦</p>
+
+<p>JACK:	[00:30:00] But if you go to the same Western Union shop every day and pick up $1,000, do they get suspicious?</p>
+
+<p>CAM:	No, no.  Yeah, right.  No, no, obviously you canât do that but I will say this; I went to tons of them over and over again and I would, for whatever reason, never hear anything about it.  There was one in particular â and I always thought it was funny because Iâve been in there with so many different IDs, so many different names, and I had some bullshit story of what â I would throw it in there while Iâm doing it to kinda make it a little easier, to kinda smooth it over a little bit so it didnât seem suspicious as to why Iâm getting all this money.  A lot of it was stories about outsourcing web development to Kosovo, just bullshit.</p>
+
+<p>JACK:	Cam keeps getting cards from the guys in Kosovo but at this point heâs experimenting with buying his own dumps.  But then he got his hands on one thing that would open up all kinds of new opportunities.</p>
+
+<p>CAM:	Actually, somebody came along on IRC and made a deal to me.  There was a â it turned out, it was â I guess â I donât know if youâd call it a scam but it was somebody doing â being pretty slick, okay?  They were selling a program and the program was called dc.exe.  [MUSIC] Dc.exe was just a real simple little script that â looking back at it, I mean, it was compiled; it wasnât a script but all it did was it had a couple simple functions apparently to read a input file and spit out an output file.</p>
+
+<p>JACK:	This was the magic software used to format the data so that MSR could write the track data to the card properly.  Cam found out later it wasnât so magical but at that time, this was the missing element to his operation.  This would allow him to write stolen credit card data onto blank credit cards more effectively.</p>
+
+<p>CAM:	All it did was just do a couple little operations to the track.  It added the tracks. They automated the process, basically.  But at the time everybody thought it came with a bin list of all the known bins to work with that program.  You know what I mean?  You could put in the in file and put a list of phished cards with the expirations and youâd run it.  The out file would be generated track data, right?  Now, this dude offered to sell this to me for $1,500.</p>
+
+<p>JACK:	Hm, tough call, huh?  Shady guy on an internet forum is offering to sell Cam a program called dcr.exe for $1,500?  I donât think I would buy that.  But Cam, well, I guess he thought in for a penny, in for a pound, so he bought it.  The software worked; it encoded the track data onto the cards perfectly.  Now heâs unlocked the next level.  He doesnât have to go to Western Union every time he wants to take money out of these cards.  Now he could just print some new cards out and go to any ATM and get some money out that way.  Thereâs so many more ATMs than there are Western Unions in the world.  Not to mention, you donât have to interact with anyone at an ATM.  Itâs just a machine, and so thereâs no one that can detect you or spot your fake ID or anything.  His possibilities just exploded and Cam rode that explosion.  He printed up fresh, stolen cards and would drive around to different ATMs just taking money out wherever he wanted.  It was kind of magical.  You werenât growing more nervous; you were actually getting more confident and brave.</p>
+
+<p>CAM:	Right.  Thatâs kinda what happened.  I guess just âcause you get a little more â like I said, man, itâs nothing I really am proud of doing.  Itâs not something I like bragging about or nothing.  But itâs just kinda how it plays out.  Also, there was kind of an element to it where on the forums, your reputation on the forums and online and stuff to where youâve got this brand name, you get to where you keep pushing it more and more âcause you want your reputation better, you know what I mean?  Or you donât want to let somebody down that youâre dealing with or whatever.  Shit got deeper and deeper and drugs didnât really help.</p>
+
+<p>JACK:	He was now deep into the carding scene, buying thousands of card details at a time, printing them out on cards, and cashing them out at ATMs.  He had some people he knew help him do some of the cash-outs, too.  He started buying his own card dumps online so he wouldnât have to send half back to the guys in Kosovo.  Actually, he just stopped dealing with the guys in Kosovo altogether.  He was getting involved with so many different things and trying to learn how to make more money and be more efficient all at the same time.  This was turning out to be a really profitable little operation.  At eighteen, Cam bought a new Jeep Cherokee. But one night he partied too hard, got really wasted, and tried to drive home.  He ran off the road and wrecked it.  He hardly remembers anything from that night.</p>
+
+<p>But soon after that, he bought a BMW and then later on a he bought a Mercedes.  He was riding high, standing tall.  At this point in the operation, Camâs system was pretty dialed in.  He would buy card details in bulk online and use different methods to cash them out.  He was pretty self-sufficient, but not all dumps are the same.  Good ones are harder to find, so he decided to start stealing credit cards himself.  [MUSIC] He found someone who would teach him how to phish, and I mean phish as in P-H-I-S-H.  The guy was teaching him to send phishing [00:35:00] e-mails and getting people to click links that they shouldnât be clicking, and he gave Cam a list of people involved in spamming and phishing.</p>
+
+<p>CAM:	It was like a Instant Messenger buddy list or something with a gold mine of contacts.  If you were phishing, this was the ultimate contact list because basically, itâs got all the people selling all the lists of e-mail addresses, targeted e-mail lists, proxies for spamming, spamming tools, spamming soft â I mean, everybody thatâs really serious in spamming, this was a good contact list for it, right?</p>
+
+<p>JACK:	Camâs phishing scam was to tell people they needed to update their account details on PayPal.  The link would take them to Camâs website which looked exactly like PayPal, starting with the login screen, and then it would ask users to update everything in their account details; first name, last name, address, phone number, credit card number, expiration date, and heck, heâd even ask for a date of birth or social security number sometimes, too.  Then when theyâd hit Enter, this little PHP script would save all those details and send it to Cam but then redirect the user to the real PayPal website.  So, Cam was working with spammers and phishers to send out tons of e-mails telling people they need to come check their account or their auction is ending soon, anything to get them to log in.  A certain percentage of people would open the e-mail and click on the link and go to Camâs fake site and enter their username and password.  With that, Cam would have their logins to PayPal and eBay.  Now, to run a scam like this, you need a web server to host your fake website, and Cam had a clever trick for getting a website that wasnât linked to his name.</p>
+
+<p>CAM:	Weâd just find some popular public exploit at the time for Apache or whatever it was and scan a bunch of IP ranges until we found some â automatically just exploit a bunch of little web servers or whatever that were just some bullshit servers somewhere that werenât doing anything.</p>
+
+<p>JACK:	Itâs interesting that you used someone elseâs hacked server to do all that.  Thatâs kind of a brilliant step.</p>
+
+<p>CAM:	Basically, I had a little better edge on it and was able to do a little better, and especially when we targeted some of the ISPs and stuff like that.  Here comes this fucking train again.  We donât really know [TRAIN HORN]â¦</p>
+
+<p>JACK:	Jeez man, that thingâs [TRAIN HORN] â blows it.</p>
+
+<p>CAM:	[TRAIN HORN] I mean, actually, you get kinda used to it.  [TRAIN HORN]</p>
+
+<p>JACK:	Cam learned how to improve his phishing e-mails to get past spam filters and get a higher click rate.  He wrote a little program to randomize certain parts of the e-mail to get them past filters.  But at this time, people in the carding scene didnât really know that much about phishing and people in the phishing scene didnât know that much about carding except Cam, who started learning both worlds.</p>
+
+<p>CAM:	I was killing it.  I had a deal with a dude who was helping me spam.  At one point I had like ten dedicated servers pushing out 700-some-thousand e-mails an hour.</p>
+
+<p>JACK:	700,000 e-mails an hour?  Even if 1% of those people click the link, thatâs 7,000 credentials he could get in an hour.  Cam felt invincible until the cops got involved.  [MUSIC] Cam was in a little town in South Carolina on his way to meet his friends for a St. Patrickâs Day parade.  He decided to work a bit before the parade.  He started going around to a few ATMs and cashing out.  Then Cam walked into a Circle K gas station wearing a hat and sunglasses.  He takes out one of his cards and puts it in the ATM at the gas station.  Out of the corner of his eye, he sees a cop walk in the door.  He sticks his stuff in his pocket and starts to leave.</p>
+
+<p>CAM:	I go to leave; heâs like hey, are you just gonna leave all those receipts over there?</p>
+
+<p>JACK:	Thereâs a bunch of ATM receipts sitting on the machine, but they werenât Camâs, though.</p>
+
+<p>CAM:	I said no, but Iâll throw them away.  Theyâre not mine; Iâll throw them away.  So, I go throw them away and go to leave again.  Heâs like no, hold on a minute.  Heâs like hey, what are you doing?  What are you â who are you or something.  He asked for an ID.  I gave him a fake ID.</p>
+
+<p>JACK:	Cam pulls out a Virginia ID and remembered theyâre in South Carolina.  The policemen starts telling Cam some story about how there had been robberies in the area.</p>
+
+<p>CAM:	But as heâs talking to me, I can see outside the door and the windows a bunch more cop cars pulling up, so Iâm already thinking oh shit, this isnât good.</p>
+
+<p>JACK:	The cop keeps questioning him.</p>
+
+<p>CAM:	Heâs like hey, what are you doing here?  What are you over here for?  I said well, Iâm from around here originally but Iâm in Virginia going to school and my family lives over here.  Iâm here visiting family, whatever, but I go to visit â go to my bank.  Iâm trying to find my bank âcause my friend told me my bank was over here.  I didnât want to pay the fee.  He told me there was a branch over here.  I got over here; thereâs not, so I just used this one.  Heâs like well, where do you bank at?  I told him Fifth Third âcause I knew that that there was Fifth Third banks over there and heâs like no, theyâre not here.  Anyway, I must have â he was convinced, apparently, âcause he ended up telling me alright, well, just get outta here.</p>
+
+<p>JACK:	Cam gets out of the store [00:40:00] but heâs shook.  Instead of walking towards his car, he walks the opposite direction and just tries to get out of sight quickly.  Heâs just so paranoid that the police will follow him if he drives off, so he leaves his car in the parking lot, chills out for a while, and then comes back for it later when the coast was clear.  He gets in his car and drives straight home which was hours away.  He gets home and gets rid of anything that could connect him to criminal activity; holograms, ID-making materials, and the MSR card-writer.  Cam lays low for a while and just chills out.  So, weâll take a quick break right here but donât go away because this story is only half over.  Months go by and Cam lays low.  Nothing happens, though.  Cam convinces himself it must have just been a coincidence that that cop walked into that store, but that wasnât the end of Camâs legal problems.  Itâs amazing to me what actually got him into trouble next, because even though he was engaged in serious criminal activity making fake IDs, it was a dumb teenage crime that got him; underage drinking.  When Cam was eighteen, he got caught at a bar with a fake ID which gave him some legal trouble.  This was the first time he had to go to court because of something related to his carding and ID business.</p>
+
+<p>CAM:	The bailiff was like hey, youâre Mr. Harrison?  Turns out they had found out who I was.  It turns out the guyâ¦</p>
+
+<p>JACK:	While he was handling his underage drinking charge, local investigators were also trying to figure out who was cashing out on stolen credit cards at ATMs, and some of the ATMs Cam used were at gas stations.  One of the cashiers at a gas station saw the video footage of Cam taking money out of the ATM and remembered his face.  Later on, that cashier saw Cam in his car at a different part of town, so the cashier wrote Camâs license plate down and sent it to the police.  [MUSIC] Cam didnât know it at the time but an investigator had been onto him.  But that was in another state.  Since Cam was in Georgia at the time, the police couldnât cross lines to arrest him, so they just kinda waited for Cam to make another mistake.  But Cam getting caught for underage drinking was the perfect opportunity for the police.  They showed up at court with a warrant for Cam, knowing that heâd be there.</p>
+
+<p>CAM:	That dude was so pissed off that local â that local investigator was so mad that cop let me go that day.  He was pissed off.  Heâs like dude, I almost had him fired for that.  He was yelling at me about it and stuff but I meanâ¦</p>
+
+<p>JACK:	They searched his house for evidence and found a few things that he didnât clean up.  How much did they think that you did?  How much did theyâ¦?</p>
+
+<p>CAM:	They thought it was just â it was just what they found at my house and stuff.  They didnât think â they found a bunch of receipts, they found some more cash, they found some more cards, and they didnât think anybody else was involved.  You know what I mean?  They just thought it was me.  They never really got into the â where it was coming from or anything.  They just ended up indicting me for all the stuff they found basically at my house.</p>
+
+<p>JACK:	So, while he had actually been carding thousands of cards, phishing millions of people and robbing banks all over the country, the police had only uncovered a very small part of the operation.  So, he was charged with financial card forgery and had to serve ten months in a county jail.  How devastated were you when you heard that sentence that you were gonna go to jail for ten months?</p>
+
+<p>CAM:	It actually was a long time.  It seemed like forever, man, you know?</p>
+
+<p>JACK:	Still, Cam was lucky because the police didnât find a lot of evidence of what he had done and only charged him with cashing out a few cards.  Compared to what he could have gotten in trouble with; if the police only knew what he had been up to, ten months was nothing.  The police thought he was just working alone and skimming a few credit cards.  He was able to get out on bond pretty quick, actually.  But would this be enough of a slap on the wrist to keep Cam out of the scene for good?  Yeah, it was, at least for a little while.  But then heâd sometimes get reminded of the thrill of it all.  He missed [00:45:00] being able to buy drugs and throw parties.  He missed the lifestyle that his old money brought him.  So, he got back into it.</p>
+
+<p>CAM:	I didnât quit.  I didnât learn my lesson, like an idiot.  But I guess you could say â kinda hooked on it.</p>
+
+<p>JACK:	[MUSIC] When Cam got out of jail, he had nothing; no equipment, no cards, no numbers, no computer, no money.  The police seized everything.  They even froze his bank account.  So, one of the first things Cam did when he got out of jail was go straight to an internet cafe.  Remember his phishing operation before where he had hacked someone elseâs websites and staged a fake PayPal login to capture victimsâ credentials?  Yeah, well, he remembered the FTP password to that site, so he sat down and tried to log in.  His password worked first try.  He was in the server.  He looked around for the data and sure enough, there were a lot of victim usernames and passwords.  Bingo.  This would be all that Cam needed to get going again.  He could use these peoplesâ PayPal and eBay logins to buy whatever he needed on eBay.</p>
+
+<p>CAM:	I carded some cheap web hosting, put the scam page on it, even carded an e-mail list from some other marketing supply company or something like that, carded some hosting for a PHP mailer, put it on there, spammed some, got a few more cards.  Anyway, I came all the way back up from scratch from a fucking FTP login that I remembered a PayPal scam page for.  Did a couple Western Unions, got a couple â some more money back in my pocket, all from â well, I gotta say a friend loaned me a couple cards and I had that scam page, turned it into more cards, and back â all the way back into doing dumb shit, you know?</p>
+
+<p>JACK:	Cam used stolen information to get a new laptop, a card-writer, fake ID printer, and went straight back to his old habits.</p>
+
+<p>CAM:	But I will remember; I ended up having all the â several â a bunch of the computers that were at the cyber cafe, I turned â I had DarkMailer installed on all of them and were blasting out spam.  I remember there were some kids that would come play Counter-Strike there.  While Iâm sitting there configuring DarkMailer on a couple of them, âcause I would just hide the process, I remember hearing a couple of them complain about it lagging pretty bad.  So, it was kinda funny because it was probably because all the machines were sitting there blasting out spam.  But hey, look, I think I gotta get inside right now âcause I was supposed to be in by 8:00 but I just noticed I think it might be 7:30 sometimes, depending on whoâs working, and nobodyâs out here.</p>
+
+<p>JACK:	Yeah, no problem.  Alright, so letâs pick this up again next weekend.  Like I said, Iâve had so many long conversations with Cam to try to understand this whole story.  To be honest, this story took me a long time to process and understand.  In between our calls, I would read through court documents and call up other people who knew him and look through the Wayback Machine at some of the websites he told me about.  As far as I can tell, this story checks out just as he tells it.</p>
+
+<p>CAM:	[MUSIC] Hello?</p>
+
+<p>JACK:	Hey.  Well, are you standing in the yard again?</p>
+
+<p>CAM:	Yeah.  This train could still come back around.</p>
+
+<p>JACK:	Yeah, it will.  Iâm sure of it.</p>
+
+<p>CAM:	Yeah.</p>
+
+<p>JACK:	How is it out there?</p>
+
+<p>CAM:	Definitely will.  Itâs like, 91 degrees.</p>
+
+<p>JACK:	Oh man, I hope you find some shade.</p>
+
+<p>CAM:	I donât really remember where we left off.</p>
+
+<p>JACK:	So, you got arrested, you lost everything, and you had an FTP server and you were able to get into that.</p>
+
+<p>CAM:	Okay.</p>
+
+<p>JACK:	So, hereâs the thing I donât get, is you just â I mean, you just freshly got arrested, freshly got out.  Why didnât this teach you a lesson?  Why didnât you stop then and say okay, yeah, thatâs too dangerous; I donât want to go back to prison?</p>
+
+<p>CAM:	I had already been living on my own and at the time, I needed some more money, so it was just something I could do immediately to kinda solve that problem.  Also, I was just young and pretty dumb, you know?  I didnât realize exactly the extent of trouble that I was really getting myself into, I guess.  Also, I was doing a lot of drugs at the time, to be honest.  Also, another thing; itâs kinda like once you kinda make some of those connections, kinda like your reputation online, I guess; thatâll kinda draw you back too, sometimes.  Itâs like you donât want to let that reputation go or â I donât really know how to explain it but I definitely wish that I didnât.</p>
+
+<p>JACK:	Cam had fully established himself once again.  He was buying cards, cashing them out, and making money right and left.  He even took it further than he did before.</p>
+
+<p>CAM:	Now at that time, I wasnât doing a whole lot of it myself.  I had some other people involved.  I still would do things a little bit myself from time to time.  You get to make more of the money if you do it yourself but also, I guess there was kind of a excitement to it or something like that that kinda goes along with it.</p>
+
+<p>JACK:	[MUSIC] Cam remembered how his old operation was going well.  He was able to make fake IDs and get stolen credit card data but didnât like having to split the money he cashed out with people who [00:50:00] gave him the stolen cards.  So, this time he wanted to figure out a way to steal the credit card data himself.  This would allow him to close the entire loop of his operation and maximize his profits.  Cam was figuring out new techniques.  He had a goal; he wanted to steal credit card information directly from businesses who processed credit cards for customers.  He had watched how others had done it before him and jumped into the game.  First is to identify businesses who process credit cards.  Now, he didnât want to target big businesses because theyâre typically more secure.</p>
+
+<p>If you want to keep your site from getting hacked, one thing you can do is just make it harder for criminals like Cam.  Itâs kinda like being chased by a bear, right?  You donât need to be faster than the bear; you just need to be faster than the other person who youâre running with.  So, Cam didnât even try big businesses.  Too hard, he thought.  But what about small businesses; locally-owned restaurants, barber shops, coffee shops, bakeries, stuff like that?  They might not have done a thing to secure their network, so targeting them might be easy, like grabbing low-hanging fruit.  He would drive around and find potential targets and go in and see if they had free WiFi.  If so, heâd sit down and connect to it.</p>
+
+<p>CAM:	One thing Iâd do is weâd have somebody go to a business and get the public IP address if they had free WiFi or something like that.  Now I know that either that system or something close to it might be their processing system, you know what I mean?  So, now that IP; Iâm gonna scan that whole range.</p>
+
+<p>JACK:	Some small shops didnât separate their guest WiFi traffic and their cash register system.  So, while inside the shop, he could scan around for all the computers in the network, find a machine that might be a cash register, and try to get into it.</p>
+
+<p>CAM:	Once we found an IP range, used the Nmap or something to scan and find out what open ports were there.</p>
+
+<p>JACK:	Now, one port in particular he was hoping that was open was 3389 RDP.  Thatâs the remote desktop port.  If this port was open, it meant that cash register allowed remote connections to it, probably so someone can remotely connect to it in case thereâs a problem with the cash register.  Itâs a lot easier to fix it if someone can just get into it remotely versus having to send someone onsite to take a look.  So, this is what Cam was looking for; RDP open on cash registers.  After visiting a bunch of stores, trying over and over, eventually he got into one at a barber shop.  [MUSIC] He found the computer that processed credit card transactions, then accessed the software that handled those transactions, and he grabbed all the credit card data that he could find and started copying it over to his computer.</p>
+
+<p>CAM:	Itâs a pretty exciting feeling.  Itâs kinda just a thrill, I guess.  You get on, your heart obviously is starting to beat a little fast or whatever, you get a little nervous.  It was RDP bruting tools so you could put in â I canât remember.  It was like, I think Hydra was one of them.</p>
+
+<p>JACK:	Ah, right; Hydra.  As a defender, I hated Hydra.  It was persistent, relentless, and scary.  Hereâs what it does; Hydra is a brute-force password-guessing tool.  Itâs free.  You can search for it on Google and download it and start using it in minutes.  Itâll try combinations of usernames and passwords to try to log into something.  But on top of that, itâs able to do this on remote websites or computers, so you can tell it hey, try all the usernames and passwords on this website and see if you can get in, and Hydra will try tons of combinations of usernames and passwords on that website and then tell you if it had any successful logins.  But it can also try logging into computers through RDP, the remote desktop protocol, which is exactly what Cam was doing.  Once he got into a shopâs network and identified the cash register and found it had RDP open, he would unleash Hydra on it and try tons of different passwords to try to log in.</p>
+
+<p>The default username on a lot of Windows computers is administrator, so he was trying that username first with tons of different passwords.  In case you were wondering how to protect against Hydra, there are a few things.  First is to lock down who can access that computer over RDP.  Itâs never a good idea for it to be open to the whole internet.  Second, make sure passwords canât be easily guessed by using long, complex passwords.  Third, enable some kind of lockout mechanism or a CAPTCHA to slow down or stop Hydra from being able to try a password again, and again, and again, and again.  Well, as you can imagine, this worked on the barber shop that Cam had access to.  Hydra tried a bunch of passwords and eventually found one that worked.  Cam used that password to log into the cash register computer of a barber shop.  Then he started looking around for the credit card details of the customers.</p>
+
+<p>CAM:	[MUSIC] If you set up your rerun, the point of sale software, and a debugger, so that way they can get â scan through the memory address ranges and also look for something to match Luhnâs algorithm.  Thatâs the way to identify a credit card number.</p>
+
+<p>JACK:	Oh, this is interesting; Luhnâs algorithm, spelled L-U-H-N, is a way to check if a string or a number is a credit card number or not.  Now, you might be wondering isnât the credit card software and the database where the cards are kept secure?  Like, isnât all that encrypted?  Well, yeah, sure, it is.  But [00:55:00] Cam found a way around that.  See, for computers to process the card data, it has to read the card data, so in the computerâs memory is the credit card details, unencrypted.  You just have to know where to look in the RAM to find it.  Cam used a debugger to search the RAM, looking for strings that matched Luhnâs algorithm and if he found a hit, then heâd grab that, thinking it might be credit card details.</p>
+
+<p>CAM:	So, if it found something in some of those memory ranges that it was â that computer software was known to use or whatever, then â and it matched Luhnâs formula or Luhnâs algorithm or whatever, then it would grab the rest of the track.  The track data has a certain format, so it begins with a â I believe a question mark.  It either â no, it begins with a semicolon and it ends with a question mark, so basically anything in between that would be your Track 2.</p>
+
+<p>JACK:	So, Cam set up a little program on the cash register computer to constantly look for new cards and then once an hour, send them to his server.  So, he was getting bunches of freshly-stolen cards every hour.</p>
+
+<p>CAM:	Now, there was nothing that would really work as good as your own fresh stuff.  It was about the same as going and buying a base from somebody but also you have the added benefit of knowing exactly where itâs at.</p>
+
+<p>JACK:	A base is a database of stolen cards.  But yeah, buying your cards from other people; who knows how long ago those cards were stolen or how many other people have used those cards illegally since then?  Having his own fresh database that only he used was definitely more profitable for Cam.  Not only were the cards more valid on this list, but it cost him nothing to acquire them except his own time.  So, he might get a few thousand cards by breaking into a small shop and stealing them; okay.  But actually driving around, trying to find open WiFis for shops and trying to break into their cash registers was a tedious and time-consuming process.  Cam asked around online what others were doing and someone handed him a special list.  [MUSIC] He got a list of IP addresses which were supposedly small shops like this.  The list had thousands and thousands of IPs all belonging to small businesses.  The theory was that these shops had to be online to process credit card transactions, right?  It was probably a regular Windows computer which ran the software to process the cards.</p>
+
+<p>But what happens if someone has to fix a problem on one of those computers?  They would need to either go onsite to the shop and use the computer or set the computer up so that itâs remotely controllable.  So, Cam scanned the list of IPs he got and found a lot of them were actually running RDP, the protocol that allows remote connections to it.  Now, Iâve already said donât do this; donât stick a computer right on the internet and open it up for remote connections using RDP.  It just welcomes people like him to start hammering on it to try to get into it and pillage whateverâs on there.  RDP should only be open to computers on a trusted network, not from anyone in the world.  So, now that Cam has this list of small business IPs with RDP running, he then points Hydra to them and Hydra starts trying to crack the password by trying thousands of different passwords.  But there was also a list he got with the default usernames and passwords for each of these point of sale systems just in case they didnât bother changing it from the default.</p>
+
+<p>[MUSIC] He would point Hydra at one of these computers with RDP running and just let it run all night trying different passwords.  Remember, heâs now doing this remotely over the internet.  Heâs not on their local WiFi anymore.  To do this, heâs still coming from servers that he hacked into and they werenât even registered in his names.  So, it would make it harder for authorities to track it back to him.  So, with the combination of this magic list of IPs of small businesses, finding which IPs were running RDP and then pointing Hydra at all those computers, he was able to automate his hacking.  So, heâd check the server in the morning and see that Hydra had successfully found passwords to a few systems and then he would remotely connect into that computer with the password he found, and bingo; heâs in a computer which is processing credit cards for a coffee shop, a restaurant, a bar, a bakery, and heâd find the software which was handling the credit card data, download all the credit card data that was stored on it, and then close the connection.  He just got a few thousand more cards to cash out with.  This was a big turning point in the whole operation.  Heâs now able to get tons of credit card details himself without having to buy them and when he pulls cash from them, he doesnât have to split it with anyone.  Now heâs able to do this at scale.  At this point, Cam goes full throttle and turns this into a 24/7 operation.</p>
+
+<p>CAM:	[MUSIC] I would go two, three, four days of â without sleep sometimes just monitoring different servers and making sure that Iâm still passing filters and things like that, tweaking different messages and macros.  That would wear you out, and then also, believe it or not, obviously with the ATM stuff, you have to â obviously gotta keep â you gotta move around.  You canât really just be in one spot.</p>
+
+<p>JACK:	All this work resulted in a ton of plastic [01:00:00] credit cards that he could use at ATMs and withdraw money.  But to do this, he has to continuously keep on the move.  Pulling a bunch of money from the same spot was too suspicious, so he would often go on a weekend road trip to another state and do it a bunch of times and then drive back.  Heâd sometimes even fly out of town to do this work.  Heâd make a hotel reservation under a fake name and then ship his equipment there.  Then heâd fly out and spend a few days on the job, hitting up dozens of ATMs all over town, pulling money out with credit cards.</p>
+
+<p>CAM:	Iâve got a stack of fresh ones in my left pocket.  Now, as Iâm working them, Iâm putting them in, Iâm running â now, usually I try to stick to certain machines, even, because after a while you get to learn the different makes and models and you get to realize which ones are on a network or which ones are on a dial-up.  Then also machines themselves have a limit, so youâre trying to do as much as possible as quick as possible, so you obviously prefer the network machines and you prefer the biggest limit you can get on the machine.  But also, I didnât â I wasnât a big fan of the ones that were actually at banks, so I would l try to stick to somewhere in between there, so some of the smaller, private ones that are inside stores or are in different locations or whatever.</p>
+
+<p>There was usually some cheaper ones that were dial-up and theyâre slower and they have maybe a $200 or $300 limit, or there were some faster ones that had a $500 or $1,000 limit, so you were able to kinda maneuver a little quicker.  Alright, now you obviously canât stand at one machine for like twenty minutes or thirty minutes or nothing, right?  I mean, I just â itâs pretty common sense.  But you want to be able to do the most in the shortest amount of time.  Iâd have a pocket full of them, usually.  When Iâd go up to a machine, I got maybe at least ten of them on me.  Now, you know, not all of them are gonna work.  Especially as time went on, that became the number that a lot more and more of them are working.  But Iâm gonna put all â Iâll start with all in one pocket.  If one of them didnât work, Iâd usually put that in a back pocket and if one did work, Iâd usually take the receipt and the cash that came off of it, wrap it around the card, and put it in my right pocket.</p>
+
+<p>JACK:	How many ATMs do you think you would hit in a busy day?</p>
+
+<p>CAM:	Well, itâs like â I guess some of it doesnât really matter now âcause I get kinda paranoid orâ¦</p>
+
+<p>JACK:	Okay, we donât have to get into it.</p>
+
+<p>CAM:	But no, itâs cool.  Like, okay, Iâd say this doesnât really matter at this point âcause, okay, the most â weâre talking pulling like, a hundred-some-thousand a day.  You know what I mean?  But you gotta figure â it got to where thatâs like â 20% is my number.</p>
+
+<p>JACK:	Cash withdrawal limits restarted at midnight, so heâd usually be up âtil then so he could cash out on that ATM twice.  Then heâd go back to his hotel, dump out all his cash on the bed, and reorganize.</p>
+
+<p>CAM:	Iâd usually spend two or three days at least doing it, and then by the end of the third day or whatever, Iâve made a nice chunk of money but also Iâm pretty worn out and sketched out and tired of dodging everything that comes along with that.</p>
+
+<p>JACK:	Thereâs something hypnotizing about a large amount of money.  I can just picture Cam sitting on one of the beds in his hotel room, staring at this pile of money on the other bed where the slow reality hits him that he did it; the money is his and itâs real, and all the things he could buy with that.  But then the sudden jolt back to reality whenever he heard someone talking in the hall or a car door slam outside in the parking lot.  Thereâs a lot of anxiety and stress that came with stealing a lot of cash like this.  How many cameras saw him on that trip?  Did anyone notice his face around town?  Were a trail of his fingerprints going to lead back to him at any moment?  The duality of simultaneously feeling rich and in fear gets to a person.</p>
+
+<p>CAM:	[MUSIC] I did a lot of partying.  I did a â took a bit of traveling which some of it was to do with business, you know, or whatever, as far as this goes, and drugs.  I pretty much lived at four or five-star hotels for a little while as far as different places I was bouncing around between.  Cars, clothesâ¦</p>
+
+<p>JACK:	What kind of cars were â what kind of cars did you have?</p>
+
+<p>CAM:	Just whatever.  Iâve had a couple Mercedes, I had a pretty nice BMW, I had some regular â just like the trucks I told you about, just like my regular day-to-day little truck or whatever.  You know, different things like that.  But my favorite car was my BMW Alpina.  It was a 2008 Alpina which is like the B7.  Itâs like a special edition 745.</p>
+
+<p>JACK:	Tell me about the parties.</p>
+
+<p>CAM:	You know, it wasâ¦</p>
+
+<p>JACK:	What were some of the more exciting parties?</p>
+
+<p>CAM:	I had a New Yearâs Eve party at the Intercontinental Hotel.  Basically, everybody I knew, criminally or otherwise, was there.</p>
+
+<p>JACK:	This was a suite?  A suite that you rented?</p>
+
+<p>CAM:	Yeah.  This was a presidential suite at the Intercontinental.  It was a lot of drugs, drinking, and fun, and a lot of girls.</p>
+
+<p>JACK:	Yeah.  Did you have a DJ?</p>
+
+<p>CAM:	No.  I didnât have a DJ [01:05:00] there.</p>
+
+<p>JACK:	Can you take a guess how much you spent on that party?</p>
+
+<p>CAM:	Yeah, I spent about fifteen-something-thousand dollars, I think, on that party.</p>
+
+<p>JACK:	Hm.  So, at that moment of your life, that was probably the peak of â peak excitement of it all, right?  You had the cars, you had the parties, you had everything you ever wanted.  What was life like for you?  Were you totally happy and satisfied?</p>
+
+<p>CAM:	No.  You know what?  To be honest with you, I couldnât say I really was, man.  It was a lot of stress.  There was times though it was great, you know, but also, like I said, I got pretty deep off into some of the drugs and it kinda went up and down.  It was really stressful, man.  Itâs not something I really want to go back to.  I guess it was kind of the only thing I knew for a while.  I really just wish I had went a legitimate route somehow in the opposite direction or something, you know?  Something that was â something where I could get the same thrill out of it but in a different way where it wouldnât put me in prison for ten years or whatever.  To be honest with you, it wasnât as much about money for me a lot of times.  That was a good byproduct to begin with.  Money wasnât really my main concern or motivation.  It was partly I was able to make some money, but it was more about is this gonna work and seeing if this would work, and then actually seeing it work and just kinda the thrill that came along with that, and just the excitement, I guess.  Also, advancing up; like I said, the reputation thing.  For some reason, that was a big part of it as far as online goes, at any time.  It seemed like almost every time something really good came along, something came along and messed it up.</p>
+
+<p>JACK:	The beginning of the end for Cam started when he found a new forum; Carder.su.  This was basically a marketplace for carders.  You could buy stolen credit card data here, Track 2 data, fulls, bases, you name it.  You can connect with cashers or you can ask questions and learn how to card.</p>
+
+<p>CAM:	It was kind of like a loosely-based criminal eBay.</p>
+
+<p>JACK:	As it turned out, the feds had an eye on Carder.su.  But the website itself was bulletproof, meaning the server was hosted by a company somewhere in the world which just didnât want to listen to US law enforcement, so the feds couldnât seize it or shut it down.  They had to wait and they got lucky when the person who was running Carder.su moved the server.  For some reason, the people running the site were moving hosting providers and so for a few days during this transition, Carder.su was moved onto a server in Dallas, Texas.  Thatâs when the feds got a warrant for that website-hosting provider in Dallas.  They took a snapshot of the server which gave them a list of all the users in the database.  [MUSIC] The feds were able to go through the user database and look up e-mail addresses.  Lots of people had signed up to the site using their normal e-mail.  I bet the police were just able to search LinkedIn with these e-mail addresses and find a bunch of people that way.</p>
+
+<p>In fact, a lot of people did get arrested from this Carder.su bust.  I talk about Carder.su in Episode 32 called The Carder which is what Cam originally reached out to me correcting me on a few things.  But Cam had been careful on Carder.su.  He registered as the user Kilobit which he didnât associate to his real name anywhere.  It didnât seem like the feds had any leads on catching Cam from this bust.  Cam made an unrelated mistake, though; he partied too hard one night at a DoubleTree hotel in Alabama.  He was staying there with a friend and they were smoking weed in the hotel room, but someone called to complain about the smoke.  Cam got a knock on the door and his friend opened it.  It was the police and they made their way into the room.  Well, were you thinking oh shit, oh shit, oh shit?</p>
+
+<p>CAM:	Yeah, of course.</p>
+
+<p>JACK:	The police asked for their IDs and Cam gave them a fake one, of course; the one he actually used to reserve the room with.</p>
+
+<p>CAM:	I was pretty worried.  It kinda was like all of a sudden they were thinking I was the guy on the fake ID.  When one of them found my real ID, they were kinda like, who is this?  So, Iâm telling oh, thatâs me.  So, they still havenât connected the two until he hears the other one calling a warrant check on the fake name.  Heâs like well, if thatâs him, whoâs he?  Whoâs this?</p>
+
+<p>JACK:	Cam gets arrested and the Secret Service interviews him.  Now, you might be thinking what the heck does the Secret Service have to do with this?  Arenât they supposed to be protecting the president?  Well, they do that but they also investigate financial crimes too, like stolen credit cards.  For some reason, they had a hunch that Cam was into more than just fake IDs.  This is the second time being arrested with a fake ID and the time before, he was busted doing stolen credit card stuff.  So, they investigated him further to try to figure out more.</p>
+
+<p>CAM:	One of them made a comment that yeah, we talked to Washington and they know who you are.  Now, at the time, Iâm thinking that they were just trying to scare me or something like that.</p>
+
+<p>JACK:	But it wasnât a bluff.  The police had confiscated Camâs computer and they found something very interesting on it.  When they booted it up, Kilobit appeared [01:10:00] on the screen.  Cam had named his computer Kilobit and this was the same name he used on the Carder.su forums.  The police knew about Kilobit for years.  The Secret Service in Las Vegas had been submitting reports about the alias, trying to figure out who was behind the name.</p>
+
+<p>CAM:	One of the things that kinda got me in a little more trouble was helping out a lot more â and a lot of peopleâs questions and it â a lot of things like that.  I think that kinda â what made me more of a prevalent person on that forum in their eyes, anyway, and then just being around for a long time and people knowing generally who I was.</p>
+
+<p>JACK:	But Cam didnât know that then.  In his mind, he had just been caught with some fake IDs.  He got out on bail and he was thinking he might get lucky a second time and just get away with a slap on the wrist.  But that fantasy started to crumble one day when he got a call from his brother.</p>
+
+<p>CAM:	My brother calls me and tells me that Secret Service and Homeland Security had just left his house.  [MUSIC] Iâm like, man, what?  Iâm thinking, what?  Okay, what â they were looking for you, but they wouldnât tell me what it was about.</p>
+
+<p>JACK:	Cam was getting worried.  Now theyâre investigating his brother?  Now they have Homeland Security involved?  Cam had two phones; a normal one and a burner one for shady activity.  He noticed that heâd lost his burner phone, so later that morning, he called a friend thinking he might have left his phone at his friendâs house.</p>
+
+<p>CAM:	Iâm like hey, man, I think I left my phone at your house.  Heâs like yeah, you definitely did because Secret Service and Homeland Security was here this morning looking for you.  So, now Iâm starting to realize well, itâs kinda weird; theyâre not only in one city but theyâre in another city several hours away.</p>
+
+<p>JACK:	Cam doesnât know what to make of this.  He starts getting nervous.  A few days pass and he keeps hearing about the indictment related to Carder.su, but he convinces himself that heâs clean and thereâs no connection between him and Carder.su that he left behind.  Then while reading a blog, he comes across a copy of the indictment with his name on it.  Cam calls his lawyer.</p>
+
+<p>CAM:	Now I call him and Iâm like hey man, Iâm indicted by the feds for the RICO Act in Las Vegas.  Heâs like well, how do you know that?  Iâm like, âcause Iâm reading about it on a blog.  Heâs like well, you know.  Iâm like, thereâs a copy of the indictment on the guyâs blog, man.  Do you want me to send it to you?  Heâs like yeah, send it to me and Iâll call you back.  So, I e-mail it to him.  He calls me back and heâs like yeah, if you go to court, theyâre probably gonna be there to arrest you.  So, I didnât go.</p>
+
+<p>JACK:	[MUSIC] Cam gets a new ID, a new car, a new phone, and splits.</p>
+
+<p>CAM:	Well, Iâm not gonna officially say I went on the run.</p>
+
+<p>JACK:	For a month he holes up in an apartment, too afraid to go out.  He feels like the walls are closing in on him and thereâs no place to go.  Finally, he canât take it anymore.  He goes outside to get a haircut.  On that day, some local cops pull him over.  Cam can tell right away that this isnât just some traffic stop.  They tell him to get out of the car and put his hands on his back.  He gives the cop a fake ID.  They pat him down and put him in the back of the police car.  They ask him if he knows who Cameron Harrison is.</p>
+
+<p>CAM:	I told him no.  But I was just scared, obviously.  I didnât really know exactly what to do.</p>
+
+<p>JACK:	An unmarked car pulls up by the police car.  The police talk to the man in the unmarked car who comes over to Cam, holding a big, blown up photo of Cam.</p>
+
+<p>CAM:	They know exactly who I was.  From the minute I was in the back of the car, he asked do you know who Cameron Harrison is?</p>
+
+<p>JACK:	That was the end for Cam.  He went directly to jail, did not pass Go, and stayed there.  They had quite a lot of evidence on him.  They knew about all his activity on Carder.su because they had his computer too, and all the equipment from his house.  The prosecutors knew he had broken the law but they were trying to figure out exactly what he had had done and how bad it was.  Helping criminals on forums is not that bad but breaking into small businesses, stealing credit cards, printing them, and going town to town draining every ATM in sight certainly is.  Would the feds be able to figure out that he had stolen all these credit cards himself and done all that work?  He wondered just how much the courts knew about him.  Do you know how much you may have made from all this illegal activity in total?  Did you make a million dollars or more?</p>
+
+<p>CAM:	I mean, thatâs kind of a topic that isnât something I like to say a whole lot in public or whatever, but this â I guess you could say I did pretty well.  I lived very nicely for many, many years which â with no worries, I guess you could say.  I donât really want to put a whole number on it like that.</p>
+
+<p>JACK:	Yeah.  It was really hard for the police to sort out what they were dealing with here.  The roll-up of Carder.su identified a lot of criminals, so Camâs indictment had thirty-nine other people on it, including him.  Tons of people on that site were trafficking and cashing out on stolen credit cards.  Tracking every card, trying to figure out how much was stolen was a mammoth task for law enforcement.  But they came up with a number and decided that everyone on the indictment has to pay 50 million dollars in restitution [01:15:00] because the feds claimed everyone was responsible for the groupâs activity.  How are you gonna pay 50 million dollars off?</p>
+
+<p>CAM:	Thatâs a good question, man.</p>
+
+<p>JACK:	[MUSIC] The 50 million was determined because the courts decided the entire group of thirty-nine people had stolen 50 million dollars from credit cards, because some of the people in the indictment were stealing the cards and some of the people were selling the cards and some of the people were cashing out on the cards.  Thatâs why thereâs a lot of overlap.  Itâs hard to determine how much this person did or that person did when really itâs when they got together collectively is when they were able to steal the most.  A sentence came down for Cam.  They found him guilty of RICO.  Thatâs participating in racketeering, influence, and corrupt organization.  Because Cam had cashers himself and was making fake IDs for people to use to pick up money at Western Unions and ATMs, it meant he was organizing some of this which means harsher penalties compared to just taking part.  He was found guilty and the judge sentenced him to 115 months which is nine years, seven months.  He was able to get out after eight years and then go to a halfway house.  He still has to pay back that 50 million dollars in restitution.  Prison gave Cam a lot of time to think about what he did.</p>
+
+<p>CAM:	At the end, I would have been a lot happier probably doing something legitimate.  It wouldnât have been too much trouble and I wouldnât have tarnished my chances of any of that as bad as I have now.  Also wouldnât have put a lot of people through a lot of stress that I wish I hadnât have as far as family and stuff like that goes.  Now at the time, you donât think about that as much when youâre that young, I guess, and also when youâre in the middle of doing things like that, but when youâre sitting in prison for several years, you definitely do.</p>
+
+<p>JACK:	Cam went to prison in 2012 and he spent eight years in there.  Now heâs out, or at least halfway out.  I called him while he was at a halfway house but now heâs living in his own apartment.  What are your future plans?</p>
+
+<p>CAM:	Well, Iâm still working on that but Iâm hoping I can actually do something that kinda â have more of a positive role.  The ultimate goal would be â and the dream outcome would be to somehow â to use a lot of the bullshit that Iâve accumulated over time, a lot of the different knowledge to something beneficial in some sort of way but obviously, I can understand trust would be an issue.  I guess it makes you realize how much of a waste a lot of the quick money was, you know?  It wasnât really â it doesnât equal to happiness.</p>
+
+<p>(OUTRO):	[OUTRO MUSIC] A big thank you to Cameron Harrison, AKA Kilobit, for coming on the show and telling us your story.  You can follow Cam on Twitter.  His name there is @CamSaysThis.  This show is made by me, Jack Rhysider, where the only cards I trade are Magic the Gathering cards.  This episode was produced by Ilana Strauss whoâs always checking her shutter speed, sound design by the marvelous Andrew Meriwether, editing help this episode by the mini-boss Damienne.  Our theme music is by the space-traveler, Breakmaster Cylinder.  Even though I keep getting in trouble for placing realistic plastic snakes under the data center floor tiles, this is Darknet Diaries.</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

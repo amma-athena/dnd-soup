@@ -1,0 +1,528 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>Shadow Brokers â Darknet Diaries</title>
+	<meta name="description" content="The NSA has some pretty advanced, super secret, hacking tools. What if these secret hacking tools were to end up in the wrong person's hands? Well, that happened.">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Shadow Brokers â Darknet Diaries">  
+	<meta name="twitter:description" content="The NSA has some pretty advanced, super secret, hacking tools. What if these secret hacking tools were to end up in the wrong person's hands? Well, that happened.">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/shadowbrokers.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/53/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Shadow Brokers â Darknet Diaries" />
+	<meta property="og:description"        content="The NSA has some pretty advanced, super secret, hacking tools. What if these secret hacking tools were to end up in the wrong person's hands? Well, that happened." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/shadowbrokers.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/53/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/shadowbrokers.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/53/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="Shadow Brokers â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/shadowbrokers.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 53: Shadow Brokers</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://traffic.megaphone.fm/ADV9906244248.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/53/",
+			   "title": "Ep 53: Shadow Brokers"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/53">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[FULL TRANSCRIPT]</p>
+
+<p>JACK:	Sometimes you read the news and the story sticks with you forever.  One such news story I saw was some security news I heard and Iâll always remember it.  It was when I first saw a presentation about the NSA ANT catalogue.  Have you seen this?  Itâs mind-bending.  [MUSIC] Okay, hereâs what happened.  Someone with access to NSA documents took the ANT catalogue and gave it to journalists at Der Spiegel and then they published it.  At first, we thought it was Snowden who leaked these documents but weâre not sure if it was him or a second leaker.  I asked Snowden on Twitter if it was him, but he didnât respond.  So, whatâs NSAâs ANT catalogue?  ANT stands for Advanced Network Technology and in this catalogue are a list of hacks, exploits, and cyber-surveillance devices that the NSA can use for certain missions.  If you work at the NSA and you need an exploit, you look through this catalogue and then request to get one of these devices or pieces of software.
+<!--more--></p>
+
+<p>When you look through it, it looks like the work of science fiction but these are all real devices.  Let me point out a few to you; the NSA has created a device codenamed COTTONMOUTH.  It looks like a typical USB plug; one youâd see on a mouse or a keyboard but itâs actually capturing all the data going through it and wirelessly transmitting that data.  It listens for mouse clicks, keyboard strokes, or any other data going through it.  Now, the receiver has to be close by; I donât know, twenty feet maybe, and with a strong antenna and nothing in the way could probably transmit much further.  Someone could be listening maybe in the room next door to everything that your USB connector is seeing.  This is some next-level technology that the NSA developed in 2008 which still isnât even available commercially today.  The ANT catalogue even lists a price for this; $20,000 per USB implant.  Jeez, thatâs a lot.  The NSA ANT catalogue has loads of other hacks and implants.</p>
+
+<p>Thereâs DROPOUTJEEP which is a piece of software that if you can get it onto an iPhone, itâll give you all the text messages, contacts, voicemail, itâll hot mic or open the video-camera, and get a geo-location of that phone.  Thereâs Firewalk which is a pretty amazing network sniffer.  Thereâs JETPLOW which is a firmware that gives the NSA backdoor access to a Cisco firewall.  Then, thereâs DEITYBOUNCE which is an implant that goes onto a Dell server which can get them backdoor access to that, but one of my favorites is called RAGEMASTER.  This is a little device that taps into any VGA port.  This is the connector that goes from your computer to your monitor.  With this, it can wirelessly transmit everything that VGA connector sees, essentially cloning that monitor to be seen by someone else at a distance.  Letâs imagine how these hacks might take place; the NSA might intercept a Cisco firewall being delivered somewhere and theyâll open the box carefully, put their firmware on it, and then seal the box back up.</p>
+
+<p>This will give them permanent backdoor access into that firewall whenever they want, or if they know their target is going to stay at a hotel, they can get a room next door to their target, break into their targetâs room, install COTTONMOUTH or RAGEMASTER and then listen in the other room for the wireless signal to see everything that person was typing and seeing.  Even if that person wasnât connected to the wireless or any network at all, this is possible and itâs insanely impressive.  Yes, fifty items in this catalogue were leaked to the public in 2013 but we only saw descriptions of these devices; no actual devices were seen.  Now, upon closer inspection, we see that these items were intended to be used by TAO.  TAO stands for Tailored Access Operations, TAO.  Itâs a unit within NSA that has a primary objective to gather intelligence on computer systems.  The people within TAO have access to the most sophisticated hacking tools ever created.</p>
+
+<p>They have the budget and ability to spend years on research and development to make insane tools and then use them whenever they need.  TAO is NSAâs elite hacking force and theyâve actually changed their name to Computer Network Operations now but for this story, Iâm gonna just keep calling them TAO.  When security companies research hacking campaigns, they canât tell for sure who did it, so they give hackers a unique codename.  Fancy Bear is whatâs given to the Russian hackers.  Charming Kitten is given to Iran and so on.  But security companies have investigated certain malware thatâs come from the NSA.  A hacking name was given to the NSA.  The name they were given is the Equation Group and itâs believed that whoever is doing work for the Equation Group is specifically TAO within the NSA.</p>
+
+<p>JACK (INTRO):	[INTRO MUSIC] These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  [00:05:00] This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	Okay, today weâre talking with someone who I really wanted to talk to for a long time; someone who knows a lot about security and has been doing this for decades.  When youâre battling hackers for that long, you surely have some interesting stories.</p>
+
+<p>JAKE:	My nameâs Jake Williams.  Iâm the founder of Rendition InfoSec.  I think right now Iâm an InfoSec dumpster fire putter-outer, basically.  All over the board, when it comes to InfoSec, incidence response, Red Team, SOC, whatever.</p>
+
+<p>JACK:	What does Rendition Security do?</p>
+
+<p>JAKE:	Well, weâre on a managed security operation center, so I manage SOC, or vSOC as some people call it.  We do that 24/7 here in the US to actually manage out of Augusta, Georgia.  Separately, worldwide, we do Red Team and incident response.  We have folks actually in several countries and do a lot of international work as well as domestic work as well.  Basically, Red Team incident response is a big piece for digital forensics.  Some security architecture work and then of course, the vSOC.</p>
+
+<p>JACK:	For you Twitter folks out there, this is @MalwareJake on Twitter.  I say that because he has fifty thousand followers on Twitter and heâs pretty well-known.  Besides being the founder of Rendition Security, he also teaches SANS courses.  These are information security courses and specifically he teaches courses on threat intelligence, forensics, penetration testing, and even threat detection.  SANS courses are usually fantastic and extremely informative and have some of the best teachers.  For this story, weâre gonna go back to August 2016.  [MUSIC] Jake was working for Rendition Security then and his client had a specific security issue that was so big they needed Jake to go on-site to help.  This was an incident response; the client was hit with something serious so Jake and his team went to the client location and took over a conference room to begin doing triage.</p>
+
+<p>JAKE:	We already had a War Room per se right there for the incident response.</p>
+
+<p>JACK:	Jake had been at this client site for a few days now trying to help resolve this security incident.  Back at the home office of Rendition Security, they have a full-on SOC, a Security Operations Center.  While a few people were on-site helping the client, there were many more people back in the office helping out, too.  A SOC is usually quite a sight to see. They have lots of technicians or analysts sitting in desks with three or four monitors each, analyzing alerts.  But on the wall in the front of the SOC will be all kinds of big screen monitors; world maps, attack maps, rosters, news feeds.  On one of the monitors in this SOC was a Twitter feed.  Now, in the early morning of August 13th, 2016, one of the people in the SOC saw something on that Twitter feed and they knew they needed to tell Jake.</p>
+
+<p>JAKE:	Maybe 6:30 or 7:00 in the morning, something like that.  I remember we were just rolling out.  If I remember correctly, I think the Sonic for breakfast; grabbing some of those breakfast burritos they have.</p>
+
+<p>JACK:	The tweet that Jake read was posted by someone with the name Shadow Brokerss with two sâs at the end.  Tweet said, quote, âWe follow Equation Group traffic.  We find Equation Group source range.  We hack Equation Group.  We find many Equation Group cyber-weapons.  You see picture?  We give you some Equation Group files free.  You see?  This is good proof.  No, you enjoy.  You break many things, you find many intrusions, you write many bad words but not all.  We are auction the best files.â  End quote.  That is hard to understand.  Sounds like whoever wrote that, English was not their first language.  But it basically said this group, Shadow Brokers, have stolen some cyber-weapons from the NSA, specifically TAO within the NSA which is what Equation Group is, and that theyâre giving away one of these exploits for free to everyone now, and auctioning the rest off.  The Rendition SOC saw this, thought it was important.</p>
+
+<p>JAKE:	[00:10:00] We got alerted from one of them and said hey, are you seeing this?  Up to that point, the answer is no, we havenât seen this.  Then, weâre popping up on Twitter and going out to GitHub and saying okay, hey, first it was the download the stuff from GitHub and then it was a oh snap, this is real.  This isnât a hoax.  This is real stuff.
+JACK:	Even though Jake is the President of Rendition Security and even though he was on a clientâs site at the time, he felt this was so important that he took time out of his day to download these files and to look at this malware that the Shadow Brokers had released.  The malware was a specific exploit for Cisco and Fortinet firewalls.  This malware would allow the attacker to send an exploit to a fully-patched firewall and allow the hacker to take full control of that firewall.</p>
+
+<p>JAKE:	Well, I downloaded some files that, weâll say for sake of argument, looked legit.</p>
+
+<p>JACK:	Hm, Jake says it looks legit.  Letâs consider what that means for a moment; someone calling themselves Shadow Brokers has claimed that they got one of TAOâs secret exploits and publically dumped it for the world to see, an exploit that Cisco and Fortinet did not know existed.  This exploit does in fact work on a fully-updated firewall, meaning it was previously unknown to the world and now Jake is saying it looks legit.</p>
+
+<p>JAKE:	Yeah, I mean, I think thatâs as far as I can go directly without confirming or denying.  Weâll say looked like legitimate threats.</p>
+
+<p>JACK:	I feel like Jake might know something more about this than heâs leading on.  I mean, what president of a security company is going to take time out to download a potential NSA exploit, test it, and then come out and say it looks legit?  After this, he went into the client office to continue doing work for them.</p>
+
+<p>JAKE:	Actually, it was a Cisco customer who had a lot of Legacy Cisco equipment.  Having some of that Legacy Cisco equipment with the â basically, weâll just say it was equipment that was itself vulnerable in some of the configuration.  Some of the stuff they had, actually, was vulnerable to some of the stuff that was released which is obviously not a best-case kind of scenario there.  Yeah, definitely was doing some digging into whatâs in the dump and what kind of exposure does that leave not just them that weâre on-site with but obviously other clients as well.</p>
+
+<p>JACK:	Both Cisco and Fortinet confirmed this was a vulnerability they were not aware of and issued a patch right away but this barely fixed the issue.  The issue now is who are these Shadow Brokers?  How many exploits do they have?  [MUSIC] How did they get these?  Not to mention, theyâre selling even more of these to the highest bidder.  They even went on to say if they can get one million Bitcoin, theyâll dump everything to the public for everyone to see.  But the immediate problem is realizing that this top-secret exploit is now in the enemyâs hands.</p>
+
+<p>JAKE:	Well, everybodyâs hands, right?  At the time, bear in mind, itâs one zip file and it is a â itâs one zip file and thereâs no evidence at this point that they have anything else specifically.  I know they claimed to but in their initial post, itâs all gibberish anyway.  Iâm kind of looking at it going, itâs one file.  Without giving the specifics, letâs just say that it is the kind of thing that I could see somebody having without having everything else.  There are plausible scenarios in which one could have that specific thing and not have everything else that they dump later.</p>
+
+<p>JACK:	Okay.</p>
+
+<p>JAKE:	Yeah.</p>
+
+<p>JACK:	Did you think â did you have a guess at who might be Shadow Brokers at that point?</p>
+
+<p>JAKE:	I think at that point it was a little too early for me to really develop much of a theory beyond the wow.  It was quite a dump so I think at the time, we did a lot of internal discussion and analysis.  Rendition, we did quite a bit of that.  I think for us, we were kind of split between either this is legit; theyâre dumping this to show that they have legit other stuff to sell.  âCause remember, that was part of the offer, right?  Was that they would release the keys to decrypt these other awesome, as of yet unknown, even what â quantity and quality, these other zero-days.  Weâre gonna release all this stuff.  This is the preview or the teaser, as it were, to get peopleâs appetites whet.</p>
+
+<p>I think about half of us, the group, kind of looked and said yeah, thatâs probably what it is.  There was another group that was â another [00:15:00] contingent that was like yeah, no, this has nothing to do with money, absolutely nothing to do with money.  This is full-on, regardless of what else they have, this is full-on an information operation.  I think I kind of flip-flopped between the two.  I gravitate to information operation but I could see the other argument being legit as well, that some insider perhaps had walked out with stuff and was motivated by money.</p>
+
+<p>JACK:	The news was now spreading all over the internet that the Shadow Brokers had leaked NSA hacking tools.  The Guardian was posting about it, Ars Technica, Engadget, The Atlantic, Wired, even the New York Times.  This was a really big deal and had the attention of the world.  How much did the auction get to?  Well, in the first twenty-four hours after the dump, the auction only received $937 which I think was quite a disappointment for the Shadow Brokers.  People everywhere were trying to guess how they got these exploits.  Did someone hack the NSA?  Maybe the NSA hacked them but then left their hacker tools behind.  Because if the NSA is going to hack something, they need to put their exploit there first and then execute it.  Maybe they just left their exploits behind or maybe someone from the NSA grabbed this stuff and walked out with it.  Nobody knew for sure but these Shadow Brokers had captured the attention of the world.  Two months later, Joe Biden was on NBCâs Meet the Press.  The two were talking about Russia possibly hacking the elections and they had this to say.</p>
+
+<p>CHUCK:	I talked with Ambassador â former Russian Ambassador Mike McFaul.  We talked about the idea that everyoneâs â you gotta respond when theyâre hacking.  You gotta do something.  He described it as a high hard one, maybe just like in baseball; you throw a high, hard one to send a message.  But we sent a message, yeah, to Putin.</p>
+
+<p>JOE:	Weâre sending a message.  We have the capacity to do it.  The messageâ¦</p>
+
+<p>CHUCK:	Theyâll know it?</p>
+
+<p>JOE:	â¦heâll know it.  Itâll be at the time of our choosing and under the circumstances that had the greatest impact.</p>
+
+<p>CHUCK:	A message is going to be sent?  Will the public know it?</p>
+
+<p>JOE:	I hope not.</p>
+
+<p>CHUCK:	Mr. Vice President, Iâll leave it there.  Thank you, sir.</p>
+
+<p>JOE:	Thank you.</p>
+
+<p>JACK:	Two weeks after that, Shadow Brokers published their second dump.  First, they say this right away, quote, [MUSIC] âWhy is dirty grandpa threatening CIAâs cyber-war with Russia?â  End quote.  Now, I believe theyâre calling Biden dirty grandpa here because of what he said just a few weeks earlier which is a really, really weird thing to say, but okay.  The contents of this second dump was just a big list of IP addresses and the Shadow Brokers claimed that this was a list of servers in the world that the NSA had infected or was using as a server to launch exploits from.  This wasnât quite that big of a dump; the message was more like telling the NSA that the Shadow Brokers werenât going away and this is a reminder that theyâre still a threat.</p>
+
+<p>JAKE:	I think the second dump was really interesting because the second dump, given all the IP addresses that were there, became a really interesting data set for researchers who had a lot of net flow data.  We did, indeed â and I think just like anybody else, right, went back through net flow data for our clients and said okay, do we see IP addresses from this list connecting to any client anything?  Because obviously if they are, that could be an indicator of compromise.  Itâs definitely an indicator of concern but yeah, I mean other than analyzing what they wrote, the Shadow Brokers themselves wrote and posted.  I think they were on Steemit still at the time; yeah, Steemit.  Basically, beyond looking at what they wrote, it wasnât really a â that next drop wasnât earth-shattering.  There was nothing really in there besides the IP addresses but it was more actionable than the first one, to be honest, for the majority of InfoSec professionals.</p>
+
+<p>JACK:	The reason why this was actionable for some InfoSec professionals is because we got a list of IP addresses that the NSA is possibly hacking from.  If you can cross-reference that with the IP addresses that are coming into your network like hits to your website, logins to your VPN, that kind of thing, you might be able to notice if the NSA was hacking you; or, at least in theory, thatâs what you could possibly check for.  Stay with us because after the break, the world is about to change.  [00:20:00] Now, something huge happened in the world just after this second dump.  The US had a presidential election and Donald Trump took the election.  There was a lot of rhetoric at the time that the Russians meddled with the election and just as people were starting to talk about that, in January of 2017, the Shadow Brokers made another post, this one saying goodbye.</p>
+
+<p>The post said that they did not get the Bitcoin they were hoping for so they were just going to release more hacking tools for free for anyone.  [MUSIC] They posted sixty-one Windows executables, link libraries, and drivers, claiming each one was developed by the Equation Group, TAO within the NSA, and can be used to hack Windows computers.  Again, these did check out and they were new exploits not previously seen and they looked legit again, as in they were probably created by the TAO in NSA.  The Shadow Brokers then signed off, saying goodbye, claiming theyâre going to go dark because they didnât get enough Bitcoins.</p>
+
+<p>JAKE:	Sixty-seven or something files.  The actual files themselves also get sent out.  That was a pretty big deal for us because in their directorial listing it says something like Event Log Edit or Edit Event Log, something, and thereâs multiple references to it.  In the InfoSec community, and the forensics, their deeper community, a lot of folks take those event logs to be sacred, right?  There are whole textbooks written about how you can basically clear an event log but you canât surgically edit one.  Now, those of us in incident response have known thatâs been not true for some period of time but we donât have â most of us donât have publically available tools that we can point to and say no, no, look, hereâs the capability.</p>
+
+<p>The capability definitely exists; hereâs where itâs at.  Again, anybody whoâs in this business knows that itâs a capability.  We even know who had it up to that point but suddenly overnight, everybody had it.  It changed the game on incident response and having seen that, we wanted to go ahead and basically, that was one of the first major posts that I wrote about it, was to say hey look, this is a game-changer for incident response.  Itâs a game-changer for a lot of stuff but specifically for IR, this is a full-on game-changer; pay attention.</p>
+
+<p>JACK:	Hm, yeah.  The exploit they dumped means a hacker can edit an event log in Windows.  This was previously not a capability.  Well, not a capability except for the TAO unit within the NSA, but now the whole world has this capability.  This could have a big impact.  Jake continued to analyze what the Shadow Brokers were dumping.  Yeah, he was blogging about it, talking about what he thinks of this and what the important takeaways are from these dumps.  But this wasnât the last we heard from Shadow Brokers; about three months later, in the first week of April, they showed back up.</p>
+
+<p>They made another post, dumping more stolen hacking tools.  In this post, they even had a message for the president.  [MUSIC] Quote, âThe Shadow Brokers voted for you.  The Shadow Brokers supports you.  The Shadow Brokers is losing faith in you, Mr. Trump.  Itâs appearing you are abandoning your base, the movement, and the peoples who getting you elected.â  End quote.  Huh, does this mean the Shadow Brokers are part of the far-right?  Or is this some kind of smoke screen?  Well, again, Jake saw this dump, analyzed it, made sense of it, and then made a blog post about it.</p>
+
+<p>JAKE:	I said look, if you track the dumps and you track some of the rhetoric, the timing of the dumps is very conveniently aligned around times that Russia is being called out in the press for hacking.  Literally what theyâre doing is, I hypothesized and I said basically, I canât say for sure that the timing is coincidental or circumstantial, whatever.  We can say that the Shadow Brokersâ dumps, the timing of these definitely lines up with times that Russian hacking is in the news and in the tech space which is largely where thatâs being covered, them dumping these â creating these dumps is completely taking the focus away from Russian hacking and putting it on oh my gosh, NSA lost tools, allegedly.  Check box, right?</p>
+
+<p>JACK:	Itâs always weird when hacking stories get political for me âcause I donât think us security people even cautiously [00:25:00] realize when it does get political.  We just see some shadowy group of people dumping hacking tools which is a real impact on the networks weâre trying to secure.  But if you lean into the story, you start seeing things like Biden and Russia and elections, and Donald Trump.  Phew.  These were some of the observations that Jake saw and he was starting to post this to his blog.  Now keep in mind, Jake here is known as @MalwareJake on Twitter where he has 50,000 followers.  When he posts a blog post, it gets considerable eyes on it.  This particular blog post got retweeted and started spreading.</p>
+
+<p>JAKE:	Well yeah, not just retweeted but that actually took the content and basically wrote stories around the content saying oh, Jake Williams of Rendition says that he believes this is, if not a Russian operation, in the interests of Russia, kind of thing.  Folks wrote stories about the analysis, kind of deal.</p>
+
+<p>JACK:	Itâs kind of exciting to have a blog post of yours gain some traction like that.  It feels good that you have something helpful to say about the conversation and people appreciate your thoughts.  But then, the next dayâ¦</p>
+
+<p>JAKE:	Gosh, I was in Orlando teaching at a SANS event.  I was actually sick at the time to, on topâI was running an actual fever on top of everything else.  But I was actually teaching exploit development at the time, advanced exploit dev in Orlando.  I wake up, phone alarm goes off, whatever.  [MUSIC] I wake up and I check Twitter notifications and at the time, I saw all my notifications go into the phone, what have you.  I just do a little drag-down and itâs like, 99+.  99âs where it stops counting.  Itâs like, 99+ notifications.  Iâm like ugh, either something really good has, you know, like a blog post has gone viral or something â Iâm like, my first thought is I tweeted something that really pissed a bunch of people off and Iâve got some whatever it is, the gang-up kind of thing going, or dogpiling or something.  Then my blood ran cold when I saw what had actually happened.</p>
+
+<p>JACK:	Shadow Brokers, the secret hackers who had the attention of the entire InfoSec community and so many more people, had tweeted directly at Jake.  The tweet said, quote, â@MalwareJake, you having a big mouth for former Equation Group member.  Shadow Brokers is not in habit of outing Equation Group members but had to make exception for big mouth.â  End quote.  The English was rubbish but the message was clear.  Whoever these Shadow Brokers were had just stated publically for everyone in the world to know that Jake was a former member of NSAâs TAO, a.k.a, the Equation Group.</p>
+
+<p>JAKE:	Yes, yep.</p>
+
+<p>JACK:	The thing is, itâs true.  Jake had spent almost two decades working in the information community for the government and about five years in TAO.  But Jake had kept this a secret, almost just to himself even though he was a public figure with tons of Twitter followers, a speaker at events, a SANS instructor.  Nobody outside his close friends and family and ex-co-workers knew he was a former member of TAO.</p>
+
+<p>JAKE:	No, I certainly wasnât tweeting that â I mean, I had a hole in my â obviously, if you go to my LinkedIn, you can see I work for the DoD, right.  Thereâs no question there but I mean, in our space, thereâs a lot of people in InfoSec that worked at some time for the DoD.  I was former army and I felt like that was all â yeah, again, it was DoD but yeah, to get in and say NSA â and really on top of that, to say NSA hacker, is a whole different level of â yeah, that, I guess.  It wasnât something that I really was planning to start talking about out there, but whatever.  Yeah.</p>
+
+<p>JACK:	Whatâs your initial reaction when you saw that?</p>
+
+<p>JAKE:	Well, Iâll be honest and say it was unprecedented and I didnât really have a good feel for how the government was gonna handle this.  A lot of people have chatted about this with some of their folks.  Over the last couple of years, what I didnât know at the time, the thing that most concerned me was the complete lack of predictability for what the US government was gonna do.  I didnât know if the FBI was gonna sweep in and be holy goodness, this is Russia.  I just donât know.  There is, even at that time, a thought that itâs Russia.  The community, theyâre definitely â you mentioned before, some of the Trump rhetoric â I didnât know if â it wasnât just what was the US government gonna do, but how were ordinary people gonna react to this?  It was a very challenging time because of that, I think, more than anything else, was just the unpredictability.  Yeah.  Itâs unprecedented.</p>
+
+<p>JACK:	That must have ruined your whole day.</p>
+
+<p>JAKE:	Like I said, I was already sick.  Iâll be honest and tell you that [00:30:00] I canât picture a better place to have to deal with that than teaching a SANS class and itâs what we call boot camp class that runs from nine in the morning âtil seven p.m.  I feel like that night, I know we had some other event that I was staffing there, so I literally worked from nine to nine despite being sick and I cannot fathom a better way to have dealt with that.</p>
+
+<p>JACK:	Why?</p>
+
+<p>JAKE:	It was forced distraction.  I didnât have time to mull over it as much as just go do your thing.  I think that was helpful to me.</p>
+
+<p>JACK:	Yeah, so I was just wondering kind of the overall message; do you think they were guessing at who you were orâ¦?</p>
+
+<p>JAKE:	No, not a bit.  I can say with confidence that â with high confidence that they 100% were not guessing at who I was.  I say that with high confidence.  I canât get into the why but I will say for sure they were not guessing at who I was.  They had that dead to rights.  They knew; it wasnât a guess.  Based on some other stuff that theyâve written, Iâm fairly certain they had that, yeah.  But what the message was is another thing entirely, right?  It could be, and Iâve put a lot of thought into this, the message could be purely that they didnât like what I was writing and wanted me to shut up and wanted that blog post down.  My business partner at the time reacted exactly that way and took the blog post down.</p>
+
+<p>Even with links to it, right, he basically rewrote it as a one-paragraph nothing; no real content to it, no real meat to it.  There wasnât a 404 on the website but he took that down and if they were trying to accomplish that goal, that they did.  They definitely did.  It could have also been that if somebody else was out there that hadnât yet been identified, that they were trying to say hey, if you do what this guy does, weâre going to out you too.  I donât know, I would expect that if anybody else were thinking about commenting on â former NSA folks were thinking about commenting on the Shadow Brokers, I would expect that would be a deterrent as well.  But again, as far as their motivation, itâs really hard to nail down.</p>
+
+<p>JACK:	[MUSIC] What a weird and surreal thing to happen to Jake; to be outed publically by this mysterious hacker crew.  Itâs like he was doxed by them.  The tweet didnât just stop there.  It went on to say how the Shadow Brokers know about some top-secret weird missions and Iâm gonna assume classified things that Jake was involved in while at TAO.  The Shadow Brokersâ tweets started, or their messages, were saying things like connecting you to things like odd jobs, CCI, Windows BITS persistence, and the Q Group.</p>
+
+<p>JAKE:	Mm-hm.</p>
+
+<p>JACK:	Do you have any comment about that?</p>
+
+<p>JAKE:	Thereâs no safe comment that I can make on any of that.</p>
+
+<p>JACK:	A few days after that, the Shadow Brokers released yet another set of stolen exploits.  This one would make a huge splash in the world.  This dump contained EternalBlue and EternalRomance, among others.  Now, whatâs so important about EternalBlue is that this is an exploit that can be used to remotely access Windows computers running SMB which was something that was installed by default on all Windows machines, making millions and millions and millions of Windows computers vulnerable to this exploit.  EternalBlue was huge.  This was the biggest of all their exploits and it just landed in the hands of the general public for any hacker in the world to use.  EternalBlue might go down as one of the most successful hacking tools in history.</p>
+
+<p>Itâs really effective for letting hackers into Windows machines but hereâs the strange thing; just about a month before Shadow Brokers dropped this on the world, Microsoft had patched it.  Yeah, they fixed it right before it was unleashed.  Rumor has it that that NSA gave Microsoft a very quiet heads up that this might be in an upcoming dump so they can work on patching it before it hits the streets.  Now, of course, this too was a really big deal for Jake.  He knew that EternalBlue could have far-reaching effects on many of his customers but he was still coming to grips with the earlier tweet that called him out.  That single tweet which outed Jake as an Equation Group member really changed his life.</p>
+
+<p>JAKE:	It definitely changed my threat modeling, no question about that.  At the time, and again, in hindsight, a lot of people I think, will say overreact, whatever, but â that I might have been overreacting but at the time we just didnât know.  We didnât know what â [00:35:00] not just what they were gonna do but what anybody was gonna do in response.  Our own government included private citizens who were pro-Trump, anti-Trump.  They had taken a Trump stance, whatever that program â English language thing was.  We just didnât know.  I guess the short of it is, from a media concern, I mean, I had to call my ex and say hey, hereâs the situation.  My ex, by the way, never having served, doesnât really track with all this, and Iâm having to give her this crash course; we think this is Russia, hereâs the crash course on Russian intelligence services.</p>
+
+<p>We donât think we have to worry about them but who knows?  Iâm more worried about people believing that itâs Russia and believing that weâre somehow cahooting with them and the short of it is do you want me to see my kid kind of thing, or Iâll totally understand if you say no, kind of deal.  For several weeks, thatâs the way we played it, was that me and my kid were on hangouts like you and I are now and not seeing each other in person because again, we just didnât have a good handle on how or if or whatever people were going to react to this.  Yeah, as far as changed my life, I mean, immediately.  There are some immediate impacts that sucked.  Yeah.</p>
+
+<p>JACK:	Now, youâve probably heard of the FBIâs Most Wanted list but did you know thereâs also an FBIâs Cyberâs Most Wanted list, too?  Criminal hackers that the FBI is looking for.  When the FBI has enough evidence that a hacker has committed a crime, they will indict the hacker and if itâs severe enough, theyâll stick them on this list.  Sometimes the FBI indicts nation state hackers, too.  Like for instance, the Cyberâs Most Wanted has eleven hackers who work for the Russian government and they were involved in interfering with the 2016 elections.  Thereâs also four Iranian hackers indicted for conducting espionage against the US.  If any of these hackers on the Cyberâs Most Wanted list were to travel to the US or even a country that has an extradition treaty with the US, they will probably be arrested and brought to court but so far no hackers have been indicted for whoever was behind these Shadow Brokers dumps.  Was there any travel that you cancelled?</p>
+
+<p>JAKE:	Definitely, no question.  They poked back up in July, I think.  It was either late June or early July and I canceled a trip to Singapore.  Yeah.  One of the issues that came down was â and a lot of people forget about this in the dumps, but in the April dump where they dumped EternalBlue, they also dumped operational data involving SWIFT banks and some other stuff, or SWIFT transfers with some banks.  That said, to me at least, without confirming the dataâs authentic, said to me that itâs not this tooling they have; they have operations data.</p>
+
+<p>JACK:	This means the Shadow Brokers are claiming to have seen some of the stuff the NSA has actually done.</p>
+
+<p>JAKE:	At that point, if you are watching the news and youâre watching the US Department of Justice indict foreign hackers, you then have to step back and I definitely did this.  I did a mental inventory of where did I target?  Even then, doing risk modeling, doesnât even matter where I targeted.  Does it really matter where I targeted specifically or is it just because I was involved with that group that targeted X country?  Basically, if I land, if I touch down here, am I likely to be arrested?  Itâs not just the question of what did they share, but â sorry, what did they share publically, itâs also like we donât know what theyâre sharing on the back end and if it is Russian intelligence, or even if itâs not, whatever, but what are they, whoever they are, sharing on the back side that we donât know about?</p>
+
+<p>That also was a huge unknown and thatâs something I continue to play mentally today, kind of mentally play through.  âCause we saw Canada arrested the Huawei executive on our behalf in an airport, for goodness sakes.  They never even cleared customs.  Every time I travel internationally, Iâm playing that whole risk modeling not just of was I involved with this country but for the country that I was involved with targeting, did I â basically, Iâm on an extradition in some place.  Do they have an extradition policy with that other country?  Yeah, I canceled travel to Singapore.  I had some other opportunities that I passed on entirely because I just donât feel safe traveling to a number of countries as a result.</p>
+
+<p>JACK:	Yeah, it almost feels like youâre at their mercy at this point.</p>
+
+<p>JAKE:	Well, thereâs no question.  I guess, if you want to play â Iâm gonna try not to play the victim here âcause, whatever, I made employment decisions.  They were employment decisions.  Those same decisions are why Iâm where Iâm at today.  But yeah, thereâs no question in my mind that they have a lot of [00:40:00] operational data about me and itâs stuff that could definitely paint it in the wrong light.  Paint it in the wrong light would be very bad and would, for me personally, and I am definitely at their mercy for what it is that they choose to release or not release.  Iâve said repeatedly that, and I stand by this; so far, we havenât seen any US hackers indicted, nation state hackers indicted, but I am not a betting man.  I would not bet against me being the first one, or on the first list.  I canât fathom that I wonât be involved somehow and I hope Iâm not.  Itâs not something Iâm wishing for or asking for.  But again, just playing the odds.  When somebody else finally â when another country finally pulls a DOJ and starts indicting US nation state hackers, it will surprise me greatly if Iâm not on that list.</p>
+
+<p>JACK:	Jeez, I donât even know what to say about that.  This is life in the shadow of the Shadow Brokers.  It also makes me think about him as a SANS instructor.  Iâve taken a SANS course and it would just blow my mind if I knew my teacher was wanted in several countries for hacking on behalf of the NSA.  Is he a criminal or not?  Some countries probably think he is but back home, heâs just carrying out his orders.  Now, when I think about it, I think itâs actually weird that the FBI indicts the hackers who were working for foreign governments.  The hackers were just carrying out their orders.  Why not indict the officers or generals or the leader who signed the executive order?  At that point, you might as well treat it like an act of hostility from one nation to another.  I donât know; it gets weird and sticky on who to blame for hacking when it comes to nations hacking nations.</p>
+
+<p>Itâs kind of like when Apple is suing Google for twenty things and Google is suing Apple for twenty things.  Yeah, sure, Russians hacked the US but the US has probably hacked Russia too, so now what?  Since 2017, we havenât heard anything more from the Shadow Brokers.  Their last tweet mentioned Jake once again but it wasnât really saying anything new.  Since then, itâs been quiet.  While we normally saw them come back every few months, theyâve now been quiet for over two years.  But I donât think thatâs the end of Shadow Brokers.  I still think thereâs a huge investigation, a hunt into whoâs behind it.  It quite possibly could have been an insider, a double agent, someone who works in the NSA and had access to this stuff but was feeding it to another country like Russia.  Yeah, at this point, most signs do point to Russia being behind the Shadow Brokers, but we donât know for certain.</p>
+
+<p>But if you think about the intent and capabilities of this group, their intent is to do battle with the most sophisticated hacking group in the world, the NSA, and then burn some of their expensive exploits.  Their capabilities are that they can somehow get these exploits out of the NSA, probably one of the most secure places in the world, and then publish them and then get away with it.  When you think about all the intelligence capabilities the NSA has, and they donât have anything on this crew, this puts Shadow Brokers in a top-tier category for what their capabilities are.  Then you look at how much they say about Trump and the ability to shift the news cycles when it comes to Russia; yeah, it just looks like itâs probably Russian.  But like I was saying, there havenât been any FBI indictments about this or public statements from the US government about this either, and especially nothing from the president.</p>
+
+<p>He typically doesnât call out Russia for stuff like this but even if he did blame Russia for this, what would that sound like?  It would admit that the NSA somehow lost control of their secret hacking tools and that might make the US look bad, so itâs a complicated issue.  [MUSIC] Oh, and I should also mention Harold Martin III somewhere in here, too.  Thereâs this theory that Harold is somehow behind this.  Harold was a government contractor working for Booz Allen Hamilton and while he was there, he was doing some work for the NSA and got access to some top-secret information within the NSA.  Harold decided to steal fifty terabytes of information from NSAâs servers and successfully got it out.  We donât know who Harold gave these fifty terabytes to or if he gave it to anyone.  We donât even know whatâs in the data but he was caught and is currently serving nine years in prison for this.  The data on the Shadow Broker dumps could have been something that Harold stole.</p>
+
+<p>The timestamps do seem to line up with this but thereâs no real good evidence that does connect Harold to this whole thing.  Alright, letâs take a step back and try to understand what this whole Shadow Brokers thing means.  Well, the NSA has neither confirmed or denied that theyâve made these tools.  All signs point to these being actual exploits that the NSA has made and kept to themselves as weapons to attack the enemy with.  Letâs think about that; this means the NSA has a group of researchers who are actively looking for vulnerabilities in software like Microsoft Windows [00:45:00] and then when they find these vulnerabilities, they donât tell Microsoft about it.  They keep it to themselves.  Now, the NSA has publically said they donât hoard zero-days or exploits that nobody knows about but hereâs evidence that they do.  What does that mean?</p>
+
+<p>Well, it seems the NSA has decided itâs more important to be on the offensive versus being on the defensive.  If the NSA was defensive-minded, they would be working with software vendors to find vulnerabilities and get them fixed.  But instead we see this, where they secretly find vulnerabilities and not tell the software vendor about it so that they can later use it on an attack against someone else.  Perhaps this was the message that the Shadow Brokers was trying to relay, to place the NSA under extra heat for hoarding zero-days like this.  Thatâs certainly what happened.  A lot of people used this as evidence that the NSA does not have it in their interest to keep us secure, but instead they want to keep these exploits to themselves so they can be better at doing espionage and surveillance and hacking into other networks which I suppose could be considered defensive-minded if theyâre using that to find what an upcoming attack on our country is going to be.  But thatâs just hard to believe when we see nation states hacking into companies in the US and creating huge, huge problems for those companies.</p>
+
+<p>See, hereâs the perfect example of when that can backfire; when the exploits the NSA makes gets into the wrong hands or when someone exposes the capabilities of the NSA.  Snowden, the ANT catalogue leak, and now the Shadow Brokers give us a very clear view into what the NSA is doing.   I think itâs important that we all take full note of what we see here.  [MUSIC] Now, as someone who used to defend networks from threats, I want to take a moment and talk about what we as defenders should be doing about the Shadow Brokers.  When the Shadow Brokers dumped all these NSA-grade hacking tools, we should be analyzing them and trying to understand them as best we can.  Hereâs why; letâs take the Windows event log hack that was dumped as an example.  This is a hack that can turn Windows logging off and then back on whenever you want, or it can delete individual event logs from Windows.  Hereâs the thing; historically, itâs been possible as an admin to turn logging off and on.</p>
+
+<p>Okay, fine, but when that happens, an event is created that says logging has been turned off.  Itâs also possible to clear all event logs but again, thereâs a log created that says that all the logs have been wiped.  That wipes all logs, not just one or two.  But with this hack that was dumped, you can disable logging without an event indicating logging has been turned off.  You can turn it off, do your dirty work, then turn it back on and thereâs no evidence that the logs have been tampered with which is really scary but important to know.  Thereâs also a capability of removing individual events.  This is important for us defenders to know because Windows event logs are so important to us.  They tell us the truth of what happened.  How do we handle this?  Now you need to be looking for whatâs not there.  For instance, event logs are numbered.  What if you saw Event Log 97, 98, no 99, and then 100?  What happened to Event Log 99, or what happens when you see a log-out event but not a log-in?</p>
+
+<p>If you see stuff like this, you can assume you have a hacker whoâs using these Shadow Brokers hacks but also isnât that savvy enough to know how Windows logging works because this hacker was smart enough to delete their log-in event but not good enough to delete their log-out event.  This is the kind of stuff that defenders and incident responders have to learn about from Shadow Brokers.  But not only that; every sophisticated hacking team in the world paid serious attention to these dumps.  I just told you about the logging one but thereâs seventy other exploits they dropped.  Government hacking teams have probably done a deep analysis on every single exploit in the dumps to learn everything they could about it; what it does, how to use it most effectively, and then throw it in their bag of tools to use it whenever they want.  This is why itâs important for the InfoSec community to know this as well.  I mean, if the NSA did create these hacker tools, they probably spent millions of dollars on research and development to make it.</p>
+
+<p>That was paid by my tax dollars so seeing what their capabilities are and knowing itâs in the hands of every hacker in the world, itâs an extremely valuable lesson for anyone working in InfoSec.  Itâs simply not every day that we get to look at tools this sophisticated and now any script kitty in the world has them and is using them.  Ever since these dumps, digital forensics and incident responder teams have been seeing a high amount of attacks that was using stuff from these dumps.  It still continues to this day.  Itâs very important for us defenders [00:50:00] to understand this, especially for the exploit called EternalBlue.  EternalBlue would go on to be a key component for some of the worldâs biggest hacks, hacks that were so big, they practically caused doomsday scenarios for many people.  Join me in the next episode as we dig into one of the hacks that used EternalBlue.</p>
+
+<p>JACK (OUTRO):	[OUTRO MUSIC] A big thank you to our guest Jake Williams for taking time to share this incredible story with us.  You can follow him on Twitter.  His name there is @MalwareJake.  Good luck out there, Jake.  I also want to give a big thanks to Andy Greenberg from Wired.  He just finished writing a new book called Sandworm which goes into detail about this whole Shadow Brokers thing and then goes into detail about what EternalBlue went on to be used for.  Weâre gonna interview Andy in the next episode so if you want to check out his book, itâs Sandworm.  Itâs really good.</p>
+
+<p>Donât forget to help support this show through Patreon where you can get some bonus episodes exclusive only to Patreon donators, and you can also get some stickers and an ad-free feed.  Patreon supporters really do make a huge impact on keeping this show going and theyâre absolutely my favorite listeners.  This show is made by me, grizzly masquerade, Jack Rhysider.  Sound design this episode is by the headphone-wearing Andrew Meriwether.  Editing help this episode by the cyber-maiden Damienne.  Our theme music is by the jingling Breakmaster Cylinder.  Even though webmasters around the world add my IP to their blacklist every time I say it, this is Darknet Diaries.</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

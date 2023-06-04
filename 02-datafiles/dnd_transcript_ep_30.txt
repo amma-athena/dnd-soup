@@ -1,0 +1,493 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>Shamoon â Darknet Diaries</title>
+	<meta name="description" content="In 2012, Saudi Aramco was hit with the most destructive virus ever. Thousands and thousands of computers were destroyed. Herculean efforts were made to restore them to operational status again. But...">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Shamoon â Darknet Diaries">  
+	<meta name="twitter:description" content="In 2012, Saudi Aramco was hit with the most destructive virus ever. Thousands and thousands of computers were destroyed. Herculean efforts were made to restore them to operational status again. But...">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/shamoon.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/30/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Shamoon â Darknet Diaries" />
+	<meta property="og:description"        content="In 2012, Saudi Aramco was hit with the most destructive virus ever. Thousands and thousands of computers were destroyed. Herculean efforts were made to restore them to operational status again. But who would do such an attack?" />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/shamoon.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/30/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/shamoon.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/30/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="Shamoon â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/shamoon.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 30: Shamoon</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://traffic.megaphone.fm/ADV7593743116.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/30/",
+			   "title": "Ep 30: Shamoon"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/30">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[FULL TRANSCRIPT]</p>
+
+<p>JACK:	Before we get started, if you havenât already, go back and listen to Episode 28 and 29 before this one.  Itâs a little series on the Middle East here and itâs meant to be listened to in that order.  There are some hacker stories that really scare me and this is one of them.  This one had a potential of causing a worldwide economic crisis.  The worldâs governments are growing in sophistication and theyâre training their troops to hack and theyâre building cyber-weapons.  While governments are hacking into other governments, sometimes governments hack into private companies or a cityâs infrastructure.  Our electrical grid and food supplies werenât built to withstand a fighter jet bombing them but should they be built to withstand a nation state actor trying to hack into them and destroy them?  Maybe.
+<!--more--></p>
+
+<p>JACK (INTRO): 	[INTRO MUSIC]  These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	So you know whatâs funny?  Not too long ago we heard the news that Apple was the first company to have a net worth of one trillion dollars.  Itâs funny âcause itâs not true.  Appleâs worth that much but itâs not the first company to be worth one trillion dollars.  Thereâs another company thatâs worth two to ten times more than Apple.  What is it?  Saudi Aramco.  You may not ever have heard of Saudi Aramco before and neither did I until I started researching this story and thatâs because they donât sell to consumers.  Instead they sell to manufacturers and distributors so what do they do?  Saudi Aramco is one of the largest oil and natural gas producers in the world.  It controls massive amounts of oil reserves.  It drills it and ships it all over the world.  Saudi Aramco may be the most profitable company in existence and produces 25% of the global oil.  Itâs not a publically trading company though, so we really donât know how much itâs worth.  Because Saudi Aramco is huge and operating globally, it has a lot of computers.</p>
+
+<p>There are pump stations, plants, shipping terminals, logistics centers, laboratories, research and development centers, and storage facilities.  Letâs not forget the teams it takes to run it.  Thereâs an HR department, IT department, marketing, truck drivers, mechanics, engineers, public relations, finance, drilling teams, and advisors.  Add all that up and Saudi Aramco has over 50,000 employees.  Imagine how many computers there are at a company that has 50,000 employees.  Not only do a lot of them have individual computers to work on but thereâs a lot of servers; domain controllers, e-mail servers, SharePoint systems, files servers, and more.  In 2012 Saudi Aramco had over 40,000 computers in their network worldwide.  Now I say 2012 because that was when the most profitable company in the world was hit with the most devastating cyber-attack any company has ever seen.  To really get into this attack I brought in Chris Kubecka and weâll understand more about her and her role in this attack later but for now weâll have her explain what happened.</p>
+
+<p>CHRIS:	Saudi Aramco, like any other oil and gas and energy company, their primary jewels, what makes them money, is their industrial control systems pumping out oil and crude out of the ground.  When your primary profit is driven by that, thatâs where you put your security, thatâs where you put your attention.  Unfortunately they did not put very much of any real attention on the IT side.  However, what happens is IT and industrial control systems are connected.  In the case of Aramco and at that time, it was okay for an extremely flat network across all of that.</p>
+
+<p>JACK:	Think of a flat network like the hull of a ship but itâs just one big empty space in the hull, so if the boat hit a rock and made a hole in the hull, the water would fill up the entire hull and sink the ship.  But some boats are designed with compartmentalized hulls so if water were to get into one section of the hull it couldnât possibly fill up the rest of the boat and still stay afloat.  In your network itâs good practice to compartmentalize it so if a hacker gets into one section of the network they only have access to that section and in the case of Saudi Aramco, because their network was flat, once you got into any part of the network you could get to anything, anywhere.</p>
+
+<p>CHRIS:	Saudi Aramco has offices and locations 60 plus around the world in far flung locations.  Thereâs one location you have to take a ferry for eight hours in Indonesia to go to an island.  The attack hit in August but they had already gotten into the systems around April to May.</p>
+
+<p>JACK:	The attackers likely got in through a phishing e-mail.  This is where theyâd send a specific employee an e-mail with an interesting attachment or link.  Since the employees had no security training, it was probably not that hard to get one of them to click a link or open an attachment.  The other part of this equation is that the employeeâs computer had to not be fully patched.  For instance, the attackers would hope theyâre running an older version of Microsoft Word or Adobe Acrobat that has known vulnerabilities.  When the user would open the Word [00:05:00] document, the file would attempt to exploit one of these known vulnerabilities to gain access to the computer.  If successful, it would open up a reverse terminal back to the attacker.  When the attackers got into Saudi Aramco, they were able to move around with ease.  This is the problem with a flat network.  Their next step is to gain access to a system that communicates to all the other computers in the network, a domain controller.  The system is used for authentication onto the network and it provides a map so computers can find other computers.  The attackers focused on these domain controllers but these systems were not very secure.</p>
+
+<p>CHRIS:	[MUSIC]  Because of extremely weak infrastructure you could reset a domain administrator password on the internal system of their HTTP, so completely clear text.  Thatâs a domain administrator password so that gives you an idea.</p>
+
+<p>JACK:	At this point the attackers had access to Saudi Aramcoâs network and had administrative privileges to the domain controllers, essentially giving them keys to the kingdom.</p>
+
+<p>CHRIS:	Now what was unusual was the Houston Operation Center had actually picked up on unusual activity.  Even though they had no security people they thought it was unusual for 250 different devices to be logged in at the same time by the one domain administrator.  They were picking up on highly suspect activity.  Because they didnât know perhaps how to phrase it, and perhaps it was not well-accepted Saudi, there was not an incident created.  At the time, the person who ran the security operation center decided, it was his opinion; he would not open an incident for the report from Houston.</p>
+
+<p>JACK:	Now that the attackers had the crown jewels of the network and nobody was going to stop them, they spent the next three months building their perfect attack.  At this point in 2012 August rolls around, which seems to be the perfect time to attack Saudi Aramco.  Whatâs special about August 2012 in Saudi Arabia?  Itâs the holy month of Ramadan.  In the US, offices are almost completely empty around Christmastime and thatâs what itâs like during Ramadan in Saudi Arabia.</p>
+
+<p>CHRIS:	It was a typical company policy that that was the slow period.  The majority of Muslim staff believes whatâs usually left, or what at the time was usually left, was a skeleton crew of Western staff at the most.</p>
+
+<p>JACK:	This would be the perfect time to wage an attack against the company to do the most damage.  There would be nobody to stop it and the reaction time would be very delayed.  Thatâs just what happened.  On the 15th of August a warning was sent but it would be a warning that Saudi Aramco would not notice.</p>
+
+<p>CHRIS:	[MUSIC]  The day of the attack at 9:08 a.m. a Pastebin was posted up that said we, the internet users of the world, are bringing basically to the worldâs attention that there is blood on your hands, the regimes of Saudi Arabia and all this.  But we know how you fund your regime is through Saudi Aramco so what we have done is we have attacked European computer systems to get into the Saudi Aramco systems and have destroyed 30,000 computers.  It will go off in two hours.</p>
+
+<p>JACK:	The Pastebin was signed by someone calling themselves The Cutting Sword of Justice and Saudi Aramco didnât get the message.  They werenât scouring Pastebin looking for things like this and their staff was mostly gone anyway so this warning was never received, so they had no idea this was coming.</p>
+
+<p>CHRIS:	At 11:08 a.m. things started shutting down.</p>
+
+<p>JACK:	At the exact same time, all across the Saudi Aramco office, computers were starting to display burning American flags.  Each computer was corrupted with a nasty virus set to delete everything on that system.</p>
+
+<p>CHRIS:	Because what was happening is the wiper virus that got into it, when it would eventually get down to some of the Windows files that were pertinent and the master boot record, it would then force a shut down and if you tried to restart it you lost your master boot record so you couldnât immediately pull everything back up.  Things started shutting down.</p>
+
+<p>JACK:	This wiper virus would be known as the Shamoon virus.</p>
+
+<p>CHRIS:	It was a logic bomb set to go off at a particular time on a particular day.</p>
+
+<p>JACK:	A logic bomb is a virus or program thatâs set to trigger when a certain condition occurs.  This logic bomb was set to trigger at 11:08 a.m. on August 15, 2012, with the instructions to wipe the hard drives, rendering them unusable.  Since the network was flat and not very secure, a lot of computers were hit with this logic bomb.</p>
+
+<p>CHRIS:	About 35,000 systems.  85% of their IT infrastructure was taken out.</p>
+
+<p>JACK:	35,000 computers had become completely unusable all at the same time.  [MUSIC]  This is the most destructive malware to ever hit a single company.  If you lined up 35,000 computers in a row, it would be six miles of computers.  When you tried to reboot the computer it would simply say Operating System Not Found because it had been completely wiped.  Imagine if something like this [00:10:00] happened where you work, where everyoneâs computers were suddenly unusable.  This isnât just a network down or an e-mail down; everyoneâs computers wouldnât boot at all.  There was no operating system.  All saved files were gone.  All software was deleted and many of the backup servers were obliterated, too.  This was devastating.  This virus specifically targeted machines running Windows.</p>
+
+<p>CHRIS:	Anything connected to them that relies on them like Windows DNS, Windows THCP, the voIP that would also rely on any Windows server, Windows backup servers, the auto truck loading system, and the payment systems also were inoperable as well as all the middleware so they couldnât access contracts.  In addition they had gone to green and fully digital so all of their contact lists, people that they could call were on SharePoint, they didnât even have SharePoint.  They had no employee list.  They couldnât even look at a roster.</p>
+
+<p>JACK:	There were no e-mails.  Phones didnât work.  There were no shared data sources like SharePoint or file servers.  This was a massive disruption to the most profitable company in the world.  85% of their computers were down permanently.  But this virus did not attack the industrial control systems found at pumping plants, pipelines, or drilling sites.  Oil production was still completely operable.  Thatâs because the company focused their security on these systems but also, the attack did not target industrial systems.  But the problem was there were no computers to say who to ship the oil to or where it was supposed to go.  They had no contact information for anyone either to notify customers of the outage.  At this point Saudi Aramco was scrambling to figure out what had happened and they were afraid this virus would spread to more systems and take out oil production.  Emergency meetings were being set up like war rooms in the Aramco offices.  The CEO was also present.  As they realized the size of this destruction, an extreme decision was made.</p>
+
+<p>CHRIS:	They rapidly started unplugging everything.  They took the decision â they did not want it to spread so they decided a very severe decision and I think the first time ever, Saudi Aramco completely disconnected themselves from the internet which also had other consequences such as when youâre dealing with industrial control systems, say Honeywell or Siemens, they remotely monitor and maintain that equipment under their maintenance contracts.  They were also disconnected because they did not want anything to spread or for them to be the pivot point to anyone else.</p>
+
+<p>JACK:	The CEO made the decision to take one of the largest companies in the world offline.  This is never an easy decision to make but is probably the right one.  On one hand, shutting down like this has potential worldwide effects and can cause the company tons of money.  But on the other hand, not shutting down is potentially more severe and can potentially cause even more loss of money.</p>
+
+<p>CHRIS:	Saudi Aramco provides about 25% of the worldâs energy.  So what would happen if 25% of the worldâs oil market is taken out in one day?</p>
+
+<p>JACK:	This is why this story scares me; a single hack like this has the potential to wreak havoc on the world.  Imagine if gas prices quadrupled overnight or imagine if there was a worldwide shortage of petroleum-based products like plastics or fertilizer?  The reverberating effects of this one incident could put the globe in a panic.</p>
+
+<p>CHRIS:	In addition, Qatar, the country, their national oil company is called RasGas.  RasGas was also affected and disrupted in a similar manner but they do not discuss it whatsoever.  They have about 14% of the worldâs energy market, especially with natural gas.  You couple that with Saudi Aramco, 25% of the worldâs energy, thatâs in a two week time period.  That was the risk to the rest of the world.  It could have obliterated financial markets.</p>
+
+<p>JACK:	Strangely enough, when Cutterâs Oil Company was hit with the same virus, their version did not have a burning American flag on it which raises a lot of questions.  But these two companies combined supplied 40% of the worldâs oil and natural gas.  Whoever waged this attack was trying to cause financial ruin to a lot of people and companies.  [MUSIC]  When the Shamoon logic bomb hit Saudi Aramco it took out a huge portion of their computers but didnât impact their drilling sites or pipelines.  The scene was chaotic there, and confusing.  Nobody knew what trucks to load up with what oil and where to send it so the decision was made to load up any trucks with any oil you had and ship it out.  Oil continued to flow to supply the world even if it meant giving it away free, which is what they did at times.  But because of the chaos and outages it was really slow filling their trucks up.  Saudi Aramco made a public Facebook post announcing the attack.  It saidâ¦</p>
+
+<p>CHRIS:	We are suffering from some sort of digital or cyber-attack and we have chosen to disconnect from our business operations and production from the [00:15:00] internet.  At that point in time you could not send an e-mail to them.  It kept bouncing back.  It just snowballed from there.</p>
+
+<p>JACK:	As the company scrambled to understand the impact and get things operational again, they knew they needed more help.  They simply didnât have a good security IT team to handle this kind of incident.  Before this attack in 2012, Saudi Arabia simply didnât take security very seriously.  There were no government branches focusing on cyber-defense.  They had a Saudi CERT but it was crude and inefficient.  When the government ignores the importance of security it trickles down to many other companies within the country.  Security simply wasnât a big industry in Saudi Arabia at the time.  Saudi Aramco was trying to hire as many security consultants as they could but they ran out of people quick, so they started hiring vendors but there were problems with this too and they needed even more help than that.  They decided they needed an outsider, someone whoâs secured global network before and someone who they could hire to be part of the Aramco team.  Thatâs when they called Chris Kubecka.</p>
+
+<p>CHRIS:	[MUSIC]  Yes, they called me out of the blue.  It was very odd because I had never imagined myself working for that type of organization.  I was coming back from a holiday from Tanzania.  I was transiting in Istanbul and I was hoping that I could get in the lounge âcause I was so tired, good food.  My phone rang and usually I wonât answer my phone when roaming but I did anyway.  Theyâre like hey, this is Aramco.  We would like to talk to you.  We would like to hire you.  Iâm like, okay?  âCause Iâm not sure that this is a legitimate call at this point.  Itâs out of the blue.  Iâve never applied for that.  Iâm like alright, so tell me about the role.  Theyâre like well, Aramco, weâve been under attack and we need to get all of our security ramped up as quickly as possible.  Iâm like, okay.</p>
+
+<p>CHRIS:	Chris Kubecka is a well-connected, respected, and experienced security professional.  Sheâs given a few talks at various conferences around Europe which is how Saudi Aramco knew of her, but her profile is very impressive.  Sheâs been using computers since she was a young child and then joined the US Air Force and then joined the US Space Command to work on communications systems to space.  From there she did consulting work and started leading security teams and eventually worked her way over to being a security consultant for a very large financial services company in the Netherlands which is where she was living.  She is experienced with securing large networks and handling large-scale incidents.  Throughout all this Chris had gathered a lot of connections and made a lot of friends in the security industry; not to mention her global experience that sheâs had traveling the world and even picking up a few languages on the way.  Choosing her for this role of bringing one of the largest companies in the world back online was a good choice.  The problem was Chris already had a job leading the security team for a large financial services company in the Netherlands so she wasnât interested in another job.</p>
+
+<p>CHRIS:	They go well, we just need to know a price.  Can you give us a price?  I go okay; picked a price which I didnât think that they would agree to and I said hereâs my price.  He goes weâll get back to you.  Okay.  I was like, thatâs an odd phone call.</p>
+
+<p>JACK:	Chris literally pulled a number out of the air, one that was much higher than she would expect anyone to accept.</p>
+
+<p>CHRIS:	They called me back a week and a half later and said well, the board was convened and they actually raised your price by 20%.  Iâm like, the board?  Yes, the Saudi Aramco board.  It was about that time that I kind of realized that that was the most powerful organization in the world and they convened a board and gave me an additional bump up from what I had asked for and they definitely wanted me.  It was also at that point I said I know my name is Chris, I know I donât have a very high voice but you do know Iâm a woman, right?  Theyâre like yes, yes, yes, we do, we do!  Iâm like, okay.  I go, I have a position.  They go well, donât say no.  Just say maybe.  I go okay.</p>
+
+<p>JACK:	Chris listened to the Saudi Aramco team and heard firsthand the total destruction that was caused.  The recruiters were so happy she was considering the role.</p>
+
+<p>CHRIS:	They had basically said you can hire whoever you want, you can basically have an unlimited budget, they can have 20,000 euros every year for training so that theyâre always trained up.  I was very excited to be able to build a world-class team to tackle this chaos.  I thought it was a fantastic opportunity, which it was.</p>
+
+<p>JACK:	[MUSIC]  Chris took the job and got right to work building her team.  She pulled out her contact list and began recruiting.  Itâs hard to find good security talent today because there isnât enough talented people to go around and all the good ones are taken.  But with a massive budget, lots of training dollars, and the excitement of working on one of the largest hacks in history, she was able to find some pretty great people.</p>
+
+<p>CHRIS:	I looked for all the rock stars that I had already written up on a bit of a dream list and I got [00:20:00] seven out of ten.</p>
+
+<p>JACK:	One of the biggest incentives was that massive training budget for each analyst.  This alone is a great lure, since most security professionals are excited to learn about latest technology so knowing that the company is going to invest in their expertise was exciting.  Not only that, but she also gave each person 10% of their time to work on their own projects.  When you have really talented people sitting around with free time in their hands, they end up making tools that make the team more effective.</p>
+
+<p>CHRIS:	Many of these folks also spoke multiple languages so I had Dutch, Romanian, Cypriots, I had Indian, I had Italian.</p>
+
+<p>JACK:	When defending a global company such as this, you need many languages in your security staff to be able to communicate effectively between organizations and teams but also be able to identify threats in various regions.  When Chris assembled a team she made it a point to not overwork anyone and give everyone adequate breaks.  Her average work week was 36 hours per week and this made them less stressed and excited to get back to work.</p>
+
+<p>CHRIS:	I always had rested alert analysts and they enjoyed what they did.  They got to do projects that were related.  They were doing fantastic things.  They were able to not feel constrained and they were always taught on the newest and greatest stuff.  I did not want a group of analysts who had training from last year looking at todayâs threats because that just doesnât work.  Our threat actors are nation state, cyber-criminal, hacktivists, anything and everything in between.  Our threat profile is extremely high.  We needed the best of the best, not someone who got a CERT five years ago and hasnât taken a course since.</p>
+
+<p>JACK:	While Chris was busy building her team and getting them up to speed, Saudi Aramco had began rebuilding the infrastructure.</p>
+
+<p>CHRIS:	Basically what they did was, they have so much money and they also own the largest private fleet of aircraft.  They sent their private fleet to the factory lines in Southeast Asia to buy up the worldâs supply of hard drives immediately to replace all the hard drives at Saudi Aramco.</p>
+
+<p>JACK:	Some of the hard drives were slightly damaged from this attack and the company didnât want to reformat them and start over because maybe they could recover some data on them.  Since Saudi Aramco had enough money they just decided to buy tons of hard drives as fast as they could.  This took months to fully purchase the number they needed.</p>
+
+<p>CHRIS:	It was 85% of their IT infrastructure which youâre also talking about backup servers, all of this type of stuff.  Youâre talking about many more than 35,000 hard drives, for instance.</p>
+
+<p>JACK:	Thatâs a lot of hard drives.  A single manufacturer could not produce that many hard drives to fulfill the demand so Saudi Aramco would fly their jets to a few different manufacturers at once to get them as soon as they came off the factory floor.  As if this wasnât bad enough for the worldâs supply of hard drives, at the same time, a massive typhoon hit Asia, halting production for some of the hard drive facilities.</p>
+
+<p>CHRIS:	If you bought a hard drive between September 2012 and January 2013 you will notice that there was a rise in worldwide hard drive prices because Saudi Aramco bought the supply and everyone else was paying a tax, basically.</p>
+
+<p>JACK:	Chris was based in a city in the Netherlands called The Hague and this is where she built the security operation center.  Immediately she knew she needed to integrate her team into the Saudi Aramco culture so she began rotating each of her analysts to go work in Saudi Arabia for a while.  In exchange, sheâd get someone from IT from Saudi Arabia to come work in her operations center in The Hague.  She didnât want a repeat of how Houston, Texas detected this attack four months earlier but couldnât communicate it effectively to Aramco.  Integrating her team into the culture was a great success.  Her first task was to gain visibility into the network.</p>
+
+<p>CHRIS:	[MUSIC]  Because otherwise you canât see if another attack is coming through.  That was a huge challenge because there was a whole segment where there was zero visibility and that was a huge issue.  That was number one, absolute number one.  Number two was looking at the best practices because my team, the minimum level of experience in the SOC was five years so all of us were highly experienced.  We were bringing over best practices.  In the mix there were a lot of foreign contractors who were put into roles until the Saudi people could get up to their capabilities.</p>
+
+<p>JACK:	Chris and her team began triaging the network to make it more secure.  They did things like audit the network, help IT secure systems better, monitor for attacks, and harden the network.  While Chrisâ role was important there were many other security teams worldwide also helping to resolve this incident.  Both internal and external people were helping to get things back on track.  In fact even a few other countries helped out to get things operational again.  At this point oil trucks started getting backed up at pumping stations and drill sites, like ridiculous backups.  Picture the worst traffic backup youâve ever seen and that was the situation.  A journalist saw this and took a picture of an endless amount of trucks [00:25:00] in a row with no oil and wondered what was going on here.  At this point the news was starting to spread that Aramco was hit hard with something big.</p>
+
+<p>CHRIS:	[MUSIC]  The attackers continued to attack the infrastructure and Saudi Aramco had to disconnect from the internet three times.  They thought that they were up, they got everything up and running, and then the attackers launched a massive DDoS attack against them.  Then at the same time, they were able to get back in again because when they had first put up the first better security appliances on the perimeter, Iâm not sure who did this, I think it was one of their contractors, had left some of the stuff with default usernames and passwords on the network and security appliances.  The attackers were able to get back in, briefly.  They posted this because it was very taunting and they were able to get the new password and e-mail address for the CEO of Saudi Aramco and the executive board and they pasted it on Pastebin and said weâre not through with you yet.</p>
+
+<p>JACK:	This Pastebin was also signed by The Cutting Sword of Justice.  This is when Saudi Aramco started noticing not only this Pastebin but also the previous ones posted on the day of the attack.  Chris and her team continued to defend the network and find any vulnerabilities and patch them.  This took a lot of work to get things operational again.</p>
+
+<p>CHRIS:	About three and a half months to really get back to normal.</p>
+
+<p>JACK:	That three and a half months was basically working with an unlimited budget to get things back on track and oil flowing properly.  If this company didnât have a budget like that, this would have either destroyed the company or degraded it for years.  Another thing worth mentioning here is that Saudi Aramco is very adamant about not buying any Israeli-based software.  For instance, firewalls made by Check Point are never an option for securing the network because Saudi Arabia really doesnât like what Israel has done to Palestine, and since Checkpoint firewalls are made in Israel and started by a former member of the Unit 8200, the Saudi government wonât buy their products.  I suppose it makes sense if you know a country is spying on you and former military spies make a firewall, you probably donât want to buy that firewall for your network.  But even when Saudi Aramco had things back up and operational there were still problems that would occur.</p>
+
+<p>CHRIS:	The employees, this was one thing I found very unusual, because there had not been any say, security awareness training for them before the attack, when the employees came back they didnât really want to touch a computer.  They were kind of afraid.  Theyâre like oh my god, what if Iâm the one that opens the e-mail attachment and then brings the system down because of a phishing attack?  There were people who didnât really want to use the systems.  I can understand.  It also took time after the attack; you then have to start â you need the people on the computer systems not in the security awareness programs but you also need them in there.  Which do you do?  Do you get your operations back for these people who are like, Iâm not opening that e-mail.  You have to open my e-mail.  No!  Itâs almost like they got post-traumatic stress disorder from the cyber-attack.  It was very, very unusual.  If I was a psychologist I would love to do some sort of paper on the topic.</p>
+
+<p>JACK:	Once things started settling down, Saudi Aramco government began looking into who conducted this attack.  The Pastebin messages were signed by The Cutting Sword of Justice which appeared to be an activist group but some of the messaging in there was suspicious.  The Shamoon virus was also analyzed thoroughly to look at traces of information that could lead to who wrote it.  Combine this with the additional logs and forensics data, and the picture started to become clear.</p>
+
+<p>CHRIS:	According to the Saudi Arabian government, it was the country of Iran.</p>
+
+<p>JACK:	[MUSIC]  There are a few theories as to who was behind this attack.  It could have just been a group of people wanting to drive up oil prices or actually an activist group mad at Saudi Arabia.  We donât know all the details or exactly who and why but some security researchers believe this was a retaliation from Iran because of the Stuxnet attack that hit their nuclear facilities.  But if the US and Israel attacked Iran with Stuxnet, why would Iran attack Saudi Arabia in retaliation?  This is a very complicated question.  The first clue is that the Shamoon virus had a burning American flag on it, and Saudi Aramco was actually started by an American company.  First it was started by the Standard Oil Company of California and then it eventually changed its name to Aramco which is short for the Arabian American Oil Company.  From there the Saudi government saw how profitable it was and fully took over the company and today this is where the bulk of Saudi government money comes from.</p>
+
+<p>You can see Saudi Aramco has a deep connection with the US but the US relies heavily on oil from Saudi Arabia so impacting the oil supply to America could cause financial ruin to the US, bringing a lot of businesses to a halt.  Additionally, Iran and Saudi Arabia have longstanding feuds between them.  They often argue about politics and religion but the thing is the [00:30:00] Iranian government never took credit for this attack.  If they did this as a show of force or some kind of saber rattling, why wouldnât they take credit for it?  There were some news articles that stated Saudi Arabia captured and arrested dozens of Iranian spies not long after this attack.  Itâs unclear but itâs possible these spies were somehow part of this hack, possibly doing reconnaissance or doing some sort of social engineering to get internal information about Saudi Aramco.</p>
+
+<p>Over in Iran is the Islamic Revolutionary Guard Corps, or IRGC.  This is one of Iranâs armed forces and it has over 100,000 people.  In the IRGC is the intelligence-gathering units which is where we presume are a number of hackers working for the Iranian military.  In fact one IRGC general stated that they have the fourth biggest cyber-army in the world.  But thereâs also a group called the Iranian Cyber Army and this isnât a military group but rumors say it was started by the IRGC.  This hacker group has pledged their allegiance to the Supreme Leader of Iran and they conduct hacks to help Iran out.  Itâs a very secretive group but itâs possible they do some of the more dirty work for the IRGC so the Iranian government can claim that they didnât do it.  This incident with Saudi Aramco is known as the Shamoon Attacks 1.</p>
+
+<p>CHRIS:	Thereâs now Shamoon Attacks 2 and 3 that are still ongoing against Saudi Aramco and Saudi Arabia, especially hitting Saudi Arabian critical infrastructures, and airports have been affected.  It is still ongoing.</p>
+
+<p>JACK:	The thing is, is that nations arenât even at the point yet of being able to talk about what cyber-capabilities they have, much less be able to have an open conversation of how to conduct cyber-warfare between nations.  Many countries are developing cyber-capabilities and theyâre watching big players like the US on how to conduct themselves in this space.  Seeing things like Stuxnet leak and the US denying it just makes these countries follow suit and also conduct ultra-secret missions.  Weâre still in the first generation of this new weapon and when things are this new, there arenât any rules or regulations yet.  There isnât any playbook or proper way to conduct yourself.  Because of all that it will be abused.  Nations will do whatever they want, whenever they want, because thatâs just how it is right now.</p>
+
+<p>Itâs naÃ¯ve to think nations arenât constantly spying and infiltrating on each other using cyber-weapons which is probably why when thereâs an attack this, itâs not treated like an act of war because we donât know what a cyber act of war looks like yet.  When we see mass casualties from a hack and a nation claims responsibility for it, then I think thatâll be one.  But in this case some computers were damaged and an unknown group claimed responsibility.  Somehow this didnât cause a worldwide panic in oil prices and everything went back to normal in a few months.  Before this event the Saudi government didnât put a lot of effort into their cyber-security program.  To me itâs crazy to think of a nation such as this not paying that much attention to online security.  But since then in 2017, 2017 is when they launched their Saudi National Cybersecurity Center which is a government-ran organization built to protect their critical infrastructure and government from cyber-attacks.</p>
+
+<p>This has a great trickle-down effect to the whole nation because security really does have to start at the top of any organization, including an entire nation.  Now many more organizations are also taking security seriously because the Saudi government did.  [MUSIC]  The operations center that Chris built in The Hague is still up and monitoring Saudi Aramco but sheâs since moved on to higher profile projects and hereâs a bit of advice from her on how to prepare yourself for an incident like this.</p>
+
+<p>CHRIS:	Digitization is fantastic but in an emergency you always need a paper copy of contacts.  Thatâs a very good idea.  We also carried coded contact information cards in our wallets in case of emergency so that we could have a very, very quick response.  That was one of the big things that was lost during the attack because you couldnât even get a phone number, also printed-out playbooks so in case of emergency.  Itâs a calming factor that you can hold something in your hand to look at.  Even though itâs not going to match up perfectly it helps you from losing your sanity and you can go off of that.  Having those printed out and contact cards are invaluable in the case of any incident.</p>
+
+<p>JACK (OUTRO):	[OUTRO MUSIC]  Youâve been listening to Darknet Diaries.  A big thanks goes to Chris Kubecka for sharing her story and if you want to learn more from Chris, guess what?  You can!  She has two books out now.  Her first one is called Down the Rabbit Hole, an Osint Journey, and her newest one which should be out in a few days, is called Hack the World with Osint.  I have a copy of the first one right here and itâs packed full of labs you can do to gather personal and private information on companies and governments that are leaving their data right there in the open for anyone to see.  She demonstrates how to gather publically available yet sensitive data related to Panama papers, the Democratic National Party, Trumpâs websites, the Republican National Party, and even the Dutch voting system.  If you want to get better at open source intelligence-gathering, check these books out.  Iâll link to them in the show notes.  [00:35:00] Please consider donating to this show through Patreon.  Very soon Iâll be giving bonus episodes to supporters there.  This show is made by me, the dull blade of mischief, Jack Rhysider.  The intro song and the song youâre hearing right now is made by the shrouded Breakmaster Cylinder.</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+<p>Transcription performed by Leah Hervoly
+www.leahtranscribes.com</p>
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

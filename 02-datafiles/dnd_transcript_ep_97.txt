@@ -1,0 +1,638 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>The Pizza Problem â Darknet Diaries</title>
+	<meta name="description" content="What if someone wanted to own your Instagram account? Not just control it, but make it totally theirs. This episode tells the story of how someone tried to steal an Instagram account from someone.">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="The Pizza Problem â Darknet Diaries">  
+	<meta name="twitter:description" content="What if someone wanted to own your Instagram account? Not just control it, but make it totally theirs. This episode tells the story of how someone tried to steal an Instagram account from someone.">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/pizza.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/97/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="The Pizza Problem â Darknet Diaries" />
+	<meta property="og:description"        content="What if someone wanted to own your Instagram account? Not just control it, but make it totally theirs. This episode tells the story of how someone tried to steal an Instagram account from someone." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/pizza.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/97/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/pizza.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/97/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="The Pizza Problem â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/pizza.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 97: The Pizza Problem</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://www.podtrac.com/pts/redirect.mp3/traffic.megaphone.fm/ADV1180047426.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/97/",
+			   "title": "Ep 97: The Pizza Problem"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/97">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[START OF RECORDING]</p>
+
+<p>JACK:	Whenever I join a social media site or start an online video game, it always goes like this; I load up the web page, click sign-up, and then it asks me a question.  What username do you want to be known as?  [MUSIC] It never goes as planned.  Maybe my first choice is Batman, so I try to make that my username, but the site says that username already exists.  How about Batman1989?  No, definitely not Batman1989.  So, I might try Admin.  Nope, thatâs not available, either.  Then I might try Jack; nope.  PapaShell; nope.  C-3POwned; nope.  KarateSkid; nope.  Before I know it, Iâm left with some goofy name like PumpkinSpiceSnorter, because it feels like thatâs all thatâs left.  Itâs really hard to find a good username thatâs not already taken, especially on places like Twitter and Instagram where there are hundreds of millions of people already registered there that have good names already.  But what if there was a way to just steal an account name that you really wanted?  Surely that would make it a lot easier, right?
+<!--more-->
+(INTRO):	[INTRO MUSIC] These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	This episode is the story about the dark stuff that happened to Miles.  Weâve changed his name because he wants to be anonymous about this.</p>
+
+<p>MILES:	Iâve been around for a while.  Iâve been designing sites and products on the internet for about the last sixteen years.</p>
+
+<p>JACK:	Back in 2005, Miles was fascinated with technology and the web, and naturally was an early adopter to new sites like Twitter.</p>
+
+<p>MILES:	As a part of that scene, you hear about things like what is this Twitter thing and why does this product look so horrible?</p>
+
+<p>JACK:	[MUSIC] He joined Twitter in 2008 and yeah, it was pretty different then; same idea, just more clunky at how it looked and was used.  But the thing is, Twitter only came out in 2007, so in 2008, there werenât a crazy amount of users there yet, which meant Miles could pick a really simple username if he wanted.  So, when I joined Twitter, I first tried to register as Jack because thatâs my name, but Jack was already taken by the founder of Twitter, Jack Dorsey.  Miles considered his first name as his username, but that was taken, so he tried to think of another username to pick.  At the time, he was doing some web design and had a certain animal in a lot of his designs.  I donât want to say what animal but you can think like turtle or shark or owl or elephant, something like that.  Miles was able to register for an account that had a simple animal name like that.</p>
+
+<p>MILES:	So, I was able to get a pretty cool handle and got known for that on Twitter.</p>
+
+<p>JACK:	[MUSIC] It is cool having a short and sweet name for your Twitter account, a common, single word, an animal that he really liked.  Then a couple years later when Instagram came out, Miles was again an early adopter, getting on there before it became popular, and again he was able to register the same simple animal name on Instagram.</p>
+
+<p>MILES:	Before you knew it, I had this name on Twitter and Instagram, and then I had it on Dribble and LinkedIn and Facebook.</p>
+
+<p>JACK:	At this point, he fully integrated this animal into his personal brand.  He wasnât any kind of celebrity or influencer with millions of followers, but he did get over 10,000 followers on Twitter and 9,000 followers on Instagram.  So, he was invested in the handle and keeping it tied to his online identity.  Since it was short and sweet, [00:05:00] other people thought it was cool, too.  Some even wanted to buy it.</p>
+
+<p>MILES:	Iâve been asked probably 150 times, maybe more through DMs; can I buy your handle?</p>
+
+<p>JACK:	Thatâs just it; as more and more people join Twitter and Instagram, it becomes increasingly harder to find a cool handle to register.  So, an animal as the handle was becoming more valuable over time.  These people might have wanted it for their own brand or business, or maybe they just thought it was cool and wanted to have it.</p>
+
+<p>MILES:	Itâs a property like a domain or anything else and so, people are gonna have all kinds of reasons.</p>
+
+<p>JACK:	[MUSIC] But Miles suspects a lot of these requests werenât legitimate and that people were trying to scam him out of his account, act like buyers but then just take it and not give him any money.</p>
+
+<p>MILES:	I suspect, looking back, that a lot of these conversations were for people who were fishing for information.</p>
+
+<p>JACK:	Mostly he told people no, he wasnât interested in selling his account.  But this one time in 2016, someone sent him a private message through Instagram offering to buy his account.  The way the conversation went, it seemed pretty serious.  He was at least interested in talking further, and so he suggestedâ¦</p>
+
+<p>MILES:	Well, why donât we move this over to text?  So, I gave this person my phone number.</p>
+
+<p>JACK:	Miles thought this was a good idea in the moment at least, because it seemed like their interest was legit, but instead of the deal moving forward over text, something else happened.</p>
+
+<p>MILES:	[MUSIC] Within a matter of a couple of days, suddenly my phone wasnât working.  I had no phone service.</p>
+
+<p>JACK:	He was driving in his car when he first noticed.  The little icon on his phone that shows the signal strength just said No Service.  He couldnât make a call.  He couldnât get data over the network.  It was like his phone had been disconnected.</p>
+
+<p>MILES:	It was really bewildering.  At first, Iâm not thinking Iâve gotten hacked; I think somethingâs wrong with my phone.</p>
+
+<p>JACK:	So, he drove home to figure out what was going on.  He didnât have a landline anymore, so he just connected his phone to WiFi and was able to message a friend.</p>
+
+<p>MILES:	I generally think itâs weird that we call these devices our phones because itâs one of the least-used apps on this device, and yet when it disappears, it was really unsettling to not quite have the flexibility I needed to get ahold of the people that I needed.  So, that was interesting.</p>
+
+<p>JACK:	Yeah, suddenly having a phone thatâs only able to work on WiFi is weird.  Youâre no longer able to get data or make calls when away from home, or if there was an emergency when he was out, he wouldnât be able to call for help, either.  He needed to get this fixed, so he called up AT&amp;T, his provider at the time.  He asked them why does my phone have no service?</p>
+
+<p>MILES:	[MUSIC] Oh, you called earlier and you changed your SIM information.  No, I didnât.  That was really unnerving.</p>
+
+<p>JACK:	At that moment he realized someone hacked his phone, but howâd they do it?  Well, inside all phones is a little removable card with circuitry on it.  These are called SIM cards, and this SIM card is what activates your phone on the cellular network.  Without it, your phone wonât work.  When you register your phone to a cell provider, you give them your SIM card information, and theyâll tie that to your phone number.  When you go to switch phones or if you lose your phone, youâve got to tell the cell provider to use this new phone with your phone number.  So, the phone number gets tied to that new SIM card.  Well, as you can see, this can be abused.  Someone who wants your phone number can impersonate you.  They can call your mobile provider and say hey, I just got this new phone; can you switch service to that?  If theyâre able to trick the mobile provider, they just took over your phone number.</p>
+
+<p>But how bad would it be if someone took your phone number?  Well, really bad, actually.  Our phone numbers are often used as a backup recovery method or a way to identify us.  To start, what if you lose the password to your e-mail address?  Itâs not like they can e-mail you a recovery link or something, since you canât read e-mails.  So, often e-mail providers will store your phone number.  In case you need to recover the password, theyâll just send you a text to verify your identity, because the e-mail provider assumes only you will have access to that text.  Well, in this case, someone SIM-swapped Milesâ phone number over to theirs, and proceeded to do a password recovery on his Gmail account.  They got the text to confirm their identity and reset the password.  Once youâre in someoneâs e-mail account, itâs all downhill from there.  You can issue password resets on pretty much any other account they have, since theyâll likely send you an e-mail to change the password.</p>
+
+<p>MILES:	They got into Twitter, they got into Instagram, they got into Gmail.  So, obviously thatâs really [00:10:00] disconcerting.</p>
+
+<p>JACK:	[MUSIC] Can you imagine how scary and frustrating this must have felt, to lose your phone number, to be locked out of your e-mail, Twitter, and Instagram?</p>
+
+<p>MILES:	When you donât have any idea whatâs going on and you havenât been exposed to this world, itâs really unsettling.  You donât realize how critical your data can be to your sense of wellbeing and how easily you can be manipulated when somebody uses it.</p>
+
+<p>JACK:	They tried his bank account too, but couldnât get in, which I guess is somewhat good news.  But actually, this was my first guess on why someone would SIM-swap him, to go after his money, because something Iâve seen quite commonly is that criminals will go after people who they know have a lot of Bitcoin, because if you can get into someoneâs Bitcoin account, you can quickly transfer everything out and thereâs no way to undo that.  The honey attracts the bees.  So, if someone is tweeting on social media about how many Bitcoin they own or something, then a social engineer could try to figure out their phone number and e-mail address and stuff like that, and then do a SIM-swap to take control of their phone number and take control of their e-mail address, and then find out if their crypto-currency is stored on an exchange, and if so, maybe do a password recovery to get into the exchange and then empty the whole wallet.  But Miles here didnât have Bitcoin, so that wasnât the motive for whoever hacked into his phone.  But Miles was lucky, because he was a web designer and socialized with other people in tech and had a few friends that worked at Twitter and Instagram.  He reached out and asked if they could help him.</p>
+
+<p>MILES:	[MUSIC]  They could see the logs, they could see how this happened and so, they were able to reverse the direction of what had happened.</p>
+
+<p>JACK:	Since they knew Miles personally, they were able to turn back the clock on his accounts.  They reset them to the way they were before the hack.  That was Instagram and Twitter, though.  Gmail was a little harder.</p>
+
+<p>MILES:	I was able to retrieve that, but it took a lot of verification work and two or three days.</p>
+
+<p>JACK:	Okay, crisis averted.  He was able to get everything back and his phone number, but it did take him a few days to sort this all out.</p>
+
+<p>MILES:	The big question in there would be what â in my Gmail, what did they take?</p>
+
+<p>JACK:	Yeah, that is a major concern.  Think of all the stuff that comes through your e-mail; bank statements, credit reports, receipts for things youâve bought online, your taxes, maybe.  The idea got Milesâ attention.</p>
+
+<p>MILES:	There probably wasnât anything hyper-private or that I was terrified they were going to have or some business secret or some bank details that I can think of, but the number of times that you just e-mail somebody a password or something like that thinking oh, itâs behind Google, itâs fine, and that stuff is vulnerable.</p>
+
+<p>JACK:	Realizing this, Miles did a couple of things to tighten up his security.  He started using a password manager.  He switched cellphone carriers to a new number and with this new provider, he added extra security too, because this happens so much that some mobile providers are now allowing you to make a PIN code.  This is a number that you must know in order to change anything on your mobile plan.</p>
+
+<p>MILES:	Iâm a designer.  Iâm relatively technical.  Youâd call me internet-savvy, but I am not a developer and Iâm not well-versed in cyber-security.  This whole experience has made me more so.</p>
+
+<p>JACK:	He felt more secure with this, but was realistic at the same time.  He knew that social engineering was a thing and that the phone companies could still be vulnerable to someone trying to trick them.</p>
+
+<p>MILES:	[MUSIC] Somebody could convince somebody or somebody could have somebody on the inside or something like that, so thereâs some trouble there.</p>
+
+<p>JACK:	Unfortunately for Miles, there was some trouble on the horizon.  It seemed like this was happening because of that simple Instagram and Twitter username that he had, and someone else wanted that.  Lots of people, actually.  Stay with us, because after the break, thereâs more trouble that comes his way.  [00:15:00] [MUSIC] I think now might be a good time to tell you more about Milesâ home life.  He has kids that are kinda older and he has an ex-wife, and heâs currently living with his girlfriend.  In 2019, Milesâ nightmare happened again.  He looked at his phone and saw there was suddenly no service.</p>
+
+<p>MILES:	The individual attempted a SIM hack and I was able to intercept much more quickly âcause I knew what was happening this time.  So, I was on the phone with T-Mobile immediately.</p>
+
+<p>JACK:	He was on this so quick that nobody was able to hack into any of his accounts.  But this time it was different; this time, whoever was trying to take over his phone was persistent, and they started calling Miles over and over, but he didnât answer.  [MUSIC] So, then they started texting him ugly threats.</p>
+
+<p>MILES:	So, they contacted me and began telling me things like if you donât release your Instagram handle, then weâll start going after your son.  What does that mean?  What does going after my son mean?</p>
+
+<p>JACK:	Whoa, whoa, whoa, release your Instagram handle or weâll go after your son?  I guess this makes it clear what the motivation of this person is.  They want his Instagram handle.  That was the main driver behind all this harassment and this SIM-swap, at least.  But of course, no way, no way would you or I and definitely not Miles â weâre just not gonna give up our Instagram handle because someoneâs threatening us over texts, right?  But shoot, this person was showing Miles that they know his sonâs mobile number and was threatening to mess with it next.</p>
+
+<p>MILES:	I was getting pretty upset and wigged out and trying not to relate back to them with threats or excitement.  But they kept pushing and kept telling me that they were going to go after my son and they were going to make it really bad for me.  I consider myself a fairly strong-willed person, but this was terrifying.  As soon as somebody started bringing in family and my children, it was just a really terrifying feeling to have somebody attacking you in that kind of way.</p>
+
+<p>JACK:	It was a mean, harsh tactic, but Miles didnât cave to these demands.  Of course not; he understands tech and security enough to know how to secure the phones in his whole family.</p>
+
+<p>MILES:	[MUSIC] But I kept pushing back and worked with T-Mobile to lock it down.</p>
+
+<p>JACK:	Miles was not only able to recover from this SIM-swap attempt, but made sure every phone in his account had a PIN code and no changes to his service could be done without it.</p>
+
+<p>MILES:	I shut that down, locked everything up, and just kinda tried to recover.</p>
+
+<p>JACK:	Although his accounts didnât get compromised this time, the scary threats drained Miles.  He also wondered, how did they get to him this time?  Because he switched phone providers and got a new phone number, and he didnât give this phone number out to anyone who was interested in buying this handle.  So, this attack just came out of nowhere.  He figured that info like his new phone number was probably out there on the internet.  A hacker just had to spend a little time figuring out what his real name is and then digging this stuff up, because keeping your personal information off the internet is really hard.  Your stuff is scattered all over the place; addresses, employment history, your family relationships, and phone numbers.</p>
+
+<p>MILES:	Once you have one piece of information, then you get your second, and then as soon as you have your second, it becomes orders of magnitude, easier to continue developing a profile and adding information.</p>
+
+<p>JACK:	Miles thinks thatâs what happened to him; the hacker spent some time putting together a target profile, then they were able to launch an informed social-engineering attack on him.</p>
+
+<p>MILES:	[MUSIC] They were able to get ahold of T-Mobile and manipulate their way in through either doing it in person or doing it over the phone, and convince somebody to change out the SIM for them.</p>
+
+<p>JACK:	It seems like this shouldnât be possible, especially since Miles had all the extra security in his account, but it still happened.  The hacker might have come up with some crazy story like Iâm on vacation and lost my phone, and since Iâm away from home, I donât have that PIN code that I was supposed to have.  Eventually, the phone rep just gave in and was probably being nice, maybe empathetic, and just said okay, weâll switch your phone.  [00:20:00] Because he didnât like getting hacked, one thing Miles looked into was removing all his personal information off the internet.</p>
+
+<p>MILES:	What I now know is the amount of work that would be necessary for me to expunge the internet of my personal details is an enormous chore and honestly probably something that a normal individual like me would have a hard time doing.</p>
+
+<p>JACK:	Heâs a guy who works in tech.  Heâd have to lock down his social media accounts, scrub through all the public records and websites, and purge his info from internet archives like the Wayback Machine and archive.org.  Even though it was a tedious endeavour, he still gave it a try.</p>
+
+<p>MILES:	I had had some help removing some identifying information from cyber-security expert, sort of a friend of a friend, and had done some work there to remove some of that kind of available information, but itâs a drop in the bucket.</p>
+
+<p>JACK:	Still, he felt better about his security after the second hack.  [MUSIC] He had extra protections put in place on his phone account and got some of his info cleaned up from the web.  He was using two-factor authentication on all his social media accounts.  For a while, all was good and quiet.  The security measures that he put in place were holding.  No suspicious activity for a while, but then in early 2021, something happened that he didnât prepare for.  It happened on a Friday night.</p>
+
+<p>MILES:	My girlfriend and I are sitting on the couch.  Itâs like, 10:30 at night, getting close to being ready to head to bed.  We get a knock on the door, and weâve got a couple of pizzas showing up.  [MUSIC] We didnât order pizza.</p>
+
+<p>JACK:	But the delivery guy is like, is this your name?  Yes.  Is this your address?  Yes.  Is this your phone number?  Yes, but thatâs an old phone number that he stopped using after his phone got SIM-swapped a few years ago.  Suddenly, this pizza was super creepy.</p>
+
+<p>MILES:	I immediately thought okay, this is a hack.  This is happening again and this is some new schema.</p>
+
+<p>JACK:	Miles tells the guy thereâs been a mix-up.</p>
+
+<p>MILES:	Youâre gonna have to tell your manager we didnât order any pizza.  The guy was totally bewildered and went away.  Within about thirty minutes, we had another order, different company; same thing.  Within another thirty minutes, by about 11:30, we were already asleep in bed; same thing.</p>
+
+<p>JACK:	What the heck is going on here?  Three pizzas in one night that he did not order?  Was this some kind of screw-up?  Like, was someone accidentally putting his name and address down instead of their own when they were trying to order pizza?</p>
+
+<p>MILES:	I thought yeah, maybe that happened, but then three in a row?  Like, whoâs gonna order three orders of pizza and make the same mistake over and over?</p>
+
+<p>JACK:	[MUSIC] Miles was convinced that this was an attack on him of some kind, and was remembering all these old SIM-swaps that had happened in the past.  But who was doing it and why?  No one had reached out to him to demand anything.  The last time he had a threat about his Instagram handle was in 2019, a year and a half earlier.  So, the next day, he got in touch with the pizza companies to try to figure out what happened.</p>
+
+<p>MILES:	We reached out to the management the next day, and all that they said is that it was an internet order that was placed using this phone number and this address and your name.</p>
+
+<p>JACK:	Hm, not much to go on there.  It just looked like these orders were coming from Miles and this chat with the pizza companies didnât help much, because more pizzas started showing up later that day.</p>
+
+<p>MILES:	We received three or four more orders.</p>
+
+<p>JACK:	Which they just had to turn all those pizza deliveries away.  You should understand that none of these orders were pre-paid; every one of them was supposed to be paid when the pizza was delivered to the house, so all these pizza places were really annoyed as well for making a pizza, driving it out, and then not getting paid for it.  Things kept getting worse.</p>
+
+<p>MILES:	My girlfriend started getting phone calls from pizza companies saying hey, we have a delivery for your address, and itâs for 11:45 at night.  Are you sure that this is you?  Weâre saying good lord, no.  Thatâs not us.  Weâre not trying to order pizza at the endth hour of the night.</p>
+
+<p>JACK:	Now they had his girlfriendâs number and were harassing her?  Still nobody was demanding anything from Miles.  There were no suspicious DMs or texts or e-mails saying why any of this is happening.</p>
+
+<p>MILES:	The fact that it was to my girlfriend and not me started really wigging me out, and this is when I knew my suspicions were confirmed that it was somebody trying to hack us, [00:25:00] but we hadnât had any [MUSIC] communication from any hacker at this point.</p>
+
+<p>JACK:	The pizzas kept coming to his house for two whole days.</p>
+
+<p>MILES:	My girlfriendâs freaking out; this seems really weird, whatâs happening, and the anxiety is going up.  Then my parents text me and say hey son, sorry, weâve got bad news; we just got a pizza delivery for you here at our house in Colorado.</p>
+
+<p>JACK:	Which, his parents arenât even in the same state of where Miles lives.  So, did your parents pay for the pizza?</p>
+
+<p>MILES:	No, no.  They just â they sent the pizza away.  Frankly, it was a strange feeling âcause itâs pizza and itâs cash-on-delivery, so itâs not like somebodyâs paying for this pizza, right?</p>
+
+<p>JACK:	Oh, they â can you do that still?  I didnât know that was possible.</p>
+
+<p>MILES:	Agreed.  I have no idea how this is a reality.</p>
+
+<p>JACK:	This is a lot of wasted pizzas at this point, and I wonder if anyone ever got to eat any of those.  So, they all go to bed Saturday night, not sure whatâs going to happen.  But then, sure enough, the next dayâ¦</p>
+
+<p>MILES:	[MUSIC] My girlfriend gets this text from a number that we donât recognize, and it says, âTell your boyfriend to let go of his Instagram handle or the pizza doesnât stop.â</p>
+
+<p>JACK:	Milesâ suspicions were confirmed.  This was all about his Instagram handle, the one with the animal name.</p>
+
+<p>MILES:	We were just freaked out.</p>
+
+<p>JACK:	Why is someone so interested in getting control of an Instagram account with only 9,000 followers?  Well, this brings us to the world of [MUSIC] OG accounts.  OG stands for Original Gangster, but it really just means that these account handles are short and sweet.  Like I was saying, his Instagram account was a short animal name like owl, shark, elephant, or turtle, just a single, common word, and Instagram handles like that are in high demand.  People will sometimes pay good money for accounts like that.  Imagine a company or influencer with that animal in their brand; theyâd probably be more than happy to have a short and sweet username like that, because it adds a little prestige, like wow, howâd you get that account?  So, when thereâs a demand for short usernames like this in the world, thereâs a marketplace for it, and one of these marketplaces is called ogusers.com, and you can go there and see all kinds of accounts for sale with cool names.</p>
+
+<p>But this is not always the cleanest place.  People see how certain accounts go for pretty good money, and they try to obtain these accounts to sell them.  Iâm looking at the site right now, and thereâs an Instagram account on there for sale for like, a few thousand dollars.  So, if someone can hack into a phone or an account and take it over, they can flip it on this site for pretty good money.  So, now you see whoever was harassing him was probably doing it to make money off his account, and thatâs all they cared about.  But this case is strange to me because they werenât trying to hack his account or take it over in any way, because all his security measures held up.  [MUSIC] So, whoever this was resorted to bullying him and harassing him in hopes that he would give up his account to make the harassment go away.</p>
+
+<p>MILES:	On the outside it seems like oh, this is just pizza; whatâs the big deal?  But when you donât know what this person can access â and thereâs just nothing I can do.</p>
+
+<p>JACK:	To make things more stressful, Miles had been researching this kind of harassment on the web.  He was getting worried what the harasser might do next.</p>
+
+<p>MILES:	We had uncovered that this sort of thing can lead to swatting and fire-trucking.</p>
+
+<p>JACK:	Which means the harasser can call the cops or the fire department to your house.  They might say something like oh, my neighborâs house is on fire; please and come and help, or that youâre standing in the street waving a gun around, threatening people.  Speaking of the police, Miles did file a police report with his local PD.  When he got on the phone with them, he filled them in on everything and told them that in the past, his phone had been SIM-swapped a few times and now theyâre harassing him to try to get his Instagram account.  The police just said something likeâ¦</p>
+
+<p>MILES:	You have this handle and itâs worth money?  It was perplexing to them.</p>
+
+<p>JACK:	Miles didnât think the local PD could do anything to help him.  They just donât have resources to find a mysterious harasser who might be in another country.  But he wanted to get the whole thing noted on the record.</p>
+
+<p>MILES:	So, I filed a report.  They said there was really nothing that they can do.  They suggested filing a report with the FBI.</p>
+
+<p>JACK:	So, he did that, too.</p>
+
+<p>MILES:	You go through a specific cyber internet crime URL, and you fill out a really long form that I donât think does anything and I doubt anybody has seen it.</p>
+
+<p>JACK:	All Miles got was an auto-reply e-mail.  He never heard anything back from the FBI, which [00:30:00] made him feel like he was on his own.  The police couldnât do anything and the FBI probably wonât do anything.  It wasnât like there were millions of dollars involved or there was any threat to national security.  It was just harassment and bullying by pizza.</p>
+
+<p>MILES:	[MUSIC] Iâm sure there are way bigger fish to fry, but thatâs where these particular genre of hackers can fly below the radar.</p>
+
+<p>JACK:	So, what would you do in this situation?  Would you give up your OG Instagram account to make the pizza stop or would you say no way, whatâs mine is mine; go away.  Weâve called the police and the FBI already.  Miles and his girlfriend thought about this exact problem.  They decided not to reply to their harasser which theyâre pretty sure was a guy.</p>
+
+<p>MILES:	On Sunday she didnât write back, and then he says okay, I guess the pizza continues.</p>
+
+<p>JACK:	They werenât joking.</p>
+
+<p>MILES:	The pizza keeps coming.</p>
+
+<p>JACK:	Car after car kept pulling up to their house.</p>
+
+<p>MILES:	We put a sign on our door that said we did not order pizza.  Go away.  Do not deliver.  Here is the police case ID that weâve filed, and reference that if you need to.  Some people ignored it and rang anyway.  It was a nightmare.</p>
+
+<p>JACK:	More and more pizzas kept coming.  Then, more people were getting harassed.</p>
+
+<p>MILES:	Itâs now also coming to my ex-wife and our kids.</p>
+
+<p>JACK:	They lived in the same town but at a different address.  Miles is not sure how this harasser got their information, but he did not like this.</p>
+
+<p>MILES:	Itâs one thing for adults to be involved, but as soon as my kids are involved, it amplifies things massively.  One of my kids has a disorder that really amps him up, so his fear factor just went through the roof, and that was really uncomfortable.</p>
+
+<p>JACK:	So, I ask you again listener, what would you do now?  Youâve called the police.  Youâve acted like this hasnât bothered you and tried to ignore the harasser, but now your kids, ex-wife, parents, and girlfriend are being harassed, too.  Itâs been four solid days of pizzas coming to your house, all because you have an Instagram account that doesnât even have 10,000 followers.  How much more harassment can you take?  Keep in mind, this is the third time someone has targeted you specifically to get control of your Instagram account, so even if you fight this one off, thereâs inevitably going to be another.  Your anxiety and anger and stress grows with every ring of the doorbell.</p>
+
+<p>MILES:	[MUSIC] I just gave up.  I was done.</p>
+
+<p>JACK:	I hate this.  This is so sad and depressing that the harasser won this battle, that this worked.  This shouldnât work.  Something should have saved him.  I donât know, security, police, Instagram, the phone companies, the pizza places.  I hate that no one was there to help him fight this and that he lost.  He lost because the harasser pushed him to his limit and there was no recourse he had.  He got in touch with a friend he had at Facebook, and they helped him get in touch with the Instagram team, and he told the Instagram team everything that happened; the pizza, the threatsâ¦</p>
+
+<p>MILES:	I told them Iâm done.  I donât â having a cool Instagram handle is not worth it to me compared to the possibility of this being able to happen again and again, and the unrealistic expectation that Iâm going to expunge the internet of all of my personal details for this to not be able to happen in the future.</p>
+
+<p>JACK:	He didnât want this person to have his Instagram account, so he was just going to get Instagram to lock his account permanently so nobody could have it.  But this created a new problem; his harasser saw that his account was locked, and that made him mad.</p>
+
+<p>MILES:	He said okay, Iâm gonna take your Twitter handle now, too.  I can see that you got Instagram involved.</p>
+
+<p>JACK:	[MUSIC] Losing his Instagram account, that was something Miles had already made up his mind on, but he really wasnât ready to lose his OG Twitter account, too.  So, he got back control of his Instagram account and was preparing to give it to his harasser.</p>
+
+<p>MILES:	I was exhausted.  I was done.  Iâm ready to trade this in.  Iâm ready to just walk away.</p>
+
+<p>JACK:	Miles figured out that if he stopped fighting, gave up his account, and got Instagram to back off, the hacker would leave his Twitter account alone.  So, he worked with Instagram to move his account to a new handle, not the short and sweet one that he used to have; some long, ugly one.  That way he could keep all his pictures and followers and DMs and whatever, but then he would just give a freshly-made [00:35:00] new account to his harasser.  Once he got everything moved around, he gave the password over to his harasser.  He wanted this to be a clean break, and he didnât want to do anything more to upset his attacker.</p>
+
+<p>MILES:	I mean, I didnât care if the account got banned in a year, but I didnât want them to ban the account now and then him say oh, you got Instagram to ban the account.  I guess the pizza continues, or I guess youâre gonna get swatted.</p>
+
+<p>JACK:	Or worse; go after his bank account, steal his money, or wreck his life in some way.</p>
+
+<p>MILES: 	I didnât know how capable this individual was.  I just didnât want to push the limit.  I wanted it to be done.</p>
+
+<p>JACK:	[MUSIC] So, once Miles had the OG account cleared out and a new password, he reached out to the hacker and when he messaged the guy, he had a little request.</p>
+
+<p>MILES:	I just said listen, Iâve got this password; Iâm ready to give it to you, but do you mind if I dig in here with you a little bit?  I want to know, why did you do this?  Whatâs in it for you?  How did you do it?  He said yeah, sure, we can go over it right now.  I said yeah, this is the third time your community has done this to me and Iâm tired.  He said, I never knew about the first two attempts.  Police didnât give a fuck because itâs basically only harassment unless they swat you.  He says yeah, youâre in the magic middle where itâs too weird for cops and too small for FBI.  Itâs a sad reality.  Itâs fascinating to me; he says itâs a sad reality like he knows that this is a problem.  Itâs a loophole.</p>
+
+<p>JACK:	Man, that is a sad reality, and it confirmed what Miles already suspected.  The police couldnât help and the FBI probably wonât help.  This kind of harassment flies under the radar.  Miles texted with his bully for like, a whole hour, and talked about all kinds of stuff like that Instagram handles are probably the highest value accounts, followed by TikTok, and thatâs why this guy was so interested in Milesâ Instagram and not his Twitter, and thereâs other ways to harass people like sending taxis instead of pizzas, or even prostitutes.  Miles even asked whatâs the best TV representation of this kind of hack?  The attacker said oh, you should watch MTVâs True Life Crime series.  Thereâs an episode called the $5 Million Hack, and it goes over what SIM-swapping is pretty clear.  But maybe the most surprising of all, Miles found that this attacker works in tech.</p>
+
+<p>MILES:	This guy works for a cyber-security company and this is a hobby for him, which is just completely bizarre.</p>
+
+<p>JACK:	Yeah, that does seem odd.  Youâd think someone who worked in cyber-security might spend their nights helping people, not exploiting them.  Or if they were going to exploit someone, it should be some evil corporation or something; not the little guy.</p>
+
+<p>MILES:	Heâs telling me things that are sort of what you would tell your friend, and he became really â very buddy-buddy.</p>
+
+<p>JACK:	Because the tone was getting friendlier, Miles decided to level with the guy.</p>
+
+<p>MILES:	I said, you realize this was extremely â this was very difficult and I was put in a very difficult, vulnerable position.  He sort of laughed it off and said yeah, isnât it funny how anxious people get?  As though he wasnât talking to somebody he had just done it to.</p>
+
+<p>JACK:	As they wrapped up this text thread, Miles, who seems like a nice guy, maybe too nice, left things on good terms with this person and saidâ¦</p>
+
+<p>MILES:	Okay, well, Iâm gonna give you this password.  Hey, and if you want to keep in touch, let me know.  Iâm always interested in continuing to learn more.  Frankly, I am.  I want to learn.  I want to be more adept at this and be able to take care of myself and my kids and my family more successfully.</p>
+
+<p>JACK:	[MUSIC] So, Miles passed everything over to his harasser.  The guyâs plan was to resell it as quickly as possible.  That way if the account got banned or hijacked again down the line, it would be someone elseâs problem at that point.</p>
+
+<p>MILES:	Itâs weird to be on this side of it now and not have as much fear or anxiety about it.  But itâs over.  If it started again, I would â it would be back.</p>
+
+<p>JACK:	I doubt Miles ever expected to hear from his harasser again, but then he got sent another text message with a crazy proposal, too.</p>
+
+<p>MILES:	He reached out maybe a week later and said hey, itâs me again.  I know youâre probably asleep, but I got a deal for you.  Hope youâre doing well, though.  Which is insane.  Basically, Iâll sum it up for you; when you wake up â and Iâll give you your handle back.  Iâll take hours of my time to gain information on every possible website I can think of off of the internet for me, if you can give me an Instagram username thatâs been inactive for forever with your connections [00:40:00] at Instagram.  Itâs not something super insane, so I donât think it should be a problem.  It would be a personal account for me so it wouldnât be sold or anything.</p>
+
+<p>JACK:	Whoa, this is bizarre.</p>
+
+<p>MILES:	Something about this banter we had had made him feel like now weâre buddies and connected, and you know, for me, I try â Iâm trying to use my brain to empathize with him and imagine what itâs like being in his shoes.  He seems like maybe heâs a younger guy and has a different perspective on all this stuff, but that was bizarre to me.  I couldnât believe that had happened.</p>
+
+<p>JACK:	[MUSIC] Because, they werenât buddies; this was a conversation between the attacker and the victim, no matter how friendly the tone was over messaging.  Miles didnât have another Instagram account to offer in order to get his account back.  Miles occasionally checked up on his old Instagram account for a while.  For a few weeks, the account was active and had zero followers, then suddenly went off Instagram entirely.  Right now, that account just says âSorry, this page isnât available.â  So, it seems like Instagram may have detected all this and removed it somehow or banned it, which means all this drama for nothing.  Now nobody seems to own this thing.  I texted this harasser myself multiple times for days, but never got anything back from them.  They ignored me altogether.  I think they probably use some service that lets them get a new phone number whenever they want, and when they were done with Miles, they deleted their numbers and moved on.  What a strange way to bully people online now, right?</p>
+
+<p>MILES:	Completely bizarre.  If you think about it from a point of view of a video game and you abstract away the humanity, right, if you think away the humanity into something like a character, and if you justify that itâs only pizza and itâs annoying because youâre not able to empathize with somebody, that they might think well, yeah, itâs just pizza now but whatâs next?  If you can kind of just sit there in that space and you think about it as a internet handle, not as somebodyâs â like, Iâve spent years cultivating this brand.  Is it worth tens of thousands of dollars?  Probably not, but itâs meaningful.  But to him, it was just a game.  It was just a way to extract something that he could probably make a few thousand dollars in Bitcoin and move onto the next handle.</p>
+
+<p>JACK:	I had a chance to chat with Nicole Beckwith from the last episode about this.  If youâre not familiar, Nicole was in IT security and then became a cop and investigated a lot of cyber-crime while as a police officer and as a Secret Service task force officer.  She gets frustrated when she hears stories like this.</p>
+
+<p>NICOLE:	Your typical officer that goes through the police academy, there is no course for cyber-crime.  They donât even explain the basics, which has to change.  Itâs no longer okay to not be tech-savvy as a police officer.  They really need to have courses in the police academy that explain what an IP address is and social media and how you can look at profiles and forensics and OSINT investigations on that.  That was the course.  It was a half-day course â I tried to make it several days but was shot down â that I put together for officers and that I still do to this day.  They need to understand all of this and they donât.  Itâs so frustrating for me to hear time and time and case and case again that I filed a police report; they never followed up with me.</p>
+
+<p>In fact, there was a local case where a female submitted that she was being stalked and harassed on social media and this person was saying like, Iâm coming after you, Iâm gonna get you.  It sat on the shelf of the police department.  She was eventually murdered by this person.  If they would have just understood how to get that information â and it makes me so mad just saying this, but if they would have understood how to get that information, she would likely still be alive today.  Itâs unacceptable in my opinion, and as an officer and as somebody who is in this field, itâs no longer an option.  It has to be a baseline for every officer in the United States to understand how to get this information and how to work those cases.  [00:45:00] Iâm fighting the system and trying to ensure that that happens.</p>
+
+<p>JACK:	Do you have any recommendations for anyone listening and in this situation?</p>
+
+<p>NICOLE:	Yeah, so, a couple things.  One, if you are a police department and you are listening to this, Iâm on Twitter; @NicoleBeckwith.  Iâm on LinkedIn; /NicoleBeckwith.  Find me.  I will conduct â I donât care if itâs virtual, I donât care if itâs in person â free of charge to your agency training on all of this.  I have half-day courses, I have full-day courses, I have week-long courses.  I will offer that free of charge for your entire agency.  Just ask me for it.  But then additionally for the victims that are being harassed, that are â constantly have to deal with this, you do have recourse and you can â if you go to your local police department and it sits and nothing is being done, take it to the next step; file a complaint with the â with IC3, the Internet Crime Complaint Center the FBI runs.  You can also take it to your local FBI â you can take it to your local Secret Service.  Donât be afraid just because theyâre a federal agency to call them.  Thatâs what theyâre there for.</p>
+
+<p>(OUTRO):	[OUTRO MUSIC] Thanks so much to Miles for sharing your story.  I hope you can keep your Twitter account for a long time and this never happens to you again.  Iâm an independent creator who loves bringing this show to you free of charge every two weeks, but what really helps me keep on that schedule are my Patreon supporters.  These are the people who donate money to the show every month to help keep the WiFi on and the stores glowing.  If you want to show your support for this show, please visit patreon.com/darknetdiaries and consider donating.  Thank you.  This show is made by me, the pumpkin spice snorter, Jack Rhysider.  This episode was produced by the chair-spinning Charles Bolte, sound design by the colorful Garrett Tiedemann, editing help by the gum-chewing Damienne, and our theme music is by the paper airplane pilot Breakmaster Cylinder.  Even though I have paper hands when it comes to holding cryptocurrency and diamond hands when it comes to holding paper currency, this is Darknet Diaries.</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

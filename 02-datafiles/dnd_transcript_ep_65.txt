@@ -1,0 +1,675 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>PSYOP â Darknet Diaries</title>
+	<meta name="description" content="PSYOP, or Psychological Operations, is something the US military has been doing to foreign audiences for decades. But what exactly is it? And what's the difference between white, gray, and black PS...">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="PSYOP â Darknet Diaries">  
+	<meta name="twitter:description" content="PSYOP, or Psychological Operations, is something the US military has been doing to foreign audiences for decades. But what exactly is it? And what's the difference between white, gray, and black PS...">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/psyop.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/65/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="PSYOP â Darknet Diaries" />
+	<meta property="og:description"        content="PSYOP, or Psychological Operations, is something the US military has been doing to foreign audiences for decades. But what exactly is it? And what's the difference between white, gray, and black PSYOP missions? We talk to PSYOP specialists to learn more." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/psyop.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/65/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/psyop.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/65/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="PSYOP â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/psyop.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 65: PSYOP</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://traffic.megaphone.fm/ADV6390502125.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/65/",
+			   "title": "Ep 65: PSYOP"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/65">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[FULL TRANSCRIPT]</p>
+
+<p>JACK:	Hey, you ready for a hacker story?  Well, I donât have one for you today.  This is not a hacker story.  Itâs not even a tech story.  The thing is, when I make this podcast, Iâm diving down a million different rabbit holes, completely unsure where they go.  This episode is just me going down different rabbit holes and you could come along too, if you want.  But I have to warn you; this whole episode, I go into areas of knowledge that I literally know nothing about so Iâm certain that Iâm ignorant to a lot of stuff and I probably get some stuff wrong along the way.  I try to double-check everything that Iâm saying against multiple sources but still, Iâm not in my lane on this one, so donât take my word for it here.  Even though this isnât quite a tech-focused hacker story that you might be used to, this is a story about how the US military hacks peopleâs hearts and brains.
+<!--more--></p>
+
+<p>JACK (INTRO):	[INTRO MUSIC] These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	So, the other day I went to LinkedIn to see whatâs up and thereâs this guy that tried to connect with me there.  Letâs just call him Henry even though thatâs not his name.  I looked to see what Henry does and it says heâs doing PSYOP in the military.  P-S-Y-O-P and that stands for psychological operations.  Thatâs a term Iâd never heard before but I was immediately interested in learning more.  PSYOP?  First of all, why is a PSYOP person following me on LinkedIn?  Second, what the heck is PSYOP?  I chatted him up to find out and it turns out heâs just a big fan of the show and thatâs why he followed me, but I was still really curious about everything related to PSYOP so we started talking about it.  Turns out Henry here was in the army but is now a reservist.</p>
+
+<p>HENRY:	I did intelligence support and currently Iâm in psychological operations.</p>
+
+<p>JACK:	Okay, so what is psychological operations?</p>
+
+<p>HENRY:	Psychological operations is a skill set which is used to persuade, change, and influence the behavior of the target audience.</p>
+
+<p>JACK:	To persuade, change, and influence the behavior of a target audience.  To persuade, change, and influence the behavior of a target audience.  Huh.</p>
+
+<p>HENRY:	That could be with your adversary or with your friendly population.  The main thing that PSYOP does not do is PSYOP â perform PSYOP on the American public.</p>
+
+<p>JACK:	Okay, this is a lot to take in already; youâre telling me that thereâs a unit in the army thatâs sole mission is to get the adversary to change their behavior?  Why would we need people to do this?</p>
+
+<p>HENRY:	How do you become a battlefield multiplier without using weapons?  [MUSIC] You use psychological operations.  Those are different â thereâs different tiers of PSYOP; thereâs base-to-base communication, thereâs multimedia broadcasting, thereâs leaflet drop, thereâs various means that are non-lethal to get people to make a decision because some people are, in some â in many cases, the way of defeating an enemy is by having the friendly population shift their perspective or be empowered by this type of encouragement.  When youâre talking to someone, you could say well, you need to go to Point A â [00:05:00] you can go to Point A to Point B or give them a linear answer or you can move around it.  Everybody has to be communicated to differently.  What Iâm getting at is, the most important thing is understanding â if you understand your target audience, you can better persuade, change, and influence their behavior which is favorable for the United States and our â whatever our in-state intent is.</p>
+
+<p>JACK:	Alright, so hold on; let me do some research on this.  [MUSIC] Okay, Iâm pulling up some documents about PSYOPS now and yeah, it does seem like the army is conducting PSYOPS missions.  Yeah, the battlefield seems to have changed from what I thought it was.  Thereâs two kinds of ways to fight a war; thereâs the kinetic way and non-kinetic way.  Kinetic is basically physical combat like hitting an enemy with something, like shooting bullets or launching bombs; thatâs kinetic.  But then thereâs the non-kinetic teams who are also part of the battle.  Hereâs just a few of those teams; thereâs the COMCAM team.  These people have connections to satellite imagery or even access to cameras onboard spy planes.  They can get aerial photographs and videos to the commanders.  They literally are the eyes in the sky and by the way, the US military has tons of satellites pointed all over Earth so within a minute or two, they can get a fresh new image of pretty much any part of the planet with a pretty good level of detail even if clouds are covering.</p>
+
+<p>Okay, so then thereâs electronic warfare teams.  These are attacks that either use or target electronic equipment to carry out objectives.  They might have radar-jamming tools or the ability to take out cameras remotely.  Jeez, it looks like they can even send electromagnetic waves to disrupt and degrade facilities and other equipment, too.  These electronic warfare weapons can be mounted to vehicles like Humvees or tanks, but theyâre also commonly seen on planes.  Thereâs a lot you can do with the right equipment on a plane flying over your enemy.  Hereâs an example; thereâs a Stingray device that the government uses sometimes and this is a way to beacon down a cell phone signal to all phones under the plane, and then all of those phones will beacon back.  From that, you can identify the exact location of the enemyâs cell phone that youâre trying to track in real-time, all completely invisible, without anyone knowing this attack is actually happening.</p>
+
+<p>You probably wouldnât even see the plane if itâs overhead in the clouds.  Electronic warfare is exciting and Iâll have to dig into that more another time.  But what Iâm seeing here is that thereâs some serious multi-domain operations going on and itâs not just infantry troops.  Also, obviously, thereâs cyber-operations too.  With all this combined, it gives the army a massive upper hand on its adversary.  Okay, so as Iâm getting deeper into this whole PSYOPS thing, Iâm finding more people to talk to about this.  [MUSIC] I found this guy named Jonathan Nichols who claims to have conducted numerous PSYOP missions in the past and heâs willing to talk about it.</p>
+
+<p>JACK:	Hello.</p>
+
+<p>JON:	Hey Jack, whatâs going on?</p>
+
+<p>JACK:	Hey, good to hear from you.</p>
+
+<p>JON:	Itâs good to hear from you.  Yeah, it took a little while to get us together but here we are.</p>
+
+<p>JACK:	I wanted to know how Jon got started in all this and it turns out his mom was a computer hacker.</p>
+
+<p>JON:	She was hacking ISPs white hat-style.  That was how she paid her way through grad school and also introduced me to the world, so I started out very young.  I think my mother â I think I was forced to build my first website at age ten.  Itâs still online somewhere.</p>
+
+<p>JACK:	Once he finished high school, he thought about the army but at the same time, he really wanted to be a lawyer.  So, he asked the army recruiter about being a lawyer in the army.</p>
+
+<p>JON:	Yeah, the recruiter said there were no slots open for paralegal and suggested without any knowledge â I had no idea what it was â suggested that I go into psychological operations.  They showed me the quick video.</p>
+
+<p>VIDEO:	[MUSIC] Persuade, change, influence.  That is the motto of the US Armyâs Psychological Operations Regimen.  Military operations do not always require lethal force on a battlefield.  Military information support operations can employ non-lethal actions and messages to obtain military objectives.  Trained in persuasive techniques, PSYOP soldiers use their skills to change attitudes, behaviors, values, beliefs, and influence foreign audiences through executing actions and the delivery of messages utilizing a variety of techniques.</p>
+
+<p>JACK:	Well, this was all the motivation he needed.  He signed up for the army and went through boot camp, and then went straight into PSYOPS.</p>
+
+<p>JON:	The very first position is PSYOPS Specialist.  That is the lowest person in a tactical PSYOP team, but I kind of got an itch for work, to be honest, at that point.  I picked up a job as a contractor.  The company was called Lincoln Group.</p>
+
+<p>JACK:	Wait a minute; Lincoln Group.  That does sound familiar.  Let me look this up.  Oh yeah, oh yeah.  Here, Iâll just play this clip for you.</p>
+
+<p>AMY:	This is Democracy Now, [00:10:00] democracynow.org.  Iâm Amy Goodman here with Juan GonzÃ¡lez.</p>
+
+<p>JUAN:	Last November, the Los Angeles Times first revealed that the US military was secretly planting stories in the Iraqi press.  Articles written by US military information operations are translated into Arabic and then placed in Iraqi newspapers with the help of Washington-based defense contractor, the Lincoln Group.  The articles are presented to an Iraqi audience as unbiased news accounts written by independent journalists.  The Lincoln Groups contract is worth up to one hundred million dollars over five years.</p>
+
+<p>AMY:	In February, Rumsfeld gave a major address on information warfare at the council on foreign relations.  In it, Rumsfeld criticized the mediaâs coverage of the Iraq war and defended the military practice of planting stories.</p>
+
+<p>JUAN:	[MUSIC] In Iraq, for example, the US Military Command, working closely with the Iraqi government and the US embassy, has sought non-traditional means to provide accurate information to the Iraqi people in the face of aggressive campaign of disinformation.  Yet, this has been portrayed as inappropriate.  For example, the allegations of someone in the military hiring a contractor and the contractor allegedly paying someone to print a story, a true story, but paying to print a story.</p>
+
+<p>AMY:	When the secret propaganda program was first revealed, even the White House admitted it was, quote, âvery concerned about the practiceâ but earlier this month, the top Pentagon brass insisted itâll go on.  General George Casey said an internal review of the program had, quote, âfound that we were operating within our authorities and responsibilities.â  Pentagon officials told the New York Times this week the Lincoln Group remains under contract and will continue its activities unless the military revises its policies.</p>
+
+<p>JACK:	Well, okay; the Lincoln Group didnât get into any actual trouble over this and the government contracts remained, but they did end up changing their name after that just like how Blackwater became Xe and then became Academi.  Lincoln Group changed their name to Fulcra Worldwide and then Strategic Social.  Now it looks like theyâve just been bought by Academi.  Well, this is really hard to keep straight and thereâs so many rabbit holes, but Jon went to work for the Lincoln Group.</p>
+
+<p>JON:	So, that was as the chief counter-propaganda guy for the United States Forces.</p>
+
+<p>JACK:	Hold on, chief propaganda guy?</p>
+
+<p>JON:	Counter-propaganda.  Chief counter-propaganda analyst, United States Forces, Iraq.</p>
+
+<p>JACK:	What does this entail?  I donât understand this.</p>
+
+<p>JON:	That job involved monitoring adversary propaganda, so this is usually the Al-Qaeda types but also included the Iranian-backed.  Al-Qaeda and a bunch of those types of guys.  The idea is â so, the job involves identifying the messaging thatâs coming from these guys, [MUSIC] try to be the subject-matter person on the ground, the subject-matter expert who gets â who observes the propaganda that these guys are putting out, understands the context that goes with it; so, a fist holding an AK-47 means something very specific.  Itâs a symbol for Iranian-backed extremist groups and it wouldnât mean much at all to an Al-Qaeda type just, Iâll say, for example.  So, understand the context that the message is coming from, understand who these â when we get these messages, we might not know exactly who the target audience is, break down those arguments, figure out what methods of appeal the particular piece of propaganda is using and then help the US government craft a counter-messaging, should it be needed.</p>
+
+<p>JACK:	Okay, I think I got it; Jon was working for Lincoln Group within Iraq and then was listening for propaganda that the extremist groups were putting out, and then giving suggestions on how the US should respond to this propaganda.  Jon was getting into the details of how Al-Qaeda was spreading their propaganda.</p>
+
+<p>JON:	The chain, weâre gonna say chain of custody for the propaganda, it starts out with these guys in Yemen or wherever they are, Al-Qaeda headquarters putting out messaging, and then couriers will take those commands and post them online.  These are specific couriers and everybody knows who these guys are.  These are Al-Qaeda-official couriers that post online what the new directives are and then it disseminates from there to the battlefield commanders who take up the mission and run with it.  Yeah, a lot of the job would also include identifying that messaging when it comes out and then [00:15:00] identifying how maybe â how that game of telephone [MUSIC] plays where that messages evolves over time and ends up â what does it look like at the end of that game of telephone when itâs posted on the door of a mosque, for example?</p>
+
+<p>JACK:	This was 2010.  Jon spent a while in Iraq and was even picking up some of the language.</p>
+
+<p>JON:	I got conversational at Baghdad Iraqi Arabic; thereâs so many different dialects.  I got conversational with that one.</p>
+
+<p>JACK:	After some time there, his contract was up and so he looked around to see what else he could do.  He found another contract position doing PSYOPS but this time in Afghanistan.</p>
+
+<p>JON:	My first role in Afghanistan, so pretty much all of 2011, I was the atmospherics manager.  That jobâ¦</p>
+
+<p>JACK:	Atmospherics manager?</p>
+
+<p>JON:	Yup.  That job involves getting the word on the street for the city.  Essentially, itâs a type of human intelligence without using the proper title.  Contractors are not allowed to do human intelligence.</p>
+
+<p>JACK:	Human intelligence?  Letâs hit the brakes here for a second and just peek down this rabbit hole.  There are many types of intelligent-gathering methodology.  You might already be aware of SIGNT and this is signals intelligence.  Basically, the goal of SIGNT is to capture signals that the adversary is broadcasting.  This could be wiretapping phone calls, listening on radio transmissions.  But more recently itâs been computer hacking too, like reading e-mails or listening through the internet for messages that are being sent online.  But thereâs also GEOINT or sometimes known as IMINT and this is image intelligence; basically, aerial photography or knowledge of the terrain of the area.  I guess if someone turns on your webcam and takes pictures of you, that might also be part of IMINT, too.  Thereâs also OSINT and this is open-source intelligence gathering.  This is what we do whenever we meet someone new online; we Google their name and try to find photos of them and what theyâre into.</p>
+
+<p>OSINT is a non-intrusive way of collecting data.  Itâs just reading whatâs already been published out there in the open.  Thereâs more intelligence-gathering disciplines but Jon mentioned human intelligence, or HUMINT.  This is soliciting information from someone else.  Itâs kind of hard to explain because thereâs a whole spectrum of ways to solicit information from someone.  Like, consider the difference between asking your neighbor a question and waterboarding a prisoner to try to get them to talk.  Thereâs a wide range of ways to get information from people.  Typically, HUMINT is getting information from the adversary that can be used tactically; like, having an inside source that tells you things like when an enemy convoy is moving and how many weapons are on it, or what kind of plans the enemy has.  Jon doesnât do that.  Instead, he wants to find out how the people feel about local politics.  He doesnât try to uncover secrets or reveal information that might put someone in danger.  He just tries to take the temperature of the neighborhood and situations.</p>
+
+<p>JON:	We were not collecting tactical data.  It was out of purview to â if one of my sources reported that they had say, for instance, seen a Taliban platoon moving through a field.  That wouldnât be relevant for us.  What we cared about was word-on-the-street-type things; we wanted to hear when, say, two eighteen-year-olds or two thirty-year-olds are talking about the state of the government or the state of security or the state of the economy.</p>
+
+<p>JACK:	The role of an atmospherics manager is to get on the streets of Afghanistan and figure out what the local people feel about the various politics in the region.  But how do you do that?  Afghanistan at the time was a hostile area, especially for US troops.  Jon had to dress in his full battle fatigues to get in there.</p>
+
+<p>JON:	I was very much like every other soldier, every other infantry person there.</p>
+
+<p>JACK:	I mean, heâs got an assault rifle, helmet, everything.  How does someone with an assault rifle in their hands figure out things like how does a local community feel about the local police?</p>
+
+<p>JON:	They were paid for their placement and access near population centers or near places of interest where we wanted to get a good sense for what the word on the street is.</p>
+
+<p>JACK:	Jon would go around town and hire key people like bartenders, the fruit market vendor, the taxi drivers, and anyone who interacted with a lot of people on a daily basis.  He would pay them just to get a report of what they heard that day.</p>
+
+<p>JON:	These conversations were reported to us through our sources in an anonymized way.  All I cared about was the age, the rough age of the individual speaking, the number of individuals, were they male or female, etc.?  Then these reports were aggregated up and helped get a good sense for how a population felt about a situation over pretty much the entire country.  [00:20:00] An individual report in itself isnât really useful.  What two Joe Schmoes think about something isnât â is not something you use that policy by, but when you start collecting those and aggregating them and youâve got hundreds and thousands of reports, then you can draw some real statistical significance from what the population thinks.</p>
+
+<p>JACK:	I donât know what to think about PSYOP at this point.  It just seems so weird to me that we go over into other countries and pay taxi drivers to give us reports about what people say when they get a ride.  But hang on; let me zoom out of this rabbit hole for a second.  If I look at Twitter just to try to figure out what people think of their government, in a way, thatâs getting atmospheric data on the population, right?  Itâs such a weird term; atmospherics.  But I think I get it now; itâs just getting a sense of what people feel about a particular subject.  But while looking at phrases on Twitter is free, a PSYOP atmospherics manager pays people on the street for what theyâve heard that day.  To me, that is strange.  PSYOP still sounds freaky to me.</p>
+
+<p>JON:	Obviously, the word PSYOP or psychological operation has a connotation that instantaneously gives you a negative perception.  But no matter what you do in your daily life, youâre being PSYOPed in some capacity.  Itâs whether you choose or youâre openly absorbing it or you objectively are looking it.  When it boils down to it, again, everybodyâs being told what to buy.  Theyâre being told whatâs true via broadcast networks or whatever source you get your information.  Really, is it bad?  No.  If the intent is to strengthen a weakened people and making them self-sustaining, yeah, again, the word PSYOP to me is cool, but itâs much more than just a scary term.  If I told someone I used psychological operations, theyâre gonna think Iâm a spook or whatever.</p>
+
+<p>JACK:	Okay, okay, give me a taste of what a PSYOPS mission is like.  Walk me through one that you were on.</p>
+
+<p>JON:	Okay, so there was this mission we were on and â so, we were sitting up on â high on a hilltop.</p>
+
+<p>JACK:	This is when he was deployed in Afghanistan and heâs in a Humvee and heâs dressed like your typical soldier.</p>
+
+<p>JON:	Yeah, absolutely.  We have our full battle, what do they call it?  Full Battle Rattle.  Youâve got your kit on, you got your weapon, I got my gunner on top of the turret with his 240.  I have the â itâs called the NGLS loudspeaker.  Itâs a 24â by 24â box that sits on top of a Humvee and basically, it sits in the turret.  My gunner operates the speaker and rotates it left and right to broadcast the message.</p>
+
+<p>RECORDING:	[FOREIGN THROUGH LOUDSPEAKER]</p>
+
+<p>JACK:	Now, the loudspeaker was playing just a recorded loop; something like âIf you see any terrorist activity, please report it to this phone number.â  While they were broadcasting this message on the hilltop, something started happening down in the town.  There were some US soldiers on patrol down there and near them, some locals started arguing.  There was a fence between the US soldiers and the locals, but the argument started growing, and shouting and shoving started happening, and chaos started erupting among the locals.</p>
+
+<p>JON:	The infantry guys didnât know how to take charge because theyâre not trained on that specifically.  In many cases, theyâre not trained to be malleable with certain situations.  Also, they didnât have a loudspeaker.  We saw no value in our position on this hilltop, so we moved down to the â where the ruckus was going on âcause a lot of times, escalations can go bad really quick.  [MUSIC] If youâre not able to calm it down, you either need to leave quickly or something bad is gonna happen.  âCause right there, when youâre sitting in a position and thereâs a crowd of people, you donât know any of these people.  They could have a suicide vest, there could be all these different variables.</p>
+
+<p>JACK:	The PSYOPS team wanted to take charge and calm the whole situation down.  Now, keep in mind, Henry here has been studying the language and the culture for months simply to understand why these people do what they do, so he starts looking to see whoâs involved in this.  Heâs looking to see whoâs here.</p>
+
+<p>JON:	This is a town, so towns are small, villages are small, everybody knows everybody.  Typically, thereâs a leader, thatâs the oldest.</p>
+
+<p>JACK:	He starts looking for a voice of reason and he finds this old guy who looked calm, concerned, helpful, possibly a trusted member of the community.  Henry has been trained to understand their culture so he picked this one guy to help out.  Henry grabs a manpack and this is a speaker with a backpack built in, and he throws it over his shoulder and goes up to the older guy.  Again, he picked this particular guy [00:25:00] because he seemed like a cog, a center of gravity, someone that everyone in that area might listen to.</p>
+
+<p>JON:	We had that cog speak through the loudspeaker and had him speak to calm down everybody and say hey, weâre working on making the community better.  Everybody calm down.</p>
+
+<p>JACK:	This worked.  The person he picked out to use the loudspeaker, he spoke the local language and was able to diffuse the whole situation, and everyone calmed down.  Huh, the PSYOP mission statement is becoming more clear now.</p>
+
+<p>JON:	The mission statement of PSYOP is to persuade, change, and influence the hearts and minds of foreign nationals to meet US objectives.</p>
+
+<p>JACK:	Influence, influence.  That part is still hard for me to fully understand.  [MUSIC] Youâre telling me that US troops are going over to foreign countries to get people to change their mind on things?</p>
+
+<p>JON:	Yes, thatâs part of the objective.</p>
+
+<p>JACK:	Alright, weâre gonna take a quick break and when we come back, Jonâs gonna tell us a story about how he used PSYOP to discover a weapons cache.  Alright, letâs hear another PSYOP mission.  This one is one that Jon conducted while he was stationed in Iraq.</p>
+
+<p>JON:	It was, I believe October 2008, and I had just moved from Baghdad where we were getting blown up on a fairly regular basis, to central Iraq.</p>
+
+<p>JACK:	Down in central Iraq, he wanted to find where terrorists were storing weapons like bombs and rifles.  He wanted to see if he could conduct a psychological operation to uncover the location of these weapons.</p>
+
+<p>JON:	Went to a map and pulled out this â just essentially the old school pen and paper.  Itâs the only time Iâve ever actually done this; sat down with the huge map sprawled out on the floor in the PSYOP headquarters and just put a pin for everywhere that we knew there was a historic cache site where Americans had found a large number of bombs before.  Known HVTs, high-value targets, known bad guy locations; where did these guys sleep?  Where did they live?  [MUSIC] And known historic attack sites, so where had IEDs gone off previously in the area?  From that data, there seemed to be a very obvious â about three-kilometer by three-kilometer cluster near a fairly small population center.</p>
+
+<p>It looks like a village; looks like the town square for a village or something.  My team, for reasons that are kind of rare, my team ended up all on vacation at the same time.  Even though I was the lowest man on the team, it was my team.  I decided that the mission that I was going to do was try to execute this counter-IED push.  I went out every day and talked with every single local I could, made sure that anybody coming in and out heard our loudspeaker message as well, and then also disseminated all sorts of different leaflets.  This is why PSYOP often gets the derogatory term âcombat paperboy.â</p>
+
+<p>JACK:	The loudspeaker, whatâs going on there?  Is that coming out of your jeep or something in their language?</p>
+
+<p>JON:	Yes, there is, yes, yeah.  Thereâs a native linguist that works with the PSYOP teams and is usually on the mission with us.  We drive around and we have loudspeakers that sit in the turret.  Itâs more important that our â keeping our loudspeakers up is more important to a PSYOP team than keeping the main gun up.  Weâre usually with tons of infantry.  They have the guns; weâre the only ones with the loudspeaker.  I know it sounds silly but honestly, we were so effective that there were specific [00:30:00] orders to target the trucks with the loudspeakers.</p>
+
+<p>JACK:	On this mission, besides driving around broadcasting the message and besides going around shaking hands and meeting as many people as he could in town, he was also passing out leaflets or pamphlets, sometimes even sticking them up on doors and walls around town.  He was doing this in his full battle fatigues as well, with an assault rifle in his hands and a helmet on, because he is in a hostile area still.  But the leaflets he was passing around, they had a message.</p>
+
+<p>JON:	[MUSIC] Essentially that this â IEDs are just as much â they damage the population; they damage the civilians just as much as they damage us.  These guys are not very accurate when they aim.  You are just as likely to get exploded as we are.  But also brings criminal elements into your city which then necessitates the increase in our presence.  We donât want to be here.  You donât want us here.  We donât want to see explosions in your neighborhood; you donât want to see explosions in your neighborhood.  Help us make sure there are no explosions in your neighborhood.  Report to this tips line number.  Usually thatâs roughly how the message goes.  What ended up happening was that a â the driver of one of these major trucks had just finished delivering this huge shipment of IEDs from Iran, got handed one of my leaflets from one of the checkpoints, and went straight to the American base.  With a strip map drawn on the back of the leaflet, it showed us exactly where the IEDs were.  It resulted in the third-largest cache in the history of the war.</p>
+
+<p>JACK:	Whoa, interesting.  With just the loudspeaker and these leaflets, he was able to take control of a massive weapons cache.  What a fascinating way to conduct war.</p>
+
+<p>JON:	Over three thousand EFP components.  Those have an 80% kill rate, enough to make over a thousand EFPs.</p>
+
+<p>JACK:	[MUSIC] Okay, so in this situation, fine; youâve disarmed the enemy of not only the US but also the local people in the area, and that is a good job.  Okay, but PSYOPS isnât always this clear and understood.  Thereâs three kinds of PSYOPS; thereâs white, grey, and black.</p>
+
+<p>JON:	Yeah, white PSYOP is truth, itâs the truth.  You could put a face behind it, right?</p>
+
+<p>JACK:	Gotcha.  White PSYOPS is just like we heard so far; honesty-type stuff, a clear message with a clear sender and receiver with a clear objective.  But then thereâs grey PSYOPS which may not always be so clear or truthful.  This is a little bit more hidden.  To notice it, you might have to squint a little and still, you arenât sure.  Itâs kind of like when you see a viral video of something online thatâs funny or cool.  You watch the whole thing and then at the end thereâs a person that has a name-brand shirt on or is holding a drink with a label clearly visible.  You wonder wait a minute, was this just some clever ad or was this somebody actually making a funny video?  Itâs hard to tell.  Then thereâs black PSYOPS.  Black PSYOPS is almost impossible to spot.  They pose as legitimate messages from one person to another, but something is wrong about it.  Maybe that person didnât actually send the message or the message isnât factual.  But itâs so cleverly put together than itâs too hard to tell.</p>
+
+<p>For instance, if I invaded a region of the world which has two different enemy factions both fighting with me, what if I could start a war between those two factions?  This way, theyâd waste their energy and resources fighting each other and I could just kind of wait until theyâre out of energy and then try to fight them.  Black PSYOPS does stuff like this.  It might be posing as the leader of one of the enemies sending a message to the people to attack the other enemy but then purposely getting that transmission leaked into the enemyâs hands so that they think an attack is coming, and then they attack first.  Because PSYOPS teams know this culture so well and they know the enemy so well, they can craft a message that is indistinguishable from an authentic one.  Here, I have an example of a grey or black PSYOP mission.  As Iâm looking into this, Iâm learning that this isnât new.  Iâm just not up on how military conducts their affairs.  Apparently PSYOPS has been going on for decades, ever since World War I.  There was this one mission in Vietnam called Operation Wandering Soul.  Itâs just as scary as it sounds.  Here, listen to this.</p>
+
+<p>[STRANGE HAUNTING SOUNDS] These are the sounds that the PSYOPS troops were playing for the enemy in Vietnam over the loudspeakers.  Of course, they played it at night from helicopters, from jeeps, and from stations within the jungles.  [00:35:00] Eventually, thereâs a voice.  [ECHOING VOICE] See, the PSYOPS teams learned that in Vietnam, when someone is improperly buried, some Vietnamese people believe their soul wanders forever.  They played this message in Vietnamese of a person who died and is wandering.  It specifically says things like âleave this place, honor my space as a wandering soul of this area.  Go away.â  Nobody knows if this actually worked or not, whether it chased out any Viet Cong.  What the heck is this?  Is this grey PSYOP or black PSYOP?  I mean, if I were Viet Cong and I heard this in the jungle, it might not be clear to me who was sending this message.  Would I know itâs some kind of psychological trick?</p>
+
+<p>If I believed the US was broadcasting it, then this would be grey PSYOP, but if I truly believed there was a wandering soul in the jungle trying to chase me out, this would be black PSYOP.  I guess thatâs why I think PSYOPS is so weird because in my head, there has to be a ton of operations being conducted which are grey and black PSYOPS which is freaky.  From what I can tell, the army doesnât engage with this kind of PSYOPS though, because they donât want to undermine the trust of the local people and they want to be honest and straightforward.  They like to stick with a clear and honest message.  If you think about it, this is really just propaganda just done in a tactical way.  Okay, so, where were we?  Letâs get back to Jon.  He goes on to tell me that while he was an atmospherics manager in Afghanistan, something odd happened.</p>
+
+<p>JON:	Throughout that time, it appeared â it seems pretty obvious to me that the cyber-threat was looming.  Anonymous was right there at the peak of operations and we had Wikileaks doing its thing.  There were a large number of these â these smaller hacker groups were starting to crop up, one of them being Junaid Hussainâs crew.  TeaMp0isoN was their name.  Even though my official tasking of monitoring them was no longer applied when I switched positions and went to Afghanistan, I still kept the finger on the pulse of what was going on in the hacker world, simply out of boredom and curiosity if nothing else.  Thereâs not a lot to do in your free time in Afghanistan.  Thereâs only so many reruns of House I could watch.  I was in an IRC channel and somebody hit me in a PM which is essentially like a DM.  Itâs the same concept, right?  [MUSIC] Two users talking to each other outside of the public view.  He stated to me that there were missiles headed my way.  I said you know, Iâm overseas right now.  I get rocketed fairly regularly.</p>
+
+<p>Missiles are a different thing, though.  Who are you and do you know the difference?  He said yes, I do know the difference.  I know that these are coming because Iâm on the Pakistani side of the border and I just saw them flying overhead.  This is one of those very weird moments âcause I â itâs what we call single-source unvetted.  I havenât vetted this actor.  Heâs just one guy, so unvetted and single-sourced.  Itâs some random dude in some random IRC channel on the internet.  I quietly take that report and I handwrite it.  This is one of those I donât even want touching my e-mail inbox.  I walk that report over to the intelligence people, just hand it to them.  I donât want to touch that anymore; donât tell me anything about it.  Just, here you go.  Then I go to bed that night.  Wake up the next morning and Iâm doing my â Iâm just meeting with my sources and three individual sources said all the Pashtun people are talking about â the Pashtun are largely the people that live in the Afghan tribal zone area that you hear about.</p>
+
+<p>They said all those people are talking that a village had been hit in the Kunar province by Pakistani missiles.  Three or four or five of these people are all reporting back the same thing, multiple reports from each of them that thatâs all the Pashtun people are talking about today.  Thatâs enough for me to hop back and drive straight back to base, hope onto IRC, say who the hell are you?  [MUSIC] The dude tells me who he is and says he wants to hire me back in America.  [00:40:00] He was hiring me to be a â to lead the threat intel analyst team âcause he knew that I knew how intelligence worked and knew that I was fairly up on what hackers were doing.  After I finished my one year in Afghanistan, I moved to New York City and started work on that.  At that point, it was now my job to engage with hackers, identify what was going on every single day, and report that up.</p>
+
+<p>JACK:	Interesting, so while Jon was trained on how to distill what was going on with adversaries in foreign nations, now heâs shifting his focus to listen to the hacker world and report whatâs happening there to his clients which were large companies who hired him.</p>
+
+<p>JON:	To get advanced knowledge of what kind of attacks are coming down the pipeline and to mitigate attacks that are ongoing.</p>
+
+<p>JACK:	This is commonly known as threat intelligence.  I can certainly see the parallels here between PSYOPS and threat intelligence.  See, most organizations have no clue what cyber-attacks are coming down the pipe.  They just donât have the network monitoring skills or maturity to do this.  Even if they had the knowledge, Iâm not sure theyâd even know what to do with this advanced warning.  But some organizations are larger and more mature and can pay to have a threat intelligence team.  With this, they are getting early warnings on who may be doing an attack and why.  Letâs hear a story of something that Jon did while he was there.  He had clients and their main website all of a sudden went down for this company.</p>
+
+<p>JON:	I believe it was a NTP DDoS attack against the primary website; Network Time Protocol.</p>
+
+<p>JACK:	Okay, so typically, youâre not gonna find out who is doing this unless they tell you directly.  Thatâs just the nature of cyber-attacks.  They go unresolved forever.  But Jonâs job was to try to have an awareness of what was going on in the hacker world.</p>
+
+<p>JON:	They put out a request to see if we can identify whoâs doing it.</p>
+
+<p>JACK:	Jon hit the usual spots he knows that hackers go to to see if he can figure out whoâs doing this.</p>
+
+<p>JON:	In those days it was fairly easy when you had Anonymous bragging about it on Twitter.</p>
+
+<p>JACK:	A-ha!  First clue; if Anonymous is tweeting about this, then he can go to Anonymous to learn more.  He goes to where people in Anonymous like to hang out which was an IRC chatroom at the time.  In these chat channels, you can just join them and then hang out in there forever.  While youâre there, you could record all the conversations that are going on.  Jon scours through the channels looking for any mention of his client and bingo; he found the person who was claiming responsibility for taking down his clientsâ websites.</p>
+
+<p>JON:	I think they were in an IRC channel, like an EFnet channel that wasnât masking their IP address.  From there, we were able to get to a specific small city in West Virginia.</p>
+
+<p>JACK:	The more you start to know about someone, the easier it becomes to find them.  Combine a username, IP, and a city into Google, and see what you get.  From this, Jon was able to figure out this guyâs name and phone number and with a name and phone number, Jon calls him up and told him.</p>
+
+<p>JON:	Iâve got you dead to rights.  Iâm hoping that this is â we can stop this before they arrest you.  I had a fairly good sense of who was at the SOC over in the defending organization.  We were drinking buddies on the weekend so it was fairly easy for me to say hey, I found the dude, heâs agreed to stop, letâs just drop it here.  He turned out to be like, a sixteen-year-old kid.  Having that discussion, I was hopefully able to keep one dude out of prison and not destroy somebodyâs career, and also get everybody the warm-and-fuzzies that they were no longer getting attacked.</p>
+
+<p>JACK:	Did that kid comply or what was his response to you?</p>
+
+<p>JON:	Yeah, he complied and heâs spoken at several conferences since.  Weâve lost touch but as far as I know, heâs still running around giving talks at different conferences.  Heâs making a name for himself in the community.</p>
+
+<p>JACK:	Huh.  Wait, where am I?  What string am I even pulling on right now?  See, this is what happens when I get into an episode; I just get thrown off-course like, all the time.  The tech world is so fascinating to me.  I canât help diving into all these different things to learn more.  Oh yeah, yeah, this episode is about PSYOPS.  Okay, I feel like I have a good understanding of what PSYOPS is at this point.  But thereâs still a lingering question that I bet some of you are thinking about right now which is if the US army is out there trying to persuade, change, and influence the behavior of a target audience, then is there anyone conducting these kinds of operations against us?  Well, yeah.  Yeah, definitely, in a big way.  Just listen to this; someone paid millions of dollars to [00:45:00] try to permanently etch these jingles into your brain to the point that we all have them memorized now.</p>
+
+<p>MCDS:	[MUSIC] Ba-da-ba-ba-ba, Iâm lovinâ it.</p>
+
+<p>STATEF:	[MUSIC] Like a good neighbor, State Farm is there.</p>
+
+<p>KITKAT:	[MUSIC] Give me a break, give me a break, break me off a piece of that Kit Kat bar.</p>
+
+<p>JACK:	This is obvious, right?  The mad men and the ad agencies of the world are using every trick in the book to influence us to buy their products.  Weâre inundated with this kind of stuff all day long.  But now we carry the internet in our pockets and put so much of our life on it.  Online ad agencies have found ways to target us by tracking us, watching what we say online, and what we buy, and what we do, and what we search for, and then they give us tailored and custom ads just for us.  The level of sophistication here is unbelievable.  I mean, theyâre even listening to what weâre saying through our mics and giving us ads based on what they hear.  Itâs nuts.  Itâs creepy.  Itâs dystopian and itâs PSYOP.  Whatâs the deal with news today?</p>
+
+<p>Thereâs so many channels that donât seem to be reporting honestly or accurately and are broadcasting something to push a certain agenda or propaganda.  My dad used to tell me not to play too many video games because it might warp my brain but is it possible that if he consumes enough slanted or biased mainstream media that his brain might become the one that gets warped?  But actually, thatâs not the lingering question.  I bet what youâre really wondering is whether or not Russia has been running psychological operations on people in the US to influence us in the way we vote.  Well yeah, they are.  Thereâs overwhelming evidence about this at this point but just to give you one piece of evidence, hereâs an interview on PBSâs Frontline with James Clapper.  James Clapper was the director of national intelligence at the time of the 2016 election.  Hereâs what he said.</p>
+
+<p>JAMES:	If you go back to, actually, the 60s, there was evidence of Russians attempting to interfere with or influence somehow the outcome of our elections.  Not very successfully, but given the advent of all the technology now, thereâs a certain ambient level that we would expect the Russians to engage in anyway.</p>
+
+<p>JACK:	Okay, so thereâs always been some kind of Russian involvement with our elections.  James Clapper knows this because heâs the director of national intelligence.  Heâs been briefed by the NSA and CIA about the history of these matters.</p>
+
+<p>JAMES:	In this case though, as we documented it in our intelligence community assessment that we published on the 6th of January, this was the most aggressive and most direct and most assertive campaign that the Russians ever mounted in the history of our elections to interfere and to somehow influence the outcome.  [MUSIC] This felt as though heâd been dissed by President Clinton.  That, compounded by what he was convinced in his own mind, I guess, was an attempt at a color revolution and to unseat him.  He was convinced that the administration, led by Secretary Clinton, was out for a regime change.  That is what the source of the animus that actually we believe motivated Putin to interfere as much as he did and as aggressively as the Russians did.</p>
+
+<p>JACK:	Okay, so we have the motive and Russia has the know-how.</p>
+
+<p>JAMES:	What characterized this, that the 2016 campaign is so different than the others, were the variety and intensity of the techniques that they employed.  Apart from the famous or infamous hacking of the DNC e-mails and the exquisitely-timed dumping of them, were their use of â very skillful, sophisticated use of social media; social media trolls, planting fake news.  A very, I think, sophisticated, slick propaganda campaign mounted by RT which of course is a government propaganda arm.  The combination of all these tools that they use constituted this aggressiveness and the multi-dimensional nature of the campaign.  Thatâs what distinguished it from any other in our history.</p>
+
+<p>JACK:	Okay, so Russia wanted to mess with our elections by hacking into stuff and using fake news, bots, trolls, and social media to influence voters.  But with any good PSYOP mission, they had specific objectives that they were trying to accomplish.</p>
+
+<p>JAMES:	First of which was to cast doubt or cause doubt in the minds of the public or the electorate.  Then secondly, of course, was again this animus, personal animus Putin had towards Secretary Clinton.</p>
+
+<p>JACK:	Russia started spreading a lot of anti-Hillary propaganda, targeting US audiences by publishing articles that [00:50:00] smear her legitimacy, by making memes that say things like âlock her up,â and by feeding the narrative of how bad she is.  Iâm not gonna get into whether or not any of this was fake news or actually factual.  All Iâm trying to point out here is that Russia was spending money and resources to influence the way we vote in the United States by taking part in anti-Hillary propaganda.</p>
+
+<p>JAMES:	As things unfolded, because initially the Russians, I donât believe took Trump seriously as a candidate just like no one else did, either.  But as things transpired and particularly when he became their public nominee, their focus kind of changed.  What could they do to favor him?  Because clearly, they would prefer him over her, not withstanding the animus towards her just because he was known as a business man, somebody you could make deals with, and had some prior dealings with the Russians.  The thought was that he would go easy, for example, on human rights.  For their â Iâll say their objectives, I think kind of evolved as the campaign unfolded.</p>
+
+<p>JACK:	The Director of US Intelligence, James Clapper, would be in the position to know this stuff better than anyone.  Itâs fascinating to hear him explain how Russia has used PSYOP campaigns against us.  These were all very cleverly done by people in Russia who clearly understood American culture and what influences us.  But I think this is a much bigger topic than what Iâm willing to get into right now because thereâs just so much to it.  We could go into Cambridge Analytica, and the DNC hacks, and how voting machines are vulnerable, and so much more.  Ah, but actually, there is something more I want to say about this; thatâs about memes.  I just read a bunch about memetic warfare.  This is where people are taking memes and turning them into weapons.  A meme is just text over a picture and it spreads on social media.  These meme-makers will take something which has a kernel of truth and then twist it or distort it in a way thatâs designed to get you upset about something.</p>
+
+<p>Either it paints a political party or a person in a negative way or talks about a political agenda.  If you think about it, how many thousands of memes have you seen about republicans or democrats by now?  Or about Brexit or Calexit or flat earth or anti-vaxx?  Not all of these are designed with the intent on dividing us but there absolutely are people out there who are spreading these memes with the intent to confuse us, cast doubt on us, and to separate us.  We are not ready for World War Meme.  When we consume information online now, we do it in a staccato kind of way.  We bounce around all over the place, looking at article headlines instead of actually reading them, and memes satisfy this quick fix that weâre seeking online.  But they influence us because when we see other people posting things that are slightly untrue, we donât always know what part of it is untrue, so we might believe it is true, or we get that feeling that wow, other people are talking about this or retweeting it, so it must be true.  There is a whole social-proof thing involved in all this, too.</p>
+
+<p>We believe that things that have more likes or upvotes are probably more true than things that donât have as many upvotes.  When weâre in this fast-paced online world, we donât always have time to stop and fact-check memes to see if they are true.  When we see it, upvote, and move on, it just becomes a bee in our ear and we think about it more later.  It knocks around in our head and then the next day, we see something similar but a little bit more distorted, and we start believing it even more.  Even the memes that try to refute things that are untrue have the opposite effect sometimes because people sometimes say wait a minute, what?  They look into what this meme is trying to refute, and they end up learning about a totally ridiculous made-up thing and start questioning whether thatâs true.  A lot of social media algorithms are designed to get you to stay on their site longer and will try to present you things that make you stop scrolling.</p>
+
+<p>When you do, the platform notices this and starts looking for more content like that which ends up getting you surrounded with stuff thatâs controversial or outrageous to you.  Yeah, propaganda machines are learning how to use memes and algorithms to divide us or to get us angry about something.  When you combine memes with highly-addicting social media that most of us use on everyday basis, you get an amazingly dangerous tool that can be used to shape opinion in a very subtle way.  The internet molds what we see and who we are and if we use it enough, it changes who we are as a society.  [MUSIC] But the point is, weâre all being targeting by PSYOPS constantly all day, every day, whether we watch TV, read the news, or just surf casually on the internet in any capacity.  So many companies and organizations are spending [00:55:00] millions of dollars to persuade, change, and influence our behavior.  Itâs particularly hard in the US to stop it since thereâs this whole First Amendment free speech thing.</p>
+
+<p>If somebody wants to say something, they should be allowed to say it.  But what if someone is part of a major propaganda machine with horrible motives and lots of resources to cause havoc in our country?  Should they have unchecked free speech rights, too?  Itâs really complex.  Let me take a minute to talk about algorithms.  Weâre living in a world that history has never seen before where computers sometimes know more about us than we do.  What has historically limited this has been our lack of understanding of biology and our lack of ability to collect huge amounts of data on people.  But today, weâve overcome these obstacles and so algorithms and AI are now hard at work learning everything about you.  Iâll give you an example; Iâve really been into Yuval Noah Harari lately.  He wrote these amazing books Sapiens and 21 Lessons for a 21st Century, and listening to him talk about algorithms is so fascinating.  Hereâs Yuval.</p>
+
+<p>YUVAL:	I was twenty-one when I finally realized that I was gay and it should have been obvious at age sixteen, fifteen.  An algorithm would have realized it very quickly and you can build algorithms like that today or in a few years.  You just need to follow your eye movements.  You go on the beach or you look at the computer screen and you see an attractive guy and an attractive girl, and just follow the focus of the eyes.  Where do the eyes go and whom do they focus on?  It should be very easy.  Such an algorithm could have told when I was fifteen that I was gay.  The implications are really mind-boggling when an algorithm knows such an important thing about you before you know it about yourself.  Now, it can go in all kinds of directions.</p>
+
+<p>It really depends on where you live and what you do with it.  Maybe I donât know about myself that Iâm gay, but Coca Cola knows because they have these algorithms.  They want to know that because they need to know which commercials to show me.  Letâs say Coca Cola knows that I am gay and I even know it about myself, but they know it and Pepsi doesnât.  Coca Cola will show me a commercial with a shirtless guy drinking Coca Cola but Pepsi will make the mistake of showing a girl in the bikini.  Next day, without my realizing why, when I go to the supermarket, when I go to the restaurant, I will order Coca Cola, not Pepsi.  I donât know why, but they know.</p>
+
+<p>JACK:	Google and Facebook can just look at your browsing history to determine your gender, political views, sexual preferences, what youâve bought recently, what youâre thinking about buying next, how many kids you have, and theyâll even keep track of their age through the years.  They collect all this information because theyâre selling it to people like ad agencies and they want to keep you on their site longer, so theyâll custom-tailor your experience to be the best for you.  Netflix is always trying to pick what movie they think I want to watch next.  Spotify is looking at my play history and automatically throwing in a song mix that I didnât tell it to play, but it thinks it might like.  Why are they doing this?  Because companies know these algorithms work and they know our brains are hackable and can be persuaded to keep using their services for longer periods of time if given the right dose of information.</p>
+
+<p>When I was young, I was told to follow my heart and to try to live out my dreams.  This sounds like good advice but I canât help but think now that my heart and dreams have been influenced and persuaded by nation states, ad agencies, and stuff Iâve just seen randomly online.  Theyâre probably not my actual dreams.  [MUSIC] Itâs almost dangerous now to tell someone to follow their heart, because their heart might have been hacked.  Itâs not who they really are.  I guess I knew all this was happening for a while now but what I didnât know is how the US army was conducting this on foreign nationals.  Troops are out there using loudspeakers, handing out leaflets, but it goes beyond that.  Sometimes they fly over a town and dump leaflets on the town, or sometimes theyâd fly over a town and broadcast TV or radio signals that can be picked up by anyone in the town.</p>
+
+<p>I also read the US army knows that their adversaries are spreading propaganda online through forums and telegram groups which has popular chat apps, and Twitter.  If the adversary is on there, US PSYOPS teams must be able and ready to listen and respond to these channels, too, which moves [01:00:00] PSYOPS to the online world and that just opens up the playing field in a major way.  Also, I learned the military has changed the name of PSYOPS; since it has a negative connotation, they now call it MISO which stands for Military Information Support Operations.  Is any of this new, though?  Now that I get it and step back to take a look at it, this is just propaganda and if Iâm gonna talk about propaganda, Iâd be remiss if I didnât talk about Edward Bernays.  He passed away in 1995 when he was 103 years old, but there is an archival interview I found of him from 1986.</p>
+
+<p>INTVR:	Edward L. Bernays, youâre the father of public relations.  What led you more than sixty years ago to see the need for public relations?</p>
+
+<p>EDWARD:	Iâ¦</p>
+
+<p>JACK:	He was ninety-four years old during this interview.</p>
+
+<p>EDWARD:	â¦was a member of the United States committee on public information in World War I.</p>
+
+<p>JACK:	What Edward Bernays did in World War I, is he went to President Woodrow Wilson and said hey, look, if you want to win this, youâre gonna have to sell this war to the American people.  Edward started up one of the first propaganda machines ever.</p>
+
+<p>EDWARD:	[MUSIC] I found that ideas were weapons and were even more effective than bullets.</p>
+
+<p>JACK:	He understood that if you want to persuade people, donât use facts or try to logically get people to follow you.  Instead, go for their emotions.  Skip the facts and just draw on their instinctual urges and maybe even scare them.  Get them to act based on fear.  He starts designing these propaganda posters in an attempt to get the American people to get behind World War I and join the fight.  One poster is of a Statue of Liberty in tatters, in flames, with bombs falling on it.  Another is a picture of the world being gobbled up by the bloody hands of a gorilla whoâs wearing a German uniform.  Facts didnât matter to him.  His mission was to persuade people and to get them to bend, to change their hearts and minds, and he was wicked good and very successful.  A total of three US presidents employed the help of Edward Bernays to get him to influence the people of the United States for whatever political agenda there was at the time.  In 1928, he wrote a book titledâ¦</p>
+
+<p>SPKR:	Propaganda by Edward L. Bernays.</p>
+
+<p>JACK:	Which reads like a how-to on persuading people on a major scale.</p>
+
+<p>SPKR:	Chapter One; Organizing Chaos.</p>
+
+<p>JACK:	He was also very clever at changing the names of things to make them sound better.  Like for instance, in 1929 it was taboo for women to smoke cigarettes but he would pay women to march in the New York Easter Day Parade smoking cigarettes.  When people asked the ladies what are you smoking?  They said weâre smoking torches of freedom.  The newspaper printed this outrageous stunt not knowing it was an attempt to sell more cigarettes.  When the newspapers called cigarettes torches of freedom, that sparked a whole wave of women who started to smoke.  Frank Luntz is the modern-day Edward Bernays.  Frank has changed the way people feel about certain things just by changing the name of the thing.</p>
+
+<p>Like for instance, Frank realized that when you say âoil drilling,â it has a certain emotion to it.  But if you change it to âenergy exploration,â that becomes more neutral and less people complained.  There also used to be a thing called Death Tax but Frank changed that to Estate Tax.  Instead of wiretapping, Frank calls it electronic intercepts.  If you listen closely, youâll notice that a lot of politicians use this kind of language when discussing these topics which drastically changes the way we feel about those topics.  But enough about Frank; listen to this guy.</p>
+
+<p>MELVIN:	There are Pentagon contracts with news organizations in terms of how to manipulate the news.  There are Pentagon officials involved in press releases that go to the media in which intelligence is used to manipulate public opinion which is a violation of the charter of any intelligence organization.  Then you have retired generals who serve as press spokesmen for all the networks.  Itâs never revealed which military industrial firms they work for.</p>
+
+<p>JACK:	This is Melvin Goodman.  Heâs a former CIA analyst and heâs saying that the US government is in the business of manipulating public opinion.  Hereâs another clip from The Associated Press.</p>
+
+<p>REPORTER1:	The defense department is ramping up its spending as it delves further into shaping public opinion around the world and at home.</p>
+
+<p>MELVIN:	This is a fight for the human terrain means that being able to influence populations, to support government objectives.</p>
+
+<p>REPORTER1:	Itâs a fight the Pentagon is taking seriously.  In all, itâs spending nearly five billion dollars with more than 27,000 people working to [01:05:00] get its message out.  However, some in congress are questioning if itâs also breaking the law by engaging in domestic propaganda.</p>
+
+<p>JACK:	What the heck is going on here?  The bottom of the story is just falling out.  Billions are spent on propaganda?  What?  The PSYOP soldiers I talked to said theyâre not allowed to conduct any missions targeting American civilians but is it illegal for the US government to put out propaganda to change civilian opinion?  Letâs take a look at history to try to see.  The US has engaged with a lot of domestic propaganda over time; World War I and World War II are obvious, of course.  Just Google propaganda poster and chances are youâre gonna see a World War II poster created by the American government targeting American citizens to get them to get behind the war.  Then thereâs also propaganda campaigns to get people behind the Cold War.  Also, letâs not forget when Nixon said this.</p>
+
+<p>RICHARD:	Americaâs public enemy number one in the United States is drug abuse.  In order to fight and defeat this enemy, it is necessary to wage a new all-out offensive.</p>
+
+<p>JACK:	This started the war on drugs which has lasted fifty years now.  The US government has funded quite a lot of propaganda around this.</p>
+
+<p>AD:	This is drugs.  This is your brain on drugs.</p>
+
+<p>JACK:	Itâs also known that the Ad Council which is a non-profit which distributes public service announcements, it is funded and works closely with the US government to convey messages to the people.  I mean, thatâs shaping public opinion, right?  Check this out; see, once you know what to look for, you start seeing it everywhere.  Iâm watching Netflix last night and thereâs this show called Waco which goes over the story of David Koresh.  Heâs hiding out in this building with like, seventy other people but the police and FBI want him to come out because heâs dangerous.  I kid you not, this is what the police and the FBI say in the show.</p>
+
+<p>POLICE:	So, whatâs your plan, then?</p>
+
+<p>FBI:	Itâs time to apply pressure.  Decker wants to start implementing PSYOPS to get them out.</p>
+
+<p>POLICE:	You want to psychologically torture them?</p>
+
+<p>FBI:	Itâs not torture.  Itâs a safe way to push them.</p>
+
+<p>POLICE:	This is not an FBI sanctioned strategy.  You do understand that, right?</p>
+
+<p>FBI:	Donât think I havenât thought this through.</p>
+
+<p>JACK:	The story goes, the FBI brought in a PSYOP team and during the night, they would shine searchlights on the compound and play this noise through the loudspeaker.  [STRANGE DRONING NOISES] As best I can tell, this was the actual soundtrack played for hours in Waco to try to drive these people out of their compound.  In the videos of this stand-off, you see military tanks ramming into the building.  The FBI doesnât have tanks so if they had to get help from the military for the tanks, I wonder who they got help from to do PSYOP.  This is a clear example of when the US government has conducted psychological operations on American civilians.  Letâs look at the law now; in 1946, the Smith-Mundt Act went into effect which banned the State Department from disseminating information to US civilians.  Itâs illegal for the Pentagon to push propaganda to us Americans.  But in 2013 we were facing a new enemy; Al-Qaeda.  They were actively recruiting US civilians to fight for them and conduct terrorist activities in the US.</p>
+
+<p>President Obama lifted the ban on domestic propaganda in an attempt to combat Al-Qaeda.  This allowed the State Department to push propaganda materials to us US citizens, now.  This law has not been changed since 2013.  I guess itâs legal and that alone is another rabbit hole.  The US government is legally allowed to spend money and resources to try to persuade me to do something?  Which I guess makes it legal for them to try to craft a new story and alter the messaging on mass media.  Aargh!  Are things becoming more clear now or is it more blurry?  I donât know but letâs bring all this back to PSYOP.  Do you remember when the US invaded Iraq?  If so, I bet you have a vivid memory of the statue of Saddam Hussein being toppled over by US troops.  Am I right?  How exactly is that image of one statue falling etched into your memory so strongly?  PSYOP, thatâs how.  Let me explain; here is an interview with a BBC World Affairs reporter who was there filming that statue being toppled over in 2003.</p>
+
+<p>REPORTER2:	The entire live cameras of the worldâs press were on the balcony of the Palestine Hotel.  That was really the only event that they saw about Iraqis coming out.  It was a sort of made-for-TV moment.</p>
+
+<p>JACK:	The US army conducted an investigation into Operation Iraqi Freedom and published a five-hundred-page report outlining many of the [01:10:00] major events of that war.  In here is a story from a PSYOP team who was there when the statue was toppled.  According to the US army, PSYOP soldiers were present for this and taking part in the toppling of the statue.  They saw the media circus that was there.  In fact, they even said there was just as many media people as there were Iraqis there that day.  If you look at the footage, you can see tons of people with video cameras in the crowd.  The PSYOP team saw the local Iraqis were already beating the statue with sledgehammers so they jumped into action and started using the loudspeakers to talk to the locals, organize them, and conduct crowd control while the US troops tear down the statue.  At one point, the PSYOP team even ran an Iraqi flag up the statue and then got some local kids to climb on the wrecker which was bringing down the statue.  Eventually it fell.</p>
+
+<p>[CHEERING] This was a major PSYOP mission and the world was tuned in and watching, because itâs not so easy to show that a city has fallen, but you can use symbols like this which is powerful because this kind of stuff speaks so much louder than words do.  Yeah, I have that memory from watching the news then, but this meant a lot more to the Iraqi people than it did to me.  This PSYOP mission was likely targeting the Iraqi people to bolster support from the locals who disliked Saddam Hussein.  But when the worldâs news cameras all captured it, it had a secondary effect.  It gave the impression that the US was winning the war which stoked emotions in the US people; either yay!  Go us!  USA, USA!  Or you might have looked at this and said whatâs wrong with us?  Why are we invading and messing with these people?  Either way, as an American watching the statue come down probably would have given you an emotional reaction of some kind.  I guess what Iâm hoping for here is that with all this information, now when you see something on TV thatâs a stunning image or something on social media thatâs affecting how you feel, stop and double-check the source of this message.</p>
+
+<p>Is this message trying to provoke an emotion in you, especially a negative emotion like hatred or fear?  Thatâs a tactic of propaganda, a PSYOP trick.  Donât fall for it.  Look behind it and try to see where is this message coming from?  Is it a paid message like an ad?  Or from a news outlet that has historically created propaganda?  Was it designed to get you to act on fear?  Is it giving non-factual information thatâs trying to rile you up?  Youâve got better eyes now to see through this.  Use them wisely.  Donât trust any politician that tries to get people to vote based on fear.  Itâs a shady trick designed to manipulate you.  Heck, donât even be part of any groups that has fear as a central point to it.  Fear is malware in your brain.  It affects you negatively and causes you to do things that often arenât good for you.  Your anti-virus is logic and facts.  Donât get infected.</p>
+
+<p>JACK (OUTRO):	[OUTRO MUSIC] A big thank you to our guests this episode Henry and Jonathan Nichols.  You can catch Jonathan on Twitter.  His name there is @WvuAlphaSoldier.  This show is created by me, the psy-guy, Jack Rhysider.  Sound design was done by Garrett Tiedemann, editing help this episode by Damienne, and our theme music is by the bobble-top Breakmaster Cylinder.  Even though my mind is being controlled by spurious transmissions from space every time I say it, this is Darknet Diaries.</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

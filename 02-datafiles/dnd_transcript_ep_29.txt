@@ -1,0 +1,511 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>Stuxnet â Darknet Diaries</title>
+	<meta name="description" content="Stuxnet was the most sophisticated virus ever discovered. It's target was a nuclear enrichment facility in Iran. This virus was successfully able to destroy numerous centrifuges. Hear who did it an...">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Stuxnet â Darknet Diaries">  
+	<meta name="twitter:description" content="Stuxnet was the most sophisticated virus ever discovered. It's target was a nuclear enrichment facility in Iran. This virus was successfully able to destroy numerous centrifuges. Hear who did it an...">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/stuxnet.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/29/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Stuxnet â Darknet Diaries" />
+	<meta property="og:description"        content="Stuxnet was the most sophisticated virus ever discovered. It's target was a nuclear enrichment facility in Iran. This virus was successfully able to destroy numerous centrifuges. Hear who did it and why." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/stuxnet.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/29/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/stuxnet.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/29/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="Stuxnet â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/stuxnet.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 29: Stuxnet</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://traffic.megaphone.fm/ADV2476504070.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/29/",
+			   "title": "Ep 29: Stuxnet"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/29">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[FULL TRANSCRIPT]</p>
+
+<p>JACK:	[MUSIC]  In the eighteenth Century the US had the Army and Navy to defend and attack with.  In the 20th Century the US developed an Air Force to carry out strikes with a new level of speed, precision, and agility.  In the 21st Century the US created and launched cyber weapons with the goal of destroying physical equipment in another country, an attack that can be done from the other side of the planet without any ground troops or air support needed, an attack done entirely electronically.  There are now five domains of warfare that the US military recognizes and is responsible for.  That is land, air, sea, space, and now information.  Itâs amazing to see this shift of power happen right in front of our eyes.  We were here at the birth of this new military weapon and it will forever change the way diplomacy is conducted, wars are fought, and battles are waged.
+<!--more--></p>
+
+<p>JACK (INTRO):	[INTRO MUSIC]  These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	This episode is about Stuxnet, the most sophisticated piece of malware to ever be discovered.  But we only know about Stuxnet because it was discovered.  I assume thereâs even more sophisticated malware out there that hasnât been found yet and itâs being used more covertly and secretly and maybe even has bigger objectives.  Stuxnet burrowed its way deep into a nuclear facility in Iran and destroyed its centrifuges which caused a massive amount of damage to this nuclear enrichment facility.  Nobody ever confessed or took credit for this attack against Iran but hereâs the thing; besides Stuxnet being the most sophisticated malware ever discovered, itâs probably also the most well-researched malware, too.</p>
+
+<p>Now that researchers have spent years putting all the pieces of the puzzle together, it gives us an amazing view into this virus.  Yeah, this story is old news.  This incident happened back in 2009 but sometimes it takes five or more years to fully put the pieces together.  One thing that fascinates me the most about Stuxnet is who was behind it.  Usually attribution is impossible and pointless.  You never really can tell who did an attack unless they admit to it and even if you know, thereâs usually nothing you can do about it.  I mean, imagine if you found out some Russian group hacked you.  You canât really call the police there to report it and thereâs really nothing you can do.  With Stuxnet, do we know who built it and used it to attack Iran?</p>
+
+<p>KIM:	Oh, we know.  It was the US and Israel.</p>
+
+<p>JACK:	This is Kim Zetter.</p>
+
+<p>KIM:	Iâm a journalist whoâs been covering cyber-security and national security for more than a decade.  Iâve written for Wired as a staff writer and freelanced for the New York Times, Washington Post, Politico, and other publications and Iâm the author of Countdown to Zero Day: Stuxnet and the Launch of the Worldâs First Digital Weapon.</p>
+
+<p>JACK:	Countdown to Zero Day is an incredibly detailed book about Stuxnet.  Itâs the result of Kim spending years researching this story and putting all the pieces together.  When I make an episode for this podcast, I spend weeks researching it.  She spent two years on this story, interviewing dozens of people, reading hundreds of articles and documents, and asking a lot of questions to a lot of people; security researchers, nuclear scientists, government officials, journalists, and so many more.  The result is an amazing book which has so much more detail than what weâll be able to cover here.  But what Iâm trying to say is that this makes Kim one of the most qualified and knowledgeable people to talk Stuxnet with.  So, letâs get started.  [MUSIC]  In 1998 Pakistan detonated the bomb.  This was the big one.  A nuclear atomic bomb was created and tested out in the hills of Pakistan.  A lot of countries took note of this, especially the US so the CIA began infiltrating Pakistan to learn more of whatâs going on there.  They found their chief physicist was a guy named A.Q. Khan.</p>
+
+<p>KIM:	They had been working for a while to infiltrate the A.Q. Khan network primarily to study what Pakistan was doing.  They were able to infiltrate in the supply network.  That is flipping people who are actually involved in supplying A.Q. Khan with equipment.  In flipping those people they were able to determine where else he was selling designs and materials.  In infiltrating that network they discovered that once he had built the illicit program in Pakistan he was interested in spreading that knowledge throughout the world.</p>
+
+<p>JACK:	A.Q. Khan had made trade deals with North Korea, Libya, and Iran, and was selling them equipment and supplies to conduct nuclear enrichment.</p>
+
+<p>KIM:	We know that Iran launched [00:05:00] its illicit nuclear program probably sometime around late 1998, 1999.  Thatâs when it first started purchasing blueprints for building a centrifuge factory and purchasing materials.</p>
+
+<p>JACK:	The CIA became aware of what equipment A.Q. Khan was selling to these countries.</p>
+
+<p>KIM:	Intelligence agencies, CIA and UK Intelligence, had infiltrated the supply network going to Libya, between A.Q. Khan and Libya, and intercepted a shipment in the United Arab Emirates that was going to Libya.  They then were able to publically expose the Libya program and pressure Libya into coming clean about the program and giving it up.</p>
+
+<p>JACK:	When Libya gave them up, the US seized these centrifuges and the materials to build them with.</p>
+
+<p>KIM:	The United Nations International Atomic Energy Agency which oversees nuclear programs around the world immediately travelled to Libya, this was around 2004, to catalogue all the materials that Libya had.  Shortly after that the CIA shipped those materials to a secret lab in Tennessee.</p>
+
+<p>JACK:	[MUSIC]  This secret lab was the Oakridge National Laboratory and these centrifuges taken from Libya look like big stove pipes about ten inches wide, eight feet tall, made of hard metal, and theyâre shipped in big wooden crates almost like how youâd see rockets shipped on the black market.  The purpose of these centrifuges is to separate the isotopes in uranium, thus enriching the uranium to be used for nuclear capabilities.  These centrifuges were the exact same model as the ones A.Q. Khan had sold to Iran.  The models wereâ¦</p>
+
+<p>KIM:	IR-1 and IR-2.  Mostly IR-1s.</p>
+
+<p>JACK:	Since the CIA knew Iran had the exact same model centrifuges, the physicists in Tennessee began studying them.</p>
+
+<p>KIM:	[MUSIC]  The initial study was primarily aimed at determining how efficient these centrifuges were at enriching uranium so that inspectors could determine how far along the illicit nuclear program in Iran might be.  They were simply just trying to study the centrifuges to see how they worked, how much gas they could enrich, and how long it might take Iran to have enough enriched uranium material to create a bomb.</p>
+
+<p>JACK:	The nuclear physicists who already understand nuclear materials and how uranium enrichment works studied these centrifuges extensively.</p>
+
+<p>KIM:	There have been reports that part of the research was also done actually in Israel at a â Israel has an illicit nuclear facility that also has been publically exposed in Dimona, in the southern part of the country, in the desert.</p>
+
+<p>JACK:	All the while Iran had continued to work on their nuclear enrichment program.</p>
+
+<p>KIM:	The illicit program was known by the CIA, by intelligence agencies.  They knew that blueprints had been sold to Iran.  They knew that meetings had occurred and the exchange of money had occurred.  They knew that there was activity going on but they didnât actually know where the facilities were initially.  Then they knew that ground had been broken on a facility outside of a village called Natanz in around 2000.</p>
+
+<p>JACK:	The CIA and intelligence officials had been monitoring the location and found evidence that a nuclear facility was being built there.  But this wasnât public information.</p>
+
+<p>KIM:	Itâs unclear exactly who leaked the information but in August 2002 the Iranian illicit nuclear program went public.  [MUSIC]  Although intelligence agencies had known about this, this was the first public exposure of it.  Once that information was public the International Atomic Energy Agency which is the arm of the United Nations that monitors nuclear programs, demanded access to that facility at Natanz from Iran.  They obtained that access for the first time in February 2003 and they started cataloguing what was going on in the program.  They saw that it was much further advanced than they expected from the satellite images, that Iran was actually quite prepared to start enriching uranium hexafluoride gas.  Then pressure was placed on Iran by western countries and the United Nations to halt the program until they could obtain more information about how far advanced the program was.  Iran did agree to hold the program for a while but in 2005 when Mahmoud Ahmadinejad was elected President of Iran, Iran decided to stop cooperating and they decided to move forward with beginning to enrich the first batch of uranium hexafluoride gas.</p>
+
+<p>JACK:	President George W. Bush was in office at the time and diplomacy between Iran and the US wasnât going very well.  Iranian President Ahmadinejad was very adamant about progressing with the nuclear enrichment.  Bush had already invaded Iraq and Afghanistan so invading another country in that region was not gonna play favorably for him.  Iran knew this and used this to their advantage [00:10:00] by choosing this time to progress with their nuclear capabilities by doing things like inviting the press to tour the facility with the President of Iran to show it off to the world.  All the while, Iran was saying this was a civilian nuclear program and was not going to be used to create any weapons with.  This angered President Bush and Vice President Dick Cheney so another plan had to be made, one more covert and undercover, one that could slow down and impede their progress and potentially look like faulty equipment or an accident.</p>
+
+<p>KIM:	Thatâs when the solution was proposed to conduct some kind of secret sabotage that would hold the Iranians back without tipping them off to exactly what was happening.</p>
+
+<p>JACK:	The idea was just to slow down Iranâs nuclear developments until diplomatic negotiations could be reached.  They just needed to buy some time.</p>
+
+<p>KIM:	Oakridge National Lab has a secret nuclear intelligence division there.  They already are engaged in this kind of activity, this kind of investigatory work, to monitor nuclear programs along with the United Nations and the US government.  They already had the capabilities there and the knowhow there.  They are part of the intelligence community and so they are working to quickly build the centrifuge, these cascades, to study them, to do an analysis of them.</p>
+
+<p>JACK:	By the way, this laboratory is ran by the Department of Energy and itâs where most of the work for The Manhattan Project took place.</p>
+
+<p>KIM:	At some point, simultaneously thereâs a lab in Idaho called the Idaho National Lab.</p>
+
+<p>JACK:	Which is also ran by the Department of Energy.</p>
+
+<p>KIM:	That does investigations into industrial control systems so thereâs expertise there for the technical capabilities.  At some point this program that began as an investigation just to determine the efficiency of the Iranian centrifuges just to determine â to gain intelligence about how far along Iranâs program might be.  At some point someone got the idea to see if they could actually sabotage it physically and thatâs when the solution was proposed to conduct some kind of secret sabotage that would hold the Iranians back without tipping them off to exactly what was happening.</p>
+
+<p>JACK:	Scientists at the Oakridge Lab began working to try to come up with ways to cause damage to these centrifuges in a subtle but catastrophic way.  They may have received help from scientists at the Idaho Lab too, since they had previously done research on electrical components within industrial control systems.</p>
+
+<p>KIM:	September 2005, Iran announces that itâs moving forward with the enrichment of the uranium hexafluoride gas.  In January, February 2006, they announced that they are beginning to enrich their first batch of uranium hexafluoride gas.</p>
+
+<p>JACK:	Stuxnet wasnât ready yet but another attack was ready and was launched.</p>
+
+<p>KIM:	[MUSIC]  Thatâs when we knew that when the first sabotage occurred.  They had installed about 150 centrifuges in a pilot plant testing facility at Natanz and the centrifuges were spinning fine for about ten days and then suddenly they started spinning out of control.  It took the Iranians some time to figure out what was happening but they ultimately traced it to some sabotage in the uninterruptible power supply, UPSs that they had purchased from Turkey; someone had sabotaged them.</p>
+
+<p>JACK:	This caused significant damage to the centrifuges and ultimately stopped Iran from moving forward with the enrichment process for the rest of 2006.  The CIA were likely the ones introducing this faulty equipment into the facility by infiltrating the supply chain going in and slightly sabotaging the equipment.  Around the same time the US was trying to get a detailed map of what was in the Natanz nuclear facility.  They used conventional spying techniques and also infiltrated computers in Iran to figure out what was going on in Natanz.  They gathered information from contractors, engineers, scientists, and the Iranian government and they may have gotten a virus in the Natanz facility just to take inventory of whatâs on the network in there.  Using all these techniques they developed a pretty good understanding of exactly whatâs in the facility which would be crucial for building a weapon to target only those systems.  By this point the facility was recovering from their faulty power supplies.</p>
+
+<p>KIM:	Once they had resolved that issue in January 2007, they announced they were beginning to enrich their first batch of uranium hexafluoride gas not in the pilot plant but in the actual enrichment plant.  Thatâs when things started to move into full force.  Israel got very nervous and was asking the US for permission to bomb the plant and to halt it.</p>
+
+<p>JACK:	[MUSIC]  Keep in mind, Israel and Iran have a long history of not liking each other.  The Supreme Leader of Iran once called Israel a cancerous tumor that should be removed.  Iran has also called Israel an illegal state and a parasite, mostly angry with the way Israel has treated Palestine, so Israel gets extremely nervous [00:15:00] whenever Iran starts enriching uranium and this wouldnât be the first time an Israeli airstrike would be done on a nuclear facility.  Operation Opera was when Israeli fighter jets bombed a nuclear reactor in Iraq.  Operation Orchard was another airstrike that Israel did on a nuclear facility in Syria.  Israel was ready to deploy fighter jets to take out Natanz.  There are also stories of the US bombing nuclear facilities in Cuba so an airstrike was definitely an option.  But Israel was growing increasingly nervous and looked to the US for help but the US calmed Israel down and told them about another plan.</p>
+
+<p>KIM:	Thatâs when the alternative plan, Stuxnet, kicked into full gear.</p>
+
+<p>JACK:	Israel wasnât entirely sure this secret plan was going to work so to help convince them the US shared the plan with Israel to let them in on it, sharing the virus, the strategies, the intelligence gathered, and the method of attack.  There may have even been some demonstrations done in the nuclear facility in Dimona where Israel could see its effectiveness.  This convinced Israel it was a good idea and even started to help develop it.  By this point out at Oakridge National Laboratory, they built a replica of the Natanz facility and work was well underway on how to cause damage to their centrifuges.  This work was spread out among many different teams and even some of the most trusted scientists werenât aware of the full picture.  They figured out a way to send a command to a controller to cause the centrifuge to behave abnormally.</p>
+
+<p>KIM:	[MUSIC]  The 2007 version was designed to close valves, exit valves, on the centrifuges.  The way that it works is that gas pumps into the centrifuges, the centrifuge spins and enriches the uranium, and that enriched uranium then goes out through a pipe that has a valve in it.  What Stuxnet did was it closed the valves on the exit pipes so that the gas would go into the centrifuges but it couldnât get out.  The result then, was that the pressure inside the centrifuge increased until it damaged the centrifuges.</p>
+
+<p>JACK:	The damage was catastrophic to the centrifuge but it just looked like a basic malfunction.  During one test, the gas built up so much pressure that it caused the centrifuge to wobble chaotically and break apart into pieces, leaving a pile of rubble on the floor in the lab.  A person working on this project collected the rubble, put it in a box, flew to Washington DC, and dumped the pieces on the conference room table in the Situation Room in front of President Bush.</p>
+
+<p>KIM:	When Bush saw that it could be successful, he gave the go-ahead to do that.  That was 2006 and then Stuxnet was actually unleashed sometime in 2007.  They would have had that time between 2006 and 2007 when it was unleashed to perfect Stuxnet, to make sure that it wouldnât be caught, to make sure that it was stealth enough, and that it would do what it was designed to do.</p>
+
+<p>JACK:	It was important to keep this as a top-secret mission, very covert, hush-hush.  The project kicked into gear at this point, fine tuning it and figuring out ways to distribute it.  One tricky problem though was that the computers in Natanz were not reachable from the internet; they were air gapped so the only way to use those computers was to be physically present in front of the terminal.  So the attackers came up with the idea of putting the virus on a USB stick and to try to get someone to walk into the facility and plug it in, maybe a worker or a contractor or something.  USB sticks with the Stuxnet virus were spread, trying to get them into the hands of the people who went inside Natanz.  They were unsure how far these went and how they tried to get them into the facility.  Perhaps they knew which scientists were there and gave them USB sticks at a conference or tried to get a contractor to use them on the systems.</p>
+
+<p>Itâs not like you can just leave them all over the parking lot because the Natanz facility is extremely well-guarded.  Imagine a typical military base with high fences, guards, and artillery weapons spread all over the place.  Youâre not going to get anywhere near the parking lot of this place.  But the sticks were launched into the wild to try to get them into this nuclear facility in Iran.  Once the attackers pumped a bunch of USB sticks into the region, they had to wait and see if it worked.  [MUSIC]  But itâs really hard to tell if it worked.  The NSA had no visibility into the facility and no access to computers even if they got Stuxnet onto one.  They were at the mercy of the local news or inspection reports.  The IAEA is a group of nuclear inspectors appointed by the UN.</p>
+
+<p>KIM:	They started visiting Natanz a couple of times a month and they would write reports that they would send back to their headquarters in Vienna, Austria.  In those reports they describe the progress of Iranâs nuclear program.  Beginning around 2007 they are describing that the Iranians are having problems with the centrifuges.  They are wasting gas.  Theyâre not progressing as fast as theyâre intending.  What is happening in that version is as I said, that the exit valves are closing.  The gas pours into the centrifuges and it canât get out of the centrifuges.  The pressure inside [00:20:00] the centrifuges increases.</p>
+
+<p>JACK:	When the pressure of the gas would increase by five times, the gas would start to solidify.</p>
+
+<p>KIM:	If the spinning centrifuge has gas thatâs solidified in it, that solidified gas is going to catch on that rotor thatâs spinning inside and itâs going to cause the centrifuge to spin out of control.  Itâs going to become unbalanced.  What can happen is that the centrifuges, theyâre spinning at supersonic speed.  If a centrifuge becomes unmoored itâs going to crash into centrifuges that are next to it.  Youâre going to ruin the centrifuges themselves but youâre also going to waste that gas.  That was the design of the program.  Iran had only a limited supply of uranium hexafluoride gas and a limited supply of materials to build new centrifuges.  For every centrifuge that you could destroy and every batch of gas that you could ruin, it was setting the program back.</p>
+
+<p>JACK:	But the reports show that progress was only slowed by about 30%.  This still meant that Iran could develop nuclear capabilities in the next few years so this wasnât slowing the progress enough for Israel to feel comfortable.  But at this point Stuxnet was so covert and stealthy that nobody in the world knew about it except the attackers who created it.  This caused a lot of confusion and frustration with the scientists.  But the attackers went back to the drawing board at Oakridge Lab.  Scientists and security researchers went back to working on this virus to improve it but around this time something changed in the US.</p>
+
+<p>KIM:	[MUSIC] We had a change of presidents in that period and a new president comes in in 2009.  This was a covert operation and a covert operation has to be authorized by the sitting president and because the sitting president was leaving, Stuxnet had to be reauthorized.  Essentially, it would have come to a halt at that point if Obama hadnât reauthorized it and he did.</p>
+
+<p>JACK:	With the reauthorization of the virus, worked kicked into high gear once again.  The team at Oakridge discovered a new way to damage the centrifuges.  They wanted to continue to use different types of sabotage because if the same attack was used every time, it would look more suspicious.  They found that if you changed the revolutions per second significantly it would case a harmonic resonance, making the centrifuge wobble chaotically and become too damaged to continue.  Not only was a new method of destruction discovered but security researchers found new ways to infect the systems.  The first version only had one zero-day.  A zero-day is a bug that the software vendor isnât aware of.  But this new code contained four zero-days.  This number of zero-days is unprecedented.  No malware in history has ever been discovered to have this many zero-days in it.  The malware would first have to infect a Windows machine to plant itself on it, which exploited an unknown Windows bug.</p>
+
+<p>To do this the virus used an authentic digitally signed certificate to appear legitimate.  This is another layer of a complexity to this virus because itâs believed the private keys needed to sign these certificates were stolen from two different hardware manufacturers in Taiwan.  Then once a computer is infected, the virus can seek out the SCATA software thatâs on that computer and this is the software that controls the centrifuges.  It would alter the files there, again exploiting an unknown bug in that SCATA software.  If the monitoring software would detect a centrifuge spinning too fast, it would shut down the system.  The virus also tricked the monitoring software to make it look like nothing was wrong and made it look like it was spinning at normal speed.  Finally, the centrifuge itself would be infected to alter the actual spinning speeds.  This virus is a masterpiece.  The level of sophistication, precision, stealthiness, and effectiveness have never been rivaled in any malware ever discovered.</p>
+
+<p>Itâs truly an unbelievable, amazing piece of malware.  The virus was built and it was ready to infect the systems but the problem was still getting over that air gap.  They tried to get the virus onto the systems within Natanz but it just wasnât working.  We think it was probably the NSA who crafted this virus but then the CSA or Israelâs Mossad likely tried to get it on the computers of the people working at the Natanz facility.  But for whatever reason the virus wasnât getting onto the right systems or infecting enough of the machines in the facility.  By this time the intelligence units in Israel had been collaborating with the US on this attack.  Both Israel and the US were modifying and programming Stuxnet and then sharing code between each other.  Since it wasnât quite infecting the facility well enough, a more aggressive spreading mechanism was added to the virus.</p>
+
+<p>KIM:	They used a worm and because of that, they would infect any Windows system that Stuxnet encountered.  It would deposit the payload but again, the payload wouldnât affect those systems unless it had the configuration that Stuxnet was seeking.</p>
+
+<p>JACK:	US and Israel worked together to very precisely target Natanz with this virus.  [MUSIC]  The virus was introduced to the network of some contractors that were known to go into Natanz.  Either through a USB or a shared drive, the worm had spread onto their computers.  The virus then sat on their computers and waited to be taken into the Natanz facility.  When the contractor with the infected computer went into the facility the virus spread all through the network, infecting the exact systems [00:25:00] it was programmed to attack.  This was pay dirt for the virus.  From within the network it spread to many more systems, infecting the computers that controlled the centrifuges but there was a mistake in the virus, a bug in the bug.  The spreading mechanism was too aggressive; the worm that was added to it spread beyond the target network of Natanz.</p>
+
+<p>Computers that were connected to the same shared drives as the virus were also getting infected and then those computers were taken to other networks and infecting other systems there.  Soon the virus became out of control and was infecting systems all over Iran and the rest of the world.  The worm was on the loose.  When the US military found this Stuxnet worm was spreading rapidly, it was horrible news.  This wasnât supposed to happen.  This was a big mistake.  This may blow their cover and reveal their secret weapon.  A meeting was held in the Situation Room to inform President Obama and Vice President Biden that this worm had gotten out of hand and may soon be discovered.  The President and Vice President were deeply troubled by this but they allowed the attacks to continue.  Stuxnet was present on the Windows computers that controlled the centrifuges and the centrifuges in the Natanz facility were infected, too.</p>
+
+<p>After the computers were infected the virus would sit and wait for weeks.  It would listen and record what normal behavior looked like so it could replay this back during the attack.  After a couple weeks, the virus instructed the centrifuge to significantly increase in revolutions per second, but only for fifteen minutes.  This would be an attempt to knock it off its access or cause a wobble.  Then the spinning would return to normal again for a few more weeks.  This temporary change in spinning speed could be enough to damage the centrifuge that normal spin speeds would damage it more.  Because if centrifuges were breaking during normal operations this would certainly hide that sabotage and covert operations were at hand.  If the centrifuge continued to operate after another twenty six days, it would slow down to just barely spinning and then back up again to normal spin speed.</p>
+
+<p>By changing the speed could cause the centrifuge to wobble off-balance just enough that it could damage it, but also by slowing down the speed it would drastically reduce their enrichment process, also slowing the program.  The subtlety of this attack was very precise.  Centrifuges began randomly producing less enriched gas and some were getting damaged.  The change in the spinning was enough to damage them to the point where they would waste gas inside them or they just wouldnât work anymore.  This baffled scientists and engineers because the monitoring system all showed everything was working fine yet some centrifuges were changing their speeds randomly.  Because an attack like this had never been seen before, the scientists didnât suspect that a virus would do this but they couldnât figure out what was.</p>
+
+<p>We donât know the exact destruction caused within the facility but cameras installed by the nuclear inspectors saw the Iranians were disassembling centrifuges and removing large amounts of equipment.  Upon the next inspection report it was noted that there were around 1,000 less working centrifuges compared to the last report.  Because of this we believe the Stuxnet virus had successfully damaged around 1,000 centrifuges.  The loss of 1,000 centrifuges and a bunch of the gas being used in them was a huge setback for Iranâs nuclear facility.  Catastrophic damage was done to this facility but nobody was harmed during it.  They had a very limited supply of both centrifuges and gas and couldnât simply go buy more.  Iran had more materials but this event destroyed a significant percentage of it.</p>
+
+<p>[MUSIC]  The head of Iranâs atomic energy organization resigned at the same time and we can only speculate that his resignation occurred because of how damaging this attack was to the atomic program.  While this sabotage did cause significant damage of the facility, it only slowed Iranâs nuclear program momentarily; very quickly they tried to replace all the centrifuges with new ones and get back to enriching.  Around this time, because of the nature of how aggressive the virus had spread around the world, security researchers from Symantec began noticing this virus and analyzing it and reporting about it.  The team at Symantec studied the malware and eventually realized the complexity and sophistication of this worm was unlike anything theyâd ever seen.  Surely it was created by a nation state actor, somebody with an enormous amount of resources and a strong understanding of the technology he had to make this, which made the Symantec team very nervous to study it further.</p>
+
+<p>They knew if they published their findings it would exposed this entire operation and they thought whatever nation state actor created it probably didnât want them blowing their cover.  But the team at Symantec had a duty and that was to publish malware when they find it so they published their findings.  While the Iranians were struggling and scrambling to try to stabilize their enrichment facility, the Symantec report tipped them off that these centrifuges had been sabotaged by this virus.  Immediately they shut down the facility and wiped the viruses off all systems in there.  The Iranian President told the press, quote, âThey succeeded in creating problems for a limited number of our centrifuges with the software they installed in electronic parts.  They did a bad thing.  Fortunately [00:30:00] our experts discovered that and today they are not able to do that anymore.â  End quote.</p>
+
+<p>By trying to figure out who conducted this cyber-attack, you map out a few things.  First, who would have the motive to sabotage Iranâs nuclear program?  Second, who has the capabilities of creating a virus with four zero-days in it?  Just those two questions alone narrows down the potential attackers to less than five suspects.  You could imagine the local Iranian news was desperate to speculate who was behind this and provided many scenarios that may have happened.  They speculated that the US and Israel were behind this attack.  At this point it seemed like another plan went into effect.  Nuclear enrichment is hard and you need very smart scientists to bring it along so once Iran continued to enrich the uranium again, assassinations started happening; two separate car bombs exploded at nearly the same time in Iran, one killing a quantum physicist that had been working at Natanz, and the other seriously injured a high-ranking official in Iranâs Ministry of Defense.  A few months later a car bomb killed another nuclear scientist and two years after that, the Director of the Natanz nuclear facility was also killed in a similar explosion.  Because of how aggressive the spreading mechanism was within Stuxnet, itâs how the world discovered this virus.</p>
+
+<p>KIM:	If those spreading mechanisms hadnât been added to Stuxnet we might still not know about this.  Stuxnet could have continued for years to conducts its sabotage.  But it was that sloppiness, that recklessness that exposed it and really endangered the program.  That doesnât mean that there isnât current activity going on but it definitely put the Iranians on notice what was happening and made them more suspicious and careful.</p>
+
+<p>JACK:	Reports say that the US President and Vice President were particularly upset about Stuxnet being discovered.  This was supposed to be a covert operation that nobody would ever find out about.</p>
+
+<p>KIM:	They were angry about the spreading mechanisms because until then Stuxnet had been very controlled and precise.  When the Israelis added the spreading mechanisms, thatâs what launched Stuxnet outside of Natanz and it started spreading wildly out of control.  Thatâs what got it exposed.  They were angry because apparently they didnât know that the Israelis were going to be adding these spreading mechanisms.</p>
+
+<p>JACK:	But what group in the Israeli government helped develop this virus and launch it?  Some of my keen listeners may be jumping out of their seats right now saying it was Unit 8200 and in fact, dozens of news agencies did point fingers at 8200 for doing this.  But it may not be that simple.</p>
+
+<p>KIM:	I wouldnât point fingers at 8200.  They seem logical because they have the technical abilities but again, this was very, very specific knowledge of industrial control systems that was needed for this attack.  Itâs not clear that 8200 had that knowledge.  Dimona, where they have centrifuges, where they have industrial control systems, they have a lot of expertise down there.  Thatâs why Iâm saying that itâs a little foggy who the exact people were pointed to.  In the US here, you can have people who are working at Idaho National Lab which is under the energy department but they can be â thereâs a special word for it.  Itâs not lent, but they can be lent out, for instance to the FBI, they can be lent out to the NSA.  When you say that the NSA does it, it can actually be [inaudible] from the energy department, really.  Energy labs, department of energy labs, who are borrowed out, letâs say, to the NSA for their expertise and for specific projects and things like that.</p>
+
+<p>JACK:	Clearly this was a joint effort between the Department of Energy, which is still surprising to me, the NSA, the CIA, and Israel.  This was a very covert operation, extremely hush-hush.  The people who were working on it probably didnât even understand the full purpose of what they were doing.  Still today, the United States has never admitted to conducting this attack or conducting any cyber-attack ever.  How do we know so strongly who was behind this?  Well, like I was saying before, Kim did her research.</p>
+
+<p>The Symantec team who first studied this virus released a sixty-seven page report about everything Stuxnet was capable of.  This gained the interest of many more security researchers and journalists who also published papers.  We also see from documents that Snowden leaked that the president did, in fact, sign executive orders to use cyber weapons.  But there was another leak somewhere in the government.  Someone had told David Sanger, a reporter for the New York Times, some classified information about Stuxnet which resulted in an eye-opening article about how Israel, Bush, and Obama had authorized this cyber-attack.  The press questioned President Obama about this.</p>
+
+<p>OBAMA:	David Jackson.</p>
+
+<p>DAVID:	Thank you, sir.  [00:35:00] There are a couple interesting details about national security issues.  There are reports of cyber-attacks on the Iranian nuclear programs that you ordered.  Whatâs your reaction to this information getting out in public?</p>
+
+<p>OBAMA:	First of all, Iâm not gonna comment on the details of what are supposed to be classified items, which is why, since Iâve been in office, my attitude has been zero tolerance for these kinds of leaks and speculation.  Now, we have mechanisms in place where if we can root out folks who have leaked, they will suffer consequences.  In some cases itâs criminal.  These are criminal acts, when they release information like this.  We will conduct thorough investigations as we have in the past.</p>
+
+<p>JACK:	After that thorough investigation, US Marine General James Cartwright was found guilty for lying to the FBI about whether he had talked to a reporter about this.  But two weeks before his sentence hearing, President Obama pardoned General Cartwright from any wrongdoing which allowed this case to be dropped.  There are a million more articles, interviews, and pieces of information about Stuxnet that came out which help us put all these pieces together.  Thatâs why we can give you a timeline today of how this got started, where it got started, why it got started, who did it, and all the different versions involved.  From that point the US and other nations worked with Iran to try to come up with an agreement and in 2015, they did.</p>
+
+<p>OBAMA:	Today, after two years of negotiations, the United States together with our international partners has achieved something that decades of animosity has not; a comprehensive, long-term deal with Iran that will prevent it from obtaining a nuclear weapon.</p>
+
+<p>JACK:	Israel wasnât entirely happy with this deal as it still allowed Iran to develop nuclear power, just not nuclear weapons.  In fact Iran never did say they were developing nuclear weapons.  They claimed it was always a civilian nuclear program.  But one thing hangs in my head still.  Was this an act of war?  Was this a strike during peace time with Iran?  Hereâs Kim.</p>
+
+<p>KIM:	Itâs naÃ¯ve to think that governments donât engage in activities that are just below the threshold of all-out war and attack.  They do it all the time.  When diplomacy doesnât work, when diplomacy is being engaged, in place of diplomacy, it happens all the time.  We donât know what wars are averted because governments have engaged in other things to achieve ends that otherwise might be achieved by war.  The fact that it was done during a time of peace and it was done to avoid an all-out war, I think that there are people that would condemn the US for doing this.  But I think that ultimately if Iranâs program was indeed an illicit weapons production program, the viewpoint of the US was that they actually saved lives by doing this.  By not engaging in all-out warfare they were able to do this in a peaceful way that didnât harm anyone and then ultimately prevented Iran from obtaining weapons that would have caused, of course, more bloodshed.  So from that point of view, when you talk about the outrage of this being done, this being an active force being done during a time of peace, from the US perspective it was done to actually keep peace.</p>
+
+<p>JACK:	But Iran didnât see it that way, especially because Iran claimed this was only a civilian nuclear program.  The truth is there wasnât much evidence that say this was a weapons program.  If this wasnât intended to make weapons, imagine how Iran must see Israel and the US now.  They were already really angry with Israel but now hereâs evidence of Israel attacking their innovation, but if this cyber-attack didnât work, a bombing run might have been next.  While this looks ugly, dropping bombs looks a lot uglier and would almost certainly result in bigger clashes.  The discovery of Stuxnet was such a major revelation in the history of cyber-attacks.  We could almost divide the timeline up of a pre-Stuxnet and post-Stuxnet world.</p>
+
+<p>Before, we werenât exactly sure what the US government was capable of doing but now we see that not only is the US government using hacking to destroy and sabotage physical equipment within other nations, but theyâre doing it with an extreme sophistication and precision.  The amount of zero-days found on this means the US government hoards zero-days and they keep it to use as a weapon to make us safer instead of telling the vendor to patch it, which would make us all safer too.  This was a military-grade weapon which had the input of extremely knowledgeable scientists, engineers, and hackers.  After this sabotage caused major setbacks to the Iranian nuclear program, Iran reinforced their efforts in building a cyber-army of their own and they werenât going to take this laying down.  A hack-back plan [00:40:00] was in the works and in the next episode weâll see what Iranâs response was and that hack caused even more damage than what Stuxnet did.</p>
+
+<p>JACK (OUTRO): 	[OUTRO MUSIC]  Youâve been listening to Darknet Diaries.  A very special thanks to Kim Zetter for sharing this story with us.  Thereâs so much more to Stuxnet than what we just covered.  If this interests you at all you should definitely check out her book Countdown to Zero-Day.  You can even get it in audiobook.  Itâs so much more detailed and wonderfully written.  I read it twice and each time I learned so much more than I previously knew and went down all kinds of rabbit holes.  Itâs eye-opening and fascinating so check out Countdown to Zero-Day.  Hey, if you liked this episode do me a huge favor and tell someone else to try the show.  Word of mouth is my best method for spreading; maybe you could text someone you know right now and tell them hey, I think youâd like the podcast Darknet Diaries.  Okay, thanks.  This episode is made by me, the root-seeking missile, Jack Rhysider.  Theme music was created by the piano tickler, Breakmaster Cylinder.  Iâm going to be releasing episodes every other Tuesday now, so look for another new episode in two weeks.</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+<p>Transcription performed by Leah Hervoly
+www.leahtranscribes.com</p>
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

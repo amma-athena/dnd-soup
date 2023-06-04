@@ -1,0 +1,669 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>Operation Glowing Symphony â Darknet Diaries</title>
+	<meta name="description" content="Operation Inherent Resolve was started in 2016 which aimed to combat ISIS. It was a combined joint task force lead by the US military. Operation Inherent Resolve sent troops, ships, and air strikes...">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Operation Glowing Symphony â Darknet Diaries">  
+	<meta name="twitter:description" content="Operation Inherent Resolve was started in 2016 which aimed to combat ISIS. It was a combined joint task force lead by the US military. Operation Inherent Resolve sent troops, ships, and air strikes...">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/ogs.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/50/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Operation Glowing Symphony â Darknet Diaries" />
+	<meta property="og:description"        content="Operation Inherent Resolve was started in 2016 which aimed to combat ISIS. It was a combined joint task force lead by the US military. Operation Inherent Resolve sent troops, ships, and air strikes to Iraq and Syria to fire weapons upon ISIS military. It's widely known that US military engaged with ISIS in this way. But what you may not have hear, is the story of how the US military also combated ISIS over the Internet. This is the story of how the US hacked ISIS." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/ogs.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/50/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/ogs.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/50/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="Operation Glowing Symphony â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/ogs.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 50: Operation Glowing Symphony</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://traffic.megaphone.fm/ADV5529569827.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/50/",
+			   "title": "Ep 50: Operation Glowing Symphony"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/50">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[FULL TRANSCRIPT]</p>
+
+<p>JACK:	Just as a warning up front, thereâs some clips of violence in this episode such as gunfights and terrorist attacks.  If that kind of thing bothers you then you might want to skip this one.  [MUSIC] Mosul, that sounds like a good place to start this story.  Mosul is an ancient city in Iraq.  Weâre talking, people have lived there in the area of Mosul since like, 2,000 BC.  Itâs right next to the Tigris River and itâs grown to a population of jeez, over a million and a half people.  Itâs Iraqâs second-largest city.  On June 10th, 2014, a new chapter in Mosulâs history was written.  A group of armed fighters, basically an army, just raided the place.  [GUNFIRE] ISIS infiltrated Mosul.
+<!--more--></p>
+
+<p>They shot it up, set stuff on fire, and they were targeting all Iraqi police and military and security.  [EXPLOSIONS, YELLING] In just a few days they took over the whole city of Mosul, the whole city of a million people.  People began fleeing the city in huge droves; hundreds of thousands of people left or were killed.  Mosul was now under control of ISIS, the Islamic State, an extremist group, a group that the US believes is made up of violent Jihadist terrorists.  That same month, ISIS declared a caliphate in Mosul.</p>
+
+<p>REPORTER:	ISIS, which stands for the Islamic State in Iraq and Syria says now it will simply be known as the Islamic State.  It declared all areas its overtaken in Syria and Iraq to be a caliphate, or Islamic State, a significant move.</p>
+
+<p>JACK:	As far as I understand, declaring a caliphate means that they are establishing that the city of Mosul is the Islamic State.  Like, itâs sort of their own nation.  Itâs a place to go live and practice their beliefs.  Anyone whoâs affiliated with ISIS can come live there.  ISIS had their own police patrolling the city, their own soldiers defending it, their own leadership, and everything.  This was a huge victory for the terrorists; to take over the second-largest city in Iraq and kill thousands of their enemies?  This is what put ISIS on the map.  This is why they are a common household name here in the US because since they took over Mosul, their numbers soared and their attacks reigned on the world.</p>
+
+<p>JACK (INTRO):	[INTRO MUSIC] These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	Once ISIS took over Mosul and declared a caliphate, their popularity boomed.  Tens of thousands of people around the world were learning what ISIS was and they were joining the cause.  We started to see attacks in many other cities around the world and ISIS was taking responsibility for it.  We were starting to see attacks in Belgium, Australia, Canada, and when I say attacks, I mean people were being killed by this group.</p>
+
+<p>REPORTER:	Today the militant group ISIS posted a series of graphic photos on Twitter claiming a massacre of more than 1,700 Iraqi Soldiers.</p>
+
+<p>REPORTER2:	Tonight, the urgent manhunt right now after the city of Brussels is rocked with multiple explosions at the airport and then in the subway.  At least thirty-one killed; more than two hundred injured.</p>
+
+<p>REPORTER3:	Two people are dead tonight in Ottawa, a Canadian soldier and a suspect after a shooting on Parliament Hill, Canadaâs equivalent of Capitol Hill.  A violent morning that culminated in a shootout inside the ornate building where lawmakers were caucusing.  [GUNFIRE]</p>
+
+<p>JACK:	Gosh, that sounds so scary.  Thatâs not the streets of Iraq; thatâs ISIS shooting up the Parliament building in the capital of Canada.  The Iraqi military simply didnât have the ability to take back their own city and with ISIS growing in numbers all over the world, [00:05:00] something had to be done.  In October 2014, the US military initiated executive order Operation Inherent Resolve.</p>
+
+<p>HOST:	Okay, so what is the Navyâs role in Inherent Resolve which is the new name of the anti-ISIS coalition movement?</p>
+
+<p>NAVY OFF.:	We provide sorties, meaning missions, off of our aircraft carrier, the George Herbert Walker Bush.  Some of it is just information; intelligence, surveillance, reconnaissance.  Others are strikes and it depends on what the central commander desires.  It could be jamming of some of ISISâs networks and what theyâre doing, it can be again, intelligence gathering.  We are standing by with tomahawk missiles, tens and tens of them which in fact, we used on that first night when we started this operation.</p>
+
+<p>JACK:	Jeez, tomahawk missiles?  This is serious business and yes, that Navy ship was launching these missiles right into Mosul, raining down one attack after another, taking out ISIS infrastructure, some key leaders, their troops.  But tens of thousands of people formed ISIS so it wasnât easy to stop them with airstrikes alone.  ISIS continued to take over towns in Iraq and Syria and claimed responsibility for more terrorist attacks around the world.  One of these attacks occurred in November of 2015 in Paris, France.</p>
+
+<p>REPORTER4:	[COMMOTION, EXPLOSIONS] 9:20 p.m.; the first indication of the horror being unleashed that night.  A suicide bomber exploding his vest outside Franceâs national soccer stadium.  There was a second detonation, another suicide bomber.  Both attackers, it seems, had been stopped before they could get in.  A third attacker would blow himself up outside a nearby McDonalds.  Around 9:25, gunmen with Kalashnikov-type assault weapons targeted diners at a string of restaurants.  Fifteen people were killed.  The gunmen raced away in a black car.  Next, the cafÃ© Bonne BiÃ¨re was hit.  Five people were killed.</p>
+
+<p>At 9:36, at Le Belle Epoque, sheer terror; the same black car, the crowded terrorists sprayed with gunfire.  Witnesses say it went on and on.  Nineteen people died here.  Nine others were critically injured.  The epicenter of the attack though, would be the Bataclan, a concert venue.  [MUSIC] As the band, Eagles of Death Metal played, gunmen rushed the hall and opened fire.  [GUNFIRE] Those who escaped, the survivors, called it a massacre, a mass-execution.  Eighty-nine people were killed.</p>
+
+<p>JACK:	This was bad.  Other attacks were springing up all over the world.  Operation Inherent Resolve needed more help to battle these terrorists.  Hereâs a clip from one of the captains on the carrier stationed in the Persian Gulf which was launching missiles at ISIS.</p>
+
+<p>CAPTAIN:	The airstrikes can only do so much and weâre very, very effective.  Weâre there to support but I think in the end itâs going to be a ground fight.</p>
+
+<p>JACK:	They needed more help to stop these terrorists so some phone calls were made.  [SKYPE CALLING] Hello?</p>
+
+<p>COMM.:	Jack, hey, itâs [CENSORED].  Howâs it going?</p>
+
+<p>JACK:	Good to hear from you.  Thanks so much.  Sorry; in this one, I canât say our guestâs name.  Youâll understand later but for now letâs just call him the Commander.</p>
+
+<p>COMM.:	This is kind of a fanboy moment for myself, to be honest.</p>
+
+<p>JACK:	Okay, youâre gonna wonder how I got this interview because as youâll hear, this is an extremely rare interview.  Iâll explain how I got all that at the end of this episode but I do want you to understand more about who he is.</p>
+
+<p>COMM.:	Okay, so in 2016 I was the mission commander for a combat mission team at USCYBERCOM.</p>
+
+<p>JACK:	Yeah, US Cyber Command is believed to be the offensive team within the NSA.  Actually, it came out of the NSA but now itâs its own thing.  Yeah, you got that right, today weâre going to hear a hacking story from someone inside the US Cyber Command which is a very secret hacking organization within the US government which makes this an extremely rare interview.  So, are you ready for this?  [MUSIC] Okay, so letâs back up; the Commander here wasnât always a commander.  He started out as a regular recruit in the Marines but quickly he knew he wanted more.</p>
+
+<p>COMM.:	I was a Force RECON Marine for my first five years.  I jumped out of planes, I did the HALO, HAHO, scuba dive, all that stuff.</p>
+
+<p>JACK:	Whoa, this guyâs a beast.  I mean, my understanding is that the Marines train you to be a killer.  Itâs a very aggressive branch of the military but Force RECON amplifies that immensely.  Theyâre the highest-trained troops in the Marines.  In 2012, he was deployed to Afghanistan in the Sangin province; a tough place.  He was trying to neutralize the [00:10:00] Taliban over there, doing helo raids and other operations.  After a few years of that he came back and spent a total of five years as an active Force RECON Marine.</p>
+
+<p>COMM.:	You get older, things get harder, physically.  The way to stay in the fight is to use cyber.</p>
+
+<p>JACK:	The Marines give you a little wiggle room on where you can choose you want to go.  He decided to join the Marine Forceâs Cyber Command but with this switch, they knew they needed to give him some training.</p>
+
+<p>COMM.:	They did.  They sent me to school for larger cyber-security stuff.  Just basic Security Plus, Network Plus, CEH.  Then they did put us through some more technical training for computer network exploitation boot camps and cyber-attack and defend.  Eventually you attend a mission commander course for what my role was as an officer.</p>
+
+<p>JACK:	At this point heâs an officer for MARFORCYBER.  Thatâs short for Marine Forceâs Cyber Command.  Okay.  Now, let me read to you a paraphrased version of the mission statement for this group, MARFORCYBER.  The mission statement is quote, âTo conduct full spectrum cyber-space operations, including conducting offensive cyber-space operations.â  End quote.  Phew, listen to that.  They conduct offensive cyber-space operations.  I once heard the US government has never admitted to conducting any cyber-space attacks but look at this; itâs right here in the mission statement of MARFORCYBER and when I think about the mindset that the Marines have and how theyâre so competitive and gung-ho and battle-hungry, I just canât imagine what kind of hackers would come out of this.</p>
+
+<p>COMM.:	Everybody always says oh, weâre shooting cyber-bullets today.  Weâre going out on patrol.  Itâs funny but itâs true and then, you know, we always try to keep that mindset, especially in the Marines.  The Marines are known to be more aggressive and that was not different in cyber.  Our team was the first to do a lot of things.</p>
+
+<p>JACK:	Youâre a computer geek or youâre a buff guy, right?  Which one is it, or is it both?</p>
+
+<p>COMM.:	Thereâs a lot of buff dudes in cyber, to be honest, but itâs pretty funny.  We still do all of that same kind of stuff.  I know people have some traditions when youâre the first â for your first cyber-mission on the ops floor, theyâll make you wear a flak jacket or a helmet to look goofy when youâre sitting in front of the computer âcause itâs your first op.  That tradition still comes into play in some of the op floors today.  There is still that military mindset of messing with people and things like that.  Itâs pretty funny; I find it fun.</p>
+
+<p>JACK:	This is how he transformed from being a trained killer to a capable hacker.  Heâs on a new mission now; to battle the enemy from behind the screen.</p>
+
+<p>COMM.:	Weâre all in uniform sitting in front of a computer screen; four screens just like at the movies.  Everybodyâs in uniform, working on things.  If youâre at very sensitive locations and sites, youâll be out of uniform and things like that.  But at Fort Meade youâre in uniform the whole time.  The fall of 2014, I was finishing up all of my training and they had just started a team between NSA and CYBERCOM that was focused solely on ISIS media.</p>
+
+<p>JACK:	Ah, yes, back to ISIS.  ISIS, or sometimes itâs called ISIL, produces a ton of media content.  I mean, they have two magazines that are published in ten different languages.  These magazines are excellent quality, too.  Theyâre very well-done; high quality pictures from the front lines and expertly designed.  They also have a ton of social media accounts that post news stories and even act as recruitment tools for new members.  They also have people producing high-quality videos, filming horrific things, then editing them and cleaning them up to maximize the impact to the viewer.  To run all this, they must have a whole network to share content between the teams, to store the videos and pictures, and then a bunch of skilled people to run everything.</p>
+
+<p>COMM.:	ISIS media was everything that involved the production of their magazines, the videos that everyone saw come out, the logos, the attack claims, all of the social media accounts that they had, the websites; everything that was associated with that was what was under the umbrella of ISIS media.  They had a lot of people.  [MUSIC] Weâre talking cameramen, weâre talking editors, weâre talking linguists for translating things into every language across the world so that they could disseminate their message, you have your own IT shops, and finance guys.  It was a large-scale operation and you could see that in all the videos that came out.  They were Hollywood-quality videos that were hitting CNN [00:15:00] and ABC on a daily basis, almost.  That was all ISIS media.</p>
+
+<p>JACK:	Since the US government was already using intelligence operations to keep tabs on ISIS, they felt that ISIS media was big enough to create a team to just focus on this alone.</p>
+
+<p>COMM.:	ISIS media had been on the scene for about a year before that.  Then in 2014 in the fall, it was finally becoming so big that it was its own entity and warranted its own dedicated analysis production targeting effort.  Thatâs where they pulled a few Marines together, a few civilians, and started a pretty crack-net team.  Then I took over the team at the end of the year, in 2014.</p>
+
+<p>JACK:	Oh wow, this is very interesting, right?  From Force RECON Marine to MARFORCYBER, and now to the NSA and Cyber Command to gather as much information as he can on ISIS media.  ISIS media became his primary focus.  All day, every day, him and his team were there doing everything they could to understand whoâs behind this.</p>
+
+<p>COMM.:	[MUSIC] We were trying to map out the network, so everything behind â everything that made ISIS media tick was what we were supposed to uncover and define.  People, places, things, everything behind it.  The analogy I give people is if you look at CNN or you look at a regional news office, they have senior editors, they have people that do translations, they have a web guy that sets up the website, they have a guy that configures domain names, a guy that â the IT staff that keeps the shared drives running, keeps the e-mail accounts up, their chat services up, so that they can conduct their daily business.  You have your field journalists and cameramen and all of those â all of that stuff.</p>
+
+<p>JACK:	The goal was to simply gather data; basically, spy on them and collect as much data as they could from this group.  They did this for a long time.</p>
+
+<p>COMM.:	2014 all the way through to summer of 2016 was analysis, development, building out the network, understanding how they operated, what they did.  We spent a year and a half just understanding the target space and building out a high-fidelity network.</p>
+
+<p>JACK:	Just to give you an idea of where we are in the timeline, this is still before ISIS invaded Mosul and declared a caliphate.  Here, already, the NSA and US Cyber Command are tracking them heavily.  Now, can you imagine how much data they collected in this time?  I mean, weâre talking the NSA and Cyber Command here and dedicating a whole team to investigate this for two solid years.  By that time and with those resources, Iâm sure they must have had everyoneâs name who is behind ISIS media and where it was edited, whoâs running the social media accounts, what software theyâre running.  I bet that goes so much deeper.  He didnât say but I bet they hacked into all these people, too.</p>
+
+<p>They had access to their phones and laptops and facilities, everything, to gather as much data as they could, probably even their spouses, and relatives, and bosses, and friends, too.  I bet they were infecting all these systems and burrowing their way deep into the ISIS media network, and then establishing persistence to maintain their foothold in there.  Because if you think about this, this is all going on in the same building that the NSA headquarters are in, in Fort Meade, Maryland; that big, black, box of a building that Iâm sure youâve seen pictures of.  If they needed more help, they could just walk down the hall and get another group of people who are specialized in something to help them out.</p>
+
+<p>I mean, Iâm just guessing here but hereâs an attack I think they probably did; first, imagine if they hacked into the phone of one of these ISIS media people and then on that phone, they stole the private decryption keys for that phone.  This would be the key used to decrypt messages to that phone.  Then, imagine they hacked into the WiFi network that phone was on and somehow captured all the traffic to that phone.  Somewhere in that traffic are the private chat messages to that phone and with these private keys, Iâm guessing itâs technically possible to decrypt those messages.  This would be a pretty complex hack but I bet itâs something that US Cyber Command could do.</p>
+
+<p>COMM.:	We had a long target list.  You think of a large graph; just pictures, servers, domains, accounts, all connected with lines.  We had a pretty good understanding of the whole thing.</p>
+
+<p>JACK:	I can just picture it now, a big map on the wall linking everything together with photos of everyone.  It probably looks like a map that the FBI would create when building a case on someone; [00:20:00] red strings connecting everything together.</p>
+
+<p>COMM.:	I feel like thereâs very few people that know as much about ISIS media as me and a couple other guys on the team.  In 2015, if you remember in the summer and early fall, thatâs when ISIS attacks started to really pick up and they started to have those horrific videos and beheadings and kidnappings of Westerners.  The leadership congress and Secretary Carter at the time were getting fed up with all of this going on and having it be all over the news so people were getting a little angry in leadership and they wanted something done about it.  We werenât really doing any ops to counter it at that time.</p>
+
+<p>JACK:	Because they had extensive knowledge of ISIS media, they started to think could we â would it be possible for us to actually disrupt them instead of just spy on them?  They started to devise some plans to actually take down some of ISIS media.  They were developing tactical cyber-attacks to take out a website or take control of it, or delete an entire server.  They came up with a plan to take out just part of a network in one country as sort of a test run to see how effective this would be.</p>
+
+<p>COMM.:	Made it so that we had some confidence in what we could do in our abilities and then General Hawk came back and was like, what do we do now?  How much bigger can we go?  Whatâs the next step?  We said we can go global.  Letâs go global.  [MUSIC] Instead of one country or two countries, letâs go global.  Letâs do everything.</p>
+
+<p>JACK:	After the break, weâll hear how this mission went global.  Stay with us.  The Commander felt like he had the skills and expertise to take out more of ISIS media but the leadership wasnât sure if this was the right course of action.  They needed something else.</p>
+
+<p>COMM.:	The icing on the cake was November.  You had the Paris attacks which were the horrible Paris attacks and that kind of was the final straw to where early December and before Christmas, Secretary Carter said I want options; we have to do something big now.  Up until November 2015, it was all sit, listen, and enable other kinetic operations for the guys on the ground, help inform them to do certain things.  There wasnât a mindset or an appetite at the time for hey, letâs do a strictly cyber-operation to try and stop this media or try to diminish their impact of an attack in the publicity side of things.  We were ready at a tactical level, I felt like, but there wasnât that appetite at higher levels to say oh, we can do something thatâs purely cyber and have an impact on this terrorist apparatus thatâs over there.</p>
+
+<p>JACK:	He was looking over his big map of ISIS media, looking over all the connections, drawing a connection from this system to that system to that network and this person, and making all these connections.  He was looking at the map and all of a sudden it started to make sense; things became crystal clear.  There were a few key nodes that if you were to disrupt or take out these key nodes, the whole thing might come crashing down.  This was a big discovery for the Commander.  He double-checked his work and looked over it again and yeah, this making sense.  This was the way to take out ISIS media.  Attack these nodes and it all unravels.</p>
+
+<p>COMM.:	Thatâs when I had my ah-ha moment, [00:25:00] my Pepe Silvia moment.  Weâve been staring at this data for a long time at all of these lists and information and then in February, it kind of struck me that it was all connected and it was very centralized.  I remember running downstairs to my bossâs office in the basement in NSA and starting to draw on the board circles with names and numbers and drawing the lines together and then saying sir, itâs all connected, itâs all here.  If we take this out, it all goes away or these five things, itâll all fall apart.  Itâs a house of cards.</p>
+
+<p>JACK:	This was a big moment.  The leadership agreed that perhaps using hacking to take out ISIS media would be an effective approach.  With this strategy, a new task force had to be created to handle this.  First, they decided to start creating Joint Task Force ARES, or JTF-ARES for short.  Now, JTF-ARES was formed to carry out a specific mission.</p>
+
+<p>COMM.:	JTF-ARES is just cyber-specialists that focus in offensive cyber-operations against ISIS.</p>
+
+<p>JACK:	Whoa, wicked.  A group of military-trained hackers all coming together to making Joint Task Force ARES specifically to target ISIS and ISIS media.  While this task force was getting spun up, the captains had to decide on what the mission would be.  Now, in my opinion, this is where a major shift in operations took place.  You see, we know that the military and the NSA collects data and they listen for signals and decipher the messages.  Yeah, sometimes they break into a computer to get that data but still, thatâs all it is.  Itâs gathering data from the adversary.  But here, hereâs where a big change takes place.  [MUSIC] See, up until this point, all this team was doing was listening and watching and collecting.</p>
+
+<p>Yeah, they hacked into the enemy to listen and collect but thatâs all they were instructed and legally allowed to do.  But now, leadership is granting them the ability to disrupt, degrade, and destroy the target using cyber-attacks.  This is a big difference.  Itâs kind of like the difference between someone on the roof with a pair of binoculars versus someone on the roof with a long-barreled rifle and a scope with orders to kill.  You see the difference?  They were never allowed to weaponize their hacks to destroy before but now, now theyâre getting permission to do this.  I think this is about to get a little hairy.  But first thingâs first; they need to come up with a name for this cyber-operation.</p>
+
+<p>COMM.:	That is a funny story and Iâm glad that I get to tell you that.  The way that military operations are named is that every unit in a specific AO, in a specific area, gets assigned two letters.  Those two letters have to be the first part of the word that starts their operation.  So, GL was assigned to Marine operations from Cyber Command and so we had to pick the first word to make the operation.  GL; we sat down, a bunch of captains, and tried to come up with the most badass words that started with GL.  We were like Gladiator, Gladius, Global.  Then the second word in the name of an operation is just whatever you want it be.  You can do like, Gladiator Something, or Global Something, and it would all be Global XYZ, Global ABC.  We were coming up with all these cool names or things that we thought were cool.</p>
+
+<p>Then it came down from higher that they were like, the word is Glowing.  We were like, seriously?  Glowing?  Thatâs so not cool.  Letâs pick something thatâs more badass, thatâs more hardcore.  But that was what higher told us.  Then the Symphony part came from â in Marine basic training when youâre calling for fire, so when you have artillery and air support and mortars and machine guns all shooting at the enemy, they say that itâs a symphony of destruction because itâs boom, boom, boom, like in a movie when they play the soundtrack and all the stuffâs blowing up.  Itâs a symphony of destruction.  We just said weâre trying to have a symphony of destruction against the enemy here and take down all of the ISIS servers, domains, e-mails, whatever, at the same time.  Itâs gonna be great.  Then one captain who was the corkiest one of the group was like, well, thatâs the name; Glowing Symphony.  We were like, thatâs so lame, man.  [00:30:00] It canât be that.  He wrote it down and then sent the e-mail so then it became Glowing Symphony.  There was no turning back.</p>
+
+<p>JACK:	Okay.</p>
+
+<p>COMM.:	I know that was a lot to talk about but thereâs only like, ten people who know that.</p>
+
+<p>JACK:	I love it.  [MUSIC] In May of 2016, Task Order 16-0063 was signed by President Barack Obama and Operation Glowing Symphony was a go, or OGS for short, and JTF-ARES was tasked to execute Operation Glowing Symphony with their first mission to take out ISIS media.</p>
+
+<p>COMM.:	I was in JTF-ARES and I was the mission commander for that specific team.</p>
+
+<p>JACK:	This is why I call him the Commander, because heâs the mission commander for all this.</p>
+
+<p>COMM.:	A mission commander is a cyber-com term and a mission commander is the one who oversees a specific cyber-op or a mission for that day.  It would be the same as if a unit goes out on a patrol and walks around enemy territory and comes back.  The leader of that patrol is a cyber mission commander and thatâs what I was.</p>
+
+<p>JACK:	Okay, here we go.  Time to get ready to fire some cyber-bullets.  The commander just spent the last two years learning everything about ISIS media and is more than ready to carry out this mission.  But first, he needed some troops.  He was able to look around in the NSA and Cyber Command and different military branches to find the right candidates.</p>
+
+<p>COMM.:	Yeah, we definitely hand-picked them.  We assembled â I think it was four or five separate teams.</p>
+
+<p>JACK:	Think of each team like a squad of soldiers infiltrating the enemy territory and doing a patrol and an objective.  Each squad has to be independent on their own, being able to make decisions and look for the objective and execute on it.  They had to start assembling these teams.</p>
+
+<p>COMM.:	[MUSIC] There were four people per team.  We had an intel analyst, an operator, a SIGDEV analyst, and then we had the team leader.</p>
+
+<p>JACK:	First, letâs look at what an operator does.</p>
+
+<p>COMM.:	You have a guy whoâs an operator and he is very skilled at setting up the infrastructure, getting to a target, and getting from a target.  Then also, heâs trained on the tools and approved on the tools to use on target.</p>
+
+<p>JACK:	Interesting; not everyone on the team was approved to hit that Delete button or the Enter key.  Only the operator was allowed to actually execute an objective but not only that, this would be an expert on computers; knowing what exploits to use to get into things and how to move around a network once you get in.  This is probably one of their best-trained hackers on the team.</p>
+
+<p>COMM.:	The person that would sit next to him was the SIGDEV signals analyst who understands the tools and the infrastructure but also understands the intricacies of the target like directory structures, domain names, domain admins, and things like that.  Heâll know the larger target network and be able to provide the contacts to that guy on the keyboard.</p>
+
+<p>JACK:	So fascinating.  This is kind of like a navigator of some kind; somebody who knows the lay of the land so well and is like okay, hereâs where the next objective is and hereâs where you have to go next.  Hereâs where this thing will be.  If you go down this way, then youâre gonna find this next thing.  Crazy that thereâs just some person sitting there who knows all this stuff, ready to help.</p>
+
+<p>COMM.:	Then we have another intel analyst who sits to the other side and that intel analyst understands the typical targeting charts, so the face, the phone number, the friends, the terrorist group, the cells, the homes, the addresses, all of that stuff.  He understands that larger picture that can help them when theyâre on target of navigating through things.</p>
+
+<p>JACK:	This is another really valuable person to have on the other side of you.  This is someone whoâs memorized faces and names and friendsâ names, and locations because as youâre working your way through this strange, foreign network, youâre gonna come across words that just donât make any sense, things like server names and network names and domain names, and e-mail addresses, and website names, stuff that when you got in there and saw it, you wouldnât understand what that was unless you had this person sitting right next to you, explaining to you what youâre looking at because theyâve spent the last six months memorizing all of this stuff.</p>
+
+<p>COMM.:	Then the mission commander is the one making sure that it all is going on correctly and that theyâre going to accomplish the mission that theyâre tasked to do, that everybody â weâre all following the rules and not stepping in places we shouldnât go or going in places that are not legally allowed to go to in cyber-space.  Thatâs the team and how it functions.</p>
+
+<p>JACK:	[00:35:00] They started assembling these teams and one team wasnât good enough; they wanted four, or five, or six of these teams.  They started asking around at the NSA, US Cyber Command, or other military branches to see if anyone fits these criteria to recruit them.</p>
+
+<p>COMM.:	Weâve reached out to the other units, asked for these types of quals and the people that we knew that were there.  Then they coughed up those people in the task orders to come over.</p>
+
+<p>JACK:	Amazing; weâve got quite the crack team of highly-skilled hackers now.  This is, what, dozens of military-trained hackers, or troops, soldiers?  All with the resources of the US military behind them.  If they needed to, they can use some pretty cutting-edge hacking tools for this or they can get help from some much smarter people if they need to; linguists, interpreters, code-breakers, developers, or access to aerial photos.  But as theyâre getting the team together, there was tension in the air.</p>
+
+<p>COMM.:	[MUSIC] As in any operation we had, all the accesses that we needed, and we were ready to go forward but we couldnât go forward because we were still deconflicting with the inner agencies and having very high-up approvals come down before we could do it.</p>
+
+<p>JACK:	There was a lot of talk from higher-ups.  They were debating on whether or not this job might be better suited for the FBI or CIA or NSA, or other military branches.  They werenât sure if this is something that Cyber Command should be doing since it hasnât done something like this in the past.</p>
+
+<p>COMM.:	We were sitting there as hackers with all this access and it could go away at any moment, at any point in time.  Theyâd catch onto what youâre doing and then itâs gone and they lock it down.  We were nervous every day that went by that it would go away.</p>
+
+<p>JACK:	It would go away as in ISIL media would catch onto you, is that what you mean?</p>
+
+<p>COMM.:	Yeah, that they would catch onto â we had varying levels of access throughout their network from the people, places, and things.  If they caught onto one part of it, we might not be able to get back.  That would have made the operation less effective and maybe not even worth doing at all.  Every day that went by we were like, nervous that it was gonna go away.</p>
+
+<p>JACK:	Not only was time ticking on all this but there was also a lot of approvals that they had to go through.  I mean after all, itâs the government and the government moves very slowly.</p>
+
+<p>COMM.:	We had to do mission briefs up the chain to each of the higher officers before we went to go do it to make sure that they had confidence in our plan; saying that weâre gonna go out the door, weâre gonna make a right, weâre gonna go for five miles, weâre gonna make a left, then weâre gonna turn right on this street.  We had to tell them everything we were gonna do.  After we presented, the senior operator, myself, theyâd always turn to us and put their hand on our shoulder and say are you sure we can do this?  Are you sure we can do this?  We were always like, yes, sir.  Give me the green light, letâs go, letâs go.  But nobody wanted us to fail because there was so much publicity within the community on it.</p>
+
+<p>JACK:	Okay, now get this; this isnât something the Commander told me about but there was someone else also joining the fight.  Can you guess who?</p>
+
+<p>ANON:	[MUSIC] Greetings, citizens of the world, governments and corporations, and Facebook.  We are Anonymous.  As most of you know by now, we started a cyber war on ISIS.  Just a reminder; ISIS, we will hunt you, take down your sites, accounts, e-mails, and expose you from now on.  No safe place for you online.  You will be treated like a virus and we are the cure.  Remember, we are Anonymous.  We are legion.  We do not forgive.  We do not forget.  Expect us.</p>
+
+<p>JACK:	Yeah, so as the ISIS attacks started happening all over the world, Anonymous joined in on the fight, too.  They were doing things like reporting thousands of ISIS Twitter accounts to Twitter and saying hey, ban these people, and Twitter would.  They would report Facebook users that were ISIS members, and Instagram, all this stuff.  Because the thing is, is one thing that Anonymous is pretty good at is finding out who you are and doxing you.  Theyâre able to root out who these ISIS people are online and report them.  They were getting accounts taken down like crazy.  Some reports say that up to ten thousand accounts were taken down because of the activism that Anonymous was doing in this fight, as well.  At the same time, Anonymous was actually taking down some of ISISâs websites, too.</p>
+
+<p>While this is cool and all, it kind of threw a monkey wrench in some of the intelligence communities.  How can you collect data on ISIS if ISIS is down?  When a website that youâre tracking for years goes down, [00:40:00] why is it down?  Who knocked it down?  Whatâs going on here?  The Commander didnât say but I bet that he was watching this kind of stuff happening and trying to figure out whoâs taking this stuff down.  Iâve heard stories from other people in intelligence who actually got frustrated with this and went into some of the hacker chatrooms and said whoâs the one taking down these websites?  Then having chats with these hackers to like â not so much coordinate things but just back off on this for a little bit while we take care of it.  Weâve got this in our sights and weâre gonna do something real soon; just cool it.  While all these Anonymous operations were going on, approvals were starting to come through for the Operation Glowing Symphony.  Things were starting to shape up.</p>
+
+<p>COMM.:	[MUSIC] You could take the approach of letâs slowly degrade and disrupt it and take it down over time but you risk losing your access, you risk not being able to continue the slow degrading because theyâre gonna learn every time something bad happens and harden their network; the people, the places, and everything that they have.  What we saw with Glowing Symphony was an opportunity to give a massive blow to their operation, to take down everything that we could as fast as we could in one go, and then see whatâs left, and then pick apart the little pieces that were left, the remnants that remained.  Thatâs what the plan was to do, was go in and just decimate as much as we could in the shortest amount of time possible and then maintain engagement with the enemy through until they were no longer.  That was the goal.</p>
+
+<p>JACK:	Oh man, this is getting so good.  You might wonder why Iâm so excited about this because many of you think the NSA and the US Cyber Command are the bad guys; theyâre setting up ways to constantly spy on innocent US civilians and they hoard zero-days and donât tell the vendors that thereâs bugs in the code, or that theyâre trying to make encryption weaker, or make backdoors into things so they can defeat it.  All this does sound bad and scary and I certainly donât like it when the NSA overreaches on what theyâre legally allowed to do.  If anyone at the NSA is doing this kind of stuff, itâs naughty.  Stop it.  Privacy is important to me; please donât try to ruin it.  But Iâm gonna put all that aside for this hour because in this case, in this specific course of action theyâre doing, by decimating ISIS media, I can get behind this and I canât think of many times where hacking to destroy someoneâs computers is a good idea.</p>
+
+<p>At the same time, Iâm excited to peek behind the curtain to see how US Cyber Command executes these missions and thereâs a little part of me that kind of likes to watch chaos and destruction.  Hereâs a moment where I get to see the full force of US Cyber Command unleashing a devastating blow to ISIS.  Doesnât it get you excited too?  I just feel so lucky to hear this firsthand from a commander within USCYBERCOM.  These people are extremely tight-lipped.  In fact, theyâve never claimed responsibility for any cyber-attacks like this, ever.  Now, for the first time, you get to hear what operations are like inside there.  This is crazy.  Sorry, sorry Commander.  Continue.  What are we looking at here?  Whatâs going on?</p>
+
+<p>COMM.:	What they did have from the public view and in open-source intelligence, you could see they had over ten different languages of publication for their magazine.  They had ten different websites at various locations with new domain names every day.  They had domain names, they had web servers that were static IPs that they were spinning up for each specific language, they had magazines that were posted at accounts at free file upload sites where they would push all this stuff out, and the videos to download, and things like that.  We all know that they had tons and tons of social media accounts that they were constantly pulling together.</p>
+
+<p>Itâs already been publically reported; they had tons of telegram groups and tons of telegram accounts, so they have phones and they have e-mail addresses to set up those accounts all across the board.  As theyâre buying servers, you can assess that they have accounts at those specific providers.  They had servers, they had domain names, they had e-mails, they had â you could look at the source code on a web page and see the file sharing server that served up the content for that web server.  They had all of this laid out at a global scale.  They didnât care where it was in the world; they just wanted it to be cheap, fast, and readily accessible.</p>
+
+<p>JACK:	The team spent months gaining access to the network and learning what was in there.  He couldnât go into detail about the techniques used but he did give me a clue that it all starts with e-mail.</p>
+
+<p>COMM.:	[00:45:00] âCause I canât be specific to us but if you look at cyber-operations at large â I think this is in the Hacking Humans Podcast; over 90% of cyber-attacks today start with e-mail and itâs not just a spear phishing link.  Itâs access to that e-mail account.  The username, the e-mail address, and the password.  Thatâs where you can start and you can pivot everywhere from that.</p>
+
+<p>JACK:	Iâve looked into a lot of hacks and whether itâs an APT or just a bunch of teenage hackers, yeah, they love getting into e-mail accounts to poke around.  This is common for hackers and effective for getting more information and to move further into the network.  Getting into an e-mail account is golden.</p>
+
+<p>COMM.:	You can pivot from the e-mail account into the other accounts associated to that e-mail, anything thatâs tied to that e-mail for a password reset.  You can pivot from that e-mail address into the AWS account, into the Cloudflare account, whatever that may be.  The e-mail is the key that is the core piece to pivot through.</p>
+
+<p>JACK:	Whoa, that makes sense.  Yes, of course; if you have access to my e-mail address you could go to another service I have like my web hosting and tell them I lost my password, and theyâll send a link to my e-mail account with the password reset, and if you had access to my e-mail, then you could see that and reset the password.  Yeah, getting access to someoneâs e-mail account can open the doors to tons of other things that person has access to.  Take note on this.  Protect your e-mail access.  Make it a high priority to secure it.  First, give it a long, complex password, then enable two-factor authentication on it.</p>
+
+<p>Make it hard for anyone to get into your e-mail because if someone does get in, they get access to almost everything.  If Operation Glowing Symphony was getting into their e-mail accounts, this was getting them access to a ton of stuff and once they got in, they needed to establish persistence.  This is where they can stay in the network, hidden, unseen, even if how they got in got fixed or patched.  This might be enabling a rootkit or opening a backdoor, or leaving some program running that lets you connect back in later.</p>
+
+<p>COMM.:	We had multiple access vectors into the whole system.  There wasnât just one piece of software or exploit or something.  It was a whole suite of things that gave us the understanding and the access into the network.</p>
+
+<p>JACK:	During this time, they learned about whatâs in the network and they spent time pairing the infrastructure with the exploits they needed to use.  They had a lot of meetings on what the best course of action was to take it all out.</p>
+
+<p>COMM.:	Yeah, if you make it on their list, itâs not a matter of if; itâs just when.  I was amazed working there that any challenge that would come to the folks at NSA or any of the developers, it was just a matter of time before they figured it out.  There was nothing that I saw them throw their hands up and say itâs impossible.  It might not be the way that you thought but they would find a way to answer your question.  Forget where you wanted to go.</p>
+
+<p>JACK:	They assembled all the people into teams and were getting them ready.</p>
+
+<p>COMM.:	We had four or five of those teams because we had so many targets and they each got ten to fifteen targets because we had to do the whole operation as quick as we could because we didnât want the enemy to know once part of the network was being taken down or locked out, and then they start to â they kind of shut us off from getting to the rest.  We had to do it all at the same time before they could catch on.</p>
+
+<p>JACK:	Iâm gonna assume targets are servers, social media accounts, e-mail addresses, bank accounts, mobile accounts, letâs try to completely delete as much as possible.</p>
+
+<p>COMM.:	Yeah, all of those targets were on the docket.  It was lock out, delete, misconfigure, reroute, seize, anything that you could do to stop the network from functioning.  We had to come up with who had which targets and then which ones â it was planned out to a T, down to the keystroke of this is the one that Iâm talking to, this is the one that Iâm going after first, and then second, third, fourth, fifth.  They were pivoting and they were all dependent upon each other.  The other team had their same list of starting with this one and then going down the list and moving and pivoting and working their way through.  We planned that out in detail and rehearsed it in detail prior to the operation.  That was the next step.</p>
+
+<p>JACK:	Thatâs amazing âcause when I was a network engineer, I would get my scripts approved by other people before making a change and I never imagined hackers also getting their scripts approved before â and then practicing it as well.  Thatâs really something.</p>
+
+<p>COMM.:	Oh yeah, [00:50:00] we would â you had your plan drawn out to a T and we scripted it in a test environment to make sure that it worked all the way through, to automate some things.  We automated as much as we could but then you still had to do some hands-on stuff but we tested it.  We had developers and technical directors review before we went to go and do it.  We had an extensive amount of rehearsals before anything was actually executed on the real target.</p>
+
+<p>JACK:	Everyoneâs got their practice on.  This is their primary focus, right?  This is the one operation everyone was working on and focused on?</p>
+
+<p>COMM.:	Yeah.  When you woke up to when you went to bed at night, this team was â it was OGS all day, every day.</p>
+
+<p>JACK:	[MUSIC] OGS is Operation Glowing Symphony in case you were wondering.  Itâs the name of this operation and yeah, the people on the team would come in on nights and weekends to conduct a lot of this preparation because there are certain things you want to do when nobodyâs around to reduce your chances of being caught.  Certain tools and software had to be custom-built to get it just right.  People were working really hard to get everything ready for this cyber-strike.  The last thing they needed to do was pick a time window on when they can do this operation in.</p>
+
+<p>COMM.:	The ten-minute window was picked because thatâs when we knew they werenât gonna be there.  We had profiled everything and knew that this two-hour window was gonna be the timeframe and we wanted â or at least, I wanted everything executed within ten minutes and as quick as we could, at least getting the first foothold.  Once you hit the domain controller, youâre good to go but we had to get the domain controller within ten minutes, kinda thing.</p>
+
+<p>JACK:	Okay, the plan is ready, the people are ready.  After the break, itâs go-time.  Stay with us.  They set up the window, they rallied the troops, literal troops, and they got everyone ready because this was the big day.  All the teams assembled in what they called the Operations Room.</p>
+
+<p>COMM.:	Itâs a pretty big op floor, is what they call it.  It does look like a movie.  There are a lot of screens facing down the command of the USS Enterprise or something like that.  Everybodyâs got two keyboards, four screens, chairs lined up, TVs all across the walls and the front and on the sides with different â what you would see in a SOC, like infrastructures up or down, stoplight charts, world map, rosters, all of thatâs up.  The lights are dim.</p>
+
+<p>JACK:	Looks like everyone is ready.  Time for one last phone call to headquarters.</p>
+
+<p>COMM.:	We were waiting for approval, for final approval, from headquarters over the phone and once they said clear it hot, [MUSIC] then I turned to all the teams on the op floor and then I say letâs go.  They put their heads down and then they hit Shift + Enter on the scripts and the scripts started running.  They started moving through parts of the network, moving through accounts, moving through servers, moving through everything, and executing according to plan.</p>
+
+<p>JACK:	The task unit immediately got to work, running through the checklist exactly as they practiced it over and over in training.  But this was not training; this was live fire on the enemyâs infrastructure.  You could hear the teams talking; click this, go into that directory.  Thatâs it.  Jackpot.  They were running their scripts and conducting their operations, deleting virtual machines, taking over domain controllers, and this would give them access to key infrastructure that they were also destroying.  They were raining down a symphony of cyber-destruction.</p>
+
+<p>COMM.:	We had a large printout probably three feet by six feet tacked up on the wall.  [00:55:00] It had every target printed on it.</p>
+
+<p>JACK:	Every time somebody on the team would accomplish one of their objectives, theyâd run a little piece of paper up to the Commander to let him know whatâs been done.  These pieces of paper had little codes on them.</p>
+
+<p>COMM.:	Theyâd bring me a piece of paper and itâd say like, 1 Delta and then it would say like, hackers or browns and I would know what that meant.  Then I would write it up on the board and report it up on the radio to higher headquarters âcause everybody was tracking everything across the board.  Everybody was dialed in from all across the enterprise to listen in âcause this was such a big event.</p>
+
+<p>JACK:	Things were going great.  The teams were systematically destroying one thing after another within the ISIS media network.  They were hitting targets all over the place, deleting accounts, wiping hard drives, destroying systems in any way they could, rerouting traffic, taking control of accounts, locking out accounts, and wrecking everything in their path.  But then, one of the teams announced they have a problem.</p>
+
+<p>COMM.:	The Operatorâs on the keyboard, everybodyâs there, weâre moving.  We hit a roadblock.  Whatâs your pet name?  Youâre logging in from a different IP; you need to authenticate with a security question.  Weâre like oh man, we donât know this.  [MUSIC] Whatâs your pet name?  How are we gonna figure out this guyâs pet name?  It was one of the core places that we were trying to go.  Everybodyâs heart stopped.  We were like oh, weâre done.  Weâre not going anywhere.</p>
+
+<p>One of the analysts whoâd been on the team with me for three years stands up and is like, 1515.  Weâre like, what?  No way, it says petâs name.  Itâs gotta be Spike or Bob or something like that.  Heâs like no, 1515.  Itâs always 1515 with this guy.  Weâre like, okay, man.  Try 1515.  Boom, weâre in.  Then we continued to move onto the target.  The analysts get to know these guys down to such detail that they can anticipate what these guys are going to do before they actually do it in the technical realm.</p>
+
+<p>JACK:	Whoa, this kind of trips me out.  This kind of highlights the power of what NSA and US Cyber Command has, right?  They can infiltrate someoneâs life so much that they understand their secret question to all the accounts that theyâve ever set up.  Thatâs some pretty deep burrowing into someoneâs network or even their mind.  After that, the task force continued to walk through their objectives, hitting target after target, taking things down, and they had a lot of different types of targets.  An interesting one to me are the financial accounts.  The Commander said these were not the focus of the operation but Iâm going to assume that these did exist and they ran into them sometimes.</p>
+
+<p>COMM.:	Weâre not the FBI.  We canât seize funds and then hold it but if you just get locked out of your PayPal account and thereâs $1,000 in there, that money is essentially gone.  Youâre not going to be able to get it back.</p>
+
+<p>JACK:	This wouldnât be a temporary lock because if the PayPal address was linked to an e-mail and then that e-mail gets taken over, then you can change backup passwords and recovery passwords, and PayPal passwords and everything so that thereâs no way to get back into that PayPal account, ever.  But besides that, ISIS media had some crypto-currencies but with this, you could just delete the private keys to those wallets and youâre never getting back in there, essentially destroying whatever crypto-currency they had.</p>
+
+<p>COMM.:	Yeah, there was a lot of deleting going on so if they were in there, they were gone.  If you delete the private keys for â even if you deleted the private keys â if they were storing the stuff on a virtual server and you deleted the private keys to the virtual server, youâre not getting it back.</p>
+
+<p>JACK:	It sounds like some money was lost during all of this and at this point they have successfully accomplished all of their primary objectives for this mission.</p>
+
+<p>COMM.:	We did it in about ten minutes that we â we got all over our key nodes and targets down in the first ten minutes.  We had control and we knew at that point that they couldnât stop us and we stayed on for the next two to four hours going through the rest of the target list but at that point in time, we could take our time and we knew that they couldnât take it back from us.  It was like, they were totally pwned after ten minutes.  We did have a brief high-five moment of, we got into all of the main core places we needed to go to.  High-five.</p>
+
+<p>[MUSIC] Then it was hey, we still got [01:00:00] to keep moving through the rest of the targets so after our brief moment of happiness we stayed on and kept going, and going, and going.  We found more targets, more domains, more servers, more parts of the network, more files, everything that we could find.  If it was within the approved plan that we had approved, or our left and right lateral limits, then we had effects.  If it wasnât, we wrote it down, catalogued it, and then put it on the target list for the next day.  We worked until we knew that they were coming back and we stopped.  Then we waited.</p>
+
+<p>JACK:	Put yourself in ISIS mediaâs shoes for a second, here; imagine you just got knocked out big time with hacks like youâve never seen before.  All your servers are offline, all your accounts are locked out.  Everythingâs just gone.  What do you do?  You donât just say oh, well, thatâs that.  Letâs be done.  No; you work on trying to restore it.  Thatâs what the IT team is there for, right?  Theyâre not just like, fired immediately.  Theyâre called in to come help right now.  Letâs get everything stood back up.</p>
+
+<p>Immediately, the IT team started trying to stand up their servers again and rebuild their websites and relaunch their e-mail applications because they couldnât even get the e-mails anymore and they were rebuilding file servers and then having to re-issue new accounts for everyone there.  Itâs kind of like building an entire network from scratch all over again or trying to restore from backups.  While this was effective right away, they did see ISIS coming back online slowly and with a lot of trouble.  This made some people wonder whether or not Operation Glowing Symphony was a success or not since ISIS came back online just after.</p>
+
+<p>COMM.:	Iâm obviously biased to the whole thing but I think it was very effective.</p>
+
+<p>JACK:	He canât get into the specifics about how effective this was but if we step back and look at what public information we do know, we see that ISIS was very chatty on Twitter before Operation Glowing Symphony but that number of tweets drastically got reduced right after Operation Glowing Symphony went into effect.</p>
+
+<p>COMM.:	If you donât have a file-sharing server to pass the photos from the front battlefield lines back to the mid-level office, back to the high-level office so they can edit the photos and then use them in the video, or from a field video of a battle where ISIS is winning, getting that video back to somebody at another location to edit it to then upload it, to then put it into a Photoshop editor and make it into a sexy video; if all that takes more time or you break that chain at any point, itâs gonna make your whole production cycle longer.  If you start missing deadlines your brand isnât as good.  Nobody likes a news outlet that has bad logos, bad videos, and delays in releases.  When you impose that on them, it erodes what ISIS media was seeking to be.  People didnât like it as much and they didnât want to do attacks or go fight for them in Syria.</p>
+
+<p>JACK:	One other thing that you would notice if you were following this space at the time, is that after this initial attack from OGS, only 40% of the ISIS websites came back online afterwards.  Those other websites just never showed back up.  But when these new websites came back online, this meant that JTF-ARES had to attack again and so they did.</p>
+
+<p>COMM.:	Once you found a target, submit it up, get it approved, go take it down.  Target; take it down.  Target; take it down.  We stayed on for â OGS continued from that day on for seven months.</p>
+
+<p>JACK:	After taking down ISISâs websites over and over and over, again and again for seven months, they effectively took out 90% of ISISâs websites that just never showed back up.</p>
+
+<p>COMM.:	We didnât have ops every day but for the first thirty days or so, we almost had ops every day.</p>
+
+<p>JACK:	Oh, and another thing you can look at to see how effective this was is the ISIS media magazines that they were putting out.</p>
+
+<p>COMM.:	If you look at â the Rumiyah and the Dabiq magazines were ISISâs flagship magazine.  They came out, they were fifty to sixty pages, high-quality video, great stories, instructions on how to do attacks, recaps of old attacks, they did excerpts with leadership; other ISIS fighters to try and inspire people.  They were very good magazines and productions.  They had them in all the different languages and they were very professional.  When Glowing Symphony [01:05:00] came into play, the Rumiyah magazine was the new magazine.  That was coming out every thirty days, between twenty-eight and thirty days, and it was based off of the Islamic calendar.  At the time, we didnât know that this happened but when I was looking back, we could definitely see the impact.</p>
+
+<p>They wanted it to come out on the first of each day of the month for the Islamic calendar.  The 5:00 news comes on at 5:00, not 5:05, right?  When we looked back at the impacts of Glowing Symphony, the November Rumiyah came out on day thirty-six.  Their average was twenty-eight to thirty and it came out on day thirty-six.  It was very late, almost a week late.  Then they were back on track.  Then other destruction ops and continued operations from OGS came into play.  When we would knock them back, we would see that date be longer.</p>
+
+<p>Then we would see it be longer and if you plot those dates out, the dates get longer and longer until a point where the Rumiyah had been discredited with other operations and effects to a point to where they decided not to do it anymore, that it was unsustainable.  The brand had been damaged and they abandoned it.  It took time for them to give up and for the brand to be fully damaged but the operations to slow down the production, to make it harder, to delete the files, to disrupt the coordination, to do all of that had an impact over time to a point to where they abandoned it.</p>
+
+<p>JACK:	Now as far as I know, the US government has never taken credit for any cyber-attacks like this, ever.  This is the first time ever that theyâve publically said they have destroyed computers using cyber-attacks.</p>
+
+<p>COMM.:	Now that you say that, I think it is that theyâre saying we have conducted offensive cyber-operations against a target.  I think this is the first time.  In the past, the public mission for MARFORCYBER says we conduct offensive cyber-operations in support of the US government.  The mission says offensive cyber and it said that for a long time but I think youâre right; nobody said we did this, we deleted this, we locked out this.  I never thought of it that way but I think youâre right.</p>
+
+<p>JACK:	Itâs still fascinating to me to see that the military trains hackers but I guess this is the natural progression of how the world has become because historically, the military had four domains of warfare; land, sea, air, and space.  But in 1995, they added information as the fifth domain of warfare.  The military has to be ready to battle on this front because if they arenât, the enemy will be attacking us there.</p>
+
+<p>COMM.:	In the military and all services, theyâre building out cyber-branches and cyber-specialities at an entry-level on the enlisted side and at an officerâs side.  Kids from high school with computer skills that want to get into hacking or after you go to college, you want to get into hacking as an officer, there are paths to go right into a cyber-career field in the military.  They have the Blue Team side with the cyber-protection teams and they have the offensive side with the Combat Mission Teams so whichever hat you want to wear; you can go right into those positions with training and begin to execute on target and defense or in offense of the nation.</p>
+
+<p>JACK:	While thatâs the story of Operation Glowing Symphony and JTF-ARES, the story isnât over.  JTF-ARES is still going strong, conducting a lot of missions, even today.</p>
+
+<p>COMM.:	Yeah, JTF-ARES is still rocking and rolling.  Theyâre moving onto new targets every day.</p>
+
+<p>JACK:	Other people involved with JTF-ARES today have said that the attacks still go on and they do things like just annoy their targets, like lock them out of their accounts, or slow down their computer, or slow down their network, or do something to drain the cell phone battery of their target.  The harder that they can make it for their target to get anything done in the day, the more of a success it feels like for JTF-ARES.</p>
+
+<p>COMM.:	The first push was a solid six, seven months of day-on, stay-on, but the ground forces have obviously taken back Syria from ISIS so itâs a lot smaller than what it was in 2016.  But theyâre still in the fight every day.</p>
+
+<p>JACK:	Oh, and as for Mosul; because Iraq didnât have a strong enough army to take back their own town, the US helped invade it and together they kicked out ISIS which put an end to the caliphate.  Itâs a stretch to say that Operation Glowing Symphony helped take back Mosul but if you look at the series [01:10:00] of events, Operation Glowing Symphony probably would have never happened if ISIS didnât take Mosul over in the first place.  You might be thinking the US has conducted destructive cyber-attacks like this all the time, like with Stuxnet but the thing is, is the US has never admitted to doing Stuxnet.  They refuse to talk about it at all.  Whether or not this is the first attack like this, one thing thatâs alarmingly clear now is that the US is in the fight and not just doing signals collection but causing destruction through cyber-attacks.</p>
+
+<p>It just makes me think that now that OGS was successful and JTF-ARES is still conducting these attacks today, I wonder what else this paved the way for.  What other doors got opened because of this?  What other missions have been given the go-ahead to degrade and disrupt enemy networks?  With the connected modern world we live in, a lot is possible such as remotely disabling a car or draining a crypto-wallet, or shutting off the power to a missile silo.  The NSA and Cyber Command have sometimes been accused of going over the line on what theyâre legally allowed to do, like surveilling innocent American people.  But one thing is clear; if someone celebrates the death of Americans or threatens Americans, these are the people who will take full notice of this and go after them.  The general goal and mission of the NSA and Cyber Command is to protect the US from threats like that.  Itâs just fascinating to see what happens and how they go after these people.</p>
+
+<p>You might be wondering how did I really get this interview?  How did I get a mission commander from USCYBERCOM to come tell the story about that time he hacked ISIS?  Well, itâs interesting, actually.  Last year, I think it was some journalists from VICEâs Motherboard who heard about Operation Glowing Symphony; they submitted a freedom of information request to the government to learn more and to all our surprise, the government sent them tons of information about OGS.  It was really incredible to peek behind the curtain for the first time and then in the last few months, a reporter from NPR actually asked the generals and commanders that were involved in this to speak on the record to hear more and again to everyoneâs surprise, approvals were given.  It was around this time that I just happened to bump into the Commander at Defcon while I was there.</p>
+
+<p>We started talking and I heard this story and I was like, oh my gosh, if you are able to speak on NPR about this, is it possible that you could come on my show, Darknet Diaries, and tell me this story?  He went back to US Cyber Command and requested to be on this show and he was given approval.  Unbelievable.  Once I had this episode all done and ready to go, I had to get one last approval from the US government.  People in US Cyber Command or MARFORCYBER had to listen to this to verify that nothing was said that shouldnât have been said.  There were even some generals that had to approve this, too, which is just incredible to me because I thought I would never hear a story from within US Cyber Command about this time that they hacked into anything, much less ISIS so yeah, this is a story that I never thought I would ever get to do.</p>
+
+<p>JACK (OUTRO):	[OUTRO MUSIC] A big thank you to the Commander for sharing this story with us.  This one really, truly, is unbelievable to hear firsthand what you went through.  Thank you again.  Thanks to Major General Glavy for approving him to be on the show.  This show is made by me, cadet Jack Rhysider, reporting in from the darknet division.  Editing help by the sanguine guard, Damienne.  Our theme music is by the sonic assaulter, Breakmaster Cylinder.  Even though someone from the DoD starts following me on LinkedIn every time I say it, this is Darknet Diaries.</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

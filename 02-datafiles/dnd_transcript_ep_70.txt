@@ -1,0 +1,588 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>Ghost Exodus â Darknet Diaries</title>
+	<meta name="description" content="Ghost Exodus is a hacker. He conducted various illegal activities online. Some of which he documents on YouTube. He's also a great musician. He got into some trouble from his hacking. This is his s...">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Ghost Exodus â Darknet Diaries">  
+	<meta name="twitter:description" content="Ghost Exodus is a hacker. He conducted various illegal activities online. Some of which he documents on YouTube. He's also a great musician. He got into some trouble from his hacking. This is his s...">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/ghostexodus.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/70/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Ghost Exodus â Darknet Diaries" />
+	<meta property="og:description"        content="Ghost Exodus is a hacker. He conducted various illegal activities online. Some of which he documents on YouTube. He's also a great musician. He got into some trouble from his hacking. This is his story." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/ghostexodus.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/70/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/ghostexodus.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/70/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="Ghost Exodus â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/ghostexodus.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 70: Ghost Exodus</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://www.podtrac.com/pts/redirect.mp3/traffic.megaphone.fm/ADV9182058840.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/70/",
+			   "title": "Ep 70: Ghost Exodus"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/70">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[START OF RECORDING]
+JACK:	In my early twenties, I worked in a nightclub.  I wasnât doing anything special; just washing dishes and stuff.  But one day I overheard something that I still remember today.  One of the servers was taking a customerâs drink order and for some reason I heard the order. It was standard cocktail for some reason I knew this drink cost $4.00.  When the server came back with the drink, the customer pulled out his cash and asks, how much is it?  The server told him it was $5.00.  She was scamming customers who paid in cash.  She would pocket the $1.00 extra and claim it was a tip, and then give $4.00 to the bartender to ring it up.  Clever stuff.  I was even a little mad I didnât think about it even though I didnât have to deal with money at all, but still, I loved trying to figure out ways to exploit the system in my early twenties.  But whatever; I was now in this new awkward position.  Do I tell management about this?  I get anxiety about stuff like this.
+<!--more--></p>
+
+<p>She might lose her job because of me or maybe even get arrested because of me.  I know some of you are saying no, no, no, it was her actions that caused her to lose her job.  But still, do you understand that feeling Iâm talking about where if you say something, it can have life-changing results for someone else?  I didnât say anything but the nightclub figured it out anyway and she ended up getting fired.  This is a form of insider threat.  She was in a position that she was taking advantage of.  Insider threats are people who are hired by a company and then those people exploit the company that theyâre working for for some kind of extra gain.  Over 50% of companies claim to be victims of insider threats but what does this look like in the hacker world?</p>
+
+<p>(INTRO):	[INTRO MUSIC] These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	Okay, so, do you want to talk to me about probably the worst time of your life?  You ready to relive this moment?</p>
+
+<p>G.EXODUS:	Yeah.  We can relive it.  Letâs do this.</p>
+
+<p>JACK:	Okay.  Letâs start with whatâs your name?</p>
+
+<p>G.EXODUS:	My name is Ghost Exodus.</p>
+
+<p>JACK:	Ghost Exodus.  I like the sound of that.  It actually does sound like a cool hacker name, doesnât it?  But to understand Ghost Exodus, I think itâs important to go back to a time; a time where weâre all waking up, looking around, looking for answers about life.</p>
+
+<p>G.EXODUS:	I was nineteen just turning twenty.</p>
+
+<p>JACK:	The year was 2004 and what Ghost Exodus is about to do is gonna drastically change his life.</p>
+
+<p>G.EXODUS:	Well, I mean, the circumstances involved in my life might surprise you because Iâve never talked about them to anyone before on the internet.</p>
+
+<p>JACK:	But letâs talk about what heâs doing just before this big change.</p>
+
+<p>G.EXODUS:	Prior to that, I was a classical concert pianist.  [PIANO PLAYING WITH MUSIC] Music was pretty much the center-focus to my life.</p>
+
+<p>JACK:	Heâs actually really good at piano and what youâre hearing right now is actually him playing.  Not only that but heâs also really good at violin.  Check this out.  [VIOLIN PLAYING] When he was two years old, his mom and dad split up.  She went to live in another state and gave full custody to his dad.  His dad had other problems and a tough time raising a kid on his own.  By the time Ghost Exodus was ten years old, he was adopted by the family next door.  His mom would send him photos and letters sometimes but he would only be able to see them during psychological counseling sessions.  Eventually, his real mom stopped sending letters and he lost contact with her.  When he was a teenager, he hired a private detective to try to find his biological [00:05:00] mother.  She was living in Texas.  He went to see her; they reunited.  He got to meet his biological brothers and sisters for the first time at nineteen years old.  He decided this was the family he wanted to live with, so he moved in with his biological mother to rebuild his long-lost family.</p>
+
+<p>G.EXODUS:	[MUSIC] My mother was a pastor married to a pastor and because of my music abilities, I became the music director for my familyâs church.</p>
+
+<p>JACK:	It makes sense, right?  He wanted to be part of this family and he can, by playing music in the church that theyâre involved with.  Okay.</p>
+
+<p>G.EXODUS:	But the extent of it was just so extreme that, I donât know, I just felt choked, like all creativity was just being bled from me.</p>
+
+<p>JACK:	The church was very strict and rigid and demanding of Ghost Exodus.  He started wondering if this was a cult, even.</p>
+
+<p>G.EXODUS:	It was led by a megalomaniac.  My life was very micromanaged at the time.</p>
+
+<p>JACK:	What the heck kind of recipe is this?  A twenty-year-old looking for answers in life hires a private eye to find his birth mother, meets his brothers and sisters for the first time, moves in with them, gets inducted into a super-strict church, and is not happy with how his life is being micromanaged.</p>
+
+<p>G.EXODUS:	From 2004 to 2008 is when I was involved with this ministry.  But in 2008, I finally got myself excommunicated.  Thatâs when I just, I donât know, I just let loose.  [MUSIC] I became this eccentric loose cannon.</p>
+
+<p>JACK:	During this time, Ghost Exodus also had an interest in computers; playing video games and downloading pirated software.  But he was also seeing what hacktivists like Anonymous were doing at the time, raising awareness for injustices in the world.  This interested him so he gravitated towards where this kind of stuff was taking place online.</p>
+
+<p>G.EXODUS:	There was a lot of injustice that really affected me by this type of ministry.  Growing up in the rough neighborhoods that I grew up in, I saw this need to use hacking as the means to help people who didnât have a voice and to help people who didnât have the technical capabilities to defend themselves.  This was during a time when cyber-bullying was this type of â itâs like an epidemic.  There were no real, viable means to help people who were experiencing cyber-bullying.  Schools were not up to â did not have a policy that knew how to deal with this.  Law enforcement neither had any type of platforms where they could reach out and help people who were being affected by cyber-bullying.  In my own life, my life being dominated and being controlled, being constantly subjected to ridicule and injustice, I just took my experience and then tried to find some type of solace by helping others.</p>
+
+<p>JACK:	Everyone has their own soft spot for something.  You know itâs your soft spot when you see someone or something suffer and it just tears you up inside.  You canât stop thinking about it.  Ghost Exodus didnât like seeing people getting bullied online because the results are horrible; like, a naÃ¯ve kid might make a YouTube video and speak his mind about something, but he looks a little funny or talks a little funny and he gets mocked and made fun of.  Somebody from the internet decides to get his real name and phone number and try to call him and mock him more, and maybe even call his parents and mock them.  This kind of thing can easily result in years of depression all because you made one stupid video on YouTube.  Ghost Exodus hated to see when the internet trolls would dogpile on someone and ruin that personâs life, so he wanted to do something about it.</p>
+
+<p>G.EXODUS:	I originally was a member of the Insane Masterminds Crew.  I had always been a lone wolf my whole life and I really didnât want recognition.  I didnât want to join my peers doing any type of activities.  I was completely content hacking on my own and learning on my own.  But I had bought some books and I realized how much more I could learn if I had joined a crew.  I found the Insane Masterminds Crew and they had recruited me.  I enjoyed this great camaraderie and I was able to expedite or greatly and vastly learn more in a group setting.  From there, I was like well, if I could be a member of this really cool-ass group, why donât I start a group of my own that is fueled with my own ideals?  [00:10:00] I could recreate it in my own way.</p>
+
+<p>JACK:	Ghost Exodus became better at hacking.  He learned a lot from this crew, so much that he was able to start his own hacking group, and he named it ETA.</p>
+
+<p>G.EXODUS:	[MUSIC] The Electronik Tribulation Army.  Social injustice was the forefront but that was like our buckler and sword.  This is really legitimate.  Iâm not trying to sell myself here.  We became vigilantes and thatâs what I saw myself as, as some type of social justice mechanism to try to reach out and find people who were being affected âcause it was so easy to try to rectify what they were going through.  Then try to empower them by teaching them ways to defend themselves.  I donât know, it started really small with just us doing stupid shit like learning SQL injections and cross-site scripting and phishing.  We didnât really have any type of modus operandi.  We were doing these things for the sheer exploration of it.  I come from a generation where hacking wasnât to make a name for yourself.  That was kind of the direction I was taking the group.  We did things for the sheer curiosity of it.</p>
+
+<p>The internet was like, this great nexus of infinite puzzles and thatâs what kept me going, is that every single nexus in this great, vast network called the internet was like this great, amazing puzzle.  Iâm always really drawn to puzzles so hacking for curiosity is where I started and thatâs where the ETA originated with.  I kind of took the vestiges of my generation and brought it with me.  But as we became more sophisticated and we started bringing in these crazy Jedi hackers, weâve seen that we could do more.  We started evolving into hacktivism and then hacktivism took us into cyber-vigilantism and then that just took us into some really dark places where I started to kind of lose control of myself.  We kind of lost sight of what we had originally wanted to accomplish in those original stages.</p>
+
+<p>JACK:	Like many hacktivist groups, ETA grew and gained momentum.  But the members of the group were getting sloppy, cocky, or trying to outdo each other.  There was this sort of tick-tock swing that became unsustainable.</p>
+
+<p>G.EXODUS:	We just lost control.  I mean, I lost control, letâs just be honest.  I was probably the one who lost control.</p>
+
+<p>JACK:	Yeah?  How so?</p>
+
+<p>G.EXODUS:	It started really getting to my head and it started to take control of my life.  This megalomaniac church cult took everything from me.  It left me with a self-esteem that was completely broken and hacking was a way to rebuild myself.  But in so doing, I became this narcissist, this ego-driven maniac.  I just became this pathological hacker.  The more I did it, the more I boasted of it.  I lost control of who I was until I didnât have an offline life anymore.  At the time, I was married.  I had just had a kid.  I didnât know how to stop.  By 2009, I really realized I had a problem.</p>
+
+<p>JACK:	He started playing around with botnets which simply defined, a botnet is a large group of computers that you control but you donât own, so you really donât have permission to control them.</p>
+
+<p>G.EXODUS:	[MUSIC] When I had seen what they could do, I donât know, my mind was blown.  Theyâre so versatile.  You can use them for good purposes, you can use them for bad purposes.  You can sell them, you can lease them, you can rent them.  I mean, they superseded anything that we were doing like keylogging, host-booters, denial-of-service.  I had seen the potential for using them as this badass freaking weapon that can pretty much â you can do anything.  You can use it to leverage other people.  Itâs just too much power in the hands of â in my hands.  Yeah.</p>
+
+<p>JACK:	Now, the story goes, another guy name Isaac starts messing with Ghost Exodus at this time, doing things like doxing Ghost and calling the cops on him, stuff like that.  But not just that; Isaac was targeting other members of ETA, too, like finding out where one of them lived [00:15:00] and going and vandalizing his house.  Isaacâs motives arenât clear to me and I tried to message him but he never messaged me back.  Iâve watched some of his streams and videos online and he does things that just donât make sense to anyone.  Like, he makes cringy internet prankster videos.  It wasnât just Isaac who was doing this; there were a few other people working with Isaac to do this, too.  My guess is that they were just trying to cause chaos, maybe take over ETA or dissolve it somehow, or just flex in some weird internet way.  I donât know, but when Isaac was doxing and calling the cops on Ghost Exodus, this was really freaking him out.</p>
+
+<p>G.EXODUS:	When these things started to escalate, I really started to panic.  I made the decision to risk everything and make a complaint with the Internet Crime and Complaint Center, hoping that they might involve themselves and try to put an end to what Isaac was doing.  But they never followed through with it and because at this time I had a thirteen-month old child and my wife at the time, she was stressing, I didnât know how to stop this.  What led to my crime was â my crime, in a nutshell, was my taking this circumstance into my own hands, taking the law into my own hands.  What I thought of doing was infecting as many computers as possible in order to launch this botnet attack against some of the websites that these guys were using as a platform to communicate, to collaborate, as a means to send a message to try to show them hey, back off.</p>
+
+<p>JACK:	Now, at the time, Ghost Exodus was working as an overnight security guard in the Carrell Clinic in Dallas, Texas.  This place is huge.  It looks like a hospital; it has six stories and itâs a big building.  But it closes down at night, so thereâs no patients in the building overnight or anyone except security.  This is a clinic that treats spine, shoulder, knee, and ankle injuries.  Ghost Exodus was the night security guard for this building.  [MUSIC] He would walk the grounds and make sure the doors are locked and no vandalism was occurring.  He would often sit in the front lobby of the building where he could watch the security cameras for the entire clinic.</p>
+
+<p>G.EXODUS:	Now, where I worked in the foyer, in the entrance at the Carrell Clinic, they had a wireless access point that was really, really weak.  At nighttime, that was the time when I did my studying.  Thatâs when I did my hacking, and thatâs the time I used to really direct my crew.  But the access point was so weak, it would always drop my connections.</p>
+
+<p>JACK:	So, he started hunting and poking in the network, looking for a computer that had a more reliable internet connection.</p>
+
+<p>G.EXODUS:	I ended up finding this computer which turned out to be a server.</p>
+
+<p>JACK:	This server he got access to controlled the heating, ventilation, and cooling for the whole building.</p>
+
+<p>G.EXODUS:	It ran the SCADA software used to control the heating, ventilating, and air conditioning system for the Carrell Clinic.  But the idea was, Iâm gonna use this computer, Iâm gonna install LogMeIn so I can access it remotely from my laptop at my guard station.  But the firewall was blocking the incoming connection and instead of reconfiguring LogMeIn â excuse me, reconfiguring TeamViewer, I decided to use the browser-based LogMeIn.</p>
+
+<p>JACK:	With that, he was able to establish a persistent remote connection to this HVAC server.</p>
+
+<p>G.EXODUS:	Basically, I used it for chatting on AOL Instant Messenger, using it for MySpace, and I used it to buy card magnets off of Vistaprint.</p>
+
+<p>JACK:	Definitely against the rules of what he should be doing as a security guard.  But Iâm not sure if itâs against the law.  Now, sitting there in a large medical clinic all night long, he started to realize how many computers are in this building.  At the same time, heâs fascinated with botnets and is trying to build one himself, [MUSIC] so he gets the idea to try to get some of the computers in this clinic to join his botnet.  All he would need to do is execute one tiny program on that computer and this would make it join his botnet.  So, during his night patrol, he would wander the halls and look for potential computers he could exploit.  But each computer he came across was locked, password protected.  Unless you were a nurse or a doctor, you would not be able to unlock it.  He looked up how he could get into a locked computer and found a tool called Ophcrack.  See, Windows stores your password as a hash.  Windows creates the hash when you set the password by running it through a special algorithm.</p>
+
+<p>But a hash only works in one direction; you canât take a hash and convert it back to a password.  So, whenever you enter [00:20:00] your password, Windows runs it through that same hashing algorithm and if the resulting hash matches that hash from when you created the password, then Windows knows you entered a matching password.  Ophcrack looks at the hashes stored in Windows and tries to find a password that matches that hash.  Itâs sort of a brute-force password-cracking method because itâs gonna look at millions of hashes to try to find one that matches the one in Windows.  Basically, Ophcrack is a way to find passwords for Windows computers.  But whatâs more is that you could put an Ophcrack CD in a computer and boot to it and itâll try to search through the hashes in Windows to find a matching password to it.</p>
+
+<p>Ghost Exodus loaded Ophcrack on a CD and his botnet on a USB drive and he made his rounds through the clinic, looking for a computer to sit down and use.  He would put the Ophcrack CD in the tray, reboot the computer, wait for Ophcrack to find a password, then heâd write that password down, take the CD out, reboot the computer, and now he has the password to log in with.  Once heâs in, heâd popped the USB drive into the computer and run the malware to join this computer to his botnet.  From there, heâd take the USB drive out, lock the computer, and walk away.  He did it.  It worked.  He had a new node on his botnet so he went and did it again.  But while he was doing it again, he realized this could be a good motivator for some of the other people in his hacking group to do this, too.  He brought a little laptop with him to work, turned on the webcam for it, and made a video.</p>
+
+<p>G.EXODUS:	Hey, whatâs up, everybody?  [JAMES BOND MUSIC] Itâs Ghost Exodus.  Youâre on a mission with me; infiltration.</p>
+
+<p>JACK:	His video has this James Bond music in it and heâs got a hoodie on.  Heâs walking around the building, looking over his shoulder, acting super suspicious, like a spy.</p>
+
+<p>G.EXODUS:	What we gotta do is we gotta drop a botnet.  Oh my gosh, what an audacious bastard.</p>
+
+<p>JACK:	Heâs claiming itâs an office he broke into but you and I know this was the clinic where he worked as a security guard.</p>
+
+<p>G.EXODUS:	I actually purposely avoid that video because it makes me really embarrassed.  Itâs a propaganda video that was aimed at some of the younger generations, some of the younger hackers âcause theyâre so easily impressionable.  I was trying to make this video to inspire them to emulate the things that I was showing in the video, âcause I wanted them to spread our bots.</p>
+
+<p>JACK:	He shows a key card that has the word âsecurityâ written on it with a marker.</p>
+
+<p>G.EXODUS:	I tell my viewers that this was a key card that Iâve swiped.  In other words, I want them to believe that I stole it.</p>
+
+<p>JACK:	He holds up a CD for the camera.  It says Ophcrack on it and he holds up a USB drive which he says has the botnet on it.  He goes up the elevator, walks the halls, uses his key card to get into places, finds a desk, and sits down.  Itâs actually a nurseâs station but the video just seems like itâs a typical office.  He starts typing stuff on the keyboard but then he stops and puts on latex gloves.</p>
+
+<p>G.EXODUS:	Yeah, you know, whatâs funny is I already start touching the computer before I put on the gloves.  All of that was just, yeah, tricks.</p>
+
+<p>JACK:	He gets into the computer using Ophcrack, then plugs the USB stick into it and begins copying files over to the computer.  You can see all this on the video.  The botnet he was using was called Rxbot.  Itâs an open-source botnet made in C++ that anyone can just download and use.</p>
+
+<p>G.EXODUS:	We had done our research of what antivirus software would detect the Rxbot.  On some of these systems, you might actually â I donât know if itâs in the video but they had McAfee Antivirus, so I was disabling it.</p>
+
+<p>JACK:	He disabled the antivirus and ran the program to join this computer to the botnet.  The script runs, then deletes itself.  Jobâs done.</p>
+
+<p>G.EXODUS:	There it goes.  Itâs melted.  Thatâs all I needed.</p>
+
+<p>JACK:	Now, he was building this botnet so he could wage a denial-of-service attack on Isaac on July 4th which was about a month away.  He released this video on YouTube to get other people to be inspired to do similar acts to build up his botnet.  What is the reaction from people when you dropped this video?</p>
+
+<p>G.EXODUS:	It was mixed.  There were some who had the right mind to tell me, you know, Ghost, I donât think this is a good idea.  Ghost, I think this is gonna backfire.  Iâm like no, no, itâs not gonna backfire.  Iâve never been caught, Iâm never gonna get caught.  Iâm too careful.  Then there was other people, those to who it was catered for.  Theyâre just like oh, youâre such a badass, oh, youâre so cool.  Where can we get this botnet?  Thatâs what [00:25:00] drove me, is that type of reaction.  I wanted it to be controversial.  I didnât want it to just always go my way.  That was my objective, to be controversial and to really just create this persona of controversy.  I certainly did that to a T.</p>
+
+<p>JACK:	Ghost Exodus would eventually install this botnet on fourteen computers within the medical clinic.  Then once they were installed, he would go back to the lobby where he would normally sit to do his job, and he would open up his tiny laptop.  From the security desk, he would tell his botnet to attack, [MUSIC] flooding the target computer with so many packets that it would take the target offline.</p>
+
+<p>G.EXODUS:	I tested out the bots, the botnet pool that we had accumulated back in June of 2009 during the Iranian presidential elections, OpIran.  I used these bots in OpIran and in response to the death of Neda Agha-Soltan, that peaceful womenâs rights protester who was murdered.  It didnât cause any significant damage to the systems.  I had actually used the bot several times from there.  But yeah, after we had â after I had installed them, yeah, we had tested them out.  On several occasions, I attacked 94chan with them.  But I especially used them, like I said, in OpIran.</p>
+
+<p>JACK:	When he would have his botnet all put together and enter a target victim and hit launch and see his target go down, this was the feeling of winning.</p>
+
+<p>G.EXODUS:	Itâs euphoria.  Itâs like winning the lottery.  Whatever chemicals are secreted by the brain whenever youâre gambling, thatâs the same feeling.  Thatâs the same chemical reaction that is going on in my mind that just keeps me pathologically doing it over and over and over.  Itâs this great gratification thatâs like, if youâre not gratifying yourself in this fashion, then youâre not relevant, basically.  I donât know, it was a feeling of relevance, of the utmost relevance.</p>
+
+<p>JACK:	I mean, you canât be thinking that this is gonna play out right.</p>
+
+<p>G.EXODUS:	You know, in some of my â I kept an online journal, okay, on vampirefreaks.com.  This was a feeling I had on the forefront of my mind at the time, that I believe Iâm going to be arrested.  I knew that time was coming.</p>
+
+<p>JACK:	After the break, weâll find out if Ghost Exodusâ premonition comes true.  At this point, Ghost Exodus was posting screenshots of this HVAC computer that he hacked into in the clinic.  He didnât say where this HVAC computer was that he accessed; he just wanted to flex a little and get some street cred that he hacked into a computer and this one happened to control the heating and cooling of a building.</p>
+
+<p>G.EXODUS:	There was a new recruit in the ETA who went by the moniker Immortal.  He had taken the screenshots of the HVAC SCADA software that I had taken and posted it on a security blog that was seen by Wesley McGrew.</p>
+
+<p>WESLEY:	My name is Wesley McGrew.  That was 2009.  At that time, I was a research associate at Mississippi State University where I was working on a PhD dissertation [00:30:00] on control â industrial control systems and SCADA security.  There was a tie-in with that and thatâs partially how I got involved with it.</p>
+
+<p>JACK:	Now, Wesley, being a smart student, had a blog where he was just writing stories about information security.</p>
+
+<p>WESLEY:	Called mcgrewsecurity.com.</p>
+
+<p>JACK:	Sometimes hackers would write to him and call out other hackers or brag about what they did, or just send him weird stuff to see if he would post it.</p>
+
+<p>WESLEY:	Another member of the group, he went by the name Immortal, got in touch with me and was in touch with me for a good period of time apparently just to brag about different things to see if I would write about them.</p>
+
+<p>JACK:	Immortal was claiming to be part of the Electronik Tribulation Army and was boasting about what he had done and wanted Wesley to write about it.  I guess Immortal wanted to be famous.</p>
+
+<p>WESLEY:	I was in touch with Immortal over a period of I donât even know how long.  He would message me various things.  The most memorable one of which being â around about that time, there was a North Korean missile test and he had it in his head that he wanted to hack North Korea; this being very difficult due to their limited attack service.  But he thought heâd done it.  He thought he had found a target for his attacks.  He showed it to me via MSN Messenger or AOL Instant Messenger or whatever it was at the time.  I had to let him know that hey, this is a South Korean site.  He didnât know the difference between North and South Korea so that sort of sets the stage there for Immortal.  Later on, and probably a few weeks after that, he was aware either from my site or from something that I had published that I was interested in industrial security systems and SCADA security.  So, he sent me some screenshots of a system that he had claimed to have hacked.  It was screenshots of an HVAC system at a hospital.</p>
+
+<p>JACK:	Wesley was writing his PhD thesis on the security of industrial control systems so this really interested him.  He began investigating it further.</p>
+
+<p>WESLEY:	[MUSIC] At that point, all I had was a set of PNG or JPEG screenshots that he had sent me, static screenshots.  What I saw in those was sort of a â the human-machine interface of this SCADA system showing operating rooms, showing the heating, ventilation, and air conditioning, chillers for medicines and medical equipment and implants and things like that, that sort of stuff.  That piqued my interest right there and I wanted to find out more about it but not through talking to Immortal.  I started doing image searches and open-source intelligence based off the pictures that I was seeing in these HMI screenshots.  I was able to identify this being the Carrell Clinic.  Iâve never physically been there but there are other facilities connected to it that used the same HVAC system.  I was also able to find a forum post on a hacker forum where Ghost Exodus had posted these screenshots saying that he had hacked into these things.</p>
+
+<p>JACK:	While it was a thrill for Ghost Exodus to launch a DDoS attack on his targets, it was also a thrill for Wesley to try to track down who Ghost Exodus was.</p>
+
+<p>WESLEY:	Itâs very exciting, right?  I mean, I donât think anybody â I tell folks even now, I donât do anything I donât enjoy.  Back then, we worked for the forensics training center and loved investigating things, loved doing computer forensics, loved doing the open-source science; still love doing the open-source intelligence thing.  Yeah, it was very exciting and interesting to do that sort of stuff.</p>
+
+<p>JACK:	So much fun that it practically consumed Wesley.</p>
+
+<p>WESLEY:	From there, I wanted to [MUSIC] find out as much about Ghost Exodus as I could.  That being a Thursday, I spent the rest through that weekend amount of time, so, three, four days, gathering as much as I could through open-source intelligence, though searches and various â anything I could to put together what wound up being two burned DVD-fulls of information about Ghost Exodus, who I didnât even know.  Despite finding all this about him, despite finding eight gigs worth of information, I didnât know his name.  I knew that he was a security guard at that hospital.  I had the videos from YouTube of him putting malware onto the nursesâ station computer.  I had other videos that he had recorded while he was at work, [00:35:00] just gigs and gigs of stuff about him.  That following Monday, we contacted the Jackson, Mississippi FBI and handed that information over.</p>
+
+<p>JACK:	Now, the FBI likes handling bigger cases than this; threats against the country or civilians or crimes over one million dollars in damage, but the evidence that Wesley collected made it real easy for the FBI to follow up on.  Like, Ghost Exodus had a YouTube video of him breaking into office buildings.  I mean, come on, if a hackerâs gonna post videos like that and show their face and everything, theyâre definitely asking for a knock on the door, right?  But also, the way Wesley framed it to the feds made it seem pretty important.</p>
+
+<p>WESLEY:	Right, well, I think this is a little bit different than a website defacement or some active hacktivism in that, from all the information and itâs visible about this, itâs a healthcare facility, right?  Itâs patient information.  Peopleâs personal healthcare records are sensitive and thereâs a potential for that to be exposed here or to be accessed in some unauthorized way.  The HVAC system, the controls on that, had the potential to spoil medicines, to cause them to have to re-sterilize equipment, to cause them to have to throw away implants that had gone above or below acceptable temperatures, things like that.  Thereâs an impact of this to the victim organization.  I did not see this as an act of activism that had any particularly positive result.  That sort of factors into the decision to report this.  You report it because itâs a crime and it seems to have â itâll have a [MUSIC] potential real impact on organizations and individuals.</p>
+
+<p>JACK:	The FBI took Wesleyâs report and got to work.  They did some Google searches and found Ghost Exodusâ Gmail address.  From there, they searched for his Gmail address and found a Craigslist post that Ghost Exodus made which had his resume on it but not Ghost Exodusâ real name.  They contacted the security companies on his resume and then cross-referenced it with the security guards working for the Carrell Clinic.  Just like that, they had the name of their suspect.  Ghost Exodus was Jesse McGraw.  The FBI created an indictment for Jesse McGraw and got a warrant for his arrest.  [MUSIC POWERS DOWN]</p>
+
+<p>G.EXODUS:	Itâs Friday evening at 11:00 p.m. on June 26, 2009.  One of the things I used to do was drive around the clinic just to make sure nobody was breaking into the underground parking garage.  I see this van and Iâm thinking, ah, thatâs gotta be the cleaning crewâs van.  I donât think much of it.  [MUSIC] Itâs my last night and Iâm training a new employee who has never worked a shift a day in his life.  Itâs my last night because Iâm also about to start my new job at Global Data Guard as an entry-level network security analyst.  Iâm driving around, I park, I go inside.  I meet the new employee and suddenly, out of nowhere, Iâm surrounded by about three FBI agents and two, I donât know, state police or senior police officers just shouting âwhereâs the gun?  Whereâs the gun?  Whereâs the gun?â  Iâm like, I lock up.  I donât even know whatâs going on.  I still reel from that night.  Iâm like, what gun?</p>
+
+<p>Theyâre like, the one from your video.  Iâm like, which video?  Now, weâre having a shouting match âcause weâre trying to figure this out.  Theyâre like, the one from your MySpace!  Iâm like, which MySpace?  He pulls up his phone and looks.  I was like oh, thatâs fake.  Besides, I canât carry a gun here anyways.  He was like, are you Jesse McGraw?  Iâm like, yes.  Heâs like, are you Ghost Exodus?  Iâm like, maybe.  I canât remember what it was but I think thatâs what I said.  But anyways, what Iâm gonna tell you is being raided by the FBI, thereâs nothing quite like it.  Thereâs a level of sheer terror that they use [00:40:00] to immobilize people that theyâre putting under arrest and to get them to cooperate, to get them to confess.  Just being swarmed like that, I still look over my shoulder to this very day.  Even though I know that that type of thinking is irrational, I still get those feelings.  It pretty much ended very quickly.  They take me down to the station and then they interview me.</p>
+
+<p>Iâve never been arrested before.  He says, if you confess to everything that youâve done here, then maybe the judge will go easy on you.  Hereâs a paper and pen; I know youâre a good writer.  Iâm thinking, maybe if I confess to what Iâve done, I can go home.  I didnât know that I would be incriminating myself.  This is what really sealed my fate.  There was no way I could fight this case after I had self-incriminated.  You know, a lot of people think that once youâve been arrested by law enforcement or the FBI or the Secret Service, that theyâve been watching you, they know everything about you, but that is not true.  âCause if they knew, then they would not need you to confess.  Thatâs something that I had learned years later, was that one of the tactics that law enforcement use other than fear is to convince you that things are gonna go lenient, things are gonna go and work in your favor as long as you confess.  But by self-incriminating, youâre basically handing them â youâre basically signing your life away.  I just didnât see it at the time.</p>
+
+<p>JACK:	So, you fessed up.</p>
+
+<p>G.EXODUS:	I confessed to everything that I had done in relation with the Carrell Clinic.  The one thing I didnât do, and this is pretty well-known, is that I did not give up my friends.</p>
+
+<p>JACK:	The police didnât let him go home that day.  They just put him right in jail.</p>
+
+<p>G.EXODUS:	Iâm transferred to Seagoville Jail where I remained for two years as Iâm fighting my case.  My first week in jail, I was just so terrified.  I didnât shower for a week.  I didnât eat, hardly.  I actually had my cell mate bring me food for a while.</p>
+
+<p>JACK:	Now, once news spread of his arrest, Wesley blogged about this case, claiming he was the one who called the FBI on Ghost Exodus.  As you can imagine, this had some consequences for Wesley.</p>
+
+<p>WESLEY:	I had sex toys mailed to me, I had lots of phone calls.  I have just gigs and gigs of crap here on my computer of logs of them talking about coming to my house and kidnapping me, and just various attacks.  Overall, more bluster than anything.  I donât know that I ever felt personally, physically threatened by any of them but there was a lot of talk and a lot of harassment from other members of McGrawâs hacker group, the Electronik Tribulation Army.  Various members of that group would try to attack my website, denial-of-service attacks.  One of them, he went by the handle Fixer, he was the main bad actor along those lines, along the harassment lines.  Eventually, he pled guilty to charges of CFA, Computer Fraud and Abuse Act, for denial-of-service attacks against my website in order to â as part of an agreement to have charges against him dropped for witness intimidation.  He was the main bad actor on that.</p>
+
+<p>JACK:	When youâre posting it publically, did you kind of expect something like that?</p>
+
+<p>WESLEY:	You know, I really didnât know what to expect one way or the other.  Obviously, thatâs the sort of thing that can happen.  You would think that with the leader of your hacking crew, such as it is, being arrested and having given the feds all of the information about all the members of the crew, youâd think theyâd be on their best behavior and wouldnât want any additional bad attention, but there you go.</p>
+
+<p>JACK:	[MUSIC] Ghost Exodusâ court case dragged on and on.  You might wonder why there would be such a lengthy trial considering he had already confessed to hacking the clinic.  Well, they were trying to pin extra things on him.  [00:45:00] Like, the cops were saying he hacked into NASA but he was saying he didnât do that.  They wanted him to turn in other members of ETA so he could get less time.  But he wasnât gonna turn anyone else in.  This went on for two years before his sentencing and that whole time, he was in jail.  On March 17th, 2011 is your sentencing.</p>
+
+<p>G.EXODUS:	Yes.</p>
+
+<p>JACK:	What did they give you?</p>
+
+<p>G.EXODUS:	110 months which equals nine years.</p>
+
+<p>JACK:	Nine years for two counts?  One was hacking into that HVAC server and the other was installing malicious code on the nursesâ stations.  But remember; he only got into that HVAC computer because his WiFi was spotty and he wanted to browse the internet faster, not because he did anything bad to the HVAC system.  I mean, okay, yes, he did; he wasnât supposed to install remote-control software on that server and he wasnât even supposed to access that system and he did that, but he did it only to chat online and to shop, not to be malicious and attack the clinic or anything else.  You could compare this to him breaking into an office that he shouldnât have gone in just to watch TV or something.  But he was charged as if he stole stuff, caused damage or ruined something.  Itâs just odd here that his intent had nothing to do with his sentence.  The court was harsh on him because this was a medical clinic.</p>
+
+<p>Because what kind of jerk hacks into a medical clinic, right?  The court showed how he had access to patient records and private info but he insisted he never took any of that or looked at any private info at all, and he just used these computers to wage a denial-of-service attack on other computers.  Nine years seems like an awfully long time.  But I think the court didnât recognize or understand the intent and use of these computers.  They simply saw that someone hacked into a bunch of computers at a medical clinic and this seemed to cloud their judgement of what that meant.  I mean, people who are convicted of manslaughter often serve less than nine years.  Not that I think Ghost Exodus should go without punishment, but nine years?  Really?  That just seems extra-harsh.  So, he went to prison for a long, long time.  Spending that long of a time in prison can really mess you up.</p>
+
+<p>G.EXODUS:	Whenever you spend a long time in prison, you get used to the environment.  It becomes a part of you, a part of your psyche.  Youâre controlled on a minute-to-minute, day-to-day, hour-to-hour basis.  You become accustomed to violence.  You become accustomed to all types of things that are only exclusive if youâve ever been a prisoner.</p>
+
+<p>JACK:	At some point, he somehow sneakily borrowed a computer to contact his lawyer while he was in prison.  When he was caught doing this, they threw him in the SHU, [MUSIC] solitary confinement, where he had almost no interaction with other people, very little activity, and itâs extra strict.  He stayed a whole year in the SHU.  This affected him physically and psychologically.  Fluids began collecting in his lungs and he began to lose weight and became very frail.  He describes this experience as torture.  But after thirteen months, he got out of the SHU and was able to serve normal prison time.  After seven and a half years in prison, they let him out on good behavior.  When he got out, he was able to connect with his wife but he was a different person now.  She was a different person, too.</p>
+
+<p>G.EXODUS:	My family was very worried that I was playing them, like I hadnât really changed at all.  Any time I sat down at a computer my wife immediately began to panic âcause she thought I was hacking.  If I said I wasnât, she thought I was lying.  These are things she was revisiting because thatâs how we used to be over a decade ago.  In her mind, Iâm still playing the same games; Iâm still playing them.  But I wasnât.  While I was on home confinement, while serving home confinement through a halfway house, sheâs so afraid that Iâm doing this again that she kicks me out of the house, threatens to call the FBI to search my laptop.  I now realized Iâm in a dangerous situation.  Iâm financially co-dependent.  I have nowhere to go.</p>
+
+<p>JACK:	At the same time, he had a friend who wanted to go to Nigeria to visit some friends and ultimately end up in Israel which would be quite the adventure.  Ghost Exodus knew this guy and thought âthis guy is not gonna be able to make this kind of trip on his own.â</p>
+
+<p>G.EXODUS:	He was just a mamaâs boy, a Cosmopolitan-type of kid, very preppy.  Heâd never had any â doesnât have any street [00:50:00] smarts.</p>
+
+<p>JACK:	The combination of Ghost Exodus needing a place to go and being afraid of the FBI, and this guy wanting to leave the country, go to Nigeria, Ghost decides to go to Nigeria with him.</p>
+
+<p>G.EXODUS:	[MUSIC] Thatâs one of the things that I picked up in prison, is this need to escape âcause you spend years ruminating on leaving.  The environment is so depressing, so stressful, you constantly just daydream and fantasize about escaping.  When you leave prison, sometimes you find yourself in that same feeling because you havenât fully acclimated back to society yet.  I kind of carried that over when I was released.  The extremity of those thoughts or those actions were based on thoughts I had originally had while incarcerated.  What I ended up doing is I started doing research on cargo ships.  I come to find out leaving the country by cargo ships is the easiest way to come in and go undetected.</p>
+
+<p>I ended up getting this commercial marine tracking software.  I end up finding a ship that just so happens to disable its automatic identification system.  Usually when ships disable the AIS system, itâs because theyâre engaged in some type of illegal trafficking activity in international waters.  Iâm tracking this ship; [MUSIC] I hop on a plane, go to Florida, and I amazingly manage to slip past border patrol and customs agents to actually get to this ship without a ticket, without being authorized with a passport, a ticket, and a shuttle.  We go up there and I pose as an Israeli-American.  I explain to him that I am an ivory dealer and that I want them to take me to Nigeria, to take me to Nigeria because my main goal was to try to start over in Israel and I was afraid that customs would turn me back.</p>
+
+<p>JACK:	Now, I should point out here that when he flew from Texas to Miami, he violated his probation and wasnât allowed to leave the state.  But at this point, heâs standing at the docks with his traveling partner, talking to the captain, trying to get on this ship.</p>
+
+<p>G.EXODUS:	I managed to get on the ship.  This ship was very interesting because this company is one of the biggest cargo shipping companies in the world but theyâre also one of the dirtiest.  This is why we specifically selected this as our means to leave the country, because they donât have much of a conscience.  Theyâve been busted several times trafficking weapons to Russia, a disassembled tank to North Korea, and ivory to Florida.  Itâs like, you know what?  This is the shipping company we need.  We get on board and I explain to them, look, I know that youâre disabling your AIS system.  I know you wonât really have a big problem taking us to Nigeria but hereâs the deal; Iâm into ivory, I know that youâre into ivory.  You want to make a buck?  Take us to Nigeria.</p>
+
+<p>JACK:	The captain said, youâre gonna have to pay if you want a ride, you know.  So, the captain gave them a price.  They tried to haggle this down but they just couldnât get the price down to an amount that they could actually pay, so they didnât get a ride out of there.  They waited in Miami for the next ship to arrive, hoping that they might find a better rate.  But by that time, his travel partner had called his mom and told her what they were doing.  His mom thought it was Ghost Exodusâ idea to leave the country, so she called the police on Ghost Exodus.  The police saw this was a violation of his probation to leave the state, so they issued a warrant for his arrest and went down to the docks and arrested him there.</p>
+
+<p>G.EXODUS:	When I was leaving prison the second time, I had nowhere to go.  I had basically burned every bridge I had and I still had probation to serve; three years.  In my mind, I was thinking you know what?  Iâve been locked up for so long, Iâm constantly worried.  Iâve never really decompressed from this experience.  Even in society, I felt like Iâm still locked up.  I still feel that way.  [00:55:00] Having nowhere to go, I just said you know what?  Screw this.  Iâm just gonna go on the run.  When they pick me up, theyâll pick me up.  During that time, I lived in Cedar Hill State Park.</p>
+
+<p>JACK:	He was actually living in a forest, homeless at the time.</p>
+
+<p>G.EXODUS:	My wife notified my mother.  My mother was the one who notified my probation officer who called park authorities.  They actually freaking sent a drone to come and try to find me.  Can you believe that?  Iâve never seen that before.  Iâve never heard that type of whine that those drones make before.  The thought of it just scared the living daylight out of me.  They did this for the better part of about a week looking for me, but they never found me.  But then I found myself on a Greyhound bus going to Onalaska, Texas which is by Goodrich in Lake Livingston and I stayed there for about five months, living in the forest.  On my way back is when I got picked up.</p>
+
+<p>JACK:	âCause of a traffic stop or something?</p>
+
+<p>G.EXODUS:	Exactly.</p>
+
+<p>JACK:	He was given two more years of prison time for this but this time when he would get out, he would have no probation.  The judge saw that he couldnât serve his probation so he just said, youâre gonna have to stay in prison until all your time is served.  But after about a year and a half, they let him go on good behavior which means now, in 2020, heâs finally free; no probation, no more prison time.  He can use electronics if he wants and he could focus on rebuilding his life.  Heâs currently a fry cook since he doesnât have a car, and needs to find a job within walking distance.  In total, he served nine years and eight months in prison all because he installed software on some computers he wasnât supposed to in the very building he was supposed to be protecting from threats.  As for what he plans to do next, he tells me he thinks the forensic examiner on his case was not very good and was one of the reasons he got such a long incarceration, so heâd like to study digital forensics because he doesnât want an incompetent forensics examiner to ruin anyone elseâs life.</p>
+
+<p>(OUTRO):	[OUTRO MUSIC] A big thank you to Jesse McGraw, Ghost Exodus, for coming on the show and sharing your story.  Stay safe out there and good luck in your future.  Also, thanks to Wesley McGrew for coming on and telling us your story.  Wesley has finished his PhD in Computer Science and is now a director at cyber operations for a cyber-security company.  If youâre all caught-up on Darknet Diaries episodes and want more, youâre in luck; there are now six bonus episodes for Patreon subscribers.  By supporting the show through Patreon, it tells me that this show brings value to you.  It also shows a new ethic in supporting something you appreciate, so please visit patreon.com/darknetdiaries to unlock bonus episodes in an ad-free feed.  Thank you very much.  This show is made by me, the local ghost, Jack Rhysider.  Original music and sound design was done by the quick blade Andrew Meriwether, editing help this episode by the mega-biter Damienne, and our theme music is by the bz-bz-beep-beep-bloop-boop Breakmaster Cylinder.  Even though thereâs some CEOs somewhere out there that are now just figuring out what blockchain is and think itâs a cutting-edge technology when actually itâs ten years old now, this is Darknet Diaries.</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

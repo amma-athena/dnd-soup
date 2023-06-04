@@ -1,0 +1,687 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>Dark Caracal â Darknet Diaries</title>
+	<meta name="description" content="A journalist wrote articles critical of the Kazakhstan government. The government did not like this and attempted to silence her. But perhaps they went more than just that. Perhaps they tried to sp...">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Dark Caracal â Darknet Diaries">  
+	<meta name="twitter:description" content="A journalist wrote articles critical of the Kazakhstan government. The government did not like this and attempted to silence her. But perhaps they went more than just that. Perhaps they tried to sp...">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/darkcaracal.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/38/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Dark Caracal â Darknet Diaries" />
+	<meta property="og:description"        content="A journalist wrote articles critical of the Kazakhstan government. The government did not like this and attempted to silence her. But perhaps they went more than just that. Perhaps they tried to spy on her. The EFF investigated this case and went down a very interesting rabbit hole." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/darkcaracal.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/38/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/darkcaracal.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/38/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="Dark Caracal â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/darkcaracal.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 38: Dark Caracal</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://traffic.megaphone.fm/ADV2564803266.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/38/",
+			   "title": "Ep 38: Dark Caracal"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/38">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[FULL TRANSCRIPT]</p>
+
+<p>JACK:	[MUSIC] One of my favorite adventurous activities I used to like doing when I was younger was exploring abandoned buildings.  Iâve been in abandoned schools, banks, industrial plants, churches, hotels, mines, tunnels, and office buildings.  Itâs pretty dangerous but I liked it.  This one time I was exploring an old hospital with a friend and as we were walking through it, we heard a noise in one of the rooms.  We looked inside and there was a cat sitting there, slowly waving its tail back and forth, staring at us.  Right in the middle of the room was an empty cat food bowl.  The cat seemed to be living there and someone was feeding it.  It was strange but we kept walking down the long corridor of this abandoned hospital.  We heard a noise behind us.  I quickly turned around and I swore I saw a door swing closed way at the end of the hallway.  But it was so far away and it was so quick that maybe I didnât see it.
+<!--more--></p>
+
+<p>A lot of the windows were broken in this building and the wind was blowing so I just stood there in the middle of the hall and I stared down it, frozen, looking to see if any of the doors would just swing open or closed by themselves but nothing.  No movement.  No sound.  Did I see someone or was this my imagination?  This creeped us out so we went back down the hallway to leave.  When we got to the room where that cat was, we looked in it.  The cat food bowl was now filled but the cat was nowhere to be found.  A few other doors that were open are now closed.  Without seeing anyone at all, we knew for sure someone was in this abandoned building with us.  They probably saw us and were watching us.  We got out of there pretty quick after that and drove home.  Have you ever been in a situation like this though?  Where youâre positive that something or someone was there watching you but you couldnât quite figure it out?</p>
+
+<p>JACK (INTRO):	[INTRO MUSIC] These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	We have a big story here and thereâs a lot to cover so letâs just get right into it and meet our guest.  Whatâs your name and what do you do?</p>
+
+<p>COOPER:	One second.</p>
+
+<p>JACK:	Itâs not a hard question.</p>
+
+<p>COOPER:	[LAUGHTER] I got to think about which name I want to use.  No, no, I actually needed a drink of water all of a sudden.</p>
+
+<p>JACK:	Oh, okay.</p>
+
+<p>COOPER:	Iâm Cooper Quinton.  I am a senior staff technologist on EFFâs Threat Lab.</p>
+
+<p>JACK:	Threat Lab?  Thereâs a Threat Lab at EFF?</p>
+
+<p>COOPER:	Yeah.  Electronic Frontier Foundation has a new project called Threat Lab.  Our mission is to research and help stop targeted threats against at-risk populations.  This is like lawyers, human rights lawyers, activists, journalists around the world that are being targeted with malware or other digital surveillance techniques.</p>
+
+<p>JACK:	Letâs back up here for a minute.  The EFF is the Electronic Frontier Foundation.  Itâs a non-profit organization and it has a goal of protecting our civil liberties online.  We have them to thank for standing up for us when our digital rights are being threatened.  Itâs a great group of people, full of [00:05:00] lawyers and activists and researchers, and Cooper here is working with them in their Threat Lab.  But the Threat Lab is actually a brand-new thing within the EFF and thereâs an interesting story about how all that came to be and it all starts with Operation Manul?</p>
+
+<p>COOPER:	Yes, Operation Manul.</p>
+
+<p>JACK:	Whatâs a manul?</p>
+
+<p>COOPER:	Itâs named after the manul cat, or Pallas cat which is native to the steps of Kazakhstan.</p>
+
+<p>JACK:	Okay, so thereâs a cat on the steps of Kazakhstan.</p>
+
+<p>COOPER:	Itâs a really expressive amazing cat and I highly recommend looking up pictures of the manul.</p>
+
+<p>JACK:	This is great.  Thereâs like, exotic creatures and places in this story already.  I love it.  Go on.</p>
+
+<p>COOPER:	Operation Manul started when the EFF was representing a woman named Irina Petrushova who is the Editor in Chief of Independent Newspaper which is formally out of Kazakhstan called Respublika.  Respublika had been Kazakhstanâs only source of independent journalism.</p>
+
+<p>JACK:	Right.  Hereâs the first person of our story, Irina Petrushova.  Not only is she a reporter for Respublika but sheâs also the founder of this independent news source in Kazakhstan.  Specifically, she was writing stories and doing reporting on the corruption that goes on within the government of Kazakhstan.  There were a series of financial scandals that she wrote about and the president often hires family and friends to fill certain roles even though there are people much more qualified and willing to fill those roles.  You should know a little about the President of Kazakhstan.  This is the first President of Kazakhstan ever.  He came to power in 1990 and he stayed there until he retired this year.  Yeah, there were âelectionsâ but they didnât appear to be free or fair at all.  Some even go so far as to say Kazakhstan is an authoritarian regime.  When Irina published articles exposing the corruption of this authoritarian regime, somebody really didnât like this and wanted to do everything they could to keep Irina quiet.</p>
+
+<p>COOPER:	[MUSIC] Okay, so first they kill her dog and leave the head of the dog at the front door of the building where they published Respublika from.</p>
+
+<p>JACK:	Jeez.</p>
+
+<p>COOPER:	Then they leave a human skull in front of her office building with a note pinned to it saying, âThere will be no next time.â  Then they followed that up with fire-bombing her office.  The office burned to the ground and thatâs when she finally left Kazakhstan.</p>
+
+<p>JACK:	She fled the country and moved to Russia.  She thought maybe the government of Kazakhstan was behind these personal threats but she didnât stick around to find out.  She was scared for her life.  But she continued to write for Respublika and publish articles about the government of Kazakhstan and one day a big story showed up.</p>
+
+<p>COOPER:	This giant dump of e-mails appeared online on a website called Kazaword.  [MUSIC] These were e-mails leaked from Kazakhstanâs government from Kazakhstanâs president.</p>
+
+<p>JACK:	When this giant dump of e-mails showed up on another website, Irina published stories about it.  The Kazakhstan government was very upset again with Irina and decided to try to silence her.</p>
+
+<p>COOPER:	The government of Kazakhstan sued Respublika and Irina Petrushova in New York district court, claiming that they were responsible for this Kazaword dump of documents and tried to get their â Respublikaâs reporting on this dump of documents taken down from the internet.</p>
+
+<p>JACK:	The case gets under way in New York.  Irina needed some help with this.</p>
+
+<p>COOPER:	At this time Irina contacted us for legal help and we started representing her in court because this would obviously be a violation of the First Amendment.</p>
+
+<p>JACK:	Yeah, it is a violation.  Journalists are allowed to publish documents that are factual in nature.  This judge looked favorably on Irina and the EFF and said Respublika does not need to take down the articles about the leaked e-mails which was a victory for Irina and the EFF, and perhaps historically the EFF would have stopped there and that would have been the end of the case.  But the EFF has a new interest in malware that is associated to things like this now.</p>
+
+<p>COOPER:	At that same time, she and her brother who is also an editor started receiving spear phishing e-mails which were designed to look like they were coming from other activists in Kazakhstan and human rights lawyers working with Kazak people.  The spear phishing e-mails contained attachments that looked like Word docs or PDFs but which were, in fact, malware.</p>
+
+<p>JACK:	One of the things the EFF does is educate people on the dangers of being a journalist that might be a target for hackers.</p>
+
+<p>COOPER:	Yes, exactly.  We had given her some security training and when she got these e-mails, she thought they were a little bit suspicious.  She sent them to us.  [00:10:00] We started looking at them quickly, figured out that the attachments were malware, and then started taking apart the malware to figure out what might be the source of this.</p>
+
+<p>JACK:	This team from EFF started investigating these Word docs and PDF docs.  They found that when you open these attachments it will go download a piece of malware called jRat.</p>
+
+<p>COOPER:	You imbed an exploit in a PDF or a Word doc that the person opens and then that exploit goes and downloads and installs jRat.  Then once jRat is running it can do a lot of different things.  It can turn on your camera, it can capture your screen, it can record audio ambiently in the room, it can go through your files on your computer and create files or delete files or download files.  You can spawn a shell to remotely run commands on the computer, and a bunch more stuff.  The neat thing about jRat is that it works on Windows, Linux, and Mac computers.</p>
+
+<p>JACK:	The Rat part of this jRat malware stands for Remote Access Trojan which means when a user gets infected with jRat the hacker can then remote control that computer, allowing them to download stuff or interact with that computer.  At the time you could buy this piece of malware at jrat.io for about forty dollars in Bitcoin.  This wasnât a sophisticated or expensive piece of malware at all.  But a few more e-mails came in with more attachments and a second piece of malware which also was discovered called Bandook.</p>
+
+<p>COOPER:	Specifically, Bandook was developed by a guy who goes by the name Prince Ali.</p>
+
+<p>JACK:	Weâll learn more about Prince Ali later but Bandook did a lot of the same things that jRat did.  Now, as Cooper and the team at EFF discovered this, they knew they were dealing with something more serious.</p>
+
+<p>COOPER:	[MUSIC] The first reaction is like wow; we really have something here. This isnât just crimeware.  This isnât somebody trying to steal her credit cards.  This is actually somebody trying to undertake digital espionage, right, this is somebody actually trying to spy on her.</p>
+
+<p>JACK:	See, there are a few types of hackers out there; thereâs the common crimeware hackers which usually are a spray-and-pray kind of hacking.  Theyâll just scan the whole internet looking for vulnerabilities or theyâll send out thousands of phishing e-mails.  But then there are the targeted hackers.  These people have a specific objective on a target.  Because these phishing e-mails were crafted just for Irina personally, and the malware wasnât like a Bitcoin miner or ransomware or anything, then this likely means somebody was actively trying to spy on her.  Itâs scary and dangerous to be the target of a hacker like this.</p>
+
+<p>COOPER:	We inform her and she informs her friends and her family and her staff.  They start sending us more suspicious e-mails.  We get a bunch and we get a bunch that all contain jRat or the other malware called Bandook.</p>
+
+<p>JACK:	Her brother started getting phishing e-mails, her family, other people at Respublika, and she was getting more e-mails too.  This was getting more serious now.</p>
+
+<p>COOPER:	[MUSIC] We started looking into the malware and we find the command and control servers.  These are the servers that the malware actually talks to.  These are the servers that the malware sends any files that it gets back to.  Basically, these are the servers that let the person running the malware tell the malware what to do.</p>
+
+<p>JACK:	With malware like this, thereâs often an intermediary computer that files are staged on, uploaded to, and connections are made.  Thatâs what this command and control server is.  When you open a PDF, your computer will then download the malware from that server and when you get infected, your computer will upload data to that server.  You need the server in order for the malware to be successful.  The team at EFF discovered eight different domain names used by this malware and two different command and control servers.  Each of them were hosted by companies notorious for hosting possibly illegal content and protecting its users.  Yeah, again, this doesnât seem like your typical crimeware.</p>
+
+<p>COOPER:	We figured that at least the people who were going after Respublika and after Irina Petrushova were likely doing this on behalf of the government of Kazakhstan.  The government of Kazakhstan is clearly after her.  Theyâre clearly very upset with her for posting negative things about the government.</p>
+
+<p>JACK:	But see, itâs hard to tell for sure.  There just isnât any smoking gun.  Itâs kind of like a puzzle where most of the pieces are all together and you can pretty much tell what the puzzleâs going to look like but you still need that final few pieces to really know for sure.  Okay, remember those e-mails [00:15:00] that got leaked which were the official Kazakhstan government e-mails?  One of them stood out to Cooper.</p>
+
+<p>COOPER:	One of the things we learned from the dump of e-mails is that the President of Kazakhstan had taken out a contract with a private intelligence company called Arcanum Global Intelligence to perform what they called a surveillance data extraction and full spectrum cyber-operation mission to surveil Kazakhstanâs only opposition politician whose name is Ablyazov.  His last name is Ablyazov.</p>
+
+<p>JACK:	We just got started.  We havenât even got to the good stuff yet and already Iâm just blown away by the magnitude this whole thing is.</p>
+
+<p>COOPER:	Oh, itâs crazy.  This is the deepest rabbit hole Iâve ever been down.</p>
+
+<p>JACK:	Okay, so thereâs sort of a smoking gun that says Kazakhstan has historically hired independent hacking teams to spy on the enemy.</p>
+
+<p>COOPER:	The interesting thing and sort of the thesis that I want to get at is that itâs not that Kazakhstan has any cyber-skill.  I hate using that word but letâs go with it.</p>
+
+<p>JACK:	Okay.</p>
+
+<p>COOPER:	Itâs not that they have any â Iâm sure there are many fine hackers in Kazakhstan, right, but the government does not have a cyber-war unit.  They donât have what is it, Israelâsâ¦</p>
+
+<p>JACK:	8200?  Mossad?</p>
+
+<p>COOPER:	Yeah, 8200, exactly.  But what they have is companies that do have this capability that are more than happy to sell it to any nation state that will pay.</p>
+
+<p>JACK:	These for-hire hacking teams really fascinate me and thatâs something Iâm gonna have to dig into for a future episode because there are a lot of groups like this which will carry out hacks or spying or doing signals intelligence for clients.</p>
+
+<p>COOPER:	Because we know this is something that â digital surveillance, digital extraction missions, is the term they use, we know that that is something Kazakhstan is interested in.  All of that spear phishing e-mails seem to demonstrate a pretty good knowledge of Kazakhstan; of politics in Kazakhstan and what might entice Kazak activists to click through and open e-mails.  The majority of the targets that we found were either embroiled in legal disputes with the government of Kazakhstan or are the family members or associates of people involved in those disputes.  We feel like we have a pretty good link to Kazakhstan although no â itâs all circumstantial evidence.</p>
+
+<p>JACK:	They also discovered some malware activity on mobile phones.  What they found wereâ¦</p>
+
+<p>COOPER:	Files that looked like they were uploaded from mobiles phones which led us to believe that there was probably a mobile component to this campaign, although we never actually found, at the time of publishing, we never found the mobile malware.</p>
+
+<p>JACK:	Eva Galperin was also a big part of this research.  You might know her from Twitter as @evacide.  Cooper and Eva put this data together and put it in a report called Operation Manul.  Again, manul being a native cat to Kazakhstan, and they just like cats so why not?  The report was published and they gave a presentation at Black Hat, a big security conference in Las Vegas.</p>
+
+<p>HOST:	Our talk today is presented by Cooper Quinton and Eva Galperin.  [APPLAUSE]</p>
+
+<p>EVA:	Hi there.  Welcome to When Governments Attack, also known as I Got A Letter from the Government the Other Day Because I Couldnât Resist A Public Enemy Reference.  Weâre gonna be talking a little bit aboutâ¦</p>
+
+<p>JACK:	People were a little freaked out with this report, concerned about how easy it is for Kazakhstan to ramp up a cyber-espionage program by outsourcing it.  People wondered how far does this spying go?  At the end of the Black Hat talk, Eva saidâ¦</p>
+
+<p>EVA:	Iâm fairly certain that Cooper and I are less good at this than many of the people who are in this room right now.  I beg you to go look at our report and see the many loose ends that we have left, the many areas in which more research is needed.  It would not be that difficult for people with more skills than us and more resources than us to be helpful.</p>
+
+<p>JACK:	[MUSIC] This call for help worked.  A few new people saw this report and looked into it and found some things that they could help with.  When we come back, weâll hear what they found.</p>
+
+<p>COOPER:	Unbeknownst to us, two researchers at Lookout, the mobile security company, took an interest in this report.  Specifically, they took an interest in the part of the report that said we believe that there are [00:20:00] mobile components to this based on exfiltrated mobile files that we found but we werenât able to find the samples.  Lookout, being a mobile security company, has a big database of mobile malware and of the samples and of the domains that theyâve seen, the malicious domains that theyâve seen.  Mike and Andrew, the researchers at Lookout, start coming through their database and after a little while they find some malware which is talking to the same domains that we had discovered in the Operation Manul report.  [MUSIC] At this point they reach out to us and they say hey, we have this interesting mobile malware.  We would love for you guys to take a look at it.  We think that itâs related to Operation Manul.</p>
+
+<p>JACK:	The team at Lookout called this mobile malware Pallas, P-A-L-L-A-S, which is the other name for the manul cat.  They decided to get together and come to an agreement.</p>
+
+<p>COOPER:	Our arrangement was okay, they will look into the mobile malware.  We will sort of consult with them and think, write a blog post together, and think about what this might mean geopolitically.</p>
+
+<p>JACK:	The team at EFF and the team at Lookout, they team up and they find a couple of new things related to this whole campaign.</p>
+
+<p>COOPER:	We were about to publish a small blog post saying hey, we found some more mobile malware related to Operation Manul.  Here it is and thatâs all, folks.  When I remembered that several months ago when I was researching Operation Manul, we had found all the uploaded files from the malware, from peopleâs infected computers on the command and control servers.</p>
+
+<p>JACK:	When Cooper was investigating Operation Manul, he watched how the malware behaved and he noticed that it does things like take screenshots, and then uploads that to the command and control server.  It puts them in a specific directory.  Well, it just so happens that that directory was visible to anyone on the internet.</p>
+
+<p>COOPER:	In other words, the data was in a location on the file system that you could visit with a web browser without authentication or anything, without even an index file that would hide the file names.  One of the servers was example.com and you would go to example.com/forwardlettercampaignid/pictures and you would see the list of every picture that had been uploaded by that infection.</p>
+
+<p>JACK:	Whoa, this is a big deal.  Cooper had the ability to view and download all the data that this hacking crew had stolen from its victims.  This is what Cooper used to build his report on but forgot to mention it to the Lookout team until just now.</p>
+
+<p>COOPER:	I went to Lookout.  They said oh hey, do you think that it might be useful to look at some of this exfiltrated data?  Their jaws dropped and they were like are you kidding me?  Yes!  Why didnât you say this months ago?  Yes, Jesus, give us the URLs.  This was like, two days before we were gonna publish this little blog post, right.  I showed them the data.  We started looking at the data and we were like oh wait, thereâs actually something much bigger going on here.  This looks like a totally new target.</p>
+
+<p>JACK:	It was a target that wasnât Kazakhstan-related, is that what youâre saying?</p>
+
+<p>COOPER:	Exactly.  It was a target that wasnât Kazakhstan-related.  We start downloading all the data that we could find and we end up with several gigabytesâ worth of data.  Itâs pretty similar data from what we got before; audio recordings, video recordings, files, but we also found SMS messages, call records, WhatsApp, Telegram, and Skype databases, and WiFi details.</p>
+
+<p>JACK:	This data provides the Lookout team a lot more information to investigate but not only that.  There appears to be more victims since the report was published.  The teams decided not to publish a blog post because the investigation just got a lot more interesting.</p>
+
+<p>COOPER:	Exactly.  Thatâs exactly what happened.  This is way bigger than what youâre looking at.  We start looking into this new data and we quickly discover that most of the infections are infections of people in Lebanon [MUSIC] or on the border of Lebanon and Syria.  Looking through it, it appears to be mostly Lebanese civilians.  Thereâs also some military people in there, thereâs some activists in there, just a really wide swath of Lebanese society.</p>
+
+<p>JACK:	Okay.  [00:25:00] When you see okay, Lebanon; this is getting bigger.  What is going through your mind now?</p>
+
+<p>COOPER:	Yeah, so now itâs a real mystery because previously we had assumed that this was the work of a company working on behalf of Kazakhstan, right?  But why would the government of Kazakhstan be spying on Lebanese civilians?</p>
+
+<p>JACK:	Whatâs the relation between Kazakhstan and Lebanon?</p>
+
+<p>COOPER:	Thereâs not much of a relationship, actually.  Or vice versa, if this is the Lebanese why would they be spying on Kazak citizens?</p>
+
+<p>JACK:	Hm.  This is kind of blowing the theory now that the hackers behind this might be from the Kazakhstan government.  All of a sudden, the motives and signals just donât add up.  The teams keep analyzing the data, poring through gigs of photos and text messages and e-mails and keystrokes and WiFi hotspot data and more.  Everything this malware would upload to the server the team would then download and take a look at it.  Then they found another victim; a Vietnamese cigarette importer and this confused them even more.  Around this time Lookout positively identifies the mobile malware being used in this hacking campaign.</p>
+
+<p>COOPER:	The malware itself is pretty standard spyware stuff.</p>
+
+<p>JACK:	Typical spyware mobile malware will enable the microphone, copy text messages, e-mails, turn the camera on, read your private messages, that sort of thing.</p>
+
+<p>COOPER:	But whatâs interesting about it is that it is masquerading as encrypted messaging applications.  The malware is disguised as copies of WhatsApp, Signal, Telegram, Tor, and Threema.  The attackers have actually set up a website called secureandroid.info that has the back door to Trojanized copies of all of these apps.</p>
+
+<p>JACK:	Doing a little bit more investigation, the teams figured out how this whole thing went down.  [MUSIC] The hackers would send an e-mail or a text to an Android phone user saying hey, we need to talk but letâs do it in a secure way.  Download WhatsApp from this URL and then we can have a secure chat.  The link to download the app would be to the hackerâs version of WhatsApp.</p>
+
+<p>COOPER:	The really interesting thing is these were all, in addition to being spyware, working versions of the app still.  When you downloaded this fake version of WhatsApp or this fake version of Signal you would be able to use it like the real version of WhatsApp or of Signal but it would also be spying on you in the background, decrypting your encrypted messages, and sending them to the command and control server.</p>
+
+<p>JACK:	The teams at Lookout and EFF kept seeing more and more data being uploaded to the command and control servers which gave them so much more stuff to go through.  They were seeing many more than six domain names that were being run by this hacker crew.</p>
+
+<p>COOPER:	We found over twenty domains that were connected with this campaign.  The domains were things like adobeair.net, tweetsfb.com, of course secureandroid.info which is hilarious to this day because all it had was insecure android.  Arablivenews.com, and the one I mentioned before, axroute.com, skypeupdate.com, and a bunch more.</p>
+
+<p>JACK:	Each of these sites had a different purpose in this attack.  For instance, secureandroid.info was where e-mails would point the victim to download the malicious program and tweetsfb.com had exact replicas of the Twitter and Facebook login pages which were probably used to trick users to enter their username and password in order to steal their logins.  Some of these other domains were used to upload the stolen data to.  The whole time, tons more victims are being hit with this which means tons more data is being uploaded to these servers, data which Cooper and the team can see.</p>
+
+<p>COOPER:	We find just a massive amount of data.  We found 81 gigabytes of data just on adobeair.net.</p>
+
+<p>JACK:	Oh my gosh.  Itâs all adding up in my head now.  You have behind the scenes access to all the files these hackers are stealing and itâs tons of data and itâs very sensitive, private stuff.  Are you downloading it all and looking at it?</p>
+
+<p>COOPER:	Yeah, and Iâll tell you Jack, itâs heavy stuff to look at because you have to look through all this data to figure out who the victims are, who the threat actors are.  Youâre really looking through peopleâs very [00:30:00] personal data.  You start looking through the pictures uploaded from peopleâs phones and you see pictures of peopleâs kids and pictures from war zones.  You have to find ways to look through all these things to try to figure out whatâs going on here and try to figure out are these victims related to each other in some way?  Why are they being spied on?  Itâs awful.  You feel like a terrible human being and you have to stop.</p>
+
+<p>JACK:	The team combs through the data photo by photo, text by text and they would piece together the puzzle.  They would figure out how the victim got infected by looking for suspicious text messages of people asking them to download an app.  Theyâd try to find info on this victim like where they are in the world and what their job was, and why they might be the target for this kind of spyware attack.</p>
+
+<p>COOPER:	Exactly.  At some point what we did was just started to write a script that would take the IP addresses of all the victims and map them out in the world.</p>
+
+<p>JACK:	[MUSIC] Using GeoIP Lookup tools you can see what city that IP comes from in the world.  The map they made displayed victims being all over the world, not just Kazakhstan and Lebanon but so many more countries.</p>
+
+<p>COOPER:	In this map weâve got victims in Lebanon, Kazakhstan, the United States, China, France, Germany, India, Italy, Jordan, Nepal, the Netherlands, Pakistan, the Philippines, Qatar, Russia, Saudi Arabia, South Korea, Switzerland, Syria, Thailand, Venezuela, and Vietnam.</p>
+
+<p>JACK:	Holy cow.</p>
+
+<p>COOPER:	All over the world.</p>
+
+<p>JACK:	How many countries is that?</p>
+
+<p>COOPER:	We found victims in a total of twenty-one countries all over the world.</p>
+
+<p>JACK:	Okay.  At this point itâs a global threat.  What are you thinking at this point?</p>
+
+<p>COOPER:	At this point weâre thinking wow, whoever this is, they have a really large operation going on here.  Itâs starting to seem less and less likely that this is the work of any one government directly.  What one government would have an interest in spying on so many different people in so many different countries, yet have such low-tech hacking tools and techniques?</p>
+
+<p>JACK:	Good point, yeah.</p>
+
+<p>COOPER:	Such bad operational security, right.  You can think of several governments that might have interest in spying all over the world; Russia, China, the US, Israel.  But they all have fantastic hackers working for them.  They wouldnât be caught dead with such an amateurish operation.</p>
+
+<p>JACK:	Trying to figure out whoâs behind this attack is hard.  But thereâs one method you could use to try to figure it out and itâs called the Diamond Model.  Picture a shape of a diamond in your head.  It has four points, right?  Well, each point represents one piece of the puzzle.  Who did it, how did they do it, who did they do it to, and what tools did they use to do it?  In this case we donât know who did it but we do know the rest.  How they did it was using the malware that was found.  Who they did it to, well, thereâs a list of victims around the world, and what they used was twenty different domains and a couple command and control servers.  This is sort of like algebra and you want to solve for whoâs doing the hacking.  We know three of the parts of the puzzle and just knowing that helps us narrow this down a lot.</p>
+
+<p>Since the victims were all dissidents, activists, lawyers, and journalists, and the point of the malware was simply to spy on these people, we know itâs probably not a profit-driven hack.  You rule out common criminals.  Then you can start assuming this is a nation state actor carrying out these attacks because who else would want to spy on activists and journalists exposing corrupt governments?  But because the malware and tools are not that sophisticated and they didnât secure their command and control servers very well, it doesnât seem like a very good group of hackers which kind of rules out the more advanced nation state actors.  This is the sort of path that you go down when you try to figure out whoâs behind something like this.  This is called attribution.  [MUSIC] I mean at some point, is it hard to sleep at night while youâre researching this?  Digging into the back door of a threat actorâs server and then seeing the size of this, you canât just lay down and go to bed like a baby.</p>
+
+<p>COOPER:	Oh, no.  No, this definitely took up all of my brain space, all of my time, all of my thinking power for several months while I was working on it.  There was really nothing else.  Yeah, sleeping [00:35:00] and thinking about who might come for us once we published this report was [inaudible].</p>
+
+<p>JACK:	As the team at Lookout was putting this report together, they realized a problem.  This whole hacking campaign was still active and live and if they published this report it might mean that other people could figure out where this command and control server was and then they could see all the sensitive stuff that was stolen from the victims.  Michael, the researcher at Lookout, e-mailed the hosting provider where the server was being hosted from and informed them of this hacking going on and asked them to take the server down.  But the hosting provider protected their users and instead of taking the site down, they forwarded the e-mail to the hacker.  The hacker read this and e-mailed Michael at Lookout denying the whole thing, saying that their software does not contain any malware and asked why they thought it was malicious.  Michael e-mails the hacker back.</p>
+
+<p>COOPER:	And said hey, maybe youâve gotten hacked and your domain has been infected.  Weâd love to take a look at it and help you fix your security on your website.</p>
+
+<p>JACK:	A bit cheeky but okay, I get it.  But no response from the hacker.</p>
+
+<p>COOPER:	A couple of days later when weâre looking at one of the infection URLs that we had previously found, we find that the URL has been replaced with a web page that says, âHi Michael.â  Michael being the name of the researcher at Lookout that had e-mailed them.</p>
+
+<p>JACK:	Oh, interesting.  The hacker knew that Michael was onto them but the hacker kept hacking and didnât secure their site.  Itâs like they didnât care if they were being watched.</p>
+
+<p>COOPER:	The other amazing thing that they had left open is they left open this page called Apache Stats which shows you in real-time the logs of the server.  It shows you in real-time every URL thatâs being visited and the IP address thatâs visiting that URL.  We started logging all the URLs and logging all the IP addresses and through that we were able to get the IP addresses of the people visiting the admin URLs for the server.</p>
+
+<p>JACK:	[MUSIC] Now this is getting good.  Knowing the IP addresses of whoâs connecting as an admin to the server will possibly give them a sense of what region in the world these hackers are in.  By this point the EFF and Lookout teams have gathered so much evidence and information from this hacking crew.  Hereâs a list of the stuff they gathered.</p>
+
+<p>COOPER:	264,000 files, 486,000 SMS messages, 250,000 contacts, 150,000 call records, 92,000 browsing history URLs, 1,000 authentication accounts; username and password combinations, and 206,000 unique WiFi SSIDs.</p>
+
+<p>JACK:	Hackers had collected all this information from their victims and the teams at EFF and Lookout scraped all this data from that website and analyzed it.  This is a massive amount of information to analyze.  They had to build new tools to help categorize and organize the data.  While looking at this data, some of it suggested that the phones may not have been infected through phishing since there were no phishing text messages or e-mails.  Instead some peopleâs phones appear to have been confiscated like at a border crossing or an airport because after that, the phone would then become infected and the first text messages uploaded to the hackerâs servers were things like âI just got my phone back.â  With all this information collected, the EFF and Lookout teams decided to switch their attention to try to figure out whoâs behind this.</p>
+
+<p>COOPER:	We start by looking at the IP addresses of the people that were logging into the admin sections of the command and control servers.  Looking at those IP addresses, they were all from Ogero Telecom which is owned by the government of Lebanon.  Geolocating those IP addresses, they were specifically located in Beirut in the museum district in the sort of downtown Beirut.  We were a little bit stuck there.  We were like, why would people in Lebanon be spying on â I mean, it makes sense why theyâd be spying on Lebanese people.  Why would they also be spying on Kazak people?  Why would they also be spying on Vietnamese people and all of these other campaigns?</p>
+
+<p>JACK:	So many questions at this point but theyâre so deep into this, they wanted to solve this mystery.  They looked for more clues.  One of the things this malware does is track what WiFi networks the phone has connected to.  One of the guys from Lookout decides to lay out all the WiFi SSIDs on a heat map which is like a spreadsheet to see if any infected phones had connected to the same SSIDs.</p>
+
+<p>COOPER:	When we graphed them out, we [00:40:00] saw one big cluster of phones connecting to several different WiFi access points.  Then one little cluster where a few phones, a few different infected phones, had all connected to the same WiFi access points.  [MUSIC] We looked at those phones deeper and we discovered that they were all the first infected phones that had uploaded to the server.</p>
+
+<p>JACK:	They looked at the data that these first infected phones had sent to the command and control server and it all seemed like dummy data, like they were test text messages and test e-mails, and testing the downloading of infected apps.</p>
+
+<p>COOPER:	We looked at those test devices and they had all connected to this WiFi called BLD3F6 which we took to mean possibly Building 3, Floor 6.</p>
+
+<p>JACK:	Okay, so the team has a WiFi SSID, BLD3F6, and would like to know where in the world this SSID is being broadcast.  You know what?  There is a way to figure that out.  Thereâs an Android app called Wigle, W-I-G-L-E, and hundreds of thousands of people install it and then drive around your town, your neighborhood, your street, and map out every SSID thatâs being broadcast.  This data is then uploaded to Wigleâs website for everyone to see.  If you have an SSID and want to know where it is in the world, you can cross-reference it with this website to find its location.</p>
+
+<p>COOPER:	We looked up the access point in Wigle and the access point is also in downtown Beirut in the museum district, [MUSIC] centered near this big orange building and the French cultural embassy, and a museum, and a college.</p>
+
+<p>JACK:	Whoa, these clues are really stacking up now.</p>
+
+<p>COOPER:	We wanted to find out more.  We wanted to find out exactly where this was.  We sent somebody to Beirut to actually put boots on the ground and use a wireless antenna and figure out exactly what building this WiFi was coming from.</p>
+
+<p>JACK:	[MUSIC] Jeez, wow.  This is a spy mission now.</p>
+
+<p>COOPER:	Yes.  Yes, suddenly this has turned into a international espionage mission.  What that person found was that BLD3F6 was coming from the big orange building.</p>
+
+<p>JACK:	That big orange building was in the museum district in downtown Beirut, Lebanon.</p>
+
+<p>COOPER:	Which by the way was the only building around with six or more floors.  Itâs the headquarters of Lebanonâs General Directorate of General Security.</p>
+
+<p>JACK:	Whoa.  The Lebanese General Directorate of General Security is one of Lebanonâs intelligence agencies.  Its job is to collect intelligence to ensure national security and public order.</p>
+
+<p>COOPER:	Exactly.  What we have now is a bunch of test devices that had only ever connected to this one WiFi access point and no other phones that were infected had connected to this access point.  This access point was in a building belonging to the General Directorate of General Security.  GDGS is like Lebanonâs FBI, CIA, and NSA, and border patrol all rolled up into one.</p>
+
+<p>JACK:	While itâs not a smoking gun, it strongly suggests that the Lebanese government is behind all of this hacking.</p>
+
+<p>COOPER:	If you remember earlier, I said that one of the pieces of malware used in this was written by a hacker named Prince Ali.</p>
+
+<p>JACK:	Oh yeah, I do remember.  Prince Ali wrote the Bandook malware you found earlier.  I remember because Prince Ali is also the fake name Aladdin uses in the movie.</p>
+
+<p>COOPER:	Prince Ali is based in Lebanon and we know that, if you remember way back many years ago, when the hacking team e-mails were leaked by Phineas Phisherâ¦</p>
+
+<p>JACK:	Iâll have to cover Hacking Team more in another episode because itâs a good story.  But for now, just know thereâs a company calling themselves the Hacking Team and theyâre hackers for hire, essentially.  They often work for high-profile clients like government agencies and one day someone hacked into Hacking Team and exposed a lot of e-mails, letting us know what goes on in that company.</p>
+
+<p>COOPER:	One of the people that shows up in those e-mails is Prince Ali applying for a job at Hacking Team.<br />
+[MUSIC] Another thing that shows up in those e-mails is Lebanon trying to hire Hacking Team to do some hacking, and Kazakhstan trying to hire Hacking Team to do some hacking.</p>
+
+<p>JACK:	Huh.  If Iâm putting these pieces together, Ali may have gotten a job at Hacking Team.</p>
+
+<p>COOPER:	Well, this isnât really Hacking Teamâs MO.</p>
+
+<p>JACK:	Yeah.</p>
+
+<p>COOPER:	We think that Hacking [00:45:00] Team rejected Prince Ali and he or somebody else that knows him has started their own full-service hacking company.  They will deploy the malware, they will run the servers, they will get the data, they will do the hacking, and they will write the reports for you.</p>
+
+<p>JACK:	Wow.  The evidence is suggesting that the Kazakhstan and Lebanese governments both hired the same crew to do spying on behalf of the government.  Maybe Prince Ali is one of the members of this crew.  Perhaps hiring contractors like this gives the government an easy out to deny their involvement, like hacking by proxy.  Itâs crazy.  Is there a name for someone who does this?</p>
+
+<p>COOPER:	Iâve been trying to popularize the term cyber-mercenaries.  I really want to convey just how shady these companies are and I feel like cyber-mercenary kind of does that.</p>
+
+<p>JACK:	Iâm starting to think Prince Ali is the common thread to all this.  Figure out who he is and who heâs working for and everything will unravel.</p>
+
+<p>COOPER:	What we know after this campaign is that somebody was doing hacking on behalf of both Lebanon and Kazakhstan.  Some of that hacking took place directly out of the Lebanese GDGS offices.  One of the malware authors is Lebanese.</p>
+
+<p>JACK:	They also have a list of who the victims are and what kind of malware was used here.</p>
+
+<p>COOPER:	Those are the facts that we have.  The picture that weâve put together from that; this is a new company who has contacts with the GDGS but also was able to figure out contacts with Kazakhstan and also has some other potentially crime campaigns going on or potentially other espionage campaigns thatâs going on Vietnam, and has also victims in the US and in other parts of the world.</p>
+
+<p>JACK:	Letâs not forget that the leaked government official Kazakhstan e-mails show that the government of Kazakhstan was working with Arcanum, a hacker group for hire, or a cyber-mercenary group, and they also tried hiring the hacking team to do work.  Itâs now known that Kazakhstan does do stuff like this and perhaps Prince Ali got a contract with GDGS and demonstrated to them on the sixth floor how he can hack into their phones and thatâs why they were the first targets.  Then this malware has sort of a self-service feature to it so clients can just go log into the command and control server and see whatâs been uploaded.  Thatâs why the logins all seem to be coming from this orange building in downtown Beirut.  At this point the teams at EFF and Lookout feel like theyâve collected enough new information to publish not just a blog post but a forty-nine-page report outlining all of this.  They called that report Dark Caracal.</p>
+
+<p>COOPER:	Caracals are another cat.  Specifically, the caracal is native to Lebanon and we called it Dark Caracal because this whole thing is such a mystery. Itâs all very dark and mysterious. We donât know.  Really, in the end, we donât know who is behind this.  We donât know anything about this.  What we presume is a company thatâs selling this service to all of these countries, we just know â we see the shadows of it but we canât look directly at it.</p>
+
+<p>JACK:	It just seems so big and shadowy.</p>
+
+<p>COOPER:	Oh, yeah.  Yeah.</p>
+
+<p>JACK:	To try to put a perspective on it, itâs so difficult âcause itâs just so hidden and you only get a couple tent poles here and there that you see but you donât really get to see whatâs under the tent.</p>
+
+<p>COOPER:	Exactly, yeah.  Thereâs so much more that I want to know.  For example, Prince Ali wrote Bandook and Bandook has a very specific signature in the way that it communicates with the command and control server.</p>
+
+<p>JACK:	Okay.</p>
+
+<p>COOPER:	It always uses plain text beginning with three @ signs and then tildes to separate each field of data.  When we looked at the mobile malware which we called Dark Caracal, and when we looked at another brand-new Rat that we found in researching Dark Caracal, this looks very similar to jRat but it looks like somebody took a stab at writing from scratch their own version of jRat.  The interesting thing is that CrossRAT, Bandook, [00:50:00] and the Dark Caracal mobile malware all use the same scheme to communicate with the command and control servers.</p>
+
+<p>JACK:	Yeah.  Thatâs another big clue, Iâd say.</p>
+
+<p>COOPER:	They all start with this @ symbol and then they all have their fields separated by a tilde, an exclamation mark, and they have very similar fields to each other.  It looks like the same person wrote all of this malware and we know that Prince Ali wrote Bandook.</p>
+
+<p>JACK:	This is like, do you remember playing the game Clue?</p>
+
+<p>COOPER:	Oh, yeah.  Oh, absolutely.  Itâs like a real-life game of Clue.  [MUSIC] We released the report.  We talked to a number of journalists.  Specifically we talked to some journalists at the Associated Press who are some of the bravest journalists I know because they actually went to the GDGS headquarters, confirmed that the BLD3F6 WiFi access point was there at the headquarters, and then knocked on the door of the headquarters and demanded that the GDGS respond to the allegations in this report.  GDGS told them to go away, that they didnât have any comments except that it was probably all fake.  The next day the AP reporters went back and the BLD3F6 WiFi had mysteriously disappeared.</p>
+
+<p>JACK:	The AP reporters kept pushing GDGS to make a comment about this report.  The Director Major General of the General Directorate of General Security responded.</p>
+
+<p>COOPER:	Basically, the Director of GDGS said we didnât do any such thing as is implicated here in this report.  Even if we had, it would have been all entirely legal and for the good of the country of Lebanon.  Furthermore, this is clearly a CIA or Mossad plot to defame Lebanon.  Iâve been accused of many things but this is the first time Iâve been accused of being a CIA and Mossad shill.</p>
+
+<p>JACK:	The news of this Dark Caracal campaign was pretty important.  This hit all the major news outlets and it was a big deal to discover.</p>
+
+<p>COOPER:	Yeah, so we gave a presentation about this at ShmooCon in Washington, DC.</p>
+
+<p>JACK:	And they gave a presentation at the Kaspersky Summit in Mexico where they had all four of the people from the team to give the presentation on stage there.</p>
+
+<p>COOPER:	The core team that researched this, the core four authors, were myself and Eva.  On the Lookout side, Mike Flossman and Andrew Blaich.</p>
+
+<p>JACK:	[MUSIC] After seeing the success of this research from Cooper and Eva, this paved the way for EFF to create Threat Lab.  There clearly is a need for more research to be done into the spyware thatâs targeting at-risk communities and activists.  Research like this helps us all become more aware of the threats that are lurking in the shadows of the internet. I donât think this Dark Caracal hacking crew is anywhere close to being done.  I think this is the new world we face where corrupt governments are treating activists and journalists and human rights lawyers as the enemy to the country.  Itâs becoming easier than ever for a country to just ramp up its digital spying capabilities by outsourcing the job to cyber-mercenaries.  If this report blew the cover for this hacking crew, the government could just hire the next one in line and start over.  Whatever is going on, itâs just out of focus, just out of reach.  We have this illusion that our computers and phones are safe but when a nation state actor becomes your personal threat actor, your life is anything but safe.  I think the internet and computers are the most magical and amazing things Iâve ever experienced.  Iâm deeply in love with it all.  Stories like this remind me that the owls arenât what they appear to be.  When you look down the long Ethernet cable into the dark part of the net, the darknet sometimes looks back.</p>
+
+<p>JACK (OUTRO):	[OUTRO MUSIC] Youâve been listening to Darknet Diaries.  Thanks so much to Cooper for sharing this story with us.  You can follow him on Twitter at Cooper Q to see so many more interesting things that the Threat Lab is doing.  Also big thanks to Eva Galperin, Andrew Blaich, and Michael Flossman for the research that went into this report.  Itâs amazing, great stuff.  Oh, and another thing that came out of this Threat Lab at EFF was that Eva Galperin has called for antivirus companies to flag stalkerware as malware.  This is like, commonly acquired software thatâs used to target domestic partners to spy on everything theyâre doing.  So far Kaspersky and Lookout [00:55:00] have agreed and are now flagging this as malware.  We have the EFF to thank for help mitigating stalkerware on phones.  The Threat Lab also has an investigative journalist, Dave Maass, whoâs looking into whether thereâs any unlawful spying going on in law enforcement.</p>
+
+<p>Clearly the team in the EFF Threat Lab is doing amazing work at investigating and exposing various kinds of spyware and their efforts are making us more aware and safer as a society.  Their work is far-reaching and impactful and let me emphasize EFF is a non-profit digital rights organization so if you think their work is valuable, consider becoming a member and donating to help their cause, or you can help the EFF by simply giving some of your time.  Go to eff.org/darknetdiaries to learn more.  Oh, and if you want to hear another story from the EFF, check out Episode 12 of this podcast where I go over their involvement in the Crypto Wars.  This episode is created by me, the cyber-toothed tiger, Jack Rhysider and the editing in this episode is done by the dark Damienne.  Theme music is by the shadowy Breakmaster Cylinder.  See you in two weeks.</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

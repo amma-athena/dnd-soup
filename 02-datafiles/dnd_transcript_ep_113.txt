@@ -1,0 +1,927 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>Adam â Darknet Diaries</title>
+	<meta name="description" content="Adam got a job doing IT work at a learning academy. He liked it and was happy there and feeling part of the team. But a strange series of events took him in another direction, that definitely didn'...">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Adam â Darknet Diaries">  
+	<meta name="twitter:description" content="Adam got a job doing IT work at a learning academy. He liked it and was happy there and feeling part of the team. But a strange series of events took him in another direction, that definitely didn'...">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/axe.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/113/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Adam â Darknet Diaries" />
+	<meta property="og:description"        content="Adam got a job doing IT work at a learning academy. He liked it and was happy there and feeling part of the team. But a strange series of events took him in another direction, that definitely didn't make him happy." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/axe.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/113/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/axe.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/113/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="Adam â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/axe.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 113: Adam</h1>
+		
+		  <a href="/categories/#cybercrime"><div class="button button-light">cybercrime</div></a>
+		  &nbsp;
+		
+		  <a href="/categories/#black hat"><div class="button button-light">black hat</div></a>
+		  
+		
+		<p>21 March 2022 | 51:04</p>
+
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://www.podtrac.com/pts/redirect.mp3/traffic.megaphone.fm/ADV2650836711.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/113/",
+			   "title": "Ep 113: Adam",
+			   "subtitle": "51:04"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			
+			    <p><a href="/transcript/113">Full Transcript</a></p>
+			
+
+			
+			
+
+			<p><img src="/imgs/axe.jpg" alt="An axe stuck in a computer rack." /></p>
+
+
+			<p>[START OF RECORDING]</p>
+
+<p>JACK: One time when I was in middle school, my mom bought some cookies at the store and put them in the cupboard.  After school one day, I saw the box and it wasnât opened yet.  I opened it up and took two cookies.  They were so good, so I went back and got two more.  I was still hungry, so I went and got four more and ate them, too.  At this point, I looked and over half the box was gone.  I thought oh no, Iâm gonna be in trouble for eating over half a box of cookies.  I didnât like getting in trouble, [MUSIC] so I stood there and looked at the box and tried thinking what I could do.  But there was no way to undo it, so my twelve-year-old self came up with the idea that maybe if the whole box is completely gone, box and all, then maybe my mom will just forget she bought it altogether.  So, I took the whole box out of the cupboard, covered the area with some other food so it didnât look like anything was missing, and I ate them all.  Then I threw the empty box away in the outside trash bin and covered it up with some more trash.  You know what?  It worked.  She didnât notice.  At least, she never mentioned to me anything about the cookies, and I didnât get in any trouble.  I think she really did forget that she bought them, and so, my plan worked.  I tell you this story because in this episode, youâll hear a similar story, but one with much higher stakes, and it doesnât end so well.
+<!--more-->
+(INTRO):	[INTRO MUSIC] These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	In 2016, Adam applied for his first proper IT job at what weâll call the Academy.</p>
+
+<p>ADAM:	So, itâs essentially a high school.  I think itâs private.  Itâs based in a small town not too far from me.  There were kids right down to starting high school all the way up to just before theyâre ending high school.  The only difference is is I think some of the students are private.  Thatâs pretty much the only way I can describe it.</p>
+
+<p>JACK:	Heâd been looking for a job for a while and was excited to start work at this fancy UK high school.</p>
+
+<p>ADAM:	I started my first day.  Now, in that first day, I got paperwork as you do when you join a new company, and in that paperwork it said please tick here if youâve lived overseas before, so I ticked that box.  Then on the next page it said please go to this box down here, and it says are you willing to pay for a criminal record check in the country you were previously in?  I went oh, okay.</p>
+
+<p>JACK:	This was a problem for Adam.  He did have a criminal record from a past life in another country and wasnât sure how theyâd react to this.  He wondered if this would keep him from getting the job.  Are you smoking a cigarette?</p>
+
+<p>ADAM:	Yeah, sorry.</p>
+
+<p>JACK:	No, itâs fine.  Adamâs dad is from the UK and his mother is from Thailand, but he was born in Australia.  Growing up, he always liked computers.  His dad owned a computer repair shop, [MUSIC] and he loved learning how things worked, and loved playing games like RuneScape, and eventually figured out a way to hack the game in order to get it to do things it wasnât supposed to.</p>
+
+<p>ADAM:	I think it did start with RuneScape for me, the first game I ever played.  So, there was a battlefield where you could play single player, and I started getting into modifying it so there could be more people, more AI players against me.  Thatâs when I started liking it more, if that makes sense.</p>
+
+<p>JACK:	But when Adam starts high school, some unlucky things happen to him.  Some older kids decide to pick on him.</p>
+
+<p>ADAM:	I would have to go and get my dad milk and bread from the shop after heâd come home from work and after I got home from school.  Thatâs when I would usually bump into them.  Most of the time they would take the money that my dad had given me to go get bread and milk or whatever he wanted me to get.  It started off with can I have a dollar to give me a dollar to right, youâre gonna give me everything in your wallet.</p>
+
+<p>JACK:	[MUSIC] Adam knew this wasnât right, but wasnât sure what to do.  These kids were much bigger than him, so standing up to them might mean he gets hurt.  But he was sick of getting his stuff stolen over and over, so he went to the police.</p>
+
+<p>ADAM:	The police would put me in the back of the police car, drive down to where these kids were that were bullying me, make me get out of the police car, and basically get them to say sorry to me, which obviously made things a lot worse.  So, I lost my faith in the police because obviously it did make things worse.  It started getting physical.</p>
+
+<p>JACK:	That move backfired pretty badly.</p>
+
+<p>ADAM:	It stopped being more, so, give me your money, and started being give me your money or Iâm going to punch your face in.  Eventually it got to that point where they were kicking me on the floor, chasing me down alleyways and everything.</p>
+
+<p>JACK:	He gets to the point where heâs scared just to go walk through his neighborhood.  Adam says his coping strategy was just to stop going to school.  He would spend time at home on his computer.  Eventually he gets called into the principalâs office about his attendance.  He tries to explain that heâs being bullied and doesnât want to come to school.</p>
+
+<p>ADAM:	I had just at that point had enough of it.  I was even scared to go around the corners to the corner shop by myself in my own area where I lived, so I would rather just be on the computer.  I guess having friends over the internet was a lot easier than trying to go out and make friends in person at the time.  So, the result of that was they thought that I was just I guess a trouble student and just, yeah, expelled me and sent me to a behavior school.</p>
+
+<p>JACK:	A behavior school in Australia is the place where trouble-making teenagers go as a last chance at education.  We call them alternative schools here in the US.  The one he got sent to was far away from home, which also meant it was far away from those bullies.</p>
+
+<p>ADAM:	It was a really fresh start, and I made a lot of friends.  Now obviously, they didnât know anything about what I was like in my previous high school or what Iâm like in my local area, but I found it very easy to get along with them and get involved in things that I never expected to get involved in.  So, I started hanging out with them, smoking cigarettes, drinking alcohol.  Ended up eventually getting into fights with people, and it just became, I guess, normal for me.  But it was a fresh start, if that makes sense.</p>
+
+<p>JACK:	Adamâs mother is from Thailand, which makes him half-Thai, which means he was hanging out with the other Asian kids at school.  But some of these kids were smoking cigarettes and drinking alcohol.  It turns out that some of them were in an Asian high school gang.</p>
+
+<p>ADAM:	[MUSIC] There was this little Chinese red envelope that they gave me and they said if you want to join us, put one dollar in here and then give it to this guy who was meant to be our boss.  I did the day after school.</p>
+
+<p>JACK:	Adam took this really seriously.</p>
+
+<p>ADAM:	To be honest â and looking back, I find it a little bit funny, but I went to the teacher in the school and I said hey, these guys approached me and they said I should join this gang.  What should I do?  I mean, at the time I thought it was a good idea because from all the bullying and not being liked in high school and being scared of going around the corner to go buy food in my own area to now having what I thought at the time was really, really powerful friends, and no oneâs gonna mess with me anymore.  The main reason it started was because naturally Iâm a very quiet and shy person, so Iâve always been very shy around people, so in groups, Iâm not one to really talk a lot, if that makes sense.</p>
+
+<p>JACK:	From being the kid that everyone used to pick on who was too scared to leave the house, he finds strength in being part of a group.  Now he was someone to be scared of, which gives him a sense of power and strength and safety, and perhaps overly confident, because heâs starting to get into fights at school fairly frequently, and starts selling marijuana too, because this wasnât just a little high school gang; it was actually connected to a larger one.</p>
+
+<p>ADAM:	[MUSIC] So, our boss, who sort of looked after all of us young guys â most of us were under sixteen, seventeen years old.  I think at the time I was one of the oldest ones.  He was I think eighteen and then his boss was I think twenty-four, twenty-five.  Then he had a boss above him who we never saw, but apparently he was in his forties come over from China or something, and he was involved in a more heavier gang that was also running the drug side of this gang.</p>
+
+<p>JACK:	This gang was trafficking drugs and using the high schoolers to try to sell it.  Theyâd hand him some weed and say hey, go sell this.</p>
+
+<p>ADAM:	Weâd have two weeks to sell it.  If we didnât sell it, weâd get taxed for not selling it, so itâs worth I think â off the top of my head, it was worth $200.  Weâd have to sell it for $350.  If we didnât sell it, weâd then have to pay the $350 to our boss as a tax in punishment.</p>
+
+<p>JACK:	Of course, Adam didnât want to be punished, so he found ways to sell the weed as a sixteen year old.  This goes on for a while, but then one day someone told Adam a made-up story about another kid and that this other kid was hurting girls.  That made Adam mad and went looking for this guy, and found him, and beat him up pretty badly.  One of the people that Adam was with took the guyâs phone, and this resulted in Adam getting arrested.</p>
+
+<p>ADAM:	The law is over there that if itâs a serious assault and then someone picks up a mobile phone and puts it in their pocket, so steals a mobile phone, itâs then classified as robbery in company, and that is quite a serious charge to have over there, which is what essentially I got charged with and resulted in me ending up in prison.</p>
+
+<p>JACK:	After Adam gets out of prison, his family decides to move to the UK for a fresh start.  His behavior had been hard on his parents and he didnât want to cause them any more problems.</p>
+
+<p>ADAM:	So, when I got out in Australia, one of the main reasons we wanted to move over here was that I didnât know how to make normal friends, because a normal person to me, from the last four, five years, was someone who wanted to get into a fight every weekend.  I didnât want to get back into that because I didnât want to get taken away, or I didnât want to put myself in a position where I was taken away to prison again.  I was just like, you know what?  I canât do this anymore because if I keep doing this, Iâm gonna either end up dead or back in prison for the rest of my life, in and out.</p>
+
+<p>JACK:	So, it was hard for Adam to integrate himself into society.  A lot was different for him.  He had just come out of prison, he had just moved to the UK, and he didnât have any friends, and wasnât even sure what kind of friends he wanted to make.  Life was weird for a while.</p>
+
+<p>ADAM:	I ended up doing some warehouse work and going back and forth between different jobs.  I ended up as a debt collector at one point.  Eventually led to â I think it was 2016 when I eventually sorta said you know what?  Iâve got skills in computers and IT and my dadâs been for years telling me to get a job in IT.  So, I took the plunge and I jumped straight into an apprenticeship, [MUSIC] which was very bad money, but at the end of it, I would have got my foot in the door within the IT industry.</p>
+
+<p>JACK:	This apprenticeship was where they asked him about his criminal record.  The job was to do IT work at the Academy.  Think of it like a private high school; maybe 1,000 students, and it wasnât too far from where he was living at the time with his parents.  He didnât think theyâd be interested in him, but he applied anyway and they called him in for an interview.  They liked him during the interview and offered him a job.  He took it and was really excited about it, but it was only then when he was getting onboarded and he had to fill out some paperwork that he saw this question; are you willing to pay for a criminal record check?  At no point did any of this come up before.  He put his pen down and met with one of the people who interviewed him.</p>
+
+<p>ADAM:	So, I went and I spoke to one of the â I think it was an assistant principal or something at the time, and I said look, I really got to speak to someone.  Itâs really important.</p>
+
+<p>JACK:	She listened to his story and he told her all about the assault in Australia and how he beat someone up and got arrested.</p>
+
+<p>ADAM:	She turned around and she said okay, thatâs fine.  Well, letâs apply for your criminal record check and weâll â yeah, nothing to worry about.  Now, she didnât put any of that in writing, but yeah.</p>
+
+<p>JACK:	While the criminal record was still being processed, Adam started working at the Academy, thinking they must have known and thought it was okay anyway.  [MUSIC] So, he starts getting training and doing general IT support for the school, things like resetting passwords, replacing broken keyboards, and installing software.  He liked doing IT support and felt like he was part of the team and the school spirit, and was getting to know some of the students and staff.  He was doing good and learning fast.  Now, this school had a lot of computers.  They were in the classrooms and computer labs and in the library and the office, and teachers had some, too.  He was tasked with going around these computers and fixing any issues they might have.  Now, if a computer was connected to the network, he could just log into it with his username and password.  But some computers werenât connected to the network, and for those, Adam had to use the local admin username and password to get into them.  Now, this is different than the domain admin password which can control everything.  The local admin password theoretically only lets you into that one computer.  But the way the Academy set it up is that all the computers used the same local admin password.</p>
+
+<p>ADAM:	All the student computers throughout every classroom in the Academy had a particular password for the local admin account.</p>
+
+<p>JACK:	Adam noticed this pattern which actually is a security issue.  If all the computers use the same local admin password, then having that one password pretty much gets you into everything.  But this made Adam wonder; wait a minute, could this local password also be the global domain admin password, too?</p>
+
+<p>ADAM:	This was probably about a week and a half into the job.  So, the computers in the classrooms have a particular password, and I pretty much â from that particular password, because it was the same one at every single computer in the school, Iâve pretty much figured out what it might be and I asked this guy who I was working with who was more senior than me, and he kinda smiled.  Thatâs what I figured out what the password was.</p>
+
+<p>JACK:	A week and a half into his role as an IT apprentice, and he guessed what the domain admin password was.  This is not good.  Junior employees should probably not have this kind of access early on.  Thereâs a concept in IT called least privilege, which means you should not give users access to more than whatâs necessary for them to do their job.  [MUSIC] While itâs true that nobody gave Adam the global admin password, he was able to easily guess what it was based on patterns of what he saw in the first week there.  This really is bad practice too, since the admin password should be the most guarded and protected password on the network, and not so easily guessable.</p>
+
+<p>ADAM:	As far as Iâm aware, there was one admin account which had full access across the entire network infrastructure that had one particular password, and then every employee had one particular password which is very easy to guess.  All their network was set up in a way with a certain prefix that was used for every one.</p>
+
+<p>JACK:	Oh, right; sometimes schools will assign passwords which is a combination of your name and birthday or something.  So, if you just know someoneâs name and you know the pattern, all you gotta do is find out their birthday and now you can have access to their account.  A better method is to force users to pick a password when they sign up for their account.  This way, thereâs just no default password at all.  As time goes on, Adam becomes more aware of these issues and the passwords, but heâs still too new to really do anything about it.  Part of him doesnât really know if this is a problem, and part of him doesnât really know how to fix it.  Part of him just wants to follow what heâs supposed to do and not call the current system crap.  A few months go by of him working there, and thatâs when the school finally got his criminal record back and took a look at it.</p>
+
+<p>ADAM:	When they got it back, they then turned around and pulled me into the office in front of the principal, and she said you didnât declare this.  I said well, yes I did.  I spoke to you â spoke to this lady, and she said donât worry.  It was her exact words.  I said yes, and she goes well, youâre gonna have to worry.  Unfortunately we canât keep you here.  Youâre sacked, basically.</p>
+
+<p>JACK:	[MUSIC] The school didnât want people who had a criminal record for assault working around children.  But to Adam who had been trying his best to make a new life, this felt like a betrayal.</p>
+
+<p>ADAM:	For them to turn around and say right, we canât have you here, I was angry.  From my perspective at the time, I had wasted the last month or two months or whatever it was trying to learn and getting used to the school, making friends with the IT department, the teachers, for them to turn around and just say no, we donât care whether youâre changed or youâve done things to make yourself better; end of the day, you canât be here.</p>
+
+<p>JACK:	While the school was investigating his background they also discovered something else about him. Reports of this story say Adam was posting classified ads saying he had some computers for sale but then wasnât actually giving anyone computers that he was selling. I donât know the full details of that, but this combined with this criminal past is why the school let him go.</p>
+
+<p>Adam was angry.  He wanted to do something, but there was nothing to do about it.  Itâs not okay to lash out on someone just for firing him over this, so begrudgingly, he moves on.  He gets a different IT job, and this one theyâre fine with his past.  It was never an issue for them.  He picks up a lot of new IT skills at this job.  He learned about domain controllers, Active Directory, Office 365, and managing computers and using Microsoft tools.  At the same time, he liked playing first-person shooter games online, and this led him into the online game cheat community.  That led him into learning more about hacking and exploiting computers.  But all that was just innocent stuff, though.  After a while, he took his newly-acquired skills and went and got an even better IT job, this time as a senior technician, which taught him even more new skills.  After a few years of working in IT, Adamâs life was looking up.  He had a job as a senior technician, he had a relationship, and after being scared to get to know people for so long, he really put himself out there and started to make friends.  [MUSIC] But all this changes after a bad breakup in October of 2020.</p>
+
+<p>ADAM:	I guess it really was crushing.  I got into a really deep depression.  I wasnât too pleased with the job that I was in because I felt at the time that I was being heavily underpaid for what I was actually doing.  I donât think everything was â at the time and even now, things werenât very good.</p>
+
+<p>JACK:	His personal problems made him restless and he was starting to grow frustrated at work.  One of his supervisors was always giving him a hard time about something.  All this added up and it made it hard for him to sleep at night.  So, he spends a lot of late nights playing video games and looking at hacker websites and forums, learning about malware and how to break into systems, and what you could do if you did break into something, like how to read other peopleâs e-mails or cover your tracks or read messages on Teams and Slack without people knowing.  Late one night in January of 2021, after watching a film, he goes to check his e-mail before bed and notices something.</p>
+
+<p>ADAM:	My e-mail address in the autofill for the Academy popped up.  I thought oh, I think thereâs a lot of curiosity just to see if theyâd change it, because it had been a long time now.  Obviously the first thought in my mind is yeah, they definitely changed the password to the admin Office 365 account.</p>
+
+<p>JACK:	The Academy fired him four years ago, but he still had that local admin password memorized for the computers there.  Now that he knows a lot more about computers, he was curious to see, one, if that was still a valid password, and two, if it was also the domain admin password.  [MUSIC] So, he goes to the Office 365 login screen, which is just office.com.  This is the tool the Academy used to manage the schoolâs network, like usernames and e-mail boxes and that sort of thing.  He goes to the Office 365 login screen, he types in the schoolâs domain, and the admin username, and the admin password, which he still had memorized all this time.  What do you know, it worked.  First try, even.  He was logged into the schoolâs admin portal on Office 365.</p>
+
+<p>ADAM:	I felt like it was an achievement at the time because â I was more surprised that it worked because obviously itâs been so many years now.  I would have thought from working in IT that youâd change passwords more often, if that makes sense.  It felt like an achievement getting in, and then it kind of progressed onto being motivated to find out how much more I can get to.</p>
+
+<p>JACK:	From within the Office 365 portal, one could potentially configure and view the computers in the network.  You could see what users there are, reset their passwords, look at what e-mail accounts there are, configure Skype, see SharePoint sites, and look at and configure the Active Directory settings.  Itâs the heart of the network.  This is what makes everything else function at the school.  He hadnât really thought about the Academy that much since being fired, and he learned so much since then.  Specifically, he now really knew his way around Office 365.  But since he got into the Academyâs admin panel, he was curious to see what was their setup like.  How good was their security?  He decides to poke around, but just looking though; no touching.</p>
+
+<p>ADAM:	So, the account I was on only had access to certain things like changing usersâ passwords.  Now, this was what I can understand was just sort of the lower-level IT guyâs account that they used.  I wanted to get access to more permissions, so I had to look through the groups, and I found three accounts with â in particular which had super administrator access, so essentially giving me free reign over the entire Office 365 side of things.  I identified who they were.  One of the first things Iâd done after Iâd done that was I went into â they call it eDiscovery on Office 365, and I went in there and just made sure that there was no alerts.</p>
+
+<p>JACK:	[MUSIC] This is something Adam had learned on his own time since getting fired at the Academy.  He knew what kind of security alerts would generate just by being there, and was watching to see if he was triggering any of them.</p>
+
+<p>ADAM:	Then I changed passwords for one of the accounts that had super administrator rights.  Changed the password and logged into it, and went through some of the e-mails, just having a look round, seeing what other things they had on their setup, domains that were connected to Office 365.</p>
+
+<p>JACK:	Oh, well, this is no longer just looking anymore.  Heâs changed a superuserâs password and logged in as them and is reading their e-mails.  Heâs done whatâs called privilege escalation.  The first login didnât have all the permissions he wanted, so he switched to this account which did give him all the control and access he wanted.  So, now heâs basically in god mode.  With the click of a button, he could bring down the whole network if he wanted, but he didnât want to; he was still just curious and wanted to look around.</p>
+
+<p>ADAM:	So, I think at the time, my thought process was just, I want to find out as much as possible without doing as much damage.  So, changing this one particular password, I firstly looked at that account just to see if it was being used.  So, after I got it, I checked that there was no alerts.  I then set â delegated mailbox access to that account so I could check the inbox and see if anyone had been using it, you know, sending e-mails out, reading e-mails, which they hadnât.  I had figured that no one was using it, no one was gonna care.  If someone tries to log in it in five, six weeks, theyâll just say oh, I forgot the password, and change it.</p>
+
+<p>JACK:	At this point, itâs now 1:00 in the morning, and specifically itâs Saturday morning, January 16th, 2021.  So far, Adam has full superuser access to Office 365 for the Academy, but this is a Cloud portal and while the computers in the Academy get their configuration and authorization from the Cloud portal, heâs not actually in the schoolâs network or any of their computers in the school.  Heâs curious to see if he can actually get in there.  He remembers there was a way for the IT staff to VPN into the school from home.  A VPN  is a secure, private connection to the internal school network.  So, his curiosity is leading him to see if he can find VPN access into the schoolâs network.  [MUSIC] He starts looking through e-mails to try to find a VPN password.</p>
+
+<p>ADAM:	I happened to come across on one of the Help Desk accounts â had sent an e-mail out to someone, basically with a file, a VPN file, and told them to use a certain prefix and characters for their password, which I, at that point, then switched from Office 365, the website, closed that down, and I was very determined to get into their network no matter what.  So, I didnât know what password it was, I didnât know what account I had to use.  I spent maybe the next two hours trying to get into it.  They had a method of saving passwords, which again surprised me that they had kept the same method, but it was quite simple once I had guessed the Office 365 one to follow the pattern.</p>
+
+<p>JACK:	After a few hours at guessing VPN passwords, he finally gets it.  He successfully VPNs into the schoolâs network, which means heâs connected to the school as if heâs inside the school itself.  But heâs at home and he hasnât hidden his tracks at all; heâs made all these connections to Office 365 and the VPN directly from his homeâs network connection.  Adam realized that and it was like that moment when I ate that half-box of cookies and I realized I had gone too far; Adam had crossed the line and all his activity could easily be traced back to him.  He had to think about what he should do.</p>
+
+<p>ADAM:	When I did get into it, I think this is where the turning point was where I thought, right, Iâve not done anything to hide myself at all, and this has turned from just me being curious to more malicious now, and Iâve got myself in trouble, basically.  Thereâs no way around it.  Theyâre gonna easily find this person logged in from this IP address at this time.  Whoâs that person?  Donât know who they are.  Letâs report it to the police.  So, I think thatâs when the tables had turned to more destruction.</p>
+
+<p>JACK:	[MUSIC] He gets up out of his chair and does something else for a little bit just to think about the situation.  His real IP which is registered under his real name is what he used to do all this with.  Yeah, he crossed the line a few times with what heâs done already; changing passwords, reading e-mails, and brute-forcing his way into the VPN.  He thought surely heâs going to be in trouble for this.</p>
+
+<p>ADAM:	I know whatâs gonna happen.  Thereâs a fifty percent chance theyâll come in and theyâll say oh, why isnât this password working anymore?  Whoâs changed this?  Theyâll do a little internal investigation and theyâll conclude that someoneâs been on the network and theyâll just change passwords.  Or thereâs a fifty percent chance that theyâll look deeper into it and call the police.  Calling the police is what I wanted to avoid, so I couldnât avoid it, so my next thoughts were, right, letâs try and get rid of as much as possible to try and cover my tracks.</p>
+
+<p>JACK:	So, heâs in the network but doesnât know which computer heâs on.  He wants to learn more about the network and uses an IP scanner to get a lay of the land, which gives him a list of all the computers in the network.  He figures out heâs on the main computer that everyone logs into from home, but thereâs nothing good on this computer.  The main infrastructure with all the good stuff is where he wants to get into, but thatâs on a different part of the network.  So, he consults the spreadsheet of all the computers he found earlier and picks his next target.</p>
+
+<p>ADAM:	[MUSIC] So, I found a computer which was in the â I believe it was in the IT workshop somewhere, and I had thought that maybe if I could get into that computer, then there might be an RDP icon saved which saved credentials that might get into the domain controller.</p>
+
+<p>JACK:	What heâs doing is a classic example of lateral movement, which is the foundation of a lot of cyber attacks.  Itâs when the attacker manages to get a foothold in one system and then pivots around the network, hopping from one system to another until they find what theyâre looking for.  At each step, thereâs a vulnerability that can be used to get closer to the target.  Adam kept hopping from one system to another to try to get to the computer he wanted, and not having strong passwords in a network really helped him get around a lot easier.  Eventually, Adam was able to Remote Desktop to a computer, and from there, Remote Desktop to another computer which was in the IT workshop.</p>
+
+<p>ADAM:	Then from there, as Iâd thought might be the case, there was sort of saved credentials.  I think there was domain controller 1, domain controller 2, there was a backup server, I think there was a gateway server, and a couple other servers as well.  I think at that point I had realized how far Iâd come into the network.  I basically had access to everything from now.</p>
+
+<p>JACK:	Just from knowing the schoolâs domain and guessing the admin password that he thought he knew years ago, Adam has worked his way into the entire infrastructure in just a few hours.</p>
+
+<p>ADAM:	From what I remember, was once I had gained access to all the infrastructure, I had then started [MUSIC] the process of wiping the entire servers that I was on.  As I was doing that, I went onto office.com and I saw a list of devices.</p>
+
+<p>JACK:	He sees a list of all the devices connected to the mail server.  Now, this is thousands of mobile devices.  Itâs every phone and tablet that had e-mail access.  Now, most of these were devices owned by either teachers, students, or parents, which had all connected to Office 365 to get their e-mails and files.</p>
+
+<p>ADAM:	I highlighted the box to select all and I clicked the Wipe button.</p>
+
+<p>JACK:	When you log into Outlook from your personal device, youâll get a prompt saying do you want to add this organization to your device?  But what you might not know is doing so can give the administrator the power to fully wipe your entire mobile device.  This is actually a security feature; if you lose your phone, the IT admin can wipe the device which makes it so nobody can see what was on that phone, because you donât want the wrong person seeing sensitive information.  But whatâs crazy is the IT admin can wipe thousands of devices with just a few clicks.  Adam had just attempted to wipe 2,947 devices through his access that he had on Office 365.  People would be waking up to their phone being factory reset.  [MUSIC] All their pictures, texts, and files completely gone.  Once that was done, Adam took a look at the domain controller itself to see what he can do on that.</p>
+
+<p>ADAM:	There was a command that we had used in the company that I was working with a couple times to just do a complete wipe.  Essentially, the command makes the computer or server not be able to boot because it deletes everything.  Itâs a take ownership of all folders and then it deletes all folders, basically.  I ran that on I think the domain controller.</p>
+
+<p>JACK:	Okay, so, this isnât just wiping your tracks.  You knew this.</p>
+
+<p>ADAM:	Yeah.</p>
+
+<p>JACK:	This is wiping out the entire â I mean, their â the heart of the infrastructure.</p>
+
+<p>ADAM:	Yeah, and I think at this point it was well, if Iâm gonna get caught, I might as well get them back for what theyâd done to me.  I think that was my thinking at the time.  It was very destructive, malicious actions.  It was like, right, letâs just release all the anger, everything that Iâve had against them and just wipe everything, make their life as difficult as it can be on Monday morning.</p>
+
+<p>JACK:	What about backups?</p>
+
+<p>ADAM:	There was a backup server and a secondary backup server that I started running the commands on.  It was at that point that I found this IP address just on this spreadsheet and it had nothing written next to it, so there was two IP addresses with a username and password in that document, which was a completely separate username and password from any of the methods that I had used to get in previously, so I was a bit interested to find out what it was.  Then surprisingly, when I logged into it, it was a hypervisor, basically, and it had those two hypervisors.</p>
+
+<p>JACK:	What he logged into was a virtual machine host.  That is, this one computer housed and controlled many other computers inside it, and it was from this host machine that he could do whatever he wanted to the subsystems, such as delete them entirely, and it was on this virtual machine where the backups were for this network.</p>
+
+<p>ADAM:	The backups were completely wiped as well.  I mean, all of these actions are really stupid and I think at the time I just thought this is their backup server; this is probably everything they have.</p>
+
+<p>JACK:	From here, he works his way backwards out of the network, deleting, destroying, or degrading every computer that he could log into on his way out.  When he tries to log back into some servers, all he sees is a black screen.  The last thing he deletes were all the user accounts, making it so nobody had a valid login anymore.  Adam was letting out a lifetime of anger, and I donât think it was just from how this school treated him, but it was from how previous schools treated him and how bullies treated him, and this recent breakup made him feel, and the anger he was getting from his current job.  There have been multiple times in his life where he felt like a victim and was powerless, and he even went to the police for help when he was a kid, which didnât actually help at all.  Then there was a time when he joined a gang and saw a glimpse of power and strength in numbers, but that escalated out of control and he wound up in prison.  But now that sense of power has returned, power over the network, power over those who have wronged him, and he was exercising that power with great vengeance and furious anger.  Whatâs it like at the end of all this?  âCause I mean, by the time youâre done, youâre just leaving a wreckage of smoldering â youâve ruined everything.</p>
+
+<p>ADAM:	Yeah.</p>
+
+<p>JACK:	Whatâs that feeling like at the end of all that?</p>
+
+<p>ADAM:	It was more â so, getting towards the end of doing what I had done, it was more panic.  I guess I wanted to go to sleep, but I also wanted to process what I had actually just done.  So, it was all kind of â went very quickly.  There wasnât really much thought process or time to think about what I was doing, other than just do it, just get it over and done with.  So, I finished up and I think I went to sleep.</p>
+
+<p>JACK:	This attack was pretty devastating for the school.  The UK was on lockdown due to the pandemic at the time, and the students were remote learning from home.  Adam had obliterated the Academyâs whole infrastructure, meaning students couldnât connect to school and there were no shared drives.  SharePoint was down, e-mails were down, and absolutely none of the logins worked.  But it hadnât just wiped out the schoolâs infrastructure; many of the studentsâ and teachersâ devices that connected to the school were also wiped, too.  Hundreds, maybe thousands of devices were screwed up from this.  Somewhere around 5:00 AM, he crashes for the night.  The next day, he wakes up and checks back in.  Itâs bad.  The servers are all offline still, but he finds a few more things that are still up, and he logs into them and uninstalls some key software on those systems, too.  Then he logs out of everything altogether and just thinks about what happened.</p>
+
+<p>ADAM:	I was worried about what was going on.  I was searching on Google to see if thereâs been any news about the school going down.  I was really panicking about what has happened.  I did think about wiping my computer, but at that point, I had thought I couldnât get into the firewall to wipe the logs, so no matter what I do, theyâre gonna come for me.  They know who I am as soon as they look into it.</p>
+
+<p>JACK:	The days after that are a fog of paranoia for him.  He calls in sick to his current job because heâs too anxious to work.  Were you living with your mom and dad?</p>
+
+<p>ADAM:	Yes, yeah.</p>
+
+<p>JACK:	Did they have any clue?</p>
+
+<p>ADAM:	No, no.  I mean, my dad sort of suspected something was up when I kept looking out the window.</p>
+
+<p>JACK:	Thatâs an interesting picture.  Youâre looking out the window a lot and your dadâs like, is everything alright?</p>
+
+<p>ADAM:	Yeah, yeah.  There was definitely a little paranoia.  Iâd take the dog out for a walk twice a day and Iâm walking outside â leave the house and Iâm looking left, looking right, seeing if thereâs any police cars around, because obviously in Australia, I have a little bit of experience of what the police are like.  I was looking around for anything out of place, and it was just very, very paranoid couple days.</p>
+
+<p>JACK:	So, Monday he calls in sick.  He doesnât go to work at all.  Tuesday he calls in sick again.  Wednesday he calls in sick still.  The anxiety, stress, paranoia of all this just makes it so he cannot concentrate on anything work-related.  [MUSIC] Thursday, he sleeps in and wakes up, goes to take the dog for a walk.</p>
+
+<p>ADAM:	As I was going in the front door, I sort of turned around âcause I noticed something on the corner of my eye, and there was a car parked sort of across the road and there was two guys in the car.  I thought oh, thatâs a bit weird.  Iâve never seen them before.  The way out, they were looking at me.  But as soon as I shut the door and got inside the house, walked into the living room, took the lead off the dog, I heard really, really loud knocks on the door, and I knew instantly, yeah, this is the police.  My mom went to go get the door and there was about ten or fifteen police officers.</p>
+
+<p>JACK:	Adam calmly lets them in and tells them straight up.</p>
+
+<p>ADAM:	I said I know what this is about.  Everything you need is in here.  Nothingâs been wiped.  Letâs get it over and done with.</p>
+
+<p>JACK:	He leads them to his room and shows them where he did everything from and confesses to it all.</p>
+
+<p>ADAM:	In Australia, with my experience with the police when I was arrested and everything, I didnât want to go through going lying about what had happened.  Itâs very, very obvious â working in IT, itâs very, very obvious that there was enough evidence to convict me for it, so Iâm not gonna make their life harder and â because thatâll just make my life harder as well.</p>
+
+<p>JACK:	Did they handcuff you?</p>
+
+<p>ADAM:	No, no.  They were actually really, really good.  So, we walked upstairs, I showed them all my computer equipment, where my phone was, gave them all the passwords to the computer and my phone, and they basically said yeah, you can have a cigarette or a smoke before you go.  We had a little chat about â interestingly, they were very interested in my setup and they were asking what sort of components I had in my computer.  Then we literally walked outside, got in the car, and they drove me to the police station.</p>
+
+<p>JACK:	The police had brought fifteen officers, so they were prepared for a struggle.  Adam, being so cooperative, caught them off-guard.</p>
+
+<p>ADAM:	They did say that usually the majority of the cases that they come across with cyber crime, they never catch the people that are involved in these attacks on schools and businesses.  So, this was kind of a first for the particular officer who arrested me as well.</p>
+
+<p>JACK:	The attack was so destructive.  The police were actually asking Adam to help make sense of what happened so they can help get the schoolâs servers back up and running again.</p>
+
+<p>ADAM:	The main thing that they wanted was the commands that I had run and what servers I had run them on, because from what I was told, they only had the logs of me getting into that first VPN computer and without restoring the servers that I had destroyed, basically, they couldnât get the logs off the other servers.  So, we went through a list together.  One or two times I went to the police station, sat down with them, and they listed out all the servers and asked me to sort of map out in which way I went and what command I had run on each server.</p>
+
+<p>JACK:	[MUSIC] To make matters worse, the head of IT and senior technician were actually off work recovering from Covid.  This had left the most junior technician in the school scrambling around to try to work out why all these systems were down.  The school even got Microsoft involved at some point and paid them Â£15,000 to help restore the systems.  But yeah, I mean, to try to restore from â a whole network with no backups, yeah, starting from scratch is â oh my gosh, itâs â with no data in there to review or to look back on orâ¦</p>
+
+<p>ADAM:	Yeah.</p>
+
+<p>JACK:	â¦configurations, oh my goodness.</p>
+
+<p>ADAM:	Yeah, yeah.  So, it was quite bad.  I think it was about a week to immediately get everything back up, everything that was down back up to the running state, and for the students and the teachers to use the system again.  But from what Iâm told, it took almost a month from start to finish to actually get everything back into a stable place.</p>
+
+<p>JACK:	Okay, so, did they say how they caught you?</p>
+
+<p>ADAM:	No, I mean, I pretty much assumed â so I had said in the car, in the drive back from the police station, one of the investigating officers, the main officer in charge of the investigation, he â I said to him, so, you obviously caught me via my IP address.  He turned around and gave me a little smile and he said you know I canât answer that.</p>
+
+<p>JACK:	While he did try to destroy all the logs, he wasnât able to clear everything.  He never was able to get into the firewall which would show what IP was his.  My guess is that the school saw what IP had logged in or they asked Microsoft what IP logged in Office 365 that night?  Then they handed that IP address to the UK police who could then get a warrant from the ISP and figure out who had that IP at the time, which would then lead directly to Adam and his address.  Adam lived with his parents, but he had a separate internet connection just in his own name.  When the police found his IP and looked him up and found he was an aggrieved former employee, you can imagine it was a pretty open and shut case.  But after heâs questioned and processed, they released him from custody to go home and wait for his court case which was scheduled for March of 2021.<br />
+Heâs still employed by this IT company, but heâs not showing up much. Heâs making up some wild excuses not to come in. I mean just crazy stuff. His employer is starting to get a bit worried about him.</p>
+
+<p>ADAM:	I had a disagreement with my employer and it was about money.</p>
+
+<p>JACK:	Well there was a disagreement about using the company credit card. Supposedly Adam was using the company credit card in ways he shouldnât have. So they asked him to turn the card back in and he did. But after he gave them back the corporate card, he continued to buy things he wasnât allowed to buy. This really set off his employer. Who started accusing him of misconduct. On top of that they saw him doing things in the computer systems he wasnât supposed to be doing too. Sort of doing things outside his duties that were a little iffy. So they decided to fire Adam.</p>
+
+<p>ADAM:	That really, really, really made me angry and the following steps to that was that I had thought, you know, letâs send them a message.  Now, they werenât very smart in the way after they sort of got rid of me, changing passwords and everything.</p>
+
+<p>JACK:	Oh, no.  This doesnât sound good.  Adam is really upset at this company for firing him and blaming him for things he didnât do.  He has privileged access to their network and knows his way around it.  [MUSIC] You can guess where this is headed.  He waits until late one night on a weekend and tries to log into their network.  He uses the domain admin credentials that he still had written down somewhere to log into this companyâs Office 365 portal.  From there, he gets access to the global administrator account, and from there he spiders around to get access to more systems.  Then he starts uninstalling software on various computers, and it appears he was specifically targeting his supervisors and managers; uninstalling software on some IT support systems and then getting into the accounts of the IT director and senior IT staff, and he changed their passwords so they couldnât log in anymore.  He tried uninstalling some more software and then logged out.  Overall, it wasnât nearly as destructive as he was with the Academy, but it was still over the line and criminal, and the company knew immediately who might have done this and reported the IP address to the police along with Adamâs name.</p>
+
+<p>ADAM:	The police was â I was on their radar already, so when the report went into the police, the cyber crime unit picked up on it and arrested me for it.</p>
+
+<p>JACK:	The same officers came to his house, but this time he wasnât as cooperative.  To begin with, he denied doing it, so they handcuffed him and took him to custody for two days.  He figured this time thereâs actually plausible deniability, but the police already knew his MO from the Academy case and he ends up admitting that yeah, he did get in there and change passwords.  But his employer also claimed he made thousands of pounds of unauthorized purchases from the company credit card.</p>
+
+<p>ADAM:	So, I did spend it, but it was a civil agreement between me and the director of the company.  So essentially what happened was there was a civil agreement between us, so I spent the money; I went to him, I said look, I spent the money.  Are you okay with me paying this back out of my wages?  He said yes, but what he had then done is â when these passwords were changed, is heâs gone to the police and he said to the police he used it fraudulently.  I never gave him permission to do so.  I want him charged for this.</p>
+
+<p>JACK:	So what Adam describes as a loan dispute gets dropped from this case because thereâs just not enough evidence.  But this court case with his employer and the court case from the Academy, it rolled up into one big case, and itâs still underway, and sentencing is scheduled for January, 2022.</p>
+
+<p>ADAM:	Basically the judge had indicated that it will be a prison sentence as it stands, with no other mitigating circumstances.  So if he had sentenced me on that day, he would have sentenced me to prison, but I think because of my cooperation with the police and how open I was as soon as they came, didnât make it hard for them, he wanted to give my defense teams and my solicitors and lawyers the opportunity to get as much mitigating circumstances as possible.</p>
+
+<p>JACK:	[MUSIC] His lawyers say thereâs a 50/50 chance that heâll get prison time or a suspended sentence.  If he goes to prison, itâll probably be between six months to three years.  Heâs twenty-eight years old now and spends a lot of time thinking about the upcoming sentencing.</p>
+
+<p>ADAM:	I am pretty worried.  I mean, from the start when the police turned up, Iâve been very open to owning up to this mistake that I made.  So, I donât like thinking about what is going to happen, because Iâm just taking it day by day at the moment.</p>
+
+<p>JACK:	Yeah, I think you might have spoiled the soup here because if this is your â if this is what you want to do, youâre very knowledgeable of this stuff.  It sounds like you want to make a career in this, but I mean, fighting in the schoolyard â Iâve been in the hiring seat before, and I would have said no, thatâs fine.  You can still come in here.  Just donât fight anybody in here.</p>
+
+<p>ADAM:	Yeah, yeah.</p>
+
+<p>JACK:	But sabotaging two different networks that you worked for previously, your previous employers, thereâs no way I would hire you anymore.  Youâre done, I think.</p>
+
+<p>ADAM:	Yeah, yeah.</p>
+
+<p>JACK: On February 11 2022, Adamâs appeared before the court to be sentenced. The judged looked at the case and sentenced Adam to 21 months in prison. He was not able to reach out after the sentence to give me any updates. They immediately escorted him to a holding cell and transferred him to a prison. Heâs due to be released sometime in 2023.</p>
+
+<p>JACK:	Moral of the story is you should always change your admin passwords when someone from IT leaves the company, maybe even twice.  This should be standard best practices for all organizations because if you donât, you now have someone outside your company who has privileged access into your company.  In Adamâs case, it was four years after he left the Academy that he used the domain admin to log in, a password that he was never supposed to have in the first place, but was able to guess it in the first week of being there.  But I think on a more personal level, you should also change your passwords when you break up with someone whoâs close to you, like a girlfriend or boyfriend.  Iâve seen so many stories where someone took their exâs password and got into their accounts after a breakup and caused significant damage.  So, anytime you think someone may have seen your password or could have guessed it or actually did have it, [MUSIC] you really should change that password when that relationship ends, whether itâs work or personal relationships.</p>
+
+<p>(OUTRO):	A big thank-you to Adam Georgeson for sharing this story with us.  As a reminder, you can get an ad-free version of this show and bonus episodes.  You can do this by either subscribing to Darknet Diaries Plus on Apple Podcasts or by visiting patreon.com/darknetdiaries.  If you do, itâll also support the show quite a lot, so thank you very much.  The show is made by me, Captain Jack Rhysider.  This episode was produced by the warm-blooded Elizabeth Winter.  Sound design by the foot-shuffling Andrew Meriwether, and our theme music is by the beautiful Breakmaster Cylinder.  Do you know the name of the chemical thatâs released in your brain after you see funny cat pictures on the internet?  Itâs called dopameme.  This is Darknet Diaries.</p>
+
+<p>[MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+
+
+			
+			<h3>Embed Episode</h3>
+			<p>Add this episode of Darknet Diaries to your own website with the following embed code:</p>
+
+<code>&lt;iframe frameborder="0" height="200" scrolling="no" src="https://playlist.megaphone.fm?e=ADV2650836711" width="100%"&gt;&lt;/iframe&gt;
+			</code>
+			
+
+
+			
+			
+				<br><br><h3>Transcript</h3>
+				<p>
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				  
+				     <p>[START OF RECORDING]</p>
+
+<p>JACK: One time when I was in middle school, my mom bought some cookies at the store and put them in the cupboard.  After school one day, I saw the box and it wasnât opened yet.  I opened it up and took two cookies.  They were so good, so I went back and got two more.  I was still hungry, so I went and got four more and ate them, too.  At this point, I looked and over half the box was gone.  I thought oh no, Iâm gonna be in trouble for eating over half a box of cookies.  I didnât like getting in trouble, [MUSIC] so I stood there and looked at the box and tried thinking what I could do.  But there was no way to undo it, so my twelve-year-old self came up with the idea that maybe if the whole box is completely gone, box and all, then maybe my mom will just forget she bought it altogether.  So, I took the whole box out of the cupboard, covered the area with some other food so it didnât look like anything was missing, and I ate them all.  Then I threw the empty box away in the outside trash bin and covered it up with some more trash.  You know what?  It worked.  She didnât notice.  At least, she never mentioned to me anything about the cookies, and I didnât get in any trouble.  I think she really did forget that she bought them, and so, my plan worked.  I tell you this story because in this episode, youâll hear a similar story, but one with much higher stakes, and it doesnât end so well.</p>
+
+
+				   
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				</p>
+				<p><a href="/transcript/113">Read Full Transcript</a></p>
+			
+
+
+			<div class="wrap nextprevious">
+				<center>
+			  		
+			  		<a href="/transcript/112/" class="button button-light PageNavigation"><i class="fa fa-arrow-left" aria-hidden="true"></i> <span>Previous Episode</span></a>
+			  			  
+			  		
+			  		<a href="/transcript/114/" class="PageNavigation next button button-light"><span>Next Episode</span> <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+			  		
+			  	</center>
+			</div>
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

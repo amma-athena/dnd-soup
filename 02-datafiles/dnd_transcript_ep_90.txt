@@ -1,0 +1,913 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>Jenny â Darknet Diaries</title>
+	<meta name="description" content="Meet Jenny Radcliffe, the People Hacker. She's a social engineer and physical penetration tester. Which means she gets paid to break into buildings and test their security. In this episode she tell...">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Jenny â Darknet Diaries">  
+	<meta name="twitter:description" content="Meet Jenny Radcliffe, the People Hacker. She's a social engineer and physical penetration tester. Which means she gets paid to break into buildings and test their security. In this episode she tell...">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/jenny.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/90/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Jenny â Darknet Diaries" />
+	<meta property="og:description"        content="Meet Jenny Radcliffe, the People Hacker. She's a social engineer and physical penetration tester. Which means she gets paid to break into buildings and test their security. In this episode she tells us a few stories of some penetration testing jobs she's done. " />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/jenny.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/90/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/jenny.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/90/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="Jenny â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/jenny.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 90: Jenny</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://www.podtrac.com/pts/redirect.mp3/traffic.megaphone.fm/ADV6338690831.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/90/",
+			   "title": "Ep 90: Jenny"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/90">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[START OF RECORDING]</p>
+
+<p>JACK:	I donât know why, but Iâm always amazed by a well-executed scam.  Thereâs something especially elegant about the ones that are as simple as they are effective.  Have you heard about the watermelon drop scam?  Okay, so for a while in Japan, the prices of watermelons were really high, and so what con artists did is they got ahold of some bad watermelons, ones that were worthless, and they would carry it through a part of town where tourists visit, and theyâd intentionally bump into a tourist and drop the watermelon at the same time which would burst open on the ground and make quite a mess.  The con artists would then yell and scream at the tourists, saying donât you know how much these are worth?  I canât believe you broke it.
+<!--more-->
+The tourist would feel bad and then pay for the broken watermelon.  This con has been adapted.  Sometimes youâll see a con artist take a cheap vase and smash it up and put it into a box or a paper bag and then intentionally but accidentally bump into someone and drop the box.  When they open it, the vase is all in pieces.  The con artist shouts and gripes about this expensive vase of theirs and that this person just broke it and needs to pay them money.  Itâs common for con artists to collect as much as $100 for these broken vases.  In this episode, we hear stories from a woman who breaks into places and steals for a living.  Sheâs no con artist; sheâs a social engineer.</p>
+
+<p>(INTRO):	[INTRO MUSIC] These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	For this episode, we hear from a social engineer and physical penetration tester.</p>
+
+<p>JENNY:	My name is Jenny Radcliffe.  Iâm known online as the People Hacker and Iâm a social engineer and specialist in the psychology of security.</p>
+
+<p>JACK:	[MUSIC] Jennyâs from Liverpool in the UK and she spent a lifetime learning social engineering skills and how to break into buildings but sheâs not much for computer hacking.</p>
+
+<p>JENNY:	So, I only deal with the humans.  Iâm hopeless technically.</p>
+
+<p>JACK:	Jennyâs good at tricking people into doing what she needs but sheâs no criminal.  Sheâs a professional who legitimized her skills for a number of jobs.  Sheâs worked as a negotiator working out business deals across the globe, and sheâs done social engineering and physical infiltration, pen testing.  Sheâs been at it for thirty years now but when she got started, no one used a term like social engineer.</p>
+
+<p>JENNY:	No one used that term.  I didnât know that term.</p>
+
+<p>JACK:	Yeah, they used the term con artist at the time.</p>
+
+<p>JENNY:	Yeah, or burglar.  I at no point thought it was gonna ever be something that was respectable or something that I could ever talk about.  I couldnât have told my family because theyâd worry.  My parents and everything would worry and I couldnât have told my friends, really, because there â a lot of people I knew kind of had an idea about it, so I never really talked about it very much to anyone.</p>
+
+<p>JACK:	[MUSIC] Jennyâs career as a social engineer and pen tester goes all the way back to her childhood.  It all started when her neighbor kidnapped her.  Jenny wasnât even ten years old at the time.  She wandered into the neighborâs house but they just kinda closed the door and wouldnât let her leave.  Her parents couldnât find her and began a frantic search.  This was a very scary situation for her which kind of shaped who she would become.</p>
+
+<p>JENNY:	I mean, I had made my mind up when I was being held captive that I would never be helpless again.  I thought if I get out of this, Iâm gonna be some kind of superhero.</p>
+
+<p>JACK:	She was eventually found by her parents safe and sound, but being kidnapped gave her a whole different view on life.  Yeah, she wanted to do something special after that, something like what a superhero would do, but she wanted to use brains over brawn.  Coincidentally, her superhero training would start soon after when her parents set her up with her older cousins.</p>
+
+<p>JENNY:	I think my folks decided that I needed to be more streetwise, and so they let me hang out with the older boys as opposed to just sort of play in the street.</p>
+
+<p>JACK:	Her parents figured out the cousins could watch over her, show her how to protect herself and stay safe.  But what they didnât know is that the boys had a mischievous streak and they spent their nights breaking into abandoned buildings around the neighborhood.  Now, young Jenny would be tagging along, picking up her superhero trade craft along the way.</p>
+
+<p>JENNY:	As far as my parents were concerned, I was tucked up in bed with a story and a teddy bear at 8:00 at night and really, I was [00:05:00] out with the cousins helping them get into all these buildings.  It was great fun.  It starts off you get into the empty house in the neighborhood and then you go into the empty house at night and then you start to pick targets, you know?  Like, do you think we could get into that place?  Before I knew it, the places we were getting into werenât empty anymore.</p>
+
+<p>JACK:	[MUSIC] The cousins taught Jenny how to get past locks and alarms, things that could be crucial to her career later on as an adult.  But in her youth, her greatest strength was her small size.  This made her the ultimate physical penetration tester.</p>
+
+<p>JENNY:	They used to throw me over fences and things and get me to kind of open gates or run around and check things out.</p>
+
+<p>JACK:	After she had been with the cousins for a while, they let her pick the next target.</p>
+
+<p>JENNY:	I asked if we could go to a local zoo and see if we could get into that at night.</p>
+
+<p>JACK:	Jenny had been to the zoo before and she always wondered something.</p>
+
+<p>JENNY:	I wanted to see if the lion got locked away.</p>
+
+<p>JACK:	Yeah, what do the animals do at night?  Itâs a good enough question that the cousins were on board.  They all grabbed their flashlights, or torches as they say in Liverpool, and headed to the zoo.</p>
+
+<p>JENNY:	I had a little torch, had a little Sesame Street torch.</p>
+
+<p>JACK:	This zoo had recently been shut down because of animal abuse issues, so it was even more mysterious to Jenny and her cousins to explore an abandoned zoo at night.  They wanted to find out if the animals were still there.  So, they head down there and they come to a fence which surrounded the zoo.  The cousins boosted Jenny over the fence and then climbed over after her.  Once inside, the boys just ran off for some reason, leaving Jenny all alone with her little yellow Sesame Street flashlight.</p>
+
+<p>JENNY:	It was like, there was no alarms, there was no security guards.  There was nothing.</p>
+
+<p>JACK:	The Sesame Street flashlights are horribly dim and this was a very dark night, so she didnât see which way the cousins ran off, but she did know which way the lion exhibit was, so she made her way over to that.  But she could barely see, so she used her hands to sort of reach out in the dark to try to identify the exhibits by touch.</p>
+
+<p>JENNY:	I kind of padded over to where I thought the lionâs cage was, and I shine this really dim torch into the cage of this lion.  I couldnât see it; it wasnât there.</p>
+
+<p>JACK:	She turns away to listen for her cousins who were laughing somewhere off in the distance.</p>
+
+<p>JENNY:	Then I turned âround and I could smell a chicken soup breath and it was right in front of me.</p>
+
+<p>JACK:	[MUSIC] All that separated her from the lion was a fence that suddenly seemed very flimsy.</p>
+
+<p>JENNY:	It just went crazy; it threw itself at the fence and growled and it stalked me.  I screamed, dropped the torch, started to run, and the cousins run after me.  They were laughing.</p>
+
+<p>JACK:	They scooped her up and retreated back over the zooâs fence.  They got out of there safely but that Sesame Street flashlight didnât make it out.</p>
+
+<p>JENNY:	That was my first ever kind of â that I really remember clearly.  That was the first real unauthorized access that I ever really picked and kinda did and really remembered.</p>
+
+<p>JACK:	Gosh, that could have left nightmares on you for life ofâ¦</p>
+
+<p>JENNY:	Oh, it did.</p>
+
+<p>JACK:	â¦falling asleep and having lions chasing you in theâ¦in your dreams.</p>
+
+<p>JENNY:	It did, and I still do dream that all the time.  Really, seriously, I do.  If Iâm stressed at all, Iâll dream about lions.  But it didnât put me off breaking into buildings, though.</p>
+
+<p>JACK:	Jenny was really starting to enjoy breaking into places.  As the cousins grew up, they moved on from break-ins to working security at local bars.  Jenny tagged along with this too, running deliveries between pubs.  She also ran little side schemes like ripping off vending machines for change by entering a secret code.</p>
+
+<p>JENNY:	So, I always had change, pockets full of money and things.  All very â all terrible and Iâve made amends since; apologies to Coke and Pepsi.</p>
+
+<p>JACK:	As Jenny went into her late teens, she went to college.  The cousins figured out a way to turn their street skills into legitimate work.  They started doing security audits for high-net-worth individuals like professional soccer players.</p>
+
+<p>JENNY:	It was like, we used to break into houses.  Do you want us to check out where you live and tell you how weâd get in?</p>
+
+<p>JACK:	It was the same thing they did as kids, but now they were getting paid for it.  But Jenny was grown up and was too big to just be thrown over a fence, so no more flying over walls.  She adapted by using her people skills to get the cousins inside.</p>
+
+<p>JENNY:	Often, the easiest way of getting in wasnât to bust an alarm or get on the roof or anything dramatic.  It was just have me knock and say can I come in?  I want to talk to you about your curtains or something like that.</p>
+
+<p>JACK:	Once she was inside, Jenny would just figure out a way to leave a door open or unlock a window so the cousins could just break in later.  Some professional soccer players hired them to audit their businesses, too.  This weird side business of theirs was actually getting some real work to do, but then something changed.  [00:10:00] The cousins started meddling in heavier crime, stuff Jenny didnât want to get involved in, and thatâs about the time when she got offered her first solo gig as a professional security auditor.  Still, at this time, social engineer and physical pen tester just werenât terms yet and she was still going to college when she got this job.</p>
+
+<p>JENNY:	[MUSIC] I got a phone call from this guy and he called the house.  I was still living with my parents and he called the house.  Mum answered and said thereâs a guy on the phone, talking to â wants to talk to you about a job.  I answered the phone and it was this guy and he said Iâve got â I want you to get into this office in Liverpool and I want you to steal an address book.  Itâs a security audit.  I didnât ask any questions except oh, well, Iâll â I need to ask the cousins.  He said to me why do you need the boys?</p>
+
+<p>JACK:	Thatâs when it dawned on her that she didnât.  She liked the idea of trying to break in without the cousinsâ help this time.  She knew all the tricks at this point.  It would be less people involved, less work, so yeah, a solo mission.  Letâs try it.  But she did call her cousins to let them know that she was going to be going in on this job alone.  Alright, step one.</p>
+
+<p>JENNY:	So, reconnaissance stage.</p>
+
+<p>JACK:	[MUSIC] The target was a politician in the British Labor Party.  Jennyâs mission was to break into his office and steal his address book.  His office was in a waterfront building in Liverpool.  Jenny went over there one day to check this place out, to look for obstacles or weaknesses in the building.  On the ground floor around the entrance there werenât any barriers, no turnstiles that required her to badge through or anything like that.  She looks at a directory on the wall and sees the office that she needs to go to is on the eighth floor, so she hops on the elevator.  What sheâs looking for is a POE, a point of entry.  This is a public building; anyone can jump in the elevator and take it up to the eighth floor and then just look around the lobby.  You canât really get caught in this stage, but doing this can really be helpful for when you want to come back later and actually break in.</p>
+
+<p>JENNY:	This is like, completely not how I would do it now.  I guess I just thought Iâm not doing anything at this point; Iâm just looking around, so Iâm not actually doing anything wrong.  So, thereâs no problem.</p>
+
+<p>JACK:	Jenny steps off the elevator and sees some double doors with a big, open floor plan office on the other side.  Itâs bustling with workers.  Jenny looks to the far end and sees the politician sitting at his desk.</p>
+
+<p>JENNY:	Iâm kinda thinking okay, so thatâs where I need to go.  Then one of the office workers comes out and just says oh hi, what do you need?  Do you need to go in?  I said no, no, no, I donât need to go in.  Actually, Iâm looking for Mr. Whatever.  I said, is that him in there?  He said yes.  I said oh, I need to speak to him but Iâll leave it; he looks busy.  He said yeah, well, he wonât be there tomorrow; heâs at the conference.  I said oh, oh right.  I said, the conference?  He said yeah, itâs the Labor Party Conference.</p>
+
+<p>JACK:	Well, that accidentally worked really well.  Jenny now knows that nobodyâs gonna be in the office tomorrow.  Again, her mission is to lift an address book off the guyâs desk.  Jenny left the building and stopped at a cafe for a coffee.  As she sipped her drink, it struck her how laid back security was at this office building.</p>
+
+<p>JENNY:	I thought right, Iâm just gonna go back.  This is gonna be not as difficult.  Iâm gonna wait for the guy to go out of his office.  [MUSIC] Iâm gonna go and get it.</p>
+
+<p>JACK:	She went back into the building, headed up to the eighth floor, looked through the office window.  That politician, her target, was still at his desk where she presumed the address book was too, so she left.</p>
+
+<p>JENNY:	I kind ofâ¦I guess I lost my nerve.  Came out; right, Iâm definitely waiting for the next day now.</p>
+
+<p>JACK:	She does.  She goes home, sleeps that night, and comes back the next day, but not straightaway.  She waits until 5:00 PM to go back.</p>
+
+<p>JENNY:	There was no one around.  There was not even security at the front desk.  It was wide open.  I went up the stairs and I walked into this office â it wasnât locked â went into the guyâs office, it wasnât locked, and his address book was just in the drawer on his desk.</p>
+
+<p>JACK:	Jenny grabbed it, stashed it in her bag, and was feeling good.  The job was going well.</p>
+
+<p>JENNY:	I kinda thought yes, this is great.  Wait âtil I tell my cousins and Iâve done this one on my own and I had deserved my fee.  As I said it, I saw the doors open at the other side of the office and it was security.  [MUSIC] Just panicked and I just ran out the office.</p>
+
+<p>JACK:	Jenny dashed out of the office and ran to a stairwell.</p>
+
+<p>JENNY:	I ran up to the roof, so went up the stairs rather than down the stairs, something that Iâve always done as a signature move now, I guess.</p>
+
+<p>JACK:	Itâs a little psychological trick that Jenny does sometimes.  Her theory is that the security would see her go into the stairwell and assume she was going down to get out of the building, and so theyâd go down to look for her.  But instead, she went up.  Jenny ran up the stairs and got to the top of the building and she came to a fire door which led to the roof.  She could hear the security guards on the stairs, so somewhere below, and didnât want to get caught with the book.</p>
+
+<p>JENNY:	I just opened the door to the roof, threw the book onto the roof, let the door slam, ran down again, and just ran into them on the stairs.</p>
+
+<p>JACK:	[00:15:00] She was caught but she didnât have the book on her or any evidence on her, so her plan was to somehow talk her way out of the situation.</p>
+
+<p>JENNY:	They were like, really nice, actually.  They said whatâs going on?  I just said oh, I donât want to say.  I was really panicking.  I was really young, really panicking, and I thought I donât know what to say.</p>
+
+<p>JACK:	She just kept saying she was supposed to be there but Jenny didnât have a letter from her client, no Get Out of Jail Free card as they say, which explains that this is all a security audit and itâs on the level.  She was unable to talk her way out of this, so the security guards escorted her to their office and sat her down and started questioning her.</p>
+
+<p>JENNY:	They sat me in the security room.  They were looking at me and they left me there.  Thereâs only one door; they stood outside the door and I could hear them talking.  They came back in and they said did you take anything?  I said no.</p>
+
+<p>JACK:	Jenny could only think to tell the guards that she was just looking around.</p>
+
+<p>JENNY:	That was the best I could come up with and I just felt like if I just kind of â just said oh, I was looking for a politician, just was a bit dizzy, that they probably wouldnât do anything.  I donât know what they thought and I donât really remember exactly what I was thinking, but I donât remember being particular concerned.  I just thought theyâll let me go, and they did.  Just sort of said donât do that, donât get into trouble.</p>
+
+<p>JACK:	Jenny says her innocent demeanor helped her escape.</p>
+
+<p>JENNY:	It was very strange at the time for a woman to do any of this.  [MUSIC] You just â I got away with so much and there was so little scrutiny in my early years that it wasnât even a legitimate thing.  I mean, I still do get away with things just because Iâm â not just because Iâm female but more because I just look so innocent.  It just doesnât resonate with people that Iâm a threat at all.  It never did.</p>
+
+<p>JACK:	She caught a bus home but she knew the job was only half-finished.  She still needed to go back onto the roof and get that address book.</p>
+
+<p>JENNY:	This would be an embarrassment if I didnât get the book.  All I need to do now is get back up to the roof, Iâm laughing thinking about it now, grab the book, and it will be fine.</p>
+
+<p>JACK:	So, she headed back that night because there was a sense of urgency to get the book before someone else found it.  Even though sheâs shown her face at this building three times now and has been caught once, she decided to go for it anyway and she tried to justify why it was safe to go back.</p>
+
+<p>JENNY:	They didnât call the police or do anything the first time, so they probably wonât do it the second time which is just the most stupid reasoning.</p>
+
+<p>JACK:	She stood out in front of the building for a while, watching the front doors from a distance.  It was late in the year, a couple weeks before Christmas.  It was cold out and it was getting late. Like, it was after midnight now.</p>
+
+<p>JENNY:	Waited and waited and it was completely quiet, and it started to rain, and it started to really rain.  Iâve just thought Iâve got to move now; Iâve gotta go and get it or Iâm gonna get wet, as if thatâs the main thing to worry about.</p>
+
+<p>JACK:	She didnât see any movement in the building for a while, so she went in and then quickly ducked into one of the stairwells and made her way up the stairs to the roof.</p>
+
+<p>JENNY:	As I got up to the roof, [MUSIC] the thunder and the lightning was just really loud and I just grabbed for this book and it was all soggy and wet, and I got the book, and then ran out.  Didnât get stopped, didnât get any â there was nobody there.</p>
+
+<p>JACK:	She successfully left the building with the address book in hand and made it to safety.  Phew, she did it.  She turned the address book over to her client and got paid.</p>
+
+<p>JENNY:	But the thing is, that first one always reminds me that I was completely incompetent that first job.</p>
+
+<p>JACK:	In the past, sheâd had her cousins to lean on.  They had experiences to share.  They worked as a team and although she made some mistakes, the end result was that she did it all by herself.</p>
+
+<p>JENNY:	Itâs one of the reasons I kind of stayed in security, because it was so easy.  I look back on that now and think that was ridiculous.  There was no protocols.  There was nothing keeping it safe, and that was a politician.  God knows what was in that book.</p>
+
+<p>JACK:	Security on that building improved a lot after this audit.  The office was locked at night after that and the politicianâs office door was locked at night, too.  You canât always rely on security guards catching everything.  You have to make deterrents for thieves.  After that, Jenny started to pick up more work and every job she did, she learned better techniques for breaking into buildings and manipulating people.  Looking back at what she did, she sees how far sheâs come.</p>
+
+<p>JENNY:	I over-prepare now.  I mean, we â I have Plan A, B, C.  Our teams, we cover every eventuality.  I have props, everything.</p>
+
+<p>JACK:	As she grew her business over the years, the jobs got more complex and she started needing extra people to help her on certain jobs, and props.  This one time, she had a job to con a business tycoon.  For this story, weâll just call him Mr. Big.  [MUSIC] The job started when Mr. Bigâs security team reached out to Jenny.  Mr. Big thought his security was flawless but his security team thought otherwise.  So, they reached out to Jenny to see if she could expose some security holes that would prove that Mr. Big would need to up the security budget.</p>
+
+<p>JENNY:	They knew of me [00:20:00] and they asked him if he would allow them to hire a social engineer to get to him.  He told them to knock themselves out.  So, they came to me and said you can do whatever you like because he doesnât believe that this is a thing.</p>
+
+<p>JACK:	Mr. Big didnât think anyone could gain access to his confidential data or con him.  He thought he was too clever to be tricked by any social engineer.</p>
+
+<p>JENNY:	He especially wouldnât believe that some little woman from Liverpool will get past him.</p>
+
+<p>JACK:	Challenge accepted.</p>
+
+<p>JENNY:	They said do what you like, but heâll be good about it in the end.  I didnât care if he was good about it in the end.  I just thought silly sod; youâre gonna get hacked for real.</p>
+
+<p>JACK:	[MUSIC] So, hereâs the job; Mr. Bigâs security team wanted to see if Jenny could get into his office and get access to his e-mail.  If somebody could get into his e-mail, then theyâd have access to future deals that are in the works, sensitive information about the business or other private information like his whereabouts.  With that, they could track him, plot against him, and maybe figure out a way to con him out of a bunch of money.  When starting the job or any social engineering job, her first step is always to do OSINT, open-source intelligence-gathering.  So, Jenny starts looking on the internet to see what she can find about Mr. Big.  By this point, places like Facebook and Twitter were pretty popular which became an important part of information-gathering on people.</p>
+
+<p>JENNY:	I used to have to do proper surveillance.  I used to have to sit outside offices and theatres and things and watch people to see what they â who they socialized with and everything.  But when social media came in, I just couldnât believe how easy they made my life.</p>
+
+<p>JACK:	You can find out a lot about a person on social media because people post all kinds of private information there; name, location, job, high school, hobbies, friends, sexual orientation, trips.  People post it all.  Thereâs no reason to hack into someoneâs phone to see their private photos when theyâre posting these photos for anyone to see.  For Jenny, social media was a game-changer for this type of work.</p>
+
+<p>JENNY:	It was like someone being fed to the lions, you know?  It was like, oh, this is gonna be so easy to get hold of this person.</p>
+
+<p>JACK:	She has a specific goal in mind when she does OSINT, something she says that sets her apart from some of her other colleagues.</p>
+
+<p>JENNY:	What Iâm normally looking for is different, I think.  I think when I speak to other people who do the job, they can collect the OSINT but the dataâs nothing without the story, and Iâm looking for whatâs underneath it.  Iâm looking for the things that people fear or the things that people â the last thing someone would give up.  What is it that really pushes this personâs buttons and how can I use that in a ethical way to simulate this attack?  Obviously, Iâd stop very short of anything criminal or anything very harmful, but we look at the art of the possible.</p>
+
+<p>JACK:	So, she fires up her computer and starts searching for dirt on Mr. Big online.</p>
+
+<p>JENNY:	[MUSIC] Normally itâs so easy.  Normally you go to â you do some OSINT, right?  So, I go over to the internet and I look at Facebook and heâs not on Facebook.</p>
+
+<p>JACK:	He wasnât active on Instagram or Twitter, either.  Huh.  Odd, but okay.  Some people are just like that.  She starts looking for the guyâs wife, but Jenny canât find her, either.  All this is becoming tricky.  She might have to look him up on other databases or dig through public interviews with him or something.  But as she looked more, she just wasnât finding much on this guy.  He was somehow staying off the internet pretty well.</p>
+
+<p>JENNY:	In the end, in desperation, just as sweet, we found his secretary on Pinterest.</p>
+
+<p>JACK:	Jenny took a hard look through Mr. Bigâs secretaryâs posts but didnât find much.</p>
+
+<p>JENNY:	She was in this extreme knitting group.  She used to knit little cupcakes out of wool and that was all I had.  Itâs terrible; itâs not enough.</p>
+
+<p>JACK:	Jenny kept pivoting her searches; LinkedIn, Reddit, nothing.  Come on, this guyâs gotta be somewhere, so she just starts reading public articles about him and his company.</p>
+
+<p>JENNY:	He and his wife were both in charge of a charity that was connected with an illness that had been in their family.</p>
+
+<p>JACK:	Huh.  Jenny is an ethical hacker but would she use a charity to exploit someone?  That might not seem like an ethical approach, but then she thought you know what?  The bad guys would do low blows if they had an opportunity, so Jenny decided yeah, letâs get to him through his charity.  Even though this is an ethical grey area, Jenny doesnât lose any sleep over something like that.</p>
+
+<p>JENNY:	I sleep like a baby because I am showing you what the bad guys could do.  I am not a bad person but I do know how criminals think.</p>
+
+<p>JACK:	So, a charity or anything else, really, is fair game for her.  The charity thing was a great lead.</p>
+
+<p>JENNY:	I couldnât [00:25:00] get to him through his business dealings because he just wasnât public about it and heâs very guarded, but when it came to the charity and his wife, thereâs your soft spot.  Thereâs your chink in the armor, you see.  I figured that the way to get to him was to get to his wife.</p>
+
+<p>JACK:	Mr. Bigâs name was on the charity but it was really his wifeâs passion project.  She was the way in, so Jenny hatched a plan.  She bought two tickets to one of the charityâs dinners in London.  Sheâd go posing as a journalist who was writing an article about Mr. and Mrs. Big and their charity, and this time Jenny brought a partner along, a confederate as she says, or an accomplice, to help her.  The goal at this dinner was to somehow get the PIN from Mr. Big.  She thought that would be a good first step in proving that Mr. Bigâs security could use some work.  [MUSIC] Yeah, if someone told me I wasnât very secure and I told them oh yeah, prove it, and they said well, this is the PIN to unlock your phone, Iâd be rightfully embarrassed.</p>
+
+<p>Jennyâs plan was to chat up Mr. Big at the dinner and somehow get him to take his phone out of his pocket and unlock it.  She was thinking up ways she might be able to get him to do that.  Maybe ask him to look something up on a website or maybe theyâd trade e-mails and check his inbox while they were talking.  If he did take his phone out while they were chatting and unlocked it, Jennyâs partner who would be hovering right nearby would look over his shoulder to see what PIN was entered when he unlocked the phone.  On the night of the dinner, Jenny and her partner arrived.  She saw Mr. and Mrs. Big and approached them.</p>
+
+<p>JENNY:	 I went up to them and I said look, Iâm sorry, but Iâm a journalist and I wanted just a few words for our online publication about the event.</p>
+
+<p>JACK:	But she wasnât just talking to both of them.  She was really talking to the wife, Mrs. Big.</p>
+
+<p>JENNY:	I went to her and said it and she was like oh, absolutely.  She made him talk to me.</p>
+
+<p>JACK:	Which was all part of the plan to get Mr. Big through his wife.  She turned on her charm to build rapport.</p>
+
+<p>JENNY:	I kind of assumed and surmised that people never told him no.  I was very cheeky with him so I said well, I wanted to interview you but my glass is dry.  I think you can afford a drink.  He was like, right, and he got me a drink.</p>
+
+<p>JACK:	[MUSIC] Jenny sunk her hook deeper.  She recorded a short interview with them about this charity, told them that itâs gonna go into a magazine that she worked for.  She said sheâd send him a link to it and she kept chatting him up, trying to get him to pull out his phone.</p>
+
+<p>JENNY:	I made sure that I spoke to him enough so that my confederate was watching him open his phone and put in his pass code.</p>
+
+<p>JACK:	Her accomplice had a phone too and pulled it out and recorded Mr. Big entering in his pass code.  This way, they could play it back later in slow motion to see what his PIN was.  It worked; the confederate gave the signal that they got it and walked off.  That was her cue to wind down the conversation and leave.  Theyâd start Phase 2 the next day.</p>
+
+<p>JENNY:	I called the next day and I called the secretary.  I said it was great but unfortunately the recording just didnât work.  Now Iâve interviewed them, I really want a bigger piece.  I want them to be on the cover, we want to take a few photographs, but the problem is Iâm on a horrible deadline; this needs to be in by Friday.</p>
+
+<p>JACK:	This sense of urgency was important to Jennyâs plan.  It was a tactic she used regularly.</p>
+
+<p>JENNY:	Because you never give a mark time to think.  Got to rush people into doing something.  Weâre gonna flatter him, weâre gonna get the wife on board.  Theyâve got to sell it to me.</p>
+
+<p>JACK:	Now, the Bigs were selling the interview to Jenny.  Building rapport with Mrs. Big at the dinner paid off.  She called Jenny back within a half an hour to let them know the interview was a go.  Jenny worked out a plan to meet with Mr. Big in his corporate office so they could take some photos of him, but their real goal was to somehow gain access to sensitive information in the office; a computer, phone, anything that might lead to accessing his e-mail.  On the day of the interview, Jenny and her partner showed up still posing as journalists.</p>
+
+<p>JENNY:	We set up the camera and a little microphone, we took a few photographs, and we asked a few questions.  Then he said oh, Iâm sorry, I didnât offer you a coffee.</p>
+
+<p>JACK:	[MUSIC] Now, the thing that makes a good social engineer is someone who can think on their feet.</p>
+
+<p>JENNY:	I said oh, Iâd love a coffee.  I said but Iâm a pain; I like decaf.  Have you got a decaf?  He said Iâll go and find out.</p>
+
+<p>JACK:	See, the thing is, Jenny hates decaf.</p>
+
+<p>JENNY:	Death before decaf.  What it was is I wanted him to have to go and really look for it and I thought maybe that was the better option, and he left us on our own in the office.</p>
+
+<p>JACK:	Bingo; alone in his office as he hunts for decaf somewhere in the office, and he left his mobile phone on his desk.  They werenât really sure when this opportunity would present itself but when it does, Jenny says you have to be ready.</p>
+
+<p>JENNY:	We werenât banking on that happening.  We had other things that we had in mind to get him out of there; [00:30:00] phone calls planned and all sorts of things but at the end of the day, if the opportunity presents â you need to know everything about the target so that you can tactically adapt if the opportunity arises.  That takes enough bandwidth to have to adapt to a situation that you donât need to be thinking of anything else.  So, I need to know everything about the secretary, the building, who is in charge officially, but who do people rally to?  Who do people like?  Who really holds the power?  Thereâs different types of power.  Where do they celebrate?  I always say a buildingâs like a person and itâs whatâs the rhythm of the building?  How does it breathe?  Whenâs it alive?  When does it sleep?  The reason is is that once you have all those things in place, then when someone like the guy just pops out to get us a cup of coffee happens, weâre quick enough to act very quickly in the moment and leave.</p>
+
+<p>JACK:	In this case, knowing that decaf coffee might be hard to find, that was the key to their success.  With Mr. Big gone, Jenny quickly grabbed his phone, punched in the PIN that she had gotten the night before, and sent a text to the security team.  Then she ran around his desk, sat in his chair, and sent an e-mail to the security team.  This proved that she had gotten in and got access to his e-mails and phone.  Once she finished, Mr. Big still wasnât back, so Jenny and her partner vanished.</p>
+
+<p>JENNY:	Yep, gone.</p>
+
+<p>JACK:	[MUSIC] She says thereâs no need to hang around after a successful con.  Thereâs no point in exposing yourself to getting detained.  The best move is just to get out.  Once Jenny sent the code word to Mr. Bigâs security, they quickly swooped in and debriefed Mr. Big.  After the job, Mr. Big reached out to Jenny.</p>
+
+<p>JENNY:	He was really good-natured about it.  What he said to me was â he said I want to take you for dinner and I want you to tell me exactly how you caught me out.</p>
+
+<p>JACK:	In the end, Mr. Big carved out more budget for his security team.  For Jenny, the Mr. Big job was important because it showed that even if youâre not on social media, someone can still get to you.</p>
+
+<p>JENNY:	A lot of the jobs we have, I can find out everything from social media.  I donât even have to go.  We can just phish people or whatever.  Iâll do a lot of my work over the phone.  But everyoneâs networked and someone in that network will be able to give you enough to just work out where the chinks are in the armor, where the psychology leads you.  With him, it was always gonna be flattery.  We always had to work with the ego but to get to his ego, we had to find out what they cared about.</p>
+
+<p>JACK:	[MUSIC] Speaking of preying on ego, the next story from Jenny is about a time when a handsome sum of money helped lure her into a job.  Stay with us.  Jenny has another job; sheâs also a professional negotiator.  Sheâs really good at getting people to agree on certain things.</p>
+
+<p>JENNY:	I was working for these big companies, big corporates, and they would send me on negotiation trips and supplier assessments all over the world.</p>
+
+<p>JACK:	Some big companies need someone like Jenny to be on the ground, negotiating contracts.</p>
+
+<p>JENNY:	I was good with people, right?  So, I could negotiate well.</p>
+
+<p>JACK:	Jenny realized over the years that yet another way she could legitimize her skills would be to teach others how to do this.  So, she developed a negotiation course, but with her own little manipulation slant.  Hereâs how it goes.</p>
+
+<p>JENNY:	[MUSIC] I will talk to them about all the usual things youâre learning in negotiation training; know your best alternatives to a negotiationâs outcome, your objectives, know what youâre willing to lose, all the stuff that you get in any other course.  But then at like, half past three on day two, Iâd say okay, now this is how you make someone do what you want them to do so you can manipulate someone to do anything you want.</p>
+
+<p>JACK:	Jenny came up with nineteen identifiers that people could use for negotiating.  Itâs like a recipe for getting people to agree with you.</p>
+
+<p>JENNY:	Normal, regular business people who are very legitimate and do very respectable jobs absolutely love the idea of being able to kind of input a formula and get that person to sort of bend to your will.</p>
+
+<p>JACK:	She says her philosophy for all these negotiations and manipulations can feel a bit dark.</p>
+
+<p>JENNY:	To change those peoplesâ minds, I have to tune into the thing that they really fear, like the last thing theyâd give under interrogation, the thing that wakes them up in the cold, dark night.  I need to know what that is and I also need to know what they really care about.  Like, not the first thing they tell you, not the second thing, but the why underneath all these things.  Itâs like a push and a pull, you know?  What are they pushed towards?  What do they run away from that pulls them back?  Once we can sort of get inside that and know exactly where your heart beats, then we can persuade anyone of anything because you tune them into that.  What I say to them on the negotiation training is itâs not football, right?  Itâs chess.  Youâve got to think way ahead and what youâve also got to do is understand the way people really are.  Itâs never just about money.  In the corporate negotiations, they always fixate on the money.  [00:35:00] I always say itâs never just about the money.</p>
+
+<p>Itâs always about power or revenge or sometimes itâs about sex, but mostly itâs power and revenge in business.  If itâs a power play, where are they pulling their source of power from?  What is it that theyâd hate the most to lose?  Thatâs what we threaten and then back it up with a really easy decision.  That sounds very dark but Iâve seen far darker.  I still teach collaboration and I still teach actually being clever as opposed to threatening anyone is the best way to do the best negotiation.  Like, apply your mind and get everybody what they want so nobody loses.  But the principles involved in really reading and understand peoplesâ psychology, particularly the darker side of that, is what everybody always wants to know.  If youâre up against people who mean other people real harm, itâs very helpful to be able to tune into that and understand how that works.</p>
+
+<p>JACK:	Yeah, Jenny goes all over the world helping companies negotiate contracts but also teaching people how to do it, too.  One time she was in Hamburg, Germany teaching the art of negotiating and persuasion techniques.  After she finished up her talk one night, she headed back to her hotel but someone approached her outside.</p>
+
+<p>JENNY:	Iâm stood outside and I hear this âJenny, Jenny Radcliffe!â  Right?  Iâm like, shit.  I look around and thereâs this guy just sort of hiding in the shadows outside the hotel and he says we need your help.</p>
+
+<p>JACK:	[MUSIC] This is strange but not completely unusual for Jenny.</p>
+
+<p>JENNY:	I get jobs in lots of different ways and I always did.</p>
+
+<p>JACK:	The guy had a big ask; he told Jenny he needed her help breaking into a bank in two days.</p>
+
+<p>JENNY:	I said yeah, right.  No.  No.  I said no because I didnât know who it was.  It could have been a real criminal.  I didnât speak German and this could be very dangerous so I said no and he said no, no, no, itâs all legit.  We just need a social engineer.  We need a woman in particular to get us past the security at this bank.</p>
+
+<p>JACK:	The guy said he was with a security firm that was auditing this bank and they already did all the recon, but they needed Jennyâs help getting a USB thumb drive in the door, past security, and to be plugged into a computer somewhere.  They didnât think they could do this themselves.  They all were huge, like great big Special Forces types with baldy heads and muscles and tattoos and they just would stand out a mile.  I said look, I donât know who you are and everything, and I donât know if I can do it.  He said well, weâll pay you, and then he named this figure and it was more money than Iâve ever been paid â at that point, that Iâve ever been paid in my life for like, a dayâs work.  Like, thousands.</p>
+
+<p>JACK:	Everyoneâs got a price and this was Jennyâs price, so she thought it over and saidâ¦</p>
+
+<p>JENNY:	Where do you want me?</p>
+
+<p>JACK:	She agreed but she wanted to confirm all this was legit.  Jenny got this mystery guyâs business card and went up to her hotel room and started researching this company that he worked for and yeah, it seemed legit.  It was an above-board company doing actual security audits for big businesses.  The security team of the bank was aware of this assessment.  So, the job was this; they were going to give Jenny a USB thumb drive.  She was to take it past lobby security and then go into a hallway where there were some offices and then sheâd go into a specific office and plug the thumb drive into a computer, just plug it in for like a minute or so and then take it out and get out.  Jenny didnât ask what was on the thumb drive.  Sheâs just not that interested in the tech side but I can guess that it was probably some kind of rubber ducky or something like that which is a device that acts like a keyboard when you plug it it.  It just automatically starts typing commands and the computer then starts doing things.  Like, it could create a reverse connection to a computer out in the world somewhere and now someone from the outside can access that computer that she plugged it into.  So, she started thinking about a plan, her disguise, her back storyâ¦</p>
+
+<p>JENNY:	My pretext was, I was going in to do some training on the inside of the bank.  I was a sort of in-house trainer and thatâs why I was there.</p>
+
+<p>JACK:	Because she was training, she had some props with her that fit with this disguise.  First was her handbag which she packed with minimal infiltration kit.  She had a can of compressed air, like the kind youâd use to spray the dust off your computer, because it turns out you can use these to open certain kinds of doors.</p>
+
+<p>JENNY:	Youâve got magnetic locks on fire doors that sense smoke and if you just get some â sometimes it even works with deodorant but if you just get that condensed oxygen can and spray through the little crack, it very often opens the door.</p>
+
+<p>JACK:	She also packed one of her all-time favorite items to bring.</p>
+
+<p>JENNY:	I always have smoke bombs with me to create my diversions.</p>
+
+<p>JACK:	Why do you like smoke bombs so much?  This is a new one.  I havenât heard people use this.</p>
+
+<p>JENNY:	You know, it starts a diversion.  It starts an evacuation.  I was in a TV building once, TV studio, and there was this huge evacuation; not me that caused it but there was â someone had set fire to [00:40:00] toast or something in a kitchen.  But the alarms go off, the whole building evacuates, but itâs when you go back in that you can go â you can tailgate, effectively; you can get in quicker.  So, smoke bombs, itâs so helpful.  You can draw people to an area, you can get a building to evacuate.  The ones I use are like yellow wax and they really do draw a crowd.  If you put â if you light one, thereâs a tremendous amount of smoke that it gives off but briefly and safely.  Itâs just a really good diversion.</p>
+
+<p>JACK:	[MUSIC] Jenny packs some more stuff for this job, too; a couple different IDs, a lighter, she likes taking little mints along with her because she can use them as chalk markings on things, a small hammer to smash locks with if she needs to, and something to lever a door with.  These are things that are all helpful but Jenny would always rather talk someone into opening a door than forcing it open herself.  She likes to keep her kit minimal and to keep things hidden.  Like, if she needs a knife or a blade, hide it in something like a tampon.  She says people rarely if ever search tampons.  Finally, she packed the USB thumb drive with the security firmâs payload on it.  She chose a thumb drive in the shape of a flip-flop because, well, it looks silly and it doesnât look like a malicious USB drive.  Jenny finished up her disguise with two other important props.</p>
+
+<p>JENNY:	I bandaged up my arm so it looked like I had a broken wrist and then I put a load of box files under my left arm, and I had lots of loose-leaf paper so that if I dropped the file, the paper would sort of spill out like in a cascade.</p>
+
+<p>JACK:	She had it in her mind that she could use a fake bandage to maybe get people to hold doors open for her or something.  You never know what you might use these sort of things to do, but sheâd be ready if there was an opportunity that presented itself.  When the day came, Jenny headed down to the bank and walked up to the front door.</p>
+
+<p>JENNY:	Thereâs a security guard that opens them but heâs just like the bellboy kind of thing, right?  Heâs got the big â the uniform and the hat and everything and itâs very sophisticated.  He opens the doors.</p>
+
+<p>JACK:	She walked in and scoped out the lobby.</p>
+
+<p>JENNY:	It was a very expensive sort of financial institution with leather sofas and huge, wooden doors.</p>
+
+<p>JACK:	The friend that hired Jenny had coached her up on where she needed to go.  She saw the door to the staff offices over on the left side of the lobby.</p>
+
+<p>JENNY:	The door wasnât like a door.  What it was like was â if you can imagine, the walls are just these huge oak panels, sort of â how high?  Twelve, fifteen-foot high panels up to the ceiling.  [MUSIC] This staff door, the only thing that gives away that itâs a door is that thereâs this biotech pad on it.</p>
+
+<p>JACK:	Itâs a fingerprint scanner.  Only people with valid fingerprints would be able to open the door.  Jennyâs fingerprint obviously wonât open this door but hey, letâs try it anyway.</p>
+
+<p>JENNY:	I didnât make eye contact or do anything, just walked straight over.  My armâs bandaged up and Iâm carrying all this stuff; my handbagâs over my shoulder and I put my thumb on the bio-lock.  It just beeps.</p>
+
+<p>JACK:	It didnât work.  She expected it wasnât going to work but part of her job is to kind of test if things do work or donât work.  So, when that didnât work, now what?  I mean, the security guard probably heard the beep and is starting to look her way now.</p>
+
+<p>JENNY:	So, what did was I swore really, really loudly.  So, Iâm trying to draw attention because I know I canât get in without some help.</p>
+
+<p>JACK:	Jenny calculated the situation and thought that she can either try to defeat this fingerprint lock or the security guard, and she decided to square off with a person and not the lock.</p>
+
+<p>JENNY:	What I say is you donât have to work on the lock.  Work on the person behind the security.  It doesnât matter what they put in place; if someoneâs got access, then I can access them, and then weâre down to me versus the person.</p>
+
+<p>JACK:	Right on cue, a well-dressed security guard comes over.</p>
+
+<p>JENNY:	Heâs top security guard in the lobby.  Heâs got all the sort of â the earpiece and the radio and beautiful, immaculate suit.</p>
+
+<p>JACK:	He saysâ¦</p>
+
+<p>JENNY:	Madam?</p>
+
+<p>JACK:	She saysâ¦</p>
+
+<p>JENNY:	This isnât working today and it wasnât working yesterday.</p>
+
+<p>JACK:	Which is a lie, of course.  Jenny wasnât there yesterday.</p>
+
+<p>JENNY:	He said well, try again.</p>
+
+<p>JACK:	She does begrudgingly because remember, she has her hand all bandaged up with a big box of papers under her arm and her purse on the other.</p>
+
+<p>JENNY:	So, I made a huge job of it, right?  I was like, ugh.  It beeps again and I said okay.  He said to me I think itâs because youâre not pushing your thumb down hard enough.</p>
+
+<p>JACK:	He grabs her bandaged hand.</p>
+
+<p>JENNY:	He got hold of my hand and pushed the thumb and I went ah, fuck, god, ah!  He went right, and I just looked at him like this, like fury.  He said try the other hand.</p>
+
+<p>JACK:	I think at this point the guard was stalling.  Yeah, maybe she scanned the wrong finger, but I bet he was just trying to get a better read on her, watch her closely and see what she does.  She tells him they [00:45:00] didnât scan the other finger; just this one.  But she tries that other hand anyway.</p>
+
+<p>JENNY:	As I did it, I made sure to â dropped all the files so now thereâs files and paper everywhere and Iâm swearing away.  I just start to pick them up but really loudly and thereâs people starting to look over.  He just said for godâs sake, go in, and just beeped me in.  I went like, thank you, danke schon.</p>
+
+<p>JACK:	[MUSIC] Jenny was confident this plan would work.  She says making a scene like this in Germany embarrasses people into action, but a similar tactic like that maybe wouldnât work in a Mediterranean country where people are more laid back.  You really have to know the territory to be most effective.</p>
+
+<p>JENNY:	I just thought the last thing theyâre gonna want is to be massively embarrassed in the middle of the working day, so heâs either gonna ring someone and Iâm gonna have to kinda BS them or I think heâs gonna let me in, and he did let me in.</p>
+
+<p>JACK:	Jenny stepped through the door and into a hallway where thereâs offices.  It was also high-end just like the lobby and there were wooden doors with frosted windows.  The computer that Jenny was after was at an office at the end of the hall.</p>
+
+<p>JENNY:	I just walked down the corridor and it was so quiet, and so it smelled of wood polish and money.</p>
+
+<p>JACK:	She wasnât alone; there were people working in this office.</p>
+
+<p>JENNY:	A few people sort of looked up but didnât do anything, so just looked up at me and then looked back down.  I was just really quiet and respectful; didnât make eye contact, didnât smile.</p>
+
+<p>JACK:	Along the way she discarded her file box and bandages.  They served their purpose.  She doesnât need them anymore and the box fit well enough to just leave it on a bookshelf somewhere.</p>
+
+<p>JENNY:	Got to the end of this office and walked past it once just to check no one was in there â it was empty â and just walked in the office and put this flip-flop USB into the guyâs desktop, huge, big, clunky desktop thing that was all switched on and wide open.  I put it in and I didnât â it whirred away and everything but I wasnât looking at that.  I trust â I have to trust that that will do what they tell me itâs gonna do.  Meanwhile, Iâm kind of just keeping an eye.  But all I can hear in the background is just the quiet, polite calls in German.  I couldnât â nobody walking up and down or anything.</p>
+
+<p>JACK:	She waits a minute or two with the USB drive in the computer and then pulls it out.</p>
+
+<p>JENNY:	I just saw this line go across the screen, kind of like a lightning thing across the screen just once, and that was it.</p>
+
+<p>JACK:	Instead of going out the way she came in, Jenny walked to the end of the corridor, through a door, and then out to the parking garage.  She turned the thumb drive over to her contact and the security firm, and the job was over.</p>
+
+<p>JENNY:	That was it.  That was the most money Iâd ever made ever.  All legitimate; everything was fine, nobody was being robbed.  I was being hired legitimately but I had no idea that people could make that much money just doing something this simple.</p>
+
+<p>JACK:	The thing is, this job was really easy.  She did it all in two days while on a trip already, without the need to do any write-up or do any reports or debriefs or anything like that.  While she didnât say what amount she got, you could still imagine that even if the job paid her just a few thousand pounds, making that kind of money in just two days is really nice.  While breaking into a bank might sound hard, to Jenny, this is what she trained for.  The Hamburg job was about jumping at certain opportunities and she said business really started to pick up after that.  [MUSIC] Okay, so we have one more pen test story from Jenny, and this one is a doozy because this one went really bad.  Alright, so to start, Jenny went to Asia to negotiate a contract for a large company and one of her old clients heard that she was in Asia and called her up.</p>
+
+<p>JENNY:	Guy basically said are you traveling home business class?  I said no.  Theyâre sending me back coach.  He said, do you want to travel back business class and have some spending money?  I said yes.  He said okay, I need you to do a little job for me.</p>
+
+<p>JACK:	She had done work for this guy before, so why not take an extra job while abroad?  She canceled her flight home and booked a new flight to this other country in Asia.  This job was to see if she could get into someoneâs house and find an address book in the office, then look through the address book, looking for a particular name and if she finds that name, then sheâs supposed to leave a Post-it note on the desk with a secret message.  If she doesnât find the name, then she just leaves.  Jenny accepted the gig and the client gave her half of the targetâs address over the phone, and the other half would come when she checked into a hotel in this other city which all sounds a bit cloak and dagger.</p>
+
+<p>JENNY:	I didnât really question it although it was naive not to question it.</p>
+
+<p>JACK:	Sheâs done some pretty interesting jobs before and it comes with the territory I guess, but she wasnât robbing anyone; she was just planting a note and it didnât seem that bad.  She has done work for this guy before and she trusts him.  Jenny checked into her hotel room in this new city.  [MUSIC] She got the other half of the target address and moved forward with Step 1, recon.  She caught a taxi over to the neighborhood where the house was, and got dropped off a little bit down the road and started walking the street to where the target house was.</p>
+
+<p>JENNY:	[00:50:00] The neighborhood that I got out in was so rich and completely deserted.  There wasnât a sound of a dark barking, there were hardly any cars on this huge road.  I could hear the water of this lake that ran beside the road but I could hear virtually nothing.  It just â it seemed to be abandoned.</p>
+
+<p>JACK:	Jenny looked for the house that she needed to gain access to.  She didnât have a smart phone at the time, just a map with the address written on it, and she strolled around the neighborhood, searching.</p>
+
+<p>JENNY:	But then I saw it and it was the biggest house on the street.  It was sort of set back a bit more from the road than the others.</p>
+
+<p>JACK:	It was a big, colonial-style mansion with walls around the property and gardens and fountains and a fabulous driveway that looped around to the front door and back to the street.  She saw the house number and confirmed it was the right one.  Then she noticed the gate wasnât locked.</p>
+
+<p>JENNY:	It had the feeling that it was used as sort of a base camp but not really lived in, so it was kept nicely and everything, but I didnât feel like it was a home.</p>
+
+<p>JACK:	[MUSIC] She scoped the place out a bit more and noticed there were some exterior stairs that led up to some French doors on the second level.  She figured out that might be a good way to break in, and that was it for recon.  She thinks this place isnât lived in, the street gate is unlocked, and the exterior stairs go up to the second story.  With a house this big, thereâs bound to be a door or window unlocked somewhere.  The plan was to come back the following night for the job, so she headed back to the hotel.  Her contact calls her and she tells him recon went well.  Iâm gonna go back tomorrow and finish up the job.</p>
+
+<p>JENNY:	Get back to my hotel room, kind of â I was gonna run a bath, get a drink, get some dinner, have an early night, and I actually got undressed and put my robe on, ran the bath, and then just thought screw it, Iâm gonna go back and do it now.</p>
+
+<p>JACK:	Jennyâs recon had her convinced that this job would be easy, so why wait?  Letâs get it over with now.  The place looked deserted anyway.</p>
+
+<p>JENNY:	I remember thinking that bathwater will probably still be warm by the time I get back.</p>
+
+<p>JACK:	Jenny got dressed in all black.  She wasnât prepared for this job; after all, she traveled to Asia to go a negotiation, not some security assessment, so she has none of her equipment or props with her.  She ties her hair back in a ponytail and looks around the room for anything useful to bring.  She grabbed the Post-it note that she was going to plant on the desk.  She stuffed some cash in her bra and went down to the hotel gift shop to look for any useful tools there.  She buys a small flashlight and a bottle opener from the gift shop, which both have the hotel logo on them.  She got a cab and went back to the neighborhood.</p>
+
+<p>JENNY:	The reason this story is so significant â one of the reasons is that I broke my own rules, because by the time I get to this job in Asia, Iâve been doing this for a long, long time; eighteen years, maybe.  I was first of all very superstitious about things.  I have lots of little rituals and all sorts of bits and bobs that I kinda do before I go out and do a job, but there was also just sensible things like someone always knows when youâre on a job.  You always check with the client right before you go; itâs still green to go or weâre gonna abort, all that.</p>
+
+<p>JACK:	But in this job, she didnât do that.  She didnât tell her client that she changed her mind and was going back that night.  She didnât tell any family or friends that she even took another job while in Asia.  Right now, only her client knew where she was.</p>
+
+<p>JENNY:	Moreover, he thinks that Iâm tucked up in my hotel, good to go tomorrow, and Iâm not.  Iâm a day early.</p>
+
+<p>JACK:	She didnât have a Get Out of Jail Free card on this job either, no little note to hand to some homeowner or to police saying that this is actually a security audit and call this number if you want to confirm everything is fine.  With this particular client, she didnât actually have his number.  He always called her.  These broke a few of her own rules but Jenny thought this job was so easy, it wouldnât matter.  Jenny got out of the taxi a few doors down from the house.  Itâs nighttime now.  She made her way to the house and slipped through the unlocked gate.  She headed for the exterior stairs to the French doors.  Along the way, she realizes her little pen light is so ineffective that she just throws it on the ground and kicks some dirt over it at the front of the stairs.  The moon was up anyway which was enough light to see without a flashlight.</p>
+
+<p>JENNY:	Climbed up the stairs and as I got to the double doors, I heard a phone ring inside the house.  So, just flattened myself against the wall and listened and listened.  Nobody answered this phone.</p>
+
+<p>JACK:	This was good luck, actually.  A ringing phone can tell you a lot.  How many rings until someone picks up?  If someone answers, can you hear their voice?  But the phone just kept ringing.  Nobody picked up, not even an answering machine, so she looked in through the windows of the French door.  Nothing in the house seemed to [00:55:00] be moving.</p>
+
+<p>JENNY:	Thereâs this bedroom and itâs all sort of â thereâs an unmade bed but no personal â no shoes on the floor or anything like that.</p>
+
+<p>JACK:	Since no one answered the phone and the house seemed empty, Jenny got ready to force the French doors open with her bottle opener.</p>
+
+<p>JENNY:	Then I remembered; something Iâve been told all my life was security only works if someone uses it.</p>
+
+<p>JACK:	So, she grabbed the doorknob and twisted it.</p>
+
+<p>JENNY:	It just swung open.  They hadnât even locked the French doors.</p>
+
+<p>JACK:	She leaves the bottle opener outside.  She just doesnât need it anymore and didnât have a good way to carry it.  Those little things can be pokey sometimes.  So, she just leaves it at the top of the stairs to get it on her way out.  The house was dark and quiet.  She didnât want to turn any lights on to give away her presence.</p>
+
+<p>JENNY:	Just padded into the bedroom; no one there, listening all the time.  No lights, no alarms, nothing.  I remember thinking what kind of person doesnât even lock the windows?  I mean, why would you not have alarms?  What kind of person would do that?  [MUSIC] The answer is someone whoâs not frightened of being broken into is the answer.</p>
+
+<p>JACK:	To Jenny, this could mean a lot of things, like are the people who live here dangerous?  Are they looking for a fight?  Are they some kind of criminal overlord?  Was she walking into a trap?  At this point though, she was in the house and felt invested in seeing the job through, so she pushed deeper and headed downstairs to where the office was supposed to be.  Luckily it was the first door she tried.  She went inside the office and saw the desk with an aquarium.  Sheâd been super quiet up to this point but once she found this desk, she started to relax a little.</p>
+
+<p>JENNY:	I kind of had a look around, sat in the chair, a great big chair that you swivel in.  Swiveled on the chair a bit looking at the fish and smiling at the fish and stuff.</p>
+
+<p>JACK:	Looking for the address book, she tried to open the desk drawer but it was locked.  She looked around for the key.  It was in a bowl on the desk.  She grabbed the key and unlocked the drawer.  In the drawer was the address book she was looking for.  She opened it and looked inside.</p>
+
+<p>JENNY:	Found the name almost immediately âcause there werenât many names in English, put it back, and put the Post-it on the desk.</p>
+
+<p>JACK:	Jenny canât tell us what the message was that was on the Post-it.  It was some kind of code word anyway, just to let them know that somebody was here.  Now that the Post-it is on the desk, her job is done.  Thatâs all she had to do, so now itâs time to go back home.</p>
+
+<p>JENNY:	[MUSIC] I saw two car headlights of two massive cars pull up outside the front door.</p>
+
+<p>JACK:	Oh no; two cars are whizzing up the driveway?  Time to run.</p>
+
+<p>JENNY:	I just padded all the way up the stairs, ran up the stairs, ran across the hall into the bedroom, and out through the windows which were still open.</p>
+
+<p>JACK:	She was up on the balcony and she looked toward the driveway and saw two big guys looking around the place.  They seemed like they could be security guards for the house.  They had radios but they hadnât seen her and started to move into the house.  It didnât look like they had any guns drawn but they were probably carrying them.</p>
+
+<p>JENNY:	Just the type of people who would have no sense of humor at all and were definitely looking for me.  I knew in that minute that this was not a legit job and that I was completely on my own.  I knew that if they caught me, I was dead.</p>
+
+<p>JACK:	[MUSIC] Jenny was spooked.  Sheâd broken too many of her own rules on this job now and the situation just got very intense.  She was here a day early.  The client didnât know she was even there.  She hadnât told any family or friends what she was doing.  If security caught her, she would just look like a common burglar.  Even worse, she was starting to doubt her client.  Had they hired her to break into the house of some enemy?  Was she some kind of pawn in a game?  In moments like this, you start realizing your mistakes and she started regretting taking this job.</p>
+
+<p>JENNY:	Every fibre of my being knew that theyâd asked me to break into some massive criminalâs house.  It made so much sense that theyâd asked me to do it because if anything happened to me, it was just Iâd gone missing in Asia, you know?  Businesswoman goes missing in Asia.  It wouldnât have been â there would be no link to anything.</p>
+
+<p>JACK:	But what would be the point of this whole thing?</p>
+
+<p>JENNY:	What it is is itâs to show you that someone got in and didnât take anything.  Thatâs what it is.  Itâs to show you that youâre not invulnerable.</p>
+
+<p>JACK:	Hm, I see.  Perhaps her client wanted to do a security audit for whoever owned that house, but whoever owned that house didnât think a security audit was valuable.  By having Jenny break in and leave a note would be the perfect sales pitch.  Like look, you obviously need better security and I can provide that for you.  Or maybe this was just a bet between two friends or worse, a shot across the bow at some kind of rival.  Jennyâs head was [01:00:00] racing in many directions.</p>
+
+<p>JENNY:	It was like someone was proving a point that someone could get in and do that.  I thought maybe it was more than that; maybe it was a warning or something to them.  I donât know.</p>
+
+<p>JACK:	[MUSIC] But all that didnât matter now.  Jenny was trying to evade running into any of these security guards and she just didnât want to get caught.  She needed to get out of there.  She tip-toed down the exterior stairs down to the ground level, and then snuck over a garden wall and laid down to hide.</p>
+
+<p>JENNY:	Iâm pressing myself up against the garden wall, so Iâm sort of partially hidden by bushes and everything.  Iâm wearing completely black anyway, and I just hid my face towards the wall because my face would have been the only white thing against the shadows, you see.</p>
+
+<p>JACK:	The guards were inside the house turning on lights and looking through the whole place, so Jenny started crawling along the wall, aiming for the gate to get out of there.  But unfortunately she had to crawl past the guardsâ cars to get there.  She was freaking out.</p>
+
+<p>JENNY:	I inch forward a little bit more and a little bit more and I felt like I would either laugh, throw up, or cough, was how I felt.</p>
+
+<p>JACK:	Holding all that back, she kept crawling towards the gate.  She wanted to stay low and out of sight but their cars were making it hard to get there, so she was pretty close to the cars now, inching along on the ground next to them.  She stopped and listened for activity.</p>
+
+<p>JENNY:	I thought if they stay in the house much longer, it might be that I make a move which is a stupid thing to do.  You should just lie still and wait for it to go â itâs 50/50 now type of thing.</p>
+
+<p>JACK:	As she turned her options over, she suddenly realized that she couldnât move her head.  Her ponytail was caught on something.  She couldnât see what it was hooked on.  Maybe a bush, a wall, the carâs tires?  After all, she was right next to the tires.  She couldnât move her head to look back at all.  It was stuck.  She tried to get her hair unstuck but she was having problems reaching back behind her head while staying low and motionless.</p>
+
+<p>JENNY:	In that situation, every inch of you just wants to get up and leave and run.  Iâm fighting that and Iâm gonna be sick and Iâm gonna laugh.  I felt like I was gonna laugh just nervous laughter.  My mouthâs so, so dry.  I taste soil.  I could smell things and I could see bugs walking towards me on this wall.  It was just sheer panic.  I just remember thinking Iâm gonna die.  Theyâre gonna see me.  Iâm gonna get â I donât know why Iâm laughing now âcause it wasnât funny at all but I kinda felt like I was gonna laugh.  It was the ridiculousness of the whole thing just for the sake of a business class flight, you know?  Nobody knows where I am.  I just thought thatâs it, my hair is caught and I canât move.</p>
+
+<p>JACK:	She laid there for a while trying to come up with a plan, any plan to get out of there.</p>
+
+<p>JENNY:	[MUSIC] Then they came out, then suddenly they were both â started talking in this rapid language down the walkie-talkies.</p>
+
+<p>JACK:	It was a tense moment.  She was in danger, close to the cars, hair stuck, unable to move, hoping they didnât see her.  Then she heard them clear their guns and put them away.  Then they climbed into their cars.</p>
+
+<p>JENNY:	Guy gets into the car, slams the door, and then just raced off.  [MUSIC] I was left there lying against this wall, and theyâd just gone.  As quick as theyâd gone in, they left.</p>
+
+<p>JACK:	For a minute, Jenny still couldnât move.</p>
+
+<p>JENNY:	Then I kinda got to me feet a bit wobbly and then just walked out.</p>
+
+<p>JACK:	She caught a taxi back to the hotel and went straight to the bar.</p>
+
+<p>JENNY:	I said to the barman, make me something very alcoholic but that a kid could drink.</p>
+
+<p>JACK:	Jenny sat down with her sugary cocktail.  It was early morning now.  The sun was starting to come up.  She was a mess.</p>
+
+<p>JENNY:	I looked and I could see in the mirror behind the bar that my face was covered in muck and cuts, leaves in my hair, and my clothes are ripped and my shoe was ripped.</p>
+
+<p>JACK:	Jenny downed the cocktail and the bartender askedâ¦</p>
+
+<p>JENNY:	Do you want a beer to chase that?  As soon as he said it, I remembered I had left the bottle opener on the stairs.</p>
+
+<p>JACK:	And the flashlight too, both of which had the hotel logo on them.  But there was no going back to that place; not now, not ever.  But what if they found these items and came to her hotel looking for her?  Questions like this kept her up that night, worrying about every little sound she heard all night long.  But fortunately for her, nobody came to her room that night.  So, the next day, she booked it out of there and got on her business class plane ride home.  Later, she had a phone debrief with her client.</p>
+
+<p>JENNY:	Then he said but you said you were going in on the Saturday.  I said I know, I changed my mind.  Donât give me a hard time about it.  I know I made all kinds of stupid mistakes.  He said well, thereâs no harm done.  [01:05:00] Thatâs fine.  Then I just went, just one thing I need to know, I said, and then Iâll never want to talk about this one ever again; I said I was on me own, wasnât I?  He just said of course you were.</p>
+
+<p>JACK:	[MUSIC] If Jenny had been caught, it would have been really bad for her.  They would have thought she was a burglar.  They looked mean, not a typical for-hire security guard but more like a security guard that an evil villain would hire, a villain that doesnât care much about the law.  To try to convince them that she was there on assignment probably would have made things worse.  It could have turned into a dire situation and it left her shook.</p>
+
+<p>JENNY:	Honestly, after that, I thought Iâm hanging up me guns.  I didnât do another job then.</p>
+
+<p>JACK:	That was it for Jenny.  She was done.  This was just way too dangerous and still at that time, her profession was just very uncommon.  She just felt like she couldnât talk about it.  Who would believe you if you said you were a burglar for hire?  If so, wouldnât they immediately clutch their belongings, thinking you might steal their stuff?  So, she just stopped answering the phone for calls to break into places and just stuck with the negotiation stuff.  But then as time went on, there was a sea change; the security world started adopting this type of thing.  It was becoming a normal part of a security audit and this really surprised Jenny.</p>
+
+<p>JENNY:	There were people writing books called Social Engineering.  There were people giving talks about physical infiltration and it was legit.</p>
+
+<p>JACK:	She realized she didnât have to hide this secret part of her life anymore and it was now more acceptable.  There were all kinds of ways to do this safely and honestly, so she got back into the game and was able to call herself a physical penetration tester, and started doing jobs again.  That kinda reminds me of this line from the movie Sneakers.</p>
+
+<p>SECRETARY:	So, people hire you to break into their places to make sure no one can break into their places?</p>
+
+<p>MARTIN:	Itâs a living.</p>
+
+<p>SECRETARY:	Not a very good one.</p>
+
+<p>JENNY:	I couldnât believe that at that point I could start to talk about it.  I really had to look into it to work out that this was a thing and that I had really â the job I had done my whole life I could do legitimately, be paid for, speak about on stage, and it would be a legitimate business that everybody was interested in and you could even go on certain courses and train in it, for goodness sake.</p>
+
+<p>JACK:	Even though this work was becoming more common, it took Jenny a long time to get back into it because she just couldnât stop thinking about how terrified she was on her last job.</p>
+
+<p>JENNY:	I just thought that was ridiculous.  What for, really?  âCause they were â those guys would have just thought I was a burglar and shot me and they would have probably been right.</p>
+
+<p>(OUTRO):	[OUTRO MUSIC] A big thank you to Jenny Radcliffe for sharing these stories with us.  You can look her up online.  Her Twitter is @Jenny_Radcliffe.  Thatâs R-A-D-C-L-I-F-F-E.  She goes by the name People Hacker.  Her company is called Human Factor Security and their website is humanfactorsecurity.co.uk and she has her own podcast called The Human Factor, so definitely check out her podcast so you can hear her interview other social engineers.  As always, if you want to help support this show, please consider donating to it through Patreon.  Rain or shine, I bring this show to you every two weeks free of charge.  You know why?  Because I donât want to leave you hanging, so donât leave me hanging, okay?  Visit patreon.com/darknetdiaries.  Thanks.  This show is created by me, the nightingale, Jack Rhysider.  This episode was produced by battle-born Charles Bolte, sound design by Garrett Tiedemann Black-Briar, editing and mixing this episode from the snow-shod Proximity Sound, and theme music is by the shatter-shield Breakmaster Cylinder.  Even though in the future everyone will have fifteen minutes of privacy, this is Darknet Diaries.</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

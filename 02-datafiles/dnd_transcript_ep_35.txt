@@ -1,0 +1,715 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>Carbanak â Darknet Diaries</title>
+	<meta name="description" content="ATM hacking. Hollywood has been fantasizing about this since the 1980's. But is this a thing now? A security researcher named Barnaby Jack investigated ATMs and found them to be vulnerable. Once he...">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Carbanak â Darknet Diaries">  
+	<meta name="twitter:description" content="ATM hacking. Hollywood has been fantasizing about this since the 1980's. But is this a thing now? A security researcher named Barnaby Jack investigated ATMs and found them to be vulnerable. Once he...">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/carbanak.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/35/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Carbanak â Darknet Diaries" />
+	<meta property="og:description"        content="ATM hacking. Hollywood has been fantasizing about this since the 1980's. But is this a thing now? A security researcher named Barnaby Jack investigated ATMs and found them to be vulnerable. Once he published his data the ATM hacking scene rose in popularity and is is a very serious business today." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/carbanak.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/35/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/carbanak.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/35/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="Carbanak â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/carbanak.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 35: Carbanak</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://traffic.megaphone.fm/ADV6828800477.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/35/",
+			   "title": "Ep 35: Carbanak"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/35">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[FULL TRANSCRIPT]</p>
+
+<p>JACK:	Hey, whatâs up?</p>
+
+<p>DADE:	Not much, just reading.</p>
+
+<p>JACK:	Cool.  What are you reading?</p>
+
+<p>DADE:	Iâm reading Exploding the Phone.  Itâs about phone phreaking, kind of the history of it.
+<!--more--></p>
+
+<p>JACK:	Sounds interesting.</p>
+
+<p>DADE:	Yeah.</p>
+
+<p>JACK:	This is Dade.  Thatâs not his real name; thatâs just his online name.  I met him at a BSides conference once and was just really impressed with his knowledge of security and hacking.  So Iâd chat him up sometimes and ask him questions on things that Iâm researching.  Hey, Iâm calling âcause I want â Iâm trying to think.  Are there any old movies that have like a hacker getting into an ATM and dispensing cash?</p>
+
+<p>DADE:	Yeah, so thereâs a couple.  Itâs kind of a trope in hacking movies, most prominently I think in Hackers.  Theyâre all sitting around the table at Cyberdelia and Joeyâs really trying to get all of his friendsâ attention.  Heâs talking about how he hacked this bank.</p>
+
+<p>JOEY:	Right?  Okay wait, okay, so itâs a bank.  So this morning, look at the paper.  Some cash machine in Bumsville, Idaho spits out $700 into the middle of the street.</p>
+
+<p>CEREAL:	Thatâs kind of cool.</p>
+
+<p>JOEY:	That was me.  That was me.  I did that.</p>
+
+<p>DADE:	Then Joey takes credit for it and heâs really bragging.</p>
+
+<p>JACK:	Wait, wait, hold on.  How do you know this much about that one scene in Hackers?</p>
+
+<p>DADE:	I watched it a lot.  I picked my hacker handle because of that movie.  Itâs what inspired me to get into computers in the first place.</p>
+
+<p>JACK:	Do you know every scene of Hackers?</p>
+
+<p>DADE:	I know almost every scene of Hackers.  I can find myself quoting it unintentionally quite frequently.</p>
+
+<p>JACK:	Thatâs impressive.  Thatâs really crazy.  Alright, so what year was Hackers?</p>
+
+<p>DADE:	That was 1995.  There was actually a couple of ATM hacks before that as well.  In 1985 a movie called Prime Risk was basically all about finding out ways to rip off ATM machines.</p>
+
+<p>TONI:	Got over twenty frequency codes today.</p>
+
+<p>LEE:	What is that?</p>
+
+<p>TONI:	Itâs a spectrum analyzer.  It reads the electromagnetic environment and creates magnitude readings for the proper frequencies.</p>
+
+<p>LEE:	Oh.  What are you doing with it in your car?</p>
+
+<p>TONI:	Well, itâs just an experiment for now but if weâre lucky we should be able to pick up oh, $200 from each account.</p>
+
+<p>LEE:	You know you can get into a lot of trouble fooling around with the banks.</p>
+
+<p>TONI:	Would you relax?</p>
+
+<p>LEE:	Iâm relaxed.  Youâre talking about ripping people off.</p>
+
+<p>TONI:	Look, itâs a banking system.  We arenât stealing from people.</p>
+
+<p>DADE:	Then again in 1991 a young John Connor in Terminator 2 hooks up his little laptop into the card reader slot of an ATM.</p>
+
+<p>JOHN:	[BEEPS]  Please insert your stolen card now.</p>
+
+<p>DADE:	He hits a couple buttons.  Some Hollywood hacking appears on screen, you know, numbers flying down the screen, changing really fast.</p>
+
+<p>JOHN:	Go baby, go baby, go baby.  Alright.  Pin numberâ¦</p>
+
+<p>DADE:	Eventually heâs cracked the pin.</p>
+
+<p>JOHN: 	Withdraw 3-0-0 bucks.  Come on baby, come on, come on.  Yes!</p>
+
+<p>TIM:	Hey, it worked.</p>
+
+<p>JOHN:	Easy money.</p>
+
+<p>JACK:	Huh.  Alright.  So if Hollywood is doing this in the 80s and 90s I think Iâm gonna look into where we are with ATM hacking today and do an episode on that.</p>
+
+<p>DADE:	Yeah, that sounds great.</p>
+
+<p>JACK:	Alright, this information has been great.  Thanks so much.</p>
+
+<p>DADE:	Yeah, no problem.  Thanks for reaching out.</p>
+
+<p>JACK:	Alright, see you later.</p>
+
+<p>DADE:	Hack the planet.</p>
+
+<p>JACK (INTRO):	[INTRO MUSIC] These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	ATMs are an obvious target for criminals.  Itâs just a hunk of metal holding a bunch of cash.  There can be anywhere from $3,000 all the way up to $250,000 in each ATM.  Getting into one of these could be a big win for someone.  At its core an ATM is just a computer, often a Windows computer with an input device like a touch screen or buttons.  Then thereâs the cassettes that hold the cash.  The cassettes are the crown jewels of the ATM since they hold all the money.  One tactic is to steal the cassettes.  [MUSIC]  Smash and grab is still a common ATM hacking technique.  This is a simple as smashing a window of the store, running in, grabbing the whole ATM, drag it outside, throw it in your truck, and drive off.  To defend against this shop owners and banks have securely fastened the ATM to the ground, often with huge bolts right into the concrete.</p>
+
+<p>But criminals will still smash the window, throw a rope around the ATM, attach it to their truck and pull it out with the truck to knock it loose and then grab the whole ATM and drive off.  But then there are ATMs built right into the walls of the bank where you canât knock it over or pull it loose.  What some criminals do here is theyâll run up to it, create a hole in the ATM [00:05:00] somehow like jamming a crowbar right into it or under it, and then theyâll load up that hole with explosives and blow up the ATM itself.  Usually the cash box that holds the money is knocked loose from the explosion and a thief can run off with just that box of money.  But all these techniques are messy and very destructive.  Thereâs even one video of a guy driving a forklift right through a convenience store window, knocking over all the shelves, and making a ton of damage just to get the ATM loose and out of there.</p>
+
+<p>Itâs shocking and thereâs just much more elegant ways of stealing money out of an ATM.  A little over a decade ago, a story came out that said a master admin password was configured for many ATMs.  Some thieves got ahold of this password and used it to access the ATM.  However, the admin access didnât let them dispense money so they couldnât just steal the money.  The hackers poked around at what they had access to.  Inside the ATM are a number of cassettes with different denominations.  Maybe there are three cassettes with $5 bills, $10 bills, and $20 bills.  With admin access you could assign which cassette was which denomination.  The hackers told the ATMs that all the cassettes have just $1 bills in them.  When they went to withdraw $20, it gave them twenty $20 bills.  Their balance only went down by twenty bucks but they actually got $400.  These criminals did this a few times and got a whopping $1,540 from this attack.  The admin password has since been fixed and that attack is no longer valid.  Around 2009 a security researcher named Barnaby Jack was interested in seeing what kind of hacks he could do on ATMs.  He bought a few and had them delivered to his house.</p>
+
+<p>BARNABY:	I remember when one of the ATM delivery guys came in.  He wheeled the ATM into my place and heâs just like why on earth do you need an ATM in your house for?<br />
+[LAUGHTER]  I was feeling a bit cheeky that day so I just looked at him and was like oh, I just donât like the transaction fees, mate.  [LAUGHTER]</p>
+
+<p>JACK:	This is Barnaby Jack speaking at Defcon 18, the largest hacker convention in the world.  Once he got the ATMs into his house he took them apart and analyzed how they worked.  [MUSIC]  He started looking for vulnerabilities in the ATM he had.  He found the ATM had two different keys; one key opens a door to the cassettes where the cash is but these were high-security keys and each ATM had a different key.  But there was another key which opened up the cabinet.  The cabinet holds the computer that controls the ATM.  He found a serious problem with this key.</p>
+
+<p>BARNABY:	One key will open all the models from that same manufacturer, the cabinet.</p>
+
+<p>JACK:	Yeah, thatâs right.  One key opens the ATM up for all ATMs that that manufacturer makes.  This only gave you access to the motherboard in the ATM, not the cash.  But Barnaby Jack being a security researcher, he tried to figure out how he could attack the motherboard to dispense cash.  Sure enough, he found a way.  He was able to load a custom firmware onto a USB flash drive.  Now that he has access to the motherboard he can plug that USB drive into the motherboard, reboot the ATM, and it would load his custom firmware.  This firmware pretty much let him do anything.</p>
+
+<p>BARNABY:	I placed hooks at the card reader, the pin pad, and the parts of the handles the remote configuration commands.  With those hooks we can add some fairly handy features, save the track data, capture the pin pads, and a few customer commands.  The track data remotely saw remote jackpot and might as well.</p>
+
+<p>JACK:	With the USB drive plugged into the motherboard and new firmware installed, he closed up the lid and the ATM looked and operated just like normal except he had programmed a hidden menu to let him control it however he wanted.  He could read and store any cards that were swiped on that machine and the pins that were entered.  The most astonishing thing he could do was dispense all of the cash from all the cassettes which he called jackpotting.  He demonstrated how he could do this live, right there on the stage at Defcon 18.</p>
+
+<p>BARNABY:	[BEEPING]   Okay so it pops up my hidden menu there.  It will let me dispense fifty notes from A, B, C, or D which are the four cassettes on the ATM.  Letâs just try dump fifty bills from the first cassette.  [MUSIC]  [LAUGHING, APPLAUSE]
+JACK:	This is unbelievable.  I was there for that and Iâm still blown away by how crazy this was to see this live on stage.  It just blew my mind.  But physical attacks on ATMs might seem a little too risky.  I mean, youâve gotta actually go there and lift the cover up to get into it.  There may be cameras watching you, too.  But ATMs are sometimes found in gas stations or bars and theyâre often tucked away, sometimes hidden like by the bathrooms or cigarette machine.  And we give people privacy when theyâre using the ATMs so itâs entirely possible to do this in broad daylight and nobody would notice.</p>
+
+<p>[MUSIC]  But Barnaby wanted to take this a step further and see if he could figure out a way to gain remote access to an ATM over the network.  He plugged in the ATMs to his home network and began trying to see what he could get into.  Well, there was a remote login to the ATM but it had a username and password.  But Barnaby found a [00:10:00] vulnerability in the software to let him bypass that authentication altogether, allowing him to get right into the ATM.  From there he couldnât do much other than check the system, see how much cash was there, and basic troubleshooting.  No way to actually dispense cash, but Barnaby had already made a custom firmware that could give him extra access.  He was able to connect all these exploits together which allowed him toâ¦</p>
+
+<p>BARNABY:	Upload rootkit.  Thatâs not a bad feature; bypasses authentication, initiates the software upload which lets me replace the firmware so, awesome.</p>
+
+<p>JACK:	Awesome it was.  Barnaby could now remote-control an ATM with his own custom firmware that allowed him to do whatever heâd want such as dispensing cash out of an ATM on the other side of the world without even touching it.  [MUSIC, LAUGHING]  Again, unbelievable.  The research that Barnaby Jack did with ATMs was just amazing.  He didnât stop there.  He had a passion for finding vulnerabilities in embedded devices.  There are electronic imbedded devices in so many products we interact with, devices like a washing machine, your thermostat, a refrigerator, dishwasher, your phone, video games, printers, and medical devices.  After Barnaby demonstrated to the world how you can hack into ATMs live on stage at Defcon, he turned to researching the electronics within medical devices.  He found that he could gain remote access to insulin pumps that were actually strapped onto people and worn about.  On stage at the RSA convention in 2012 he demonstrated what he found.</p>
+
+<p>BARNABY:	From a hundred meters away I can scan for any insulin pumps in the vicinity.  I will return those insulin pump IDs and then I can have them dispense their entire 300 units of insulin which for a Type 1 diabetic, will easily prove fatal.
+JACK:	This guy really wasnât messing around.  I mean, first robbing banks, now killing people?  The point he was trying to make is that medical device manufacturers really need to take security a lot more seriously than they already were.</p>
+
+<p>BARNABY:	Iâm trying to go as public with this research as I can just to show how easily these pumps can actually be attacked and hopefully change the mind of the FDA and of Medtronic, and of the public that maybe a recall could be in order.</p>
+
+<p>JACK:	Barnaby then began looking to see if he could remote-control a pacemaker.  This is a device used to keep your heart beating regularly.  Sure enough, he figured out a way in.  See, Barnaby was an amazingly good security researcher.  He had a keen ability to find weaknesses and security holes in so many systems.  When he found a way to remote-control a pacemaker implanted into a human, he took his findings on the road to a security conference in Melbourne, Australia.  He demonstrated this hack live on stage to show how someone could send a lethal shock to a human through hacking a pacemaker.  This news of this vulnerability, again, was a big deal.</p>
+
+<p>Barnaby refined his demonstrations and was accepted to speak at Black Hat, the security conference in Las Vegas to demonstrate this medical device hacking live on stage.  But he never did give that talk because he died a week before the conference.  His girlfriend found him lying on the floor in their San Francisco apartment.  [MUSIC]  The coroner examined his body and ruled that the cause of death was an overdose of drugs.  He was thirty-five years old.  Barnaby had a lot of talent and potential and opened our eyes to a lot of things.  Losing him was a tragedy and he will be missed immensely.  Alright, so if you could start out by telling me your name and what do you do.</p>
+
+<p>JORNT:	My name is Jornt v.d. Wiel.  Iâm a security researcher within the Kaspersky Lab.</p>
+
+<p>JACK:	[BACKGROUND CONV.]  Kaspersky Lab is based in Moscow, Russia and makes antivirus software amongst many other things.  They need to keep their finger on the pulse of what the security threats are in the world so they can develop ways to detect and defend against these threats.  Okay, so Jornt, what were you saying after Barnaby Jack demonstrated how to hack into ATMs?</p>
+
+<p>JORNT:	Yeah, so he introduced it and he showed that it was possible.  What we saw after that was people started copying him, [MUSIC] especially in Russia and the surrounding countries.</p>
+
+<p>JACK:	Surely Barnaby Jack wasnât the first person to have figured out how to hack an ATM.  But he was the first to demonstrate it live on stage.  After he did demonstrate it, banks and ATM vendors did improve the security of their machines but ATM hacking started gaining in popularity after the talk.  There was an ATM hack in particular that Jornt will always remember.</p>
+
+<p>JORNT:	Yeah, itâs one of our colleagues.  He got a call or an e-mail from somebody that he knew.</p>
+
+<p>JACK:	It was an e-mail.  It was from an IT guy working at a bank in Ukraine.</p>
+
+<p>JORNT:	He told us that he had a problem and he didnât really want to disclose what it was.  He said that you guys just have to come.</p>
+
+<p>JACK:	Jornt and his team were like well, going to Kiev is far and itâs not easy to get to.  Just tell us what the problem is.  Weâve probably seen it before and weâll just tell you how to fix it.  But the bank was insistent on telling [00:15:00] them they must fly to Ukraine to see the problem themselves.  Jornt and his team hopped on a plane and flew to Kiev to visit this bank.  [MUSIC]  They took him into a room which had all the surveillance footage for the bank.</p>
+
+<p>JORNT:	We went there and then they showed us video footage.</p>
+
+<p>JACK:	Okay, so the scene in the video is this; thereâs a bank with ATMs.  Okay, but itâs three a.m. so the bank is closed.  The ATMs are in this little foyer lobby something of the bank.</p>
+
+<p>JORNT:	Like a portal, kind of.</p>
+
+<p>JACK:	Yeah, but the doors are locked so you have to swipe your debit card on the door in order to get into that portal to use the ATMs.  But you canât get into the rest of the bank.  Jornt watches this video footage.</p>
+
+<p>JORNT:	In the video you see a guy walking towards the bank.</p>
+
+<p>JACK:	This guy is wearing a big black hoodie, heâs got a long scarf but he wraps it around his face so you canât see what he looks like, and heâs holding a big black duffel bag.  He opens up his jacket, takes out his debit card, and swipes it on the doors, which lets him into the lobby where the ATMs are.</p>
+
+<p>JORNT:	As soon as he got in the ATMs started to blink.  He walked towards the first ATM and then this whole pack of money came out.</p>
+
+<p>JACK:	Literally the moment he enters the lobby the ATMs suddenly start spitting out all kinds of cash in all of the cassettes.  He didnât even touch a single button on the ATM.</p>
+
+<p>JORNT:	Then the money just kept on coming out so he just kept on filling his sports bag.  Then he went to the next ATM and to the next one, and to the next one.</p>
+
+<p>JACK:	There were four ATMs in this lobby and all four of them are blinking wildly and theyâre spewing out thousands of Hryvnia, the Ukrainian money.  As fast as theyâre popping out of the ATM, this guy is shoving them into his duffel bag.  The operation seemed very precise and was done very quick.</p>
+
+<p>JORNT:	When all four ATMs were empty he left and without even touching the ATMs he was able to rob them.</p>
+
+<p>JACK:	The bank said there was around $250,000 in each of the ATMs he just stole from which meant he took about a million US dollars in just a few minutes, [MUSIC] somehow magically emptying all the ATMs without even touching them.  This isnât a hack; this is a superpower of some kind.  Forget about the team at Kaspersky to solve this.  You need Batman or someone on this one.</p>
+
+<p>JORNT:	Yeah but come on, itâs not something that isâ¦</p>
+
+<p>JACK:	Hollywood movie magic?  But seriously, no matter how weird a hack may seem there is always an explanation for it.  Jornt and his team began trying to think of what this could be.</p>
+
+<p>JORNT:	First we thought that this was a modified version of another malware that we already knew about that was called Toucan.</p>
+
+<p>JACK:	Yeah, Toucan is pretty slick.  It first requires hackers to remotely access the ATM over the network.</p>
+
+<p>JORNT:	For your information an ATM is just a computer running Windows so itâs possible to install malware on it.</p>
+
+<p>JACK:	Once a hacker gets into the ATM over the network they plant this Toucan malware on it.</p>
+
+<p>JORNT:	This malware, it was active between twelve oâclock and three oâclock in the night.  When you entered a special codeâ¦</p>
+
+<p>JACK:	This is a special code you just put right on the pin pad of the ATM, then you get access to the Trojans menu.  From here you can see how many cassettes there are and how many bills are in each one.  Then thereâs a little special code at the bottom of the screen which is called a challenge.</p>
+
+<p>JORNT:	Then you get the challenge.  You send it to your boss and he calculates response.  You enter the response.</p>
+
+<p>JACK:	Whoever is at the ATM sends this code back to the hacker and then they generate another code so that you enter it back into the ATM.</p>
+
+<p>JORNT:	Then you basically get into the god-mode menu because you can choose from which cassettes you want the money.</p>
+
+<p>JACK:	Then you literally get to say âgive me the money from cassette oneâ and money just comes right out.  Itâs a pretty slick attack and it works really well when set up correctly.</p>
+
+<p>JORNT:	Back at the time it was one of the first ATM malware versions that was there, you know?  Now there are dozens, way more, but back then it was one of the first.  Because of the modus operandi, you enter in the middle of the night.  We thought that this was a modified version so we asked the bank for hard disks of the ATM so we could search for malware.</p>
+
+<p>JACK:	Jornt took these disks back to the lab and investigated them thoroughly.</p>
+
+<p>JORNT:	We couldnât find anything.</p>
+
+<p>JACK:	[MUSIC] The trail went cold.  Jornt was stumped.  He had absolutely no clue how this attack happened.  There was no sign of any malware or suspicious activity on the ATMs.  How could this be?  Months go by; no progress.  Jornt just stopped investigating, thinking it was just some really weird anomaly.  Maybe magic, who knows.  But then out of nowhereâ¦</p>
+
+<p>JORNT:	We got a call from one of an account manager.</p>
+
+<p>JACK:	But this wasnât an ordinary call.  The account manager was calling him at three a.m.</p>
+
+<p>JORNT:	It was in the middle of the night and the guy just said that we have to call this number.  We were like man, itâs in the middle of the night.  Weâre sleeping.</p>
+
+<p>JACK:	Jornt was like canât you just tell me what this is for?  But the account manager was insistent that he just call this number.  Jornt and a few of his colleagues [00:20:00] got out of bed, splashed some water on their face to wake up a little, and called the number.</p>
+
+<p>JORNT:	There was a guy that was completely, completely stressed out.</p>
+
+<p>JACK:	He was an IT person from a large bank in Russia.  He was in a total panic.<br />
+Something big had happened to this bank and he needed help immediately.</p>
+
+<p>JORNT:	He just said get your ass over here.  Weâre like okay, but where is here?</p>
+
+<p>JACK:	The bank happened to be in the same town as one of Jorntâs colleagues so he got dressed at three a.m. and went down to the bank.  On the way there theyâre thinking things like oh, this bank must have been robbed for millions of dollars or something.  Maybe it was those ATM robbers since this call was at three a.m. too.  The colleague arrived.</p>
+
+<p>JORNT:	When he was there, like I said, the guy was completely, completely stressed out and because it turned out that their domain controller which is the most important server within the network, was actually sending data to China.</p>
+
+<p>JACK:	[MUSIC]  While this isnât exactly a bank robbery, itâs still quite a big problem.  The domain controller is the heart of the network.  It handles like, all the authentication, all the connectivity between Windows computers, and if you have admin access to the domain controller you probably can get admin access to pretty much any other Windows computer in the entire network including any money-processing systems.  When the bank was saying their domain controller was sending data to China, this meant one thing.</p>
+
+<p>JORNT:	Yeah, the domain controller has been breached.</p>
+
+<p>JACK:	As in, hackers have gained access to the heart of this bankâs network.</p>
+
+<p>JORNT:	There is no reason for a domain controller to contact the server in the middle of the night in China.</p>
+
+<p>JACK:	Jorntâs teammate grabbed a chair and sat down at a terminal to look at the domain controller.</p>
+
+<p>JORNT:	When such a thing happened what you tried to do is you tried to find the malware.</p>
+
+<p>JACK:	They used a tool called Process Explorer to examine whatâs running.  They looked at system logs and examined the memory.</p>
+
+<p>JORNT:	It didnât take a long time to find that process.</p>
+
+<p>JACK:	They found what program was sending the data to China and began analyzing it.  They quicklyâ¦</p>
+
+<p>JORNT:	Made memory dumps and just do some strings on it to find readable characters.</p>
+
+<p>JACK:	While itâs not possible to see whatâs inside this program or what itâs doing, sometimes running strings on it can get you a clue.  A strings command will analyze the file to see if thereâs any human readable data in the bytes of the program.  This can sometimes reveal clues such as who wrote the program or what language it was written in, or other tiny clues like this.  Jornt ran the strings command and found something.</p>
+
+<p>JORNT:	[MUSIC]  There we saw that there was written VNC.</p>
+
+<p>JACK:	VNC is a way to remotely-control a computer as if youâre sitting right in front of that system.</p>
+
+<p>JORNT:	Think about the situation, you know; youâre at a large bank in the middle of the night in Russia.  The domain controller is sending data to China and you see that there is a DLL loaded.</p>
+
+<p>JACK:	Which has an active Remote Desktop connection on it.</p>
+
+<p>JORNT:	Now, could it be that those guys that breached the server are watching what we were doing?</p>
+
+<p>JACK:	This is certainly a chilling moment.  To think that not only are hackers in the bank, but theyâre watching your every move on this computer?  Jornt and his team wanted to find out if they were being watched so they came up with a plan.</p>
+
+<p>JORNT:	We opened up a Word document and we wrote âprivyetâ which is Russian for âhello.â</p>
+
+<p>JACK:	Wait, why did you say hello in Russian?</p>
+
+<p>JORNT:	If you donât know Russian when youâre attacking a Russian bank, things get complicated.</p>
+
+<p>JACK:	So they sit there with the Word document opened with âhelloâ written in Russian on it and wait.  If a hacker was in the system right now, theyâd see this and they know that message is for them.  A few minutes go by and the cursor starts to move.  They start to type and they say âhelloâ in Russian.  Then they started writing more.</p>
+
+<p>JORNT:	âYou will not catch usâ and then it was like okay, âWe will catch you.â  âNo, you will not catch us.â</p>
+
+<p>JACK:	This four a.m. chat goes back and forth for a while between the hackers and the investigators.  Eventually that chat ended and Jorntâs team was able to find the malware on this computer and wipe it off the domain controller which disconnected the hacker from the network.  Removing this malware wasnât that hard, actually.  So the next step was to figure out if any other computer in the whole network had it and remove it.</p>
+
+<p>JORNT:	We wrote a very simple script and it was ran on all the computers within the bank, and a little bit later the malware was removed.  So far so good.</p>
+
+<p>JACK:	This incident gave Jornt and his teammates a lot of clues as to what was going on here and they were actually able to connect the dots back to those ATMs that got hacked in Ukraine.  After the break weâll hear how Jornt unravels the whole thing and figures it all out.  Stay with us.  Alright, so go on.  What happens next?</p>
+
+<p>JORNT:	Eugene Kaspersky, the owner of the company, he was at the Interpol conference and he was telling this story.  Then Europol heard about this and they thought oh, these guys might be coming to Europe.  We have to inform our banks.  Europol is headed in The Hague so one of my colleagues from Russia, [00:25:00] he flew over to The Hague to present about this case.</p>
+
+<p>JACK:	Kaspersky, security researcher, presented their findings to this Europol conference in The Hague, in The Netherlands.  This started getting the case a lot more attention.  First, a big bank heard this talk and started a panic saying âwe have the same indicators of compromise on our serversâ but this turned out to be a false positive.  But then the Dutch police became interested and they wanted to help.</p>
+
+<p>JORNT:	Around that time we also decided to work on this case together with the Dutch police because they wanted to do a case with us and they were interested.</p>
+
+<p>JACK:	[MUSIC] By this time a few other banks are now calling up Jornt and his team and having them investigate the similar issues.</p>
+
+<p>JORNT:	Yeah, we found a new command and control server and that one was located in The Netherlands.</p>
+
+<p>JACK:	The malware was being controlled remotely by a command and control server.  This server was located in Holland.  This was a lucky break because the Dutch police were already aware of this and wanted to help.</p>
+
+<p>JORNT:	It was relatively easy for the police to seize it.</p>
+
+<p>JACK:	Once the Dutch police seized the server they gave it to Jornt to analyze.</p>
+
+<p>JORNT:	They gave us the source code of the botnet panel.  We analyzed it and we saw that they made a small implementation mistake and that meant that if we sent a very specific request to a web server, youâd get a very specific error.</p>
+
+<p>JACK:	Basically if you did an HTTP request to this command and control server with the /zero at the end, the server will return a very specific error.  This meant Jornt could scan the entire internet quite quickly and easily, looking for every single command and control server being ran by this hacking team.</p>
+
+<p>JORNT:	We just scanned the whole internet.  We just did that whole request on all the web servers on all the internet trying to see if one would come up with such unique error response.  That way we were able to find other command and control servers.</p>
+
+<p>JACK:	Now things started moving a lot faster for Jornt.  Him and his team have responded to a lot of banks with the same problem.  They have a copy of the malware that was on the bank, and a copy of the command and control servers which was orchestrating the whole thing.  At this point they decided to give this malware a name and they called it Carbanak.</p>
+
+<p>JORNT:	It comes from two things; it was based on malware called Carber and then there was a configuration file called Anunak.  We kind of meshed those two words together so thatâs why we named it Carbanak.</p>
+
+<p>JACK:	At this point Jornt and his team have completely unraveled how this entire hack works and it all starts with a random employee.  In this case, an event coordinator or manager.</p>
+
+<p>JORNT:	They send a spare phishing e-mail to an employee at the bank, for example the event manager.  At that time it was a Word document and that Word document contained an exploit for an already patched vulnerability right away.  Now, as soon as the event manager opens up the Word document, the malware is downloaded and installed on their computer and the attackers have their first point of entry within the bank.</p>
+
+<p>JACK:	Hereâs what went down.  [MUSIC]  An e-mail was sent to an event coordinator of a bank which said something like âWeâre organizing a very important event and we think your company would be interested in coming.  Please see the attached doc for details.â  Of course, the attached Word document contained a virus in it.  The human seems to be the weakest link in the network still.  Basically, inside this Word document was a set of instructions that the computer should execute.  This Word doc wasâ¦</p>
+
+<p>JORNT:	Just downloading the Carbanak malware.  That one actually contains the back door so the attackers could connect to that computer.</p>
+
+<p>JACK:	Now that the hackers had remote control of this personâs computer in the bank, the next goal would be to elevate their privileges and get access to the domain controller.  The hackers first installed a key logger on this personâs computer to record every keystroke that person makes.</p>
+
+<p>JORNT:	The first thing they tried to do is tried to get the administrator passwords.  One way to do that is install some software that makes the machine really slow.  Then the person will call IT.  IT will come, they will enter the administrator passwords, they will see the software thatâs slowing down the PC.  They remove the software and the guys have the administrator passwords because they installed a key logger.</p>
+
+<p>JACK:	Iâm not gonna lie; I think this is a genius move.  To put a key logger on a computer and then make the computer act badly just to get an admin to come log in and take a look, and when they do you steal their password?  Thatâs amazing.  Now that they have the admin password to one of the computers theyâll try to use that password on another server.</p>
+
+<p>JORNT:	You go to the domain controller of course, and the password is the same.  You can log in.  There you can find a computer that is of interest for you.</p>
+
+<p>JACK:	A computer of interest in a bank is a computer that controls the money transfers or controls the ATMs.  But this hacking group was very tactical once they arrived on a computer that handled bank transfers.  They also figured out which employees were the ones that were making manual money transfers on these systems so theyâd infect those employeesâ computers, too.</p>
+
+<p>JORNT:	The interesting thing about this gang is [00:30:00] malware-wise, they were not the most advanced or it was not APT.  They didnât use like, espionage.  They didnât use any zero-days, that kind of stuff.  But they were really good at finding their way within the bank.  They were really smart and clever andâ¦</p>
+
+<p>JACK:	Give me some ideas what they were doing.</p>
+
+<p>JORNT:	One of them was to just install video recording software on the machine of one of the employees.  [MUSIC]  The video recording software was in really bad quality.  It was in black and white and only the active screen was recorded.  But by that way, and not much data was sent to the command and control servers so it wouldnât see gigabytes going to one IP address.  The good thing is they, just by watching how one guy was doing his day-to-day job, they learned how all the IT systems within the bank worked.</p>
+
+<p>JACK:	That is clever.  By recording the userâs screen they could see exactly how to use that money transfer system.  By using a key logger they could get the passwords on those banking servers, too.</p>
+
+<p>JORNT:	Thatâs the smart thing about them. They just found their way quite quickly to extract money from the bank.</p>
+
+<p>JACK:	Alright, so hereâs the situation now.  Russian hackers or someone fluent in Russian found their way into a Russian bankâs network, identified which employees have access to manually transfer money, and have all the logins to get into those money transfer servers, and theyâve been watching how people do it for days.  They now have complete access to make any money transfer they want.  Now itâs time to cash out.</p>
+
+<p>JORNT:	They had a couple of ways.  One way was to enter data directly into the Swift system and transfer money overseas.</p>
+
+<p>JACK:	Swift is a network that many banks of the world use to transfer money between banks internationally.  It has to be a very secure network because a bank can literally lose millions of dollars in an instant if a hacker were to make a illegal Swift transfer to another bank account.</p>
+
+<p>JORNT:	One other way was to control the ATMs remotely like we saw with the first case.</p>
+
+<p>JACK:	Basically these hackers found a way that the bank could remotely control the ATMs and it had a feature to dispense all the money.  The hackers simply got into the ATM admin server, waited for the go-ahead from the guy at the bank, and then they just started dumping all the bills out.  Oh, and then there was a third way that the hackers were transferring money.</p>
+
+<p>JORNT:	[MUSIC]  Itâs actually quite a funny story.  They found the system to create accounts.  They created all these accounts for their money mules.</p>
+
+<p>JACK:	All these methods actually required two people.  First there was a hacker that needed to get into the computers and transfer all the money and stuff, but then thereâs a money mule whoâs simply a person whoâs paid to go grab the money and send it back to the boss, but they get to keep a small cut of it.  In this third method of stealing money they used a bunch of money mules.  They hired a bunch of them and taught them how to go get the cash.</p>
+
+<p>JORNT:	Then theyâre hiring all the mules.  They created debit cards for all the mules.</p>
+
+<p>JACK:	The hackers created bank accounts for each one of these mules and gave them a debit card but the bank account had a very specific amount of money.</p>
+
+<p>JORNT:	Like $3.33 or something, a really, really crazy low amount that nobody would typically have.</p>
+
+<p>JACK:	Then once all the mules had accounts set up at this specific bank, the hacker would then go to work.  Instead of looking up all the mulesâ account numbers and changing their balances one by one, the hacker would just do a database update on the entire database, updating all accounts that had $3.33 in them.</p>
+
+<p>JORNT:	Updates the table, balance, âtil one million dollars where balance is $3.33.</p>
+
+<p>JACK:	Suddenly all the mules had one million dollars in their account and they could go withdraw that cash.  A lot of mules successfully did withdraw millions of dollars this way which resulted in banks losing a ton of money.</p>
+
+<p>JORNT:	The funny thing is because of that query, not just the mules had suddenly one million, but everybody who at that point in time happens to have the same amount of money was suddenly a millionaire.</p>
+
+<p>JACK:	Thatâs crazy.  Now that Jornt and Kaspersky Labs have completely understood how this operation works, they wanted to disrupt the whole thing.  They scanned the whole internet looking for those command and control servers and when they found them they gave it to the local police to take down.  By taking down these servers it disrupted the whole operation.  The criminals were persistent; after all, these hacks had already brought in millions of dollars.  They just kept getting their command and control servers seized by the police.  They changed their modus operandi, is that right?  They changed their tactics.  [MUSIC]  Instead of using the Carbanak malware which had antivirus signatures that were already well-known, they started using off-the-shelf tools such as Metasploit and Cobalt Strike.</p>
+
+<p>With this slight change of tactics they were able to fly under the radar once again and [00:35:00] strike at many more banks.  Kaspersky claims this group successfully attacked thirteen times and stole twenty-five million US dollars.  But Europol was also tracking this group and they had completely different numbers.  Europol claims this group hacked into over a hundred banks and stole money, and they stole a whopping 1.2 billion US dollars.  This obviously got the attention of a lot of police and while most bank robberies occurred in Ukraine and Russia it did start to branch out to various other countries like Spain and China.  A major investigation was underway; not just Europol, though.  The Spanish government was investigating.  The Moldavian government, Romanian, Belarusian, the Taiwanese government, and even the FBI had cases on this group and were sharing information.</p>
+
+<p>JORNT:	What we saw is that a while ago and â I donât know if I can remember exactly when.  One of the suspected ring leaders got arrested in Spain.  He was a Russian guy living in Spain, or a Ukrainian guy.</p>
+
+<p>JACK:	It was actually March, 2018.  A guy named Denis K was arrested in Spain.  He was from the Ukraine and he was working with three other Ukrainian and Russian nationals.  Together they worked with the Moldavian mafia to hire the money mules and fly them to the banks to pick up the money.   Once they had the money they would quickly switch it to Bitcoin where they could spend it anonymously.  However, not everyone takes Bitcoin.  When Denis K tried to buy something big like a car or a house he had to pay taxes on it and some bad accounting tipped off the police to follow the money, which led them to Denis and they arrested him.  When they arrested Denis in Spain they found in his house computers, jewellery valued at over $600,000 US dollars, and two luxury vehicles.</p>
+
+<p>They also found that Denis owned two houses that were worth over a million dollars each.  The police thinks this gang had acquired over 15,000 Bitcoins which is about sixty million US dollars today.  But even though this arrest occurred, the Carbanak malware continued to be used by hackers around the world.  It may have been traded on a dark net or some hacker forum.  Some chatter on a hacker forum seemed to suggest this arrest didnât even slow down these attacks at all.  Another prominent hacker group called Fin7 used this Carbanak malware to target American companies.  That story actually doesnât have any ATM hacking in it so weâll skip it but it is amazing so Iâll have to cover it on another episode.  But Carbanak will always be remembered by Jornt becauseâ¦</p>
+
+<p>JORNT:	This was the first large attacks on banks and organized attacks on banks because first either criminal groups attacked consumers with banking malware, and later they started to attack banks, basically, with banking malware and robbing banks because it was more profitable and easier in the end.  These attacks on banks, they are still happening.</p>
+
+<p>JACK:	What can banks do about this now?</p>
+
+<p>JORNT:	One of the obvious things is update your software.  This group didnât use any zero-days so if they just would have updated their Microsoft Office, this attack wouldnât have taken place.</p>
+
+<p>JACK:	I looked this up.  These hacks were going around in 2015 but the hackers used an exploit that Windows had fixed since 2012.  Yeah, if the bank simply kept their Microsoft Word updated on all the employeesâ computers, this would have gone nowhere.  This is why Iâm always telling you to update your software.</p>
+
+<p>JORNT:	Then if you have antivirus installed make sure that you also have one that looks at the behaviour of computers, of your system, because that one is also able to catch a known malware quite easily.</p>
+
+<p>JACK:	There really isnât just one way to stay safe from this attack.  You really need good all-around security hygiene practice for your users and your servers.  Itâs also good to have proper monitoring in place so that you can quickly detect when something like this is going on.  Carbanak is just one way hackers have been getting into ATMs but there are many more ways theyâre doing it today and itâs becoming more popular.  Another way that ATMs are being hacked is if you can get access to the Ethernet cable that connects the ATM online, you can plug it into a fake processing center that you set up, tricking the ATM to just basically authorize any withdrawal.  Oh, and some ATMs have a full QWERTY keyboard built into it.  Some hackers found that you can hit shift five times quickly which gives you the Sticky Keys in Windows and then from there you can access the Windows OS.  Thereâs other keyboard commands you could do to exit out of the ATM app since it really is just a Windows computer.  There are a whole bunch of other methods used to defeat cash machines today.  ATM hacking is going on all over the world and the manufacturers and banks really need to pay extra attention to these kinds of attacks because ATM hacking will continue until security improves.</p>
+
+<p>JACK (OUTRO): 	[OUTRO MUSIC]  Youâve been listening to Darknet Diaries.  For show notes and links check out darknetdiaries.com.  Big thanks goes to Jornt v.d Wiel for telling us this story.  If this show brings you value and you enjoy it please consider supporting it through Patreon.  This show is made by me, the cyberdelic [00:40:00] warlord, Jack Rhysider.  Theme music is by the funkadelic Breakmaster Cylinder.  Join us again in two weeks where Iâll bring you more true stories from the dark side of the internet.  Peace.</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

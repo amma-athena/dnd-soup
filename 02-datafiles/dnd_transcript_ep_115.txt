@@ -1,0 +1,547 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>Player Cheater Developer Spy â Darknet Diaries</title>
+	<meta name="description" content="Some video game players buy cheats to win. Let's take a look at this game cheating industry to see who the players are.">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Player Cheater Developer Spy â Darknet Diaries">  
+	<meta name="twitter:description" content="Some video game players buy cheats to win. Let's take a look at this game cheating industry to see who the players are.">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/playercheater.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/115/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Player Cheater Developer Spy â Darknet Diaries" />
+	<meta property="og:description"        content="Some video game players buy cheats to win. Let's take a look at this game cheating industry to see who the players are." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/playercheater.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/115/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/playercheater.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/115/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="Player Cheater Developer Spy â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/playercheater.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 115: Player Cheater Developer Spy</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://www.podtrac.com/pts/redirect.mp3/traffic.megaphone.fm/ADV5807261804.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/115/",
+			   "title": "Ep 115: Player Cheater Developer Spy"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/115">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[START OF RECORDING]</p>
+
+<p>JACK:	One year, I went to Defcon, the annual hacker conference, and at Defcon, thereâs something called r00tz.  Itâs basically Defcon kids, where itâs a whole village set up just for kids to learn how to hack.  I ducked my head in there to check out the scene.  Kids were learning how to solder, how to pick locks, how to hack voting machines, and how to hack websites.  There are talks in this r00tz Village, too, and there was a girl on stage, probably ten years old, and she was talking about how she hacked a video game on her phone.  The game was some kind of farming game where you have to plant your seeds and then wait a certain amount of actual, real days for the crops to grow.  Well, she didnât like having to wait, so she turned the clock forward on her phone and then got back in the game to see if the crops had grown at all, but they didnât.  There was some kind of check that the game was using to see if people were doing this, but she didnât stop there.  She tried again.  This time, she tried turning the Wi-Fi off on her phone and then changing the clock.  When she opened the game back up, boom, all her crops had fully grown.  She figured it out; a ten-year-old figured out how to hack this farming game, which was one of the coolest talks Iâve ever seen at Defcon.</p>
+
+<!--more-->
+
+<p>(INTRO):	These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	Hey friends, I just want to thank you again for being here with me and listening to the stuff I create.  You, the listener, means the world to me, and I love you.  Hey, want to go down a rabbit hole with me?  Thereâs some stuff I stumbled into thatâs kind of crazy, and you might already know about all this, but I didnât, and I love finding new pockets of crazy stuff happening on the internet.  So, come along with me and let me show you something.  [MUSIC] [RUSSIAN] This is an opening clip of a YouTube video called â oh, actually itâs in Russian, so I have no idea what it says.  Here, letâs see what Google Translate says.  [RUSSIAN] Oh, thatâs weird.  Do I know Russian?  I think I understood these words.  Did it say cheaters, documentary, film?  Here, listen again.  [COMPUTER] Cheater, documentary, film.  Cheater, documentary, film.  Well, now Iâm going to make cheatery, documentalni, podcast.  [MUSIC] So, it came to my attention that â okay, brace yourself â people are cheating in video games.  Dun-dun-da.  Itâs probably the most well-known fact about video games, and to be honest, people have been telling me about this many times, and I was kinda like yeah, of course people cheat; duh.  In fact, the first hack I ever did was manipulating the Save Game file on Sim City and giving myself 999 billion Sim dollars.  So, I was just like yeah, who cares about cheaters?</p>
+
+<p>But someone I was chatting with was like no, no, no, itâs a crazy industry.  I still wasnât interested; Iâm like yeah, of course.  Havenât you heard about Game Genie?  I really didnât care because so what if thereâs a cheater in a game?  Itâs just a game.  Anyway, I finally leaned in to take a look at what this person was telling me, and I was like whoa, what?  I immediately thought of you, my listener, and how you would probably want to hear about this, too.  So, letâs get into it.  [MUSIC] Now, Iâve been working on this episode for jeez, six months now, trying to embed myself in the game cheating community to get an inside look, and I did, sort of.  I talked with all kinds of people involved in the cheat scene; developers, distributors, admins, and players, but I wasnât able to get any to agree to a voice interview, which was really frustrating when you can chat on Discord with someone for hours and hours and day after day who are open to just about anything, yet donât want to have their voice heard.  Itâs a little frustrating.  This wasnât one person who turned me down; it was every single person I chatted with, so Iâm sitting here now just looking at pages and pages of chat dialogue with these people, and well, since this is an audio show, hey, why not get a voice actor to read these chat messages?</p>
+
+<p>ACTOR:	Howâs my voice sound?  Can you hear me alright?</p>
+
+<p>JACK:	Yeah, yeah, this sounds great.  Thanks for doing this.</p>
+
+<p>ACTOR:	Yeah, no problem, man.</p>
+
+<p>JACK:	[MUSIC] What heâs going to read for me is kind of a mashup of all the conversations I had with a few different people.  Itâs not just one conversation I had; heâs going to read from many different conversations.  Iâm not so much interested in the actual people who are cheating in the games.  Iâm more interested in the money involved and the battle between developers.</p>
+
+<p>ACTOR:	[MUSIC] So, Iâm the admin of a website that provides cheat software for Call of Duty, Battlefield, Apex Legends, DayZ, and others.</p>
+
+<p>JACK:	Why do you do this?</p>
+
+<p>ACTOR:	Because people will pay a lot of money for cheats.</p>
+
+<p>JACK:	How much do you charge for, say a cheat in the game DayZ?</p>
+
+<p>ACTOR:	Currently, our public cheats are $29.99 for seven days.  But we have private cheats too that are reserved for only a few trusted clients.</p>
+
+<p>JACK:	Wait, so you can only use the cheats for seven days?  Then what happens?</p>
+
+<p>ACTOR:	Then they have to pay more to keep using it.</p>
+
+<p>JACK:	Oh, okay.  First of all, I thought game cheats were free.  I didnât realize people were buying them.  But not only are they buying them, theyâre paying more for the cheat than they are for the game itself.  Iâm extra-surprised that itâs a subscription-based model.</p>
+
+<p>ACTOR:	Yeah, it has to be like that because the game developers are always patching their game, which makes it so the cheat doesnât work.  So, we need to find a new way to exploit the game.  We have to always be developing, which costs money.</p>
+
+<p>JACK:	So, how many people are on your team?</p>
+
+<p>ACTOR:	I am the admin of the website and owner, and I have a developer who creates the cheats and loader.  I do the customer support, too.  [MUSIC] But not all cheating sites have their own developers.  In fact, not all cheats are even real.  There are a lot of scam sites out there that promise to provide cheats, but they donât work.  Then there are developers and resellers.  Say a developer finds an exploit and creates a cheat; they can package that up and sell a key to a reseller.  The reseller then creates a website or a listing somewhere saying they have a working cheat and tries to find buyers.  If someone buys it, the reseller just sells them the key to use the cheat that they got from the developer.</p>
+
+<p>JACK:	So, two different people are making money from this, the developers and resellers.  Why wouldnât the developer just sell directly to players?</p>
+
+<p>ACTOR:	Developers want to focus on developing, not marketing and selling or dealing with customers and money transactions.  Once a developer finds a good reseller, then they donât have to continually look for new buyers.  The reseller will do all the legwork.  Also, a developer can be more protected because they can just accept all payment in Bitcoin from the reseller, giving them a way to hide better.</p>
+
+<p>JACK:	Okay, so in this scenario where thereâs a developer and a reseller, whoâs making more money?</p>
+
+<p>ACTOR:	The developer.</p>
+
+<p>JACK:	How much do cheat developers make from this?</p>
+
+<p>ACTOR:	They can make anywhere from a few bucks to $500,000 a month.  A medium-sized cheat would bring in about 20k to 80k a month.</p>
+
+<p>JACK:	Dang, thatâs a lot more than a regular job as a developer.</p>
+
+<p>ACTOR:	Yeah, and resellers can make good money, too.  Anything is possible.</p>
+
+<p>JACK:	Okay.  Iâm looking at your website now.  The buying process is unlike anything Iâve ever seen before.  Itâs crazy; you canât just buy and download this and begin using it.  Can you walk me through what it takes for someone to buy this?</p>
+
+<p>ACTOR:	Okay.  [MUSIC] Before you can buy a cheat, you must be verified.  You must fill out an application which must include your real name, date of birth, country, links to your profiles and cheat forums, and we will send you a private message to confirm itâs you, which cheat youâre interested in buying, and three separate photo IDs like a national ID card, passport, or driverâs license.  We also need a selfie.</p>
+
+<p>JACK:	Thatâs way too much information that someone has to give you just to get the cheat from you.  Three photo IDs?  Are you serious?</p>
+
+<p>ACTOR:	Yeah.  Thereâs a lot of people who would love to get their hands on our cheats, and we need to protect them.</p>
+
+<p>JACK:	Protect them from who?</p>
+
+<p>ACTOR:	Haters, game thefts, competitors.</p>
+
+<p>JACK:	Oh yeah, this makes sense.  Game developers must hate when new cheats are developed.  If they could get their hands on the cheat, they could probably fix it right away.  This makes me curious what game devs are doing about this.</p>
+
+<p>EUGENE:	So, my name is Eugene Harton.  I currently work on a game called Dying Light 2 at Techland, and before that I worked at Bohemia Interactive on a game called DayZ, which was the one where the â I guess the whole security thing around games started for me.</p>
+
+<p>JACK:	Now, it also was not easy to find a game developer to come on the show to talk about how theyâre battling these cheat-makers, because this is an active war zone.  Game devs donât want to share their tactics on how theyâre defeating this, but I did find Eugene here, because he gave a talk about this at a conference and heâs willing to talk about the old stories he had from when he was working on the game DayZ five years ago.  What was â what were the cheaters like in the game?  What were they doing?</p>
+
+<p>EUGENE:	Okay, so DayZ might be a bit of a specific example, but Iâll go into a bit of detail.  So, generally when you think about cheating, you can say that itâs basically gaining an unfair advantage of any kind.  With that in mind, it can be probably broken down to exploiting and glitch abuse, which is where they are basically using something that we already did wrong in the game, so a bug that we introduced ourselves, or a glitch that is not part of the intended design.  Any game state, command manipulation, and injection, which was also very common in DayZ, and automation.  Any automation of inputs to basically alleviate any manual work this intended by design inside the game.  So, all of these things, to a certain degree, were happening in DayZ as well.</p>
+
+<p>JACK:	[MUSIC] Now, weâre only talking about online games here, where youâre playing against other players.  Some of the exploits for sale today promise to give players extra abilities such as being able to see exact locations of other players or aim bots which point your weapon for you.  All you need to do is click the mouse button and youâll hit your target, and some other things like being able to go through walls or making your own hitbox smaller.  Even the slightest advantage gained through cheating is an unfair advantage to all the other players in the game.  It ruins the fun.</p>
+
+<p>EUGENE:	Fun generally means a process of learning and overcoming a system.  If thatâs the case, if what they are doing is not damaging other peopleâs experiences and theyâre doing it only for their own experience, it generally is not a problem.</p>
+
+<p>JACK:	Okay, so how big of a problem is this for video game companies?  How much resources do video game companies or maybe even just DayZ put into fighting this?</p>
+
+<p>EUGENE:	So, I met a bunch of people in the space, and to speak about DayZ first, I would say no; we had five people that were dedicated just to the subject.  If I donât count the externals, because Bastian Suter was the creator of BattlEye, was the â which was the kind of agent we were using to protect the game, basically the common anti-cheat also used in many other games.  So, if I would count Bastian helping us with the subject, it would be like, six people.  If I look at a different direction of much more larger games and competitive games like League of Legends, as far as I know, the team was like, twenty-five plus or something.</p>
+
+<p>JACK:	Whoa, thereâs a twenty-five person team just within the game League of Legends thatâs primary job is to focus on finding cheats on fixing them?  Thatâs crazy.  League of Legends is owned by Riot Games and according to Wikipedia, there are 2,500 employees at Riot Games.  But even still, twenty-five is a lot of people dedicated to just stopping cheaters.  I donât know, Iâm just shocked by that, because when you play these games and encounter cheaters, it feels like cheaters are everywhere in the game and the game-makers just sort of gave up trying to fight it or do very little to stop it.  But now Iâm realizing game-makers actually put a lot of effort into battling it, and they take it very seriously.  Another thing Eugene just said was that game-makers use BattlEye to help stop it, too.  BattlEye is an anti-cheat engine.  Game-makers can integrate it into their game, and its job is to examine all player behavior, toâ¦</p>
+
+<p>EUGENE:	Identify a running cheat and close the game before it can affect the game.</p>
+
+<p>JACK:	[MUSIC] Itâs now integrated into over fifty games, and BattlEye has its own team of developers to help detect and stop cheaters.  They can check for things like if the player is pushing buttons at an inhuman rate or if the playerâs position moves too fast for what the game allows, or if their win-rate is higher than normal.  They can try to analyze a playerâs game to see if theyâre exploiting anything, and then ban the player and report the exploit to the game developers.  Thatâs just BattlEye; thereâs also other anti-cheat software like PunkBuster, Easy Anti-Cheat, and VAC.  What Iâm realizing is that because thereâs so many cheaters in video games, it spawned this whole secondary offshoot industry of anti-cheat software solutions.  Again, thatâs on top of the dedicated team that the video game company already has working on this.</p>
+
+<p>So, now we start to see how there are some serious enemies in this space.  BattlEye is out there to try to ruin the game-cheating industry, which is a bold thing to set out to do, to try to ruin a whole industry, and the cheat-makers out there are trying to build working cheats but then also make it so BattlEye canât detect it, and theyâve got to constantly be developing new strategies to be undetected and find new cheats in the game.  Game developers are just wanting to provide a fun experience for players and not let their game get overrun or ruined by cheaters.  Weâre gonna take a quick ad break here, but stay with us because when we come back, people start playing dirty.  Game devs and cheat devs donât like each other.  Game devs are always trying to ruin the cheating industry, which means the cheat developers sometimes just wake up some days and suddenly their main product isnât working anymore, which means the cheat developers need to scramble to get new working cheats out there.</p>
+
+<p>ACTOR:	We also have haters who are actively attacking us, trying to bring our cheats down.</p>
+
+<p>JACK:	What do you mean?</p>
+
+<p>ACTOR:	Like, our competitors, other cheat-makers.  They sometimes attack us, and lots of people get mad at us because they just hate in-game cheaters.  So, we get DDossed and our site goes down, and then we have to spend more money on DDoS prevention and pay for extra bandwidth when that happens.</p>
+
+<p>JACK:	Okay, so now it makes sense on why you ask for three forms of ID before giving someone your cheats; you donât want your cheats landing in the wrong hands because if it does, it could make it unusable very quickly.</p>
+
+<p>ACTOR:	Exactly.</p>
+
+<p>JACK:	[MUSIC] So, have you ever tried to buy the cheats yourself?</p>
+
+<p>EUGENE:	Of course.</p>
+
+<p>JACK:	Like, the paid ones.</p>
+
+<p>EUGENE:	Yeah, yeah.</p>
+
+<p>JACK:	How successful were you?</p>
+
+<p>EUGENE:	Pretty successful.  Okay, so with public ones, itâs pretty easy.  So, the way we did â the first thing that we need to kinda implement is kind of a bug bounty program and the ability to buy cheats.  So, we created a completely physically separate network inside the company that has a separate network connection to the internet, and we were using it as basically a separate lab where we were buying cheats and disassembling them.  So, inside basically this space, there had â we had a couple people working on it, like a reverse-engineer and a community manager who were trying to buy cheats, be or impersonate people who are looking for a cheat both in public and private space.  So for public, easy; they would create accounts, they would buy it through PayPal money which was deposited by the company, and â because a lot of the times, it was like, PayPal transfer, I think there was something even with crypto, et cetera.  So generally, basically, alternative payment methods.  We would have this person look for these public cheats and private cheats, try to acquire as much of them as possible, and both provide them to the anti-cheat program we were using and if possible, use also our own reverse-engineer to figure out how they are breaking the game.</p>
+
+<p>This process of buying the cheat was easy on the public side as long as you didnât make it clear that youâre from the company, like using the name of a developer, et cetera, because they would ban these accounts.  But when it comes to private bans, it sometimes meant you would have to have a IM conversation on Skype, ICQ, IRC, VK, Facebook, whatever, or on forums, through their dedicated channels or dedicated website, and I â we even have cases where people were asking for IDs to confirm the identity of the purchaser, especially if some of these super-private ones where they are selling like, to ten, twenty, thirty people, and asking for a very sizable subscription, like $200, $500, because weâve seen even those, where people are willing to pay $500 to have a private cheat that is just for them.  Thatâs what they want to do, and there is a developer that they contact if anything fucks up, and they will fix it for them.  So, posing as different users, multiple accounts, multiple separate networks that we were using, and just being present on all these channels where the barters and trades had been happening.</p>
+
+<p>JACK:	[MUSIC] But itâs not as easy as just posing as someone else to buy these cheats.  Loading and running the cheat in-game is also a very delicate process the game devs have to be careful about, because the cheat-makers are watching that part.  So, how does your cheat work?  If I bought it, what steps do I need to do to get it to work?</p>
+
+<p>ACTOR:	We have a loader.  You first run the loader, then it runs the actual game.  [MUSIC] Itâs sort of a wrapper for the game, so all packets coming in and out go through this loader.  All memory is also available on the loader.  The loader manipulates the data to make the cheat work.</p>
+
+<p>JACK:	Okay, I get it, but is there a login feature to the loader?  How do you know when my subscription has run out?</p>
+
+<p>ACTOR:	We use license keys.  When you run the loader, you enter in a license key and that makes the cheat valid for that many days.</p>
+
+<p>JACK:	Talking with the cheat-seller more, they tell me that there are also ways to identify the machine that the loader is running on, and the key becomes tied to that machine ID, so it might be a combination of host name, Mac address, IP address, or other identifiers.  What that also means is you canât share the cheat with others; it will only work on the first machine you install it on.  Now, letâs stop here for a second and recognize how desperate some people are to get these cheats.  Paying $30 to use a cheat for seven days is pricey enough, if you ask me.  But on top of that, you have to give the website three forms of ID, and then you download and install and run a program from a shady, underground hacking website.  Whoever is buying this stuff really has to ignore several red flags to get it going, and some cheat-makers see this and take advantage of it.</p>
+
+<p>EUGENE:	You should look into AimKit.</p>
+
+<p>JACK:	[MUSIC] Okay, AimKit.  This was a cheat for the game Rust that you had to pay $40 a month to use, and players reported that the cheat was never undetectable, meaning BattlEye could easily spot it if you were using this cheat and ban you.  So, to begin with, AimKit was not a quality cheat.  You buy it, you use it, you get banned, and this is not how you want your cheat experience to go.  Good cheats go undetected.  Anyway, when users started complaining about this cheat, other users started piping up too, saying after installing it, they got their Discord accounts banned.  What supposedly was happening was the loader was not just providing a cheat, but also grabbing a few things off that computer that it was installed on and sending it back to the devs at AimKit, such as Discord logins and who knows what else.  Supposedly the AimKit devs used those Discord logins to do things.  Iâm guessing spam channels or people, and that got the person banned from Discord.  But thatâs just one example of a game cheat that was actually malware stealing user information and causing harm to the user.  But there are far worse ones than this.  Eugene says when he buys these cheats, heâs always expecting them to be malware or some kind of spyware, so he has to take extra precautions when installing them.</p>
+
+<p>EUGENE:	Well, the application that he sent us did â it was of course on a separate network physically and as much of the protection as we could apply within the company, but what the application that we sent did downloaded all the Skype database files and send it over to the guy.  When he reviewed those Skype data files, he could say that it was us developers, for example, yeah?  So as soon as he basically sent us something which was not working and we start to complain that itâs not working, he would go and close the communication immediately because he would figure out we are developers.  So, they go to really extreme caution.</p>
+
+<p>JACK:	[MUSIC] Wait, are you saying that when they send you the loader or the cheat, that the cheat actually looks at other data on your computer to confirm who you are?</p>
+
+<p>EUGENE:	Yeah, yeah.  It infects like malware all of the times.</p>
+
+<p>JACK:	You know what?  I should have expected that, actually.  I remember downloading games when I was a teenager from dodgy websites, and half of them did contain malware.  Why would I expect it to be any different today even if Iâm paying for it?  Downloading any executable from a shady website is never a good idea.  So, this is why, when video game developers get a cheat, they put it on a fresh computer that doesnât have any sensitive files on it on its own separate network, because the developers of the cheats watch to see whoâs using their cheat, and maybe even take note on what game devs IPs there are and block it if it matches.  But this also makes it hard for game developers to share the cheat with the dev team or BattlEye, since they canât send this cheat to someone else.  It wont work on another computer.</p>
+
+<p>So, game developers have to set up Remote Desktop so other people can come into that machine and analyze it, or install it on a virtual machine.  Eugene also tells me that sometimes people from the cheat community will come forward and just give them a cheat, often through their bug bounty program, but sometimes not.  Sometimes they just get sent a working executable that has a cheat in it, clearly something that this person bought but didnât develop, and are willing to share it with the game developer.  I think whatâs going on here is that it could be infighting among other cheat devs, where if one cheat provider wants to ruin the business for another cheat provider, they could just buy the cheat and then give it to the game developer who would then fix it to make that cheat not work, which means more people buy the working one.</p>
+
+<p>EUGENE:	So yeah, you could say we had both kind of approaches, to have a double agent on other side and people from the community, the cheating community, that would act as double agents for us by actually providing us additional information or directly the binaries of a certain cheat that was private, et cetera.</p>
+
+<p>JACK:	Gosh, itâs crazy, huh?  Being a game developer today means you might have to pose as a double agent acting like a cheater to get your hands on some cheats, or you might have to work with double agents who are in the cheat community, but feel like exposing someone.  Itâs a crazy battle thatâs taking place, and sometimes all this gets personal.  Thereâs a lot of emotion involved in all this, right?  I mean, for a cheat dev to make a cheat, they probably already love the game and know it very well, and they would love to develop an extra feature in the game.  So, they sit down and try manipulating the in-game data to try to find something that gives them an advantage, and that might take weeks.  But when they do, itâs gotta feel great that you outsmarted the game-makers.  They must feel like they know stuff about the game that the developers donât even know.  So, I bet thereâs a bit of a celebration that goes on after they find a new cheat.  Of course, getting paid for that brings all kinds of new emotions too, right?  Dopamine hits for sure.  But then all that comes crashing down when the game studio detects it and patches it.  Now that high that the cheat devs had goes away, and they could get mad.  They might want to know who exactly was the game developer that ruined the party, and find their name and start insulting them over Twitter.  Now this is where things start getting ugly.</p>
+
+<p>EUGENE:	[MUSIC] We got really close with these people, and by close I mean they â slowly, they kind of doxxed us and got our phone numbers and private accounts.  They never, I think, got actually into any of my accounts because most of them were under two-factor authentication, but I guess they at least tried.  With these connections to these people, I met a lot of different weird characters.</p>
+
+<p>JACK:	Eugene says he was going to give a talk about cheaters at GDC, the Game Developers Conference, and apparently the game cheaters started a GoFundMe campaign to raise money to â what was it they were gonna raise money for?</p>
+
+<p>EUGENE:	To be able to pay for the tickets to GDC, to come to the presentation, and troll me there, basically.</p>
+
+<p>JACK:	Well, he gave the presentation at the conference, and there were no trolls in the audience.  But he was doxxed and had many invalid login attempts on his accounts, and got all kinds of weird messages and threats.</p>
+
+<p>EUGENE:	The things that I hated the most were the creepy calls.  I would pick up a phone and since itâs my work phone and an unknown number is calling, I generally pick it up because it can be any of our partners, and I would have these weird things being said to me or people contacting my family members, sending them weird, gory pictures.  It was just annoying; like, why would you make â like for example, why would you target my family member?  I donât fucking get it.  Like, okay, bother me on Instagram, bother me on Twitter, bother me on freaking Messenger and send me weird shit.  Just donât call me, donât bother people around me; that would be nice.  So, it kind of prompted me to be more secure about a lot of my social media.  [MUSIC] I donât use them as much as I used them in the past.  Itâs just all closed up.</p>
+
+<p>JACK:	Itâs just wild that the game devs and the cheat devs are both getting attacked in this space.  Itâs a weird parallel with the game itself.  In the game, there are battles taking place, simulated fighting, but then outside the game, thereâs this whole different battle happening too, and thatâs much higher stakes.  Huh.  Iâm just clicking around on one of these websites that sells cheats, and thereâs something here that says this cheat is stream-proof.  Whatâs stream-proof?</p>
+
+<p>ACTOR:	It means itâs not detectable on Twitch.</p>
+
+<p>JACK:	Oh, so if Twitch sees youâre cheating, they ban you?</p>
+
+<p>ACTOR:	No, no.  If someone is streaming, they can see the cheat, but the viewers of the stream donât see the cheat.</p>
+
+<p>JACK:	Whoa, thatâs crazy.  Thatâs a whole ânother level of sophistication in this.  The person playing with the cheats on can see the locations of the other players, whatever extra perception they have, but thatâs not visible to whoeverâs watching them play on the stream.  This makes the player look so much better than they actually are, and their viewers have no idea theyâre cheating.  This is actually amazing, because thereâs a lot of people who make a living from just streaming themselves playing video games, and I imagine better players get more viewers than worse players.  So, having that little cheat boost to help you look better than you are probably pays off to these streamers.</p>
+
+<p>ACTOR:	[MUSIC] I feel like personally, cheating for fun is fine, but cheating in competition is lame.</p>
+
+<p>JACK:	Do people cheat in competitions?</p>
+
+<p>ACTOR:	Yeah.  Itâs a very small customer base, but we work with some pro players.  For them, they use it to win cash prizes in tournaments.  Who doesnât like more money?</p>
+
+<p>JACK:	I can see why this is taken so seriously by game developers.  If there are cash prize tournaments for a game you make, you want that game to be as fair as possible, and in-game cheating at tournament level reflects just as badly on the game itself as it does on the cheater.  I talked with two different owners of these cheating websites, and I asked one of them, is what youâre doing illegal?  They saidâ¦</p>
+
+<p>ACTOR:	Nope.</p>
+
+<p>JACK:	Then I asked the other, and they saidâ¦</p>
+
+<p>EUGENE:	Yeah.  Some have been caught, like MizuSoft.</p>
+
+<p>JACK:	MizuSoft.  Letâs take a look at what or who that is.  Ah, hereâs a video.</p>
+
+<p>JOE:	[MUSIC] This teenage hacker runs a small operation from the Netherlands.  His business can still make almost Â£1,500 a week, and his customer base is growing.</p>
+
+<p>JACK:	Thatâs a clip from a BBC news story that the journalist Joe Tidy did.</p>
+
+<p>JOE:	You could get in some serious trouble for this, couldnât you?</p>
+
+<p>HACKER:	Yeah.  If Ubisoft decides to come after you because of copyright infringement, youâre in for a tough time.</p>
+
+<p>JACK:	Joe interviews what looks like a seventeen-year-old kid for this, who claimed to be making and selling cheats.  The kid shows Joe what they do and how they work.  Well, one month after appearing on BBC, Ubisoft was able to identify this young man and sue him.  It turned out he was running a website called MizuSoft, selling game cheats for Ubisoft.  Ubisoft had all this information on this guy; his name, address, his websites, his parentsâ information, too.  The BBC didnât turn him in, but if you come on TV to talk about the underground activity youâre doing, your opsec is probably not the best.  [MUSIC] Since he was only seventeen when he was hit with this lawsuit, Ubisoft just asked for the website to be taken down, to immediately stop developing and selling cheats for the game, and they wanted a copy of all the cheats he had, and some kind of financial compensation for the damage that they suffered from it.  I believe that lawsuit is still ongoing, and I actually did get in contact with the guy, the owner of MizuSoft.  We chatted for a while, but he ultimately said he canât talk about this case.  So, again, turned down, which is typical for the scene.  But there are a few other stories like MizuSoft.  Apparently there was a cheat going around for Pokemon Go, and this cheat was called PokeGo++, and it allowed you to move to another location without having to leave your house.</p>
+
+<p>But the game developers discovered who created this cheat and sued them.  The case was settled and the cheat creators paid $5 million in the settlement.  Wow.  Then there was another story that Joe Tidy from the BBC reported, saying the worldâs biggest video game cheat operation was busted by the Chinese police.  The story says Tencent and the Chinese police worked together to arrest the crew responsible for making cheats for Tencent games.  The bust resulted in several luxury sports cars being seized.  Thereâs a photo that has a Lamborghini, Ferrari, McLaren, Mercedes, and a Land Rover.  These were all seized by the police, and in fact, the police reported they seized [MUSIC] $46 million worth of luxury cars alone from this crew.  They reported that these cheat developers made $76 million from selling cheats for Tencent games.  Ten people were arrested who were involved with this, and it was quite an operation for the Chinese police.  As I dig through court cases, I start seeing even more things show up.  In 2019, Epic Games sued a fifteen-year-old YouTuber for advertising cheats on his channel.  The complaint says he was selling Fortnite cheats for $250 each, and whatâs really weird here is this YouTuber made a video saying he got sued.</p>
+
+<p>YOUTUBER:	Well, today I got like, 30,000 pages in the mail from Epic.  I donât know.  I think itâs kinda weird that theyâre suing me.  I donât know whatâs gonna happen.  I already have a pretty good attorney, soâ¦</p>
+
+<p>JACK:	That was the last video this kid ever posted, and itâs been three years now.  Now, in this case, Epic is saying the boy violated the copyright laws.  Okay, I guess I can see that.  Perhaps thatâs the best legal leg to stand on in this case.  In June 2021, Bungie sued aimjunkies.com for infringing on their intellectual property.  Apparently, this site was selling cheats for the game Destiny, but AimJunkies is trying to get this case dismissed, saying Bungie is embellishing and exaggerating what happened, and is misusing the legal system.  So, thereâs one cheat developer whoâs trying to fight back.  Iâm not sure how thatâs going for them.  Earlier in 2022, Activision sued two German companies for creating cheats for Call of Duty.  Activision is saying these companies have violated copyright laws, and that case is still ongoing.  There are quite a few other cases in the air; Epic Games is saying theyâve issued over a half-dozen lawsuits to cheat-makers now, but the problem that these game-makers have is they often have a hard time tracking down who the cheat developers are to issue lawsuits to them, and sometimes when they do find who these people are, theyâre in other countries that lawsuits just donât have that much of an impact to cheat-makers.</p>
+
+<p>[MUSIC] So, as I learn more about all this, Iâve come to the conclusion that I donât like cheaters.  I think they do ruin the game for other players, at least online games, right?  Cheat all you want if it just affects you, but when youâre battling against other players and you use cheats to beat them and youâre ruining their game, thatâs not cool.  Nobody likes that.  So, I agree itâs wrong, but Iâm torn on what should be done to stop this.  Okay, issue a cease and desist.  Great, and you can hope the cheat developers stop there, but many arenât.  All the cheat devs I spoke to said they received cease and desist letters, but just sort of laughed and kept on doing it.  So, what should be the next steps that game-makers should do?  Call the cops?  Issue lawsuits?  Sending a cease and desist letter is easy; you just e-mail the cheat support team, telling them stop what youâre doing.  But issuing a lawsuit requires you to know who the person is that youâre suing.  So, now the game-makers have to sort of investigate who the cheat developers are for this, which, I donât know, could result in some kind of hack-back type of activity, maybe?  Like phishing the cheat-makers to try to get info on them?  I mean, itâs possible, but unethical.  Itâs just weird to think that there are game studios out there that are investigating to try to figure out the real identity and location of who these cheat developers are.</p>
+
+<p>What seems to be happening are game-makers are using high-price lawyers to try to intimidate cheat developers, saying things like weâre gonna sue you for the maximum allowable amount, which may be millions of dollars, or some other big, scary things.  I suppose some of this works; it gets the cheaters to just stop what theyâre doing and not do it anymore.  But itâll be interesting if someone does challenge a lawsuit like that and wins, because I donât know, maybe they somehow prove that cheating isnât illegal.  Itâs a weird legal issue for sure, and I worry because corporations have bullied people in the past with lawsuits because someone violated their terms of service or some other made-up rule, which has had horrible results.  Just look up who Geohot is, or Aaron Swartz.  [MUSIC] So, it seems like for now, the best tactic is for game-makers to solo this one themselves and battle it on their own.  I mean in-game, by putting more resources into securing the game code and game client and adding more monitoring and detection mechanisms to try to find when players cheat, and force them to quit.  But of course, with every shot fired by the game studios, the cheat-makers try to dodge it and heal up and move forward, and this might be the most epic battle that game studios have created yet.</p>
+
+<p>(OUTRO):	[OUTRO MUSIC] A big thank you to Eugene Harton for sharing some of the insights from a game developerâs point of view, and also thanks to everyone I chatted with over DMs on Discord to give me inside scoops on whatâs going on.  This episode was created by me, your commanding officer, Jack Rhysider.  Original music this episode was created by the demo man, Garrett Tiedemann.  Mixing done by Proximity Sound, editing help by the medic Damienne, and our theme music is by the king of the hill, Breakmaster Cylinder.  I was blowing up a balloon the other day and I was thinking, inside this is CO2, right?  Itâs compressed, right?  So, why not call it co2.zip?  This is Darknet Diaries.</p>
+
+<p>[END OF RECORDING]</p>
+
+<p>(Transcribed by Leah Hervoly)</p>
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

@@ -1,0 +1,1037 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>Gollumfun (Part 2) â Darknet Diaries</title>
+	<meta name="description" content="Brett Johnson, AKA Gollumfun was involved with the websites Counterfeit Library and Shadow Crew. He tells his story of what happened there and some of the crimes he committed.">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Gollumfun (Part 2) â Darknet Diaries">  
+	<meta name="twitter:description" content="Brett Johnson, AKA Gollumfun was involved with the websites Counterfeit Library and Shadow Crew. He tells his story of what happened there and some of the crimes he committed.">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/gollumfun2.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/129/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Gollumfun (Part 2) â Darknet Diaries" />
+	<meta property="og:description"        content="Brett Johnson, AKA Gollumfun was involved with the websites Counterfeit Library and Shadow Crew. He tells his story of what happened there and some of the crimes he committed." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/gollumfun2.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/129/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/gollumfun2.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/129/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="Gollumfun (Part 2) â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/gollumfun2.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 129: Gollumfun (Part 2)</h1>
+		
+		  <a href="/categories/#black hat"><div class="button button-light">black hat</div></a>
+		  &nbsp;
+		
+		  <a href="/categories/#cybercrime"><div class="button button-light">cybercrime</div></a>
+		  &nbsp;
+		
+		  <a href="/categories/#dark web"><div class="button button-light">dark web</div></a>
+		  &nbsp;
+		
+		  <a href="/categories/#carding"><div class="button button-light">carding</div></a>
+		  
+		
+		<p>29 November 2022 | 78:48</p>
+
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/chrt.fm/track/G481GD/traffic.megaphone.fm/ADV1766068871.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/129/",
+			   "title": "Ep 129: Gollumfun (Part 2)",
+			   "subtitle": "78:48"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			
+			    <p><a href="/transcript/129">Full Transcript</a></p>
+			
+
+			
+			
+
+			<p><img src="/imgs/gollumfun2.jpg" alt="A shadow grabbing a person." /></p>
+
+
+			<p>[START OF RECORDING]</p>
+
+<p>JACK:	Tell me about what some of the eBay scams were going on. How can you rip someone off on eBay?</p>
+
+<p>BRETT:	So, some of the scam â well, man, what I would do, if it were going in Christmas season, I would see what the hot item was. Typically it was a lot of cameras, it was a lot of laptops. It was those high-dollar items that people were really wanting but they didnât want to pay full retail price for. So, the idea is you need to come in at an amount that causes that potential victim to put logic and reason at the door and react emotionally, but you donât want to come in at it so low of an amount that it causes them to question whatâs going on. Thatâs a very thin line that happens. But Iâd find a Canon XL1 and I would post that, a couple pictures of itâ¦</p>
+
+<p>JACK:	Hold on a second.
+<!--more--></p>
+
+<p>BRETT:	Sure.</p>
+
+<p>JACK:	You canât be serious. You said â okay, listen; this is what happened to me at the same time, okay? So, Iâm on eBay.</p>
+
+<p>BRETT:	Okay.</p>
+
+<p>JACK:	I wanted the Canon GL1. This was a $2,500 camera.</p>
+
+<p>BRETT:	Oh yeah, yeah.</p>
+
+<p>JACK:	It was very expensive. I saw someone selling it for $1,200 on eBay and Iâm like okay, Iâll bid. So, I bid on it. They cancel the auctionâ¦</p>
+
+<p>BRETT:	Right.</p>
+
+<p>JACK:	â¦and say oh, sorry, something went wrong. But listen, I still have the camera. Are you still interested? I said well, yeah. This is a half-price camera. Why wouldnât I be? I donât know where I got the money from or what I was even thinking to do with a camera like this. God knows I wasnât going into film-making, right? It was just kinda to play around with, but I wanted to â anyway, my heart was set on it, okay?</p>
+
+<p>BRETT:	Right.</p>
+
+<p>JACK:	So, I said yeah. So they said okay, well, send me the money and Iâll send you the camera. Iâm like whoa, whoa, whoa, red flag. We donât have this on eBay anymore, weâre just going through e-mailâ¦</p>
+
+<p>BRETT:	Thatâs right; youâre off-platform, no protection in place.</p>
+
+<p>JACK:	Yeah. So, Iâm like no, no, no, this doesnât smell right. Theyâre like listen, Iâm a god-fearing person, Iâve got a family, I would never do any â and it was just the whole shmoozing â youâre already laughing.</p>
+
+<p>BRETT:	Iâm just thinking of one of the stories I told some of these people at one point. Hey, look, I donât take any pride on my stealing at all these days. I donât, but back then I would make up just weird shit to see if they would believe it. I had sold thirteen, fifteen cameras on one auction, and of course all the â so, the idea being youâve got one auction up there; say youâre selling that XL1. It retails for $2,500; I would put it at $2,000, alright? Someone is gonna win at $2,000, but the next ten bidders, whatever they would bid at, I would sell them that same nonexistent camera for whatever their bid price was. Then I would wait for the â all the payments to come in. So what happens is, is all the payments donât arrive at the same time, so youâve got to start making up excuses as to why the initial winner did not get their camera yet. So, I remember one of my excuses was well, you know, weâve got a warehouse down there on the Mississippi; got all this flooding. The entire warehouse is flooded out. Thatâs the kinda stuff that I would say just to see if I could get those people to believe it.</p>
+
+<p>JACK:	This isâ¦</p>
+
+<p>BRETT:	The problem â sure, go ahead.</p>
+
+<p>JACK:	This is too close to home, Brett. [LAUGHING]</p>
+
+<p>BRETT:	I mean, itâ¦</p>
+
+<p>JACK:	So, hereâs the thing; so, let me finish the story.</p>
+
+<p>BRETT:	Okay.</p>
+
+<p>JACK:	So, I â a month of convincing me that this is an okay deal, I say okay, Iâll buy it. So they say okay, well, donât send PayPal, right? Iâll only take Western Union. So, this was a $1,200 agreement.</p>
+
+<p>BRETT:	Oh, Jack, Jack, Jack.</p>
+
+<p>JACK:	I know, this was another red flag. So, itâs $1,200. So, I call up Western Union and I say okay, I want to send this money. They said you canât; the maximum weâre allowed you â to sell â send is $1,000. You canât go over that. I was like well, Iâll just call back and do it again. They said okay, you can do that. So, I should have noticed that as a third red flag.</p>
+
+<p>BRETT:	Sure.</p>
+
+<p>JACK:	So, I send this money to someone and they send me a tracking number the next day. Hereâs your box; itâs on its way.</p>
+
+<p>BRETT:	Okay.</p>
+
+<p>JACK:	The box never left the warehouse.</p>
+
+<p>BRETT:	Of course.</p>
+
+<p>JACK:	Or it never left the shipping facility. It just sat there forever.</p>
+
+<p>BRETT:	Right.</p>
+
+<p>JACK:	And I never got the camera.</p>
+
+<p>BRETT:	Right.</p>
+
+<p>JACK:	Youâre telling me you did this same scam on PayPal at the same time that I gotâ¦?</p>
+
+<p>BRETT:	Soâ¦</p>
+
+<p>JACK:	Brett, were â was this you?</p>
+
+<p>BRETT:	I donât know if it was me, and I â hereâs the thing, hereâs the thing; Iâm the guy thatâs responsible for a lot of that, alright? You figure that before those sites we were talking about, Counterfeit Library and ShadowCrew, before those come into play, you really didnât have a lot of successful cyber-crime because criminals were not able to work together. But once those sites come into play, youâve got all this open-source environment, the collaboration, things like that, and I remember clearly posting many tutorials on how to do this type of fraud on eBay, and even walking people through it. Itâs very, very possible. Iâm not proud of it, Jack, Iâm not, but itâs very possible that some sombitch may have been â may have known who I was that was ripping you off. Absolutely thatâs possible.</p>
+
+<p>JACK:	Itâs so weird to kinda close the circle on that, you know? Like you said earlier, the victim just kinda gives up after a while, and soâ¦</p>
+
+<p>BRETT:	And you did.</p>
+
+<p>JACK:	Well, what I did is I called Western Union; I say hold on, stop the money. Reverse it. Okay, if you canât do that â âcause they said they already picked it up â I said you gotta tell me what ID they picked it up with. Get me their name, get me what city they picked it up in, you know? Tell me where in the world are they, and whatâs their name that they picked it up at? Which probably wouldnât have mattered because they probably used a fake ID.</p>
+
+<p>BRETT:	Sure.</p>
+
+<p>JACK:	Butâ¦</p>
+
+<p>BRETT:	Or had somebody working at the office that would just give them the money.</p>
+
+<p>JACK:	Yeah. So, I was so pissed off at Western Union because they offered zero help at all. I said look, I just got robbed, I just got scammed; please â you â this happened over your platform. You need to open a police report. We need to work together. You need to get me some information. Iâm gonna give it to the officers here, and they said zero. Weâre not helping you at all, and they hung up the phone. I was like, Western Union, youâre aiding and abetting criminals here.</p>
+
+<p>BRETT:	Well, and youâre not â Iâm gonna be honest with you, youâre not far off, because when we were hitting â we hit the hell out of PayPal, of Western Union, of eBay, all those platforms back then. By and large, the way those platforms back then responded was telling the legitimate customers that were complaining of these things that it wasnât happening. They just kinda put their head in the sand and ignored it until they were forced to do something about it. So, itâs not surprising that Western Union would have done that. eBay did the same thing. PayPal did that.</p>
+
+<p>JACK:	Yeah. Well, first of all, you jerk.</p>
+
+<p>BRETT:	Yes, yes. I agree with you on that.</p>
+
+<p>JACK:	But second of allâ¦</p>
+
+<p>BRETT:	You can call me an asshole, too. Thatâs true, too.</p>
+
+<p>JACK:	Okay, okay, Iâll do that. But I say â I do say thank you because I was young and I was naive, and that sucked the naivety out of me when going online, right? I didnât â I learned so many valuable lessons from that experience. I learned never to trust Western Union. Even to this day, Iâve never used them again because itâs just one of those â I donât want to â ever want to deal with this company again.</p>
+
+<p>BRETT:	Well, I gotta say, Jack, you said â it is not a happy thought to know that I was responsible for taking away peopleâs naivety. I think thereâs a â I wish I had mine back then. I really do.</p>
+
+<p>JACK:	But I mean, it is one of those things that â it â I think it changed just the way I thought about online, and it protected me in bigger ways that I probably would have getting â gotten hit later on, and it made me see the internet for as it is, which is just this chaotic, hostile environment.</p>
+
+<p>BRETT:	It is that.</p>
+
+<p>JACK:	Yeah. I think another thing that it helped me with is â gets a sense of street smarts on the internet, right?</p>
+
+<p>BRETT:	Oh yeah, oh yeah.</p>
+
+<p>JACK:	You have this gut feeling when youâre going into a deal online, and that gut feeling is more refined after meeting you or dealing with the â yourâ¦</p>
+
+<p>BRETT:	After meeting one of your associatesâ¦</p>
+
+<p>JACK:	â¦your prodigy, yes. Did you getâ¦</p>
+
+<p>BRETT:	Well, I meanâ¦</p>
+
+<p>JACK:	You get better honed, right? So, itâs likeâ¦</p>
+
+<p>BRETT:	Well, and thatâsâ¦</p>
+
+<p>JACK:	â¦trial by fire.</p>
+
+<p>BRETT:	Youâre right, and thatâs one of the things that Iâve been talking about in presentations recently. Our situational awareness is very high in the physical world. We know â if something is wrong in our environment when weâre traveling or turning on a wrong street or what have you, we know immediately. That awareness is there, but itâs â it tends not to be as well-defined in our online lives, and it really needs to be. It does, and itâs just that no matter what platform that youâre on, there are some sort of predators that are lurking there, and you need to be aware of that, and people just â I think that they rely too much on the website or the hardware or the supposed security systems that are on the site, and thereâs just too much reliance on that. You really have to be aware of your own environment regardless of what platform or what security may or may not be in place.</p>
+
+<p>(INTRO):	[INTRO MUSIC] These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	Okay, welcome back. We are continuing with Part 2 of Gollumfunâs story. If you havenât listened to Part 1 yet, you really do need to go back and listen to the episode just before this one. So, where were we? Okay, so Brett, or Gollumfun, had been doing all kinds of crimes and scams ever since he was a teenager, but when he got a computer, it really expanded his possibilities and skills doing scams on eBay, selling drugs online, buying fake IDs, ordering things with stolen credit cards, cashing out on stolen credit cards, the works. His home online was shadowcrew.com, a website he owned and operated, where all this criminal activity was taking place. But a lot of you may have heard about ShadowCrew before, and thatâs probably because you heard the story of Albert Gonzalez. [MUSIC] Albertâs story is just a whole story on its own, and it really deserves its own episode, but Iâll summarize his story here real quick. He was a member on ShadowCrew and eventually became the forum techie. He know how to keep the forums up and operational, but he also was using the site to sell stolen credit cards. His big thing was to go drive into a parking lot and then aim an antenna at the store, figure out a way into their Wi-Fi and then into their cash registers, and then just steal lots of credit cards that customers used at that store.</p>
+
+<p>He had an epic ride of it too, but the Secret Service caught him, and it was around where Albert got arrested is when Brett just quit going on ShadowCrew and stopped being the admin for it. But when Albert got arrested, he was faced with a tough decision; either go to prison or help the Secret Service catch others. Albert agreed to help the Secret Service, so little did the people of ShadowCrew know, but the forum techie of the site was actually the Secret Service, which meant they could look up peopleâs IPs and see private messages and other user details. Not only that, but Albert set up a VPN and forced users to connect through that to get to the site. Albert claimed it was for security reasons, but what they didnât know is that he was logging all the traffic and giving it to the Secret Service. But luckily for Brett, he wasnât using the site at the time. Instead, Brett was just focused on doing tax refund fraud and then spending the money he earned from that on his stripper girlfriend, Elizabeth.</p>
+
+<p>BRETT:	So what happens is Iâm convinced that I love her. Sheâs not coming home, so sheâs going to work dancing, and a lot of the time sheâll call me 6:00 or 7:00 in the morning; come and get me, I canât drive home. I have no idea what the hellâs going on there, so I come and get her one day. She comes in the house and she crashes in the bed, and I have never in my life went through a womanâs purse at all. Iâm looking at her purse and Iâm like goddamn, I gotta find out what the hell is going on. So, I start rummaging through her purse, find cocaine in there, and I had â up until that point â I was thirty-four â I had never seen cocaine in my life. I had seen pot, I had seen pills and all that, had never seen coke, and found coke there. So of course, dumb-ass Brett gets online and there was this website. Itâs still around today; itâs called USA Sex Guide. So I looked up Charleston, I looked up strip clubs, and under Strip Clubs, it had â it was talking about â there was a few passages that mentioned Elizabeth, the stripper that was at Joeâs Roundup, a blonde girl, and it was obviously talking about her, and it was talking about â she was prostituting herself, and obviously it was to support her coke habit. So here I am reading that, and I guess I just went off the rails at that point. I got it in my head that if I could fix her, that I could fix me, maybe.</p>
+
+<p>I figured that if I just kept investing, that she would love me. The truth of the matter is, is Jack, is she couldnât be intimate unless she was completely wasted. So, I went and confronted her about the coke. Over the course of the next two or three weeks, she finally quits her job. I guess she saw that she had a chance with me, âcause she didnât know I was a criminal, either. Figure she figured she could get out of the life she had and hook up with this guy. So, she quits her job. Over the next few weeks she finally quits coke because I finally lay down the ultimatum of if youâre gonna be doing this, I canât have you around. So, she quits coke but she supplements the coke or replaces the coke by just being a â just an absolute horrible drinker. I mean horrible. She always wanted to go back to strip clubs and I would always refuse that. But she would drink like it was a religion, and I kept investing in the relationship. I was like, if I just keep doing more and more, itâll be alright. Well, while thatâs going on, [MUSIC] ShadowCrew makes the front cover of Forbes. October 26, 2004, United States Secret Service â and it depends on which law enforcement agency you listen to as far as the numbers, but the United States Secret Service arrested thirty-three people, six countries, in six hours.</p>
+
+<p>JACK:	Yeah, the Secret Service totally took over and raided ShadowCrew, arresting tons of people who were on the site. But Brett was not one of the ones arrested. So, you felt like you just dodged a bullet at that point.</p>
+
+<p>BRETT:	Oh man, I did, but the problem was â you see, that â this is that whole thing where I fall in love with a stripper. So what happens is I go through all of my stateside money. I had laundered all of my money over to Bank Latico in Estonia. I had maybe $150,000 stateside. Iâm with Elizabeth, so Iâm not committing crime because Iâve got this bankroll of money and I donât want her to know that Iâm committing crime. Meanwhile, I go through all of my stateside money because with her, itâs â all of a sudden I had been living somewhat frugally. I hadnât been eating really expensive dinners, but every dinner with her became seven days a week, $500 to $600. Every week it was $1,000 pairs of shoes, $2,500 purses, just spending money out the wazoo. I quickly go through every bit of stateside cash Iâve got as ShadowCrew gets popped. Tax season â ShadowCrewâs popped in October.</p>
+
+<p>Tax season ends October 15, so I canât do tax return fraud right now. I have to wait until January for that shit to start up. So, I canât do that. I donât know where to buy credit cards because ShadowCrewâs been shut down, so I canât go back into credit card theft and make that $30,000 to $40,000 a month doing that. So, the only thing Iâm left doing is running counterfeit cashierâs checks just in order to try to survive long enough to get to the point where I can start tax return identity theft again. So, I start running counterfeit cashierâs checks on COD orders off eBay. I found â find somebody thatâs got bullion or something I can resell pretty quickly, a coin collection, something like that, convince them into sending it COD for a counterfeit cashierâs check, and then Iâll cash out the item like that. I start doing that, and thatâs how I get arrested, is like that. [MUSIC] It got to the point I didnât have enough money â like I told you, I started â I kept reinvesting in her and going deeper into the relationship with Elizabeth. She wanted a Tiffany engagement ring.</p>
+
+<p>JACK:	What did you â what did she think you did for money?</p>
+
+<p>BRETT:	Oh dude, I was a straight asshole. I told people, my friends and everything else, that I was a fraud consultant. I just didnât tell them all which part of the fraud equation I was on. It was a big joke with me. Yeah, it was a straight asshole, straight asshole. She wanted a Tiffany engagement ring. Brett Johnson didnât have enough money to buy a Tiffany engagement ring, so I conned somebody into sending me one for a COD order, or for a cashierâs check. Do that; the next one was she wanted Tiffany wedding rings. Well, I didnât have enough money to do that either, so conned somebody into sending the COD shipment for the wedding rings. At that point, they were well aware that there was this guy and it was â his name was Gollumfun that was running counterfeit cashierâs checks out of Charleston, South Carolina. Because I was with Elizabeth, I didnât want to travel out of area to commit the fraud. I was afraid to leave her, so I kept using the same types of drop addresses in the same areas. It was very easy to ping who I was. So, I go to pick up the rings and I think they were for $7,300 total, or something like that. I told Elizabeth â I was like, Iâll be back later. She was like, okay. She didnât know I was a criminal or anything else. I was like, Iâll just be â Iâll be back in just a little bit. Typically what you can do when youâre picking up stolen goods from UPS or FedEx, you can just chase the truck down.</p>
+
+<p>As they stop to deliver a package, you just walk up to the driver and say hey, youâve got a package on there for me; now give it to me. So, I chased the UPS driver down, and he tells me â he looks at me and heâs like oh man, he said Iâve got to â they changed the rules; Iâve got to deliver the package at the address where itâs going to. I was like okay, done. Just find me down there. Iâll be down there later. When are you gonna be there? He tells me and Iâm like, okay. So, I drive back down to the drop address. He pulls up, I get out of the car. I was driving a â I had a Mercedes at that point. I got out of the car, walked up to him. I was like, now can I get my package? Heâs like yeah, have you got a check? I was like yeah, so I hand him the check. Heâs like, can I see your ID? Well, I was at the point â at that point, I couldnât even get fake driverâs licenses anymore. So, I used my real ID. I was like ah, Brett Johnson, itâll be fine. I just misspelled the â I spent â put it as Brett Johnston or some bullshit like that. So, I showed him the ID, Brett Johnson. Heâs like okay, he handed me the box. I handed him the check. I turn around; there is the FBI and the Charleston PD. Come to find out, there were like, thirty police officers in the parking lot, and they swarmed the area at that point in time. Iâm like dude, itâs not that serious.</p>
+
+<p>JACK:	Heâs questioned for a while and the police take him to search him house. Well, his girlfriend Elizabeth was there and she sees him come in with all these federal agents and police everywhere. She may have suspected he was a criminal before, but seeing him in this much trouble really made her mad. She was furious. The police seized a lot of his stolen things, including the ring off her finger and the watch off her wrist. They took him to an interrogation room and the Secret Service starts questioning him about stolen credit cards. He knows this is really bad for him, and he gets put in jail. But more Secret Service agents come to visit him.</p>
+
+<p>BRETT:	Two agents fly in from New Jersey. They pull me out of the cell and theyâre like, we got your laptop. Iâm like, yeah. Theyâre like, have you got anything on your laptop? Iâm like, yeah. Theyâre like well, youâre gonna be charged for whateverâs on it. Iâm like, I figured. Theyâre like, anything you can do for us? Well, I was arrested February 8, 2005. I was supposed to marry Elizabeth February 26, 2005, and I was absolutely crazy for that girl. I had been taught my entire life not to snitch or anything else like that, but that was the most important thing to me and I looked at the guys, and my exact words were you let me get back with Elizabeth, and I will do whatever you want me to do. The guy looked at me and he was like, fair enough. Then they started asking me questions. They asked me for my e-mail passwords and they asked me if I knew who Scarface was. They asked me if I knew who Script was. I did know who Scarface was, but I figured it was in my best interest not to mention that. So I was like nope, not a clue. They were like, alright.</p>
+
+<p>JACK:	[MUSIC] Thatâs when Brett Johnson switched sides. Instead of helping criminals commit crimes online, heâs now agreed to help law enforcement catch the criminals. Anything for love. He served a couple months in jail. Bond was set for $1,000, and he was able to get his sister Denise to come bail him out. So he gets out of jail.</p>
+
+<p>BRETT:	I walk out. Well, my first phone call walking out isnât to Denise; my first phone call walking out is to Elizabeth because thatâs who I want to be with. So I call Elizabeth and sheâs like, Iâll be right there. Iâm like, yes. So, Iâm â this is like, midnight. Iâm standing in the parking lot of the Charleston County Jail. Secret Service agent â I forgot the guyâs name, but he was a great guy. Heâs standing beside me. Elizabeth had a friend that owned a limousine company and she pulls up in a limousine. Iâm like, okay. The trunk of the limousine pops. She gets out. She gets out these two plastic containers, storage containers that have my clothes in them, drop them on the pavement, gets in the car, drives off. I start just bawling right there, man. Secret Service agent, he looks at me and he was like, was that your fiance? Iâm like, yeah. He was like dude, I am so sorry.</p>
+
+<p>Iâm like, yeah. He gets me in the car and this guy, he gives me a nice talk. He was like Brett, heâs like, youâve got a real good opportunity in front of you. Please, please donât screw it up. Iâm like, I donât intend to, man. So, I had $30 to my name. He puts me up, he take â he spends his money to pay for me a night in a hotel, and he had some coupons for Hardeeâs for meals, for burgers. So, he gives me those and heâs like, Iâll see you tomorrow. He said just be good, man. I was like, okay. As soon as that guy leaves, I take that $30 and I walk my ass to Walmart [MUSIC] and I buy a prepaid debit card âcause I know Iâm gonna go right back into tax fraud again. Come back to the hotel; I call Elizabeth and I literally beg her to come and see me. She finally agrees to and I get her in the hotel room. Iâm lying to her through my teeth, telling her everythingâs gonna be alright, that Iâm working for the government now, that Iâm gonna have a good job and everything is gonna be great. She believes me.</p>
+
+<p>JACK:	A new chapter begins for Brett. He moves to Columbia, South Carolina, where the Secret Service offices are, and convinces Elizabeth that heâs no longer a criminal and he has a legit job with the Secret Service, and heâs able to convince her to come and move in with him. So, he starts going to work every day for the Secret Service, trying to catch criminals online.</p>
+
+<p>BRETT:	So, the Secret Service, they came to me and Brad and Jim Ramicone, he â they came to me and they asked me; they were like hey, what do you got? What can you do? So, the job was going on and targeting individuals on different forums and marketplaces to build investigations against them, okay? Some of the people I targeted, Sean Mims, Daniel Rigmaiden was there, John Giannone. The biggest one became, I think, Max Butler. But so, I would target individuals and we would build cases against these individuals while also educating the Secret Service on how these cyber-crime environments operated. So, they would bring in â they brought in ICE, they brought in Bank of America, all these people for me to talk to about how these environments worked and how to build profiles, how to gain trust within these environments. That was my job, was talking to people, targeting individuals, and educating the Secret Service on how these environments operated, okay? My job became coming in four hours a day and being on these websites, talking to people, answering questions, networking, everything else. Very easy job. I was paid $350 a week for that. So, I was paid $350 and then they would cover all bills that I had, so rent, utilities, things like that.</p>
+
+<p>JACK:	Okay, so Brett was getting $350 a week, but he thought that was not enough for Elizabeth to get the things she wanted. Brett really wanted to salvage his relationship with her, and the only way he knew how was to buy her things. So, this meant he needed a secret side hustle.</p>
+
+<p>BRETT:	[MUSIC] I wasnât doing the full-fledged tax service, but I was probably stealing â probably $20,000 a week doing that on tax return fraud. So, the way the setup was, they had me in their War Room, which was, I donât know â twenty-five feet by fifteen feet was the size of the room. They had me on a laptop computer, private line or an outside line hooked up to a fifty-inch plasma monitor mounted on the wall. They sat next to me on a desktop computer, outside line, two Secret Service agents in the room at the â the entire time with a SLED agent, South Carolina Law Enforcement Division. So, three individuals in the room at all times, monitoring everything Iâm doing, asking questions, everything else. Meanwhile they have Specter Pro and Camtasia on my laptop. So, theyâre getting keystrokes and theyâre taking snapshots of every single thing thatâs going on. Like, snapshots every five seconds or something like that. All of that is burnt onto a DVD at the end of the evening. The first two weeks, they are extremely diligent. They are paying attention to every single thing that Iâm doing and theyâre â I mean, theyâre asking questions, they are on the ball.</p>
+
+<p>What the problem is is watching a guy for four hours a night do the exact same thing every single night, they get to the point where theyâre like, you tell us if anything pops up of interest. Okay, Iâll do that. So, that becomes the conversation, and they start using their computer to go to this website; typically the website is flashyourrack.com, where itâs pictures of these women who flash their breasts and you rank them from one to ten. So, for four hours every night, theyâre watching porn. Iâm sitting there doing the investigation, so Iâm sitting there after a while, and Iâm like, shit, why not? [MUSIC] Letâs do this. I start breaking the law from inside the offices as theyâre watching the porn and partying amongst themselves and everything else. They were good guys. They just got bored. Thatâs the problem; they got bored. So, Iâm working four hours a day in the Secret Service offices. Meanwhile, Iâm committing tax return fraud on the side. So, Iâm stealing a shitload of money doing that, and no one knows that Iâm actually committing a lot of the crime from inside of the Secret Service offices at the same time. She moves up there with me and she had always wanted to keep going to strip clubs and I had always refused, but all of a sudden Iâm in this position of I want to make her â make sure sheâs happy.</p>
+
+<p>So, she wants to start going back to strip clubs and Iâm like sure, weâll go. So we start going to strip clubs â of an evening. I donât know, I guess itâs maybe three, four months in. She looks at me one night âcause I told you, she couldnât be intimate unless she was completely wasted. So she looks at me as weâre driving home one night. Sheâs like, I think itâd be funny if you got a blowjob from another girl. It took that right there for me to realize that I was just an escape mechanism for her. She never really loved me. She was just â she was trying to get out of her own position in life. I ended up breaking up with her after that, [MUSIC] and thatâs when I drove â I dove deep into alcohol and all this other stuff, and started going through strippers like they were water, just â Iâd go into a strip club with, I donât know, just a wad â Iâd spend maybe $4,000, $7,000 a night in a strip club. I would go in, Iâd hand the bartender a wad of twenties, Iâd tell her hey, however many Kamikazes that buys, just bring them. Sheâd stack up Kamikazes; theyâd put tables together and theyâd put Kamikazes stacked on these tables, and that â I called that my stripper magnet, and Iâd sit there and talk and dance with strippers all night long and Iâd go home with whichever one wanted to go home with me â of a night.</p>
+
+<p>JACK:	Things felt like rock bottom for him. I mean, how could it get any worse, right? He got arrested, lost his girlfriend, was doing stuff behind the Secret Serviceâs back, and spending way too much money and time in strip clubs. But itâs not the bottom. It gets way worse. Stay with us through the break. At this point, Brett has been arrested and flipped to work for the feds, even getting paid by the Secret Service to set people up and collect enough info on them to get them arrested. But this is not an easy job.</p>
+
+<p>BRETT:	[MUSIC] The first person that I betrayed was Sean Mims.</p>
+
+<p>JACK:	Sean was the guy who helped Brett when Brett was really depressed after his breakup with his wife, Susan. Sean really was one of the only guys in the scene who was there for Brett at the time, helping him through that depression. Now Brettâs been asked to set up Sean to get him arrested.</p>
+
+<p>BRETT:	That was within three days of beginning to work for the Secret Service. Sean â I had been â I had disappeared for three months. I had told Sean back when I â when he was talking with me when I was going through the depression with my first wife, I had told him hey, if I ever disappear, donât contact me. If you do contact me, Iâll make a reference to the book Moby Dick. That way youâll know itâs time to go. Sean finds me within three days that I go back online that Iâm at the Secret Service offices and heâs looking for that keyword, something about this book Moby Dick. I never give it to him. I go from there â I knew at that point, I â that night, as soon as Iâm off work, I go to a bar and I just get fucking wasted at that point. I just keep ordering drinks. Iâm just downing them and downing them and downing them. I think thatâs â that was part of the spiral at that point. The main spiral came when the relationship with Elizabeth ended, at that point.</p>
+
+<p>There was absolutely nothing else left. I thought I had hit rock bottom. Rock bottom is actually a lot farther down than that, but at that point it was just â thereâs no motivation anymore. Thereâs not. Youâre in a situation now, or I was in a situation at that point where Iâm telling on everybody that I can, Iâm snitching out every single person that I can. The initial reason for that â and I want to be fair; the initial â the real reason is to save my own hide. I used the relationship with Elizabeth to justify that, okay? Thatâs the interesting thing here. Crime, everything else is a choice. You choose to do that. I chose to snitch people out to save my own hide. I used the justification of the relationship with Elizabeth to support that, okay? So, that justification is gone now. Elizabethâs gone. Here I am trying to rush through and find some other justification, and that justification became another stripper. Like I said, Jack, I was a straight asshole, straight asshole.</p>
+
+<p>JACK:	Yeah. Letâs keep with that asshole thing for a second here, because I think a lot of peopleâ¦</p>
+
+<p>BRETT:	Sure.</p>
+
+<p>JACK:	â¦are going to think youâre an asshole for baiting the people that you grew up teaching and stuff, right? Is there a difference in your mind between a snitch and working for the Secret Service?</p>
+
+<p>BRETT:	No, no. No, I think itâs a â to this day, I think that snitching someone out is a despicable thing. Now that being said, I also understand that â one of the things I found in federal prison is that there are two types of people. There are the people who have talked and the people who have wished they talked, because the amount of time that you get is so large that youâre an idiot not to talk anymore. So, this idea, this thing of, you know, you donât tell on people, that is a â thatâs a bygone era of Italian mafia members that just doesnât exist anymore. I donât feel good about it. I donât. I still consider myself â itâs weird with me. I really consider myself a piece of shit for snitching on people, but at the same time I think if I hadnât have snitched on people, that I would be back in prison for twenty or longer. So, itâs weird with me. Iâm this guy that â thatâs one of the big regrets Iâve got, but itâs a regret at the same time that Iâm like, it needed to be done. For me to do what I do today, it needed to be done. So Iâm like okay, itâs part of it.</p>
+
+<p>JACK:	Now, the people on the forums had some suspicions that something wasnât right with Brettâs account, Gollumfun. You donât retire and disappear just a little bit before shadowcrew.com gets raided and then come back a few months later.</p>
+
+<p>BRETT:	It gets worse than that. When I retired as Gollumfun, on ShadowCrew I said â I made the statement, the name Gollumfun will never be back. If you ever see this name again, itâs law enforcement, alright? When I said something as Gollumfun, people took that to heart. I was top of the food chain. When I said it, it was gospel. So all of a sudden, the Gollumfun name is back; of course youâre gonna have a response of oh, dude, he said he would never bring it back. If it was, it was law enforcement control. So, people were coming out of the woodwork targeting the Gollumfun name. At the same time, the Secret Service has said hey, yeah, we need these investigations. Someone sends you a file or something like that, download it so we can see what the hell it is. Okay, letâs do that. Well, one of the files that came through was a keylogger.</p>
+
+<p>JACK:	[MUSIC] Oh boy, this could be trouble. Brett was told to collect any information and open up any files that people sent him to see what it was, because there might be some incriminating evidence in there, right? So someone on one of these forums or IRC sent Brett a keylogger, and he didnât know it. He opened it up and it got installed on the Secret Serviceâs computer. This enabled whatever person sent it to him to see every keystroke that Brett typed. So, now someone on one of these underground forums was watching everything Brett typed, and Brett had no idea it was on there. It was hidden.</p>
+
+<p>BRETT:	So, here I am. Iâm accessing. Theyâre wanting me to send files to Secret Services addresses from that laptop. So itâs not really secure to begin with. So here I am, Iâm accessing my real e-mail. Not only that, but Iâm also accessing â because you had DM boxes, but they were horrible back then. They were not optimized, they â you couldnât use the damn things for shit. So, Iâm accessing my e-mails, Iâm sending stuff to the Secret Service, everything else from this laptop that weâre also running these investigations out of.</p>
+
+<p>JACK:	Now at the time, the Secret Service gave Brett a cell phone, a way to contact him if they ever needed. It was a basic Cricket phone, but since Brett always worked out of the Secret Service office and came to work every day, nobody ever called him on it, until one day.</p>
+
+<p>BRETT:	That phone rings and I pick it up, and itâs the TTYL line, so this hearing-impaired line is coming across. So, someoneâs speaking on a â out of â typing on the other end of the line and itâs going to â from text to voice. Itâs telling me that I â they know who I am, that they know that Iâm working â I think it says it; they know Iâm working for law enforcement or some bullshit like that. It gives a whole line of stuff that Iâm like, holy hell. Basically what the guy has done is he has seen that some of these e-mail addresses that Iâm sending stuff to is Secret Service, ss.gov. So, heâs seeing Secret Service e-mail addresses. Heâs not only doing that, but heâs reading my internal e-mails, so heâs compromised my GTE mail account and has shut me out of it. Well, the GTE mail account has a lot of the conversations that I had with some of these guys from USA Sex Guide about Elizabeth being a prostitute. So, heâs got my real address, he knows about Elizabeth. He suspects that Iâm an informant as well, and heâs going by the name of Manos Di, hand of god. I forget what the actual demand was, but he says heâs gonna publish it all, and he does.</p>
+
+<p>He publishes it on some of these newsgroups, and it â from what I recall, it really didnât â it got a lot of traction with the Secret Service, but it didnât get a lot of traction with the overall cyber-crime community. I was able to play that off. Well, the Secret Service, when they â when that phone call comes through, they think that itâs me fucking with them, trying to get out of the investigation, because the initial thing was I was only supposed to work with them for three months and they were gonna cut me loose. So, they think that itâs me that Elizabeth is at â back at the apartment on a laptop doing all this stuff. So theyâre like, get in the car now. We all rush over to the apartment. Elizabethâs sitting there watching some sort of reality show, some crap like that. Itâs pretty evident that itâs not me. That thing with Manos Di continues. Well, I come back to the office that day and Iâm like hey, itâs probably a keylogger. We need to format this computer. The answer is no. Iâm like, youâre serious? Theyâre like no, weâre not formatting a damn thing. Get your ass on there and work.</p>
+
+<p>Okay, so start working. Meanwhile, Manos Di is getting keylogs of every single thing. Heâs getting all the passwords, all this other stuff, and heâs taking over these accounts. This lasts â and Iâm bitching about this for three months. This lasts for three months. He even takes over our eGold account at one point, okay? I actually â I had talked him into giving the eGold account back, and we become these â this â itâs this weird conversation of friends. He suspects Iâm an informant; he doesnât know it. Iâm able to convince him to some point that Iâm not. After three months I walk in the office one day and Bobby and Brad are there, and theyâre like look, we think itâs a keylogger on the system. Iâm looking at him; Iâm like, are you shitting me? No, we think itâs a keylogger. I think weâre gonna format today. So, it took them three months to format that system. Meanwhile â and I â thatâs what Manos Di did, was all that.</p>
+
+<p>JACK:	Who do you think Manos Di was? Do you have a theory?</p>
+
+<p>BRETT:	You know, I donât know. My theory is it was Max. I donât know. Max was the only oneâ¦</p>
+
+<p>JACK:	Maxâ¦?</p>
+
+<p>BRETT:	â¦competent enough to do it. Max Butler.</p>
+
+<p>JACK:	[MUSIC] Whoa, Max Butler is in this story? Iceman? Well, this is the guy who was operating a competing website called Carders Market, and went on to steal two million credit card numbers and sold them on his site. Max was later arrested and sent to prison, I think one of the longest sentences ever in computer crimes, and itâs just crazy to hear how he may have sniffed out Brett as a fed and infiltrated the Secret Service. Another interesting story Brett has while working with the Secret Service is this whole thing that went on with La Cosa Nostra. Iâm not talking about the mafia. This is a website that just happened to be the same name, and it was another forum for criminals to conduct crimes on and sell things. The Secret Service agents, Bobby and Brad, were monitoring this site.</p>
+
+<p>BRETT:	It was a criminal forum, so it was like ShadowCrew. Itâs one of these offshoot crime forums, alright? You go there and he had tutorials and there were forums on there talking about credit card theft and ID theft and hacking and all this other stuff. So Iâm driving home one night. Brad calls me and heâs like hey man, La Cosa Nostra has a keylogger on the site. I was like, what? Heâs like yeah, thereâs a keylogger on La Cosa Nostra. Anyone who visits the site, a keyloggerâs downloaded to it. I ask him â I was like well, who runs the site? Heâs like, thatâs none of your goddamn business. Iâm like, okay. So, they lead me down to the War Room and Iâm sitting there. Weâre talking about La Cosa Nostra and the keylogger and everything else. Iâm like well, what do you guys want me to do? Brad looks at me; heâs like well, what would you do if you came across a site like that that had a keylogger on it? I was like well, Iâd shut it down. Heâs like well, do what you usually do. I was like, okay.</p>
+
+<p>JACK:	Brett had a lot of contacts in the criminal underground, so he asked around, hey, who runs La Cosa Nostra? He gets a name; itâs a young guy.</p>
+
+<p>BRETT:	I start looking the kidâs name up and I start reaching out âcause I have every contact in the world. I start reaching out to all these criminal contacts. So, within thirty minutes, I find out that this kid has been arrested. Not only has he been arrested, but he was in prison. So I find out the kidâs real name, I start pulling the articles up on that, and itâs pretty easy to tell quickly that this kid is â heâs been let out to work for people, because you got the keylogger on the site, he was sentenced to this much time, heâs not an â heâs out of prison right now, so why is he out? Heâs out for working, obviously.</p>
+
+<p>JACK:	Oh, how interesting. A kid who operated this criminal forum had been arrested by the Canadian RCMP. He disappeared for a short while and then was back, and suddenly his website is trying to install a keylogger on all its users, tracking all their keystrokes? Brett connected the dots and suspected that this kid might be a snitch just like Brett.</p>
+
+<p>BRETT:	[MUSIC] So here I am; Gollumfunâs â the name is still highly respected even though some people are thinking that Iâm an informant. So all of a â and Iâm like hey, I could use this as one of these things to help build trust across everyone else who thinks I may be an informant, âcause thereâs no way an informantâs gonna tell on another one. So here I am, I just start posting. I break it all down into a nice catalog, a nice timeline, everything else. I post the articles, post the kidâs name, bam, bam, bam. Forty-eight hours later, La Cosa Nostra disappears from the internet.</p>
+
+<p>JACK:	It turned out that the kid running the site was arrested by the RCMP and was working with them, just as Brett suspected. He turned into an informant to avoid prison time, and so the RCMP had him set up a keylogger on the site to try to find more information on its users.</p>
+
+<p>BRETT:	The kid was working for the RCMP. Yeah, La Cosa Nostra was an RCMP investigation. So, Brett Johnson goes in and has that damn thing shut down. RCMP calls Washington; what the fuck? Washington is calling Columbia, South Carolina; hey, what the fuck is your monkey doing? It goes from there.</p>
+
+<p>JACK:	Columbia, South Carolina was where Brett was working in the Secret Service field office, and the monkey they were referring to was him.</p>
+
+<p>BRETT:	Referring to me; what is your monkey doing?</p>
+
+<p>JACK:	Yeah, well, this resulted in the Secret Service agents from Washington, DC coming to South Carolina to talk with Brett. He didnât actually get in trouble for ruining an RCMP investigation, but they did reset some of his objectives. Okay, so I know there are a lot of different timelines to keep track of here, so let me just recap real quick where we are. There are three things going on at this point. One is Brett is a snitch turning people into the Secret Service. Two is Brett lost his girlfriend Elizabeth, and three, Brett is still doing tax return fraud scams to make extra money. Not only was he doing it, he was doing it in the Secret Service offices while at work. They just had no idea he was doing it, though. But then something happened. One of the guys that Brett turned in had strangely hid some evidence in storage the day before he got arrested, and they suspected Brett tipped him off, gave him some sort of warning, like hey man, hide your stuff; youâre gonna get arrested. So they gave him a polygraph test and decided to search his home for any suspicious stuff.</p>
+
+<p>BRETT:	Jim wants them to go and search my apartment. Iâm like yeah, yeah, letâs go and search the apartment. Iâm fine with that. Well, in the apartment Iâve got prepaid debit cards, Iâve got a stash of cash, Iâve got some fake IDs, Iâve got all this bullshit in there. [MUSIC] I want to go there to make sure they donât get it, or go through everything. So, I know at this point that both Brad and Bobby, they like to look at the girls a bit. So Iâm like okay, so we all drive down to my apartment. As I walk in, Iâm like, do you want me to show you where everything is, Bobby? Heâs like no, I can work. Iâm like, thatâs fine. I look at Brad and I was like, what do you want to look at? Heâs like well, letâs go in your bedroom and look around. So as I walk in the bedroom, I look at Brad and Iâm like, have I showed you my new girlfriend yet? Heâs like, new girlfriend? I was like yeah, man, I got a new girlfriend.</p>
+
+<p>Heâs like no, youâve not. So I pull â I open up my phone and I show him the naked pictures of the girl and I was like, you want to see my porn stash? Heâs like no, man, I donât want to see your porn stash. I was like, are you sure you donât want to see my porn stash? Itâs right there on the desk. So heâs like, what do you got? So, he starts looking at that. Then Iâm â I walk him over where I was like, this is my closet. You want to go through the drawers, here, weâll go through the drawers, whatever you want to do. Well, it was the closet that I had all the stash of the prepaid debit cards and everything else in there. So, I make a point of going to the closet and going in and start trying to pull everything out in the hopes that heâll start to say no, I donât need to see that, which is exactly what he did. I had learned enough about him at that point that I got him distracted on the girl and everything else. Meanwhile Bobbyâs going through everything in the house. He doesnât find anything else. They leave.</p>
+
+<p>JACK:	And that worked. Brett tricked the Secret Service agents and took advantage of their trust to social engineer them and keep them from finding his illegal stuff, which was right there in the closet. Crazy. But one of the higher-ups in the Charleston Secret Service office, Jim Ramicone, suspected something was going on with Brett, and a while later ordered a second search in his apartment where they do find his stuff. It was so obvious in his apartment that the two agents that Brett had tricked, Bobby and Brad, were fired from their positions in the Secret Service. Well, I guess they actually got reassigned to do something else, but they did get in some big trouble for this. But Brett was in big trouble, too. They threw him in jail and threatened to charge him with his previous crimes once again unless he cooperated. But he didnât want to cooperate, and he sat in jail. Well, not long after going to jail, someone came and paid his bond and he was able to leave. So he goes outside, and thereâs his mom telling him his bond has been paid and she got him out.</p>
+
+<p>BRETT:	Sheâs in the parking lot. She tells me youâre out, and I looked at her and I was like, I canât stay. Sheâs like, what do you mean? I was like, look â I said theyâre gonna be arresting me. Iâve gotta go. So, I go back to where â to Aiken, South Carolina. I sleep the night there. The next morning I call Kim, the stripper that I had been dating, and I had given Kim, I donât know, probably $60,000 at that point. [MUSIC] Called her up and I was like Kim, I need $1,000. She was like, why do you need $1,000? I was like, look â I said Iâve gotta go. Iâve gotta round up the money for an attorney. I said Iâll pay you back $3,000. I need $1,000. She was like, meet me in Augusta, Georgia. [MUSIC] So I drove. I had a 1997 Dodge Dakota truck. Drove that to Augusta, Georgia, met her in the parking lot of Loweâs, sat there crying, telling her how much I loved her, everything else, and got $1,000 from her and headed west on Interstate 20.</p>
+
+<p>JACK:	Brett went on the run. He wanted to get far away from this place, far away from the courts and the police and the Secret Service, and never come back. He was supposed to stick around and go to court and face tons of charges that were against him, but no way. That was not gonna happen. Brett was outta there. See, all Brett ever knew was crime. He had been committing crime since the age of ten. His mom and dad were both prolific criminals, and he spent most of his time online interacting with criminals, honing his skills, mastering the dark art. He saw himself as a lifelong criminal, so whatâs a person do that sees himself as nothing else but a criminal? They run and go commit more crimes. Brett was on the loose, heading west from South Carolina in a Dodge Dakota with a wad of cash in his pocket, and no clue where to go.</p>
+
+<p>BRETT:	Every single day is the most stressful day of your life and the most exhilarating. You have the highest highs, the lowest lows. I was â talking about depressed, I was the guy who â any ballad come on the radio, I was crying like a baby at that point. You donât have friends, so strangers become your friend.</p>
+
+<p>JACK:	Brett ends up in Dallas, Texas, and immediately starts doing tax refund fraud once again. It had worked really well for him in the past, so why not keep doing it? He gathers the supplies he needed, which was a computer and prepaid debit cards, and gets to work.</p>
+
+<p>BRETT:	You would file, and it typically took ten days for the money to hit the account, and the account would always hit early Friday morning, so you know, 2:00, 3:00 AM, Friday morning. So here I am; by Thursday I donât have any damn money at all. Iâve got some bologna, Iâve got like, I donât know, six, eight dollars in cash is what Iâve got left, âcause Iâve spent the rest on it on food and on Kinkos at twelve dollars an hour filing income taxes. So, down to six, eight dollars. Wake up, keep checking the account through the night. 3:00 AM, check the account; money is on the cards. [MUSIC] At that point, itâs important to get the money out as fast as you possibly can, so I get in the damn truck and start looking for ATM machines.</p>
+
+<p>Start pulling all these twenties out, throwing them in â throwing the twenties in the floorboard of the truck because I donât have anything to hold the damn twenties on. Finally I get a nice pile of twenties up and I was like okay, Iâve gotta do some shit with that, so I go back to the hotel, go up to the desk and Iâm like hey man, you got a Hefty bag? Heâs like, what? I was like, do you have a Hefty bag I could get? I got some garbage I need to take care of. So he hands me a Hefty bag. I go back to the truck, start putting the twenties in the Hefty bag, and thatâs what I do the rest of the night; I just continue â I go back to the ATM route, start â keep cashing out until I end up with â I think it was $67,000 that first night in twenty-dollar bills, all stuffed into a black garbage bag.</p>
+
+<p>JACK:	Incredible. Heâs got quite a sizeable stack of cash now. Heâs kinda back on his feet, so whatâs next? Well, he bought a better car, a Jeep Cherokee, and kept heading west, first hitting up Roswell, New Mexico, and then he kept going.</p>
+
+<p>BRETT:	From Roswell I head to Vegas, stay â I think I stayed the first trip â a couple â three weeks in Vegas, stole $150,000 out of ATMs at that point doing tax fraud. From Vegas went to Oceanside, California, stole another $120,00, $160,000, something like that, then back to Vegas. I was in LA for a while. Finally what happens is is Iâm back in Vegas and the idea had been to try to get enough money up to bug out to Brazil. I was looking at trying to buy a place down in Florianopolis there and setting up business again. That was my thing; hell, Iâm just gonna keep on trucking. So, I was in Las Vegas and the night before, I had been â I had stole $160,000 out of ATMs. I come back to the hotel, and before I went to sleep, I booted up the laptop, signed onto Max Butlerâs site, Carders Market, and the first thread there was Gollumfun Most Wanted. I sat there and I sat there looking at it and I was like, what? Before I clicked on it, I just looked at it and I say, Gollumfun Most Wanted. Well, I click on it and there is my picture and a link to the Secret Service site. Clicked on the site, and itâs talking about Operation Angler Fish and the work Iâve done for the Secret Service and how Iâm wanted. Then I start reading the threads down below it, and Max Butler â the thing was is I had been an admin up until that point. I was an admin on Max Butlerâs site. So, Max is pissed off the gills. Heâs wanting to find me, and Max had always had an anger problem, so he was â heâs talking murder and everything else like that. Iâm sitting there going well, Iâm out of IDs now.</p>
+
+<p>JACK:	While on the run for those four months, Brett stole $600,000 from the IRS through tax refund fraud. He was blowing through the money as fast as heâd get it, too. Vegas will do that to you; strippers, gambling. He was living the high life. But with no reliable way to get fake IDs anymore, the tax refund fraud came to a screeching halt. Brett knew he needed to get out of Vegas. Too many bits of evidence on him there. Time to pick a new place to hide out for a while.</p>
+
+<p>BRETT:	So, what about Orlando? So, thatâs where I went. I got in the Jeep the next day and drove straight to Orlando. [MUSIC] What I did in Orlando was I decided on a timeshare, paid cash for a timeshare for nine months that they were just building at that point. Then I went down to Universal and I went to Disney and bought the year passes and figured Iâd just lay low for six to nine months until everything kinda died down. Then I could â maybe I would get a passport at that point and bug out.</p>
+
+<p>JACK:	How many times did you go to Disneyland at that point?</p>
+
+<p>BRETT:	Daily, daily. Yeah. So, it wasâ¦</p>
+
+<p>JACK:	What?</p>
+
+<p>BRETT:	It was â I went every day or I went to Universal, and I did that daily. So, yeah.</p>
+
+<p>JACK:	Why so many times?</p>
+
+<p>BRETT:	I like theme parks, man. Iâm fifty years old; I like theme parks still.</p>
+
+<p>JACK:	Okay, so I mean, Iâve gotta imagine you are on quite a bender, right?</p>
+
+<p>BRETT:	Oh, I am.</p>
+
+<p>JACK:	So, you stole â you stole, what, $600,000 in those four months?</p>
+
+<p>BRETT:	Yeah, about $600,000, yeah.</p>
+
+<p>JACK:	So youâre partying, youâre getting girls. But it just doesnât fit in there that youâre going to Disneyland. It just doesnât seem like adult fun compared to the other stuff.</p>
+
+<p>BRETT:	Yeah, Iâm drinking like a fish in the night; during the day Iâm waking up and Iâll go down to spend a few hours at the park, then come back, eat at a restaurant, and then go to a strip club or something like that. Yeah, that was Brett Johnson.</p>
+
+<p>JACK:	Well, as you can imagine, the Secret Service was extremely mad that Brett was not facing his charges that they had previously arrested him on twice, and he was nowhere to be found, and he was out there committing more crimes. It was at this point that Brett was on the Secret Serviceâs Most Wanted list, and they were spending a lot of time and effort trying to find him. In some point, they figured out his cell phone number.</p>
+
+<p>BRETT:	I didnât know it, but they called the phone. I hadnât been getting phone numbers â phone calls on the phone, but it came through and they were acting like Papa Johnâs pizza. I knew it was a â kind of an iffy call when it came through, âcause it just didnât make sense. But I didnât think much about it. I found out from talking to Bobby that that night, they had actually went to another apartment, or â yeah, another apartment in the timeshare thinking that I was in that apartment, but I wasnât. So what they did the next morning is they were just going door to door. [MUSIC] Thatâs the only thing that they were doing; door to door. So, at 10:00 AM â I think it was September 16, 10:00 AM, on 2006; I get a knock, and I was in bed asleep. I get up, walk to the door, look out the peephole. Nobodyâs there. So, I open the door, step out in the hallway. Walking down the hall is Bobby Kirby, another South Carolina Secret Service agent and an Orange County police officer.</p>
+
+<p>They turn around and I looked at them; I said hey guys, how you doing? Bobby gets a smile on his face. Heâs like, pretty good, Brett. How are you? Iâm like good, guys. You want to come in? Bobbyâs like yeah, we do. Why donât we put you in cuffs first? Iâm like, why donât you do that? So, they put me in cuffs, take me in, sit me down on the couch. Bobby looks at me and heâs like, you got any cash in here? I was like yeah, I got $150,000 in the bedroom. Heâs like, anything else? I looked at him; I said yeah, thereâs an AK-47 in there, too. He stops dead and heâs like, are you serious? I was like no, Iâm just shitting with you. He was like, thatâs good. That saves you a charge. I was like, I figure. Then he gets Brad on the phone and Brad just starts screaming at me. Heâs like, let the fucking begin. Iâm like yeah, Brad, I understand.</p>
+
+<p>JACK:	They put him in the county jail in Orlando for a while, but they needed to take him back to South Carolina so he could face all his charges. But instead of taking him right there, they take him to another county jail on the way and leave him there for a while. Then when heâs used to that, they put him in a bus and took him to another county jail a little closer to where heâs trying to go. I guess they call this diesel therapy, and they kept moving him from jail to jail until he got to where heâs supposed to be. At some point he fakes having a drug problem so that he can get into a drug rehab program, which he thinks will treat you better if you have a drug problem.</p>
+
+<p>BRETT:	Prosecutorâs standing up, and I mean, heâs screaming. Heâs like, Johnson has manipulated the Secret Service, heâs manipulated the prosecutor, and heâs manipulating you today, Your Honor, and we insist on the upper limits of the guidelines. Judge looks at me and sheâs like, I agree. Seventy-five months. So six weeks later, Iâm at the gates of the Ashland Kentucky Camp, federal prison camp. Ashland was not supposed to have a fence around it. Well, we pull up in the bus and Ashlandâs got a fence around it; fourteen foot, razor wire on top, and Iâm sitting there going well shit, I donât climb. So we go in and during processing I look at the guard thatâs doing the intake and Iâm like hey man, are there any jobs outside of the fence? Heâs like well, you can work in a national forest. Iâm like no, Iâll die out there. Heâs like well, you could do landscaping. Iâm like, I could do landscaping. So, the next day I walk into the landscaping office and behind the guard â he was a great guy, but behind his desk, [MUSIC] the entire wall was this aerial photo, blown up, of the compound and the outlying area. So I can sit there and talk to him and plot my escape the entire time.</p>
+
+<p>So I worked for that dude for six weeks. Feds call it an escape, so letâs call it an escape. I walked off, and the way that happened was my dad. I hadnât â my mom leaves my dad. I had not talked to him, had a real conversation with him, I donât know, twenty years. I mean a real conversation. I had seen him a couple of times but when I say seen him, I mean maybe for five, six minutes. When I get to Ashland, he starts visiting me there. I donât know, itâs â I guess itâs the third visit in. He looks at me; heâs like hey, Iâve been reading about you online. Iâm like, yeah. Heâs like yeah, and heâs like, thatâs a lot of money you made. Iâm like, yeah. Then he looks at me; heâs like, you think you could teach somebody how to do that? So he mentions that and I decided to manipulate him into helping me escape. So I taught him how to do tax return identity fraud in exchange for $4,000 in cash, a change of clothes, a cell phone, and a driverâs license. The only driverâs license he could get was my driverâs license. So, he drops it off in a package in the woods. I last six weeks at the landscaping job and then leave.</p>
+
+<p>JACK:	He makes his way to Lexington, Kentucky, dyes his hair, and immediately goes back into tax refund fraud. He ordered one hundred prepaid debit cards, and that was sent to him, and he bought a laptop, and then he went to the movies.</p>
+
+<p>BRETT:	Come back to the hotel. Iâve got the â Iâm on the second floor. Iâve got the curtains open on the window. Iâm sitting there on my laptop, and this guy walks by the window. He walks by; I see him stop. He backs up, looks at me, knocks on the window, reaches in his shirt, pulls out his badge, points to his badge, points to the doorknob. I get up, open the doorknob; Iâm like, yeah? Heâs like, Brett Johnson. Iâm like, yeah. He was like, you are under arrest. Iâm like, yeah. Soâ¦</p>
+
+<p>JACK:	You sound annoyed, but is it really frightening, or what is the real emotion?</p>
+
+<p>BRETT:	Oh dude, itâs â at that point, everything. Everything is resignation, every single thing, and that right there, at that point was rock bottom for me. That was â as far as I was concerned, up until that point, there was still some glimmer of hope that hey, I will still be able to make it out of country and I will still have all this money and Iâll be alright. But at that point I was like my god, itâs not happening now.</p>
+
+<p>JACK:	They threw him in prison and the first eight months, they made him go to solitary confinement, and he was sentenced to ninety months in prison at this point, which is seven and a half years. Brett was very depressed during that time, suicidal, even. Kevin Poulsen from Wired Magazine had been calling Brett to run a story about Max Butler, and eventually the magazine article came out, but in it it said Brett Johnson was a Secret Service informant. When youâre in prison and other prisoners find out youâre a snitch, it might not go so well. So Brett was pretty worried about how the other prisoners would take this.</p>
+
+<p>BRETT:	The next day I walk back into the barracks. Nick Sandfor has a copy of the magazine, reading it on his bunk. Iâm like, oh shit. I walk up to him; Iâm like hey, Nick, what are you doing? Heâs like, Iâm doing some reading. I was like, anything interesting? He was like oh, itâs getting there. I was like, let me save you the trouble. So, took the magazine, pointed the line out to him and he was like man, I already knew. I was like, okay. I was like, are we gonna have trouble? He looked at me; heâs like well, he said did you snitch on anybody thatâs here right now? I was like, no. Heâs like, until someone gets here you told on, we donât have a problem.</p>
+
+<p>JACK:	At some point his sister comes to visit him, and something about her visiting him really made him think about whether he should continue to be a lifelong criminal and if he should keep doing that. Prison gave him a lot of time to think.</p>
+
+<p>BRETT:	You do nothing but think. You can read, you can do all this other stuff, but thereâs a lot of time to think. Every time youâre walking that track, four, five hours a day, youâre just thinking. So thereâs a point in time where you either accept responsibility or you donât. I was very fortunate, very â and I think â I credit Denise to that because I was the guy, I was the guy who really believed that bullshit lying of well, I did it for my family, I did it for my wife, all that. About two years in, it really hit me that the only reason that Iâm in prison is me. Iâm the guy who put me in prison.</p>
+
+<p>JACK:	He lied and said he was addicted to drugs, which gets him transferred to another prison in Fort Worth, Texas for treatment. He says that program was actually really good for him, and Brett spent a whole six years in prison. Okay, so by the time youâre ready to get out, do you have a plan of what youâre gonna do when you get out?</p>
+
+<p>BRETT:	[LAUGHING] Oh yeah, oh yeah. My plan is to go right back into tax fraud, oh yeah.</p>
+
+<p>JACK:	What? After five years of prison time?</p>
+
+<p>BRETT:	Oh yeah. My plan is to go right back into it. Yes, sir. Yeah, I get â so, Iâm released. I get the year off. I get the six months halfway house. They put me on a Greyhound bus in Dallas going to Tallahassee, Florida. Thatâs where â my dad is in Panama City. The halfway house is in Tallahassee. So, I take the Greyhound bus to Tallahassee. My dad picks me up at the station and heâs not been able to talk to me âcause Iâve been teaching him how to do tax â I taught him before I escaped how to do tax fraud. Heâs got all these questions about â hey, how do you do this, how do you do this, how do you do this? So, Iâm answering the questions, heâs got â I guess heâs stolen â or, not guess; he has stolen some money. Heâs stolen some money by this point. He gives me a couple of giftcards and a â five hundred bucks apiece on him in case I need anything while Iâm at the halfway house. He was like, what do you want to do? I was like well, Iâm gonna go back into tax fraud. Heâs like no, son. He really does; heâs trying to talk me out of it and everything else. I tell him; Iâm like dad, this is what Iâm doing.</p>
+
+<p>JACK:	He doesnât want to do tax fraud at the halfway house though, because they monitor you too closely. So he just plays it cool there and tries to be good, and to get out of the halfway house, they required him to get a job in the city where he wanted to move to. His probation restricted him so that he couldnât use a computer though, so he had a hard time finding a job, but he was able to get a job driving a taxi, which allowed him to move out of the halfway house to Panama City, Florida. But once he moved there, the taxi company realized he was a convicted felon and was like oh, no, you canât continue to work here.</p>
+
+<p>BRETT:	Thatâs when I start committing tax fraud again, almost immediately, as soon as I get there. I buy â Amazon had released their first Kindle tablet, so I start trying to commit tax fraud. The problem is is that Iâm so scared doing it that Iâm doing very low-dollar, very low. Iâm getting prepaid debit cards from â at that point you didnât get them online. You didnât have to anymore; they had them at convenience stores and Walmart and things like that.</p>
+
+<p>JACK:	Now, the way he was doing all this was that he would look up the death index of a state and then file taxes for dead people, which he liked a lot because first, he knew dead people hadnât filed their taxes yet, which meant he could probably get a return on them, but second, he didnât feel like he was screwing over someone whoâs been dead for years. They were dead; whatâs the big deal? Well, just a few months into this, the IRS got hip to Brettâs scam and put an end to it, making a new rule; no more filing tax returns for dead people. Up until this point, the IRS just never checked this. But now they were being more strict and denying any tax returns for dead people. Well, this really put the kibosh on Brettâs whole money-making scheme. He didnât have a job anymore and he had no income from the tax return fraud, and he didnât have much money at all. So, he ran out of money and he was bumming some money from his dad and his sister to get by. At some point he was so broke that he ended up shoplifting toilet paper.</p>
+
+<p>BRETT:	I had had a friend of mine; he had posted an ad on Plenty of Fish for me, that free dating site. So, I would go over to his house every now and then and weâd check in. Heâd update the site for me and weâd communicate with some of the women that were texting me and everything else. Who reached out to me is Michelle. I had been giving these basically prison poses, you know. You give this kinda stern look, and she had sent a message; why arenât you smiling? My response was that is my happy face. So, we started talking. I started talking over the phone, and about a month of talking on the phone, she calls me up; sheâs like, would you like to meet today? I was like yeah, letâs meet. Well, she didnât know I was a criminal or anything like that. So, I was in Panama City. She was in Crestview, Florida, and we agree to meet halfway in Destin, Florida. So, we meet in Destin on a beach there, and weâre sitting there. About ten minutes into the conversation she looks at me. Weâre sitting on the beach watching the water and sheâs like, whatâs the worst thing youâve ever done in your life? I looked at her andâ¦</p>
+
+<p>JACK:	[LAUGHING]</p>
+
+<p>BRETT:	Yeah, yeah. I looked at her and I was like well, I just got out of federal prison. Sheâs like no, no, no. Whatâs the worst thing? I was like, I just got out of federal prison. She looks at me and I tell her everything. We sit there the rest of the night, then we go over to McGuireâs Pub and we have dinner over there. At the end of the night I looked at her and I was like, look â I said I really like you. I said lâd like to keep seeing you. I said thatâs gonna be your choice, though. I said youâre gonna go home tonight, youâre gonna Google me. Sheâs like, no I wonât. I was like, look; I said youâll go home tonight, you will look me up. So she goes home and she looks me up, and then she â her oldest son â sheâs got three sons â her oldest son was in the Navy. He was home on leave during that point. She asks him; sheâs like well, what do you think? Should I keep seeing him? Taylor was like, you know, do you like him? Sheâs like, yeah. Heâs like, you think heâs still screwing around? Sheâs like, he doesnât seem to be. Heâs like well, hell, keep talking to him then. Well, I ended up moving in with Michelle within two months. I was going completely broke. I was about to lose my house and everything else. It was obvious I loved her. So, moved in with her within two months and started â kept looking for a job. The job that I got â my probation officer allowed me to have a cell phone.</p>
+
+<p>He said â he told me â called me in and heâs like, look; he said I canât keep you from getting on the internet. If I give you permission, at least I know what youâre doing. He said you can go get you a smart phone. So I got a smart phone and I was looking on Craigslist and there was this guy that was advertising for landscaping. How ironic. So, I called him up. So, twenty minutes of talking, he looks at me; heâs like well â heâs like, can I ask you a question? I was like, yeah. Heâs like, are you on the run or something? I was like, what? He was like, look â he said you just donât look like the type of guy that would do this type of work. Heâs like, so are you on the run or something? I just told him. I was like â told him who I was and everything and what had happened. He looks at me and he was like â his exact words; he was like man, Iâm gonna have to think about it. I said if you give me a job, Iâll work my ass off. He tells me; heâs like, show up 6:00 tomorrow. So, I went there. My job was ten hours a day pushing a lawnmower. I make $400 a week doing that. I worked my ass off. I did. I would â Iâd come in so damn tired that Iâd just lay down and Iâd just â Iâd fall asleep. Wake up the next morning â âscuse me â wake up the next morning and do it again.</p>
+
+<p>JACK:	Why is the lawnmower story hard for you to tell?</p>
+
+<p>BRETT:	âCause that was the â that was the only job I could get. Come to find out, Brett Johnson was kinda broken at that point. I didnât want to go back into fucking breaking the law and fraud and all that bullshit. So, I just wanted a job.</p>
+
+<p>JACK:	That job didnât last long. He got hired somewhere else and quit mowing, but then that new place realized who he was and didnât want to hire him anymore. So he was back to having no job. His girlfriend he was living with was struggling to make ends meet.</p>
+
+<p>BRETT:	I get it into my head, Iâm like you know, hell, gotta help out some way. Iâm not working, Iâm a piece of shit. Gotta do something to show her that I can help provide. [MUSIC] So I get it in my head, I was like you know, hey, I can bring food into the house. I can at least make sure she doesnât have to use the money that sheâs bringing in to buy food for us. So, Iâm that guy that â get online, and the way it started out was I start ordering food. Well, the thing is is when youâre stealing food online, the places you hit are not cheap places because there are no cheap places to sell food online, so I start hitting steakhouses and all that bullshit, getting all these expensive orders in with stolen credit cards. Then Iâm looking at the boys; well, they can â she doesnât have to spend money to buy them clothes, so hell, I can order you guys â pick out something on Under Armor.</p>
+
+<p>What do you like on Under Armor? What size do you wear? Okay, letâs make sure you got clothes. Then it goes clothes for her, then once thatâs taken care of, itâs clothes for me. Letâs do that. So, I had ordered from Nyman Ranch, Nyman Brothers Ranch, a bunch of steaks. Of course I had been hitting Nyman Brothers for a while. Nyman Brothers was used to being hit in the panhandle of Florida, so they started flagging every order that was coming in for the panhandle. They flag that order, contacted the actual cardholder. The cardholder said no, no, I didnât order that. So they â it was controlled delivery. I go to pick up the steaks and itâs the â I think itâs the Fort Walton Sheriffâs Department was who picked me up at that point and arrested me. Thatâs when Michelle finds out that I was committing crime. She didnât know that, and I go back to prison for ten months.</p>
+
+<p>JACK:	He goes back to prison, the same one that he went to in Fort Worth, Texas. At this point Iâm just reminded of this clip from the movie Liar, Liar.</p>
+
+<p>FLETCHER:	Stop breaking the law, asshole!</p>
+
+<p>BRETT:	Every single relationship except for my relationship with my sister, every single relationship I had ever had had been based on what I could give somebody, not on â not just me. Michelle was the first person that I had ever had a relationship with that she needed me for me. She didnât need me for what I could give her, you know?</p>
+
+<p>JACK:	She stood up for him in court and she kept in contact with him when he was in prison. After spending ten months in prison, when he got out, he goes back to her and she accepted him. Only a few months after getting out of prison, they get married, and thatâs been the last run-in with the law for Brett Johnson. He says heâs no longer a criminal. So what made him change? Thatâs a good question. He viewed himself as a criminal, and when thatâs what you identify with, itâs really hard to undo that identity without feeling totally lost. A few things made him change, though; one was stopping to notice his sister. She grew up in the same house as him but did not turn to a life of crime. She works in a school and has a kid and is doing just fine. Noticing how she turned out and was there for him through some of the toughest times really helped him realize that there are some good people in the world that are doing good things for him, and he took advantage of that. Realizing how his life could be so different was a big turning point.</p>
+
+<p>Second was when his wife was there for him through court and didnât care for the things he gave her, but instead just liked him for him being him, and not the criminal parts of who he is, but the good guy she saw in him. That life he made with her really did have a big impact on him deciding not to commit crimes anymore. But I think the last thing is when people gave him a chance at life again, people who hired him or vouched for him so that he could get a job. That really meant a lot to him and it gave him new, clean opportunities in life that he was thankful for. So today, Brett has become a speaker, talking about cyber-crime at many conferences and events around the world, and he also makes a podcast called The Brett Johnson Show. He does consulting work teaching companies how criminals think and how to protect against them. Itâs enough to make him feel like heâs making a positive difference in the world, which goes a long way at keeping him straight.</p>
+
+<p>BRETT:	At the end of the day with me, itâs â with me itâs evening out those scales. I canât make â I canât change what Iâve done in the past, but I can make sure that what I do from here on is much better decisions.</p>
+
+<p>(OUTRO):	[OUTRO MUSIC] A big thank-you to Brett Johnson, AKA Gollumfun, for sharing this crazy story with us. I first learned about his story by listening to his podcast called The Brett Johnson Show. There he interviews his sister and other federal agents and tells all these crazy stories with them. At some point his neighbor comes over and he tries to explain to his neighbor what he did, and itâs just hilarious to hear how his neighbor thinks of all this. So check out the podcast The Brett Johnson Show, or follow Brett on Twitter. His name there is @Gollumfun. This show is made by me, the sneaker, Jack Rhysider. I did the sound design for this one, too. Editing help this episode is by the spontaneous Damienne, and this episode was assembled by Tristan Ledger and mixed by Proximity Sound. Our theme music is by the cyber-gang, Breakmaster Cylinder.</p>
+
+<p>BRETT:	Hey Jack, what do you call a fat computer?</p>
+
+<p>JACK:	What?</p>
+
+<p>BRETT:	A big Mac. Get it?!</p>
+
+<p>JACK:	You canât call a computer fat; itâs not PC.</p>
+
+<p>BRETT:	I can call it anything I want to. Thatâs the file system, dammit! [LAUGHING]</p>
+
+<p>[END OF RECORDING]</p>
+
+
+
+			
+			<h3>Embed Episode</h3>
+			<p>Add this episode of Darknet Diaries to your own website with the following embed code:</p>
+
+<code>&lt;iframe frameborder="0" height="200" scrolling="no" src="https://playlist.megaphone.fm?e=ADV1766068871" width="100%"&gt;&lt;/iframe&gt;
+			</code>
+			
+
+
+			
+			
+				<br><br><h3>Transcript</h3>
+				<p>
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				  
+				     <p>[START OF RECORDING]</p>
+
+<p>JACK:	Tell me about what some of the eBay scams were going on. How can you rip someone off on eBay?</p>
+
+<p>BRETT:	So, some of the scam â well, man, what I would do, if it were going in Christmas season, I would see what the hot item was. Typically it was a lot of cameras, it was a lot of laptops. It was those high-dollar items that people were really wanting but they didnât want to pay full retail price for. So, the idea is you need to come in at an amount that causes that potential victim to put logic and reason at the door and react emotionally, but you donât want to come in at it so low of an amount that it causes them to question whatâs going on. Thatâs a very thin line that happens. But Iâd find a Canon XL1 and I would post that, a couple pictures of itâ¦</p>
+
+<p>JACK:	Hold on a second.</p>
+
+
+				   
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				</p>
+				<p><a href="/transcript/129">Read Full Transcript</a></p>
+			
+
+
+			<div class="wrap nextprevious">
+				<center>
+			  		
+			  		<a href="/transcript/128/" class="button button-light PageNavigation"><i class="fa fa-arrow-left" aria-hidden="true"></i> <span>Previous Episode</span></a>
+			  			  
+			  		
+			  		<a href="/transcript/130/" class="PageNavigation next button button-light"><span>Next Episode</span> <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+			  		
+			  	</center>
+			</div>
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

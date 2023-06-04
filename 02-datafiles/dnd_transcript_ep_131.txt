@@ -1,0 +1,885 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>Welcome To Video â Darknet Diaries</title>
+	<meta name="description" content="Andy Greenberg brings us a gut wrenching story of how criminal investigators used bitcoin tracing techniques to try to find out who was at the center of a child sexual abuse darkweb website.">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Welcome To Video â Darknet Diaries">  
+	<meta name="twitter:description" content="Andy Greenberg brings us a gut wrenching story of how criminal investigators used bitcoin tracing techniques to try to find out who was at the center of a child sexual abuse darkweb website.">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/welcometovideo.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/131/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Welcome To Video â Darknet Diaries" />
+	<meta property="og:description"        content="Andy Greenberg brings us a gut wrenching story of how criminal investigators used bitcoin tracing techniques to try to find out who was at the center of a child sexual abuse darkweb website." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/welcometovideo.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/131/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/welcometovideo.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/131/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="Welcome To Video â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/welcometovideo.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 131: Welcome To Video</h1>
+		
+		  <a href="/categories/#cybercrime"><div class="button button-light">cybercrime</div></a>
+		  &nbsp;
+		
+		  <a href="/categories/#dark web"><div class="button button-light">dark web</div></a>
+		  &nbsp;
+		
+		  <a href="/categories/#bitcoin"><div class="button button-light">bitcoin</div></a>
+		  
+		
+		<p>27 December 2022 | 68:16</p>
+
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/chrt.fm/track/G481GD/traffic.megaphone.fm/ADV3969892112.mp3?"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/131/",
+			   "title": "Ep 131: Welcome To Video",
+			   "subtitle": "68:16"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			
+			    <p><a href="/transcript/131">Full Transcript</a></p>
+			
+
+			
+			
+
+			<p><img src="/imgs/welcometovideo.jpg" alt="A dark room with a light shining on a computer." /></p>
+
+
+			<p>[START OF RECORDING]</p>
+
+<p>JACK:	Did I ever tell you the story about how Bitcoin sorta changed my life? Okay, it started in 2014. My friends were getting into Bitcoin. I saw them playing around with it and I wanted to learn about this, so I decided to buy one Bitcoin. [MUSIC] The price then was $600. I felt stupid spending that much money on it, but what fascinated me was the trading aspect. The Bitcoin market is open 24/7, 365, unlike the stock market, and I made a little PHP script that would trade Bitcoin after certain indicators were seen, swapping it back and forth between US dollars and Bitcoin. I thought with Bitcoin fluctuating wildly, maybe there was a way to spot some sort of indicator and jump in when itâs going up and jump out when itâs going down. But no, that did not work well. My bot would make some good trades, but with the fees and a few bad trades, it all went back to where I started. So, I turned off the bot and left it alone, still holding one Bitcoin. Well, fast-forward to 2017; I was just starting this podcast and I was feeling really burnt out at work and was ready to quit and just work on the show or something.
+<!--more-->
+But the show wasnât making any money. I looked and I still had my one Bitcoin from years ago, but the price now was $18,000. So, I decided to sell that Bitcoin. It wasnât easy, though. I had to spend weeks wrestling it out of an old wallet that I had that wasnât very good, and get it over to an exchange. But I finally did sell it, and that gave me the freedom to quit my job and spend the next few months focusing exclusively on making Darknet Diaries. Just when that money was starting to run low is when I got my first sponsor, barely making it through the dip. So, I do have a special fondness for Bitcoin, and now you know if it wasnât for Bitcoin, maybe this show wouldnât be here. But Iâm also well aware that thereâs another side to Bitcoin, too, a dark side, which sometimes when you follow the money, can lead you to the darkest places on the internet.</p>
+
+<p>(INTRO):	[INTRO MUSIC] These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	For this episode, weâre talking once again with Andy Greenberg.</p>
+
+<p>ANDY:	Do I sound okay? [BACKGROUND TALK]</p>
+
+<p>JACK:	This is Andyâs third appearance on the show, but if you donât remember, heâs the one who wrote the book Sandworm, which talks about Russia doing a cyber-attack on Ukraine using NotPetya and other things, and heâs also a senior writer at Wired.</p>
+
+<p>ANDY:	I cover cyber security and hacking and surveillance and all of this stuff, and Iâve now written a new book, Tracers in the Dark: The Global Hunt for the Crime Lords of Cryptocurrency.</p>
+
+<p>JACK:	Whoa, that sounds like a cool title; Tracers in the Dark. I love it. So, how did you get involved in this book or this story? Whatâs going on in there?</p>
+
+<p>ANDY:	Yeah, well, more than a decade ago, actually, I was really interested in this group called the Cypherpunks that wanted to use encryption and anonymity tools enabled by encryption to take power away from governments and incorporations and give it to individuals. This is, you know, like â the Cypherpunks were these radical libertarians, most of them, anyway, and that movement gave rise to everything from VPNs to Tor to WikiLeaks, and I was kind of obsessed with this group and writing a book about them back in 2010 and 2011. In the spring of 2011, actually, is when I came across this â what seemed like this new Cypherpunk phenomenon, which was Bitcoin.</p>
+
+<p>JACK:	Little did we know what kind of revolution Bitcoin would be in 2011. Bitcoin is digital currency, and before you start telling me that Bitcoin is a scam and has no value, the paper money you have in your wallet is just paper and has no real value, either. We all just try to convince each other that cash does have value, but we know deep down itâs just a piece of paper. Itâs a lie. But besides that, cash is getting phased out for digital money. People use credit cards or even their phones to pay for everything now, which if you think about it, now money is basically just an entry in a database somewhere. Thatâs fine, because it makes sense to use digital money in our digital world. Yeah, I know Bitcoin has no real value, but just like cash, people go along with the lie that it does. Once enough people believe in it, then Bitcoin becomes valuable. Money is weird, but the thing about Bitcoin is that itâs an anonymous digital currency. Or, at least it used to be. Just like thereâs no connection between the dollars in your wallet and your identity, thereâs no name on a Bitcoin wallet.</p>
+
+<p>Well, that was true until governments started regulating exchanges. In order to buy or sell Bitcoin, you now need to show identification to the Bitcoin exchange, and if you keep your Bitcoin right there on the exchange, then yeah, thereâs a direct connection between your wallet and your name. But that connection isnât visible to just anyone; only the exchange has your identification and knows which wallet is yours. But exchanges in the US have to abide by US law, and that allows law enforcement to issue subpoenas to exchanges to get details about who owns a particular wallet. This kinda put a fence around the whole cryptocurrency ecosystem, which enabled law enforcement to investigate cases much more effectively. But on top of that, researchers were also figuring out ways to follow Bitcoin trails and put together a picture of what certain Bitcoin wallets were doing. By 2020, Andy began to realize how Bitcoin can be traced, and started looking at how law enforcement was using cryptocurrency tracing in criminal investigations.</p>
+
+<p>ANDY:	It became clear that not only was Bitcoin very traceable, but the cryptocurrency tracing had actually been used as this incredibly powerful law enforcement investigative technique in that this small group of detectives, who then become the subject of my book, had gone on this spree of cyber-criminal busts, tracing cryptocurrency to take down one massive criminal operation online after another.</p>
+
+<p>JACK:	So, youâre following the Bitcoin and youâre unraveling cyber crime. I mean, this is true stories from the dark side of the internet. How dark are we getting, here?</p>
+
+<p>ANDY:	Yeah, I mean, this gets really dark. This is about as dark as any dark web story Iâve ever covered as a reporter.</p>
+
+<p>JACK:	[MUSIC] Yeah, I really should underline this. This is the darkest episode Iâve ever done. This is one of those stories that I knew Iâd have to cover at some point, but never really wanted to because itâs just awful to put my head into this story and to think about it. Weâre going to be talking about child abuse here, and some of what we say is gonna be a real punch to the gut when you hear it. Weâre not gonna graphically describe any child abuse here, but I want you to be fair warned; this episode is rated R, and listener discretion is highly advised. Okay, so letâs get into it. What is Welcome to Video?</p>
+
+<p>ANDY:	Welcome to Video was a dark web market, basically, for child sexual abuse videos. We used to call this stuff child pornography, but I think now itâs much better to call it child sexual abuse materials or child exploitation videos, because itâs really sexual violence being done to kids.</p>
+
+<p>JACK:	To access the videos on Welcome to Video, you had two options; either pay for access, and the only way to pay is using Bitcoin, or upload some videos yourself. Thatâs child sexual abuse material, or CSAM. Now,  you hope that when a site like this launches, the police immediately swarm it and take it down, right? Well, that didnât happen. It launched and people started using the site, and it actually had hundreds of users in the early days. But even with this many users, the police and law enforcement had no idea this site even existed, much less investigating it.</p>
+
+<p>ANDY:	The first agency that Iâm aware of that was looking at Welcome to Video was the NCA, the National Crime Agency, in the UK. They came upon it through â and just to throw us right into the deep end of this darkness, with a really terrible case of this guy named Matthew Falder who was this Cambridge academic who lived this â also this very evil, secret life. I mean, if itâs fair to say that anything is evil, I guess this would be. [MUSIC] He would pretend to be a female artist and ask people for nudes online and then would use those nudes to blackmail them into providing more nudes and abusing other people and self-harm.</p>
+
+<p>JACK:	Oh, I hear about this all the time. About once a month, a listener of mine, usually a guy, tells me this story that they found a woman online, started chatting up with her, and it seemed to be going in a romantic direction. The woman asked for a nude photo of him. So, the guy sends one, and immediately the person tries to extort the guy, saying theyâll send this to all his friends unless he pays, maybe something like $500, but it varies based on how much they think they can get out of the guy. Two tips for any listeners who find themselves in this situation; first, donât send nudes to people online like that. Second, if you get in this trouble, itâs a legal matter. Contact the police. Youâre being extorted. Itâs not something a podcaster like me can help you with.</p>
+
+<p>ANDY:	This guy, Matthew Falder, had done this to no fewer than fifty people. At least three of them had attempted suicide. Iâm sorry to throw us right into the really most horrific parts of this story, but thatâs where this goes. The NCA had actually identified Falder and charged him, and on his computer they found that he was a customer of Welcome to Video, [MUSIC] this site that they had never seen before, but immediately looked to them like a kind of massive repository of child sexual abuse materials. But like with every dark web market, it was protected by the Tor anonymity software. There was no obvious way to take it down.</p>
+
+<p>JACK:	Right. Welcome to Video was on the darknet using the Tor network. Here, things are anonymous by design, both users and the websites, or so it seems. On the regular internet when you see a URL, you can look up who owns that URL or do a trace route on the websiteâs IP and see where that server is hosted in the world, or at least what ISP is providing them internet. But on the Tor network, on the dark web, all that is hidden. For instance, when you want to make a website on Tor, you first generate the private key which will then give you a public address, and that public address is your URL. If you have the private key, you own the site. If not, itâs not yours. Thereâs no way to look up who the owner is or see where itâs hosted. Everything is hidden.</p>
+
+<p>ANDY:	So, the NCA could see this horrific website, but they couldnât figure out any clear way to locate its administrator or take it down. Thatâs the whole idea, really, of the dark web. Sadly, there is so much â every child exploitation-focused agent that Iâve ever talked to seems like theyâre overwhelmed with cases, tragically.</p>
+
+<p>JACK:	So, without a clear lead and with a lot of other work to do, this got pushed to the side until Jonathan Levin showed up. [MUSIC] This guy started a company called Chainalysis, which is a mashup of the words âblockchainâ and âanalysisâ. See, every Bitcoin transaction that happens is public for everyone to see, and thatâs what the blockchain is. Itâs a public ledger which shows every single transaction since the dawn of Bitcoin. Chainalysis was sort of like archaeologists digging through the blockchain, examining the data, and doing things like making a profile of certain Bitcoin wallets and discovering ways to trace the money, but then also learning that Bitcoin might not be so anonymous after all. I mean, consider this scenario; say you gave some Bitcoin to your buddy to borrow and he promises to pay you back in one week. But three weeks go by and he didnât pay you back, so you ask him about it and he says oh, I donât have it. Well, you could just look at the blockchain to see whatâs going on.</p>
+
+<p>So, you look to see where you sent this money to, which is presumably his wallet, right? You see that not only did he borrow money from you, but four other people sent him the same amount. Maybe those are your friends or his friends that he borrowed from. Then you look to see how much Bitcoin is in his wallet right now, and thereâs none. So, where did it go? Well, the blockchain tells all. You might look and see that all the money went to some well-known online casinoâs wallet. Oof. This is the kind of investigation you can do on the blockchain, but it takes a certain skill and the right kind of eyes to be able to see how things move around and whatâs going on. This is what Chainalysis started doing, watching the blockchain, trying to figure out what was going on there. They soon realized that law enforcement was also very interested in the activity of certain wallets.</p>
+
+<p>So, Chainalysis started working with law enforcement to find ways of getting information about certain Bitcoin wallets. In fact, they made a tool to make it even easier, called Reactor. If you put a Bitcoin address into Reactor, itâll show you a map of all the wallets that that wallet has interacted with. Itâll then start to cluster those wallets into groups of common interests. Itâll detect certain laundering techniques. Itâll show where the Bitcoin started and where it ended up. For instance, Reactor software will show that a person bought some Bitcoin at Coinbase, then transferred it to another wallet, and then they cashed out at Binance, which isnât quite rocket science to figure this out on your own, but Chainalysis makes investigating the blockchain a lot easier. So, law enforcement around the world was purchasing and using this tool to help them in criminal investigations.</p>
+
+<p>ANDY:	Jonathan Levin was a co-founder of the company, and around July of 2017, he was just visiting an agent at the NCA, just a customer check-in, and the agent told him about this new site that had just come onto their radar. They did have some of the cryptocurrency addresses of Welcome to Video that theyâd pulled from Matthew Falderâs computer, I believe. So, Jonathan Levin suggested that they just put one of those addresses into Reactor, this cryptocurrency tracing tool that Chainalysis sells.</p>
+
+<p>JACK:	So they gathered around a cubicle and the agent gave Levinâs Bitcoin address from Falderâs computer, which showed that he purchased access to Welcome to Video. Levin put the address into Reactor, [MUSIC] and an explosion of nodes and lines were appearing all over the screen, showing quite immediately the size of the operation. The concept is simple; when Falder became a paying member of Welcome to Video, the wallet that he sent money to must be the owner of the site, right? If thatâs the case, then what other wallets also sent money to the owner of Welcome to Video? The graph in front of them showed hundreds of wallets sending money to this site.</p>
+
+<p>ANDY:	Levin and this NCA agent were both kind of shocked. They could see the entire cluster of all of Welcome to Videoâs addresses, at least kind of a sketch of them. This was just an initial analysis of that whole payment network. They could see people buying Bitcoins in cryptocurrency exchanges including in the US, paying them sometimes directly into Welcome to Videoâs addresses, or sometimes through a few hubs on different addresses on the blockchain, but you could still follow the money. Then just as importantly, they could see flows of money coming out of Welcome to Video and going into just a few cryptocurrency exchanges; two in Korea and one in China.</p>
+
+<p>JACK:	It seemed that many users of the site took no steps at obfuscating or hiding their Bitcoin trail, and perhaps not even the site owner, because the ownerâs wallet seemed to be sending Bitcoin to an exchange to cash out, too. While nobodyâs names are actually on any of these Bitcoin wallets, all the users bought Bitcoin from an exchange, and they had to give their driverâs license to the exchange to get money into their wallets to begin with.</p>
+
+<p>ANDY:	All of that meant that if they could follow those trails on the blockchain and get a law enforcement agency involved that would send subpoenas to them, then they would probably be able to start immediately getting identifying information on these people, because that is how this works. Itâs very difficult to cash out your cryptocurrency for traditional money or buy cryptocurrency with that traditional money without giving your identity to one of these exchanges.</p>
+
+<p>JACK:	This is a lot of work, though, creating hundreds of subpoenas. Thatâs a lot of paperwork. Then once you have those peopleâs names, is that enough evidence to arrest someone simply because their Bitcoin wallet interacted with the owner of a CSAM site? Whoever was going to take this case on was going to be in for quite a ride.</p>
+
+<p>ANDY:	While Jonathan Levin was in the UK on that visit in London with the NCA, these two IRS agents, Tigran Gambaryan and Chris Janczewski, were in Bangkok. They were kind of supposed to be part of the takedown of AlphaBay, this massive crime market for mostly drugs, but also hacking tools and stolen data. Thatâs another story that I tell in the book, how cryptocurrency tracing helped to confirm the identity of the administrator of AlphaBay and take down this guy in Bangkok. Tigran and Chris, these two IRS investigators, after the takedown of Alexandre Cazes, the kingpin of AlphaBay, they were kind of annoyed that they had not been involved. They hadnât been invited to the arrest.</p>
+
+<p>They hadnât even been invited to the War Room in the Thai police headquarters where people were watching the live stream of the arrest from surveillance footage. So, theyâre sitting in Suvarnabhumi Airport, the Bangkok airport, and so Tigran, just out of boredom, starts calling people to try to figure out what their next case is going to be. He calls Jonathan Levin at Chainalysis, and Jonathan Levin is like yeah, itâs funny that you should ask because I just came across a lead on a massive child sexual abuse materials case, and if somebody just pulls these threads and follows the money, I think that you could take this whole thing down, and I think that youâre just the two agents to take this on.</p>
+
+<p>JACK:	Yeah, but thatâs the thing that kinda surprises me, the IRS investigating a criminal pedophile website. How are they just the two agents to take this down?</p>
+
+<p>ANDY:	Exactly; itâs so â thatâs part of whatâs so weird about this case and that made it so interesting to hear about from the agents who carried it out and the prosecutors, because Tigran and Chris and Zia, the â Zia Faruqui, the federal prosecutor who led the case in Washington, DC, none of them had ever done a child exploitation case before. They were financial investigators. They had done money laundering cases. Zia Faruqui had done national security cases where they followed the money to find people selling weapons to North Korea and stuff like that. Tigran and Chris had followed the money, and Tigran actually was this â probably the best cryptocurrency tracer in the IRS. But none of them had ever dealt with child abuse before, and that was what was weird about this case, is that is was a financial investigation, but a financial investigation to find and dismantle a child abuse network, which is really rare because as I said, most of these dark web child abuse markets donât have any form of payment and certainly donât use cryptocurrency. But Zia Faruqui, I think to his credit, the prosecutor who took on this case, he was like, it doesnât matter. [MUSIC] We are going to follow the money. We know how to do this. We have a fantastic lead here and weâre gonna trace Bitcoins to take down this whole network.</p>
+
+<p>JACK:	So the two IRS criminal investigators took the case to take down Welcome to Video. You might think that they might be looking for tax evasion or some kind of financial crime to bust these people for, but the IRS criminal investigators can really investigate just about any federal crime. For instance, in 2021, 72% of their cases were tax-related, but 11% were just narcotics-related.</p>
+
+<p>ANDY:	IRS Criminal Investigations, they are a real law enforcement agency. They carry guns, they make arrests, they travel around the world extraditing people.</p>
+
+<p>JACK:	In fact, the IRS criminal investigation team even has two cyber-crime units. So, the case got opened on Welcome to Video, but where do you start? Well, like any case, you should get to know the situation and learn exactly whatâs happening on the site. The two agents opened up a Tor browser and navigated to Welcome to Videoâs darknet site. You canât see anything unless you make a membership, so they signed up with just a free account though, and they were greeted with a search box that was misspelled.</p>
+
+<p>ANDY:	[MUSIC] Theyâre completely unprepared for this. Like I said, they have never dealt with a child sexual abuse materials case before. Theyâre not actually allowed to download videos because theyâre not undercover agents, but they nonetheless are allowed â not that they really wanted to, but they just begin by looking at the thumbnails on the homepage and they can see just this endless scroll of thumbnails showing the rape and abuse of children. I should say that I think a lot of people think of these sites as being full of just sexual videos of pre-teens or something. I donât know, not to say that thatâs okay, but that the children on these sites are like, fifteen or sixteen. But it becomes immediately apparent to these agents â they can see actually â two of the most commonly searched terms are one-year-old and two-year-old. Theyâre horrified to see these thumbnails too, the abuse of these children. These are, in many cases, infants and toddlers â Iâm sorry to even say this out loud; itâs not fun to talk about â that are being abused in these videos. They are â theyâve just been thrown into the deep end of the CSAM cesspool, basically.</p>
+
+<p>JACK:	Gosh, where do you even begin here? Just imagine youâre a federal agent and youâve just opened the door to a room and found hundreds of people committing crimes everywhere you look; rape, child abuse, and people buying and selling it. Who do you arrest first?</p>
+
+<p>ANDY:	The real crimes that are happening are the hands-on abuse and recording of abuse of children by people around the world. That is just as serious a crime, and in fact, there are kidsâ lives at stake not at the center of this network, but all along the edges of it. That is a much, much more complicated case to take on.</p>
+
+<p>JACK:	They saw the Bitcoin wallets all these users were sending money to. This probably was the site owner or admin. So, they issued a subpoena to the Bitcoin exchange that the site owner was cashing out at.</p>
+
+<p>ANDY:	They also could see that it wasnât going to be enough to go to a computer at the center of this network and take down this market. They were going to have to find the actual users of this site, and that is hundreds of times more complicated.</p>
+
+<p>JACK:	So using the Chainalysis Reactor tool, they were trying to get information on the users of the site. Their theory was is if they know the Bitcoin wallet for Welcome to Video, what wallets are sending money to this wallet, and are those paying members of the site? So, they traced the money. If Wallet A was the site owner and Wallet B sent money to it, where did Wallet B get that money? From a Bitcoin exchange. So, a few more subpoenas were issued to exchanges for what they thought could be users of the site.</p>
+
+<p>ANDY:	But not only that; Tigran, very early on, started to just kind of scour the site for other security mistakes that might have been made in its coding and might reveal something. This is kind of incredible, but he just [MUSIC] I think right-clicked the website and hit View Source, and amazingly just began to see all these IP addresses for those thumbnails on the homepage.</p>
+
+<p>JACK:	Oh, thatâs a big mistake for the site owner. This website was on Tor, the darknet, and when a website is on Tor, its IP addresses are hidden. You have absolutely no idea where in the world that website is hosted. Thatâs the point of Tor. But when this agent examined the code on the website, the thumbnail images werenât hidden. They werenât on Tor. They were just being served on the plain, old internet. This could potentially lead them right to the front door of where this site is hosted.</p>
+
+<p>ANDY:	He immediately did a trace route and saw that these images were sourced from a computer in South Korea, and â in a residential IP address. So, amazingly, all of these thumbnail images seemed to be on a computer in somebodyâs home in Korea. He actually just started laughing âcause he could not believe what a dumb mistake this was.</p>
+
+<p>JACK:	Soon enough, the subpoena for the admin wallet came back. He investigated, hoping that this would reveal who owned Welcome to Video.</p>
+
+<p>ANDY:	Well, the first thing that they could see â and they could see this actually before they even got the results of their subpoena â was that there was no way to take your money out of Welcome to Video. Once you paid in, once you paid for a membership, essentially, there was no â you couldnât get a refund or something. Nobody else was like â it wasnât like the Silk Road where people were selling stuff on Welcome to Video other than the administrators of the site. So, all the money that was coming out of the Welcome to Video network, or â itâs the cluster on the blockchain; all of the money coming out must belong to the administrators of the site. They realized that right away. So, they traced that money to these two exchanges in Korea and one in China, and started to get the subpoena results for those.</p>
+
+<p>I think a little bit of it had gone through a US exchange too, and they got that one first. It showed the identifying information for this older Korean man near Seoul in South Korea. But Chris Janczewski, he was the one who received that â the results of that subpoena first, and he was immediately kind of weirded out by this because this was an older guy and he had really dirty hands, like he was some sort of agricultural worker or something. He didnât seem like somebody â the kind of, whatever, basement-dwelling, hands-on-a-keyboard guy who would be running a dark web market. Then as they got more of the information back, they began to see that there was this other guy who was much younger, had the same last name as the older guy; his name was Son Jung-woo.</p>
+
+<p>JACK:	[MUSIC] Son Jung-woo. Theyâve got a name, and they looked closer at this guy. He was twenty-one years old living in South Korea, and he had the same last name as that other guy, the guy with the dirty fingernails. They looked into it, and this was the son of that older guy. Son Jung-woo also lived in the same city where the IP address resolved for the images on the site. As the investigators looked at him more, they connected enough dots for them to believe Son Jung-woo was the admin and owner of the dark web site Welcome to Video. They found their guy.</p>
+
+<p>ANDY:	You might think that that is case closed. Theyâve got their guy. Heâs in South Korea. Heâs in this town just a couple hours south of Seoul. But then they started to get the results from all their other subpoenas. These are the users of the site, like uploaders, downloaders, hands-on abusers of children, like people creating these videos. They start to see that the users theyâre identifying â and these are hundreds of men. I mean, theyâre almost all men, of course. They include a vice principal of a high school in Georgia and an actual Homeland Security Investigations agent. By this time, IRS had actually partnered with Homeland Security because they didnât have the manpower to do this massive investigation. So, immediately theyâre in this awkward situation where they see that one of their own, a federal agent, is one of the users of this site. But that also â the administrator of a high school and a federal agent, these are people in positions of power and potentially with access to children. So, they start to realize that their first priority can not be to go after the server or go after Son Jung-woo in South Korea. They have to try to find these especially sensitive cases, the users of the site who might have access to kids. They have an ethical responsibility to go find them first and arrest them or charge them or whatever, stop them from potentially abusing kids.</p>
+
+<p>JACK:	One of the subpoenas came back for a guy right in Washington DC, where the IRS investigators were based.</p>
+
+<p>ANDY:	It was really important to them to realize that there was a user of Welcome to Video in Washington, DC. In fact, this guy lived just down the block from the prosecutorâs office where a lot of this work was happening. One of the prosecutors had actually just moved out of this building where this guy lived, amazingly. It was really just a few blocks away. That was important â I mean, it was not just a weird coincidence, but it was important because it meant that if they could prove that this guy had used Welcome to Video, that would allow them to charge the whole case in their jurisdiction. This is one of the weirdnesses of law enforcement that we donât think about a lot, but they have to prove that one of the criminal suspects in the case, at least, is located in their jurisdiction to take on this case in Washington, DC.</p>
+
+<p>JACK:	So, they decided to make this guy their test case. Heâs suspected to be a user of Welcome to Video. Now itâs time to see if thatâs true and arrest him if it was. So, they look up who this guy was. [MUSIC] He was a former congressional aid, and now heâs a high-level executive for an environmental group in DC.</p>
+
+<p>ANDY:	So, theyâre worried that this guy might make a stink and go to the press or try to blow the lid off of their still-undercover covert investigation. But they decide that they have to do it anyway, that they have to go after this guy as the first step in their case. So, in the midst of this, they also see that â they find this guyâs social media profiles and they see that heâs gone quiet just recently, just in the last week or two, and they figure out by pulling his flight records that heâs gone to the Philippines, which they suspect might â the Philippines, sadly, is a place where a lot of child abuse and sex tourism happens. But they also realize that that will allow them, when this guy flies back to the US â again, for better or worse, there is this carve-out in American civil liberties that I find pretty appalling normally, which is that customs and border protection can just pull you aside at the airport and hold you as long as they want, practically. Your rights just donât apply somehow at the border in that way, which is kind of sickening. But in this case â sorry, this doesnât â that was an aside, but in this case, it meant that they could detain this guy when he flew back from the Philippines.</p>
+
+<p>JACK:	So they figure out when heâs coming back and what his route is. He was flying back home through Detroit, and the IRS federal agents were able to get Border Patrol to pull him aside in Detroit and seize his devices. They made him turn over his phone and computer. Of course he protested, but the Border Patrol told him that heâs being investigated for child sexual abuse material. So they took his devices and let him fly home to DC. Border patrol began looking through his devices.</p>
+
+<p>ANDY:	CVP, not long after this, told the investigators in DC that they had managed to access the storage of those devices. Some of it was encrypted; some of it was not. They found child sexual abuse videos, they found actual surreptitiously-recorded videos of adults having sex as well. So, they knew that this test case had actually come back positive. The next day â this is just a bizarre twist in the case â one of the prosecutors involved in the Welcome to Video investigation got an e-mail from the management of her old building. She no longer lived there, but she was still on the mailing list. It said that the â that tragically, someone had committed suicide in the building and had jumped from â I think the 11th floor, and their body was on the sidewalk and therefore, the parking garage was closed. This was â I mean, itâs a bizarre e-mail to get, but she immediately realized that this was their suspect, and Chris Janczewski and Tigran Gambaryan drove over to the building right away and talked to the management and figured out that yes, this was their test case.</p>
+
+<p>This was their guy, and he had just committed suicide. Chris Janczewski and Tigran went to this guyâs apartment â as you do in a case like this â to just look for evidence, and they could see the patch of wetness on the sidewalk eleven stories down, looking out from the balcony. They could see the half-eaten pizza on the table. This is, you would think, kind of when it hit home. But I think that the fact that the guy had killed himself just drove home for all of them the gravity of what they were doing, that the human impact of this case was going to be enormous, that peopleâs lives truly were at stake, and not just kids, but it is just a life-and-death scenario. I mean, this is more impactful, in a way, than taking down a dark web drug market or a hacking conspiracy or something. This is a crime where in some cases, the conviction is worse than death. But I think it speaks to the trauma that they had already experienced in investigating this case, that they had no sympathy for this guy.</p>
+
+<p>I think that the investigators in part were like, we just need to focus on the victims here. There are real victims that we need to actually help in this case. But they also had come face-to-face, by this point, with hours of these videos. Chris Janczewski was actually the one who eventually was assigned to watch these videos to be able to write the affidavit for whatever charging documents they would come up with. So, in this Clockwork Orange way, he was forced to watch hours and hours of child rape, and after that, I think he had very little sympathy for the defendant, and his immediate thought was well, thereâs one less case where I have to do the paperwork. I have hundreds more of these guys to go after, so, all the better. Letâs move on.</p>
+
+<p>JACK:	This is getting heavy. I think weâll take a short break here. Be right back. The criminal investigators at the IRS kept going with their investigation, looking for more users of the site that were in the US. They had issued subpoenas to crypto-exchanges and were getting details back about potential users of the site.</p>
+
+<p>ANDY:	The next guy on their list was this assistant principal outside of Atlanta, in Georgia. This was the case for â at least as Chris described it to me, he â Chris Janczewski was the one who flew down to Georgia and, with the Homeland Security agents in that area, knocked on this guyâs door, executed a search warrant, swarmed his house with agents, seized all of his computers. But this was a guy who had a family and they had to separate his kids, put them in one room, put his wife in another and question her. They questioned this man who was an administrator at a school in another room, and for Chris, who was kind of like â he was not the one executing the warrant; he was the IRS agent who was leading the case, basically, so he was kind of standing there in the eye of this storm of activity. This was the moment that it hit home for him, even after that â the earlier suicide, that â what this meant for peopleâs lives, that they were essentially destroying this guyâs life by doing this to him and doing it in front of his family. He had this moment where he was like, I really hope that this cryptocurrency tracing thing works and that weâre â and that we are getting the right people here.</p>
+
+<p>JACK:	Because, remember, the only evidence they had on these people was that they sent Bitcoin to the owner of the site. Itâs really wild to simply start raiding peopleâs homes just because they sent money to another Bitcoin wallet. Is that really enough evidence? What if someone else stole that guyâs Bitcoin wallet and it was someone else who sent that money? What if the guy in South Korea just had some side business and was selling some totally normal web page design or something like that and he was just using the same Bitcoin wallet for both sites? It would be really bad for the investigators to put a whole family through this ordeal if he isnât actually a pedophile. But this risk was worth taking to the criminal investigators.</p>
+
+<p>ANDY:	But that guy then was taken in for questioning, [MUSIC] admitted eventually to inappropriate touching of kids at his school and was eventually charged with sexual assault, not just possessing child sexual abuse materials, but sexual assault. They were right that this was a high-priority case. They had followed his cryptocurrency payments and it really had identified an abuser of kids.</p>
+
+<p>JACK:	At least, thatâs what the agents and prosecutors told Andy about this guy. I do know he lost his job over this and was facing numerous felony accusations.</p>
+
+<p>ANDY:	The important thing was that within hours, this moment of doubt that Chris Janczewski had was dispelled, that they knew that this guy â this was another test case that had come back positive. The blockchain had not lied. They had once again identified a real case of sexual exploitation of kids through cryptocurrency tracing alone. So, in the midst of this, they â at the same time, this investigative group, these IRS agents and prosecutors were also continuing to scour everything happening on Welcome to Video. The site was still online and there was a chat function on the site, like a kind of discussion in real time on Welcome to Video, too. They began to see â to notice that there were these messages that would appear periodically that seemed to be from a kind of Help Desk administrator, almost. Like, if you have a problem, e-mail me here and I can help. [MUSIC] So, they started to ask themselves, is this another moderator or even administrator, another creator of Welcome to Video that they needed to track down? Is this Son Jung-woo, the guy in Korea, or is it someone else, even? So, Chris Janczewski and this contractor who worked with the agents â his name was Aaron Bice; they tried to figure out, based on the e-mail address, who this was.</p>
+
+<p>JACK:	They did some pretty incredible investigative work for this one. The e-mail was on a Tor-protected e-mail service, so that was no help. But they were able to find a similar e-mail address as a user of a popular Bitcoin exchange called BTCE. Or, at least BTCE used to be a popular Bitcoin exchange. It was taken down by US authorities because of the money laundering that was going on there, which meant the US authorities had all the logs and data from that Bitcoin exchange, and a very similar e-mail address was registered to that exchange. The user had logged into the exchange ten times to access their Bitcoin there, but this exchange didnât have user information other than the IP address that the user logged in from. So, the investigators looked at the IP addresses that logged into this account, and every single IP they looked up came back to a VPN service. This was a dead end for them. But the last IP they looked up came from a residential address in the US, not a VPN. This must have been a mistake by the user.</p>
+
+<p>ANDY:	So, they did a trace route on that IP address and found that it was in Texas. It was clearly not Son Jung-woo. It seemed kind of unlikely, even, that somebody in Texas was working with Son Jung-woo.</p>
+
+<p>JACK:	The investigators were able to gather more information about who this person was, and they eventually were able to get a name and address of this person.</p>
+
+<p>ANDY:	It turned out to be a Border Patrol agent, another federal agent, [MUSIC] who was based in this Texas town near the border.</p>
+
+<p>JACK:	A Border Patrol agent. When a person in authority is committing crimes like this, it feels more awful because they have a type of power and trust that theyâre abusing.</p>
+
+<p>ANDY:	So, now theyâve got this guy of interest who was sending these weird messages on Welcome to Video, who seems to be a kind of moderator or a Help Desk person on the site. But then they also check his account on Welcome to Video and they see that heâs uploaded real child sexual abuse videos, and as they piece together the picture of who this Border Patrol agent is, they also see a GoFundMe where heâs raising money to adopt a daughter, to adopt his actual â his partnerâs daughter as his own step-daughter. Chris Janczewskiâs painstakingly watched all the videos uploaded by this Border Patrol agent and he recognizes this red flannel shirt that the girl is wearing in one of the abuse videos, and he spots it also in one of the photos on the GoFundMe page, that this is exactly the same girl, and this Border Patrol agent is essentially abusing his own step-daughter and uploading the recordings of it to thousands of men around the world.</p>
+
+<p>JACK:	To make that connection for the investigators must have felt like a punch in the gut. But at the same time, what an opportunity to rescue this girl from this monster.</p>
+
+<p>ANDY:	But in this particular case now, Chris knew that every moment that he was not taking down this Border Patrol agent, this girl might be abused again.</p>
+
+<p>JACK:	Yeah, so briefly walk me through what they need to do to either, I donât know, go arrest him or whatever. They need to call the local police, they need to call another assistant â like, I donât think the IRS is gonna just show up by themselves, right?</p>
+
+<p>ANDY:	I think in this case, IRS had partnered with Homeland Security because that â because Homeland Security Investigations has a lot more manpower and it is the one that very often does take on child exploitation cases. Not IRS, obviously. But in this case, because they were arresting somebody who was part of Border Patrol, which is part of DHS, HSI actually had to bring in the FBI, too, I believe, and local law enforcement, if I remember correctly, who all kind of were there to make sure there was no conflict of interest or anything. But Chris Janczewski, too, flew down to Texas with one of the HSI agents on the case, and they stopped this Border Patrol agent on his way home from work, took him to a hotel, and interrogated him while Chris went to his house [MUSIC] and searched it and found exactly the room where he had, in fact, filmed his own abuse of his step-daughter. He could recognize it from the videos. To him it felt like heâd kind of fallen through the screen of his computer into the scene of some horror movie that he had watched.</p>
+
+<p>JACK:	So, youâve got to move fast to get a warrant â a search warrant to go through someoneâs house.</p>
+
+<p>ANDY:	Exactly, so with â it was ten days after the results of â Chrisâ subpoena came back that he arrested this guy, and he barely went home or saw his family during that time. I think that it had become so real for him that he was haunted by this notion that every moment he was not working to get this guy separated from his victim was a moment a child could be raped again. Not to â Iâm sorry to say these things out loud, but that is the truth. So, the entire team, but especially Chris, just truly raced to get this guy arrested and to have â and the girl was, in fact, separated from him, brought to a safe place. They brought with them on this search somebody who was experienced in speaking to child victims, and that agent did interview the girl who then â yes, she opened up and eventually talked about the abuse that she had experienced.</p>
+
+<p>JACK:	Man, thinking about the victims here really is another punch in the gut for me. This kid suffered so much trauma, and it could take a lifetime for her to heal from all this. Abusers sometimes go through great lengths to keep all this quiet, like threatening the kid or gas-lighting them and saying no, that didnât happen; that was just a dream you had.</p>
+
+<p>ANDY:	[MUSIC] So they proved, yes, that this guy was a hands-on abuser of children, of his own step-daughter.</p>
+
+<p>JACK:	Well, these are the allegations made by the agents and prosecutors in the case. This guy has not been convicted of anything yet.</p>
+
+<p>ANDY:	But they also, in interrogating him, found that he was not, by any means, the administrator or moderator of the site. He was actually just phishing people, essentially, on Welcome to Video, pretending to be a moderator and then stealing their â using that to steal their credentials and log into the site as them and get access to their cache of child sexual abuse videos, just as a way to save money, basically. As petty as that sounds, he was just exploiting these exploiters and trying to get access to more videos without paying for them. But when they took him down, it was this big disappointment because they thought maybe that they had found another kingpin or moderator of this site, at least, and he was none of the above. He was just one of the hundreds of men who were using the site. As Chris was flying back to DC, he had taken down this guy, but he also knew that the guyâs videos were still up on Welcome to Video and were being watched by the whole crowd of thousands of other men using this site.</p>
+
+<p>JACK:	So, they decided this site has been up long enough. It really needs to be shut down. Theyâve proven their case is very severe and the longer it stays up, the more abuse will continue to happen. So the IRS criminal investigators decided it was time to head to South Korea and arrest the site admin, Son Jung-woo.</p>
+
+<p>ANDY:	[MUSIC] But they needed the actual Korean police, the Korean National Police Agency, the KNPA, to actually carry out this arrest. They canât just fly to Korea and start arresting people. They had to actually get him extradited from South Korea, and that actually is pretty hard, it turns out. South Korea, I only sort of learned in my reporting on this case, is not the easiest place to get international cooperation. Luckily, Zia Faruqui, the federal prosecutor in this case, had actually carried out cases in South Korea and had contacts with the KNPA. He had done a case where they tracked down people selling weapons to the North Korean government and had worked with South Koreans in that case. So, he had these contacts there, he and an HSI agent who were involved. So, they get the cooperation of the KNPA, they set up surveillance of Son Jung-woo as heâs coming and going. They follow his every move as he comes and goes from his apartment in this apartment complex a couple hours south of Seoul.</p>
+
+<p>So, in February of 2018, Chris Janczewski and a couple of the prosecutors in the case fly to Seoul and prepare for this takedown with â in cooperation with the KNPA. They make this plan to arrest the guy on Monday morning at his home; like, bust down the door and get him at home. But then on the day before theyâre planning to make the arrest, they figure out from their surveillance team that Son Jung-woo has driven up to Seoul, that heâs spending part of the weekend in the city. The KNPA make this last-minute plan to basically stake out his â to drive south to the town where he lives south of Seoul, stake out his home, and be there ready to get him at his front door, and that is in part because they donât want him to have any chance to try to destroy evidence. Thanks in part to Tigran Gambaryanâs right-click and View Source, they know that the server is actually in Son Jung-wooâs apartment, amazingly. So, this is not like in a data center somewhere.</p>
+
+<p>So, they need to both seize the server and arrest Son Jung-woo. They make a plan to do this, which in some ways itâs a very tidy, simple plan. Now they only have to raid one location, basically. They formulate this last-minute plan, and Chris Janczewski and the Americans and the Koreans drive down together in this caravan and stake him out in the parking lot of his building. Itâs long after midnight on this night where itâs pouring rain. Chris Janczewski, by the way, has a horrible cold. He actually brought a pillow with him for the stake-out and was just miserably waiting in the car during all of this. The Americans are not actually allowed to make the arrest, so itâs the Koreans who follow Son Jung-woo into the apartment when he finally arrives. Itâs this agent, this Korean agent, who they called Smiley. I donât actually know his real name, but they called him Smiley because he never smiled and he was this very intimidating figure who slides into the elevator next to Son Jung-woo, rides up the elevator with him. When he steps out of the elevator and walks to his apartment, they arrest him just as he reaches his front door, and then search his home.</p>
+
+<p>They asked Son Jung-woo, can we let the Americans in to participate in the search? The way that this Mutual Legal Assistance Treaty between the US and Korea works is that the victim has to give permission for any Americans to be involved in the search. Of course, Son Jung-woo says no, so Chris Janczewski has to just watch the search through somebodyâs phone on FaceTime while he sort of just sits in this car in the parking lot in the rain. [MUSIC] Eventually somebody points the phone, points the video, this live stream of the search, at this crappy desktop tower machine that is sitting on the floor of Son Jung-wooâs bedroom. Itâs just an old desktop machine with one side open, and you can see that there are multiple hard drives in it. Essentially, Son Jung-woo had just been adding hard drives to it as each one filled up with terabytes of videos of child sexual abuse. This is the Welcome to Video server. Chris couldnât even believe it. He was just kind of shocked, and it was actually almost anticlimactic for him. They had got their guy, they had found this server at the center of this incredibly malevolent global network, and it was just this dumpy computer on the floor of this kidâs bedroom.</p>
+
+<p>JACK:	So, when they got to the server, did they immediately pull the plug or did they put some forensic tools on it, or did they put a sign on the site that said this is now seized by the government?</p>
+
+<p>ANDY:	So, they â yeah, they grab the server, they do put up a banner on Welcome to Video, but itâs not a seizure banner. They actually put up a âundergoing maintenance, please be patientâ banner. They even include some typos because Son Jung-wooâs English was pretty bad and there were a lot of typos in the actual Welcome to Video site. So, theyâre trying to just buy themselves some time and not tip off Welcome to Videoâs users that the site has been taken down. [MUSIC] With the server, amazingly, now they can â the breakthrough of now having the server is that itâs a kind of Rosetta Stone. Now you can see not only who was paying in, but what they were buying.</p>
+
+<p>With the logs on the server and the database there, you can see which videos each user was downloading and watching and uploading, too. So, now in combination with the cryptocurrency tracing, they have the entire map of not just identities that theyâve got from that tracing, but also the other end of these criminal transactions. Now they have the motherload of evidence and they start to assemble, with the help of â actually of Chainalysis and of HSI and the IRS â theyâre all working together â they start to build these dossiers on hundreds of the users of Welcome to Video around the world. This is the heart of the case, in fact. Itâs like the slog of planning to find and arrest and search and raid and charge hundreds and hundreds of men around the world. Not just in the US, but practically every continent in the world.</p>
+
+<p>JACK:	There were thousands of users on the site, and hundreds of them were paying to view the videos. It really was the Bitcoin-tracing techniques that gave investigators all the information they needed to take this whole operation down. It was a huge operation.</p>
+
+<p>ANDY:	So, when they seized the database, they now can see the full scale of the size of Welcome to Video, too. They can see, for instance, that by volume, there are more child sexual abuse videos than theyâve ever seen on a dark web site before. When they share all of this stuff with the National Center for Missing and Exploited Children, which is abbreviated NCMEC, N-C-M-E-C, NCMEC says that they have never actually seen â they were the ones who track these sorts of videos, and theyâve never seen almost half of them before, which is remarkable and it shows that Welcome to Video wasnât just enormous but that it actually had really incentivized people to create lots of new abuse videos, to actually abuse children, and these werenât just videos copied from other sites, but they were â many of them were uniquely made for Welcome to Video.</p>
+
+<p>JACK:	Now the agents had mountains more of evidence against the users of the site. It was time to start arresting as many users as they could.</p>
+
+<p>ANDY:	As these intelligence packets were assembled, essentially, and sent out to agents and police around the US and around the world, there was no coordinated one day of hundreds of takedowns. It was too big of a case to even attempt that. There was no â the way that things happen in movies where all these doors get knocked down at the same time. Instead, it was this rolling, distributed process of just taking down these guys one by one around the entire world.</p>
+
+<p>JACK:	Andy tried looking to see who these people were that were getting arrested, and was just too many people to keep track of or follow up on. But there were a few people that he did hear about that got arrested that are worth mentioning.</p>
+
+<p>ANDY:	This guy in Kansas, who it turns out had run an at-home daycare for infants and toddlers â and when he was busted, he had â they had found that he deleted all of his videos from his computer, but the prosecutors were able to find that he still had remnants of the videos in his computer storage, and was charged.</p>
+
+<p>JACK:	There was another guy in New York that when the police went to his house, his dad stopped them at the door and was like, youâve got the wrong guy. It canât be my son youâre after. But when the investigators showed the dad the evidence they had, he was shocked and let them in. Not only was the son a member of Welcome to Video, but he was also found to have sexually assaulted the daughter of a family friend, and hacked into another girlâs webcam and was recording her without her knowing, at least according to prosecutors.</p>
+
+<p>ANDY:	Another guy in Washington, DC tried to commit suicide when the HSI agents raided his house, and he hid in his bathroom and slit his own throat. Only because one of the agents had medical training were they able to save his life. They found 450,000 hours of child sexual abuse videos on his computer, including some of the recordings that were created by that Border Patrol agent in Texas.</p>
+
+<p>JACK:	450,000 hours. Thatâs like an addiction beyond my imagination.</p>
+
+<p>ANDY:	These are sad individuals. They are. Theyâve done terrible things, but when you hear about who they are, you do kind of realize that this is a sickness, too. There was one man who they found had suffered brain damage and he had been taking this medication that heightened his sexual appetites and reduced his impulse control, and he had basically the cognitive abilities of a child himself. These are truly tragic cases on both sides. But then in another case, they found a guy in New Jersey had been negotiating to actually buy a child for his own exploitation. Thereâs no doubt that this â despite the tragedy for the criminal defendants here, too, this is a case that saved kids. Ultimately twenty-three children were rescued around the world as a result of this case. It was around the world; I should say â Iâve listed cases in the US, but ultimately, Welcome to Video users were arrested in the Czech Republic, Spain, Brazil, Ireland, France, Canada, England, Peru.</p>
+
+<p>One guy fled to Saudi Arabia and was arrested there, and the agents in the case donât even know what happened to him. But in Saudi Arabia, sexual offenders are sometimes punished under Sharia law, which can include beheading. But then in other cases, the â these suspects fled internationally and got away with it. There was one guy in the Seattle area who worked for Amazon, was a Chinese national, and they searched his car and they found, in fact, that he had a map of playgrounds in his car, along with a teddy bear despite having no children of his own. After this guy saw that his car had been searched, he fled to China and they never found him again. In total, 337 people were arrested around the world, and twenty-three kids were rescued. I think it is probably, in terms of â I mean, in this whole book that Iâve written about cryptocurrency tracing cases, this is the one that thereâs no doubt that it had the biggest impact on peopleâs lives.</p>
+
+<p>JACK:	[MUSIC] Son Jung-woo made a few hundred thousand dollars from all this, which seems like such a small amount of money compared to how much suffering was inflicted on victims because of the site. Clearly, some of the users on the site did horrendous things or have been put in prison for a long time, and I know some of them got decade-long prison sentences or more. But thatâs just the users. What did the admin, Son Jung-woo, get for his punishment?</p>
+
+<p>ANDY:	The really shocking thing is that Son Jung-woo was out in less than two years.</p>
+
+<p>JACK:	What?</p>
+
+<p>ANDY:	Iâm still kind of amazed by this myself, but it seems like South Koreaâs child sexual abuse laws are just really badly written, and a judge denied extradition in this case. I still donât quite understand this, but I think itâs a cultural disconnect where South Korea just historically has not taken this kind of crime seriously. But it is worth noting that when Son Jung-woo was given an eighteen-month prison sentence, just eighteen months for this horrific crime, I mean, for running this network of horrific crimes, there was a huge uproar in South Korea, and people protested. There was a petition signed by 400,000 people to prevent the judge in the case from being considered for a Supreme Court position, and there was legislation proposed to fix these laws and create harsher sentences and change the extradition treaty. So, I think that South Koreans are â many of them are as baffled and unhappy about this as Americans are.</p>
+
+<p>JACK:	Another story I read says that after he got out of prison, Son Jung-woo was facing extradition to the US, but his father sued him only because if youâre facing a lawsuit in South Korea, you canât be extradited. So, this kept him in South Korea and cleared him of the extradition, which means heâs still walking free, presumably in South Korea.</p>
+
+<p>ANDY:	Thatâs the end of it. Son Jung-woo is out and has completely disappeared from the internet and the â from public life in any way that I can see. I could not find him.</p>
+
+<p>JACK:	When I began reading Andyâs book, I was under the impression that Bitcoin and cryptocurrencies are private and anonymous unless you make a mistake in your opsec and expose yourself. But after reading the book, Iâm realizing just how extremely careful you have to be in order to remain private with your cryptocurrency. He talks in detail in the book about it, but letâs just break apart a couple ideas. LocalBitcoins; this is where you can buy Bitcoins from another person directly and not through an exchange. Well, that person you bought Bitcoin from probably used an exchange, and thereâs stories about how law enforcement has subpoenaed exchanges to figure out who that person was that you bought Bitcoin from, which has led back to the criminal. Or what about mixing services or tumblers? Well, time and time again, these get taken down and seized by the feds, and that tumbler might contain a whole, perfectly-preserved log book of everything that went in and out, effectively de-cloaking all its users. Thereâs even rumor that certain governments know how to defeat some of the security features on Monero wallets, which are supposed to be private by design.</p>
+
+<p>Since the blockchain is a permanent, unchangeable public ledger, once a modern analysis technique is discovered, then it can be used to analyze the entire history of the blockchain. Even if you realize your mistake, thereâs no way to go back and fix it. Now, we still donât know who Satoshi Nakamoto is, the creator of Bitcoin, and whoever they are, they have a billion dollars in their Bitcoin wallet that theyâve never touched. But as soon as they cash it out, theyâll have to provide identification, which will expose who they are. There are protocols such as Zcash that encrypt the whole transaction, not exposing the sender or receiverâs wallet at all, which seems promising. But if you put all your eggs in that basket and some day one of those researchers finds a way to de-anonymize it, now your hands are showing. With the regulation of Bitcoin, itâs easier than ever, for law enforcement at least, to identify who owns what wallet. They can even freeze wallets or wallets interacting with a certain wallet, and seize wallets, too.</p>
+
+<p>ANDY:	So, I think the trap that cryptocurrency has represented, in fact for more than a decade now, it still persists. People still believe, in many cases, that they have financial privacy or that they can get away with crimes, when in fact, this untraceable currency theyâre using is the opposite of that and sometimes leads agents and prosecutors right to their door.</p>
+
+<p>(OUTRO):	[OUTRO MUSIC] A big thank-you for Andy Greenberg for coming on the show and telling us this story. This is only one part of his book, and thereâs plenty more amazing stories in the book, so you better go grab a copy of it and check it out. If you like this podcast, youâll absolutely love that book. Itâs called Tracers in the Dark. Or, well, the full title is Tracers in the Dark: The Global Hunt for the Crime Lords of Cryptocurrency. I have an affiliate link to purchase it through Amazon in the show notes, so if youâre going to buy it, please use the link.</p>
+
+<p>Iâm putting this show on pause for a while. I have no episodes planned for January, February, or March. I know my creative itch will be too strong to just be quiet the whole time, but I just need to escape from the ever-present due dates of the show and just take a little mental health break. Iâve been doing this for five years now, and the little breaks Iâve taken have just never been enough to really feel like Iâm relaxed. This show is made by me, the karate skid, Jack Rhysider. I did the sound design for this one, too. This episode was assembled by Tristan Ledger, and mixing was done by Proximity Sound. The theme music is by the hip monk, Breakmaster Cylinder. Iâll sign off with one last tip for you; if you do go on Tor and visit the darknet, you should always wear a bulletproof vest just in case you get hit with a screenshot. This is Darknet Diaries.</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+
+
+			
+			<h3>Embed Episode</h3>
+			<p>Add this episode of Darknet Diaries to your own website with the following embed code:</p>
+
+<code>&lt;iframe frameborder="0" height="200" scrolling="no" src="https://playlist.megaphone.fm?e=ADV3969892112" width="100%"&gt;&lt;/iframe&gt;
+			</code>
+			
+
+
+			
+			
+				<br><br><h3>Transcript</h3>
+				<p>
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				
+				  
+				  
+				     <p>[START OF RECORDING]</p>
+
+<p>JACK:	Did I ever tell you the story about how Bitcoin sorta changed my life? Okay, it started in 2014. My friends were getting into Bitcoin. I saw them playing around with it and I wanted to learn about this, so I decided to buy one Bitcoin. [MUSIC] The price then was $600. I felt stupid spending that much money on it, but what fascinated me was the trading aspect. The Bitcoin market is open 24/7, 365, unlike the stock market, and I made a little PHP script that would trade Bitcoin after certain indicators were seen, swapping it back and forth between US dollars and Bitcoin. I thought with Bitcoin fluctuating wildly, maybe there was a way to spot some sort of indicator and jump in when itâs going up and jump out when itâs going down. But no, that did not work well. My bot would make some good trades, but with the fees and a few bad trades, it all went back to where I started. So, I turned off the bot and left it alone, still holding one Bitcoin. Well, fast-forward to 2017; I was just starting this podcast and I was feeling really burnt out at work and was ready to quit and just work on the show or something.</p>
+
+
+				   
+				  
+				
+				  
+				
+				  
+				
+				</p>
+				<p><a href="/transcript/131">Read Full Transcript</a></p>
+			
+
+
+			<div class="wrap nextprevious">
+				<center>
+			  		
+			  		<a href="/transcript/130/" class="button button-light PageNavigation"><i class="fa fa-arrow-left" aria-hidden="true"></i> <span>Previous Episode</span></a>
+			  			  
+			  		
+			  		<a href="/transcript/132/" class="PageNavigation next button button-light"><span>Next Episode</span> <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+			  		
+			  	</center>
+			</div>
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

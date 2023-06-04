@@ -1,0 +1,543 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>Mini-Stories: Vol 1 â Darknet Diaries</title>
+	<meta name="description" content="Three stories in one! In this episode we hear about a penetration test from Mubix that he'll never forget, a incident response from Robert M. Lee which completely stunned him, and a social engineer...">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Mini-Stories: Vol 1 â Darknet Diaries">  
+	<meta name="twitter:description" content="Three stories in one! In this episode we hear about a penetration test from Mubix that he'll never forget, a incident response from Robert M. Lee which completely stunned him, and a social engineer...">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/ep22-art.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/22/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Mini-Stories: Vol 1 â Darknet Diaries" />
+	<meta property="og:description"        content="Three stories in one! In this episode we hear about a penetration test from Mubix that he'll never forget, a incident response from Robert M. Lee which completely stunned him, and a social engineering mission from Snow.<br><br>Podcast recommendation: <a href='http://moonshot.audio/'>Moonshot</a>." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/ep22-art.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/22/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/ep22-art.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/22/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="Mini-Stories: Vol 1 â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/ep22-art.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 22: Mini-Stories: Vol 1</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://traffic.megaphone.fm/ADV4596635129.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/22/",
+			   "title": "Ep 22: Mini-Stories: Vol 1"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/22">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[FULL TRANSCRIPT]</p>
+
+<p>JACK:	[MUSIC] Okay, so this one time in high school I had some friends over.  Actually, it was a sleepover.  My parents werenât home that night but I had permission to have friends stay over.  We stayed up late at night and we were playing outside in the front yard.  We had all the lights on out front and the garage door was open, too.  We took a break from playing and came in the house to get some snacks.  We were sitting in the living room laughing and eating chips, and just then a woman opens my front door and walks into my house.
+<!--more--></p>
+
+<p>We all freeze; nobody knows this woman.  She looks at us, turns around, and walks back outside.  My friends ask who was that?  I have no idea.  I sprang up, peeked out the front window.  Nobody was there.  I could feel my heart pumping.  I slowly opened the front door and went outside.  As I got out there I saw someone going into my house through the garage door.  I go after them, following them.  By the time I get inside there are three strangers standing in my living room looking at my friends.  It was freaky.  I was bewildered.  One turned to me and said you must be Albert.  Iâm not Albert!  I shouted.  Then they said oh, you must be Eric, then.  Iâm not Eric, either.  Nobody here is Albert or Eric.</p>
+
+<p>Panic set in on the strangers in my house.  They all looked at each other with their eyes widening.  I then spoke up, but there is an Albert and an Eric that live next door.  They looked at the piece of paper in their hand and back to me, and immediately started apologizing.  They came to visit the neighbors but they didnât read the directions right.  The neighbors told them theyâll just leave the door open and they should just walk on in since theyâre arriving so late.  But then they got the house wrong and walked into my house instead.  I can laugh about this now but I was freaked out at the time.  You ever make a mistake like this where when you misread one number it puts you in a situation that has crazy consequences?</p>
+
+<p>JACK (INTRO):	[INTRO MUSIC] These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	Iâm gonna try something a little different this episode.  Usually I do one long story but instead Iâm going to do a few mini-stories.  These are shorter stories which are too good to ignore but not long enough for a full show.  This first story is about a guy named Rob Fuller  who also goes by Mubix and I like using hacker names for people so Iâm gonna call him Mubix for the rest of the story.</p>
+
+<p>MUBIX:	I work at Uber as a senior security engineer.  Iâm a senior technical advisor for the HBO show Silicon Valley as well as the host of the Hak5 show Metasploit Minute.</p>
+
+<p>JACK:	Before he did all that he was a penetration tester and his job was to hack into companies to test their security.</p>
+
+<p>MUBIX:	We were doing these tests pretty regularly for different companies.</p>
+
+<p>JACK:	Heâd often come into work, be given a URL and a block of IP addresses, and be told when to begin scanning to try to break into the clientâs network.  Itâs exciting work but it often gets repetitive.  But there was one test heâll always remember.</p>
+
+<p>MUBIX:	It was just a standard test out of the gate.  It was really cookie-cutter, even.  We do the scope and call, we get all the IPs.  The test was a bunch of IPs; it was a company that, letâs just say made widgets.  We were supposed to go after the widget maker and the source code for the widget maker.</p>
+
+<p>JACK:	Mubix and his team have everything they need to start the mission to see if they can gain access to this widget maker server.</p>
+
+<p>MUBIX:	We start scanning and look at the website and itâs kind of off-ish.  The company that had these websites was like an LLC and the company that we had talked to was a corporation co.  Itâs like this is weird but itâs similar.  Same name, not a big deal.</p>
+
+<p>JACK:	Mubix double checks the IP addresses he was given to test and confirmed this was the same IP block that the client gave him to test on.  Him and his team proceeded to penetrate the website.  First he scans the entire IP range and starts looking for various points of entry.  Thereâs a web server, an e-mail server, and more but those sites look pretty secure.  No obvious vulnerabilities are reported on the scan.  The members of his team start digging into lesser-known vulnerabilities, trying to find anything that might be exploitable.  Thinking that he may not be able to get in using a web vulnerability, Mubix gets a new plan and starts toâ¦</p>
+
+<p>MUBIX:	Set up a phish, get our phish ready, find the different domains that we can send the phish to, find a couple of users.</p>
+
+<p>JACK:	A phish is an e-mail that is designed to trick the user to click on something they shouldnât be clicking so Mubix can infect their machine.  But before they send the phishâ¦</p>
+
+<p>MUBIX:	One of our guys on the team finds a remote code execution under one of the web apps.</p>
+
+<p>JACK:	Remote code execution means they can run commands on that web server.  This is sometimes called getting a shell.  This is bad because people on the internet [00:05:00] should never be allowed to execute commands on your web server directly.  From there they can do a lot of malicious things.</p>
+
+<p>MUBIX:	He found a web application that he could run code just remotely.</p>
+
+<p>JACK:	The team brims with delight upon getting this access.</p>
+
+<p>MUBIX:	Yeah, the first shell that you get on a pen test is really an amazing feeling.  Itâs great.  Obviously you have bad feelings for the company.  It sucks that their security wasnât good enough for their whatever it was or itâs not so great for them but itâs still a great feeling that you had the skill, or you had the timing, or whatever it was that ended up with you a shell.  We all were really excited.  Everything else kind of dropped by the wayside because we had access internally.  We get into the command injection.  Everybodyâs really excited.  Weâre like awesome, so we dumped the phish.  Weâre not going to do the phish anymore.  We start looking at where we can go from there.  We get into the company, get the execution going, get the call backs going to command and control stuff, we dump a Meterpreter session on there.  It calls back.</p>
+
+<p>JACK:	A Meterpreter session is sort of a super tool that lets you remotely control a computer.  You can see what applications are open and what it looks like from their desktop point of view, and what files are on the system, and you can turn on the microphone, and run a programming script, and so much more.  This is part of a tool called Metasploit.</p>
+
+<p>MUBIX:	Then we pivot into the network.  Itâs a pretty Swiss cheese network.  We find the same admin on every single box; the Linux boxes have the same password as the Windows boxes.  Itâs just really a simple test and weâre just hipping and hollering, very happy that all this is going on.</p>
+
+<p>JACK:	At this point they have gained access to a large number of systems in the network.  They have admin access to most Linux and Windows machines and have mapped out their network pretty well.  Theyâve even gained access to their e-mail server and can read all e-mails being sent in and out.</p>
+
+<p>MUBIX:	We hadnât found the goal yet.  That goal was the widget machine and the code for it.  As we find more detail and try and figure out where this widget machine is and where the source code for it is and stuff like that, no one on the different team seems to have any information on this specific widget name.  Itâs like a key word or a code name this company had for this new product theyâre building now.  We couldnât find it anywhere, we couldnât find it anywhere.</p>
+
+<p>JACK:	A week is up and itâs time to call the client to give a progress report.</p>
+
+<p>MUBIX:	We tell them hey, we broke in, we found an easy web app, we found a bunch of admin access.  They guyâs like, thatâs weird.  We donât really normally have admin shared at all.  We do some really good security there.  Thatâs awesome, Iâm really looking forward to the report.  Then he asked about our goal.  Weâre like yeah, we havenât even found anyone whoâs working on this widget thing.  Heâs like well, thatâs good.  At least we have some security there where youâre not being able to find the developers pretty well.  He was really happy.</p>
+
+<p>JACK:	The weekend passes.  The team starts again on Monday looking for this widget machine in their network.</p>
+
+<p>MUBIX:	[MUSIC]  Weâre still having zero luck at all finding anyone that has anything remotely to do with this widget that weâre searching for.  We canât even find mention of it anywhere.  Like, we have access to pretty much everything this company does; e-mails, wikis, and shares.</p>
+
+<p>JACK:	Mubix and his team spend the whole week scouring through the entire company looking for any information about that target system theyâre trying to find, a widget maker of some kind.  But theyâre finding nothing at all.  They read tons of e-mails, they map the entire network.  They took full control of all important systems and still couldnât find it.  At the end of the week they get on another call with the client to give another progress report.</p>
+
+<p>MUBIX:	Weâre like we broke into all these things.  We couldnât find the widget.  Hereâs the websites.  The clientâs like, that isnât my website.  Those arenât my IP ranges.  Weâre like um, well, those are the ones you gave us.  We quickly double-checked that weâre right.  The client goes and looks at the IP range that he sent me.  Heâs like oh, crap.  That IP is one off.  Weâre like uh, okay.  Time to get lawyers involved and insurance involved.  We need to figure out how to fix this.</p>
+
+<p>JACK:	Mubix and his team have realized the severity of whatâs wrong here.  They have systematically and precisely broken into a company that they do not have permission to break into.  Not only that, theyâve scoured through almost everything in that company, reading a lot of private information.  This is a serious [00:10:00] problem.  This is worse than walking into the wrong house late at night.  This is more like when the SWAT team gets the address wrong and busts down the door of the wrong house.  Mubix didnât get the IP address wrong, though; his client did.  They gave him the wrong IP to test against.</p>
+
+<p>MUBIX:	Uh-huh.  It was just the perfect typo that went to this other company that did almost the exact same thing which is insane.</p>
+
+<p>JACK:	Itâs kind of like if someone misdialed your phone but the person who picked up had the same name as you and went to the same school as you and worked at the same company as you, but itâs not you.  Something like this happening is incredible.</p>
+
+<p>MUBIX:	It was just this weird stroke of luck or fate, whatever, that the company we were a client of at the time, that had been on the phone calls and stuff, was literally one digit in the IP range different than this other company.  The company that weâd broken into made very similar stuff with a very similar name.  They just didnât make that particular type of widget.  We hadnât noticed.  We didnât notice at all.</p>
+
+<p>JACK:	Mubix and his team were getting increasingly concerned.  The tension in the office was very high.</p>
+
+<p>MUBIX:	Absolutely astronomical.  The lawyers were looking up all kinds of cyber-law and trying to find if we were on the hook for this even though it was their fault, right, the point-of-contactâs fault.  They combed through probably an entire weekend without getting much sleep of all of the different laws and litigation and precedence thatâs out there and talking to our insurance to see what kind of liability weâre in for and how much thatâs gonna cost.</p>
+
+<p>JACK:	The weekend passes.  Monday comes and itâs time to call the company they broke into and tell them what happened.  Lawyers prepare for the worst.</p>
+
+<p>MUBIX:	They were bracing for the point-of-contact to point blame at us, that we hadnât verified it or that we hadnât done due diligence on the IP range.  They were kind of legitimate claims, right; the pen test company should have noticed.  We should have noticed that the IP range was not the same company but like, the company and what they did were so â the company name and what they did were so similar.</p>
+
+<p>JACK:	Itâs time to call the client.  They wanted to speak to the head of security but they needed to get his e-mail address and phone number but they found a clever way to get it.</p>
+
+<p>MUBIX:	Easy; we had access to everything.  We just looked at their global address list for [inaudible] and find their security guy.</p>
+
+<p>JACK:	Since they had full control of their active directory server they could look anyone up internally using their global address list.  So Mubix, his manager, his team, and the lawyers all get on the conference call.  They call the head of security of the company they just broke into.  Mubixâs manager explains that they just broke into the company and gained access to everything.</p>
+
+<p>MUBIX:	He started apologizing, we all started apologizing, and the security gentleman at the other company was like wait, what happened?  Howâd that work?  You broke in?  Great.  Weâve been trying to get a pen test here for like, years and no one has ever given me enough buy-in for it.  Iâm like what?  Youâre happy?  Yeah, this is great.  Do you have a report?  And weâre like yeah, here it is.  Hereâs the report out.  Heâs like, thatâs amazing.  Can we get you guys back next year?  It was like, holy crap.  Now I can get budget for all the security problems, the local admin stuff Iâve known for years and I just canât get rid of it.  Itâs like oh my god.  [MUSIC]  That could have gone so much worse.  The lawyers were on the phone and they couldnât believe it.  It was unbelievable and he was so happy.</p>
+
+<p>JACK:	At this point, two weeks into this, Mubix still hasnât even begun to test the actual company he was supposed to test against.</p>
+
+<p>MUBIX:	The other company was just so happy that there was not going to be a lawsuit because technically they were at fault for providing us wrong information that they didnât even want another test from us.  The security guy was okay.  Their lawyers were kind of pissed and their management were kind of pissed and I get it.  They donât know the technical aspects of what went wrong and how serendipitous it was with the IP ranges [00:15:00] being so similar.  We didnât get them back as a client but we got a new client.</p>
+
+<p>JACK:	This new company they actually tested against remained a client for years and would get regular penetration tests from Mubix and his team but eventually years later Mubix moved on from doing pen tests.</p>
+
+<p>MUBIX:	I actually still talk to the point-of-contract pretty regularly and heâs still telling that story to this day.  The world aligned in a lot of ways; one to screw us up by having the company so close to the original and two to make it so that that new company wasnât going to make us liable for it and was really totally cool about it.</p>
+
+<p>JACK:	[MUSIC] Our next story is so strange that it stunned our guest and me.  Maybe itâll stun you, too.  I suppose an introduction is in order.</p>
+
+<p>ROBERT:	Sure.  Robert M. Lee.  I am the CEO and founder of Dragos.</p>
+
+<p>JACK:	Robert started out in the Air Force where he faced-off against many nation state attackers and advanced persistent threats.  He then moved onto the private sector doing incident response for cyber-attacks.  He then took an interest in industrial control systems and started his own company called Dragos to defend against industrial attacks like attacks against dams and nuclear facilities and water treatment plants.  One day he gets a call from a client who thinks theyâre infected with malware.</p>
+
+<p>ROBERT:	The client operates wind turbines and effectively started noticing some abnormal behavior in their environment.  Theyâre reaching out and calling us to go do an incident response with them.  When I first took the call, my question immediately to them was well, how do you know â what are the indications that you have an incident?  How do you know that you already need an incident response?  Usually thereâs â unless itâs entirely obvious, thereâs questions.</p>
+
+<p>First off, a) we think weâre compromised.  These folks were pretty persistent that they were absolutely compromised but every question I asked them around is data leaving your environment or are any of the turbines down?  You know, any of the normal things that might come up.  They were just very cool-headed about it all and said no, no, everythingâs fine, we just know weâre compromised.  It struck me to be kind of lackadaisical, sort of laid-back attitude they were taking to the incident which my first indication this might be an interesting case.</p>
+
+<p>JACK:	Robert takes the case and heads to the wind farm.</p>
+
+<p>ROBERT:	This is not a huge wind farm.  Weâre not talking your large operation.  In the world of wind energy youâve got everything from those folks that are kind of your management companies to the folks that may be doing control centers and SCADA, work for multiple companies.  But youâve got tons of these small little companies that pop up that might have access to a dozen, twenty, fifty or so wind-generating units.  Theyâre not even really connected to the grid.  Theyâre not really normal electric providers like we think.  Theyâre definitely not utilities; theyâre just generating a small amount of electricity and they sell it off to a larger company or somebody who can get it onto the grid for them.</p>
+
+<p>JACK:	He takes a look around the wind turbines to see what the network looks like.  The client was reporting that a dozen of their wind turbines were infected with malware.  Each of the turbines had their own Windows computer connected to it.  This computer would monitor the wind-speed, production output, health checks, and be able to control parts of the turbine.</p>
+
+<p>ROBERT:	As we got on-site we asked a) what all took place?  How do you know for sure that something is wrong?  What made you so cool-headed about knowing that there was an incident and not freaking out?  They said oh, itâs real simple.  Our wind turbine network has been patching itself.  [00:20:00] We were kind of pushed back a little bit like, okay.  So itâs been patching itself.  Thatâs definitely an interesting behavior.  Iâm like well, are you sure thereâs not somebody from IT thatâs been doing patching or coordinating with the operations folks?  They said oh no, no, we checked with IT.  Itâs definitely just patching itself.</p>
+
+<p>At that point we thought it was pretty interesting of course.  We go take a look.  As it turns out, where there were Windows operating systems in the environment, they absolutely were being patched.  As we looked at it, it was pretty clear that there was malicious activity on the systems.  It wasnât hurting anything.  It wasnât damaging anything but it was effectively early crypto-jacking software where they were effectively using the spare resources on the system to be able to do various crypto-currency type mining.  I think this one was actually Bitcoin if I remember correctly.</p>
+
+<p>JACK:	The hackers who got into the computers at these wind turbines were using the systems to mine Bitcoin.  The way hackers like this work is they get dozens or hundreds or thousands of computers that they donât own to all mine Bitcoin for them at once.  A handful of computers mining Bitcoin like this isnât much profit but if hundreds or thousands are going all at once then the daily profit starts to become significant.  Basically they infect the machines with software that would utilize the spare CPU and graphics power to make money off it.  These wind turbines were connected to the internet and the hackers somehow found their way into these systems and were making money from it.</p>
+
+<p>ROBERT:	It seemed that the adversary was keeping up with the patches.  Our assessment of the situation was they were keeping other malware and other adversaries off those systems by updating and then maintaining them so that they could have their little crypto-currency farm there across the wind farm.  But probably the most interesting thing, what makes it really interesting from an IR story has nothing to do with the fact that adversaries are taking advantage of Windows systems.</p>
+
+<p>Sure, itâs interesting that it was a wind farm but what really got interesting is we made the recommendation; hereâs how we can clean this up.  We figured it all out.  Hereâs this activity group thatâs related to cyber-crime.  We can absolutely take care of this for you no problem.  It wonât be any big deal.  The business leaders had come back to us and said well, operations have pulled the data to show that we now have a faster and more reliable patch cycle with the adversaries than our own IT departments.  Itâs like look, you canât really just let the adversary stay.  Thereâs a lot of risk in doing that.  You donât know what else the IP connections would be used for.  When they eventually make a mistake, all that risk is completely on you.</p>
+
+<p>I advocated every which way I could but as much as I hate to admit it, the business owners decided that they were going to let the activity remain but just put some additional monitoring in place since they were affected and had deployed patches across the environment.  From then, operations respected what was done.  These were systems that werenât really supported on the contract anyway.  They didnât have warranties that were gonna be voided by the deployment of the patch.  All of the normal considerations that would have pushed against this had met this perfect storm where they were completely comfortable with having the adversary being in that environment.  It was just stunning to me.  From the adversaryâs perspective, I imagine they were trying to do a fairly low and slow approach to not be noticed in the first place, or not be kicked out in the first place so it wasnât like they were bogging down the systems to a point that it was having an impact to the operations.</p>
+
+<p>The systems were definitely slower and the resource utilization was high on them but it wasnât making it where they couldnât produce energy from the wind turbines.  Yeah, I was stunned.  Normally an operations team, industrial â your operators in the industrial control environments, not in a million years would they allow that.  Even if it somehow was better than IT they donât want random patches to go out whenever somebody feels like it, uncoordinated, unscheduled.  But this was a very small operation.  Weâre not talking like a national wind farm, a national company.  This was a smaller company that didnât have a ton of resources in the first place.  The idea of free IT services probably seemed pretty enticing, I guess.  I donât know what went through their mind.</p>
+
+<p>I was pretty stunned.  I donât want to instill the idea in people that this is common [00:25:00] at all, or that this in any way representative of the electric industry.  This is a small junior company who didnât know what to do in this situation and made a decision that they were comfortable with that I wasnât fully a fan of.  As I think about this case study out loud now, I can already see somebody being like, oh, the electric grid was threatened by blah, blah.  No, no.  Itâs a small number of wind turbines.  It has no impact on electric grid whatsoever.</p>
+
+<p>JACK:	While Robert came to do incident response and clean the malware up, he left the wind farm with malware still running.  The client was happy that he was able to solve the mystery of why these systems were patching.  The client put together a plan to clean these systems up when the time was needed and they made sure they had backups and isolated the systems so they wouldnât be able to get anywhere else.  But they let the hacker stay on the systems and mine the Bitcoin and they let the two live in a strange symbiosis harmony.</p>
+
+<p>[MUSIC]  This summer I took a trip to Defcon, the largest hacker conference in the world.  Itâs just like you would imagine a hacker conference to be; lots of people wearing black, dyed mohawks everywhere, antennas sticking out of backpacks, and blinking lights everywhere.  When I was there I got to meet Snow.  She started telling me about an interesting story so I turned on the mic and started recording.  I started out by asking her how she got started as a hacker.</p>
+
+<p>SNOW:	Itâs funny that you ask that question as weâre here at Defcon.  Actually, everything that brought me to do my career is because of Defcon.  It was Defcon 18 or 19.  My husband whoâs been in security for years finally decided to come and he asked me if I wanted to go.  I had no interest at all in attending a hacker conference.  That was just not something I wanted to do.  But I wanted to go to Vegas and just wanted to sit out by the pool all day, and sip on drinks and that sounded perfect.</p>
+
+<p>He actually ended up getting me a badge and I think the very first talk I went and saw was something about malware reversing and it just went over my head and I just had to get out of there as soon as possible.  Where I went from there is I found the lock-picking village.  That day I picked my first couple locks and I got out of handcuffs.  I remember just feeling that rush was amazing and I loved it.  From there I wandered around some more trying to avoid talks as much as possible.  I found the social engineering village.  I remember sitting in the room and watching the calls and just thinking that this was made for me.</p>
+
+<p>JACK:	The social engineering village at Defcon is an area where you can practice, learn, and compete in social engineering.</p>
+
+<p>SNOW:	Just watching people sit there and ask like, creative ways they asked questions to get specific pieces of information and then â I mean, they made it look easy and I knew it wasnât that easy but how creative they were, I think is what really sparked my interest.</p>
+
+<p>JACK:	On stage during the competition you can watch a live person in a sound-isolation booth on a call trying to trick someone into giving them information they shouldnât give out.  Itâs fascinating to watch this live and to learn all the effective ways theyâre lying to people to get what they want.</p>
+
+<p>SNOW:	After that I remember researching everything I could on social engineering.  I bought every book that was made.</p>
+
+<p>JACK:	She went home from Defcon with a completely new passion and she felt like she was pretty good at it so she came back to Defcon the next year.</p>
+
+<p>SNOW:	I went back and I competed in the contest.</p>
+
+<p>JACK:	She didnât win but she learned a lot.  This contest is actually several months long and the final part being a live call on stage at Defcon.  [MUSIC]  When she competed she saw what everyone else was doing and she learned about all the places she forgot to look and all the things she forgot to do and all the different techniques there are for lying to someone to get them to tell you the information you need.  She practiced and read even more and came back again to Defcon the next year and competed again, this time ranking high but still not winning the competition.  But Snow was determined so she went back to studying social engineering some more and practiced even more and came back to compete for a third year.</p>
+
+<p>SNOW:	I won Defcon 22.  I won the Black Badge.</p>
+
+<p>JACK:	The coveted Black Badge at Defcon is rare.  Itâs only given to contest winners and a select few, and besides the bragging rights of being the winner, you also get free entry to Defcon for life.  But whatâs more is this started Snow on a totally new path in life.</p>
+
+<p>SNOW:	After I think my second year competing, I had a good handful of people in the audience come up to me after and ask if I would do that work for their companies.  Thatâs really what got me going.  I started my own consultancy and Iâve worked for a handful of companies doing this.  Ever since then Iâve been just doing this work professionally.</p>
+
+<p>JACK:	More and more companies are seeing how the humans in the office are often the weakest link in the security so they hire social engineers to not only test the security of the people in the company but also they use it as an opportunity to teach them how to be safer.  She tests for a variety of security controls.</p>
+
+<p>SNOW:	The main ones that I do are physical security, phishing, which is [00:30:00] sending the e-mails, vishing, with a v, voice phishing, and then I do a lot of open source intelligence-gathering.  Before I do any of these assessments Iâm always going online, seeing what information I can use to better craft my campaigns.</p>
+
+<p>JACK:	For years she continued to do this consulting work, testing networks and people, and one day she got a call from a Fortune 500 company wanting her to do some social engineering tests against them.</p>
+
+<p>SNOW:	They just opened up a brand-new headquarters in Europe.  They wanted to test their brand-new European headquarter location.  My goals for that assessment were mainly to see if I can make it onto their floors.  It was like, a twenty-floor skyscraper and they had five floors in there.  That was the main goal; get onto the floors, follow it up by seeing what information I could get from the employees.  However, the scope was really limited.  I couldnât do RFID cloning; I couldnât do any type of bypassing, lock-picking things like that.  My hands were kind of tied in that sense.  [MUSIC]  From there I decided to try to figure out who I wanted to be for this assessment.</p>
+
+<p>While Iâm doing open source intelligence-gathering Iâm trying to find where they have their doors, what kind of security is in place.  That way I know what Iâm getting into before I go on-site.  As Iâm doing all this research, Iâm not finding shit.  Itâs a brand-new building.  Itâs not even on Google Maps yet.  Most of my clients that Iâve done, Iâm able to find their property management companies, phone numbers, all their buildings so I can do street-view around the building, all kinds of stuff.  This one had nothing âcause itâs new.  They didnât even have a huge employee presence online âcause thatâs another thing I like to do; I like to look at Facebook, Instagram, even LinkedIn to see whoâs posting pictures of their employee badges.  That way before I go on-site I can create my own so I can blend in.</p>
+
+<p>Iâm not finding anything during this phase.  The only thing I could think to do was show up on-site and before I actually start the assessment, do reconnaissance.  While Iâm doing that Iâm looking for employees wearing their badges.  That way I can snap some pictures, go back to my hotel room, create my own and then hopefully I can blend in.  Iâm doing my reconnaissance.  Iâm walking around the building.  Everything is very locked-down.  Most buildings will have a main entrance that people can come in and out of the lobby.  This one had turnstiles just into the building.  They had RFID which was out of scope, so I had a really hard time trying to figure out how to get into the building.  I was able to find a side door that was unlocked and go in that way.  The second Iâm in the lobby, Iâm looking around trying to find employees, trying to look for IDs, and the receptionist looks at me.</p>
+
+<p>I must have stood out like a sore thumb âcause she started grilling me all kinds of questions.  I just explained I was waiting for a friend.  She said no, youâve gotta wait outside.  She kicks me out.  Right there Iâm like shit, my cover is probably already blown, I havenât found any pictures of employee badges.  Iâm stressing out.  This company paid a lot of money to fly me very far to test their security and Iâm having a hard time just finding stuff online, let alone [inaudible].  So I go back to my hotel and Iâm still trying to research.  Hopefully I can find some nugget of information.  Iâm not finding anything.  Lots of pressure with these kinds of assessments âcause you wanna do good, and especially if theyâre sending you all that way to perform this kind of assessment.  Iâm banging my head against the wall for a while and I finally come up with the idea because I saw a news article they released that they had a bunch of new investors for this new building.</p>
+
+<p>My idea was I was gonna be an investor-relations manager from the Americas building and I was coming over to check out the new building and to set up meetings with potential new investors.  When you throw around the word investors with companies that big, they will bend over backwards for you.  [MUSIC]  What I did is I found the phone number for a VP in the Americas.  I spoofed my number to look like it was calling from her and I called the European headquarters and said hey, weâre sending out this investor relations manager.  She just needs to do a quick tour of the facility and then set up some times to meet with some investors.  Sheâll be there tomorrow morning at 9 a.m.; please make sure she has a guest badge ready, and pretty much give her whatever she wants âcause she could be bringing in a lot of money for us.</p>
+
+<p>That conversation with the receptionist, she seemed very willing to help and very happy.  That kind of gave me a little boost like okay, this might work.  I show up the next morning at 9 a.m.  I was wearing a business suit and I had a â [00:35:00] I wasnât able to find employee IDs from the Americas office so I created one from the Americas office âcause I wasnât sure if they looked different in Europe which they actually did.  I had an ID created for that, I was in a business suit, I had a clipboard which was a forged document with just a handful of questions.  On the next page I had a bunch of information about local large companies that could be potential investors.</p>
+
+<p>I show up to the receptionist that morning hoping she wouldnât recognize me âcause I changed my hair around, I changed my clothes, and I had my badge on so that gave me a lot of credibility.  I said hey, Iâm this person and I need to get onto â I have a meeting on this floor.  She hands me a guest pass and walks me right through to the turnstiles and the elevators and walks me right up to their main floor which is I donât know, floor five or six or something like that, and just leaves me there to wait for their receptionist.  I was like holy shit, Iâm on the floor.  I got the big goal.  I made it onto the floor.  Itâs just, itâs a rush.  It is, oh yeah.  Itâs very scary and a lot of people think that Iâve been doing this for years, like itâs easier, it doesnât.</p>
+
+<p>Every time before I do anything or if Iâm talking to someone, I get that feeling in my gut like oh god, Iâm gonna get caught.  But it is such a rush.  Iâm always nervous every time, every time.  I get onto the floor and I introduce myself to their receptionist, not the buildingâs receptionist but my client receptionist now.  She says oh, weâre so excited youâre here, weâve been waiting for you.  She offered to get me some coffee and she said that she had the facility manager that was gonna show me around and give me a tour of the building.  He comes a little bit later and he gives me a tour of every inch of their five floors.  As weâre going on the tour Iâm trying to keep in mind I need to get information from him âcause thatâs my second goal.</p>
+
+<p>So I start saying things like well, I have a couple potential investors who are really concerned about physical security.  Theyâve invested in other firms before and theyâve been broken into so I need to make sure I can assure them that this is not an issue.  I said I need to know now where your issues are so I can make sure theyâre fixed before I go back to them.  He went through and showed me a handful of places that were actually vulnerable.  He explained how one of the side employee entrances only, it was RFID protected.  It had the red light so it should have been locked; it actually was unlocked during business hours.  That right there is a huge finding.  He showed me how if they did have meetings which were listed on their website that they would let the receptionist just check anyone in without verifying and a handful of other things that were just huge findings that should not be the case at all, especially for a brand-new building.</p>
+
+<p>From my point of view, if I was an attacker, I know exactly when I can get into the building, when itâs going to be unlocked.  I just have to look at their calendar which they actually had a couple events that next week, and I would know that I just need to say hey, Iâm here for this event and they would let me right in, give me a guest badge and I would have full access to their whole office.  I was able to complete my two goals which I was so excited about.  However, I wanted to see if I could get just a little bit more information from him.  I explained how I did have a phone call and asked if there was an office I can sit in âcause I wanted to see if I would get access to an office.</p>
+
+<p>They actually put me up in an office and they wrote my name even on the wall, just like a name plate.  I was left alone in this office with my name on it, which was really weird and I wish I took a picture of it âcause it just was so surreal.  As I was leaving for the day âcause I was there, oh man, like four hours on-site.  He gave me a very, very detailed tour.  As I was leaving, the receptionist actually offered a limo service back to my hotel which was pretty badass.  I didnât take it because I was staying, actually at a hotel right across the street so I thought thatâd be a little suspicious.</p>
+
+<p>JACK:	She got back to her hotel room bursting with joy with the feeling of a job well done.</p>
+
+<p>SNOW:	Just this huge rush.  I remember going out and getting a steak dinner that night.</p>
+
+<p>JACK:	Snow delivered the report to the client, outlining numerous vulnerabilities she found in her assessment.</p>
+
+<p>SNOW:	They were very surprised.  They did not think I was gonna be able to get in.  I guess they actually had an internal bet; the guy from the Americas office and the European office.  Theyâre like, thereâs no way.  This is a brand-new building.  We have RFID in place everywhere.  Every big security thing.  We have cameras, we have all this, but just by a simple lie and spoofing my phone number I was able to get so much credibility that I didnât look like a threat.</p>
+
+<p>JACK:	Social engineering is becoming a more common test for many companies.  Itâs always safe to [00:40:00] verify the strange calls you get by calling that person back or e-mailing them to confirm and to not let people tailgate you into a building, and to double-check peopleâs credentials and not always trust when someone else vouches for them, or just remember Ronald Reganâs Russian maximâ¦</p>
+
+<p>REAGAN:	The maxim is âdoveryai, yo proveryaiâ - trust but verify.</p>
+
+<p>JACK (OUTRO):	[OUTRO MUSIC]  Youâve been listening to Darknet Diaries.  You can find links and more information about each guest in the show notes on darknetdiaries.com and this show is made by me, Jack Rhysider, and theme music is by the ghostly Breakmaster Cylinder.  Please help this show out by going to darknetdiaries.com/donate.  It means a lot to me when you do.  Thank you.</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+<p>Transcription performed by Leah Hervoly
+www.leahtranscribes.com</p>
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

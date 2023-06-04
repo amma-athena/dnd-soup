@@ -1,0 +1,535 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>Cloud Hopper â Darknet Diaries</title>
+	<meta name="description" content="Fabio Viggiani is an incident responder. In this episode he talks about the story when one of his clients were breached.">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Cloud Hopper â Darknet Diaries">  
+	<meta name="twitter:description" content="Fabio Viggiani is an incident responder. In this episode he talks about the story when one of his clients were breached.">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/cloudhopper.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/103/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Cloud Hopper â Darknet Diaries" />
+	<meta property="og:description"        content="Fabio Viggiani is an incident responder. In this episode he talks about the story when one of his clients were breached." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/cloudhopper.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/103/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/cloudhopper.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/103/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="Cloud Hopper â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/cloudhopper.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 103: Cloud Hopper</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://www.podtrac.com/pts/redirect.mp3/traffic.megaphone.fm/ADV2735143955.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/103/",
+			   "title": "Ep 103: Cloud Hopper"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/103">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[START OF RECORDING]</p>
+
+<p>JACK:	Whoâs the person with the most power in the workplace?  You might think itâs the CEO or owner since they can call all the shots and make policy changes that everyone has to adhere to.  But I think the most powerful person in the workplace might be the sysadmin, the person who has administrative access to the core machines that are required for the business to operate.  They can see whatâs in the database and they can read anyoneâs e-mail in the whole company, and they can see what files are on your computer, and they can sniff all the network traffic from your computer to see where you go and what you downloaded.  Now, not every network is set up like this, where someone can see everything about everyone, and not all networks have one person who has all this access.  But some networks are set up like this, where one person has control of everything.  With the press of a button, they can bring business to a halt or potentially reroute customer payments or pay checks to them.  Itâs crazy how much power they have.
+<!--more-->
+So, it goes without saying; you never, ever want some unauthorized person to have admin access to your network, because using this power maliciously can be incredibly destructive to your business.  But thereâs another person who also has a lot of power that we sometimes forget about; thatâs the overnight janitor, the person who has a key to the building and every room in the office, including the CEOâs office.  On top of that, theyâre always there when nobody else is, which gives them the opportunity and capability for some serious spying.  The only thing theyâd need is the motivation, and whatâs even crazier is that some of these janitorial services have many businesses that they service each night, so thatâs quite the key ring to have access to, especially in the right parts of town.  Imagine if the janitorâs key ring got into the wrong hands, into the hands of someone with a lot of motivation and malicious intent.  What if that someone was extremely skilled at computers and hacking?  That would surely be trouble.</p>
+
+<p>(INTRO):	[INRO MUSIC] These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  (INTRO MUSIC ENDS)</p>
+
+<p>JACK:	Start with your name; whatâs your name and what do you do?</p>
+
+<p>FABIO:	Yeah, so my name is Fabio Viggiani.  Iâm an incident responder, threat analyst, and red teamer at Truesec.</p>
+
+<p>JACK:	Red teaming means simulating an attack to make sure a networkâs defense system actually works, which is fun to come and attack a network.  Fabio does that, but thatâs not what this story is about.</p>
+
+<p>FABIO:	Right, so I work a lot with incident response.  Thatâs one of my primary areas that I work with.</p>
+
+<p>JACK:	Fabio works for a company called Truesec which is based in Sweden.  When businesses or organizations get attacked, they can call Truesec up to come investigate and remediate the issue.  Thatâs when Fabio will go onsite to a customerâs location to help them out.  Heâs done a lot of this type of incident response work.</p>
+
+<p>FABIO:	So, basically anything from ransomware to espionage.  Iâm a technical lead for the forensics team.  When we do incident response, we have a forensics team.  Thatâs basically the investigation to understand what has happened, what the threat actor has done, how theyâve came â how they come into the environment, and if there is any persistence, anything to remove, and how to clean that up.  Another team is the recovery team, where they do all the infrastructure work.  So, in a ransomware case for example, thereâs a lot of recovery and rebuilding to be done, so we work very close with them to tell them these are the things that need to be cleaned out, these are the things that are safe to restore, this is the date that the system can be restored, because we have verified there is nothing there.</p>
+
+<p>JACK:	Fabio has been with this company for eight years now and in that time heâs seen lots of network intrusions and handled many incidents.  But thereâs one incident in particular that heâll always remember.</p>
+
+<p>FABIO:	Yeah, so, it was summer of 2016 and we got a call from this customer, from this company here in Sweden.</p>
+
+<p>JACK:	[MUSIC] Now, Fabio had actually done work for this company before, advising them on how to secure their network better.</p>
+
+<p>FABIO:	Reviews of their security and penetration testing of some of their applications, things like that.</p>
+
+<p>JACK:	He didnât want to say what company this was, because companies really donât like talking about that time when they were attacked.  Itâs also not cool for him to go and handle an incident for a customer and then blab about it to the world on my show.  So, he canât say who this company was, but I do know enough about this company that I want you to picture a large, typical office-type business.  Thereâs many offices, theyâre all pretty big, and whatâs notable here is that they have thousands and thousands of computers in the network.</p>
+
+<p>FABIO:	What we knew from the beginning is that they had been contacted by the Swedish Security Service because one of their system â one of the systems had been talking to a command and control server somewhere on the internet.  It was located at a foreign state.  Thatâs basically all we knew when we got that call.</p>
+
+<p>JACK:	Now, this is actually a big deal.  When the Swedish Security Service calls you up to tip you off of a potential problem, you should definitely sit up straight in your chair and ask for help, because the Swedish Security Service is the government agency in Sweden that investigates espionage and counter-terrorism and any threats against national security.  Itâs sort of like the FBI in the US.  So, you can imagine if the FBI calls you to say hey, one of the computers in your network is reaching out to a really bad computer on the internet, youâre gonna want to spring into action.  What the Swedish Security Service was saying was a computer at this company was talking to a known bad actor, a command and control server, and they gave the IPs that were involved with this, but that was about it.</p>
+
+<p>FABIO:	Just the fact that this is information coming from the Security Service tells you that itâs not just random command and control server by some â whatever criminal group that is doing ransomware.  They donât tell that.  They focus on nation state, so when you get a call from them, itâs probably related to something bigger.</p>
+
+<p>JACK:	But even though this isnât much information, itâs coming from such a reliable source that you can assume a few things.  [MUSIC] First, they said a computer was reaching out to a command and control server.  When malware infects a computer, it needs instructions on what to do once itâs there.  Sometimes itâs built into the malware.  Other times it calls out to another computer and says what should I do now, or hereâs what I have.  This is what a command and control server is, something that can interact with an infected computer.  The fact that a computer is reaching out to a command and control server at all means itâs probably infected with something like malware that you definitely want to remove.  But this is the Swedish Security Service notifying them, which might mean that this is either a very serious threat actor or it could mean that other companies in Sweden have been hit by this too, and notified the Swedish Security Service who then looked into it and found this company may also be infected.  Anyway, all that is to say is that this was such a reliable tip that it really did warrant calling up Fabio and telling him to come immediately, and thatâs just what he did.  He quickly started shoving gear into his bag.</p>
+
+<p>FABIO:	Well, a couple of laptops with all the tooling and everything needed, and then kind of equipment like external discs, different type of USB devices for transfers, and usually a lot of storage is needed.  But itâs also â in this case, it was actually physically close by, so we didnât have to plan so far ahead.  So, just the initial things; a lot of storage and a lot of tooling.</p>
+
+<p>JACK:	He packed it all up, jumped in the car, and drove to this customerâs location.</p>
+
+<p>FABIO:	[MUSIC] Initially, they told us that they got this call from the Swedish Security Service because they had this connection to a malicious command and control server on the internet, and the rest of the details we would get there.  So, when we got there, we got in a room with them, and they gave us the information that they had received, which was three things; two IP addresses of command and control servers that their infrastructure has been seen communicating with, time windows, so when those connections started and ended, and internal hosting of one of their servers that apparently has been communicating with those IP addresses.</p>
+
+<p>JACK:	This is a good set of clues to start with, especially having that internal host name thatâs suspected to be infected.  Fabio honed in on that server first.</p>
+
+<p>FABIO:	So, obviously the first thing is asking about that server and understand, first of all, what type of server it is and then get access to it in whatever state it is and take it from there.  Turns out it was not just some random server.  It was a pretty important server because it was one of the jump servers that the MSP used to manage this customer.</p>
+
+<p>JACK:	Oh, well, thatâs interesting.  So, MSP stands for Managed Service Provider.  This company outsourced the monitoring and management of most of their servers to another company to take care of, which is this MSP.  The MSP is who will keep servers patched up and make configuration changes for this company.  Theyâll also monitor for faults and incidents.  So, if one server in this network had a high CPU, it would alert the MSP, and then someone from the MSP would log into that server and fix the issue.  But this MSP managed all these servers remotely, from another country even, so they needed a good, reliable way to access all these computers in this network.  To do that, they set up a VPN to a server that they could use to jump off of when they needed to get in this network, which is a jump server.  So, when someone in the MSP needed to check out a server in this network, first they connected into this jump server which then had access to all the servers in the network, and it was this jump server that was reaching out to a known command and control server.  Since this jump server is used by an MSP, it meant it had access to pretty much every important server in the network.  Of all the servers to be infected, this was probably one of the worst possible ones.</p>
+
+<p>FABIO:	That is a really good place to be for a threat actor.  First of all, we started asking for access âcause the system was up and running, so we just asked can we get access to it?</p>
+
+<p>JACK:	But the problem was that server was fully controlled by the MSP, so Fabio had to call them to get access to it.</p>
+
+<p>FABIO:	They were very reluctant from the beginning to give us access, saying things like we have SLAs with the customer.  We canât just give access to anyone.  If things go down, then itâs our responsibility and all that stuff, which is stuff we hear, but it never works out âcause ultimately itâs the customer system.  So, we said okay, fine, weâll get back to the customer and figure that out.  But in the meantime, if you donât want us to access the live system, which is fine for now, if you can take a disc image and a memory dump so we can start from that.</p>
+
+<p>JACK:	Now, you might think this is suspicious for the MSP to not help Fabio get access to it, but thatâs typical in situations like this.  Managed Service Providers provide service to handle computer problems for the customer, and Fabio was not the customer.  He worked for a different company, Truesec.</p>
+
+<p>FABIO:	Normally, any type of service providers to an organization that is breached, they may tend to be defensive because they donât want to â âcause they might be the reason or they might be indirectly the reason.  Maybe they havenât really done what they were supposed to be doing, they havenât been respecting the agreements with their customers, so they feel like â they feel a little bit threatened.  If we find something that shows theyâve done something badly, then this could be bad for them.  So, thatâs why some people may be defensive.</p>
+
+<p>JACK:	Thatâs another reason for their hesitation.  Once you start throwing around the b word, breach, the MSP is going to perk up and be extra-careful about what theyâre doing, because for them, itâs a bit alarming to hear that their customer may have been breached.  But ultimately, this was the companyâs server, not the MSPâs, so the company simply demanded that the MSP give Fabio access, and they let him in.  With that, he was in the system and was capturing the data he needed to do his investigation.</p>
+
+<p>FABIO:	Weâve got the disc image and a memory dump which is really all you need, right, for doing a forensic investigation.</p>
+
+<p>JACK:	A disc image is an exact copy of the entire hard drive, and a memory dump is a copy of whatâs currently stored in the systemâs RAM memory, which will tell you what programs are running, including any malware.  Okay, so, Fabio has been doing this type of work for a while and gets right to work analyzing the disc image.  The disc image was put onto an external hard drive and so, he just mounts it to his computer as an external drive.  [MUSIC] But what do you do with this?  Where do you even look on this hard drive to try to find malware?  Yeah, sure, you could run an antivirus scan on it, but this jump server already had antivirus running on it, and all was quiet.  Nothing had triggered.</p>
+
+<p>So, now what?  Well, this is why you need someone whoâs trained in digital forensics, and what makes a good digital forensics analyst is the ability to spot things that arenât normal.  But in order to know whatâs not normal, you really have to know what is normal.  So, itâs incredibly important for someone who wants to be good at digital forensics to know how computers normally work inside and out.  What processes are normally supposed to be running?  Where do those programs typically live?  What stuff belongs in the Windows directory and what stuff doesnât?  This jump server was a Windows computer, and Fabio is pretty familiar with Windows, so he got right to work looking through files manually.</p>
+
+<p>FABIO:	You just mount it, you do a read-all amount on your computer, and you just have a quick look at it âcause just from experience, you know where these type of things tend to be.</p>
+
+<p>JACK:	The first place he checked was if anything was in the temp folder.  He likes checking here often because this is where intruders like to stage files and put things.  The temp folder is a nice spot to stash stuff temporarily, and that is what I mean.  Fabio doesnât start with some elaborate scan that might take hours.  He manually checks a few places first just to see if he can spot anything himself right away.  So, he checks the temp folder straight away.</p>
+
+<p>FABIO:	C:\temp, and there was a bunch of files there.  [MUSIC] We found a file with a pretty obvious name.  It was called thehostingoftheserver.mimikatz.hash.</p>
+
+<p>JACK:	Uh-oh.  Within the first minute of having access to this server, he already found terrible news.  Mimikatz was executed on this computer, and thatâs bad.  See, Windows has a major flaw in the way it handles passwords.  When you log into a Windows computer itself, you have to enter a username and password, and that username and password that you just typed in gets stored in memory, often in clear text.  Mimikatz is a tool that goes to the exact spot in memory and grabs the password so that anyone can see it in clear text.  So, if you can successfully run Mimikatz, it means that you can see the username and password of every single login to this computer since it was rebooted last.  There is no reason for this MSP to have run Mimikatz, which means this was a smoking gun that yes, a threat actor was here and tried to get usernames and passwords of the users of this machine.</p>
+
+<p>FABIO:	That was the output file of the Mimikatz execution.  So, we open it up and it contained nearly a hundred credentials of users that had been logged on to that system.  The credentials were in clear text.  They can be hashed, but if the system is a little bit older and is unpatched and there is no protection for caching passwords in clear text in memory, then Mimikatz would be able to extract any clear text, and thatâs what we saw in that output file.  So, we had about a hundred users with their clear text passwords in that text output file, including several Active Directory domain administrators, [MUSIC] which immediately kind of escalated the whole incident, right, because then you have evidence that someone had access to all the highest privilege credentials in Active Directory.</p>
+
+<p>JACK:	Mimikatz found a lot of passwords, and that is not good.  You can assume that all these usernames and passwords are now in the hands of whatever attacker that got into this computer.  But again, this was a MSP jump server which had connectivity to pretty much every important server in the network.  Now, a finding like this is scary.  It means this has gotten very serious, and itâs like finding a bomb in the building.  When Fabio and his two colleagues found this, the temperature in the room went up.</p>
+
+<p>FABIO:	It definitely did, and that also made it so we moved to a much bigger room, like an actual War Room with screens and everything.  Initially, you never know what you come across, so we were in this small room, three, four people just looking at this.  When these type of things happen, then we make sure this gets escalated and we establish a proper working environment for a big incident, because this was obviously going to be a big incident.  Again, weâre talking about an organization with thousands and thousands of systems, and you just have just identified that they are very likely fully compromised.  So, you know that youâre gonna directly or indirectly have to go through everything.  Itâs gonna take a while.  Itâs gonna take a lot of people, itâs gonna take some time.</p>
+
+<p>JACK:	Stay with us because weâre gonna take a quick break, but after we get back, Fabio gets some answers.  Finding evidence that an unauthorized person logged into a server, ran Mimikatz, collected lots of usernames and passwords, and then pulled them out of the network is really bad.  Itâs like finding a smoking gun in the network, but how did it get there and what did it shoot at?  The business leaders needed to be called in at this point to be made aware of this, because this could potentially have big consequences that can disrupt business.  Fabio stuck his head, nose, and hands back down into his laptop like a dog trying to dig a hole in the ground.</p>
+
+<p>FABIO:	Then of course, you still need to go through the thorough process, then you use tooling; like, you build a timeline of all the files that have been created, modified, accessed on the disc, and you correlate that with the time of connection to the command and control server and say okay, what files were created or touched around the time that the connection started?  Then you narrow it down to the â all the new files or newly modified files on disc around that time.  Then you just go through that.</p>
+
+<p>JACK:	Well, he makes it sound easy, but thatâs actually a long, arduous task.  A thorough scan using a tool can take hours or more just to go through all the files and check each one.  Then when you have it narrowed down to a few directories or files that were changed during that specific time, you need to analyze those files more carefully either by hand or using other tools.  Now, itâs one thing for a digital forensics analyst to be able to find problems on a computer, but what makes a really good analyst is the ability to communicate the issues to people effectively.  Fabio had to give instructions to people on what to do next.</p>
+
+<p>FABIO:	[MUSIC] First of all, from our side, we need more people to get ready to start looking into a lot of other systems.  So, this has to scale somehow, because you know â already looking at that, you know there is gonna be more systems affected.  Itâs not just gonna be the server.  So, and then at a higher level â and thatâs not something that I would do directly in that case, for example.  Then, I would get back to our incident manager and say hey, this is what we found, so this needs to be communicated to the management level at the customer to make sure that they understand what we are finding here and that there will be consequences of a certain â of different type when you know â even if you donât know exactly what happened yet, you know that they had that level of access inside your organization, so management needs to know that right away because they need to start working on controlling the situation from all different perspective; from business perspective, from a marketing, communication perspective and all that stuff.</p>
+
+<p>So, they need to know as soon as possible.  So, we had a couple of parallel activities going on.  One was looking at the disc and one was looking at the memory.  We had the IP address of the command and control server.  Something you can get out from memory is network connections, current or historical, if theyâre still left in memory somewhere.  So, we did look for that IP address and we found a process that had been connected with that IP address.  The name of the process was vba32arkit.exe, which is not something I recognized immediately.  But we took the hash, that binary, and checked it, and turned out to be a legitimate software called Vba32 AntiRootkit Scanner, which is ironic in a way.  It was legitimate software looking for rootkits and malware on systems.  It was scanning the system looking for malware.  That process, it was a signed binary by this company for use in this software.</p>
+
+<p>JACK:	Signed binary is a way to show authenticity of a file.  That file really was actual software that detects malware from a legitimate company.  It specifically looked for rootkits, which is malware trying to get access to something itâs not supposed to.  But it was this anti-rootkit software that was connecting to the bad IP, the command and control server that the Swedish Security Service told them about.  That is very strange, but itâs also a clue as to what might be going on here.</p>
+
+<p>FABIO:	Right, so, we looked at this file a little bit more and there were a couple things sticking out immediately.  First thing is that it was in a very unusual location.  It was under C:\Windows\Web which is a folder that exists, but it doesnât have that type of software in there.  So, just having that binary located in that directory was strange.  Next to that file, there were a few file; a couple of DLLs and another couple of files.  So, that immediately smelled like DLL side-loading.</p>
+
+<p>JACK:	DLL side-loading is an interesting attack technique.  Hereâs how it works; [MUSIC] in Windows, programs often require more than one file to run, like a driver or a .config file or a DLL file.  A DLL file is just some extra data that the program needs in order for it to load properly.  When the program tries to load, itâll try to find the required files.  This process can be manipulated by placing a malicious DLL file in a certain place so the program will load it into memory.  Programs have sort of an order of operation of how they look for their needed DLLs, and this can be exploited.  So, this particular DLL had instructions to communicate with an outside server.  This type of attack is much harder for antivirus scans to pick up because the programs that are running are all fine and good, but it was the files that those programs called to start running is where the problem was.</p>
+
+<p>FABIO:	Itâs a very well-known technique and very effective.  Also very easy to do because thereâs all kinds of software vulnerable to get on side-loading, because itâs practically a very hard issue to fix.  Not technically; technically you just need to verify youâre loading the right DLLs, but in practice when you have software with all kinds of DLLs, all kinds of updates, just maintaining that is really challenging and expensive.  So, there are a lot of products that donât do it right.</p>
+
+<p>JACK:	So, Fabio examined this DLL and yes, sure enough, this normal and benign program was loading this malicious DLL file.</p>
+
+<p>FABIO:	It was very simple.  It only had one job; when it was loaded, it would read another file from disc which was just a binary BLOB.  It was actually encrypted data.  It would decrypt it with a key that was stored into it.  It was stored inside the DLL.  It would decompress it and then it would just load it and execute it in memory.  So, again, this would be done within the context of the legitimate binary.  So, if you look at who is doing what on the system, you would see that itâs this process that now is executing this code.</p>
+
+<p>JACK:	Now that they know this threat actor likes to inject itself into known, good processes, they start looking for more instances of DLL side-loading.</p>
+
+<p>FABIO:	We found three more instances of DLL side-loading implants, and they would start the same type of malware, but connecting to different command and control servers.  You could also see that they had been started at different points in time, and there was actually weeks in between these executions.  So, we suddenly got our timeline a few weeks back, which means the first instance of this RAT had already been running for â I think it was more than a month at that time.</p>
+
+<p>JACK:	So, actually, this investigation is going very well so far.  Yes, itâs always bad to find that someone came and ate your lunch when you werenât looking, but now they have lots of pieces of evidence to go with.  So, they take what theyâve learned from this and start spreading out their search to find out what other computers might have these same indicators of compromise.</p>
+
+<p>FABIO:	Yeah, so there are two directions you move from here, [MUSIC] and we normally have different people working parallel on different tracks.  One is to figure out what happened after that, what other systems had been affected after this server had been affected, and the other track is how they got in in the first place.</p>
+
+<p>JACK:	So, they start searching everywhere to see if these DLL files were on any other computer in the network and see what connections were to and from this computer during that time.  They basically were just following the path of evidence.  But wait a minute; hold on.  Discovering these malicious DLL files means for certain there was an unwanted intruder in this server doing things, pushing buttons, executing programs, so wouldnât you want to immediately kick out all users and lock this system down so that whatever malicious person has access to this canât do anything else?</p>
+
+<p>FABIO:	That is always a call that needs to be made and there is no default answer.  It depends, but looking at the situation here, that had been running for weeks, right?  So, if he would be up for a couple more hours while we investigate, the chances that something specifically happen within those couple hours is low, provided that you havenât given away that youâre onto them.  Thatâs why itâs so important that the right actions are taken from the beginning, and especially that the wrong action are not taken from the beginning when you communicate this, because then youâre gonna have to take these tough decisions; say okay, do we think that they know?  If they do, then we may prefer to shut this down right now so they canât hide better now.  Or if you have a feeling like weâve been very stealthy in our investigation, they probably donât know, then itâs actually easier for us to work with something that is ongoing given the time window here.  Itâs been going on for weeks.  What are the odds that itâs gonna happen within the next couple hours?</p>
+
+<p>JACK:	In this case, the call was to allow the investigation to continue a little while longer without wiping this compromised server down and disinfecting it, because the main thing they still needed to figure out was how did this malware get on here?  It didnât show up by itself.  Someone put it there, so they looked through the logs and pretty easily discovered that someone simply logged into this computer normally, through Remote Desktop, and put it there, which is not an exploit or a hack at all.  It means someone had the username and password to get into this server.  They logged into it and put the malware on.  Okay, so, they know how it got on and they know what files it left on the system, but theyâre curious to see if thereâs anything currently running now.  Thatâs where memory analysis comes in, because whateverâs in RAM is whatâs actively running.</p>
+
+<p>FABIO:	So, we were looking at the memory analysis.  We found a few interesting things in there.</p>
+
+<p>JACK:	They found that yeah, there was malware in the memory, but as they looked at it closer, they found a note in the malware, [MUSIC] which was odd.  This appeared to be a note for the forensic investigators that were looking for this malware, like Fabio.</p>
+
+<p>FABIO:	Which said like this; I have it written here.  It said, âHave your bosses given you the space to try to be a hacker?  Come on man, donât kill me.â  Thatâs what it said.</p>
+
+<p>JACK:	âHave your bosses given you the space to be a hacker?  Come on man, donât kill me.â  What in the world does that mean?  Itâs not clear.  Does it mean to tell your boss you want to be a hacker or to leave the malware here and just ignore it?  This message is confusing.  Whoever wrote it missed the chance at saying something effective.  But if it does mean to leave the malware there, then it totally reminds me of this scene from the TV show Mr. Robot, where Elliot is investigating an infected computer after an attack.</p>
+
+<p>ELLIOT:	Iâm gonna take a look at the infected server, okay?  Give me a minute.  [MUSIC] They must have left a mark or something.  Every hacker loves attention.  They donât just do DDoS attacks for no reason.  This is it.  Is that supposed to be a joke?  This was way too easy.  They didnât hide it well at all.</p>
+
+<p>JACK:	Elliot looks at the message and it says, âLEAVE ME HEREâ in all upper-case.  See, thatâs a clear message.</p>
+
+<p>ELLIOT:	This notice for me.  Theyâre telling me to leave it here.  But why?</p>
+
+<p>FABIO:	Itâs funny; thatâs my wallpaper on the desktop right now.</p>
+
+<p>JACK:	As he analyzed things closer, he saw some more interesting evidence.</p>
+
+<p>FABIO:	On that critical server, in the same directory where we had the DLL side-loading malware, there were three more files that kind of changed the perspective of this whole thing.  [MUSIC] There were three files.  One was an executable.  It was called nbt.exe which is a tool.  Itâs a legitimate tool called NBTscan.  Itâs a NetBIOS main network scanner.</p>
+
+<p>JACK:	Basically, NetBIOS is how Windows computers connect to shared network drives.  So, this NetBIOS scanner can scan a whole network and find what servers have shared network drives on them.  Then if a computer has a shared network drive, you may be able to connect to it to see what files are on that server.</p>
+
+<p>FABIO:	Then it was a text file called p.txt which was empty.  Then you had a batch file called pp.cmd.  Pp.cmd had something like thirty-three lines, and each line was a command that was executing nbt.exe, so the NetBIOS scanner, followed by a public IP range, and then putting that output into the p.txt file.  So, you had those thirty-three or something public IP ranges in that batch file that were scanned.  Obviously the first thing you do is you start looking into what are those public IP ranges?  Who owns them and what were they scanning?  Well, I think nineteen of those public IP ranges belonged to the US Department of Defense.</p>
+
+<p>JACK:	Whoa, thatâs interesting.  This threat actor was using this server and this companyâs network to scan the US Department of Defenseâs servers to check if any of them have open file-sharing connections with this company.  Now, the Department of Defense is huge; itâs the military, so Navy, Air Force, Army, but also the NSA is part of DoD.  The output of this scan was blank, so it did not find any shared drives on the DoDâs network.  But whatâs interesting is when they follow the timeline, it looks like there was an initial infection, then the user logged out, and then a new user logged in quite quickly after that, ran this script, saw that the output was blank, and then logged out.  Then there was no activity on this server for quite a while.</p>
+
+<p>FABIO:	Right, so this kind of tells you that our customer was most likely not the primary target for this.  They were trying to see from the network they were in, can they go into what was maybe their final target.  Once they realized thatâs not the case, they just dropped it, at least for a while.</p>
+
+<p>JACK:	Which suggests this is likely a nation state actor theyâre dealing with, and not some criminal group or hacktivist, because look at what they immediately went for; it wasnât the customerâs data or money or ransomware.  They immediately went to scan the DoD.  Fabio checked with this company to make sure there arenât any connections with them in the US Department of Defense.  No, this company was not connected with them in any way.  After the scan, there was no malicious activity on the server for two whole weeks.  Then this threat actor logged back in, but installed all-new malware and all-new tools which talk to a totally different command and control server.  They didnât use any of the tools that were already there.  In fact, they brought in a known malware called PlugX.</p>
+
+<p>FABIO:	PlugX is a known RATâ¦</p>
+
+<p>JACK:	RAT stands for Remote Access Trojan, and itâs a type of malware that can control your computer.</p>
+
+<p>FABIO:	â¦that had been used over many years.  Itâs still used by many different threat actors groups that are all based out of China.</p>
+
+<p>JACK:	[MUSIC] Looking at the forensic data, itâs as if there were two or three different teams that were part of this attack, one team to just establish initial connection to the system; once that happened, there was an immediate scan of the DoDâs network to look for shared connections, then two weeks later, another connection into this server where they brought all-new malware and tools, and it was then when Mimikatz was run where they grabbed all the credentials and started pivoting and traversing to other systems in the network.  In fact, they got into the domain controller of this network and had full admin access there, which pretty much gave them control over the whole business.  This is consistent with how nation state attackers work.  Thereâs sometimes one team thatâs just there to get initial access, and then another team takes it from there and carries out objectives.  Now, Fabio is suspecting that this threat actor might be from China.  But he canât tell for sure, and thereâs still more research to be done.  Fabio wanted to know more about how they initially got into this jump server to begin with.  They looked at what user logged in and placed the initial malware on the system.  It was a username of someone who worked at the MSP, the company that managed the computers in this network.</p>
+
+<p>FABIO:	[MUSIC] The source of that log-on was an IP address at the MSP side.  So, there was a log-on from the MSP infrastructure into the customer infrastructure.  So, we checked with the MSP and we asked about that user and if that person was working that day, if that person had logged on at that time.  Turns out that that person wasnât even working that day.</p>
+
+<p>JACK:	With some more questions to the MSP, Fabio concluded that this was a malicious log-on.  That employee at the MSP did not log into this server and place the malware on there.  Someone had stolen their credentials and did it.  But wait a minute, in order for this malicious actor to get into this jump server, they connected into it from the MSPâs network.  This means the attacker had control of a computer inside the MSP.  Oh man, this just made the incident so much bigger, because the MSP has more than just one customer.  In fact, this is one of the biggest MSPs in the world.  They have hundreds if not thousands of customers where theyâre able to get into networks and manage all those computers, too.</p>
+
+<p>FABIO:	So, we just had to ask questions at that point.  I mean, we said look, we see this malicious log-on of this user that dropped malware, and it comes from that particular IP address located within your infrastructure.  So, they took in that information and they were doing their own investigation.  It took I think three weeks after we have given that evidence for them to get back to us and say yeah, we see malware on our jump station as well.  So, within the MSP infrastructure, the same malware.</p>
+
+<p>JACK:	The MSP had been hacked into and didnât know it until Fabio showed them the evidence.  For them, this was much worse than one of their customers being breached.  They were breached now too, and they may have facilitated a breach on many of their customers.  This must have been a really bad day for the MSP to discover this.</p>
+
+<p>FABIO:	After another few weeks, [MUSIC] then we also got to know that more of their customers had been compromised with the same malware.  So, our customer was not the only one.  We also know that they found key loggers on the jump servers at the MSPâs site.  Those were â just to give the picture of the infrastructure here; the MSP has a lot of customer to manage.  Weâre talking about a global one, so a name that everyone knows about.  They manage a lot of customers and they have an infrastructure as a jump layer between their internal infrastructure and the different customersâ infrastructure.  Jump servers are used to access more than one customer, so the one that was used to jump into the customer we were handling was also used to jump into a lot of other customers, and that system had key loggers on it.  So, the threat actor was able to see the credentials for the different MSP customers and were able to jump into multiple customer environments from there.  I mean, if you put this together with what we found in our investigation, I could only imagine.  Like, they did the scan on the server that we were investigating, they scanned the DoD ranges.  I would expect theyâve done a similar scan from other customer environments as well, and then just prioritized the ones that had trust with DoD.</p>
+
+<p>JACK:	Oh, interesting.  This is now starting to come together for me.  If a Chinese threat actor wants to get into the US Department of Defenseâs network, how could they do it?  Well, they might have intelligence that says well, some companies do have a shared connection with the DoD, maybe because theyâre outsourcing something or connected with them in some way, and so, the threat actor might know that the DoD allows some companies to connect to it through NetBIOS, only specific companies or countries.  So, their thought was maybe they could find the network or company that does have access to DoDâs network, and to do that, they could just hack into an MSP who has access to lots of networks, and then spider into each of the customersâ networks and run scans on the DoDâs IPs to see if thereâs any shared folders open to that company or network.  Wow.  This is what an advanced persistent threat is, an APT.  Whoever was behind this had quite the resources to try to penetrate DoDâs network and had no problem hacking into potentially hundreds of networks around the world to try.  Unbelievable.  As this incident winded down, Fabio still had no idea who did this, and that mystery held up for years.  But a few years after that, news hit that told him exactly who did it.  Hereâs a clip from a press conference where the US Deputy Attorney General Rod Rosenstein addressed the public.</p>
+
+<p>ROD:	Good morning.  Today, the Department of Justice is announcing a criminal indictment of two hackers associated with the Chinese government.  The charges include conspiracy to commit computer intrusions against dozens of companies in the United States and around the world.  This case is significant because the defendants are accused of targeting and compromising Managed Service Providers or MSPs.  MSPs are firms that are trusted to store, process, and protect commercial data including intellectual property and other confidential business information.  When hackers gain access to MSPs, they can steal sensitive business information that gives competitors an unfair advantage.  The indictment alleges that the defendants work for a group known to cyber-security experts as APT10.</p>
+
+<p>These groups are designated as APTs or Advanced Persistent Threats because they use malware to gain access to computer networks and to exfiltrate or steal data over an extended period of time.  These defendants allegedly compromised MSP clients in at least a dozen countries; the United States and eleven other countries.  The victims included companies in banking and finance, telecommunications and computer â consumer electronics, medical equipment, packaging, manufacturing, consulting, health care, bio technology, automotive, oil and gas, exploration, and mining.  The defendants allegedly committed these crimes in association with a Chinese intelligence agency known as the Ministry of State Security.  There is no free pass to violate American laws merely because they do so under the protection of a foreign state.</p>
+
+<p>JACK:	Later on in this press conference, Jeffrey Burman, the US attorney for the Southern District of New York, had some remarks.</p>
+
+<p>JEFF:	The defendantâs hacking campaigns also targeted US government agencies including the laboratories of NASA, the United States Department of Energy, and the US Navy.  Members of APT10 stole personal, confidential information including social security numbers and dates of birth from over 100,000 Navy personnel.</p>
+
+<p>JACK:	[MUSIC] Whoa, they did it.  Those crazy hackers did it.  They found a way into the Department of Defense, specifically the US Navyâs network.  If thereâs one thing the history of hacking has taught us, itâs that data will not be contained.  People will break in and expand to new territories, and theyâll crash through barriers painfully, maybe even dangerously, but well, there it is.  The hackers found a way.  They got into the US Navy and stole 100,000 records of Navy personnel, including social security numbers.  Incredible.  Well, once this indictment came out, more details started to emerge.  Reuters journalists Jack Stubbs, Joseph Menn, and Christopher Bing did an investigation and found that seven different service providers were compromised, and they listed Hewlett Packard Enterprise, IBM, Fujitsu, TADA Consultancy, NTT Data, Dimension Data, and Computer Sciences Corporation.  Yes, all these provide IT services to other companies.  So, if someone hacked into any of these, they would probably be able to get into their customers.  The Reuters article goes on to list some of the customers that were hit by this, which includes the telecom giant Ericsson, a Navy ship builder, and the travel reservation service Sabre.</p>
+
+<p>Now, some of these companies listed do have contracts with the US Navy, especially that Navy ship builder, so itâs quite possible that one of these companies did have privileged access into the US Navyâs network, which is a fascinating attack, right?  Donât come in through the fortified front door when you can just disguise yourself as a caterer and just get welcomed in through the side door.  This was obviously a massive campaign which seemed to have a primary objective of getting into US government networks, and thatâs kind of what we expect espionage to be, right?  When one government wants information on another government, theyâll use electronics or computers to carry out their data collection and spy on the enemy.  But the concerning thing here is that the Chinese government hacked into US companies in order to complete their mission.  On top of that, when they got into these companies, they sucked up any intellectual property they found along the way.  Thatâs straight-up theft.  That a foreign government stole proprietary information from a corporation is astounding because that kind of thing just doesnât sound right to me.  But it doesnât sound right to the US feds, either.  Hereâs the Deputy Attorney General Rod Rosenstein again.</p>
+
+<p>ROD:	In 2015, China promised to stop stealing trade secrets and other confidential business information through computer hacking with the intent of providing a competitive advantage to companies in the commercial sector.  But the activity alleged in this indictment violates the commitment that China made.  That was a commitment they made to members of the international community, to the United States, to the G20, and to APAC.</p>
+
+<p>JACK:	Itâs one thing for governments to spy on each other, but itâs a totally different thing when a government hacks into a private company to steal data from them so that they can benefit from it economically.  But really, the rules of cyberspace have yet to be fully formed.  The way this space is innovating and changing every day makes it extremely difficult to lay a set of international laws down and actually enforce them.  The people who were here in this space early were able to sneak by because there werenât any rules, and the advanced players today surely would only make rules which allow them to continue to have power and control in this domain.  But regardless of what rules are made in cyberspace, itâll only work with nations who agree to abide by the rules.</p>
+
+<p>Well, Fabio and his team at Truesec were able to clean up this clientâs infection, which was not easy.  I mean, one thing they had to do was change every single Active Directory password in the entire company.  There were thousands of passwords.  But not only that; there are lots of computers that have accounts that talk to other computers, so these services all had to have their password changed too, and that took a long time because there were so many things that would break along the way.  Just think about all the old servers in a network that nobody has touched for ten years, and the person who set them up is long gone from the company.  Yeah, well, suddenly itâs not working now, and the current admins have no idea where their credentials are stored in this custom application that was made.  Itâs a mess which causes businesses to be impacted for quite a while.</p>
+
+<p>FABIO:	Thereâs a lot of consequence when you need to do a full, proper Active Directory reset.  Then on top of that, we introduced active monitoring and EDR tooling, because you can never be 100% sure that the investigation has found everything, so you still want to have your eyes on everything that is happening at least for a while after this.  Ideally forever, right?  You always want to have your eyes on things.</p>
+
+<p>JACK:	In addition to that, this company cut ties with the MSP that got them infected.  They were already in the process of renegotiating a contract with them, and this just made the decision easier to not go forward with them.  They got a different group to come manage their servers after that.  This is an interesting story since the threat actor targeted MSPs to go after their customers and then carry out their objectives from there.  Then, MSPs are pretty common.  More and more companies are outsourcing their IT infrastructure, so to target them makes a lot of sense if your goal is to steal intellectual property.  Itâs sort of like going after the janitorâs key ring which can get you access into many buildings in town.  So far, the people indicted have not been arrested or brought to court.  Theyâre still hiding out somewhere, but they have been named and identified and are considered fugitives in the eyes of the US.  If theyâre ever caught, theyâre gonna have to go to New York to face their charges.</p>
+
+<p>(OUTRO):	[OUTRO MUSIC] A big thank you to Fabio Viggiani for sharing this story with us.  Itâs crazy to think that as an incident responder, you might wake up some day and go face off against a Chinese advanced persistent threat.  Yeah, that happens sometimes.  You know there are bonus episodes of Darknet Diaries, right?  Thereâs also an ad-free version of the show too, and thereâs two ways to get this.  If youâre an Apple Podcast user, you can sign up to Darknet Diaries Plus right there in Apple Podcasts, or you can visit patreon.com/darknetdiaries.  By joining either of these, you will directly be supporting the show and itâll give you a better listening experience.  I really have to say thank you to all the people who joined because they really do make this show much better.  So, thanks.  This show is made by me, the cloudy dragon, Jack Rhysider.  Sound design and editing by the hidden tiger, Andrew Meriwether.  Our theme music is by the fiery crane, Breakmaster Cylinder.  Doing math and binary is slow.  You have to go bit by bit.  This is Darknet Diaries.</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

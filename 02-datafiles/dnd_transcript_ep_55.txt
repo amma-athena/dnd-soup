@@ -1,0 +1,380 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>NoirNet â Darknet Diaries</title>
+	<meta name="description" content="A holiday special episode. A private pen tester takes on a job that involves him with another eccentric pen tester, a mischievious smile, and his quest to gain access to the network.">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="NoirNet â Darknet Diaries">  
+	<meta name="twitter:description" content="A holiday special episode. A private pen tester takes on a job that involves him with another eccentric pen tester, a mischievious smile, and his quest to gain access to the network.">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/noirnet.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/55/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="NoirNet â Darknet Diaries" />
+	<meta property="og:description"        content="A holiday special episode. A private pen tester takes on a job that involves him with another eccentric pen tester, a mischievious smile, and his quest to gain access to the network." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/noirnet.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/55/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/noirnet.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/55/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="NoirNet â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/noirnet.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 55: NoirNet</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://traffic.megaphone.fm/ADV9304669806.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/55/",
+			   "title": "Ep 55: NoirNet"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/55">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[FULL TRANSCRIPT]
+JACK:	 Hey, itâs Jack, host of the show.  Itâs holiday season so letâs have some fun and celebrate the year with a bonus holiday episode.  I hope thereâs much cheer and joy in your holiday season but for some of us security professionals, thereâs no break right now.  Hackers like to strike when people are on vacation or thereâs a skeleton crew running things.  To all the security professionals who are staying vigilant through the holiday season and keeping an eye on things, thanks.  This is a story from an old friend of ours, TinkerSecure.  Heâs a penetration tester paid to hack into places to test their security.  You might remember him from an earlier episode called Jeremy from Marketing.  Heâs got another story for us and he says a few cuss words in this one, but never in a mean or angry way.  Enjoy.
+<!--more--></p>
+
+<p>JACK (INTRO):	[INTRO MUSIC] These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is NoirNet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>TINKER:	[MUSIC] It was Sunday night and I was boarding a red-eye to Los Angeles.  I managed to get my carry-on filled to the brim with lockpicks under the door tools and badge cloners past the gate agents.  They seemed only concerned about my laptop.  After X-raying it, they let it pass, never-minding the hacking tools on it.  It was the week before Christmas and I should have been home with my boys decorating the tree and planning on what exact cookies they were to leave out for me â uh, Santa.  But here I was, boarding another flight to another godforsaken place to break into another building.  At least my five-year-old hadnât cried this time.  Hadnât thought that this was my leaving him permanently, leaving to start a new life with a new family in another state.  But my ex was in town, their mother, in from out of state.  Brought her fiancÃ© with her, the man she left me for.</p>
+
+<p>Seems he was trying to be a good male role model for my boys; had bought them a Nintendo Switch, gave it to them today as a surprise before Christmas.  I had bought them a Switch with a game for each boy that we would play together.  It was going to be a gift from Santa.  Iâd have to find a new gift from Santa.  But I couldnât think about that now; had to sort out exactly what I was going to do, what I was going to try to do to break into my target.  I needed a clear head for what lay before me.  My head was swarming with thoughts of family, of loves lost, new loves found.  But plans and machinations could wait until I arrived on-site, could wait until I actually got a look at the target.  For now, I settled into my seat, poured myself a Jack and Coke from a tiny single-serving bottle, tried to get some sleep in that cramped, flying tin can.</p>
+
+<p>Los Angeles never ceases to amaze me.  No matter how often I find myself here, Iâm always taken aback by the sheer magnitude of the sprawl.  Folks stacked one on top of the other, trees jutting out of the concrete, lanes upon lanes of roadway.  Every inch of horizon taken up.  [MUSIC] I hailed a Rideshare and was hustled into a worn-down hybrid.  My driver was a Korean man, earnest and awake at that unnatural hour.  He took great pains to ensure that I was comfortable, then took off to my destination.  A man takes on a certain amount of fatalism when weaving in-between traffic at 2:00 a.m. going seventy-five miles an hour.  My driver laughed and asked me what brought me to town?  Business, I replied.  What do you do?  I break into buildings.  Ever the conversationalist, he continued.  Well, what sort of methods do you use to break into buildings?</p>
+
+<p>I replied sincerely; oh, lockpickingâs a classic method.  Nowadays we clone access badges.  Often, if you smile, folks will open the door for you.  We went on for a bit longer making acquaintances and the customary small talk.  After a short bit, he put on some classical music and settled into a long and harrowing drive.  [ENGINE REVVING] My driver pulled off the freeway and drove me right up to my hotel.  He hurried out of his car, popped his trunk, pulled my bags out, and propped them in front of me.  I was assured that if I left him a five-star review, he would return the favor.  I assured him I would.  [00:05:00] The hotel was nothing to speak about.  I placed my bags to the side of the bed, didnât bother to unpack.  I made my way casually to the restroom and dry heaved up an empty stomach.  [RETCHING NOISES] The nerves before a gig never seem to ease.  Iâve just accepted it by this point and went through the motions.  Oh, goddammit.</p>
+
+<p>My colleague was already in town, already checked into the hotel, already asleep.  I was to meet him ready in seven hours.  I had been up twenty hours as it was.  Too jazzed to sleep easy and too late â too early?  â to take a sleeping pill, Iâd have to just lie there and wait.  [MUSIC] Sleep was rough.  The sounds of LA flooded my room but morning came as it always does.  Down in the lobby of the hotel, I slammed down a continental breakfast and Community Coffee and headed back up to my room for a shit, shower, and shave.  My colleague was late waking up.  After a bit, I heard a knock at the door.  I peeped through the eyelet and I opened it, showing my colleague into my room.  Yagix had a five oâclock beard and hair combo; his day-old unshaven beard met up with the spare top to create an even appearance all-around.  He smiled at me and gave me a hug.</p>
+
+<p>Yagix was an RFID and wireless guru.  You got shit that flied through the air, heâd snag it right out and throw it in your face.  He figured he might be able to gain access to the targetâs WiFi network and hack it.  If he was successful, I wouldnât need to break in and weâd call it a day.  He had identified a tall public building about a mile from our target site.  I went with him and we perched in a common area next to a window facing the site.  The view was spectacular.  He had a bag that contained a long Yagi antenna that was plugged into his laptop.  He set the bag by the window and angled it so that the Yagi pointed out.  He then shifted the bag an inch to the left, looked at his screen, and muttered something about channels.  He typed something into his laptop, then shifted the bag out to the left another inch.  While Yagix was doing his thing, I sat across from him, sipping on a coffee.</p>
+
+<p>I casually scanned our immediate area, the folks coming and going to see if they noticed us or suspected anything.  No one paid us any mind.  After a bit he said ah, I canât get to it.  I can see the building from here, and he pointed, but thereâs too much between us and them.  I need to be closer, he continued.  I need to get right outside the building.  I nodded and finished my coffee.  Well, if he needed to go on-site, I might as well conduct some actual reconnaissance and scope out the place.  I went back to the hotel and grabbed my gear bag, a small messenger bag.  I waited in the lobby for my associate.  I checked my bag; badge cloner set to record, had about half a foot of range.  Lockpicks, laptop, under-the-door tool, long piece of cardboard.  My colleague showed up.  [MUSIC] We headed out.  Came up to the site; normal office building in a normal office complex.  Three stories, multiple entrances; front, rear, and side.</p>
+
+<p>We sat in an outdoor picnic area and watched folks as they started to leave for lunch.  Employee dress appeared casual; jeans, long-sleeved or light coat for the weather.  The sun was out, hot for Christmas, but I guess this was LA.  I saw some badges here and there, not worn consistently; some around the neck, some on the belt.  I pulled out a fake white badge and clipped it on my belt.  It didnât look like the front of their badge but it did look like the rear of their badge.  Guess my badge was always flipped.  Saw folks leaving more now from the rear entrance.  I glanced at my colleague and gave him a look.  He was surprised; not yet, I can still hack in.  Just give me a moment.  Donât stop, I responded.  I may get caught.  I got up and made for the rear door.  A gentleman was just leaving.  I called out hey, one sec, and sped-walked up to hold the door.</p>
+
+<p>He smiled, held the door, and looked at my belt, concerned.  Saw my white badge and looked relieved.  I held the door for him as he left and I walked into my site only to be met by another door with a pin-pad access panel and a set of stairs.  I glanced up and saw a camera so I took the stairs.  Second floor was the same.  Third floor was the same.  I had nothing.  I walked back downstairs intending to leave and try again.  I didnât want the cameras catching me loitering.  [00:10:00] As I approached the door to exit, saw folks returning in from an early lunch.  I stayed inside and pulled out my phone, pretending to be on a call.  Three folks; two men and one woman entered the little area.  I said a bit loudly into my phone, look, I have to get back.  Iâll call you later, and walked behind the small crowd as they approached the inner-lock door.</p>
+
+<p>The lead gentleman badged in and held the door open for the woman.  The woman held the door open for her friend and her friend held the door open for me.  I smiled and said thank you, and walked into the secured area of my target site.  With that, I was in.  Now what?  The first thing I did was find the restroom, lay low for a bit, calm my nerves.  I needed to find an open desk, a conference room, somewhere to plug in my rogue device.  I left the stall and washed my hands, smiled at the person next to me.  I dried my hands and left.  Hereâs hoping I can walk around and not look suspicious.  I left the restroom and began walking the corridors.  The wage slaves were huddled in clusters of open office half-cubicles.  Different sections had different colors; Finance was green, Operations was red, IT was blue.</p>
+
+<p>I stopped by a break room and helped myself to coffee, struck up a conversation with two employees.  We discussed ways to maintain hair now that our hair was thinning due to old age.  One of my compatriots lamented about the time when she was pregnant and had luscious, thick hair.  I left the break room with my coffee, walked around and noticed what appeared to be a larger conference room.  Floor-to-ceiling glass, a fish bowl.  Everyone faced away from me, looking at displays on the wall.  The placard said Security Operations Center.  This was their SOC.  I stared at the back of the heads of the Blue Team.  They sat not three feet away from me as I looked through the glass.  A mischievous grin appeared on my face.  Their displays held readings on security events and tickets.  I saw one for Antivirus, one for Firewall, one for intrusion detection systems, and on and on.</p>
+
+<p>I now knew what I stood against.  These were the people that could stop me and those were the tools that I had to get around.  [MUSIC] I tried to wipe the grin off my face as I left them to their task.  I walked on.  I came up to a cluster of mostly-empty cubes, monitors, and keyboards waiting to be used.  I approached a gentleman sitting alone and waved at him.  He glanced up at me and removed his headphones.  Sorry to bother you; you mind if I hotel here?  I need to prep real quick for a conference presentation, I asked.  No, go ahead, he said, and motioned to an empty desk.  I pulled out my laptop and pulled out a smaller device behind it.  The Raspberry Pi was the size of a credit card but held a full arsenal of hacking tools.  Pretending to plug my laptop in, I instead situated the R-Pi up under the desk and plugged it in.</p>
+
+<p>With my laptop, I confirmed connectivity to my Raspberry Pi and did some light initial scanning to get a feel for the subnet that my rogue device was on.  I unplugged and shut down my laptop, knowing that anything else I need to do, I can now do remotely from my hotel through that Raspberry Pi.  On my way out I saw the office of the Chief Information Security Officer.  I approached the door.  I hesitated; should I?  The door opened.  I froze.  The CISO walked out and passed me, brushed up against my messenger bag.  I said excuse me, turned my head away and down, walked on down the hallway, and out of the office building.  I let the office door close behind me, heard it click.  [CLICK] Locked.  I tried to open it up again but couldnât.  I reached into my bag and pressed a button.  The Proxmark changed from sniffing to replaying.</p>
+
+<p>I waved my bag by the badge reader by the door [BEEP] and heard it click open.  [CLICK] [MUSIC] From here on out, I can go back to my hotel and hack in as far as I needed to.  I had my remote way in but if needed, I could always come back here, always badge in, always be the CISO.  [BEEP] Oh, and I just touched base with Yagix.  He snagged domain creds from their WPA2 enterprise wireless network by using Eaphammer.  [00:15:00] He was in, as well.  Looks like I didnât need to break in after all.  I hailed another Rideshare.  The driver was quiet this time; left me time to think.  All the computer protections; the firewalls, the locks, the badges, none of it mattered when a simple smile opened the door.  But I like the smiles, the holiday cheer, the Christmas season.  Come to think of it, I look forward to buying my sons a new Christmas gift.</p>
+
+<p>JACK (OUTRO):	[MUSIC] Thank you to TinkerSec for this holiday hacking story.  You can catch another story of his on this podcast.  Look for Episode 36, Jeremy from Marketing.  You can follow him on Twitter where his name is @TinkerSec.  Who knows?  You might see him live-tweet more stories like this.  This show is made by me, the Maltese raven, Jack Rhysider.  Theme music is by the hardboiled Breakmaster Cylinder.  Even though my way of learning is to heave a wild and unpredictable monkey wrench into the machinery, this is NoirNet Diaries.</p>
+
+<p>[MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]S</p>
+
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

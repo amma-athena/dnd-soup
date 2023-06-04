@@ -1,0 +1,407 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>Jackpot â Darknet Diaries</title>
+	<meta name="description" content="A man addicted to gambling finds a bug in a video poker machine that lets him win excessive amounts of money.">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Jackpot â Darknet Diaries">  
+	<meta name="twitter:description" content="A man addicted to gambling finds a bug in a video poker machine that lets him win excessive amounts of money.">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/jackpot.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/18/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Jackpot â Darknet Diaries" />
+	<meta property="og:description"        content="A man addicted to gambling finds a bug in a video poker machine that lets him win excessive amounts of money." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/jackpot.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/18/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/jackpot.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/18/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="Jackpot â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/jackpot.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 18: Jackpot</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://traffic.megaphone.fm/ADV4979232758.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/18/",
+			   "title": "Ep 18: Jackpot"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/18">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[FULL TRANSCRIPT]</p>
+
+<p>JACK:	[MUSIC] Ah, Vegas; home of swinginâ jazz, drunken mischief, and the dream of getting rich.  Slot machines all around with the constant echo of people winning money everywhere.  But the thing is the casino always wins.  The machines and the games are built in such a way that in the long run the player will eventually lose.  Almost every single bet you can place in Vegas has the odds in the houseâs favor, yet millions of people play, looking for ways they can cheat the system.  But what if you found a way to actually swing the odds in your favor and let you win whenever you wanted?
+<!--more--></p>
+
+<p>JACK (INTRO):	[MUSIC]  These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	For a short while in my life I was a craps dealer in Las Vegas, Nevada and it always intrigued me to see the different betting systems people would use, thinking theyâve found a method for winning.  While walking around the casino floor you can see some of these in action.  Iâve seen people place a lucky coin on their slot machine or wave a special feather in the air on every roll of the dice.  Iâve seen people count cards and write down all of their spins and outcomes.  Each are looking for a way to move that edge in their favor to give them a long-term winning strategy.  Some people take this very seriously.</p>
+
+<p>Most of the serious slot machine hackers will purchase a machine and try rigging it at home.  They play around with adding various objects to the machine to attempt to make it malfunction and to spit out cash.  There are loads of slot machine hacking devices that exist today.  One is called the Monkey Paw and itâs a device that has a little light in it that you stick up the coin hopper of the machine.  This tricks the machine to think that when the payout occurred, the coin never fell, thus making another coin fall.  A slot thief can steal all the coins of the slot machine in just a few minutes.  Another common slot machine hacking tool is the old EMP.  By placing an electromagnetic pulse around certain slot machines it can cause the machine to behave abnormally and do things like give you instant credits or pay out more than it should.  But being caught using devices like this is almost immediate prison time.  The penalties are harsh and strict and itâs a big risk for thieves.</p>
+
+<p>[PIANO]  John Kane is a virtuoso pianist.  Now, at fifty years old, heâs been an expert pianist for the last forty years playing for large audiences, teaching piano, selling his recordings.  He lives in Las Vegas and runs a management consulting firm which claims to have thirty of the Fortune 100 companies as his clients.  By 2005 Johnâs business was lucrative.  He was living in a large house in the northeast end of Vegas.  In it he has three Steinway grand pianos and one of his hobbies was model railroad trains.  One of his spare bedrooms showcased an entire miniature town with a model train running through it with exquisite attention to detail.  But besides loving the piano and building model trains, he also loved the thrill of gambling.  This went on for years but by 2006 he was severely addicted.</p>
+
+<p>That year he blew through $500,000 in gambling, often at the Boulder Station Casino.  His favorite game was video poker.  Video poker is a simple yet exciting game.  Youâre given five cards with the option of throwing out any of those cards to get a new one.  The goal is to get the best hand possible.  One can win anywhere from the one cent you put in the machine to thousands of dollars on the jackpot.  John spent a large amount of time playing a video poker game called Game King made by IGT.  This was the most popular video slot in Vegas.  It contained such games as Deuces Wild, Jacks Are Better, Triple Play, and Bonus Poker.  His pianist hands would grace the buttons of the machine with style and elegance and he would play for hours at a time and thousands of games of poker.  But [00:05:00] one day something weird happened.</p>
+
+<p>In April 2009 he was playing the Game King video poker machine at the Freemont Casino in downtown Las Vegas.  He was trying to change his bet and hit some wrong buttons.  [BEEPING]  All of a sudden his machine was indicating that he had won over $1,000 without even placing a bet.  He knew right away this wasnât right and the game malfunctioned on him.  His payout was so big the casino attendant had to deliver it by hand.  He told the attendant he thinks that there was an error but the attendant just thought he was joking and paid it anyways.  He tried replicating the issue.  He spent hours more playing and trying to make this strange behavior happen again.  John phoned a friend.  Years earlier John had a gambling friend named Andre Nestor.</p>
+
+<p>Andre and John met through an AOL chat room for Vegas locals.  They shared the same addiction to gambling and would often sit side -by-side playing various slots.  Andre was thirteen years younger than John and worked answering phones for a bank.  He made considerably less than John but still managed to lose about $20,000 a year gambling for the six years he lived in Vegas.  After that he called it quits and moved to a quiet town in Pennsylvania where heâd only occasionally play the lottery.  Andre had been living in Pennsylvania for the last two years.  John called Andre and told him about this bug he found in the video poker machine and that he thinks he might be able to replicate it.  Andre was immediate interested.  He drove to the airport that night and waited all night until the next flight to Vegas.</p>
+
+<p>John picked Andre up at McCarran airport, grabbed breakfast, and they went right back to the Freemont and sat side-by-side on the two Game King video poker machines.  John had some ideas on how to trigger the bug but he didnât know for sure how to reliably do it.  He explained to Andre what he thought was the method and the two got to work looking for the bug.  They would try various betting strategies, different games, a combination of button pushing, and different bet levels.  Every now and then they were able to trigger the bug but it wasnât consistent.  The game they were playing would let them bet anywhere from one cent to fifty cents a hand.  The bug they found would let them change their bet after the win so they could play for hours losing only pennies but then when a big hand would show up like four of a kind, they could change their bet to fifty cents and immediately theyâd get the winnings for a fifty cent wager instead of a one cent wager.</p>
+
+<p>This would result in thousands of dollars for a win like this.  After hours of playing side-by-side they figured out the exact sequence that would need to be done for an extra-large payout to happen.  They hit numerous jackpots that night and left to have a celebratory dinner.  The two started mapping out their plans.  Fortunately for them, the Game King video poker machine is very popular in Vegas.  Itâs not only in casinos but itâs also in diners and gas stations and pretty much everywhere.  They knew if they hit the same machine every night theyâd come under suspicion.  They planned out how theyâd make their way across town hitting different casinos.</p>
+
+<p>John was worried about Andre though.  He feared that even if Andre had won a lot of money heâd just give it right back on the roulette or blackjack tables.  So John asked Andre, if you had a million dollars what ten things would you do?  And asked Andre to really think about it.  The two went back to Johnâs house for the night.  They spent another day at the Freemont to make sure their strategy worked and sure enough, it worked great.  [MUSIC]  Then they made their way to another casino.  Same game, same strategy but the exploit didnât work.  They tried numerous other casinos; the Hilton, Hard Rock, Luxor, Stratosphere, and Tropicana.  None of the Game King video poker games would produce the same exploit.  They went back to the Freemont but sure enough, it worked great there.  The two were baffled so Andre decided to head back to the airport and fly back home to Pennsylvania.</p>
+
+<p>At the airport, Andre lost another $700 gambling at the video poker machines there, but Andre still left with $8,000 more than what he came with.  John went back to the Freemont and sat under the neon signs with the 90s Top 40 music playing and smoke swirling all around, and he continued playing poker.  He kept winning and kept playing.  He kept winning and the slot manager noticed the Game King video poker machines were all losing a lot of money for the casino.  The slot manager told John that they are disabling the Double Up feature on these machines.  This feature allowed players to double their winnings or lose everything.  John was using this feature every time he could and the slot manager knew it.  John was not too worried that the feature would be disabled since it was the bug that would let him win and not the Double Up feature but when John returned the next day to play at the Freemont, the bug wouldnât work.</p>
+
+<p>John was baffled and he called Andre up to explain.  Andre immediately realized the missing link to their exploit was the Double Up feature.  With it on, the exploit worked and with it off, it didnât.  Andre jumped on another plane and headed back to Vegas.  The Double Up feature on these games had been turned off because many players donât like that feature but you could ask the gaming attendant to enable the feature and [00:10:00] sometimes theyâll do it for you.  John and Andre went to a new casino and asked the attendant to enable the Double Up feature and away they went.  Andre started playing and he had four of a kind which awarded him $500.</p>
+
+<p>He tapped the magic button sequence and shazam, his $500 instantly became a $10,000 jackpot.  They cracked the code and realized they could go to any casino now and make their money.  Their plan was working.  They were unstoppable.  They had almost endless amounts of machines they could exploit now, with tens of thousands in jackpot winnings to be had.  Andre was looking at a whole new life.  He had been living on welfare checks and was now dreaming of owning a home, buying nice clothes, and giving gifts to his friends.  They kept exploiting the bug all around town when they stumbled upon an even better version of the bug; they found they could trigger the payout twice with the same hand.  In fact, they could trigger the payout over and over with the same hand without even drawing more cards.</p>
+
+<p>This would be risky to exploit though, since having the attendant pay out $4,000 over and over on the same hand would surely be noticed.  They would swap seats when one would hit the jackpot like that and then leave the casino.  Andre and John had mastered their system.  They didnât even see it as gambling anymore.  They basically were able to win however much they wanted whenever they wanted.  Andre worked out he could make $500,000 a day if he really wanted.  The exploit worked like this; step one, find a Game King video poker machine that allowed different betting levels.  Step two, ask the slot attendant to enable the Double Up option and be polite and courteous as they make the changes.  Step three, add money to the machine and select the lowest bet level you can.  Step four, play with the lowest bet level until you win a big hand, say four of a kind or a royal flush.  Step five, when the royal flush is showing on the screen, donât cash out.  Instead, hit the More Games button and select a different game variant.  Play it until you win there, any win.  This sets up the Double Up option.</p>
+
+<p>Now your next win will be double than normal.  Step six, add more money to the machine.  Step seven, touch the More Games button again.  Now select Maximum Bet Level and go back to the game variant you hit the royal flush on.  Step eight, hit he Cash Out button and bingo.  Jackpot.  You win up to ten times more than what your original royal flush had awarded you.  John wanted a cut of the earnings since he told Andre about the exploit.  The two argued over this and eventually made Andre go out and play on his own.  Over the course of his few days in Vegas, Andre pulled in $152,000 from places like the Wynn and the Rio.  Andre flew back to Pennsylvania.  John went on a winning streak of his own, visiting eight different casinos and pulling in over $500,000 hitting jackpot after jackpot night after night.</p>
+
+<p>John played with a straight-faced business type of attitude.  Back home in Pennsylvania Andre found a nearby casino that had the Game King video poker game.  [MUSIC]  Andre would bring an entourage with him to the casino.  First would be the bodyguard; retired cop to watch over Andre.  Second would be a friend of his that was a server at Red Lobster to sit and collect the winnings so it would go on his taxes and not Andreâs.  Andre continued to win another $50,000 in the casino.  John had continued his exploits across Vegas.  He went over to the Silverton Casino, the one that has the mermaid swimming in the aquarium.  He went into the high-limit room and found a Game King video poker machine.  He got the attendant to enable the Double Up feature and began hitting jackpot after jackpot.  First $4,300, then $2,800, then $4,100, then a few more.</p>
+
+<p>Each win required an attendant to come and pay the jackpot in cash and fill out an IRS form to [00:15:00] declare the winnings.  Then he hit a seventh jackpot of $10,400 and then an eighth jackpot of $8,200.  But this time the attendant didnât come right away.  John waited impatiently.  An attendant came but told John to wait.  John complained.  Johnâs winning streak had caught the attention of the casinoâs surveillance.  It thought this guy was either incredibly lucky or was cheating so they had security come and whisk him away into the back room.  He was handcuffed and they froze his machine.  John was taken to the Clark County Detention Center on suspension of theft and spent the night in jail.</p>
+
+<p>Next day, he was released and immediately called Andre to warn him not to go back to the casino as they know about the bug now, but Andre didnât listen, thinking John was just trying to keep the bug to himself so he continued to visit his local casino with his entourage and kept winning.  A few days later the Nevada gaming control board visited the Silverton Casino.  They examined the game and found no evidence of tampering.  They pulled the gameâs memory and took the surveillance tapes.  They went back to the lab with the surveillance tapes and they were able to duplicate the bug.  This would be the first bug like this found on Game King.  The Gaming Control Board immediately notified IGT, the makers of Game King.  IGT had a long reputation of having reliable and bug-free games.  Both the Gaming Control Board and the IGT have strict audits to make sure nothing like this ever gets into the wild.</p>
+
+<p>After further review IGT had discovered this bug was present for seven years and nobody knew it was there on thousands of games around the world.  IGT immediately issued a notification to all its customers indicating to disable the Double Up feature immediately and that the patch would be available soon.  Andre had no idea how much the gaming board knew and thought John was just telling a lie in order to keep the exploit to himself.  Andre continued visiting his local casino and was able to win more than $480,000.  Eventually the casino refused to pay a jackpot and Andre left.  When he got to the parking garage he ran outta there.  [MUSIC]  At 1:00 p.m. on August 6th, 2009, Andre was sleeping on the couch in his condo and all of a sudden there were shouts at the door.  âState Police, open up!â  A battering ram started hitting the front door.  The door splintered open and the police raided his condo.</p>
+
+<p>Andre started for the stairs which is when he saw a trooper in full riot gear pointing an AR-15 rifle at Andre shouting âGet on the floor!â  Andre laid on the floor.  The cops grabbed him, lifted him up, and handcuffed him to a chair.  Andre watched for two hours as the troopers turned everything over in his house.  They flipped the mattresses, opened drawers, tore down parts of the ceiling, and went through his PC.  Andreâs friend, who was part of his entourage, came over to see Andre but was immediately arrested too for being an accomplice.</p>
+
+<p>The cops seized every penny they found in the condo and turned it over to the District Attorney.  Andre was charged with 698 felony counts ranging from theft to criminal conspiracy.  Andre spent ten days in jail and he was determined to fight this case, thinking the jury would surely side with him.  Thatâs when the FBI stepped in.  They took him out of the Pennsylvania court room he was in and extradited him to Las Vegas.  Him and John were now being charged with federal offences.  As the FBI agents walked him to the car, a local news crew had a chance to interview Andre.  Hereâs a clip from that interview.</p>
+
+<p>ANDRE:	Iâm being arrested federally now for winning on a slot machine.  Let everybody see the surveillance tapes.  I pressed buttons on the machine on the casino.  Thatâs all I did.  Now winning is apparently illegal.  Itâs unbelievable.  I have 700 felonies.  A message is being sent to everybody that if you play and you win at the casino and then they later determine that their machines werenât completely set up to take your money and you win, then youâre going to be arrested.</p>
+
+<p>Itâs not right and I think the people really need to hear everything that I said today.  I talked to gaming attorneys in Nevada.  They say I didnât do anything wrong.  The philosophy is if a casino puts a machine on the floor that pays out more than what is normally expected and a person figures it out and takes advantage of it, as long as they donât use devices or counterfeit money of any kind then thereâs nothing illegal.  Itâs a matter between the casino and the maker of that machine.</p>
+
+<p>JACK:	John and Andre were charged with conspiracy and violation of The Computer Fraud and Abuse Act of 1986.  The CFAA was enacted to punish hackers who illegally broke into government and banks.  The FBI was stating they knowingly exploited a bug that went beyond their allowable level to access the video poker machine and that it was contrary to the rules of poker.  However, their defense attorney argued that anything the game allowed them to do should be considered allowable access.  Most slot machine hacking is [00:20:00] done using extra devices like magnets or electrical pulses but Andre and John only used the in-game features to manipulate the game to play how they wanted.  The defense attorney stated all these guys did is push a sequence of buttons that they were legally entitled to push.  The case dragged on for eighteen months.</p>
+
+<p>During that time a few other cases of violations of the CFAA came before the courts.  One was Aaron Swartz, who was arrested for downloading academic articles without permission.  The other was about leaking a database to another employee.  The prosecution didnât win either of these cases and the CFAA was not looking like a strong law, so with John and Andreâs case the CFAA law was being scrutinized heavily.  The courts were unsure if this law would even cover their behavior.  On December 3rd, 2013, the feds gave them both the same deal; one was to testify against the other, theyâd get no jail time, and only probation.  The deal was only for the first to testify.  This is known as the prisonerâs dilemma.  John and Andre werenât able to speak to each other so they had to take the only option you can in this situation and they decided not to testify.</p>
+
+<p>The prosecution didnât have much to use against the two so they ultimately dropped the charges and let them both go free.  [MUSIC]  Andreâs money was seized and returned back to the casino in Pennsylvania where they won it, however the IRS is stating he owes $239,000 in back taxes from his winnings, which he doesnât have.  Andre feels bad that the money got between John and him caused arguments.  John and Andre havenât spoken much since they were arrested in 2009 and they were both banned from the casinos theyâve won in, but there was no court evidence that suggests Johnâs winnings were confiscated or returned.  Itâs unknown what happened to his money.</p>
+
+<p>John went back to playing piano and recording songs.  Vulnerable slot machines are still being patched to this day.  Itâs not as easy as simply clicking Update because the systems arenât connected to the internet.  Applying patches to them is more complicated and there are thousands of these games spread all across the world.  Not all of them are managed by a casino which applies the latest patches.  Thereâs a good chance that most of the machines are patched though, so itâs best to keep your quarters in your pocket.  In the end the casinos were hardly bothered by the winning streak John and Andre hit because it was just dozes of casinos and only hit by two guys.  If this exploit had leaked into the wild where hundreds of people all heard about it at once, it would have been a terrible nightmare for casinos around the world.  Itâs lucky for the casino that these two kept this exploit secret.</p>
+
+<p>JACK (OUTRO):	[OUTRO MUSIC]  Youâve been listening to Darknet Diaries.  Big thanks to Kevin Poulsen over at Wired Magazine for covering this story in-depth and getting all the juicy details.  Find links to his articles at darknetdiaries.com.  This episode is made by me, Jack Rhysider.  Theme music is created by the mysterious and talented Breakmaster Cylinder.</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+<p>Transcription performed by Leah Hervoly
+www.leahtranscribes.com</p>
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

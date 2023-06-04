@@ -1,0 +1,671 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>NSA Cryptologists â Darknet Diaries</title>
+	<meta name="description" content="In this episode we interview two NSA Cryptologists, Marcus J. Carey and Jeff Man. We hear their story of how they got into the NSA and what they did while there.">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="NSA Cryptologists â Darknet Diaries">  
+	<meta name="twitter:description" content="In this episode we interview two NSA Cryptologists, Marcus J. Carey and Jeff Man. We hear their story of how they got into the NSA and what they did while there.">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/cryptography.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/83/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="NSA Cryptologists â Darknet Diaries" />
+	<meta property="og:description"        content="In this episode we interview two NSA Cryptologists, Marcus J. Carey and Jeff Man. We hear their story of how they got into the NSA and what they did while there." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/cryptography.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/83/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/cryptography.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/83/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="NSA Cryptologists â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/cryptography.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 83: NSA Cryptologists</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://www.podtrac.com/pts/redirect.mp3/traffic.megaphone.fm/ADV9231072845.mp3?updated=1610644901"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/83/",
+			   "title": "Ep 83: NSA Cryptologists"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/83">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[START OF RECORDING]</p>
+
+<p>JACK:	Hey, itâs Jack, host of the show.  Did I ever tell you about the time I tried to sneak into the Pentagon?  Yeah, after college I took a trip to Washington, DC all by myself.  I like traveling alone, I guess.  Thereâs a certain kind of freedom I like about it which allows me to reinvent myself on trips.  Anyway, thereâs this metro, a subway, that goes underground through Washington, DC.  I jumped on it just to see where it would go and one of the stations it took me to was the Pentagon.  Iâm like alright, this sounds cool.  So, I jumped off and somehow ended up at the employee entrance to the Pentagon.  There were no visitors allowed in this area for sure, so I stood and watched how people were getting in and out.  Out were one-way turnstiles.  In; everyone was scanning their badges and went through a metal detector.  I decided to try to do a fake badge scan and see if I could just walk on in.  I saw some guy walking up, so I followed him and did exactly what he did.  He leaned over, scanned his badge on the reader, and then walked through.
+<!--more-->
+I leaned over, waved my hand over the reader and walked through, too.  Immediately two security officers stopped me and didnât even ask what I was doing.  They simply turned me around and sent me right back out.  They knew exactly what I was up to and must have spotted me like, a mile away.  Iâve never been shut down so fast or kicked out of some place that quickly.  No words were even spoken; they just blocked me, wouldnât let me go any further, and pointed me straight to the exit.  Itâs funny what we remember on our trips, isnât it?  Anyway, this episode I interview two different NSA agents.  I really like both of these guys and I think you will, too.  Whatâs common between them is that they both started something at the NSA which still goes on today.</p>
+
+<p>(INTRO):	[INTRO MUSIC] These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	Alright, so our first guest is quickly becoming a legend in the IT security space.  Heâs written four or five books on security now.  I canât even keep track.  I started out by asking him where he grew up and he said in a small little country town in Texas and had horses and stuff, which sort of shocked me because I thought â actually, I donât even know what I thought.</p>
+
+<p>MARCUS:	Hey man, hey, ask me any question you want to because this is one of the â this is quite funny to me.  I can explain the country/hood paradigm.</p>
+
+<p>JACK:	Yeah, I mean â alright, Iâm gonna hit Record again.</p>
+
+<p>MARCUS:	Weâre gonna have some fun, man.</p>
+
+<p>JACK:	Okay, I donât want to be embarrassed here with my wrong questions, soâ¦</p>
+
+<p>MARCUS:	No, I get â no, you canât embarrass me, so you shouldnât feel â I feel totally comfortable with any question you can ask.</p>
+
+<p>JACK:	Well, I mean, Iâm picturing Lil Nas X at this point, the black country singer.</p>
+
+<p>MARCUS:	Basically, yeah.  [MUSIC] I mean, Iâll explain this to you, man.  This is a crazy story.  My dadâs actually originally from LA.  Before I was even conceived, my dad moved from LA to my small little country town because his uncle was there â my uncle too, right?  So, he was in LA and his vision of what Texas was was cowboy boots and all that stuff, so before he came to Texas he had bought all this cowboy gear to wear.  This was in the 70s, right?  He came to Texas.  He was dressed up like a cowboy.  But when he went out to meet other people, they were dressed like they were from LA, like Shaft or something.  You know, like Black Panther Party.  [00:05:00] But people thought he was cool because he was from LA.  Now, many people where I from, my little small Texas town, they started dressing like cowboys, all the black people.  The world is crazy, man, how we all fit in and stuff.  Yeah, so that whole â I really feel that whole â that Lil Nas X thing, yeah, for sure.  I mean heck, I got some cowboy boots still to this day.  I got some nice cowboy boots.</p>
+
+<p>JACK:	But even though he was outside wrestling pigs, chasing chickens, he was still drawn to computers.</p>
+
+<p>MARCUS:	[MUSIC] Yeah, computers has been my love since I saw WarGames.  I saw WarGames when I was young and Iâve been absolutely fascinated with computers and playing with them, so that was my introduction to â wow, I need to get one of those things.</p>
+
+<p>JACK:	But his family wasnât able to get a computer for their home, so the only way he could really learn on it was at school or a library or other peopleâs computers.</p>
+
+<p>MARCUS:	In high school, I took Pascal.  I also took BASIC in elementary, so it was something that I was always interested in.  I just didnât have the financial means.  One day, a Navy guy was walking on campus.  I didnât have money âcause I grew up poor.  I didnât have money to go to college and I didnât know about any grants or anything, and I ended up scoring high on my military entrance exam.  I said, I want to work with computers.  Heâs like alright, we have this thing called cryptographic communications.  We donât know what that is because itâs classified.  Do you want to do that?  I was like yeah, sure, Iâll do that.</p>
+
+<p>JACK:	So, he joined the Navy but no matter what you want to do in the Navy, everyone first has to go through boot camp, [SINGING] where you get fit, learn combat techniques, and learn how to follow protocols.  Marcus graduated and became a sailor and after that, he went on to study cryptography.</p>
+
+<p>MARCUS:	Yeah, so basically you go to Corry Station and you become â they teach you about signals intelligence and cryptography and all kind of crazy stuff.  I was born in a small town.  I graduated from Waco High and then I immediately go into â get a top-secret clearance and all this other crazy stuff.  Iâm poor, homeless pretty much in high school, and moving around on a lot of places until I moved to a â Iâm on this military base and I get this top-secret clearance and I start learning all this crazy stuff.  It was absolute night and day experience.  It was the craziest thing ever.</p>
+
+<p>JACK:	He was taken care of in the Navy; always had food, medical checkups, clothes, a place to sleep.</p>
+
+<p>MARCUS:	My family though were still struggling and all that stuff.  Psychologically that was tough because I was doing fine myself personally, but I had a family still back in the hood, struggling.</p>
+
+<p>JACK:	Back in â is it really â do you really call it the hood in the country?</p>
+
+<p>MARCUS:	So, let me explain that to you.  100% the black side of town, the poor side of town, definitely down south, is the hood.  It doesnât matter how big the town is.  Absolutely, certainly hood.</p>
+
+<p>JACK:	Okay.  Alright, so can you tell me some of the training you did in cryptographic communications?  Was that what it was?</p>
+
+<p>MARCUS:	Yeah, yeah.  Basically, when I went â the Navy taught me cryptosystems.  Basically, the Navy has these ridiculous cryptosystems that secure communications.  I had to learn how to operate those and I had to learn communications techniques that were specific to the Navy.  Some of that stuffâs still classified like a mug, but you learn particular protocols and things that you â how to communicate from ship to ship, from ship to the White House, even.  You learn how to do these communications protocols.  Yeah, so it was pretty cool.  I went from wanting to work computers to be fully immersed with computers in a couple weeks.  It was crazy.</p>
+
+<p>JACK:	Did you do much time on a ship?</p>
+
+<p>MARCUS:	Yeah, I did three years on a ship.</p>
+
+<p>JACK:	While you were on that ship, were you handling the communication aspect of it?</p>
+
+<p>MARCUS:	Yeah, on the ship â my whole job in the military was youâre pretty much an attache or an asset for NSA.  The whole time I was in, I was kinda like a spy.  It was the craziest thing, man.  Yeah, you do serious collection work and all that stuff, so youâre tasked by NSA to do what you do.  It was the craziest experience ever, man.</p>
+
+<p>JACK:	[MUSIC] Hm, secret [00:10:00] missions, huh?  This is fascinating to me because I thought the NSA was their own separate group but yeah, if thereâs a Navy ship positioned in a place the NSA has no eyes or ears on, then sure, utilizing the cryptographic capabilities of the ship and crew makes sense.</p>
+
+<p>MARCUS:	Yeah, so the people donât realize the NSA is the Department of Defense asset.  The whole NSA supports the military.  In each service; Navy, Army, Air Force, all of us had our own â and the Marines â had their own little signals group, you know what Iâm saying?  Like, that supports the mother ship.  The mother ship is NSA.  Pretty much, even though youâre a Navy sailor, you belong to â youâre an intel asset.  I donât know if that makes sense but that whole time â and you can get stationed at the mother ship, too.</p>
+
+<p>JACK:	Interesting.  So, the DOD or Department of Defense is the department that the military falls under, and the NSA.  I guess it does make sense now that they share resources sometimes.  Marcus himself was that shared resource.  Sometimes he would do missions for the Navy and sometimes he would do assignments for the NSA.</p>
+
+<p>MARCUS:	Definitely, geographically-specific stuff that you could do to be helpful.  There was stuff that we did; we helped find people.  If there was a ship that was lost, we could help find that.  If there was a pilot shot down, we could help find them, or if there was some kinda incident.  The tools that we had could be used for a lot of different things.  It was cool doing it and it was great being out there on the front lines doing that work.  It was dope.</p>
+
+<p>JACK:	Back in 1969, a Navy patrol plane was shot down in the Sea of Japan and there wasnât a good method for handling all the real-time communications that were needed to help rescue them.  After that, an operations center was constructed in order to get real-time updates from any ship, plane, or base nearby.  Now, Marcus really took his job seriously and really sunk his teeth into the computers that were on this ship, learning about servers and networking and wireless technologies, cryptography, security, programming, and command line tools.</p>
+
+<p>MARCUS:	There was also HF communications, UHF, all the different stuff; satcom.  I learned all kind of communication in the military.  That made me pretty thorough in understanding how radio frequencies work and all that stuff.  Definitely, you did a lot of communications training.  That included air networking.</p>
+
+<p>JACK:	Now, while youâre on the ship, youâre â are you â youâre doing more training, right?  Youâre learning more about programming or cryptanalysis or something?</p>
+
+<p>MARCUS:	I mean, the Navy is full-time education.  Youâre always learning.  Youâre always doing OJT as well.  We called it on-the-job training.  Youâd never stop learning in the military.  I think the military, just like college, it teaches you how to learn.  Since being in the military, that helped me be able to put my hand to anything.  Yeah, I learned coding at the military, I learned internetworking.  I was a CCNP when I was in the Navy, so mass notifications, and definitely being affiliated with NSA, I got any training I wanted to.  When I was there, I got well over $100,000 worth of training and I did a Masterâs degree, too.  Itâs like, I tell people itâs like being the Jason Bourne of IT or technology.</p>
+
+<p>JACK:	You got your Bachelorâs and Masterâs in the Navy?</p>
+
+<p>MARCUS:	I got my Bachelorâs in the Navy and I got my Masterâs as soon as I got out.  I was still working around that stuff, but I got a free Masterâs degree.  I didnât have no college debt or anything.</p>
+
+<p>JACK:	Because the Navy paid for it.</p>
+
+<p>MARCUS:	Yep, the military paid for it.  I went in with no college or nothing like that.  But after eight years I had a Bachelorâs degree and three years after that, I did my Masterâs degree.  Thatâs the good of the military.</p>
+
+<p>JACK:	He spent four years in the Navy and during that time he somehow met his wife and got married, and they had two kids.  Because of this, he decided to spend another four years in the Navy.  It was good job security.  After eight years of being in the Navy, he then went to Fort Meade.</p>
+
+<p>MARCUS:	[MUSIC] I didnât want to go to Fort Meade but I ended up â pretty much I had two options; I had Washington State and I was like, I donât want to go to Washington State.  They said or Fort Meade.  We got a couple of places â a couple of jobs at Fort Meade that you can do.  I was on a ship, so â and you had to be like, okay.  You had to pick it right then and there.  The military has these people called detailers that send you places.</p>
+
+<p>JACK:	So, if you havenât guessed, Fort Meade is where the NSA headquarters are.  Marcus went to work for the NSA.  But he was still in the Navy and sort of on loan to the NSA.  Itâs called augmented staff.</p>
+
+<p>MARCUS:	Initially there I was doing [00:15:00] communications.  It was proprietary communications systems that the military and DOD used.  But whatâs cool about that â I kinda worked at a NOC, and the NOC also had all kind of other cool stuff.  Like, they had a heavy Cisco â they had heavy Cisco stuff back then and I learned â thatâs how I started getting to the CCNA.  I became a beast at Cisco stuff, so I ended up getting promoted to an engineering team of network engineers and I got to manage the whole NSAâs network.  I started off doing a crappy job at Fort Meade and then the certifications allowed me to ascend to top teams there.  That was during my day job.  My day job, I was Navy.  At night time, I took â I had a part-time job with a DOD contractor so I was like, doing a night job since I had the clearance.  I ended up helping build out the NSAâs SOC.  I ended up helping build that out.  I wrote stuff like SIMs and all that stuff, so I started coding heavy as well.  I made as much on my night time job as I did with my Navy salary.  I was like man, I gotta get out.  I gotta get out of the Navy and make this money.</p>
+
+<p>JACK:	Alright, so two words in there you may not know; NOC and SOC.  This stands for Network Operation Center and Security Operation Center.  This is a place where people watch the network for any kinds of problems, so there are typically multiple monitors on everyoneâs desks and even a big screen in front of the room which monitors all the networks.  The NOC typically looks for network-related faults; a router that went down, a switch went down, some office lost internet connectivity, and that sort of thing.  A SOC watches out for security incidents and responds to threats.  But both the NOC and the SOC are monitoring NSAâs network itself, looking for any threats that have targeted the NSA.</p>
+
+<p>MARCUS:	Oh, 100%, man.  NSA is probably the â probably one of the most attacked organizations in the world.  Absolutely crazy amount of attacks that go on there.  That SOC has to manage all the networks.  What theyâre doing is they â thereâs all kind of different levels, like high side networks and medium-tier networks, and then thereâs unclassified networks.  You have to defend all three of those or however many there are.  Thereâs like, all kind of â and then thereâs inner agency networks.  Nobody trust nobody.  Itâs crazy.</p>
+
+<p>JACK:	Now, of course, Iâm super-interested to hear what goes on in the NSA.  What kind of detection capabilities do they have and what offensive tools are they using?  But I canât ask any of that to Marcus because theyâre not allowed to share means and methods of how the NSA operates.</p>
+
+<p>MARCUS:	You donât want people knowing how you collect information.  Iâll give you a good example; a couple years ago â I donât know if you remember this, but supposedly Bin Laden was using satellite phones to communicate, so â and basically, Orrin Hatch was â he was a Republican senator from Utah.  He came out of a intel brief and heâs like oh, donât worry about Bin Laden.  Weâre tracking him on a satellite phone, right?  Orrin Hatch said that, out of the intel community.  So, thatâs a means and a method, right?  The method we were tracking this number-one terrorist in the world was satellite phone.  What happened is that burnt all â that burnt that method, you feel me?  Now all the criminals that were using satellite phones and stuff, they now knew that â something that was being tracked.</p>
+
+<p>Bin Laden went silent and thatâs why it took so long to find him.  When it comes to intelligence, the â how we collect the data is what matters.  Now, as far as securing data, securing data is just like any other thing.  A matter of fact, NSA and NIST, they work hand-in-hand to try to help all American businesses stay secure as well.  As far as what NSAâs doing on the defensive side, you just look at what NSA tells people to do and most of that stuffâs public.  Good defense is public.  Itâs the offensive means and the way that people â how they collect information thatâs really secretive.  I would never talk about how we collect information.</p>
+
+<p>JACK:	Yeah, itâs odd to me because there are publications that the NSA puts out, like Best Practices for Keeping Your Home Network Secure or Securing the Teleworker.  They even have configuration recommendations for securing certain systems.  But at the same time, the NSA loves the ability to collect data on their targets.  If you follow the guidelines, then it makes it harder if the NSA were to target you.</p>
+
+<p>MARCUS:	Thatâs not true, though.  NSAâs core mission is to protect US communications and assets.  Thatâs like, the core mission.  [00:20:00] People donât understand that.  A lot of the crypto research and breaking crypto and all of that stuff, and even exploitation; that stuff is â the core mission is to protect US assets and interests because what happens is all these American companies that go overseas to do business, theyâre being spied on by foreign intelligence.  Heck, foreign intelligence hired people to work in these big companies, by the way.  All these big companies that you can think of, they have IP â I can guarantee you that theyâre either paying an employee or they have moles inside of them stealing information and sending it over to their countries.  I mean friendly countries, too.  Think of a friendly country.  Theyâre spying on us, too.  What the agencyâs core mission is â to do all this crypto research and all that stuff, is to protect our interests.  Thatâs part of the mission and people donât think about that piece.  Itâs a serious mission and people take that seriously.  The other side of it â go ahead.</p>
+
+<p>JACK:	Well, my counterargument there is if there â if they want the US companies to stay secure, how come when they find zero-days on things like Microsoft or Google products, they donât just tell Microsoft and Google hey, thereâs a bug in your code?</p>
+
+<p>MARCUS:	You know, itâs funny though because you know that people say this all the time.  There is nothing new under the sun.  I can guarantee you if we find an exploit, somebody â some other country, some other person on the market somewhere found that exploit.  I think that they should disclose everything.  Thatâs not my decision to make, but the reason why though is so â is to help out our country.  I totally believe â I 100% believe that the folly on their part is the thinking nobody else has the zero-day âcause I think that if you have it, somebody else has it, too, right?  Thatâs the folly.  But the reason why they try to protect that method is so they can help out the country.</p>
+
+<p>JACK:	This is obviously a complicated topic that weâre not gonna solve here.  NSA has made many mistakes but at the same time, theyâve saved many lives.  Thatâs a hard line to walk for anyone.  But because it has some of the most advanced technologies, Marcus was having a blast working there.</p>
+
+<p>MARCUS:	[MUSIC] I loved it.  It was so much fun, so much like, leading edge technology.  Like I said, their â NSA put like hundreds of thousands of dollars into my education.  NSA has its own training environment as well, so they train you their stuff and then you get to pick a list of what class I want to go to.  Do I want to go to SANS?  Do I want to go to the Cisco course?  Do I want to do this?  You get to take whatever you want to.  Oh, do I want to take this course at the community college here?  It was like, I worked two or three weeks and then I was off for training for a week.  It was like, every month I was training.  It really was so crazy as far as the educational benefits.  Thatâs what youâre dealing with there.  I would say that our foreign adversaries, those people are well-trained too, right?  Basically itâs a lot of really smart people fighting this little behind-the-scenes battle.  Itâs crazy.</p>
+
+<p>JACK:	For a while, he was working for the NSA while still in the Navy, building out their network.  At night he was a contractor and helped build NSAâs SOC which is pretty cool because the SOC is still up and operational today and Marcus is the one who built it.  Once it was built, he was using it to defend NSAâs networks.  But after a few years of that, he got out of the Navy and went to work for the Department of Defense Cyber Crime Center.</p>
+
+<p>MARCUS:	The Defense Cyber Crime Center does all the forensic investigations and things of that nature for the DOD.  Theyâre like Cyber Command.  Basically, the DC3 was the lead on all of the investigations until the â âtil they created Cyber Command, essentially.  The DC3 still exists.  It has this thing called DCFL.  They do forensics.  Itâs a forensic laboratory.  They do a lot of forensic investigations.  They do a lot of high-profile investigations that youâve probably heard of on the news before.  I work for CSC and at the time CSC had the contract to help train federal agents and all the DOD agents on how to do forensics.  It was a pretty cool curriculum.  They started from log analysis, Windows forensics, Linux forensics, Macintosh forensics.  We teach these federal agents all these different forensic techniques, working with the best of the best software back in the day, and they still [00:25:00] do it today.  The agents would get to use EnCase and all of these different open-source tools and all these different forensic things.  But what was cool is I got a chance to build up a cyber range.  This cyber range had â it was a complete mock-up of a corporate network.  I mean, this is before cyber range is even cool.  This is over ten years ago.</p>
+
+<p>JACK:	Do you know what a cyber range is?  Let me tell you a story.  Before I was podcasting I was working in a SOC myself, watching the network for security incidents, and I saw one of my co-workerâs computers lighting up my screen.  It was triggering alerts telling me that this co-workerâs computer was actively trying to hack itself.  To me, it looked like maybe someone took over his computer and was trying to get more access or something.  I went over to his desk and I said hey, everything okay?  Heâs like yeah, whatâs up?  I said, Iâm seeing some alerts that some pretty nasty PowerShell commands are being executed on your computer.  He said oh yeah, I downloaded a PowerShell tool to see if it actually works.  I said, this is not a safe environment to be running random hacking tools.</p>
+
+<p>Please stop that.  Delete it and run an antivirus scan right away.  But see, the thing is, we didnât have a safe environment to try hacking tools like that, so this is what a cyber range solves.  Itâs a separate network with all kinds of servers and computers to attack, as well as a whole range of nasty weapons to launch attacks with.  A cyber range is great because you can really go nuts.  You could try to exploit anything you want and you donât have to worry about any vulnerability or virus or worm escaping and hitting production equipment.  On top of that, defending teams can use the cyber range to see if they can detect and defend against such attacks.  Itâs a great place to practice network and system security.</p>
+
+<p>MARCUS:	Yeah, you can use them to detonate malware, all kind of different things of that nature.  Usually some companies are trying to mock-up their corporate network almost like a development play, or I used to have dev environments and production environments.  A cyber range is like that kind of thing but is used for cyber-security testing.</p>
+
+<p>JACK:	What does it look like?  âCause Iâm trying to picture it.  Do people go into a classroom and then thereâs a server in the middle of the room and thatâs where the range is and everyone tries to connect to it or is it all remote?</p>
+
+<p>MARCUS:	Our range was â the thing that we built was ridiculous.  We had a complete â we had a nice-sized network room.  Picture like, six or seven stacks of devices; Cisco devices, Windows servers, Linux servers.  Youâre talking about DNS, firewalls, IDSs, switches, routers, the whole complete corporate network, and we had physical gear back then.  Everything was physical and real devices.  In another room there was a classroom environment but it was networked to be into the â into this comp â into all this gear.  Why this was important is because it allowed the investigators to actually interact with real stuff.  They could come in and physically put a USB drive and collect information off of a server or they could go onto a CICSO switch and they could do a spam port on it.  A lot of cyber ranges now are virtual but this was a physical representation of a real corporate network, and it was dope.</p>
+
+<p>JACK:	So, him and another guy named Johnny Long set up this cyber range to teach federal agents how to react to cyber-security incidents more effectively.</p>
+
+<p>MARCUS:	We had complete network â corporate network set up.  Funny enough, I worked with Johnny Long at the time.  Johnny Long was my buddy.  Johnny Long would come up with scenarios where we had to attack, and the federal agents would have to find us on this network that we built.  Since Johnny was always gone a lot, I ended up taking over all of the offensive scenarios, and so I became the bad guy.  But these federal agents were like, forensics gurus.  Some of these â this was like, the capstone course and they were beasts at forensics and stuff.  Many of those people have gone to work for places like Mandiant and CrowdStrike and all that stuff.  It was like a CTF but I was playing against professional people that catch people â bad guys on their network.  It was pretty dope.  What happens is people donât know how to respond to an incident live on the fly.  Usually when incidents are happening, they happen way before time, but if you were to drop people in, how do they respond live on the fly?  Thatâs why we built this course.  Basically, you â we taught them how to collect live information.  We taught them how to set up a intrusion detection system on the fly, doing packet captures on the fly, setting up those SPAN ports.  It was like, super-intense, man.  It was dope.  It was like, an [00:30:00] immersive course.  They got a lot out of it.</p>
+
+<p>JACK:	Well, yeah, I mean, this is exactly what I picture when somebody goes into training at the NSA, right?  âCause if you say oh no, I just sat in a classroom and they taught me Pascal or something like that, thatâs kind of boring.  Youâre sitting at a terminal with a bunch of other people and you just work on your own little thing and whatever, but going into an entire organization like a full campus network and getting access to all these things and youâre running around, plugging USB drives in or SPAN ports and figuring things and putting collectors in â like, physically in the network to get off the SPAN ports and stuff, thatâs so much â yeah, like you said, itâs immersive and that sounds like the training I think everyone wants.</p>
+
+<p>MARCUS:	Yeah man, it was crazy, and they spent a lot of money on it.  Thatâs the thing about working with the DOD, bro; moneyâs not a problem.  We got to do pretty cool stuff like that man, and come up with different scenarios.  Dude, we had like live Chinese malware on that network, bro.  I was doing command and control for it.  It was real attacks.</p>
+
+<p>JACK:	Like zero-day malware I bet, too, like stuff never â no one knows about.</p>
+
+<p>MARCUS:	We would grab stuff off â we would grab stuff and put it on there and they had to figure it out.</p>
+
+<p>JACK:	[MUSIC] Marcus took what he learned at this place and started his own company creating threat scenarios and doing more cyber range and tabletop exercises.  He called it Threatcare.  But Threatcare was acquired by a larger company called ReliaQuest which is where Marcus works now.  But Marcus likes giving back to the community, so he wrote a book and itâs called Tribe of Hackers.  The book interviews a bunch of notable people in IT security and tries to distill meaningful advice from them.  When the book did well, he wrote another and then another, so now thereâs Tribe of Hackers Red Team Edition, Blue Team Edition, and Tribe of Hackers Security Leaders.  Iâll have links to all these books in the show notes.  I own three of them so far and I find these books super-informative to me for finding interesting guests for this show.</p>
+
+<p>MARCUS:	Yeah, so basically the first edition of that book, we happened to be able to give out a lot of donations to a lot of different organizations.  Rainforest Project did one of those things.  We also donated thousands of dollars to Hackathons for kids.  Just all kind of different organizations weâve been able to give money to from those books.  Also, we â I partnered with Wiley, we also raised additional money with the new books doing the Humble Bundle program.  So, we just â Iâm just continuously finding ways to try to give back to the community.  Whatâs cool about the first book; we gave it away â we gave away that book for free, too.  So, we had thousands and thousands of downloads from people that â they got that book, too.  It was definitely well-received and helped a lot of people.</p>
+
+<p>JACK:	On top of all that, Marcus has even written a childrenâs book about security.  Thereâs a lot of people out there that once they figure something out, theyâre afraid to teach others because they fear someone else will learn it and get better than them.  But Marcus is the opposite.  He knows that the more he teaches, the better he becomes.  I just love it when people out there are sharing all their skills and knowledge with anyone interested in learning.</p>
+
+<p>MARCUS:	Hereâs the deal, man; work hard.  I tell people, be so good that they canât ignore you.  Another thing that I find in life; if you self-train yourself, if you learn, the more you learn, the more people are gonna give you.</p>
+
+<p>JACK:	Oh, and of course, one of the people he teaches the most is his son who is also into technology.</p>
+
+<p>MARCUS:	Yeah, certainly.  This is the story about my son; itâs a funny story.  When he was eleven years old, he hated doing his homework.  So what I did is I â my son is super-spoiled, man.  My son had every iPhone that ever existed when he was growing up.  Heâs twenty-four now so heâs out of the house and heâs definitely doing well for himself.  But he had the first iPhone, he had a MacBook, the whole nine â when he was like, eleven.  Heâs used to jailbreak iPhones all day.  He was the jailbreak dude at school.  He didnât like doing homework so I was like hey, we can actually do code and your code can do your work.  So, we used to write the math formulas in Pearl, all the algorithms, and it would give him the answers, and we programmed it to give him the work too, so he could work out the work.</p>
+
+<p>He used to do â eleven years old, he was writing programs to do his math.  Fast forward ten years, like fifteen, sixteen, heâs like, I want to be a video â I want to make video games.  So, I was like alright, cool.  So, I did the front end UI stuff for him and he wrote all the back end code and Objective-C, and he did six iPhone apps.  He also wrote â this is crazy â [00:35:00] he wrote a Metasploit front end on the iPhone so you could connect to the Metasploit API and you control it from your iPhone.  This is when he was like, sixteen or something like that.  So, Rapid7 saw it.  I worked at Rapid7 at the time but they was like holy crap, this sixteen-year-old kid â he was my kid but he wrote it all himself and he could pop shells from his iPhone.</p>
+
+<p>JACK:	Rapid7 is a security company thatâs known for creating a vulnerability scanner and owns Metasploit which is a very popular hacking framework.</p>
+
+<p>MARCUS:	Rapid7, he started interning for them when he was sixteen and then he did another internship when he was seventeen.  He graduated high school at seventeen and then heâs like hey, I donât want to go to college.  Then Rapid7 gave him a full-time offer.  [MUSIC] Now heâs been working there for like, five years and heâs a software engineer.  Heâs got his own team.  Itâs nuts, bro.  Heâs a phenom and Rapid7âs lucky they got him.</p>
+
+<p>JACK:	The other guest we have on today is the wonderful Mr. Jeff Man.</p>
+
+<p>JEFF:	Iâm happy to start.  Do you want me to just ramble or do you want to just start with questions?</p>
+
+<p>JACK:	Yeah, I mean, Iâll just kind of lead you through where I want with the questions and then you can go from there.  Yeah, start right where you wanted to start.  How did you get into the NSA?</p>
+
+<p>JEFF:	Okay, so it all started when I was a small child.  [MUSIC] Iâve essentially been a hacker my whole life.  Iâve had the hacker mentality my whole life.  I wouldnât necessarily have called it that, butâ¦</p>
+
+<p>JACK:	So, you say you call yourself a hacker mentality.  Now, I think a lot of listeners might think oh, thatâs the hoodie and causing chaos at school and getting on the dark web and doing stuff.  Is that what you mean or itâs something else?</p>
+
+<p>JEFF:	Fair question.  When I say hacker mentality, I sort of equate a lot of critical thinking skills and a lot of curiosity about how things work and wanting to learn but not â but wanting to do it probably at a faster pace than the general population, the general classroom.  I remember being a child being bored in most of my classes because I either did the work really quickly or it was just boring to me.  I had already read up on the topic and knew what I wanted to know, and so I was a bored student most of the time.  Therefore, I looked for things to do to entertain myself.  It was nothing necessarily extremely malicious.  I was known as the class clown or the class cut-up.</p>
+
+<p>JACK:	His dad was a physicist; worked for the DOD.</p>
+
+<p>JEFF:	He was in the Pacific on a ship and got to witness the detonation of the first hydrogen bomb.  I went through college, look â and I went through five majors when I went to college and I was basically looking for the major where I had to do the least amount of book work.</p>
+
+<p>JACK:	He ended up graduating with a business major.</p>
+
+<p>JEFF:	I was working for a naval organization, Naval Surface Warfare Center because my mom was in HR there and she was able to get me a job, so it was a low-level clerk typist-type position.  It was a way to earn some money while I was looking for what I wanted to do with my life.  She had a friend within HR whose daughter, I think, had gotten a job at NSA.  This was in the mid-80s now.  She thought well, you should apply.  I was born and raised in Maryland which is where NSA is located, Fort Meade, Maryland.  I had never heard of NSA.  Back in the day, NSA was no such agency.  It was a super-big ultra-secret that the organization even existed; unmarked, fenced buildings off the bottom where Washington [00:40:00] Parkway in central Maryland, a little bit between Baltimore and DC.  Filled out the government application, sent it in, and heard back from them and they eventually invited me up to take a couple days worth of various aptitude and skills qualification tests.  At the end of the day, I scored well enough that they offered me a job.  What was weird at the time â and I still think itâs kind of weird â was they kinda hired me because I had potential.  I didnât actually have a job when I went to work for NSA.</p>
+
+<p>JACK:	Right, so Jeff started working at the NSA in the fall of 1986.  Oh, how different the world of technology was in 1986.  To actually start working at the NSA, he had to pass a fairly rigorous background check.</p>
+
+<p>JEFF:	They focus on several different areas.  They want to know where you lived in the past ten or fifteen years, you had to list neighbors of all the different places you lived, friends, people you had contact with, social and beyond, which when youâre a young kid is pretty much your whole life. They asked all sorts of questions about your political affiliations, your political leanings.  They were trying to find out things about you that had been used against people in terms of blackmail or were motivations of people that they had encountered that had basically â basically had committed espionage and become traitors.  Lifestyle questions back in the day; if you happened to be a homosexual or have some sort of alternative lifestyle.  It wasnât so much an issue they wouldnât hire you if you were like that; they just wanted to know about it so that somebody couldnât blackmail you into giving away secrets because somebody had, and that had happened.  They wanted to know about your financial records so that you werenât â they wanted to know if you had a gambling problem and had huge debts which would be, again, a way that somebody could motivate you to steal secrets and they could pay things off, or theyâre the people that you became indebted to, and that was your way of repaying.</p>
+
+<p>JACK:	This process took weeks since they needed to visit all his neighbors and friends to see if all this information he gave them checked out.  So, while heâs waiting for his clearance, he tries to figure out what heâs gonna do at the NSA, so he starts shopping around, looking for a job there, meeting people at the NSA to learn what they did.</p>
+
+<p>JEFF:	Going out on these essentially job interviews that were really more like â as it turned out, it wasnât so much a job interview as a sales pitch of oh, we want you to come work for us.  One of the first interviews that I went on happened to be on the defensive side of the house.  Back in those days, NSA was operations which is what most people know NSA for; intercepting communications, stealing all the secrets of the rest of the world, our enemies.  Then there was also the defensive side which was called information security or InfoSec.  I happened to â my first interview was on the InfoSec side.  It was an office that was responsible for manual or paper crypto-systems.  They were looking for someone to do a cryptologic, cryptographic review of all the manual paper crypto-systems that were currently deployed.</p>
+
+<p>JACK:	They needed a cryptographer and nobody at the NSA seemed to want to step into that role and help that particular office out.</p>
+
+<p>JEFF:	They thought well, the next best thing is letâs grow one, so letâs hire somebody off the street.  We can go to the pool of people that are out there and train somebody up and train them to be a cryptographer and then have them do the review.</p>
+
+<p>JACK:	So, he took the job as a cryptographer.</p>
+
+<p>JEFF:	[MUSIC] So, I ended up going to work in InfoSec and working for what was known as the Manual Cryptosystems Branch.  My job was to do cryptographic reviews of the systems that were being used at the time.</p>
+
+<p>JACK:	At this point, he had to learn what cryptography was and get good at it.</p>
+
+<p>JEFF:	NSA ran its own cryptologic school.  They had 100, 200, 300, 400 courses, dozens of courses that you would take on various aspects of cryptography.  I basically went back to school and took a lot of these training courses.  What was interesting was I was learning a lot of classic manual cryptography on â back to the Ancient Greeks and Romans and how all the cryptosystems were used over time and how they evolved and all that type of thing.</p>
+
+<p>JACK:	Which was perfect because this was the same stuff he was tasked with reviewing as a cryptologist.  One of the things he learned about is what a one-time pad is.</p>
+
+<p>JEFF:	A one-time pad is â the name [00:45:00] implies itâs a pad of paper usually forty, fifty pages, and on each page there is printed-out random characters.  But it was essentially a key and the very basic form of encryption is you take your message, what we would call plain text; you would write that message out one letter at a time over or above the letters that were printed on the pad.  So, you have plain text and you have the key pre-printed.  You would go through some sort of cryptographic algorithm to produce a third letter which was the message, the encrypted message, or what we called the cipher.  Quite simply, the way a one-time pad works is itâs â you use some sort of substitution algorithm to produce that third character thatâs reversible.  The beauty of it is that if â thereâs obviously two copies of the pad but if those copy â if those pads are kept secret and nobody can see them and nobody steals them, there is no cryptographic solution if you intercept the cipher.  You can collect it all day.  Thereâs no way to break the underlying key because itâs random and therefore, thereâs no way to break back what the actual message is.  Itâs called a one-time pad because you use the key one time.  You write a message down on a page or two pages if it takes two pages, and as soon as you do the ciphering and transmit it, you destroy the pages.</p>
+
+<p>JACK:	These one-time pads were often used by spies like when a handler needed to talk to an asset, they would encrypt messages by hand using this method.  Then the receiver would have to spend a while decrypting the message.  But a lot of the time, spies didnât want to lug around big pads of paper, so they shrunk the one-time pad down to like, an inch or two wide so it can be transported in a shoe or rolled up into a pen.  In fact, some of them were printed on rice paper because you needed to destroy the pad after you used it and some spies would destroy it by chewing it up and swallowing it.</p>
+
+<p>JEFF:	But there was a run one time, a production run made one time of a set of one-time pads where they printed them on rice paper but for some reason, they didnât take into account what type of ink that they were using, and they used some â I donât know if they got a deal on some different kind of ink, but the ink that they ended up using was toxic, so our loyal spies that were sharing secrets with us in the field were getting sick.</p>
+
+<p>JACK:	Now that he was getting up-to-date on all this cryptography, it was time for him to start using it on the job.</p>
+
+<p>JEFF:	[MUSIC] My first assignment was â we were approached by Iâll just say a customer generically that was working with people in the field, and they were having these people report back to him on a rather regular basis; reporting information, data, secrets, things that they were observing.  They were lamenting that it sometimes took them hours to do the decryption of these messages that were being sent to them and they asked the question; weâve got this new-fangled IBM PC on our desk.  Is there any way that we could do this encryption and decryption on the computer and just speed things up?  My naivety, because I wasnât experienced in the workings of NSA and in particular the InfoSec organization, I thought yeah, that seems reasonable.  Why not?  So, I set out to try to figure out how to get a computer program written that could be performed on the PC and then how to get the one-time paper pad into the PC which the option available at the time was on a floppy disc.</p>
+
+<p>JACK:	Now, remember, this is 1987 at this point.  Windows wasnât a thing yet, so everything he was doing was on the command line.  Did you understand software or programming or anything at the time?</p>
+
+<p>JEFF:	No, not really, and what I set out to do was I went and started asking questions about all the different groups within InfoSec of how do you do this?  âCause InfoSec had a production facility that would actually print these one-time pads.  We had an office that would generate the key and that they had a way of generating a random key that could be used to put on the one-time pads, and there was other uses for keys.  There was a lot of machine-based cryptographic systems available that was much more prevalent at the time.  I kinda set out to â well, how do you do this?  How do we design something and produce something?  That certainly wasnât something that was ordinarily done within the manual cryptosystems shop.  But we had to design something and [00:50:00] howâs it gonna work?  We need to have a computer program and the program needs to be written securely.  If weâre gonna put the key on the floppy disc, how do we emulate pages of key?  Especially, how do we emulate the destruction of a page of key?</p>
+
+<p>JACK:	At some point Jeff starts to think surely thereâs gotta be a standard in the NSA for how to secure software like this.  Like, if youâre transporting keys on a floppy, what encryption do you use and so on?  So, he looked around for such a standard and he found one.  It described how to secure a cryptographic device.</p>
+
+<p>JEFF:	This is where it started getting interesting because it was written for hardware.  There was no concept of doing anything cryptographic in terms of software back in the late 80s.  I say this, Iâm in contact with a fellow alumni from the InfoSec organization and people that were there years before I was, and Iâve asked.  To the best that I have been able to figure out, what we ended up producing which was half paper pad, half key on a floppy, and a computer program that would do the encryption and decryption.  That was the first foray into software-based cryptography that NSA produced.</p>
+
+<p>JACK:	[MUSIC] Now, hold on, it wasnât that easy.  Any cryptographic-based hardware that was made had a strict review process.  So, he had to submit this software to a few departments to get it approved for use in the field.  They had some push-back and questions on this software.</p>
+
+<p>JEFF:	So, I had to go through several iterations of presenting to senior management.  They gave me the initial blessing, came back; hereâs all the security concerns.  Go address them.  I came back, addressed them.  They ultimately said alright, weâll let you do it but donât do this again.</p>
+
+<p>JACK:	Like most government agencies, the NSA was resistant to change.  They werenât entirely sure if this new-fangled computer thing was the direction they wanted to go in yet.  Thatâs why they were hesitant with this whole thing.</p>
+
+<p>JEFF:	We produced what to my knowledge, the best Iâve been able to figure out, the first software-based system that NSA produced.  Now, years later, Iâm a hacker.  Iâve done all the hacking pen testing things.  I look back and say I hacked NSA.  I did something that wasnât supposed to be able to be done.  I didnât take no for an answer.  I figured out a way to hack the system, hack the process, and I got through it.  Not saying I would have been successful at any other time and certainly wouldnât have recommended this solution in a networking world, but for the time, it worked and it was revolutionary in terms of being the first foray into software.</p>
+
+<p>My career at NSA was roughly three different tours of duty as â or three different assignments; this initial assignment where I did the work with the manual cryptosystems, produced the first software-based manual cryptosystem.  That ended and I became a cryptanalysis intern.  The intern programs were special programs that were designed to get you the training, the diversity of experience, and higher education to advance you to higher levels of your career field.  In this case, cryptanalysis.  What it meant was essentially that I jumped from InfoSec over to the operation side.  Then I was actually on Fort Meade and a couple of my six-month tours as an intern were in one or more of those â thereâs actually two of those big, black buildings beyond the four-storey structure.  I was all over that which most â if youâve seen the aerial photos of NSA, I was in those buildings.</p>
+
+<p>JACK:	So, he went to work in another department and that department was in the middle of looking for how you can crack encryption or exploit systems if they werenât using best practices and securing their stuff properly.  For instance, remember that one-time pad and how each page of the pad was only good once and then you had to use a different piece of paper for the next message?  Well, suppose someone doesnât do that.  Suppose they used the same pad over and over.  Does that make it weaker?</p>
+
+<p>JEFF:	People were doing exactly that.  They would take a one-time pad sheet of key and they would use it for thirty days.  We could amass dozens or hundreds of messages that we knew had the same key on the bottom and you can cryptographically break that and figure out what the message is.  Or if it was any kind of machine system of cryptographic radio or transmitting device, thereâs things that you can do to bypass the security or shortcuts to get the message through that you think youâre doing it in a secure manner but sometimes [00:55:00] youâre not.  So, somebody figured out â some group figured out, okay, if the bad guys or the adversaries, the rest of the world doesnât use the crypto correctly and weâre producing all the crypto that the US uses, the DOD and everything US-related, and we produce the best crypto in the world and itâs tested and tires were kicked on it and everything and it has to be rated to be secure for however long it needs to be keeping the data secure, how do we know that our people that are in the field are using it the way that itâs been designed in the lab and the pristine condition?</p>
+
+<p>JACK:	Itâs a great question to ask.  If the NSA can crack codes because someone isnât using best practices in security, is the NSA guilty of not following those best practices themselves?  [MUSIC] So, his task was to go around and look at servers and computers in the NSA to make sure the NSA itself was secure.</p>
+
+<p>JEFF:	To make sure not so much that they were designed correctly.  That was sort of assumed.  That was a given, but that they were being used correctly, that they were being implemented correctly.</p>
+
+<p>JACK:	Jeff was there in the NSA in 1993 and whatâs so important about â93?  Well, thatâs when the first web browser was created, called Mosaic.  This is where the web and HTML sprang out from.  Once they saw people were using this more commonly, this gave them a new idea.</p>
+
+<p>JEFF:	Thatâs when the focus within this office for a small group of us started to be hey, why donât we start doing that hacking thing that weâve seen in the movies and start doing that and start coming up with a methodology of looking into how do you break into networks and computers, this whole internet security thing?  Thatâs what I and a small group of us gravitated to within this office.</p>
+
+<p>JACK:	When browsers reshaped how the internet looks and feels, it brought tremendous growth to the internet which caused a sea change at the NSA.  In fact, around this time, the US created the fifth domain of warfare.  Historically, they had land, sea, air, and space, but in 1995, they added cyber-space as a domain of warfare and Jeff was right there at the dawn of when the NSA really started the internet hacking that it does today.</p>
+
+<p>JEFF:	Yeah, all the really smart people, the suits, as I and many of us used to call them, they got together and decided to reorganize.  So, they set up what became known as the System and Network Attack Center.  It was built to be the â again, we didnât use the term âcyberâ but it was supposed to be a center of excellence for everything computer and network security-related.  Essentially, a lot of the InfoSec side of the world was a research organization because we were designing and building things.  They set it up like that.  There was a design and a research arm and a couple other variations of the theme.  One group was supposed to look at networks.  One group was supposed to look at operating systems.  The intent was to do a lot of research, dig into them, and produce standards and guides on how to secure them.</p>
+
+<p>JACK:	Jeff and the people in his team really wanted to embody the hacker culture within the NSA and learn how to break into systems remotely over the internet and stuff.</p>
+
+<p>JEFF:	This small group of guys that had gotten together originally in this branch that was focused on fielded systems, we got swept into this reorganization and moved to a different building.  We were moved off Fort Meade to one of the satellite locations and we were given our own office.  We were given license to keep doing what we were doing.  Everybody was happy with it although they didnât necessarily understand it.  [MUSIC] But we were testing the security mostly of NSA networks and domains within the NSA proper as well as other DOD customers, letâs just say.  Things were bopping along nicely.</p>
+
+<p>JACK:	Okay, this sounds like a good place to start; learn how to hack stuff, then test your hacking ability on the NSA itself.</p>
+
+<p>JEFF:	We nicknamed our office The Pit.  We referred to our little hacker hang-out, as it were although again, we didnât call it that at the time but thatâs essentially what it was.  We called that The Pit.  We decided we wanted to have our space and give it an identity and some â one of the members of the group said well, we should give it a name.  A popular show at the time was a show called MASH.  The irreverent doctors in the show MASH, their tent that they lived in, they called The Swamp.  So, they said well, letâs do something along those lines like The Swamp.  We didnât want to call it The Swamp âcause that had been used.  Somebody came up with Pit and it stuck.  So, within our little office which we came to [01:00:00] call The Pit, we had to get special permission to get a little mini-fridge installed in it and we filled it up with Mountain Dew.  That was the beverage of choice for the hacker culture in the early-to-mid 90s. Initially there was four of us in terms of our background.  I was the business major so I sort of gravitated towards the business side of things; finding customers to do this.  I think most if not all the other guys were computer scientists in terms of their academic training.</p>
+
+<p>JACK:	This Pit as they called it was part of SNAC, the System Network and Attack Center, and they were certainly participating in the attacking part of that.  They were learning how hackers operated by reading hacker magazines and forums, and they would try these attacks out on some practice computers.  They were also doing their own research and generating their own exploits.</p>
+
+<p>JEFF:	Back in those days, we werenât relying as much on â in fact, we didnât even have the term yet zero-days or 0-days.  We were basically learning how the operating systems worked and learning about all the hidden or undocumented features of the operating systems at the time that could get you root privileges.  We were learning a lot of the tricks and the trades.  Now, there were some exploitation-types of things.  Some of the â and again, this is where I like to caveat these are the types of things that were done at the time.  Iâm not saying that we necessarily did any of these.  Use your imagination.  But again, everything that we did against the classified system was labeled classified, so technically if I tell you that I was doing something to a classified system, I would be sharing secrets.  With that caveat, what was commonly done back then to break into UNIX systems and UNIX networks was â there was password-guessingâ¦</p>
+
+<p>JACK:	Ah, yeah; according to Rapid7, the oldest vulnerability discovered in 1970 were computers using the username admin and the password admin.  I think itâs really embarrassing that forty years later we still battle with the same vulnerability.</p>
+
+<p>JEFF:	Everybody was getting on â getting a UNIX workstation and getting a network credential.  Not everybody wanted to get on that new-fangled computer so very often everybody was set up with accounts but they hadnât actually been used yet.  The way that they were typically set up was everybody would get an account.  But until you logged into it, you wouldnât set a password, so there would be idle accounts that were just sitting out there.  If you could identify the username, guess the user ID, you could get in without a password and set it and it would become your account.  Back in those days, the password hashes were in ETSI password files or world readable, so you could just copy them and run crack programs like Crack or John the Ripper.</p>
+
+<p>JACK:	Jeff and the team in The Pit were doing internal penetration testing, red teaming.  But at the time, these sort of terms just didnât exist yet.  Itâs typical that when youâre in government and youâre helping other government offices, you call them your customer.  They would find a target which was just another office or department, and thatâs their customer.</p>
+
+<p>JEFF:	If we wanted to do an attack, we had a target, we had a customer and letâs say it was an internal customer, we had to get permission to do what we wanted to do.  In order to get that permission, we had to get management sign-off.  It had to go up our management chain, across the executive suite, and down the management chain of our potential target or customer.  Because it was getting physical signatures or initials on a document from ten or twelve or fifteen people sometimes, that could take weeks or months.  It was frustrating because being able to break into a network, being able to break into a computer, you kinda know what you want to do.  You know whatâs gonna work.  You think you know whatâs â youâre ready to do it and sort of develop the methodology which was required in this form without actually executing the methodology, so you sort of get right up to the edge and then get told to stand down for a month until you get permission to do it.  That wasnât cutting it with us.</p>
+
+<p>JACK:	Yeah, Iâve heard this from other hackers in the NSA too, that they have a target they want to hack but first they have to get approvals for what theyâll do.  They donât know exactly what exploits theyâll use until they get inside that network to see what they have.  Itâs still a problem today in the NSA, actually, and the only way theyâve been able to solve this is to do as much open-source intelligence-gathering on your target as you can to know what to expect once you get in there so that you can get approvals for your mission.</p>
+
+<p>JEFF:	Weâd try to learn as much as we could about the target from a benign perspective; what kind of informationâs out there?  Who are the people involved?  Can we identify what their user IDâs naming convention is so we can start to guess account names?  What can we learn about the people; their interests, their hobbies, [01:05:00] their birthdays and anniversaries and petsâ names and kidsâ names, because these are all very probably password possibilities when we were just trying to guess passwords.  We would do that sort of open-reconnaissance which was very rudimentary back in â we didnât have Google back then.  We didnât have LinkedIn.  We didnât have all this stuff that is so readily available like it is today.  But there were ways.</p>
+
+<p>JACK:	It sounds to me that Jeff helped start the very first red team in the NSA which is quite remarkable seeing what the NSA has become.  Now, this term âred teamâ, it actually comes from the military.  The red team was someone who acts like an adversary to test your defenses.  They think like the bad guys and the blue team is someone who defends against red team attacks.</p>
+
+<p>JEFF:	A couple years ago, a book was published called Dark Territory by a gentleman named Fred Kaplan.  In that book, in the fourth chapter which is entitled Eligible Receiver, there is a paragraph that talks about NSAâs super-secret red team â was called The Pit.  Now, none of us that were the original members of The Pit have any idea how the folklore grew to the point where it was included in this book but when one of us got a copy of the book and read it, we all got very excited.  Itâs like hey, weâre all in a book.  So, apparently what we did in the early days in our office called The Pit came to be known as the NSA red team in The Pit.</p>
+
+<p>JACK:	They were doing pretty good, making a good name for themselves in The Pit and helping out a lot of customers.  But everything they had worked on so far was attacking and securing classified networks.  But that was about to change when the DOJ heard about them.</p>
+
+<p>JEFF:	âCause the Department of Justice had heard that NSA had this crack team of hackers, pen testers that would test the security of networks and they wanted to have that, too.  When I first found out about that, I had to go to the lawyers and say can we do that?  We went to the lawyers, or the lawyers got wind of the fact that an unclassified network organization was asking us to do the work and weâre like sure, theyâre a customer.  Letâs do it.  The lawyerâs like well, hold on a minute.  The general council said let us educate you a little bit on how things work here.</p>
+
+<p>JACK:	The lawyers explained to him that while the NSA is responsible for protecting classified networks, another department, NIST, is responsible for protecting unclassified networks.  Itâs not the NSAâs jurisdiction to help the DOJ in this situation since they wanted Jeff to test their public-facing website.</p>
+
+<p>JEFF:	While NIST was responsible for unclassified networks, it was fairly well-acknowledged back in those days that they had no capability and this is all Iâm learning from the general council.  What effectively happened was sort of a nod and a wink, handshake agreement where NIST would be responsible but they would very quietly sort of pass it back to NSA to actually do the work.  [MUSIC] When we were first approached by people in the DOJ saying we want you to come do your thing â went to the general council and they said well, thereâs a way that you have to do this and you sort of have to just follow the rules, so we proceeded â I proceeded to start following the rules.  The first thing they said was well, this is sort of â this sort of has to be a cabinet-level favor thatâs being asked by one cabinet member to another, so the request to do this work has to come from the attorney general to the Secretary of Defense.</p>
+
+<p>I worked with the DOJ people to generate a letter that was ultimately written by â signed by the attorney general who at the time was Janet Reno asking NSA to do that thing, that vulnerability threat assessment thing that you guys do, weâd like you to do it to this particular internet-facing public-facing aspect of the DOJ.  That took a little while to get going.  The director of NSA had to respond officially back saying yes, we would be happy to do that for you, that letter going back to the attorney general.  It was like a three-month process and in all of this negotiation, we were down to the letter had been actually drafted, signed by the director of NSA who at the time was General Minihan â he was an Air Force general â who, his previous tour of duty had actually been down at AFWIC, so he came to us from AFWIC.  Right before the letter could be delivered, I came in on a Monday morning and I had a call â I got a call from my point of contact at the Department of Justice [01:10:00] saying help, our website was hacked over the weekend.</p>
+
+<p>JACK:	Oh, wow, the very website that Jeff was supposed to run a security assessment on had been hacked.  But Jeff didnât have all the approvals yet to help out the DOJ, so he just couldnât do much.  But Jeff asked for more details and what happened became actually pretty big news.  On August 16th, 1996, a hacker broke into one of the DOJâs websites and replaced the picture of Janet Reno who was the attorney general with a picture of Adolf Hitler.  They changed the name of the website to Department of Injustice and replaced the seal with a Nazi flag.  Lucky for them it was a somewhat benign defacement attack and didnât go much further than that.</p>
+
+<p>JEFF:	It was the first hack of any government installation facility website.  It was the first time the government had been publicly hacked, compromised.  Everybody was paranoid about it, everybody was very reactionary; crap, we gotta do something.  It became very public very quickly.</p>
+
+<p>JACK:	I find this ironic because just before this, Janet Reno approved Jeffâs team to pen test that website, and now her picture is what got defaced.  But the DOJ still wanted the team in The Pit to come help and take a look.</p>
+
+<p>JEFF:	I said well, let me see what I can do.  [MUSIC] Knowing that ordinarily to engage them is a three-month process, I hung up with them, I got on the phone with the general councilâs office and I said this is whatâs happened.  Weâre this close to being legal, engaging with them anyway.  The last letter has been signed.  It just hasnât been delivered yet.  What do I have to do to get a team onsite tomorrow to help them out?  They talked about it and they got back to me and said well, have them make the request in writing.  Get it written down.  So, I ended up having them do that and they said donât go on your own.  Make sure that itâs a group and have your management send you.  Donât go on your own authority.  Have somebody tell you go ahead and go, somebody in the management chain.  I was like okay, thatâs easy.  So, I followed all those steps and I assembled a team.  Three or four of us went down to the DOJ office in Washington, DC and we were there Tuesday, we were there Wednesday.  Thursday morning weâre down there for the third day and I get a phone call from somebody that was still back at The Pit.</p>
+
+<p>They said dude, the shitâs hit the fan.  You guys gotta drop what youâre doing and come back now.  I was like, okay.  So, we did.  So, it took us a couple hours to get back to the office.  When we got back to the office, we were escorted into the executive conference room for the deputy director of InfoSec and waiting for us there was the same general council, the same lawyer that I had been working with for the last several months.  Heâs an Irish guy and he was mad.  He was red in the face and he was reading us the Riot Act about how what we had done was illegal.  Didnât we know that it was illegal?  Didnât we know that we could not only get the director fired but possibly go to jail?  Donât you know that you could go to jail?  For the first time in my life, I was introduced to what was known as the Church Proceedings.  He asked us havenât you ever heard of the Church Proceedings?  Of course, no, I hadnât heard of the Church Proceeding.</p>
+
+<p>JACK:	So, he had to learn that in 1975, there was a senate sub-committee led by Idaho Senator Frank Church to review whether any of the intelligence agencies had abused their powers and what it would look like if they did overreach and abuse their power.</p>
+
+<p>JEFF:	The essence of the findings was these organizations have a lot of power and a lot of capability and a lot of potential.  But they donât have much oversight officially.  How do we know that theyâre benevolent and gonna do all the things that they do to the bad guys and not US citizens?  One of the outcomes of the Church Proceedings was what came to be known as the NSA Charter which is a classified document, but it essentially says that NSA can only do what NSA does to foreign nationals.  Anybody other than US citizens and NSA may explicitly not do what NSA does to US citizens.  Well, you can imagine that in terms of ethical hacking, white hat hacking, breaking into US â whatâs effectively US systems and networks sort of flies in the face of the NSA Charter.  Now, we had never really confronted that explicitly in [01:15:00] all the negotiations with the lawyers for the months or years that we were working with them to do our vulnerability and threat assessments, but they certainly had it in mind.  It just came to a head when, for whatever reason, somebody decided that we had not followed the right procedures to go down and help the DOJ out with their forensic exercise.  It was a big deal.  Well, at the time we didnât think it was a big deal.  We thought it was overblown but because I was sort of the project leader, I was the one that was thrown under the bus.  I was put on probation.  My clearance was pulled.</p>
+
+<p>JACK:	The NSA did an investigation on Jeff and they called him back into the office for a chat with the director.  New rules were laid down which the people in The Pit had to follow from then on.  But this whole incident just took the wind out of the sails for the people in The Pit.  Their energy and passion was sapped, including Jeffâs.  At this point, Jeff was with the NSA for twelve years and he had built up quite a lot of skills there, even getting his Bachelorâs degree in Computer Science.  So, he looked at the private sector for jobs and sure enough, jobs for him were available and paying a lot more.  So, he quit the NSA shortly after this incident and after that, three more people from The Pit quit, too.</p>
+
+<p>JEFF:	Then I started a week later that I think initially was a 50% pay increase.  From a strictly economics perspective, it wasnât a difficult decision to make.  But if things hadnât have gone south like that â a lot of people asked me why do people work at NSA?  Itâs like, because they really are patriots and they really are loyalists and they really believe in the mission.  I probably would have been in that boat, too.  I probably would have stuck it out and stayed there and enjoyed whatever notoriety which certainly I wasnât seeking, whatever professional career success, I would have stayed there.</p>
+
+<p>JACK:	[MUSIC] The following year, in 1997, the NSA launched Operation Eligible Receiver.  This was a no-notice training attack that the NSA would simulate on the US government and military.  They were actively conducting DDoS attacks and using open-source intelligence to figure out ways to infiltrate different military bases and networks.  The NSA had built a red team and were hacking into the US government networks.  I found an old video of a Navy captain who worked at the NSA and was part of this exercise.</p>
+
+<p>CAPTAIN1:	Planning for Eligible Receiver at the National Security Agency began in 1996.  A small handful of people who were appropriately cleared into the program at that time began laying the groundwork for the IW campaign in support of JCS objectives.</p>
+
+<p>JACK:	Jeff quit the NSA in â96 and believes that guy was taking notes from the team in The Pit.</p>
+
+<p>JEFF:	Iâm like, I remember when they used to visit us all the time and a very congenial fellow â and he always had a clipboard and he always was asking lots of questions and taking lots of notes.  Putting two and two together, looking back on it, Iâm like damnit, he was asking us questions because he was working on putting together Eligible Receiver.  But we were not ever planned to be part of Eligible Receiver âcause they didnât want to put the A-team out on the job.  They were recruiting people and training people up to be lower-level hackers, what they referred to as the B-team, to actually execute the exercise.  Yeah, so yes, I was involved.  I didnât know it at the time.</p>
+
+<p>JACK:	Eligible Receiver, this exercise that the NSA was doing to hack into the US government, wanted to use the B-team âcause they didnât want the best, most elite hackers trying this.  Those people were busy, anyway.  They wanted a little less-sophisticated team to try this and all with off-the-shelf tools, nothing super-advanced.</p>
+
+<p>CAPTAIN1:	We were faced with a very interesting situation.  That is, there was a no-notice exercise that had not even been announced yet that it was coming.  Yet, we were required to do reconnaissance of both the MILNET and the SIPRNet ahead of time to be able to characterize our attack for approval.  This required us to actually conduct reconnaissance in such a way that we looked as if we were real to the outside world.  This was done with commercial internet service providers and it was from those providers that we touched military sites in the Navy and in the Air Force and so on in order to gain our information, to do our open-source research, to do our web-surfing on the internet and move off from there.</p>
+
+<p>CAPTAIN2:	How we went about doing the reconnaissance was we looked for access points, ways to get into the DII or the .mil domain, better known as [01:20:00] MILNET or NIPRNet.  We needed to get inâ¦</p>
+
+<p>JACK:	Chunks of this video are just redacted but it became clear that the US military wasnât securing their networks as good as they should have been.</p>
+
+<p>JEFF:	They were allowing fourteen days.  They had to call it off after like, two or three days because somebody on a naval vessel noticed something weird going on with the network and they pulled the alarm which started kicking in the whole Defcon escalation thing.  They wanted to stop it before real shots were fired.</p>
+
+<p>CAPTAIN1:	The most important lesson that we learned on the red team, given how we approached the US as a target; on open-source alone, no insider information, is that we know quite clearly how to take the DII down and how to attack the United States in an information warfare campaign.</p>
+
+<p>JACK:	Wow, that is scary stuff.  To think that a B-team of hackers with off-the-shelf tools using commercial gear and conducting open-source reconnaissance was able to successfully access so much stuff.  Well, Iâm glad this exercise was conducted to help secure the whole network but again, I feel like Jeff and his team in The Pit was who created the original red team at the NSA, a rag-tag group of six hackers all hopped up on Mountain Dew.  It seems like if that team didnât exist, then Operation Eligible Receiver may not have happened or would have happened years later.  This also speaks to the importance of conducting red team assessments.  If you need to protect important data or valuable assets in your network, itâs probably a good idea to hire an ethical hacker to see if they can get into your stuff.  Hey, if itâs what the NSA has been doing since the 90s, itâs probably good enough for your company to do, too.  Itâs not impossible to defend against cyber-attacks.  Often itâs just a couple misconfigurations that can easily be fixed.  Itâs good to run a self-check sometimes.  I have one more conspiracy question at the end, here.</p>
+
+<p>JEFF:	Iâll try.</p>
+
+<p>JACK:	Bitcoin uses SHA-256 as its private public key mechanism thing.  SHA-256 was made by the NSA.  Does this mean the NSA has a backdoor into all Bitcoin wallets?</p>
+
+<p>JEFF:	Well, as a cryptographer, I happened to be NSA-trained.  If I knew the answer, I couldnât tell you.  My opinion is all the descriptions of backdoors or all the conspiracy theories that Iâve heard about backdoors are essentially â depending on how you define backdoor, I donât see having a master key is a backdoor but call it that if itâs what you will.  I donât know how you would do that with a hashing algorithm.  I suppose itâs possible so Iâm gonna say no, I donât think so, is my â thatâs my final answer.</p>
+
+<p>(OUTRO):	[OUTRO MUSIC] A big thank you to Marcus J. Carey and Jeff Man, two excellent people who work hard at giving back to the community and making us all better.  Iâll have links to both of their stuff in the show notes, but you can check out Marcusâ book.  The title is Tribe of Hackers.  Again, that book has brought value to me by helping me find guests for this show, so thank you Marcus.  Youâve helped make this show better in some ways.  If you want to hear more stories from Jeff, tune into the podcast Paulâs Security Weekly which is a podcast that goes into security news every week.  Itâs a great show that has lots of really cool, amazing guests too, and Iâve enjoyed many episodes of it.  If you want to hear more about the NSA, Iâve made quite a few other episodes about this, interviewing people from there, even.</p>
+
+<p>Check out Episode 53 called Shadowbrokers, Episode 50 called Operation Glowing Symphony, or Episode 29, Stuxnet.  Not many of you stick around this far into the episode.  I watch the stats.  I know how many of you have dropped off by now.  But if youâre the type of person whoâs still here with me, I can tell you really like this show and want more of it.  The best way to help support the show is to donate to it through Patreon.  This helps keep the mic powered up and the .wav files flowing.  Please consider donating at patreon.com/darknetdiaries.  Thank you.  This show is made by me, the irate monk, Jack Rhysider.  Editing help this episode by cottonmouth Damienne, and our theme music is by the howler monkey Breakmaster Cylinder.  Even though I donât back up my data because I know the NSA does it for me, this is Darknet Diaries.</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

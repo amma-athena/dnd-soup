@@ -1,0 +1,429 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>Strictly Confidential â Darknet Diaries</title>
+	<meta name="description" content="What happens when an innovative tech company, that's trying to develop the next big thing, detects a hacker in their network? We hear the story from a digital forensics investigator which has a sur...">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Strictly Confidential â Darknet Diaries">  
+	<meta name="twitter:description" content="What happens when an innovative tech company, that's trying to develop the next big thing, detects a hacker in their network? We hear the story from a digital forensics investigator which has a sur...">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/buyout.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/11/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Strictly Confidential â Darknet Diaries" />
+	<meta property="og:description"        content="What happens when an innovative tech company, that's trying to develop the next big thing, detects a hacker in their network? We hear the story from a digital forensics investigator which has a surprising result." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/buyout.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/11/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/buyout.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/11/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="Strictly Confidential â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/buyout.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 11: Strictly Confidential</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://traffic.megaphone.fm/ADV9140175464.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/11/",
+			   "title": "Ep 11: Strictly Confidential"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/11">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[FULL TRANSCRIPT]</p>
+
+<p>JACK:	Today weâre talking with Andrew.</p>
+
+<p>ANDREW:	Iâm a District Forensics and Incident Response Consultant.</p>
+
+<p>JACK:	Andrew works on a team that does incident response.  Once malware is detected on the network itâs up to him to go in, study the malware, and remove it.  Andrew, do you like doing this kind of work?
+<!--more--></p>
+
+<p>ANDREW:	I love it.  Itâs wonderful.  Itâs very exciting work.  There are many positions where you can be working on a clientâs system and actually â the threat act is on there at the same time as you, trying to move files around.  You are trained to thwart them in a toe-to-toe scenario.  It can be very exciting.  It can be very exciting.</p>
+
+<p>JACK (INTRO):	[INTRO MUSIC] This is Darknet Diaries, true stories from the dark side of the internet.  Iâm Jack Rhysider.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	Andrew works for a security assessment and digital forensics company.  Other companies hire his team to come in and do security work.  Itâs actually pretty common for a company to outsource their security team to someone else.  Itâs expensive and hard to maintain an internal group of security experts.  Andrew is often seen travelling around, taking care of threats in his clientsâ networks.  He wants to share an interesting story with us today about the time he faced a hacker in a company that develops cutting-edge technology.</p>
+
+<p>ANDREW:	The client is a global firm; itâs a technology firm.  We were looking at â we had to go on-site in their European â one of their European bases to work with a team there.</p>
+
+<p>JACK:	We wonât give the name of the company but this company in particular spends a lot of time and money developing new technology.  They have a full R&amp;D department and is working on cutting-edge tech.  In fact, theyâre developing tech that no other company is developing, so one of their most precious assets is intellectual property, or otherwise known as IP.  The company wants to make sure there arenât any hackers stealing this information.</p>
+
+<p>ANDREW:	It started off as a compromise assessment.</p>
+
+<p>JACK:	Sometimes companies hire a security team to examine the network to see if thereâs any evidence that a hacker is in the network.</p>
+
+<p>ANDREW:	They wanted us to go in, put some stuff in their network.  We put some stuff on their end-points, just have a look around, used the intel that weâd already built up in the team during the engagements that weâd done previously.  Just basically have a look around and see what came out.</p>
+
+<p>JACK:	The team starts examining the logs and the network, and they look at different security devices and network activity.</p>
+
+<p>ANDREW:	[ELECTRONIC MUSIC] Their security assessment involved using intel that my colleagues had seen elsewhere in other engagements for APT groups.  They spotted a few pieces of evidence which, Iâm not sure exactly what it was, it may have been specific malware that continued elsewhere, but they were able to identify that there was an active threat act in that clientâs environment.</p>
+
+<p>JACK:	[DARK MUSIC] He mentioned APT and threat actor.  This is the worst kind of hacker to find in your network.  The term threat actor is just a fancy way to describe someone who poses a threat to your network, but an APT stands for Advanced Persistent Threat.  It describes a group of highly-skilled and motivated hackers that have a specific goal of what they want to accomplish.  But whatâs more is they often have significant resources such as being sponsored by a nation state, or simply well-funded.</p>
+
+<p>ANDREW:	So Iâve been told, itâs state-sponsored.  Itâs in the east, I guess.  The group itself has been known to infiltrate other technology companies.</p>
+
+<p>JACK:	To be attacked by an APT means youâre facing a very skilled and serious attacker who likely wonât go away easily.  [00:05:00] Itâs extremely difficult to detect an APT in the network.  Someone has to have studied that APT for months or maybe years to understand the malware they use in their tactics, and then publish that data to the world.  Then if we detect certain malware in the network, we may be able to link it back to that specific APT but the problem is once that report gets published, other people have access to those techniques, too.  The APT group may change their tactics to be more covert.  In this case the malware found in the network matched exactly the same malware that someone had published in a report which linked it back to that APT group.</p>
+
+<p>ANDREW:	We spun it up to â the company that I work for spun it up to a follow incident response engagement.  I came in as part of the team that was doing some of the forensics work, so they would ask us to take a look at the data that they were collecting.</p>
+
+<p>JACK:	This process is fascinating to me.  The forensics team first identifies and isolates the malware and they study it.  They develop a profile for that malware; things like file size, files names, and the activity the malware is doing.  Is it reaching out to the internet?  Is it trying to access something internal?  Is it using specific ports?  All this gets collected and so now we know the indicators have compromise, or IOCs.  This is given to another security team which they can use to look for those IOCs in the logs, which would then reveal more places this malware has been in the network.  These teams would continue to feed each other information to learn and detect more and more about this APT in their network.</p>
+
+<p>ANDREW:	That went on for a few months.</p>
+
+<p>JACK:	Why not remove the malware right away?</p>
+
+<p>ANDREW:	Thatâs a good question.  We do get asked a lot why we donât immediately remediate.  The client environment, itâs a global company.  They have a lot of satellite offices, quite a complex infrastructure.  What we would do, and this is quite common for all IR companies, is youâll have like a monitoring period or a discovery phase where you will look for where the threat actor is active in the environment, what tools they are using, try and identify how many back doors these people have into their environment.  We wanted to get as accurate a picture as possible as to where they were active, where they were coming in, where their ingress points were, where they were moving data out, âcause we had seen that.  Just so when we came to remediation, it wasnât the case that we were removing some of their infrastructure only for them to come back in the following week somewhere else that we hadnât seen.  The other concern there is that they know that weâre onto them.  Once you do that remediation, once you do that kick out, they know youâre onto them and they will change their tools and their tactics and their procedures.  That makes you blind, I guess, depending on what else you implemented.  For a threat actor or for any adversary to know that you are â that youâre onto them, and you remove what they have used in an environment, if they have a backup plan, theyâll go to that.  And whether thatâs immediately or over a period of time, they might let time lapse before they come back in.</p>
+
+<p>JACK:	The team spends a few months researching this hacking group and what theyâre doing.  What was discovered confirms the companyâs worst fears.</p>
+
+<p>ANDREW:	They were looking for R&amp;D systems.  They were looking to exfiltrate and they did exfiltrate some intellectual property.  [MUSIC]</p>
+
+<p>JACK:	This hacking group not only successfully broke into the network but theyâre successfully exfiltrating or stealing the latest cutting-edge technology from the company.  For a tech company thatâs this advanced, having their intellectual property stolen is a huge problem which may have millions of dollars of impact to the company.</p>
+
+<p>ANDREW:	I donât have a financial amount but there was a lot of concern simply because they were working on next-gen killer tech, I guess, which if in a competitorâs hands or in any other companyâs hands, would obviously affect the performance of their company quite significantly.  Itâs the same with every client that weâve ever worked with.  They donât want any kind of exfil at all but this specific one we saw quite intensive interest in their R&amp;D department.  [00:10:00]</p>
+
+<p>JACK:	The company was terrified that their IP was being stolen and wanted the malware removed immediately but the security team still needed to understand the threat and study it further.  They werenât ready to remove it.</p>
+
+<p>ANDREW:	We saw that they were active and we did a lot of forensic work.  We did a lot of deployment into different areas.  Like I said, we built that knowledge package up for remediation.  Now, we were able to â so this was â I became involved in 2015 and the earliest evidence that we found was in 2010.  That wasnât the entry point; that was just the earliest sign of activity that we could find, was 2010.  We had evidence to suggest that the threat act had been in there for five years at least.  The evidence we found, I think it was some file activity on one of the drives which somebody had dated as 2010, which could have been planting something.  I donât know the details of it more than the date, Iâm afraid.  I remember sitting in the board room with the client in their office and there was a team of us there.  We broke it to them that 2010 was the earliest we could find.  It hit home that theyâve had, for half a decade somebody has had access to their environment without their awareness.</p>
+
+<p>JACK:	How did the client take this kind of news?</p>
+
+<p>ANDREW:	It was a mixed response; some of the people there got angry and wanted to know why we werenât remediating immediately, which comes back to your original question.  Then there were others who were on board; how do we progress this?  What are we seeing?  What do we do next?  Then there was fear, obviously, âcause like I said, itâs a technology firm; they have their R&amp;D and they want to be the best in the market.  They want to know whatâs being filtered out the door but if weâre only coming into their environment in â I think it was early 2015, it was before I started.  Like I said, thatâs half a decade that this entity could have been moving data out.  It was a mixed bag of emotions and all completely understandable.  At the end of the day weâre strangers sitting in a room telling them that theyâve been owned for a long time, but that weâre not in a position yet to remediate because weâre not ready.  Itâs a difficult subject to â itâs a difficult topic to discuss with any client.</p>
+
+<p>JACK:	The security team goes back to studying the APT to collect even more data.</p>
+
+<p>ANDREW:	 We were still seeing activity during the examinations, during the monitoring phase and during the discovery phase.  [MUSIC]  It was quite interesting because they were active.  We could see lateral movement, we could see them doing things like basically logging in to make sure that their stuff was still sitting on these end-points, that they could reach out to certain â see to communications, updating their tools.  Itâs interesting to see them do it because these guys in the background who are logging in and making sure that their malware is still running and deploying newer versions, it was â I donât really want to say it was interesting to watch âcause obviously this is a companyâs livelihood but from a detached perspective, watching how they functioned was very interesting.</p>
+
+<p>JACK:	Now that a few months have gone by the forensics team feels confident enough that theyâve collected enough information that they can remove the APT from the network once and for all.  Theyâve discovered the potential ways [00:15:00] it got in, and what log-ins itâs used, and where itâs gone, and what itâs done.  Itâs time to remediate and finally kick this hacking group off the network but all of a sudden the activity from the APT stopped.</p>
+
+<p>ANDREW:	In the weeks up to the remediation the threat act had gone quiet, had gone very quiet.  We werenât seeing any movement.  We werenât seeing anything, really, which usually means that theyâve either succeeded in what they came to do or something else.</p>
+
+<p>JACK:	Andrew and his team are all ready to clean this off the network but he has to fly to the office location to do the remediation so he packs his things and heads to the airport.  Heâs scheduled to do the remediation in just two days.</p>
+
+<p>ANDREW:	I was sitting in the airport waiting to fly out and my colleague phoned me.  He was supposed to have been coming out with me but he had some last minute issues and couldnât be out there.  There was a few of us going out but he couldnât make it with me but he phoned me up and he said, âHave you seen the news?â  It wasnât headline news; it was just financial news where the firm that we were working for had been the subject of a buy-out, a very expensive buy-out attempt by a company that was from the same part of the world that we believed the threat actor was from.  As soon as my colleague phoned me in the airport and I told everyone else that I was flying out with, it was kind of a oh, I wonder, penny-dropped kind of thing.</p>
+
+<p>This is obviously â itâs a what-if, right, that we donât know for sure.  But the timing to me seemed awfully convenient and like I said, for the last couple of weeks the threat act had gone quiet and then all of a sudden out of the blue came this attempt at a buy-out.  It was for a phenomenal amount of money, a phenomenal amount of money.  It came as a surprise to everyone but when I actually told the people I was working with, there was that kind of, yeah, I wonder if that was what was going on.  That got me thinking about how these companies â they get compromised by these state-sponsored groups as a means of due diligence, I guess.  Has the company â how much are they worth?  What kind of IT do they have?  Whatâs their R&amp;D department look like?  As a means of, should we buy them?  Can we make money off it?  The client has designed something where it could be the next big thing.  It really could be the next big thing.</p>
+
+<p>It just makes me wonder whether or not they are the subject of these compromises as a means of some other third party conducting due diligence because there have been a couple of things in the media where companies are being genuinely purchased, have inflated their figures prior to acquisition.  If youâre getting â if youâre compromised and theyâre in there looking at your accounts, I guess, and what youâve got going on there, thatâs a perfect opportunity to get what a company is worth and feed this back to whoever.  That was my train of thought on that.  As far as remediation goes it was very quiet, touch wood.  We didnât hear anything after that.  Once you do a remediation youâre kind of on high-alert for some kind of activity afterwards where the threat actor realizes youâve closed them out of the environment and then try and make their way back in.  Thatâs a good opportunity to look for stuff that was â thereâs no other way of putting it, stuff that was missed during the monitoring phase, the discovery phase.  But that one was very quiet.</p>
+
+<p>JACK:	So, did they accept the buy-out offer?</p>
+
+<p>ANDREW:	Yes, they succeeded in buying the company, yeah.  It just gets you thinking.  Hacking is like a business.  For everything Iâve seen, Iâve never worked on an engagement where thereâs been any destruction to data, any corruption, any deletion.  Thereâs been no â [00:20:00] whilst theft in itself is malicious, Iâve not seen anything beyond theft.  Iâve never seen cyber-vandalism or the hacktivism or anything like that.  Iâve always seen it â itâs always been attempts at theft and intellectual property.  I think thatâs a business.  I think in the real world, in the above board world of business, people steal ideas every day.  I just think this is another form of it.  I think companies need to think differently to the way they are right now about how these groups and their sponsors are thinking.  Itâs all about money.  Itâs all about money.</p>
+
+<p>JACK (OUTRO):	[OUTRO MUSIC]  Youâve been listening to Darknet Diaries.  For show notes and links, check out darknetdiaries.com.</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+<p>Transcription performed by Leah Hervoly
+www.leahtranscribes.com</p>
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

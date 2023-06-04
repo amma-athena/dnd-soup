@@ -1,0 +1,643 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>Guild of the Grumpy Old Hackers â Darknet Diaries</title>
+	<meta name="description" content="In 2016 the LinkedIn breach data became available to the public. What the Guild of the Grumpy Old Geeks did with it then is quite the story.">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Guild of the Grumpy Old Hackers â Darknet Diaries">  
+	<meta name="twitter:description" content="In 2016 the LinkedIn breach data became available to the public. What the Guild of the Grumpy Old Geeks did with it then is quite the story.">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/arrowphone.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/87/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Guild of the Grumpy Old Hackers â Darknet Diaries" />
+	<meta property="og:description"        content="In 2016 the LinkedIn breach data became available to the public. What the Guild of the Grumpy Old Geeks did with it then is quite the story." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/arrowphone.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/87/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/arrowphone.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/87/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="Guild of the Grumpy Old Hackers â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/arrowphone.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 87: Guild of the Grumpy Old Hackers</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://www.podtrac.com/pts/redirect.mp3/traffic.megaphone.fm/ADV7707100402.mp3?updated=1615247159"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/87/",
+			   "title": "Ep 87: Guild of the Grumpy Old Hackers"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/87">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[START OF RECORDING]</p>
+
+<p>JACK:	Remember when Donald Trump had a Twitter account?  He actually had two for a while; one called @POTUS and the other called @realDonaldTrump.  He used his personal one a lot while he was president.</p>
+
+<p>TRUMP:	I pick up â Iâm picking up â now, I think I picked up yesterday 100,000 people.  Itâs a modern form of communication.
+<!--more-->
+JACK:	Of course, that was before his account got banned.  [MUSIC] He sent thousands of tweets while in office.  He had over 80 million followers and that put him as the seventh on the list of the most-followed Twitter accounts, sandwiched between Lady Gaga and Taylor Swift.  But heâs tweeted tens of thousands of times more than both of them and he tweets more than anyone in the top ten.  Twitter was his mouthpiece for so many things.</p>
+
+<p>HOST1:	Secretary of state Rex Tillerson learned he was fired at the same time the rest of the world did; on Twitter.</p>
+
+<p>HOST2:	The president issuing this tweet suggesting that he is ready to leave Walter Reed this evening.  Heâs feeling much better and ready to go back to the White House.  The president has a habit; when he sees his advisors and cabinet secretaries even saying something in public that he doesnât like, he has a habit of rebuking them over Twitter.</p>
+
+<p>TRUMP:	Social media is the way to go.  Iâve got over 100 million people watching and social media to me is the way to go.  Itâs a fast way of getting the word out.</p>
+
+<p>JACK:	With all that power and influence, I sure hope he practices good security so that his Twitter account doesnât get hacked, especially after saying things like this.</p>
+
+<p>TRUMP:	Nobody gets hacked.  To get hacked you need somebody with 197 IQ and he needs about 15% of your password, right?</p>
+
+<p>JACK:	That statement is actually pretty ironic because Trumpâs Twitter account was hacked into three times that we know of, and in this episode weâll hear from the guys behind one of those hacks.</p>
+
+<p>(INTRO):	[INTRO MUSIC] These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	[MUSIC] The first time that we know of Trumpâs Twitter account getting hacked was in 2013.  Someone got in and tweeted out some Lil Wayne lyrics.  They posted quote, âThese hoes think they classy.  Well, thatâs the class Iâm skipping.â  End quote.  Within minutes it was deleted and then Trump tweeted âMy Twitter has been seriously hacked and weâre looking into the perpetrators.â  As far as I know, they never caught the person who did that.  Keep in mind, that was 2013, long before Trump even began running for president, so maybe securing his account wasnât the highest priority at the time since he wasnât president.  But you would think a self-proclaimed billionaire would take his digital security seriously.  Well, maybe he didnât.  This all reminds me of another person who got their account hacked into, a woman who was also running in a presidential election.  She got her e-mails hacked into and no, not those e-mails.</p>
+
+<p>Iâm talking about Sarah Palin.  She was running for vice president in 2008 and got her Yahoo account hacked into.  How though?  Russian hackers, you guess?  No, it was a twenty-year-old guy on 4chan.  Her e-mail address was gov.palin@yahoo.com which was not that hard to figure out, so he went to Yahoo and typed in her e-mail address, then he clicked I Forgot My Password.  Yahoo said okay, no problem; just answer these questions and weâll reset your password.  Question number one; what is your birth date?  Well, the hacker just went to Wikipedia and found that right away.  Yahooâs website said okay, great.  One more question; what high school did you go to?  Well, Sarah Palin was not shy about talking about her hometown of Wasilla, Alaska on TV in so many interviews, so practically everyone knew she graduated from Wasilla High School.  But besides that, it was also listed on her Wikipedia page, too.  After the hacker typed that in, bingo.  Yahoo let him reset the password and he was able to get into her account and see her e-mails.  The hacker posted screenshots of e-mails to 4chan and he caused a riot in the media.</p>
+
+<p>He was later arrested and sentenced to one-and-a-half years in prison for gaining unauthorized access to Sarah Palinâs account.  Sadly, the hacker who did this, David Kernell, was diagnosed with multiple sclerosis and died in 2018 at thirty years old.  But this raises my first ethical question; personal identifiable information or PII is the stuff the public isnât supposed to know about.  Your birth date and where you went to high school shouldnât be just sitting out there in the public, but Sarah [00:05:00] Palinâs PII is right there on Wikipedia.  So the question is, if I go onto Wikipedia and look at this, would you say I committed identity theft?  [MUSIC] Well, the judge said yes, this hacker did commit identity theft by using the information that was posted on Wikipedia.  But anyway, back to Trump.  The second time his Twitter account got hacked was in 2016, the year he was running for president, and it was done by some grumpy old hackers.  Okay, Iâll click it one more time.  Ah, itâs working now.</p>
+
+<p>MATT:	Yes, itâs recording.</p>
+
+<p>VICTOR:	Yeah.</p>
+
+<p>JACK:	Jeez, thisâ¦</p>
+
+<p>VICTOR:	How many hackers does it take to click on one button, right?</p>
+
+<p>JACK:	Yeah.  I called up the three guys that in 2016 hacked Donald Trumpâs Twitter account.  Theyâre Dutch and part of a hacking club in the Netherlands.  So, collectively youâre called what?</p>
+
+<p>MATT:	The Guild of the Grumpy Old Hackers.</p>
+
+<p>VICTOR:	Because we are grumpy.</p>
+
+<p>EDWIN:	Weâre grumpy and old.</p>
+
+<p>VICTOR:	Very grumpy and old.</p>
+
+<p>MATT:	Not as old as Edwin.</p>
+
+<p>EDWIN:	[MUSIC] Oh, thank you.</p>
+
+<p>JACK:	So, the grumpy old hackers are a few friends that are also IT professionals.  Edwin, who I met at Defcon once, has grey hair and a big grey beard.  He seems like an elder statesman to me.</p>
+
+<p>EDWIN:	Iâm Edwin.  Iâm old.  Iâm like, almost fifty.  Hacked since I was a kid.  Started on old computers my dad brought in, grew up from there, met a lot of hackers around the world in the years after.  The thing I love is combining all the hackers together.  So, we are also The Guild of the Grumpies.  Itâs like a combination of yeah, mostly elderly hackers just having fun and trying to do stuff which is always on the edge because thatâs mostly the fun there is.</p>
+
+<p>JACK:	Also on the call is Matt.</p>
+
+<p>MATT:	My name is Matt and I spent a twenty-year professional computer security career both in the offensive and as well as the defensive side.  I developed a special interest in process automation and industrial systems.  Iâve tinkered with a lot of nice devices over the years and found there was a couple vulnerabilities in them.</p>
+
+<p>JACK:	Then thereâs Victor.</p>
+
+<p>VICTOR:	My name is Victor.  Iâm a security researcher.  Iâve been doing responsible disclosures, so I like to find problems, vulnerabilities, configuration errors in systems and then try to track the owner of the system or the organization and then notify them.  Itâs grown from a little hobby into almost an entire day job.</p>
+
+<p>JACK:	Victor works with the Dutch Institute of Vulnerability Disclosure, something Edwin and Matt help out with, too.  Together, they like to find vulnerabilities in things and report that to the people who can fix them.  Someone once described these guys asâ¦</p>
+
+<p>EDWIN: 	The guys who inform you that your zipper is open just before you go onstage, you know?  Thatâs basically us.  We whisper in your ear; sorry man, your password is out there.  Thatâs the idea.  We try to help people.  Yeah, we donât need people to be embarrassed or whatever, you know?  We love finding stuff.  We love finding leaks in systems, in servers, in doors, in lock-picking stuff.  We love all those puzzles.  Thatâs for us and if we find something, yeah, we will tell you about it.</p>
+
+<p>JACK:	The Grumps find problems and then tell whoever is in charge of that and get them to fix it.  Maybe theyâll respond by saying thank you, because they want stuff to get fixed so the internet can be a safer place.  Another important thing that the Grumps do which Edwin is known most for is mentoring the next generation of hackers, especially those that could get into trouble with the law or already have.  They work with Hack_Right, a Dutch law enforcement program that helps put young offenders back on track.  The goal is to recalibrate their skills for ethical hacking.</p>
+
+<p>EDWIN:	We see a lot of kids who go in the wrong side when they, for instance, find a database of credit card information or something and try to tell people about it.  When we hear about it, we try to steer them in the right direction, so, do a vulnerability disclosure to the company.</p>
+
+<p>JACK:	Like, if you stumble onto a database, donât sell it on the dark web.  Instead, let that company know that thereâs a problem with their security and keep it between you and them.  Thatâs the Grumpy way.  But the Grumpy way and ethical hacking can have some grey areas.  [MUSIC] Hereâs a question for you, my listener; suppose these Grumpy hackers find your password out there.  Should they test it first to see if itâs valid before telling you itâs out there or just tell you that they found it?  Or hereâs another one; should they test it on other accounts that you also have too to let you know that hey, not only did we find your password but we know for sure it works on these four accounts?  It seems wrong for them to test all this, right?  I mean, how dare they try my password on all these accounts.  But letâs remember what their intention is.  Itâs to help [00:10:00] people be more secure.  They just want to do it in a responsible way.</p>
+
+<p>So, I just wonder if itâs possible to trespass responsibly.  Yes, there are bug bounty programs out there that openly say if you can hack me, weâll give you a reward.  But what about all the places out there that donât have bug bounty programs?  Do you have a bug bounty program for your own personal life?  A lot of places donât because either they canât afford it or itâs like a school or charity or they donât even know thatâs a thing.  If you try to e-mail a charity and ask them hey, would you like a free penetration test?  Chances are theyâll tell you to take a hike.  I suppose thereâs an argument that could depend on who youâre trying to hack, too.  If itâs someone important like the president, it might be good to test their security for the good of democracy.  Thatâs an ethical dilemma which The Grumpy Old Hackers were facing back in 2016.  It all started when they got together and went to a security conference.</p>
+
+<p>EDWIN:	[MUSIC] We were at a conference called BruCON in Belgium.</p>
+
+<p>JACK:	BruCON is an annual meetup for hackers and security professionals.  Now, shenanigans certainly happen at these kind of gatherings.  In fact, when you go to a security conference like this, youâll see tables of people all sitting around using their computers obsessively; not going to any talks or workshops, just using their computer like, the whole time.  Itâs kind of weird at first.  Like, isnât a conference supposed to be for socializing and getting to know others?  Why are people just huddling around their computers, seemingly isolating themselves from the whole event?  Well, thereâs a lot of reasons.  Sometimes thereâs hacking contests going on and you just need a place to work on it, and sometimes people are learning new hacking methods and testing them out and teaching each other.  Sometimes people are up to no good and just try to hack the hackers.</p>
+
+<p>Edwin, Victor, and Matt all head up to their hotel room after the conference to chill out and unwind for the day.  But during that day, Edwin got access to the LinkedIn database from 2012.  If youâre unfamiliar with this, check out the episode just before this one.  Basically, back in 2012, LinkedInâs website was breached and over 100 million e-mails and passwords were stolen.  The database was sold on the dark web for a while but kept mostly hidden.  But in 2016, the database started making its way around the internet, getting passed around freely.  So for the first time, security researchers were seeing exactly what was in the database dump.  Thatâs when Edwin saw a link on Facebook which was the LinkedIn database.  He downloaded the over 100 million user details and showed it to Matt and Victor.  Together in their hotel room that night, they explored what was there.</p>
+
+<p>EDWIN:	[MUSIC] We would never buy a database.  We donât do stuff like that but now itâs available for free, so we can download it and we can look at it and yeah, thatâs what we did.</p>
+
+<p>JACK:	It was the evening of October 27th, just about a week before the 2016 US presidential election.  Sitting around in a hotel room, The Grumpy Old Hackers started looking through the database.  At first, they were just looking around for their own names to see if it was in this database and if the password was cracked or accurate or what.  Then they started looking for other people they knew.</p>
+
+<p>EDWIN:	We saw a lot of people we know in there so we tried to warn them, call them, send them messages; you know, your password is in there.  Change it immediately.  If you donât, et cetera, et cetera.</p>
+
+<p>JACK:	Okay, so the data stolen from the LinkedIn breach was usernames, e-mail addresses, and SHA-1 hashed passwords.  Now, hashed passwords arenât passwords.  Itâs what the password looks like after it goes through an algorithm.  It takes some footwork to figure out what these passwords were.  Unfortunately, LinkedIn wasnât salting their passwords which is a way to make cracking passwords harder, so someone tried their best at cracking the 100 million credentials in this breach.  Some reports say that they were able to crack 60% of the passwords.  The document that Edwin downloaded from Facebook simply contained the e-mail address and the cracked clear text password.  So, if they were to look in this database for their friendâs name and there was a hit, they would see that friendâs password that they were using on LinkedIn in 2012, four years earlier than this.</p>
+
+<p>As you might have guessed, many users werenât picking strong passwords.  Over 700,000 users just had the password â123456â, and 170,000 people just had âLinkedInâ as their LinkedIn password.  Of course, the third most-popular password was just âpasswordâ.  Those are bad passwords and these grumpy geeks were taking upon themselves to educate everyone they knew about what they were seeing in this database dump.  So, they sent out e-mails to friends and family, showing them that their password from four years ago is now visible for everyone in the world.  Because if they were using that password anywhere else, it should also be changed.  They expanded their search to just people they knew of.</p>
+
+<p>EDWIN:	[MUSIC] [00:15:00] We did it to just warn the people we know and there were a lot of people from the government, the Netherlands, in there from police and a lot of big companies were in there.  We just tried to warn them.</p>
+
+<p>JACK:	The messaging was like this; hey, look, we see your e-mail and password is in the LinkedIn database dump which is getting passed around freely now.  If you have any login accounts which use this same password, itâs a good idea to change it.  Victor says people were glad to hear from him.</p>
+
+<p>VICTOR:	Most were very grateful because credential stuffing was not such a big topic in 2016 but it was going on.  The problem with passwords is that even though we know that we should take good passwords and we should have good password hygiene, in 2016 no one was actually practicing.  If you look at the entire database and the passwords that it contained, itâs very clear that almost no one had a good password.</p>
+
+<p>JACK:	Victor says they dug around the database and reached out to people for hours.  After that, they were wrapping up and picking a place to go eat dinner.  But thenâ¦</p>
+
+<p>MATT:	[MUSIC] Donald Trump passed on the television because it was, of course, it was election year and he just â you know what I mean?  He was just on the television, so that was the cue for Mattijs, for â letâs see if heâs in there, you know?  Or how many Trumps are in there anyway?</p>
+
+<p>JACK: Matt checked for Donald Trump in the LinkedIn database.</p>
+
+<p>MATT:	Literally grepped the donaldtrump.com domain and I said hey, Trump is in here as well.</p>
+
+<p>JACK:	Okay, so they grepped or searched this text file for anything that matched trump.com and there were a lot of hits.  The first name on the list was an employee at marina.trump.com.  This was a casino that Donald Trump owns in New Jersey, but it racked up more debts than profits and Trump sold it in 2011 for a significant loss.  The next hit was for a person with a plaza.trump.com e-mail address.  The Trump Plaza was another casino in New Jersey that totally closed down due to losses, leaving 1,300 employees out of work.  Then there were a lot of hits in the database for taj.trump.com.  Once again, this was for employees who worked at Trumpâs Taj Mahal, another casino in New Jersey.</p>
+
+<p>Whatâs interesting about that casino is that it was found guilty of money laundering and fined by the government and was the highest fine ever levied by the US government against a casino.  Yeah, that casino was also shut down.  But the Hard Rock Cafe bought it and remodeled it and reopened it.  So, there were a lot of names in this database who worked at defunct Trump casinos.  But as they kept scrolling through, they found the Donald.  In the LinkedIn database, standing there in the crowd was an e-mail address, donaldtrump@trump.com.  This was Donaldâs e-mail address.  They immediately looked at his password.</p>
+
+<p>MATT:	The password was already cracked, that one.  But yeah, it was so obvious so we thought yeah, this cannot be true.</p>
+
+<p>JACK:	Trumpâs password was so blatantly simple.  It left them kind of giddy in disbelief.</p>
+
+<p>EDWIN:	Then I probably said whatâs his password?</p>
+
+<p>MATT:	Youâre never gonna â youâre never gonna guess.  Itâs âyourefiredâ.</p>
+
+<p>EDWIN:	What?</p>
+
+<p>JACK:	Trumpâs LinkedIn password in 2012 was âyourefiredâ, all lowercase, no spaces, no special characters.  âYouâre firedâ was the catchphrase he used on his reality TV show The Apprentice.</p>
+
+<p>TRUMP:	Jennifer, this is really easy.  Youâre fired.  Chris, youâre fired.  Maria, youâre fired.  Youâre fired.  Youâre fired.  Youâre fired.</p>
+
+<p>JACK:	It became a very popular thing for him to say on the show, so it was shocking to these Grumpy hackers to see such an obvious and basic password that he was using to get into LinkedIn in 2012.  Now, at first I questioned whether Donald Trump even had a LinkedIn account in 2012 because I just canât even imagine a billionaire caring about having an account on LinkedIn.  I just went there and typed in a bunch of billionaire names and most donât have accounts there.  People go on LinkedIn to network and to look for jobs.  Donald Trump doesnât need to network or look for jobs but this account was his, and he also had a Twitter account and Facebook account at the time.  Maybe he was just interested in social media and wanted accounts in top places like everyone else had.  I mean, Obama had an account on LinkedIn at the same time, too.  Now, his credentials could have been simple for a couple of reasons.</p>
+
+<p>To start, Iâm guessing that Trump isnât all that tech-savvy and heâs very busy, so he probably didnât even set up his own LinkedIn account.  He probably didnât huddle over his computer for hours like everyone else, writing out a description of himself and his accomplishments and following all his friends, so itâs possible that whoever set this account up just wanted to give him an easy password that heâll remember.  Or maybe multiple people needed access to his account because theyâre [00:20:00] social media managers; they manage his account for him, so they just picked an easy-to-remember password.  In 2012, it wasnât easy to share long, complex passwords securely.  Nonetheless, for a celebrity self-proclaimed billionaire, this was bad practice.  This left the Grumps wondering just how poor Trumpâs password hygiene was.  He wouldnât reuse this same password on other accounts, would he?  And definitely not four years later, right?</p>
+
+<p>MATT:	[MUSIC] We were just joking around.  Would he be so stupid to use â to reuse his password for his Twitter accounts?  No, that cannot be true.</p>
+
+<p>JACK:	If it were true, it would be straightforward for the Grumps to log into Trumpâs Twitter account.  They, like everyone else, knew the correct username, @realDonaldTrump, and now they had a password to try.  So, the group started thinking about what they could do with Trumpâs password.</p>
+
+<p>EDWIN: 	I just typed it in while the other guys were still mesmerized and then they said maybe we should try it.  I think Victor even said no, thatâs dangerous.</p>
+
+<p>VICTOR:	Donât do it.</p>
+
+<p>EDWIN:	Yeah, donât do it.  Then I said uh-oh.</p>
+
+<p>VICTOR:	Too late.</p>
+
+<p>JACK: 	Edwin was just too curious.  He went straightaway to twitter.com, typed in the username @realDonaldTrump and typed in the password âyourefiredâ.  It worked to a degree.  Twitter didnât just let him in right away but it also didnât say Incorrect Password.  Instead, it asked Edwin to confirm the e-mail address for the account.</p>
+
+<p>VICTOR:	So, we got the extra check for his e-mail address but at that time, we knew of course hey, the password is correct.</p>
+
+<p>JACK:	Itâs true; the fact that they got asked to confirm the e-mail means the password was correct.  Donald Trump was still using âyourefiredâ as his Twitter password in 2016 while he was running for president just weeks before the election.  The e-mail check was an extra layer of security since the attempt came from a hotel room in Belgium, not wherever the real Donald Trump was.  Twitterâs website did this extra check to make sure the login was valid but this was an incredible moment.  [MUSIC] Trumpâs years-old ridiculous password was still valid, but the Grumps quickly shook off their disbelief because they realized they had a new problem.  Matt says Edwin hadnât done anything to cover his tracks.</p>
+
+<p>MATT:	If it not had been correct, we would have moved on but now we knew okay, we logged in with the correct password.  What will happen?  We didnât use any VPN or anything, so it would trace back to the hotel and eventually to us.</p>
+
+<p>JACK:	But have they done anything wrong yet?  They didnât fully login.  They just tried one password one time to see if it was valid and it worked.  To them, it didnât matter because their fingerprints were now on Trumpâs Twitter account.</p>
+
+<p>MATT:	Imagine if you login with a known password.  What would happen if someone else would do the same and would pursue and would do some nasty things?  The first traces would be to us, so we would be screwed.  So, we needed to have this fixed as fast as possible.</p>
+
+<p>JACK:	Ah-ha, interesting.  The stakes were suddenly raised.  If something went bad with Trumpâs Twitter account, they could wind up being blamed.  Looking at the logs in Twitter, they would see that Edwin successfully logged into his account and this could come back to bite him, which could lead to legal repercussions.</p>
+
+<p>EDWIN:	We were in panic, of course, and then we discussed okay, we should go on because otherwise we might be in trouble.</p>
+
+<p>JACK:	Going on meant logging into Trumpâs Twitter account all the way but sticking with the Grumpsâ own ethical standards by submitting a responsible disclosure to Trump.  Essentially, theyâd be doing Trump a favor by showing how easy it is to access his account.  So, stay with us because after the break, they go all in.  The Grumpy Old Hackers were determined to hack into Trumpâs Twitter account.  Victor, whoâs found thousands of vulnerabilities, says responsible disclosure is only good if the hack actually works.</p>
+
+<p>VICTOR:	[MUSIC] When you engage with a target or any investigation and you start your engagement, after that, if you donât use VPN or any other protective measures to hide your identity, then you have to go through.  The problem is, you cannot contact Donald Trump to say hey, we found your password in this database.  By the way, this is your password; we tried it but it didnât work.  Responsible disclosure doesnât work like that.  You cannot warn someone, say hey, we found your password; this is it but it didnât work and we couldnât log in.  So then, you have to continue.  You have to finish the job.</p>
+
+<p>JACK:	So now their dinner plans were canceled.  They were on a mission to find the e-mail address connected to Trumpâs Twitter account and hack into his account.  The e-mail tied to his LinkedIn account was donaldtrump@trump.com, so they tried that but it didnât work.  Hm, so what else could it be?  [00:25:00] They started doing some OSINT, open-source intelligence-gathering to try to figure out what other e-mail addresses he uses.  They were able to find a few other e-mail addresses.  They didnât want to try to brute force this, like just trying one e-mail address after another until they got in because that would be sloppy and possibly trigger some alerts.</p>
+
+<p>VICTOR:	If you start attacking Twitter, then you come to a very grey area.  That would be a bridge too far for us.  We acted on OSINT.  We acted on publicly available information and the only thing that we had to do was to bypass the last hurdle to make the report valuable for Donald Trump.</p>
+
+<p>JACK:	[MUSIC] So they took their eyes off Twitter for a moment and started poking at the trump.com domain.  They also found another domain; donaldjtrump.com.  They wanted to figure out all the valid e-mail addresses that existed with these domains.</p>
+
+<p>VICTOR:	We had to enumerate it to find which new e-mail address he was using.  So, we used SMTP enumeration on his domains, over the e-mail domains.</p>
+
+<p>JACK:	So, thatâs what SMTP enumeration is.  SMTP is the e-mail protocol and enumeration just means youâre trying to count how many there are and step through all of them one by one.  This is a fancy way of saying they wanted to find all the valid e-mail addresses associated with Trumpâs domains.  Now, SMTP or e-mail works over port 25, so one way to do this is to connect to donaldjtrump.com on port 25 and you can verify if an e-mail is valid by using the VRFY command, which is verify, to connect and then say verify jack@donaldjtrump.com.  If thatâs a valid e-mail, itâll say yep, thatâs valid, or no, that e-mail address doesnât exist here.  One way they can enumerate this is just to pick a whole bunch of random names or words and then type them in over and over and over until they have a nice list of e-mail addresses.</p>
+
+<p>[MUSIC] But thereâs a tool that can speed things along.  Itâs called Metasploit and Metasploit can do a lot of things.  Itâs a hacking framework but one thing it can do is SMTP enumeration which does the exact same thing as I just explained but it uses a big word list to try thousands of names and words to try to find all the valid e-mail addresses on that domain.  Itâll try Adam, Bob, Chris, David, and so on and when itâs done, itâll just tell you what e-mail addresses are valid.  So, they begin the process, asking the donaldjtrump.com mail server what are the valid e-mail addresses, one by one.</p>
+
+<p>MATT:	The biggest rate limiter was actually the hotelâs WiFi, the internet connection, because like every five, six minutes I get kicked out and you had to reconnect.  Sometimes the reconnection didnât work, so imagine that you want to do enumeration or you want to do some tests online to see if those e-mail addresses work and you have a very bad internet connection.  I think that was for us the limiting factor.</p>
+
+<p>JACK:	Man, thatâs frustrating.  Theyâre trying to help save the presidentâs Twitter account here but they have crappy WiFi and itâs slowing them down.  My guess is that since it was at a hacking conference that the hackers in another hotel room were just attacking the hotel WiFi.  But after a few hours of enumerating the mail server, they looked at a list of passwords and one jumped off the page at them.  It was twitter@donaldjtrump.com.  This looked like it had the potential of being the e-mail address tied to real Donald Trumpâs Twitter account.</p>
+
+<p>VICTOR:	It took a little bit of time.  You go through the procedures that we already know.  We know how to enumerate e-mails.  We know how to validate them online, so that part of the process was okay.  The big unknown was how is Twitter security working because once again, this is not my â not the normal work that I do.  I hunt for open database.  Iâm not into breaking into security systems, so for â yeah, it took us some time to figure out okay, why he got the challenge on the mobile phone when â as we tried to login, what it was doing there.</p>
+
+<p>JACK:	[MUSIC] Yeah, that was Twitterâs security policy for logins.  If Donald Trump had an active login in New York and then another one came in from Belgium, would Twitter care and flag this as bad?  Also, what kind of phone was Trump logged into Twitter with?  Did Twitter know that too and consider it at all when a new person logged in as Donald Trump?  If these things are taken into account, how hard is it to impersonate the same phone as Trump and look like youâre coming from the same geographical region as Trump?  This was now part of the challenge.</p>
+
+<p>VICTOR:	You had to start messing with your user agent because you know that heâs using a very old Android phone, insecure Android phone.</p>
+
+<p>JACK:	In 2017, Trump switched to using iPhone but Android Central deduced that in 2016, Trump was using the Samsung Galaxy S3.  That phone originally came out in 2012 and got its last software update in 2015, so yeah, in addition [00:30:00] to Trumpâs poor passwords, his phone was also a security risk.  But the Grumps werenât interested in hacking his phone.  They just needed to mimic it, so they switched their user agent to look like Trumpâs Samsung S3.  Then there was one more step.</p>
+
+<p>MATT:	We have to find out how this geofencing part of Twitter works, you know?  How does it know that â which is the real user based on geolocation and maybe device or something else?</p>
+
+<p>JACK:	The Grumps needed to look like they were somewhere where Trump would normally sign in from.  So, they used an open HTTP proxy in New York to route their traffic through that to log into Twitter.  These hurdles had taken some time but they felt like they had everything figured out now.</p>
+
+<p>MATT:	All those stats, that took a good one hour â two hours I think approximately, to get there.</p>
+
+<p>EDWIN:	I remember I was bored at some point already, so it took some time.</p>
+
+<p>JACK:	You took a nap for a while.</p>
+
+<p>EDWIN:	Yeah.  Iâm the lazy one of the three so I find something, I make a mess, and then they start fixing it.</p>
+
+<p>VICTOR:	[MUSIC] Well, everyone was all right, okay.</p>
+
+<p>JACK:	At this point they just ordered dinner up to the room and theyâve been hacking through the wee hours of the morning, but now they were ready.  They had tweaked the user agent to mimic a Samsung Galaxy S3.  Their traffic was now coming through New York and they had a username, @realDonaldTrump, the password âyourefiredâ, and the e-mail address twitter@donaldjtrump.com.  They typed it all in, hit Enter, and they were in.  I want to know that feeling of hitting Enter and it says âWelcome to your account.â</p>
+
+<p>VICTOR:	I can describe the feeling â is always the same.  We are doing this work for more than twenty years.  Getting access to a system even today gives the same woo, nice, it worked.  You solved a problem.</p>
+
+<p>EDWIN:	Wow, weâre in.</p>
+
+<p>VICTOR:	Yeah, wow, weâre in.  Yeah.</p>
+
+<p>EDWIN:	You solved the puzzle.</p>
+
+<p>VICTOR:	We solved the puzzle.</p>
+
+<p>JACK:	They had full access to real Donald Trumpâs Twitter account.  If they wanted, they could post as him or read his direct messages.  They could even change his password and e-mail if they wanted.  Surely if that happened, Twitter would recover it but this is the level of access they now had.  They owned Trumpâs Twitter account.  They cleared the biggest obstacle and hindsight being 20/20, it didnât seem that hard to pull off.  The Grumps had a mishap and in a matter of hours figured out Trumpâs credentials and tricked Twitter.  Now that the hack was complete, they could file a comprehensive, coordinated disclosure with Trump.  That would theoretically protect them from legal trouble.  Hereâs Victor.</p>
+
+<p>VICTOR:	Now comes the responsible task of documenting everything, [MUSIC] writing the responsible disclosure e-mail, explaining to someone with hardly no experience with computers or security, explaining what the issue is, what he can do about it, what has to be checked, what has to be changed.  You cannot say hey, we â this is your password, everyone can log in; goodbye, because thatâs not very helpful.  You need to â if you write a report you have to explain what the issue is, how it can be prevented, and some extra tips for making sure it doesnât â happens again.</p>
+
+<p>JACK:	There were some clear things Trump could do better.  He could use a longer, more complex password with special characters and of course turn two-factor authentication on.</p>
+
+<p>VICTOR:	The things that we described, theyâre technically not so difficult and you can imagine that in those times, state-sponsored actors were of course already busy trying to get access to god knows what systems.  So, actually, thereâs â I think we were just in time finding this because it could have been anyone else in that time period who will find the same way in and do something not so pleasant with that account.</p>
+
+<p>JACK:	The Grumps could have been those bad actors but that was never their intent.  They didnât look at any private messages.  They didnât post any tweets.  In the end, they only took screenshots to prove they got in.  Going further, Victor says thatâs a no-go area.</p>
+
+<p>VICTOR:	Thatâs what we teach the young hackers.  You know, please â if you do things like this, logging into an account from someone without their permission is already a very grey area.  There must be a very, very good reason to do that, to go â to cross that border.  For us there was a good reason because, well, his Twitter account is at risk.  The risk that someone else would do it is very much likely there, so to make the report strong enough, available enough for Trump to do something with it, we had to go that far.</p>
+
+<p>JACK:	[MUSIC] Victor says going this far to get into someoneâs account was something theyâd normally advise against.  Trying to log into Trumpâs Twitter account was an unusual situation even by the Grumpy standards.  The payout though was that they discovered the person running for the US presidency had a vulnerable Twitter account and they were going to help make it more secure.  The Grumps put their findings and suggestions into an e-mail and sent it over to Trump.  In the e-mail, they explained step-by-step how they got access to the Twitter account with screenshots of everything.  [00:35:00] They even suggested a more secure password which was â!IwillmakeAmericagreatagainin2016!â  They CCâd the Department of Homeland Security and the US Computer Emergency Readiness Team or CERT in case Trump ignored them.</p>
+
+<p>On all these e-mails, they signed it as The Guild of the Grumpy Old Hackers, with all three of their full names.  They were eager to hear something back but itâs stressful when you send an e-mail like this, essentially saying that you hacked into someoneâs stuff, because you donât know what the reaction will be from it.  Youâre hoping that you get an e-mail back immediately thanking you for pointing out this glaring problem and that weâll address it right away, but whatever hope they had for immediate gratification didnât pan out.  No one was getting back to them.  Edwin says they forwarded the report to the other Trump e-mail address that they found earlier.</p>
+
+<p>EDWIN:	A couple of hours later when we had no response, we sent them to campaign@donaldtrump and some other e-mails we found and thatâs good for us because in the end it turned out evidence was of course hard, and we got a bounce-back from one of the e-mail addresses.</p>
+
+<p>VICTOR:	That was good for us because you need to â you know, you can say that youâre sending an e-mail but if you have a bounce at least back from one of those e-mail addresses, that â so it was nice to have.</p>
+
+<p>JACK:	[MUSIC] They felt like this bounced e-mail was their one shred of proof that they tried to do the right thing but even still, theyâre concerned that CERT didnât write back yet.  They dealt with them before and knew the routine.  Matt says things were different this time around.</p>
+
+<p>MATT:	Normally you get a ticket number but this time we got no response at all.  Thatâs where we started sweating.</p>
+
+<p>EDWIN:	Thatâs when we got a bit scared.  Like, why donât we get responses?  Is it because US CERT says okay, heâs not the president yet; heâs an individual, we donât do anything about it?  Or is it because we already know that this is his password for three years and we actively using it, so shit, why did these guys find it, you know?  All things go to your head.  You donât know.</p>
+
+<p>JACK:	Jokes aside, the next day there was still no answer from anyone and their minds were racing.  They were almost freaking out.  It didnât help that they thought Trump was a vindictive person.</p>
+
+<p>EDWIN:	We were getting more and more anxious because we didnât know â we know heâs vengeful so we were a bit scared.</p>
+
+<p>JACK:	Victor points out the situation was the result of an unfortunate coincidence.  They hadnât planned to hack Trump; it just sort of happened.</p>
+
+<p>MATT:	The past would have been no different.  If, for example, if Mark Zuckerberg will be on the television at that moment, we should have looked for Zuckerberg.  We could have missed this completely.  It was just random â it had to be like that.  Also had to be him.  I donât know why.</p>
+
+<p>JACK:	As Edwin puts it, if Trump was better with his passwords, they wouldnât be in this mess.</p>
+
+<p>EDWIN:	Itâs so stupid because I think he was already hacked on Twitter in 2013.  Well, probably.  He had the same password, so he must have changed it then.  Why is it now, again in 2016, the same password?  Is it coincidence?  Did he just do that because he was campaigning and somebody else needed to go into his Twitter account or is he so, well, lazy that the new password he had was too difficult so he put it back to his old one?  You know, you never know.  The fact of the matter is, that was the password, so yeah, we were in trouble.</p>
+
+<p>JACK:	[MUSIC] The next day, impatient from the lack of response from people in the US, they reached out to the Dutch National Cyber Security Center.  They worked with the NCSC in the past and knew they had contacts with US agencies.</p>
+
+<p>EDWIN:	From them, we got a response and they said that they would take it up.  From there on, we had active conversation with them and they sent us e-mails I think every five, six hours or something.  Yeah, we sent it, weâre trying to reach people in the US, weâre trying to reach our liaisons at Homeland, et cetera, et cetera.</p>
+
+<p>JACK:	Finally, about a week after they hacked Trump, they got a response that they were waiting for.</p>
+
+<p>EDWIN:	We finally got a e-mail back from the Dutch government saying itâs been addressed.  We donât know how but we got word from our US counterparts that itâs addressed, so for us itâs case closed.  Then it was case closed for us as well.  Thatâs the last thing we hear.</p>
+
+<p>JACK:	So, Victor sent his responsible disclosure e-mails on October 28th, 2016.  It was November 2nd when the US CERT confirmed that they were taking action on this.  The election was to be held on November 9th, less than a week away.  On November 6th, the New York Times reported that Trumpâs campaign aids revoked Trumpâs Twitter access.  [MUSIC] They didnât say why or how, only that Trump no longer could use Twitter.  My theory was that it was because of this hack.</p>
+
+<p>EDWIN:	For us, the big reward was when we saw Obama about a week later talking about the fact that Trumpâs Twitter was taken away from him.  Then we were immediately thinking that it was us.  We [00:40:00] donât know.</p>
+
+<p>JACK:	This did actually happen at a rally in Florida.  Obama was campaigning for Hillary on November 6th and saw this news, and had this to say.</p>
+
+<p>OBAMA:	Now, you may have heard that â this was just announced.  I just read it so I canât confirm itâs true but apparently his campaign has taken away his Twitter, and that in the last two days, they had so little confidence in his self-control they said weâre just gonna take away your Twitter.  Now, if somebody canât handle a Twitter account, they canât handle the nuclear codes.</p>
+
+<p>JACK:	It sounds like it was from you guys.</p>
+
+<p>EDWIN:	Probably, but we donât know for sure.  There are of course a lot of people who donât believe this story, you know?  For us to see Obama laughing about it on TV and telling him that if you canât handle Twitter, you canât handle nuclear codes, yeah, for us that was a bit of a appreciation moment.</p>
+
+<p>JACK:	They never did hear anything from Trump or the US CERT directly from this event.  They didnât hear anything from Twitter, either.  Victor had some suggestions for Twitter about this.  He tweeted that verified Twitter accounts should have better security.</p>
+
+<p>MATT:	We start asking also to Twitter; Twitter, please, for verified accounts or for US officials that are running an election, those Twitter accounts need to be protected standard with two-factor authentication, you know, and other things.</p>
+
+<p>JACK:	Other things like password reset protection.  Edwin agrees that influential accounts need good security.</p>
+
+<p>EDWIN:	People with a blue checkmark behind their box are people that a lot of people listen to or look up to, [MUSIC] so if their account got hacked and itâs being used for misinformation or whatever, it shouldnât be possible.  You must enforce some stricter security on those accounts if you can.</p>
+
+<p>JACK:	Thatâs what itâs all about for the Grumps, securing the internet to block digital abuse.  Theyâll never really know if Twitter specifically responded to the Trump hack or took heed to Victorâs tweets.  Itâs just been a one-way conversation so far.</p>
+
+<p>VICTOR:	Itâs always old men shouting at the clouds.</p>
+
+<p>EDWIN:	Grumpy old men.</p>
+
+<p>VICTOR:	Yeah, grumpy old people shouting at the cloud.  Sometimes it work.  Thereâs one thing you need to understand; if you do respond to disclosures on this kind of level, it is very common that they will use your signal or they will see your notification and they will do something about it and they will not mention you.</p>
+
+<p>JACK:	Leading up to the 2020 US election, Twitter said in a September blog post that they were now forcing election-related accounts with weak passwords to switch to stronger ones.  This meant at least ten characters and a mix of letters and symbols.  Twitter also made password reset protection a default setting.  This meant that a password reset would require someone to confirm the accountâs e-mail or phone number.  They encouraged but didnât actually require two-factor authentication leading up to the 2020 presidential election.</p>
+
+<p>VICTOR:	I think itâs a good thing that Twitter made their â put their security levels a little bit higher, protecting the people that are now running for the elections.  Itâs a good thing.  It sometimes takes a little bit of time for organizations to adapt or to make it better and more secure for the users, but overall it will happen.</p>
+
+<p>JACK:	[MUSIC] Whether youâre the average user or the president of the United States, you donât have to wait for Twitter or anyone else to do something more.  You can turn on two-factor authentication and use a strong password now.  The Grumpsâ hack of Trump started out by accident but the relative ease at which they pulled it off is amazing and alarming.  Someone with worse intentions could have replicated their methods but fortunately the Grumps got there first.  In the end, they helped secure a presidential candidateâs vulnerable account days before an election.  To the Grumps, that was worth it.</p>
+
+<p>EDWIN:	People donât believe that we did it, donât believe that Trumpâs password was âyourefiredâ.  Well, weâve got the evidence.  Weâve got, you know, we showed it and we were in his Twitter account a couple of days before the election.</p>
+
+<p>VICTOR:	I think he knows.  If you read the e-mail, itâs very clear.  Itâs going to be helpful just to prevent other people to do something bad with it.  I think we did the right thing.</p>
+
+<p>JACK:	Did they do the right thing, though?  Was this really ethical?  Trump did not give them permission so that did cross a line, but then their intentions mattered and their intentions were to contact the proper authorities to resolve this privately and as quickly as possible.  They clearly stood out in the open and took credit for this.  [MUSIC] They didnât try to hide from anything or anyone.  I guess part of the reason they never got in any trouble was because they were transparent and reported everything they had done in their disclosure.  Iâve met [00:45:00] Edwin in person in Las Vegas in 2019.  All these guys had their real names and contact information all over the reports they submitted.  Because theyâve been in the US since then, it would have been easy for them to be arrested if they were actually criminals.</p>
+
+<p>But nobody did arrest them which tells me they did do the right thing.  I want to turn around and take one last look at what happened here.  LinkedIn was breached in 2012.  The database dump was posted publicly for anyone in 2016.  Thatâs where Trumpâs password was but the first time Trumpâs Twitter was hacked was in 2013, a year after the LinkedIn breach.  I just wonder if someone saw his password in that breach and thatâs how they logged into Twitter then.  If so, why didnât he change his password in 2013?  But either way, this is just the story of one person who was hacked due to the LinkedIn database dump.  I know for certain there were other people who were victims too.  I mean, there were millions of people in that database dump and most of their stories probably didnât have happy endings.</p>
+
+<p>Like, how many people also had PayPal logins with the same e-mail address and password?  Itâs nice that The Guild of the Grumpy Old Hackers were willing to help.  But Victor here; Victor really sparks my curiosity because his Twitter bio says heâs done 5,789 responsible disclosures, or as theyâre calling them now, coordinated vulnerability disclosures.  Specifically, disclosure number 5,780 is a doozy, so crazy that it started an international investigation where Victor was the person of interest.  Youâve gotta hear that story but weâre out of time, so this is where weâll pick up in the next episode.  See you in two weeks.</p>
+
+<p>(OUTRO):	[OUTRO MUSIC] A big thank-you to Edwin, Matt, and Victor for sharing your adventures with us.  You can find links to all these people in the show notes or at darknetdiaries.com.  I bring this show to you every two weeks.  Do you like it and want to hear more episodes?  A great way to show your support is to help fund the show through Patreon.  As a thank-you, when you become a member you get access to an ad-free feed and bonus episodes.  Visit patreon.com/darknetdiaries to donate.  Thank you.  This show is made by me, the pie guy, Jack Rhysider.  This episode was produced by the cloud-watcher Charles Bolte.  Editing help this episode by Thing 3, Damienne.  Original music and sound design by the cyber-monster Garrett Tiedemann and our theme music is by the half-full Breakmaster Cylinder.  Even though if you put a million monkeys in front of a million keyboards, one will eventually write a Python program, this is Darknet Diaries.</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

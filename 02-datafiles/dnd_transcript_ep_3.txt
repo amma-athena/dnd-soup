@@ -1,0 +1,442 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>DigiNotar, You are the Weakest Link, Good Bye! â Darknet Diaries</title>
+	<meta name="description" content="The 2011 DigiNotar breach changed the way browsers do security. In this episode, we learn what role a CA plays, how browsers work with CAs, and what happens when a CA is breached.">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="DigiNotar, You are the Weakest Link, Good Bye! â Darknet Diaries">  
+	<meta name="twitter:description" content="The 2011 DigiNotar breach changed the way browsers do security. In this episode, we learn what role a CA plays, how browsers work with CAs, and what happens when a CA is breached.">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/brokenlink.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/3/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="DigiNotar, You are the Weakest Link, Good Bye! â Darknet Diaries" />
+	<meta property="og:description"        content="The 2011 DigiNotar breach changed the way browsers do security. In this episode, we learn what role a CA plays, how browsers work with CAs, and what happens when a CA is breached." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/brokenlink.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/3/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/brokenlink.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/3/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="DigiNotar, You are the Weakest Link, Good Bye! â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/brokenlink.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 3: DigiNotar, You are the Weakest Link, Good Bye!</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://traffic.megaphone.fm/ADV5119980399.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/3/",
+			   "title": "Ep 3: DigiNotar, You are the Weakest Link, Good Bye!"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/3">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[FULL TRANSCRIPT]</p>
+
+<p>[INTRO MUSIC]</p>
+
+<p>JACK:	A guy in Iran goes to check his e-mail.  He types in gmail.com into his browser and hits enter.  A strange warning pops up.  It says Invalid Server Certificate.  Heâs unable to get to Gmail.  He connects to a VPN and tries again.  Through the VPN he connects just fine.  He thinks there may be some funny business going on.  He posts a question to the Google forums asking if thereâs a possible man-in-the-middle attack going on.  He also says he suspects his ISP or the Iranian government to be doing something fishy.  Google responded not only to the forum post but they published a security warning to the world and released an emergency patch to their Chrome browser.  Mozilla, Microsoft, and Apple followed quickly with similar security updates.  There was, in fact, a man-in-the-middle attack against Gmail users; an attack which undermined the security in all browsers, an attack that had devastating consequences.
+<!--more--></p>
+
+<p>JACK (INTRO):	This is Darknet Diaries, true stories from the dark side of the internet.  Iâm Jack Rhysider.</p>
+
+<p>JACK:	HTTPS, SSL, and TLS are all technologies that secure the World Wide Web.  They all rely on certificates which are sort of like an identification card for websites.  The companies that issue certificates are called certificate authorities, or CA.  The concept of CAs and certificates is so complicated that Iâll have someone else explain it.</p>
+
+<p>GERVASE:	My name is Gervase Markham and for about the last twelve or so years Iâve been involved with the Certificate Authority Root Program at Mozilla.  [MUSIC]  A certificate authority is basically somebody who checks identity and that you trust to check identity.  The level of checking depends on the type of certificate.  They might just check that the person who says they own the domain foo.com owns the domain foo.com.  They might also say and by the way, it is Foo Corporation of 116 Acacia Avenue, Birmingham, UK and this is their phone number and this is their company reference number and stuff like that.  It may check all of those things but it checks some level of information.  The primary purpose of a CA is so that when you type foo.com into your web browser and that request goes out across the internet, which could be populated by any number of hostile or nefarious people controlling various bits of the network, the data you get back a) does come from foo.com and b) hasnât been tampered with or canât be viewed along the way.  The certificate system basically underlies the secure connection ability of the web.</p>
+
+<p>JACK:	Web browsers such as Firefox contain an internal list of trusted CAs and hold a list of root certificates to use for verification.  When you visit a website it will present a certificate which identifies the domain of the website.  The certificate also says which CA checked and verified this information as true.  The browser then checks to see if the CA is trustworthy.  Your browser contains a list of all trustworthy CAs and root certificates.  Firefox for instance, hasâ¦</p>
+
+<p>GERVASE:	64 organizations and 159 certificates.</p>
+
+<p>JACK:	This list of trustworthy organizations is called a root store.  When a company decides they want to become a certificate authority, they need to work with the browsers to be added to the root store.  If they arenât added, browsers wonât trust those websites.</p>
+
+<p>GERVASE:	There are four major root stores.  Thereâs us, thereâs Microsoft, thereâs Apple, and thereâs Google.  The criteria that we have for CAs to be included will include particular audits which try to demonstrate that the CA is acting in accordance with the relevant security guidelines.  The auditors will come in and check that and they will be able to present those audits to lots of different root programs.</p>
+
+<p>JACK:	Gervase and his team are in charge of deciding which CAs are trustworthy and which arenât.  This is an extremely important job.  He is like, the security guard for the internet looking out after everyone who uses Firefox and making sure the organizations that are in the trusted list are safe for the world.  Think about it this way, if you use Firefox then you are trusting that this man, Gervase Markham, knows which organizations can be trusted.</p>
+
+<p>GERVASE:	Itâs not just me.  There are three of us who currently work on the CA program but Mozilla runs the only fully open and transparent root program.</p>
+
+<p>JACK:	Gervase thinks this kind of decision making should be open to the public so they can see the decision process and even give input into help make the decision.  Thatâs what he means by saying his root program is open and transparent because as you can imagine, deciding which certificate authorities are trustworthy is a difficult task.</p>
+
+<p>GERVASE:	Trust is an organic thing, right.  Trust is not something that results from coming to the end of a checkbox.  If we read a news article that says, for example, the government of Kazakhstan is considering manning-in-the-middle all of its citizens and then we receive an application from the government of Kazakhstan to include their root certificate in the browser, even if all of the paperwork is in place we might be somewhat reluctant to add that root certificate to our browser because we have external information about what that government may be wanting to use that certificate for.  There is the question of the reputation of the organization who is applying, as well.  It is not just a simple checklist but we do try and have criteria that at least â vaguely objective so that CAs know what they have to do in order to be included.</p>
+
+<p>JACK:	But thereâs a few problems with this whole approach to using root stores and certificate authorities.  Security researchers are still trying to find better solutions to this problem.  One issue isâ¦</p>
+
+<p>GERVASE:	Is that the certificate system had a weakest link problem.  That is to say, if you trust 64 different organizations and one of them has sucky security, then you have a problem.  It doesnât matter if your particular site uses one of the other 63 because the attacker can get a certificate from the dodgy one and then impersonate you.</p>
+
+<p>JACK:	That is, if one of the 64 organizations were to be hacked it ruins the trust for all other CAs.  Basically the hacker would then be on the trusted list.  The security of CAs has to be top-notch and impenetrable.  Comodo is one of the largest CAs in the world.  They issue certificates for millions of websites around the world and in early 2011 they were hacked.  [MUSIC]  The hacker issued nine fake certificates but Comodo immediately detected this and revoked the certificates.  A few days later Comodo had fixed the problems and publically announced that an intrusion took place, but a few days after that, a second intrusion took place.  But this time the hacker was unsuccessful.  All attempts at doing anything failed.  [MUSIC ENDS]  The hacker was able to get into the network but couldnât take any steps beyond that.  They were unable to issue any certificates or do anything significant.</p>
+
+<p>Then we see a strange post show up on Pastebin.  Pastebin is a website where anyone can post a message anonymously.  This message was written by a person named Comodo Hacker and it reads, quote, âHello.  I am writing this to all the world so you know more about us but first I want to give some points so youâll be sure Iâm the hacker.  I hacked Comodo from instant SSL.  Their Comodo username/password was GT admin and global trust.  I am not a group.  I am a single hacker with the experience of 1000 hackers.â  End quote.  The message goes on to explain more on how he got in and what he did.  At the very end he writes in Persian, âI will sacrifice my soul for my leader.â  Five days later Comodo announces the second intrusion but mentions the hacker was unable to do anything and they fixed the holes in their network.  Overall, Comodo handled this issue fairly well.  They quickly detected and fixed the issue and notified the public.  Comodo isnât the only CA.  Another popular one is DigiNotar.  Itâs a Dutch-based company and they started out in 1998 doing notarizations in Netherlands.  Eventually they became a respectable CA.  In fact, the Dutch government used DigiNotar as the CA for many of their websites.  In early 2011 VASCO bought DigiNotar for almost 13 million dollars.</p>
+
+<p>JOSEPHINE:	DigiNotar I think is a case that had really invested heavily into security, as you have to if youâre a certificate authority.</p>
+
+<p>JACK:	Thatâs Josephine Wolff.</p>
+
+<p>JOSEPHINE:	Iâm an assistant professor in the Public Policy and Computing Security Department at Rochester Institute of Technology.</p>
+
+<p>JACK:	She recently published an article and slate in regarding DigiNotar.</p>
+
+<p>JOSEPHINE:	The network was set up only with all of these segments, with the public facing, the external net, and the DNZ internal, and then the several layers beyond that but they also had physical controls in place.  Once youâre into the most secure portion of the network, if you then want to actually access the production servers that are used to issue certificates, you had to get to these computers that were stored in a room thatâs something out of a James Bond movie.  There are two sets of doors, thereâs a hand-recognition device, and a pin code, and you have to insert an electronic key card in order to actually begin the certificate-issuing process.  There are several levels of security that ostensibly you have to get past in order to issue a certificate in this setup.</p>
+
+<p>JACK:	DigiNotar knew security was vital to the reputation of the company and invested heavily in its own security.  I like to sometimes think of securing a network similar to securing a castle that has ten thousand doors and windows.  Even if you spend the time to go check every door and window to make sure itâs locked, you may have missed one or may not be aware of one and over time youâre bound to make a mistake and leave a door unlocked.  Maybe because you were lazy or distracted, but humans make mistakes.  In the summer of 2011, DigiNotar made such a mistake and a hacker entered their network.</p>
+
+<p>JOSEPHINE:	[MUSIC] The breach begins by the perpetrator actually connecting to the public facing web servers that DigiNotar has up.  Itâs a little bit out of date.  There are some patches that they havenât updated in the content management software.  The perpetrator connects to their web servers, takes advantages of some of those out of date vulnerabilities, and uses those vulnerabilities to tunnel through this incredibly extensive set of firewall rules into whatâs supposed to be the most secure silo of their network.</p>
+
+<p>JACK:	The hacker eventually made his way to the server that issues certificates but DigiNotar had a security check in place, where a physical key card had to be present in the computer before a certificate could be issued.</p>
+
+<p>JOSEPHINE:	It turns out that thereâs a key card, we think, thatâs actually being left in permanently.  Not just out of laziness but because DigiNotar wants to be able to automatically generate what are called certificate revocation lists.  Every time a certificate becomes untrusted or out-dated or is being revoked for some reason, DigiNotar wants to be issuing automatic lists of those certificates so that all of the browsers that trust DigiNotarâs certificates will stop trusting those particular certificates.  In order to issue those lists, you need to have one of these cards inserted into one of the secure servers in this room and so because itâs just being left in there, it turns out that all of these layers of security which seem like overkill, are able to be bypassed.  The intruder is able to issue a bunch of rogue certificates in the names of a whole variety of different domains.  The big one that comes up are the Google.com certificates but I believe there are also cia.gov certificates being issued and many, many others.</p>
+
+<p>JACK:	With these certificates the hacker can now become Google.  They can trick the browser into believing they are google.com.  That is because DigiNotar was one of the trusted CAs within the browser.  This breach took place on July 10, 2011 and he ended up issuing 531 rogue certificates.  Nine days later DigiNotar detected the breach but they didnât announce it publically.  Over a month later is when the Google forum post showed up about the man in Iran who couldnât get to gmail.com.</p>
+
+<p>JOSEPHINE:	The people in Iran who were trying to connect to their Gmail accounts are being redirected that directs them to the wrong website that probably looks exactly like the real Gmail.  Because theyâve got these rogue certificates issued by DigiNotar, the people who created this fake Gmail or Google website are able to actually sign it and look like itâs really authentically a Google site.  But because theyâve got this rogue certificate, theyâre able to do that, people are going to what they believe are Google sites, entering their credentials.  We suspect those credentials are then being used to spy on their Google accounts in various ways.</p>
+
+<p>JACK:	The hacker then took these certificates and proceeded to create a man-in-the-middle attack.  This is where a hacker intercepts the traffic thatâs supposed to go somewhere else.  The rogue certificates is only half of whatâs needed to do a man-in-the-middle attack.  The hacker needs to redirect people to his server instead of the real Google servers.  We donât know exactly how he did this but the best theory with the most supporting facts is he did a DNS poisoning attack.  A DNS server translates a domain like google.com to an IP address so routers can find where they need to go.  He tricked the DNS servers in Iran so that anyone looking for google.com would be redirected to his IP instead.</p>
+
+<p>JOSEPHINE:	Thereâs no definitive proof that thatâs how the redirect happened.  Thereâs circumstantial evidence that you can use to try and make that case.  Itâs possible that thereâs an ISP in Iran thatâs either complicit or has been compromised and is therefore redirecting traffic to these fraudulent sites.  Another possibility is that itâs a very high level DNS server that has been compromised and is propagating those fake records down to the other DNS servers that rely on it in the hierarchy.  Again, thereâs a sense that the investigators have, just based on the evidence, that itâs probably not that because when they look at how many people are being redirected and when theyâre being redirected is very bursty.  That is, you see a big spike in the number of people being sent to the fake site and then it goes down, and then thereâs a spike again which makes them think that itâs probably not poisoning happening at a high level.  Itâs probably some local DNS servers being flooded with messages that look like they come from high level trusted DNS servers but instead are actually coming from the attackers saying hereâs the correct updated DNS record for google.com.  That will only last a certain period of time because then that DNS server will get the correct record from the higher level DNS server so then it will start sending people to the right site again.  The attacker would have to come back and poison it again.</p>
+
+<p>JACK:	Over 300,000 people from Iran visited the rogue server.  This attack seemed to be targeting Iranian civilians.  This attack would have went undetected for some time but Google had a clever way of detecting it.</p>
+
+<p>JOSEPHINE:	They finally noticed because theyâre doing this within the Chrome browser, which is manufactured by Google, and because Google owns the Chrome browser which is checking these certificates, and owns the website that theyâre being used to imitate, the browser notices.  This is a certificate that comes from a trusted certificate authority, right, Chrome trusts certificates issued by DigiNotar but we know itâs not the right certificate because we know what our Google certificates are.  This is not one of them.
+JACK:	This is why the guy in the Google forums had a server certificate error.  Gervase over at Firefox was on the front line.</p>
+
+<p>GERVASE:	Google notified us that they had detected a mis-issued certificate for starter, google.com which was being used in active attacks on users in Iran.  We started investigating this.  I basically took on instant response so I was very busy.  In the case of DigiNotar, their network was thoroughly penetrated and had been for months.  Their logs were a mess.  Their infrastructure was a mess.  There was no way of telling the scope of the compromise and therefore no way of containing it to a particular root or a group of root or intermediate or group of intermediates.  Because of the catastrophic  failures of security it was impossible to continue any form of trust in the DigiNotar systems and organizations.</p>
+
+<p>JACK:	When Mozilla decided DigiNotar was no longer trustworthy, they removed them from the root store but users would have to update their browser in order to receive the version of Firefox that didnât trust DigiNotar.  All the other root stores also removed DigiNotar from the trusted list.  Almost two months after the breach took place and well after Iran had been target of a massive man-in-the-middle attack, DigiNotar finally publically admitted they were breached.</p>
+
+<p>JOSEPHINE:	Once this actually becomes a public compromise, then the Dutch government steps in and takes control of DigiNotar which is unprecedented in the history of breaches of private companies.  Once that happened the company is, to a large extent, out of the picture.  Their leadership is no longer making the decisions about hiring investigators and everything else.</p>
+
+<p>JACK:	The Dutch government was using DigiNotar as their primary CA for numerous government sites and applications.  When browsers began removing DigiNotar from the trusted root store, it broke a lot of systems for the Dutch government.  They reached out to the root stores and asked to reinstate DigiNotar back into the root store.  The browsers did add DigiNotar back as a trusted CA but to solve the problem of the rogue certificates, the root stores would block any certificates that were issued by DigiNotar after July 2011.  This allowed the Dutch government to continue and work towards finding a new CA.  Eventually the Dutch government moved to a new CA and within three months after the breach, DigiNotar was shut down permanently.</p>
+
+<p>JACK:	DigiNotar hired a security firm called Fox-IT to conduct an investigation as to what happened.  They found numerous problems in the DigiNotar network.  They found the Windows domain administrator account had a simple password and was easy to brute force.  Then all the certificate issuing servers were on a single domain.  This means a single admin account was able to access all eight of their certificate servers.  Numerous systems didnât have antivirus present which would have stopped some of these attacks.  There was no central logging and no separation of critical systems.  A combination of all these failures is how the hacker was able to bypass all of the security checks.  Fox-IT also looked through of the evidence to try to find who did this attack.</p>
+
+<p>JOSEPHINE:	We donât know who did this.  Nobodyâs been caught or prosecuted for this breach.</p>
+
+<p>JACK:	Itâs true, we havenât been able to determine who did this but when Fox IT investigated the breach, they did find some interesting clues.  First they looked at all the IPs the hacker used in the network.  They were able to trace each IP back to a proxy except for one.  This IP connected to the DigiNotar network from Iran and it was not from a proxy.  It only connected for a few seconds and then disconnected.  Then a new connection showed up from a proxy.  This may have been a mistake by the hacker who then corrected himself very quickly.  That IP was also seen visiting DigiNotar previously which may have been for reconnaissance.  Fox-IT also found the hacker left a message on the server that was hacked.  It read in part, quote, âThere is not any hardware or software in this world exists which could stop my heavy attacks, my brain or my skills or my will or my expertise.â  With a message at the end in Persian saying, âI will sacrifice my soul for my leader.â  We also see a new Pastebin message show up from the person who claimed to have hacked the Comodo CA.  This Comodo hacker now takes credit for also hacking into DigiNotar and also signs his Pastebin with the same message in Persian.  He also goes onto say heâs twenty-one years old and works alone.</p>
+
+<p>JOSEPHINE:	Certainly DigiNotar and the Dutch government gets very caught up in this because theyâre the vehicle by which all of this happens, but the real target was espionage directed at Iranian citizens.</p>
+
+<p>JACK:	But who would want to read the e-mails of Iranian citizens?  The US has had conflicts with Iran so it could be suspect.  Bruce Schneier, a prominent security expert says it may be the work of NSA or an exploit of NSA, but he says itâs mainly because of a leaked NSA document showing the NSA had access to DigiNotar.  This theory isnât very strong and has almost no other evidence, so who else would be targeting the general people of Iran?  The Iranian government itself.  To understand why, we need to dial back two years before the hack.  In 2009 there was a presidential election in Iran.  Mamoud Ahmadinejad won the election by 63 percent vote but there was a strong opposition to this.  Many Iranians believed the votes had been tampered and the election was rigged.  Protests began immediately.  This created a divide among the people of Iran.  Some people became extremely distrustful of the government while other people became extremely loyal.  Police began arresting protesters and when protesters didnât leave they were pepper-sprayed, hit with batons, and sometimes shot at.</p>
+
+<p>Within three months of the election, seventy-two protesters died.  Corruption was so bad, the police forced families to sign papers saying their dead relatives died of a heart attack and not by police brutality.  As you can imagine, this only incited even more emotion among the people of Iran.  For years after, the Iranian government worked hard to eliminate any government opposition.  This continued all the way to when this DigiNotar attack took place.  Itâs a strong theory that this hack was done by the Iranian government itself or someone trying to help the Iranian government.  They were possibly looking through e-mails trying to find dissidence and those who were unhappy with the Iranian president.  If they were found it may have resulted in people being arrested, tortured, or killed.  Certificate authorities and browser developers have learned some serious lessons from DigiNotar.  Audits have become more strict for CAs to pass in order for them to be accepted into root stores.  Public key pinning has seen more use.  This is what Google did with their Chrome browser to detect this breach.  They forced Chrome to only accept certificates issued from Googleâs CA, essentially pinning the certificate to a specific CA.  More websites have done this since DigiNotar but it has its shortcomings.  For instance, imagine the problems a website would have if they pinned their certificate to a CA that went out of business, or imagine if a hacker were to pin a certificate to a rogue CA.  Unpinning the certificate is currently a complicated task.  Since DigiNotar, Firefox has added a new feature to help block rogue certificates.  Hereâs Gervase to tell us about it.</p>
+
+<p>GERVASE:	We have a system called OneCRL which is, if you like, an emergency revocation system.  Firefoxes all check for certificates on this black list every twenty-four hours.  If we need to do an emergency revocation of either an individual certificate or in fact an entire tree of certificates based off one intermediate, then we can put it into OneCRL and within twenty-four hours every Firefox which has this system, and weâve had it for quite a while now, will no longer trust those certificates.  Itâs not required to install an update in order for us to distrust something.</p>
+
+<p>JACK:	When a hack takes place it does worldwide scale.  It changes the way we do security.  In a way, hackers are like the immune system of the internet.  They infect us, we get sick, we get better, and we become even stronger afterwards.  Even today, six years later, when a major breach happens to a company, someone always reminds us of the fate of DigiNotar.</p>
+
+<p>[OUTRO MUSIC STARTS]</p>
+
+<p>JACK:	Thank you for Josephine Wolff for telling us about DigiNotar and a great big over-the-top thank you to Gervase Markham for coming on the podcast because about a year after this episode original aired, Gervase passed away.  At twenty-two he was diagnosed with a malignant salivary gland cancer and after battling it for eighteen years he passed away at the age of forty.  Gervase made significant contributions to securing Firefox and the Bugzilla tool.  We have him to thank for keeping us safe in this unsafe world.  Weâre going to miss you, Gervase.  Music is provided by Ian Alex Mac and Kevin MacLeod.</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+<p>Transcription performed by Leah Hervoly
+www.leahtranscribes.com</p>
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

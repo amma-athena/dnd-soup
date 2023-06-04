@@ -1,0 +1,562 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>For Your Eyes Only â Darknet Diaries</title>
+	<meta name="description" content="Nude selfies. This episode is all about nude selfies. What happens if you take one and give it to a vengeful boyfriend. What happens when a hacker knows you have them and wants to steal them from y...">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="For Your Eyes Only â Darknet Diaries">  
+	<meta name="twitter:description" content="Nude selfies. This episode is all about nude selfies. What happens if you take one and give it to a vengeful boyfriend. What happens when a hacker knows you have them and wants to steal them from y...">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/foryoureyes.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/34/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="For Your Eyes Only â Darknet Diaries" />
+	<meta property="og:description"        content="Nude selfies. This episode is all about nude selfies. What happens if you take one and give it to a vengeful boyfriend. What happens when a hacker knows you have them and wants to steal them from your phone. Something does happen, and it's not good." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/foryoureyes.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/34/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/foryoureyes.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/34/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="For Your Eyes Only â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/foryoureyes.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 34: For Your Eyes Only</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://traffic.megaphone.fm/ADV4340254351.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/34/",
+			   "title": "Ep 34: For Your Eyes Only"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/34">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[FULL TRANSCRIPT]</p>
+
+<p>JACK:	Thereâs a lot of sexual content in this episode, and adult language and themes.  Consider this episode explicit.  Letâs talk about your smart phone.  How much does it know about you?  [MUSIC]  It knows when youâre sleeping because you put it down next to your bed and the room is quiet and dark for eight hours.  It knows all the things you say on Twitter, your e-mail conversations, your Facebook messages, and it knows what games you like to play.  But the most personal thing I think it knows about you is what you look like naked.  Cosmo Magazine conducted a survey on 850 millennial women and 89% of them said they took nude selfies.  Now, if nine out of ten women are taking naked photos of themselves, this could be a problem.
+<!--more--></p>
+
+<p>JACK (INTRO): 	[INTRO MUSIC]  These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	Okay, hereâs the situation.  Suppose youâre in a loving relationship.  You let your boyfriend or girlfriend take a photo of you and you show some skin, like a lot of skin.  You might even let them film yourselves having sex.  Sure, why not?  Itâs fun and exciting and youâre exploring your own sexuality to see what youâre comfortable with.  A lot of people do it, no problem.  But then one day your relationship goes sour, really sour.  Thereâs a breakup.  Itâs ugly.  Huge fights, lots of tears, someone feels betrayed and used and cheated.  Theyâre mad.  Theyâre really upset and they want to do something to make you feel bad, too.  Tony Robbins taught me that a core need in a relationship is the need to feel significant.  If a person in a relationship doesnât feel significant they might lash out at you to bring you down to their level.  They fulfill their need to be significant by creating significant problems.</p>
+
+<p>What might a person like that do?  Well, they have your nude photos, maybe even a video of you having sex, and they decide to post it online, [MUSIC ] plastering it all over social media; Reddit, Instagram, Twitter, Facebook.  Boom, now your naked body is out there for anyone to see.  Theyâre sharing it with your coworkers and your classmates and your family.  All your friends see it, too.  Itâs horrible.  Now you feel completely ruined.  The laws around this are vague and practically nonexistent.  They took the photo with their camera with your consent but now years later you want to put restrictions on where they can share that photo?  The situation is ugly.  This is called revenge porn and itâs been a thing online since Usenet forums back in the 90s.  Heck, even in the 80s there was a section in Hustler Magazine that encouraged readers to submit personal photos.  A lot of these photos that were submitted were without the womenâs permission.</p>
+
+<p>Revenge porn has been getting bigger over time.  One guy saw this gaining in popularity and decided to take matters into his own hands.  Kevin Bollaert.  He thought hey, I bet a lot of people would like to see amateur photos of old boyfriends and girlfriends.  He made a site that lets anonymous users upload revenge porn for anyone to look at.  Kevinâs site grew in popularity.  Some people like seeing amateur pics and realcore porn.  Since porn already feels secret, looking at photos you arenât supposed to ever see felt even more forbidden, maybe even more exciting.  Kevinâs website yougotposted.com was growing bigger and bigger.  Hundreds of people were uploading nude pics of old boyfriends and girlfriends often with horrible descriptions, calling their ex-girlfriend a slut or a whore.  90% of the pics are females, too.  Kevinâs site grew but when women saw their photos were posted to the site they would get furious and e-mail Kevin asking for it to be removed.</p>
+
+<p>Kevin was willing to remove it but thought these people were so desperate to have it removed, why not try to get some cash out of them?  Kevin created a second site, changemyreputation.com where for around $300 you could pay to get your pics removed from yougotposted.com.  It was working.  People were actually paying to have their images removed.  Things were looking good for Kevin.  In the first year of his site being up, ten thousand people submitted nude photos of their exes.  He received thousands of take-down e-mails which converted to tens of thousands of dollars in cash until December 12th, 2013.  Thatâs when the police arrested Kevin.  His dream of being a big entrepreneur came to a sudden halt.  He was being charged with thirty-one counts of conspiracy, identity theft, and extortion.  During trial a few of the victims that got their photos posted spoke up and explained how much damage it cost.  Hereâs one victim.</p>
+
+<p>VICTIM1:	Iâm homeless because of this.  I lost my family, friends.  Iâve lost almost everything because of this.</p>
+
+<p>JACK:	Hereâs another victim.</p>
+
+<p>VICTIM2:	[00:05:00] I tried to commit myself to a mental institution after this happened because I was so overwhelmed.  I would spend hours on the floor crying.</p>
+
+<p>JACK:	There were ten thousand victims of revenge porn that were posted to his site.  Even Kevin began crying at some point in the court room when he realized how bad his site had hurt people.  Once the jury heard all this they convicted Kevin of twenty-seven felonies and the judge sentenced him to eighteen years in prison.  Eighteen years in prison.  Kevin felt remorse and apologized to everyone heâs hurt.  Kevin never uploaded any images himself, though.  He only ran the site to let anonymous people do that.  He started the site just to make money but after one year yougotposted.com was closed down.  About this time a guy named Hunter Moore starts hitting the news.  Oh, where do I even begin with Hunter?  There is so much to him.</p>
+
+<p>Of all the rabbit holes Iâve ever gone down on the internet the Hunter Moore story is one of the strangest Iâve found.  He grew up in Sacramento, California and when he was around twenty-one years old he got a job working at Zumiez, a trendy clothing store in the mall.  But while working there something happened that I think put him on a trajectory that would define his life.  Okay, so heâs working in the clothing shop and he sees that the male manager keeps asking another sixteen year old male coworker to try on certain clothes.  The manager asks Hunter to try on some clothes too so Hunter puts the clothes on and then comes out of the dressing room.  On Hunterâs YouTube channel he explains what happens next and this is where this episode starts getting explicit.</p>
+
+<p>HUNTER:	Homeboy comes up to me, the sixteen year old.  Heâs like yo, man, he keeps making me try these fucking clothes on.  Heâs like I know what heâs doing.  He was like, freaking out.  Iâm like, whatâs going on little dude?  Tell me whatâs up.  Heâs like okay, look right there.  Look right here.  Thereâs cameras by the dressing room, dude.  Heâs like, he watches us and when we come out he can kind of see us or whatever.  Iâm like, what the fuck?  Heâs like yeah, he goes in the office and he jerks off âcause he can look at all the video.  He can edit it and shit.  Itâs on a private server.</p>
+
+<p>JACK:	Hunter doesnât know what to think about this and goes back to work like normal.  But the manager would casually pass by Hunter and touch him inappropriately.</p>
+
+<p>HUNTER:	As time goes on heâs grabbing my ass more.</p>
+
+<p>JACK:	One day Hunterâs ringing a cute girl up at the cash register.  Heâs hitting on her.  The managerâs watching him ring her up.</p>
+
+<p>HUNTER:	Iâm talking to the girl.  Iâm like haha yeah, yeah.  Oh, whatâs your name?  Haha.  Well he comes up from behind me right, and he comes like real slow, like a stalker, dude.  He comes from behind.  He puts his hands like this, boom.  Puts them on my stomach and then goes down to my cock like under my fucking pants, like both hands.  He didnât jerk me off or anything, he just put his hands down my pants and he goes and kisses me on the neck and he goes Hunter, we all know youâre a fag.  Then like smiles, dude, and fucking walks away.</p>
+
+<p>JACK:	Initially Hunter was mostly angry that he lost his chance with this girl but then he starts thinking how creepy all this was.  He felt like he wanted to quit but he kept working to the end of his shift and after the store closed heâs counting the money in the register.</p>
+
+<p>HUNTER:	Iâm closing up the last drawer.  He comes up from behind me hella creepy like and Iâm like, I wish the motherfucker would just do it.  In my periphs I see him, dude.  Iâm like, whatâs up?  He comes up from behind me, heâs like donât be mad.  Right when he said mad, I went like this, yaa!  And I fucking hit him, dude, busted his whole shit.  He goes back, heâs like aah, what the hell?  Then grabs me, dude, throws me against the wall.  Boom!  Wounded, right?  Iâm leaking.  I donât remember anything but I fall on the floor.  What happens?  Iâm laying on the floor right, well, I come to, dude, and heâs dragging me across the floor.  Whoosh, whoosh.  All I think is heâs trying to pull my pants off and rape me dude, and I just start kicking.  Get off of me!  I get up.  I kick his fat fucking ass off me âcause I had take off out the door, right?</p>
+
+<p>I didnât even know Iâm bleeding, Iâm leaking.  Iâm driving home.  Iâm like fuck, this fool just tried to rape me.  Iâm calling everyone, Iâm on my Sidekick.  This is how old this shit is.  Iâm texting people.  Iâm like yo, letâs fuck this fool up.  This guy just raped me.  I couldnât even think straight âcause now I wouldnât even tell people that shit.  But dude, I wanted to kill this guy.  I get home.  My friends are at my door, my dadâs there and heâs ready with a fucking pistol.  Weâre ready to go, dude.  Then we calm down, weâre thinking about it.  Weâre like yo, why donât we just sue the company?  So thatâs what happened, dude.</p>
+
+<p>JACK:	He finds out that the manager fondled two other employees, too.  He gets these other guys together and they get a lawyer and sue the manager.  They get together with the other lawyers and the mediator and try to sort this case out.</p>
+
+<p>HUNTER:	Yeah, we get there and weâre talking, weâre talking.  We tell all of our stories, how it affected us, this all bullshit fucking court antics lunacy.  They tell the mediator how much theyâre gonna offer us, right.  The fucking mediator comes back and he was like alright guys, I got your first offer.  You guys ready?  [00:10:00] He was like $25,000 for all of you.  I was like nah, weâre going to court.  Weâll see them in fucking trial.  Fuck this shit.  Fuck this shit, naw, hell naw, weâre losing our minds, dude.  Weâre like fuck these fools.  Thatâs what being raped is only worth, is twenty-five grand.  We were losing our minds, dude.</p>
+
+<p>JACK:	Hunter and his two coworkers wanted more from this and they wanted to see how high they could go.  The attorneys came back and offered fifty grand.  Nope.  A hundred grand.  Nope.  They wanted more than that and they kept saying letâs take this to court.  The managerâs attorney met with them one more time.</p>
+
+<p>HUNTER:	They come in right, and they were like alright guys, well we just want to know how it affected you long-term since this situation happened.  So I tell my story again, same old bullshit.  Iâm just kind of whatever, you know?  Anyway, so Ray tells his story and he just starts bawling dude, like he touched me [CRYING SOUNDS].  I know heâs not serious right, so I have my head down like this, like Iâm sad.  But really, Iâm trying not to laugh.  I get up right, Iâm like this.  [MUFFLED]  Iâm looking around the room and I look at fucking the sixteen year old kid and we connect eyes, dude, and it was the hardest fucking thing not to laugh, man.  It was fucking horrible.  The lawyers, they were like okay, thank you.  They walk out the room.  Theyâre like weâre sorry this happened to you.  Telling Ray, patting him on the hand and shit.  Ray, as soon as the door shuts, he goes from [CRYING] he touched me and he just starts fucking laughing, dude.  All of us in the room dude, we just all started cracking up.  They come back with that fucking final number, dude.  It all worked.</p>
+
+<p>JACK:	Hunter was awarded $300,000 for this sexual harassment case but thatâs not what Hunterâs known for.  Weâre just getting started with Hunter.  He had this entrepreneurial spirit and wanted to create his own company or something.  [MUSIC]  But he had no idea what to do.  So he took the money and just started partying hard.  Like, heâd go to Australia for a crazy party or New York and heâd drink a lot and smoke a lot, and do a lot of weed and probably even harder drugs.  Then heâd come back home and look for the next fun thing to do.  Being twenty-two years old with $300,000 in your pocket?  Of course youâre gonna have a little fun.  But Hunter didnât know when to stop.  He kept hanging out at clubs and spent a lot of his money on lavish lifestyle and partying and girls and music and drugs.</p>
+
+<p>He started Djing at some parties too, and he wasnât really that good at it.  He barely knew what he was doing for his first gig and at other gigs he would just play mixes he made the day before.  He got a lot of tattoos during this time.  The first one was across his chest and it said Forgive Me, I Have Sinned.  Then he got a tattoo of his mother and his father on his arm, and a lot of religious symbols.  He only wore black and white clothing, like black denim pants often.  He seemed to wear shirts that say OBEY on them.  Some shirts had ornate wings and crosses on them, too.  He got a good taste of this lifestyle of luxury and fun for a short while and he attracted a lot of women, too.  One camera followed him around to a club.  Here he is talking to women in there.</p>
+
+<p>HUNTER:	[MUSIC] Why are you in love with me?</p>
+
+<p>GIRL1:	Because youâre hard to get.</p>
+
+<p>HUNTER:	Ooh.  Hello, youâre really pretty.</p>
+
+<p>GIRL2:	Thank you!</p>
+
+<p>HUNTER:	What are you doing here tonight?</p>
+
+<p>GIRL2:	Just hanging out.</p>
+
+<p>HUNTER:	Are you looking for the love of your life?</p>
+
+<p>GIRL2:	No, Iâm not.</p>
+
+<p>HUNTER:	Why not?  Whatâs the deal, do you have a boyfriend already?</p>
+
+<p>GIRL2:	No.  I just donât want to meet a guy at a club.</p>
+
+<p>HUNTER:	Well listen, my girlfriendâs here tonight.  I met her at a club.  We had sex for the first day I met her, probably within, I donât know, twenty minutes of meeting her.  I thought she was a whore.  Did you come here tonight to find your significant other?</p>
+
+<p>GIRL3:	Hell no.</p>
+
+<p>HUNTER:	Did you come to have a one-night stand?</p>
+
+<p>GIRL3:	Yes!</p>
+
+<p>HUNTER:	Yeah!</p>
+
+<p>JACK:	Yeah, whether it was the money or being a DJ or the drugs or just being at so many parties, it was working for Hunter.  He was having a blast and getting a lot of women.  I think at some point, maybe around five years into this, the money started to run short.  In fact, he ran totally out of cash and had negative money in his account.  He wanted to make some kind of business but didnât actually do anything with the time or money he had.  But he was introduced to a new lifestyle which altered the way he sees people.  At some point, as things started slowing down, he hooked up with a girl who was sending him a lot of nude photos of herself.  He tried to share these photos with a friend but it didnât work.  His friend convinced him to upload them to a website so he can see it.  Hunter took an old domain he had lying around called isanyoneup.com and published those photos there.  His friends thought it was cool and they wanted to publish some photos, too.  Hunter gave them the ability to post nude photos of women theyâre sleeping with, too.  This was all just for a laugh between bros and Hunter really thought nothing of it.</p>
+
+<p>[MUSIC]  But then a short time after that, Hunter checked the stats on the site and saw that [00:15:00] 14,000 people had visited the site in just a few weeks.  Hunter thought whoa, there may be something to this and decided to turn isanyoneup.com into a site where people can anonymously post nude photos of their boyfriends or girlfriends so anyone can see it.  He designed the site with a sort of metalcore flair to it, a gothic style font and punkish and metal overtones.  He built the site and started promoting it; Twitter, Facebook, forums.  Heâd get girls at parties to wear shirts with the URL on it and sure enough, the site rose in popularity fairly quickly.  People were posting a lot of nudes from exes or current relationships that anyone could go check out.  Hunter took this a step further and when you post someoneâs photo you can also add a link to their Facebook profile.  Now when you see a nude photo of someone on there, you can very creepily go check out their Facebook page, too.</p>
+
+<p>Yeah, this resulted in a major creep fest.  Girls who got posted on the site got a lot of really nasty messages and pretty much all the photos posted there were without the personâs permission which made a lot of people feel extremely violated.  Dick pics also showed up on the site, but not just anyoneâs dick pics.  These were often pics of male band members from the metalcore genre of music.  The members of this site found this exciting and got a lot of attention when it happened.  Male rock star sex tapes had their own version of popularity.  We had Bret Michaels, Fred Durst, Kid Rock, and Tommy Lee with sex tapes.  This all made big news, so seeing the penises of metalcore band members was kind of a wonder to see.  Over time more and more of these male band member dick pics would show up.  It was weird.  But what was weirder is what happened on the site next.  Each day there would be a pic of the day and that person would be queen or king of the site for a day which resulted in them getting a lot of attention for their nude photos.</p>
+
+<p>With links to their Facebook page, this got them a lot of messages.  Now, some people actually liked this kind of attention.  Some girls would post their own nudes just to get a weird sort of affection for the day, and youâd see male band members post dick pics the same day theyâd announce a new album or a tour coming up which would give him a bump in popularity right at the time he needed it.  The site took on a very weird cult following and attracted some people with a strange appreciation for Hunter.  But there were a lot of people who absolutely hated this.  Women who got posted and they got a lot of really creepy messages on Facebook, theyâd complain to Hunter and Facebook about this.</p>
+
+<p>Facebook issued cease and desist to Hunter but Hunter just sent them a dick pic of himself back to Facebook, so Hunter got banned from Facebook for life.  I think the same for Twitter, too.  I think Facebook blocked any links to isanyoneup.com and at the same time this made his fans like him even more.  They liked Hunterâs unapologetic persona and the way he would respond to hate mail.  Isanyoneup.com was getting more and more popular and Hunter was getting more of a following.  In fact, he appeared on the Anderson Cooper Show, where Anderson brought in two women whose photos were posted to the site without their consent.</p>
+
+<p>ANDERSON:	Do you feel bad about doing this to â I mean, you donât know these women.  You donât know anything about them.  Just anonymous people give you the pictures.  Why are you â whatâs right about them notâ¦</p>
+
+<p>HUNTER:	I mean, thatâs kind of what makes it easier, you know?  It is all anonymous.  I donât know these people.</p>
+
+<p>ANDERSON:	But theyâre sitting right here.  You donât feel anyâ¦</p>
+
+<p>HUNTER:	No.  I mean, no one put a gun to your head and made you take these pictures.  Itâs 2011.  Everythingâs on the internet.</p>
+
+<p>VIC3:	But if weâre choosing to send them to somebody that we trust, that doesnât mean that we expect them to show up on the internet.  Youâre helping someone whoâs probably spiteful of a situation exploit someone without their permission.</p>
+
+<p>JACK:	After that he appeared on Dr. Drewâs show.  Dr. Drew had a woman call in whose pics were posted to his site and she complained to Hunter about the pain this caused her.
+DR.DREW:	What do you think, Hunter?</p>
+
+<p>HUNTER:	I donât know how you can point your finger at me.  You took the picture.  Iâve been justifying this in my head for over a year and a half, what I do in the site that I run.  But at the end of the day it started with you and you took these pictures.  I donât know how old you are but Iâm sure youâre smart and go to school.  Itâs 2012.  What do you expect to happen?  Somebodyâs going to monetize this and I was the person.</p>
+
+<p>JACK:	Then another person called in and said her daughterâs computer was hacked and her pics were posted to the site somehow.</p>
+
+<p>HUNTER:	Your daughter said she was hacked, correct?  Usually people that are embarrassed who made mistakes usually try to fall back on something else.  Iâm sure she sent the pictures to a million different guys and it just ended up on my site just like everybody else.</p>
+
+<p>JACK:	Then ABC News caught up with him and interviewed Hunter at his house.  Hunter starts explaining that there are so many pictures being uploaded to the site.</p>
+
+<p>HUNTER:	It never stops.  People are submitting all the time.  Is Anyone Up?  Itâs where revengeful exes come for a peace of mind.  Your ex-girlfriend who youâve done dirty, she can come to my site and we will take care of her.</p>
+
+<p>JACK:	While the term revenge porn has been around before, I think it was actually Hunter [00:20:00] who now popularized it.  Here he is talking about it on ABC back in 2012.  I think this is how the term actually became mainstream.  Hunter expressed that he has no empathy for the people that are posted to his site.</p>
+
+<p>HUNTER:	No.  Theyâre just characters and avatars and icons on a screen.</p>
+
+<p>JACK:	Alright, so you might be putting some pieces together at this point and youâre like how is this guy on TV?  How was he getting away with this?  The truth is, according to federal law, he was in the clear.  Itâs the people who post it that might be breaking the law but not actually the place where itâs hosted.  Hunter had a lawyer and checked all this out and it was fully legal what he was doing.  You might be wondering but wait, what about yougotposted.com?  That guy got eighteen years in prison.  Iâm pretty sure he got that because he was charging people to remove the pics, which is extortion.  Hunter told ABC about a story of a victim of the site that came after him.</p>
+
+<p>HUNTER:	I was walking out of my house one day and out of nowhere the girl we had posted, or I had posted, she stuck me in the shoulder with a Bic pen.  This is the scar I have left.  They had to surgically remove it.</p>
+
+<p>JACK:	All his TV appearances just made his site rise up in popularity even more and more.  It was a great boost for his business.  [MUSIC]  He now had forty to seventy million people a month visiting his site.  Some just were curious.  Some were victims.  Some were people submitting stuff but most people came to look at nude photos.  He was making around $30,000 a month on this site just from ads at this point and it gave him the ability to host lavish parties.  He was Djing again and sponsoring some tours for bands.  Hunterâs lavish lifestyle wouldnât last forever, though.  After the break weâll hear how everything comes crashing down.  Stay with us.  The success of isanyoneup.com gave Hunter that party lifestyle that he always wanted, that entrepreneur flair.  He developed a sort of god complex.  He was doing a lot of cocaine and drinking gallons of vodka, smoking cigarettes and trying to get with any woman he found hot.</p>
+
+<p>The BBC interviewed him and wrote an article about him, calling him the most hated man on the internet but Hunter just replied by saying he loves the attention and that he feels like heâs giving people a hard lesson on how technology and privacy works in the modern era.  I think at this point Anonymous and 4chan started campaigning against Hunter and began submitting a massive amount of child porn to his site.  Now, Hunter had set it up so he had to approve every photo before it would go on this site, so he had to sit there and look at thousands of child porn photos and animal porn and really brutal porn images.  In one interview Hunter said the amount of stuff he has to look at is so overwhelming and endless and horrible but he has to filter out all the illegal stuff and he just doesnât see any way around it.</p>
+
+<p>This constant work of keeping the site going and the endless pressure from people to take it down, and all the hate he was getting and the way the media portrayed his site, it led Hunter to do one thing; pull the plug on his own site.  After about a year and a half after he launched it he gave it to another website who changed it to something else.  He even got a tattoo to commemorate taking down isanyoneup.com.  His tattoo said Hated in French, right on the back of his right hand.  But Hunter was still addicted to this lifestyle of music and women and drugs and he kept partying harder and harder.  At this point a reporter from Rolling Stone Magazine started following Hunter around to see what heâs up to.  That story from Rolling Stone is incredible.</p>
+
+<p>I mean, I could go on another hour just talking about that alone but it has nothing to do with computers so Iâm gonna skip it.  But just in case youâre curious, he went on a wild party through New York, met a lot of crazy girls, did a ton of drugs, broke some DJâs nose, got knocked out himself, started a huge brawl, and then came back to California.  I even think he tried to get laid and start a fight on the plane ride home.  Itâs really crazy rock star level stories that I didnât believe when Hunter told it, but because the Rolling Stone reporters said they were there too, I guess it is true.  When isanyoneup.com was up, this young womanâs topless photo got posted there.</p>
+
+<p>VIC3:	I had taken the photos of myself.  I had stored them on my computer just for no reason at all.</p>
+
+<p>JACK:	Thatâs where they stayed.  She claims she never sent them to anyone, ever.  She says she must have been hacked in order for someone to have posted her photos to that site.  Now actually, a few other people said the same thing but nobody really believed them.  But this young womanâs mother was a private investigator.  Her mother tried to figure out things for herself.</p>
+
+<p>CHARLOTTE:	Just to see my daughter in tears over this and I felt so helpless.  She was blaming herself which is what a lot of victims do.  I talked to nine attorneys at the beginning.  They did not have a clue about what to do.</p>
+
+<p>JACK:	This is Charlotte Laws speaking with CNN about what she did with this.  Charlotte started building a file on Hunter and she created a huge list of victims of the site, compiling it all in a big box of papers.  Being a private investigator, she wanted to go check out one of Hunterâs parties herself.</p>
+
+<p>CHARLOTTE:	In addition to running the site he would periodically host parties.  Iâm locking the door, my car [00:25:00] door, and I have this crazy getup on.  I have this white pasty stuff on my face, this black wig, this little cap, sunglasses, I mean, I looked pretty humorous.  I turned around in the parking lot and the person whoâs standing there in my face is Hunter Moore.</p>
+
+<p>JACK:	She was bold and brazen and Hunter knew she was after him and would tell his friends.  Theyâd go to her house and stalk her and try to scare her.  But she persisted to build a case on Hunter and eventually found that a lot of victims of the site were claiming to have been hacked, too.  She compiled a list of evidence and sent it to the FBI who knew that if they could prove that Hunter was hacking, they could send him to prison.  The FBI investigated the case and found in fact there was someone hacking into peopleâs accounts and posting it on the site.  His hacker named was Gary Jones.  Somehow this CNN reporter tracked down the hacker and called them on the phone.  Hereâs the hacker talking about working with Hunter.</p>
+
+<p>GARY:	He offered me money.  I was in a bad place, said no for about eight months.  I got fired from my job for drinking.</p>
+
+<p>JACK:	When he hacked into these people he felt shameless about it.</p>
+
+<p>GARY:	[MUSIC] It doesnât feel real when Iâm in my room, lights off, door locked, drinking, I donât feel the consequences.  If I had to look at somebody in the face and do that, you know, itâd be a different story.  I did it for money.  Again, that makes me sound like a monster but itâs scary how quickly I would drop my morals for so little.  How much those women were worth.  To me it was like five hundred a week, a thousand a week, something like that.  It was really just my habits.  You have to do all these mental gymnastics to be able to live with yourself.</p>
+
+<p>JACK:	The FBI had enough evidence on Hunter at this point and were ready to take him down.  Hereâs Hunter.</p>
+
+<p>HUNTER:	I did a show in Buffalo, New York and I had flown back.  I was just at home and I smoked a huge blunt and I was like you know what?  Itâs gonna be a good year or something.  I remember just feeling good and I had my big old fat cat next to me and I was just chilling.  Then it was probably three in the morning when I fell asleep.  I woke up about three hours later super high and the feds were all standing around me.  They were like yeah, get dressed.  I was like what the fuck?  I just didnât understand.  Not only was I high and completely out of it, I had a god complex at this time, too.  I was on the top of my game, I was making retarded money, it just didnât compute in my brain like, what the fuck are you guys doing here?  It was weird, man.  I donât know how to explain it.</p>
+
+<p>JACK:	The FBI arrested Hunter and took him to the police station to be processed.  He then got to go home and wait for his trial date.  For two years he had to wait and during that time he was completely banned from using the internet on top of already being banned from Facebook for life.  Eventually his trial date came and Hunter was charged with aggravated identity theft and aiding and abetting to unauthorized access to a computer which landed him in prison for thirty months and a measly $145 in restitution.  [MUSIC]  Weird stuff happens online, like really weird stuff.  You know about 4chan, right?  At its core itâs just a place where people can upload photos and comment on them anonymously.  But itâs like the underbelly cesspool of the internet.</p>
+
+<p>Horrible and grotesque photos are posted there.  A lot of porn, too.  Itâs mixed with gore.  Itâs just awful.  Another site similar to 4chan was around at the same time called Anon-IB.  Again, it was a site that just let you post pictures anonymously but Anon-IB had a section on it that sort of took the place of isanyoneup.com.  There was a board just for revenge porn and thatâs where people moved to.  But then a new board showed up called S-T-O-L, STOL, and this board was dedicated to posting stolen photos, mostly nude photos of women.  People would post nude images they stole from other peopleâs phones or something.  I donât even know what the name of this is.  Itâs not quite revenge porn; maybe stolen porn?  Anyways, Anon-IB was now becoming the go-to place for revenge porn and also to post stolen nudes.  But every now and then somebody would post a stolen nude of a musician or a celebrity.  These were always crowd favorites but it was really rare.</p>
+
+<p>People who stole celebrity photos didnât post them willfully but they would trade them privately.  A really weird underground nude photo exchange started happening.  Essentially if you had an unreleased nude photo of a celebrity you could trade those for more unreleased nude photos of celebrities.  A small group of people were doing this on Anon-IB, sometimes teasing a little of what they had to the public image boards but for the most part keeping it all very hush-hush.  How do you think people were getting these [00:30:00] unreleased nude photos of celebrities?  Was it paparazzi following them into the bathroom or the beach?  No, not those photos.  Those would just be published to TMZ or something.  The people on Anon-IB were hacking into the celebritiesâ accounts.  Hereâs how they did it.  [MUSIC]  First they did targeted open source intelligence-gathering on specific celebrities to try to find their e-mail address.</p>
+
+<p>This would be doing things like scouring their social media if anyoneâs posted an e-mail address there or are Googling looking for their e-mail, or are searching online databases or doing something like that.  The hacker would try to find out if a celebrity had an iPhone or an Android.  You can look at someoneâs tweets and it often says whether it was sent from an iPhone or not.  Because if they do have an iPhone, that means they have iCloud.  iCloud is an automatic backup storage for iPhones.  Whatever pics you take on your iPhone can automatically get backed up to iCloud so if you lose or break your phone you donât lose your pictures, apps, or settings.  Once the hacker had a celebrityâs e-mail address theyâd make a few fake e-mail addresses for themselves.  Theyâd make addresses like emailprotection@icloud.com or noreplyhelpdesk@outlook.com or securehelpdesk@gmail.com, stuff like that.</p>
+
+<p>Then theyâd clone the website for Appleâs iCloud login page and host it on their own server.  The clone would be a pixel perfect copy.  Hereâs where things get tricky; the cloned iCloud login page did two things.  First, when you type in your username and password, it would save that in clear text so the hacker could see it.  But then as soon as you click Log In it redirects you to the actual iCloud login, so it looks like you just entered the password wrong on your first try and you just need to try again.  Itâs really slick and tricky to notice.  All this is actually very simple to create using the social engineering toolkit which is a popular hacking tool designed to social engineer a victim.  Now the hacker will send an e-mail to the celebrity claiming to be from Appleâs iCloud service and that something went wrong with your account and you need to click here to log in to resolve the issue.  So if a person were to click the link, it goes to the clone to iCloud website and the user types in their username and password.</p>
+
+<p>Now the hacker has the login for that celebrity.  Once the hacker has the login information they can use a tool like ElcomSoft to simply copy everything off that iCloud storage account.  When a hacker got into an iCloud account of a celebrity, they could see all the photos that celebrity has taken with their phone; vacation photos, pictures of the family, and most importantly for the hacker, nudes.  Yes, many celebrities have nude photos of themselves on their phones.  Another method these hackers used to hack into iCloud accounts was by using a tool called iDict, like iDictionary.  Basically itâs a brute force login tool.  You give it what iCloud username you want to access and it will cycle through thousands of commonly-used passwords to see if any of them will get in.  iCloud had a feature that if you failed to login too many times it would lock you out but iDict was somehow able to bypass that lockout mechanism.</p>
+
+<p>Half these hackers couldnât get into iCloud.  They would try to get into the e-mail address of the user by posing as Google or Yahoo and sending a phishing e-mail saying their account needs attention and to log in to fix it.  Except of course, the link is to the hackerâs server and not Google. If all that didnât work, hackers would just try to scour a celebrityâs social media account looking for possible answers to the account recovery questions like maybe a celebrity set the account recovery question to be what is your first car?  Maybe that celebrity posts pictures of them in their car and a hacker tries to figure out what kind of car that is.  This actually worked for a few accounts.  [MUSIC]  In the spring of 2013 this hacking of celebrities was going on like crazy.  There was this underground group of hackers that were hitting hundreds and hundreds of people with these phishing attacks, many of them celebrities, almost all of them women, and they were getting access to a ton of iCloud storage accounts.</p>
+
+<p>Then these hackers would trade usernames, passwords, photos, and other things amongst each other.  A lot of these were A-list celebrities.  Hereâs just a few that the hackers got into: Jennifer Lawrenceâs account, Rihanna, Kim Kardashian, Vanessa Hudgens, Kate Upton, her boyfriend Justin Verlander who plays on the Houston Astros, Kirsten Dunst, Emma Watson, soccer star Hope Solo, Mary Elizabeth Winstead, Jill Scott, Victoria Justice, and McKayla Maroney.  Some of these people were young, like eighteen, nineteen and they probably took some of these nude photos when they were under eighteen.  But thatâs just to name a few celebrities.  There were so many more.  Hundreds of people were hacked by this group, all trading photos amongst each other on Anon-IB.  For over a year this goes on.  Hackers were getting into one account after another after another.  It was sort of for sport, sort of for an adrenaline rush.  It was almost like they were doing it for trophy collections or something.  In my research for this I found this really weird interview when all this hacking was going on.  Itâs with Jennifer Lawrence talking to a reporter from MTV on the red carpet.  The reporter was looking something up on his iPhone and they both looked down at his iPhone.  Jennifer Lawrence then saysâ¦</p>
+
+<p>JENNIFER:	[00:35:00] Wait, does that say iCloud backup?  Oh, never mind.  My iCloud keeps telling me to back it up and Iâm like, I donât know how to back you up.  Do it yourself.</p>
+
+<p>JACK:	This is so crazy to me because she probably had her iPhone hacked like days before that interview.  You can hear her frustration with iCloud.  It wasnât with iCloud; her frustration was with the hackers who kept telling her her iCloud needed attention.  Jennifer had no idea a hacker had gained into her iCloud storage and were looking at all her photos she took with her iPhone.  Now at this time, Jennifer had a boyfriend named Nick but this was a long distance relationship so to keep things interesting Jennifer would take a few nude selfies and then send them to Nick.  Not just one.  She did it a bunch of times.  But these were meant for her and him only but now there was a hacker in her iCloud account finding these and going bonkers about it.  She had no idea these photos were being traded through an underground group of people.  She would continue to not know for another three months.</p>
+
+<p>[MUSIC]  At some point someone saw Anon-IB was trading celebrity nudes and bought a few.  They got the idea that if they make a collection of a bunch of these pics they could possibly release it and people would be so happy that theyâd tip him with Bitcoin.  This collector started buying up a ton of these photos, spending hundreds of dollars in Bitcoin to create the collection, maybe even spending thousands of dollars.  They spent weeks creating sets and getting certain celebrities and putting together a big collection.  Some chatter started going on over at 4chan, people saying things like some guys over on STOL are hoarding a major win, just saying.  What do you mean?  I mean explicit vids and pics.  See for yourself.  Donât have it though but everyone says itâs legit.  These were just rumors; nobody was actually posting any of the celeb photos on STOL.  These anon sites were so full of lies, jokes, and misinformation that you just really couldnât trust any of it.  But then on August 31st, 2014 everything changed.</p>
+
+<p>REPORTERS:	There was a massive leak of private celebrity nude pictures of stars such as Jennifer Lawrence, Kate Upton, and Anna Kendrick posted online.  It is what could be the largest breach of private racy celebrity photos in history.  Pictures of more than a hundred stars, either nude or in provocative positions, theyâve started appearing on an image sharing site.</p>
+
+<p>JACK:	The collector was satisfied with what they put together and decided to post it publically.  They went over to /b/ on 4chan and posted over one hundred nude or mostly nude photos of female celebrities.  The collector also posted their Bitcoin address, urging people that if they liked the nudes they can tip him some coin.  Almost instantly this 4chan post blew up.  People were amazed at this leak and quickly spread it wherever they could.  The Kate Upton and Jennifer Lawrence subreddits had a new post with these nude photos up.  These quickly got upvoted so fast that they both hit the front page of Reddit.  Before you knew it they were spread all over Reddit, all over the internet; Facebook, Twitter, Imgur, you name it.  People started calling this massive leak of photos The Fappening.  Iâm not going to explain what that means.  You can guess for yourself.  But that name stuck.  Soon there was a subreddit called The Fappening and all the pics were posted there.  You can imagine the cacophony of people talking about this on every news outlet possible.  They love talking about celebs so nude celebrities was absolutely going to be talked about on the news.  My favorite was this CNN clip.</p>
+
+<p>REPORTER1:	Do we even know who is this 4chan person or website?</p>
+
+<p>REPORTER2:	He may have been just a system administrator who knew his way around and how to hack things.</p>
+
+<p>JACK:	The news articles were often pointing people to The Fappening subreddit as if showing people where to find these photos.  [MUSIC]  The Fappening subreddit became the most quickly growing subreddit in Redditâs history; 100,000 subscribers in just twenty-four hours.  Reddit itself had a major spike in new visitors, like 141 million page views in just one day.  The subreddit was on fire.  The Fappening was a crazy phenomenon, breaking Reddit at times.  But news outlets thought the term The Fappening was disrespectful to the victims and they called it Celeb Gate.  Images kept spreading further all over the internet, reaching everything.  More were uploaded to Imgur and Instagram and Twitter and Facebook everywhere.  Jennifer Lawrence seemed to be the poster child of this leak because there were a lot of photos of her in it and she was an A-list celebrity and the internet loves her.</p>
+
+<p>Sheâs quirky and funny and different than a typical Hollywood star.  Reddit, the company, seemed to just let The Fappening subreddit happen and the photos stay up.  This wasnât against their terms of service or rules which is just really weird.  The subreddit just kept growing in popularity.  A lot of people were discussing the morality of whether this is okay or not to keep up or even look at.  Some of the people were realizing that some of these photos were of people under eighteen which classifies it as child porn which is illegal to post to Reddit, so the site admins started taking down those pics.  Other people were questioning whether some photos were faked or not.  It might have been a lookalike model or Photoshopped to somehow look like that celebrity.  [00:40:00] Letâs be clear here; Reddit at the time didnât have any way to actually host pictures so all the pictures that were posted to Reddit were really just links to places like Imgur but even while Reddit didnât host the pictures, people still came to Reddit to find the links to the photos.</p>
+
+<p>It was the go-to place to see the Celeb Gate photos all nicely organized in one spot.  The media backlash against Reddit got bigger and it seemed morally wrong to keep The Fappening up.  Emergency meetings were being held inside Reddit to figure out what to do.  While the team at Reddit did not condone or agree with this behavior, there was nothing in the law or in their rules that required them to take it down which made the Reddit staff really do a lot of soul-searching.  They really wanted their site to be an area of free speech and believed itâs the users who have the responsibility to know whatâs right or wrong.  Reddit didnât want to come in and try to be the moral or ethics police in this situation but they did say they would adhere to any laws.  Celebrities whose pics got posted began issuing DMCA notices to Reddit and Reddit would acknowledge this and take down those posts.  But still the images were hosted on other image hosting sites and it didnât take them off the internet at all.</p>
+
+<p>A DMCA takedown would just remove the links on Reddit but the users werenât happy when photos got removed so the users would just resubmit the photo to another image sharing site and then post that link to Reddit again.  Soon it became a battle where the users were trying to post pictures to The Fappening subreddit faster than what the moderators were able to remove.  The mods just couldnât keep up with it all and it kept spilling back into Reddit, the companyâs, lap.  Despite Reddit giving a clear stance on this that they arenât going to be the moral police, users on The Fappening kept breaking the rules on such a massive scale that Reddit had no choice.  A week after it was created, Reddit banned The Fappening.  The collector person who posted all this to 4chan with their Bitcoin address, yeah, he only got about $120 in Bitcoin for all this which is far less than he anticipated and it frustrated him.  He blames others for reposting the photo with their own Bitcoin addresses but this didnât mark the end of Celeb Gate.</p>
+
+<p>A few weeks later another large dump of nude celebrity photos hit 4chan, then a week after that, another big leak.  This would be known as Celeb Gate 2 and 3.  I think in Celeb Gate 3 there were pictures of Hulk Hoganâs son.  Even though Reddit had banned posting these photos the photos still got out and they were posted all over the internet in different places.  At first nobody knew how the photos got leaked.  There was speculation that there was a vulnerability in the Find My Phone app which allowed hackers to gain access to phones.  Then a lot of fingers got pointed to Apple with maybe a vulnerability in iCloud.  Kirsten Dunst tweeted saying thank you iCloud; with pizza and poop emoji after it.  Some celebs denied the authenticity of the photos.</p>
+
+<p>Hulk Hoganâs son said it wasnât him.  Ariana Grande tweeted that the photos werenât real and her ass is cuter than that.  A bunch of others denied it, too.  Most celebs that got caught up in this remained silent to the press and didnât talk about this at all.  About two months after this, Jennifer Lawrence did talk with Vanity Fair about this.  You know what?  Iâll let the daytime talk show host Wendy Williams tell us what was in there.</p>
+
+<p>WENDY:	Anyway, letâs talk about Jennifer Lawrence.  [CROWD MURMURS]  Well, sheâs on the cover of Vanity Fair Magazine and inside the magazine sheâs breaking her silence about the nude hacking scandal.  Iâll read what she says and then we can talk, okay.  âJust because Iâm a public figure doesnât mean I asked for this.  It does not mean that it comes with the territory.  Itâs my body.  It should be my choice and the fact that itâs not my choice is absolutely disgusting.â  [APPLAUSE]  Itâs not your choice.  Itâs in the Cloud and Iâve looked several times so I guess Iâm disgusting for looking.  Clap if youâve looked at Jennifer Lawrenceâs hacking pictures.  [APPLAUSE]  There are a lot of you who are just sitting there.  You didnât react to anything.  [LAUGHTER]  Which means Iâm gonna assume that you looked but youâre scared âcause your boss might be watching TV.  [LAUGHTER]  And you donât want your boss to know youâre a perv like me.  In my opinion if she would just stop talking about the Cloud and the naked pictures, itâd go away.  Weâd forget about it, really.  [APPLAUSE]</p>
+
+<p>JACK:	Wendy went on to say that Jen should hold her head up with pride because she looks good naked and this boosted her career.  About two years later, Jennifer Lawrence appeared on the Hollywood Reporter podcast and had some more to say about this.</p>
+
+<p>JENNIFER:	When the hacking thing happened it was so unbelievably violating that you canât even put into words.  I think that Iâm still actually processing.  I donât know.  I feel like I got gang-banged by the fucking planet.  Thereâs not one person in the world that is not capable of seeing these intimate photos of me.  You can just be at a BBQ and somebody could just pull it up on their phone.  [00:45:00] That was a really impossible thing to process.  Somebody said something to me about how I was a good role model for girls and I had to go into the bathroom and sob because I felt like an imposter, or I felt like I canât believe somebody still feels that way.  I know that a lot of women were affected and a lot of them reached out to me about suing Apple or suing â and none of that was gonna really bring me peace.  None of that was gonna bring my nude body back to me and Nick, the person that they were intended for.  It wasnât going to bring any of that back.  I wasnât interested in suing everybody.  I was just interested in healing.</p>
+
+<p>JACK:	The news of Celeb Gate was so big that Iâd be shocked if anyone missed this story.  Thereâs a lesson in this story; I think we understand technology and privacy so much better when we hear about this.  Just having a nude photo of yourself on your phone that you never share is not actually that safe.  It can get leaked, and it probably will get leaked.  If you do take these photos, imagine the worst-case scenario happening because it might.  Itâs probably better to not show your face or something.  Oh, and make sure your laptop and phone cameras are covered when youâre having sex because there are a few stories about hackers getting into cameras and recording a person unknowingly.  When these hacks occurred Apple began working with the FBI to do an investigation.  I think they only took this case because it was such a high profile story but the FBI did create a case on this and took the evidence that Apple provided.  This led them to the hacker.</p>
+
+<p>[MUSIC]  The FBI found 572 unique iCloud accounts were all accessed by the same IP in the south side of Chicago.  The agents worked with the ISP to determine the IP was registered to Emilio Herrera.  A raid was conducted on Emilioâs house and they took all his computer equipment to investigate further.  The feds quickly determined Emilio was the hacker who broke into the celebrity accounts.  But this arrest also uncovered something else.  The evidence they collected showed that there were a group of hackers involved, not just one.  The FBI started making more arrests.  In the next few years they arrested five hackers total who were involved in Celeb Gate.  They all lived in different states and only knew each other through Anon-IB.  Each of the suspects pled guilty to hacking into iCloud accounts so there was no trial.  The investigation reports were all sealed so I canât really see the details of what the FBI had on them.  But what I did see is what I explained earlier which was the hacks were done by targeting individual people and then sending phishing e-mails to get into their iCloud logins.</p>
+
+<p>I think all these hackers had no prior arrest records.  The first to be sentenced was Ryan.  He pled guilty to hacking into fifty iCloud accounts and seventy-two Gmail accounts.  He was sentenced to eighteen months in prison.  Then there was Edward.  He said to the judge this entire process reminded me of who I really am and what I should be doing with my life.  He was very cooperative with law enforcement and he had an eleven year old kid.  He got put in prison for nine months and had to pay $5,700 in restitution which paid for a victimâs counseling bill.  The judge wanted to punish Emilio by convicting him as a sex offender since the crime was sexual in nature but Emilioâs lawyer said that no sexual activity actually occurred in the crime.  The judge agreed and took sex offender off.  He was sentenced to sixteen months in prison.  George, another hacker, was a referee at a youth soccer club and worked as a bank teller and had a Bachelorâs degree.  He had something like six friends all sending letters to the judge explaining how George is such a great member of the community and he regrets what he did.</p>
+
+<p>This played really well for the judge and only gave George eight months in prison.  Lastly there was Christopher.  He pled guilty to sending phishing e-mails and hacking into eighteen iCloud accounts.  Christopher was a high school teacher and was also found guilty for trying to phish his underage sister-in-law, other female teachers at the school, and female students.  He got the biggest punishment which was thirty-four months in prison.  But while these hackers pled guilty to hacking into iCloud accounts, none said they shared the photos publically.  They likely traded it privately to someone else who then posted it to 4chan.  Whoever shared it publically, we still donât know.  I think itâs still an active investigation.  Maybe if they tracked the Bitcoin they could find them.  A lot has happened since isanyoneup.com and Celeb Gate.  First, Reddit changed their rules.</p>
+
+<p>Six months after closing The Fappening subreddit, Reddit issued the following statement.  Quote, âLast year we missed a chance to be a leader in social media when it comes to protecting your privacy.  Something weâve cared deeply about since Redditâs inception.  At our recent All Hands company meeting this was something that we all, as a company, decided we needed to address.  So now no matter who you are, if a photo, video, or digital image of you in a state of nudity, sexual excitement, or engaged in any sexual conduct is posted or linked to on Reddit without your permission, it is prohibited on Reddit.â  End quote.  This is a big chance in Redditâs policy.  Itâs now strictly against the rules to post revenge porn or stolen porn on Reddit.  [00:50:00] Also the image board Anon-IB was seized by the Dutch police and it was taken offline because it kept trying to publish revenge porn, too.  Some revenge porn victims committed suicide after finding their classmates or friends had seen their sexual photos.</p>
+
+<p>This was particularly hard for LGBT people who have not yet come out and they got their pics exposed.  Once suicides started happening, legislation around revenge porn started shaping up.  Many countries are now calling it a criminal offense to post sexual photos without a personâs consent, in many states in the US now, too.  It was a long ugly road to recognize the damage revenge porn has on people.  Now victims have slightly better tools to help resolve it.  Crazy exes should be aware that thereâs punishments for posting it.  In Texas for example, thereâs a Statute 1135 which forbids someone from posting pictures of a personâs intimate parts without their consent.  If youâre found guilty of this you can get up to one year in prison and a $4,000 fine.  There are a lot of cases where people are being arrested for this.  Even in Texas, a police officer got arrested for posting revenge porn last year.  I think itâll just take some time before it becomes general knowledge that itâs illegal in many states to post revenge porn and people will think twice about posting it.</p>
+
+<p>JACK (OUTRO):	[OUTRO MUSIC]  Youâve been listening to Darknet Diaries.  If you or a friend has been a victim of revenge porn and need help, you can find information on what to do at badassarmy.org.  I see you sharing this show on Twitter, Instagram, LinkedIn, Facebook, and Reddit and I love it.  Thank you so much.  It gives me goosebumps of joy every time I hear someone recommending the show.  Keep it up.  Itâs so awesome.  This show is made by me, zero hot Jack Rhysider and theme music is by the melodious Breakmaster Cylinder.</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+<p>Transcription performed by Leah Hervoly
+www.leahtranscribes.com</p>
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

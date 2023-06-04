@@ -1,0 +1,681 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>webjedi â Darknet Diaries</title>
+	<meta name="description" content="What happens when an unauthorized intruder gets into the network of a major bank? AmÃ©lie Koran aka WebJedi was there for one of these intrusions and tells us the story of what happened.">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="webjedi â Darknet Diaries">  
+	<meta name="twitter:description" content="What happens when an unauthorized intruder gets into the network of a major bank? AmÃ©lie Koran aka WebJedi was there for one of these intrusions and tells us the story of what happened.">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/surrounded.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/91/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="webjedi â Darknet Diaries" />
+	<meta property="og:description"        content="What happens when an unauthorized intruder gets into the network of a major bank? AmÃ©lie Koran aka WebJedi was there for one of these intrusions and tells us the story of what happened." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/surrounded.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/91/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/surrounded.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/91/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="webjedi â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/surrounded.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 91: webjedi</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://www.podtrac.com/pts/redirect.mp3/traffic.megaphone.fm/ADV9135149014.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/91/",
+			   "title": "Ep 91: webjedi"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/91">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[START OF RECORDING]</p>
+
+<p>JACK:	Hey, itâs Jack, host of the show.  Now, a lot of you write to me and tell me your favorite episodes are the ones with social engineers or penetration testers.  Yeah, sure, being on the red team is fun, to break into things, but my heart is with the blue team, the defenders of the network, because thatâs what I did for ten years professionally.  I was configuring firewalls, intrusion detection systems, and reviewing logs to find threats in the network.  I felt like it was my job to stop or restrict bad things from happening in my clientsâ networks.  It was a game of Cat and Mouse.  I had to learn what the bad guys knew so I could stop them and Iâll tell you, it was exciting.  At times it felt like the battle at Helmâs Deep, with a never-ending onslaught of attackers and I had to embody Legolas to defend them off one at a time.  Now, this story is about a defender and how she uncovered a serious breach in the network of a major bank.
+<!--more-->
+(INTRO):	[INTRO MUSIC] These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	Alright, so you ready to get into it?</p>
+
+<p>AMÃLIE:	Yeah, sure.</p>
+
+<p>JACK:	Alright, so letâs start with whatâs your name?</p>
+
+<p>AMÃLIE:	My name is AmÃ©lie Koran.  That wasnât always my name but thatâs a story for another time.</p>
+
+<p>JACK:	What are you known as online?</p>
+
+<p>AMÃLIE:	My handle is webjedi although back when I was in the BBS world, it was Thunderball âcause I was a big fan of James Bond, but the webjedi moniker has been mine for probably a quarter century, so Iâll stick with that.</p>
+
+<p>JACK:	That is a really cool name.  How did it come along, webjedi?</p>
+
+<p>AMÃLIE:	So, I entered college back in the early nineties, so â93, and being the nerd that I am, Iâm a big fan of science fiction and particularly Star Wars.  About that same time is the birth of the web.  So, â93, â94, you saw the first couple websites show up online.</p>
+
+<p>JACK:	This was back in her college days.  She was going to school at Carnegie Mellon at the time where she was studying electrical engineering and computer science.  She was building this website on the schoolâs computers.</p>
+
+<p>AMÃLIE:	It was a Star Wars multimedia archive.</p>
+
+<p>JACK:	As she was building this site, she was looking around at what other websites did, and there werenât actually many on the internet at that time.</p>
+
+<p>AMÃLIE:	So I busted my chops to create a fan website, you know, one of the first thousand websites on the internet.</p>
+
+<p>JACK:	One of the things she noticed is people who created websites were referring to themselves as web masters.  [MUSIC] She thought about this term, web master.</p>
+
+<p>AMÃLIE:	Whatâs better than a web master?  I figured a Jedi master, so I took webjedi.</p>
+
+<p>JACK:	So, webjedi became her screen name and that still carries over to today.  I mean, webjedi is her Twitter name now.</p>
+
+<p>AMÃLIE:	For the longest time, my e-mail address was jedi@cmu.edu, so I kinda stuck with that for the time I was there.</p>
+
+<p>JACK:	She was really fascinated with the internet, learning all kinds of stuff while at CMU, even doing things that werenât taught in class.</p>
+
+<p>AMÃLIE:	But yeah, no, it was a lot of the cases of learning a lot of technology stuff that wasnât getting taught in classes, so I used this as my test bed to learn how to set up a web server, a mail server, security permissions for files, setting up network ports on shared services.  It was a great learning tool that definitely got me interested in stuff well beyond what I was being taught in school.</p>
+
+<p>JACK:	She was getting really geeky with it, practicing doing things on computers on her free time and picking up all kinds of new skills.</p>
+
+<p>AMÃLIE:	But since I was such a poorly-skilled programmer, I failed out of my CS classes rather hard, and switched into a Social Sciences degree, and thatâs what I graduated as.  But I actually spent more time as a computer engineer than I actually did as a social scientist, so I had a good mix of the policy theory and information system stuff from the social sciences team and then knew all the technical stuff of hardware and analog circuits from the EC courses.  It was a really weird thing to kind of graduate as, skill-wise.</p>
+
+<p>JACK:	But her heart was in tech and computers, so she pursued jobs as a computer engineer.  At first, she got a job as a user interface designer at Xerox, then she got a job at a different company being a system administrator where she was taking care of the servers in the network, updating them, configuring them, keeping them going.  Then she moved on from there.</p>
+
+<p>AMÃLIE:	[MUSIC] Just kinda worked up from there; was securing web servers for The American Chemical Society and running those.  Eventually I ended up to go work for Stan Lee of Marvel fame, [00:05:00] running his IT shop when he left Marvel.</p>
+
+<p>JACK:	She then moved out of California and got a job at a utility company.  They provided gas and electric to people.</p>
+
+<p>AMÃLIE:	It was during a very interesting time because I think within the first year I was there, we had a major hurricane roll through and knock out a good swath of power up in the Chesapeake Bay.  Shortly after that, we then had the northeast blackout.  It taught a lot about designing for resiliency but also just generally how do you work at scale when you donât have all the resources that you typically would have?</p>
+
+<p>JACK:	She said she was impressed at how this company learned from their mistakes.  Yeah, sure, a hurricane is not a normal event, but they knew that another one might happen again someday, so itâs best to build a more resilient network in case it does happen.  So, they redesigned the network and built out a pretty robust data-recovery center, a secondary place that can handle the full load in the event that their main data center would go down.</p>
+
+<p>AMÃLIE:	I think it came into full effect â is that they had a bathroom explode one day and actually flooded parts of the training floor, so that practice kept them running without having to worry about if those procedures had actually worked again.  But you know, working for a critical infrastructure company such as a power company, the mantra was just be a less appetizing target than the next network down the road, so a lot of what we built was on detection, not necessarily response.  I learned a lot there and I carried that forward to where my career is now.</p>
+
+<p>JACK:	It was here where she really got into DFIR.  So, DFIR stands for Digital Forensics and Incident Response.  This is the team to be called in when thereâs an incident and theyâll handle the situation.  I sometimes like to think of the DR team like Winston Wolf in Pulp Fiction.</p>
+
+<p>WINSTON:	Youâre Jimmy, right?  This is your house?</p>
+
+<p>JIMMY:	Sure is.</p>
+
+<p>WINSTON:	Iâm Winston Wolf.  I solve problems.</p>
+
+<p>JIMMY:	Good.  We got one.</p>
+
+<p>JACK:	See, in big companies, incidents are never handled by one person.  First, you have the people in the operations room who first saw the alert and notified somebody.  Then you have network engineers and system administrators who are engaged in investigating it further.  You might get someone from leadership entering the room, asking tons of questions and wanting updates and is there to make decisions, and then you might also have a bunch of angry customers who want to know why their power is out, and so customer support might be looking for updates, too.  The operation center quickly becomes a mess during large incidents, and so the DFIR team steps in to get things under control.  They get the latest updates and then disseminate that information to everyone who needs to know, and theyâll get the right teams engaged to get things under control and work with leadership to present the details and work out any big decisions that need to be made.  While AmÃ©lie was doing this type of work at this utility company, she was also a security engineer and an architect there, too.  She learned a lot from there but then left that place to get a job somewhere else for a bit.  She got bored there and then went to go work for Mandiant.</p>
+
+<p>AMÃLIE:	As their first full-time IT manager.</p>
+
+<p>JACK:	Mandiant is a security company focusing on incident response and threat intelligence.  Recently, they were acquired by FireEye.</p>
+
+<p>AMÃLIE:	They were not the Mandiant that most people know about today.  They were small, if you call sixty people small.  But we had three or four people sharing a cube desk, we had a lab that was literally a closet.  Weâre working a bunch of different major cases that people look back at and those are the things that â you remember Home Depot, you remember TJX; those were cases that they worked but this was back when they were much smaller.</p>
+
+<p>JACK:	After Mandiant, she went to work for the World Bank.</p>
+
+<p>HOST1:	With thousands of employees and 189 member countries, the World Band is one of the most powerful institutions in the world, funneling billions of dollars every year into ending global poverty.</p>
+
+<p>JACK:	If youâre not familiar with what the World Bank is, let me give you a quick catch-up.  [MUSIC] It was created after World War II to loan countries money to help rebuild after the war.  After that, they continued to loan countries money to build bridges and other infrastructure for the nation.  So, countries around the world owe money to the World Bank.  The World Bank is actually an NGO, a non-government organization and because of that, it falls under different regulations and laws.  Now, their mission is to help people in extreme poverty.  They help fund projects around the world to try to combat extreme poverty, but itâs also still a bank which issues bonds and loans and stuff to people with interest, and thatâs how they make their money off this, is because all these loans have interest.  Now, the headquarters of the World Bank is like, five blocks away from the White House in Washington, DC.  While the World Bank is a non-government organization, they also have connections with the government in some ways.  For instance, the president of the United States of America can nominate who the president of the World Bank should be.  [00:10:00] If the board agrees, then that person becomes the president.  So, on March 16, 2005â¦</p>
+
+<p>BUSH:	Thank you for giving me a chance to come by and say hello.</p>
+
+<p>JACK:	President Bush holds a press conferenceâ¦</p>
+
+<p>BUSH:	Preparing for my trip out of town for Easter.</p>
+
+<p>JACK:	â¦and nominates Paul Wolfowitz as the president of the World Bank.</p>
+
+<p>BUSH:	Paul is committed to development.  Heâs a compassionate, decent man who will do a fine job in the World Bank.</p>
+
+<p>JACK:	Now, letâs back up a second.  During 9/11, Paul Wolfowitz was the deputy secretary of defense.  Thatâs the second-highest ranked person in the entire Department of Defense.  He was an early advocate for the US to invade Iraq under the belief that Iraq had weapons of mass destruction and so, it was a little odd to hear about this nomination.  I mean, on one hand you have Wolfowitz attacking Iraq and then what, on the other hand he might loan them money to rebuild the country?  It just seemed really odd.  But hereâs how one reporter asked a question to President Bush.</p>
+
+<p>REPORTER:	Paul Wolfowitz was the chief architect of one of the most unpopular wars in our history.  Is your choice to beâ¦</p>
+
+<p>BUSH:	Thatâs an interesting start.</p>
+
+<p>REPORTER:	â¦is your choice to be the president of the World Bank.  What kind of signal does that send to the rest of the world?</p>
+
+<p>BUSH:	First of all, I think people appreciate the world leaders taking my phone calls as I explain to them why I think Paul will be a strong president of the World Bank.</p>
+
+<p>JACK:	[MUSIC] Well, Paul Wolfowitz didnât last long as the president of the World Bank.  Two years into this role as presidentâ¦</p>
+
+<p>HOST2:	President Paul Wolfowitz is at the center of a scandal over alleged favoritism.</p>
+
+<p>HOST3:	By arranging a promotion and pay raise for his female companion, Shaha Riza, his credibility on this and other issues was undermined.  An issue for many member of states was Wolfowitzâs effectiveness in the wake of the scandal.  Former World Bank official Gene Rotbergâ¦</p>
+
+<p>GENE:	If the countries say your effectiveness is damaged and if the staff say your effective â is damaged, then by definition, you are damaged.</p>
+
+<p>HOST3:	From the start, Wolfowitz was the center of controversy as bank chief because of his role in planning the Iraq war when he was a top Defense Department official.  Much of the bankâs staff held this against him, according to Rotberg.</p>
+
+<p>GENE:	It is a rack.  He is looked upon as one of the persons who form both the intellectual and practical support for that war, that it had cost hundreds of thousands of lives.  That is what the staff thinks.</p>
+
+<p>JACK:	For reals; if the Worldâs Bank mission is to help people in extreme poverty, having a president who architected the Iraq war and now at the center of a scandal where he helped use his position as president to get his girlfriend a job in the World Bank, yeah, he was fired, or I guess the term is that he was forced to resign.</p>
+
+<p>BUSH:	I regret that itâs come to this.  I admire Paul Wolfowitz.</p>
+
+<p>JACK:	Anyway, thatâs what the World Bank was like when AmÃ©lie got a job working there back in 2008.  A new president had just come on board and she was hired on, too.</p>
+
+<p>AMÃLIE:	I was just an information security engineer.  I was just basic utility player.  I was a contractor so I was just kinda like, plug you in here, plug you in there.</p>
+
+<p>JACK:	Now, at the time, AmÃ©lie was a meticulous note-taker.</p>
+
+<p>AMÃLIE:	Well, this being back in pre-iPhone, pre-iPad or anything like that, no one had tablet computers, so it was just normal for an incident handler to walk around â every time they had a case, it was their paper notebook, a steno pad, that you were frantically taking notes on.  There was no real easy way to do this and secure it.  I think thatâs one of the other challenges too, is a handlerâs notebook is their Bible.</p>
+
+<p>JACK:	I just wanted to mention her notepad here because for her to retell this story that happened back in 2008, she brought these old notepads out to confirm the story.</p>
+
+<p>AMÃLIE:	Flipping back through some of them and I donât know why I ended up having these, but it was just given to me as my box when I left out and they didnât ask for any of the stuff back, so it is what it is.</p>
+
+<p>JACK:	For this story, she finds the date in her notebook where all this started to happen.</p>
+
+<p>AMÃLIE:	I think when I look through my notebooks, stuff I was looking at before was some full disc encryption stuff, but my notebook ends looking at BitLocker and then immediately the next page is here are all the notes that just got handed to you about this incident.  It was like, okay, Iâm drinking from the fire hose, here.</p>
+
+<p>JACK:	What was handed to her was a very serious security incident going on in the World Bank.</p>
+
+<p>AMÃLIE:	[MUSIC] So, what had happened from my best memory, and this is mainly because I was on the outside for the first two weeks of this, was [00:15:00] something got triggered on a log.  Someone saw some weird traffic happening and that spun up some folks who investigated, and this was a team of probably about five or seven people that were in a conference room down the hall from me.</p>
+
+<p>JACK:	You were in Washington, DC at the time?</p>
+
+<p>AMÃLIE:	Yeah, this was Washington, DC.</p>
+
+<p>JACK:	Yeah, but thatâs where you were, right?</p>
+
+<p>AMÃLIE:	Yeah, yeah.</p>
+
+<p>JACK:	Okay.</p>
+
+<p>AMÃLIE:	Yeah, they just noticed there was some weird traffic and they saw some stuff through I believe some basic integrity checking that some stuff had changed on a server that was not supposed to generally be touched by people.</p>
+
+<p>JACK:	Oh yeah, file integrity monitoring.  This is a helpful tool that companies use to monitor security problems.  This is where a system checks all the important servers in a network to make sure nothing has changed on it that shouldnât have changed.  So like, if there was a configuration change, the file integrity checker would notice that and create an alert, and the monitoring team would now have to go to the system administrator and ask hey, did you make a change on this server?  If that system administrator did, then everything would be okay.  But in this case, the file integrity monitor triggered an alert and it showed that someone had made changes to a server which wasnât made by the system administrator or anyone else in the IT team.  This meant that some unauthorized person had been inside one of their servers in the World Bank and was doing stuff to the servers.  This is where AmÃ©lie started getting pulled into the incident to see if there was a way she could help.  She took a look at the systems that had unauthorized changes.</p>
+
+<p>AMÃLIE:	Some of the triggers were which machine was hit, and one of the machines that got touched was our HSM.</p>
+
+<p>JACK:	An HSM is a hardware security module.  Itâs a device that specifically does cryptographic computations which means this is the device that does their encryption, decryption, and authentication.</p>
+
+<p>AMÃLIE:	Essentially, our locker for all our cryptologic material.  That server was shown to be touched and that was like okay, they were going after the crown jewels.  That, I think, was probably the triggers â when that machine name came up in that list, that was immediately like, this has gotten bigger than just a couple database servers being touched.</p>
+
+<p>JACK:	The company quickly put everyone in IT to work in this incident.  The amount of work that everyone needed to do was staggering.  There were tons of logs to look through, systems to analyze, connections to review.  This is where AmÃ©lie started getting involved.</p>
+
+<p>AMÃLIE:	They had one full-time forensics guy and the folks who were running the incident handling group before I was called in were basically saying image everything.</p>
+
+<p>JACK:	Which is a good first thing to do in this situation.  Itâs really just like making a copy of everything on that server to analyze offline, because an attacker might erase their tracks or systems might change, so having a copy of an infected machine is great.  But thereâs a sort of fog of war when youâre dealing with an incident like this.  You canât really see all of what the attacker did, so itâs hard to know how big of an issue this really is, and itâs hard to know where to even look for clues.  After looking through the logs and alerts, they had evidence that this attacker had accessed and changed configurations on thirty different servers in the bank.  [MUSIC] So, they were taking images and snapshots of these thirty computers, but they only had one guy with one computer who was capable of analyzing these images to look for clues of malicious activity.  To analyze one machine might take hours and hours, but thatâs just for a computer to analyze it.  For a human to analyze it, it takes even longer, so the process was going very slow.  At the same time, some of the employees were in a panic, stressed out to the brim over this incident.  People from management were also filled with anxiety when things were not moving as fast as they wanted.  Emergency meetings were spun up to try to get people to move faster, and leadership was freaking out.</p>
+
+<p>AMÃLIE:	I was coming back from lunch one day and got a conference call about this thing.  As a contractor, you had the CIO and the CTO on the call, and the CISO, and as a contractor, I said calm the fuck down.  Literally, the entire phone line just went silent.  Thatâs what is needed sometimes, a good incident handler, and learning from these experiences is to maintain calm.  Throughout the story, it â their initial two weeks, hair on fire, but when you have somebody who is giving them good information, giving them actual things they need to do, helping them solve their problem, thatâs the best thing an incident handler can do, is to maintain a sense of calm and transparency.  If thereâs anything that anybody walks away from this â with is thatâs the thing that makes a good incident handler, not what cool tools you know or anything like that; itâs just speaking the truth, sharing evidence, and being â having a cool head.</p>
+
+<p>JACK:	I often find that when people are handling incidents like this, they sometimes go through all the stages of grief.  You know, first youâre shocked that a hacker got into your network, [00:20:00] and then you might deny that it happened.  Like, wait, no, no, no; no way they got into my server.  Thatâs crazy.  Then when thereâs no denying it, you might feel angry that it happened.  Then you might bargain; like well, at least they didnât get into that database over there.  But then when the reality hits that all this is really happening, you might feel depressed, like this is such a big problem that maybe weâll never solve.  Once you process all that, can you really accept the situation and move on?  As AmÃ©lie puts itâ¦</p>
+
+<p>AMÃLIE:	Your lunch has already been eaten.</p>
+
+<p>JACK:	Because sheâs dealt with this kind of thing so many times that she can quickly move to this acceptance stage and just start working on solutions while others might still be busy dealing with their emotions.  AmÃ©lie was now fully immersed in this problem.</p>
+
+<p>AMÃLIE:	[MUSIC] If youâre an incident handler and youâre thrown into it, if youâre not the one whoâs actually on the detection â and a lot of times that could occur with another team, so network team or server team or something like that â yeah, you have fire hoses aimed at you of information coming from every which direction.  Itâs a matter of which one youâre gonna turn and open your mouth to, and in these cases, coming in two weeks late, it was like, give me the dump and give me an afternoon or a day to kind of sort through this and if anybodyâs got any inferences, try to summarize them.  Unfortunately this team didnât have it, so it was literally like give me what you got.  I sat down in my office and tried to pore over as much of the data I could and try to make sense of it.</p>
+
+<p>JACK:	She knew just what to do in a situation like this and started asking for forensic images and logs to review.</p>
+
+<p>AMÃLIE:	Being that I was called in two weeks late, getting a memory image was near impossible, so we were working with a lot of imperfect information.  By the time I got a chance to call for stuff from say ArcSight which was their log repository, and even Mazu which I think was their NetFlow logging tool, they had such little online storage that most of that evidence was gone.  It was playing catch-up with stuff that was disappearing, trying to grab sand as it was flying through your hands.  Time was very much of the essence and trying to narrow down what we needed to pull was also very important because again, time was of the essence because at â when this was handed off, I had no idea if the aggressor, the attacker, or whoever was in the network was still on the network.</p>
+
+<p>JACK:	On top of her doing all this incident handling, the bank realized they needed even more help, so they called Mandiant up which is where she used to work, but they called them up just to help with incident response, too.  Mandiant had a whole team of incident responders ready to be deployed onsite to help troubleshoot major attacks like this, but it would take them a few days to arrive, to AmÃ©lie stayed busy working on the issue in the meantime.</p>
+
+<p>AMÃLIE:	I was literally trying to map out a picture of what the entire incident looked like.  [MUSIC] So, looking at log files, looking at servers that they may have already identified, and drawing out a map.  Like, where the hops were, who was affected, when did they do this, what was the timeline, and I spent most of that weekend â I got approved for extra hours to work that entire weekend, and I think I was doing this on a Mac, so it was probably the first version of OmniGraffle that was ever released, so Iâm doing all this stuff in Visio and OmniGraffle, mapping out all the paths, so it was like a board game.  You just kinda watched; they got on this server and then they went lateral to these two servers and they touched these files, and it really does end up occasionally looking like a digital version of that yarn and pushpin thing.</p>
+
+<p>JACK:	By that time, the World Bank was having daily meetings, a War Room, if you like, to bring everyone up to speed on the latest with this incident and to make decisions on what to do next.  While a lot of people were working on this, only a small group had access to the details of this incident.</p>
+
+<p>AMÃLIE:	As we were initially handling this response, and it was probably timed about that two weeks when I was called in, there was a story that ended up getting leaked to Fox News [MUSIC] that had particularly detailed recounting of a lot of what was going on with our incidence response, as if someone was â in the room was also leaking stuff to the press.</p>
+
+<p>JACK:	Thatâs not good.  Typically when you have an intrusion like this, you want to be very careful how you publicly disclose this.  The wording needs to be precise and at the very least, you want to be able to control the messaging that the press knows.  But on top of that, they just notified the hacker that the bank is onto them.</p>
+
+<p>AMÃLIE:	Thereâs just a lot of pressure of trying to stem the bleeding and make sure that the message is controlled.</p>
+
+<p>JACK:	Someone had spoken to a reporter [00:25:00] at Fox News and told them about this incident.  Here, Iâll read the article for you.  The headline says World Bank Under Cyber Siege in Unprecedented Crisis.  Then the story reads âIt is still not known how much information was stolen but sources inside the bank confirm that servers in the institutionâs highly-restricted Treasury unit were deeply penetrated with spy software last April.  Invaders had full access of the rest of the bankâs network for nearly a month in June and July.  In a frantic midnight e-mail to colleagues, the bankâs senior technology manager referred to the situation as an unprecedented crisis.â  Hm, thatâs some pretty specific information that this inside source had leaked.  Like, they saw that e-mail from the senior manager and they know information that was only discussed in that War Room.  Something strange was going on here.</p>
+
+<p>AMÃLIE:	Thereâs an internal integrity group at the World Bank which basically is a watcher for the watchers, I guess.  They audit how the bank does programs.  Theyâre kinda like internal review groups and whatnot.  Part of something I had to do when I first signed on as a contractor there was asked to go and investigate some news stories that were leaked out that seemed to be originating from data that was passing through some of the executive branches there.</p>
+
+<p>JACK:	Oh, so AmÃ©lie had already been looking for this leaker before this news story even hit.  Now, even though the bank is in the middle of an unprecedented crisis, sheâs gotta find out who this person is thatâs leaking information to Fox News.</p>
+
+<p>AMÃLIE:	[MUSIC] I think that earlier case involved the Wall Street Journal as well, so there was an intersection between Fox News and Wall Street Journal.</p>
+
+<p>JACK:	Trying to figure out who the leaker is is like a game of Among Us where youâre trying to figure out who the impostor is.  Who would have the motivation to talk to Wall Street Journal and Fox News?  Who would have access to this kind of information, to be in the War Room where this stuff is discussed, or to see those e-mails?  AmÃ©lie started becoming very observant of everyone in the IT department, trying to figure out who this leaker was.  Stay with us because after the break, she sets a trap.  AmÃ©lie starts making a list of names in her notebook of who this leaker might be, and crossing off names that just donât seem possible for it to be that person.  She had already started researching this before.  This was actually the second case of someone leaking stories to the press.</p>
+
+<p>AMÃLIE:	So, that original case â and I had notes for that one, too â were looking at some linguistical analysis, of all things, finding out what people â how people wrote certain things, looking at quotes from the Wall Street Journal and Fox News, and then looking at e-mail as well as documents that may have been accessed, and seeing who had accessed them and then with the e-mail, seeing how these peoplesâ quotes were.  So, when youâd see stuff that was called out, we could search the mail system and try to find out where those particular quotes came from.  With this incident, the data that was getting leaked out was making it out to be â we had keystone cops running this response.  So, parallel to all this, because obviously we knew that the incident response team was potentially compromised, I was â it was almost like incident response inception, so I was actually investigating the investigators who had tripped upon the fact that we had this data getting leaked out.</p>
+
+<p>JACK:	Imagine being in that incident War Room.  Your eyes come up over the laptop and you gaze around the room, sizing up everyone, wondering if theyâre the leaker.  At the same time theyâre looking back at you wondering if youâre the inside source.  AmÃ©lie got an idea.</p>
+
+<p>AMÃLIE:	We set a trap because we had kinda narrowed it down to a few suspects.  Due to the prior investigation, we had I think probably about five or six people that we knew possibly were the leakers.</p>
+
+<p>JACK:	Her suspicion was that it was someone inside the IT department.</p>
+
+<p>AMÃLIE:	We decided to set up a honeypot.  [MUSIC] So, we had a conference room where a lot of this outbriefing was done to the CIO and the CTO and some of the senior IT people in the World Bank.</p>
+
+<p>JACK:	The debrief meetings were with leadership and senior people and it was only a few people.  Her hunch was that it wasnât anyone in these meetings but it was someone who might be snooping in on one of these meetings, trying to find the latest news to give to a reporter.  So when the meeting was over and everyone left, AmÃ©lie planted some fake information.</p>
+
+<p>AMÃLIE:	Started writing some fake stuff on the walls; put up some papers on the table and whatnot, and we kinda waited for [00:30:00] those notes to start showing up somewhere.</p>
+
+<p>JACK:	I love how low-tech of a honeypot this is, just a few notes left in a conference room.  Well, now that the honey trap was set, they just had to wait.</p>
+
+<p>AMÃLIE:	[MUSIC] We saw some stuff that had popped up with the Fox News story a day later, so weâd done the honeypot.  We laid it out and we cleaned it up, and â when we knew one of our suspects was in the office â and then a day or two later we saw it show up in a Fox News report.  So, we knew what they were reporting was wrong and we had narrowed it down I think two or three people.  Eventually it was narrowed down to this one person.  Weâd honeypotted a second time and we actually had somebody walk by the office of the suspect to make sure they were there at that time, and we got a message back.  I think we we were still using PalmPilots to send e-mail and stuff at the time, to tell you how long ago it was, to let them know that yeah, that person was in the office and they were on their computer at the time, and they were the only one that was alive in that hallway.  We kept an eye on them because sometimes as the phrase goes, thereâs a useful idiot.</p>
+
+<p>JACK:	But at the same time, they wanted to build this case further to prove it was him.</p>
+
+<p>AMÃLIE:	So, now we had a suspect and a machine.  We could push out our remote forensic imaging element out to them and grab an image of their hard drive.  When we eventually pulled it through using stuff like EnCase and some other tools, reconstruct the web caches so you could see the Yahoo e-mails that went out, so we had evidence that they were using their work computer to leak the information out and it wasnât â âcause we werenât detecting it in the mail system which was Lotus Notes; we knew it was through webmail, so we were then able to dive through the entire history of what he had sent out and found out that he was connected not only to the leaking of the information regarding this incident but was also tied to some of the connections with the prior leadership.</p>
+
+<p>JACK:	Wait, the prior leadership of the World Bank?  As in Paul Wolfowitz?</p>
+
+<p>AMÃLIE:	Yeah.</p>
+
+<p>JACK:	So, when AmÃ©lie analyzed this IT personâs computer, the leaker, she found that he was also working with another person about these leaks.  This person who was helping him was an internal investigator also with the World Bank.</p>
+
+<p>AMÃLIE:	They had an investigator that was one of the internal integrity investigators.  I had done an analysis on their hard drive, so I was the watcher watching the watcher watching the watcher-type kinda thing, and saw some of his personal items on there.</p>
+
+<p>JACK:	What she found was evidence that this investigator was being blackmailed by the former leadership which was Paul Wolfowitz or his team, and they somehow figured out a secret about this guy.</p>
+
+<p>AMÃLIE:	Who was gay but wasnât openly gay.  They were basically going to use that information as a leverage to out him.  Remember, this was during the Bush administration and itâs a very conservative organization overall within the World Bank.  Thatâs what they were using to leverage and I let my boss know that this was most likely the reason why they were â for blackmailing him.</p>
+
+<p>JACK:	[MUSIC] So, to tie it all together or what AmÃ©lie believes is that Wolfowitz seemed to be a little upset that he had to leave the World Bank and we believed he was trying to make the current leadership of the World Bank look bad, so his people were blackmailing this investigator to somehow find a way to make the bank look bad, and the investigator was just using the IT guy to get this information and to leak it to the press to make the bank look bad.  Places like Fox News were adding in all kinds of extra narratives, like talking about how the current president isnât doing as good of a job and stuff like that.</p>
+
+<p>AMÃLIE:	DC is very much a long smear of campaigns and whatever kind of leverage, no matter who it can hurt, this is how this town operates.  Itâs pretty sad.</p>
+
+<p>JACK:	So, she prepared all this for HR to handle and her boss.</p>
+
+<p>AMÃLIE:	The investigator I think still was there, just probably waylaid a little bit.  I didnât see much of him.  It was more or less that â Iâm sure the pestering by the outside folks went down quite significantly but I was told that that was handled at a level above me.  The IT person was eventually let go.</p>
+
+<p>JACK:	Okay, problem solved.  What a relief.  Time to take a break.  But oh, wait a minute, no, we canât.  This bank is under attack, remember?  Thereâs a hacker that got into thirty servers in this network, and this was all going on at the same time.  What a mess to try to handle two different incidents at once.  All this was just putting a lot of extra stress on people.</p>
+
+<p>AMÃLIE:	That first weekend was me going â working as much as I can, and then going â getting something to eat and maybe going home.  [00:35:00] I needed to sleep in my own bed.  But I think the next day when I came back, I brought a pillow and a blanket to sleep under my desk so I could just continuously work through the day.  Eventually I just left a pillow and a blanket there âcause I just figured this was what life was gonna be like for a while.  Sleeping under your desk is not fun at all.</p>
+
+<p>JACK:	Okay, so, back to the network intrusion.</p>
+
+<p>AMÃLIE:	We eventually got to the point where weâre actually pinpointing machines of interest.  So, we had thirty machines involved but to kind of only forensically look at a couple, I think we narrowed it down to like, seven machines.  I had a list of these are the ones that you have images for and these are the things weâre looking for.  [MUSIC] A lot of this was done in parallel, so we had the forensics images of I think those five to seven servers but at the same time, knowing that we instrumented relatively well but there was a lot of data that started to disappear, like the Mazu gateway data, that was the NetFlow stuff, and that the ArcSight was no longer online.</p>
+
+<p>It was trying to piece together the story from logs, trying to figure out alright, so, hereâs the map of what happened and what do the logs tell us about this and how they got in?  So, it was more or less a lot of the forensics were a confirmation of our inferences, so as we started to pinpoint what got accessed and whatnot, we still didnât know the motivation.  If I remember correctly, we didnât actually end up getting to where we found the motivation as to what they were interested in.  Most of this came down to what tools did they use, how did they gain access, and what machines do we need to reimage, what data do we need to be on the lookout for if itâs gonna be used by an adversary, and so forth.</p>
+
+<p>JACK:	What was it that they â that was compromised?</p>
+
+<p>AMÃLIE:	As it came down to it, it was some machines associated with the HR system.</p>
+
+<p>JACK:	Hm, okay.  A bank has a lot of money so youâd think that a hacker getting â going through all the effort of getting into a bank, itâs kind of a surprise that they were going after HR.</p>
+
+<p>AMÃLIE:	Yeah, the thing was with the data that was on there, there was a little bit of the HR stuff and when you start asking questions as to figure out what all the connections are, theyâre shared databases.  We considered it was probably HR but there may have been some other databases that they were interested on there.  At the point and times that were mainly â they â the leadership was mainly interested in how they got in and if they could clean up.</p>
+
+<p>JACK:	Iâm curious about this, too.  How did the hacker get in?</p>
+
+<p>AMÃLIE:	One of the issues was with the bank is that they had abandoned a multi-factor access program, so not only were they not using a hard card or a smart card for credentialing for all users, the users between enterprise admin and the regular old, every Jane or Joe user on the World Bank network, it was just a matter of your user ID and your password.  So, our enterprise admin, one of our three enterprise admins for ADâs account was compromised.</p>
+
+<p>JACK:	Mm-hm.  All it takes is the right username and password to get in sometimes.  You might ask why was multi-factor authentication turned off?  Well, they did try multi-factor authentication but for whatever reason, they didnât like it.  It was too slow, too complex.  It was impacting how business worked, so they removed it and were in the process of switching everyone to use smart cards for authentication.  This is where you have to insert a little credit card-like thing and then type in your password to get into a computer.  [MUSIC] So, they turned off the token method for authenticating users and were in the process of switching everyone to use these physical cards.  So, it was just really bad timing that the hackers got in during that transition.</p>
+
+<p>Once the hacker got in, they tried running a hacker tool, but the antivirus on that computer blocked it, so they tried another exploit, a newer one, and even though this computer had antivirus running, it didnât trigger on this newer exploit.  Once they were in one computer, they were able to traverse the network to get into other computers.  The hacker eventually got their hands on password hashes.  Now, you need to run a password-cracking tool to figure out what the password is once you get the hashes, but AmÃ©lie saw that they had gotten these password hashes and she knew they had the enterprise adminâs password, so she decided to get the hashes herself and see if she could crack the password.</p>
+
+<p>AMÃLIE:	And was able to pull out the passwords for the enterprise admin rather quickly, I think in about five minutes.</p>
+
+<p>JACK:	A-ha, so, if she can crack the password that quickly, that meant that the password was not very strong.  This helped her connect a bunch of pieces together to know how the hacker moved around and got different things.  [00:40:00] So, when she went to the close-out meeting with the head of IT to wrap this whole thing up, she decided to do a sort of magic trick for them.</p>
+
+<p>AMÃLIE:	[MUSIC] I had Joyce Lin ask the enterprise admin for his password.</p>
+
+<p>JACK:	Joyce Lin was from Mandiant who was called in to help with this whole incident.  So, the admin wrote the password on a piece of paper and then folded it so nobody could see it, and put it on the table.  At the same time, AmÃ©lie started John the Ripper, a tool used to crack passwords, and everyone in the meeting watched.  Quite quickly, she had managed to crack the enterprise password.</p>
+
+<p>AMÃLIE:	Then turned the screen around and I said, is this your card?  Sure enough, that was the password that was written on that sheet, and we â she, Joyce, showed the screen and that password, and it was a really simple password.  I think it was his daughterâs name with a year or something.  It was really bad password policy.  So, that instantiated some policy changes.  They started doing some user account separation.  A couple of months later, we had called in Microsoft to go through an entire analysis of the Active Directory forest management for the entire bank.</p>
+
+<p>JACK:	Ah, yes, nothing like a good old-fashioned password audit.  This is where you take the hash dump for everyoneâs passwords on the entire network and see how many can be easily cracked.  So, you see some pretty bad behavior.  Like, a lot of people use the company name inside their password, and that kind of stuff might show up on the audit which then might allow the security team to make new rules, to restrict certain passwords in an attempt to make things harder to crack.  On top of that, they finished rolling out that smart card authentication for everyone.</p>
+
+<p>AMÃLIE:	This was kind of a come to Jesus incident for them, to try to get serious about increasing their security.</p>
+
+<p>JACK:	They also brought in more FTEs, or full-time employees, to help do security.  They built out a SOC, they developed an incident-handling playbook, and they improved their security overall for the whole company to keep this from happening again.</p>
+
+<p>AMÃLIE:	As much as they were doing everything you could potentially do wrong before this, that it was enough of a punch that it got them to really kinda try to do something better.</p>
+
+<p>JACK:	Now, the biggest question that always comes up from a hack like this is who did this?  They werenât able to figure that out for sure but there were a few clues that suggested that this attack came from China.  So, they packaged up these findings and sent it to the World Bank leadership.</p>
+
+<p>AMÃLIE:	The initial response was from the bankâs CIO; was oh my god, and I think there was an explicative in there âcause she was very much more reserved than most, but she was literally ready to march up to the Chinese embassy or up there and around UDC and basically chew them out and say that they were gonna pull all the bank funding from all of their projects.</p>
+
+<p>JACK:	Yeah, this is interesting because the World Bank was loaning money to China for various projects.  I donât know what exactly, but maybe a loan to build a bridge or maybe to help people in extreme poverty in China.  But it doesnât matter what project.  The thing is is that the World Bank was directly helping China and didnât like that China was behind this attack.  Yeah, we donât know if they actually spoke to anyone in China about this but itâs certainly interesting if they did.</p>
+
+<p>AMÃLIE:	[MUSIC] Why that was significant was â is that the challenge with anything like this is attribution.  There was stuff that wasnât shared with us once we â as I mentioned, you asked well, why HR systems?  There was definitely something that triggered in the back of the mind of those executives that when we showed them that evidence, they knew that it was China or some Chinese asset that was looking to get this information, because there was something higher up at the bank that was happening that us lowly contractors and other employees werenât party to.  So, it wasnât necessarily the way that typically you would map your TTPs to a particular actor, so China has their threat actors with their names and stuff, and then Russia has theirs, and Iran has theirs, and North Korea has theirs.</p>
+
+<p>But some of that too, the reason we also were able to be somewhat confident other than the fact that the bank executives were like yeah, we kinda â this makes sense, where the â Mandiant, as part as some of the malware stuff that we had looked at using their Mirror tool â it was just the first release of their Mirror tool at the time â was that some of the stuff that we had found on the systems started matching some of their early work that they had had to map to some of the Chinese threat actors.  It all kinda came together, but this is very much in the early days, like I said, 2007, 2008, the very early days of [00:45:00] being able to have some level of confidence that these were the teams that were particularly poking and prodding.</p>
+
+<p>JACK:	So, that concluded the investigation.  It was time for AmÃ©lie to bring her pillow back home and sleep in her own bed again.  But honestly, AmÃ©lie loves handling incidents like this.</p>
+
+<p>AMÃLIE:	Itâs the chase, itâs the finding something new, finding something clever, the thrill of the chase overall.  Yeah, I kinda sometimes thrive on stuff.  Iâve done forensics stuff where we had to do an entire imaging of a lab while people were out from the time work closed to the next day they walked in, trying to do it on the sly.  Just the challenge of â we didnât have the right tools and weâre improvising and that kinda stuff.  Youâre running on adrenaline and endorphins and whatnot, but the whole thing; somebody inside, this is an inside job, and then you have the realization this is somebody I had been investigating, so this is a much bigger picture.  Then you start thinking about the political intrigue and youâre just kinda like, I canât believe Iâm here.</p>
+
+<p>Itâs really weird to be at the right place at the wrong time or the wrong place at the right time, or whatever it is.  It just seems â for me, I kinda run on that, I guess.  I get this â thatâs my MO.  [MUSIC] I was at the White House when we had the OPM breach, and Heartbleed, and working at a power company during a blackout in a hurricane, and itâs just like, I donât think anybody would ever want to hire me because trouble follows and itâs not my fault.  But the idea is you can kind of help these organizations fix stuff and the emotion after that is alright, well, we did this clean-up.  Your lunch was eaten.  We told you the truth; this is what happened, but what can we do to get better?</p>
+
+<p>If youâre not somebody who loves the thrill of the chase â and a lot of IT people are builders; building back better, which is the mantra of the current new administration as of today.  The build back better is the thing that also thrills people.  They get to tool up, they get to construct stuff, they get to do the things that really are exciting.  They get to put the good stuff into practice, and thatâs another emotional high.  If you get to play all of that, man, itâs great as a blue team person.  Very infrequently I ever got the red team, so maybe capturing flags and stuff were the big emotional high for red team people, but for blue team itâs like yeah, I kept them out or yeah, we fixed this thing, and go ahead, try me.  So yeah, thatâs kinda how it feels.</p>
+
+<p>JACK:	So, thatâs it.  This incident was all wrapped up, all with the help of AmÃ©lie and Joyce Lin.</p>
+
+<p>AMÃLIE:	Joyce Lin, she was the project manager from Mandiant.  She unfortunately passed away in an aircraft crash.</p>
+
+<p>JACK:	She died in May of 2020.</p>
+
+<p>AMÃLIE:	She was delivering medical supplies, medical and food supplies, to I think somewhere in Southeast Asia and her plane crashed.  She was a Air Force reservist.  The funny thing was is that after that, I ran into her when I was stationed at the Defense Cyber Crime Center and she was doing some reserve duty up there, and it was connecting old times.  Itâs a small world.  You never know who you run into but when I saw her walking the halls up there, and I was like, I just smiled and she smiled back and we just knew weâd been through hell.  It wasnât necessarily in a fox hole anywhere but we knew and trusted one another and it was a shame when I had heard from some Mandiant people that she had perished, but sheâd led her life pretty well.</p>
+
+<p>JACK:	AmÃ©lie kept working at the World Bank for a while but something awkward happened which made her leave.</p>
+
+<p>AMÃLIE:	What we had found out because I was working late, late hours for a lot of these incidents that we had â and I usually just like working late in general âcause it was quiet â I ended up starting to get suspicious of my boss.  He would show up at weird hours and stuff like that.  He was having some issues with his Mac and the like, and we ended up kinda finding out that he was â after I left, found out that he was cheating on his recently-pregnant wife with a co-worker.  The fact that I was there late and seeing his coming and goings, I think he felt kind of threatened, so I was â my contract wasnât renewed which is kind of a shame.  The fact is is that going through all this work and whatnot and then getting let go because youâre getting too close to something else that was trying to be swept under the carpet was a little annoying but I felt that [00:50:00] theyâll do what they need to do.  Then I became the chief enterprise security architect for Department of the Interior and I was there for nearly five years.</p>
+
+<p>JACK:	Chief security architect for Department of Interior; that sounds huge.</p>
+
+<p>AMÃLIE:	Yeah, yeah.  Yeah, it was a big project to work on.  I took over, helped develop their mobile security program, some of the remote work policies and stuff like that, lots of different things.  During my time there I did a leadership rotation as part of the presidentâs management council at the White House, at the Office of Management and Budget and worked for the chief information officer, the federal chief information officer.  Oddly enough, I think within a week of me getting there is when they had Heartbleed, the SSL, the open SSL incident, which was an interesting experiment in trying to explain to senior political officials how open-source projects were governed.  Shortly after, we kind of handled the Heartbleed data, data call.</p>
+
+<p>There was some news that came out regarding USIS, which is one of the companies that did â that was contracted out to do background investigations for the Office of Personal Management, OPM.  The news that came out was just that their contract was put on hold or terminated.  They performed about 50% of the background investigations.  Then later on in the summer, KeyPoint was also terminated, and then a few weeks later DHS released the notice that they had found some intrusions on the OPM network.  But that wasnât necessarily when the OPM breach was disclosed.  As you know, the timeline the OPM breach was disclosed I believe in March of 2015.  The fact is is that things like a history of incident handling and response, when you start to look at what these companies did, how they were connected to the network over VPN and whatnot, back into OPM, it started looking like they were using these companies as a way into OPMâs soft underbelly on their network, and thatâs exactly what ended up happening.</p>
+
+<p>I had mentioned to the federal CIO at the time, Steve VanRoekel, that this looks like you have a breach in progress at some point.  Unfortunately, my rotation ended but I at least let him know this looked bad, so just be prepared that in time, this will probably get much, much worse.  At that point in time, I think they started â DHS worked with OPM to do the investigation and then that was disclosed in March.</p>
+
+<p>JACK:	This incident where the Office of Personnel Management was breached was a major incident that Iâll have to cover in another episode someday, but handling all these crazy incidents just made AmÃ©lie a pro at incident response.</p>
+
+<p>AMÃLIE:	[MUSIC] Well, you know, then I helped found the US Digital Service when I was there because no one else â the person who was originally working on it decided they were thinking about leaving government, so it was just random stuff I got assigned to go and do and put the feather in the hat.  But I think a federal government career; youâre at the White House.  This is like the Superbowl of federal employment and yeah, I was to return to Interior to my old position there and I was really excited about bringing what we were doing for the US Digital Service back to the agency.  We had just switched the CIO in that time.</p>
+
+<p>It really was saying hey, you havenât had this chief technology officer position filled in a while.  Are you guys gonna fill it?  I really would love to have that.  If not, Iâd really like to push the Digital Service stuff at Interior.  They just didnât act and I was just feeling kind of pent up, so I decided to go work for Disney.  I left federal service for about a year to go work as a enterprise architect doing technology strategy for Disney.  Spent a year in LA, hated Los Angeles, moved back to DC, went to go work for Treasury in the GSOC, the government SOC in Vienna, Virginia, and lead the Continuous Diagnostics and Mitigation Program for all of Treasury.  Then most recently I got offered a position to work as a deputy chief information officer at the HHS, Health and Human Services inspector generalâs office which I really always kinda wanted my career to go and do, and learn stuff like budgeting which most techies donât learn, learn how to do HR which most techies donât tend to learn.</p>
+
+<p>I got a chance to lead teams, and when our CTO left, I was dual-hatted as the chief technology officer leading of development efforts as well as the deputy CIO until we hired a new deputy CIO and I stuck as a CTO for a year doing a lot of cool stuff there.  Iâm currently at [00:55:00] Splunk as a technology advocate âcause every manager needs a break and I like not having to manage people for the last year, so â but the cool thing is is as a technology advocate, I get to go out and speak about ways that you can do things better.</p>
+
+<p>JACK:	She has given a lot of talks.  If you go to her website, webjedi.net, right in the front page you see a link to fifteen different talks sheâs given at places like Defcon and ShmooCon and other DevOp conferences, too.  If you want to hear more from her, definitely check out her talks.</p>
+
+<p>AMÃLIE:	This is my job now and I really enjoy doing it âcause itâs a way to maybe spread the knowledge around to people that may not get experience to it and hopefully make their lives a little bit easier.</p>
+
+<p>(OUTRO):	[OUTRO MUSIC] A big thank you to AmÃ©lie Koran.  You can find her on Twitter which is @webjedi or visit her blog which is webjedi.net.  I bring you this show free of charge every two weeks and one reason I can keep it going is because of all the wonderful people who give to the show through Patreon.  This is the most direct way to show support for content you appreciate, so consider donating by going to patreon.com/darknetdiaries.  The show will continue to be free whether you give or not.  Iâll still be here making the show because I donât want to leave you hanging and I hope you donât leave me hanging on the other end.  This show is made by me, the ID10T award-winner, Jack Rhysider.  Sound design this episode by the digitized Andrew Meriwether, editing help this episode by the 3D-printed Damienne, and our theme music is by the never-cold, always hot, Breakmaster Cylinder.  Even though when a SQL query walked into a bar, it went up to two tables and asked, can I join you?  This is Darknet Diaries.</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

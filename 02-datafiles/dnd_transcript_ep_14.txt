@@ -1,0 +1,419 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>#OpJustina â Darknet Diaries</title>
+	<meta name="description" content="In 2013 a hospital was accused of conducting a medical kidnapping against a young girl name Justina. This enraged many people across the country, including members of anonymous. A DDOS attack was w...">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="#OpJustina â Darknet Diaries">  
+	<meta name="twitter:description" content="In 2013 a hospital was accused of conducting a medical kidnapping against a young girl name Justina. This enraged many people across the country, including members of anonymous. A DDOS attack was w...">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/opjustina1.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/14/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="#OpJustina â Darknet Diaries" />
+	<meta property="og:description"        content="In 2013 a hospital was accused of conducting a medical kidnapping against a young girl name Justina. This enraged many people across the country, including members of anonymous. A DDOS attack was waged against the hospital." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/opjustina1.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/14/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/opjustina1.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/14/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="#OpJustina â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/opjustina1.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 14: #OpJustina</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://traffic.megaphone.fm/ADV6666881571.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/14/",
+			   "title": "Ep 14: #OpJustina"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/14">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[FULL TRANSCRIPT]</p>
+
+<p>JACK:	Anonymous and activism often cross paths.  When there are injustices in the world that triggers protests or riots thereâs often online versions of those protests too, and if somebody wants to simply be the voice of the citizens of the world, they can be anonymous and make threats to an organization.  These anonymous online protestors have targeted governments, churches, organizations, to try to expose their corruption.  They have been known to wage online attacks so hard that the organization goes completely offline, or they take it a step further and get internal access to the network and cause whatever destruction they can from within.
+<!--more--></p>
+
+<p>On many accounts, Anonymous stands up for the citizens of the world and helps fight corruption.  What if the organization that stirred the beeâs nest was a hospital?  Would anyone ever consider attacking a hospital?  A place where patients are on the verge of death and life-saving operations are happening on a daily basis, a place where people go to as a last resort for help?  Can hacktivism go too far?</p>
+
+<p>JACK (INTRO):	[INTRO MUSIC] This is Darknet Diaries, true stories from the dark side of the internet.  Iâm Jack Rhysider.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	At the center of this story is Justina Pelletier, a fifteen year old girl living in Connecticut.  By many accounts Justina was just your average teenage girl.  She liked listening to music, playing with her friends, and going to school.  Except she was ill; she suffered from mitochondrial disease.  Mito is a genetic disease which causes poor growth, poor muscle coordination, sensory problems, and organ diseases.  This made Justina sick and limited what she could do in her life.  But she was being treated for the disease.  Justinaâs father is Lou Pelletier.  I found some archival tape of Lou telling the story of what happened to Justina.  Hereâs a clip from that tape.</p>
+
+<p>LOU:	For two years sheâs been under the care and the well-skilled care of Tufts Medical Center led by Dr. Mark Corson, one of the leading mitochondrial doctors in the country, and being treated successfully; going to school, playing with the dogs.  January 23, her Grandmaâs 92nd birthday, she ice-skated for her.  She gets the flu in early February, conditions deteriorate rapidly which is â unfortunately when you have mito your body just doesnât fight things the way other folksâ can.  A decision was made that â by her main doctor, Dr. Corson at Tufts, that she needs to be seen by her stomach doctor.</p>
+
+<p>Unfortunately he and the rest of his GI team the month earlier, had transferred over from Tufts to Boston Childrenâs Hospital.  So on a snowy February 10th evening, she went by ambulance from Connecticut Childrenâs to Boston Childrenâs.  Within a few hours of her arrival, a young neurologist came along and said oh, thereâs no such thing as mitochondrial disease.  Didnât say what his game plan was, but weâre going to try a different approach which we went along with.  We were game; we were trying to get our daughter better but within a very short period of time they had decided what she had was not medical, was in her head.  Even though everything thatâs been done has been medically diagnosed, medically verified, and as they would say, insurance-approved.  Nothing was done by pushy parents making something happen.</p>
+
+<p>But on February 13th of 2013 my wife was given a sheet of paper called the Guidelines of Care of Justina Pelletier which just crushed us.  It says you will not be allowed to speak to any doctors including her Tuftsâ doctors.  You will not be able to see the doctor you came here to see, Dr. Alex Flores, world expert [00:05:00] on GI motility and mitochondrial disease.  We are taking over.  We are taking her off all her medications.  She had tachycardia, rapid heart rate.  They took her off that, a number of different things.  When you have mitochondrial disease you have serious vitamin deficiencies which is â as mitochondrial as your energy, was taken off that.  By us saying on February 13th, we donât agree with what youâre doing, February 14th I went to discharge my daughter to take her back to Tufts for an already pre-scheduled appointment with Dr. Corson.  As Iâve said a few times before, Tufts Medical Center is not exactly Bobâs hospital.  Theyâre one of the top medical facilities in the country.  Then thatâs where the nightmare totally began.</p>
+
+<p>JACK:	[MUSIC] The hospital contacted Child Protective Services which in Boston, is known as DCF, Department of Children and Families.  The DCF removed Justina from the custody of her parents and placed her under the custody of the state of Massachusetts all because of a medical disagreement between the parents and the hospital.  This was very traumatic for the Pelletier family.  They believed what they were doing was best for their daughter by listening to doctors and taking her to hospitals so she can get better.  After she was diagnosed, the daughter was taken away from the parents.  The parents had very short visiting times, they were not allowed to talk to doctors, and were sometimes even escorted out of the hospital by police.  To top it all off, the courts put a gag order on the parents restricting them from being able to talk to the press.  Over a year goes by where Justina remained in the Boston Childrenâs Hospital where she was treated for her illness.  She was unable to come home for her birthday or even Christmas because her home was the hospital, because she was under custody of the state of Massachusetts.</p>
+
+<p>LOU:	Now itâs March 5th, over a year later, almost thirteen months later and here we are.  We have a daughter whoâs dying.  Sheâs in pain twenty-four hours a day âcause theyâve ignored it.  What has happened since February 10th, her condition is now where she was ice-skating, going to school, where now sheâs pretty much paralyzed below the hips, very little body strength above.  Educationally sheâs dropped to they think, to the second grade level.  Sheâs been put through hell.  Through no fault of her own, through no fault of her parents who just followed their doctorâs advice.  The crush itâs done to her, what itâs done to our family, financially, when youâre fighting as I said, David against not one Goliath, but two.  Weâre fighting the state of Massachusetts and DCF and weâre fighting Boston Childrenâs Hospitals and their pockets are a little bit deeper than ours.  But as you saw a few weeks ago, I decided I could not stand back anymore.</p>
+
+<p>JACK:	The gag order was lifted off Lou and he could finally tell his story to the press.  After a year of being held in Boston Childrenâs Hospital, she was well enough to leave but being under custody of the state of Massachusetts, she couldnât go home.  She was moved to a youth facility called Wayside where she was treated for mental illness.</p>
+
+<p>LOU:	As of today, she is still at the Wayside facility which, by the way, is a two-week psychiatric residential facility, non-medical.  Sheâs been there six, seven weeks.  One of the things that transpired was last Monday, they had announced in the court room they were going to move her to a facility called the Shared Living Collaborative, part of the nightmare that went on.  If you saw the media you saw that my wife actually passed out outside the court room.  Two days later, Shared Living Collaborative said no, no, no, we want nothing to do with Miss Pelletier at this point because of all the media scrutiny.  Basically, sheâs in a facility thatâs designed to keep people two weeks or less, and non-medical, and sheâs been there six, seven plus weeks.</p>
+
+<p>We were there the Friday before the court in our weekly visit, and I mentioned this âcause itâs very important.  Justinaâs shirt bottom had happened to lift up and my wife and daughter saw the severe dark red lines coming out of her port where her surgery was.  Thatâs sepsis.  Itâs poison.  If we didnât raise the red flag, DCF officials were in there laughing, she could be in serious medical shape even worse today, or not be here today.  Our family has gone through thirteen months of any familyâs [00:10:00] worst nightmare; that any hospital could take a child away from a family that was doing no wrong and have no recourse as far as getting her back.</p>
+
+<p>JACK:	Because of how chilling this story sounds and how desperate the parents seem to be, the press eat this story up.  News agencies around the nation went wild talking about Justina.  Lou conducted numerous interviews for national news such as Fox News, Glenn Beck, and even the Dr. Phil show.  People around the country were frightened and shocked and even outraged by such a story.  Social media was abuzz talking about how horrible it was that the hospital took Justina away from her parents.  Once the news became national coverage, an ominous video was uploaded to YouTube by Anonymous.  Hereâs a clip from that video.</p>
+
+<p>ANONYMOUS:	Greetings, fellow citizens.  We are Anonymous.  It has come to our attention that a fifteen year old girl by the name of Justina Pelletier has been held against her will by the state of Massachusetts for over one year.  Justina has a condition known as mitochondrial disease, however the Boston Childrenâs Hospital believes that it all is merely in her head and as a result, she has been detained in addition to being tortured physically and mentally by this corrupted system for nothing more than being sick.  Anonymous and the American people will not tolerate this abuse of our children and will retaliate using whatever means necessary in order to protect our fellow citizens from this abusive and manipulative behavior.</p>
+
+<p>[MUSIC]  We will punish all those held accountable and we will not relent until Justina is free.  Test us and you shall fail.  This will be your first and final warning.  Failure to comply with our demands will result in retaliation in the likes which you have never seen.  Free Justina and return her home to her family.  The voice of the people shall be heard.  We are Anonymous.  We are legion.  We do not forgive.  We do not forget.  Expect us.  Operation Justina engaged.</p>
+
+<p>JACK:	The video also included many names of employees of Boston Childrenâs Hospital as well as the judge that saw the case, calling for these people to be fired or threatened.  The next day Twitter messages started showing up.  A user by the name of anonmercurial2 started calling Anonymous to engage on attacks against the hospital using the hash tag #opjustina.  Anonymous also posted public dumps of private information of the judge and the doctors who took care of Justina, listing their address, home phone number, and more.  The hospital saw the docs that were posted of the doctorsâ and lawyersâ home address and their phone numbers.  They saw the video and they saw the tweets.  They knew an attack was coming but they didnât know when or how big.  The hospital called the police because what else can you do in a situation like this?  Even though the police canât protect you against a cyber-threat, you feel like thereâs no other option.  Itâs good to inform them anyways, so the police were on alert.</p>
+
+<p>Protestors started gathering outside the hospital with signs saying Free Justina but the protestors remained peaceful.  On April 14th, 2014, members from Anonymous began a network attack on the Boston Childrenâs Hospital.  It was a typical denial-of-service attack, a DOS.  The attackers were sending a large amount of web traffic to the hospitalâs website, so much that the web server couldnât handle all the traffic.  The website was unusable; anyone who tried to visit the hospitalâs website would see a server error and not see the website at all.  This DOS attack was not that bad, though.  The hospital was on full alert and had the appropriate staff on hand to block each IP that was attacking the hospital.  The hospital was blocking IP address after IP address, one at a time.  Shortly after an IP was blocked, a new flood of traffic would come from a new IP so this hospital had to block that new IP, too.  It was like a game of Whack-A-Mole; attacks kept coming from new IPs day after day for a solid week.</p>
+
+<p>April 19th rolls around.  Itâs Patriotâs Day which is a state holiday in Massachusetts and itâs also the one year anniversary of the Boston Marathon bombing, and itâs also the day of a big fundraiser campaign that was being done for the Boston Childrenâs Hospital.  The main way to donate to their hospital was through the website.  The IT Department of the hospital was growing increasingly concerned.  On this day the DOS attack got much bigger.  It knocked out not only the main website which prevented people from donating to the fundraising campaign, but it also took down many more systems on the hospitalâs public network.  Harvard University is affiliated with Boston Childrenâs Hospital [00:15:00] and they shared the same network.</p>
+
+<p>So not only were sites at the hospital down, but now a part of Harvardâs network was going down, too.  The hospital brought in additional help to come and defend the network.  They hired network incident responders.  They were able to come in, put devices in, and block even more traffic and monitor the situation even closer.  Even though the attack had grown much larger it was managed and the websites were starting to come back up.  But the media kept running the story of how Justina was taken from her parents.  This resulted in a groundswell of protestors outside the hospital and court rooms.</p>
+
+<p>PROTESTORS:	[CHANTING] Free Justina!  Free Justina!  Free Justina!</p>
+
+<p>JACK:	At some point too, a video was leaked from Justina pleading to be sent home and that she misses her family so much.  All this just added fuel to the Anonymous campaign of #opjustina.  New Anonymous supporters were joining in and the DOS against the hospital was growing larger and getting more serious.  The attackers began blitzing the phone lines and calling in and telling whoever answered that their bank account was compromised.  They were sending in a lot of spam e-mails too, and phishing e-mails.  At some point an employee of the hospital clicked on a phishing e-mail and hackers were able to get into the hospitalâs mail server.</p>
+
+<p>They started reading e-mails and even joined some conference calls, and then posted the transcripts of those calls online.  More DOS attacks were happening and more websites were going down.  Sites that were disrupted were research sites, philanthropist sites, fundraiser sites, provider portals, patient portals, and more.  When the hospital found that someone was in the mail server, they shut down the mail server for 24 hours, stopping all e-mail in and out of the hospital.  The e-mail server had 15,000 user accounts so you can imagine how hard it would be to communicate to this many people when e-mail is unavailable.  The attacks continued day after day, week after week, and the attacks grew larger and larger every day, and eventually spiked all the way up to 27 GBs per second.</p>
+
+<p>Up until this point word about the attacks has been kept quiet but when the e-mail server went down the Boston Globe News Agency heard about this and ran a story about it, indicating the hospital was under a severe attack from Anonymous.  This was the front page story of the Boston Globe.  When that happened, one of the more popular Anonymous accounts tweeted âTo all the âAnonsâ attacking the CHILDRENâS HOSPITAL in the name of Anonymous, IT IS A HOSPITAL: STOP IT.â  The next day the attacks stopped almost completely.  After three weeks of a continuous distributed denial-of-service attack, the network traffic returned to normal.</p>
+
+<p>We know these events occurred because the CIO of the hospital posted an article in the New England Journal of Medicine describing everything that happened.  The hospital estimated that this attack cost $300,000 in damages.  It seemed the point had been made and the network returned to normal.  The hospital collected all the logs of the attack and gave it to the police.  Then the FBI got involved and started building a case.  [MUSIC]  The FBI saw the attacks were coming from hundreds of different IPs.  Most of these were proxies which hide the attackerâs real IP.  This didnât give the FBI any solid leads so the FBI went to YouTube.  YouTube as in the company, like Google, actually.  Itâs actually common that the FBI asks YouTube or Google for data like this.  If a Google user is suspected to have committed a crime and thereâs evidence in that userâs account, that data can be turned over to the FBI.  So the FBI asked to turn over any information on who owned the YouTube account that posted that Anonymous video.</p>
+
+<p>The account was found to be owned by Martin Gottesfeld, a thirty-one year old male from Summerville, Massachusetts.  On September 29th, 2014, the FBI obtained a search warrant for Martinâs house.  On October 1st, the FBI met with Martin.  Martin admitted to posting the video but not conducting the attack.  The FBI interviewed Martinâs friend who said Martin did admit to doing the attack.  When the FBI searched Martinâs computers, they found Martin owned the Anonymous Twitter account which called for the attacks against the hospital.  They also found chat logs where Martin and someone else was planning the attacks.  The FBI continued their investigation for over a year, [00:20:00] collecting more evidence and keeping an eye on Martin.  In February 2016, Martin and his wife disappeared.</p>
+
+<p>Not answering calls from friends, not going to work, not talking to family, and not talking to police or FBI.  The FBI agent went to Martinâs house but nobody was home and the car wasnât there, either.  Martin and his wife could not be found.  They had gone missing for two whole weeks.  Neither the police or FBI knew where they were.  Then an FBI agent in the Bahamas discovered their location.  Martin and his wife were on-board a Disney cruise ship not far from Cuba but the couple werenât actually passengers on the ship; they werenât employees or stowaways, either.  They started out on a sailboat from Miami and were possibly headed to Cuba when something went wrong on their boat.  Martinâs wife called for help and the nearest ship to respond was the Disney cruise ship.  It rescued them.</p>
+
+<p>On-board their sail boat was some luggage and three laptops.  The FBI took them into custody upon arriving back in Miami.  Martin is still in jail today, still awaiting his trial and sentencing.  While in jail he wrote a letter to Huffington Post titled Why I Knocked Boston Childrenâs Hospital Off the Internet.  It reads in part, âThe answer is simpler than you might think; the defense of an innocent, learning-disabled, fifteen year old girl.  I had heard many, too many such horror stories of institutionalized children who are killed or took their own lives in the so-called troubled teen industry.  I never imagined a renowned hospital would be capable of such brutality and no amount of other good work could justify torturing Justina.  Their network was strong, well-funded, but especially vulnerable to a specific attack.  Apparently Boston Childrenâs Hospital was unwilling to architect around the problem.  I see such laziness often in my work and it leaves our nation vulnerable.  I had spent my career building cyber defenses.  For the first time, I was on the offense.</p>
+
+<p>I coded around the clock for two weeks to perfect the attack.  Small test runs were made.  Boston Childrenâs Hospital bragged to the media that they were withstanding the onslaught and hadnât been taken down.  They had no idea what was to come.  I finished the code just in time.  It ran.  Boston Childrenâs Hospitalâs donations page went down.  As they were down, I was nervous.  I left it running for a few hours.  Then with some donation time still left, I issued the command to stop the attacks.  The point had been made.  Justina wasnât defenseless.  Under the banner of Anonymous, she and other institutionalized children could and would be protected.</p>
+
+<p>JACK:	Martin had previously advocated for children in the troubled teen industry and spoken out about other mental health homes for children.  But with these statements from him directly, and the FBIâs affidavit, it seems like Martin was the person who started this campaign and waged the attacks himself.  But the courts will ultimately decide that.  Martinâs wife has set up a campaign called Free Marty G and it has a tagline; he helped her, now letâs help him.  Leading up to Martinâs court arraignment, he went on a two-week hunger strike.  At the arraignment Martin pleaded not guilty even though he previously admitted to doing the attack.  Then he fainted in the court because of the hunger strike.</p>
+
+<p>He could be facing fifteen years in prison for violating The Computer Fraud and Abuse Act.  Recently heâs been trying to run for Senate while in jail.  I donât understand how thatâs possible and Iâm not even going to go into that.  As far as Justina goes, the protests outside the hospital kept growing in size and at some point even got hundreds of supporters outside chanting to free her.  More and more media coverage was given to her cause and after sixteen months of being kept away from her parents, a judge ordered she could return home.</p>
+
+<p>LOU:	When I was on my way back to my office, my wifeâs phone calling in.  Whoâs on the phone, Justina and screaming daddy, daddy, Iâm coming home!  I just praised the Lord, sheâs coming home, no strings attached.  She is back to being part of the Pelletier family and we can start beginning the healing process.</p>
+
+<p>JACK:	Now, a few years later, Justina is still at home with her family.  Still not yet able to walk but her health has been improving since sheâs been home.  We still havenât heard a clear story from the side of the hospital or the state on why she was taken away, so it still remains a one-sided story.  The Pelletier family is now suing the hospital over this incident, claiming that during her visit she was not treated properly.  That lawsuit is still going on.  The more I research this story the more bothered I am by someone attacking a hospital over this.</p>
+
+<p>Yeah, the medical industry is really weird in America and sometimes seems corrupt but Jesus, if I get sick and go to a hospital, I donât want to worry about someone [00:25:00] attacking it over some custody case that I have nothing to do with.  The national news did a good job of drawing attention to this controversy.  There was no need to draw more attention and by the time the attack was done on the hospital, Justina wasnât even there.  Hospitals are under-resourced when it comes to IT budgets and security.  If they have to choose between saving a life or keeping the network up, theyâre going to save a life.  Thereâs been an update to this story.  When I first published this, Martin was sitting in jail waiting for his trail.  Well, his trial is now complete.</p>
+
+<p>The judge found Martin guilty.  A federal judge in August 2018 found him guilty of two counts including conspiracy to damage protected computers against the Boston Childrenâs Hospital.  The judge said, quote, âMake no mistake; your crime is contemptible, insidious, and loathsome.â  End quote.  Then, on January 2019, Martin was sentenced to ten years in prison and has to pay the hospital $443,000 in restitution.</p>
+
+<p>JACK (OUTRO):	[OUTRO MUSIC]  Youâve been listening to Darknet Diaries.  This episode is created by me, Jack Rhysider.  Music is created by Kevin MacLeod and Jahzaar.  You know what really makes my day?  Is when I see someone post on social media a picture of them listening to this show.  Even a screenshot of them listening on their phone is awesome, or when someone donates to the Darknet Diaries Patreon.  If you do either of these, please know youâre putting a smile on my face for the whole rest of the day.  It really means a lot to me.  Thank you so much.</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+<p>Transcription performed by Leah Hervoly
+www.leahtranscribes.com</p>
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

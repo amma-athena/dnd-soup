@@ -1,0 +1,569 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>Jeremiah â Darknet Diaries</title>
+	<meta name="description" content="Jeremiah Roe is a seasoned penetration tester. In this episode he tells us about a time when he had to break into a building to prove it wasn't as secure as the company thought.">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Jeremiah â Darknet Diaries">  
+	<meta name="twitter:description" content="Jeremiah Roe is a seasoned penetration tester. In this episode he tells us about a time when he had to break into a building to prove it wasn't as secure as the company thought.">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/doorcamera.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/125/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Jeremiah â Darknet Diaries" />
+	<meta property="og:description"        content="Jeremiah Roe is a seasoned penetration tester. In this episode he tells us about a time when he had to break into a building to prove it wasn't as secure as the company thought." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/doorcamera.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/125/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/doorcamera.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/125/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="Jeremiah â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/doorcamera.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 125: Jeremiah</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://www.podtrac.com/pts/redirect.mp3/traffic.megaphone.fm/ADV5104559264.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/125/",
+			   "title": "Ep 125: Jeremiah"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/125">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[START OF RECORDING]</p>
+
+<p>JACK:	 Thereâs this story of a guy named Michael Fagan, and it fascinates me.  This is a story that took place in June 1982, in London.  Michael was thirty years old and he was an interior painter.  He had a wife and six children, but times were tough for him and he was having trouble supporting all those kids, and he wasnât mentally stable.  His wife couldnât take living with him anymore, and she left.  That was the night of June 7, 1982.  Hereâs Michael in his own words saying what happened next.
+<!--more-->
+MICHAEL:	Me nerves were pretty bad.  They were going up and down and I was going through this breakdown.  I walked around the streets of London and I suddenly come across Buckingham Palace.</p>
+
+<p>JACK:	[MUSIC] So, this audio is from a BBC interview they did with Michael in 1993.  Now, Buckingham Palace is where the Queen of England lives.  Itâs a huge building three stories tall, 775 rooms, and at night itâs clearly closed to the public.  But the palace is in the heart of London, running along some public roads.  Michael was walking down one of those roads.</p>
+
+<p>MICHAEL:	I could see the window open.  It was there so close; I saw into it, probably.  I just hopped over the wall, up the drain pipe, and in.</p>
+
+<p>JACK:	Wait, what?  He just hopped the wall, climbed up the drain pipe, and got in through an open window on the second floor of Buckingham Palace?  That should not be possible.</p>
+
+<p>MICHAEL:	Walked around the palace for about an hour, looking at the pictures on the wall, paintings.  But it wasnât how I would have imagined it.  I donât think people imagine it the way it is; dusty and squeaky floorboards.  Very ordinary, you know.  They spend too much on decoration.  Maybe they have it done up now.  Maybe it was during a re-dec.  Passed a few doors, and I came across a throne room.  [MUSIC] Evidently the knighthoodâs in there and whatever.  Went in there; that was quite interesting.  I had a little sit on the throne.  Iâm walking about willy-nilly, actually.  Iâm not hiding.</p>
+
+<p>HOST:	Didnât you see any security staff?</p>
+
+<p>MICHAEL:	No.  Not up to now, not up to this point.  Went into Prince Charlesâ private secretaryâs office, I found out later, and thereâs all these presents round the walls, presents that people send him from the far reaches of the globe, you know; teddy bears and cups.  There was this bottle of wine from California, and I was so thirsty and I couldnât find a tap.  I didnât actually intend to steal anything.  Took the bottle down from the shelf, and I couldnât find a corkscrew.  Was sitting on the desk with me feet up, pushed the cork into the bottle, drank it out of the bottle.  Then all of a sudden I thought my god, where am I?  Iâm in Buckingham Palace.  What am I doing here?  It was just like this â as if me brain had arrived in a [inaudible].  It was, you know, how do I get out?  So, as I walked out into the passageway, I saw a security guard with a dog.  I looked round the corner and I stood back; he went into a room and I found my way out then.  I made my way downstairs, out the window, crossed the grounds at the back, and over the wall.  Then Iâm walking up The Mall five minutes later, and I thought as I got to sort of â towards Nelsonâs Column, I thought my god, Buckingham Palace.</p>
+
+<p>JACK:	[MUSIC] What a crazy story.  Michael Fagan just popped into Buckingham Palace, drank some royal wine, and left?  Incredible.  What if he was a spy or there to cause harm to the place?  This place should have been much more secure than this.  This shouldnât have been possible.  But things got worse for Michael.  His wife took the kids, and he stole a car to try to find her, but he ran out of gas and got arrested for stealing the car.  He was out on bail and more distraught than ever.  July 8 came along, and he couldnât sleep at all that night.  At 5:00 AM, heâd go for a walk down the road that goes towards Buckingham Palace.  He was just trying to clear his head and take a walkabout.</p>
+
+<p>MICHAEL:	I think I knew what I was doing at that point.  Started walking towards Buckingham Palace.  About 5:00, I see all these women cleaners going to work.  The intentâs there now; Iâm gonna see it.  Iâm gonna get in there and Iâm gonna see the Queen.  [MUSIC] One direction; nothingâs gonna stop me.  Through St. Jamesâ Park, up over the wall, into the palace, saying good morning to the servants as Iâm walking past them.  I donât know how the hell I found her room.  I really donât know how.  People have said to me, how did you find it out of all those rooms?  I really donât know.  Iâm in the Queenâs bedroom.  So, to make sure itâs the Queen, I walk to the window.  Sheâs looking very small in her bed.</p>
+
+<p>HOST:	She was asleep, was she?</p>
+
+<p>MICHAEL:	Yeah.  Walked past her bed; it looks too small to be the Queen, so I go over and I draw the curtain back just to make sure.  Suddenly she sat up.  What are you doing here?  So I said â well, I was dumbstruck, to be honest.  I just â I was thinking what to say.  Get out, get out.  She jumped out of bed; what are you doing here?  And walked out of the room, so I stood there.  Maybe I sat on the corner of the bed.  All this about long conversations â I mean, a lot has been said about what went on in that room.  This is the truth, you know?  Nothing; she just said âget outâ and that was it.  The footmen came in and they looked at each other â say oh my god, what we got here?  There was a rebellion going on in me head.</p>
+
+<p>HOST:	Do you think you were actually trying to get caught when you went in that second time?</p>
+
+<p>MICHAEL:	Yeah, yeah.  Just to make that statement, you know?  I am; I am.</p>
+
+<p>JACK:	[MUSIC] The guy snuck into Buckingham Palace twice, and with the second time, getting all the way into the Queenâs bedroom while she was asleep.  Creepy and incredible.  The chaos he could have caused was huge.  He was arrested and he went to court at the Old Bailey.</p>
+
+<p>MICHAEL:	I was actually charged with stealing half a bottle of wine.  It was just unbelievable, actually, to be tried at number one court, Old Bailey, the hanging court.  It intimidated me.  People have been sent to Australia from there.  Theyâve been sent to the gallows from there.  Thereâs me, for half a bottle of wine.</p>
+
+<p>JACK:	The jury found him innocent of wrongdoing and he was not sentenced to any jail time.  However, the judge found his mental health to be something to worry about, so they sent him to do time in a psychiatric ward.  While there, he wasnât able to go home and see his wife or kids, which caused him more stress.  But he eventually got to go home, but he wasnât well, though.  He was arrested a few more times for fighting at the pub and dancing in the streets naked.</p>
+
+<p>HOST:	Certainly, Michael Fagan isnât the kind of man to fade quietly from the public eye.  [MUSIC] He even made a record, a version of the Sex Pistolsâ song, God Save the Queen.  [GOD SAVE THE QUEEN LYRICS]</p>
+
+<p>JACK:	He finally divorced his wife, but got custody of his kids, and spent a lot of time just being a dad.</p>
+
+<p>MICHAEL:	Sarahâs in her first year of school and someone said her dad broke into Buckingham Palace.  She just turned round and said yeah, and your dad hasnât, has he?</p>
+
+<p>(INTRO):	[INTRO MUSIC] These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	So, letâs start out with you telling us your name and what do you do.</p>
+
+<p>JEREMIAH:	Yeah, my name is Jeremiah Roe and Iâm a solutions architect for Synack.</p>
+
+<p>JACK:	So, what drew me to Jeremiah is his background in penetration testing.  Companies have hired him to see if they have any security holes, and if he can find them and break into their buildings or network.  Because if someone could just walk into your building, that can be bad.  So, companies want to test how hard it is to break into their buildings.  How good is their security?  These stories of how people break into buildings always fascinates me, and today, Jeremiah brought us a penetration test story.  Now, when Jeremiah was a kid, he liked building little websites, and this was the seed that made him decide to go into a tech career.  He went into the military and then got a job at Geek Squad troubleshooting customersâ computer problems.  But then he landed a better job where he learned more about technology, and this got him into cyber-security, and eventually he took the OSCP certification.  This is an advanced cert that quizzes you on how to use hacking tools and exploitation techniques, and itâs a pretty serious exam that you have twenty-four hours to complete.  Well, he passed that, which gave him new opportunities.</p>
+
+<p>JEREMIAH:	I was able to transfer that over to a government contracting role, which I got hired for out in the DC area.  From there, we really primarily focused on conducting network-level penetration testing, web application penetration testing.  We were both the internal pen test team and the internal red team operations all in one for this organization.</p>
+
+<p>JACK:	This taught him how to think like an attacker.  Not just any attacker, but one that would attack government networks and systems.  Attackers like this have a lot of resources, and sometimes stop at nothing to get into certain networks.  So, Jeremiah learned how nation state actors would think, and was able to try some pretty wild things to gain access into facilities.  I think they even had ex-military working on his team too, like ones who were trained by the military to hack into things.  Yes, the military trains troops to be hackers.  I mean, thereâs the Army Cyber Command, just to name one group.  So, learning from people like this really gave him some interesting insight.  [MUSIC] Now, what Jeremiah did there was internal red team assessments.  That is, he was attacking the contractor he worked for itself to try to find vulnerabilities in the buildings and the network.</p>
+
+<p>See, this Washington DC-based contractor that he was working for did a lot of work for the federal government and it was growing and expanding, and there were offices and remote locations scattered all around.  Hereâs the thing; when other nations want to hack into our government, they donât always go directly towards the governmentâs networks.  They might attack a contractor and try to get into the contractorâs network, which might give them access into the governmentâs network.  Because if a contractor is doing work for the government, then it must have some sort of access to the government, right?  So, this is sort of coming-in-through-the-side-door kind of attack.  Jeremiah knew this, and this is why he was tasked with attacking the company he worked for to try to find ways a nation state attacker might get in and what damage they could do.  At some point, Jeremiah found a remote satellite office which did a lot of business for the federal government, and he wanted to conduct a penetration test on this office to see if it was vulnerable.</p>
+
+<p>JEREMIAH:	Basically, we came up with the idea.  We wanted to go and test out this location.  We felt that there were risks to the organization and to the clients that we work with through this organization that maybe werenât being addressed or thought of.  So, we wanted to conduct a nation state style of an attack from a physical perspective, just because physical assessments or physical red team operations or physical pen tests just really arenât done all that much, and we wanted to take it upon ourselves to go ahead and conduct one towards this satellite location.</p>
+
+<p>JACK:	When you pitched this idea to them, they said okay, go for itâ¦</p>
+
+<p>JEREMIAH:	Yeah.</p>
+
+<p>JACK:	â¦full speed ahead.</p>
+
+<p>JEREMIAH:	Not at all.  Nobody wanted to do it.  Nobody liked it; nobody liked the idea.  It was very risky and of course, this is a risk-adverse organization.  I think itâs fair to say that government as a whole is fairly risk-adverse.</p>
+
+<p>JACK:	[MUSIC] See, to me, this is backwards thinking.  How can you say youâre risk-adverse without looking to see what risks you even have?  If youâre going to claim to be risk-adverse, then you better be out there every day looking for any and all risks that your business faces, and re-evaluating them constantly.  You wonât turn down a security assessment because youâre afraid of what it might uncover.</p>
+
+<p>JEREMIAH:	In a way, I think people were scared of the â of things being found, right?  I think people know that things are there, but nobody really wants to â wants the big, red punch in the face to show you the things that are there.</p>
+
+<p>JACK:	Okay, yeah, so itâs embarrassing when you realize that youâve got a few security holes in your business, and I suppose that embarrassment can be pretty bad.  Like, what if the pen test found some major security hole and saw evidence that someone had used that hole to get in and steal things?  Now the business has lots of consequences they may face; they would have to notify their customers or may lose some government contracts.  They may be fined or sued, and they may get a lot of bad PR if it turned out that the security was really bad.  But I guess itâs still better to know that youâve been hacked to not know at all.  Or what if a penetration test ended up damaging the network?  Like, what if by trying to exploit a server, they accidentally took that server down?  Now thereâs a network outage.  So, I guess there are some risks to doing a penetration test, but I still think itâs important to do these tests, especially on big businesses and government contractors, because Iâve seen news article after news article about how foreign governments have hacked into our government through a contractor, and thatâs how they got access.  So, contractors should take their security very seriously.  Jeremiah had to convince them that testing this remote office was important.</p>
+
+<p>JEREMIAH:	Yeah, I think quite honestly, our convincing argument was one, persistence, and two, naming those very things that you just mentioned, right?  Really painting a picture as to what could potentially happen should there be things in these locations that we donât know about.  That persistent argument that we would make over and over again ultimately led to the decision to give us the green light to go ahead and conduct this, right?  Because â so, this is just a saying that I have, which is the best defense is a good offense, and unless youâre putting things and stressing them and really challenging what is there from a technical capabilityâs perspective, you really donât know whatâs possible within that environment.</p>
+
+<p>JACK:	[MUSIC] So, it wasnât easy, but he got the green light.  The business said okay, you can try to break into that remote office physically and through the network, but we have some rules.</p>
+
+<p>JEREMIAH:	Not installing any shells or backdoors or malware on physical devices itself.</p>
+
+<p>JACK:	They didnât want to have to clean up any malware left behind or cause any damage to the network.  A lot of companies have a strict configuration change policy; things need to be approved by a committee when installing new stuff on production servers.  So, they didnât want him to just come through and plop a whole bunch of hacker tools into a network thatâs heavily in use.  It could cause things to break.</p>
+
+<p>JEREMIAH:	So, they wanted to have as little impact as possible while still trying to prove the point of impact.  So, that was kind of our bounds.  Thatâs what we had to play within.  But from an operational perspective, we were kinda given some wide latitude as to how we were gonna plan this out, and to be fair, we â other than the time of day when we wanted to go and scoping a few things out prior to it, we kind of also left it up â open to a target of opportunity for what we would do when we were there as well, âcause we didnât know what was gonna happen.  We didnât know how this whole thing was gonna â played out.  We could have at some point had the cops called on us and we could have potentially gone to jail or we could have â we just didnât know.</p>
+
+<p>JACK:	So, Jeremiah and his team started coming up with their own objectives.</p>
+
+<p>JEREMIAH:	Basically, can you get access to this location?  When you do get access, what can you see?  From what you see, what types of scenarios can you play out, and out of those scenarios, how risky are they?  Then separately, can you obtain access to devices that are on the network?  Can you obtain access to the network itself?  Is there information that you can obtain from this operation that would potentially compromise any contracts that we were working on?  Sort of all of the above.</p>
+
+<p>JACK:	[MUSIC] Okay, so heâs all set and ready to begin the test.  Now, he wanted to conduct this test like he was an outsider.  Yes, he did actually work at this company that he was testing, but he had never been to that building before and wasnât going to use any internal resources that he had to get information to help him break in.  This test had to be as if he didnât work there, so he started by simply Googling the location.  Of course, this landed him on Google Maps, which he started noting all the relevant information that he saw there.</p>
+
+<p>JEREMIAH:	What surrounded the building?  Were there any coffee shops that were attached to it?  Were there any other third parties that were also in those buildings?  What access did they potentially have?  Were there satellite, aerial images of the location?  What were the entry points to that building, the ingress and egress points?  How do â how many people went to and from the location?  Who worked at that location?  When was the normal scheduling for when people arrived?  When did they go to lunch?  That sort of thing, right?</p>
+
+<p>JACK:	Okay, so heâs picked up quite a bit from Google, and now itâs time for him to take it to the next step; drive to the building and do some light surveillance and take notes along the way.</p>
+
+<p>JEREMIAH:	[MUSIC] I went there to take a look at what was happening when people would generally show up, when they were leaving, where their locations were for when they would smoke, and I was in my vehicle.  I parked and I would hang out and just watch.  Then I drove around the building itself, and then I would note locations on a map that I had with me as to what I thought that was based off of what I was seeing.  Then I ultimately left for the day and took that information back to add to the portfolio that we were putting together for the location.</p>
+
+<p>JACK:	He takes the intelligence heâs gathered and regroups back at the home office.</p>
+
+<p>JEREMIAH:	I was working with another individual.  Call him BC.  I was working with BC and we both collaboratively decided to go about checking every external egress point just to see what we could see, walking around the buildingâs perimeter just to see what we could notice, if there was anything open, what locations we could actually get into the building from, and then to kind of follow that breadcrumb trail to see where it led.</p>
+
+<p>JACK:	Okay, so thatâs the grand plan; just to walk the perimeter and see what doors are opened?  Itâs not a bad plan.  Often the front entrance is where all the security is, so trying to slip in through a side door or a back door bypasses all that.  So, that was Plan A.</p>
+
+<p>JEREMIAH:	Plan B was to walk directly into the front of the location, the front doors.</p>
+
+<p>JACK:	Do you have any idea whatâs in those front doors, like a security guard, another locked door?</p>
+
+<p>JEREMIAH:	No idea.  No idea how the layout is.  We assumed that there was some sort of foyer that was there, but we had no clue.  We had never been there before.</p>
+
+<p>JACK:	So, Jeremiah and BC have their plans, and BC has also done a few of these penetration tests before.</p>
+
+<p>JEREMIAH:	This was a junior to me at the time, and so, I was bringing him along as one, a backup to look more realistic like I belong, like I had company.  The more individuals that youâve got with you in a party, the less likely you are to be challenged.  So, that was a benefit towards the location.  But separately, it allowed me to spread the workload that was involved in checking things to see what was there.</p>
+
+<p>JACK:	They pick a day when theyâre going to go there and start preparing for it.</p>
+
+<p>JEREMIAH:	Yeah, so we decided that the best way to dress was obviously business casual, to make sure that we were both groomed professionally.  We got haircuts the day before, weâre â made sure that we were kind of wearing polos and slacks and were looking very business casual.</p>
+
+<p>JACK:	The haircuts were specifically for this engagement?</p>
+
+<p>JEREMIAH:	In a way, yes, but at the same time, we kinda wanted to look like we were blending into everybody else within the environment as well.</p>
+
+<p>JACK:	I wonder how that worked out with your junior.  Like, was it your idea?  Like hey man, get a haircut.  What?  Why?  Iâm fine.  No, weâre gonna â we want to look this part.  Maybe you had it in your head like man, this guy really needs a haircut; I could use this as an excuse to tell him to get a haircut.</p>
+
+<p>JEREMIAH:	Yeah, when â so, the best thing about this particular guyâs â he kinda got it, too, because he is also former military.  So, he was totally cool with making sure that he was well-groomed, had a haircut, and well-dressed for the event.  In addition, we brought our â we had separate laptops to conduct red team operations, so we had those with us.  I had a lockpick set and a Raspberry Pi as well as a Bash Bunny, and I had network â sort of a network star tap.  Whatâs it called?  Like aâ¦</p>
+
+<p>JACK:	Lanstar.</p>
+
+<p>JEREMIAH:	Lanstar; thank you.  I had a Lanstar just in case I wanted to tap something in there.  I also had actually a mobile version of Kali Linux installed on my â on a burner phone that I had, and that was about it.</p>
+
+<p>JACK:	[MUSIC] So, itâs now the day of.  Itâs go time.  With their equipment and fresh haircuts, they drive to the building.  There are no gate guards or security to just get on the property, so theyâre able to drive right into the parking lot, park the car, and they immediately split up and walk around the outside perimeter of the building.</p>
+
+<p>JEREMIAH:	Thatâs exactly what we did, yeah.  So, BC went to the right, I went to the left, and we both walked around the perimeter of the building and just sorta â we each had a copy of the aerial photography that we had marked up.  He had a folder; I had a folder that was inside of it that was inside of our bags, and as we were walking around, just kind of checking doors along the way to see if they were open, to see if they were locked, and/or if we could get access to them.</p>
+
+<p>JACK:	They walk around, tugging on every door they came across to see if one opened.  Jeremiah tugged and tugged, but he didnât find a single door that opened.  He came around the back side of the building, and thatâs where he saw BC coming around from the other side.  Jeremiah told him that he didnât find any doors open.</p>
+
+<p>JEREMIAH:	He let me know that on one of the doors on his side â actually happened to be open.</p>
+
+<p>JACK:	[MUSIC] So, together they walk back towards that door that BC found open.</p>
+
+<p>JEREMIAH:	It was a back door, but it was a door to a stairwell that led to all the floors in the building itself.  This door was just kinda left open and it was by sheer happenstance then.  It was most likely due to a particular implementation flaw in the physical door itself and that someone didnât actively make sure that it was shut.  Otherwise it would have been locked, which in this particular instance, it was open, hanging out, and there was a crack, and we were able to open the door.</p>
+
+<p>JACK:	So, they slip in through this partially-open door that wasnât locking properly and go into the stairwell.  At this point, they need to make a decision; go up the stairs or just try to go to the first floor.</p>
+
+<p>JEREMIAH:	Yeah, yeah.  So, we didnât want to mess with the door on the first level, to begin with.  We knew that the contractor that we worked for had offices on the second and third floors.  So, we wanted toâ¦we knew that we could gain access to the first floor through the front of the building, anyways.  So what we did is we walk into this stairwell, we took photos of the open door just kinda as it was, took photos of us inside of the stairwell, and of course going to the second and third floors.</p>
+
+<p>JACK:	Now, in a lot of office buildings, the stairwell doors are locked from the stairwell side.  You can go into the stairwell from the office, but you canât go into the office from the stairwell.  They were walking up the stairs, expecting to face this, and trying to think of ways that they could bypass the door and get into the office, perhaps wait for someone to come out or maybe get some lock picks out and try to pick the lock.  Theyâll have to see when they get there.  But when they got to the second floor, they just tried pulling on the door, and to their surprise, it opened.</p>
+
+<p>JEREMIAH:	We could; we could get direct access to those floors as well, which were supposed to be secured floors.</p>
+
+<p>JACK:	[MUSIC] So, they got into the second floor office, took pictures of themselves in the office, and got right back into the stairwell.  Then they went up to the third floor and again, that stairwell door opened right up for them, and they got in.</p>
+
+<p>JEREMIAH:	Yeah, so we walk in, take a quick photo to show that we were in the floor, and then we just kinda walked right back out.</p>
+
+<p>JACK:	They walked all the way back down the stairs and out of the building.  They regrouped and made a new plan.</p>
+
+<p>JEREMIAH:	The goal of a pen test is to identify as many exploitable vulnerabilities or findings as you can, and then present that and have them fixed as much as they can be fixed.</p>
+
+<p>JACK:	So, they were able to successfully get access into this building.</p>
+
+<p>JEREMIAH:	So, that was kind of check one.  Now letâs test another avenue.</p>
+
+<p>JACK:	They regroup at the front of the building and this time go in through the main entrance.  They have no idea what might be there, and they know the office they want to get access to is on the second and third floor.  There should be some kind of thing to stop them from getting just directly into the office and roaming free, but where and what exactly would stop them, they didnât know.  Stay with us, because after the break, they head inside.  Jeremiah and BC open the doors to the front of the building and walk in, with their goal to get into the second and third-floor offices.</p>
+
+<p>JEREMIAH:	As we were going through, we didnât initially see any kind of front desk on the first floor.  We did see some stairs that were spiraling down from the second and third floors in the center of the building in the foyer.</p>
+
+<p>JACK:	They look around and see some elevators, which tells them thereâs two ways to get to the second floor; the stairs in the foyer or the elevator.  They also looked around in the lobby of the building there and noticed a few Ethernet ports on the walls, and they wondered if that connected to anything, but they just took a mental note of that and decided to go up the stairs to the second floor.</p>
+
+<p>JEREMIAH:	[MUSIC] So, we were able to move up to each floor, and we noticed as we got to the second and third floors, there were doors to either side that were â that would grant access to the business operations of this contractor.  Now, the entry doors were closed, and theyâre â they had locks on them that were â that you utilized from your key card to unlock the door so you could go in, and that was for authorized employees for those locations.</p>
+
+<p>JACK:	Okay, so just by walking by the office doors, they could see that you need a key card to get into that door.  On one of these floors was a person sitting at a desk in the lobby, but on the other floor, there was nobody in the lobby.</p>
+
+<p>JEREMIAH:	There was public seating in the lobby on each floor as well, and we both sat down on one of the couches just so we could figure out what it was that we wanted to do at this point.  We pulled out our computers; weâre looking like we were collaborating together for work.</p>
+
+<p>JACK:	This gave them an opportunity to just sit in front of the door of this office and watch what was going on.  Since nobody was in the lobby to really bother them, they could act like theyâre working on something right there in the lobby, but really scouting around watching whatâs going on, like seeing how people get in and out of this office, or are there opportunities to tailgate behind someone as they come in or out, and that sort of thing.  But as they were looking around, they noticed that in this lobby there was a kiosk, a little computer that lets visitors check in or gives them information or something.  Well, this was curious; an unattended computer in the lobby?  [MUSIC] Whatâs a couple of pen testers do with that?  Well, they start messing with it.  It was running some kind of software that lets users only use this one app, but they were able to figure out a way to close that app and get into the operating system on that computer.</p>
+
+<p>JEREMIAH:	We were able to access the underlying Windows OS that was running on it and from there, there was an exposed USB port on the back of it, and we were able to plug in a Bash Bunny to execute the previously-written script.</p>
+
+<p>JACK:	Okay, so a Bash Bunny looks like a normal USB stick, but when you put it into a computer, the computer asks hey, what are you?  The Bash Bunny says oh hi, Iâm a keyboard.  The computerâs like oh, okay, got it; Iâll let you type stuff if you want.  So, the Bash Bunny has this pre-loaded script and it says okay, here are some key presses, and it sends a pre-created set of keystrokes to the computer.  Well, the computer thinks itâs a keyboard, so it just starts accepting these keystrokes.  You can do things like open up a command terminal or a program and then start typing commands in that.  In the case of Jeremiah, he made the script open up a word program and start typing on the screen.  It was just enough so that he could take a photo to prove that he has control over this computer, because I mean, if you can open up a program on a computer and start typing words on the screen, then you have control of that computer, right?</p>
+
+<p>So, while this kiosk computer didnât have an actual keyboard connected to it, Jeremiah could prove that itâs not locked down and heâs able to plug a keyboard into it and take control of that computer, and nobody would stop him.  They also noted that this kiosk had an Ethernet connection to the wall, and this is interesting because this Ethernet jack might be on the same network as the computers inside this office, and you donât even need to go in the office to get into the network.  But they didnât plug into this Ethernet jack.  They wanted to see if they could get into the office now, and after examining the doors for a little while, they understood that thereâs a key card reader there, and you need to swipe your key in order to get the door to unlock.  But they wanted to see if that was true, so they walked up to the door and tried pulling on the handle.</p>
+
+<p>JEREMIAH:	They should have been locked, but as we pulled them, the doors were just unlocked this particular day, so we were able to open the doors as they were and walk right into the floor.</p>
+
+<p>JACK:	[MUSIC] So, thatâs another photo that they took that was going into the report.  They were able to walk right in through the front door, go up the stairs, and just open the office door and go inside the office.  Now they were in an office where thereâs a whole bunch of private information around, and now that theyâre in this office, they might as well try to see what kind of private information they could obtain.</p>
+
+<p>JEREMIAH:	So, at this point we took pictures of us freely being able to open the office doors from the lobby and us walking around in the internal office space.  As we walked through the office, we noted again other network ports, printers, network TVs, projects that were being worked on, so things that were written on whiteboards, labels that were labeling files that were just out in the open space, different IP addresses as we walked through; we were able to map out the IP address schema from IP labels that were written and addressed to the printers that were around the office space, looking for any other kind of information that could be leveraged in some way.  So, the whole time weâre walking around, keep in mind, we didnât have our badges on at all.  We walked by many people, saying hi to folks.  We even at one point went into the employee break room and grabbed some coffee and kinda hung out there for a few minutes just to see if anybody would challenge us, like at all, because we were not wearing our badges, again.  Nobody said anything at any point.  People kinda said hi, how you doing, nodded at us, but for the most part, nobody ever challenged us.</p>
+
+<p>JACK:	I think what worked here is they looked the part and acted with confidence.  If they dressed differently than the other workers or looked suspicious in some way, like the way they were moving around, it would have made them more likely to be stopped.  Thereâs something that makes us more accepting of someone if theyâre already passed the security barriers.  If theyâre in the office, they must belong there, right?  Or else they wouldnât have been able to get in.  As they were moving around, they saw an open conference table, a little spot where people can gather to do work, but not quite in a conference room.</p>
+
+<p>JEREMIAH:	So, we sat down at this table and we noticed that there were some Ethernet jacks on the wall.  We both had cables that we brought with us and so, we plugged into the wall.</p>
+
+<p>JACK:	[MUSIC] Now, finding an open Ethernet jack could be a gold mine.  They saw the Wi-Fi networks were in this place, but they didnât know what the Wi-Fi password was.  But you donât need a password when youâre plugging into a port on the wall; all you need is a cable.  So, plugging in could potentially get you access into the internal network.  These Ethernet ports can be configured a lot of ways, though.  They might give you internal access or they might give you no access at all.  Itâs not a sure thing that just because youâre physically in the office means that youâre gonna be able to plug in and use the network.  A properly-configured office will make it so you canât just walk up and plug into any Ethernet port.  But they plugged their computers into the Ethernet jacks and saw that the ports were alive and gave them IP addresses.  Then they quickly scanned around the network to see what was on this network, but there were no other computers on the network.  All they could do was access the internet, nothing internal in the office.  Okay, so this might be a sign that this company was using NAC.</p>
+
+<p>NAC stands for Network Access Control, and it means that when you plug a computer into a port, the router takes a look at your MAC address of your computer to see if that computer should have special access.  A MAC address is the hardware address on an Ethernet port which is on your computer.  So, this network was checking the computerâs MAC address to see if it was allowed on the network.  If so, it would give you special access, but if not, it would just give you very restricted access.  In this case, since the router didnât know Jeremiahâs computerâs MAC address, it just gave him very restricted network access, sort of like guest access.  I guess this is good security.  You want your Ethernet ports to require users to check for some authorization before giving them network access, because you donât want anyone to just be able to walk up and plug their computer into any Ethernet jack and get full access to the soft underbelly of the network.  So, if you were a penetration tester and noticed that this network had NAC to restrict your access when you plug in, what can you do to bypass this?  Well, you could find a MAC address that is on the allow list, and you could change your computerâs MAC address to be one of those, and you might be able to get in.</p>
+
+<p>JEREMIAH:	So, what we did is we noted a couple of the printers that were there in those locations, and we went to those printers and we were able to look up the MACs online for the style of printer it was.</p>
+
+<p>JACK:	See, what you need to know about MAC addresses is that the first part of the MAC address is assigned to a vendor.  So, if you had Cisco equipment, every single Ethernet port on all Cisco equipment starts with the MAC address 94:36:CC.  Then the second-half of the MAC address would be different for every Ethernet port, making them all different.  So, Jeremiah saw which types of printers they had and looked up what that vendorâs MAC address started with and then changed the MAC address on his computer to be the same as what the printer started with.  Then he tried plugging the Ethernet cable back in to see if he would get a different IP, and boom; [MUSIC] this gave him a totally different IP, which gave him totally different access, which was the access he needed to get to the inside of this network.</p>
+
+<p>JEREMIAH:	We were ecstatic.  We were super excited just because well, one, we were able to accomplish a goal, and that was to get access to the network.  Being able to conduct network access bypass with something so simple as changing your MAC, one, was super exciting and it was like we totally got a finding out of this.  Itâs crazy.</p>
+
+<p>JACK:	There are other ways to configure NAC.  I think they got lucky that this worked.  The network team had to find a more secure way to check if a computer should have this sort of network access, such as having a certain registry file on that computer or something like that.</p>
+
+<p>JEREMIAH:	So, we gained access to the network, we again took screenshots and photos of our steps of what we did to get access to it, we showed that we had access to it, we showed that we had an IP, we showed that we were able to navigate the internet while being connected to the network.  We kinda packed up, we disconnected, put our laptops back in our bag, and we went around the floor just to kinda look for any additional target of opportunities that we may not have noticed before.  As we were walking around the floor, we noticed there were kinda actually two separate situations of individuals who had just kinda walked away from their laptops [MUSIC] and left them unlocked and open at their desks.  We took photos of us sitting at those computers, kinda pretending to plug in a device, because again, our organization was very risk-adverse and we didnât want to overstep any boundaries of what weâve been allowed to do up until this point, because we wanted to be able to conduct these kinds of operations again in the future.</p>
+
+<p>So, instead of plugging anything into these particular laptops, we just kinda sat down and showed that they were unlocked and we could mess with them if we wanted to, and oh, by the way, hereâs a Bash Bunny; we just got done plugging one into a kiosk.  We could plug it into here, too, sort of a thing.  So, we took photos to prove impact instead of actually having to conduct something on those.  They were already unlocked; we already had access to them.  Someone had walked away.  So, we left that floor as we were walking out.  We went to the elevator, and as we were walking to the elevator, there was someone from the other side of the floor that was also walking to the elevator and also happened to be going up.  So, we rode with them in the elevator, kinda said hi, or pleasantries, sort of things, nodded.  We got off on the third floor and as they walked out, I decided I was gonna impromptu follow this person and try to see if I can do tailgating to see if they would challenge me at all, to see if there were any issues there.  Sure enough, he walks up, scans his badge, and opens up the door; holds it for me.  Iâm like thanks, appreciate it, and just kinda walked on in, and he never challenged me, this particular individual.</p>
+
+<p>JACK:	Jeremiah saw that his coworker, BC, stayed behind in the lobby and was walking towards a different set of office doors.  Jeremiah tried to loop around towards the other doors to let BC in, but when he came around the corner, BC was already in the office.  Apparently those other doors didnât require a badge to get in, and BC just pulled on them and got right in.</p>
+
+<p>JEREMIAH:	[MUSIC] So, I didnât even need to tailgate in, but I did, and kinda proved that that was possible.  But the doors themselves werenât locked either, so we could have just opened the doors on that floor, too.</p>
+
+<p>JACK:	Another finding for the report.</p>
+
+<p>JEREMIAH:	Yeah, so while we were on the third floor, we kinda focused on doing intelligence-gathering; were there any kind of programs that we could identify that were being worked on that maybe shouldnât be public information?  What other things could we obtain about the programs?  As we were walking around, we were taking photos of whiteboards, of desks, of paperwork on desks, of files, the file names, trying to collect and obtain as much information about these programs as we could so that we could then go back and see who these potential programs belong to, or what level of sensitivity should really be associated with this kind of information.  We also noted network ports on this floor, whether or not there were people who were at their desks with their computers unlocked, or if they were away from their desk and they were locked, we just noted those things as well and carried on with the â or used the carryover of the previous floor; like hey, if they werenât there, we could have also done it on this floor, too, and hey, by the way, there were these exposed network ports in the public-accessible zone inside of the office location as well.  These are the IP addresses that were associated with printers on this location, that sort of thing, right?  So, we were walking around just very much trying to collect as much information and data as we could as to what was being worked on within the location.</p>
+
+<p>JACK:	Once they gathered enough information, they packed up their stuff and headed to the office, down the steps, and out the front door.  Not a single person challenged them the whole time.</p>
+
+<p>JEREMIAH:	[MUSIC] That was a pretty successful day for us.  One, our team hadnât conducted a physical penetration test to this measure since Iâd been there, and two, we wanted to prove an impact to the organization, and three, we wanted to make it successful enough that they wanted to conduct these kinds of things going forward, because theyâre really huge impacts, right?  Like, if you break these things down, theyâre really huge impacts to the organization and who the organization works with that could be potentially compromised here from a number of avenues, not only for internal business operations but also potentially things that affect the government and the Department of Defense in some way, should certain programs be compromised.  Or think of any kind of code that might be worked on at these locations that might be incorporated as part of a end product for a certain entity, right?  If thereâs malicious code thatâs added to a software development life cycle thatâs being conducted within the confines of this location, that could be almost like a time-based malware or a time-based backdoor that gives someone access to something after the fact, maybe six months to a year down the road if they wanted to leverage it.  Thereâs a lot of implications from this kind of a thing.</p>
+
+<p>JACK:	Definitely.  So, you put that in the report and you submit it, and how is it received?</p>
+
+<p>JEREMIAH:	So, this was something that hadnât been conducted before.  They were â to put it frank, they kinda â everybody kinda had an âoh shitâ moment, because it was certainly an avenue that most people didnât think about.  It was an avenue that was foreign.  Again, not many people think malicious entities and/or what they might go through or what â the things that they would try to accomplish to prove their goal.  So obviously, this kinda showcased the ability of the malicious entities to obtain unfettered access to a location.  This was very much an âoh shitâ moment for leadership.  So, what they did after the fact, we found out, was obviously they went through that location.  I spoke with the facilityâs management, asked questions as to why these doors werenât locked.  The next time we were there, the doors were very much locked, and oh, by the way, we didnât have access to it via the badges.  A lot of things were fixed that we had previously pointed out after the fact.</p>
+
+<p>JACK:	[MUSIC] Leadership was particularly surprised when they saw how easily they got control of that kiosk.  They didnât know it was possible to take over that computer in the lobby, so they just removed it from the lobby.  They were also really surprised to see them sitting at someoneâs computer at an unlocked workstation, and how they were able to plug in the Ethernet jacks and bypass NAC to get into the inside network.  The leadership was impressed by Jeremiah and BC, and allowed them to do further testing to help keep that place secure.  Since then, Jeremiah has moved on to a different company called Synack, where he conducts offensive operations.  Alright, very cool.  Thank you for sharing this with us.</p>
+
+<p>JEREMIAH:	Thanks, man.  Thanks for having me.  Itâs certainly a pleasure to chat with you.</p>
+
+<p>(OUTRO):	[OUTRO MUSIC] A big thank-you to Jeremiah Roe for sharing this penetration test story with us.  This show is made by me, the dream-weaver, Jack Rhysider.  Sound design and original music was created by the acrobat, Garrett Tiedemann, editing help this episode by the frame-maker, Damienne, and mixing is done by Proximity Sound.  Our theme music is by the premiere, Breakmaster Cylinder.  Hey, pop quiz; what weighs more, a gallon of water or a gallon of butane?  Water weighs more; butane is a lighter fluid.  This is Darknet Diaries.</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

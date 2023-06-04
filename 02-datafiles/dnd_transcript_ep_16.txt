@@ -1,0 +1,485 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>Eijah â Darknet Diaries</title>
+	<meta name="description" content="In 2007, a hacker named Eijah got fed up with the way DRM prevented him from being able to play the content he paid for. He decided to fight back against the AACS and find a way to circumvent the D...">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Eijah â Darknet Diaries">  
+	<meta name="twitter:description" content="In 2007, a hacker named Eijah got fed up with the way DRM prevented him from being able to play the content he paid for. He decided to fight back against the AACS and find a way to circumvent the D...">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/eijah.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/16/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Eijah â Darknet Diaries" />
+	<meta property="og:description"        content="In 2007, a hacker named Eijah got fed up with the way DRM prevented him from being able to play the content he paid for. He decided to fight back against the AACS and find a way to circumvent the DRM. By the time Eijah was done, his life wasn't the same." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/eijah.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/16/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/eijah.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/16/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="Eijah â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/eijah.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 16: Eijah</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://traffic.megaphone.fm/ADV9369246412.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/16/",
+			   "title": "Ep 16: Eijah"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/16">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[FULL TRANSCRIPT]</p>
+
+<p>JACK:	Using a computer to gain unauthorized access to data, otherwise known as a hack; some people do it for greed.  Some do it for knowledge.  Some do it because theyâre just plain bored and they can.  Then there are those people who do it because theyâre pissed off, really pissed off and they want things to change.</p>
+
+<p>EIJAH:	Sometimes it falls on us to just decide weâre going to change the world, or just decide that weâre going to take a stand, just decide that weâre fed up.
+<!--more--></p>
+
+<p>JACK:	Sometimes those fed up people do something so daring it propels them into a whole new world.</p>
+
+<p>EIJAH:	I was approached by a secret group of hackers.  I know this sounds like, Hollywood-crazy, I know this sounds like Mr. Robot but itâs true.</p>
+
+<p>JACK:	But this isnât Hollywood.  This is real life where happy endings donât come easy, especially deep in the heart of the web.</p>
+
+<p>EIJAH:	[INTRO MUSIC] My hacker name is Eijah.  Welcome to a true story from the dark side of the internet.</p>
+
+<p>JACK (INTRO):	My name is Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	Eijah is a smart guy.  In fact, his whole family is smart.</p>
+
+<p>EIJAH:	My fatherâs an electrical engineer.  My entire family has at minimum, Masters Degrees.  My mother, my sister, and her husband have PhDs, I have a Masters.  For some reason my entire family loves universities.  I donât know why, but we all have multiple degrees.</p>
+
+<p>JACK:	Eijah got his Masterâs Degree and worked his way up.  He was on a good path.  By 2007 he was sitting pretty in a sweet job at a Fortune 500 company.</p>
+
+<p>EIJAH:	My job at that time which was a pretty big job, I was in charge of American Expressâ security portfolio.  I did all the strategy and all the internal documentation for application security vulnerability analysis, prevention of hacks, stuff like that, but even more importantly building out their internet and intranet security systems.  Weâre talking identity management, access management and control, things like that.</p>
+
+<p>JACK:	For someone like Eijah this job wasnât that fulfilling.  Tasks were mundane, dry, and not very exciting.</p>
+
+<p>EIJAH:	When I came home at night â you can imagine I hated my job because it was boring as hell.  Nothing against American Express; they treated me like any numbered employee, fine.  It was boring, it was really boring.  I stayed up late and I was trying to find something to do.  [MUSIC]</p>
+
+<p>JACK:	At night Eijah would tinker with various electronics and do different coding projects.</p>
+
+<p>EIJAH:	I had an Xbox 360 which, by the way, was a great gaming console.  Somebody told me about this little-known peripheral called the Xbox HD DVD Drive.  I got curious and decided to buy one.  I spent $300 and I plugged it in and I could watch my video on â through my Xbox 360.  I think it came with King Kong which was a terrible movie but nonetheless, it worked.  [KING KONG GROWLING]  Then I was reading on FlashDot and some of the forums that Toshiba drivers were available for Windows.  You could plug your HD DVD drive for your 360 into your computer âcause it had a USB interface and you could watch videos on your computer.</p>
+
+<p>I thought this was great because who wouldnât want to watch high-def videos while youâre working at home on your computer, especially as a geek?  That just sounds really cool.  I plugged it in, downloaded the free drivers [00:05:00] from Toshiba, plugged in a disc, started an HD DVD media player, and proceeded to play my legally purchased content, HD DVD movies, and guess what happened.  All of a sudden the software decided that I was a bad person and it punished me.  [MUSIC] It downresed from 1080p down to 480p.  Because my monitor was too old to support the newest HDCP handshake between the computer and the monitor itself, it assumed I was a pirate and it downresed me even though Iâd spent $300 on the drive and spent twenty, thirty bucks per movie it punished me and treated me as a criminal.</p>
+
+<p>At that moment I looked and I said this isnât fair.  Iâve done everything right.  Iâve bought the drive, Iâve bought the movies.  I have a licensed copy of Windows.  Everything is legit and yet I am being treated like a criminal and at that moment â hereâs what happens with me; I started to rage a bit.  [KING KONG ROARS] The paranoia of groups like Toshiba and Microsoft and the AACS LA and these groups that try to enforce DRM upon the masses, they do all this out of fear.  Theyâre so afraid theyâre going to lose money and what they donât realize is thereâs a greater fear that they should have and that is pissing off smart people.  To piss off a small group of minority, very intelligent hackers, is the worst thing you can do as a company.  I decided in that moment that this was basically bullshit, that I was not going to downres my 1080p video to 480p and not going to sit there and take it.  I was going to do something about it.</p>
+
+<p>JACK:	You might think this sounds dramatic but pretty much all of us have felt frustrated with the stuff weâve bought before and weâve all been wronged by a corporation and felt powerless.  Eijah bought an HD DVD player but it would only play at normal DVD resolution.  Thereâs nothing HD about it. The product wasnât doing what it promised it could do and all because of some anti-theft protection?</p>
+
+<p>Or consider this, sometimes when you buy a DVD and try to watch it, you have to sit through five minutes of commercials.  This infuriates some people so badly that they just pirate the movie instead because the pirated copy doesnât have ads.  People want to be treated with respect and they want the stuff they bought to work.  When companies put protections in place that get in our way and keeps us from being able to use the things we bought, it makes us mad.</p>
+
+<p>EIJAH:	Thatâs why Iâm against Digital Rights Management because at the end of the day it doesnât protect illegal use of the content by hackers or malicious or nefarious individuals.  All it does is upset law-abiding, good consumers like me that just want to watch it and just paid for the content to watch it.</p>
+
+<p>JACK:	The frustration Eijah had sat heavy with him.  He felt wronged by these companies and felt powerless but in an instant he realized he wasnât powerless.  He was a smart guy and thought maybe, just maybe, he could circumvent all the security checks and find a way to play the movie at full resolution anyways.  But there were a few challenges.  He had to figure out how an HD DVD worked.  The problem is DVD and Blu-ray movies encrypt the movies that are on there so if you were to copy the movies off the disc onto your computer, you wouldnât be able to read it because the whole thing is encrypted.</p>
+
+<p>This is put in place to keep people from making copies of the movies and pirating it.  The company that created the encryption is the Advanced Access Control System Licensing Administrator which weâll just call the AACS LA from now on.  The AACS LA has figured out a way to encrypt the movie on the HD DVD in a unique way and any company that wants to make a player to play HD DVDs has to purchase a license from the AACS LA so they can get the decryption key to play the movie.</p>
+
+<p>EIJAH:	With this key you could decrypt the Blu-ray, the entire Blu-ray and you could watch the video without any sort of digital rights management which includes the code that would downres the video.</p>
+
+<p>JACK:	Eijah started looking for ways to find this encryption key.  [00:10:00]</p>
+
+<p>EIJAH:	[MUSIC ] When I decided that I was going to break Blu-ray encryption to the extent that I could at the moment, the first thing I did is I said okay, Iâm gonna do it.  The second thing is I said okay, how am I gonna do it?  I know nothing about this.  I have to somehow become a quote, unquote âexpertâ or at least a fake expert in this entire space where I have zero experience with it.  How do I learn what I donât even know?  You do research and you find out okay, hereâs the site.  Hereâs the legal entity and then youâve got to find out which one of these PDFs do I need to read?  Whatâs the technical specification of the protocol?</p>
+
+<p>So you find that PDF out and then you start going through it.  Itâs boring.  Itâs boring.  If youâve ever read through an academic journal, this was far worse because this was written by â it sounded like it was written by lawyers.  Thatâs just how boring and dry it was.  Each of these pieces of software, pieces of hardware have these built-in virtual machines because AACS uses an internal virtual machine to try to protect the memory and try to disguise the transaction of the decryption routine.  You have to figure out how the virtual machine works and then you have to actually figure out the encryption exchange âcause thereâs a lot of hashing and encryption that goes on in order to arrive at the key.  Keep in mind there are no device keys released at this time so thereâs no way to verify that my decryption code works right.</p>
+
+<p>At this whole time you have no test data thatâs real.  Everything is an assumption based on a whitepaper.  All I had was this whitepaper and it was funny because when I was at work designing architectures for American Express, I was thinking about this.  Iâd be sitting there at lunch and Iâd thinking about different ways that I could exploit the software, different ways that I could hook in.  I was a Java programmer at that time but I actually ran out of memory with Java.  The tools that I was writing in Java â I needed to manipulate memory directly which Java doesnât do very well, so I actually switched to a C and C++ utility pipeline just to be able to have raw access to the memory to pull this content from the Blu-ray player.  That was a lot of fun.</p>
+
+<p>These utilities I wrote, they would stop and resume the process.  Another one would scan memory, look for pattern.  Another one would output the history.  Another one would merge different files.  Another one would try to inject content and perform key derivation.  If youâre curious what itâs like to hack, itâs kind of like going into a dark building without any sort of light and assuming youâre walking in the right direction but not even sure that youâre in the right room let alone the right city block, let alone the right state.  You go down a path as a hacker and you make a lot of assumptions and most of the times those assumptions are wrong.</p>
+
+<p>All it takes is one wrong assumption to steer you in a totally different direction but you have to have faith in your analysis and you have to have faith in what you believe youâre going to find, even if all the evidence is against you.  Even then, thereâs zero guarantee that youâre ever going to find what you thinkâs there or youâre ever going to be rewarded.  Sometimes you go down a path and you donât know where you need to stop.  You donât know if itâs an infinite path going in the wrong direction or you donât know if youâre two steps away from finding the keys.</p>
+
+<p>JACK:	Eijah spent long hours deep into the night trying to crack the encryption keys on the HD DVD.  The programs he wrote were furiously running through the data looking for the keys.  His computer screen was scrolling with tons of text as his programs tried to decipher the encryption.</p>
+
+<p>EIJAH:	Iâm sitting there, multiple console windows are up.  I think itâs early Friday or Saturday morning and all this data is going through the screens.  It looks like something out of The Matrix or something out of an episode of Mr. Robot.  Way too many screens up.  Iâm drinking coffee.  Iâm probably sitting there in my underwear âcause I didnât even take the time to go get dressed yet.  All these things happen and then bang; no more scrolling output.  Everything freezes and thereâs this key on the screen.  I look at it and Iâm like okay, I must have screwed up.  Okay, clearly Iâve screwed up the code.  It output a key and so somethingâs wrong with my code.</p>
+
+<p>This is after ten days of planning and [00:15:00] reading whitepapers and figuring out how Iâm going to attack programs and do I need to hook into the kernel?  And all this work to get up to this one point and Iâm a hundred percent confident that I screwed up something in the code.  At that point Iâm like well, crap.  Okay, well let me restart the process.  So I restart the process.  Bang.  Same execution abort at the same line outputting the same key.  Iâm thinking well, I really screwed something up.  Maybe it was the code I added last night.  Then after the third time that the same value was printed to the screen I finally thought well, maybe thatâs the key.  Could that actually be the key?  I thought wait, did I just find it?  [MUSIC]</p>
+
+<p>JACK:	Eijah stared at the key that was displayed on the screen.</p>
+
+<p>COMPUTER:	AA856A1B8Aâ¦</p>
+
+<p>JACK:	This was the key that would allow someone to decrypt a Blu-ray movie and make a copy of it.</p>
+
+<p>COMPUTER:	â¦6AEFBE1C04.</p>
+
+<p>JACK:	Eijah didnât have a good way to test if this key was what he was looking for.  This made it hard to know whether this was it or not.</p>
+
+<p>EIJAH:	Thereâs no guarantee that the keys that I found were correct, except cryptographically they said they were correct.  According to my algorithm I was able to derive a key from a series of routines and mathematically it was unlikely that that derivation would have happened from random data.  You stick to the math, you stick to the crypto.  Mathematically this was correct.  The end result was correct.  Then the panic set in.</p>
+
+<p>For anybody who hasnât really been in that moment where youâre angry, youâve spent two weeks deciding youâre going to literally fuck over Sony and fuck over AACS, and youâre just enraged and youâve got this mission.  Everything youâre doing, itâs obsessive at that point. Then you suddenly think oh, wait.  Iâve done it.  Iâve actually done it.  I have something in front of me that nobody else in the world has.  What do you do with it?  That is when the panic hits.  The heart starts beating and you start assuming that at any moment the feds are gonna bust in the door because for some reason the feds care about Blu-ray encryption.</p>
+
+<p>[MUSIC]  I donât know why, but in that moment it all sounds logical.  You start to sweat, you start to panic, and youâre like holy shit, what have I done?  Youâre like oh my god, Iâm in trouble.  Theyâre going to sue me.  Theyâre going to come after me.  Then after about an hour of pacing frantically throughout the house thinking about what youâre going to do, you then calm down enough and you realize thereâs really only two things you can do.  You can either do nothing or you can release it to the world.</p>
+
+<p>JACK:	Eijah was faced with a difficult decision.  He knew that if he posted the keys online it would likely damage movie distributors like Sony, which is what he wanted, but he knew this also meant they might come after him and try to arrest him.  But his fear was overcome with anger.  He was still angry at that anti-theft DRM that kept him from being able to watch his movie at full resolution.  He decided to post the encryption key he found on a popular hacker forum called Doom9.</p>
+
+<p>EIJAH:	But then thereâs this other moment of panic that sets in that all the hackers have and that is what if Iâm wrong?  [00:20:00] Because when you release it online youâve gotta be absolutely certain.  Thereâs no room for error.  When you release it itâs gotta be right, itâs gotta be solid because youâre going to be having hundreds of people looking at this.  Youâve gotta be certain because if you release something and itâs not right, your credibility is screwed.  Thatâs the way it works in our world.  You craft a message, a paragraph or two, you explain what you found, you create a new forum post and you release it.  You see what happens.  [MUSIC]  The post right after mine is can somebody else confirm it, please?  Once it was released a variety of people tested almost instantly.</p>
+
+<p>JACK:	The community tested Eijahâs key and confirmed it worked.  This would be the very first decryption key ever made public for the HD DVD and Blu-ray discs.  Other keys had been posted for regular DVDs but not the decryption keys for the HD DVDs.  This was a bit of ground-breaking information for the hacker community to take and use.</p>
+
+<p>EIJAH:	Right around this time, I donât know if this is coincidence or not, but literally I think it was two days after I released the key, I got a knock on my door one morning.  I donât answer knocks on doors just for so many reasons.  Iâm not a paranoid person but if somebody wants to get in touch with me and theyâre legitimate, they know ways to do it.  Knocking on my front door is not one.  Thereâs a knock on my door.  I didnât answer it.  After the person left, some time went by and I was going out to go grocery shopping or whatever.  I looked; there was a sticky note left on my front door.  It was from the police and it was the weirdest note.</p>
+
+<p>It said please call us, we think your identity was stolen.  I kid you not.  This was within 48, 72 hours of me releasing the keys.  At that time I was living in Arizona so this would have been probably somebody from Peoria Police Department which is a suburb of Phoenix.  At this time I was in a hyper-state of paranoia because of the hack and the release of the information.  Why would an officer put that specific message on a little note on your front door?  I didnât get a call on my phone.  I didnât get a piece of mail delivered from the police.  Instead the officer made an in-person visit within 72 hours of my hack specifying he thinks my identity was stolen, please call him.  This whole thing had got me on edge to the point where I was looking over my shoulder a little bit more.  [MUSIC]  Hereâs where it gets exciting.</p>
+
+<p>The moment I released this key I was approached by a secret, I donât know what to call it, a secret group of hackers, a secret group of DRM code breakers and invited into this secret society.  I know this sounds like Hollywood-crazy, I know this sounds like Mr. Robot but itâs true.  I was approached â by breaking this encryption and by releasing this key I was somehow entitled to an invitation.  I had won my invitation into this dark, secret hackers group.  They reached out to me in a very secret way a few days after I released the key and invited me into their private group.  We spent the next few weeks furthering our hacks and working together which was flattering because I never set out to be a DRM hacker.  I was just pissed at Sony, thatâs all.</p>
+
+<p>I didnât really care initially about the movement, or I didnât really care initially about DRM but the deeper I got into this the more I realized that DRM is crap.  Itâs draconian; itâs a form of enslavement.  Itâs not fair and itâs not consumer-friendly.  The deeper I got into this the more I realized that I was on the right path and that even though my motivations to start this journey was selfish and was based out of anger and rage, I transitioned to a much more mature and a better state and [00:25:00] motivation in that this was bad for consumerism and this was bad for privacy and this was bad for everybody in the world who didnât have the skills to do something about it.  Sony and the AACS and Toshiba and all those companies that treat us like numbers and value us only to the extent that our dollars are handed over to them, need to pay and will pay.</p>
+
+<p>I was invited to this secret hacker group which was really cool.  We shared all of our insights and all of our strategies with one another and I helped other hackers get better at breaking DRM and they did the same for me.  An interesting thing about the hacking scene is if we think weâre first to do something, we might only be first to release it.  We might not have been first to find it. Thereâs value in not releasing information because if companies like Sony and Toshiba and others think that the current version of their protocol hasnât been broken yet, theyâre under no obligation to change anything.</p>
+
+<p>JACK:	When Eijah posted his key on the forum it triggered a chain of events.  The key is first picked up by software developers who create the software that can easily rip or copy a Blu-ray disc.  Then the rippers get ahold of that software and begin making copies of their Blu-ray movies.  Then they post and distribute the movies to torrent sites like The Pirate Bay and then pirates can download movies and watch them without having to buy them.</p>
+
+<p>Eijahâs key caused a serious ripple effect that rang through the pirating community.  The AACS is the organization that created the encryption on the Blu-ray and they had a plan in the event that a key like this got leaked.  As soon as they became aware the key was being used by pirates and hackers, they would change the algorithm.   Yes, the key that Eijah found would continue to work to copy Blu-ray movies up until then, but the AACS made it so that key wouldnât work on any new Blu-ray movies that were made after that.  The hackers would have to find a new key and break the encryption again.</p>
+
+<p>EIJAH:	Itâs this cat-and-mouse game that goes on infinitely as long as they know the latest version has been compromised.  Thereâs a lot of power in breaking a system but keeping that break quiet.</p>
+
+<p>JACK:	But the AACS did more than just change the algorithm.  They tried hitting back at websites that posted their keys publically.</p>
+
+<p>EIJAH:	When the processing key was released, something funny happened.  The AACS LA thought that they could impose upon the internet their will of take-downs.  They had their lawyers send all these take-down notices to all these different sites who posted the key in articles like Dig, FlashDot, and others.  We look at it and laugh, just completely discarding this idea as utter crazy.  But thatâs the world the lawyers live in; somehow they think this makes sense.  They think they are entitled to this because it is right but to them it still makes sense.</p>
+
+<p>What was happening was, keys are hexadecimal values so theyâre literally strings of A through F and 1 through 9, is all they are.  Itâs text data.  Itâs something that you can hide in so many different ways.  A lot of people started disguising the numbers of the processing key in colors and images and reversing it and disguising it in a way that would make search algorithms impossible to find it.  That was where hackers and technologists and the community abroad just started taking advantage of the stupidity and the lack of social and internet awareness by these executives and by the AACS LA.  You canât declare war on an infinite army of smart people who are motivated by a greater cause.</p>
+
+<p>Our cause is social justice and our cause is bigger than any sort of legal army theyâre going to be able to mount.  Thatâs why it doesnât really matter, at the end of the day, how many lawyers they send after us.  I find it humorous to think that lawyers still think they have any sort of strength and any sort of influence compared to an army of hackers and an army of passionate and motivated internet users.  [00:30:00] I remember seeing at American Express â and keep in mind, I was in director level as the security portfolio architect and I reported directly to a VP.</p>
+
+<p>There was this one day while this was going on.  This was probably three, four days after I released the information.  I had a one-on-one with my VP, my boss.  Very, very nice lady.  I have such a great respect for her.  She called me in for our one-on-one and she knew something was up.  Iâm sure I was physically showing signs of stress and tension and nervousness but I remember she was very perceptive and she said whatâs wrong?  Something going on?  You donât seem like yourself.  I remember that conversation because of course I denied it.  I was like no, no, maybe I just didnât sleep well.  Insert any excuse here to try to jump to the next topic, but I remember thinking about that for years to come and I said you know what?  Iâm not like my old self.</p>
+
+<p>Iâm different.  This has been a â in a lot of ways, this has been almost an opportunity to be reborn.  It was that moment forward that I decided Iâm gonna quit American Express because I just wasnât enjoying the work.  The excitement, the adrenaline bump that I got from this whole hacker thing was very exciting.  I donât think Iâd want that sort of adrenaline bump every week in my life because Iâd probably fall over dead but it was so exciting and it was so invigorating and empowering to know that I had just, on a whim, I made a decision to do something totally new and it worked.  Itâs kind of like that quote from Tron.</p>
+
+<p>K FLYNN:	I kept dreaming of a world I thought Iâd never see.  Then, one dayâ¦</p>
+
+<p>S FLYNN:	You got in.</p>
+
+<p>K FLYNN:	Thatâs right, man.  I got in.</p>
+
+<p>EIJAH:	I got in.  Itâs that moment of euphoria, that moment where nothing is the same.  Youâre not the same person, you canât ever go back.  Youâve been reborn in a lot of ways.  I ended up quitting American Express not long thereafter.   I think it was about ten months after and I went into game programming which ended up being a seven-year journey for me where I made games such as Guitar Hero and Max Payne 3 and Grand Theft Auto V.  I was one of the lead programmers for Grand Theft Auto V for five years with Rockstar.</p>
+
+<p>Some of my code is still in Red Dead Redemption 2 which is coming out this fall.  Even though I resigned from Rockstar two-and-a-half years ago, very amicably, and I miss that studio and I miss the people I worked with, it was part of my evolution and I resigned so that I could become an entrepreneur and that I could do things like Demon Saw, and most recently my current company Promether.  As much as I would love to give a really exciting summary and conclusion, the saddest part of the story is that there really hasnât been anything that came as a result of this.</p>
+
+<p>Itâs almost like thereâs been no retribution.  Thereâs been no follow-up.  Thereâs been no running down the streets.  I want to see a scene from Bourne Identity where Matt Damonâs running from a bunch of KGB agents.  There hasnât been anything exciting like that which is probably a good thing, right?  We donât need those things in our lives but the AACS never came after me.  Sony never came after me.  It makes sense why they didnât; they wanted this thing to go away.  They wanted the fact that their protocol and their specification was insecure and was a terribly written protocol.</p>
+
+<p>They wanted people to forget that.  They just wanted to make money.  They wanted Toshiba and Sony and Philips and Emerson and all these other companies to just keep paying their licensing fee for the specification, the AACS spec.  They just didnât want the publicity.  I guess it makes sense if you think about it, why they didnât follow-up, why they arenât making a stink about this or making this very political or very out in the open, because they just want it to go away.  They just want to make money.  That sums up the entire reason for the specification.  Itâs not about [00:35:00] protecting us.  Itâs not about even protecting the content.  Itâs just about making money.</p>
+
+<p>I sure as hell hope that there was a board meeting or at least a bunch of executives and some sort of dumb-ass executive said why the fuck canât we stop these hackers?  Itâs a rhetorical question.  You wouldnât have us if you treated us fairly.  Most of us are honest people.  Most of us will pay a fair price for content.  Nobody wants to steal and cheat.  We donât want to be pirates.  The moment companies give us good content at a fair price in a convenient way, piracy is going to be destroyed.  Just treat us with respect and dignity and we will pay for your content.</p>
+
+<p>You, whoever you are out there, you are listening to this right now.  You are not powerless.  You, who are listening to this, are far more powerful than I am.  Itâs just a matter of whether tomorrow when you wake up, youâre going to do something about the injustice in the world.  I heard an interesting quote.  I donât remember who the athlete was but somebody was interviewing this Olympic athlete and they asked her, they said how do you do it?  How do you achieve these great feats?  She said itâs really easy.  Every morning when the alarm clock goes off, I choose not to hit snooze.  Sometimes the secrets to life is just not pressing the snooze button.</p>
+
+<p>JACK:	Eijah is currently working on two projects he created himself; Demon Saw and Promether.  Demon Saw is a secure and anonymous file sharing app.  Think of it like a decentralized Dropbox that you can run on your own server.  Promether is a way to transfer files and communicate securely even if youâre operating in an insecure network.  Both projects are free for anyone to use and Demon Saw is available now to use.</p>
+
+<p>JACK (OUTRO):	[OUTRO MUSIC] Youâve been listening to Darknet Diaries.  To learn more about Eijah, check out darknetdiaries.com.  This show is created by me, Jack Rhysider, with editing help from Stephanie Jens.  Theme music is created by Breakmaster Cylinder.  If you like this show and want to help it out, it would mean a lot to me if you would tell others about it.  Spread the word any way you can.  Thanks a lot.</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+<p>Transcription performed by Leah Hervoly
+www.leahtranscribes.com</p>
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

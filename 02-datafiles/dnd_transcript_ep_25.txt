@@ -1,0 +1,577 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>Alberto â Darknet Diaries</title>
+	<meta name="description" content="In Feb 2017, a medical provider in Uruguay got hacked. The attacker stole a bunch of patient records and then used that to conduct extortion on the provider. They said they'd release the records of...">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Alberto â Darknet Diaries">  
+	<meta name="twitter:description" content="In Feb 2017, a medical provider in Uruguay got hacked. The attacker stole a bunch of patient records and then used that to conduct extortion on the provider. They said they'd release the records of...">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/alberto.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/25/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Alberto â Darknet Diaries" />
+	<meta property="og:description"        content="In Feb 2017, a medical provider in Uruguay got hacked. The attacker stole a bunch of patient records and then used that to conduct extortion on the provider. They said they'd release the records of everyone with HIV unless they get $60,000 worth of bitcoin. " />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/alberto.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/25/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/alberto.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/25/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="Alberto â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/alberto.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 25: Alberto</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://traffic.megaphone.fm/ADV9451764404.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/25/",
+			   "title": "Ep 25: Alberto"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/25">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[FULL TRANSCRIPT]</p>
+
+<p>JACK:	[MUSIC]  Put on your travel shoes.  For this story weâre going south of the border.  Actually, much more south than you think.  Go on past Mexico, past Panama, past the equator, even.  Keep on going past Brazil and there youâll find Uruguay.  Itâs a small country about the size of the state of Missouri.  In February 2017 one of the top medical providers in the capital city of Montevideo got hacked.  [MUSIC]  This medical provider has a whole network of clinics and healthcare facilities.  The hacker broke in through the providerâs website, accessed the database and took a ton of patient records.  A week later the hacker sent a ransom e-mail to the medical providers showing they had confidential data and demanded they pay fifteen Bitcoin.  If they didnât get the Bitcoins they said they would publically release the patient details of everyone who had HIV and cancer.
+<!--more--></p>
+
+<p>The note went on to say the price will go up by five Bitcoins every day they donât pay.  Itâs unclear if the medical provider paid the ransom or not.  In some news articles it said they did pay but someone close to this case told me the e-mail didnât even have a Bitcoin address in it.  Either way the patient records never actually got leaked.  The medical provider immediately began investigating who this hacker was.  [MUSIC]  They worked with local police to try to track down who was behind the extortion.  After seven months they got their break.  They were able to track down the IP address of who sent the e-mail to an apartment in Montevideo.  The police raided the apartment and were totally stunned with what they found.</p>
+
+<p>There were tons of electronic devices everywhere; laptops, cell phones, hard drives, crypto-wallets, and thumb drives.  The police felt like they hit the jackpot and thought this person probably hacked many other places too.  They arrested Alberto Hill, the guy that lived there and owner of this stuff.  They took him to jail and seized loads of equipment from his home.  Uruguayan police took from Albertoâs apartment the following items; 1,400 US dollars, 8,000 euros, 150 Brazilian dollars, and 3,000 Uruguayan pesos, six laptop computers, five cell phones, a device used to clone credit cards, and 125 blank credit cards, and an additional 30 normal credit cards.</p>
+
+<p>Thirteen hard drives, a drive duplicator, a few routers, a flashlight, a magazine full of CDs, a whole stack of hardware Bitcoin wallets, two fake toy coins that say Bitcoin on them, sixteen USB drives, two printers, a Guy Fawkes Anonymous mask, and a guillotine.  On the laptops they found hacking tools, programs, and viruses.  Uruguayan police presented all this to Alberto and he made a verbal confession saying he did in fact hack into the medical provider and he did send the extortion e-mail.  Alberto went to prison for a long time.  Case closed, right?  End of story?</p>
+
+<p>ALBERTO: 	Hold on, hold on.  My name is Alberto Hill and I have something to say about this.</p>
+
+<p>JACK:	Alberto says thereâs one tiny detail that isnât right about this story.</p>
+
+<p>ALBERTO: 	I tell you Jack, I did not do it.  I didnât do it and I am innocent.</p>
+
+<p>JACK (INTRO):	[INTRO MUSIC]  These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	Alberto Hill is a 41 year old Uruguayan.  He was arrested and sentenced to prison for hacking into a medical facility and conducting extortion.  Heâs actually the first hacker to ever serve prison time in Uruguay but he says he didnât do it.  So why did he get arrested?</p>
+
+<p>ALBERTO:	Yeah, very good question.</p>
+
+<p>JACK:	Alberto has a lot to say about this story and I spent a few weeks with him exchanging dozens of e-mails and looking at tons of court documentation, news reports, and articles.  I even hired a translator to decode some of this stuff.  I talked with Alberto [00:05:00] for hours to fully understand his story.  It all started three years ago.  [MUSIC]  Alberto was working for the Uruguayan government.</p>
+
+<p>ALBERTO: 	I was in charge of security of a company of the government here in Uruguay.</p>
+
+<p>JACK:	Heâd been working for the government for four years as a security consultant securing systems, investigating malware, and conducting security audits.  Before that Alberto was working with Interpol doing digital forensics.  He has an Associateâs Degree, an Engineering Degree, and a Masterâs Degree all related to computers.  Heâs also very knowledgeable about crypto-currencies and has written papers on them, even given a few talks.</p>
+
+<p>ALBERTO:	I was in a conference.  I was talking about security and Bitcoins.  Then I was selected to go to Sao Paulo Brazil for the ICS2 Conference.  I was talking about Bitcoins and security also.</p>
+
+<p>JACK:	He gave a few other talks as well, mostly talking about Bitcoins and crypto-currencies.  Albertoâs been studying and working in computer-related jobs for the last twenty years and most of that time has been focused on security.  He is a PMP, or Project Management Professional, and this certification is not easy to get.  Heâs even a certified ethical hacker.  Yeah, thatâs actually a certification which teaches you all of the tools that a hacker uses to break into places.  When youâre securing companies itâs good to know exactly what tools the hackers are using to break into things.  Taking the certified ethical hacker exam is common in the InfoSec community.  Iâm actually a certified ethical hacker, too.  One of the most valuable assets to have if youâre doing security work is to be endlessly curious and Alberto is always wondering how secure the websites are that he visits.</p>
+
+<p>ALBERTO:	Itâs something that you just canât control.  Itâs stronger than you.  I see a system and I just canât help start looking at the source code.  I start modifying things.  Itâs stronger than me; I cannot â itâs like a drug.  I think itâs the mind of a hacker that you have the curiosity to be successful.</p>
+
+<p>JACK:	When he visits a website he canât help himself but to poke at it a little.  Heâll check if any strange ports are open or glaring security problems.  Alberto has found vulnerabilities in sites and reported them so they can fix it.  Itâs just something he does sometimes.  On Saturday morning in 2015 he stumbled upon something interesting.</p>
+
+<p>ALBERTO:	I was in bed with a computer and my girlfriend told me that she wanted access to the medical institute and she wanted to see something about her health records.</p>
+
+<p>JACK:	He was helping her use this medical provider website to check her health information.  While using it he decided to poke at it a little bit and check if there were any obvious vulnerabilities.  Now to be honest, Iâve poked at my medical providerâs website before and Iâve found vulnerabilities and reported them.  This isnât that crazy of an idea but Alberto found a massive vulnerability with this medical providerâs website.  Just for fun he tried to log in as the username admin with the password admin and it worked.  [MUSIC]  He was logged in as the administrator to the medical facility.</p>
+
+<p>ALBERTO:	This couldnât be so easy.  I mean, admin/admin, and I had access to all the systems that which â not only about medical information but it was about all the medical information, the medication, the finances of the company.  That was crazy.  With admin/admin you could access to all of that, you could create more users.  You could see the information about every user, not only their medical information but also personal information.  That was crazy.</p>
+
+<p>JACK:	Alberto couldnât believe what he was seeing.  I looked this up and since 1970 computer companies have been using admin/admin as the default login.  Thatâs over 45 years that weâve known not to use this username/password combo yet it still exists on systems today.  Alberto found it on a medical providerâs system.  In terms of severity of this vulnerability for the medical provider, this is a solid ten out of ten.  Critical, red alert; stop everything and fix it immediately.  Thatâs probably the most well-known vulnerability.  Itâs easy to execute.  You can use it to exploit from anywhere in the world and has the capability to do major damage to the company.  In fact of all vulnerabilities this one might be the most severe one in existence.  Alberto knew he had to act quickly and do something about this.</p>
+
+<p>ALBERTO:	I immediately sent an e-mail to the CERT of Uruguay.</p>
+
+<p>JACK:	CERT, which stands for Computer Emergency Readiness Team is a government-ran team that helps protect the government from cyber-attacks.</p>
+
+<p>ALBERTO:	But not also to the government, also to critical systems such as the medical institutions.</p>
+
+<p>JACK:	Right, the goal of CERT is not just to protect governments but also to protect the nation from cyber-security threats.  There are CERTs ran by governments all over the world.  So if you find a vulnerability in an important company the right course of action is to report it to the CERT who can then contact that company and sort it out.  Thatâs just what Alberto did.  He sent an e-mail to the Uruguayan CERT, telling them exactly what vulnerability he found including his own IP address so they know which connection was his that logged into the system.</p>
+
+<p>ALBERTO:	In two hours they replied to me and they say okay, [00:10:00] it is confirmed.  They admitted the problem is right.  There is a big problem there.</p>
+
+<p>JACK:	Alberto felt relieved that the CERT was now working towards contacting the medical provider and resolving the issue but he had a hunch the site had many more problems.</p>
+
+<p>ALBERTO:	I noticed that the system was very weak and I was sure that it had many other security issues.  I donât know.  I knew that it was easy to hack that system but I didnât do anything else.</p>
+
+<p>JACK:	After that Alberto forgot about this.  Once he reported it, it was no longer in his hands and he went on with his life.  [MUSIC]  Two years pass.  In February 2017 someone hacked into the same medical facility and took the patient records.  Itâs unclear exactly what vulnerability was used.  The hacker sent an e-mail to the medical provider demanding fifteen Bitcoins or theyâd release the patient data they collected.  The medical facility began an investigation.  They contacted the police who called this case Operation Bitcoins.</p>
+
+<p>ALBERTO:	It took them seven months in order to do something and what they did led them to issuing two search warrants to two people; one was me.  One was me in my house and the other was a person I do not know.</p>
+
+<p>JACK:	The police came to his house, knocked on his door, but he wasnât home so they left a note saying to come to the police station so they could talk to him.</p>
+
+<p>ALBERTO:	I was wondering why.  I had no idea.  I went to the police with my girlfriend, a friend, and his girlfriend.  The Interpol appeared.  They told me do you know why youâre here?  I say no.</p>
+
+<p>JACK:	Albertoâs head was racing with what this was all about.  Still he had no idea why the police wanted to talk to him.  He was thinking maybe it was because of a recent order of some computer parts that he got directly from China.  But then the police asked him if he knows about the medical provider he reported the issues about two years ago.</p>
+
+<p>ALBERTO:	I said huh, okay.  I felt such a relief because I felt nothing to care about that.  I was, I mean, okay, they want to ask me questions about how I got access to that.  I was so relieved when they told me it was about this.</p>
+
+<p>JACK:	Alberto told them everything about how he was able to use admin/admin to access the medical providerâs website and to see all kinds of information that he shouldnât be allowed to see.  He told them exactly step-by-step how he was able to find the vulnerability and got access.</p>
+
+<p>ALBERTO:	At one point they showed me a paper with the e-mail asking for the â the extortion e-mail and they asked me okay, you sent this?  I said no, I did not.  They asked me several times until they told me well, I have here a paper from the internet company saying that your IP â that this e-mail was sent from your IP.  I said itâs impossible.  I didnât tell him that youâre lying, but it was not possible.</p>
+
+<p>JACK:	The police just heard Alberto explain how years ago he was able to hack into the website so this caused a lot of suspicion.  To be safe the police held Alberto in jail that night.  His girlfriend came to visit him.</p>
+
+<p>ALBERTO:	She brought me food to eat and some medication for my asthma because I was frozen.  It was a very bad situation for me but I was feeling that it was going to be â everything clear and they were going to have the evidence that I didnât do anything.  The morning after that, my girlfriend took me coffee and something to eat.  She didnât know anything.  She didnât know anything, whatâs going on.</p>
+
+<p>JACK:	The police took Alberto out of the cell but instead of letting him go they put him in the back of a police car and took him to his own apartment.  The police put on latex gloves and began going through his things, and Alberto had a lot of things; electronics and computers everywhere.  Hereâs one of the police officers explaining what they found in this search.  [FOREIGN LANGUAGE]  When we started to search in his laboratory we found stickers, key chains, and books about Bitcoin.  He told us that he was in Argentina on the 7th of August buying and selling Bitcoin therefore we were not wrong in what we were doing.  There was also a lot of information about credit cards and machines that could clone chips and cards.</p>
+
+<p>We found several electronic cards and chip cloners which he bought directly from China.  Then he had a lot of hard drives, computers, four or five monitors, and surveillance cameras with remote access to them.  This does seem like a lot of equipment for one guy to have in his apartment and the police kept finding what looked like hacker paraphernalia and asked Alberto why he had it.  First they asked why had had so many hard drives and he said he had about fifty of them and he was buying them broken, dirt cheap from eBay and he was doing research to try to see what kind of data he could scrape off of a broken hard drive.  Alberto was writing a research paper about what data is left on hard drives when you sell them on eBay.  Then there were seven laptops.  Albertoâs not a guy who throws out old computers that are no good.  Instead he keeps them around in case he needs them.</p>
+
+<p>[00:15:00] He likes to experiment with different operating systems and applications and having multiple computers to do this is handy.  Then he had about ten cell phones but he simply goes on to say these are all phones that heâs used over the years and he just didnât throw any of them out.  They just piled up in drawers over time.  [RUMMAGING]  You know what, now that I think about it, in my drawer here Iâve got three, four, five, six cell phones myself thatâs just kind of piled up over the years so I guess I do the same thing, too.  [MUSIC]  He also had a bunch of thumb drives.  Some of these were storage drives but many were hacking devices; rubber duckies, Bash Bunnies, to name a few.</p>
+
+<p>While Alberto says yes, these are tools a hacker would use you have to know what tools a hacker would use in order to protect yourself.  But he just had them around for learning purposes.  He had a bunch of Ledger wallets.  These look like USB sticks but theyâre actually hardware Bitcoin wallets.  These are really handy if you want to store your Bitcoins offline like for instance in a safe, but it is kind of strange to have a whole stack of them, though.</p>
+
+<p>ALBERTO:	There was a company in France and I was the person that was the reseller of them here in this part of the world.  Iâve got a box full of Ledger wallets.</p>
+
+<p>JACK:	You know, I have one of these Ledger wallets myself and in fact up until this point, all the stuff he has I have about the same stuff in my lab.  Itâs not uncommon to see a security engineer with a lab full of equipment but Alberto had some stranger stuff that the police kept asking him about.  For instance he had a credit card cloner and a bunch of blank credit cards.  [MUSIC]  The first thing the police thought was that he was buying stolen credit card numbers online and then printing his own credit cards but when the police asked him why he had this he told themâ¦</p>
+
+<p>ALBERTO:	I was making a test of security with the credit cards, especially with the chip.</p>
+
+<p>JACK:	He goes onto explain that heâs using the machine to conduct research on the chip and pin features of the cards.  He explains that that card writer was never used and every one of the cards were blank.  He says the cloner itself is easy to get and legal but itâs the software on the cloner thatâs the hard part to obtain.  Even hotels have cloners to make room keys with but then there are thirty actual credit cards with his name on them.</p>
+
+<p>ALBERTO:	Actually, many of them are expired.  I have had them since 1995 so I was â I never got rid of credit cards.  I was always storing them after they expired so I was collecting them.</p>
+
+<p>JACK:	Besides credit cards there was a lot of cash found in his apartment.  Specifically the police found 1,400 US dollars, 8,000 euros, 150 Brazilian dollars, and 3,000 Uruguayan pesos.  Now think about how much cash you have stashed away at home and compare it to the roughly $13,000 the police found at Albertoâs.  Would you say this is a suspiciously large amount of money to keep at home?  Well, the police did.  The Uruguayan money makes sense because thatâs where he lives and even the Brazilian money makes sense because itâs the neighboring country and he was just there to give a talk.  But the police wanted to know why he had so many US dollars and euros.</p>
+
+<p>ALBERTO:	Why did I have that?  Because of transaction with Bitcoins.  While the euros were because of a transaction that I made selling a couple of Bitcoins to tourists here in Uruguay, the Bitcoin was, I donât know, for probably 4,000 euros each.  It was a couple of Bitcoins so I got 8,000 euros from that.  The US dollars, I think they say less than $2,000.  That was also from operations from Bitcoins.</p>
+
+<p>JACK:	According to the police report, they said they found a guillotine.</p>
+
+<p>ALBERTO:	Oh, thatâs very funny, Jack.  My mother really laughed a lot when you sent me an e-mail asking me that question because I donât have a device to cut heads in my house.  I have many things but not that.  A guillotine is a device to cut paper in a perfect way, in a flawless way, just cut paper.</p>
+
+<p>JACK:	In fact, the maker of the paper-cutting device actually does call it a guillotine, too.  Lastly, he also had an Anonymous mask hanging on the wall.</p>
+
+<p>ALBERTO:	Yeah, well, the mask, why did I buy that mask?  Well, I just wanted to buy it because I like to collect all those kinds of things related to hacking.  I have many t-shirts also related to security and to hacking, to Anonymous, and I have it in my house.  Of course, when they saw that it was the final evidence that I was a super criminal, of course.</p>
+
+<p>JACK:	Alberto tried desperately to explain the reason why he had all these things to the police but the evidence was just too much.  The police were blown away by the amount of hacker paraphernalia found.  They thought if he talked like a duck and looked like a duck, then he probably is a duck.  They had certainly thought they had captured a cyber-terrorist.  Who else would have all these computer parts?  The police seize all his stuff including the guillotine and mask.</p>
+
+<p>No matter how much Alberto explained the police simply didnât listen and grew more excited with each new device they found.  [00:20:00] The police were making a big mess in his apartment, taking things apart and leaving stuff all over the floor.  Alberto grew more desperate, trying to explain the reasons why he owned each and every thing in his apartment.  This continued all morning long for hours.  Then around 1:00 p.m. a new police officer showed up.  He had a quick chat with the police in his apartment and then pulled Alberto aside for a talk.  Alberto could tell he had more authority and was more serious than the other policemen.</p>
+
+<p>ALBERTO:	He started to tell me that okay, I had to confess about the e-mail otherwise they would go and do the same thing weâre doing in my house with my girlfriend and with my mother.  He kept on insisting on that and I was thinking to myself okay, if I admit that I know I am certain that they do not have any evidence or IP that links me to that e-mail.  Of that, Iâm sure.  If I say okay, I sent the e-mail, later I said that I would be able to prove that no, that there is no link between that mail and me.  I will avoid all the pressure, all the psychological pressure that theyâre putting on me so I decided to say okay, I sent the e-mail.</p>
+
+<p>JACK:	[MUSIC]  When the police threatened to raid his motherâs house he confessed to writing the ransom e-mail because he knew he could prove he was innocent in court and he wanted to save the grief of his mother and girlfriend being questioned and searched.</p>
+
+<p>ALBERTO:	A few minutes after I admit that, I was surprised that my girlfriend appeared.  They had taken her to my house.</p>
+
+<p>JACK:	She was surprised to see Alberto handcuffed and being treated poorly.  It was embarrassing to Alberto.</p>
+
+<p>ALBERTO:	At that point she was arrested.</p>
+
+<p>JACK:	The police took Alberto and his girlfriend to jail as well as many boxes of electronics.  Alberto was able to go directly to court that day.</p>
+
+<p>ALBERTO:	It was a forsaken, long period of time where they were asking me questions that were irrelevant because of the lack of knowledge about computers that the judge and the prosecutor have.  They were asking me irrelevant questions.  They didnât know what to ask me.  Well, it was very frustrating for me because I wanted to tell the truth but I was unable to explain myself in order for them to understand because they didnât have the knowledge to understand the situation.  They hardly know what an IP address was so thatâs for you to have an idea of how frustrating it was, the whole situation.</p>
+
+<p>JACK:	[MUSIC]  That court day was over.  Alberto was taken back to his jail cell and while walking there he saw the boxes of stuff they took from his apartment and noticed something.  One of the items he had in his apartment was a thing called a USB Killer.  This is a device that looks like a regular USB drive but itâs got a very dangerous side to it.  When you plug it in it charges a large capacitor up and then discharges it quickly, zapping the port with a huge power surge.  This causes a massive electronic shock and usually kills whatever you plug into it such as a laptop.  Itâs designed to test the search capabilities of USB ports but usually it just destroys whatever you plug it into.  Alberto saw they had taken this and was trying to tell them not to plug it in.</p>
+
+<p>ALBERTO:	I told them please, to be careful with that because it could destroy any device that has a USB port.  He said okay, okay.</p>
+
+<p>JACK:	They took him back to his cell for the night.</p>
+
+<p>ALBERTO:	My girlfriend also was arrested and she spent the night there in the Interpol building.  The interrogation for her was not nice.  They told her, for example, that I had admitted everything and that I told that she was the mind behind everything, things like that they told her.  They were playing with her mind.  It was stupid.  She knew nothing.</p>
+
+<p>JACK:	This took a major psychological toll on his girlfriend.  Her whole life was now flipped upside down.  She couldnât imagine how this could have happened to her.  She was really taking this terribly and couldnât sleep at all while in jail, worrying that she might not ever get out.  Alberto was very worried also, realizing that all this looks very bad to the courts and admitting to the e-mail made everything worse.  His anxiety was becoming very high and he was worried about what happened to his girlfriend.</p>
+
+<p>ALBERTO:	At that point you are in a cell that is very small.  All you can do is think and thatâs what I did.  I thought.</p>
+
+<p>JACK:	Alberto spent the night in the freezing jail with very little sleep.  When he woke up he was taken back into the court room to testify.</p>
+
+<p>ALBERTO:	At that point my mother was aware of [00:25:00] everything and she got me a lawyer.  During the interrogation the prosecutor asked me huh, in this pen drive you have twelve viruses.  How do you explain that?  I was like oh my god, what?  No, I donât want to do that.  I donât want to explain that, waste my time.</p>
+
+<p>JACK:	Itâs common for information security professionals to play around with viruses.  Theyâll load them up on a thumb drive and see if they can infect the lab device but the prosecutor had such little knowledge of computers that Alberto didnât think he would understand.</p>
+
+<p>ALBERTO:	I just said okay, Iâm sorry, yeah, I have viruses.  Well, I donât know.  The prosecutor got the file and said you have a USB Kill.  Whatâs a device that has a name of Kill?  I thought to myself why the hell did I tell about the USB Kill device?  Oh my god.</p>
+
+<p>JACK:	Things did not go well for Alberto during court.  Piles of evidence showed he was a very capable hacker and knew a great deal about Bitcoin and admitted to hacking into the medical provider and admitted to sending the e-mail.  He only admitted to the e-mail because he wanted to save the grief of his girlfriend and mother getting harassed by the police.</p>
+
+<p>ALBERTO:	At the end of the day my lawyer called me.  He said I am so sorry but you are going to prison.  I was charged with two things; one was extortion and another thing was fraudulent access to secret information.</p>
+
+<p>JACK:	Alberto was found guilty and he was being sent to a long-term prison where he would have to stay for years.</p>
+
+<p>ALBERTO:	That day I really thought it was the end of the world for me.  I was really, really â I donât know, my mind was blocked.  I never thought something like that would happen to me.</p>
+
+<p>JACK:	A few days after court he was put on a bus and sent to a prison very far away.  He knew his life had changed forever and still couldnât believe it.  After the court ruling, the news of this hit major news outlets.  The police lined up all the electronics they took from his house and put them on display for the media.  The equipment filled up a very large conference table.  On the table you see his cell phones, laptops, USB drives, blank credit cards, credit card cloner, routers, and the iconic Anonymous mask, and so much more.  This was the first time a hacker had gone to prison in Uruguay so it was a big deal.  The police may have hyped up the story too, thinking it was a great achievement for them to have captured a dangerous hacker.  The media really wasnât kind either, because what kind of jerk steals patient records and tries to use them for extortion?  By the time Alberto arrived at the prison he was already very popular.</p>
+
+<p>ALBERTO:	The first day that I arrived the people that were in my cell asked me what crime did I commit?  I said no, I commit a computer crime and well, I hacked a system.  They say oh, youâre the hacker!  Oh my god, youâre my hero, I want to be like you!  Can you hack the [inaudible] of my girlfriend?  I was like oh, my god.  I cannot believe it.  The other people that arrived after me in jail told me that oh, youâre the hacker, oh my god.  I want to be like you.  I was realizing the magnitude that this case has in the press.  It was in every newspaper in Uruguay.  It was in every TV news in Uruguay, in every radio program.  It was everywhere.  Everybody knew about this case.  Prison is a word I have never thought I could be in, where youâre surrounded by people that lived in a world of crime.  None of them were hackers.  They were sexual offenders, killers, drug dealers, people that commit very violent crimes, that â their profile was completely different than mine.  I have never imagined I would be with people like that.</p>
+
+<p>JACK:	Prison warden made a strict rule announcing that because Alberto was a convicted hacker, that he was not allowed to touch any computers or electronics.  But Albertoâs a nice guy, followed all the rules, and people started to like him.</p>
+
+<p>ALBERTO:	Three months after that I was here teaching the inmates the basics of Word in a room with seven computers connected to the internet.</p>
+
+<p>JACK:	He had earned the trust of the prison guards and had good behavior while in prison.  This prison was actually not that bad; it had a little more freedom than most prisons.  For instance, if you had good behavior there was an option to get out one or two days a week.  This might sound weird to Americans but think of it like a combination of probation and prison at the same time.  When you have probation youâre very restricted on what you can do.  You may not be able to go out at night or with certain people and you may have to get a specific job.  In a way probation is kind of like prison but you get to go home.  This prison Alberto was in let some [00:30:00] inmates go free one day a week.  The guards started telling Alberto that well, because of his good behavior, in a month they may let him go home one day a week.  But then something strange happened.</p>
+
+<p>ALBERTO:	At the end of February somebody went to visit me to the jail and they called my name.  I wasnât expecting anyone.  I went outside and I met a person who I didnât know and we started talking.  He was a person who had many companies and he wanted to know about my case because he was surprised about this and he said man, governments should hire people like you, not send to jail.  A few days after that I was granted â I could go outside the jail for 72 hours a week.</p>
+
+<p>JACK:	This is strange.  At this prison, usually when you get a free day it starts out with one and then you work your way up to two, and you might get three days a week to be able to leave the prison.  Also he was expecting it to take another month before his first free day but only a few days after the strange visitor appeared he was given the maximum free time off.  Alberto didnât know what to think of this and was very surprised but he was happy to be getting out half the week now.  He found a place to stay near the prison on his free days.</p>
+
+<p>ALBERTO:	The first time I went outside this person who I met in prison came to my house and he started talking to me.  At one point he told me directly, I want you to hack this bank and steal money.</p>
+
+<p>JACK:	The stranger had an elaborate plan all sorted out.  He knew exactly which bank to hack into and which accounts to target and how much money to steal.  He explained the plan thoroughly to Alberto.  This was becoming even stranger for Alberto.  Normally someone asking him to hack into something is a simple no but this one seemed more serious.  Alberto said no to the man many times and he finally left.  This stressed Alberto out.</p>
+
+<p>ALBERTO:	Imagine if that bank got hacked by another person after this situation.  They would point to me.  I would be the person of interest.  If somebody was hiring me to hack a bank and I did it?  No, no way.  The funny thing is this bank had several security issues.  I thought to myself oh, no, oh no, oh my god.</p>
+
+<p>JACK:	This was really troubling Alberto so he reported it to the prison guards.  He was able to get some Xanax to deal with his anxiety but each week Alberto had free days out of prison he would see this stranger.  This guy was stalking him, following him home and around town, each time asking Alberto if he was ready to help him hack into the bank.  Alberto started getting really distraught over this and his anxiety was growing more and more.  He had to take more Xanax to calm himself but his mind was racing.  What if that bank gets robbed and they blame me?  What if I know too much and this guy wants to kill me?  What if he threatens me?  Alberto became more agitated.  The pills werenât working.  He took more.  He didnât know what to do and he was scared.  He took more pills.  Finally this started to calm him down.  He started walking back to the prison where he knew heâd be safer but he was starting to get drowsy along the way.</p>
+
+<p>ALBERTO:	At one point I closed my eyes and the next thing was a beep, beep, beep.  [BEEPING]  I opened my eyes and I was seeing a light.  They cut all my clothes.  I had all kinds of devices in my body and they told me you spent â you were two hours in coma.  You were there for two hours.  [MUSIC]</p>
+
+<p>JACK:	The intense anxiety caused Alberto to over-medicate on Xanax which made him overdose.  He was found and rushed to the hospital where they were able to revive him in time to save his life.  He had to spend some time to calm down and take it easy after that.  Meanwhile Albertoâs lawyer was endlessly trying to get him out of prison.  He appealed the case but it was not accepted so he appealed again.  Again, it wasnât accepted.  Finally on the third appeal the lawyer had some good news.</p>
+
+<p>ALBERTO:	He phoned me and he told me Alberto, they filed in your favor but there is only one thing they ask.  They ask for $10,000 bail in order to release you.  I said okay, no problem.  I started calling some people.  I called my mother.  The next day she put that money in a bank account.  She had to make a lot of â fill a lot of documents and she gave a paper saying that the money was deposited and they sent a fax to the jail saying that I had to be released.</p>
+
+<p>JACK:	[MUSIC]  After spending nine months in prison Alberto was set free, was able to return home for the first time to his apartment in Montevideo.</p>
+
+<p>ALBERTO:	I ride to my house.  I couldnât believe it when I opened the door and I went to my office.  I started seeing hard disc drives.  I said whatâs this?  Oh my god, hard disc drives.</p>
+
+<p>JACK:	He couldnât believe that there was so much stuff left behind [00:35:00] by the police.  He was totally shocked that they didnât take every last device and examine it for evidence.  In his mind he was wondering if the investigators did anything right.</p>
+
+<p>ALBERTO:	I found 29 hard discs.  They also left three laptops, three cellular phones.  I also found money, money from Uruguay, from Paraguay, and Argentina.  I also found blank credit cards.  It was crazy.  That explains that the process was â I donât know if they were not prepared for this or what the hell happened.  It was all a show.</p>
+
+<p>JACK:	To Alberto the investigation went wrong in a million ways.  The police werenât knowledgeable enough on how to handle this case and didnât take all the evidence, and they handled the evidence poorly.  Like, they didnât clone the laptopâs hard drives.  Instead they just turned it on to take a look at it.  In fact I talked to Alberto for hours and a lot of what he had to say was just about how this case was handled so improperly which is probably why in the end they caught the wrong guy.</p>
+
+<p>He sometimes wonders if all this was just done to set him up and have him arrested for some other reason.  Heâs got a few theories about this like maybe it was a big cover-up from something else bigger and more shady going on at the medical facility and they needed to distract the media.  But these are just conspiracy theories cooked up in the mind of a guy whoâs been sitting in prison for months.  After Alberto was convicted and sent to prison the police couldnât find any evidence on his girlfriend so they let her go after one night in jail and rough questioning.</p>
+
+<p>ALBERTO:	She had a very dramatic situation.  She started taking a lot of medication to sleep.  She was having a very bad time.  She has never taken any medication in her life for anxiety but she started taking that because she couldnât sleep at night.  They told her so many lies about me so she was thinking to herself I spent eight years with a person I didnât know anything about.  He was a criminal.  She was questioning everything because they were lying to her.  They were telling her all kinds of stupid things that destroyed her.  Even the fact that I said that, they told her I said that I admitted everything and that she was in charge of everything.</p>
+
+<p>That was crazy.  They played with her mind.  The worst thing that they did was that they threat her with losing her job.  The most important thing that she has; if she loses her job she loses everything.  They called her company and they told the boss of the company about the situation so she had a very difficult issue.  She told me that until now she has nightmares, very recurrent nightmares, that she is sleeping and she dreams that sheâs being arrested, that the doors of her apartment is open, that itâs the police.  That sheâs taken to a cell.  I was pretty sad when I heard that because itâs been more than a year and sheâs still having the consequences of the traumatic interrogation process that they applied on her.</p>
+
+<p>JACK:	After eight years of being together this incident caused Alberto to lose his girlfriend.  This was simply too much of a bad experience for her and she had to leave him to go help herself.  As of right now Alberto has only been out of prison for five months and is still working with his lawyer to collect the evidence of what they took from his apartment.  The police have kept most of it still, including some Bitcoin wallets which have a lot of money in them.  In fact life is very hard for him because most of his computers, phones, money, and credit cards are still being kept from him.  For instance all his two-factor authentication tokens are in police custody making it impossible for him to log into certain accounts.  But there have been a few things that have gone his way since getting out.</p>
+
+<p>ALBERTO:	After I was released, it was incredible.  I got job offers from an important security company for a pen testing position in a security company.  It was something that I lived; okay, okay.  Life goes on and is strong than ever.  I could spend eight months in jail so if I could do that I could do anything in life.  Thatâs the way I see it.</p>
+
+<p>JACK:	This whole story certainly puts Alberto in a really weird situation.  He absolutely has all the opportunity, capability, and knowhow to commit this crime which is what was used to convict him.  But what really made him look bad in court was all the hacker stuff he had like the rubber ducky, the Anonymous mask, and the hacker t-shirts and stickers.  It poses a question to me at least; why do security professionals who are there to stop hackers embrace the hacker culture?  Iâve spent my whole professional career keeping hackers out of my clientâs networks so youâd think that I would absolutely abhor the hacker the communities and would work towards breaking them up [00:40:00] but instead I love going to hacker conferences where I get to meet seriously scary hackers and swap tactics and skills with them.</p>
+
+<p>I blog about how to hack and teach others and I wear hacker shirts myself.  Why do I play on both sides of the fence?  Iâm not exactly sure.  I guess itâs the same reason why law enforcement likes watching bloody and violent movies or why that firefighter that lives down the street from me has stickers of flames on his truck; because fire is badass.  We all got into these professions because itâs exciting to be so close to the action.  The only way to be effective at stopping it is to embrace it and to be part of it.  As Ric Flair once saidâ¦</p>
+
+<p>RIC:	To be the man, youâve got to beat the man.</p>
+
+<p>JACK:	Or this one from The Godfatherâ¦</p>
+
+<p>MICHAEL:	He taught me keep your friends close but your enemies closer.</p>
+
+<p>JACK:	And this oneâ¦</p>
+
+<p>MAZER:	There is no teacher but the enemy.</p>
+
+<p>JACK:	Or Rage Against the Machine sayingâ¦</p>
+
+<p>RATM:	Know your enemy.</p>
+
+<p>JACK:	Or this quote from Mr. Robotâ¦</p>
+
+<p>ELLIOT:	The devilâs in his strongest while weâre looking the other way.</p>
+
+<p>JACK:	To truly stop hackers we must become hackers, the very thing we hate and the thing that scares us the most.  Because of this philosophy itâs a thin gray line between an illegal hacker and a security professional.  Itâs not that easy to just call someone good or bad.  We all have a little bit of both inside of us but the truth is, nobody should be convicted of a crime because of what stickers they have or clothes they wear.  They should only be convicted because they actually committed a crime and in Albertoâs case the justice system wasnât prepared and had a pre-determined idea of what a hacker looks like and wasnât capable of looking at the evidence with clear eyes.  In some ways, illegal hackers and security professionals are long lost twins.  We have the same skills and the same endless curiosity and in many cases we look the same.  I guess itâs one of those relationships thatâs truly complicated, too complicated for this judge in Uruguay to fully understand.  As for Alberto, he learned a valuable lesson from all this.</p>
+
+<p>ALBERTO: 	The thing is that after I was released I found two critical security problems in two systems.  Okay, I just found them and I took a snapshot and I closed the computer and I said okay, thereâs no way Iâm going to report this.  Of course I was connecting with a VPN and a proxy so you have to be lucky to trace me.  Thereâs no way Iâm going to report that.  I turn off the computer and went to bed and I slept like a baby.  Iâve learned my lesson.  No, not anymore.  Yeah.</p>
+
+<p>JACK (OUTRO):	[OUTRO MUSIC]  Youâve been listening to Darknet Diaries.  Alberto is now working towards changing the legislation in his country to prevent situations like this from happening again in the future.  Heâs got a petition going to help make changes and you can find links to that at darknetdiaries.com.  Heâs currently writing a book about his experiences so look for that in the future.  Oh, you may have heard ads in this episode and wonder whatâs up with that when I also take donations?  The truth is, right now I need both and I hope someday Iâll be able to go back to being ad-free but the donations right now just arenât enough to make that a possibility.  But the more you donate and share this show with your friends, the faster I can go back to being an ad-free podcast.  I do have plans to giving more rewards to Patreon supporters so look for that in the future, too.  This show is created by me, La Sombra, Jack Rhysider, and the theme music is made by the fantasmic Breakmaster Cylinder.</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+<p>Transcription performed by Leah Hervoly
+www.leahtranscribes.com</p>
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

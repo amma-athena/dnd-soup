@@ -1,0 +1,520 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>Maddie â Darknet Diaries</title>
+	<meta name="description" content="Maddie Stone is a security researcher for Googleâs Project Zero. In this episode we hear what itâs like battling zero day vulnerabilities.">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Maddie â Darknet Diaries">  
+	<meta name="twitter:description" content="Maddie Stone is a security researcher for Googleâs Project Zero. In this episode we hear what itâs like battling zero day vulnerabilities.">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/maddie.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/127/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Maddie â Darknet Diaries" />
+	<meta property="og:description"        content="Maddie Stone is a security researcher for Googleâs Project Zero. In this episode we hear what itâs like battling zero day vulnerabilities." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/maddie.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/127/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/maddie.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/127/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="Maddie â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/maddie.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 127: Maddie</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://www.podtrac.com/pts/redirect.mp3/traffic.megaphone.fm/ADV9384364212.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/127/",
+			   "title": "Ep 127: Maddie"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/127">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[START OF RECORDING]</p>
+
+<p>JACK:	 I have a degree in Software Engineering, but can you remember a time in your life when there wasnât such a thing as software engineers?  I canât.  All my life itâs been a thing, but I bet my great-grandparents went their whole life without ever hearing about software engineering.  So, letâs take a quick look backwards to find when software engineering popped into existence.  [MUSIC] In the 1950s, NASA was doing some pretty amazing things; flying spaceships to the moon and beyond.  These spaceships were loaded with lots of technology; antennas, radios, computers, cameras, software, and hardware.  Thatâs just onboard the spaceship.  Youâve seen these giant command centers they have, where Mission Control is.  There are computers on everyoneâs desk and giant screens in front of the room, and there are dozens of scientists and engineers in the room, yet not a single one of them was a software engineer, because the term had not been used at any point in the 1950s.  In the 1960s, NASA developed the Mariner Space Program.  The goal here was to send unmanned spaceships to Mercury, Mars, and Venus, to take photos of them.
+<!--more--></p>
+
+<p>In 1962, the first Mariner spaceship was launched, and it was headed for Venus.  It didnât have anyone onboard.  It was controlled remotely, and onboard were just electronics, antennas, computers, jet fuel, and cameras.  But only a few minutes after launching, things started to go wrong.  The computer onboard that was in charge of controlling the ship was acting erratic, giving all kinds of wild commands for the ship to do.  The folks at Mission Control tried to correct the computer gone wild, but they couldnât do anything about it.  Then they started to realize this rocketâs not gonna make it to Venus.  Itâs not even gonna make it out of the atmosphere, and it might even crash into Earth and hurt someone.  So, the people at Mission Control decided there was no choice but to push the self-destruct button and blow up Mariner 1 over the Atlantic Ocean.  That was the end of the Mariner 1 spacecraft, an $18.5 million-ship blown up.  So, what happened?</p>
+
+<p>Well, scientists and engineers spent days replaying the events and logs that they captured after launch.  A piece of hardware failed, which caused an onboard computer to kick in and try to control the craft, but the way it was trying to control the craft wasnât right.  Something was wrong with that computer, so they examined the code that was put on that computer, and thatâs when they saw the problem; a mission dash in the algorithm.  A single missing dash.  Itâs not like the dash youâre thinking; itâs more like a bar that was supposed to be above the letter R, which stands for radius, and that meant it should have been a smoothed value for radius.  Without this bar, it was taking the current value for R, and since this rocket was trying to recover from some bad hardware, the values for R were bouncing all over, so the output of the program was bouncing all over.  It should have been taking an average reading for R, not the wildly fluctuating values.  So, the computer was telling the rocket to fly all crazy and out of control.</p>
+
+<p>The logic and algorithm that the scientists gave the programmer was correct, but whoever programmed that algorithm into the computer missed this little dash above the R, and because of that tiny little bug in the code, it resulted in the whole rocket being destroyed.  When NASA makes a mistake like this, they try to find ways to prevent anything like this happening in the future.  They realized they were implementing software on a lot of systems, but had no way to test the reliability of that software.  This is when it became clear that software engineering should be a discipline, and shortly after that, it started getting developed and became a thing.  This software bug didnât just crash a spaceship, but it launched a whole new field of study and new principles for designing, developing, and testing computer software.</p>
+
+<p>(INTRO):	[INTRO MUSIC] These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	Are you ready?</p>
+
+<p>MADDIE:	Yep, sounds good to me.</p>
+
+<p>JACK:	So, what got you start â hold on, letâs start with your name and what do you do.</p>
+
+<p>MADDIE:	My name is Maddie Stone and I am a security researcher focused on setting zero-days that are actively exploited in the wild at Google Project Zero.</p>
+
+<p>JACK:	Weâre gonna get into what she does at Google, but I find that the path to get there is interesting.  So, when she was a teenager, she developed an interest in computers, and after high school went to college at Johns Hopkins University in Maryland.</p>
+
+<p>MADDIE:	Yeah, so I actually double-majored in Computer Science and Russian Language and Literature, âcause I wasnât fully committed to this whole engineering thing.  I didnât know if I would be bored during â doing that, so I was like, letâs learn a new language, and ended up really enjoying the Russian in just a very different way of using your brain in classes and everything like that, and it allowed me to study abroad too, which Iâve always loved to travel.</p>
+
+<p>JACK:	Whoa, this is crazy.  So, you know Russian.</p>
+
+<p>MADDIE:	Well, I used to.  I used to be good.</p>
+
+<p>JACK:	Yeah.  But then you moved?  You studied abroad; to where?</p>
+
+<p>MADDIE:	So, I did two months in St. Petersburg and four months in Moscow.</p>
+
+<p>JACK:	[MUSIC] And after graduating, got a job at the Applied Physics Lab at Johns Hopkins.</p>
+
+<p>MADDIE:	Which is a government research laboratory.  Thatâs where I ended up for the first four-and-a-half years, studying â or working on reverse-engineering of firmware and hardware.</p>
+
+<p>JACK:	It looks like a really cool place, actually.  There are about 8,000 employees at this Applied Physics Lab, and they take on research projects for the Department of Defense and NASA, so they get hands-on experience while doing advanced research.</p>
+
+<p>MADDIE:	So, I was also working with literal rocket scientists, if that doesnât keep your ego in check.</p>
+
+<p>JACK:	While working there, she simultaneously was able to get a masterâs degree in Computer Science, too.</p>
+
+<p>MADDIE:	I was super fascinated by the hacking portion and when you see all these things but have never actually done it, it sounds really sexy and everything like that.  I had really, really loved Assembly.  I had actually listed that that was my favorite language when, you know, they did a round and did profiles of folks and interviews with different companies.  They ask you and theyâre like, you love Assembly?  I was like, yes.  I became the teaching assistant for that course and then as an independent study, created all new projects.</p>
+
+<p>JACK:	Hm, thatâs very interesting to me.  I, too, have an IT degree, and I learned Java and C and C++ and Visual Basic and all these programming languages, all of which I could understand no problem.  But when I took the Assembly language class, I was so lost.  It was the only IT class that I actually struggled with, and thatâs because itâs so different than everything else.  Assembly language is very low-level.  A high-level language, you can see things like variables, if statements, for loops, and functions, but with Assembly, you have commands like move, push, pop, add, subtract, real basic and rudimentary stuff.  A program that is just a few lines of code in Python can become ten times longer in Assembly.  But Assembly has some superpowers.  It can interact with memory and the CPU in ways that other languages canât, and it can be incredibly efficient, too.  You get much better control over the computerâs resources, and you know what?  You can go even deeper, too, to a even lower level and look to see whatâs going on in the hardware.  You could open up the case of the computer, get out some probes, and jam them into the circuit board and watch what electrical signals are moving through the circuitry.  This is even more hard to read because all you see at that level is whether the voltage is high or low, but having this kind of read/write access gives you really the ultimate power over your computer.</p>
+
+<p>It was this low-level stuff that fascinated Maddie.  It was like doing brain surgery to teach someone something or to see how they think.  A computer canât hide its thoughts when youâre this deep into it.  Another big reason she liked it was because she could break down any program into Assembly.  It doesnât matter what language a program is created in; you can run any compiled program through a disassembler and see the whole program in Assembly language.  A lot of applications and programs are compiled and in a sort of byte code thatâs not human-readable, and you certainly canât see the original code that was used to create it, so you canât tell what so many programs actually do.  But at the end of the day, the computer has to know what to do, and that byte code can be converted into Assembly so you can kind of read whatâs happening.  So, if you get good with Assembly, you can get a much deeper understanding of how computers handle memory and processes, and you can decipher any program.  Itâs just really hard to read at that level.  Itâs kind of like reading a book, but you only get to look at one letter at a time, and the book only has ten usable letters that make up all the words.  Anyway, getting better at Assembly and learning more about hardware is what she spent four years doing at the Applied Physics Lab.</p>
+
+<p>MADDIE:	[MUSIC] Then one day, Google calls and says hey, are you interested in interviewing with us?  Which I was pretty shocked about because as a student, I tried really hard to get any â even interviews or calls with all of the big tech companies, but I was not someone of interest to them, so I was very surprised to get the call and ended up going through the interview process and getting the offer to join the Android security team as a reverse engineer.</p>
+
+<p>JACK:	A reverse engineer is someone who takes a program and tries to figure out what it does by sometimes converting it to Assembly language and trying to make sense of it.  I mean, Google is where Android is made, so why would someone need to reverse-engineer Android when they could just look at the source code written right there in the same building?</p>
+
+<p>MADDIE:	I was focused on all of the malware, you know, in the Android ecosystem.</p>
+
+<p>JACK:	Oh, duh, that makes sense.  The malware thatâs targeting Android is often compiled, where you canât see the code thatâs used to make it, and Maddieâs job was to reverse-engineer and decompile some of this code and examine it for malware, and if it was malware, figure out what itâs doing and then tell the Android developers how to fix this.</p>
+
+<p>MADDIE:	More specifically, I started leading a team that was focused on finding any sort of malware or bad apps that were one, potentially pre-installed on different OEM or manufacturer devices, âcause thereâs thousands of different manufacturers of Android devices, as well as looking at can we find malware for all the apps that are off of Google Play Store?  So, in lots of parts of the world, thereâs apps that are passed around through different stores other than Google Play or theyâre peer-to-peer passed or things like that, so are there ways that we can still protect Android users from those apps as well, and figuring out whatâs malware and whatâs not?</p>
+
+<p>JACK:	Okay, so I just got curious what kind of malware weâre talking about here when it comes to Android, and I started looking some things up.  [MUSIC] One really popular virus going around is GinMaster.  Apparently there are millions of Android devices infected by this, and donât forget, Android is an operating system thatâs used on both phones and tablets.  But this GinMaster malware, once it gets into a device, it will capture private data from the device and send that to an external server.  It can also give attackers access to that device.  GinMaster is clearly something youâd never want on your phone or tablet, so why does it exist on millions of devices?  Well, the way it often gets onto a device is that it gets tacked onto another app, and itâs typically a bad app that a user is tricked into installing.</p>
+
+<p>A common strategy is to make a lookalike app of a popular game out there.  This is to trick people into thinking that theyâre getting the app that they want, but itâs not the real one.  Then when someone downloads it and installs it, not only do they not get the app they want, but they get infected with this GinMaster malware.  So, at the end of the day, itâs actually a user who downloads and installs the virus; they just donât know itâs a virus.  When a device is infected with it, it can steal user data, take control of the device, or install more malicious stuff.  So, itâs malware like this that gets sent to Maddie for analysis, and she can flag apps like that to warn Android users that this app contains malware, and specifically the way Android apps are packaged is in something called an APK file, which stands for Android package.</p>
+
+<p>MADDIE:	Yes, so we find an APK file, which is basically just a .zip file with all of the different components of an Android app.</p>
+
+<p>JACK:	Not all Android apps are written in Java, but I think it is the most common language theyâre typically written in.  Whatâs nice for Maddie is Java apps can be decompiled pretty easily, and you can see a pretty close picture to how the original program looked.  So, she doesnât need to break it down into Assembly.  She can read through what itâs doing close to its original format, making it a lot easier to understand.  But itâs not always this easy; sometimes hidden in the Java is additional compiled programs.</p>
+
+<p>MADDIE:	[MUSIC] Yes, so thatâs where some of the more sophisticated malware authors would try to hide their â some of their behaviors in need of libraries within the APK file.  So, these are compiled C or C++, which once itâs compiled, itâs in machine code which we can disassemble to Assembly code.</p>
+
+<p>JACK:	Of course, this is where Maddie shines.  She can read this Assembly language to understand how the malware does what it does, then reports it to the Android team to see if thereâs anything they can do to protect users from malware like this.</p>
+
+<p>MADDIE:	Yeah, so, the first thing is we had to put flags into the Google Play protect system, because the number one thing is you want users to be alerted, to given the option to remove it or disable the application from their device.  The next step is really writing automated solutions, because especially when youâre in a malware team â and thereâs always more apps or samples to look at than there are humans to analyze them, so the goal is always that itâs only ever reverse-engineered once in that terms, and that â then after youâve reverse-engineered it once, then thereâs software automated solutions that can find all the other copies that may come up out of that.  So, thatâs really the processes; analyze it, figure it out, flag it so users were protected, and then figure out automated solutions.</p>
+
+<p>JACK:	Mm-hm.  So, tell me a story about maybe some interesting malware that you found or landed on your desk.  Youâre like alright, Iâll take a look, and whoa, this is crazy, this stuff.</p>
+
+<p>MADDIE:	So, one of the biggest malware families that I was not expecting and it ended up into a year-plus investigation, was what we called Chamois.  It took a lot of practice to learn how to pronounce that correctly, but it was a large botnet and what was really interesting and how I got into it is that this application, which was usually written in Java, had this native library, so C or C++ compiled code in it.  As I kept trying to dig into this native library, [MUSIC] it became obvious that it was heavily, heavily obfuscated as well as doing an incredible amount of anti-analysis and anti-debugging checks.  So, it was very sophisticated trying to monitor like, am I being monitored and analyzed by a security engineer or am I running on a real device that I can infect?  I ended up diving into â I think it took over a month or a month-and-a-half to really dive into all the aspects of that native library.  Then when I started looking for other apps with similar native libraries, it became clear that it was this botnet and this family of malware that was doing some pretty sophisticated stuff.  One of the funniest anecdotes to me is that I actually presented on that native library at Black Hat.</p>
+
+<p>JACK:	Yeah, so in 2018, Maddie came onstage at the Black Hat Security Conference and showed everyone in the audience the exact techniques that this malware was using.</p>
+
+<p>MADDIE:	[AT BLACK HAT] So, what are all these different techniques that weâre gonna talk about?  What makes it so interesting?  First weâre gonna start about some of the J&amp;I or Java native interface manipulations, then weâre gonna go into some places where theyâve used anti-reversing techniques, in-place decryption, and finally to about forty different runtime environment checks that they use.  [TO JACK] I think it was less than twenty-four â or definitely less than seventy-two hours later, we saw the malware authors changing different aspects and characteristics of this library that I had just presented on.  [MUSIC] So, they only changed the characteristics and techniques I had discussed in the Black Hat presentation.  So, that presentation hadnât been streamed or anything like that, so that was very fascinating to see.</p>
+
+<p>JACK:	Whoa, yeah, that is interesting.  This means either the malware authors or someone who knows the malware authors were at her talk, watching her, taking notes on how sheâs able to detect their malware, and then rushing back to their computers to update their malware to make it harder for the Google team to detect it.  See, this is the thing about Maddie; she seems to be on this mission to make it harder for malware-makers to do what they do.  She gets in their heads and learns where and how theyâre hiding so she can shine a big old spotlight on it and make them scatter.  Her goal is to make it easier for people to find malware, and at the same time, make it harder for someone to make malware.</p>
+
+<p>MADDIE:	So, one day I had a new calendar invite in my inbox from Ben Hawkes, who was the long-time lead of Project Zero.  We had never met before and he said hey, I just wanted to chat about this potential new role and experiment for Project Zero.</p>
+
+<p>JACK:	Oh wow, Project Zero was trying to steal her?  Thatâs pretty cool.  This is a very talented team within Google which focuses on finding zero-day vulnerabilities.</p>
+
+<p>MADDIE:	Yeah, so Google Project Zero is a team of applied security research with the mission of make zero-day hard.</p>
+
+<p>JACK:	But the key thing here is this team will look for bugs in any software, not just Googleâs products.  I think the idea here is that Google users donât just exclusively use Google products.</p>
+
+<p>MADDIE:	Yeah, so if you think about it, to protect, say, Google Chrome users or Gmail users or things like that, a lot of Google users can be attacked through vectors other than just the Google products.  So, whatever operating system youâre running Chrome on, for example, if that has vulnerabilities, than that could be a way to hack those users.  Or back in 2014, Flash was one of the biggest ways to attack people via the web.  So, doing a lot of research and vulnerability research into Flash would ultimately help protect Chrome users.</p>
+
+<p>JACK:	So, the team at Project Zero looks for zero-day vulnerabilities anywhere.  Oh, and zero-day vulnerabilities are bugs that the software maker doesnât yet know about, which also means the defenders donât know about it either, and they canât defend against this kind of bug.  Now, if the Project Zero team finds a bug, they tell the vendor to fix it and then start the timer.  If ninety days goes by and the vendor doesnât fix it, Google will publish this bug publicly.  Anyway, this was the team who approached Maddie.</p>
+
+<p>MADDIE:	So, his hybrid role would be not just â for me to not just be in vulnerability research, but sort of combine this threat intelly/malware/analyst side of it, and I would be â use the starting point of zero-days that are actively exploited in the wild.  So, not just hunting zero-days that attackers could theoretically be finding, but instead having my starting point be the exploits that are actually used.</p>
+
+<p>JACK:	Hm, yeah, I get it.  If the goal of Project Zero is to make zero-days hard to make, adding a reverse engineer to the mix really boosts the potential research that can be done.  Now, instead of just looking for unknown malware out there, you can feed known malware to Maddie and she can digest that and come up with patterns to look for more malware thatâs out there.  Itâs sort of approaching finding malware a totally different way.  Combining these forces makes them more effective.  So, she took the job and joined Google Project Zero.</p>
+
+<p>MADDIE:	[MUSIC] So, I really came into this team with not a lot of knowledge and just this basic idea from Ben that he told me take it and run with it and figure out what makes sense.  So, I did not really have any Windows, IOS browser, et cetera, vulnerability research experience.  My experience prior to Android had been on hardware and embedded devices, which doesnât tend to be the biggest targets of interest for Project Zero.  So, it was a lot of learning, but we started sort of off big and that I joined the team in July of 2019, and Google received information that the commercial surveillance company NSO had this Android exploit that they were using to target Android users in their delivery of Pegasus, the piece of spyware that has been all over the news lately.  We actually got some marketing details about this capability.  So, my first job was taking all of those details and seeing if I could figure out what the bug was so that we could patch it and break the capability.</p>
+
+<p>So, I was digging through all the different Android source code, Linux kernel source code, trying to figure out what is this bug, and somehow managed to figure out exactly which bug it was, because the details we were given happened to line up, that there was only one vulnerability that potentially matched every single detail we were given.  So, that was a pretty wild first bug to report and put into the Project Zero issue tracker.  We reported it to Android under a seven-day deadline instead of the ninety due to a high probability that it was being actively exploited in the wild.  Then wanting to show that it could be exploited, I partnered up with Jann Horn to write a proof-of-concept not just triggering the vulnerability, but actually showing a way to exploit the vulnerability and how it would be useful to get â or to use in, say, the Pegasus chain.  So, that was quite the wild week.</p>
+
+<p>JACK:	For Maddie to identify how Pegasus software is used in Android and then to come up with a working proof-of-concept exploit all in a week, thatâs amazing.  Thatâs like finding and squashing a million-dollar bug.  Seriously, there are companies out there who are willing to pay a million dollars for a bug like this, because itâs so valuable to certain people.  Pegasus is the spyware used by NSO, which is a company based in Israel who sells the spyware to different countries around the world, and itâs quite expensive to buy this Pegasus software.  So, when Maddie discovers how itâs used and makes it no longer usable, it must make NSO angry.  Now they have to rip out their existing way of exploiting phones and find a new way to do that, which isnât so easy.  But this is Project Zeroâs goal, to make it harder for exploits to be out there.  If a company has a whole business model of selling malware and exploits to countries, then yeah, theyâll be impacted by this, and itâll mean the price of Pegasus will go up, since itâs harder to find these vulnerabilities.</p>
+
+<p>MADDIE:	Generally it is nation state actors who are using zero-day exploits, and theyâre generally using the zero-days against human rights defenders, journalists, minoritized populations, politicians.  So, while every human doesnât necessarily need to be worried about being attacked with zero-day exploits, all of us are generally impacted when theyâre used.  When journalists become scared or unable to write the truth that they find and that human rights defenders are being targeted so fewer people are scared to stand up and speak out, or minoritized populations are begin targeted, or critical infrastructure companies and things like that, that does ultimately impact us all.</p>
+
+<p>JACK:	If you want to know more about this, I did a whole episode on NSO.  Thatâs Episode 100.  Youâll hear how they sell software to countries, and then those countries turn around and use it to attack civil society.  Of course, nation state actors arenât always abusing their power; they do use their abilities to stop terrorist attacks and criminal activity, but at the end of the day, the measure of any technology is how it winds up getting used against vulnerable people, not just how it helps.  So, if there are zero-day vulnerabilities out there that are being used to target innocent people, then finding those and fixing them will help civil society be more secure.  Itâs kind of wild to me to think that Maddie here is trying to disarm nation state actors by finding what weapons and exploits they have, and then once discovering it, getting it fixed so it canât be used to exploit people anymore.  Has there been any threatening reactions to this?  Like, I can imagine NSO group being pretty upset after your first project there and being like okay, Maddie is now on our list.  Do you ever get any weird stuff?</p>
+
+<p>MADDIE:	Well, it was actually very strange, of â in January of 2020, I was invited to the conference Blue Hat Israel.  So I went, and there were actually two people who came up to me and their badges said they worked for NSO, and they said â and they asked me questions about why I chose the techniques I did, so that was a very strange interaction overall.  But one of the more anxiety-producing was back in â I believe it was 2021; Google TAG, the Threat Analysis Group, discovered that North Korean hackers were targeting security researchers, including security researchers from Project Zero in the hopes of trying to steal then zero-day exploits from security researchers to use in their campaigns.  So, being personally â or personally, I mean in the population of folks targeted, is a rather frightening aspect of â but it also just gave a lot of empathy for people doing the real hard work and are often targets of the nation state attackers using zero-days.</p>
+
+<p>JACK:	Yeah.  So, some other philosophy here is like, NSA is in the business of finding zero-days and using them as weapons.  Sometimes one of the nation states that youâre going up against is your own nation.  Do you get cross-conflicted there, or how does that feel to you?</p>
+
+<p>MADDIE:	I donât think so, because the vast majority of the time, we have no idea who is behind a bug.  Also because youâre just working so quickly that people donât usually have attribution, you know, immediately.  They just â if attribution even comes out â the threat intel experts are usually three to six months behind, so thereâs never sort of that conflict, because all we get is hereâs an exploit sample, or hereâs a patch diff and the bug was labeled in release notes.  So, Iâve never really felt conflicted in that way because thereâs no way to know.  All you know is that people are being harmed, so that would sit even worse with me to not try and get it fixed.  Yeah.</p>
+
+<p>JACK:	Weâre gonna take a quick break here, but stay with us, because weâre gonna hear more from Maddie when we get back.  Earlier this year, in 2022, Maddie saw that Apple patched a bug in their WebKit product.  This is the browser engine that Appleâs Safari browser uses, and there was a pretty big vulnerability discovered in it, but the patch notes were a little vague, so Maddie started to try to learn more.</p>
+
+<p>MADDIE:	When I started digging into it, one of the ways that I also analyze âwhen itâs just a patch diff; I donât have any other information â is for open source software such as WebKit, I will look at the history of that file and the areas that they patched, or â itâs called the git blame of â it sort of tells you when did this line appear or when was this source code line last changed.  What I ended up figuring out was that this was a zombie bug and that it had actually been originally fixed back in 2013, but then the bug was reintroduced because that patch was regressed and undone in 2016.  Then here we were in 2022 with the bug exploited in the wild and patched again.</p>
+
+<p>JACK:	Why do you think it regressed?</p>
+
+<p>MADDIE:	So, I did a deep blog post into this really trying to understand, and it was actually â it became sort of a team effort because all of us were really interested in trying to understand how did this happen.  There was also a very interesting overlap of â my teammate Sergei Glazunov was actually the original reporter of the bug back in January 2013 and was actually reported to Chrome because at that time, Chrome was still built on top of WebKit as their browser engine.  They didnât split off until 2014, I believe.  So, he was jumping in and looking at it with me, so were some of my other teammates like Mark Bran, and what it looks like overall is that they were trying to chain â sort of do a refactoring to one, make it more performant, and through that, that meant there were some really huge patch changes.  Just based on the structure of security teams and reviewing, a lot of times folks arenât really given a huge amount of resources and time to scroll through and look at line by line, like what are all these changes that are being made, and things like that.</p>
+
+<p>JACK:	Hm, itâs gotta be quite the embarrassing feeling to find that your code had been vulnerable for seven years and youâre just now discovering it.  Makes you stop and wonder, who all knew about this?  Is it possible some advanced hacking group or nation state actor had known about this and was using it to take over peopleâs browsers when they needed to?  Itâs hard to tell, and weâll never know.</p>
+
+<p>MADDIE:	[MUSIC] Back in the fall of 2020, we discovered some exploit servers and just happened to discover that they were delivering us exploits on different devices and different browsers.  In that case, youâre generally first just getting the first stage exploit and then some sort of fingerprinting script, maybe, or something like that.  So, we were like, oh my goodness, this is giving us exploits and our devices are fully-patched.  What the heck is going on?</p>
+
+<p>JACK:	This must have been a very exciting day, to find that thereâs a server out there in the world that is able to remotely attack a device and exploit it in ways that are just not stoppable.  For a security research team like this, itâs a big moment.  You want to quickly try to capture as many exploits as you can from this server, and then analyze them and see exactly how theyâre infecting devices so you can get them fixed.</p>
+
+<p>MADDIE:	So, in this case it was a watering hole attack, where a watering hole attack is if you go to a website and it is just going to try to infect anyone who goes to this website.  So, that was sort of the case here, of oh, this is weird; suddenly this is very weird traffic and oh, thatâs an exploit and thatâs a fingerprinting script?  What did we stumble upon here?</p>
+
+<p>JACK:	This website had active traffic and users coming to it.  So, Maddie and the team at Project Zero knew that people were actively being hacked right now when they were visiting the site, and wanted to move as quick as possible to stop any more people from being infected.</p>
+
+<p>MADDIE:	So, that was where we all really came together and were working through weekends and long hours to first get as many of the exploits as we could, and then teaming up, tearing them apart, getting around the obfuscation, trying to figure out what exactly is the bug that is being exploited here, and getting those reported and working with the vendors to get those patches out as soon as possible.</p>
+
+<p>JACK:	So, they were able to squash any bugs that Google was responsible for, and then get all the other vendors who had bugs to squash them, too, which made this website no longer effective at being able to exploit updated devices that had come to visit the site.  This is why Iâm always telling you to patch your software.  Always update your operating system and any apps you have if thereâs an update available, because it makes it harder for someone to hack into your stuff.  So, I mean, did you ever figure out who was doing this?  Was it a nation state actor or who your thoughts were that would want to run this kind of attack?</p>
+
+<p>MADDIE:	So, we assume that it is a nation state actor just because the sheer volume of zero-days and the sophistication behind those zero-days, it seems rather unlikely that anyone other than a nation state actor would one, have access, and be willing to use that number.  I believe that when we looked at it, it was approximately â I believe eleven zero-days that the actor had used over the course of a year.  So, that definitely would make me think a nation state, but no, I do not know who was behind it.  I also â I am not an expert in attribution, but I have not seen or heard any definitive answers on who the threat researchers and threat intel experts believe was behind it.</p>
+
+<p>JACK:	Whoa, eleven zero-days?  Thatâs amazing.  To make a zero-day vulnerability takes quite a bit of time and skill.  This isnât some simple social engineering attack or some off-the-shelf malware.  Each of these eleven zero-day vulnerabilities were something that took a lot of resources to find and to turn into a usable exploit.  On top of that, the way these exploits were chained together was incredibly sophisticated.  So, because it takes so many resources to develop and weaponize that many bugs, then thatâs why Maddie thinks it was likely some kind of nation state actor.  This is beyond the capabilities of a cyber-crime group or hacktivist group.</p>
+
+<p>MADDIE:	If you can use a less sophisticated form of attack to get access to whatever you need, then that will always be the choice.  If your device â if your targets are insecure and say you know theyâll fall for phishing, then thatâs the easiest route and thatâs what youâll take.  If your targets donât keep their devices up to date unless you can use a in-day exploit, thatâs what youâll take.  So, these zero-days are when one, you really donât want to leave a trace because people donât know what this bug and exploit will look like, and youâre targeting entities or individuals who probably have some pretty good security hygiene and posture.  Those are often going to be people who know their targets, such as our human rights defenders and journalists, et cetera.</p>
+
+<p>JACK:	Hm, so the way I understand it, nation state actors typically have a few different objectives.  It could be intelligence-gathering, like hacking into another nation and stealing information, and it could be disrupting the enemy, like deleting the servers that a terrorist organization uses.  But weâve also seen nation states participate in cyber-crime and hacktivism.  North Korea has been hacking into banks and stealing money from them, and China has been hacking into US companies to steal their intellectual property.  But weâve also seen China hack into the Gmail accounts of human rights activists to try to stop them or figure out what theyâre up to.  Weâve seen the UAE hack into human rights activistsâ phones to track them and arrest them.  Of course, Russia is meddling with elections and even sabotaging the Olympics in some weird ways.</p>
+
+<p>So, thereâs a big spectrum of what governments are doing out there in the mean streets of cyberspace.  I donât know about you, but to me, trying to figure out this space, it gets blurry fast.  Whatâs good?  Whatâs evil?  Some things are clear, but others not so much.  Like, when a country hacks into and spies on another ally country?  Why?  Because they donât trust their ally?  Because they want more information than what their ally is willing to give them?  What happens when they do find out that their ally had some nefarious plan?  Do the ends justify the means?  It gets tricky, and I imagine the weight of who you may be helping and who you may be hurting must weigh on Maddie as she does her work.</p>
+
+<p>MADDIE:	Of course.  I donât think anyone whoâs in this industry or business canât help but think about the philosophy of it.  So, for me, it feels pretty easy and I hope Iâm on the good side of â I want people to have safe and secure access to the internet, whether itâs just their data, their device, and everything like that.  So, the case and the part of that, safe and secure that I am currently able to hopefully make the biggest difference on, is in the zero-day and zero-day exploit space.  But previously I was trying to accomplish that with making sure every Android phone didnât have malware on it.  So, thatâs sort of my guiding principle, is I think the world would be a pretty amazing place if everyone could access and connect to all this amount of information and education and everything like that if â with safe and security and know that their privacy is protected.  So, yeah.</p>
+
+<p>JACK:	[MUSIC] Itâs nice that Maddie has a good ethical mindset to all this and is helping us all become more secure.  But just keep this in mind; there are people just like Maddie who work for the bad guys, doing exactly what sheâs doing, looking through patch notes and trying to figure out what exploit just got fixed to see if thereâs anything the vendor missed or some sort of related bug, and then once they find the bug, theyâll develop it into an exploit and weaponize it instead of getting it fixed.  That just makes me think okay, if there are enemies and allies out there where countries are hacking into each other, then what does that make Maddie, an enemy or an ally?  Or is there some kind of third faction out there?  Also, NSA stands for National Security Agency.  Their job is to ensure the US is secure and is able to send secure communications without our data getting into the enemyâs hands.  So, youâd think that if the NSA has found a way to bypass the security of something, theyâd want to find a way to get that fixed right away to ensure that the software used by hundreds of millions of Americans is secure, right?</p>
+
+<p>But despite that the NSA spends millions of dollars on finding and developing vulnerabilities, they donât report that much to vendors.  We have seen them report some things sometimes, but itâs often under suspicious reasons.  Like when the Shadow Brokers claimed they had NSA exploits, NSA told Microsoft to patch a certain bug right away, and there were other bugs that the NSA reported, which made me think that they might have intelligence that some other enemy nation might be actively using that exploit to hack into our stuff.  It becomes even more difficult to navigate all this when so many of the tech giants are also US-based.  Iâm not saying thereâs any sort of collaboration between the NSA and the US tech giants, but it makes sense to me that there is a closer relationship than other nations might have with US tech companies.  I kind of see it as an arms race; while nation states around the world want more exploits and zero-day vulnerabilities to carry out their objectives, Maddie is over here trying to neutralize those and build up the defenses for everyone to be able to defend against nation states better.</p>
+
+<p>MADDIE:	I donât really think of it as a race unless weâre talking maybe in single vulnerability case, like oh, we know this bug is being exploited; it needs to be fixed as fast as possible.  Thatâs really the only area that I sort of view as a race.  Maybe also around the â this was just patched and we want to make sure that the patch is sufficient.  We complete variant analysis before the attackers are able to.  But at a longer haul, I donât think of it as a race as much as making smarter decisions, because ultimately what we want is that â it is so difficult, so expensive, so â requires so much expertise that attackers really hold onto their zero-days close to the vest, and theyâre so valuable to them that they only use them in really, really special cases.  I think weâre still at the point now that yes, while it tends to be a smaller population of people targeted globally, I think weâre still seeing too broad usage of these zero-days to believe that attackers find them as valuable as we would hope.  So, that looks like making it that much harder for them to find vulnerabilities.  So, letâs say they cannot use variants of a previously-public vulnerability; they instead have to come up with their own.</p>
+
+<p>They have to come up with a whole new bug class that weâve never seen before, not using these use-after-frees and buffer overflows.  Theyâre not able to use a public exploit technique that someone has â weâve seen before or they used before and just want to plug-and-play a new vulnerability in, because we as an industry are not only fixing the vulnerability, weâre mitigating the exploit technique.  They donât need three zero-days; they need six now to maintain the same capability they had before.  Thatâs really the way I think about it and what makes me hopeful â where I know a lot of people can feel down and that zero-days are this sort of impossible problem to solve â is the exciting part is iterative progress we will see the return on investment from.  So, itâs not that you have to do steps A through J and thatâs the only time you will begin to see this return on investment.  Every little step we take forward in this to make it just that much harder â they just canât use the variant on this bug, we fixed this exploit technique; every single one of those actions make it harder.  So, thatâs sort of the way that I view this whole problem.</p>
+
+<p>JACK:	So with all this effort, is it working?  Is Project Zero actually making it harder for people to make zero-day vulnerabilities?</p>
+
+<p>MADDIE:	I think on a long scale, definitely since 2014, zero-day has become harder.  But I think whatâs hard is that to me, at least, itâs pretty obvious that itâs not hard yet.  For example, for the first six months of the year through 2022, what was it?  There was a huge percentage of the zero-day â in-the-wild zero-days were variants of previously-patched bugs.  Okay, fifty percent of the in-the-wild zero-days from 2022 as of mid-June were variants of previously-patched bugs.  That makes it really hard for me to look at, of â we had chances to block one and two of these zero-days that we as an industry didnât take.  Twenty-seven percent or twenty-two percent, somewhere in that range of the in-the-wild zero-days from 2020 are even variants of in-the-wild zero-days from 2021.  So, the attackers could come back less than twelve months later and just use a variant of the bug again.  So, I think thereâs â Iâm more focused on what we can do and the opportunities we have rather than smirking at the news as much.  But of course weâve gotta take the wins when we can get them.</p>
+
+<p>JACK:	You used this term before; private state-of-the-art versus public state-of-the-art.  What does this mean and how does it apply to you?</p>
+
+<p>MADDIE:	So, in vulnerability research publishing, whatâs the new attack surface?  Whatâs the new bug class or exploitation technique that we consider state-of-the-art in terms of novel, a great way to bypass new exploit mitigations, et cetera?  So, offensive security researchers like my team, we publish a lot to show oh, we found this new way to bypass X to help show this is what has to get fixed and this is where its weaknesses lie.  So, that would be the public state-of-the-art, because it is offensive security researchers talking about it publicly, of this is where the techniques stand right now.  Private state-of-the-art is, but what techniques do the attackers actually have?  So, part of the reason why I focus on zero-days that are actually exploit in the wild is because it can help us close that gap between public state-of-the-art and private state-of-the-art, because a lot of the time we use public state-of-the-art to help inform what is the next area of research that we should focus on.  But if thatâs diverging too far from what the attacker is actually doing, then this research is not as useful to us because weâre not having what we call those collisions with attackers and trying to fix bugs and vulnerabilities.  Weâre not putting our resources in areas that are super-useful.  So, thatâs what we mean by â when we say or I say public state-of-the-art versus private.</p>
+
+<p>JACK:	Thatâs a really interesting concept to me.  We know whatâs out there when it becomes seen, but we donât know what hasnât been discovered yet, and what hasnât been discovered yet could be a hugely overlooked use of technology or capability that we just havenât been creative enough to imagine that scenario.  So, it becomes almost a theoretical question; what theoretically could attackers do today, and how can we look into those areas to try to figure out what they are working on to stop them to make us all more secure?</p>
+
+<p>MADDIE:	Well, one of the things I think is most promising is that in 2021, there were the most in-the-wild zero-days ever â since weâve been tracking since mid-2014 â detected and disclosed as in the wild.  That might sound sort of â not make sense why I think thatâs promising to some people, but I think it is because I didnât say we canât track the number of in-the-wild zero-days used; we can only track the number of zero-days in the wild that are first detected by someone and then disclosed as hey, in the wild.  If folks are finding them and reporting them to other vendors and never saying hey, this is in the wild as well, itâs not just another vuln, then thereâs no way for us to know about it.</p>
+
+<p>So, I do think in the last three or so years, there have been huge improvements across the industry of people working on detection and trying to find zero-day exploits, not just brushing it off and saying this is an unsolvable problem.  Iâm also really hopeful of the trends and transparency around these.  I think thereâs still plenty of progress to make in the transparency space around these zero-day vulnerabilities and exploits.  But Iâm hopeful that weâre having more and more vendors transparently disclose when something is being actively exploited, that theyâre â some vendors are making it easier to figure out which patch in open-source software goes with a CVE and getting more robust descriptions of it.  My hope is then we get to areas where theyâre doing these detailed and publishing root cause analyses and doing more variant analysis on their own rather than third parties like myself and my team and some other security researchers coming in and doing that work.</p>
+
+<p>JACK:	Yeah, I think I would like to see on my phone whether or not I was exploited.  If thereâs some sort of play protect feature that says oh, weâve updated this; wow, somebody was actively exploiting you, big notice there, I want you to know.</p>
+
+<p>MADDIE:	Yeah.  I think that would be super interesting, and I â that is one area thatâs been growing, of lots of different researchers trying to figure out how do we â what type of forensics do we look for?  These are sophisticated actors, so theyâre also pretty good at cleaning up traces, and zero-day exploits donât always leave a lot of traces, so how do we figure out if someone had spyware running on their phone, if they had an exploit delivered to their computer or device.  Citizen Lab and Amnesty International are also doing some really awesome work in this space, as they also work closely with the targeted populations.</p>
+
+<p>(OUTRO):	[OUTRO MUSIC] A big thank-you to Maddie Stone for coming on the show and talking with us about zero-days.  You can follow her on Twitter and see what sheâs working on.  Her name there is @MaddieStone.  This show is made by me, the zero â just zero â Jack Rhysider, editing help this episode by the reverser, Damienne.  Mixing is done by Proximity Sound, and our theme music is created by the botnet known as Breakmaster Cylinder.  I saw a really big cell tower the other day and I just walked up to it and I looked up all the way at the top, and I was like, whoa, thatâs really high tech.  This is Darknet Diaries.</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

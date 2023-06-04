@@ -1,0 +1,543 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>Panic! at the TalkTalk Board Room â Darknet Diaries</title>
+	<meta name="description" content="Mobile provider TalkTalk suffered a major breach in 2015. The CEO tried her best to keep angry customers calm and carry on. The UK government and Metropolitan Police investigate the breach. We get ...">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Panic! at the TalkTalk Board Room â Darknet Diaries">  
+	<meta name="twitter:description" content="Mobile provider TalkTalk suffered a major breach in 2015. The CEO tried her best to keep angry customers calm and carry on. The UK government and Metropolitan Police investigate the breach. We get ...">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/talktalk.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/4/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Panic! at the TalkTalk Board Room â Darknet Diaries" />
+	<meta property="og:description"        content="Mobile provider TalkTalk suffered a major breach in 2015. The CEO tried her best to keep angry customers calm and carry on. The UK government and Metropolitan Police investigate the breach. We get a rare glimpse of how the CEO handles the crisis." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/talktalk.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/4/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/talktalk.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/4/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="Panic! at the TalkTalk Board Room â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/talktalk.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 4: Panic! at the TalkTalk Board Room</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://traffic.megaphone.fm/ADV3675761065.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/4/",
+			   "title": "Ep 4: Panic! at the TalkTalk Board Room"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/4">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[FULL TRANSCRIPT]</p>
+
+<p>[INTRO MUSIC]</p>
+
+<p>THE COURT:	Order, order.  Miss Harding, thank you very much indeed for coming in today.  Obviously the issue of the hack at TalkTalk is a serious one for your customers and raises quite a lot of issues of a wider nature.  Can I kick off by asking you who was, at the time of the hack, responsible for security within the company that you run?
+HARDING:	Yes, of course.  Before I directly answer your question, Chairman, could I just begin by apologizing again to all of TalkTalkâs customers for the concern and the inevitable uncertainty that this event has caused all of them?  To answer your question directly, I am accountable and responsible for security in the company.  I was before this criminal attack and am now.
+<!--more--></p>
+
+<p>THE COURT:	But youâre the Chief Executive, Miss Harding.  Who is actually line managing security within the organization?  You canât have been doing that.  Youâre running the company.</p>
+
+<p>HARDING:	Well, I actually do think that 	sub-security is a board level issue.  As the Chief Executive, I do think itâs appropriate that Iâm responsible for it and our board takes it very seriously.</p>
+
+<p>THE COURT:	People have to be responsible.  The question is who.</p>
+
+<p>HARDING:	Indeed, and if itâs a criminal attack it is entirely possible that none of them are responsible for the attack.  The question is, were they making â was the company, and thatâs why I say it really does come back to the Chief Executive and the board.  Was there sufficient oversight in terms of the security policies, the resourcing of the technology team to implement those policies, and the knowledge and understanding of best practice?  It is a board-level issue rather than an individual-level issue below.  Companies have to stay safe 100 percent of the time and the cyber criminals only have to get lucky once.  The way the digital world works, itâs like all of your potential cyber criminals worldwide all have access to the equivalent of a Kalashnikov and a nuclear bomb because itâs cut-and-paste and sitting in the dark web for free.</p>
+
+<p>JACK (INTRO):	This is Darknet Diaries, true stories from the dark side of the internet.  Iâm Jack Rhysider.</p>
+
+<p>JACK:	Carphone Warehouse is one of the largest mobile phone retail distributors in the UK.  In the US the equivalent would be like AT Mobile store or a Sprint Mobile store.  Except Carphone Warehouse just sold phones and werenât affiliated to any mobile provider.  In 2003 that changed and they created a mobile carrier called TalkTalk.  Now Carphone Warehouse can both sell you the phone and the subscription plan for the service.  With this combination and the boom of cell phone usage, the company grew rapidly.  They were opening more stores and either putting their competition out of business or buying them.  In 2009 Carphone Warehouse bought a competing mobile provider called Tiscali UK and merged them into the TalkTalk network.  In less than a year Tiscali was rebranded to TalkTalk.  This also included moving all Tiscali customers to TalkTalk and moving any infrastructure under the TalkTalk domain.  In 2010 Carphone Warehouse decided to split TalkTalk off and have it become its own company.  The executives believed this was the wise choice to maximize profits in the current market conditions.  De-merging TalkTalk away from Carphone Warehouse was challenging, though.  Imagine trying to split the customer database from a single company into two companies.  What customers belong in which company?  Which servers would stay with Carphone Warehouse and which servers would go off with TalkTalk?  TalkTalk continued to grow rapidly by itself as a mobile service provider in the UK.  In 2014 they had almost 4 million customers.  Near the end of 2014, numerous TalkTalk customers were getting strange phone calls.  Hereâs what one of those calls sounded like.</p>
+
+<p>OPERATOR:	My name is Elena okay, calling you from TalkTalk Internet Service Center, your internet service provider, okay?</p>
+
+<p>CUSTOMER:	Okay, right, yes.  What can I do for you?</p>
+
+<p>OPERATOR:	Yeah, the reason why I give you a call today dear, is just to inform you that whenever you are online at a same point of time we are receiving some kinds (inaudible) and warning (inaudible) from your server which indicates that your internet is used by some different IP address, some different people.  Are you aware about this problem?</p>
+
+<p>CUSTOMER:	No.  I do not believe youâre calling me from TalkTalk, okay.</p>
+
+<p>OPERATOR:	Sir, listen to me.  I have the whole information, your name, your address, your city, your post code.</p>
+
+<p>CUSTOMER:	Okay, you tell me that, then.  You tell me my name and my post code.</p>
+
+<p>OPERATOR:	And your TalkTalk account number which is very important and very secret.</p>
+
+<p>CUSTOMER:	Okay, you tell me what my TalkTalk address is then, please.</p>
+
+<p>OPERATOR:	Your address is xx City Bridge Road, okay?</p>
+
+<p>CUSTOMER:	Okay.</p>
+
+<p>OPERATOR:	And, hello?</p>
+
+<p>CUSTOMER:	Yes, Iâm speaking to you.  Yes.</p>
+
+<p>OPERATOR:	And your city is South Glos.</p>
+
+<p>CUSTOMER:	Yeah.</p>
+
+<p>OPERATOR:	Hello?</p>
+
+<p>CUSTOMER:	Yeah, Iâm listening to you.</p>
+
+<p>OPERATOR:	And your postal â post word is xxxx Charlie, F as is France, D for Delta, U for Umbrella.  Okay?  And your TalkTalk account number which is very important and very secret.  Your TalkTalk account number is xxxxxx.  This is your TalkTalk account number which is very important and very secret.</p>
+
+<p>JACK:	Scam calls are common but whatâs really strange about this particular call is that the scammer knew all the customerâs details.  Those details that were listed were 100 percent correct, including the TalkTalk account number.  A few customers did get scammed by these calls and lost significant money.  Hereâs one of those victims.</p>
+
+<p>VICTIM 1:	They showed me all kinds of stuff on the computer.  Oh, madam, itâs lucky that we got hold of you because the computer is a couple of days away from blowing up, basically.  So theyâre spending like an hour grooming you, talking to you, befriending you.  Theyâre on your side, theyâre helping you out.  The cunning part of the plan was they got me to take the money out of the bank myself and pass it on, so it doesnât count as a cyber-crime.  So I lost Â£5,200.  I might as well have driven a car off the end of a pier.</p>
+
+<p>JACK:	Hereâs another victim.</p>
+
+<p>VICTIM 2:	Weâve lost Â£8,700.  They took one lot of Â£4,900 and a second lot of Â£3,800.  It all seemed so genuine.  Itâs now got to the state that you donât know who to believe.  Iâm eighty-two and my husbandâs eighty-three.  Weâre not sleeping properly and whatâs more, I donât know that Iâll ever trust anybody again.</p>
+
+<p>JACK:	The scam worked like this.  [MUSIC]  The caller would establish trust with the victim, convincing them they are from TalkTalk and only someone from TalkTalk would have their account details.  The victim would then be told to share their computer screen with the caller.  The caller would then install malware on their system and then have them log-in to their bank account.  The caller would either steal money out of their bank account directly or show them a false balance on their bank account where the balance was significantly higher than expected.  The scammer would tell the victim that TalkTalk accidentally overpaid them and they need to take this extra money out of their bank account, withdraw it, go to MoneyGram or Western Union and send it to the scammer.</p>
+
+<p>Victims thought they were sending the money back to TalkTalk and doing the right thing.  All through September, October, and November of 2014, TalkTalk customers complained about these scam calls.  Because of the volume of complaints that were being raised, TalkTalk decided to look into it.  They did find something strange.  TalkTalk notified the Metropolitan Police and the ICO.  The ICO, or Information Commissioners Office, is UKâs data protection authority.  As a side note, the US doesnât have an official data protection authority.  The Federal Trade Commission handles some data breaches, but in England and in most of Europe there is an official body of government that only deals with information privacy and protection.  That is called the data protection authority and the ICO is the UKâs data protection authority.  They report directly to Parliament.  Law requires that all telecoms must report security breaches to the ICO so TalkTalk begins telling the ICO about the potential data breach.  Two months later, TalkTalk determines the extent of the data breach and notifies its customers.  What TalkTalk found is the breach didnât occur anywhere near their headquarters in London.  Instead, the theft occurred four thousand miles away.  To save millions of dollars, TalkTalk outsourced their customer support reps to a company in India called Webpro.  The calls centers that Webpro runs are massive.  They have over five thousand employees working in them.  TalkTalk hired Webpro, andâ¦</p>
+
+<p>EXECUTIVE:	We established a new center in Kolkata and we ramped to over a thousand staff in just six months.  Thank you, Webpro.</p>
+
+<p>JACK:	Thatâs a clip from before the breach.  Itâs a TalkTalk executive doing a promotional video for Webpro.  Each of the one thousand Webpro customer support agents only had access to a single TalkTalk user account at a time, but out of the one thousand agents there were forty of these people that had elevated access.  These may have been supervisors or managers.  Their extra privileges allowed them to do wild-card searches on the TalkTalk customer database.  They could do a search for F star and this would get back all names starting with the letter F, but it would only show a maximum of 500 results.  Three rogue Webpro employees gained access to these privileged log-ins.  They began harvesting customer accounts out of the TalkTalk database 500 records at a time.  The data on each account included the name, home address, phone number, and account number.  In total, 21,000 accounts were harvested out of the TalkTalk database.  The rogue Webpro employee would put what he had on a USB stick and then go to a party where he knew people who worked as phone scammers.  He would give them the USB stick and the deal was this; if the scammers were successful at conning people out of money, the rogue Webpro employee would get a cut of it.</p>
+
+<p>One of the big criticisms TalkTalk received from this breach was the way they notified their customers.  TalkTalk detected this breach in November and notified the ICO then, but didnât notify their customers until February.  Customers who were scammed in December could have been notified but they werenât.  With the help of an ombudsman, TalkTalk did reimburse some of the people who lost money to this scam, but there were also customers who were unable to get TalkTalk to pay.  TalkTalk proceeded to tell their customers; at TalkTalk we take our customersâ security very seriously and we take numerous measures to help keep our customers safe.  TalkTalk did begin blocking nuisance calls and spam calls and claimed to be one of the only telecoms that did block these kind of calls, and they also ran public service ads such as this.</p>
+
+<p>ADVERT:	If youâre at all uncertain about a call, just hang up.  Make yourself a cup of tea and take some time to think.  Finally, call back on your supplierâs official number.  Thatâs it.  Three simple steps to beat the scammers.  TalkTalk.  For everyone.</p>
+
+<p>JACK:	Eight months go by.  Itâs now August 2015 and suddenly three of Carphone Warehouseâs websites go down.  The websites were onestopphoneshop.com, etosave.com, and mobiles.co.uk.  These are popular sites where visitors could purchase new cell phones.  The next day, Carphone Warehouse sent the following letter to its customers.  Quote, âOur investigation indicates that some of the data held in our systems has been accessed and this may include some of your personal details including your name, address, date of birth, and bank details.  We take security of your data extremely seriously and we have put in place additional security measures to prevent further attacks.  Nevertheless, we felt it was important to let you know as soon as possible.  To reduce the risk of fraudulent activity, we recommend you consider taking the following steps: notifying your bank and credit card company so they can monitor activity on your account.  You can check your credit rating and make sure no one has taken a loan out and credit in your name.  You can do this by visiting Experian or Equifax.â  End quote.  Carphone Warehouse then went on to say that 2.5 million customer records were taken from their database.</p>
+
+<p>The data in these accounts included customer name, home address, and date of birth.  There were also 90,000 encrypted credit cards taken in this breach.  Out of those 2.5 million customer records, 480,000 of them were TalkTalk records.  The two companies were still in the process of de-merging and Carphone Warehouse still had TalkTalk customer data.  Because TalkTalk customers were impacted, they had to notify the ICO of the breach.  Two days before the website went down Carphone Warehouse discovered their sites were being hit by a quote, âsophisticated cyber-attack.â  End quote.  As soon as it was detected they took the website down to contain and fix the issue.  There are no other details about what kind of attack this was or what was hit or how it happened.  The CEO of Carphone Warehouse, Seb James, issued a written apology to its customers saying, âWe take the security of customer data extremely seriously.  We are very sorry that people have been affected by this.â</p>
+
+<p>JACK:	Three months pass.  Itâs now October 21, 2015.  Itâs a Wednesday.  On this day, the TalkTalk network starts running slow.  Some customers report inability to make calls and checking e-mail is very slow.  Around lunchtime, the TalkTalk website goes down entirely. [MUSIC]  People couldnât check e-mail, change account settings, or purchase new services.  Social media exploded with complaints of the outage.  Customers were becoming frustrated.  The customer support lines were overwhelmed.  The website continued to stay down all night long.  [MUSIC ENDS]  The next day TalkTalk said they had been breached and the media immediately started picking up the stories.</p>
+
+<p>REPORTER:	Some breaking news in the last hour.  Police are investigating after significant and sustained cyber-attack on the website of the company TalkTalk.  We actually have the CEO of TalkTalk, Dido Harding, here.  First of all Dido Harding, how many people are affected?</p>
+
+<p>HARDING: 	We donât know for certain but weâre taking the precaution tonight of contacting all four million of our customers.</p>
+
+<p>REPORTER:	But you didnât â the attack was yesterday.</p>
+
+<p>HARDING:	The attack started yesterday.  We brought down all of our websites yesterday lunchtime.  We spent the last twenty-four hours with the Metropolitan Police and various security experts trying to get to the bottom of what has happened.</p>
+
+<p>REPORTER:	But if you donât know if peopleâs telephone numbers, if their bank accounts and so forth are involved, would it not have been better to take the precaution as soon as it started to happen, of telling all your customers?</p>
+
+<p>HARDING:	There are cyber-attacks on every website all the time.  In the summer, cross England and Wales, there were 625,000 cyber-attacks each month.</p>
+
+<p>REPORTER:	Has it happened at TalkTalk before?</p>
+
+<p>HARDING:	We would receive whatâs called denial-of-service attacks on our network every week.</p>
+
+<p>REPORTER:	How do you know this one was different?  Whatâs triggered this?</p>
+
+<p>HARDING:	We didnât at lunchtime yesterday.  Lunchtime yesterday, all we knew was that our website was running very slowly.  It had all the early warning signs of bad guys bombarding the website, so thatâs why we took the website down.  We then needed to actually analyze the data in order to identify who â if someone had got in, what data that they had got access to.</p>
+
+<p>REPORTER:	Do you know how much, what the maximum amount of data this cyber-attack has taken?</p>
+
+<p>HARDING:	The precaution weâre taking is to communicate with all of our customers so that is the maximum.  Itâs clearly a material number and because we fear that these criminals have access to some customerâs bank details as well as personal details, weâre taking the precaution of telling everyone and using, to be honest, the good auspices of the BBC tonight to try and reach customers as quickly as we possibly can.</p>
+
+<p>REPORTER:	Youâre telling people now, but peopleâs bank account and details could have been compromised since lunchtime yesterday.</p>
+
+<p>HARDING:	They could have been, but I didnât know.  I didnât have any inkling at lunchtime yesterday that that was the case.  You have to have a basic amount of information before you start communicating.  Weâve tried to move absolutely as fast as we can.  At the same time, in terms of your bank account details being stolen, which is what has happened, the risk you take is that that criminal tries to impersonate you.</p>
+
+<p>REPORTER:	Yeah.</p>
+
+<p>HARDING:	So what weâre also doing today is weâre going to be providing all of our customers with a yearâs free credit monitoring as the best way of ensuring that if somebody does try and use that information illegally, you can catch it and that you will be safe.</p>
+
+<p>JACK:	The press release said up to four million user accounts were taken.  Thatâs the entire TalkTalk customer base.  This may have included names, addresses, date of birth, credit card details and bank details, e-mail addresses, telephone numbers, and TalkTalk account number.  The TalkTalk CEO, Dido Harding, received a ransom letter.  The ransom threatened to publish the data that was stolen unless they pay $125,000 in Bitcoin.  The ransom letter was turned over to the police and otherwise ignored.  The security teams at TalkTalk worked in shifts around the clock to investigate the attack.  They first needed to contain it and analyze it to understand the scope and then fix the problem so it wonât happen again.  What they found is that there was a SQL injection done on the website that was formerly part of the Tiscali network.  When the competitor was bought and merged into TalkTalk an old Tiscali site was overlooked from getting updates.</p>
+
+<p>In fact, that web server and database had not been patched for three and a half years.  Rumors also spread that there was a denial-of-service attack on their main website.  If there was a denial-of-service attack, it was more of a distraction than damaging.  One news reporter described this attack like setting a fire in the front yard while burglars enter through the back door.  The TalkTalk security team was having a hard time understanding the scope of this intrusion.  Thatâs because there wasnât one SQL injection that happened.  There wasnât two either.  There wasnât just five or even ten.  A later report revealed that TalkTalk was targeted over 14,000 times in October.  Attacks didnât come from just one location.  They came from many places around the world.  Itâs almost as if it was a coordinated attack.  Trying to sort through the details of 14,000 different attacks was no easy task.  Meanwhile customers were furious likely because they were tired of hearing about this company being breached.</p>
+
+<p>This would be the third time in a year that customer records were stolen from TalkTalk.  People were upset that TalkTalk wouldnât say what data was accessed, who was impacted, whether the data was encrypted or not.  Customers were complaining about everything; slow internet speeds, disconnected calls, increased number of scams.  A flurry of complaints hit social media.  People were accusing TalkTalk of being negligent of the data and astonished that TalkTalk didnât know more details.  Rumors were everywhere.  One rumor was that Islamic extremists were claiming responsibility for the hack.  Another said Russian dissidents had taken responsibility.  Another rumor was some customers were claiming fraudulent purchases seen on their credit cards.  Many people were confused about the details and mixing up previous breaches with this one.  In the days after the breach it was difficult and almost impossible to figure out what information was true and what was just rumor.  The CEO was aware of the massive amount of complaints that were going on and four days later, had a new message for everyone.</p>
+
+<p>HARDING:	I know itâs been a worrying and frustrating time for customers since the cyber-attack on TalkTalkâs website on Wednesday.  Right from the start weâve done everything we can to get to the bottom of what happened as soon as possible and to keep you updated along the way.  The Met Policeâs criminal investigation and our own internal one are still ongoing, but I hope I can now provide some reassurance to customers by telling you that the findings so far show that the number of customers affected and the amount of data potentially stolen is smaller than originally feared.  In fact, our website, our shop front, if you like, was attacked but our core systems werenât.  We donât store unencrypted credit card data on our site.  Any credit card info which may have been stolen has the six middle digits blanked out and canât be used for financial transactions.  No My Account passwords have been stolen and no banking details were taken that you wouldnât already be sharing when you write a check or give to someone so they can pay money into your account.  I hope we can provide more reassurance soon.  In the meantime, please do take advantage of the free credit monitoring service weâve set up with one of the main credit checking agencies, Noddle.  You can sign up using the code TT231.</p>
+
+<p>JACK:	Two weeks later, TalkTalk announced exactly what had been taken.  156,000 user records including customer name, date of birth, and address.  15,000 bank account numbers and sort codes, and 28,000 partial credit cards.  None of this data was encrypted.  Customers continued to be furious with TalkTalk and began cancelling their contracts and moving to other providers.  TalkTalk then began offering free upgrades for all their customers, including non-impacted ones as an attempt to keep their customers, but TalkTalk would not waive any cancellation fees for people who wanted out of the contract.  Two months after the breach, British Parliament interviews Dido Harding.  A Digital, Culture, Media, and Sports Committee is involved to try to assess the threat there is to the public.  At the start of this episode you heard the beginning of this hearing.  Iâll describe the scene for you.  It looks like a large room somewhere in the palace of Westminster.  There is wooden paneling on the walls and the carpet is ornate and lush.  There is a large U-shaped table with thirteen members from the Culture Committee sitting around it and on the other end of the U is the CEO of TalkTalk, Dido Harding, sitting at a table all by herself.  Also in the room are spectators, assistants, cameras, and microphones.  Now letâs listen to a few parts of this hearing.</p>
+
+<p>HARDING:	One of the most difficult periods for the TalkTalk board and for me personally during this attack was in the first thirty-six hours when we knew weâd been attacked on the Wednesday morning.  Wednesday afternoon on the 21st, I had a incident call with my directors reviewing â we brought down the systems and we knew that we had been attacked.  At that point I received a ransom demand in my personal inbox which was very credible.  We informed all of the appropriate law-enforcement agencies and spent the next eighteen hours trying to understand exactly what had happened and what had been taken.  The next day, on the Thursday morning, it was very clear that there was a real risk that a material number of our customersâ data had been stolen.</p>
+
+<p>It was also clear that it was going to take us several days.  In fact it took us two weeks to know exactly what had been taken.  Personally, by the Thursday mid-morning, I was clear that I needed to warn all my customers; that I could do something about it to help protect my customers.  I was clear by the lunchtime on the Thursday that the sensible thing to do to protect my customers was to warn all of them because I could help make them safer.  I could give them free credit monitoring, I could warn them not to accept these scam calls.  For completely understandable reasons, the advice we received that Thursday afternoon from the Metropolitan Police was not to tell our customers.  Now, I totally understand why the police wanted us to stay quiet because theyâve got a different objective.  They want to catch the criminals.  You sort of want the police to want to catch the criminals, and we had some very constructive discussions with them through that afternoon and into the early evening on how to marry the conflicting objectives of a company wanting to look after their customers and the police force rightly wanting to catch the criminals.</p>
+
+<p>THE COURT:	Thank you very much.  How many breaches of security have you had in the last five years?</p>
+
+<p>HARDING:	This is the first of TalkTalkâs systems, the 21st of October.</p>
+
+<p>THE COURT:	What about these other incidents that weâre talking about?</p>
+
+<p>HARDING:	I presume youâreâ¦</p>
+
+<p>THE COURT:	Theyâre breaches of security.</p>
+
+<p>HARDING:	I was asking â possibly not answering the question that the Chairman posed.  What I was answering is this is the first successful cyber-attack on TalkTalkâs systems.  I would say that we are attacked every day, multiple different ways.</p>
+
+<p>THE COURT:	These other breaches of security, what have they been?</p>
+
+<p>HARDING:	I presume youâll be referring to comments in the newspaper suggesting that there have been three attacks in the course of the last year.  Is that fair?</p>
+
+<p>THE COURT:	Yeah, well, itâs certainly something thatâs in my mind, yeah.</p>
+
+<p>HARDING:	Okay.  Just to make sure Iâm answering the right questions.  Carphone Warehouse, who is a supplier to TalkTalk and a number of other mobile retailers, was the victim of an attack in the summer.  It wasnât a TalkTalk system that was breached.  It was a third party supplier.  We, like many other companies, have had customers targeted by scammers and there was one specific incident in November last year where there was a â it was not a cyber-security breach but a personal â personnel  security issue in one of our outsource providers.  Those are the three that Iâm aware of that are in the public domain.</p>
+
+<p>THE COURT:	How would you describe to your customers whatâs the difference between a cyber-security attack and a personal data breach?</p>
+
+<p>HARDING:	I think that from a customerâs perspective they donât really care how their data is stolen.  They care if their data has been stolen.  I think that the total set is different ways that customersâ data can be stolen.  I was trying to be specific in the answer to the Chairman earlier about a cyber-related data breach, where someone has accessed â the criminal has accessed your systems as opposed to a human data breach.</p>
+
+<p>THE COURT:	A human data breach; that would be someone within the organization that has stolen the data they shouldnât have done, or accessed data they shouldnât have done.</p>
+
+<p>HARDING:	Yeah, or any former â yes, or through the third party chains.</p>
+
+<p>THE COURT:	Could I ask, why do you think TalkTalk is, or appears to be, so especially vulnerable to this?  Because however we look at this, there have been a number of very serious breaches which has caused TalkTalk to develop the bad reputation that it has.  Why do you think thatâs happened to your company in particular?</p>
+
+<p>HARDING:	Iâm afraid I donât think that we are unique or unusual in being victims of cyber-crime.</p>
+
+<p>THE COURT:	Youâve said that a number of times but you appear to have had more than most.</p>
+
+<p>HARDING:	I donât think that thatâs true.  I think, as I saidâ¦</p>
+
+<p>THE COURT:	You think other big companies have had three serious breaches in the last year?
+HARDING:	As I say, weâve had one serious breach on our systems.</p>
+
+<p>THE COURT:	I know but I feel weâre dancing slightly on the head of a pin there, because the way youâre defining the breaches â so, three separate breaches that have affected your customers whoâve signed up for you.</p>
+
+<p>HARDING:	Okay.  And all Iâmâ¦</p>
+
+<p>THE COURT:	You have to take responsibility, even if other people â even if you would argue that youâre indirectly responsible, the relationship that these customers have is with you.</p>
+
+<p>HARDING:	Thatâs fair.  I guess what Iâm actually alluding to is that because telecoms companies are the only companies that have an obligation to report these data breaches, we took a decision on the 22nd of October to warn all our customers about the attack that we had just experienced.  We have been much more public than I think many other organizations have been.  Maybe they didnât need to be.  But the fact that the PWC report for it to be, says that nine out of ten major companies have had a successful attack in the last twelve months, and that â you tell us theyâre dealing with two hundred live instance each month.  That certainly doesnât reflect what all of us as consumers would see in terms of communication from the companies that we deal with.  There arenât that many in the public domain.</p>
+
+<p>THE COURT:	But the cyber-essentials is really some basic guidelines at relatively low cost.</p>
+
+<p>HARDING:	Which as I understand it, we are fully compliant with.  As I said, we are simply just in the â have been in the â appreciate, the team have been quite busy dealing with the incident over the last two months.  We were in the process of getting accreditation.</p>
+
+<p>THE COURT:	Okay.  Itâs a bit late though, in some ways, isnât it?</p>
+
+<p>HARDING:	Well, no, I think as a telecoms company the thing weâve focused on has been a very detailed and in-depth 10 Steps to Cyber Security plan, which we worked on through the auspices of Tizag.  No, I donât think that we have just missed out the essentials at all.  I think quite the opposite.  We have a very robust cyber-security plan.  Itâs just Iâm also being honest and human to say of course I wish Iâd done more.  I donât know whether doing more would have prevented this attack by the way, but I think the thing that my customers would expect us to do is to keep building our security walls higher and higher.  âCause the really harsh reality is the criminalsâ ladders are getting longer and longer every single month.</p>
+
+<p>JACK:	This hearing lasted two hours and they asked Dido 145 questions.  Ever since the day of the breach, TalkTalk had been working closely with Londonâs Metropolitan Police.  In fact, the Metropolitan Police did an impressive job.  They were able to track down IP addresses to physical locations and connect hacker names with real names and real addresses.  They were able to trace down some of the hackers involved.  In fact, within three months of the breach, Metropolitan Police arrested six people involved.  All six of the people were boys under twenty-one years old.  The first arrest was a few days after the breach and it was a fifteen year old boy in Ireland.  This was a shock to the UK and a few newspapers actually published his name.  The lawyers of the boy sued those newspapers because theyâre not allowed to publish the names of minors in papers.  That lawsuit is still going on today.  The boy was released on bail a few weeks later.  Itâs uncertain what happened to him then.  We donât know if he was found guilty or received any punishment.  The second arrest was a sixteen year old boy arrested in a suburb west of London.  He also got released on bail.</p>
+
+<p>Then there was another sixteen year old boy that was arrested in Norwich, UK.  This boy claimed that he found the vulnerability on TalkTalkâs website using a tool called SQL Map.  He posted what he found to a hacker forum.  He says he didnât download any of the data off of TalkTalkâs website and he didnât benefit at all from doing this hack.  In fact, all he was trying to do was quote, âI was trying to show off to my mates.â  End quote.  Metropolitan Police looked through his computer and his iPhone and they found not only did he actually hack into TalkTalk but he was also hacking into other things like Cambridge University, Manchester University.  When he went to court, he pled guilty to seven charges but only two were for TalkTalk.  He was sentenced to twelve months youth rehabilitation order and lost his iPhone and computer.  Another arrest a few days later was a twenty year old named Matthew.  He was in Staffordshire, UK.  When police seized his computers they found evidence that he hacked into NOA, NASA, Spotify, and twenty other websites.  Matthew hacked into TalkTalk and downloaded as much data as he could.  He showed his friend Connor the stuff that he downloaded from TalkTalk and Connor got real excited.  He said hey, give that to me.  Iâm gonna sell that on the dark net.  Connor started posting some of the data for sale on the dark net and started talking to people on the dark net to try to make the sale.  Thatâs when the police were able to arrest both Matthew and Connor.</p>
+
+<p>The next arrest was an eighteen year old boy named Daniel.  He was arrested in Wales.  He was the one that sent the ransom letter to Dido so he was initially charged with blackmail.  When the police looked through his computers and his history they found that he was doing denial-of-service attacks on his own college which caused a partial outage on the local hospital.  He did other attacks against companies, stole their data, and demanded Bitcoin so it would not be published; basically doing ransoms on other companies, as well.  He was found guilty of extortion of over $300,000.  He lived in a small town in Wales and after he was arrested he reached out to a reporter at Motherboard to let his voice be heard.  This is what the hacker said.  Quote, âThereâs not much to do in my town and the internet offered me opportunities and a way to cure boredom.  When youâre surrounded by people on the network that engage in these criminal acts, it essentially becomes the norm and itâs extremely addicting.  Thereâs nobody around to tell you what youâre doing is wrong.  Itâs a difficult feeling to explain but itâs essentially a feeling of euphoria and once youâve experienced it, itâs something you always chase.  Itâs a bit like a drug but on a whole different level, obviously.  The more you develop your skills, the stronger the feeling becomes because youâre able to do more things.  What Iâve done is essentially going to haunt me for the rest of my life.  I know thatâs probably the advice you were expecting but seriously, donât do it.  Crimes online are treated no differently from crimes in the real world.  Iâve had to learn that the difficult way.  You might assume youâre more-or-less invincible but if you do something serious enough, you will be caught and put through the justice system.â  End quote.</p>
+
+<p>Then later on in 2016, three Webpro employees were arrested for stealing data out of the TalkTalk database.  Thereâs no talk about anyone who hacked the Carphone Warehouse database.  We still donât know how that happened or who did it.  In June 2016, the ICO concluded their investigation on TalkTalk and published their report.  The site says the database was out of date for three and a half years and the attack was through the Legacy Tiscali pages.  TalkTalk wasnât monitoring that site and the attacker used SQL injection.  The investigation also found that in July of 2015 and September of 2015, there were also SQL injections in the logs and unauthorized access.  TalkTalk thought they had identified the breach the day of the attack but technically it took them three months to detect this.  A year after the breach the ICO placed a fine on TalkTalk for $530,000 for a loss of 157,000 customer records.  This was the largest fine ever imposed by the ICO.  TalkTalk paid the fine early which allowed them to only pay $420,000.  Later on in 2017 the ICO placed another fine on TalkTalk for $130,000.  This was for the Webpro breach that lost 21,000 user records.  After that was announced, the class-action lawsuit against TalkTalk re-emerged.  Fifty people were claiming they were victims of scams and seeking compensation.</p>
+
+<p>In February 2017, over a year after the breach, Dido Harding steps down as CEO.  In a quarterly shareholders call, TalkTalk claimed the breach cost them $70 million.  These expenses included doing a security assessment, fixing the issues, hiring a security firm to investigate, giving free credit monitoring, giving free upgrades to customers, and more.  They also said they lost 101,000 customers due to the breach.  Their stock fell by 11 percent and they lost a market share of 4 percent.  [MUSIC]  Since all these attacks, the UK has developed a new program; a youth rehab boot-camp for teens who have been convicted of hacking.  This is a place for teens to learn their skills are in high demand.  Mentors teach them how they can enter the job force and continue doing the things they love, which is hacking.  This breach reminds us that you canât secure what you donât know you have, and in this case TalkTalk forgot they had these servers.  Another problem is when you leave one server vulnerable it makes the entire company vulnerable.  [MUSIC ENDS]</p>
+
+<p>THE COURT:	What advice would you give to other CEOs?</p>
+
+<p>HARDING:	I think thereâs two pieces of advice that I would offer.  One is that being open and honest with your customers is the right answer.  I would hate that all of the public attention that TalkTalk has had as a result of our approach of being open and honest with customers would lead other chief executives to conclude that that was the wrong thing to do.  We think it was absolutely the right thing to do, to go out and warn all four million of our customers on the 22nd of October.  We think that actually, over time, we are seeing the benefits of that in our customers telling us that they value the fact that weâve been open and honest.  That would be my first main piece of advice.  The second piece is that you mustnât delegate security.  Security is a board-level issue and itâs a business decision because the only way you can be 100 percent confident that youâre not at risk of cyber-crime is not to operate in the digital space, and thatâs the wrong answer. You have to take risk as the Chief Executive, and therefore you have to know enough about what your choices are and not to delegate â and weâve seen that in spades over the last two months because our risk of cyber-security has gone up simply because of the amount of media attention around TalkTalk.  The business risk has changed and thatâs required me to take decisions which, I think, in other companies, might be being taken by the security function.  Cyber-crime is the crime of our generation.  It is growing exponentially and we all need to know more and learn more.  I think the TalkTalk board, probably more than any other in the country, knows that thatâs the case.</p>
+
+<p>JACK (OUTRO):	[OUTRO MUSIC]  Youâve been listening to Darknet Diaries.  For show notes and links, check out darknetdiaries.com.  Music is provided by Ian Alex Mac and Alex Barbarian.</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+<p>Transcription performed by Leah Hervoly
+www.leahtranscribes.com</p>
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

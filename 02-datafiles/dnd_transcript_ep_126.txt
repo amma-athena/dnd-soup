@@ -1,0 +1,554 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>REvil â Darknet Diaries</title>
+	<meta name="description" content="REvil is the name of a ransomware service as well as a group of criminals inflicting ransomware onto the world. Hear how this ransomware shook the world.">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="REvil â Darknet Diaries">  
+	<meta name="twitter:description" content="REvil is the name of a ransomware service as well as a group of criminals inflicting ransomware onto the world. Hear how this ransomware shook the world.">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/revil.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/126/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="REvil â Darknet Diaries" />
+	<meta property="og:description"        content="REvil is the name of a ransomware service as well as a group of criminals inflicting ransomware onto the world. Hear how this ransomware shook the world." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/revil.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/126/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/revil.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/126/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="REvil â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/revil.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 126: REvil</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://www.podtrac.com/pts/redirect.mp3/traffic.megaphone.fm/ADV5640294932.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/126/",
+			   "title": "Ep 126: REvil"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/126">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[START OF RECORDING]</p>
+
+<p>JACK:	 Yeah, scams going on out there today are getting wild.  There was this one I read about; let me tell you about it.  [MUSIC] Okay, so thereâs this guy named Gustavo.  Heâs from Brazil, but he was in the US just visiting.  He wanted to drive for a rideshare company like Uber but he was just visiting, so he didnât have a US driverâs license.  Now, as you can imagine, a requirement to drive for Uber in the US is that you need a driverâs license in the US.  Gustavo thought about it and decided to try to use someone elseâs driverâs license to register to drive with Uber.  Iâm not exactly sure how he borrowed someoneâs identity, but I imagine itâs not all that hard to find someoneâs information online these days.  I mean, Iâve seen people post pics of their driverâs license to social media.  So, maybe he just took one of those and sent it to Uber to pass verification.  Anyway, however he forged the driver details, it worked.  He was approved to drive for a rideshare company, and he had it set up so heâd get paid for the work he did.  It was great for him to earn money while staying in the US, and the money was a whole ânother scheme he was working on.
+<!--more-->
+I donât really know how, but he had to move it around in such a way that it didnât look like he earned it through rideshares or something.  I donât know, but he was laundering the money.  Well, his girlfriend was also interested in all this, and she wanted in.  But again, she was from Brazil and not a US citizen, so no driverâs license, either.  But not a problem for Gustavo; he just repeated what he did for himself and set her up with a fake driver account, too.  Then three more of his Brazilian friends wanted in, and before they knew it, this was a five-person team.  Then someone on the team was like [MUSIC] hey, I found a spot online that people are willing to buy Uber driver accounts, because apparently there are quite a few people who want to drive for Uber but canât for some reason.  Either they donât have a license or insurance or something makes them ineligible, so they might be interested in buying someone elseâs account so they can make some extra cash, or even rent one out from someone.</p>
+
+<p>So, these five Brazilians started posting rideshare driver accounts up for sale on these forums and they were actually selling, making money from just selling driver accounts made from stolen identities.  But then the pandemic hit and rideshare usage went way down, but that wasnât a problem.  This team just shifted focus and worked on food delivery apps like Grubhub.  They started making all kinds of driver accounts for this now using stolen identities again, and sometimes there was this waitlist to get verified and stuff, but eventually they would get verified and then sell or rent out those accounts.  Gustavo and his four other friends made over one hundred phony driver accounts on these apps and sold them on forums.  I donât know how much these things go for or how much he made, but somehow the authorities got wind of this and investigated, and ended up arresting all five of them.  Stolen identities and money laundering were the main charges they faced, and I think all of them got two years in prison for this wild scam.</p>
+
+<p>(INTRO):	[INTRO MUSIC] These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	So, why donât we start out with what you â whatâs your name and what do you do?</p>
+
+<p>WILL:	My name is Will.  I work for the Equinix Threat Analysis Center.  Iâm a threat intelligence analyst.</p>
+
+<p>JACK:	I wanted to talk with Will because as a threat intelligence analyst, heâs been studying a certain kind of malware called REvil, and I want to hear all about it.</p>
+
+<p>WILL:	So, REvil first sort of appeared in â I think it was about April 2019, and I got my first job in summer of 2019.  I just graduated university and I got my job in summer of 2019, so Iâve been tracking them ever since I began my career, basically.</p>
+
+<p>JACK:	Okay, so you might be wondering what is REvil?  Well, to answer that, letâs back up a bit [MUSIC] and look at what came just before it.</p>
+
+<p>WILL:	So, REvil first came out of another variant called GandCrab, and the sort of â GandCrab is â it was basically the group that pioneered what we call big game hunting.</p>
+
+<p>JACK:	So, GandCrab is the name of some malware, and specifically it infects machines and encrypts the whole hard drive and then says pay us some money and weâll give you the key to unlock this machine.  GandCrab is ransomware, and a particularly effective one, too.  I think this GandCrab ransomware was developed and deployed by a group of criminals who kept it close to their chest.  It wasnât passed around for just anyone to use.  At least, not the whole thing.  One piece of it did just the encryption for the machines, and then there were servers that were set up for handling incoming payments and to chat with victims and to generate decryption keys.  It kept updating over time, adding new features, and it became its own brand.  Like any brand, the name of it started to refer to the people behind it, too.  Like, when I say Google, do you think of the search engine or the company or the people at the company?  Google refers to all these things.  So, GandCrab was both the name of the ransomware and the group who were running it, and Will says it was this group that pioneered big game hunting.</p>
+
+<p>WILL:	So, big game hunting is a type of ransomware attack.  So, itâs â imagine you have the Savanna and youâve got all the companies on the landscape.  Instead of going for just small companies and going for the small game, just trying to get like $5,000 or $10,000, they want to go for the biggest company they can and unlock all their systems and try and steal millions from them, try and extort them, fall back for their files that are locked for as much money as they can.</p>
+
+<p>JACK:	Mm-hm, I get it.  So, if I got hit with ransomware or you got hit with ransomware on our home computer and that hard drive was encrypted and locked, whoever did it might only charge us a few hundred dollars to unlock it, âcause itâs just one person.  This could scale up if you infect thousands of peopleâs home computers at once, and that does add up for criminals.  But it sounds like this GandCrab group wasnât trying to hit regular people like you or me.  They were focused on infecting big companies or companies that had a lot of money at least, because those companies might just pay a million bucks to get their machine unlocked.  [MUSIC] But thereâs a bit of a problem with this whole plan; security.  Infosec teams everywhere know about ransomware, and they put methods in place to stop their company from getting hit with it.  So, even though GandCrab was great at encrypting machines, it still needed that initial access into the network.  So, how does a criminal get access into a big companyâs network?  Well, they buy their way in.</p>
+
+<p>WILL:	So, thereâs a whole ecosystem of â that ransomware works with called initial access brokers, and thereâs entire underground markets that you can buy access into certain companies.</p>
+
+<p>JACK:	Yeah, I actually know about this.  Iâve seen underground forums where people are selling access into companies.  In fact, I interviewed a guy who did sell a login to his ex-employerâs network.  Thatâs Episode 108, called Mark.  He was a disgruntled ex-employee, but there are also people who are out there just playing around, trying to find a way into a company.  Maybe theyâre just curious or like the challenge, but they poke and prod until they find a way in.  But they have no idea what to do once they get in, so thatâs where they see others are selling access into networks on forums and decide to just sell their access.  Itâs a weird and strange market.  So, this is how the GandCrab group would infect companies; theyâd buy access into a company, then put ransomware on all those systems, and ask for a huge payment to unlock all those systems.  But how much do you demand, and what companies should you hit?  Well, to figure that out, GandCrab did some OSINT.</p>
+
+<p>WILL:	[MUSIC] I mean, this thingâs like â thereâs a website called ZoomInfo, I think.  Iâve seen them on the underground forums literally mentioning linking to the websites; hereâs how much they have in daily â in yearly profit and turnover.</p>
+
+<p>JACK:	Oh man, what a mess, huh?  Publicly-traded companies have to disclose their profits to shareholders so they can see whatâs going on.  But of course, criminals are taking a look at that too, and theyâre like oh, this company had a stellar year.  Thatâs a nice juicy target.  Anyway, so this is what GandCrab focused on, companies with lots of money that they could get into.  Theyâd get in, encrypt the systems, and demand ransom to unlock everything.  And guess what?  Companies were paying this ransom hand over fist.</p>
+
+<p>WILL:	Yeah, if you can believe these criminals, they claim they earned $2 billion, roughly two-and-a-half million a week.</p>
+
+<p>JACK:	I, for one, donât believe that number at all.  I mean, they posted these numbers themselves, and I think they just posted big numbers to look like they were doing great.  Iâm guessing itâs more like $2 million that they made, not $2 billion.  But thatâs still amazing profits, though.  Now, GandCrab wasnât just ransomware, but it evolved into ransomware as a service.  If you wanted, you could pay to use this ransomware to infect a company, but youâd have to first get access into that company in order to deploy GandCrab into it and infect it.  But then the GandCrab team would handle it all from there, working with victims to collect money and supply a decryption key.  Then youâd get paid if the victim paid up.  Some of these people who used GandCrab as a service got arrested in different places in the world because as you could imagine, extorting people and companies is illegal.  But as GandCrab grew, they needed to recruit more people to their team.</p>
+
+<p>WILL:	On the forums that they recruited cust â where they got customers from, they all speak Russian.  These are all Russian-speaking threat actors.  Thereâs a number of countries that speak Russian, but thereâs only so many countries that allow cyber-criminals to operate with almost impunity except a very small margin â marginal amount, and thatâs Russia.</p>
+
+<p>JACK:	Okay, so yeah, thereâs not much you can do to stop cyber-criminals operating out of Russia.  The US has no jurisdiction or way to work with Russian to arrest these people, and Russia doesnât seem to care too much if itâs not attacking Russian companies.  So, it seemed like GandCrab was living large.  It had all the people, malware, victims, and customers all set up, and the cash flow was pouring in, and no trouble from the police.  [MUSIC] But then it all suddenly stopped.  GandCrab posted on a forum saying theyâre retiring.  You know what?  I get it; it makes sense.  They earned $2 billion.  Iâd retire, too.  But they didnât retire.  They spent time retooling, innovating, and improving their ransomware as a service business.  They created a new ransomware malware.  This time they called it REvil, and victims started seeing what this could do firsthand.</p>
+
+<p>WILL:	So, REvil first appeared in April 2019, and it sort of began with â in the first zero to two months, it did the things that most ransomware does, which deletes backups, changes the wallpaper, does â they actually do a language check, so before a ransomware is executed, it will check the language that your computer is set to, and if itâs set to a list of countries that are members of the â what you call the Commonwealth of Independent States, the CIS â so if itâs a member of the CIS, then the ransomware will not execute and it will just exit.  So, whoever is behind REvil doesnât want to target countries that are basically ex-Soviet Union.</p>
+
+<p>JACK:	So, REvil came on the scene, which again is the name of both the ransomware and the group operating it.</p>
+
+<p>WILL:	I call them REvil because they â Iâm pretty sure thatâs what they called themselves.  Itâs based on Resident Evil.  They called themselves R Ransomware Evil, short for REvil.  I mean, GandCrab, there was about five versions of it.  So, it was sort of like an experiment until they came out with REvil, which was basically the crown prince of ransomware.  [MUSIC] It was so perfectly developed for what it was designed to do.  It just sort of â every â all their entire work had sort of â this was like their magnum opus of ransomware.</p>
+
+<p>JACK:	But hereâs the thing; the group behind REvil saw how much money GandCrab made as a service that they realized thatâs what they should focus on.  Offering ransomware as a service was more profitable than putting ransomware on systems themselves.  The idea here is that other criminals in the world would get access into the networks, and then they could use REvil to infect that network with ransomware.  Then REvil does the rest; collecting payments, decrypting systems, helping victims get themselves sorted, and then theyâd split the ransom with whoever deployed it on that company.  So, criminals all over were using REvil to infect systems with ransomware, and they called their customers affiliates.</p>
+
+<p>WILL:	It would all start with the affiliate wanting to launch an attack.  They can either do it by going to REvil first and becoming an affiliate and have a plan to use their malware, or the affiliate can launch an attack and then go and physically buy access to one of these â this â these ransomware platforms and then deploy it.  So, itâs different stages of when REvil would be introduced.  It would start with the OSINT, it would start with picking a target, it would start with going to the underground forums looking for a way in, because you can buy RDP credentials.  You can buy cookies.  You can buy just e-mail account credentials and then start from there, or you can do that sort of initial exploitation yourself.  One of the most common ways that REvil used to arrive inside the network was via exploiting a vulnerability in a public-facing server.</p>
+
+<p>So, once the vulnerability had been exploited, they would deploy a web shell or some â launch some power shell codes on the server, establish that initial foothold, and then do some reconnaissance inside the network and then spread around as best they can, and as well as escalate privileges.  [MUSIC] Then once they are spread around enough and theyâve escalated their privileges to domain administrator level, then they will introduce the ransomware.  One of the most â the common way they deploy it is via scheduling a task on all the computers in the network via using the domain administrator credentials.  So, then everything is rebooted and you have about â you could have thousands of machines at any one time.  I believe â I think it was one â a telecom company in South America had 15,000 workstations locked up overnight, and each one had the â  had an â a blue background saying, âYou have been attacked by REvil.  Open for â open the note for instructions on how to pay the ransom.â</p>
+
+<p>JACK:	Early on when REvil was first coming up, Will got to see the impact of them firsthand.  He was traveling out of London and had to go through the Heathrow Airport to fly somewhere.</p>
+
+<p>WILL:	In Heathrow you have these currency exchanges run by a company called Travelex.  When I went into the currency exchange, I saw everything was extremely hectic.  People were shouting, it was an extremely long queue, and I was like, what the hellâs going on?  Then I realized; I was like oh, I remember reading a report not too long ago that Travelex had been hit by REvil ransomware.  I took a pic â I basically took a picture on my phone âcause I could see all the employees were using pens and paper and clipboards and things because none of the computers worked.  Everything was down for weeks.  This was about three weeks after the attack had happened, and Travelex reportedly paid a $2.3 million ransom, I believe.</p>
+
+<p>JACK:	[MUSIC] Whoa, what a payday.  I mean, you can put ransomware on a lot of systems, but if nobody ever pays to get their stuff unlocked, then itâs all for nothing.  But when someone pays $2.3 million to have their computers unlocked, then thatâs the fuel that makes REvil ransomware crew keep going.  Some people think this whole ransomware thing can just all go away if we all agree to never pay the ransom ever again.  But the truth is, companies are still paying in a big way, which incentivizes ransomware crews to keep at it, and thereâs no guarantee these companies wonât get re-infected the next day and have to pay it all again.  Clearly, the best idea if you get infected is to have good backups that you can restore rapidly.  But REvil knew this, so they purposely looked for how systems got backed up, and then they went and wiped those backup servers first.  This is probably why it was so effective.  If the company had their backups wiped out and no path of rebuilding, itâs a lot cheaper to pay a few million dollars to get things back up and running.  I mean, three weeks of being down could cost the company over $2 million in losses anyway.  Surely itâs a tough spot for any company to be in.  After a while, researchers started to notice a guy named Unknown who kept making posts on the forum claiming to be part of REvil.</p>
+
+<p>WILL:	So, he used to post to two Russian-speaking underground forums.  One of them was called Exploit and another one was called XSS.  So, kind of typical names for hacker forums, but these two forums have been going for like, about fifteen years and theyâre basically the two most popular hacking forums for Russian â like, hardened Russian cyber-criminals.  [MUSIC] He was basically saying â boasting how REvil was the best ransomware.  So, it was competing with several other strains at the time, including Maze and Ragnar Locker, I think, as well.  He basically became the frontman of the whole operation.  Everyone â it was like his net â his alias was basically synonymous with REvil, and yes, he went on to do interviews with several people online.  Theyâd interview him, say how did you decide to get into the business of ransomware, or how much money have you made â make doing ransomware?  Those sort of questions.  Yeah, it sort of â it just makes it sound like itâs a huge â itâs a big order â itâs basically a big organization of cyber-criminals.  I would probably say thereâs anywhere between ten and twenty individuals actually connected to the running of the REvil core business, the core ransomware as a service business.</p>
+
+<p>JACK:	Another thing this Unknown guy was saying was how REvil was doing more to extort people than just demanding ransom.</p>
+
+<p>WILL:	They would then step it up a notch by leaking â stealing data and then leaking it with â to a Tor website.  Because itâs on Tor, you canât get it taken down.  Itâs like a wall of shame.  Thatâs what they call it.  Itâs there forever.  Then you know, a few months later, theyâd add another level of extortion.  So, thatâs what we â they used to call double extortion, was encrypting your files and then leaking your data.  They had a third level; they would now begin to DDoS you or your partners, and they would DDoS your websites until you actually began negotiations with them.</p>
+
+<p>JACK:	Whoa, wait?  What?  Theyâre DDossing you, too?  This is where they flood your website or service with so much traffic that your website is just completely unusable.  Itâs a low blow to hit you while youâre down.</p>
+
+<p>WILL:	If you still havenât entered the chat with them â because in the ransom notes they have a link to the chat â if you havenât entered the chat with them to negotiate paying the ransom or anything like that, they basically believe oh, youâre able to recover.  Like, no â if youâre a big company, like international company, then you will basically have backups, youâll be able to restore files, youâll be able to basically carry on after a few weeks of recovery, rebuild the network, whatever.  So, REvil didnât like that, when companies can recover on their own, so they will DDoS your website.  If you have â say if youâre â you have a â youâre a retail company; you have customers coming to your website.  Every hour is money, so if theyâre DDossing you, taking it down, theyâre still costing you more and more money.</p>
+
+<p>JACK:	Okay, up until this point Iâve been referring to REvil as a ransomware group, but at this point, this is mean.  This is more like street gang behavior, going around hurting people and robbing them without any remorse.  So, Iâm gonna now start referring to them as the REvil cyber-gang, because these guys were ruthless.  Here, let me play something for you.  This is a voicemail that a ransomware gang member left on an employeeâs phone, a victimâs phone.  Itâs not from the REvil cyber-gang; itâs a different one called SunCrypt, but I think itâs worth playing here just to give you an idea how cold-blooded these guys can be.</p>
+
+<p>SUNCRYPT:	This message is to authorized IT specialist or to company management representative.  We are SunCrypt group.  We hacked your company yesterday and now we have around 80 gigabytes of your company data encrypted to new servers as well as downloaded to our servers.  We have personal information, partner data, financial and accounting data of your company, and much more.  You need to start negotiations with us about decrypting your IT servers and bringing your company data back.  Negotiate with us and you will get a decrypter, together with all your data back, within one day.  No one in the world will know about this leak, but in case of your refusal to cooperate, we will run a great damage to your business.  You will lose ten times more in courts due to violation of the laws on GDPR and your partnerâs data leak.  We will inform your employees, partners, government, about this leak.  Your data will be published in public blogs and told to competitors.  We will inform media about this successful cyber-attack to your company, and backdoor access to your company data will be sold to other hacker groups, and this will be the last day of your business.  We donât want to do that for sure, and we will not do that if you will negotiate successfully.  So, we are waiting for you in the chat.  Think about your future and your families.  Thank you.  Bye.</p>
+
+<p>JACK:	Think about your future and your families?  Whew, thatâs so ominous.  I mean, what would you do with a threat like that?  Now, sometimes the REvil cyber-gang would just go infect targets themselves, and if they did, theyâd get to keep 100% of the ransom they make from that.  But in most cases, they worked with their customers or affiliates to infect the targets for them.</p>
+
+<p>WILL:	So, it is known that they would â they basically split the ransom with the affiliate.  Theyâd say, if you hit a company and youâre able to get them to basically agree to pay a $10 million-ransom, itâs â weâll keep $60 million, youâll get $40 million.  Like a 60/40 or a 70/30 split, because theyâre â at the end of the day, REvil, the RaaS, the ransomware as a service, would provide not only the malware but also the decryption, functionality, which was one of the â is one of the best, most complex decryption systems of any of the ransomware families at the moment, even.  Then they would â they add all the infrastructure for darknet chats, darknet payment sites, money laundering.  They fried a lot of back ends.  So, itâs a worthwhile split for both parties.</p>
+
+<p>JACK:	So, it was on the affiliate to figure out a way into the networks to deploy REvil as a service.</p>
+
+<p>WILL:	So, I believe the affiliates are choosing the targets.  Theyâre basically getting into these companies, doing the â they basically do the legwork, as Iâd like to describe it.  Like, somewhat â itâs a whole ecosystem.  You have someone who gets an initial foothold in the network.  Theyâre called the initial access broker.  They will sell that â however small it is or big it is, theyâll sell that to someone else, the REvil affiliate.  The REvil affiliate will spread around the network and escalate privileges and steal data.  Then they will deploy REvil.</p>
+
+<p>JACK:	[MUSIC] Itâs just nasty, like all of it.  For REvil to make it a turnkey solution so itâs easy for anyone to commit crimes with, and then people are just buying their way into these companies, sometimes through disgruntled ex-employees.  Then REvil comes in and destroys backups and encrypts everything and then DDosses you and then taunts the victim until they pay; itâs awful.  But weâre just getting started.  You gotta hear what they do next and what happens at the end of all this.  Weâre gonna take a short break here, but stay with us.  REvil continued to infect companies and make millions of dollars from these ransoms.  I believe there are lots of companies that weâll never know about that got hit with this, but there are some companies we do know that got hit with this, because it made the news.  One of them was in 2019, and the victim was the Texas government.</p>
+
+<p>WILL:	Yeah, so the Texas government one was interesting because it sort of started a trend that REvil liked to â it was â it ended up being deployed at what you call a managed service provider, which is an IT company that handles the IT of other organizations.  So, the Texas government, they actually paid a single company to just manage the IT of all their institutions.  Each institution doesnât have to have an IT department then; itâs just one company that does it all for them.  So, one of the REvil affiliates managed to get into the Texas government and deploy â I think it was twenty-two different governments that ended up being â entities ended up being attacked in this one instance.</p>
+
+<p>JACK:	This one made the CBS news.</p>
+
+<p>HOST1:	In Privacy Watch now, government computers in twenty-two Texas towns are being held hostage by ransomware.  The stateâs Department of Information Resources said that the coordinated attack happened on August 16, and many of the local governments still have not been able to get back online.</p>
+
+<p>JACK:	[MUSIC] See, when so many government facilities have a computer outage all at the same time, it makes the news because itâs a noisy problem.  Itâs not something you can easily cover up quietly or make it go away quickly.  Of course, REvil was saying hey, all these problems can go away if you pay us $2.3 million.  But the Texas government did not enter the chat and did not pay a single cent.  They recovered all on their own somehow.  In May 2020, a company called GSM Law was the victim to this cyber-gang.  Hereâs CNBC news.</p>
+
+<p>HOST2:	An entertainment law firm run by Allen Grubman confirming its computer systems were hacked.  The hackers say they have sensitive information about several big-star clients, and those hackers want $42 million in ransom.</p>
+
+<p>JACK:	[MUSIC] Whoa, $42 million?  Thatâs the largest ransom payment ever demanded at the time.  They must have stumbled upon something spicy in that network.</p>
+
+<p>WILL:	So, some of GSM Lawâs clients include Madonna, Elton John, Lady Gaga, and probably most famously, Donald Trump.  Itâs a big New York law firm, so Donald Trump, heâs lived in New York his whole life.  So, REvil managed to get into GSM Law and steal â allegedly steal hundreds of gigabytes of data from them; 756 gigabytes, they claimed.  They threatened to basically disclose Donald Trumpâs solicitorsâ information, like from his lawsuit.  Everyone knows Donald Trump has like, thousands of lawsuits on the go.  So, REvil was basically able to go through them all.</p>
+
+<p>JACK:	Huh, thatâs interesting.  REvil is presumed to be operating out of Russia.  I wonder if they had to stop for a moment and think about what to do with Trumpâs legal documents.</p>
+
+<p>WILL:	It became a whole thing.  Everyone was saying oh, this is like cyber-terrorism or whatever.  How can Russia allow this to happen?  This is meddling with the presidency or whatever, âcause he was still president at the time.  Yeah, it â basically REvil said â they had to come out and make a statement, like we are apolitical, weâre just financially-motivated criminals.  We donât want to cause any problems.  They actually seemed to â I mean, itâs kind of a weird thing to say, but they actually seemed to like Donald Trump, I think âcause they were â they thought of themselves as these ultra-rich, super-smart cyber-criminal masterminds, and they sort of admired Donald Trump as he was really rich as well.</p>
+
+<p>JACK:	[MUSIC] Hm, research into this is a little murky.  REvil had released a little bit of what they stole to prove they had something from one of GSM Lawâs clients, and then they said the next person weâre gonna dump records on will be Trump.  One news agency looked into this and said Trump isnât even a client of GSM Law.  So, we think Trump probably wasnât a client and just mentioned in some lawsuit.  But you might wonder what happened next with GSM Law?  Did they pay the ransom or what?  Well, we donât know.  Nothing happened.  We never saw REvil release any data on Trump or dump a bunch of legal documents, so that makes me think that either they never had the data, which they did lie sometimes, or GSM Law negotiated the ransom.  Iâm not exactly sure what happened with that.  Now, ransomware at this point was looking like a very lucrative way for criminals to make money.  If you think about it, suppose you hack into a company and you were a criminal and you wanted to profit off this access.  What are your options?  Okay, well, you could sell your access that you have, but I canât imagine this making very much money; maybe a thousand bucks.</p>
+
+<p>You could try to install some cryptominers on there, but thatâs such a slow process to make money from.  You could try to look around for some database to steal and then maybe sell that database to someone, but thatâs a tough market to be involved with.  You could do a business e-mail compromise attack and try to figure out whatâs going on in the finance department and see if you can get them to send you some money, or you could look around to see if thereâs anything valuable in the company to steal, like money, right?  In fact, there was another group at the time called FIN7, which focused on hacking into banks and stealing credit cards.  Well, you would think that thatâs a very good way to make money illicitly, and it is, but FIN7 was seeing how much easier it is to just put ransomware on a computer and just leave it at that, because thereâs a lot of work to dealing with thousands of credit cards or trying to launder money and make it clean.  But itâs so much easier to just wait for a single ransomware payment in Bitcoin and then move on.  Since FIN7 was already pretty good at breaking into networks, this really turned them on to a whole new revenue stream.</p>
+
+<p>WILL:	Yeah, so DarkSide was FIN7âs first ransomware project.  They had tried out REvil for a few times.  Their infrastructure had been connected to REvil attacks via pivoting on IP addresses and things from known attacks.  FIN7 basically realized okay, every time we use an â every time we launch an attack using REvil, we have to give them a cut.  Isnât it just easier if we develop our own ransomware and then launch our own attacks?  Then we donât have to give a cut to anyone.  We can keep it all for ourselves.  So, after a time they realized okay, itâs actually â you make even more money if you begin ransomware as a service, because then you just rent out the ransomware to multiple groups and begin making money your own way.</p>
+
+<p>JACK:	Wow.  So, at that point, FIN7 had totally quit robbing banks and turned into a ransomware as a service business because of how profitable they saw REvil was.</p>
+
+<p>WILL:	[MUSIC] Ransomware is the most valuable way to make money when youâre inside any network, anywhere in the world.</p>
+
+<p>JACK:	FIN7 was one of the most profitable criminal groups out there, so itâs just crazy to hear how they switched from robbing banks to ransomware.  But at this point they became competitors, and Iâm not going to go into any more details about FIN7 or DarkSide in this episode, but rest assured, thatâs a really interesting story all by itself, and Iâll have to cover that in an episode someday.  Now, when REvil gets a ransomware payment, they typically receive it in Bitcoin, and then theyâre actually pretty good at laundering that money by typically converting it into Monero, which is much more secure and I think untraceable, and then theyâd be able to cash it out without it leading back to whoever is behind REvil.  But I have to imagine how insane of a chat it must be when a company does want to pay a million-dollar ransom in Bitcoin.  These ransomware negotiation chatrooms must be the wildest thing ever.</p>
+
+<p>WILL:	Iâve heard from ransomware negotiators and incident response people that these ransomware teams have much better customer service than most companies do.  They will guide you step-by-step the whole way on how to pay a ransom, how to get the cryptocurrency, how to store it, how to send it to them, all the checks, all the balances.</p>
+
+<p>JACK:	I mean, can you imagine being the IT admin and all your computers are encrypted, and your management has given you the go-ahead to pay the ransom?  So, you get on Tor and enter the ransomware negotiation chatroom.  You might say okay, look, weâre willing to pay, but we donât have any Bitcoin.  Can we just wire you the money?  REvil ransomware negotiators are like LOL, no, thatâs traceable.  You need to send us Bitcoin.  Go to an exchange and buy some.  [MUSIC] Hereâs the problem; you canât just show up to Coinbase or Gemini or Binance or whatever and be like uh, yeah, Iâd like to buy $2 million in Bitcoin, please.  No, they have daily limits set up.  You can only buy a few thousand dollarâs worth at a time, so you call up customer support at an exchange and you tell them listen, I want to buy $2 million worth of Bitcoin.  The exchange might be like whoa, thatâs a lot of money.  Whatâs that for?  Youâre like oh, itâs to pay a ransom.  Thatâs a red flag for the exchange.  I think by law, exchanges canât sell you Bitcoin if they know youâre going to use it to pay a ransom with.  So, it becomes a huge ordeal just to secure that much Bitcoin.</p>
+
+<p>WILL:	You have to remember that when millions of dollars are involved here, like if a company, it says okay, yeah, we plan to pay $5 million in a ransom, they will hire a expert to help them with it.  So, there are ransomware negotiation firms now that their whole job is to help companies get through when theyâve been hit by a ransomware attack.  So, these negotiators know all the ways to pay a ransom, basically.  They know â they even know â they keep track of all the wallets, they keep track of all the contact details of each ransomware group, so they know â sometimes if these negotiators respond to multiple incidents, they will be able to recognize the person on the other end of the ransomware negotiation portal.</p>
+
+<p>JACK:	What?  Thereâs a whole industry out there helping people negotiate and pay ransom?  This is madness.  I mean, think about it; imagine if youâre in the chat with REvil and youâre like, how do I do this?  Theyâre like okay, well, you could just call this company and theyâll help you walk through it.  Itâs just so zany to think about this.  I wonder, do these ransomware negotiators offer any sort of referral program?  So, if REvil refers them and they hop on the chat and like oh, hey Dmitri, howâs it going?  Thanks for referring me.  Iâll make sure to get you that referral bonus.  Or take it a step further; imagine REvil refers you to a quote, unquote âexpert serviceâ whoâs just another criminal, and you give them $2 million to buy Bitcoin and they just take off with the money.</p>
+
+<p>WILL:	Well, there are legitimate companies, but as you say, this could easily be taken advantage of and has been by companies that really do some really shady stuff.  Like, say if a company gets hit by ransomware, sometimes theyâll come in and â the company will come in, like the response company will come in, and say yeah, yeah, we can deal with it all for you.  How much did the ransomware gang tell you it was gonna cost?  Oh, $4 million.  Well, actually itâs gonna cost $5 million.  Then theyâll pay the ransom, decrypt the files, clean the network, and then be like yep, hereâs your â hereâs your bill; $5 million.  But you just used the decryption key.</p>
+
+<p>JACK:	[MUSIC] If you turned on NBC News, on June 1, 2021, you would have saw this.</p>
+
+<p>HOST3:	Itâs another attack on critical infrastructure, this time the food supply.  The worldâs biggest meat producer, JBS, forced to curtail operations after a ransomware attack.  At least six plants in the US shut down.  Operations also affected in Australia and Canada.</p>
+
+<p>WILL:	That was a huge international incident.  Everyone said that was the one step too far.</p>
+
+<p>JACK:	JBS is the largest meat supplier in the US.  I think they produce over 20% of the meat for the US, with locations in Canada and Australia.  Because it was so big, it was deemed critical infrastructure.  If the food supply chain is unable to deliver food, well, that can be a really big problem.</p>
+
+<p>HOST4:	The meat-packing firm JBS USA paid a ransomware equivalent to $11 million after it fell victim to a cyber-attack.  The companyâs US CEO said on Wednesday they made the payment to protect their customers.  Last weekâs cyber-attack led to the suspension of cattle slaughtering at all of JBSâs US plants for a day.  The company produces nearly a quarter of Americaâs beef.</p>
+
+<p>JACK:	$11 million paid up.  Thatâs a lot of Bitcoin to send over to someone that you hope will fulfill their end of the deal and give you an encryption key.  What a nail-biter thatâs gotta be when you click Send and youâre just sitting there in chat, waiting for the criminal to give you a key.  Whew.</p>
+
+<p>WILL:	There was another company that was another, in quotes, âstep too farâ.  Theyâve done it now.  They hit a company called Sol Oriens, which was a nuclear weapons contractor for the US.  This is like, okay, now youâre affecting the nuclear triad or something like that, you know?  How can this ransomware group get away with all of this?</p>
+
+<p>JACK:	But still, we havenât gotten to REvilâs biggest hits yet.  Over this period of years, REvil was getting into hundreds of companies and putting ransomware on them.  The ones who didnât pay would get posted to their blog.</p>
+
+<p>WILL:	Their leak site had 282 leaked companiesâ data published to it.  So, thatâs how many companies didnât pay, because they were leaked onto the leak site.  Some of the stats coming out of Europol said that they had launched thousands of attacks.  [MUSIC] Probably one of the smartest things REvil ever did was they went into a â what weâd call a cyber insurance company.  So, because ransomware is such a huge thing, companies â like, when they get hit by a ransomware attack, it can cost them not only X-number of million dollars for the ransom, but to actually clean up the network and restore it or rebuild it could cost them hundreds of millions.  So, they need insurance to be able to cover that cost for ransomware specifically.  So, what REvil did was they went into an insurance company and they looked at all of the insurance companyâs clients and they hit each target one by one, âcause they know how much they were gonna get paid out for from the insurance cost.  Then they hit the insurer themselves as well, for good measure.</p>
+
+<p>JACK:	Hereâs a clip from CBS News that tells us about the next victim.</p>
+
+<p>HOST5:	FBI investigating what may become one of the worldâs largest ransomware attacks on companies â get back to work following the holiday weekend.  A Russia-based cyber-criminal group called REvil is demanding a $70 million-ransom.  Hackers hit IT software company, Kaseya, Friday.</p>
+
+<p>WILL:	[MUSIC] Wow, where do I begin?  The Kaseya, that was basically one of the biggest supply chain incidents since NotPetya.  Kaseya are the manufacturers of a software called â Kaseya VSA is their software.  Companies, like I mentioned before, managed service providers, will buy Kaseya VSA and use it to do administration on their customersâ networks.  So, by going into the Kaseya software, REvil basically had a foothold into all of the MSPâs customers.  So, by exploiting the Kaseya software to deploy REvil, they were able to hit 1,500 networks in one go overnight.</p>
+
+<p>JACK:	Whoa, 1,500 different companies hit with the REvil ransomware in one day?  Thatâs a massive amount of damage.  This is whatâs called a supply chain attack, because REvil was able to get into all of Kaseyaâs customers, which were sort of like tech support companies who had access into other companies, and those companies were hit with REvil, too.  This was a crazy event, perhaps one of the biggest ransomware attacks ever.</p>
+
+<p>HOST6:	In Michigan Saturday, President Biden said intelligence officials are investigating.</p>
+
+<p>BIDEN:	The director of the intelligence community is gonna be doing a deep dive on whatâs happened.</p>
+
+<p>HOST6:	Last month, he warned the Russian president to rein in cyber-criminals or face a strong US response.</p>
+
+<p>BIDEN:	If it is, these are â with the knowledge of and/or consequence of Russia, then I told Putin we will respond.</p>
+
+<p>JACK:	So, this happened in July 2021.  Biden was president by then.  Itâs hard to hear, but he said in this impromptu interview in a grocery store in Michigan that if Russia is in any way involved, then he told Putin heâs going to respond.  Itâs wild to me when the president of the US is able to just jump into a discussion about ransomware off the cuff like that.  I felt like such a geek all my life, head down in a computer, learning about the most geeky things you can imagine, and to look up from the screen and see it talked about on the world stage like that is just a trip.  Oh, look, thereâs the president fueling a question about the REvil ransomware.  Far out.  So, what were the ransomware demands for Kaseya?</p>
+
+<p>WILL:	Well, it was actually one of the highest ransom demands ever in history.  They demanded $70 million in Bitcoin.  After the attack took place, one of the â it popped up on the REvil blog, which was called the Happy Blog, by the way.  The Kaseya attack popped up and it said â this is what REvil wrote; they said âOn Friday, we launched an MSP â we launched an attack on MSP providers.  More than a million systems were infected.  If anyone wants to negotiate about a universal decrypter, our price is $70 million in Bitcoin.â</p>
+
+<p>JACK:	I gotta say, this is a situation that Kaseya probably didnât plan for.  [MUSIC] I mean, suppose they have a donât-pay-the-ransom policy.  Okay, thatâs fine.  Itâs a good policy to have.  But they arenât the only victims here, and it was their fault that caused hundreds of other companies to be infected with ransomware.  Do you owe it to all of them as sort of an apology?  Like, sorry for getting you ransomwared; hereâs the decryption key.  Hope you stay as a customer.  This was a preventable problem.  There was a vulnerability on Kaseyaâs servers that gave REvil the foothold to take over a server.  At least one person reported this to Kaseya before the attack, too, and I think they were working on fixing it when all this happened.  So, Kaseya must have looked at this $70 million-ransom demand and took a deep breath, and had a long think about it.</p>
+
+<p>WILL:	Again, itâs that old thing of, we donât want to be the company thatâs paid the biggest ransom in history.  So, to give credit to Kaseya, they went straight to the FBI for help, and the FBI are very, very well-experienced with these types of ransomware attack.  So, they guided them and were basically with them by their side the whole time.  At the end of the day, it basically â the decisions became the FBIâs decisions at the end of the day, from â for what Kaseya was supposed to do.</p>
+
+<p>JACK:	Kaseya didnât pay the ransom.  They called the FBI, who apparently sprang right into action.  The FBI actually explained what happens next.  Hereâs the director of the FBI, Christopher Wray, in a press briefing explaining what happened.</p>
+
+<p>WRAY:	When Kaseya realized that some of their customersâ networks were infected with ransomware, they immediately took action.  They worked to make sure that both their own customers, managed service providers, and those MSPâs customers downstream quickly disabled Kaseyaâs software on their systems.  They also engaged with us early.  The FBI then coordinated with a host of key partners, including CISA and foreign law enforcement and intelligence services so Kaseya could benefit from all of our expertise and reach as it worked to put out the fire.  Kaseyaâs swift response allowed the FBI and our partners to quickly figure out which of its customers were hit, and for us to quickly share with Kaseya and its customers information about what the adversaries were doing, what to look for, and how the companies could best address the danger.</p>
+
+<p>Here, we were able to obtain a decryption key that allowed us to generate a usable capability to unlock Kaseyaâs customersâ data.  We immediately strategized with our inner agency partners and reached a carefully-considered decision about how to help the most companies possible, both by providing the key and by maximizing our governmentâs impact on our adversaries, who were continuing to mount new attacks.  When the FBI is engaged early, we can provide victims more and better support.  We can get them intelligence and technical information they need faster, and we can work quickly back from the intrusion to follow and seize the criminalâs money before it can jump through wallet after wallet and exchange after exchange.</p>
+
+<p>JACK:	Hm, he makes it sound like theyâre willing to help anyone with ransomware.  I mean, listen to the Deputy Attorney General, Lisa Monaco, in the same press briefing.</p>
+
+<p>MONACO:	To Americans watching today, to those own small businesses, to those who run Fortune 500 companies, who manage hospitals and oversee school districts, this case is the reason you want to work with law enforcement.  Know that if you pick up the phone and if you call the FBI, this team is waiting for you on the other end of the line.</p>
+
+<p>JACK:	[MUSIC] I just wonder if thatâs a little misleading.  I mean, people e-mail me all the time telling me about how they were extorted or scammed or hit with ransomware and just want some advice.  Is the proper advice that I should give them is that they should call the FBI?  Just skip the police altogether and go straight to the FBI?  You would think the FBI would have some kind of threshold for how big something should be before we call them.  Like, maybe they only care about larger extortions or attacks on national infrastructure, not small-scale stuff like my local barberâs website getting their WordPress site taken over, right?  Or the question is, how bad of a computer problem does it need to be before you call the FBI?  Thereâs a big difference between your whole network being ransomed versus one user account being compromised.  Listen, Iâm curious now; if youâve ever called the FBI over a computer problem youâve had, I want to hear from you.  Send me a note.  Tell me how it worked out.  Did they get back to you right away or wait six months, or no reply at all?  I just imagine the FBI must be flooded with calls and problems, but thereâs no way they can get back to all the people who report computer problems to.  Anyway, sorry, a little rant there.  Okay, yeah, what FBI director Wray said was really interesting.  They obtained a decryption key?  What?  How?  Thatâs amazing.  Did they reverse-engineer the malware?  Did they join the chat and pressure the REvil gang to provide a key or else kinda thing?  Iâm really curious how they obtained that.</p>
+
+<p>WILL:	You know, rumor has it the FBI were able to compromise the REvil servers after â during the Kaseya incident.  The FBI is allegedly â because I donât know if this is proven or not, but they were able to compromise the system, the REvil systems, following this.  Soon after they post about Kaseya, the ransom â the REvil servers all go offline.</p>
+
+<p>JACK:	What we do know is that REvil went quiet just after the Kaseya hack, and it stayed quiet for months.  Then out of the blue, the FBI gave a press briefing.  Hereâs the US Attorney General, Merrick Garland.</p>
+
+<p>GARLAND:	Today we are announcing that we are bringing to justice an alleged perpetrator of a significant, wide-reaching ransomware attack.  On July 2, the multinational information software company Kaseya and its customers were attacked by one of the most prolific strains of ransomware known as REvil.  To date, REvil ransomware has been deployed on approximately 175,000 computers worldwide, with at least $200 million paid in ransom.  Six weeks later, on August 11, the Justice Department indicted Yaroslav Vasinskyi, also known by the online moniker, Robotnik.  The indictment, which was previously under seal, charges him with conspiring to commit intentional damage to protected computers and to extort in relation to that damage, causing intentional damage to protected computers, and conspiring to commit money laundering.  The indictment charges that Vasinskyi and co-conspirators authorize â authored REvil software, installed it on victimsâ computers, resulting in encryption of the victorsâ â victimsâ data, including in the July 2 attack, demanded ransomware payments from those victims, and then laundered those payments.</p>
+
+<p>Two months after the indictment, on October 8, Vasinskyi crossed the border from Ukraine into Poland.  There, upon our request, Polish authorities arrested him pursuant a provisional arrest warrant.  We have now requested that he be extradited from Poland to the United States, pursuant to the extradition treaty between our countries.  In addition to securing the rest of Vasinskyi, the Justice Department has seized $6.1 million tied to the ransom proceeds of another alleged REvil ransomware attacker, Russian national Yevgeniy Polyanin.  As set forth in the public filings related to the seizure, Polyanin, whom we also charged by indictment, is alleged to have conducted approximately 3,000 random â ransomware attacks.  Polyaninâs ransomware attacks affected numerous companies and entities across the United States, including law enforcement agencies and municipalities throughout the state of Texas.  Polyanin ultimately extorted approximately $13 million from his victims.</p>
+
+<p>JACK:	Whoa, so they caught one guy who they said was the author of the REvil malware and seized funds from another guy.  This ultimately disrupted REvil.  They werenât active at all after this.  Now, along with these indictments, they released photos of these people, and here is where Will could look into the eyes of the people behind this malware that he spent years following and investigating.</p>
+
+<p>WILL:	[MUSIC] The indictment dropped, and it had the names of these two REvil affiliates.  These were the first two names we had for any of them.  I immediately â and shout out to my guy at my team in curated intelligence â we joined the voice chat in Discord and we were all just talking about it and basically celebrating.  Then we quickly were like oh, using these usernames and names and things, we can find all their social media profiles, because we can use OSINT to find them.  We found his VK account and we found his other social media profiles.  We found he ran an Instagram account which was used to sell DDoS attacks with number-spoofing, like phone call DDoS attacks and things.  He even had a certificate for Microsoft and there was a picture of him at his college and him on holiday and things.  Yeah, he just looked like a normal young guy that was obviously good at IT.  It was kind of â yeah, it was surreal just to see him in the flesh.</p>
+
+<p>JACK:	Now, it seems like the bulk of the people involved with REvil were somewhere in Russia, and the US authorities donât really have a way to arrest people in Russia or even get Russian authorities to arrest them.  But something very particular happened next.</p>
+
+<p>WILL:	Yeah, so it was â and very interesting timing.  In January, on the January 14, I believe it was, the Russian FSB released a press release that said they had arrested fourteen members of REvil from Moscow and St. Petersburg.  The FSB said they seized more than 426 million Rubles, $600,000, and half a million Euros along with cryptocurrency wallets, and twenty expensive cars.  It was this â it made news globally that this â the gang had finally been arrested, you know?  REvil is over.  Hereâs videos of the FSB busting down the door, putting them on the ground, and taking them away.  It seemed justice has been served.</p>
+
+<p>JACK:	Hereâs an Al Jazeera news clip.</p>
+
+<p>HOST7:	[COMMOTION, SHOUTING] The scene was not uncommon.  Russian police and intelligence agents harshly taking down more than a dozen men, all played out on television.  The reason was extraordinary.  The Russian government tells the Biden administration the operation dismantled a group of hackers inside Russia on behalf of the United States.  Security agents took down alleged hackers from the ransomware group REvil at over two dozen addresses, seizing millions of Rubles, vehicles, and technology.  Among those arrested, alleged ringleader Roman Muromsky, appearing in court in a cage, and Andrei Bessonov, both wanted by the US.</p>
+
+<p>JACK:	Huh.  Thatâs it, then.  Case closed?  Story over?  Itâs all nicely wrapped up with a bow at the end, and all the criminals are caught.  Well, Iâm not sure.  Here, let me show you what I mean.  The exact same day of these arrests, on January 14, 2022, CBS News reported this.</p>
+
+<p>HOST8:	Ukrainian officials are assessing the damage done by a massive cyber-attack on government servers.  The US has condemned the attack and vows to help with the investigation.  The hack comes as Ukraine faces a potential invasion by Russia.  Some Ukrainian officials feared this type of cyber-attack prior to Russian military action.</p>
+
+<p>JACK:	[MUSIC] A cyber-attack on the Ukrainian government.  Gosh, who would possibly do that?  But is this somehow related?  I should admit that Iâve officially put on my conspiracy theory hat here and Iâm just guessing at stuff from here on out, but there are some weird questions that arise from all this.  Like for instance, if Russia comes out with news that theyâve arrested the REvil cyber-gang and did it as a favor to the United States, is that an attempt to control the news cycle of the day?  This way, less news is on the Ukraine cyber-attack and more news is on how great Russia is for capturing these criminals.  Whatâs all this talk about doing favors for the US?  Russia doesnât typically arrest criminals on behalf of the US, and weâve seen how Russia lies to control the narrative.  So, is any of this real?  Did they really arrest anyone?  I mean, there are so many more ransomware gangs walking freely in Russia today, like the Evil Corp ransomware gang.</p>
+
+<p>Theyâve been identified and indicted, yet Russia hasnât touched them.  Why just REvil?  They didnât extradite these criminals.  No, they were just processed in Russia and we have no idea what punishment they got.  I mean, shoot, for all we know, this arrest might have just been a way for them to recruit those hackers to go work for the Russian government and not actually bring these criminals to justice.  Itâs extremely cloudy and suspicious what any of these arrests mean.  Well, whatever happened, it did mean the end of REvil as we knew it.  They were around for about two years, and after the FBI indictment, they just fizzled out.  But with this group being gone, it created space for new ransomware gangs to step up and fill the gap.  Thereâs the Evil Corp ransomware gang, thereâs Conti, thereâs LockBit.  These are all doing the exact same thing that REvil did, and we donât know what the end of their stories are, but they are certainly attracting a lot of attention from authorities, so I can only imagine those stories will probably end in a wild and crazy way.</p>
+
+<p>(OUTRO):	[OUTRO MUSIC] A big thank-you to Will for coming on the show and telling us about what heâs been so laser-focused on for the last few years.  You can follow Will on Twitter; his name there is @BushidoToken, or follow the Equinix Threat Analysis Center to see more information about malware they are tracking.  This show is made by me, the ticket jockey, Jack Rhysider, original music by the spaghetti coder, Garrett Tiedemann, editing help this episode by the linguistic analyst, Damienne, mixing done by Proximity Sound, and our theme music is by the super-snoozer, Breakmaster Cylinder.  What blood type is your computer?  Mine is definitely Type O.  This is Darknet Diaries.</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

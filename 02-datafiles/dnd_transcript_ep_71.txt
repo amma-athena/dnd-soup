@@ -1,0 +1,615 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>Information Monopoly â Darknet Diaries</title>
+	<meta name="description" content="In this episode, we're going into the depths of North Korea to conduct one of the greatest hacks of all time. To find a way to inject information into a country run by totalitarian regime. ">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Information Monopoly â Darknet Diaries">  
+	<meta name="twitter:description" content="In this episode, we're going into the depths of North Korea to conduct one of the greatest hacks of all time. To find a way to inject information into a country run by totalitarian regime. ">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/fdff.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/71/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Information Monopoly â Darknet Diaries" />
+	<meta property="og:description"        content="In this episode, we're going into the depths of North Korea to conduct one of the greatest hacks of all time. To find a way to inject information into a country run by totalitarian regime. " />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/fdff.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/71/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/fdff.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/71/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="Information Monopoly â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/fdff.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 71: Information Monopoly</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://www.podtrac.com/pts/redirect.mp3/traffic.megaphone.fm/ADV2669975277.mp3?updated=1595191330"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/71/",
+			   "title": "Ep 71: Information Monopoly"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/71">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[START OF RECORDING]
+JACK:	A quick warning first; this episode is dark and intended for mature audiences.  Thereâs not any swear words in it but we do talk about torture and human suffering.  Not in a super-graphic way thatâs gonna make you vomit, but it does come up so if that bothers you, maybe skip this one.<br />
+<!--more--></p>
+
+<p>Yeonmi Park was born in 1993 in North Korea.  She grew up with her mother, father, and sister in a small house near the Chinese border.  In 2007, Yeonmiâs older sister had escaped from North Korea by herself.  Nobody knew what happened to her or where she was.  Her family didnât even know if she was alive or not.  Yeonmi and her mother decided it was time to risk their lives and escape from North Korea, too.  They paid someone to smuggle them into China, leaving their father behind, knowing full-well that if they got caught trying to leave North Korea, they would likely go to prison.  They crossed into China, but even China was not safe for them.</p>
+
+<p>If the Chinese police or government catches North Korean defectors, they send them back to North Korea, so Yeonmi and her mother had to stay hidden while in China and rely on whoever was kind enough to help them.  [MUSIC] But unfortunately, thereâs a really bad sex and human trafficking problem in China.  North Korean defectors are especially vulnerable because theyâre so desperate, and the Chinese government does not grant them refugee status.  Yeonmi and her mother were captured by one of these sex trafficking rings.  Yeonmi was thirteen and her captor wanted to have sex with her, but her mother begged him not to and ultimately let herself get raped in order to spare Yeonmi.  Each day, Yeonmi and her mother tried to find ways to escape out of their situation in China.  At this point, Yeonmi was thirteen and was sold into a sex trafficking ring for 300 US dollars.  She was separated from her mother, too.  Imagine how scared she must have been.</p>
+
+<p>She was alive but she was terrified every day.  At some point, her father came to look for them and found Yeonmi in China.  But he was very sick and shortly, upon finding Yeonmi, he died.  She cremated her own father secretly at 3 a.m. so she wouldnât be caught.  She continued on her journey to escape from both North Korea and her enslavers in China.  The best option she had was to find a way to get all the way to Mongolia where they donât send North Koreans back.  If she could get to Mongolia, she thought sheâd be safe, but this is about a thousand miles to travel.  Itâs like going from Florida to New York all while staying hidden, without money, and in a country that you donât speak the language.  But she was determined.  Her life depended on it.  She escaped from her enslavers and captors, and began trekking across China towards Mongolia.</p>
+
+<p>Again, sheâs just thirteen years old.  She would move at night, in the freezing cold, with only the stars to guide her.  This was the lowest point in her life; to have gone so far, to escape so many evil people, in the dark, lost and cold, she lost hope for everything.  She fell down in the dark and just felt like not getting up.  Freezing to death was a better option than going forward.  When you think nobody cares for you, you can feel like thereâs no reason to live.  But she did get back up and continued to crawl under barbed wire in the dark, and made it into Mongolia.  From there, she was sent to South Korea where she was able to connect with human rights groups and they were able to help her.</p>
+
+<p>While this is the most harrowing story Iâve ever read, thereâs something about this decision of risking your life to escape from North Korea that captivates me, because in North Korea, they brainwash you into believing that the Supreme Leader and the country are the best in the world and more important than anything.  You should put all your wants and desires aside to help the Supreme Leader, so itâs not just about escaping from a country.  But first, you have to undo that mindset thatâs been forced into you since you were born, and to take that leap of faith that even though you have no idea what the world is like on the other side of that border, you just hope that itâs a better life than whatâs in North Korea.  Yeonmi Park took that leap of faith and made it to the other side, and thatâs the mystery I want to figure out.  What does it take for people to escape tyranny and seek freedom?  But to figure this out, Iâm gonna need some help.</p>
+
+<p>YEONMI:	[00:05:00] My name is Yeonmi Park and I was born in Hyesan, North Korea.</p>
+
+<p>(INTRO):	[INTRO MUSIC] These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	Okay, yeah, weâre gonna go deep into North Korea on this episode, but to talk about the mindset on why people defect doesnât sound like a tech hacker story, does it?  Yeah, well, true.  I promise, there is tech involved in this story, and itâs actually tech that you have laying around your home that can help people in North Korea, and weâll get to that, I promise.  Just have a little patience at first.  You might also think, how is North Korea related to stories about the dark parts of the internet?  Well, itâs a dark place.</p>
+
+<p>YEONMI:	I mean, literally, it is the darkest place on Earth.  If you see the Google satellite photos, it is literally the black hole of this universe.  This, our Earth, at least.  Yeah, I just talk â whenever I think about North Korea, I do not see â I donât remember any color.  Everything seemed to me grey.</p>
+
+<p>JACK:	[MUSIC] I first want to understand what life is like in North Korea, and thatâs why I have Yeonmi here.  She was born in the town of Hyesan in North Korea in 1993, which makes her twenty-seven now.  Hyesan is in the northern part of North Korea.  In fact, itâs right on the border of China.  The only thing separating Hyesan, North Korea, and China is the Yalu River.  As Yeonmi grew up, she would play in the river.</p>
+
+<p>YEONMI:	Yeah, I was playing at the riverbank and seeing China, and seeing the kids from the Chinese side who were â who seemed really well-fed.</p>
+
+<p>JACK:	You could see the kids on the Chinese side?</p>
+
+<p>YEONMI:	Yeah, itâs a really narrow river, so even you â you can even hear what they are saying.  They ask you questions like, are you hungry?  They knew that we were hungry.</p>
+
+<p>JACK:	Yeah.  Tell me more about this river.  Did you wash your clothes in there?  Did you bathe in there?</p>
+
+<p>YEONMI:	Yeah, so, in North Korea, we were in the middle-bottom class, I guess.  We didnât have laundry machines or a shower, anything like that.  All we could do was go into the river, wash our hair and body there, and wash our clothes, and also get the water from the river to home to drink and cook.  It was the main source for us to do anything with daily living.</p>
+
+<p>JACK:	But itâs the north part which is cold in the winter.  Did you also do that in the winter?</p>
+
+<p>YEONMI:	Yeah, in the winter, we â I couldnât even go shower â I mean, take a bath there.  But in the winter, I still had to go to wash clothes and get water.  It is freezing â that somebody digs a hole in the frozen Yalu River and in that hole, actually, a lot of times, children fall or adults fall and just die, and get drowned.  Itâs a really risky thing to do but what can you do?  Every day is a life and death situation.  Youâre not bothered by that kind of danger because you need water to survive.  Thereâs no, like, your water comes in the house; you have to go somewhere and get the water.  You still have to wash your clothes.  I remember in the winter time, you might just go not taking baths for months.</p>
+
+<p>JACK:	Why doesnât your city have running water and running electricity?</p>
+
+<p>YEONMI:	Itâs the regime.  I mean, only chose the city of Pyongyang, the capitol, and the rest of the country, they considered not as royal as those â the people in Pyongyang.  North Korean â I mean, the regime, is â it knows that if they â we are fed, if we are comfortable, thatâs human nature.  Weâre going to think about whatâs the meaning of life.  What is happening in the world?  But when youâre so desperate, when youâre like, the verge of death, when youâre starving, you do not have time to think about the meaning of life.  You do not have time to think about what kind of political system is working on us.  They rule with complete control [00:10:00] and the regime uses starvation as a tool to control the population.  They choose not to make us feel comfortable.  They choose not to make us feel full, so that is just exactly why there are so many people donât have it.  The regime has enough resources to feed its people and get all these facilities, but they choose not to in order to control us.</p>
+
+<p>JACK:	I think itâs important to understand why thereâs no food, water, or electricity in Yeonmiâs town.  Weâll do a quick, five-minute North Korean history lesson.  [MUSIC] A hundred years ago, Japan had taken over the whole Korean Peninsula.  Then in the 1940s World War II happened, and Japan bombed the US Naval Base, Pearl Harbor.  The US didnât like this, so they bombed Japan back.  But the US had bigger bombs.  A nuclear bomb was detonated in Japan but Japan didnât surrender, so a second nuclear bomb was detonated in Japan.  With that, in 1945, Japan surrendered.  Now, when they surrendered, there was both US troops and Soviet troops in the Korean peninsula, and neither wanted to leave.  They both agreed, letâs just split Korea right down the middle and establish its own countries on both sides.  Sort of like how Germany got split into East and West Germany, Korea got split into North and South Korea.</p>
+
+<p>US established the Republic of Korea for the South, where Seoul would be the capital.  The Soviets in the North, in 1948, they established the Democratic Peopleâs Republic of Korea, DPRK.  But I donât believe itâs Democratic or Republic despite the name.  Itâs been rated the least Democratic country on Earth.  One of the first things the Soviets needed to do was establish a new leader.  They held so-called âelectionsâ but itâs widely believed those votes didnât count, and the Soviets just placed Kim Il Sung as the first leader of North Korea.  Kim Il Sung developed an ideology called Juche which was focused on the principles of national independence and self-reliance.  The whole idea was that North Korea wouldnât need to rely on any other governments or global powers in order for a nation to thrive.</p>
+
+<p>But this idea was taken to the extreme; the leader was soon calling himself the Supreme Leader and was convincing everyone that he personally was feeding and giving clothes to the people of North Korea.  He would also say that he personally liberated North Korea from its oppressors by fighting in the wars.  He would make the teachers teach this in school.  After decades of it being taught, it was instilled because if you didnât believe it, you were taken away and tortured, or beaten, or brought down in social rank.  See, North Korea has this very harsh caste system.  Those that show great loyalty to the country or leader will be given a higher class compared to those who donât, so anyone who fought in the war against Japan was in the highest class, and those who were farmers or even lawyers were the lowest class.</p>
+
+<p>The people of the higher classes get better things; they get to live closer to the Supreme Leader and they get things like food, electricity, and water.  People in the lower class, they donât get that.  Now, the North Koreans relied heavily on aid from the Soviet Union which was still their biggest ally and sent them food, electricity, and supplies.  So, when the Soviet Union broke apart in the early 1990s, it had an immediate impact on North Korea.  They lost their biggest ally.  No more food or aid was sent.  This resulted in a sharp loss for North Korea who had been getting a lot of resources from the Soviet Union.  The North Korean economy almost completely collapsed.  They tried to get help from China, but China couldnât keep up with all the help that was requested, so North Korea simply went without.  It could not provide enough water, food, and supplies for the nation.</p>
+
+<p>[MUSIC] But besides that, in the same decade, the 1990s, a great famine came over North Korea.  The country could not grow enough food for its own people, and since everything is government-controlled, the caste system went into even stronger effect.  Only the people who were the most loyal could eat.  The least loyal would starve to death.  This was an extremely cruel way to control the minds of the people and get them to be even more obedient than ever, which often meant turning in your friends or family if you saw them doing things against the rules.  They might get tortured just so you could eat a little that day and show more loyalty.  The combination of the Soviet Union breaking apart and not sending aid, and this famine, and the strict government regime meant that hundreds of thousands of people were dying.  Maybe as much as three million North Koreans died in the 1990s.</p>
+
+<p>In 1994, Kim Il Sung died of a heart attack.  His son immediately took over, Kim Jong Il.  He was ruthless and cruel, too, punishing people even more harshly if they broke even the smallest laws.  [00:15:00] Make a phone call outside the country?  Yeah, you might be put to death for that.  Kim Jong Il died in 2011 and immediately, his son took over, Kim Jong Un, who still rules today.  In this short span since North Korea was created in 1948, there have been only three leaders, all of which are from the same family, all of whom ruled as dictators.  They all tried to rule without relying on imports from other nations, and they have stood by their ideology with pride.  But itâs gone so far now, itâs practically a cult.  Your obedience to the leader is tested on a daily basis.  You canât leave the country.  Itâs strictly forbidden.  You must worship the Supreme Leader Kim Jong Un and do everything he tells you to.</p>
+
+<p>YEONMI:	Thereâs no justice.  Thereâs no human rights.  Thereâs no dignity in any sense for humans to exist there.  Thereâs only Kim, the dictator.  The country exists for the dictator.  People live for the dictator.</p>
+
+<p>JACK:	Worshiping the dictator is woven into every aspect of life there.  His picture is hung in every house and school, and everyone has meetings every week to discuss how you worshipped the dictator and how you can do better next week.  Then you critique each other in the meetings, too, telling them how they can do better at worshipping him.  In North Korea, you and your opinions, wants, desires, dreams, they donât matter.  Only the leader does.</p>
+
+<p>YEONMI:	In North Korea, nobody asked me what I thought, what I want or what I like, what I dislike.  It was not even a concept, as a concept for people to ask each other.  So, when someone â I thought like â in North Korea, obviously, the favorite color for us to like, that we like â there are not such a word that exists in North Korea that we donât say âIâ.  Every time when we start conversing, we say âweâ, and say that we love red because itâs a revolutionary color.</p>
+
+<p>JACK:	Wow.  Can you imagine going your whole life and nobody asked you what your favorite color was?  Or actually, you werenât even allowed to have a favorite color; it simply must be red because thatâs what the Supreme Leader wants you to have as a favorite color.  Or let me put it to you like this: we typically have many meanings for the word âloveâ.  You can love your spouse or partner.  Okay, but you can also love a friend or you can love playing a game, or you might love some music, or you might have love for humankind and just want to help those in need, or you might actually love yourself either in a narcissistic way or in a more healthy way.</p>
+
+<p>But in North Korea, none of that exists.  They do not experience any of this.  The only love youâre allowed to experience is love for the Supreme Leader.  Itâs madness.  Can you imagine not knowing what love is?  Except for the one person who told you that you have to love them?  Now, even though the country tries to be independent, itâs not.  It relies heavily on imports to keep its people alive.  Weâre not talking about luxury goods, here.  Weâre just talking about basic food and clothes and supplies.  In fact, Yeonmiâs father had a job handling these imports.</p>
+
+<p>YEONMI:	Initially he started you know, sugar, dried fish, rice, cloth.</p>
+
+<p>JACK:	He was a civil servant doing work for the government.  But see, in North Korea, itâs extremely hard to get by with whatever you make at your job.  Itâs just not enough.  Itâs barely enough to get by just yourself, much less to try to support a family.  This is common in most of North Korea; people have to find extra work to survive.  Often, people find something illegal to do to survive.  You donât have enough resources to survive, so importing illegal goods becomes a necessity to live, especially when just a narrow river is what separates your country from China.  You can set up some agreement to toss things back and forth, or swim across, go into town, buy something, swim back.  Because her father was working with imports, he found a way to trade metals with people in China; copper, nickel, silver.  He was doing this illegally which helped him earn just enough to keep his family alive, barely enough food, but still no water or electricity in their house.  Yeonmiâs house was her, her sister, her mom, and dad.  One day, her dad got caught trading these metals to China.</p>
+
+<p>YEONMI:	Thatâs why he got in trouble and he sent to a labor camp for that.</p>
+
+<p>JACK:	Because her dad was trading metals with China to earn just a little extra to live, he was sentenced to seventeen years in prison.  This made life much harder for Yeonmi who was only nine.  Now, around this time, Yeonmi had a friend who she knew.  Her friendâs mom would sometimes get ahold of illegal movies that were snuck into North Korea.</p>
+
+<p>YEONMI:	Yeah, so she saw a lot of Hollywood and South Korean and other foreign movies.  Also, she [00:20:00] lent it to other people.  She distributed the foreign information.  She was publically executed for doing that.</p>
+
+<p>JACK:	What?  Executed for watching a movie?  Thatâs insane.  But thatâs what North Korea believes they have to do to keep their people obedient.</p>
+
+<p>YEONMI:	I think the problem was that in North Korea, you cannot have internet.  You cannot watch foreign information.  We can simply here go to a movie theatre and watch a movie but in North Korea, even watching a movie can get you get killed.</p>
+
+<p>JACK:	[MUSIC] Oh, thatâs another reason why North Korea is a dark place.  Not only is there no imports of foreign films or music, but thereâs no internet.  People of North Korea cannot access the internet; no e-mails, YouTube, no podcasts, no news.  Thereâs one TV channel, one.  Guess whatâs on it?  Pro-North Korean propaganda.  Everyoneâs given a radio and the only radio station that the radio works on is a pro-North Korean propaganda radio station.  I think you actually have to listen to it on certain days to hear what the Supreme Leader is doing.  Was there any sort of computers in school for you?</p>
+
+<p>YEONMI:	No.  I never even heard the word like, even âinternetâ.  I never seen a computer in my life.  I maybe heard the word slightly somewhere, but never seen one.  It was not even anyoneâs part of life.</p>
+
+<p>JACK:	Now, of course, in a town that has no electricity, this makes sense.  Of course, she wouldnât ever see a computer.  But in the big city of Pyongyang, they do have computers.  But itâs still very rare.</p>
+
+<p>YEONMI:	The people who were in the elite class in Pyongyang, they do have intranet that the regime created to distribute a lot of propaganda materials.</p>
+
+<p>JACK:	You said intranet, not internet.</p>
+
+<p>YEONMI:	Yeah.  They cannot access, like, go on Facebook.  They have intranet that is really strictly controlled by the government.</p>
+
+<p>JACK:	Okay.  Some schools might have that, and some libraries?</p>
+
+<p>YEONMI:	I am sure in Pyongyang they do, but I never seen anything in my eyes, so I donât exactly where they have.  But the people from elite class told me they did use intranet.</p>
+
+<p>JACK:	You might wonder what kind of computers they have in North Korea.  Like, are they Windows machines?  Macs?  They actually have their own operating system that they made themselves called Red Star OS, Red Star being the symbol of their country.  This is actually a modified Linux system, but itâs severely restricted.  It has Firefox on it but they renamed it and itâs called My Country instead.  When you open it, you can only go to a handful of state-sponsored North Korean websites.  Itâs been reported that whatever you do on a North Korean computer gets screenshotted and saved, so the police can check and monitor your usage history.  It even restricts what files can be opened on it.  I think what bothers me the most about North Korea is this full control over the information that the people are allowed to consume.</p>
+
+<p>Thereâs literally no way to research anything or fact-check it outside the information thatâs given to them by their government.  This ability to control what information the citizens know is what keeps them obedient.  They literally donât know what the rest of the world is like, or that theyâre being treated extremely poorly.  They are told over and over since they were born that the rest of the world is terrible, and theyâre being treated with love and great care, so they believe it.  Itâs all they know.  [MUSIC] Now, when Yeonmi was young living in North Korea, her uncle got a copy of the movie Titanic, the one with Leonardo DiCaprio.  She got a chance to watch it.  It was dubbed in Korean so she could understand it.  She knew this was dangerous and she might get in trouble if she was caught, but she watched it anyway.</p>
+
+<p>YEONMI:	It was a revolutionary thing as a young girl to watch because I never seen anything like that.  In North Korea, thereâs no Romeo and Juliet.  We do not read about Shakespeare.  We do not have love songs and love books.  Watching a movie, itâs made for a love story which I learned in North Korea, I had to â I thought it was a shameful thing to love somebody.  Thereâs no even a vocabulary in North Korea that we have for âloveâ.  We only allowed to use the word âloveâ when we describe our feelings towards the Dear Leader and the party.  I never heard my mom or my father says to each other that they love each other or they love me, even.  Seeing that movie, a man dies for a woman, [00:25:00] it was a revolutionary thing.</p>
+
+<p>It did give me this turning moment where I thought something might be different â exists in the world, and maybe the outside world might not be that bad.  Because in North Korea, itâs like in George Orwellâs 1984; they say there are enemies trying to attack us constantly and we have our Dear Leader to â protecting us from these monsters coming to kill us and torture us.  They teach us how to hate our enemies since our birth, and how to be grateful for Dear Leader to protect us.  Seeing that movie is like oh, I thought all Americans were bastards and monsters.  It didnât seem like that in the movie.  Yeah, that definitely gave me some taste of freedom and humanity, I think.</p>
+
+<p>JACK:	What a strange way to first understand that concept of humanity, by watching Titanic.  But yet, it was so powerful at the same time, to secretly peer into another culture that you arenât supposed to see and be struck by a completely new concept such as love.  Remember, she somehow watched this even though she didnât have electricity, and while the town had electricity and her house was wired to the grid, the thing is, is that the town just never turned on the electricity for the people living there.</p>
+
+<p>YEONMI:	No, we didnât â I mean, we did have electricity sometimes.  Government gives electricity on the days like, Dear Leader birthday.  Or like, New Yearâs Day.  Those days, they want â they give us electricity so we can watch those propaganda materials.  Some other time, like summertime, if the water â maybe surprise good, they give like, free once in a few months.  You definitely get it a few times a year.  You know, sometimes in order to finish a movie, like the movie Titanic, such a long movie, it can take months to finish a movie.  I do remember like, whenever the electricity came, it was the happiest thing, happiest event in my life.  We were just clapping, everyone was going, like, hurray.  The whole town claps.  Thatâs how happy we were, how much that made us happy.</p>
+
+<p>JACK:	[MUSIC] Now, the North Korean borders are locked up pretty tight.  There are military guards all along the borders making sure nobody is sneaking out, nothing is getting snuck in.  There are still ways to get stuff through and one way to learn how to do that was to look at Germany.  See, thereâs actually a few surprising similarities between North Korea and Germany.  At the end of World War II, both countries were split apart, with half being Soviet-occupied in both Germany and North Korea.  There was East and West Germany with the iconic Berlin Wall keeping people from coming in and out.  Well, the Germans wanted to send propaganda over the wall to the other side, so they would tie messages to balloons and float them over.  In fact, thatâs what this song is all about, sending propaganda using balloons over the border.</p>
+
+<p>NENA:	[MUSIC] 99 red balloons floating in the summer sky.  Panic bells, itâs red alert.  Thereâs something here from somewhere else.  The war machine, it springs to life, opens up one eager eye.  Focusing it on the sky as 99 red balloons go by.</p>
+
+<p>JACK:	Red alert, war machine springs to life focusing on the sky. What a strange world to live in when the military is instructed to shoot balloons in fear that information might come into the country that you donât want your people to have. Not false information. Not lies. Just little bits of truth.</p>
+
+<p>The Koreans began sending balloons too. Both sides would send propaganda over to the other side. When the wind was right North Korea would send balloons over south Korea and south Korea would send them into north Korea. Sending messages back and forth to the people. And yes military was instructed to shoot at balloons that would float over. Eventually a treaty was signed where south Korea would agree to stop sending balloons if they could have meetings with the president of north Korea. And this happened, so South Korea stopped sending them.</p>
+
+<p>But those balloons were effective. They were working. The people of North Korea were reading what was being dropped, and it was very slowly opening their eyes. So human rights groups saw how effective this was and began floating balloons into North Korea. It just wasnât state sponsored any more. Human rights groups were sending information in like sports scores, news, and pictures of sexy women. Doing anything they can to entice the North Koreans escape.</p>
+
+<p>But this had a limited effect. I mean how much information can you put on a leaflet.</p>
+
+<p>So next we have the radio. In north Korea thereâs one radio station and your radio is permanently set to that station. You have to know how to hack the thing to get it to pick up other stations. And there are human rights groups broadcasting radio waves into North Korea. But of course being caught with a hacked radio would result in a big punishment. Prison, torture. Maybe execution.</p>
+
+<p>And so here we are with this major problem of trying to help the people of North Korea by injecting information into the darkest network on earth. How can we do this? After the break, weâll talk with someone whoâs doing it.</p>
+
+<p>[AD BREAK]</p>
+
+<p>JACK:   There are people who are smuggling information into North Korea, and these people really fascinate me, and they might fascinate you too. So I want you to meet Alex.</p>
+
+<p>ALEX:	My name is Alex Gladstein.  Iâm the chief strategy officer for the Human Rights Foundation.  Weâre a nonprofit based in New York City with a global focus.  We help people who live under authoritarian governments.</p>
+
+<p>JACK:	Alex joined the Human Rights Foundation in 2007 and started as an intern.</p>
+
+<p>ALEX:	That summer, my job was to put together backpacks of information which would be taken by my Latin American colleagues and smuggled into Cuba to the underground library movement.  In Cuba, you canât have a book or a movie, legally speaking, without it being approved by the Communist Party.  Of course, the amount and variety of information that people can access legally, officially, is quite limited and obviously very propaganda-driven.  We sent in all kinds of movies dubbed into Spanish, eBooks, everything from Animal Farm to V for Vendetta.  People would read and watch these things in their homes and create small discussion groups.  This was a program we ran for several years.  It was really successful.  That gave us the confidence and expertise, I would say, to be able to say hey, putting information into the hands of people who live under an information monopoly is actually really important for a whole bunch of reasons.  Why donât we try to help the people in North Korea?</p>
+
+<p>JACK:	Hereâs the way I look at it; IT stands for information technology.  The entire point of IT is to find an effective way of exchanging information between two people or places or machines or whatever.  Hacking typically involves stealing information you arenât supposed to have.  But here in North Korea, we have an anomaly, a problem, even.  [MUSIC] Weâre here in the year 2020 now.  How can we use technology effectively to get information into North Korea?  This is an IT problem like no other.  If we could somehow inject information into the country, what would be the perfect elixir of truth that would be the most impactful to the people there to get them to either leave or overthrow their regime?  Last decade, they were seeing DVDs getting smuggled into North Korea with all kinds of foreign movies and shows on them.  This was eye-opening to a lot of North Koreans, educating them and teaching them about all of the different cultures of the world which opened their eyes to realize their own country might not be so good.  But the government caught onto this and came up with a solution.</p>
+
+<p>ALEX:	The thing with CDs and DVDs is, I mean, they were great for a long time but the problem is now â so, what the government will do, sometimes, is come and just shut down the electricity in your village, and then theyâll come into your house and theyâll look at what was in your DVD player.</p>
+
+<p>YEONMI:	Yeah, that is one of the tactics the government use.  They really do want to control what we think, right?  People still go risk their life to watch this foreign information.  China is a good source.  A lot of smugglers to go China and bring these DVDs.  They contain the foreign information, the foreign movies.  When people watch this, the government tried, really tried to be tricky.  They give the electricity out of nowhere and then, so, then they shut it down.  When that happened, you cannot really get the DVD out of the player.  These police would get these people and punish them and send them to camp or sometimes even execution.</p>
+
+<p>JACK:	You say if you get caught with a DVD from another country, you might get executed for that?</p>
+
+<p>YEONMI:	The thing is with these dictatorships, is that they are not consistent.  They sometimes execute someone for eating cow.  My mom saw this young man got executed because he stole a cow from the farm, the dear union.  He had TB, so he ate the cow.  That was his crime that he was executed â the human life is less value than even cow in North Korea.  Sometimes not; so, the government is not always executing people for watching foreign information, but they will make a showcase when they want to spread fear, like when they show people this is what youâre gonna be, this is what youâre gonna get if you watch [00:35:00] foreign information.  They do these showcases and then execute people.  But I did also hear people that who wasnât executed for watching DVDs and just sent to prison camp.  Yeah, technically, you can definitely get executed for watching something like banned information the government donât want you to watch.</p>
+
+<p>JACK:	[MUSIC] Hm, so it sounds like CDs and DVDs arenât a good solution here.  What people have been doing is putting information on USB flash drives and sometimes SD cards, because you can easily take them out and hide them if the power is shut off to your house.  You could put a lot more information on them compared to DVDs, too.</p>
+
+<p>ALEX:	The other thing is that, I mean, it sounds horrifying, but in a pinch, you can swallow it, right?  Just eat it.  You canât really do that with a DVD.  This is what defectors have told me.  SD cards are really interesting âcause theyâre really super-tiny.  Obviously, super-easy to conceal.  The smaller we can make storage technology, the easier itâll be to get information into dictatorships and the harder it will be for authoritarians to control and have information monopoly.</p>
+
+<p>JACK:	Alex developed a plan to sneak USB drives into North Korea.  They called the project Flash Drives for Freedom.</p>
+
+<p>ALEX:	Thatâs what we assessed with the Flash Drives for Freedom initiative, is that hey, there needs to be a way to get everybody in the world involved with getting information into North Korea.  Itâs come up with an idea, so one of my colleagues, Jim Warnock, came up with the name Flash Drives for Freedom.  Some guys at Leo Burnett, the really prominent ad company, decided to volunteer to create that imagery that youâve seen, which is the Kim Jong Un face with the blue background with the USB mouth.  We debuted at South by Southwest 2016 and weâve raised enough support to be able to send in, at this point, more than 70,000 flash drives into North Korea.</p>
+
+<p>If you just think about that for a second, thereâs about twenty-five million people in North Korea, and 70,000 USB sticks, I mean, each one gets shared a lot.  Remember, these are very valuable so not only is each movie watched by a small group, but once youâre done with it, you give it to somebody else.  Based on our field work, each flash drive gets shared at least ten times.  Weâre talking, like, close to a million people who have been directly influenced by the work that weâve done, and we think potentially a lot more when you think about other effects.  With more support from people, we can make a much bigger difference.</p>
+
+<p>JACK:	This is the strangest way to hack Iâve ever seen.  Picture the whole country of North Korea like a super-secure network; nothing gets in or out of there and your goal is to get data into the network.  Not to poison it or corrupt it, but no, itâs just to correct the data thatâs in there.  The data inside North Korea is poison and the antidote is on the USB drives.  [MUSIC] How do you hack this network to get the data in?</p>
+
+<p>ALEX:	Well, I guess it would start with, I donât know, maybe a school in Wisconsin hears about the drive, they read about it in the media, so they do a little collection at lunchtime.  They mail us six flash drives, so they go to our collection point in Paulo Alto.  Usually the flash drives we receive are new.  If theyâre not new, we work with security experts to wipe them in as complete way as we can.  At that point, theyâre packaged up and shipped to South Korea to our partners that are several organizations there, as I mentioned, that are led by North Koreans focused on getting this stuff into South Korea.  At that point, the drives will arrive at their offices.</p>
+
+<p>Theyâve been running these focus groups, okay, so, in previous weeks up until this day that weâre talking about, theyâve been sitting down recent people whoâve arrived to South Korea from North Korea, and interviewing them about what kind of content is hot right now or whatâs interesting right now.  Theyâve also been doing sessions where theyâll watch â theyâll play certain content and see how it rates.  Itâs sort of like with TV in the United States, but weâre trying to get the most effective content possible.  Once a batch is determined, once a particular mix of perhaps interviews with defectors, dramas, soap operas, movies, maybe some outside clippings of news.</p>
+
+<p>YEONMI:	Some of them have the gospels, they have the Bible verses.  Some of them have the American TV show Friends or the Housewives, the reality shows, or the fashion shows, or sitcom, or thriller.</p>
+
+<p>ALEX:	Once a particular elixir of truth is mixed and put onto the drives, they have these little machines where you can basically upload â it looks like a surge protector, but you can basically do twenty drives at a time.  Theyâre [00:40:00] packaged up and flown into China.</p>
+
+<p>JACK:	How many are packaged up?  On this mission, how many would go at once?</p>
+
+<p>ALEX:	Yeah, so, itâs pretty slow because of how delicate the process is.  But youâre usually talking a couple hundred at a time.  To do more at scale, which weâve done, has just required a lot of creativity which I wonât go into all the details, obviously.  But letâs just say you fly into one of the cities in [MUSIC] China thatâs close to North Korea and you head towards the border.</p>
+
+<p>JACK:	Now, thereâs a few different ways to get things into North Korea.  For instance, there are people like Yeonmiâs father who would import foods and items into the country.  He had to go into China to get the stuff and bring it back.  After all, he was a civil servant and had permission to do this.  See, China and North Korea border each other and often, thereâs a small town on the Chinese side of the border.  Heâd go across the border into the Chinese town as part of his job.</p>
+
+<p>ALEX:	In these Chinese towns, there are markets.  There are people, Chinese people, who are selling everything from solar panels to clothing to food, and North Koreans come in and buy them and then bring them into North Korea.  Itâs like, there are these bridges.  Yeah, thereâs lots of truck and car activity or even just pedestrian activity.  In the winter, the whole thing freezes over, so they can just walk across.</p>
+
+<p>JACK:	Yeah, why not just give people at these Chinese markets a ton of these USB drives for free and then see if they can help get them into North Korea somehow?  Sure, the Chinese shop owners will probably charge for it, but at least itâs available to buy if somebodyâs looking around for these things.</p>
+
+<p>ALEX:	People often say that a USB stick of movies or news articles or something is basically like gold in North Korea.  People will risk a lot to get it.</p>
+
+<p>JACK:	Yeah, if you know a certain Chinese market might have some, the people of North Korea will find a way to get to that market and get them.</p>
+
+<p>ALEX:	Instead of even sending in pre-recorded flash drives, sometimes people will send in a giant terabyte drive thatâs packed with content, and then a whole bunch of empty ones so that the person can act like a disseminator.  You can really think about it like buying illegal drugs in a country in a democracy.  Itâs sort of the same thing.  You might go to the market and kind of look around furtively.  Oh, maybe you see someone who youâre like hey, and then you kind of exchange words, and you follow them into a quieter place and do a deal where you pay for a flash drive.  Instead of paying for weed or something, youâre paying for a flash drive with outside content on it.  You bring that home, you watch it with your family, and then maybe you share it.  Itâs kind of like the whole life cycle here.</p>
+
+<p>JACK:	Okay, thatâs one way to do it.  Thereâs certainly a high level of risk here, too.  [MUSIC] But again, being able to have these small USB drives means you can conceal it pretty well and get it across the border.  But thereâs another way to do it.  Alex works with people to actually smuggle the drives into North Korea themselves, which has to be quite the adventure and super-secretive.</p>
+
+<p>ALEX:	Iâm not gonna go into the actual details of this because that would be really dangerous but generally speaking, there are trust networks.  When you defect from North Korea, youâre paying someone to take you physically out of North Korea across the river and put you on some sort of track to freedom.  Now, sometimes, they are being malicious and they â 70% of all people who leave North Korea are women and a lot of them â by some accounts, nearly all of them get sucked into some sort of trafficking ring.  But some of the people, obviously the folks who eventually make it out, found some sort of human network that got them from North Korea to where they made it from.</p>
+
+<p>Now, when you get out and you come to South Korea and youâre now a free person and youâre thinking about what to do, you still can contact that person or those people.  These networks of people who go back and forth are known to North Korean defectors.  Each North Korean defector has a unique escape route that they took.  Thereâs thousands and thousands and thousands of these human networks that help people get from North Korea into China and eventually into freedom or into subjugation, depending on what happens.  But each of these â and whether itâs on a boat or across a frozen river, or under the eyes of a bribed official at a military tower, thereâs many, many different ways to escape.  Every way of escape is also a way of sending something in, if that makes sense.</p>
+
+<p>JACK:	Again, I canât overstate this enough that this is so extremely risky.  If you get caught in North Korea doing this, itâs really bad news for you.  North Korea has a lot of concentration camps, so the worst-case scenario is if you get caught, you might go to one of these concentration camps and [00:45:00] never come back.  But those who do make it back have horrifying stories, stories of being tortured to heinous degrees.  I donât even want to explain what Iâve heard because itâs just stuff that youâll never forget, and itâs sickening.  But even knowing that you might get caught and tortured, people still try to smuggle these USB drives over the border.  But sometimes even when you get caught, there are ways out of it.</p>
+
+<p>ALEX:	When it comes to the government there, they would like to say theyâre the most pure, whatever, country in the world, but itâs probably the most corrupt country in the world.  Especially the soldiers who are sitting out there right now â so, weâre filming this podcast in December, so itâs a Siberian winter, literally.  Russiaâs border is right there as well.  Weâre talking one of the most brutal winter climates in the world.  Youâre sitting out there in the freezing snow, probably with no heat or whatever, and youâre just kind of assigned to watch this river border.  Yeah, if someone â if you encounter somebody and youâre the only one there in this massive, porous region and you find someone whoâs trying to escape, if theyâre like, what if I give you all of this â all these cigarettes or whatever, will you let me go?  Youâre probably gonna say yes.  Thereâs a lot of bribing that happens and a lot of these officials end up getting sucked into these information rings.</p>
+
+<p>JACK:	These are just a few ways to get drives into North Korea.  Iâm sure thereâs been experiences with people floating packages down the river or balloons over, or even flying drones and then dropping some, and then flying them back real quick.  Once these flash drives get into North Korea, it becomes part of their grey market.  It sounds more like a black market to me, but Alex says itâs a grey market.</p>
+
+<p>ALEX:	Yeah, I say grey market âcause technically, itâs supposed to be a communist state, but the government has realized that they canât provide for the people.  The average annual income is way higher than the national wage.  Everybodyâs doing a little something on the side, some sort of arbitrage, some sort of buying and selling, all throughout North Korea.  A lot of that stuff that theyâre moving around and buying and selling came from China.  Again, thereâs this massive influx of outside stuff.  When someone gets caught, a large percentage of those people are able to bribe their way out of it.  The people who are not able to bribe their way out of it, several different things can happen.  Iâve spoken to people who have been basically put in prison for a couple weeks as a lesson, maybe tortured, but not killed or put in a prison camp.  Then, of course, there are people who are put into a prison camp for counter-revolutionary activities.  This absolutely happens.</p>
+
+<p>JACK:	You said not just one person but maybe the family, too.</p>
+
+<p>ALEX:	Yeah.  Depending on what kind of example they want to make out of you, right?  Itâs always about human context.  If youâre in a particular city or town in North Korea and youâre a emblematic person who represents â whoâs a prominent person in that area and youâre caught, they may want to make an example out of you.  They might make a big deal of it and round up your whole family and take you away.  You may never see them again.</p>
+
+<p>JACK:	How, I donât know, bloodthirsty is the government to try to find these things?  âCause you said earlier, they may shut off the power to try to find CD and drives.</p>
+
+<p>ALEX:	Very.</p>
+
+<p>JACK:	Are they really looking that hard?</p>
+
+<p>ALEX:	Very, âcause their entire architecture of power relies on having an information monopoly.  If a certain percentage of the North Korean people realize that what theyâre told, that theyâre the luckiest people in the world and then everything else is like a dumpster fire is not true, things will change very quickly.  Itâs just a matter of time.  Right now, no one really knows, but certainly less than half of North Koreans actually know, like, have a good grasp of what the outside world is like.  Itâs probably closer to less than a third.  Maybe even less than a quarter.  No one really knows.  Thereâs no way to do a comprehensive study.  You can interview people whoâve escaped, of course, but youâre getting a biased sample size.</p>
+
+<p>Youâre only interviewing people who managed to escape, which is a tiny little fraction of the actual population.  But letâs say itâs like, for the purposes of this hypothetical, that one out of every three North Koreans today realizes that everything theyâve been told is a lie, theyâre in the minority.  Once that number becomes north of fifty or even gets to seventy, eighty percent, thereâs no way that the government can sustain itself.  Every program has to have a goal.  What is our goal?  I think, from everything weâve been told, the idea that thereâs gonna be some sort of grassroots revolution which is not gonna happen in North Korea; the monopoly of power and violence is too stacked on the governmentâs side.</p>
+
+<p>However, what could very well happen is some sort of coup at the top [00:50:00] where the military or the one percent in North Korea just learn enough about whatâs going on in the outside world where theyâre basically like, enough of this, and they get rid of this theocratic Kim dynasty, and they take power for themselves.  You have a military dictatorship in North Korea now, no longer a theocratic sort of dynasty, but you have a military dictatorship in North Korea thatâs willing to negotiate.  Kim Jungâs Unâs uncle was one of these guys, but they called him a reformer âcause heâs the one who used to deal with the Chinese.  Now, of course, Kim Jun Un saw this as a threat and they killed him within weeks of taking power.  One of the first things he did as a signal to everybody else that oh, weâre gonna get rid of all the reformers.</p>
+
+<p>But if the Kim family moves out of the equation, all of a sudden you have a huge opportunity for actually having a constructive dialogue with the North Korean government where itâs like oh, well, if you guys close five prison camps, weâll let you compete in the Olympics or something.  This would actually open the door to this.  Okay, if you disassemble five tactical weapons, then weâll allow you â weâll get rid of this particular sanction scheme.  You could actually start having this discussion if there wasnât a lunatic theocratic religious government in North Korea, if it was just a straight-up military dictatorship.  Thatâs, I think, what we want as a first step towards a free North Korea which would be, of course, part of â the whole peninsula would be a free country.  It would be one Korea.  Thatâs, of course, the ultimate vision here.</p>
+
+<p>JACK:	[MUSIC] Itâs so amazing to me to think that if enough people in North Korea had the right elixir of truth, it would result in a country flipping over.  You might think that by watching Titanic, you wonât suddenly start protesting.  Thatâs true; thatâs probably not enough.  But at the same time, you might wake up to your father being hauled off to a prison camp simply for making a phone call, or you just might be starving to death, or freezing to death.  If you push someone into a corner with no way out, theyâll do something completely unexpected just to survive.  The people of North Korea are pushed into a corner every day, so sometimes, just a little drop of truth is all that it takes for them to break out of their thought-controlled mind and realize that the dictator has purposely been starving people to death just to keep them in order.  For what?  Just to maintain his power?  Thereâs a formula somewhere in here that as the lack of humanity goes lower and knowledge of the outside world gets higher, at some place, itâll be a tipping point for North Korea.</p>
+
+<p>YEONMI:	Definitely.  I mean, there, thatâs the only thing, I think, is gonna â itâs a really long-term investment, right?  North Korean regime has been there for more than seventy years.  In thirty more years, itâs gonna be one century itâs been this way.  Theyâve been doing this brainwashing so many years on peopleâs minds.  Only de-brainwashing these people is the truth.  These USBs contain truth in it.  It has information about freedom and human rights, and all about this world.  I think, even though we might not see a revolution right now, but it accumulates and it gradually shifts peopleâs mindsets.  That turning point can happen any time.  I think the only change in North Korea should happen is when people demand the change in North Korea.  Itâs not by like, military invasion.  Not by anything.  It should be that the North Korean people demand their rights and their freedom.  To do that, we need to show this information through these drives, flash drives we have.</p>
+
+<p>JACK:	But what Iâm worried about is that people can be tortured or put to the camp or executed for having these drives.  Are we putting them in danger?</p>
+
+<p>YEONMI:	But without even doing that, they can starve to death for no reason.  They get sent to prison for so many other things.  What is the alternative?  Itâs like being a slave and being killed for so many other things.  I think thatâs like, yeah, it is true.  But when we send those drives, itâs not like we force them to watch.  We are not, like, torturing these people, like, you must watch this information.  We just give them the option to choose, and they always have the option to not watch them.  But myself and my [00:55:00] parents, we took that risk and we watched Titanic, and we learned about the world, and we came out.</p>
+
+<p>If we forcefully showing them these things about the free world, that might be not fair.  But because we just give them the option to choose to learn about the truth, I think weâre only doing their favor.  Even though with even this, actually, North Korean people already demanding truth with that flash drives project.  They buy this information in the black market.  They pay their money even in that poverty.  These people are so hungry for truth.  Even we â only getting more flash drives that bring down the cost so much like excessive supplies bring down the cost, and people are gonna easily access information without too much money they are paying for it at the moment.</p>
+
+<p>JACK:	Yeonmiâs mother had to leave her two daughters home alone in the winter.  Yeonmi was nine and her sister was eleven.  To survive, they would have to go to the mountains and pick grass and flowers to eat.  [MUSIC] This was probably the most horrible winter she ever experienced in her life.  No heat in the house, no food, no water other than the frozen Yalu River.  No electricity.  Somehow, she got through it.  Yeonmiâs father developed cancer while in prison, so he bribed someone to go home so he can be treated.  But even though the family was together, it was still a massive struggle to survive.  There was still no food.  Out of pure necessity, she needed to find a way to survive.</p>
+
+<p>YEONMI:	My case was â I didnât escape to be free.  I was very hungry.  If I stayed there, I was just gonna die.  My only motivation was starvation; I wanted to find something to eat.  That was going where the lights were.  I was in the older part of North Korea, Hyesan, and as you said, right across the river, thereâs China.  There are highways, there are cars running on the highways.  They have these streetlights, and they have lights at night.  As a child, I thought, looking at China, if I go where the lights are, maybe I will find something to eat.  Thatâs how I escaped.</p>
+
+<p>JACK:	Yeonmi and her mother paid someone to smuggle them into China, leaving her father behind.  Now, keep in mind, if the Chinese police had caught them, they would have sent them back to North Korea which would have put them right into a prison camp.</p>
+
+<p>ALEX:	Because Chinaâs a communist country with some sort of allegiance to North Korea, if you get caught as a North Korean in China, they send you back.  Itâs called repatriation.  Itâs a horrible practice that is honestly one of the cruelest things that the Chinese government does, and it does a lot of cruel things; like for example, keeping a million Muslims in prison camps right now.  But when youâre sending someone back to North Korea, theyâre facing either execution, of course without trial or with a mock trial, or more likely imprisonment in a gulag where theyâre gonna starve to death or something.</p>
+
+<p>JACK:	As you heard, Yeonmi narrowly escaped and made it to South Korea.  When she got there, she started attending a school.  One day, the teacher asked her what her favorite color was.  This was the first time ever anyone asked her this.  She was fourteen years old.</p>
+
+<p>YEONMI:	I didnât understand the question because in North Korea, nobody asked me what I thought, like what I want or what I like, what I dislike.  It was not even a concept, as a concept for people to ask each other.</p>
+
+<p>JACK:	She didnât know she was allowed to have a favorite color, so it took her a while to figure things out and to discover her own self.  What is her favorite color?</p>
+
+<p>YEONMI:	Spring green.</p>
+
+<p>JACK:	Spring green.  Good choice.  While in Korea, she learned English by watching the TV show Friends.</p>
+
+<p>YEONMI:	I actually literally learned my English through watching Friends.  I like, watched it thirty times from Season 1 to 10.  It was insane, my obsession with Friends.  But I think the first time when I saw the show, it was like, it wasnât funny because I â the humor is something that you need to understand the culture, and you get it.  It took many, many, many times for me to get the jokes and finally enjoy the show.</p>
+
+<p>JACK:	She was able to slowly establish herself in the world and feels incredibly happy to have escaped.  Actually, sheâs living in the US now, and she just finished getting her degree at a university and is becoming a human rights advocate and helping others.</p>
+
+<p>YEONMI:	Itâs like, I should be, like, a billion, trillion, zillion times happier than when [01:00:00] I was in North Korea because now, I enter home, and you put the â press the â switch the lights on.  I get hot water.  But somehow, it is â I think Iâm happier, definitely than in North Korea, but itâs not like, that little things that you appreciate when you really have nothing, is, I think, very different.</p>
+
+<p>JACK:	How could the audience help North Korea?</p>
+
+<p>YEONMI:	I think your audience are very into technology and they are very mindful of this tool.  I think one of the ways they can help is definitely getting more information into North Korea through flash drives.  I think, at the moment, it is really a war that we have.  The regime is berating these people with propaganda materials, but the flash drives they are sending into North Korea contains truth about humanity, about the world, about freedom, and about the potential of North Korean people.  I think this is really an opportunity for all of us to get involved and pushing of the work.  I do believe that North Korea will be free in our lifetime.  [MUSIC] We all can say that we did something to free these people when you are free.</p>
+
+<p>JACK:	Okay, so, the Flash Drive for Freedom project is an easy way to help people in North Korea.  With a big enough campaign, we can see the regime get toppled by its own people.  Letâs all pitch in.  Create a USB or SD card donation drive at your school or work.  Collect as many drives as you can and send them to Flash Drives for Freedom.  You have the power to make a change over in North Korea, and this is getting some serious momentum, so join me so we can help Alex help the people of North Korea.  Oh, and one last thing while I have Yeonmi still, because I donât know if Iâm ever gonna have a chance to speak to a North Korean defector again; this has been so surreal to me, especially tracking down a North Korean to get them on my show.  This is so crazy, what am I getting myself into?  But okay, so even though she didnât see any computers while in North Korea, I still wanted to talk with her about what she knows about the computers there.</p>
+
+<p>YEONMI:	It is also like, I also meet a lot of defectors who were teaching in these universities where they are teaching hackers to hack.  Itâs definitely â thatâs one of the things, the revenues the government gets now, is hacking, the cyber-hacking and attack they do on South Koreans, so many other countries.</p>
+
+<p>JACK:	See, thatâs interesting already because I think â first, I was wondering whoâs able to do this because not many people have a computer, so youâre saying that thereâs some schools in Pyongyang that teach people how to hack?</p>
+
+<p>YEONMI:	Yep.  I definitely met a professor who taught his students to hack.  They do learn those things but also, I also heard a lot of them are based in China, too.  They hack it not from North Korea, but they use code and things they can hack.  North Korean hackers can hack from other countries.</p>
+
+<p>JACK:	âCause I wondered; they have no internet there.  It would be very hard to do it.</p>
+
+<p>YEONMI:	Right.  Or so, maybe the connection might not be good.  But, Iâm not sure.  Maybe these hackers do maybe get â I do think they do have internet for this, like certain very restricted officers.  Iâm sure Kim Jun Un has internet.  I know that these foreign journalists, when they travel to North Korea, they do get internet time to time.  Also, you know, when the people â when tourists want to travel to North Korea, I heard also, the North Koreans Googling these peopleâs names, see if theyâre journalists or not.  I think those very restricted population do have internet and access to Google and like that.</p>
+
+<p>JACK:	When other countries do hacking, they do it to steal.  They spy, they steal trade secrets, but you said that this is a source of â the hacking that North Korea does is a source of revenue for the country?</p>
+
+<p>YEONMI:	One of the reasons they do this, like now, these hackings do create revenue for them.  Like some of the holidays while living in South Korea, or these banks will get attacks [01:05:00] from North Korea.  North Korea does not just only have a nuclear weapons to threat other countries, but they have a strong army of hackers to threat any entity.  Now, they are just really controlled by all this internet system.  Even our water supplies, electric supplies, controlled by internet.  North Korea is threatening basically the whole humanity with these hacker groups.  They are â keep raising and keep developing.  I donât know how far they can go with their â thereâs a recklessness.  I donât know if thatâs what theyâre gonna do, but North Korea certainly does not respect any international law.  They do not certainly respect any human dignity, so if they â if dictator wants or if he decides that itâs good for his â maintaining his regime, I do think they are capable of literally everything.</p>
+
+<p>JACK:	This sounds incredibly fascinating to me, so fascinating that Iâm gonna stick with the North Korean theme for the next two episodes, and weâre gonna dive into some huge hacking campaigns that theyâve done over the years.  Thereâs some real doozies theyâve done.  So, see you in the next episode.</p>
+
+<p>YEONMI:	Bye!</p>
+
+<p>(OUTRO):	[OUTRO MUSIC] A very big thank you to Yeonmi Park.  Your story is so inspiring.  Thank you so much for sharing it with us.  She has a book out that talks about her life in North Korea and her escape.  Itâs one of the most inspirational and gut-wrenching books Iâve ever read.  Her book is called In Order to Live.  I tear up just thinking about it.  Iâll have some affiliate links to the book in the show notes.  Also, a very big thank you to Alex Gladstein from the Human Rights Foundation.  I mean, heâs the one who formed the Flash Drives for Freedom, and he helps out North Koreans.  Heâs making the world a little bit better every day.</p>
+
+<p>I highly encourage all of my listeners to donate USB drives, SD cards, or just send them money.  Their website is flashdrivesforfreedom.org.  Thatâs all spelled out one big, long word; flashdrivesforfreedom.org.  This show is made by me, the dark rabbit, Jack Rhysider.  Original score and sound design this episode by Garrett Tiedemann.  Editing help this episode by the super-user Damienne, and our theme music is by the backbeat Breakmaster Cylinder.  Even though a dumpster fire erupts somewhere in the world every time I say it, this is Darknet Diaries.</p>
+
+<p>[OUTRO MUSIC ENDS]
+[END OF RECORDING]</p>
+
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

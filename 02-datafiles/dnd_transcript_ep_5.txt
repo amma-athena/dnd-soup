@@ -1,0 +1,494 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>#ASUSGATE â Darknet Diaries</title>
+	<meta name="description" content="Security researcher Kyle Lovett bought a new Asus router in 2013. He found it was riddled with security vulnerabilties. He set out on a mission to resolve these vulnerabilities not only for his own...">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="#ASUSGATE â Darknet Diaries">  
+	<meta name="twitter:description" content="Security researcher Kyle Lovett bought a new Asus router in 2013. He found it was riddled with security vulnerabilties. He set out on a mission to resolve these vulnerabilities not only for his own...">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/bugs.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/5/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="#ASUSGATE â Darknet Diaries" />
+	<meta property="og:description"        content="Security researcher Kyle Lovett bought a new Asus router in 2013. He found it was riddled with security vulnerabilties. He set out on a mission to resolve these vulnerabilities not only for his own router, but for thousands of others who were also vulnerable. " />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/bugs.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/5/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/bugs.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/5/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="#ASUSGATE â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/bugs.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 5: #ASUSGATE</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://traffic.megaphone.fm/ADV9180667884.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/5/",
+			   "title": "Ep 5: #ASUSGATE"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/5">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[FULL TRANSCRIPT]</p>
+
+<p>[INTRO MUSIC]</p>
+
+<p>JACK:	How many zero-days have you found?</p>
+
+<p>KYLE:	It doesnât really matter.  I donât really keep count but I guess itâs probably over a hundred.</p>
+
+<p>JACK:	A hundred zero-days you think you might have found?
+<!--more--></p>
+
+<p>KYLE:	Well, I donât know if I can count them as zero-days.  I mean yeah, they hadnât been found before, at least disclosed before, but sometimes in application you could have three or four things wrong with it that hadnât been disclosed before.  Iâm not some kind of super hacker or anything but yeah, I guess itâs about that.  Anyone can do it.  It just takes a little bit of practice and a lot of determination.</p>
+
+<p>JACK (INTRO):	This is Darknet Diaries, true stories from the dark side of the internet.  Iâm Jack Rhysider.</p>
+
+<p>JACK:	Home is private and personal.  Home is safe and secure.  Home is protected and intimate.  We donât allow strangers to simply walk into our home and take our most private things like bank statements or photographs.  We know when our door is locked and when our window is shut.  We know this keeps strangers out but sometimes there are other ways strangers can enter our home and take our most precious things.  These strangers can do this from thousands of miles away.</p>
+
+<p>KYLE:	My name is Kyle Lovett.  I am a Senior Penetration Tester right now with Veracode.</p>
+
+<p>JACK:	Kyleâs day job is penetration testing.  He is paid to test the security of a company to see if thereâs a way a hacker can get into the network.  But thatâs not what this story is about.  This story is about the time in 2013 when Kyle bought a new router for his home.</p>
+
+<p>KYLE:	Yeah, I was looking at the new Asus router, the N66.</p>
+
+<p>JACK:	Kyleâs friend had the new Asus N66 home router and recommended it to Kyle.  This was not a cheap router.  It was one of the high-end ones coming in at just over $300.</p>
+
+<p>KYLE:	They were the hottest routers on the market, or at least one of the hottest routers on the market.  No one can deny the hardware on it is quite impressive.  It was very popular especially around the IT crowd.  A lot of IT folks had those routers in their home.</p>
+
+<p>JACK:	Kyle bought it and took it home.</p>
+
+<p>KYLE:	Something struck me as a little odd when I got home and was looking for the actual product.</p>
+
+<p>JACK:	As he was setting up his new router he was noticing that it had a lot of features on by default, too many features.</p>
+
+<p>KYLE:	A VPN installed on it, an FTP server installed on it, Samba for the file sharing internally in the network.  It also had several different web servers running on it.  I was like, this canât be safe.  This canât be.  There was something â gotta be [inaudible] here, because thereâs so much on it.  It just seemed like it was too good to be true kind of thing.</p>
+
+<p>JACK:	First thing he noticed was the default user name was admin and the default password was also admin.  At no point was he prompted to change this password.  For many people who own this device, they likely didnât change their password on it and it was left as admin/admin.  These kind of weak default settings often upsets Kyle.  He changed his default password and continued setting up his new router.</p>
+
+<p>KYLE:	I just started fiddling with it like I would do a normal web app pen test.  Port 80 had the administration interface with it and then port 443 had the AI Cloud, or the Cloud interface with it, which is what I concentrated on.</p>
+
+<p>JACK:	One of the features he enabled was an FTP server.  He plugged in an external hard drive into the router and enabled the FTP server.  This feature turns the router into a network storage device.  This allowed users to store backup files, their music collection, personal photos, past tax records, whatever people put on their external hard drives.</p>
+
+<p>KYLE:	The thing that caught my interest was when I turned FTP on, as I do once in a while, I scan my own IP address.  I realized that port 21 was open with anonymous access.  I was like, whoa!  Hold on here.</p>
+
+<p>JACK:	[MUSIC]  What he found was not only could he access his personal photos from within his house through the router, but because the router was on the internet with a public IP address he was sharing all his data to the entire world.  To make matters worse, there was no password needed to access his files.  If a hacker knew you had this router and you had plugged a hard drive into it, that hacker could see all the files you had on the hard drive from thousands of miles away.</p>
+
+<p>KYLE:	Yeah, I had plugged in one of my external hard drives to the back of it and thatâs really what got me piqued.  Like, hold on.</p>
+
+<p>JACK:	Once Kyle found one security issue with the router he began using his penetration testing skills to see if he could find something else.</p>
+
+<p>KYLE:	What I did was I just started looking and fuzzing.  I didnât even really need to fuzz all that much.  All of the file paths were right there.  I realized what I was looking at.</p>
+
+<p>JACK:	Using a few simple tools he found the directory structure and where certain files were stored.  One of the files he found was a file that contained the username and password of the router itself.  What startled him about this was that the password was stored in clear text in just a plain file.</p>
+
+<p>KYLE:	I literally could go to my browser and browse up in the browser the HTTPS IP address/smb/tmp/lightep, which was the name of the web server that I was using, permissions.  When you do that it drops a text file for you that has admin and then whatever their password would be; admin/admin if they didnât change their default password.  That only took me maybe twenty, twenty-five minutes to find â of testing and that wasnât even really hard fuzzing, smart fuzzing, or looking at any kind of vulnerabilities.</p>
+
+<p>JACK:	This means any guest within his home could easily find the password to Kyleâs router.  Someone could just use a regular browser and go to the URL and see his password.  No authentication was required to see this but Kyle thought about this a little longer.
+KYLE:	Hold on, hold on.  Can I get to this from the outside when port 443 is open?  Because I enabled the AI Cloud service which is their own particular cloud service that has a built-in â they do things like you can sync your iTunes to it, you can sync your phone to it.  I was able to get to it from the outside as well with a clear text password.  Then I called another friend who lived quite far away and I asked him if I could â I knew he had one as well.  He had actually recommended it to me.  I said can I look at yours?  And sure enough, I was able to get his clear text password right off the bat.  That was kind of scary.</p>
+
+<p>JACK:	Now he realized that if anyone enabled the AI Cloud feature of this router, then anyone on the internet can easily find the password to this router.</p>
+
+<p>KYLE:	You could literally create a list of all of the Asus routers there are in the world with that directory structure and just snag each one of them that had port 443 open.
+JACK:	He was becoming increasingly concerned about the security of this router.  He was running it with the latest patches and updates and it had all these security problems.  He began researching whether this was a known bug or not.</p>
+
+<p>KYLE:	It kind of scared me a little bit because I knew how popular this router was.  I quickly looked online to see if anyone else had found it, hoping somebody else had found it.  When I didnât find anyone else had found it I was like, uh-oh.  I better spend a little more time on this.</p>
+
+<p>JACK:	At this point Kyle had a long list of security flaws he found in this router.  These issues wereâ¦</p>
+
+<p>KYLE:	The clear text password was in an unprotected directory structure.  You had the FTP problem, Samba for the file sharing internally in the network, which was one of my other findings, then you had the bigger problem of the default passwords which was admin/admin.</p>
+
+<p>JACK:	The router also has a VPN built into it, which by combining these vulnerabilities an attacker can gain access to your entire home network just as if someone is in your house using your WiFi.</p>
+
+<p>KYLE:	It was disturbing to say the least.</p>
+
+<p>JACK:	It became evident to Kyle that anyone with this router has a very insecure home network.  Kyle used a website called Shodan to try to understand the size of this problem.  Shodan is a website that scans the entire internet to see what IPs are alive and what ports are open.  It also tries to get the type of system thatâs running on those IPs.  Kyle found at least 50,000 people were running the vulnerable FTP server.</p>
+
+<p>KYLE:	The fifty, sixty, seventy thousand that were vulnerable, that was just to the FTP.  Youâre talking two to three times that amount to the port 443 and then the port 80 default password.  That was the really disturbing thing, is that attackers could use it as a one-stop shop to dump all their â whatever malicious files they were sharing or downloading.  It even came with a torrent download little program.  Then they could use the VPN of these people, whoever the end users were, wherever they were, to then proxy â kind of proxy their attacks or their malicious deeds online furthermore.</p>
+
+<p>JACK:	Kyle was now understanding the massive size of this problem.  This high-end expensive router that he had purchased was full of glaring security vulnerabilities and bugs that were not yet known to the vendor or discussed publically.  It made over 100,000 people vulnerable to attacks in their own home, attacks such as taking their files, accessing internal computers, controlling the userâs router, or using the router to wage attacks on other systems.</p>
+
+<p>KYLE:	The end user, until their router started going down, I doubt would ever have the knowledge that anything was happening to them at all.</p>
+
+<p>JACK:	When software has security bugs in it and the vendor is not aware of the problem, this is called a zero-day vulnerability.  Itâs called a zero-day because thatâs how many days since the vendor has been aware of the problem.  Once the vendor is aware of the problem itâs no longer a zero-day and the vendor can work on releasing a fix.  Now put yourself in Kyleâs shoes for a moment.  Youâve just found numerous unfixed bugs in a very popular home router.  This bug allows you to access the private networks of over 100,000 homes around the world.  Not only can you easily get into the home network but you can also have the ability to see all their files and use their router as a proxy.  What would you do if you had this kind of knowledge and capability?  Would you go around looking at everyoneâs files to see what they had?  Would you try to sell these exploits on the dark market for some Bitcoin?  How would it make you feel to be in this situation?</p>
+
+<p>KYLE:	I was kind of angry that I had bought this thing with this glaring vulnerability.  I wanted to get Asus on board right away with it, get their info set group or whatever team they had doing security to fix it right away because it affected more than just a few people.</p>
+
+<p>JACK:	For Kyle the choice was easy.  Not even once did he try to view someone elseâs files or use this knowledge for anything malicious.  He simply wanted this bug fixed to help improve security for thousands of people.  In fact, he was a customer too and he wanted the bug fixed for his own router.  He began trying to figure out how to contact Asus, the makers of this router.</p>
+
+<p>KYLE:	I think it was around February or March I sent my first e-mail.  I hadnât done much in the way of public disclosures before and whenever I had found something, it was usually â I would send an anonymous note in, which I did for about a month.  Didnât get any response back to my anonymous e-mail account.  I had a fake name in there.  I said you know what, Iâm going to use my real name and my real e-mail address because this is that important.</p>
+
+<p>JACK:	Kyle sent Asus another e-mail, this time using his real name.  Three weeks go by.  Still no response from Asus, so Kyle sends them another e-mail in May.</p>
+
+<p>KYLE:	They did respond; they say okay, weâll take a look at it.</p>
+
+<p>JACK:	Kyle was somewhat relieved to have finally gotten a response but he wasnât going to be satisfied until the fix was released.  He waited two more weeks which has now been two months since he first notified them of this problem.  Thereâs still no bug fix or press release telling customers that this problem exists.  In fact, Asus hasnât even confirmed they see a problem yet.  He was starting to lose patience with them.</p>
+
+<p>KYLE:	I sent another e-mail and then another couple e-mails after that.  I wasnât trying to hound them.  I just wanted them to say yeah, weâve confirmed that this is a vulnerability because I kind of wanted to forget it and move on.  After about a month of that I decided to go with the partial disclosure online to kind of prod them to move a little bit faster because they werenât warning their customers and people were just going out and buying these routers.</p>
+
+<p>JACK:	What Kyle decided to do was post the bug he found publically online for anyone to see.  This was a hard decision to make.  On one hand, heâs notifying the customers thereâs a bug in their router which lets strangers access their router and connect to their drives, but on the other hand heâs going to be giving keys to hackers which they can use to enter thousands of peopleâs homes.</p>
+
+<p>KYLE:	What I know as far as being an individual independent researcher, my voice doesnât carry a lot of weight so when I find something individually and the vendor doesnât want to fix it or they donât care about it, the only tool we really have at our discretion, unless youâre really connected in with some reporters or something, but is to embarrass them.  Embarrass them into fixing the bug.  Unfortunately embarrassing them sometimes means giving a proof of concept that this is truly a bug and hereâs the proof of concept.  Yes, I know the bad guys are also going to see this proof of concept but some vendors just donât care until the PR hits them.  When the PR hits and the bad press hits and it gets out there that they have a buggy application or a buggy router or switch or whatever it is, then they get moving on fixing it.  Itâs a dangerous thing for us to do because we get â Iâve had lawsuit threats before.  It doesnât feel too good to know that because you disclosed something people have gone and exploited it but as I said, Iâve told my wife and several other people, said I donât break the software applications.  It would be impossible to do.  I only point out where itâs already broken.</p>
+
+<p>JACK:	This concept of posting a security vulnerability publically for the world to see is called full disclosure.  This topic is often debated in the security community.  Kyle was hesitant to share all his findings with the public, though.</p>
+
+<p>KYLE:	I went with a partial disclosure, not really getting into details about what it was but saying what it could do.  I briefly mentioned the FTP issue but I didnât go into depth about it.</p>
+
+<p>JACK:	Now Kyle watched and waited for Asus to respond.  Three more weeks went by.  Itâs now been four months since he first brought this to their attention and they still havenât even confirmed they agree itâs a flaw.  Kyle decided to take it a step further.</p>
+
+<p>KYLE:	Thatâs when I went on there and I put that one disclosure about the clear text password which got picked up.  A bunch of outlets picked it up and they ran from there, crazy.  I didnât mention the FTP thing because I thought that was really damaging if all of a sudden I just threw those 70,000 people under the bus.  I know full disclosure really should be full disclosure and today I probably would have done it a little differently.</p>
+
+<p>JACK:	[MUSIC] Security blogs, websites, and news outlets saw Kyleâs disclosure and began writing articles about the glaring security flaw.  They were able to articulate exactly how bad this issue was.  Customers began getting upset and demanding Asus to fix the problem.</p>
+
+<p>KYLE:	That got them in gear to at least fix a couple of the issues but the FTP issue went â remained unfixed through August and September.</p>
+
+<p>JACK:	So Kyle e-mailed them again.  This time Asus connected Kyle with someone from PR whoâs also a liaison to developers.</p>
+
+<p>KYLE:	He said, okay, well weâll take a look at it but this is by design.  This is by design.  We call it, and I kid you not, infinite sharing.  This is our infinite sharing, I donât know, I guess you would call it, I donât know, an upsell or something, that it was supposed to be so you could share with your â everybody.  I said everybody?  Like everything on your hard drive could be shared with them?</p>
+
+<p>JACK:	This response did not satisfy Kyle.</p>
+
+<p>KYLE:	I was like, oh, come the F on.  Jesus Christ, no.  But I just let it go at that point because they werenât going to fix it.  They knew about it but thereâs really â sometimes you canât really do anything.</p>
+
+<p>JACK:	October passes.  November passes.  December and January pass.  At this point all the bugs Kyle found were public knowledge.  Partially from the clues he mentioned and partially because of the extra attention on Asus.  The vulnerabilities he found were present on ten different Asus router models.  Knowledge of this vulnerability continued to spread around the internet.  Unwanted strangers were now going around looking into peopleâs files.  Itâs a high probability that every Asus FTP server was accessed by multiple strangers at this time.  They probably looked through the files and took anything that looked interesting, and even uploaded files as a stash point.  An unknown group of people tried to take matters into their own hands.  They did a scan on the internet and looked for all vulnerable Asus routers and found just over ten thousand IPs that were running the anonymous FTP server.  They accessed each one of these routers and left a note.  It said, âWarning.  You are vulnerable.  This is an automated message sent to everyone who was affected.  Your Asus router and your documents can be accessed by anyone in the world with an internet connection.  Solution: completely disable FTP and AI Cloud immediately.â  The note was signed by /G.  This may mean the hackers originated from the technology board on 4Chan which uses /G as their name.  The note also called this incident ASUSGATE.</p>
+
+<p>Letâs try to understand the feeling of being a victim to this.  Imagine you go to sleep at night in your nice, cozy, safe, warm bed and sleep peacefully through the night.  You wake up, walk into the bathroom, use the toilet, and when you look in the mirror thereâs a note written on it telling you there has been a door open in your home for eight months and anyone can walk in.  The creepiness feeling you get when you realize someone has been in your router looking at your files is unexplainable.  Itâs a feeling of being violated and itâs horrible.  Asus customers were outraged that their hard drives and files were accessed.  Now, because the FTP server did not have a password on it, itâs questionable whether accessing it is illegal or not.  If thereâs no restriction keeping people out, then some laws say itâs legal to access it.  The hackers did not use any special tool, or bypass, or hack, or trick to access the files.  They used a standard FTP client and no password was required to do what they did.  Since Asus said this was a feature and not a security bug, then itâs even more likely that this act was not criminal.
+KYLE:	That got Asus back in gear but Asus contacted me like I had done it.  In fact, a couple of people were like oh, so why did you do that?  Iâm like, I didnât do that.  Some other group did.  They had good intentions.  They were just dropping a text file on their FTP but I certainly wouldnât have done it in that manner if I had done something like that.</p>
+
+<p>JACK:	The news of the hackers uploading notes to peopleâs routers made its way to major news networks.  In fact, Kyle was even interviewed by CNN at one point to explain the situation.  He was nervous about the interview and was impressed at how big the news had become.</p>
+
+<p>KYLE:	It got fairly big and a little concerned for my first disclosure publically.</p>
+
+<p>JACK:	Eventually Asus fixed all the bugs Kyle had reported, but after that Kyle found even more bugs in their fixed versions and reported them, too.  Eventually Asus resolved these issues, too.  A few years later in February 2016, United States Federal Trade Commission filed a case against Asus.  The FTC believed a law may have been broken by Asus.  Five months later a verdict is reached.  The FTC saw proof that over 10,000 customers had their data accessed by an unwanted intruder.  The FTC said Asus was not addressing security issues in a timely manner.  Asus settled on the case and the FTC approved the following orders that Asus must comply with: Asus must not mislead their customers about security flaws.  They must clearly notify their customers publically when a security update is available.  They must conduct security audits on their products.  This includes penetration testing, employee training, code reviews, risk assessments, and more.  The security audits must be submitted to the FTC to prove they have taken place.  If Asus failed to comply with any of these orders they will be fined $16,000 for each violation.  The harshest part of the FTC orders is that the FTC is requiring audits to continue for the next twenty years.  Asus has to comply with these orders until 2036. [MUSIC]</p>
+
+<p>KYLE:	To this day there are still two to three thousand â and itâs how many years later?  Three and a half years later?  If you go on Shodan youâll see two to three thousand people still have the old firmware on that exposes their entire FTP and therefore all of their internal hard drives they have plugged into the back of that router to the world as an anonymous reroute access, which is quite scary.</p>
+
+<p>JACK:	Thousands of people remain vulnerable still because they simply havenât patched their router.  Thereâs a fix available but they either arenât aware of it or donât care to fix it.  If you have an Asus router, itâs a good idea to keep it up to date and patched up.  There are now new methods for security researchers to work with vendors to fix these problems.  Some companies will offer a bounty reward for any security bugs found.  These bounties can result in researchers making thousands of dollars by finding a single vulnerability.  For the record, Kyle never did ask for bounty reward and nor was he offered any bounty reward for his findings in the Asus routers.  The Department of Homeland Security has a branch called The US Computer Emergency Readiness Team, or US-Cert.</p>
+
+<p>KYLE:	US-Cert has really stepped up its game.  A lot of people now go to US-Cert who will do that work for them; that will get in touch with the vendor and do the disclosure and do it publically.  Thank them for really stepping up and helping a lot of us.  I donât really have to do full disclosure hardly anymore because I can go to US-Cert on most items and say hey, can you help us out here?  Iâve been trying to go with this vendor, they donât want to be responsive, and kind of put the ball in their court because theyâre working with DHS, theyâre working with MITRE and some other people to do that kind of work for the community.</p>
+
+<p>JACK:	Iâm curious Kyle, what home router do you use today?</p>
+
+<p>KYLE:	Oh, right now I have the Xfinity â they actually have two models.  That one for 100 MBs streaming and one for the regular size streaming which I actually found a vulnerability with because the actual firmware of this and the routerâs hardware itself is actually made by Cisco who I disclosed three zero-days on those.</p>
+
+<p>JACK:	It sounds like no matter where Kyle looks, he finds bugs in these home routers and even business-class routers.</p>
+
+<p>KYLE:	I think theyâve still got a long way to go and I still think that security is an afterthought in most of the vendors.  Until that mentality changes and until they really put some thought into getting some good pen tester to test their product, weâre still going to continue to see these things.</p>
+
+<p>JACK (OUTRO):	[OUTRO MUSIC]  Youâve been listening to Darknet Diaries.  For show notes and links check out darknetdiaries.com.  Music is provided by Ian Alex Mac, Kevin MacLeod, and Tabletop Audio.</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+<p>Transcription performed by Leah Hervoly
+www.leahtranscribes.com</p>
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

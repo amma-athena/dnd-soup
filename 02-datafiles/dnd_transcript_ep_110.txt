@@ -1,0 +1,497 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>Spam Botnets â Darknet Diaries</title>
+	<meta name="description" content="This episode tells the stories of some of the worlds biggest spamming botnets. We'll talk about the botnets Rustock, Waledac, and Cutwail. We'll discover who was behind them, what their objectives ...">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Spam Botnets â Darknet Diaries">  
+	<meta name="twitter:description" content="This episode tells the stories of some of the worlds biggest spamming botnets. We'll talk about the botnets Rustock, Waledac, and Cutwail. We'll discover who was behind them, what their objectives ...">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/spam.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/110/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Spam Botnets â Darknet Diaries" />
+	<meta property="og:description"        content="This episode tells the stories of some of the worlds biggest spamming botnets. We'll talk about the botnets Rustock, Waledac, and Cutwail. We'll discover who was behind them, what their objectives were and what their fate was." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/spam.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/110/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/spam.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/110/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="Spam Botnets â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/spam.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 110: Spam Botnets</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://www.podtrac.com/pts/redirect.mp3/traffic.megaphone.fm/ADV1493915926.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/110/",
+			   "title": "Ep 110: Spam Botnets"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/110">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[START OF RECORDING]</p>
+
+<p>JACK:	I grew up in the US, close to my grandma.  She was old and needed medicine, and often sheâd buy her medicine in Mexico.  I have many fond memories of taking an all-day road trip to Mexico, getting across the border, trying to find la farmacia, hoping weâd get the right medicine there, figuring out a way to get it back over the border, and then driving home.  The thing is, here in the US, medicine is crazy expensive, so making the trip down to Mexico for medicine was worth it to us.  [MUSIC] My grandma was just someone looking for deals and trying to save money.  But this is a common story Iâve heard from other people in the US, too.  Yeah, itâs often illegal to do this, because the US doesnât want people importing drugs that arenât FDA-approved, but still, people do it.  But then, another option landed on the table; pharmacies began to appear online.  Suddenly, you could order your medicines from your computer and get it delivered right to your front door, and that changed everything.
+<!--more-->
+But there was a problem with this, too; not all these internet pharmacies were above board.  They werenât all licensed, and most of the time, the medicines they were selling werenât regulated, and that makes for a really murky and dangerous scene.  When rogue online pharmacies hit the market, underground partnerships were born to promote them and get more customers.  Their public face looked authentic, but the reality was much darker.  Their digital partners were internet spammers.  Todayâs internet is like a big mask.  Itâs full of shady characters trying to trick you.  This story is a look behind closed doors at what really goes on, and how spammers and botnets and hackers have shaped how online pharmacies look today.  When you venture into the depths of the internet, the consequences can be life-changing.</p>
+
+<p>(INTRO):	[INTRO MUSIC] These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	When pharmacies started up online, getting medicines became much easier, and that was a game-changer for a lot of people.  But there was still one big problem; the cost.  These medicines were just unbelievably pricey.  As more and more pharmacies became available online, people looking around for medicines started to notice a big price difference on certain sites.  Some online pharmacies would show up and they had the same range of meds available, but they were a lot cheaper, and I mean like, half the price cheaper, and they didnât even ask for a prescription.  But these pharmacies werenât the real thing.  They were rogue, and pretty much everything on their website was fake.  A lot of these rogue internet pharmacies advertised themselves under the Canadian Pharmacy brand.  See, Canada is known for licensed medicines being available at much more reasonable prices.  Thereâs a regulation on medicine there, so pharmacies are told by the government what prices to charge.  So, when people thought these online meds were coming from Canada, they were less suspicious and more trusting.  The reality though, is that these drugs were not being sold from Canada.  Hereâs an audio clip from the Partnership of Safe Medicines.  Have a listen to what they say about online Canadian pharmacies.</p>
+
+<p>PSM:	Have you ever Googled âCanadian online pharmacyâ and gotten like, forty million results?  Most people donât realize that these online pharmacies that they find in Google are not mom-and-pop businesses selling you inexpensive medicines because itâs the nice thing to do.  Theyâre fronts for large, global criminal networks that run hundreds or even thousands of sites to sell unapproved drugs for huge profits.  Sometimes the drugs arenât FDA-approved.  Sometimes they donât have enough or any active ingredient, and sometimes they have deadly ingredients.</p>
+
+<p>JACK:	[MUSIC] As the internet pharmacies were really starting to gain steam, the little blue pill rose in popularity.  Big Pharma company Pfizer started making their Viagra pill to solve the problem of erectile dysfunction, and their marketing campaign was a throbbing success.  By 2008, Viagra sales brought Pfizer $2 billion that year, which accounted for 92% of all erectile dysfunction pills.  This pill had been prescribed to over thirty million men worldwide in the ten years it had been available.  Thereâs been books written about Viagra and how it changed peopleâs lives, but Pfizer had a strict patent on the pill, and no generics were available.  So, the only way you could get it was to buy the name-brand, expensive one.  So, those shady online Canadian pharmacies became shadier.  They decided to make their own Viagra pills, and the most important part of it was to make sure it was the same shape, size, color, and label.  But it didnât matter what the ingredients were.  [MUSIC] These were fake pills.  Some were harmless, but others contained blue printer ink or boric acid.  The fake online Canadian pharmacies knew there was such a high demand for these pills that they wanted to cash in on that demand.</p>
+
+<p>In 2006, two Russians, Igor Gusev and Dmitry Stupin, set up their own online pharmacy called Glavmed.  Thereâs a lot of characters in this story, and thereâs actually a few different Dimitrys, so Iâm sorry if it gets confusing.  Now, their website, Glavmed, was nicely done and claimed to be part of the Canadian pharmacies group.  But Glavmed was not a legit pharmacy.  There was no requirement for a prescription, and no online pharmacist available to answer questions or check out each order.  See, every legit pharmacy has a pharmacist working there.  To be a pharmacist, you need a PharmD degree, which is a Doctor of Pharmacy, and you need to pass an exam to get a license.  Itâs important that a pharmacist checks every order, because certain drug combinations can be deadly, or even some drugs by themselves can be deadly and need proper warnings.  But the Glavmed pharmacies didnât care about that, and didnât hire pharmacists.  They sold everything from fake Viagra to pain medicines, and they were getting them from mass factories in Europe.   It was like Amazon for meds; browse, click, add to your basket, pay, and go.  That was it.  No prescription needed.</p>
+
+<p>Igor had experience in some not-so-legal online businesses.  Back in 2003, he had set up a payment processor in Russia with his business partner at the time, Pavel Vrublevsky.  They called it ChronoPay, and it did pretty well.  It wasnât the most clean of operations, though.  A lot of the payments ChronoPay was processing were for underground online pharmacies, or a lot of really shady porn sites.  So, when Igor decided to set up his own fake internet pharmacy, it really wasnât that much of a leap.  Igor and Pavel had a falling out in 2005, and Pavel started running ChronoPay by himself, and thatâs when Igor went and started Glavmed with Dmitry Stupin.  To be successful, Glavmed needed customers.  So, they needed to advertise.  But they didnât want to do the advertising themselves, so they set up an affiliate network.  [MUSIC] They offered affiliates an impressive 30%-40% commission rate on each sale they drove to the Glavmed pharmacy sites.  They would offer huge prizes and throw big parties for their affiliates, because they were trying to be the top affiliate network and attracted the best affiliates.  These Russian affiliate networks were called Partnerka.  Itâs a good and tried and tested business model.  Igor and Dmitry-Stupin only paid out when they got sales.</p>
+
+<p>The more money they were paying affiliates in commissions meant the more sales they were getting.  Theyâd deal with all the ordering of the medicines, keep the stock up, taking payments from customers, and organizing the shipping.  Their affiliates could concentrate on driving customers to the site using whatever advertising models they wanted.  Glavmed wasnât picky; anyone could sign up at this program and take a shot at making some money with it.  If the methods they used were on the black hat side?  Well, that didnât bother them too much, either.  Glavmed had a sister program called SpamIt, and they had an affiliate program, too.  Now, SpamIt was a spam affiliate program.  You can sign up for them, get your little affiliate code and whatever product SpamIt wanted you to market, and then spammers would send tons of e-mails out with that URL and tracking code.  Truckloads of e-mails were sent to everyone across the globe, but mainly to people in the US, advertising things like Glavmedâs online pharmacies.</p>
+
+<p>When people clicked the link to go the website, that link had a little tracking code which gave the spammer credit for the traffic.  So, if people do buy something, SpamIt knows which spammer sent them that customer.  [MUSIC] But SpamIt was a secret program and sat under the Glavmed shadow.  While anyone could sign up for an affiliate program at Glavmed, not anyone could be an affiliate at SpamIt.  People needed to be invited from somebody who was already a member.  Sometimes theyâd even get background checks to have them prove themself as a decent spammer.  You know what itâs like in your inbox; you get e-mails from your bank or your cell provider, great.  But you also get a lot of other stuff too, stuff you didnât ask for, and sometimes itâs way more than just an e-mail.  Microsoftâs Digital Crimes Unit Senior Attorney Richard Boscovich explains it pretty well.</p>
+
+<p>RICHARD:	[MUSIC] You could open up your e-mail account and youâll have tons of advertisements and things of that sort that you just donât want.  But spam is much more than that.  Itâs kind of like if you had junk mail come to your house, and when you open the envelope, a white powder exploded on you and somehow you become infected with something.  Literally, thatâs what happens in the cyber world.</p>
+
+<p>JACK:	Then youâve got a lot of porn e-mails, the ones telling you that somebody is nearby and wants to hook up, and what websites to visit to see an exclusive show.  Next to porn, itâs pills, and Viagra was the leading one.  The little blue pill was sold in e-mails telling you how your sex life will be enhanced beyond your wildest imagination.  See, back in 2007, e-mail spam filters werenât that sophisticated yet.  They would look for keywords or phrases and block them.  Spammers figured out how to get around filters and were doing so pretty easily.  So, people would see e-mails show up with the subject âwant to be rock hard?â with links to where they can buy Viagra without a prescription and for much cheaper.  Now, e-mail spam laws did come in, eventually making it harder for spammers to send these kind of unsolicited e-mails, and the e-mail clients got way better at catching them and sticking them into dedicated spam folders.</p>
+
+<p>But the shadier businesses still did it because, well, spam was working like, really well.  The more spam that went out meant more people were visiting the porn and pharmacy websites, and profits for both the spammers and the website owners.  Spammers are like the middle men when it comes to shady online pharmacies.  They might have a background in computers, IT, or hacking, but then got involved with sending spam because they can make more money from that.  Damon McCoy is from George Mason University in Virginia.  He was a lead author of a big study in the partnerships between spammers and the online pharmacies.  This is him giving a talk âPharmaLeaksâ in the 21st USENIX Security Symposium in 2012 in Bellevue, Washington.</p>
+
+<p>DAMON:	So, thereâs three main players in this economy; thereâs the user, which is the potential customer, thereâs the affiliate marketer, which is typically a spammer, and thereâs the affiliate program.  Let me go into a concrete example of a business interaction between these three parties.  So, initially what happens is that the affiliate marketer perhaps gets the user to see some kind of spam advertisement that includes some kind of link, that includes some kind of enticement of cheap drugs, no prescriptions required, to get the user to click on this.  If the user is actually interested in perhaps buying these pharmaceuticals, clicks on it, theyâll be delivered that template that I showed you in the original slide.  The user can interact with this template just as with a normal e-commerce site.  Thereâs a wide selection of drugs there.  They can select their drugs if they indeed want to purchase some drugs from the site.  Then at this point in time, the relationship switches from the affiliate whose job it is to track customers, to the affiliate program, whose job it is to actually monetize the customer and turn them into money.</p>
+
+<p>So at this point in time, the spammer fades out, the affiliate program steps in, and if the user decides to purchase this â typically purchases happen with credits cards â the user give their credit card details to the affiliate program â actually operates much like a business, and their job is to process these credit cards.  Then theyâll actually deliver some product that you ordered, so this isnât a complete scam.  These pharmacy affiliate programs that Iâll show you operate much like a business, and theyâre very interested in keeping their customers happy and satisfied, because these customers are paying with credit cards.  If theyâre not satisfied customers, theyâre gonna charge back.  These affiliate programs will be shortly out of business.  Iâll show you from the economics, these affiliate programs are in it for the long haul and they want to scale their business to large, millions of dollars.  So, itâs not in their interest to have dissatisfied customers.</p>
+
+<p>JACK:	For a good spammer, this is a great deal.  The more spam they send, the more money they can make.  They knew if they could scale up, it would mean they could really scale up; their commissions could just go through the roof.  This is what one guy figured out while he was earning himself some money with Glavmed and SpamIt.  He called himself âGoogleâ.  Yeah I know, itâs confusing âcause itâs the name of the search engine, but that was the name he went by.  So, this guy Google started spamming and he saw that it was pretty effective, and he tried thinking of ways that he could make more people visit the online pharmacy.  Sending mass amounts of e-mail is not so easy.  [MUSIC] Every e-mail thatâs sent has an IP address of where itâs from, and if you send enough spam e-mail from a single IP address, that IP address gets added to an abuse or block list and e-mail providers will stop accepting e-mails from it.  So, spammers would need to change their IP frequently, which can be a hassle.  So, the hacker named Google thought if he could control of hundreds of different computers and send e-mails from them, then it would be harder for e-mail providers to block that many IPs.</p>
+
+<p>Taking control of a bunch of different computers like this and putting them all to work together, thatâs called a botnet.  When you combine spam with a botnet, you get an incredible working machine.  So, you can think of a botnet like a big network of computers that someone has full control over all of them.  So, from a single workstation, they can tell all the computers to carry out a task, and these computers would be peopleâs home computers or laptops, or even work computers in the office, and they can be located all over the world.  But these people didnât sign up for their computer to be used like this.  So, because nobody would opt into this, it meant people running the botnets would have to stay hidden from the user and not let their presence be known.  In 2007, Vint Cerf, heâs the guy who co-developed the TCP/IP protocols, he said of the 600 million computers connected to the internet, between 100 and [MUSIC] 150 million of them were already part of a botnet.  Hereâs Kaspersky talking about how they work.</p>
+
+<p>CLIP:	Malicious software, or malware, can harm your computer in a variety of ways, and sometimes the effects are not known until itâs too late.  Whatâs worse, your computer can become one of many infected with malware, creating a botnet, short for robot and network.  Cyber criminals use special malware, usually a Trojan Horse, to breach the security of several usersâ computers.  These take control of each computer and organize all of the infected machines into a network of bots, which are unwitting tools that the cyber criminal can remotely manage.  The infected system may act completely normal with no warning signs.  A bot can be a PC, Mac, or even a smart phone.  Oftentimes, the cyber criminal will seek to infect and control thousands, tens of thousands, or even millions of computers so that they can act as the master of a large zombie network or bot network.</p>
+
+<p>JACK:	[MUSIC] Once infected, computers are hooked into a botnet, and they sit there quietly waiting for instructions.  Itâs like hundreds of thousands of obedient little puppies just sitting in silence, ears pricked up, and waiting to be told what to do next.  Theyâre obedient and will follow the instructions theyâre given.  Computers in a botnet are the most loyal machines youâll ever find.  But all botnets are created by someone, and that someone is called a botmaster or botherder, and Google wanted to become a botmaster.  A botmaster sits behind their computer, controlling it all.  Itâs all done remotely and itâs all done anonymously.  These guys donât reveal their identities.  In fact, one of the biggest problems in trying to fight a botnet is not knowing who the botmaster is, or where in the world theyâre even located.</p>
+
+<p>Botnets are controlled through a command and control server, which I like to call C&amp;C.  Some people call them C2s.  This has to be set up and maintained by the botmaster.  Even hackers need to host their stuff, and C&amp;C is like the nucleus of a cell.  All the key information, instructions, and communication with the zombie bots in the network go through here.  Once the bots have carried out their specified task, they send feedback back to the C&amp;C.  They like to report back on how well they did and any problems they hit.  Theyâre very well-trained bots.  Botnets have been used for all sorts of things in the past.  I mean, think about it, youâve got all these computers at your command.  The combined computing power is insane.  You set that thing loose and you can cause some serious damage.  DDoS attacks are a favourite for botmasters and their botnets.  But bots can also steal personal information and banking information.  But the one thing botnets are really good at is sending out mass volumes of spam e-mails.  [MUSIC] So, Google had sat and thought about ways he could gain access to hundreds of computers.</p>
+
+<p>He needed to infect them somehow with malware, and would bring them under his control.  He decided to use a Trojan to be the installer for his own spam botnet, but this really wasnât easy.  Getting all this just right was something Google puzzled over, and so, he ended up accepting some help.  Igor Vishnevsky was another spammer that Google met years before in Moscow, and he came on board to help protect it all.  By the time they were done, hacker Google and Igor Vishnevsky had built a botnet and called it Cutwail.  Cutwail was designed as a centralized botnet.  That meant the C&amp;C server would communicate directly with each infected computer.  They designed it well, but now they needed to populate it by infecting hundreds of computers to get them to join this botnet.  Google used a Trojan called Pushdo to infiltrate Windows computers and get the Cutwail spam engine running on them.  I donât know who built Pushdo, or even if Google had something to do with it himself.  But Pushdo and Cutwail went hand-in-hand in their interoperability.</p>
+
+<p>They were a pair that was rarely seen without the other, but it did happen occasionally.  Pushdo would infect machines through phishing e-mails; like, the e-mail might say, âSomeone just sent you an eCard. Click here to see it!â, and other methods were drive-by downloads.  But that was just a dropper, a tiny program whose job was to install Pushdo.  The dropper scans computers, hunting for gaps in the software.  Maybe the operating system hasnât been updated in a while, or thereâs an app that has a vulnerability.  Once it finds this, it then installs Pushdo starts the infection.  First, it makes a copy of itself and sits quietly in the system directory.  It also writes new code for the registry.  This enables new malware and updates to be installed every time the computer starts up.  Rootkits are installed to hide all this from the user and from any antivirus programs that were installed.  When those tasks are done, Pushdo gets on with its real purpose, [MUSIC] downloading more malware, and Cutwail was at the top of the list.  Once Cutwail downloads and runs for the first time, the computer is now a zombie machine.  Itâs a slave and part of the Cutwail botnet.  Straight away, Cutwail contacts hardcoded IP addresses to talk to the C&amp;C server controlled by the hacker Google.  This is the new bot asking for instructions on what it should do now, like an obedient puppy that it is.  The C&amp;C server sends back a full spam creation pack for the bot to use.</p>
+
+<p>So, the zombie machine gets a list of active e-mail addresses to send spam to, and thereâs a heap of e-mail templates with content already written and ready to go.  This was already written and tested that it could pass through spam filters.  The bots put all this together and starts sending the e-mails out in different spam campaigns.  Itâs important to mention a little bit about how e-mails work here.  Itâs incredibly easy to spoof where an e-mail is from.  That little From: field in the e-mail?  Yeah, you can write whatever you want in there.  In the early days of the internet, there were no checks to see if an e-mail came from where it says it came from.   But now, a lot of companies have added checks to verify that From: field is where the e-mail actually came from, it matches.  But when Cutwail was going around, that feature wasnât implemented very well, so you could put whatever you wanted from the From: field.  So, this was all going very well for hacker Google.  He was getting Cutwail into computers and collecting his zombie bots.  The numbers were adding up fast, and he didnât want to just stop there.   He started to offer Cutwail out to rent.</p>
+
+<p>He was advertising his botnet on SpamIt undergroundâs web forums called spamdot.biz.  Now, this is a place where hackers and spammers would go to share information, hire software, or sell malware, all illegal and dodgy.  There are loads of reasons why a ready-made botnet would appeal to some cyber criminals, but mainly it was because they wanted their own malware installed on as many machines as possible and to send out crazy amounts of spam.  [MUSIC] There were some standard prices for botnet hires.  Like, to use a botnet that has 10,000 installations, that would go for like, $300 or $800.  Machines in the US were more valuable targets; they had better internet connection, so they were up to $125 for 1,000 machines infected.  The computers in Asia and Europe, they were cheaper, at about $13-$35 per 1,000 infections.  Some were even paying as high as $10,000 a month to use a botnet which could send 100 million e-mails every day.  These services often came with free trials to prove how effective they are.  There was another Trojan or botnet called the Gameover ZeuS Trojan, and that stole personal information and banking information.</p>
+
+<p>It was installed on millions of computers using Pushdo and the Cutwail botnet.  This ZeuS Trojan is so fascinating to me, thatâs actually going to be the subject of the entire next episode, so make sure to tune into that.  [MUSIC] So, Cutwail was a roaring success and was growing fast.  This was all going in 2007.  In case youâre curious where Google got all the e-mail addresses from, underground hacker marketplaces.  You can buy a million e-mails addresses for like, twenty-five or fifty bucks, and Cutwail was amassing hundreds of millions of addresses this way.  The Cutwail botnet eventually became a self-service tool.  Once you purchased the usage of the botnet, you were given a URL which let you login and send your e-mail from.  There, you were given multiple support contacts in case you needed help.  Even the botnet creators knew that a satisfied customer would mean a repeat customer, so they wanted to do what they could to make the user experience enjoyable.  Cutwail soon passed 100,000 infected computers and was growing in size.  Remember, this botnet was sending spam e-mails from each of the infected computers.</p>
+
+<p>The more computers they had in their botnet, the harder it would be to block this botnet from sending spam, because it wasnât sending spam from one place; it was sending spam from 100,000 different places.  The Cutwail botnet just kept growing, and soon, it had over one million infected computers at its control.  At its highest point, the botnet was sending out 51 million spam e-mails every minute.  51 million e-mails a minute.  Hacker Google could send 74 billion spam e-mails a day through Cutwail.  Google used his own botnet to send pharmacy spam using Glavmed and SpamIt affiliates.  From that alone, he was earning $1,000 a day from affiliate commissions.  [MUSIC] Just months after Cutwail launched on September 2, 2007, there was a big car accident in Moscow that shook up the world of spam botnets.  Nikolai McColo was twenty-three years old and he was the owner of McColo Corp, which was a web hosting provider, and its headquarters were in San Jose, California.  Now, Google knew McColo, and hosted his C&amp;C servers at McColo Corp, because when youâre running a massive, shady, illegal operation like this, you want to host your servers at a place you know and trust.</p>
+
+<p>Nikolai and McColo Corp were known for turning a blind eye to what their clients were doing with their servers.  So, the McColo hosting provider was a safe haven for spammers, and criminals were happy to use the service.  There was a lot of criminal activity on McColoâs servers; from hosting big spam botnets to clients involved in spamming for fake goods, fake drugs, and a lot of shady pornography.  McColo Corp had a good reputation for hosting bad things.  So, on September 2, 2007, Nikolai McColo was riding in a BMW through Moscow.  The driver was a guy named Jaks, a known Russian spammer.  When they got to an intersection in the middle of Moscow city, a Porsche drove up beside them.  Jaks and Nikolai looked over at the Porsche.  Both cars came to a red light and stopped side by side.  One of them revved the engine; the other revved back.  A race was about to begin.  When the lights turned green, both cars roared off at high speed, but it all went wrong.  Jaks lost control of his car.  The BMW went into a spin and clipped the corner of the Porsche.</p>
+
+<p>Both cars went screaming off the road, and the BMW went straight into a lamppost.  It totally destroyed the car, and Nikolai was killed instantly at the age of twenty-three.  Jaks and the guy driving the Porsche walked away with minor injuries.  This was big news across the spammer community.  At Nikolaiâs funeral, Igor and Dmitry-Stupin from Glavmed were there, and Google was, too.  They knew the importance of Nikolaiâs McColo Corp for the spamming world and its hosting services, and they were fairly close to him.  So, they were wondering how Nikolaiâs death was going to impact McColo and the hosting.  The McColo group assured them that hosting would still be fine and all was good.  So, Google went with it and left his Cutwail servers with them.  Now, Cutwail wasnât the only successful spam botnet on the go at the time.  No, there were others; Google wasnât the only one who spotted this opportunity.  [MUSIC] Other guys with existing botnets saw this and wanted to monetize and earn some serious money, too.  One spammer had multiple affiliate accounts with SpamIt, and they called themselves Cosma.  Now, Cosma had signed up as an affiliate spammer soon after SpamIt set up in 2006.</p>
+
+<p>He generally used the handle âCosma2kâ on his affiliate accounts, but there were others, too.  He had an idea to propel himself to be one of the most successful spammers ever.  Cosma built a botnet called Rustock, and he had some of his command and control servers hosted with McColo Corp, too.  Heâd been toying with the idea of doing some kind of stock manipulation scam, but once he got involved with SpamIt, he saw he could really make some money.  In 2007, Cosma switched Rustock to be a pharmacy-spamming botnet.  Rustock was a little bit different than Cutwail; Windows machines were still the targets, and computers were infected in a similar way through malware download, but Rustock malware didnât launch straightaway.  No, Cosma programmed Rustock to just sit quietly, do absolutely nothing for five days after infecting a computer, which is kinda crafty.  This helped it hide from antivirus scans.  Rustock used some custom encryption techniques so when it downloaded, it just looked like a .rar file, a compressed archive file.  It ran complicated rootkits to embed itself into the infected machine.</p>
+
+<p>Debugging programs were automatically disabled, and Rustock would hide its tracks so that it couldnât be discovered.  Once Rustock infected a machine, that computer would contact Cosmaâs C&amp;C servers, just like Cutwail, but Cosma had things set up a little differently here, too.  He had more than one command server, and communication from these servers to his bots were done in more like a relay at different levels.  So, Cosma would send communication to a secondary command and control server, and that one would then talk to another set of C&amp;C servers lower down, and they would be the one who passed on the information to the bots making up the botnet.  One reason for having so many C&amp;C servers is it makes it harder to stop a botnet.  If a huge botnet has one C&amp;C server and you take down that C&amp;C server, you might lose complete control of the botnet.  So, Cosma programmed it this way in order to keep it up longer.  [MUSIC] The same kind of feedback went on for the bots; when they needed to tell Cosma something, they would go down the chain and relay messages all the way back to Cosma somehow.</p>
+
+<p>So, while Cutwail was centralized, which is one computer talking to many bots, Rustock was decentralized, where thousands of systems would issue commands to infected machines.  Cosma had something like 2,500 domains in place for Rustock.  The botnet used DNS for the bots to connect to.  But Cosma had also coded in some specific IP addresses as backup systems.  It was contingency planning.  If some of his C&amp;C servers got taken down, the botnet would just reach out to the hardcoded IP addresses and get an update on which new IP addresses to communicate with, and it would just carry on after that.  Rustock also used TLS encryption when sending spam to conceal what it was doing.  Cosmaâs C&amp;C servers were dotted all over the US, and he was paying a fair whack for them too, about $10,000 each month.  These were servers with dodgy ISPs, known for offering hosting to shady services.  Cosma did have some of his servers with McColo, yeah, but he rented servers from straight-up legitimate ISPs, too.  These ISPs had no idea what Cosma was using them for.  This was a spam botnet hiding in plain sight.</p>
+
+<p>Rustock grew into an enormous powerful botnet.  Cosma had collected between 850,000 to 2.4 million bots on his network.  It became so big that some estimate that Rustock botnet was responsible for 41% of the total spam in the world.  Each individual bot was sending over 192 spam e-mails per minute.  That put the collective Rustock output at 32 million e-mails per minute.  Thatâs 46 billion e-mails a day.  Thatâs just insane.  In November 2008, Cosma got twitchy about hosting at McColo Corp, so he started moving his Rustock servers to different providers based in Russia instead.  Cosma, it seems, wasnât taking any chances with his botnet.  [MUSIC] As Cosma was seeing huge success with Rustock as a spam botnet, Pavel was reappearing on the scene.  He was the guy who created ChronoPay with Igor, and then Igor went off to make Glavmed.  Pavel was still running ChronoPay, but he wanted to get in on some of this other action, too.  That year, he launched his own rogue online pharmacy, RX-Promotion, which would be a direct competitor to Glavmed, Igorâs company.</p>
+
+<p>But he didnât launch it on his own; he had a new partner, Yuri Kabayenkov, who did all the tech stuff for him.  So now, Igor and Pavel were going head-to-head in a battle to secure more of the online pharmacy market than their rival.  Pavel, though, decided to appeal to a different part of the online medicine market demand.  Igor and Dmitry Stupin were pushing erectile dysfunction drugs as their top seller.  They were selling their knock-off versions for a mark-up of twenty-five times what they bought them for.  Pavel instead went on to highly addictive medicines that people often abused, like opiates.  So, he was selling Oxycodone and Valium, and others like Adderall and Ritalin.  These would be his top medicines, and all for really cheap prices.  Pavel opened RX-Partners not long after, using the same model that Glavmed and SpamIt used.  RX-Partners was the affiliate program for RX-Promotion.  Spammers that were signed up with SpamIt happily opened up accounts on RX-Partners, too.  They didnât care who they were promoting, as long as it made money for them.  Some of the figures that the top spammer affiliates were earning in commissions was pretty mind-blowing.  Hereâs Damon McCoy again talking about the data he analyzed when drilling this down.</p>
+
+<p>DAMON:	Letâs look at some of the schemes that these high â that these top-earning affiliates use to be successful spammers.  So, an obvious one to think of is, right, run a large bot network and spew out a whole bunch of spam.  So, in fact, the operator Rustock, we identified him within the SpamIt data set and in fact, he made close to $2 million by operating Rustock and sending out spam shilling for the Glavmed-SpamIt program.  So, that indeed is a very good way of becoming a successful marketer, is run a large bot network.  So, as you could see, these top earners, they earn quite a bit of money, and they in fact earn the largest share of each individual sale.  However, the affiliate programs, if the affiliate programs are very successful, they in fact can earn more by taking a smaller portion of each sale over all the sales from their affiliate program than the individual affiliates.</p>
+
+<p>JACK:	It must be exciting for the spamming botmaster.  Think about it; youâve worked really hard, made this big botnet, infected all these hosts, launched your campaign, and sent out a ton of e-mails, and now youâre looking at the dashboards on Glavmed and SpamIt and youâre just watching your numbers grow, seeing the rewards pay out in real-time, and watching the earnings get higher and higher.  That must have been a pretty big kick for these botmasters.  [MUSIC] 2008 turned out to be a busy year for spam botnets, and this next botnet was probably the most complex of them all.  The Waledac botnet was started by a guy named Severa.  He was known on the spamdot.biz forum, but just like the other botmasters, he kept himself totally in the shadows.  Waledac used similar methods as the others to get computers infected and part of its network.  Social engineering trickery, innocent looking e-mails that had an attachment of malware or a link to malware, and once you clicked on it, Waledac would unleash itself into the machine, turning it into a spamming bot.  Once a machine had been infected, Waledac binaries were let loose.  It was coded in C++.  The executables were just under 1MB in size.  As all the other botnets did, the first task of the malware was to amend the machines registry so that each time the computer starts up, Waledac would be run to check for updates and keep the machine as an active spam bot.</p>
+
+<p>Waledac was designed to be a spamming machine.  It was crafted to collect bots, grow in size, and distribute mass spam e-mail campaigns.  In the core binaries of the malware was an SMTP engine which could communicate with an SMTP server and send e-mails.  The malware can deal with two types of HTTP traffic; the control message to the C&amp;C servers, and the normal HTTP traffic to and between the Waledac bots.  [MUSIC] Waledac was structured in a different way compared to Rustock and Cutwail.  It was a custom-written, peer-to-peer structured botnet with a maze of layers for its infected machines.  It had categories for its bots and different communication routes.  The C&amp;C servers did not communicate directly with the infected machines.  It was all designed for resiliency and to protect itself and to hide from anyone who was trying to find it.  Over in Canada, thereâs an engineering school connected to Montreal University.  Itâs called Polytechnique Montreal.  Two security researchers there, Joan Calvet and Carlton Davis, and Pierre-Marc Bureau who was from US internet security company ESET, well, they got ahold of these binaries from Waledac and started reverse-engineering them.  What they found revealed a complicated botnet.  Waledac didnât miss an opportunity to steal data that it could use.</p>
+
+<p>It would scan the hard drives of infected machines and sniff their network traffic.  It was hunting for e-mail addresses and passwords that it could steal and send it up the communication chain back to the command and control servers, straight into the hands of Severa.  When thinking about how Waledac was structured, imagine a big pyramid.  The base layer, the biggest layer, were the spam bots, the infected Windows machines, and they were the worker bees, the ones who were actually sending out spam e-mails.  These spam bot machines couldnât talk to each other, only to the layer above them, who the researchers called the repeaters.  This layer were infected Windows machines that had public IP addresses.  But these didnât send out any spam; their job was to pass information between the worker bots and the communicator bots.  They could talk to each other and to the layer above in this pyramid.  The third layer was the protector group.  They were the Linux servers, which the researchers thought acted as proxies for the core C&amp;C servers.  They were the protection layer, hiding the valuable servers from sight.  The five of these servers that researchers identified were scattered across the globe in locations like Germany, the US, Netherlands, and Russia, and all had at least one protector server.</p>
+
+<p>The only layer above them and sitting at the top of the pyramid was the actual C&amp;C server for Waledac.  [MUSIC] Waledac also used this layered system of lists in its structures, too.  So, all the spammer bots had their own hardcoded list of repeater bots that theyâd have to deal with, like, 200 of them, all communicating through .xml files using encrypted registry keys.  Now, they would contact a random set of these repeaters to get updates, and they would also send the repeater another list of repeater bots taken from the original list of 200.  Itâs confusing just for me to try to figure out whatâs going on here, but thatâs a lot of lists, and thereâs a lot of different layers here and a lot of different bots that you have to juggle as the botmaster.  But all this worked in harmony and was acting pretty smoothly.  The Waledac botnet was pretty successful, and it kept its botmaster earning some pretty good money.  [MUSIC] Before that year was out though, the other spam botnets would take a hit.  The McColo web host provider was forcibly taken down on November 11, 2008.  Their not-so-ethical practices had finally caught up with them.</p>
+
+<p>After a number of reports highlighting the shady nature of what McColo was doing, their two US-based internet providers, Global Crossing and Hurricane Electric, pulled the plug on them.  Suddenly, a big chunk of these botnets lost their hosting provider, and the spam volume across the world just took a huge drop.  Like, suddenly something around 80% of all spam worldwide just stopped.  Cosma had already moved some of his servers from McColo, but not all.  Google had most of his servers for Cutwail there.  This was enough to make both botnets stunned and immobile, but the effect was short-lived.  A few days later, McColo reactivated one of their servers in the exact same location where it was before, in San Jose, California.  When that server came online, the Rustock botnet came online again, too.  But within weeks, that botnet found a new hosting provider.  C&amp;C servers were reconfigured to send new sever information to all the bots, and the spamming machines got rolling again.  Spam volumes once again began to climb.  [MUSIC] By the middle of 2009, pharma e-mail spam was dominating the global spam market.  74% of all spam e-mails were pushing for dodgy online pharmacies.  67% of all that spam was promoting the Canadian Pharmacy brands like Glavmed and SpamIt.  That year, spam botnets were sending an average of 150 billion spam messages a day.</p>
+
+<p>Cutwail was riding high again, but it took another big hit in June that year, when again it lost the hosting of its master C&amp;C servers.  Another hosting provider based in California was called 3FN, and hacker Google had loads of his servers there, especially after the McColo takedown a year before.  3FN was like a repeat of McColo.  It was sort of known for hosting things that were dodgy or crime-ridden, like child pornography websites.  The FTC stepped in and shut it down on June 4, 2009.  When that happened, there was a noticeable drop in e-mail spams being sent as a result, but nowhere near as big as the one after the McColo takedown.  But a few months after that, the Cutwail botnet was back at it and just as strong as ever.  The botnets were once again at full steam, but they were also in the crosshairs of some determined people who wanted to take them down.  Security analysts, academics, and software companies, and big brand pharmaceutical companies like Pfizer were all getting pretty frustrated with these botnets and rogue pharmacies, because these online pharmacies were selling fake Viagra, which Pfizer made, and at the time, there was no generic available, so Pfizer was losing a bunch of money from these botnets.  But by this time, the botnet spamming empire and the Russian affiliate networks were all starting to show cracks in their operations.</p>
+
+<p>[MUSIC] The Waledac botnet was the first to fall.  At 1.5 billion spam e-mails a day, Waledac was a big part of the pharma e-mail spam problem.  Severa brought the online pharmacies an extra $438,000 in revenue, and his cut from that was about $145,000.  Software giant Microsoft was getting especially annoyed with Waledac.  In December of 2009, they found 651 million e-mails going from Waledac through their customersâ Hotmail accounts alone.  They decided to fight back; they realized to take down Waledac, they were going to have to do something pretty unusual.  Successfully taking down a botnet is as much about tactics and strategy than anything else.  Researchers need to bide their time, do their homework, and identify the botnetâs weakest points.  Most of the time, thatâs their C&amp;C servers.  Itâs not a game of chess where authorities have to make a move or wait for the botmaster to make theirs.  Itâs the opposite, because the best attack is a coordinated worldwide sudden strike on multiple levels to cut the botnet away from the botmaster.</p>
+
+<p>By February 2010, Microsoftâs Digital Crimes Unit, their Malware Protection Center, and their Active Response to Security guys were building a takedown team to knock out Waledac.  They had Symantec involved, experts from Shadowserver too, and there were security researchers involved from Universities of Washington, Mannheim, and the Technical University in Vienna.  Thatâs a lot of people.  Together, they would try to take down this Waledac botnet, and they codenamed this Operation b49.  The team identified 277 domains that Waledac was using to operate its botnet.  Their plan was to try to disconnect all of these domains at the same time, which would cut off all communication routes between the command and control servers and the bots.  But it wasnât going to be easy.  Microsoft had their Senior Attorney for the Digital Crimes Unit, [MUSIC] Richard Boscovich, who was fully involved in this takedown attempt.  Hereâs a clip of him explaining why.</p>
+
+<p>RICHARD:	The challenge we were facing is how do we go about stopping a botnet of this magnitude?  In essence, how do we go about disconnecting all of the robot computers from the botherder?  We looked at a traditional and well-established legal principle called the ex parte TRO.  Ex parte meaning we donât notice the other side, TRO meaning temporary restraining order.  The reason why we chose the temp â the ex party TRO, because it was a crucial importance that when we went out to sever, to cut the connections between the botherder and his bots, had to be done without him knowing.  So, it was imperative for the operation that we get the ex parte TRO before the botherder knew we were coming.</p>
+
+<p>JACK:	Microsoft filed a lawsuit naming twenty-seven John Does as the orchestrators of Waledac, including the mysterious Severa.  They wanted a restraining order on VeriSign, the company that oversees .com and .net domains, to force them to disconnect these 277 Waledac domains.  VeriSign was hesitant though, which makes it sound like VeriSign was refusing to help, but it was more like they werenât sure that they were able to help.  Alex Lanstein from FireEye explains it here.</p>
+
+<p>ALEX:	So, most of those domains existed inside the .com and .name space, and itâs not just that a registrar or registree â so, the way DNS works is you have registrees that are responsible for CCTLDs and GTLDs, and then you have registrars who essentially resell those.  Sometimes you have a shared model, but itâs not that some of these registries â and in particular, this one was in the US â itâs not that they didnât want to help out, but itâs that they werenât exactly sure whether they had the legal authority to help out.  This is sorta the â the coordinated takedown is sort of a new model that security and the ISP community are sort of working on.  Yeah, and like what Julia was saying, in that case, the DNS infrastructure wasnât going to be enough because they had some ISPs hardcoded, and you couldnât just take out the domain names.  But thatâs the first, I think, legal mechanism that anyoneâs used to take domains.</p>
+
+<p>JACK:	This really hadnât been done before.  It was totally unprecedented, and no one was quite sure how the courts were going to respond to something like this.  But the federal court in Alexandria, Virginia did grant the restraining order.  VeriSign went ahead and cut off all the domains, and Waledacâs main botmaster Severa had no idea the strike was coming.  When VeriSign disconnected the domains, the effect was immediate.  The spam traffic fell massively.  The number of bots dropped from 80,000 down to 20,000.  Waledac was severely crippled, and with quick work by the takedown team, they were able to take over the domains which were required for Waledac to operate.  Once those were taken over, the bot no longer could function, as no new commands could be issued to it, and it was successfully shut down.  [MUSIC] Operation b49 was a success.</p>
+
+<p>CLIP:	I think it is a landmark case in the sense that weâre able to finalize the case, close it out, so to speak, and weâre able to get the default judgement which we wanted.  Itâs the first time from both a technical perspective and a civil, legal perspective that weâve been able to literally address and dismantle a botnet threat such as Waledac.  The end game, of course, is with the default judgement, we will now own those domains.  By doing so, we ensure that these domains will not be used for any criminal activities in the future, effectively eliminating them from the botherderâs control.</p>
+
+<p>CLIP2:	One of the early criticisms was that Microsoftâs actions were from vigilantism and that they were supplanting federal law enforcement.  In this case, itâs exactly the opposite.  Our justice system is broken up into both civil and criminal processes, and Microsoft has every right to use civil, legal process to protect themselves and their customers from harm.</p>
+
+<p>CLIP3:	The legal process which we used is a process now that I think any other particular company in the United States which has a vested interest and is able to meet the legal requirements could do.</p>
+
+<p>JACK:	[MUSIC] The online pharmacies Glavmed and SpamIt were still going strong.  The hacker Google with his Cutwail botnet was still one of their best affiliates.  Pairing Cutwail with Pushdo was a good move by hacker Google.  It had made it very hard to take Cutwail down, but that didnât stop people from trying.  This botnet, though, seemed to have nine lives.  See, taking down Cutwailâs C&amp;C servers would cut off Googleâs ability to communicate with his bots, but heâd just activate new servers in replacement.  Pushdo would just update what the IPs are for the C&amp;C servers, and Cutwail would be fully alive and kicking again.  Between 2008 and 2010, there were three attacks on the Cutwail botnet.  In November 2008, when the McColo ISP got taken down, that had a massive impact on Cutwail.  But Google recovered, and Cutwail got back its previous strengths.  In early 2010, FireEye managed to get ahold of a handful of Cutwailâs C&amp;C servers and knocked them out.  But again, the drop in spam e-mails only lasted weeks before the numbers went back up again.  The takedown that had the biggest impact on Cutwail was actually a little accidental.  Thorsten Holz was the senior threat analyst at the US cyber security company Lastline, and assistant professor at a university in Germany.</p>
+
+<p>He and some colleagues were working on a research project in August 2010, examining botnets including Pushdo and Rustock.  They were trying to match infected IP addresses with the botnets that were responsible.  To properly do their research, they needed some C&amp;C servers to be able to test an algorithm that theyâd come up with.  So, they decided to try to take down some of Pushdoâs C&amp;C servers to get ahold of the data so they could do their part of their project.  [MUSIC] They identified eight hosting providers that were hosting thirty of Pushdoâs C&amp;C servers.  They didnât really set out to take down this botnet, and they really werenât sure what their efforts with Pushdo servers could do to Cutwail.  They sent out an abuse notification to these hosting providers with evidence that these servers had been used as command and control servers for botnets.  66% of the servers were located in Europe, with a couple hosted inside the US.  Most of the providers responded by cutting off the servers, but a few just ignored the notifications completely.  But the server disconnections did damage Cutwail.</p>
+
+<p>In fact, it stopped 80% of Cutwailâs e-mail spam overnight.  Unfortunately though, it wouldnât last.  With Cutwail momentarily weakened, that only gave more opportunity for Rustock to climb up the spam botnet world.  Cosma was bringing in decent money through Rustock and SpamIt, and he was holding his own as one of the top affiliates.  By August 2010, Rustock was the most dominant pharma spamming botnet.  But then some news broke that wasnât taken very well by these spammer affiliates.  [MUSIC] That month, Glavmed and SpamIt got hacked, and it was a huge breach.  The hacker got the sales logs, customer figures, affiliate commissions, and revenue data.  It was a database 9GB in size, with records going back to when both programs started in 2006.  It all got released to security researchers and got passed into the hands of US law enforcement.  Now, this was all a little weird.  You remember Igorâs old company, ChronoPay, and that his rival Pavel was still running?  Well, seven months earlier, that got hacked, too.  Data for ChronoPay and RX-Promotion found its way online and into the hands of security analysts.</p>
+
+<p>Security journalist Brian Krebs from Krebs on Security was one of the people who got ahold of the Glavmed and SpamIt data.  Heâd been contacted months earlier by someone calling themselves âDespduckâ, who said they had it all and they were going to release it.  From what he could figure out, this all went back to that ongoing rivalry between Igor and Pavel.  Krebs was quite convinced that this anonymous Despduck character was actually Pavel, and he was using this name as a dig to Igor, whose nickname was actually âDespâ.  It seems like these two guys were so enraged with each other that they arranged hacks on one other and then force their data to be leaked to the world.  Itâs just crazy to me, because they were trying to destroy each other.  This really wasnât good news for the spammer affiliates; the data that was being leaked contained all kinds of details about the hacker and spammer activities, like how much they were earning and some pretty big clues as to what their real identities were.  Here, have a listen to this.  Itâs Alex Lanstein from FireEye talking at BlackHat 2011 about this data leak and what it revealed about the top spammers.</p>
+
+<p>ALEX:	So, they leaked the database of one of the competitors to Krebs.  Theyâre like, oh yeah, hereâs a bunch of data; go and blog about it.  What he found was that the top three affiliates were all the same dude, so like, the top three money-earners for SpamIt all use the same WebMoney ID, and they were all the Rustock guy.  So, he would register multiple affiliate accounts and managed to be the top one, two, and three affiliate for these huge spam campaigns and just make boatloads of money.  But he didnât want to be too big, or else everyone would get pissed at him.  Theyâre like oh, who is that one username who registered multiple accounts on all these services and still be the top earners for all those different accounts?</p>
+
+<p>JACK:	Everyone was interested in this data set.  Getting raw data like this from the underground shady pharmacy operations?  That doesnât happen very often.  Brian Krebs started researching this and started connecting real identities to some of these top spammers after digging around in this data.  So, Cutwailâs botmaster, Google, Krebs identified him as a Russian spammer named Dmitry Nechvolod.  He doesnât stop there; from cross-referencing e-mail addresses on affiliate accounts with SpamIt and RX-Promotion, Krebs found the name for Cosma, too, Dmitri Sergeev.  Damon McCoy and his colleagues at George Mason University, they got this data too, as well as the leaks from ChronoPay, and it formed the basis for their PharmaLeaks study.</p>
+
+<p>DAMON:	As part of this, we have the back end database which includes order information, transactional information, a very rich set of information on the Glavmed-SpamIt programs, which are two of the larger online affiliate programs, according to when we did our analysis of spam and linked it back to the different pharmaceutical affiliate programs.  We also have chat logs from the operators of the Glavmed-SpamIt program, which again gave us a lot of metadata and insight into how their business operates.  We have a more restricted set of transactional information from the RX Promotion affiliate program.  Again, an extremely major online affiliate program thatâs constituted a large portion of spam while they were operating.  We also have extremely fine-grained revenue and cost structure information from the RX Promotion data set.</p>
+
+<p>So, just a quick summary of this data; it incorposes over $185 million worth of revenue, of purchases.  It encompasses over a million customers, over 1.5 million orders, and over 2,600 affiliates.  During our analysis of this data, we realized that Glavmed has often denied that they are the operators of SpamIt.  However, by our analysis of the databases of Glavmed-SpamIt, we realized that SpamIt is just a fork of the Glavmed databases and that in fact, these two are operated by the same people.  If you crunch the numbers, the Glavmed-SpamIt programs attract about 3,500 new customers per week, and the RX Promotions program attracts about 1,500 new customers per week.</p>
+
+<p>JACK:	[MUSIC] On October 3, 2010, another weird thing happened; the global volume of spam being sent all of a sudden hit an all-time low.  In fact, Rustock, the biggest spam botnet going on at the time, stopped sending spams completely for fourteen hours.  It just stopped doing anything.  Cutwailâs spam e-mails also dropped across the same day, but nowhere near as much as Rustockâs did.  Bradley Anstis from M86 Security Labs gave a talk at the BlackHat conference in 2011 a few months after this happened, and hereâs what he knew about it.</p>
+
+<p>BRADLEY:	Certainly, SpamIt basically closed its doors overnight in September.  Now, weâre not â still not quite sure why SpamIt closed.  We can only guess what it might be, whether they just got embarrassed, got sick of seeing their name in the press all the time, their upstream, downstream customers started getting frustrated that they were continuously getting mentioned.  Whatever the reason was, they got abducted by aliens, and you can see here the effect; the graph there on the left-hand side is the global spam volume.  Now, we track this.  You can see this all the time in our Labs website, and you can see the overnight impact in global spam volumes with the closure of just one affiliate program.</p>
+
+<p>JACK:	[MUSIC] Igor and Dmitry Stupin had shut down SpamIt.  They posted a message on the front page of the SpamIt affiliate website.  It said the program was attracting too much attention from the wrong people.  Igor had got word that the authorities were looking into him after the Glavmed data got leaked, so he was watching his back.  SpamItâs top affiliates went into a freefall.  For Cosma, especially with Rustock, this was really bad for him.  He canceled scheduled spam campaigns and left his bots sitting idle for further instructions.  Cutwail took a big hit too, but Google had his bots sending out more than just pharma spam, so Cutwail did continue sending spam and earning affiliate commissions from other programs.  Then, he was also getting good money from renting Cutwail out, too.  On October 26, Igorâs apartment and offices in Moscow were searched by Russian federal authorities.  Igor had fled the country already with his family, not hanging around to be arrested.</p>
+
+<p>Investigators found three laptops, seven hard drives, and a handful of flashcards.  Later that day, the Internal Affairs Directorate of the Central District of Moscow announced the criminal investigation into Igor.  They charged him with running Glavmed without registration and illegal entrepreneurship.  Investigators added up how much they thought Glavmed made since it started in 2006, and they concluded the revenue was $120 million.  Internal unrest and bitter rivalry had knocked out the spamming botnets who had been enjoying an easy ride off-course.  But by 2011, they made a comeback, switching their affiliate alliance to the rogue online pharmacy programs.  The Russian revenue from these pharmacies was estimated to be $142 million in just 2011 alone.  The e-mail spam volumes had once again climbed back up to astonishing levels.  The time had come once again to start taking these botnets out of operation, and it was Rustockâs turn to be in the firing line.  The preparations to take down Rustock had begun nine months earlier, right as the online pharmacies started hacking each other and leaking each otherâs data.</p>
+
+<p>Like with Waledac, Microsoft was once again leading the charge to take down Rustock, and they were coming in hard.  Microsoft, FireEye Security, US law enforcement, and computer scientists from the University of Washington were all working together to take down the Rustock botnet.  Pfizer also came on board.  Rustock was pushing internet pharmacies that were ripping off their products, and they werenât happy about it.  Both Microsoft and FireEye had been tracking Rustock, quietly collecting data on how itâs operated, and its preparations to destroy it.  FireEye figured out which of Rustockâs ninety-six C&amp;C servers were acting as the primary server.  They identified twenty-six to put in their target list.  Most of these servers were located within the US, sitting in legitimate ISPs, oblivious to what they were really doing.  Julia Wolf and Alex Lanstein from FireEye talk about how Rustock laid out its C&amp;C servers in their BlackHat 2011 talk.</p>
+
+<p>ALEX:	All of the C&amp;Cs for Rustock were â all but two of them were host â actually hosted within the United States, and the other two were hosted in Amsterdam.</p>
+
+<p>CLIP4:	So, they bought a bunch of servers in Scranton and used that as a big command and control point, and they bought a bunch of servers in Kansas City.  These places that â nothing wrong with Scranton, Pennsylvania, but itâs not just that itâs not suspicious, it makes you think that itâs completely legit.  If you see traffic going to Scranton, youâre like, yeah, thatâs probably legit.  Like, what bad could possibly be going on there?  The Microsoft DCU guys, they have this whole department thatâs basically set up to bring the hurt to bad guys, and they kind of approached us and they said what do you think â not just would be able to be taken down, but is causing a lot of harm to our customers?  From where we stand, we make a product that detects malware.  Rustock was like, the â not just the most prevalent, but it was causing a very easily-measurable amount of harm on the internet.  So, they came to us and they said, you know, what do you think?  Is Rustock something that you could help us with?  We said yeah, absolutely.  So, they said what do you think you could provide us some intel on that would help us, you know, both validate what they were seeing and from a third-party security company perspective, just basically give us your input.  So, we put together a set of monitoring tools where we were feeding them all the command and control servers that we were seeing on a daily basis.</p>
+
+<p>JACK:	So, there were a lot of Rustock C&amp;C servers that kept this botnet running.  To stop it, they needed to shut down those servers and seize them.  This was so they could be examined forensically for analysis and to provide evidence.  Plus, if the servers got seized, it would be very hard for that botnet to be reactivated again later.  Hereâs some more on what the plan was behind physically seizing the servers.</p>
+
+<p>CLIP4:	They didnât seize the servers as any sort of punitive damages.  They were granted temporary access to the servers to get any sort of forensic detail that might exist on them so that they can go after the bad guy, right?  Thatâs still ongoing, but certainly if a bad guy doesnât think â or he thinks the servers are pretty bulletproof â and these were up for like, a year and a half, so thereâs a reasonable chance that he thought that he was pretty well-protected, so he might have made a mistake such as connecting directly to it, like SSHing right to the server, or leaving things on it, like leaving a code base.  Maybe heâs compiling something, leaving code artifacts, leaving things inside the actual â the server side of the command and control thatâs never meant to be seen by a person.  You never see that.  So, that was the idea in going after the hard drives, and then obviously just kind of a shot across the bow to the criminal himself.</p>
+
+<p>JACK:	The problem with this though, is that not all ISPs owned all the equipment they used.  So, it was really complicated to get authorities to seize equipment.  So, there was only one option; Microsoft used the same tactics to hit Rustock as they did with Waledac earlier that year.  [MUSIC] Microsoft filed a lawsuit at the US District Court in the Western District of Washington.  It named eleven John Does as the operator of Rustock, who they thought were involved with Cosma.  Rustock was sending a lot of its spam e-mails through Hotmail accounts, and they were sending e-mails claiming to be from Microsoft or Pfizer. On top of that, Rustock enabled a heap of usersâ remote access to Windows clients so the infected machines could talk to each other and the core C&amp;C servers.  But, you canât do that because that goes against Microsoftâs licence agreement.  So, the legal team at Microsoft actually used a clause in their Trademark Act to give them a legal basis to help with this takedown.</p>
+
+<p>CLIP5:	Anyway, so, legal council at Microsoft.  Richard Boscovich came up with this great idea for how to do this, and thereâs a â thereâs an interesting clause in the Lanham Trademark Act that basically allows anyone who owns a trademark to seize counterfeit goods.  So basically, the legal argument that was made was that these C&amp;C servers had spam templates that claimed to be from Microsoft or from Pfizer, selling Viagra or whatever, and thatâs trademark infringement.  Theyâre selling counterfeit Viagra and whatnot and stuff like that.  So basically, itâs under the jurisdiction of this Trademark Act, and all of the C&amp;Cs are also within the US jurisdiction, so this still applies.  There was a lot of victims in the US also, and so basically, the jurisdictional requirements have been satisfied as well.  The actual request that Microsoft made is kinda written like this; basically it says all your servers are belong to us, kind of.</p>
+
+<p>JACK:	That lawsuit had a solid case, and it worked; their requests were granted.  So, now it was just a matter of getting in and taking down the Rustock servers.  [MUSIC] On March 16, 2011, Operation b107 was launched.  Twenty-six individual Rustock C&amp;C servers from five different hosting providers were seized by US Marshals at exactly the same time across seven cities in the US; Denver, Dallas, Chicago, Kansas City, Scranton, Seattle, and Columbus.  There were two servers outside the US that were seized.  One was in the Netherlands and taken down by the Dutch High Tech Crime Unit, and the other was in China.  Rustock domains registered there were blocked with the help of the Chinese cyber security technical center known as CNCERT/CC.  Cosma, Rustockâs main botmaster, had no time to respond.  All around him, server after server was going down.  Now all the infected machines that made up the Rustock botnet suddenly faced silence from the controlling master.  The security community witnessed a sudden drop in spam traffic coming from Rustock, but they had no idea why it happened.  Hereâs Richard Cox, the Chief information Officer for Spamhaus, talking about when they found out.</p>
+
+<p>RICHARD:	[MUSIC] One day, we suddenly saw the botnet Rustock disappear from the world stage.  Our first thoughts were our equipment was faulty.  I thought weâve never seen that before.  But some cross-checking proved that in fact it wasnât the equipment was faulty; the spam coming from the Rustock botnet suddenly went silent.  Silent, that is, until the silence to be somewhat shattered by shouts of joy worldwide as people realized that the most significant source of spam on the planet had suddenly ceased spamming.</p>
+
+<p>JACK:	After the takedown, Microsoft made sure to sinkhole Rustockâs main C&amp;C server IP addresses.  Basically, they were intercepting the traffic going to these servers and redirecting it to their own.  This way, they can start to identify machines infected with Rustock.  Within three months of Operation b107 starting, the million or so Rustock infected botnets had dropped to around 500,000.  Computer users were slowly claiming their machines back under their control.  The hunt for Cosma and those who helped him with Rustock was still on.  Microsoft offered a $250,000 reward for information leading the to arrest and conviction of Cosma, but that reward still stands.  Cosma still is on the loose.  He hasnât been tracked down.  Microsoftâs legal team though, are still looking for him.</p>
+
+<p>LEGAL:	[MUSIC] Weâre not gonna stop until the people behind these botnets that are affecting our customers and are impacting our platform get the message that if you target our platform, we will target you.</p>
+
+<p>JACK:	Now, one thing I havenât really talked much about yet is the botmastersâ real identities.  The data leaked from Glavmed, SpamIt, and RX-Promotions did give some clues, because there was a ton of chat logs on that server, but itâs hard to know for sure.  But we do know who Severa was, the botmaster behind Waledac.  [MUSIC] We know who he is because authorities have confirmed heâs a long-time Russian hacker and a spammer called Peter Levashov, sometimes known as Peter Severa.  He was not just behind the Waledac botnet either, but the earlier Storm botnet, too, and he was the one who created the Kelihos botnet.  That was a massive spamming machine that stole credentials and installed malware for years before Peter was caught and that botnet was shut down.  So, where does that leave us today?  Well, the rogue online pharmacies and the spamming botnets that promote them are ongoing problems even today.  Waledac and Rustock are gone, but Cutwail is still going with different versions, and itâs still paired up with the Pushdo Trojan.  Itâs just a really persistent botnet.  Both Google and Cosma have not yet been found or arrested.</p>
+
+<p>Microsoft still has a $250,000 reward for information leading to the arrest of Cosma, the guy who created the Rustock botnet.  Igor Vishnevsky, the guy who helped Google set up Cutwail?  He seems to be in the wind, too.  SpamIt, the favourite Russian affiliate network, yeah, itâs shut down.  Glavmed though, and RX-Partners, are still active and selling their knock-off meds.  I donât know whoâs running them, though.  Igor, the guy who helped create Glavmed and SpamIt, is still on the run, hiding out somewhere, so maybe Dmitry Stupin is still running it, since he helped Igor set it up.  Yuri still might be running RX-Partners, I donât know.  Or maybe theyâve passed it on to some other people at this point.  The FDA sent both of the online pharmacies warning letters that they were violating the Food, Drug, and Cosmetic Act in the last few years, but havenât been able to stop them from operating.  Glavmed got a serious warning; apparently some of the drugs they were selling contained ingredients that gave people serious side effects which could be fatal, which doesnât surprise me.  When you ingest medicine from a fake online pharmacy, who knows what youâre putting in your body.  Rx-Partners just this year had been trying to cash in on the COVID pandemic.  Some of their websites were found offering prescription-only drugs they claimed to be treatments for the virus.</p>
+
+<p>The sell was a heap of false information about COVID to play on peopleâs fear and to push them in to buy out of hope and desperation.  Preying on sick people with no actual solution to their illness, ugh, what scoundrels.  Their goal was money, plain and simple, and they were happy to exploit the most vulnerable people to get as much of it as they could.  Igor and Pavel basically destroyed each other with their rivalry and feuding, which was good for getting rid of some the dodgy online pharmacy partnerships that were going on.  Pavel, the guy who helped start ChronoPay, used some botnets to attack a ChronoPay rival in 2013.  After he did that, he was caught and arrested, and spent a year in prison.   These rogue online pharmacies are just mega-dangerous.  If youâre gonna order your meds online, make sure to check the pharmacy first.  Make sure the medicine is real and from a trusted source.  You donât want to put junk into your body that isnât regulated or safe.  The spamming botnets and botmasters are gonna keep going as long as this thing makes money, which makes this a game of Cat and Mouse that seems neverending.  But the good guys are fighting back, and theyâll keep fighting back until the bad guys are all gone.</p>
+
+<p>(OUTRO):	[OUTRO MUSIC] If you like this show, youâre gonna love the Darknet Diaries shop.  There are over fifty original, unique t-shirt designs.  Youâve got to check out this artwork; people are loving it, and Iâm sure youâre gonna find a design that youâll love, too.  Visit shop.darknetdiaries.com.  This show is made by me, your friendly firewall admin, Jack Rhysider.  This episode was written by the crime traveler, Fiona Guy.  Sound design and original music was by Garrett Tiedemann, who makes some really cool music that you should check out.  Go to cynarpictures.com and click the music to hear it.  Thatâs C-Y-N-A-R pictures.com.  Editing help this episode by the cat-herder, Damienne, and our theme music is by the beet farmer, Breakmaster Cylinder.  Even though I think a rubber mallet is a perfectly good hardware troubleshooting tool, this is Darknet Diaries.</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

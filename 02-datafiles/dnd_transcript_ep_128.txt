@@ -1,0 +1,563 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>Gollumfun Part 1 â Darknet Diaries</title>
+	<meta name="description" content="Brett Johnson, AKA Gollumfun was involved with the websites Counterfeit Library and Shadow Crew. He tells his story of what happened there and some of the crimes he committed.">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Gollumfun Part 1 â Darknet Diaries">  
+	<meta name="twitter:description" content="Brett Johnson, AKA Gollumfun was involved with the websites Counterfeit Library and Shadow Crew. He tells his story of what happened there and some of the crimes he committed.">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/gollumfun1.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/128/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Gollumfun Part 1 â Darknet Diaries" />
+	<meta property="og:description"        content="Brett Johnson, AKA Gollumfun was involved with the websites Counterfeit Library and Shadow Crew. He tells his story of what happened there and some of the crimes he committed." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/gollumfun1.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/128/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/gollumfun1.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/128/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="Gollumfun Part 1 â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/gollumfun1.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 128: Gollumfun Part 1</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/chrt.fm/track/G481GD/traffic.megaphone.fm/ADV5294066483.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/128/",
+			   "title": "Ep 128: Gollumfun Part 1"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/128">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[START OF RECORDING]</p>
+
+<p>JACK:	You grew up in Kentucky. What was yourâ¦?</p>
+
+<p>BRETT:	I was a army brat.</p>
+
+<p>JACK:	Okay. What was your first crime?</p>
+
+<p>BRETT:	First crime was shoplifting. 
+<!--more-->
+My mom â and I â Iâve spoken about this a few times, but Iâm from Eastern Kentucky. [MUSIC] Hazard; Hazard is coal country. My dad was coming out of the military. He was a captain in the army, a helicopter pilot. Army downsizes; he gets booted out. He goes back to mining coal, is what he does, strip mining. So, a bulldozer operator is what he was doing. My mom was a nurse, an LPN, and she worked long enough to see dad off to work and then she would go out, and weâd call it whoring around. She would go out and party with other men. I mean, just horrible, horrible stuff, and just abuse out the wazoo from â I remember one time me and my sister come home. I was probably eight or nine, my sister a year younger, and we â the bus drops us off. The hood of the car is up, so we walk by, like thatâs odd. We walk in. Denise asks momâ¦</p>
+
+<p>DENISE:	So, we walk in. Mom is sitting on the sofa in the living room with her legs crossed, acting all chill. I was like, whatâs wrong? Whatâs up? Whereâs dad? I donât know, she said. I look on the floor and I see pieces of marble broken off. The TV is pulled out from the wall. I was like, what is this?</p>
+
+<p>BRETT:	So, there was some spaghetti on the stove; we go to get some and momâs like no, no, donât touch that. Donât touch that. Thatâs for your father. Well, what had happened was my mom had cut the spark plug wires on the car so dad couldnât get away. She cuts the cable behind the TV so that when he goes to turn the TV on, thereâs no signal. You know, you just got the snow on there, so he gets behind the TV trying to see whatâs going on. As he bends over the TV, she takes a marble statue, clocks him in the head with it. [MUSIC] The spaghetti on the stove had rat poison in it.</p>
+
+<p>DENISE:	So, he had ended up walking â I forget how many miles â to the hospital, and he still has a piece of that marble in his skull. But of course with us, her story when we got home was, I donât know where he is.</p>
+
+<p>BRETT:	I donât know.</p>
+
+<p>DENISE:	I donât know why thatâs on the floor.</p>
+
+<p>BRETT:	That was my mom, and this is not atypical. I remember that when my dad â the one time he tried to divorce her, me and my dad were living in an apartment. My mom had my sister. My mom climbs in the window of the apartment and I wake up hearing this noise in the living room. I walk in and my momâs got a knife to my dadâs throat, threatening to kill him. That was my mom, so â and she was a criminal, soâ¦</p>
+
+<p>JACK:	What was she so bent on killing him for?</p>
+
+<p>BRETT:	My momâs problem was she always â and itâs weird with her. I think itâs because the way she grew up. She grew up abused as well. But her issue is that she always had to test peopleâs love. If I do this to you, will you still love me? If I sleep around on you, will you still love me? If I threaten to kill you, will you still love me? If I abuse the kids or neglect the kids, will they still love me? My dad was so crazy about my mom that he put up with it. He became the enabler in the family. He was scared of losing her. But I get the worst parts from mom and dad. From my mom I get that criminal mindset. From my dad I get that fear of the people that I love leaving me, and thatâs a lot of the reason that I break crime, historically. Itâs for cash, but I use cash to buy love.</p>
+
+<p>(INTRO):	[INTRO MUSIC] These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	So, today weâre gonna hear the wild and crazy story of Brett Johnson. This is one of those stories that I was very skeptical at first, like no way did he do all this. But after talking with some people who knew him and reading all the police reports, it checks out. Oh, and I should mention there are a fair bit of swear words in this episode, and it has some adult and mature content, so fair warning. Brett grew up in a weird situation. His dad was no stranger to doing illegal things. For instance, his dad was a helicopter pilot in the military, and one time his dad tried to sell some stolen hand grenades. After the military, his dad tried running drugs back and forth to Mexico as a helicopter pilot, and at one point he even tried becoming a cop with the sole idea that he was going to do a drug bust and somehow keep the money he confiscated. When all those plans fizzled out and the family had no money, thatâs when Brettâs mom decided to take the kids and run.</p>
+
+<p>BRETT:	[MUSIC] At that point in time, we were in Panama City, Florida. My mom leaves my dad. We thought we were â me and Denise thought we were coming up to Kentucky for a funeral, and we werenât. Well, I mean, there was a funeral, but we thought we were only gonna be gone a week. So, we packed enough clothes for a week. My dad thought we were only gonna be gone for a week, and I donât see my dad again for, jeez, I donât know, ten years? Something like that.</p>
+
+<p>JACK:	His mom took the kids and moved to Panama City, Florida, and they moved in with her parents. Her dad was just as crazy; super strict and pretty abusive. Just to give you an idea, they werenât allowed to eat any of grandpaâs food and they werenât allowed to make any noise after dark, and he was very strict on how much water they could use. For instance, he wouldnât even let them fill up the bathtub, and both Brett and his sister Denise did not want to be around grandpa when he gets angry.</p>
+
+<p>DENISE:	We had no soap.</p>
+
+<p>BRETT:	Right.</p>
+
+<p>DENISE:	We had really very little clothes. I mean, two pairs of panty, and you werenât allowed to wash them.</p>
+
+<p>BRETT:	Or youâd have to wash them by hand.</p>
+
+<p>DENISE:	There was that, you know. I remember going over to Pizza Hut and stealing the soap from Pizza Hut so I could bring it back and wash my underwear in the sink with the soap. You know, but I had to be careful because if he knew I was doing that, I was wasting water and that would set him off, and if you set him off, his goal was to kill you.</p>
+
+<p>BRETT:	It was; we had that round table in the kitchen upstairs in their house, and there were times when he would get the butcher knife on you and youâd do the little dance around the table until he got tired. Then he would finally sit down and he would look at you and say donât let me catch you, Iâll kill you.</p>
+
+<p>DENISE:	Or heâd get really upset and then heâd go looking for his gun, and thatâs time for you to leave.</p>
+
+<p>BRETT:	Yeah, so you would leave for a while, then come back in a few hours.</p>
+
+<p>DENISE:	But I remembered him saying to us, your parents are sorrier that pigeon shit and we should not have to feed you, andâ¦</p>
+
+<p>BRETT:	And they didnât want to feed us.</p>
+
+<p>DENISE:	No.</p>
+
+<p>BRETT:	So, mom had been gone for a few days. She started partying, using drugs, everything else like she was doing. We didnât have any food in the house and I was the guy that was scared that mom wasnât gonna come home âcause sheâd tell us that we were â she was gonna â weâd find her dead someplace, that she was gonna commit suicide, that she had given up her life for us, everything else. So, she had been gone, Iâm worried sheâs not coming back. Denise never worried at all. Denise was just always mad at her. We were living downstairs from my grandfather. He had converted the downstairs into apartments, and we werenât allowed to go upstairs to eat. They just wouldnât let us. This one time I was ten, my sister Denise was nine. So, Denise walks in one day and sheâs got a pack of pork chops in her hand, and I was like, whereâd you get that? She was like, I stole it. Iâm like, show me how you did that, sister. So, she takes me over to A&amp;P and we â she shows me how sheâs stuffing meat and everything down her pants. Iâm like well, we can eat.</p>
+
+<p>So, we start stealing food and we look across the way because we were wanting to make sandwiches. Thatâs the actual story, is we were wanting to make sandwiches. Well, you canât stuff a loaf of bread down your pants. Well, Kmart was across the way, so we went over there and stole a hoodie so we could stuff bread down the sleeves of the hoodie. Thatâs when we found out hey, we can shoplift clothes and then books, games, jewelry, toys, all that stuff. Mom finally comes home and sees the new television that Iâm playing and everything else, and whereâd that come from? I looked at her and said oh, we found it. She was like no, you didnât find that. Denise stands up; never lies at all. Denise stands up; we stole it. My mom looks at my sister and then â I mean, sheâs like, show me how you did it. Not only does she join us, but she goes and gets her mom to join us as well. So itâs grandmother, mom, me and my sister taking these road trips to different malls to steal clothes. Well, they stole clothes and jewelry. Iâd always go to the bookstore first and steal books, âcause I liked to read a lot. We were at the Fort Henry Thomas Mall in Bristol, Tennessee. They had dropped me off at the B. Dalton Bookstore. They had went in JCPenneyâs.</p>
+
+<p>We were supposed to meet back at the vehicle I think like at 1:00, 1:30. Well, I came back with a load of books; nobodyâs there. So, Iâm sitting â Iâm standing around about thirty minutes, like okay, where are they? Iâm only like ten, so Iâm like, where are they? So, I wait a while. Finally Iâm like okay, I gotta go in and find them, so I stuff the books under the blazer, walk into JCPenneyâs. As Iâm walking in, thereâs two security guards standing right in the entryway there, and I hear my name, Brett Johnson, come over one of the walkie-talkies, and Iâm like hey, thatâs me. Theyâre like, thatâs you? I was like, yeah. Theyâre like, come with us. So, I go â they take me to the security room and my mom and grandmother, theyâre huddled in a corner crying, screaming, telling everybody they didnât do it, didnât mean to, this is the first time weâve ever done it. Denise is in the opposite corner. I mean, sheâs just â I mean, Denise is ballistic, just angry, staring holes through her like she could kill them right there. Thatâs the first crime that I committed there.</p>
+
+<p>JACK:	[MUSIC] That marked the end of his sisterâs criminal behavior. She totally stopped shoplifting after that, but this was the beginning of Brettâs criminal career. He continued to shoplift and steal, never getting caught for it, either, and he watched as his mom did criminal acts, too. His mom was shoplifting and he learned she was drug trafficking, and she would sometimes call random people to try to get them to donate to a charity, but they were really just giving her money instead. This is called charity fraud. She even tried to steal heavy equipment sometimes. She was kind of an opportunistic criminal, getting involved with whatever came her way, and Brett was watching it all. After some years of this, Brett started talking with his dad again, but only over the phone. His dad had his own issues. He was breaking the law and stuff, too. When Brett was fifteen, he got his first taste of jail.</p>
+
+<p>BRETT:	When I was fifteen, I was in Eastern Kentucky. My dad had called â I called him and he said he was getting married, and I was always of the opinion that I was gonna â that dad was gonna save us. So, he said he was getting married. I went to the â I was at the hospital on a pay phone there, got in an elevator, and ended up assaulting a woman that got on the elevator with me. I just â I guess I snapped or whatever. I donât know. I donât know. I was fifteen at that point. I was charged with assault of the first degree, so they put me in solitary for six months.</p>
+
+<p>JACK:	Why do you think the news from your father getting married caused this?</p>
+
+<p>BRETT:	I think that was the last â and I donât think it caused it. I think that it was â looking back now, I think that I just â I had taken mentally as much as I could, because it turns out the woman looked a lot like mom. So, I think that I had just â with that final news of dad, I think that â I had always been the guy that thought I was gonna â you know, it took me to save me, and Iâve lived my entire life like that. If youâre gonna do something, do it yourself. But when I heard that from him, I think that child in me, that small part of having hope of somebody saving me was finally gone, and maybe I realized that that just wasnât gonna happen. [MUSIC] So, I donât like to make excuses for that because it was a horrible, horrible thing, and Iâve lived my life â I mean, every single day Iâve thought about that, and I just â I wanted to mention that because I think itâs important. I think itâs important to the story and everything.</p>
+
+<p>JACK:	This is gonna be a heavy episode. Brett pleads guilty to this assault and goes to juvenile detention for a few months, and starts attending high school in Hazard, Kentucky. This is where he finds a teacher who saw potential in Brett. He excelled in academics and drama in high school, and because he was doing well, he actually stayed away from crime for the most part. He graduated high school and wanted to be an actor, and he had some scholarship offers but ended up just going to the community college there. He gets a part in a play, then the head of the Theatre Department from the San Jose State University in California came to see his play and saw Brettâs performance.</p>
+
+<p>BRETT:	As soon as he sees it, he comes up to me. Heâs like, Iâll give you a full ride scholarship if you want to come to San Jose State right now. I looked at him; I was like, done. Letâs do this. So, I agree to the scholarship. He tells me itâs gonna be great. He actually says hey, youâre a big fish in a small pond. Iâll make sure youâre a big fish in a big pond. Youâll go someplace. So I was like, letâs do this. So heâs like, Iâll be back in a week. So, he leaves; he flies back down in a week. He drives to my house. We were living in Airport Gardens at that point. Iâm shooting basketball with some friends. He pulls up, I come over to meet him. I was like hey, let me walk you in and Iâll introduce you to my mom. Heâs like no; he said I can go in and meet her. I was like, alright.</p>
+
+<p>So he goes in and heâs in there, I donât know, ten, fifteen minutes, something like that. He comes out, never says a word, gets in the car, leaves. I didnât know what had happened. I find out â I donât know, a couple weeks later I find out that my mom â he goes in to meet her and talk to her and tell her the opportunity that Iâve got and everything else like that â she pulls a knife on him and says I will â she had this line she used to say; she said I will cut you from gizzard to sternum, and youâre not gonna steal my son from me. That scares the man to death and of course, the scholarship and all that goes out the window at that point. That, I donât know, I guess part of that kinda broke me, of leaving.</p>
+
+<p>JACK:	There were similar problems going on with his sister. She was older by this point and going to college too, but her mom had a tight grip on her and didnât want her to go away, and was doing very manipulative things to keep her. But the people at the college, about ninety minutes away, saw a glimpse of what Denise was going through and gave her a full scholarship and a place to stay, and even protected her. This gave Denise the chance she needed to escape the bad gravity of her mom and get an education and get on her feet. She became a teacher, and a pretty good one, winning Teacher of the Year, even, and she stayed clear of any criminal behavior.</p>
+
+<p>BRETT:	So, I continued in community college, had a girlfriend that was a preacherâs daughter, and those were very decent people. For the most part I didnât think about breaking the law or anything else. That relationship fell apart after five years and I met my first wife. Her name was Susan. Wanted out â Susan wanted out of the home â out of Hazard, Kentucky, and I knew that â I kinda used that as a way to get out of Hazard myself, so I faked a car accident. I had bought this little Chevy Spectrum and I figured hey, what I could do is I could cover Tess up with insurance, make sure I get the insurance where they pay for lost wages as well; that way Iâll have a steady paycheck coming in, fake the accident, go on like that. Well, my cousin Ronny, he hears that Iâm gonna fake the accident. He comes up to me; he was like hey, can I get in on that with you? I was like sure, man, letâs do this. So, the day that weâre faking the wreck, Ronny goes to the dentist, has the dentist pull a tooth, tells the dentist no, no, no, donât pack it with gauze or anything; just leave it like it is.</p>
+
+<p>So, here Ronny is; heâs got this tooth pulled. Weâre riding up in a head of a hollow to fake this accident. We end up pushing the car over a hill, then we climb down the hill and climb it back up so it look like weâve done something. We walk our way out of the hollow, hitchhike to the hospital and file this claim of an accident. I get the money to move from Hazard, Kentucky, to Lexington, Kentucky to go to school. What happens is at that point â again Iâm the guy that â itâs never been enough for me to show love in a healthy relationship. Iâve always went overboard, way the hell overboard. So I told Susan, I was like hey, donât worry about getting a job. You just go to school. Yeah, Iâve got the job, Iâve â and I got a job working at Lexmark testing printer cards. That was an eighteen-hour â no, sorry, it was a twelve-hour shift three days a week, is what that was. So here I am busting my ass doing that. Iâve got an eighteen-hour class load. Iâm not only doing that â all that, but Iâm doing all the cooking and cleaning.</p>
+
+<p>Susanâs going â sheâs never been away from home before, so thatâs hitting her pretty hard. Itâs arguments every single day and all that. Something had to give, and what gave was the job. I just couldnât do it, so I quit the job and immediately start into fraud. [MUSIC] First types of fraud I started into was telemarketing fraud. So, telemarketing charity fraud. I was working for the Shrine Circus selling circus tickets, making really good money doing that. As soon as that ended, I â they transition over to the Kiwanis Club selling money for food baskets or selling food baskets for the food centers. Youâd pay for a food basket, like $40. Youâd buy a half-basket for $20. I steal their phone list, go out and start my own Kiwanis Club. I get arrested doing that.</p>
+
+<p>JACK:	He spends three months in jail, and with no money coming in, his wife had no choice but to go back and live with her parents in Hazard, Kentucky. When he gets out of jail, he goes and lives with his wife in her parentsâ house. But just as heâs getting out, his wifeâs father bought the family a new Hewlett Packard computer.</p>
+
+<p>BRETT:	[MUSIC] Theyâre over there playing games â playing Duke Nukem and all that. Iâm sitting there going well, how do you make money on that? So, thatâs when I find eBay, and then eBay leads into all this other stuff. eBay is â basically leads into watching Inside Edition one night. Theyâve got â talking about Beanie Babies. The first crime I really committed online was that. I was watching this thing about Peanut the royal blue elephant. He was going for $1,500 on eBay. Iâm sitting there going, need to find me a Peanut. So, I was taking classes at the community college in Hazard and I was like okay, find me a Peanut. So I go around to all the little gifts â gift card stores in the area and everything, canât find the damn thing. They had all these little grey elephants online; I was like okay, I buy the grey elephant, pay $8 for that, buy a pack of blue dye, go back and try â start trying to dye the little guy. Canât dye him at all âcause heâs made out of polyester. You get him out â Iâm serious; you get him out, heâs blotchy.</p>
+
+<p>Looks like heâs got the mange and everything else. Iâm like, Iâm not gonna make money doing that. So I look around and find a picture of a real one online and post it. The lady wins the bid, and that history of â that scam mentality that I had already, that kicks in at that point. Iâm like okay, I canât wait for her to contact me. Iâll contact her, not â that way it sets the tone of the conversation. So, I send her an e-mail and I was like hey, weâve not dealt before. I donât know if I can trust you. Iâve got the animal. What I need you to do is send me a US postal money order. Itâs issued by the government. It protects both of us. It makes sure I gets my â get my money, and because itâs issued by the government, it protects you as well. She believed that. She sent me a US postal money order, two of them, for $1,500. The reason I wanted US postal, itâs very difficult to cancel that postal money order, and you can take it to the post office and cash it out as well. You donât have to have a bank account. So, she sent me that.</p>
+
+<p>I went to the post office, cashed them out, sent her this mangy looking animal, get a call right after that as soon as she receives it; I didnât order this. My response was lady, you ordered a blue elephant and I sent you a blue-ish elephant. I kept putting her off. She kept calling and bitching and complaining âcause â I did this under my real name. She kept calling and bitching and everything and I kept putting her off. Finally she just disappears, and thatâs where I learn â I talk about this a lot, that first lesson of cyber-crime, that if you delay a victim long enough, if you just keep putting them off, a lot of them get so exasperated, they literally throw their hands up in the air, walk away, and you donât hear from them again. To this day, most victims of scams and cyber-crime, they never really complain to law enforcement at all. So, it really reinforces the idea of that criminal activity. No oneâs complaining, so you keep right on going with it.</p>
+
+<p>JACK:	By this point, Brett is in his mid-twenties, and I stopped him here to try to recap what his criminal activity has been up until this point. But this just reminded him of so many more crimes he committed.</p>
+
+<p>BRETT:	One of the things I got away with â there was a baseball card shop in Hazard, Kentucky, and I got it in my head that I could go in and steal the cards one night and take them a couple states away and resell them. So here I am; I break into the shop at 2:00 in the morning and didnât know they had a silent alarm. So, 2:00 in the morning, Iâm in there stealing cards and everything else, and all of a sudden the Hazard police pull up, lights flashing and everything else, and they see me inside. So before they can get inside â I had actually broken in through the wall in the back, and the river was outside as well. So, I make it outside â as the cops are coming around the back, I make it outside. One of the cops actually grabs my arm. I wrestle away from him, dive in the river, and swim down the river and end up getting away like that. So, I did not get arrested on that. There was another episode where Iâ¦</p>
+
+<p>JACK:	Gosh, every little story â you got like a million stories. I canât do them all.</p>
+
+<p>BRETT:	Yeah, thereâs a lot of criminal activity. There was an instance where I broke into the Hazard Community College. I actually camped out â I found a place to hide until everyone had left. So again, like 2:00 in the morning, I come out and I start stealing computers at Hazard Community College and resold those. I mean, thereâs a whole list of criminal activityâ¦</p>
+
+<p>JACK:	You could write like, ten books at this point, man.</p>
+
+<p>BRETT:	Itâs crazy. Itâs crazy. Itâs crazy.</p>
+
+<p>JACK:	Okay.</p>
+
+<p>BRETT:	Yeah, so youâre trying to keep track of the criminal activity, and itâs not that Iâm trying to leave it out; itâs just thereâs so damn much that I forget some of it.</p>
+
+<p>JACK:	[MUSIC] So, after he started getting into computer crime, learning how to scam people on eBay, then he started selling pirated software, like charging people for just the trial version or some bootlegged copies of the software.</p>
+
+<p>BRETT:	So, I got a lot of my inspiration from watching Bill Riley bitch about things on Inside Edition. One of the shows he was talking on was â they were selling autographed baseballs of Sammy Sosa and Mark McGwire. So, Iâm watching that, and they were selling it all on eBay, and I think at that point in time they were $60 or $80, is what they were selling them for on eBay. Iâm sitting there watching it like, you know, why not? So I skip class the next day, go down to the sports store. I think it was Academy. I go down to Academy, walk in, and I buy a case of Major League baseballs. Stop by Kroger on the way home, buy a Sharpie pen, go home and start trying to sign these things, and find out pretty quick that hey, you know what? Itâs pretty hard to forge a signature on a round baseball. So Iâm looking at these signatures; it doesnât look a damn thing like the signature Iâm seeing online, so the next idea I get is like â Iâm like okay, well, Iâll print out a certificate of authenticity and Iâll make it look like theyâve signed it right after the game, and itâs â thatâs why it doesnât look quite right, but itâll come with a COA.</p>
+
+<p>So, I print out my own certificates of authenticity, put the entire case of baseballs up one by one on eBay, sell the entire case at $60 apiece. A couple weeks later, me and my wife are sitting at home. Itâs at night and we get that top knock, that bam, bam, bam. So you know â even if youâve never been â a copâs never knocked on your door, youâd know thatâs a cop knock at that point. So I get up, Susan is looking at me. Sheâs sitting on this couch. I get up, open the door, and at the door is Sergeant Pat Tingle and a detective. Now, Pat Tingle â I come to know his name pretty well because he keeps visiting me over the next few months. But he looks at me and Susan stands up. He looks at me; heâs like, are you Brett Johnson? I was like, yeah. Heâs like, mind if we come in? I was like yeah, come on in. So, he walks in. Susan doesnât even look at them. Sheâs just looking at me the entire time. Sergeant Tingle, he looks at me. Heâs like, I want to talk to you about some baseballs. I was like, yeah. Heâs like, Sammy Sosa, Mark McGwire. I was like, yes sir. Heâs like, autographed. I was like, yes sir. He was like, whereâd you get them? I was like, I got them off eBay. You bought them off eBay? Yes, sir. With certificates of authenticity?</p>
+
+<p>Yes, sir. Mr. Johnson, weâve got a sample of their signatures down at the station, and it doesnât look anything like what youâre selling. Iâm like oh, it comes with a certificate of authenticity. He was like, Mr. Johnson, we think that you sold those â that you signed those baseballs. I was like, no sir. And we think that you printed off those certificates. No, sir. Susan, the entire time, is looking right at me. So, heâs like Mr. Johnson, youâre gonna send these people their money back or weâre gonna put you in jail. Do you understand? I was like, yes sir. So, they leave. I look over; Susan has not â she has not looked at them the entire time. Sheâs just looked at me. Sheâs not said a single word. Now, up until this point, she doesnât know that Iâm a criminal. So, the door shuts. I look over at her and Iâm like, what? Sheâs like, you son of a bitch. Thatâs why you bought those goddamn baseballs. Iâm like, yeah. So, thatâs when she found out I was a criminal.</p>
+
+<p>JACK:	Weâre gonna take a short break here. Stay with us. So, did you get arrested for the fake autograph baseball thing?</p>
+
+<p>BRETT:	No, no, no. Thatâs one of the things you see about â and even today you see that a lot about cyber-crime and scams and fraud, is law enforcement will identify the person, but itâs such a low level at that point or such a hassle that they basically just come in and say hey, send the money back to these people, okay? Well, the only thing that tells someone like me or â âcause thereâs this whole mindset with these online criminals. The only thing that really tells someone is hey, I got away with it. I just need to make sure Iâm more careful next time. Thatâs exactly what happens, and you also learn that they, you only return the money to the people who are complaining. So, youâre profiting at the same time, alright? And that continues this trajectory, so you become an even better criminal, and basically law enforcement, that consequence of just law enforcement visiting trains you to become more careful the next time.</p>
+
+<p>JACK:	He was twenty-six years old when that happened, and after that he learned how to install mod chips in PlayStations, and he was good at this, and he was starting to do it as a service. Like, anyone who needed a mod chip installed, they could come and pay him to do it and heâd get it done. There was no scam here; it was just something he enjoyed doing for cash.</p>
+
+<p>BRETT:	So, I was installing mod chips. I was actually â I had partnered with the Electronic Games Boutique in the County Mall at that point so that any PlayStation 1 they sold, the kids that were selling them to these people would ask them hey, you want a mod chip on that? If they said yes, I would install the mod chips for the guys. That led into installing mod chips into cable boxes, turning on all the channels, which in turn led into programming the satellite DSS cards. So, that â the eighteen-inch satellite systems. At about the same time I start programming those cards, a Canadian judge ruled that it was legal for Canadian citizens to pirate satellite DSS signals. He said that hey, since RCA is not selling the systems up here, my citizens can pirate the signal. Overnight what happens is, is you go down to Best Buy, you buy a system, take it out to the parking lot, pull the card out, throw the system away, program the card, ship it to Canada; youâre making $500 a pop. [MUSIC] At about the same time, that â PayPal really becomes popular, alright? So, I was making a lot of money on PayPal, having people pay by PayPal, $500 a pop, shipping cards to Canada.</p>
+
+<p>I had so many cards â I had so many orders I could not fill them all, figured out pretty quick I donât need to fill any of them. Who are they gonna complain to? Theyâre in Canada; itâs not like theyâre gonna do anything to me. So, I donât fill any of the orders, start stealing a lot of money, got worried about how much was coming in. I was stealing about $4,000 a week at that point. This was 1996, â97, somewhere through there. Got worried about how much was coming in, thought they were gonna look at me for money laundering, figured the best thing I could do is get a fake driverâs license, open up a bank account under that, launder the money through that, cash out at an ATM. No one will ever know itâs me. Didnât know where to get a fake ID. Got online, looked around, looked around, found this guy named Fake ID Man who had a forum and everything else, and all the people on the forum were talking about how good his IDs were. He advertised all fifty states. I fell for that shit. So, I sent him $200, I sent him my picture, he rips me off, and I get angry. I get really angry because I still need that ID and I had never been ripped off like that before.</p>
+
+<p>So, here I am, the victim. I keep looking around, find this website, Counterfeit Library. Counterfeit Library, what they were doing was, is they were â their main business was selling counterfeit degrees. It was a degree mill type thing or counterfeit degrees as well. They had a forum on there that was somewhat defunct. No one was really using it, so I get on the forum and I â really, the only thing Iâm doing is bitching about being ripped off. About the same time Iâm on there, these other two guys kinda buddy up with me. Their names were Mr. X; he was out of Los Angeles. Beelzebub was out of Moose Jaw, Saskatchewan, and we become buddies. I bitch every day, theyâre talking about some of the crimes and scams that they were doing. We also start talking on ICQ. Beelzebub reaches out to me after a couple weeks and he gets me on ICQ, and heâs like, I can make you an ID. Well, by this point in time, Iâm pretty much friends with the people who run Counterfeit Library. Weâre talking by e-mail, by ICQ and everything else like that, and Iâm â was like well, make me an ID. Heâs like no, no, no. Heâs like, Iâm gonna charge you $200.</p>
+
+<p>Iâm like yeah, like hell you are. Heâs like look, man â heâs like, if youâre gonna do this kinda stuff online, youâve gotta learn how to trust people at some point. So Iâm gonna make your ID, but Iâm gonna charge you $200 because you have to learn to trust people. So I thought about that and I was like, I tell you what. I said, Iâm gonna send you $200, so that way when you rip me off, Iâll have them boot your ass off here, too. So he was like, done. Just send me the $200. So, I send him $200, send him my picture. A couple weeks later I get this ID in the name of Steven Schwecki. To me, it was the prettiest damn thing I had ever seen. [MUSIC] So, I use it to set up bank accounts, to go to cheque cashing services, to commit all these different types of crimes. Iâm very happy with that.</p>
+
+<p>JACK:	He makes friends with the people on this site, Counterfeit Library, and he learns to trust them. He was teaching them the scams he knew and they were teaching him the scams they knew, and by this point, Brett was using the name Gollumfun on these online forums, so everyone in the forums and chat just knew him as Gollumfun. Now, this site, Counterfeit Library, changed the game. I mean, this was way before darknet marketplaces came around, but criminals still needed a place to come online and buy and sell criminal things. But the thing is, how do you know you can trust a person that youâre buying something from? Thereâs no real reputation system from someone you meet in a chat room or forum. So, Counterfeit Library added a reputation feature. Specifically you could vouch for someone, which meant if someone doesnât go through with a deal and you vouched for them, now itâs on you to make things right. Now people suddenly had a way to have a more trustworthy interaction when buying illegal things from this website.</p>
+
+<p>BRETT:	The forum really takes off. When the forum takes off, it was initially me, Beelzebub, Mr. X. The first real seller that comes in at that point was this guy who went by the screen name of Mubin, M-U-B-I-N. He was from Pakistan and what he offered was is he said hey, anyone needs any type of computer certificate from A+ on up through CCIE, I will take that for you in whatever name you need it taken in, and that way you get the certificate in your name. So, he started selling that and he provided that product, and it was really good, so if someone had â if someone wanted to be a CSO or whatever the hell they wanted, they could come up with any number of certificates, pay the price. So, CCIE, Mubin charged I think $2,500 for that at that point.</p>
+
+<p>JACK:	This is hilarious to me. Some guy in Pakistan whoâs skilled enough to pass a CCIE exam, which is very hard, is willing to sit for any test and give your name to complete it. Unreal. Iâm taking a bunch of these IT certification tests, and I remember after a while, they started requiring to have your picture on the test results, and I always wondered why they added this extra security layer, but yeah, itâs for stuff like this. Now I know.</p>
+
+<p>BRETT:	The thing about love â and Susan loved me to no end. She really did. I have no doubt about that. Love tends to blind people. They donât want to think that youâre this bad guy, and certainly I was the social engineer and I was a manipulator and everything else, and I was able to convince her for three years that that wasnât happening until the police started to show up at the door through â not Beanie Babies, but autographed â fraudulently autographed baseballs, an entire shipment of FrontPage 98 that were â that was shipped with a patch, turned into the real program, stuff like that. Cops start to show up and Susan finds out pretty quick that Iâm a criminal. Then the next six years were me manipulating her, telling her that Iâve stopped, I will stop, Iâm going to stop, and finally flying mad and telling her hey, you like spending the money, donât you? The way she got away from me â and I think that she â I think she inherently understood that the only way that I would ever give up on the marriage was through infidelity, so she starts cheating on me and I find out about it, and that is the line in the sand for me right there.</p>
+
+<p>So, it took â I found out what it was, and some of your listeners may recognize this; you walk past someoneâs computer and theyâll minimize the screen or hide the phone or whatever, and youâre like okay, some shitâs going on there. Well, she â I would walk by her computer and she would switch to another screen or minimize it or whatever, and Iâm like okay, somethingâs going on there. So, I catch her in bed one morning and I go in â I had placed key-loggers on the computer and everything else, so I go and start seeing what sheâs been into, and sheâs been cheating with this guy. So, I sit there kinda stunned, and finally get up that morning. Sheâs asleep in the bedroom and I walk in and I open up the wardrobe door and I get out a suitcase, and I open it up and I start putting her clothes in it. She wakes up; she was like, where are you going? Iâm like, Iâm not going anywhere. You are. I talked real big then, but the truth of the matter was is it took about a week of me crying and everything else for me to â for us to end that relationship.</p>
+
+<p>I took her back to Hazard, Kentucky, came back to Charleston, South Carolina, and that fear that I had always had of being abandoned, of the people that I love leaving, that became real. I caused it, of course, but it was still real to me. I started â I was walking around the house in a complete daze, just getting suicidal. The only person I was talking to was a criminal friend of mine. His name was Sean Mims. I had gotten to the point â I had told him through ICQ what was going on. We started talking over the phone at that point. So, I was talking to him and I was getting more and more suicidal. Realized it, picked up the phone book, went through â itâs always been that weird shit with me; I went through the phone book, went through Psychology, and I saw this criminal psychologist, and I was like obviously I need that. Called her crying, and she was like, come in today. So, I went in and I told her â I mean, I told her everything. After I asked her if she could ever tell on me. Sheâs like no, I canât tell on you as long as youâre not actively trying to break the law. I was like, okay.</p>
+
+<p>So I told her who I was and what was going on, and she was doing some good. I mean, she did a lot of good about talking about motivations and my life and things that were going on with me, and listening to me. What happens is is after about four months, I get â you get lonely, man. I didnât have anybody to talk to. I didnât have any friends or anything. I had associates online. So, I got lonely, I got horny. I had started drinking by that point. I was thirty-four; I had never really drank before, so I started â I was a big fan of the Big Lebowski, so I thought hey, letâs start with White Russians. So, I start drinking, get lonely one night, and Iâm horny, and Iâm like, letâs go to the strip club. I had never been to a strip club in my life, and I am that idiot. I walked in, and I had actually looked it up online. I was that big guy that always researches everything. I was trying to find the strip club Iâd be â Iâd get laid at. So it was called Joeâs Roundup, and it was this little hole-in-the-wall place.</p>
+
+<p>I walk in and thereâs literally two dancers there. The first one I see is Elizabeth, and she comes over and sheâs like, you want to buy me a drink? I was like yeah, how much is a drink? She was like, $25. I was like, thatâs a hell of a drink. We spent, I donât know, three or four hours just talking. Thatâs it, just talking. Little did I know that a lot of strippers, itâs just talk. Thatâs all you do. So, I found myself infatuated with her. I didnât realize at that point in time she had â sheâs asking me what kind of watch I wore and where I lived and what type of car I drove and everything else. She was sizing me up. So I left that night, walk back in a week later, the second time I had ever been to the strip club. Walked back in a week later, looked at her, and I was like hey, would you like to go out to dinner with me? She was like well, Iâm working tonight. I canât go out to dinner, but I can do lunch. I was like well, hell, letâs go see. Letâs go do lunch. So she picked out one of these really expensive restaurants, of course.</p>
+
+<p>JACK:	Elizabeth had a taste for expensive things, and Brett thought that if he could buy her those things she wanted, then it would show his love and sheâd like him. She was also a stripper and got wasted a lot, so maybe she didnât quite care where the money was coming from, either. So, this gave Brett an incentive to kick the online crimes into high gear.</p>
+
+<p>BRETT:	[MUSIC] We were pretty big on fake driverâs licenses, eBay, PayPal fraud. Little did we know that there was this kid by the name of Dmitry Golubov who â he was a spammer and he had been watching what we were doing with Counterfeit Library. So, he picks up the phone one day. He calls his buddies, they call their buddies. They end up having a physical conference in Odessa and they hatch this idea for a site called CarderPlanet. So, CarderPlanet is basically the genesis of credit card fraud as we know it.</p>
+
+<p>JACK:	This Dmitry guy who went by Script on the forum was trying to sell credit card stuff on Counterfeit Library, but since nobody had ever done this on the site, nobody believed him. At this point, Brett, or Gollumfun, was pretty senior on the site and all sellers had to be checked out by him before they could sell on the site. So, Dmitry gets in touch with Brett.</p>
+
+<p>BRETT:	He comes on as the screen name Script, and he starts talking about how heâs got credit card information that hey, you give me an address, a phone number, wait five business days, you can order whatever you want to order.</p>
+
+<p>JACK:	Well, since Brett had to confirm that these stolen credit cards that Dmitry was selling were real, he called up Dell and ordered $5,000 worth of computers with this stolen credit card, then calls up Thompsonâs Computer Warehouse and buys another $4,000 worth of stuff, all with the stolen credit cards Dmitry gave to him to try. He waits five business days.</p>
+
+<p>BRETT:	All that product ships. It arrives at the drop address. Iâm sitting there looking at $9,000 worth of computer stuff. Post the review on Counterfeit Library, and I say overnight, but â and it may have been overnight. It was no more than forty-eight hours, but that review posts and literally everything shifts from that eBay fraud, PayPal, and fake ID stuff to credit fraud. Everyone sees the potential in that and everyone says we want this. From that point in time, Dmitry brings over Boa, who sold â his name was Roman Vega â he sold dump information and he sold counterfeit credit cards as well. He brings over a guy named Big Buyer. He brings over all these other Ukrainians that provided a slew of different products and services so that you can hide identity, you can get counterfeit credit cards, dump information, CVV information online, whatever you wanted to steal, any type of credit.</p>
+
+<p>JACK:	What people on the site were doing were buying shipments of expensive things like laptops or something with stolen credit cards and then turning them around and selling that stuff on eBay.</p>
+
+<p>BRETT:	A good carder â and I term myself a good carder â you would â you could put cash in pocket, $30,000 to $40,000 a month on profit on that, alright? That changes with CVV1. With CVV1, that became $30,000 to $40,000 a day that people were pulling out of ATMs.</p>
+
+<p>JACK:	Oh, the CVV 1 hack. Okay, so think about it; suppose you had a picture of the front and back of someoneâs credit card. Yeah, sure, thatâs enough information to buy whatever you want online, but if you want to make money from that, it takes that extra step of selling whatever it is you bought for actual cash, and thatâs what people were doing on the site. But what people wanted to do was skip that whole step of buying something just to sell it so they can make money. Why not use that card and just put it into an ATM and pull money out? But if all you have are the numbers of the card and not the actual card, you canât walk up to an ATM and just type those numbers in and get the money out. You need that physical card, and nobody had that. So, Counterfeit Library began exploding with chatter about how to get magstripe writers and blank credit cards and ways to write the data to the card. But hereâs the problem; thereâs a security code on all the cards to fight this exact problem, so that if someone gets your credit card numbers, they canât just write it to a new card. Itâs a special code that the bank will check, but itâs not visible when you just look at the card. Well, what someone found out is that there were some banks that didnât implement that security code at all. You could just write any data to the card and put anything in the security code, and the ATMs would accept it. This enabled carders to just buy a ton of credit cards from customers at that bank and write them to blank cards, and then go to ATMs and cash out. This became known as the CVV1 hack.</p>
+
+<p>BRETT:	The Ukrainians simply could not put cash in pocket literally themselves, so they had to rely on money mules. The order came down, or the offer was we will provide the track data. We need money mules. At that point you will send us back 60%. You will keep 40%.</p>
+
+<p>JACK:	So, this became the thing. The Ukrainians on the site would give you some stolen credit cards, youâd then write that data to a blank credit card, and then take it to an ATM and cash out whatever you could. Then youâd have to send 60% of your take back to the Ukrainians, and theyâd send you more cards. If you had enough cards and could hit up enough ATMs, you could make $30,000 to $40,000 a day with this. It was around this time that a new site showed up called ShadowCrew. Yeah, so letâs talk about ShadowCrew.</p>
+
+<p>BRETT:	Okay.</p>
+
+<p>JACK:	So, you started ShadowCrew?</p>
+
+<p>BRETT:	No. So, what happened wasâ¦</p>
+
+<p>JACK:	Wikipedia says you did.</p>
+
+<p>BRETT:	Yeah, Wikipedia says I did, and here â and I will accept that to a degree, with this caveat. What happens is, we were running Counterfeit Library, okay? Counterfeit Library had transitioned over to strictly credit, so we had people on there that were selling driverâs licenses. We had Grey Wolf, we had a couple Michigan guys. Lighthawk was one of them. Seth Sanders was an ID-maker. Seth really hated, and I mean he hated, the entire credit game. His only interest was in making fake IDs. So, he comes to me and he was like â âcause we always talked on Sunday night on ICQ, all of us did. He was like Gollum, can I â do you mind if I go off and I make a website that just deals in fake IDs? Iâm like dude, I donât care about that. Go off and do that. I wish you the best. So he goes off and builds ShadowCrew, okay? Just him. He builds ShadowCrew. The problem was is ShadowCrew was only fake IDs. No one was interested in fake IDs unless you needed one to run a credit card. No one was interested in that. So heâs got maybe sixty members over there. All the business is over on Counterfeit Library. Our problem was, Counterfeit Library was really the wild west. There was no moderation, anything else. If I wanted somebody booted off one of those forums, I had to contact the owners of Counterfeit Library and say hey, get rid of this guy. Because of that â and again, Counterfeit Library was â its prime business was the degree mill stuff, of counterfeit degrees. There was a real distance learning guy that had been on Good Morning America.</p>
+
+<p>He was well respected throughout the country and everything else. He found out about Counterfeit Library. He had a large forum and a large following on his forum. He posts about Counterfeit Library on his forum. What happens is is those members on his forum start to flood our forum with just bullshit, just troll post, enough so that you had to go five or six pages deep to start getting the real meat of Counterfeit Library. So, itâs starting to get overran. Weâre having Joe job attacks, everything else like that, just very hard to moderate, especially since we didnât have moderators onsite. So, Seth comes over to me, I donât know, two months later, and he was like, Gollum, why donât you come over to ShadowCrew? Iâm like, what are you talking about? Heâs like well, look; he said, Iâve got the platform built. Not only that, but Iâve â weâre running PHP, weâre not logging IPs at least on the forum side. Weâre logging it on the server side. He said but weâve got all this going on, itâs much more secure. Weâve got moderators, weâve got admins and everything else. Iâm like look, man â I said it sounds like a good idea. I said Iâll come over. Make me superadmin; Iâll come over as long as you let me put in charge of the forums who I want in charge, and you let me add whatever forums I want to add. He was like, done.</p>
+
+<p>JACK:	[MUSIC] So Brett, or Gollumfun, was a moderator and admin of ShadowCrew, and he made an area for carding and he got the Ukrainians onboard to the new site, and things were looking good on this new site. Carding was big on ShadowCrew, probably its biggest draw, but he started seeing people posting database dumps to the site, too. This was cool to Gollumfun. He started looking through these to see if thereâs anything useful for him in that data. Sometimes heâd find some data to be able to open accounts under other peopleâs names and stuff, and there were little things that he was doing to make money from this.</p>
+
+<p>BRETT:	Then after that, the next real database of consequence that I got was the California State Death Index. So, I had access to that, started doing a lot of research on okay, how can you use this? The idea â the first idea that I had was, I wonder if you could apply for Social Security benefits for these people, because part of the research I found out was the federal government doesnât know youâre dead unless thereâs been a Social Security death benefit filed for that person. So I was like okay, can I file for Social Security benefits? Tried to do that; turns out you could not because the Social Security Administration wanted that person to come in for a physical interview. The number had been dormant for so long. So, that didnât work. So, the next idea I had was well, I wonder if you could file income taxes on these people. Turns out you can. [MUSIC] So, I started filing income tax returns, fraudulent income tax returns, on dead people and stealing a lot of money. I got to where I could file a tax return once every six minutes manually. Iâd file tax returns Sunday through Wednesday, usually 100, 180 tax returns a week. Thursday Iâd take a road trip, plot out a map of ATMs, Friday and Saturday cash out to the tune of usually $150,00, $160,000 a week. Put that money in a backpack, come back home to Charleston, South Carolina, throw the money in a spare bedroom that I had.</p>
+
+<p>JACK:	Whoa, thatâs a lot of money. What he was doing was just submitting tax returns for random people and then getting the money back from their returns, put on a prepaid debit card, and then cashing that out. Now by this time, ShadowCrew had attracted quite a bit of users. At its peak, it had 4,000 users. So, there was a certain amount of critical mass at this point. More criminals attracted more criminals and more criminal behavior. Keep in mind, this is way before Tor or the dark web, or even Bitcoin. This is all going on in the year 2004, so this was a website just on the clearnet, right, on the internet for anyone to see, and some of the stuff Gollumfun saw going down was just crazy.</p>
+
+<p>BRETT:	There were three roles that we â that I implemented that I wanted followed by. Those three rules were no counterfeit currency, âcause I was scared to death that we were gonna get Secret Service attention, and at my â my view at that point in time is thereâs no law enforcement agency better than the Secret Service. So, no counterfeit currency. I didnât want any drugs because I had historically had this prejudice against drugs. I didnât want anyone using drugs or selling drugs, and finally, no child pornography. The only one we really obeyed was no child porn. We had the Thomas Cook travelersâ cheques, which were â I mean, they were one-to-one as far as not being able to tell the difference. We had the USA superbills that were coming in. We had the EU superbills at one point. So, we had counterfeit currency out the wazoo. Drugs, so we allowed first pot and ecstasy and then it turned into Oxycontin and everything else from that point. Even I dealt in Oxycontin at one point.</p>
+
+<p>JACK:	[MUSIC] As you can imagine, ShadowCrew was a wild place, the site that launched a thousand criminals. Now, the site was started by a guy named Seth, but at some point, Seth gave the site to Brett.</p>
+
+<p>BRETT:	So, I get David Thomas a job working with Big Buyer. Big Buyer sends David enough money to go from â I think David was hiding out in Texas at that point. Big Buyer wires him the money to go from Texas up to Issaquah, Washington, and to rent a temporary office space, the idea being that Big Buyer is going to cart items to the Issaquah, Washington temporary office space, Davidâs gonna pick them up, sell them on eBay, give 50% of the profit to Big Buyer. Okay? Thatâs the deal. So, Big â so, David goes to Issaquah, gets this temporary office space. Big Buyer places the first order. Now, Iâm friends with Big Buyer at this point. Big Buyer places the first order, outpost.com. The first order is like, $18,000. At that point in time, it was the largest order that Outpost had ever been hit with, alright? Order goes through, Outpost ships the items. David gets the items in, takes them back to the hotel happier than a pig in shit. He starts bragging about it to me and Kim. Iâm happy; weâre make â gonna make a lot of money. Kim, the bookseller, the guy who thinks heâs Jason Bourne, hears this and he comes to me on ICQ. Heâs like â he knows my name by this point. Heâs like Brett, I want to go to Issaquah to make some money. Iâm like dude, youâre making money. Heâs like no, I want to go up there. I was like, go. Just be careful.</p>
+
+<p>So, Kim gets in his Saturn, drives his ass from Denver up to Issaquah, Washington. They get there the night before, so Big Buyer â in the meantime, Big Buyer has placed a second credit card order with outpost.com going to the exact same drop address. Meanwhile, outpost.com has found out that the first order is fraudulent. They have notified the Issaquah PD. The Issaquah PD has asked outpost.com hey, can you guys just send some empty boxes? Outpost just said why, weâd be happy to. Meanwhile, David and Kim meet at the hotel. They party; they literally party all night long. Now, the rule was at that point in time, you get up the next morning. Before you go to your drop address, you sign onto the â you use the credit card login, you sign on to make sure you can sign on. If you can sign on, you go pick up your packages. If you canât sign on, then that means that the bank has been alerted to possible fraud. You go back to sleep that day. They didnât sign on that day. Meanwhile, Big Buyer though, Big Buyer has tried to sign on and he canât. So all day long heâs been trying to contact David and Kim. David and Kim have been out of service. They are en route to pick up the packages. Big Buyer is on ICQ, frantic; I need to contact David Thomas. Iâm like, let me see what I can do. I canât contact him, either. What happens is Davidâs got this old Cadillac. Davidâs in the driverâs seat, Kimâs in the passenger seat. Davidâs girlfriend Brigitte is in the backseat. They pull into the complex where the drop address is, the temporary office space.</p>
+
+<p>As they pull into the complex, David sees this van. The van has somebody sitting in it, but the seat is turned incorrectly. Itâs turned where the guy is looking directly out of the driverâs window. David looks at Kim; thatâs an undercover officer. Kimâs like, nah. So, they pull on up â they pull on up to the drop address. Kimâs like, Iâll go in and get the packages. He walks in, looks at the kid behind the counter. I believe youâve got some packages for me. The kidâs like yeah, hold on just a second. The kid disappears behind the wall. Out pops the Issaquah PD, arrests Kim. David in the driver seat of the Eldorado sees the arrest take place, hightails it out of there. The police arrest David on the interstate. David â and hereâs the other fuckwit that he does â David has several fake IDs in his wallet with his real ID. So, they arrest him. Now, what happens is is David has the outstanding warrants out of Nebraska for cheque fraud, so we canât bond him out. Seth, though â Kim Taylor didnât have any outstanding warrants, so Kim Taylor has a bond. Seth uses his girlfriendâs credit card to pay for Kim Taylorâs bond. That gave a really bad taste in Seth Sanderâs mouth. So, he comes to me and heâs like, I quit. You have it.</p>
+
+<p>JACK:	Seth was the guy who started and owned ShadowCrew. It was this whole event that made Seth quit and give the site to Brett. So, Brett took over shadowcrew.com, and he was even paying the hosting bills. By the way, this site was never profitable on its own. It didnât charge users or anything, so it did cost Brett to keep it going, which is wild because seven years later, Silk Road was making millions of dollars doing basically the same thing. Because ShadowCrew became a marketplace for illegal things, it was like a darknet market before the darknet existed. But over time, Brett started noticing some of the writing on the walls. As he just explained, a few people on the site were starting to get arrested. Around this time, Brett was starting to see some IP addresses of users on the site that resolved to .gov domains, meaning they could be feds. A couple more users were getting arrested too, and so, Brett suspected some of these users might be cops.</p>
+
+<p>BRETT:	I mean, to this day you can peg law enforcement pretty easy because they just stand out. They ask the wrong types of questions the wrong way at the wrong time. Youâre able to see what time theyâre logged in and everything else, and they operate the same damn hours every single day, everything else like that. So, we were able to peg law enforcement that was coming in, so people were getting picked up and I started getting really, really worried. At the same time, Iâm doing the tax return frauds, doing a lot more money, and decide that hey, itâs time for me to leave. So, I announce my retirement, I believe, of â April 15, 2004 was my retirement date, and thatâs when I leave the site.</p>
+
+<p>JACK:	Just because he left ShadowCrew didnât mean he stopped running scams. In fact, his scams were getting bigger now than ever at this point. Specifically, he still loved doing tax refund fraud. In his best week doing that, he made $160,000. Huh, and thatâs just one week of work. A lot of this money was going to Elizabeth, his stripper girlfriend. Weâre at an hour into this episode now, and I donât even think weâve covered half of what Brett did. So, I need a break and maybe you do, too. Okay, I think this was good for day one.</p>
+
+<p>BRETT:	[LAUGHING]</p>
+
+<p>JACK:	I would like to pick it up again maybe next weekend where we talk about you going on the run.</p>
+
+<p>BRETT:	Yeah.</p>
+
+<p>JACK:	Stealing 600kâ¦</p>
+
+<p>BRETT:	Big story, big story, Jack.</p>
+
+<p>JACK:	I know, I know.</p>
+
+<p>BRETT:	Itâs a lot of crap.</p>
+
+<p>(OUTRO):	[OUTRO MUSIC] Big thank-you to Brett Johnson, AKA Gollumfun, for sharing this crazy story with us. Donât forget to come back in two weeks where youâll hear the final installment of this story. Youâre not gonna believe what happens, so donât miss it. This show is made by me, the snaker, Jack Rhysider. I did the sound design for this one, too. Editing help this episode is by the spontaneous Damienne, and this episode was assembled by Tristan Ledger and mixed by Proximity Sound. Our theme music is by the cyber-gang, Breakmaster Cylinder. I found a really big spider by my front door the other day, and I tried calling Amazon web services to take care of it, but no help, strangely. I decided to just try talking with the spider and pleading with it. Well, it turns out heâs a web designer, so I showed him my computer. Well, he crawled into my keyboard. Heâs still in there; heâs under Ctrl. This is Darknet Diaries.</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

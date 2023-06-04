@@ -1,0 +1,703 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>Cam â Darknet Diaries</title>
+	<meta name="description" content="Cam's story is both a cautionary tale and inspirational at the same time. He's been both an attacker and defender. And not the legal kind of attacker. He has caused half a million dollars in damage...">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Cam â Darknet Diaries">  
+	<meta name="twitter:description" content="Cam's story is both a cautionary tale and inspirational at the same time. He's been both an attacker and defender. And not the legal kind of attacker. He has caused half a million dollars in damage...">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/killerwhale.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/62/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Cam â Darknet Diaries" />
+	<meta property="og:description"        content="Cam's story is both a cautionary tale and inspirational at the same time. He's been both an attacker and defender. And not the legal kind of attacker. He has caused half a million dollars in damages with his attacks. Attacks that arose from a feeling of seeing injustices in the world. Listen to his story." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/killerwhale.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/62/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/killerwhale.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/62/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="Cam â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/killerwhale.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 62: Cam</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://traffic.megaphone.fm/ADV1459627606.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/62/",
+			   "title": "Ep 62: Cam"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/62">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[FULL TRANSCRIPT]</p>
+
+<p>JACK:	You ever see something on TV or in the news and it just really gets under your skin?  Like, something that really upsets you and you canât just sit there and do nothing about it now that you know itâs going on.  So, you get up to do something but what do you do?  You could make a call to complain to someone, you could write a letter to complain, or even go there in person to complain.  Maybe a lot of other people are mad too, so there might be a protest outside and everyoneâs shouting.  This is the story about a guy who got really worked up over something he read about and decided to take matters into his own hands.
+<!--more--></p>
+
+<p>JACK (INTRO):	[INTRO MUSIC] These are true stories from the dark side of the internet.  Iâm Jack Rhysider.   This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	This story is about a young man named Cameron, or Cam for short.</p>
+
+<p>CAM:	My nameâs Cam and I live in Gloucester in the United Kingdom.</p>
+
+<p>JACK:	But Cam grew up in the picturesque area of Cornwall, in England.  [MUSIC] Itâs in the bottom-left corner of England, sort of like the toe of the country.  Iâm sure youâve seen pictures of Cornwall; itâs a quiet area, lots of farms all about, thereâs some beautiful cliffs there, and fishing boats that come in and out of the port.  Itâs an extraordinarily beautiful part of England.  Oh, and I just learned thereâs a massive GCHQ satellite dish installation in Cornwall.  Itâs there to collect signals intelligence and to do mass eavesdropping.  Itâs called GCHQ Bude if you want to look it up, but thatâs totally unrelated to this story.  Now, when Cam was fourteen, he got a PS3, a PlayStation, and he loved playing video games on it, things like Modern Warfare, Call of Duty or COD for short, and lots of other online first-person shooters.</p>
+
+<p>CAM:	I ended up to the point where I was like trying to be competitive and obviously being fourteen, youâre usually not as good as all the adults that play.  Iâd get frustrated with being beaten so Iâd try and find cheats and then glitches on how to get better.  Iâd see people cheating and glitching against me and then Iâd be frustrated with that, so then I would take it to the next level again and try and compete with them.</p>
+
+<p>JACK:	He made a few people upset as he played Modern Warfare; either from winning or talking trash or using cheats.  Some people got mad at him for this and said hey, stop, or Iâll knock you offline.  Camâs like yeah, whatever, and just kept playing.  But lo and behold, he did get kicked off the game.  But not only that; the internet was down for his whole house.  Huh.  Fourteen-year-old Cam was intrigued by this.</p>
+
+<p>CAM:	I was kind of like, they someone had booted me offline or disconnected me from the internet from their side.</p>
+
+<p>JACK:	When youâve already been downloading cheats to play your favorite game, itâs not far of a stretch to take it to the next level and learn how to boot someone right off the internet entirely.  Cam had researched some options and was ready for revenge.</p>
+
+<p>CAM:	Then to the point when Iâd try and get them back, so I started LOIC.</p>
+
+<p>JACK:	Ah yes, good old LOIC.  LOIC stands for Low Orbit Ion Cannon.  Itâs an application you put on your computer and it has the capability to send millions of packets to whatever IP address you want to send it to which can flood that userâs internet connection so bad that they canât get to anything online, kind of like causing a massive traffic jam right in someoneâs driveway so they canât pull out or go anywhere.  [MUSIC] This is called a denial-of-service attack, or DoS, because youâre jamming up someoneâs internet so bad, they donât get service.  Cam loaded up [00:05:00] LOIC and was ready to fire at an IP to knock it offline but thereâs one big problem; how do you find the IP of a certain player in the game?  This is quite a challenge because without the IP, LOIC just wonât do anything.  The game itself does not show you the IP address of your opponent specifically for this reason; to keep them safe from DoS attacks and from people wanting to know more about you.  So, Cam devised a plan.  His plan was to send his victim a link to a website that he had control over so from there, he could then capture his victimâs IP address which he could then put into LOIC, and fire away.  But still, how do you get your in-game opponent to click your link?</p>
+
+<p>CAM:	It was basically like a Bitly link, then you send it in and call the caption like âI caught you doing thisâ or whatever, or something to make them click on the link.</p>
+
+<p>JACK:	Ah, pretty clever.  By telling his opponent that he caught him doing something and to click this link to see what it was, that was enough to get them to click it.  Once they did, heâd see their IP address visited their website and heâd copy and paste that IP into LOIC, and boom.</p>
+
+<p>CAM:	You put it in LOIC and then you hit their IP address, you put it in and just hit LOIC.  Then you type in like, bot53 or â obviously if you hit DNS, itâs probably the best way to go about it to knock them offline or do it less so you can make them lag.</p>
+
+<p>JACK:	With these online shooter games, when two opponents see each other, itâs kind of like a game of who can draw their weapon fastest and have better aim?  Since Cam could slow down the opponentâs internet connection, they might not see Cam for just a half a second after Cam saw them, which is called lagging in an online game, and this would be enough just for Cam to outdraw them and kill them.</p>
+
+<p>CAM:	Well yeah, âcause it makes them stand still on my screen.  They disconnect from the server, the video game server.  Then I could kill them.  [MUSIC] They think theyâre shooting at me.  Then they come back and they â it not lags anymore and then theyâre dead.</p>
+
+<p>JACK:	He says that a few times he would talk trash in the game, people would message him.  Heâd keep talking trash and then theyâd take it to a one versus one match.  Thatâs when heâd hit them with the Cannon and make them lag or disconnect which might not sound like a big deal but let me tell you; if you were in the middle of a heated argument with some fourteen-year-old kid online and you decide to battle him one-on-one just to show him how bad he is, and you lag exactly five seconds into the game starting, only to come back and see that youâre dead on the screen.  It would make you furious.  Youâd say go again!  The game would start again and just at the worst possible time, you would lag again and die.  Youâd say go again! Again, you would lag and die and just get increasingly upset to the point you might just punch your own keyboard and scream.  Aargh!  All that would just be really funny to Cam.</p>
+
+<p>CAM:	Overall, on the video game side of things, youâve not beaten them âcause thatâs like kind of like youâre admitting that theyâre better than you.  But on the grand scale of everything that went on, you kind of trumped them.  Thatâs kind of where I got the satisfaction from.  It was like you may be better than me at the video game but Iâve just completely trumped you so therefore I win, sort of thing.</p>
+
+<p>JACK:	This was cool but it still required people to click that link to get their IP and not everyone would click it.  So, he thought up ways to improve this.  He figured out when players compete against each other on some PS3 games, they directly connected to each otherâs PS3s and didnât go through some central server or something.  This is known as peer-to-peer connections.</p>
+
+<p>CAM:	Yeah, a lot of them were peer-to-peer on PS3, thatâs what happened on the old generation consoles.</p>
+
+<p>JACK:	Knowing this, he realized that all his opponentâs IP addresses were actually routing through the network in his house which meant if he could look at what IPs were connecting to his PS3, he might be able to figure out whose IP was whose.  [MUSIC] So, he unplugs his PS3, plugs it into a computer to be in line of the PS3 which could then sniff all the traffic that was going through it, and then heâd watch all the IP addresses connecting to his PS3 in the game.  In these games he would play, some people would be able to do voice chat and talk with each other, so he would do clever things like mute everyone except the one person he wanted to know their IP.</p>
+
+<p>CAM:	If you mute everyone else but one person, thereâs a significantly more amount of traffic coming from one person thatâs your targetâs IP address âcause their micâs on.</p>
+
+<p>JACK:	Clever kid, huh?  Because with this, he could start matching in-game names to the IP addresses since that person talking simply had more traffic coming over than any other IPs.</p>
+
+<p>CAM:	Then you could just boot them offline that way.  Do the same thing with LOIC.</p>
+
+<p>JACK:	Now, when youâre a fourteen-year-old kid doing this kind of stuff, your friends think itâs funny.  When youâre just [00:10:00] learning from things like YouTube tutorials and stuff, thereâs not always a warning telling you not to do it.  It just seems normal.</p>
+
+<p>CAM:	It was just totally okay to be doing everything I was doing.  There was no doubt in my mind that it was illegal or anything like that at this time.</p>
+
+<p>JACK:	Well, have we gotten into anything illegal yet?</p>
+
+<p>CAM:	Well, booting people offline is illegal.</p>
+
+<p>JACK:	Okay.  How so?</p>
+
+<p>CAM:	Well, âcause youâre disconnecting them.  If youâre Dossing them, that DoS is illegal under The Misuse of Computers Act.</p>
+
+<p>JACK:	[MUSIC] Cam spent a lot of time playing PlayStation.  There was this one kid though; he was a few years older than Cam.  They actually went to the same school in Cornwall.  For some reason, he didnât like Cam.  He would give Cam a lot of trouble in the game, getting angry with Cam about being jealous that a mutual friend was playing with Cam but not him.  Cam didnât like this attitude he was getting from this kid.</p>
+
+<p>CAM:	So, I booted him offline.  His mom called my friendâs mom who then called my mom, and thatâs when I realized oh god, this is more serious that Iâve realized.  I kind of just thought like, itâs a bit pathetic.  I mean, I didnât realize it was serious.  I didnât of anything other than the kid not being able to play Xbox for three minutes or whatever.  But obviously thereâs wider facts to be considered like theyâre paying for that and that sort of thing.  But I had a whole speech from my mom about why I shouldnât do it, but my mother didnât really understand it.  She kind of just said like, donât do it, whatever it is youâre doing, sort of thing, âcause my mom doesnât really deal with computers or anything similar.</p>
+
+<p>JACK:	Okay.  So, did you take warning here or did you keep doing it?</p>
+
+<p>CAM:	Yeah, no, I didnât take warning from it.  Just because my mom was kind of like â she kind of took it as though I were just beating him on the video game.</p>
+
+<p>JACK:	[MUSIC] So, Cam kept at it, refining his methods and strategies to boot people offline in a more effective way.  But think about where someone like him might hang out online at this point; hacker forums, chat rooms, gaming forums, or other places that might talk about hacking.  I mean, the kid is inquisitive and he wants to know more about how all this stuff works.  Heâs thirsty to learn more.  He starts meeting other hackers online and makes some friends with them.  Then in one of these chat rooms, a hacker friend gave Cam a stressor.</p>
+
+<p>CAM:	I was given a free stressor by someone that I knew.  They took part in the Operation Fun Kill.  They gave it to me.  They were just like yeah, have fun with it.  âCause I bet you he said I could never afford it.</p>
+
+<p>JACK:	Okay, so whatâs a stressor?  Up until this point, Cam has been doing all these DoS attacks using LOIC, right?  Well like he was saying, this is illegal so not everyone wants to run a denial-of-service attack from their own house.  Yeah, sure, he could run it through a VPN or something but hey, Cam doesnât want to bog down his own network, right?  If he were to attack some other people, he might lag himself which is not what he wants to do.  So, sending a huge amount of packets to someone else online just to make them lag isnât exactly the best idea.  This is where a stressor solves that problem.</p>
+
+<p>[MUSIC] A stressor is simple DoS as a service, so someone sets up a botnet or a bunch of servers capable of sending gigs and gigs of data to an IP address.  It generates even more traffic than the Low Orbit Ion Cannon that Cam was using.  You pay someone to use this service; you just go there, put in an IP address, hit go, and whoeverâs IP that belongs to is now facing tons and tons of incoming traffic which will probably knock them offline.  People call these things stressors to try to market it as some stress testing tool to test if your site can handle a denial-of-service attack but really, these things are just weapons and theyâre used to attack victims.  This guy lets Cam use his stressor for free.</p>
+
+<p>CAM:	He basically started sharing stuff on Twitter.  As I mentioned, he was involved in Operation Fun Kill which is part of like, Anonymous Operation.  It has to do with Sea World and these zoos.</p>
+
+<p>ANON:	Greetings, citizens of the world.  We are Anonymous.  Greedy corporations are destroying nature and the corruption of governments allow it.  99% of this is happening for one reason only; money.  There is no excuse for animal abuse and now the animals will fight back.  This power will stand for animal rights and as long these rights are disrespected, we will be here ripping through your servers, hacking, leaking, deleting, and defacing as we go, spreading our message without mercy or restraint.  We are Anonymous.  We are legion.  We do [00:15:00] not forgive.  We do not forget.  Abusers, expect us.</p>
+
+<p>CAM:	It was just like the whales being slaughtered in the ocean and the whales dying at Sea World and the blood in the water.  I really remember this; this is honestly the truth.  I remember I felt so sick.  I just thought, thatâs awful.  But it wasnât an immediate thought yeah, Iâve gotta DDoS them.  Thereâs more of like a, I wonder what I can do?  I canât sign petitions because I didnât have any help from my mom.  It was kind of like animal rights sort of thing.  Theyâre not able to defend themselves.  It was quite a big impact on me.  He says you can join in by DDossing them offline using the stressor.</p>
+
+<p>JACK:	DDossing Sea World in California?</p>
+
+<p>CAM:	Yeah, Sea World.  He just sends me this entire attack list that theyâre all going for.  Heâs just like yeah, see what you can do.  I just basically started pressing buttons.</p>
+
+<p>JACK:	Now, keep in mind, this was happening in 2014 and this was just after the documentary Blackfish came out.  [WHALE SINGING] This was a film which exposed the cruel practices that Sea World and other wild animal parks were doing.</p>
+
+<p>SPKR1:	Iâve been expecting somebody to be killed by Tilikum.</p>
+
+<p>SPKR2:	We werenât told much about it other than it was trainer error.</p>
+
+<p>SPKR3:	It didnât just happen.  Itâs not a singular event.  You have to go back to understand this.</p>
+
+<p>JACK:	It had a huge impact on many people.  [BACKGROUND TALK] As it turns out, it also affected Cam.  So, here he was, upset that this was going on.  In his hands was essentially a cannon which he could use to attack Sea World or other places conducting this bad behavior.</p>
+
+<p>SPKR4:	We stored these whales in what we call a module which was twenty feet across and thirty feet deep, and the lights were all turned out.  Probably led to what I think is a psychosis.</p>
+
+<p>SPKR5:	All whales in captivity are all psychologically traumatized.  Itâs not just Tilikumâ¦</p>
+
+<p>JACK:	[BACKGROUND TALK] It all builds up for him.  He decided to take action and start pushing buttons.  [MUSIC] He would access the stressor, put in an IP of one of the animal parks, and start hitting it hard with a denial-of-service attack.  He was knocking websites offline with a few simple clicks of a button which had a real-life impact on these parks.</p>
+
+<p>CAM:	But once I started getting good at it, it was definitely like I was being egged on by them to â it was like, the one man DDossed the bank and all that, sort of nicknames.  They just sent me what they want to take offline and Iâd do it.  It would be offline.  Itâs because I had one stressor and then Iâd barter with someone and then eventually coerce them to give me their stressor as well.  So, Iâd eventually just go around from one stressor to the next stressor, âcause I have the power of two stressors.  I get the third stressor and then just move forward like that until I have like, ten accounts on different stressors.</p>
+
+<p>JACK:	Keep in mind, these stressors cost like, a monthly fee or something to use them.  Cam didnât have the money; he was fourteen years old, and thatâs why he traded with these people to get access to more of them for free.  He would be able to keep the heat up by hammering on these places that were mistreating their animals.  This would result in websites going down.</p>
+
+<p>CAM:	Oh, it was definitely great.  It was great.  You feel like an omnipotent god or something.  It was like yeah, Iâve done that.  Thatâs the result of my actions.</p>
+
+<p>JACK:	After he would knock a target offline, heâd watch to see what theyâd do after.</p>
+
+<p>CAM:	They didnât directly do anything such as like, change their ways or try to improve their animalsâ health or anything, or try and get people to stop it.  It was more like â weâll get like, Akamai CDN involved.  Thatâll stop this, and stuff like that.</p>
+
+<p>JACK:	Akamai CDN is a company that is a content distribution network.  By signing up for CDN, it makes your website significantly more resilient and itâs kind of shielded and has bigger bandwidth so itâs harder to take down.  But this didnât slow down Cam; with ten stressors at his ready, he could still make a pretty significant impact on some of these sites.  Again, what he was really upset with were how these places were mistreating their animals.  He didnât believe animals should be mistreated this way and this was the main reason he was doing all this hacking.</p>
+
+<p>CAM:	Yeah, like I say, it started out being like that.  It still was towards the end but it was also a good thing for me âcause like I said, it gives you a buzz.  You end up being egged on and then you get support and you gain a following.  I gained a following of about 27,000 [00:20:00] on Twitter, I believe, on one of my Twitter accounts.  Thenâ¦</p>
+
+<p>JACK:	Your own Twitter account got 27,000 followers?</p>
+
+<p>CAM:	Yeah, it got 27,000 followers when I was fourteen.</p>
+
+<p>JACK:	How did you get so many followers there?</p>
+
+<p>CAM:	Like I said, it was just vegan, vegetarian communities and also anonymous people.  They followed me and supported what I was doing.</p>
+
+<p>JACK:	So, you were publically saying on your Twitter account look, Iâm taking down this website and then you were tweeting a lot about it?  Is that what was going on?</p>
+
+<p>CAM:	Yeah, that was my main weakness.  I was just straight-up on my Twitter page just saying what I was doing.  Iâd post all that #tangodown stuff.</p>
+
+<p>JACK:	Were you nervous when you were hitting the attack key?</p>
+
+<p>CAM:	No, I wasnât, no.  I was never nervous about it at all.</p>
+
+<p>JACK:	Was there a hesitation at all?</p>
+
+<p>CAM:	No, not even once.</p>
+
+<p>JACK:	Okay, now youâve taken it down and youâre on Twitter.  Is there any sort of hesitation or nervousness about publically tweeting it?</p>
+
+<p>CAM:	Nope, not at all.</p>
+
+<p>JACK:	So, was there a sense of pride then or something?</p>
+
+<p>CAM:	Yeah, itâs definitely more a pride thing, especially with Sea World and the other sites I was talking about.  It was definitely more of a pride thing than it was a nervous thing.</p>
+
+<p>JACK:	Yeah, I mean, Iâm trying to balance this with the real world again, right?  After doing â I donât know if this a night of attacks or something; now you have to go back to school at fourteen.  What is class like for a person who has like, 37,000 followers on Twitter, hacking Sea World at night, and then in the morning going to math class?</p>
+
+<p>CAM:	Thatâs actually quite funny, to be fair.  I remember sitting in classes and weâd be like â this is how bad it got; we sat in class, me and my friends, and be like â the teacher would say alright, weâre using this site today.  Itâs a quiz website, for example.  Theyâd be like yeah, everyone go to this website, weâll do a quiz.  Iâd sit back with my friends and then Iâd be like guys, watch this.  Then I would like go on my phone and Iâd remote in to my server and then Iâd launch an attack against this website for no reason at all.  Then itâd go down, the teacher would stand there all awkwardly and be like oh, this websiteâs gone down so we canât do that today.  Iâd immediately stop it and then it would come back up.  Yeah, itâd be quite funny in that sense.</p>
+
+<p>JACK:	Oh man, yeah, I see.  Yeah, this canât have a good ending.  Letâs back up a second.  You said the word activist.  Did you feel like an activist when you were doing things for the animal rights?</p>
+
+<p>CAM:	Yeah, definitely.  âCause I obviously didnât like the photos that I saw.  Honestly, I shouldnât have seen the photos that I saw, what they were doing, at fourteen.  It was gruesome.  Honestly, that was what it was.  Even at that time it still was, like I said, about being power hungry.  There were still â most of the attacks I was doing was based on activism and trying to do everything I could to help, to be honest.  Obviously, a fourteen-year-old going to California to stand there and protest with a sign, nobodyâs going to listen to me standing there shouting about how bad they treat animals.  I guess theyâd listen to me more if I was doing something to affect them.</p>
+
+<p>JACK:	[MUSIC] Cam kept getting new IPs as targets to attack with his stressors and he kept taking down sites.  He flat-out attacked anything he could; in the Japanese town of Taiji, where an annual dolphin hunt takes place, and he hit Iraqâs Ministry of Foreign Affairs, and the Department of Agriculture in Thailand, Chinaâs security ministry, and a few zoos.  But Sea World is where he spent a lot of time trying to cause as much damage as he could.  He continued to DDoS Sea World over and over.</p>
+
+<p>CAM:	I remember seeing them post about it.  Theyâd say like, weâre bringing in incident responders to deal with this.  We backed up the website, weâre backing up reservations and all this.  Right, so I saw them post and say yeah, you canât book your stuff and weâre really sorry.  Even at that time I had no idea it was illegal, even when I saw them apologizing to customers about not being able to book their visits to Sea World and such.</p>
+
+<p>JACK:	Well, that had to have a feeling of like, you were winning as an activist hacker, a hacktivist.</p>
+
+<p>CAM:	Yeah, it was an overpowering feeling of winning rather than any â thatâs what overpowered the feeling of nervousness.</p>
+
+<p>JACK:	Now typically when he would take down a website, he would only take it down for like, a half an hour or a couple hours.</p>
+
+<p>CAM:	It was Sea World and then it became â I remember distinctly a Dutch zoo.  [00:25:00] Then I did Sea World.  I fell asleep and that was that; it was never heard of again.  Then I was like, Jesus, Sea World and this zoo have been down for a very long time.</p>
+
+<p>JACK:	Yeah, he accidentally forgot to turn the attack off.  He fell asleep and left it running all night.  This was a mistake; he didnât mean for it to run that long.  This must have caused a big panic at Sea World and the Dutch zoo to have their site down for so long.  The stressors kept running for weeks until Cam finally noticed and turned it off.  But this wouldnât be the last mistake that Cam made.  After the break, weâll hear what happened with the Cornwall Police.  Now, Cam lived in the area of Cornwall in England at the time which is quite a big county.  But it shares a police department with Devon, the neighboring county.  Itâs one police department but looks after multiple areas.  Fourteen-year-old Cam was not happy with the police in Cornwall.</p>
+
+<p>CAM:	Weâd hang around in a park.  Theyâd be like, well, youâre too old to hang around in the park âcause youâre fourteen and to go somewhere else.  So, weâd go somewhere else.  Oh, you canât stand outside this shop because people want to walk in the shop.  Okay, weâll go to the field, then.  You canât stand in this field because thereâs houses nearby.  So, theyâre basically like moving us â I felt like at the time, it was just moving us on from everywhere.  It was definitely for good reason looking at it, but at the time I just felt slightly oppressed.  Then Iâd protest against it.</p>
+
+<p>JACK:	Cam felt like he was being oppressed by the police.  The police chased him out of the childrenâs park or the parking lot for just being too noisy and he felt frustrated by this.  Combine this with his godlike powers that he felt like he had online; I mean, thereâs 27,000 people on Twitter cheering him on for some of the attacks heâs doing.  This has gotta fuel a kid to go bigger.  So, he decided to take down the Devon and Cornwall Police Departmentâs website.</p>
+
+<p>CAM:	[MUSIC] I pinned it, right?  Grabbed their IP, Dossed it.  I DDossed it, sorry, with an NTP attack.</p>
+
+<p>JACK:	At this point heâs been doing denial-of-service attacks for seven or eight months.  Heâs learned a lot and heâs graduated to more advanced techniques.  For this one, he had his own dedicated server doing an NTP amplification attack.  NTP is a Network Time Protocol.  Itâs how computers can check the time and there are thousands of computers in the world who act like public timekeepers.  You can ask any of them hey, what time is it?  And theyâll tell you.  But it can also be used as a weapon.  Suppose instead of asking what time it is, you ask for the time in every time zone in the world.</p>
+
+<p>You send one small request and you get back a huge chunk of data.  Now, take that concept but spoof your IP so with that, you can ask the NTP server hey, what time is it for every time zone in the world, and by the way, when you respond, please tell this IP over here instead of me.  Now the NTP server is sending a ton of traffic to your target victim.  If you do this over and over again against thousands of NTP servers around the world, your victim gets overwhelmed with all these NTP servers telling them what time it is.  Cam had built this system up himself so he could conduct these types of attacks.  He launched it against the police department in his own town, but he was hesitant on this and only hit it for a little bit.</p>
+
+<p>CAM:	No, no, I stopped it for like â I did it for like, five minutes and then it just stayed down for like, thirty-five minutes.</p>
+
+<p>JACK:	[MUSIC] Even though he stopped his attack, the website stayed down.  It wasnât coming back up.  [00:30:00] Something weird was going on.</p>
+
+<p>CAM:	Then there was a bit of hesitation.  I was like oh, damn.</p>
+
+<p>JACK:	What likely happened was that somebody within the IT team at the police station just null-routed this incoming traffic, essentially taking down their own website temporarily just so that the rest of the network wouldnât be impacted.</p>
+
+<p>CAM:	It wasnât like I had done something illegal; that was more like Iâm gonna have to pay to fix that.  Like I said, I stopped the attack.  Before every time theyâd come back up, after I stopped the attack â I stopped it and it just didnât come back so then I thought oh my god, if they catch me, Iâm gonna have to pay to fix the hardware.</p>
+
+<p>JACK:	But whatever, Cam had to go to school or go on to do other things so he just left this alone.  He tried to stay low for a little bit.  [MUSIC] A few days go by; all seems okay.  Then one day, heâs walking to school in the morning and a few people start following him on the way to school.</p>
+
+<p>CAM:	Theyâre walking behind me in suits and they just go, Cameron.  Iâm like, turn around.  Iâm like what does he want?  I just go yeah?</p>
+
+<p>JACK:	Cam turns back around, keeps walking towards school, and away from these guys.</p>
+
+<p>CAM:	He said my name again.  Iâm like god, who is this guy?  Heâs like, youâre under arrest.  I was like what?  Then thereâs two more men in suits behind him.  Iâm thinking this is the foreign FBI.  I have no idea who they are âcause theyâre not police.  Theyâre not in police uniform.  Then theyâre like yeah, donât try and run.  I turned around and there was like a net of police officers across the grass, a good ten of them with like, tasers, vests.  One of the police officers was about seven-and-a-half feet tall and I was like, oh my god.  I felt like I was so closed in.  It went from my high horse to being so small.  My whole feeling just crashed.</p>
+
+<p>JACK:	The police and men in suits surrounded him and arrested him.</p>
+
+<p>CAM:	I got in the car, drove back to my house.  I remember this; this is really imprinted in my mind.  I knocked on the gate and my momâs like, can I unlock the gate?  âCause the latch wouldnât stay on.  I knocked on the gate.  My mom was like, who is it?  Iâm like, itâs me.  Iâve been arrested.  She was like oh, shut up, or something like that.  Iâm like no, no, Iâve actually been arrested.  Then sheâs like â then she just opened the gate and thereâs me with, like I said, with the Trojan horse of police officers around me.  Then the guy comes up to her, opens this warrant in my momâs face and heâs like weâve got a warrant, and just walks in.  Then, yeah.</p>
+
+<p>JACK:	The police searched his home, started seizing all his electronics, and asking him questions and filling out paperwork.</p>
+
+<p>CAM:	They took everything electrical in the house.  A bit honestly, they raided it.  They took like, empty CD drives, they took rewriteable CDs, rewriteable DVDs, USB sticks, anything that had a USB connection.  They took everything in my room apart from the TV and then theyâre like, is that a PSP?  I was just literally like, oh please donât.  But thereâs nothing on here.  The lady was like, alright, let me have a quick look now.  If I donât find anything, then you can keep it.</p>
+
+<p>JACK:	They let him keep his PlayStation and while they were looking through his video games, something strange happened.</p>
+
+<p>CAM:	Then it ended up being me playing COD against the arresting detective.</p>
+
+<p>JACK:	You playing what?</p>
+
+<p>CAM:	Call of Duty against the arresting detective.</p>
+
+<p>JACK:	How did that happen?</p>
+
+<p>CAM:	He asked me if I wanted to play COD.</p>
+
+<p>JACK:	What cop comes in your house, says youâre under â we have a warrant for your arrest, youâre under arrest, youâre coming with us.  Do you want to play video games with me?  Like, that doesnât happen.</p>
+
+<p>CAM:	A good cop, bad cop that does that, thatâs who does that.  They were very good at it.  It kind of baffled me; I was fourteen.  I didnât understand what this good cop, bad cop routine was, but I kind of â I set the whole thing up and that was part of their routine, Iâm pretty sure.</p>
+
+<p>JACK:	His mom was in shock from all of this.  His dog was freaking out.  More officers showed up and began doing forensics on his computer and network, plugging devices into his computer, plugging ethernet cables into his router, asking for his passwords to all his stuff.  They took all his stuff, and they put him in the police car, and took him to the very station that he waged a denial-of-service attack on.  They took most of his things, gave him some Crocs to wear instead of his shoes, and held him at the police station all day.</p>
+
+<p>CAM:	I was just in there all day.  I was in there from like, 8:00 a.m. to about 8:00 p.m.  I got put in custody.  They gave me a glass of water but it was the [00:35:00] smallest glass of water youâve ever seen.  It was like a shot glass.  It was like this Styrofoam.  For like, the next seven hours, that was my whole drink for seven hours.</p>
+
+<p>JACK:	At this point heâs starting to regret what he did.</p>
+
+<p>CAM:	I regretted all of it straight away.  It was horrible âcause basically, my mom was in absolute tears and I just felt awful.  That was the worst thing.  She was just crying the whole day.  I was like, Iâm so sorry, mom.  I kept saying Iâm so sorry, mom.  She didnât know how to handle herself and I was like â she was just totally in shock, I bet.  There was nothing I could do, obviously, nothing she could do.  I think we both just felt completely powerless and that was the worst part of it all.</p>
+
+<p>JACK:	He got out on bail that night and went back home.  A few months later, he had to go to court to see what his punishment was.</p>
+
+<p>CAM:	Yeah, I had a trial.  I had a trial and it was honestly â I think it was genuinely, to this day, I think it was an unfair trial.  I admitted to the DDoS attacks.  The other thing I was accused of in the trial was the â there were bomb threats made against Delta Airlines, American Airlines, the White House, and the FBI.  [MUSIC] It was a very, very complex court case.  They charged me for this right before I went to court.</p>
+
+<p>JACK:	He tells me he had nothing to do with these bomb threats, so he had to plead not guilty to the case which made the case go on longer.  His lawyer didnât know that much about cyber-security but was trying real hard to study up on it because the more the lawyer could know about computers, the more he might be able to convince a judge that he didnât do the bomb threats.  Cam was pleading guilty to the denial-of-service attacks against the police station but kept saying he didnât do the bomb threats.  The evidence they had on him, well, his Twitter account tweeted at Delta and American Airlines saying, âThereâs a nice tick-tock in one of those lovely Boeing planes.  Hurry, gentlemen.  The clock is ticking.  High quality.â  End quote.  Cam denied sending that tweet.  He even denied that it was his Twitter account.  He tried to explain to his lawyer the technical details of how all this got erroneously linked to him but his lawyer wasnât tech-savvy enough to know how to disprove all this.</p>
+
+<p>CAM:	They charged me as guilty for that, everything.  They charged me as guilty for literally everything that wasâ¦</p>
+
+<p>JACK:	They charged you guilty for the bomb threats, too?</p>
+
+<p>CAM:	Yeah, yeah, I got charged for the bomb threats as well.  But luckily, since the FBI classed it as not a risk and more of like a hoax.  It was under civil disruptions rather than a terrorist thing.  I was so lucky in that department.  But it could have ended up a lot worse.</p>
+
+<p>JACK:	Now that heâs been found guilty for sending in bomb threats to the White House, US authorities wanted to get involved.</p>
+
+<p>CAM:	They, yeah, the Secret Service and the FBI, I believe they put in two requests to get me extradited.  Then it was the court said no, but they overruled it âcause heâs fourteen years old.  I got up to the High Court, and the High Court said no.  I believe in the UK, the law is if you ask the High Court and they say no, thatâs final.  Then it stopped there.  If I was older, I would have been extradited, Iâm sure of it.</p>
+
+<p>JACK:	Eventually, the UK judge gave Cam his sentence.</p>
+
+<p>CAM:	They gave me 120 hours community service so I spent about seven months every Saturday morning â Iâm sure I had school as well, so I couldnât ditch out of school.  But I had to spend every Saturday morning for seven or eight months doing charity shop work; doing assistant work at a charity shop.  On a brighter note, I did all that.  I got five years of intensive surveillance from the NCA.</p>
+
+<p>JACK:	Cam was not sentenced to any jail time.  His probation allowed him to use computers but like he said, UKâs National Crime Agency would monitor his online behavior.  Iâm not exactly sure how they do it but that was part of his punishment.  Now, this whole incident scared Cam after that and because the NCA was watching him, he just decided to not use computers at all after that except for school.  He had a probation officer who would check on him to make sure he wasnât getting into any more trouble.  His probation officer saw that Cam was doing well on probation and knew Cam was good at computers.  So, the probation officer suggested that Cam go to this computer networking event in Bristol.</p>
+
+<p>CAM:	The police told me to go to it, and I started my school so I was like well, everyoneâs saying that I was gonna go to it.</p>
+
+<p>JACK:	But it wasnât just his local police telling him to go; the NCA which is UKâs National Crime Agency actually phoned up Cam and invited him to the event which was about three hours away.</p>
+
+<p>CAM:	There were about thirty companies there in this museum in Bristol.  [MUSIC] They all came together and they were like yeah, yeah, weâll take you on.  Youâll do this and do that, a career [00:40:00] road map, and all that sort of stuff.  We did Capture the Flag but I had no idea how to capture a flag, obviously.  I was just a script kitty.  The whole time, I was a script kitty.</p>
+
+<p>JACK:	Capture the Flag is a legal hacking challenge; a digital flag is hidden in the computer and companies want to see if you can find where it is by hacking into that computer.  Because if you can do it, it kind of proves to companies that you know your stuff.  But beyond that, what Cam saw there was that all these companies were looking to hire IT people.  Not just that; some were looking to hire teenagers.  But not just that; some had made a deal with the NCA to have reformed hackers do an apprenticeship with their company and Cam fit this.  Being eighteen years old at the time and a reformed hacker, he picked up some information for a company that he could do an apprenticeship with.  So, he became interested in taking on this apprenticeship for this IT company.</p>
+
+<p>CAM:	So essentially, they were working with the NCA in partnership to launch this cyber-skills apprenticeship program.  Thatâs ultimately a conglomeration or something called Hack which is like a program they set up to bring young hackers towards security, and had bug bounties, and stuff like that.  It wasnât like a major bug bounty scheme but it was like, paying them a few hundred pounds to find bug bounties.  It was easier to score the bug bounties rather than Bugcrowd and stuff like that.  But I didnât go in to apprenticeships; they gave me an apprenticeship in networking security and then monitoring on the SIEM.</p>
+
+<p>JACK:	Cam got this apprenticeship with this company and they wanted him to look after their SIEM.  A SIEM stands for Security Information and Event Manager.  Basically, this company had a lot of logs and alerts coming into this application and it was Camâs job to watch it and tell someone if something serious showed up on the screen.  Itâs a great experience for someone just starting out in security since you get to see a lot of alerts and get familiar with each of them.  But I want to pause here and just kind of underline something.  I think itâs incredible that the UK tried to reform a teenage hacker.  To my knowledge, this kind of stuff just doesnât happen in the US.  As a teenager, if you get arrested for hacking, chances are youâre not gonna be able to use a computer again for years.  Itâs almost like the system is trying to steer you away from using computers ever again.  But in the UK, itâs like they recognize that some of these teenage hackers have some real talent and just need some guidance to use it for good.  Cam liked this job he was doing and he was doing well there.</p>
+
+<p>CAM:	It was good.  I actually â we did like, SIEM monitoring, firewall management, we did actually quite a lot and itâs very broad.  But I actually ended up leaving the apprenticeship.  I left the apprenticeship about ten months in out of the one year.  That was due to a job offer I got here in Gloucester.  It was in a different city as where I was before.</p>
+
+<p>JACK:	The next job he tried to get was for a company called CSA.</p>
+
+<p>SEAN:	So, my nameâs Sean Tickle.  Iâm the SOC manager at the CSA which is Cyber Security Associates.  Weâre based in the UK, primarily.  We do a lot of managed services, a lot of Red Team-, Blue Team-type stuff, you know, protecting clients.</p>
+
+<p>JACK:	Sean is Camâs new boss.</p>
+
+<p>SEAN:	[MUSIC] Do you want me to give you the breakdown of how we kind of on-boarded him in the first place?  âCause it all kind of came up in his interview.</p>
+
+<p>JACK:	Yeah.</p>
+
+<p>SEAN:	So, basically, we were doing a new recruitment drive for some analysts and Cam kind of just came through one of our recruiters who we knew.  The first thing that hit us about him was his passion for the industry.  Everything he spoke about was just with such passion about like, the latest technologies, the latest processes, some of the stuff in the industry that we always face like user error, like senior C level executives just not getting security, that sort of stuff; the sort of stuff thatâs kind of partial to the industry.  It was really cool to talk to him about that.  Then we always ask this one question which is, is there anything that may stop you from possibly being eligible for security clearance?  Obviously with Camâs past, he spoke about it.  We werenât aware of it at that time but we went through it all and basically, when he was around fourteen years old, he was responsible for quite a few things, but primarily it was the Sea World DDoS.</p>
+
+<p>The way he explains it, is itâs actually quite funny; the kids always get a laugh out of it.  He ran the command to DDoS them.  This is kind of what got me with Cam; he wasnât just some kind of black hat looking to extort them or looking to just wreck them for no reason.  Obviously, it was kind of a hacktivist thing for him because he didnât believe in, obviously, Sea Worldâs practices and all that horrible stuff they were doing around that time and are still doing.  He DDossed [00:45:00] them and he took their website offline, all the rest of it.  What he forgot to do was â he fell asleep and he woke up to a blank terminal thinking that the attack had stopped and it hadnât.  It went on for about four weeks, I believe he said, until we realized what was going on and it cost them about 1.5 million or 1.3 or whatever.  Not just in loss fees, obviously; youâve got according specialists and active response and incident response and stuff like that.</p>
+
+<p>They took the hit there.  But then there was â he said thatâs when it started getting wrong for him from a power-hungry point of view.  He had a minor disagreement with a police officer once âcause they were in a park, so he decided to DDoS their entire website and take it offline.  I think thatâs when he started realizing he was going wrong, and this is all the stuff the had said.  Looking back at it now, he started making those errors and he really shouldnât have âcause they didnât do anything to him and obviously itâs the police; people do need to get in touch with them and that sort of stuff.  So, then this is all â this all came out in one interview, so it was quite full-on.</p>
+
+<p>JACK:	Yeah, this is interesting because Iâve been in a couple interviews and if you were to ask me whatâs a mistake youâve made in the past or whatâs, you know, whatâs a problem that we should know about?  And he starts telling you about how heâs been arrested and he did this attack and this cyber-attack and all this stuff.  What are you thinking when youâre listening to him say this?  Like okay, nope, or whatâs your thought process?</p>
+
+<p>SEAN:	No, actually, maybe Iâm one of the â I found it really interesting âcause for a lad of fourteen to be able to do this sort of stuff was like, insane, you know.  What got me â if he said to me oh yeah, I just did it for a laugh or something like that, I would have been like okay, well, heâs obviously not passionate.  Heâs just doing it for kudos or whatever.  But because he did it obviously from a hacktivist point of view, I actually started getting interested.  Then it was kind of the genuine âI really shouldnât have done this.â  But yeah, I think initially for probably about the first five minutes I was probably like oh my god, who have we got in on this call?  âCause the recruiter didnât know anything about it anyway.  We blitzed through the â âcause I was â we did a pretty rugged two-round interview process, the first round which he was in was like super technical on a whole array of stuff.</p>
+
+<p>He blitzed every single thing.  He did amazing.  We were like oh my god, this is it, we definitely need to get this guy in, especially âcause Cameronâs nineteen.  For him to go for all this over this period of time, youâd have to have been pretty young to do it.  Obviously, Cameron was like, fourteen.  But yeah, after that, and I think talking to him and saying to him like, well, why did you do it?  What did you think about it?  Do you regret it?  And all the rest of the stuff that you kind of go through your head at that point.  He showed genuine remorse for it, that he shouldnât have done it.  He had kind of the right way of going about it in terms of what Sea World were doing, but he had very much the wrong methods.  Thatâs what hit us with that.</p>
+
+<p>JACK:	Yeah.  Was this the first hacker youâve hired?</p>
+
+<p>SEAN:	Oh yeah, yeah, for me.  But that mainly comes from the company Iâm with now because a couple of the companies I was with before, they didnât have this mentality.  I think that goes for a lot of companies; people donât give these sorts of hackers another chance.  Cameron was very lucky just to get his apprenticeship and to then continue into the industry.  But also, I wouldnât say it was lucky for him to come to us because I think we were lucky to get him, really, because of just the sheer amount of passion heâs got and the technical skill.  This guy is gonna do well in the industry.  I already knew that.  I was quite concerned that I had to put this guy forward to my directors.  It was pretty cool; at the end of the day, I joined CSA because of all the stuff that they do around cyber-security as well, âcause I got sick of constantly being so guarded with other companies and communities and that sort of stuff.</p>
+
+<p>But the old companies I was with, they really garnered that sort of âdonât tell anyone anything, always look out for yourselfâ type-thing.  Jamie and Dave, the directors of CSA, thought that the opposite of that; they want to be involved.  But I was still like okay, well, Iâm actually gonna try and hire an ex-hacker here.  I donât know how cool theyâre gonna be about this, you know.  But I went to them and I said listen, this guyâs legit.  He knows his stuff.  Listen to his story and all the rest of it, and Iâm sure youâll agree.  They did; we had a quick chat with them all and kind of reiterated his story to them and they were the first to jump on board.  They actively encouraged it âcause they wanted to â not only from [00:50:00] a, like, âoh yeah, itâll help us because of his technical expertise.â  They wanted to give him that second chance and really get him in.</p>
+
+<p>JACK:	Iâm just kind of flabbergasted by this.  I mean, I once was in an interview and I asked if they validated parking.  I kind of lost sleep over this wondering if they just thought I was some poor soul or something.  Hereâs Cam not only saying he knocked out Sea World, but caused a million dollars in damages and he did it because he was passionate about animal welfare and he hacked the police, and also went to jail for this.  Well, somehow, despite all of that, it went great.  Cam got the job at CSA and it might be because of how much CSA likes helping the community.  Like for instanceâ¦</p>
+
+<p>SEAN:	They create this entire cool cyber-zone area, like this entire office just for kids.  Well, not kids; like, for students.  They did it all off their own dime.  They invested like, twenty grand into this â well, twenty grand just for the architecture bit, let alone all the equipment and all the rest of it.</p>
+
+<p>JACK:	Who invested in this?</p>
+
+<p>SEAN:	CSA did, but they did it for the NCSC.  The NCSC came to them and said weâd really love for you to do something like this.</p>
+
+<p>JACK:	Okay, so NCSC is the National Cyber Security Center which is a UK government organization simply there to help educate people on cyber-security.</p>
+
+<p>ANNCR:	[MUSIC] Cyber-attack is now a critical threat to our national security.  The government has responded to this threat by doubling investment in cyber-security, creating a world-class national cyber-security center leading the UKâs defense against cyber-attack.  Together, we will make the UK the safest place to live and work in cyber-space.</p>
+
+<p>JACK:	Jeez, thatâs an ambitious mission.  I think itâs incredible that the UK government is driving this.  But yeah, the NCSC partnered with CSA to help hold classes and teach students and teenagers more about cyber-security.  This makes CSA a pretty progressive company and once Cam got a job at CSA, he told them about another hacker he knows.</p>
+
+<p>CAM:	He accidentally did credit card fraud.</p>
+
+<p>JACK:	Both Cam and this guy Jack worked together in their last job and they were both there as an apprenticeship set up by the NCA.  Jack applied to work at CSA, too.</p>
+
+<p>SEAN:	Yeah, he went down to base and they were both from the same apprenticeship and this is how we found out about Jack, âcause we were still continuing our recruitment drive.  Obviously, Cameron knew him by association.  We were like oh, yeah, of course.  Weâre like, weâve hired one hacker; whatâs two?  Basically, he stole like, seven thousand credit card details and databases around the world.  Iâve always spoken to him about it âcause I find it fascinating, âcause he is very blasÃ© about the whole situation.  He talks about it in a very matter-of-fact way.  Itâs really strange to hear all of that.  But he said I just did it because I could and I did it because they had bad security and Iâd tell them about the security and that sort of stuff and then Iâd just go out.</p>
+
+<p>So, itâs very grey hat-ish.  He was very explicit; he never used the credit cards.  He never touched them.  He never did anything with them.  He just saw them as this â he just took them.  Obviously, he got caught as well.  He got caught by the red light; they had all this data on him and they couldnât catch him.  Then he turned out â he used his card to pay for some virtual private server somewhere and they just back-traced it from that, eventually.  He did it once and thatâs how they got him which was fair play to the NCA and the Regional Cyber Crime Unit for that.</p>
+
+<p>JACK:	I tried to get Jack on the show but he was just a little too hard for me to wrangle in.</p>
+
+<p>SEAN:	He definitely is.  Heâs got burner phones and alternate e-mail addresses.  Iâm his manager and even I struggle to get in touch with him sometimes.</p>
+
+<p>JACK:	But during the interview, Sean asked Jack the same question as Cam.</p>
+
+<p>SEAN:	The question is; we always ask it at the end and itâs, is there anything that would stop you from possibly being eligible for security clearance?  Obviously, he hit us with this knowledge of yeah, I stole seven thousand credit card details.  He wasnât officially charged, thank God, because it turns out â Cam was charged, obviously, and had about five years of hell.  But Jack luckily didnât get charged because he was saying that every single one of those charges carried two years in prison and thereâs no limit.  So, at one point, the prosecutor said to him youâre facing 14,000 years in prison.  He just laughed at that point which is pretty ballsy, really, in that situation.  [MUSIC] But yeah, no, again, he was telling us that story and I was sat with the same guy who was in Camâs interview.</p>
+
+<p>We [00:55:00] were like oh my god, where are we finding these people?  You have to take a chance; donât get me wrong.  If he came to me and he was like yeah, I used them to go on the dark web or I used them to finance something, Iâd be like no, straight away âcause obviously heâs in it for criminal gain.  Jack and Cameron, they did it because they could, ultimately, and they were probably a little bit misguided.  Thatâs why, I think, the kind of stuff we were doing with the students is so important âcause youâre all like another one of those, like one of the students.  Luckily, or unluckily, sorry, we didnât get to him in time but he ended up DDossing his school.  They went down the police route and he was thirteen years old.  You just think like, itâs just not worth it, really.</p>
+
+<p>JACK:	This was a potential student that was gonna come take classes for the NCSC at your place but didnât actually come to take your guidance?</p>
+
+<p>SEAN:	No, unfortunately not âcause he couldnât, obviously, âcause it happened before he was coming in.  They only take certain year groups.  We take whatever year group they want to give us but they can only take certain ones.  They were telling us about it and they just said it was really unfortunate because he had such a knowledge base and that sort of stuff.  He just didnât know what to do with it and he was just online all the time.  Thereâs no ethics there.  Thereâs not someone to tell you itâs right or wrong when youâre reading tutorials or that sort of thing.  Thatâs where it was so important for us.  It was unlucky, really, that he didnât get that chance to talk to us.  But yeah, but thatâs literally like â you couldnât hit the nail on the head any harder.  Thatâs the sort of stuff that we need to protect against in future generations.  We need to get them on our side before they turn to black hat.</p>
+
+<p>JACK:	Wow.  The UK is just so forward-thinking on this.  By being proactive and trying to get young teenagers some guidance before they do something wrong is just so much more effective.  It doesnât just stop there; in 2017, the NCA launched a boot camp to reform teenage hackers, so when a teenager gets in trouble for hacking in the UK, they might get to go to this boot camp which is not there to scare them straight and to never use a computer again, but instead it teaches them that their passions and skills are really in demand right now and you can have just as much fun doing it but getting paid for it and being legal at the same time.  Hereâs an interview I found of some of these black hat teenagers who went through it.</p>
+
+<p>TEEN1:	Iâve learned what I could do, what courses I could take, how I can proceed about going around cyber-security, what professions.</p>
+
+<p>TEEN2:	Now I know that it exists, it sounds like something that Iâd really, really like to go into because you get the same rush, you get the same excitement, but youâre doing it for fun still, but itâs legal and you get paid.</p>
+
+<p>TEEN3:	I found out my true passion was actually stopping those attacks from happening.  Thatâs how I now get my enjoyment.  I stop them before they even happen.</p>
+
+<p>JACK:	Incredible, right?  Once again, nothing like this is in the US.  Teenagers who get in trouble for hacking get kicked out of school, banned from using computers, and have an extraordinarily hard time finding a computer job later.  But the UK is trying something different here, leaning into the problem, understanding that these kids really do have a passion and a skill thatâs helpful.  Itâs just a matter of rehabilitating them to become more productive with these skills instead of destructive, or counselling them to be inspired and use these skills for good.  But I should mention that some of these programs are still experimental in England.  Iâm not sure if this boot camp was just a pilot program and stopped, or if itâs still going on.</p>
+
+<p>Thereâs not a lot of information about it.  These programs keep changing to try to figure out what the best way is of tackling these problems.  Oh, and I should say that apprenticeship program that Cam got into which got him his first job, itâs not just for teenage criminal hackers; it can be used by non-criminals who want to get started in InfoSec, too.  At CSA, through their CyberFirst programme where they teach students about the dangers of cyber-security, they now have Cam get up and tell his story in front of these young teens.  Is Cam a role model or a cautionary tale?</p>
+
+<p>SEAN:	Itâs turning into one, it is.  Itâs that lovely mix of both, isnât it?  We try and hit him with like â he answers like, five questions and itâs always like who am I?  Why did I do it?  What were the implications?  What did I learn from it?  And that sort of stuff.  It starts off and you can see that the students, they know itâs serious when he starts talking about all the stuff heâs done âcause thatâs what we hit them with hard first.  Then they talk about the FBI coming after him, the Secret Service wanting to extradite him, all of this stuff, all the money he cost people.  Itâs not just like, sorry, itâs not just companies; itâs peopleâs livelihoods.  If they lose that amount of money, they have to lay [01:00:00] people off or people will â you know, it happens.</p>
+
+<p>JACK:	It seems like Cam has learned his lesson from all this and doesnât want to get in trouble again.</p>
+
+<p>CAM:	If I get arrested a second time though, Iâm gone.  Thatâs it.  Iâm never ever gonna get back into the industry.  Obviously, now as well, I can see the damage it causes, so like Sea World; people had lost jobs.  It costed Sea World like, one and a half million dollars as a result of my attacks.  That would have cost people jobs and that means that they couldnât have fed their families and such, and the butterfly effect goes on.  Thatâs the only reason, as well, itâs just what I didnât see.</p>
+
+<p>JACK:	So, it seems like this system works, huh?  Spend a little time and money on some of these troubled teens and presto, change-o, they become not only a productive person but also an inspirational role model.</p>
+
+<p>CAM:	I feel kind of bad âcause essentially, Iâm nineteen now and Iâm a senior SOC analyst.  I skipped past uni âcause of being arrested.  People that have gone to uni, how do I feel that Iâve cheated it and Iâve gone up, because of where Iâve come from which is technically not a good thing.  Itâs kind of like waving to people that â do you know what I mean?  Because of the apprenticeship, the apprenticeship is giving people this amazing opportunity for free when Iâd done something bad.</p>
+
+<p>SEAN:	Iâve never seen anyone harbor any resentment against it.  The team loved the guys.  We all get on well anyway.  We all do it like â the company weâre with encourages loads of social events that they pay for and that sort of stuff, so we all go carting and go out for a drink and all the rest of it.  The teamâs really molded together anyway, and Iâve never seen any resentment.  I think they appreciate it more because Jack and Cameron always get back to them.  They always try and impart their knowledge.  They always show them the bigger picture when it comes to alert investigations or how to do something or some kind of technical aspect that theyâre not quite getting their head around.  I think that makes them really appreciate the fact that those guys are there in the first place.</p>
+
+<p>JACK:	[MUSIC] Wow, thatâs one way to diversify a team, right?  Security is a game of cat and mouse.  You have to know what the enemy knows and think like them so you can be a step ahead of them.  Who better to turn to than someone whoâs actually done that stuff?  Yeah, I think this kind of team will work out in the long run.  Now that I think of it, Iâve seen many criminals in the US actually get hired by US authorities to help track and catch criminals.  Like, thereâs art forgers and scammers and counterfeiters, and yeah, hackers who felt remorse for what theyâve done and now work with the police to help catch criminals.</p>
+
+<p>Huh, I like it.  In this tech-focused world, I think itâs important to embrace it and not ban it.  Itâs important to spend time and money educating teenagers on cyber-security and especially focus on the teens who use it as a weapon.  Those are some of the really clever kids who have a real passion for technology and other things.  They donât always aim to do bad.  They just got wrapped up in the frenzy of it all and Iâm sure all of us as teenagers have been in the battlefield of good versus evil.  Itâs not easy to be a teen.  Everyone has two sides; good and evil, and itâs how you treat that person will determine what you see.</p>
+
+<p>JACK (OUTRO):	[OUTRO MUSIC] A big thank you to our guests this episode Cam and Sean who both work at CSA.  This show is made by me, the royal key-presser, Jack Rhysider.  Production assistance by Janet BB.  Sound design was done by his grace, Duke Andrew Meriwether.  Editing help this episode by her Highness Damienne, and our theme music is by the Earl of Melody, Breakmaster Cylinder.  Even though the F3 key on my keyboard hasnât done a single thing for twenty years, this is Darknet Diaries.</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

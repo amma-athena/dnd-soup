@@ -1,0 +1,633 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>Triton â Darknet Diaries</title>
+	<meta name="description" content="A mysterious mechanical failure one fateful night in a Saudi Arabian chemical plant leads a cast of operational technology researchers down a strange path towards an uncommon, but grave, threat. In...">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Triton â Darknet Diaries">  
+	<meta name="twitter:description" content="A mysterious mechanical failure one fateful night in a Saudi Arabian chemical plant leads a cast of operational technology researchers down a strange path towards an uncommon, but grave, threat. In...">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/triton.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/68/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Triton â Darknet Diaries" />
+	<meta property="og:description"        content="A mysterious mechanical failure one fateful night in a Saudi Arabian chemical plant leads a cast of operational technology researchers down a strange path towards an uncommon, but grave, threat. In this episode, we hear how these researchers discovered this threat and tried to identify who was responsible for the malware behind it. We also consider how this kind of attack may pose a threat to human life wherever there are manufacturing or public infrastructure facilities around the world." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/triton.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/68/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/triton.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/68/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="Triton â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/triton.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 68: Triton</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://traffic.megaphone.fm/ADV1585058314.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/68/",
+			   "title": "Ep 68: Triton"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/68">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[START OF RECORDING]</p>
+
+<p>JACK:	At this point, every single one of my listeners has been the victim of some kind of data breach; [MUSIC] whether thatâs getting your personal data stolen from the Equifax breach or some other company that had info on you but that got stolen.  But how impacted are we when this happens?  At the least, you should change your passwords and tighten up your own personal security and stuff like that.  But thereâs not much more you can do after that, so weâre kind of stuck waiting for whoever stole our data to see what they do with it.  Sometimes nothing happens; weâre just not impacted at all, but Iâm willing to bet in the future weâll all each be impacted by a different kind of hack, something that will certainly impact our daily lives in a major way, like one that might take out our electricity or water, or a hack that might cause a major disaster.  Like, what if a dam got opened up and let out a bunch of water and flooded a whole city?  That would have a big impact on our lives.
+<!--more--></p>
+
+<p>JACK (INTRO):	[INTRO MUSIC] These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	This story takes place in the Kingdom of Saudi Arabia, in the Middle East.  Saudi Arabia has a massive amount of natural resources, primarily oil which makes it a very rich country.  In fact, the oil company Saudi Aramco is probably the most valuable company in the world because of the oil there.  In Episode 30, I actually cover a hack that was done against Saudi Aramco called Shamoon.  It came through and wiped out almost all the [MUSIC] computers in the whole company.  It was devastating.  But thereâs another massive company in Saudi Arabia.</p>
+
+<p>HOST:	On the west coast of Saudi Arabia, something remarkable is happening.</p>
+
+<p>JACK:	Itâs a petrochemical company.</p>
+
+<p>HOST:	The worldâs largest integrated refinery and petrochemical single-phase project.</p>
+
+<p>JACK:	They produce 140 million barrels of products every year.</p>
+
+<p>HOST:	â¦produces a wide range of high-quality, high-demand products.</p>
+
+<p>JACK:	They produce components that go into manufacturing things we use likeâ¦</p>
+
+<p>HOST:	â¦clothes to fertilizers to packaging to medical equipment to electronics to automobiles, and countless other items that make everyday life easier, safer, and more comfortable.</p>
+
+<p>JACK:	Iâm not gonna say the name of the company.  You can look that up yourself if you want.</p>
+
+<p>HOST:	Where innovation, investment, and human potential are being exploited to the full to enrich life.</p>
+
+<p>JACK:	This chemical plant is huge.  From a distance it looks like a downtown skyline of a whole city; huge tanks, towers, pipes going everywhere, lots of lights on at night, and each structure is a building with no walls.  You can see right through it.  Itâs almost skeleton-like.  Very industrial; itâs a massive plant with lots of chemicals, oil, and people all working together to make petrol-based products that you and I use.  But in 2017, something big happened there.  [ALARMS] In June 2017, a Triconex controller shut down.</p>
+
+<p>HOST:	Redefining process safety.</p>
+
+<p>JACK:	These are the emergency shutdown systems.</p>
+
+<p>HOST:	[MUSIC] Market-leading Triconex Safety Systems have, for example, run for more than 600 million hours without failure on-demand and are still going strong.</p>
+
+<p>JACK:	Safety systems like this have to be extremely robust and resilient and never fail.</p>
+
+<p>HOST:	But today, technology is only part of the safety equation.  Production complexity, aging systems, changing workforce, cyber-crime and complacency are just a few of the factors introducing new threats to operational integrity.</p>
+
+<p>JACK:	Thatâs for sure.</p>
+
+<p>HOST:	Your culture is enriched; your people are safe.  Your business is sound.  Triconex process [00:05:00] safety by Schneider Electric.</p>
+
+<p>JACK:	[MUSIC] Okay, hang on a second.  In order to understand what happened at this plant, we need to learn a little bit more about what OT is.  You probably already know what IT is, right?  Information technology.  Itâs where computers store, manipulate, and transfer information.  OT is operational technology and this is the hardware and software thatâs used to control physical things in the world like valves and pumps and other machinery.  Think about all the electronics that control a factory, a plant, or a utility company.  A chemical and petrol plant like this has a ton of OT systems.  There are electrical devices that open valves, pour chemicals, release gases, and pump fluids.  But an important component of all this is the safety instrumented systems, or SIS.  So many of the chemicals at the plant are toxic and must be handled very carefully.  These SIS or safety systems will monitor the environment very closely and trigger a shutdown if anything becomes dangerous.</p>
+
+<p>Those safety systems that are responsible for conducting an emergency shutdown are the Triconex controllers.  In June 2017, something had gone terribly wrong.  One of the emergency shutdown systems stopped working; it malfunctioned.  When the emergency shutdown device malfunctions, then if there was a real emergency at the plant, this could result in a disaster.  This is a big problem, like when the brakes go out on your car.  But when this system malfunctioned, it triggered an alert on another system which alerted the engineers to go shut the plant down and inspect this controller.  The manufacturer of the Triconex system came out and they examined it but didnât find anything wrong with it.  The plant was able to get back online pretty quick.  Thatâs because they werenât looking in the right place for the problem.  [MUSIC] Fast-forward two months.  Itâs August 4th, 2017.  Itâs 7:43 p.m. on a Friday night.</p>
+
+<p>Six of the Triconex Safety Systems had malfunctioned and tripped an alarm.  When the safety systems fail like this, it automatically causes a shutdown at the plant because if you donât have properly operating safety systems, you have nothing protecting you in case something goes wrong.  Those systems that had problems were in charge of issuing a shutdown if either the sulfur recovery unit or the burner management systems had detected a dangerous condition.  This is a big chemical plant and there are many technicians and engineers who work there and can troubleshoot this kind of issue, but itâs 8:00 p.m. on a Friday night.  Itâs the weekend so the crew was minimal.  Thereâs also a lot of vendors who work there who could also troubleshoot this equipment but their staff is also minimal too because itâs the night and on a weekend.  Troubleshooting began on these Triconex systems.</p>
+
+<p>Logs showed that some configuration changes had been pushed to the controllers.  Now, to make a change on the Triconex controller, yeah, you need to use a computer to interact with it.  But someone had to physically be present at the controller to make the change.  Specifically, thereâs a key that needs to be inserted into the controller and you have to turn that key to the mode Program.  Once the key is in that setting, someone back in the control room can push a configuration change to that controller.  Well, it just so happened that someone had left six of these controllers in the Program state and thatâs not right.  Itâs 8:00 p.m. on a Friday night; no authorized changes were approved for those controllers at that time of night.  The key should not have been left on that setting, but I guess it was just laziness on the plant operators.</p>
+
+<p>I mean, it takes ten minutes to go from the control room all the way to the controller just to put the key in and switch it to Program.  Then you need to go all the way back to the control room, make the changes you need to make, and then when youâre done, hopefully remember to go all the way back to the controller and turn the key back to the Run mode.  It looks like a few of these were just accidentally left in the Program state which was bad practice.  Actually, operators had been seeing alerts on a daily basis that the key was in the wrong state but once a day they would just clear those alerts and ignore them.  Iâm not sure if it was just laziness of the people monitoring the alerts or the engineers or both, because typically you donât want anyone to be able to make remote changes to these safety controllers.  You want to cut these things off from the network entirely for safety reasons.</p>
+
+<p>But when that key was in the Program state, it meant it was now waiting for a configuration change from over the network.  But something went wrong when the config changes were pushed to these controllers.  Whatever configuration was sent, it caused a failure state on the units.  It didnât like whatever it was getting and caused a reboot of these systems.  This is what triggered the alerts and caused the plant shutdown.  This was similar to the outage two months ago but that one was just one controller; this time [00:10:00] it was six at the same time.  But whatâs more suspicious is that because this was a weekend and at night, there were no planned changes to these controllers at that time.  Whatever config changes were attempted, they were completely unauthorized.</p>
+
+<p>[MUSIC] As the onsite crew investigated, they found the computer in the operations room which was pushing these configurations.  When they investigated further, they found this computer had an unauthorized RDP session opened on it.  This is really scary.  To connect the dots here, some unknown person has gained remote access to a computer in the operations room.  That computer had just pushed a config change to six of these safety systems which caused the plant to shut down.  Something very fishy was going on here.  The onsite crew continued to troubleshoot for days and even weeks but werenât getting anywhere further with this investigation.  It was just above their skill level so they called for additional help.</p>
+
+<p>JULIAN:	My name is Julian Gutmanis.  Iâm an industrial incident responder.</p>
+
+<p>JACK:	Julian was working as an OT incident responder in Saudi Arabia at the time.  He was told to hop on a conference call and listen to their problem to see if he had any input.</p>
+
+<p>JULIAN:	The first I was told was that we needed to get on a phone call to provide some guidance to the plant as they were having mechanical problems that had resulted in a shutdown.  They only mentioned the one shutdown in August.  All weâd really heard about it was mechanical issues.  They just want to have a security analyst on the phone to make sure that thereâs nothing wrong; donât worry about it, itâs not a big deal, just join the call.</p>
+
+<p>JACK:	See, at this point the plant didnât even know if this was a security incident or a mechanical failure.</p>
+
+<p>JULIAN:	But when I probed a little bit further to say well, whatâs actually happening here, they started saying that it looks like the emergency shutdown systems have kicked in and shut the plant down and they donât know why.  Theyâre seeing some potentially weird logins and itâs happening on a Friday night.  I was like, almost double-take.  [MUSIC] Like, what are you talking about?  This is probably the most serious thing Iâve ever heard about in my career.  Can we get on a plane now?</p>
+
+<p>JACK:	Julian added everything up quickly; an unknown remote attacker had attempted to make configuration changes to an emergency shutdown system of this plant?  Why would someone do that?  Why would someone want to mess with the last line of defense like that?  Without a properly functioning emergency shutdown system, catastrophic results could occur.  Julian immediately wanted to travel to the site so he assembled a team.</p>
+
+<p>NASER:	Yeah, hi, Iâm Naser Aldossary.  Iâm currently an industrial incident responder.</p>
+
+<p>JACK:	Naser is also an OT incident responder based in the Kingdom of Saudi Arabia.  They called Naser up and said hey, get ready; youâre going on a trip.</p>
+
+<p>NASER:	My bags were ready.  Weâre used to this kind of traveling.  I had just picked up one of my ready bags and head to the office and was told that we should book the earliest flight, and we did.</p>
+
+<p>JACK:	This is sometimes the life of an incident responder; people have to always have a few bags ready to go at any time, like having a three-day go-bag and a seven-day go-bag are suggested because when youâre dealing with big incidents like this, itâs best to have someone get onsite as soon as possible and help conduct the incident response and forensics.  Julian and Naser grabbed their go-bags and jumped on the earliest flight to the plant.  It was an overnight flight which means they were up all night getting there.</p>
+
+<p>NASER:	We arrived there the next day.  It was August, hot.  It was still early in the morning but it was super hot.  We were waiting in line to get in through the security checkpoint and get our access granted.  By the time we made it, the system just decided to malfunction and shut down.</p>
+
+<p>JULIAN:	[MUSIC] I guess one of the funny things we were joking about at the time was when we went through the security checkpoint.  It was about the time that we handed over our IDs and they started looking at who we were that their system just shut down.  We were kind of joking at the fact that the IT compromise is so bad that these guys are monitoring the security desk and blocking people from getting in.  It was quite entertaining at the time.</p>
+
+<p>NASER:	The security guard could not grant us access so we waited there for another hour, waiting for them to figure out how to restart the system and grant us access.</p>
+
+<p>JACK:	They finally got in.  Itâs not just two of them, actually.  I think four of them showed up onsite to help conduct this incident response.  They break into two teams of two people each and start interviewing everyone just to get a lay of the land.</p>
+
+<p>JULIAN:	I guess from the investigation standpoint, we really wanted to start at the systems room impacted.  What caused the actual shutdown was the safety controllers.  Obviously, the engineers have already done some reliability and some mechanical testing on the devices and pulled things like diagnostics logs and [00:15:00] other certain artifacts from these devices.  After analyzing the actual controllers and identifying this, we wanted to figure out what, if anything, had actually changed in the controllers.  Youâve got to understand that these controllers arenât like Windows or Linux machines.  Theyâre embedded systems.  The functionality that you can actually get from these devices is relatively limited, especially depending on the configuration.  Pulling these logs is really plugging in a serial cable and waiting five, ten minutes until it actually completes downloading the logs and things like that.</p>
+
+<p>Itâs not a basic process.  The other thing you canât really do is actually pull the programs back off the controllers and say hey, this is whatâs on there.  What you can do is you can jump onto the engineering software, TriStation, and issue a â sort of like an integrity verification command.  This command basically takes what the program and logic files that the engineers worked on within the system and then pushes them obviously to the safety controller and does a comparison of whatâs running on the controller versus whatâs on the system.  What came back after that was actually a number of IO points.  There was discrepancies between the IO points which is basically the inputs and the outputs that go to the safety systems that would end up shutting down the plant.</p>
+
+<p>JACK:	[PULSING TONE] Keep in mind while theyâre down there working on these controllers, theyâre in the plant where the products are being created.  Itâs loud, hot, and they have to wear safety gear.</p>
+
+<p>JULIAN:	Taking a step back from that, we wanted to go okay, well, if this is occurring, how is it occurring?  Whoâs doing this?  Again, when we arrived, we really werenât sure whether this was an insider that was doing this.  Maybe it could have been one of the operators that just gained access to the engineering workstation.  Or was this somebody coming in from the IT network?  Could have been some kind of contractor that was â a number of plants, projects that were going on at the moment with different vendors and things going on.  You have potentially a number of untrusted parties wandering around that could have gained access to these systems.  Realistically at this point in time, the last thought on my mind was this is a remote attack.</p>
+
+<p>We were really thinking that it could have just been either somebody messing with the systems, somebody doing something they shouldnât be doing, or a malicious internal party, realistically.  What we started doing there was really investigating the engineering workstations which involved taking triage artifacts from the devices, a number of images, and things like that.  One of the things we were working with that was pretty handy was obviously a pretty confirmed timeline.  We knew exactly when the controllers shut down and resulted in the plant shutdown.  If youâre doing an investigation, this is very handy; you know that I can just focus on the lead-up to this event and then really narrow down my search on whatâs occurring in that timeframe.</p>
+
+<p>NASER:	I remember the press engineer was sitting next to me and I just looked at him; I was like by any chance, do you have any kind of HP printers here?  Itâs unusual in these environments.  He was like no; why?  I was like, there is a folder called HP in here and there is a Python DLL.  This is where it kind of clicked in my head that this is â something is going on.  [MUSIC] To be honest, the first thing I started thinking about is Iâm in this plant.  Initially when we went there, we knew that itâs possibly in an unsafe state but youâre just sitting there in a place where youâre not sure what was going on.</p>
+
+<p>To be honest with you, it was scary.  Itâs not something where an e-mail is gonna go down or âthese systems, especially â when you work in this field, this is â it gets drilled in your head; youâre not supposed to go there until you get all these safety trainings.  One of the safety trainings they drill in your head is H2S, H2S.  H2S this, H2S that, itâs poisonous.  It just kind of goes to the back of your head that if something happens you need to do this and you need to do that, and they give you the real scenarios.  Itâs not something that â itâs instant death, in some cases.</p>
+
+<p>JACK:	H2S is hydrogen sulfide.  Itâs very poisonous, corrosive, and flammable.  The safety controller that they are troubleshooting was part of the sulfur recovery unit.  This system was in charge of shutting down the plant if there were unsafe levels of H2S detected, but this safety system itself had gone down.  If there were unsafe levels of H2S, there [MUSIC] was no safety system to shut things down to protect the people and the equipment in this plant.</p>
+
+<p>NASER:	Knowing that youâre in this unsafe condition, I remember I just walked outside and I was like, maybe I shouldnât be breathing this air.  Youâre really scared.  Itâs not an easy [00:20:00] thing.  Even I remember, when I discussed it with my boss when we came back and I was like yeah, this is a really dangerous situation.</p>
+
+<p>JULIAN:	At this stage when weâre being engaged, as I mentioned, it was a couple weeks after the actual outage had occurred.  Managementâs already done the difficult discussions about do I start this plant back up or do we need to do further investigations, or what do we do?  Obviously, they come to the conclusion that leaving the plant in a down-state is extremely expensive.  Weâve already had to pay for the outage which is obviously a week or something to get back up and running.  They want to start the plant back up.  Even when youâve detected these kind of attacks with the malware and stuff within the plant and youâre providing a report saying you have an advanced adversary in your plant, theyâre going to be hesitant to even shut the plant down.  You know youâre dealing with a hot environment when youâre doing the incident response.  You know that it could be some pretty hairy situations if the attackers choose to do some kind of â if theyâre still active within the environment or if theyâve triggered some kind of backdoors or timebombs in the environment for when the communications are severed.</p>
+
+<p>JACK:	Whoa, this is a lot to think about while onsite.  Without having any sleep the night before, Julian and Naser had work to do still.</p>
+
+<p>JULIAN:	We wanted to confirm whether or not this was an insider.  Realistically, that was our main goal.  What we initially did is we identified the malfunctioning systems which were the controllers, we traced it back to the engineering workstations which then led to the investigation that found the Triconex tools; the trilog.exe and the library Python files.</p>
+
+<p>JACK:	They figured out which of the engineering computers had that remote desktop connection to it and examined it.  They found that computer and immediately took a snapshot of that system, copying everything off it; all files of course but on top of that, all the event logs on that system and everything that was in memory and all running processes, and all open connections to that computer.  Yeah, someone had accessed this computer remotely but what did they do once they got in?  Julian and Naser discovered two files on this computer that were the smoking gun; trilog.exe and library.zip.  This was malware, very dangerous malware.  These files were used to interact with those safety controllers and this was the program that was used to push configuration changes to those safety systems, and inside that zip file were the binary files that were sent to the controller.  This would be extremely useful to analyze more in-depth later, but for now theyâre still trying to track down who connected to this computer to put these files here.</p>
+
+<p>JULIAN:	From there what we did was, we were luckily able to trace a lot of the activity through the DMZ firewalls.  Luckily, the plant were capturing both successful and failed connection attempts through the plant DMZ.  [MUSIC] So, leveraging these communications, weâre able to trace a number of sessions that overlapped with artifacts being created on engineering workstations within the system journals, the NTFS journal.  We could see the sessions coming through a DMZ chokepoint, through the jump box, and then the DMZ from the perimeter VPN.  We did track this to an external party that was logging in from the VPN through to the DMZ and then through to the engineering workstation and leveraging these attack tools.</p>
+
+<p>JACK:	The network equipment at the plant had some pretty good logging turned on so it made it easy for them to connect the dots.  The incident response team determined that someone had connected from the outside, the internet, the world, and exploited a computer inside the DMZ, a separate part of the network inside this chemical plant.  It was supposed to be separated from the inside of the network but the attackers found a hole in the DMZ which let them slip through into the internal network which is how they got to those engineering workstations, and thatâs how they got trilog.exe and the library.zip file onto that computer.</p>
+
+<p>Once the attacker was on that engineering workstation, they got a list of safety controllers and did a multi-cast ping on all those controllers to see if any of them were in the Program state.  Thatâs how they found these six controllers were ready to receive a new configuration.  These two files that were on the engineering workstation had some advanced malware, something that Julian and Naser were totally blown away by, something that the makers of the Triconex controllers, Schneider Electronic, had also never seen before and they were flabbergasted by it.  Collecting these hacker tools was a fantastic find for the security teams to investigate further but when they looked at the engineering workstation again later, these tools were suddenly gone.  Somebody had deleted them.</p>
+
+<p>JULIAN:	Yeah, I mean, well, obviously theyâre still active.  We kind of thought that they may have taken a break after the shutdown had occurred.  Come a couple of weeks later, the tool kitâs still there, it seems [00:25:00] like they probably havenât done much.  But seeing it being deleted like that was â I keep saying that we got lucky; weâre lucky we imaged that machine when we imaged it and we found what was causing the outage.</p>
+
+<p>JACK:	This incident response team is good at industrial control systems and OT.  They came in, collected enough information, and they determined the problem.</p>
+
+<p>JULIAN:	At that point, realistically, we had kind of achieved our goal.  Our goal was to realistically do a initial triage and find out is this system malfunctioning a controller or is this something more malicious?  Our consideration at that point was that we had a pretty advanced actor that was potentially interacting with the controllers.  This is obviously excluding a lot of the stuff that we did find within the environment including other malware strains, and things like that.  At this point, our goal kind of shifted.  Our goal wasnât now initially the incident.  We had escalated to a cleanup crew, basically; an external party to come in, do a full scoping exercise, and eradicate the threat from the environment.  That was how we handled that.  Our goal from there really shifted to the kingdom.</p>
+
+<p>We ourselves had 170+ plants that have â a number of them have Schneider Electric controllers that we needed to assess to make sure that we arenât currently being compromised or impacted.  We were protected ourselves against that state.  We also looked at communicating with other potentially impacted organizations so other petrochemical facilities, other oil and gas facilities within the kingdom âcause obviously it was a wide-scale targeting campaign; it wasnât just the victim that was being impacted.  From there we were also â Naser was doing a huge amount of communication with the Saudi government to ensure that appropriate information was [MUSIC] shared within the intelligence circles to be distributed to appropriate teams to make sure that they can track whatâs going on and be across everything that was going on.  Our responsibilities didnât end at the victim and the initial triage.  It, if anything, grew from there.</p>
+
+<p>JACK:	Julian and Naser got out of there.  A new team came in to take a look at the problems in the DMZ and the insecure engineering workstations, and of course went through and made sure that none of the controllers were in that Program state anymore.  Also, it should never be allowed for someone to come into this network from the internet and to be able to gain control of a safety system in the plant.  This is a design flaw of the network.  Those engineering workstations that had the ability to push configurations to the controllers should be totally disconnected from the network so that a remote attacker could never gain access to them.</p>
+
+<p>This should make it so that the only people who could make changes are the people who are onsite and authorized to do so.  Something big had happened here, something extremely serious and potentially really dangerous.  Why would someone hack into this place and target the emergency shutdown systems?  After the break weâll try to unravel that mystery as best we can.  FireEye is a company that is known for investigating cyber-security threats, [MUSIC] and FireEye was called down to clean up and investigate this problem.</p>
+
+<p>MARINA:	My name is Marina Krotofil and Iâve been specializing on the security of industrial control systems for almost a decade by now.</p>
+
+<p>JACK:	This is Marina Krotofil.  As a member of the FireEye team, Marina was investigating the incident.  She knows her stuff when it comes to attacks and exploitation of embedded systems.  She focused on this malware analysis and sheâs here to tell us what was in the public FireEye reports as well as her independent analysis of this.</p>
+
+<p>MARINA:	The attacks seemed to understand overall the culture and [00:30:00] how the plants work.  They were trying onFriday and Saturday; this is weekdays off, and so they were basically targeting their sensitive operations, like injection of the implant to this â weekdays off and on the later hour.</p>
+
+<p>JACK:	Okay, good point; they had to know this plan inside and out because letâs face it, IT and OT are very different animals.  A typical hacker is not gonna know how to work a Triconex safety system to take control of it or know how to program it.  That takes a whole new level of expertise.</p>
+
+<p>MARINA:	I remember there was â one evening, I â once we were still studying the codes and youâre still just trying to understand what the malwareâs exactly doing, what is the intent?  You just at the very beginning.  They were like, function names, and one of them had write âextâ, so at the end it was âextâ.  âExtâ, for me, was â the first thought, what I was â had in my head is external, so do you want to write in some external memory?  Then I started talking to some guys who has access to the controller.  I received a photo of their â my PCB board.</p>
+
+<p>JACK:	When she looked at the photos of this device, she saw that the safety device also had the ability to control the valves.  What this meant was if this malware was writing to the external memory, it could instruct the valves to operate in an unsafe state which could cause damage.  At the same time, the malware could instruct the safety systems not to shut down or even create an alert.  [MUSIC] This meant the attackers could unleash a catastrophic blow to this plant.</p>
+
+<p>MARINA:	I got so scared.  I could not even tell you; I could not breathe.  My hands were shaking.  I felt like I had discovered â so important and then later on when I first analyzed the code, I realized that this is not external but extended, so if you want to write more than twenty-two â a large chunk of code, then you would evoke specific function which allows you to write more so itâs not â was external, but extended.  But at that time, I swear that I would have a heart attack.</p>
+
+<p>JACK:	They realized when the plant shut down, it was a mistake.  The hackers accidentally tripped some kind of emergency shutdown system while fumbling around with these systems which makes you wonder, what was their objective?  FireEye came up with three potential attack scenarios.  Attack option one; the attackers could force this plant to shut down by triggering the emergency shutdown systems, basically a false positive.  But by shutting down the plant, it could mean a financial impact to the plant.  Then thereâs attack option two; the attackers could reprogram the safety systems so the plant could continue to operate in an unsafe state which could cause destruction to the plant or even a disaster.  Then thereâs attack option three and this one is the most scary; the attackers could make the emergency shutdown system ignore unsafe operating levels and then somehow cause the plant to operate in an unsafe state.</p>
+
+<p>In this scenario, the attackers might be able to control the valve for hydrogen sulfide, H2S, and somehow pump out high amounts of this dangerous gas and then tell the emergency shutdown system to ignore the dangerous levels of H2S.  If you just breathe too much of this stuff in, you can lose your sense of smell, fall unconscious, or die.  To top it off, hydrogen sulfide is extremely combustible so one little spark and this could cause a major explosion which would almost certainly result in casualties.  [MUSIC] As the team at FireEye investigated this, they decided to give it a name.  Since the file was called trilog.exe and this was targeting the Triconex systems, they called the malware Triton.</p>
+
+<p>MARINA:	The Triton malware, if it could have this damage payload which was not uncovered, it might keep them up.  It means that the process will not shut down and that could be a safety incident.</p>
+
+<p>JACK:	But this malware wasnât made by someone who was sloppy or unskilled.  Marina found it to be a pretty sophisticated program.</p>
+
+<p>MARINA:	Right, so the job was not an easy job.  Triton is, as such, itâs a passive implant.  Why I call it passive?  Because it does nothing.  It sits in the memory.  Once you inject it in the memory, it sits in the memory and it expects a certain packet to be activated.</p>
+
+<p>JACK:	This malware was very stealthy.  As Marina said, it would implant itself into the memory.  That is, volatile memory like RAM where the system would reboot and it would be gone.  But these safety systems would often go over ten years without a reboot so hiding out in the memory was fine.  [00:35:00] Now, once it was hidden in the memory, it was designed to act normal and engineers could interact with it just fine without knowing there were any problems with this thing.  Whatâs more is that this malware had to rewrite the firmware in order to be successful and this was not possible to do remotely as a user accessing it through the engineering workstation.  You typically needed to bring a flash drive to the system and then plug a console cable into it and upgrade the firmware while physically standing next to the system.</p>
+
+<p>But this malware found an unknown bug in the controller, a zero-day which allowed it to elevate its privileges to write into the firmware of this system.  Again, for someone to have such an advanced knowledge of this particular safety controller running this particular version of software and to be able to craft a zero-day to exploit it, this is just top-level stuff.  I mean, if you think about who could have made this, first of all, it had to be someone who had a lot of time because this attack took years to execute and it had to be someone who has a very high skillset who can hack both IT and OT environments.  Then for them to develop this malware, which they probably had full, unrestricted access to these Triconex controllers in a lab or something so they could build this on and practice with.  Basically, the attackers had unlimited resources to carry this attack out with.  Okay, why would the attacker want to get into the safety system?</p>
+
+<p>MARINA:	Exactly, and this is where weâre really getting into the large discussion also with the human cost of cyber-operations and ethics and so on.  Safety systems are â even if the attacker would try to engineer a damage scenario and execute it to use it in the main control system like DCS, really bad consequences like explosion and toxic release will be always prevented by the safety systems.  By targeting safety system and potentially preventing it from executing its function, the attacker would allow such terrible incidents like explosions and toxic releases.  You would really have a cyber-attack with very dramatic physical consequences.  But because people work in those plants and also even in the night, this may also result in casualties.  Youâre basically denying â because safety systems are meant to save life.</p>
+
+<p>This is the right of every employee to be in safe working conditions.  They specifically target systems which prevent â protect civilian people.  This is already off-limits.  You should not be targeting those systems in the â when you do not even have war conditions.  Iâve been working a lot with International Humanitarian â International Institute for Humanitarian Law and International Organization of Red Cross and all of these questions.  You see like, yeah, targeting civilian protecting system is not permitted.  Itâs off-limits but currently these operations are not really specifically regulated.  This is why itâs actually, yeah, encouraged more active discussions.  How should we regulate site operation on the international level?  Yes, itâs very upsetting because itâs â such an attack may result in human casualties.</p>
+
+<p>JACK:	Wow.</p>
+
+<p>MARINA:	But that means also really bad damage.  The reason why I see why they would do that, once you want to take a specific refinery for a very long â like, take it down for a very prolonged time, you would go for such an attack.  This would be really something very dramatic.  But again, this is connected also with human casualties.</p>
+
+<p>JACK:	Whoa.  I canât believe somebody would be insane enough to attempt something like this.  [MUSIC] This is straight-up terrorism, cyber-terrorism.  Now, while FireEye was investigating this to try to figure out what was the purpose of this attack and how it worked and who did it, word started to get out because at this point itâs months after the attack and many teams have been involved; there was the internal team and then the team Julian and Naser were on, and then the Schneider Electric team, and also there were other vendors onsite troubleshooting this, and now FireEye.  Someone within all these teams started leaking information about this attack.  First, somehow the US government became aware of this.  The Department of Defense began tracking this but what also happened is that someone uploaded this malware to VirusTotal.</p>
+
+<p>VirusTotal is an amazing website; anyone can upload a file to it and when you do, it gets ran through like seventy different virus scans to see if itâs known malware and then tell you information [00:40:00] about that.  Someone uploaded these files to VirusTotal and it just came back as unknown.  This was probably a mistake for whoever uploaded it because when malware like this gets uploaded to VirusTotal, the premium users of the site get to see a copy of this malware.  When it was uploaded there, it pretty much landed in the hands of all the premium users of the site.  At that point, the world was not aware of this attack.  But if whoever did this attack was a premium member of VirusTotal, now they knew their cover was blown.  Another company comes into picture here; Dragos.  They also investigate security threats related to industrial control systems.  I sat down with their CEO to try to get to the bottom of this.</p>
+
+<p>ROBERT:	My name is Robert Lee and Iâm the CEO and co-founder over at Dragos.</p>
+
+<p>JACK:	Now Rob, Rob used to work with the NSA before starting Dragos.</p>
+
+<p>ROBERT:	Thatâs correct.  I built and led the ICS Threat Discovery Mission access period.  After that, they moved me into offensive operations.  The United States government, they didnât like that.  They donât really have a desire to do offense.  I saw a gap in the private sector around industrial security and I saw this belief that was forming that was essentially taking IT security best practices and copy-and-pasting them into ICS, not actually thinking about the difference in mission, difference in threats, and similar.  To be perfectly blunt with you, I would really like my son to have lights and water when he grows up so out of necessity of trying to get this right, I jumped ship and created Dragos.</p>
+
+<p>JACK:	Thereâs a threat intelligence group within Dragos which is looking at whatâs going on in the world to see what threats there are out there against industrial control systems.</p>
+
+<p>ROBERT:	We ended up finding this malware.</p>
+
+<p>JACK:	I donât think they found this malware through VirusTotal but this is a company who has their finger on the pulse for threats related to industrial control systems.  When something new like this shows up in the world, theyâre probably going to find it pretty quick.</p>
+
+<p>ROBERT:	When we found it, we had never heard of it before, we had never seen it before, we didnât know about what had happened in Saudi Arabia at the time.  We analyzed it and we started applying it to the set of intrusions that we were tracking.  We made this assessment; yep, we have enough now that this is a real set that we would be tracking and hereâs this SIS or safety system targeted malware and weâre gonna name it TRISIS.</p>
+
+<p>JACK:	Yeah, okay, so they didnât know FireEye had already named this malware Triton, so Dragos called this TRISIS.  Just so you know, Triton and TRISIS are referring to the same malware.</p>
+
+<p>ROBERT:	At that point we ended up feeling very uncomfortable about what we were looking at.  [MUSIC] We knew very clearly, just from what we could assess and did malware analysis, that we were looking at an adversary that was either already deploying or going to be deploying malware to target safety systems and potentially compromise human life.</p>
+
+<p>JACK:	Now, Rob is extremely experienced on the security of industrial control systems.  I know this because I actually took a class with Rob at SANS once and he just blew my mind with his next level of understanding of things.  Heâs been involved with some of the worldâs biggest industrial control system hacks ever.  He was there for BlackEnergy, the attack on Ukraineâs power grid, and has responded to hundreds of serious incidents in industrial plants, utilities, dams, you name it.  But as he was understanding what he was looking at with Triton, this hit him hard like nothing else has.</p>
+
+<p>ROBERT:	To be extremely candid and transparent, I let out an audible âfuckâ and like, sat back in my chair, went and poured a glass of whiskey, sat there realizing that I had to draft this e-mail to the Department of Home Security understanding what could come after if it had went poorly.</p>
+
+<p>JACK:	Rob has a history of working with the US government and feels like something like this is important enough to inform the Department of Homeland Security that hackers somewhere in the world have broken into a chemical plant in Saudi Arabia and had the capability to cause a major terrorist attack.</p>
+
+<p>ROBERT:	Sitting there reading the report of the first ever SIS-targeted malware, the first time in human history that somebody tangibly went after human life from a cyber-attack and knowing what was gonna happen next, itâs a lot to take in because I also thought about it from the industry perspective; I thought about all of the conversations that were going to have to take place, the years of my life that I would then be talking about this and trying to educate groups and talking to engineering operations and security.  Those are not fun â I think everyone thinks these are fun situations.  These are not fun situations.</p>
+
+<p>JACK:	Yeah, it does sound exciting to be part of this but Rob is right.  This stuff can get dark and scary real quick and the burden it brings can really bring you down because itâs so intense.</p>
+
+<p>ROBERT:	We donât always tell governments about what we do.  I think itâs very important for us to try to keep our customers out of the media and out of government panels a lot of the times.  But we thought that this was so concerning that the US government [00:45:00] needed to know.  I passed the information onto the Department of Home Security and said look, this is very, very significant.  Little did I know, I think â I donât think they leaked it.  [MUSIC] Donât get me wrong, I donât think thereâs any badness happening here but thereâs a lot of contractors and people inside of DHS.  One way or another, it made its way to FireEye.  A FireEye executive ended up calling me up going hey, we see that youâre tracking this, we saw your analysis and stuff.  Thatâs great and wonderful; FYI, weâre already involved.  I was like oh, okay, cool.  You want to partner together on this or analyze it?</p>
+
+<p>They said they couldnât which makes sense, from NDAs and similar.  I said okay, well, weâre not gonna publish on this.  Weâre gonna report it to our customers but whenever you guys publish it, let us know and weâll publish our analysis as well.  I think a lot of people view cyber-security teams to always be competitive but behind the scenes, a lot of your cyber-security companies work together for the benefit of the community âcause we all hate the adversary.  Anyways, FireEye ended up going forward and deciding to publish this late December.  We take a stance at our firm that we never publish about threats and their capabilities unless itâs already going to be made public because we want our customers and the community to have the information as much as possible ahead of the New York Times articles or similar.</p>
+
+<p>JACK:	Okay, so back to FireEye.  After all, FireEye had as close to a full picture as possible with all the extra data they collected.  After analyzing the code and looking for clues and understanding its capabilities, they started to form an idea of who might be behind this.</p>
+
+<p>MARINA:	[MUSIC] I think Iran was initially suspected by everybody because it was the logical target but it was quickly ruled out.  I think FireEye has never confirmed it was Iran but in the mass media it was frequently speculated that it could be Iran because it was the logical target, but there was no evidence and FireEye did not confirm that.  Yes, and then there was another report that â which FireEye has attributed activities to this National Research Institute of Mechanics â of Chemistry and Mechanics in Moscow.</p>
+
+<p>JACK:	Oh, what?  The Central Scientific Research Institute of Chemistry and Mechanics is suspected behind this?  Let me look this up.  Okay, so theyâre based in Moscow, Russia but they literally seem to be a regular research institute publishing reports about thermal vision, gas dynamics, high-energy substances.  In my opinion they donât sound like a hacker group who would be intent on blowing up a chemical plant in Saudi Arabia.  It just doesnât make sense.  But hm, wait a minute, do you remember Stuxnet, the hack against the nuclear enrichment facility in Iran?  Do you remember where we think Stuxnet was created?  In the Idaho National Lab or the Oakridge National Lab which are both ran by the Department of Energy and studies science and physics.  I mean, the story goes is that somebody from the NSA or CIA went to these labs to find people who were skilled enough to develop an exploit for a centrifuge.  Maybe someone went to this scientific institute in Moscow to get their help in developing the OT part of this attack.</p>
+
+<p>MARINA:	Itâs not really unusual that something what is built in the lab also has cyber capabilities.  It sounds illogical, but it does.  Itâs just that previously, we have not really articulated this or never really looked into the practice of such research institutions in-depth.  But yeah, itâs not a very unusual combination and they have a couple of departments which is related to the advanced informatics and security of critical infrastructure.</p>
+
+<p>JACK:	What evidence is there to point that this research institute in Moscow may have done this?</p>
+
+<p>MARINA:	Right, so, FireEye has laid down the facts pretty well, actually.  This IP address which is â from which they observed intrusion being conducted or at least some operations related to intrusions of the Triton team, like, in a known organization were conducted from that IP address.  [MUSIC] It would be known that the IP address was used to monitor the activity related to publications on Triton.</p>
+
+<p>JACK:	Iâve also read in the FireEye report that the same IP of that research institute was doing reconnaissance on some [00:50:00] other plants and was seen engaging in other suspicious activity.</p>
+
+<p>MARINA:	Also, a little bit funny; so, Nick Carr was really very vocal about this, Tweeting about this incident.  In the library.zip there was â one of the files, like calculation of the DRC code, was written by Alexander Kotov, so they directly took that file and just used it.  Then there was a block for but they â Alexander Kotov, he described how he needed to write this file and how developed it.  Later on, when they found this Department of Advanced Informatic from this research institute, they have a group photo and there is â one of the members of this group looked like this Alexander Kotov.  If they later hired him to work there and he posted these two pictures which was a tweet from October 24th, 2018, which if I look at the photos, it could be him.  Itâs just a fun fact.</p>
+
+<p>JACK:	Of course, Russia has some very skilled hackers who work on behalf of the government, hackers within the FSB or GRU which are intelligence agencies in Russia.  Itâs possible that they might have been teaming up with this research institute which then makes this a multi-disciplinary attack.  I mean, it makes sense that if one team got into the plant and got access to the engineering workstation, then the engineers from the research institute could take over the keyboard and go from there.</p>
+
+<p>MARINA:	It seems like they didnât have a proper infrastructure, attack infrastructure in place to make sure that the attribution will never be done, including this IP address.  Which is, you see on one hand, it makes sense to move intrusion team to the engineers.  On the other hand, youâre still better off to conduct an operation from the established governmental institutions because you have better attack infrastructure.  Maybe they need to work on that.</p>
+
+<p>JACK:	Good point; if it was this research team, they didnât hide their tracks very well which is something a more seasoned government hacking group would have done better at.  Now, once FireEye published their report on this, Dragos also published a report and in their report, they didnât identify any specific group that did this.  But instead, they created a name for the threat actor and called them Xenotime.</p>
+
+<p>ROBERT:	When you look at what Xenotime was capable of doing, what they did, is they compromised this company back in 2014 and they beelined straight for the industrial networks.  They compromised their SMS, two-factor authentication, they went directly into the industrial networks after compromising the company.  After getting into the industrial networks they went and profiled, to the best of our knowledge, that safety system, and then they left.  They didnât come back until 2017 with a purpose-made capability on a highly-proprietary safety system.</p>
+
+<p>JACK:	[MUSIC] Oh, wow.  Okay yeah, so when the attackers have the capability to spend years fine-tuning their attack, this pretty much rules out any hacktivism groups simply because the sophistication here is just too high for some teenagers or a ragtag group of hackers to do.  See, while trying to figure out who did it is impossible, we can take pretty good guesses at who didnât do it and try to eliminate certain groups.  Next, we can try to look at this attack through the lens of a cyber-criminal, someone who would be motivated by financial gain.</p>
+
+<p>ROBERT:	Yeah, so one of the things we think about with cyber-crime and again, I donât think itâs fair to ever eliminate fully, but one of the reasons chiefly that you would start to think itâs not cyber-criminal related regardless of this investigation and operation, is the impact and what were they trying to achieve.  Usually, you think a lot about whatâs the criminal aspect of this?  There was no financial motivation, there was no intellectual property they were stealing that they could then sell off to somebody else, there was no return on investment to a criminal enterprise easily sussed out.</p>
+
+<p>You can always try to connect a million things or oh, theyâre just shorting the oil markets or something.  But straight away kind of analysis, thereâs not a reliable assessment around this being criminal-related.  As you look at this case, thereâs not enough to support that it was hacktivism.  Thereâs not enough to support that it was criminal-related.  Thereâs not enough to support that it was a terrorist action or a non-state actor.  The overwhelming support, the overwhelming evidence, classification to hypothesis would be a state actor.</p>
+
+<p>JACK:	Okay, a state actor is a group of hackers who work on behalf of a government organization.  When I think about state actors, the first group that comes to my mind is the NSA because theyâre totally capable of pulling something like this off.  Thatâs what NSA stands for, right, nation-state actor?</p>
+
+<p>ROBERT:	This is a good question; would it be the [00:55:00] NSA?  Which I think would fail all reason that a strong US ally like the NSA are going after it to cause physical events and try to kill people.  Itâs definitely not in anything that weâve ever seen them do before.  But let me talk about the attribution in general and my general thoughts on it.  A number of folks at FireEye came out â a number of folks came out and have attributed this to the Russian government.  I am not saying that these are incompetent folks, that their analysis is bad, or that theyâre not supporting their assessments.  [MUSIC] Iâm not ever trying to dismiss other peopleâs assessments.  My assessment of the situation, my knowledge of it and working with my intelligence team and some really wonderful professionals is that attribution is significantly more difficult than people make it out to be.</p>
+
+<p>Itâs significantly easier to do than the naysayers would position; oh, you canât get to attribution.  Well, thatâs not true either, but to get to a high-confidence level of attribution is incredibly difficult.  My own biases from having worked in the National Security Agency with intelligence professionals is that a high-confidence level of attribution isnât just related to the forensics and incident response and intrusion or tracking adversaries or doing OSINT.  Hell, for us, high-confidence would have been, Iâve got screenshots of the person or Iâve got camera feeds and intrusion data and signals intelligence and maybe human intelligence.  Itâs so many components working together to get to a high-confidence level of assessment.  A lot of the private sector high-confidence assessments I see really would have been low or moderate-confidence assessments in the government and Iâve never been able to break that.</p>
+
+<p>I donât try to â again, Iâm not trying to downplay anybody or similar, but when youâre talking about national critical infrastructure and cyber-attacks upon it, which is a really, really tense situation between state players, the last thing I want to do is have a â my firm, as an example, come out and go oh, we are basically positive that itâs Russia.  Iâm like wow, thatâs gonna be used diplomatically, potentially militarily, thatâs gonna feed into broader assessments.  You gotta be real careful when youâre talking national disruption state tension.  But the other reason we push back, well, thereâs two other reasons that we push back; the first is that what most people want, not all, but what most intelligence requirements in the private sector relate to is how to do better security.  How do I prioritize things?  How do I look to better have security controls?  What type of behaviors in the environments should I be detecting?</p>
+
+<p>What should my response plan be?  None of those things require true attribution of âit was Vladimir in Russia.â  Thatâs not a valuable return on investment in trying to get the defensive recommendations.  Our customers and largely our wider IT security community most of the time donât care about attribution outside of a talking point to executives.  Even then, itâs really just talking points.  Theyâre not actually using that information but itâs a high cost to try to even get that information and I would argue you probably really canât get high-confidence as often as you would like.  Then the last thing, without being too wordy, but the last consideration around this and again, not trying to put anybody down, but we in InfoSec generally treat attribution as this binary thing; it was Russia or it wasnât.  It was China or it wasnât.  But these state players are not so black and white.</p>
+
+<p>[MUSIC] Russia has a variety of intelligence agencies and military agencies.  When we say Russia, do we mean SBR?  Do we mean GRU?  What elements are we talking about?  Inside of that, thereâs the aspect that they have their own supply chain and non-state actors like our defense industrial base that theyâre using.  They might be having vendors of their own capabilities, maybe somebody making exploits for them.  They have allies; Russia, China, North Korea or Iran teaming up at any given point on different operations just like we would do with the UK, Australia, and others.  This discussion around attribution is way more nuanced at a geopolitical level than I generally see from a cyber-security audience.  To just come out and go âitâs Russiaâ I think is not a position that I could comfortably take because of what that means in impact, what little value it has to the customer, and how nuanced the real answer around that solution might be.</p>
+
+<p>JACK:	Okay, but at the same time youâve identified a group called Xenotime.  How do you identify a group behind this without knowing who the group is?</p>
+
+<p>ROBERT:	Yeah, great question.  Clustering on intrusions to form a group; [01:00:00] diamond analysis, kill chain analysis, however youâre going to do it, is an effective tool to trapping an adversary and the methods and tools and infrastructure they used to make those defense recommendations.  If youâre going to get to âitâs Russiaâ, you actually have to go through individual intrusions.  You analyze an intrusion, youâre probably analyzing hundreds or thousands of pieces or elements of an intrusion, if not tens of thousands, to siphon it down to a set.  Then once you have a set of intrusions and characteristics and similar, then you can start looking at victimology and infrastructure patterns and capability patterns and similar to then get to attribution.</p>
+
+<p>Itâs actually not in the other way where you say âitâs Russiaâ and you want me to follow them; youâre first actually creating sets of intrusions that you then follow.  If you go and put the additional work into it you can try to make assessments around true attribution.  Youâre still doing attribution; youâre attributing this intrusion or this attack that you saw to a set but Iâm not making the assessment about who that set is.  Iâm saying itâs this actor, this is Xenotime, we can tell that theyâve targeted the other entities, we can follow them, we can track them, we can learn from them.  Iâm just not going that additional step to put in the analysis, time, and resources to try to get to true attribution.</p>
+
+<p>JACK:	One of the first lines in this â one of these reports that Iâm reading on Dragosâs website is âXenotime is easily the most dangerous threat activity publically known.â</p>
+
+<p>ROBERT:	Yep.</p>
+
+<p>JACK:	Can you kind of back that up?</p>
+
+<p>ROBERT:	Theyâre the only threat publically that we know of that has shown both the intent and the capability to go after human life.  I donât think you can measure anything else other than that.  I think itâs very fair to say thereâs threats that have caused a lot of intellectual property loss, economic damage and similar, but there is nothing so sacred as human life and for an adversary to specifically intend and be capable of targeting that, that puts them in a special league of their own of a particularly dangerous and honestly awful threat.</p>
+
+<p>JACK:	I mean, the next question I logically have is why would somebody want to actually kill people at this plant?</p>
+
+<p>ROBERT:	There is a wide variety of motives that could go into it.  I donât want to speculate.  Iâll give you some examples but it shouldnât be seen as assessments; this is just speculation of what could happen.  First and foremost, if you are a state actor that is competitive with the oil and gas industry in Saudi Arabia, which there are numerous, [MUSIC] the loss of life in those plants could not only have an immediate impact on production, it could have an immediate impact on morale of the workers and similar going back to those plants.  It could have a public perception issue inside the kingdom that they have to deal with.  But a lot of these companies are stock-owned and publically traded so you have impacts on actual wealth and capitalization and future operations and similar.</p>
+
+<p>What youâre basically doing is, with a single cyber-attack, you have an ability to help destabilize a strategic regional or non-regional adversary.  If you are a state adversary that particularly doesnât like Saudi Arabia or their wealth and oil and gas, this is a very effective attack to achieve especially âcause Saudi Aramco, even though they werenât the victim, was getting ready to do their IPO at the time.  They ended up delaying it.  We donât know if it was related to the attack or not that they delayed it, but they ended up delaying their IPO until later on.  These types of attacks definitely make investors and others very, very concerned.  The other aspect about it â I mean, thereâs so many different motives.</p>
+
+<p>You could have a motive of simply using this attack, even though it wasnât a training exercise, but using it as training too, for your own team on cool, can we go achieve these attacks?  How could we make this scalable?  Whatâs the next level of it?  You have to get combat experience, if you will, not to overplay it, but you have to get experience as the adversary if you want to do these types of things.  All reasonable analysis points to a state actor targeting Saudi Arabia to disrupt a portion of their oil and gas infrastructure.  Why they did that is a very difficult intelligence requirement to have that really is inside the realm of state intelligence agencies, not something that a private sector intelligence agency could really reasonably get to.  Itâs like, a step beyond attribution is understanding why.</p>
+
+<p>JACK:	Is this a story that we should be freaking out about?  âCause this could potentially target people in the US or places like that, and the whole infrastructure is like aah!</p>
+
+<p>ROBERT:	Yeah, I [01:05:00] share peopleâs concern and I completely find it reasonable when people are concerned but I always try to downplay the hype of it.  Whatâs the hype of it and whatâs the reality?  The hype of it would be to assume that this is some highly-scalable attack that immediately could target oil and gas companies or electric companies around the world like, all at the same time or similar.  [MUSIC] The same way that attacks on an electric system arenât hype, but thinking that thereâs one grid that you could take down all at once is hype.  On this one, how seriously do I take this?  I take this so seriously that when I talk to the board of directors or talk to security teams in the oil and gas industry, this is one of the first things I highlight and I tell them very clearly, if you do not have detective, prevention, and responsive capabilities around the style of attack weâve seen, not taking indicators of prices âcause the indicators will change, but the style, the TTPs, the behavior of the attack, if youâre not prepared to try to prevent that and respond to this, you are doing a disservice to your community.</p>
+
+<p>What I mean by that is this is the absolute best document case weâve ever had of what really could happen from a cyber-attack to lose life in the community.  If people arenât taking that seriously in these industrial operations and industrial environments, I think theyâre being negligent.  Do I think the public should be freaking out about it?  No.  The work that I see out of these infrastructure companies is that so much work is happening thatâs not public that they never get credit for.  We commonly see oh, Electric Utility or whatever is not taking security seriously.  Thatâs not true.  There are some that arenât and they need to do better for sure, but there is so much good work happening and you just donât come out and publicise it, so we have to find a balance there.  But does this attack and this adversary concern me?  Absolutely.</p>
+
+<p>What really concerns me is these attacks and industrial control systems arenât about the malware.  Itâs not about the vulnerability.  Itâs about a blueprint of how to go â achieve future attacks.  Youâre revealing knowledge and insight that other adversaries could pick up and use.  This is how the realm of only state-adversary activity gets into non-state actorâs hands, is once a state actor figures out how to do it and publicise it, you get other people trying to do those things in the future.  The butterfly effect here is that when people start doing these types of attacks, they start to become more common.  They start to become easier and we want to prevent that because these are a particularly damaging style of attacks.</p>
+
+<p>JACK:	Hm, for me at least, this whole attack puts me in deep thought.  There are hundreds of industrial plants around Saudi Arabia and the world that have these same Triconex safety controllers.  [MUSIC] It sounds like these hackers were in the network for years before accidentally tripping an alarm.  It just makes me wonder how many other industrial networks might these attackers be in right now, lying in wait, waiting for the need to pull the trigger.  It also makes me wonder how many other plants might have had a mysterious shutdown and didnât have the capability or care to look deeper for this malware and instead they just started the plant back up.  Spooky stuff.  On one hand I want to know more but on the other hand, Iâm kind of afraid to look.</p>
+
+<p>MARINA:	Sometimes we have to let this go because it consumes you so much that yeah, sometimes you have to let it go and thatâs exactly what I did with Triton.  I donât think about this anymore so Iâm more concentrated right now working with, for example, Red Cross and with people who are involved in humanitarian law so that Iâm there helping them with my technical knowledge, with my technical inputs to explain them the possible consequences of such attacks and cyber-operations in the critical infrastructures so that they could create better laws and regulations.  How do you regulate such operations?  Well, this is my main focus right now.</p>
+
+<p>ROBERT:	Yeah, I think when we look at the attribution side of it where I will say the private sector may not need to go the distance and try to come up with a high-confidence assessment.  I do think governments should.  Is it important for clients of Dragosâs technology to know that Russia did this?  No.  But if Russia did do it, then the US and others do actually need to know that and it does need a way into discussion between states.  It could lead the way into economic sanctions or others.  This attack was a very purposeful and blatant attack against civilians and civilian infrastructure.</p>
+
+<p>State leaders around the world need to take this attack, attacks like Ukraine, the attack like NotPetya, and actually take these style of attacks off the table and penalize the states that [01:10:00] do these types of attacks.  They should be inexcusable.  Whereas on the attribution subject, I donât want to go the distance because I donât see the value in trying to pin it to any given state, the various intelligence agencies around the world need to and they need to get it right, and there needs to be action follow-through.</p>
+
+<p>JACK:	Iâve seen the way our nationâs leadership interviews people like Mark Zuckerberg.  Our leaders simply donât understand technology enough to know what to do about this and itâs embarrassing.  Technology defines our current time.  Thereâs no excuse for our leaders to not understand technology more in-depth at this point.  Maybe this was all just a test or practice since the attackers didnât actually cause damage to the plant other than an accidental shutdown.  Because I wonder about the people who were behind this; did they know this was a mission to kill people?  Or were they told this is just a test and that no human lives would be lost during this test?  When you look at the code long enough, the malware, you start to really think about that person who wrote it because it was a human who typed out that code.  Marina thinks a lot about whatever person wrote this malware.</p>
+
+<p>MARINA:	I spent so much time with these activities and because, you know, itâs very typical research â intensive research work that to which I can relate.  I actually talked to many guys about that, everybody who was investigating the incident and spent a lot of time.  [MUSIC] You start to really see the incident and can feel more the person; the pain, the frustration, that they sometimes also kind of want to see the person.  Yeah, and I think itâs probably my personal opinion but probably even did not really â clearly understood the consequences of what exactly they are doing.  Or maybe as you say, if it was just a test and they knew theyâd never go in to disrupt anything, though they did not feel like they were doing really something dangerous because I would not be ever comfortable to conduct an operation which may impact human life of civilians.</p>
+
+<p>JACK:	Yeah, there is a lot to think about regarding this incident.  These kind of attacks on operational technology are slowly becoming more common.  Weâve seen Stuxnet try to disable a nuclear enrichment facility and weâve seen attacks on the Ukraineâs energy grid, and now we see Triton going after the emergency shutdown systems of a chemical plant.  Itâs chilling for sure.  I just hope that whoever created this is not crazy enough to intentionally cause a disaster.</p>
+
+<p>JACK (OUTRO):	[OUTRO MUSIC] A big thank you to our guests for coming on the show and sharing this story with us.  Julian and Naserâs initial investigation was pivotal to everything that followed and both of them now work for Dragos with Rob.  Marina Krotofilâs research and the team at FireEye was eye-opening to the world and Rob Leeâs report really does have an impact and hopefully saves lives in the future.  Keep up the great work on helping us stay safe from major catastrophic events like this.  This show was created by me, the crimson bear, Jack Rhysider.  Original music created by the salty jackal Garrett Tiedemann, editing help this episode by the stardust kitten Damienne, and our theme music is by the sonic panda Breakmaster Cylinder.  Even though when my dad has a computer problem and he calls me up to help him, I remind him about he used to nag on me to get off the computer when I was in high school and if I did, it wouldnât be able to help him now, this is Darknet Diaries.</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

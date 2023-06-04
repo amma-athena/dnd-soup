@@ -1,0 +1,851 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>Dirty Coms â Darknet Diaries</title>
+	<meta name="description" content="This episode we talk with a guy name Drew who gives us a rare peek into what some of the young hackers are up to today. From listening to Drew, we can see that times are changing for the motive beh...">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Dirty Coms â Darknet Diaries">  
+	<meta name="twitter:description" content="This episode we talk with a guy name Drew who gives us a rare peek into what some of the young hackers are up to today. From listening to Drew, we can see that times are changing for the motive beh...">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/peeking.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/112/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Dirty Coms â Darknet Diaries" />
+	<meta property="og:description"        content="This episode we talk with a guy name Drew who gives us a rare peek into what some of the young hackers are up to today. From listening to Drew, we can see that times are changing for the motive behind hacking. In the '90s and '00s it was done for fun and curiosity. In the '10s Anonymous showed us what Hacktivism is. And now, in the '20s, the young hackers seem to be profit driven." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/peeking.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/112/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/peeking.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/112/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="Dirty Coms â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/peeking.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 112: Dirty Coms</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://www.podtrac.com/pts/redirect.mp3/traffic.megaphone.fm/ADV7712059188.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/112/",
+			   "title": "Ep 112: Dirty Coms"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/112">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[START OF RECORDING]</p>
+
+<p>JACK:	The older generation gives us so much guidance and wisdom that I donât know where weâd be without them.<br />
+<!--more-->
+They teach us the dangers of the world and give us the insights that would take us decades to figure out on our own.</p>
+
+<p>But the internetâ¦ doesnât have an older generation still.</p>
+
+<p>[MUSIC] Weâre still in the first generation of users. Itâs only been 30 years since AOL brought millions of people online for the first time. And oh how the internet has changed sinceâ¦</p>
+
+<p>I fear that when thereâs no older generation to guide the younger generation on how to be safe online, that thereâs a lot of kids who will learn the hard way.  I know when I was a teen, I screwed around so much on the internet that I swear, I got a new virus on my family computer every week.  There was no one around to show me why that happened or how to fix it.  My grandma and dad barely knew how to turn it on, much less handle these kind of problems.</p>
+
+<p>Schools werenât teaching computers yet, and when they finally did, they taught basic things like how to type or use some sort of application.  Nowhere in the curriculum was anything about the dangers of downloading software, shopping online, or going to chat rooms.  That kind of stuff is only taught by family, or in my case, by nobody.  In fact, the older generation often relies on the newer generation to teach them about computers.  So many times Iâve seen parents ask their kids to set up the new computer or show them how to use social media.  Kids teaching parents the dangers of social media is like kids teaching parents street smarts.  But thatâs the world weâre in, because itâs so new.  What will the internet look like in 2060?  There will be better educated users, users who grew up with parents who have seen the darker side of the internet and can warn them about it and show them the dangers.  But that time is not here yet.  Weâre still in the age of the younger generation guiding our light.  I sure hope they know where theyâre going.</p>
+
+<p>(INTRO):	[INTRO MUSIC] These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	The other day, someone found me, and he was willing to open up and share what he knows about some online communities that I donât have visibility into.  Iâll tell you right now, this episode isnât so much a story as itâs more of a tour of whatâs going on in some of these underground groups, groups that are home to hackers, scammers, and thieves.  [PHONE SOUNDS] Hello.</p>
+
+<p>DREW:	Hello.</p>
+
+<p>JACK:	Whatâs up, man?</p>
+
+<p>DREW:	Not much.</p>
+
+<p>JACK:	Is there a name that I should refer to you as when Iâm talking about you on this episode?</p>
+
+<p>DREW:	You can call me Drew.</p>
+
+<p>JACK:	You sure?  I donât know if thatâs your real name or not, but it sounds like aâ¦</p>
+
+<p>DREW:	Oh no, itâs not.</p>
+
+<p>JACK:	Okay.  Just Drew, okay.  Sounds good.</p>
+
+<p>DREW:	Yeah, just Drew.</p>
+
+<p>JACK:	Oh, so first of all, I want to clarify; itâs okay to record this call to use it on the podcast Darknet Diaries?</p>
+
+<p>DREW:	Yes, you have permission.</p>
+
+<p>JACK:	Okay, then it is recording.</p>
+
+<p>DREW:	Alright.	  So, basically â do you want the full story?</p>
+
+<p>JACK:	Yeah.</p>
+
+<p>DREW:	Alright, so, it starts at age thirteen at Roblox, like playing Roblox, and I found that you could get discounted Roblox.</p>
+
+<p>JACK:	Okay, sorry, already Iâm lost.  Roblox is just outside of my peripheral view, and I donât really get it.  So, I need to pause here for a moment, do some research, and Iâll be right back.  [MUSIC] Okay, so first of all, Roblox is a video game, but itâs more than that; itâs a video game platform which gives you the tools to make your own video game.  If you build something cool, others might want to come play it, too.  However, thereâs this thing called Robux.  Itâs the in-game currency of Roblox, and some user-made Roblox games require you to pay Robux in order to play it.  Do I have this right so far?</p>
+
+<p>DREW:	Yeah, youâre getting that right, except I think that one thing to keep in mind is that little kids want in-game currency and theyâre willing to do anything for it âcause they donât have the physical money for it âcause their parents donât want to spend money.</p>
+
+<p>JACK:	Can you buy it with real cash?</p>
+
+<p>DREW:	Yes, you buy â you can only buy it with real cash.</p>
+
+<p>JACK:	Oh, you canât earn it in-game?</p>
+
+<p>DREW:	No, itâs not aâ¦</p>
+
+<p>JACK:	Okay.</p>
+
+<p>DREW:	â¦in-game earnable commodity.  So, these kids want it and they canât pay for it âcause theyâre kids and their parents donât want to pay for their game all the time.  So, they go to these websites where they can just complete surveys and do ads, and they can get Robux for it.</p>
+
+<p>JACK:	Okay, already Iâm seeing potential for abuse here.  So, thereâs real money going in and real money coming out of Roblox, because if you manage to create a game that people are willing to pay to play, you can get money as the game creator.  So, if you can somehow get people to play your game whether legitimately or not, you get paid.  But on the other side is how people are getting Robux.  As Drew said, kids donât have money, so they go to these websites and they sit there and fill out surveys and watch ads to get Robux.  These ad servers make money from their clicks and pay a percentage to the kids that are clicking the links.</p>
+
+<p>DREW:	Yeah, thatâs exactly the model.  A lot of itâs â you can scan, to be honest.</p>
+
+<p>JACK:	Yeah, and not all these sites pay out, either.  So, youâre kinda lucky if you actually get Robux from doing all this work.  You know if a thirteen-year-old really wants some Robux and sees an option to get some free ones, theyâre gonna click a link, install some software, [MUSIC] or sign up for something and give their e-mail and phone number.  Drewâs friends had set up one of these ad servers and was running Google Ads to make it easier for kids to find his server and come on by and click all the links to earn Robux.</p>
+
+<p>DREW:	The profit margins were insane.  So, it would cost him like, $6 to pay a kid for like, $50 worth of income for him.  Heâd have like 2000 kids a month and he was making $1,000 to $2,000 a day, and that was the most I had ever seen.  He was like â oh, then I caught them every day.  It was very cool to see.  Heâs my age; heâs like, fourteen, fifteen, and heâs doing this every single day.</p>
+
+<p>JACK:	Suddenly, the game wasnât to play Roblox but to commoditize and monetize the kids who were willing to sit and watch ads to get Robux.  Like I said, thatâs just the front end.  You can imagine all the tactics to game the back end, such as cloning a popular Roblox game and then somehow attacking the original to make it go down so that everyone flocks to yours because yours is up.  Now youâre getting paid Robux, and thereâs all kinds of black hat strategies that are talked about on hacker forums that discuss this, which is where Drew and his friend were hanging out.</p>
+
+<p>DREW:	He probably accumulated like, $30,000 off that.  Him and his friend both had $30,000 and theyâre like okay, weâre making this much money.  How are we going to multiply this?</p>
+
+<p>JACK:	They look around on the forums to see what other people are doing, and thatâs when they learned about vanilla gift cards.  These are gift cards that you might receive for a job well done at work, or as a present of some kind.  Itâs a Visa gift card that you can use anywhere that accepts Visa cards, and if you have one, you might be curious how much money is on it.</p>
+
+<p>DREW:	People need to check their gift card balance, so they look up gift card balance or vanilla gift card balance.</p>
+
+<p>JACK:	So, what his friends did was set up a site that looked just like the Visa vanilla gift card site, and it had a little form to fill out and enter your card details in order to check your balance.</p>
+
+<p>DREW:	They collect the card information.  They have an automated checker to check the balance of the card against the real site, and then they sell the card which they cash out through various methods like G2A or minds.com.</p>
+
+<p>JACK:	Their site steals anyoneâs gift card who enters it in.  But of course, nobody would go to this page since itâs unknown, and if you do a Google search for vanilla gift card balance check, you get the official Visaâs page as a first link.  However, thereâs a way to get your site to almost instantly show up above the first search result, and it only costs one or two bucks per click.  [MUSIC] Thatâs by using Google Ads.  Drewâs friends would spend tons of money on Google Ads to get their fake vanilla gift card balance checker to show up as the first link when you Google for it.</p>
+
+<p>DREW:	People donât know the difference between two URLs a lot of the time, or at least theyâre not trained to know.  They just click the first result, they press on the ad.  Itâs a phishing page.</p>
+
+<p>JACK:	They enter their card details, see their balance, and before they can spend it, their card is emptied by Drewâs friends.  But of course, Drewâs friends arenât the only ones stealing cards this way.  Thereâs a whole group of people who have made dozens of websites for all the various gift cards to try to get anyone whoâs checking their gift card balance to click the link.</p>
+
+<p>DREW:	This is the one that probably the most â Iâve done this â Iâve been involved in this one for the longest that Iâve ever been involved in anything before.  Yeah, it really disciplines me the most, âcause Iâve been a participator of this, Iâve been a spectator, Iâve been a â purposely trying to take it down for years.  Now, itâs like, everyoneâs â once I stopped, I hated it.</p>
+
+<p>JACK:	Yeah, Drew here could no longer stand by and watch his friends make thousands of dollars from a little bit of work.  He learned how to clone a website which is really easy, and set up his own phishing site, and he started running Google Ads himself to try to get people to give him cards, which is horrible.  Itâs stealing money from people.  Itâs wrong, and it totally sucks to have someone steal your card in this way.  But why are people answering their gift card details on a random site?  Come on!  So, Drew is running this scam for a while, and itâs giving him some extra money, but he had a gambling problem.  Anytime he had excess cash, heâd go online and try to double it or triple it or quadruple it.  In fact, a lot of people in this community have gambling problems, so even though he was making some money as a teenager, it was gone immediately.  So, he starts looking at what else he can get involved with so he can make more money, and thatâs when he came across a forum called OGUsers.  [MUSIC] This is a forum where you can buy and sell social media accounts; Instagram accounts, Snapchat accounts, Kik, Skype usernames, you name it.  Not just that, but other accounts too, like Roblox accounts and other video game accounts.  He was one of the early ones to join OGUsers.</p>
+
+<p>DREW:	So, Iâm the 700th user to make an OGUser account.  Thereâs hundreds of thousands now, and this is my â this is probably the most valuable thing Iâve ever had in my life.  So, Iâm really early onto this forum, so I look reputable.  The thing is, things that matter on forums are seniority, like how long youâve been there, and vouchers.  The longer youâve been there, the more vouchers you can accumulate anyway.  So, basically Iâm on the forum, and I start manually making usernames that are just bad.  Like, Iâm making @dataframes on Kik to sell, âcause people like a good Kik username âcause thatâs how they talk to other fraudsters.  They want to look cool.</p>
+
+<p>JACK:	So, the people who were already on OGUsers before him were making some pretty good sales.  For instance, if you have a short, catchy username on Twitter, that goes for more money, and Iâve talked about OGUsers in the past, on other episodes, and how horrible it can be.  Drew was seeing how people were making money selling accounts, so he just decided to go on Kik and find some clever-sounding usernames that werenât registered yet and just register them, and then try to sell them for like, $15 each.  Well, his listings werenât selling, but the other users on the forum saw what he was trying to do, and he was trying real hard to make money, and they wanted to sort of throw him a bone.  So, they started buying a few off him.  Now, creating a new user on Kik and trying to sell it on OGUsers, thatâs not illegal; itâs similar to buying a .com domain and trying to sell it.</p>
+
+<p>DREW:	This is not unethical at all, whatâs â obviously itâs gonna turn extremely horrible.</p>
+
+<p>JACK:	Yeah.</p>
+
+<p>DREW:	Give me ten minutes; itâs gonna be miserable, butâ¦</p>
+
+<p>JACK:	Oh, sure.</p>
+
+<p>DREW:	â¦it starts off pretty innocent.  Itâs like, okay, Iâm making a hundred bucks and you know, I get a â I remember I got a vanilla gift card for my birthday present.</p>
+
+<p>JACK:	So, with the money he has, he goes on OGUsers to try to find something to buy, something that he hopes he can resell for a higher price later.  He finds a really good username for a price that was pretty low.</p>
+
+<p>DREW:	So, I get it for very cheap âcause someone is trying to quick sell it âcause they needed the money instantly.  They may be facing some sort of struggle or theyâre just broke, and they â âcause what happens a lot is people have nice usernames and they go broke, and they sell the username to get some money back.  So, yeah, that probably happened there.  He sold a really nice @ for like, $200 to me.</p>
+
+<p>JACK:	Some lingo; an @ is a username.  A lot of usernames have the @ symbol in front of them, so they just shorted it to @ on these forums.</p>
+
+<p>DREW:	I sold this one for probably like, $350.  Now I made $150 in a day and Iâm a proud little fourteen-year-old.</p>
+
+<p>JACK:	[MUSIC] Of course, the danger is, once you get one taste of the potential, you get hooked.  Itâs like blood to a shark.  So, he goes deep on OGUsers, trying to snipe more cheap deals and sell them for higher.  Along the way, he learns more about how OGUsers works.</p>
+
+<p>DREW:	Alright, so hereâs some introduction to usernames market.  Thereâs a service called swapping.  Not SIM-swapping; not to be confused with SIM-swapping.  Itâs whenever you take an account username from one account to another, but with permission.  You do this in an automatic fashion because people can manually take the account before you claim it.</p>
+
+<p>JACK:	What heâs saying is suppose the account you want to buy is stolen.  If you buy it, thereâs a chance the account holder can contact Instagram support or whatever and recover their account.  So what a lot of people do on OGUsers is as soon as they buy a stolen username, they change the username to something else.  This makes it so nobody has that username now, and you can just register a new account with that username.  So, you can abandon the account you just bought, because if somebody recovers it and gets their old account back, itâll have a different username and it wonât be the same as what they used to have.  But hereâs the problem; everyone on OGUsers sees when someone buys a stolen username, and they know youâre gonna change the username, so you can create a new account with that username.  So, what theyâll do is theyâll try to snipe that account from you by constantly trying to create a new username with that name, hoping that when you change it, theyâll get it before you have a chance to make a new one.  Thereâs an internal war that happens whenever a sale happens on OGUsers, and some people lose their account right after they bought it.</p>
+
+<p>DREW:	Well, the only way to beat this, or the potential of this, is to have an automated system called a swapper or a claimer or a turbo.  These are all the same thing.  Turbo is the original name for it.  So, the turbo automatically uses an Instagram endpoint to claim this username for you.</p>
+
+<p>JACK:	This is madness.  Thereâs no trusting anyone in these groups.  Seriously, thereâs a constant barrage of users trying to hack users.  Itâs endless.</p>
+
+<p>DREW:	People would â Graham Ivan Clark, for instance, the guy who did â the guy who hacked Twitterâ¦</p>
+
+<p>JACK:	Heâs talking about Graham Ivan Clark, and thatâs the guy who hacked Bill Gatesâ Twitter, Elon Musk, Joe Biden, and Barrack Obamaâs Twitter accounts, and posted a scam to people to send him Bitcoin.  Graham was in these groups before he was arrested.</p>
+
+<p>DREW:	Before he was a simmer, he would limit peopleâs PayPal service.  He would call PayPal and tell them â just tell them this personâs committing fraud.</p>
+
+<p>JACK:	So, when people buy accounts on OGUsers, they can use PayPal to do it.  What Graham was doing was reporting certain accounts to PayPal to try to get their accounts frozen, just to grief people and sort of attack the community he was part of.</p>
+
+<p>DREW:	Then the account agent would be like oh, shoot, he is committing fraud, or theyâd try to convince them that the accountâs under eighteen.  They did this to Ninjaâs account on stream.</p>
+
+<p>JACK:	So, Ninja is a Twitch streamer popular for playing Fortnite.  In fact, heâs the most-followed Twitch channel out there, and his real name is Richard Tyler Blevins.</p>
+
+<p>DREW:	My group of friends, they were in a call, and they were like, we want to do something funny.  Like, they want to hack a mainstream guy.  So, they go to Ninjaâs PayPal and they manage to get it limited.  They say that theyâre Ninja, actually.  Theyâre like hey, Iâm Tyler Blevins and Iâm not the proper age to run this account.  How do I close it down?  The support agentâs like, what?  Youâre not the proper age?  Iâm like yeah, I put fake information, but I need to close this out âcause Iâm gonna turn eighteen soon.  Thatâs the general method, or was the method.  I doubt this works anymore.  Itâs been so many years.  But yeah, they limited Tyler â Ninjaâs account.  I thought that was kinds funny.  Itâs like, what did you gain from limiting Ninjaâs account?  But then thereâs a deeper thing where they actually limit peopleâs PayPal as a service.  If you have someone who you donât like, [MUSIC] you can chargeback them, which means you can send them a transaction and then take the money back.  That was a very big hustle.  People would buy things that they had the upfront money for, but then just take the money back and get the product.  So, like you could get an OG username for a thousand dollars; just charge them back.</p>
+
+<p>JACK:	I particularly hate chargebacks because the victim is so powerless in that situation.  If someone steals your credit card and buys something online, you can tell the credit card company hey, I didnât make this purchase; please reverse it, and the credit card company will do whatâs called a chargeback.  Theyâll take the money back from what was sent to the merchant, but on top of that, they send the merchant a $15 penalty.  So, that can be abused.  People can buy things, get the item that they wanted, and then issue a chargeback, and the credit card company will side with the cardholder almost every time.  Anyway, this is just another example of how people in these communities attack each other.  In fact, over the course of its existence, the OGUsers website itself has been breached at least three times, exposing all the data on the users who are registered there.  Since Drew was a member, this meant his account had been in a few of these breaches.  So, I have to ask you now; have you been ripped off by any of these kind of scams?</p>
+
+<p>DREW:	Okay, so Iâve been scammed by people for thousands of dollars, at times tens of thousands of dollars by my own friends.</p>
+
+<p>JACK:	Youâve been scammed by â for $10,000?</p>
+
+<p>DREW:	Probably more.</p>
+
+<p>JACK:	How did you get scammed?</p>
+
+<p>DREW:	Yeah, I mean â alright, so, the biggest infighting of anything Iâve ever seen is criminals versus criminals, âcause criminals have no boundaries, no limits, and they have full anonymity.  [MUSIC] You know how when they do the prison studies, itâs like, guards, whenever they have no â guards whenever theyâre masked will do anything to a prisoner.  Well, imagine what criminals who are masked will do to other criminals.  So, they will extort you, they will â if you manage â if they manage to get your dox, which is obviously a compilation of your personal information, they will literally do anything to you.  They will swat you just like they did to the men who wanted @Tennessee, but theyâll do it to your own friend.  They will extort you, they will pizza bomb you, and then thereâs obviously some grimmer things; like, theyâll pull your SSN and theyâll open a loan.  But those are the fundamental bad things, Iâd say.</p>
+
+<p>JACK:	So, it sounds like you got doxxed.</p>
+
+<p>DREW:	Oh, certainly, many times.  Probably at least three times.</p>
+
+<p>JACK:	So, his full details were exposed, and of course, that landed in the hands of someone who wanted to extort him.  So, that person contacted him and threatened him.</p>
+
+<p>DREW:	They tell you Iâm going to send packages or Iâm gonna contact your parents if you donât do this and give me this money.  Sometimes theyâll make you make signs of their â signs of them on you, like theyâll make you write their Instagram username on you or theyâll do things â like, theyâllâ¦</p>
+
+<p>JACK:	What do you mean write the Instagram name on you?  I donât understand.</p>
+
+<p>DREW:	Like, on your forehead.</p>
+
+<p>JACK:	Okay, so you write their name on your forehead and then take a picture to showâ¦</p>
+
+<p>DREW:	Yeah, itâsâ¦</p>
+
+<p>JACK:	â¦that Iâll do whatever you want?</p>
+
+<p>DREW:	Yeah, itâs like some sort of alphaing thing.  You know what I mean?  Itâs very weird.  Itâs that type of thing, like a dominance thing, I guess.  Iâve never understood that.  Then theyâll do more consequential things; like, theyâll tell your â theyâll tell you that youâre gonna tell your parents that youâre a cyber criminal or that you did something that you didnât do.  Like, theyâll say that Iâm gonna call your dad and say that you extorted me even though I donât even know him.  Theyâll do things that would affect a kid, âcause itâs normally kids versus kids in reality.</p>
+
+<p>JACK:	Okay, so Drew was hit with this and he didnât want to tell his parents, so he just sent them some money, and they went away.  But there was another time when he was scammed, which was even stranger.  While all this is happening, heâs still playing Roblox, right?  In fact, at this point heâs made his own game with his friends and he wants to attract some users to the game so that he could possibly make money and make some of those Robux.  He had a little game going, and it was all set up and it was good, but it just didnât have many players.</p>
+
+<p>DREW:	So, you want to get your game on Roblox to the front page so you get more players so you make more money.</p>
+
+<p>JACK:	But how do you do it when youâre a conniving teenager?  You find a way to falsely inflate the numbers to make your game look more popular so people join.</p>
+
+<p>DREW:	Basically, itâd be a bot that makes your game look more popular than it is, so â and it would use a botnet to do it.  It would have players that didnât exist join the game.</p>
+
+<p>JACK:	But he didnât have a bot.  Instead, he hired a service like a Roblox botmaster kind of thing, someone who specializes in getting more players into your Roblox servers for a fee.  [MUSIC] But they arenât real players at all; theyâre just bots.  But Drew didnât have enough money to hire this person, so his friends gave him the money to pay this guy, so he gets his friendsâ money and pays this botmaster a few hundred dollars to turn it on.  The botmaster takes the money, but doesnât deliver users to his game.  Instead, Drew thinks when he was screen sharing one day, he accidentally revealed something that identified who Drew really was.  This essentially meant the botmaster knew Drewâs real name and identity and address.  So, instead of sending him bots in his game, the botmaster tried to extort Drew and said give me $500 or Iâll make your life hell.  This botmaster guy proceeded to show Drew his real name and address and said listen, pay me or else youâre gonna be sorry.  I know where you live.</p>
+
+<p>DREW:	So one day, me and my dad were home.  I was living with my father.  Just a random package comes to the door and itâs underneath my name.  He was like, did you order this?  I was like, no.  Iâm like, thirteen.  I donât have any use for USPS packing stuff.</p>
+
+<p>JACK:	Okay, so what he got was some empty flat boxes from the United States Post Office.  Now, if you go to usps.gov and you click Shop and then Priority Mail, all the priority mail packaging supplies are free, so you can just order some boxes, as many as you want, and all you have to do is pay for the shipping cost.  So, thatâs what he got.  Because he didnât pay that botmaster the $500 he asked for, he got a few boxes in the mail.  Okay, thatâs a little spooky, but no big deal, right?</p>
+
+<p>DREW:	Then two months later, 10,000 boxes show up.  Now Iâm like, coming home from school and Iâm like oh, this isnât good.  [MUSIC] The entire front yard is filled up and my dadâs not home from work; I was like okay, how do I hide this situation?</p>
+
+<p>JACK:	As he says to me, there were pallets of boxes.  They filled up his entire front porch and the walkway, and there were even more.  Stacks and stacks of flattened USPS priority mail boxes were at his door, and they were addressed to him.  As you can imagine, being a fifteen-year-old kid seeing this, you get scared.  You donât want your parents to know, either.  So, his dad wasnât home yet and Drew had to think quick.</p>
+
+<p>DREW:	I move all these packages away from the house to some random place.  Obviously this is very illegal and dumb.  I regret this horribly, but I just moved them to this random â like, nearby a lake.  It takes probably upwards of three hours.  I do it by myself, just carrying, running with these packages, trying to put them away.</p>
+
+<p>JACK:	He didnât put them in the lake, just next to it, and it worked.  Well, I mean, at least his dad didnât find out.  But was â along this time, were there messages that you were getting of like, do this for me or else you get more boxes, or some clear reason?</p>
+
+<p>DREW:	Yeah, itâs like, pay me back or get more boxes.  Then they obviously began contacting my father and whatnot.</p>
+
+<p>JACK:	Pay you what?  How much did theyâ¦?</p>
+
+<p>DREW:	They wanted $500.</p>
+
+<p>JACK:	He was only around fifteen years old at the time, and so he tells them that he doesnât have $500 and he doesnât even know where to get $500 from.  But that didnât matter to whoever was doing this.</p>
+
+<p>DREW:	These are probably sixteen-year-old kids.  Theyâre like, I donât care.</p>
+
+<p>JACK:	After he didnât send them more money, they sent him another order of 10,000 USPS packing boxes to his house.  Once again, he sees them as heâs walking home from school one day and is like, oh man, not again, and immediately starts doing the same plan as before, throwing as many as he can under his arms and running them to a nearby empty piece of land by a lake.  He was able to stash them all away before his dad got home, and again, his dad didnât find out about this.  Phew.  But this time, someone was walking around the lake and saw all these boxes, and investigated.  Shipping labels were still on a few, which had Drewâs name and address.</p>
+
+<p>DREW:	The Homeownerâs Associationâs like, why is there a bunch of boxes here?  They look at the name on the boxes, they come to the house; theyâre like, why do you have a bunch of boxes near this lake?  Then Iâm like okay, I moved the boxes.</p>
+
+<p>JACK:	His dad, of course, hears about this from the Homeownerâs Association, and Drew gets in trouble.</p>
+
+<p>DREW:	The biggest trouble is first of all, I didnât move those boxes back to the house in one day.  The next day I woke up unbelievably sore.  It was so much weight to move.  But the main punishment was obviously being grounded for months and not â like, no computer.  [MUSIC] So then, for probably twelve months of my life, I had to cut boxes every single weekend to put into the recycling bin, âcause thereâsâ¦and we had to fill the entire garage with boxes, like to the brim with boxes, like stacked up upon stacks.</p>
+
+<p>JACK:	They all went in the recycling bin.</p>
+
+<p>DREW:	I mean, across months; we had to split it up months and months.  One month, I get to work, I just fill up the entire recycling bin with boxes I had to cut up with a knife and arrange them so we could maximize the amount of boxes we recycle âcause this would have taken forever otherwise.</p>
+
+<p>JACK:	Right.  Yeah, and thatâs the thing, is did you come clean to your dad and say actually, we were trying to falsely inflate our Roblox server, and so we paid this guy, and now heâs getting back at us?</p>
+
+<p>DREW:	Yeah, afterwards I did, but he never knew about it initially, obviously, because I knew it was sketchy so I shouldnât â I wasnât saying anything about it.</p>
+
+<p>JACK:	Itâs just such a complex story for your â for a teenage son to tell his dad.  Like alright, this is the reason that all this shit just happened.</p>
+
+<p>DREW:	Yeah.</p>
+
+<p>JACK:	Like, wait, tell it to me a third time, âcause Iâm not getting it.  âCause here we are, forty-five minutes into this call and Iâm just now understanding it myself.  I canât imagine how many times you had to explain it to your dad.</p>
+
+<p>DREW:	Yeah.</p>
+
+<p>JACK:	Well, that â I think thatâs a funny story.  Are you able to laugh at it now or are you still upset from that whole thing?</p>
+
+<p>DREW:	Both.  Itâs hard to laugh at it, obvious, âcause itâs like man, why did I do that?  But it is what it is.</p>
+
+<p>JACK:	What is the lesson you learned from that?</p>
+
+<p>DREW:	Alright, thereâs so many.  First of all, donât be doxxable.  I learned a lot about opsec from that.</p>
+
+<p>JACK:	Mm.  Letâs talk about that for a second.</p>
+
+<p>DREW:	I love opsec research now.  Itâs my favorite thing to read about.</p>
+
+<p>JACK:	So, how â what are the tricks to not be doxxable?</p>
+
+<p>DREW:	Alright, so, are we talking by the FBI or are we talking about a person?</p>
+
+<p>JACK:	By another teenager.</p>
+
+<p>DREW:	Alright.  If you want to avoid another teenager, best â my best advice to you is donât screen share anything, âcause you will accidentally screen share something.  Itâs too revealing, I promise you.  Even if you think that you are only screen sharing Discord, they may see an IRL friendâs name.  Donât link accounts to your â donât link accounts to your Discord, like your Spotify, âcause they can see who youâre following, who follows you, and your account.  Pretty much have a fake persona and donât treat it as the same e-mails, âcause if they know one of your e-mails for business or something, they could just do a leak search up, find a password, see if you have commons, stuff like that.  So, donât reuse passwords, donât link accounts to your Discord, donât screen share, and just donât trust people online.  They could be your friends, but â and you may accidentally share your identity âcause you think theyâre harmless, but you never know what a friend will become in two years on the internet.  Could be anything.</p>
+
+<p>JACK:	And donât click on stuff.</p>
+
+<p>DREW:	Oh yeah, obviously; donât get IP-logged.</p>
+
+<p>JACK:	Yeah.  So, alright, so thatâs one lesson you learned from this.  What else did you learn from the cardboard boxes?</p>
+
+<p>DREW:	Okay, so, aside from the opsec â aside from my opsec failures, obviously; never making those again, but I learned some moral things like why am I involved with these people on the internet?  I make no money, or all the money I make, I lose.  Then more like, where are my priorities at?  âCause Iâve always been a very good student in school.  Iâve always taken school really seriously.</p>
+
+<p>JACK:	Drew was realizing that the community he was involved with was pretty toxic and not good for society.  But he didnât cut himself off of it.  Instead, he got back in these forums and in the chat rooms just to study them and watch them and learn what they were doing.  Yeah, I mean, just coming out and saying hey, Iâve got all this information and I want to share it with you; why?</p>
+
+<p>DREW:	I donât like the community.  I very much look down on the community, pretty much.  If I could, I would report every single one of these kids to the FBI.  Sadly, that would be self-detrimental, obviously, because of my history.  Iâm looking to obviously gain more knowledge on the community.  I want to document all of it and one day hopefully look back on it and realize â talk about how crazy the internet was whenever I was on it, like my years as a kid.</p>
+
+<p>JACK:	Whoa.  For some reason, this hits me in a weird way.  When I was a kid on the internet, the internet was very different, and there was a whole cohort of people I instantly connect with today, because they were there for it.  Iâm talking about the Warez scene; MUDs, AOL chat rooms, phreaking, cracking, and just hearing this noise by itself brings back so many memories.  [Windows 95 Startup sounds] [MUSIC] I look back at that as the good old days, despite everything being a thousand times harder to do back then, because the term user-friendly didnât exist yet.  It still felt like simpler times.  What was happening online was innovating a thousand times faster than the clunky, outside world.  Being online felt counter-culture, and new things would constantly be springing up, like Napster, hacking groups, and The Pirate Bay.</p>
+
+<p>Police and major media corporations couldnât figure out how to stop us.  There were so many times we were laughing at authorities for how ineffective they were at policing the internet.  But to the kids who are going through their teens today and part of the online counter-culture, is this what theyâre going to look back at as the good old days?  Are these the kinds of stories that will shape them into who theyâll be later in life?  Maybe.  We donât know how itâs going to end up for them, but itâs like theyâre going through a similar painful crucible just as I did, just with all gas and no brakes.  Stay with us, because after the break, Drew starts naming names.  Okay, so some lessons learned, some things there.  Whatâs another â letâs get into another story here.  So, whatâs another thing youâve seen, a way to make money online?</p>
+
+<p>DREW:	Letâs think.  What have I seen kids doing lately?</p>
+
+<p>JACK:	Letâs get into SIM-swapping, then.</p>
+
+<p>DREW:	We can talk about SIM-swapping.</p>
+
+<p>JACK:	Okay, so, by this point, you probably know what SIM-swapping is, but if not, Iâll be real quick.  SIM-swapping is when someone tricks the phone company to move your cell phone number to their phone.  Just like when you get a new cell phone, you need to tell the phone company that you have a new phone and that you want your number to work on that.  Now, it shouldnât be possible for someone to just take your phone number, but there are ways it can be done.  The first way is going to sound obvious.</p>
+
+<p>DREW:	You get a insider at these companies, normally a â what we call a âmannyâ or a manager to give you their login or to just do swaps whenever no oneâs looking for an imaginary customer.  So, these insiders are frequently paid about $10,000 per swap, and this is the beginning of SIM-swapping.  This is how SIM-swapping started.</p>
+
+<p>JACK: 	Okay, so thatâs one way to do a SIM-swap.  Obviously if youâre a manager of a mobile phone store, you have the ability to do that.  If you do that for one of these kids, you can make some serious money, easily over $1,000 per number.  Maybe even $10,000 per number.  But thereâs a new way these kids are doing it, and itâs wild, feral even.</p>
+
+<p>DREW:	So, it starts at the fact that youâre not calling the phone company; youâre actually â the new way is called remo snatching.  Remo is short for remote tablet.  So, you are going to T-Mobile.  T-Mobile is the easiest place to hit right now.  You go to a T-Mobile, you run in, [MUSIC] you take the store managerâs tablet from his hands; you run out.</p>
+
+<p>JACK:	Okay, I get it.  If you have the store managerâs tablet, thatâs the device thatâs authorized to move phone numbers.  So, it makes sense that by stealing that, you can do a SIM-swap on someone.  But wait, itâs not that easy.  Letâs back up.  Letâs back way up.  [MUSIC] First, you need to know who to SIM-swap.  Identifying the target can take a long time, and thereâs a lot of steps, and I want to break that down.  Weâve talked about SIM-swapping on the show in the past, such as in the episode called The Pizza Problem and Tennessee.  These are two stories where people were targeted simply because they had high-value usernames on Instagram and Twitter.  Okay, so thatâs one reason to target someone, to get control of their username and sell it on OGUsers for a few thousand dollars.  But I feel like thatâs old hat now.  Thereâs a whole new crime wave thatâs springing up.</p>
+
+<p>DREW:	The things I see people SIM-swap for are bank logs, which are bank logins, where they wire out money or they use a transfer.</p>
+
+<p>JACK:	Okay, so, banks; while this is big in this community, itâs really hard to actually do it.  So, first they have to figure out a valid login for the user, and weâll get into how they know passwords later.  But for now, just assume that they have a working username and password for a bank account.  So, they log into the account.</p>
+
+<p>DREW:	But theyâd have no way to withdraw it, âcause you would have to receive a OTP, or a one-time pin, in order to withdraw the funds.  So, they start SIM-swapping the person to receive the one-time passcode.  SIM-swapping banks is actually a crazy hustle, âcause the thing is that thereâs a bunch of money in banks, but it also requires that you have real-world knowledge of money laundering, âcause you are literally stealing the personâs money and you have to find a way to not make it traceable to you.  Itâs extremely hard, obviously.</p>
+
+<p>JACK:	Right, so while thereâs some really savvy people playing in that space, the easier target is going after people who have cryptocurrency, because with cryptocurrency, itâs stupid easy to grab all the money in a wallet and just send it to an anonymizing service like Tornado Cash and cash out.  Since this an easier target now, it means more people are going after cryptocurrencies now.  Okay, so, it makes sense for these kids to target people with high-value crypto wallets, but how do you find someone with a big, fat crypto wallet?  Well, it takes a whole bunch of steps.</p>
+
+<p>DREW:	So, this is a huge market that â I donât know how underground it is, but it seems pretty underground.  People use what we call a combo list, or basically a leaked database that are password and e-mail, except the passwords have been de-hashed, obviously, like ran through RainbowCrack or John the Ripper.  They run them through â looking for these things called commons, which are passwords that are used across multiple sites.</p>
+
+<p>JACK:	Okay, so youâve heard of major websites suffering from data breaches, right, where the whole user database is stolen.  If youâre a customer at one of these sites, you might just shrug and maybe change your password and carry on, hoping that nothing comes back and hits you, right?  Well, this data is golden in these circles.  [MUSIC] First, you can head over to a site like raidforums.com or nulled.2, or cracked.2.  These sites post tons and tons of full database leaks.  It might cost you a few bucks to get it, but you can download them right there.  Weâre talking major websites that have been breached; their databases are right there, easy to grab, sites like Adobe, the Alaska Voter database.  Thereâs an Apple database there, apparently.  Adult Friend Finder, the Android Forums, and thatâs just a small example from the Aâs.  Inside these database dumps could be a bunch of things, but they typically have a personâs name, their username, their e-mail, maybe their phone number, maybe their address, and their password.  But their password is typically hashed in the database, which means you canât actually see what it is.</p>
+
+<p>But this is where tools come in that can crack password hashes.  Itâs hard to crack a single hash if thatâs all you want to do, but when you have a hundred million records in the Adobe database, for instance, youâll likely be able to find some hashes that arenât very strong.  Now you have valid usernames and passwords for people.  Now, take that username or e-mail address and cross-reference it with other data breaches.  Is this person reusing passwords?  Are there usernames and passwords in the Adobe breach that also work on Netflix?  Sadly, yes.  Yes, a lot of people just pick one password and then use that on all the sites they have accounts for.  So, now just by cracking a database dump, youâve got access to someoneâs Netflix account, and this opens up a whole new massive market in the underground communities.  People will buy Netflix accounts for $2.50 each, because thatâs obviously way cheaper than paying the $18 a month for a premium subscription.</p>
+
+<p>DREW:	[MUSIC] Alright, so, letâs extrapolate Netflix to Walmart, Chipotle, Nordstrom, OnlyFans, Surfshark, NordVPN, Macyâs Credit, Buffalo Wild Wings, Papa Johns.</p>
+
+<p>JACK:	There are sites you can go to to buy user accounts for any of these websites.  You might even get a combo pack for a bunch of logins, say $10 for the whole pack.  But wait, you might wonder why would anyone want to buy a Chipotle login?  Well, now youâre stumbling into the case of the mystery burrito orders that people are reporting on the Chipotle subreddit.  You can download a Chipotle app on your phone and use it to order food, but the app is often connected to your credit card, so you can use someone elseâs Chipotle account to order a burrito for you, and then they pay for it.  The same goes with Papa Johns; free pizza if you have a valid login of someone elseâs account.  This enters us into the world of pizza plugs, which Iâve been watching closely for a while.</p>
+
+<p>Itâs kind of mythical.  Thereâs these chat rooms where you can go and make a food order such as three large pizzas, and someone in the chat room will take your order and ask you for like, $5.  Then theyâll use the stolen pizza account to log in, create the order, and then send you the pizza.  It cost them $2 or $3 to buy the account; they make $5 from this.  You get three pizzas for $5, and oh, the account holder is the one whoâs paying for it.  Iâm telling you, this goes so much deeper than I have time for.  Oh, and the lingo for buying and selling these valid logins is just logs, so thereâs a whole bunch of people out there looking through database dumps, trying to find valid logs to as many places as they can so they can sell these logs for profit.</p>
+
+<p>DREW:	Then you start selling $30 logs for Apple, âcause people can use your connected Apple credit card to play some Macbook orders.  They charge $50 for those logs.  You get ten orders of that a day, thatâs $500 a day.</p>
+
+<p>JACK:	A really popular one going on right now is Hilton Honors logins, because these logs can get you a few nightâs stay in a fancy hotel for free.  Okay, so, thereâs two types of accounts you can get; FA and NFA.  That is, full access and non-full access.  All the accounts we just listed are basically NFA, non-full access.  A full access account is one that has all these valid logins, plus a valid e-mail account login.  So, that means if you can get into someoneâs Outlook or Gmail, then you can easily reset the password for any of these other accounts that you want to get into.  It really does give you full access into someoneâs digital life, and thereâs a little tool that people use that once they get into someoneâs e-mail account, they can quickly search through all the e-mails to see if thereâs anything of value in these e-mails.</p>
+
+<p>DREW:	Itâs called Yahoo Arranger, the program that does this.  It automatically searches the key terms inside the Yahoo or the websites that you want to see if theyâre signed up for.  So, if you want to see that theyâre signed up for Amex or Bank of America or Chipotle, then you just use Yahoo Arranger and you see.</p>
+
+<p>JACK:	Crazy, huh?  But itâs really not that complex if you donât have FA accounts, too.  You can just take a database dump and convert it to a combo list; this is just a formatted list showing username: password, and you could take this combo list and have a tool just automatically try logging into tons of sites to check if the password works anywhere.</p>
+
+<p>DREW:	Then they use software such as Sentry NBA, OpenBullet, or SilverBullet to thereby automatically check all these combo lists.  So, this is not a manual process, and it goes at probably 5,000 CPM, which means it goes at 5,000 attempts per second, a lot of the times.  People sell upwards of, Iâd say, 5,000 logs a day on their shops.  I personally can see â it tells you how much stock a shop has, so you can tell how many sales youâre getting per day.  Iâve seen people sell upwards of 10,000 accounts per day at $3.50 per account; $35,000.</p>
+
+<p>JACK:	Okay, so now it should be clear how someone can get a bunch of valid logins to various sites.  Okay, but I only wanted to say all that because that will help you understand how we find someone who has a lot of cryptocurrency to target.</p>
+
+<p>DREW:	The most popular database Iâve ever seen in my years of being here is the Ledger database.  [MUSIC] Ledger is a company that provides physical cold wallet storage for Bitcoin.  Well, what does it say about someone if they buy a Ledger wallet?  It means they have Bitcoin.  So, thereby, thatâs your perfect target for crypto.</p>
+
+<p>JACK:	Oh, very interesting.  Ledger is a physical crypto wallet, and in 2020, the user database was breached.  Five months later, the database was posted to raid forums.  In the database is e-mail, name, physical address, and phone number.  No passwords or crypto keys were in there.  But with a little cross-referencing, one can take the e-mail address from the Ledger database and see if it matches any e-mails in another database, and from there, seeing if there are any known passwords for that e-mail address.  Then you can try plugging that e-mail address and password into Coinbase or Binance or Kraken or FTX or Gemini or any crypto exchange to see if itâs a valid login.  These are all crypto exchanges where people keep their cryptocurrency.  Of course, if you know someoneâs username and password at a crypto exchange, it means big trouble for them.  But thereâs a few safety checks that these exchanges put in place to thwart kids like this.  First, thereâs a lot of value just knowing if the person is registered at, say, Coinbase.  Forget about their password for a second; is this e-mail even registered here?</p>
+
+<p>If you type in someoneâs e-mail address and a bogus password, it wonât give you any clue on whether that e-mail is registered there or not.  However, if you try to sign up for a new account with an e-mail address that already exists, then bingo.  Coinbase will tip its hand and say that e-mail is already registered here.  So, this is how someone can take the Ledger database dump and figure out who has accounts on Coinbase or Gemini or Kraken or Binance or wherever, and then cross-reference that with other database dumps to try to figure out what the password is on those accounts.  Now, if a thief has a valid e-mail and password to your crypto account, thereâs still a big hurdle in the way; 2FA.  All the crypto exchanges require you to enable two-factor authentication.  They urge you to get something like Google Authenticator or Authy, which is an app on your phone that has a six-digit number that you have to have in order to log in.  But at the bare minimum, theyâll send you a text message with the six or seven-digit code to log in.  So, just by having a username and a password isnât enough to get into someoneâs crypto account.  You also need that 2FA code.  The vast majority of Coinbase users use text-based codes.  Can you see where weâve arrived now?</p>
+
+<p>DREW:	Well, a lot of people on Coinbase have millions of dollars, so thatâs where this new simming wave is coming from.  Theyâre using commons from databases, getting into Coinbase â this is all automated â and then they get their balance; they had SIM-swapped them.  Itâs massively profitable.  Itâs arguably the most profitable thing you can do right now.</p>
+
+<p>JACK:	Now, at this point, we have enough information to SIM-swap the target.  We know they have a Ledger wallet and we know they have a Coinbase account, and we have their username and password.  All thatâs needed now is to take control of their phone number so that we can get texts so that we can log in.  But while this might be enough to SIM-swap someone, the thieves take this a step further to try to figure out how much is in the account before SIM-swapping someone.</p>
+
+<p>DREW:	I donât even know if youâre gonna believe me whenever I tell you this, but there was an exploit in Coinbase for about one month where you could check the balance of any valid password and username.  You could â no matter what.  You didnât need to have any sort of access except username and password.  So, you didnât need to SIM them to see their balance.  So, people just ran millions upon millions of combos, combo list through Coinbase, and just found the millionaires of Coinbase.  Thereâs obviously millions of those.</p>
+
+<p>JACK:	That is, if you just had a valid username and password, you could see how much was in the userâs Coinbase account.  This made it crystal clear exactly who to target for a juicy SIM-swap.  But you still need that 2FA code to get in and move the money.  Itâs just that you didnât need it to see the balance for a while.  Now, Iâve sort of confirmed this; Bleeping Computer ran an article back in October 2021 saying that 6,000 Coinbase customers had their crypto wallets drained due to a flaw in Coinbaseâs 2FA system.  Now, Iâm pretty sure itâs talking about this bug that Drew just said.  Knowing exactly how much money that someone has in their account is vital to making your SIM-swap more successful.</p>
+
+<p>[MUSIC] Thereâs one last bit about Coinbase; if you have a valid username and password and you log in, youâll see whether or not that user has text message 2FA or something like Google Authenticator, because the page will tell you which code itâs looking for.  The vast majority of Coinbase users use text-based 2FA.  However, there still may be a problem if the thief doesnât know the phone number.  Sometimes they just donât, and if youâre going to SIM-swap someone, you need that phone number, right?  But thereâs a clue sitting right there on the page, and it shows the last two digits of the phone number, and it specifically says enter the seven-digit code we just sent to xxx-xxx-xx37 or whatever the last two digits are.  That little clue of just knowing what the last two digits of the phone number are are enough for these thieves to get the full phone number.</p>
+
+<p>DREW:	So, you have to do this thing called number tracing or ISP doxxing.  So, the endpoint â hereâs what itâll tell you on the endpoint; the endpoint will tell you the real name of the person and itâll tell you the last two numbers of the phone number.  With this information, you have to do a BeenVerified or a White Page search on the person.  So, typically it starts at well, find their name, find their approximate location, find their phone number.  Thereâs a million ways to do this.  My best advice is â de-hashed the e-mail, go to their â their opsec wasnât too good, these e-mail owners, or else they wouldnât be password-leaked.  Their IP or somethingâs gonna be in there that you can use to approximately geolocate them, then do a people search on White Pages or BeenVerified in that area with their name, and then youâll find their phone number that will match the last two of the hint.</p>
+
+<p>JACK:	Okay, so thatâs how these SIM-swappers are choosing their targets today.  At this point they know the username, the password, the phone number, and the account balance to know if itâs going to be a juicy grab.  Oh, and you can quickly look up what kind of carrier the phone number belongs to so you can SIM-swap using the right carrier.  But this is a big setup process just to figure out who our SIM-swapping targetâs gonna be.  In fact, itâs so much work, this is a market just in itself.  Just identifying a list of targets and selling this information is its own racket.  So, while it seems like a lot of work, someone could just step in right here, buy the data, [MUSIC] and go for a SIM-swap.  Okay, so, now weâre ready for the big SIM-swap event.  So, you remember how the process got started, right?  Someone ran into a T-Mobile store, snatched the tablet from the store managerâs hands, and ran out of there.  This is called a remo, remote tablet-grab.  But weâre still not ready for that part yet.  Before you steal the managerâs tablet, you need the managerâs password thatâs on the tablet, right?  So, you need to do recon on the store, figure out everything you can about the manager to try to social-engineer them.</p>
+
+<p>DREW:	[MUSIC] Just calling up the manager and being like hey, this is John working with the EIT Help Desk at T-Mobile.  Can you please tend to this ticket?  They send you a fake URL, you enter your manager login.</p>
+
+<p>JACK:	Okay, so now you have the managerâs password to log into the tablet, and we know how to get the tablet.  But let me tell you, this is a major problem that T-Mobile is trying to battle, and there are internal memos going around right now of procedures of what to do if this happens at your store.  One thing is to immediately call the IT Help Desk and get the tablet disabled as fast as you can, and get that manager account disabled.  So, when this happens, stores typically get the tablet disabled within ten minutes.  So, weâve gotta back up again because weâve only got this ten-minute window, and youâve gotta do everything in that.  So, you need to be prepared, and we have not done our preparations yet.  So, what you need to know here is that this isnât done by one person; the snatcher is just one pawn in this game.</p>
+
+<p>DREW:	Obviously people on Telegram arenât the type of person to go run into a store.  They pay some idiot that they know IRL to go run into the store for them.</p>
+
+<p>JACK:	That person who runs in and grabs it and runs out is really getting paid the lowest on the list here.</p>
+
+<p>DREW:	Probably making $200, bro.  Iâve seen people pay their runners so little.</p>
+
+<p>JACK:	So, they pay $200 for someone to go in and grab the tablet and bring it back out to them.  They have to be set up nearby, because they only have ten minutes to do this, remember?  So, the person who ultimately has the tablet in their hands is particularly skilled at navigating the T-Mobile software to do the SIM-swap.  Maybe thatâs because they worked in the store before or they saw a video on how itâs done.  But still, the person whoâs actually typing on the tablet doing the SIM-swap isnât the same person whoâs gonna steal the cryptocurrency from Coinbase users.  Thatâs a whole ânother group of people who have collected all those Coinbase logs and are waiting for someone to do a remo.  They all get organized inside a Telegram chat room, and people are willing to pay a person to do a remo swap sometimes $10,000 per number.  Iâm just trying to confirm that when theyâre in this Telegram channel and theyâre like okay, I hope somebody gets a remo tonight; Iâve got three accounts I really want to do, all you need to do is provide that phone number to the person who did the re â who got the remo, right?</p>
+
+<p>DREW:	Perfect, man.  You sound like a real swapper right now.  Youâre using our lingo; remo.</p>
+
+<p>JACK:	Iâm ready, man.  The quote is, you either die a hero or you live long enough to become a villain, and thatâs â I think thatâs true.</p>
+
+<p>DREW:	Yeah.  Itâs funny, but yeahâ¦</p>
+
+<p>JACK:	Itâs Batman.</p>
+
+<p>DREW:	Youâre using the terms.</p>
+
+<p>JACK:	Okay.</p>
+
+<p>DREW:	Yeah, I know.  I hear you.  I hearâ¦[inaudible].</p>
+
+<p>JACK:	So, people are in Telegram and theyâre like, alright â what was it, like Friday night, Saturday night, and someoneâs like okay, I think weâre gonna try.  They tell the group; Iâm gonna drive down there, Iâm gonna try and grab the tablet.  Iâm all set.</p>
+
+<p>DREW:	[MUSIC] Itâs extremely intense.</p>
+
+<p>JACK:	Yeah, thereâs all these people, theyâre locking their bedroom doors.  Like, donât come in, dad, Iâm gonna be busy tonight.  Donât come in the room, whatever you do.  Then they go okay, weâll give you some personal time.  Like, that would be the [LAUGHING].  Sorry.</p>
+
+<p>DREW:	Oh, definitely.  I know what youâre talking about.  It does happen; people are like, oh, I canât do it right now.  I have to eat dinner.</p>
+
+<p>JACK:	Yeah.</p>
+
+<p>DREW:	Itâs like bro, we literally have ten minutes to do this.  There is no time for dinner.  Itâs either dinner or $100,000.  You choose.</p>
+
+<p>JACK:	Yeah.</p>
+
+<p>DREW:	This is really â this is not an exaggerate â this is really how it is sometimes.  Our remos are so short.</p>
+
+<p>JACK:	This is what I love imagining, is the actual person behind the screen, and if it is a teenager, then yes, there is this possibility of it all going wrong any second, because theyâre living at home and theyâve gotta clean their room.  Alright, so, besides that, theyâre in Telegram, they get the message; okay, I got the remo.  Whatâd you say, $10,000 per number?</p>
+
+<p>DREW:	So, Iâll break it down to you based on carrier.  So, T-Mobile at the moment costs you about $5,000 per swap.  If theyâre a fraud victim, then it costs you $7,500.  A fraud victim has special protections on their account, but theyâre still bypassable.  Verizon is going to cost you upwards of probably $50,000.  Verizon is extremely well secured, but itâs still possible if you have the right equipment.  Like, you need a branch manager login which is a very high position.  So, you need to be able to pay off that Verizon manager a lot, and you canât hack them.  You canât â it appears, right now.  I could be wrong.  Maybe weâll find new findings.  But they pretty â you literally just need a insider.  You canât rat him or anything.  For AT&amp;T, I think that people are starting to decrease their prices down to $4,000, $2,000â¦$2,000 to $3,000 because their opus tool is not too secure.</p>
+
+<p>JACK:	Okay, so this person who does the remo snatch lets everyone know hours before that they are planning to do a remo that night.</p>
+
+<p>DREW:	[MUSIC] So, the activator is the person who coordinates the remo snatch.</p>
+
+<p>JACK:	So, the activator tells everyone in the Discord channel that theyâve got the remo and theyâre ready for orders.  Immediately, people in Telegram start giving him information; phone number and ICC ID.  Thatâs all they need to begin the process of moving the phone number from the customerâs phone to the thiefâs phone in Telegram.  Itâs an intense ten minutes.  Time is ticking and at any moment, that tablet will become deactivated, so theyâve got to go as fast as they can, swapping out as many numbers as they can in that time frame.  On a good night, an activator can make over $100,000 from doing this.</p>
+
+<p>DREW:	Yeah, at that point, you just go hit your lick.</p>
+
+<p>JACK:	More lingo.</p>
+
+<p>DREW:	The lick is whenever you jug someone, but Iâll use more plain language.  A lick is a successful log, or a log â so, a log means login in our lingo.  So, whenever you hit a lick, it means that you withdrew their balance.  Itâs yours; you won.  So, thereâs multiple ways that you can use this vernacular.  You could say, this person looks like a lick.  This person looks like a easy target, in other words.  You could use I hit a lick today, meaning I hit a successful withdrawal on a Coinbase account.</p>
+
+<p>JACK:	[MUSIC] So, now these guys have control over their targetsâ phone numbers, and itâs time for them to work as fast as they can.</p>
+
+<p>DREW:	Youâre sweating profusely.  You go reset the Yahoo password.  Youâre on a proxy near them utilizing a residential proxy nearby the target location, log into their Yahoo, reset the password of the Yahoo because most of the time, itâs not the same as their Coinbase.  We receive the Coinbase device authentication link, still sweating profusely.  Your holder should be receiving codes this entire time; youâre screaming at your holder to send you the code immediately or youâre not gonna pay them.</p>
+
+<p>JACK:	What?  Sorry, a holder is who again?</p>
+
+<p>DREW:	A holder is someone thatâs actually holding onto the phone thatâs receiving the OTP.  So, most of the time, the people that have the targets and balance arenât gonna hold the phone themselves âcause thatâs bad operational security.</p>
+
+<p>JACK:	Holy cow.</p>
+
+<p>DREW:	They have a designated holder, people who just hold the cell phones just so that the person with the leads or targets doesnât get caught.</p>
+
+<p>JACK:	Oh man, so thereâs a holder involved with this whole thing, too.  Yes, holders get paid for just being the ones who bought the phone and got the number switched over to it.  Okay, so the person who wants to do the lick might first start by going to the victimâs e-mail and resetting the password.  On a lot of e-mail providers, in order to reset the password, a text is sent to you.  So, the e-mail provider sends the text and the holder tells the person what the text is, and they get the access to the e-mail account, and from there, they try to log into Coinbase.  Upon putting in the username and password, it sends a text to the phone that the holder has, and the holder has to give the code to this person.  The person now logs into Coinbase.  But thereâs typically a check in Coinbase and it says something like well, we donât recognize this device.  Weâre sending you an e-mail to verify itâs you.  Well, the personâs already in their e-mail account, so they just have to wait for the e-mail and click yeah, itâs me, and Coinbase lets them in.  Now theyâre in someoneâs Coinbase account which might have $30,000, $100,000, or sometimes even more than a million dollars in it.</p>
+
+<p>DREW:	Then you swap the balance to Coinbase Pro so that youâre able to withdraw the funds, and then you withdraw it to your Exodus or your MetaMask or your Electrum wallet.</p>
+
+<p>JACK:	The reason why they transfer it to Coinbase Pro is because thereâs a higher daily withdraw limit there.  But thereâs a safety check there, too.  Before you can withdraw funds from Coinbase, thereâs one more 2FA check, so you need to get another text message from the holder to initiate the transfer.  But thereâs still yet another security hurdle; Coinbase has a maximum daily withdraw limit, and sometimes people have more than that.  But Drew says thatâs not a problem.</p>
+
+<p>DREW:	Yeah, thereâs a few workarounds.  People use exploits I canât talk about, but there are ways to withdraw $250,000 or a million dollars.  You can withdraw massive amounts of money.  There are â one way that everyone knows that I can say to you is there is a certain bot out there on a forum that is able to spam request all at the same time to overwhelm them and allow them to withdraw a bunch of batches of smaller transactions.  But there is other ways as well that are more directly exploits.</p>
+
+<p>JACK:	Jeesh, these kids are determined.  Why wouldnât they be when thereâs a potential one-million-dollar-lick that they can score from this?</p>
+
+<p>DREW:	The new generation of crypto-swappers â I probably know at least personally ten millionaires who are all under the age of sixteen who I know for a fact canât be lying, seen them send transactions live, seen them hit million dollars licks live.  As for the older generation, the ones that were there extremely early with the crazy $20-million-dollar Michael Turpin targets, they have $15 million, $10 million, and theyâre in new hustles like NFTs and phishing.  Like, really high-level things.</p>
+
+<p>JACK:	Okay, Michael Turpin is a cryptocurrency investor, but he has a few startups in this space too, like Transform Group and BitAngels.  [MUSIC] In January 2018, someone did the steps you just heard to hack into Turpinâs crypto wallet and steal $23 million worth of crypto out of it.  $23 million stolen in one night.  You know as soon as the person got that, they had to pay all the people down the line that helped them get there.  In this case, it was insiders working at AT&amp;T that helped do this.  Well, once this guy stole the $23 million, he still wasnât happy.  He tweeted, stole $23 million and still canât stay away from drugs.  Stole $23 million and canât get my shit straight.  Turpin, of course, went to the police who started investigating and were able to find some pretty solid evidence that led them to a guy named Nicholas Truglia who was twenty-one, living in Manhattan, and Joel Ortiz, eighteen, living in Boston with his mom and dad.  They arrested both of these young men.</p>
+
+<p>Joel Ortiz was sentenced to ten years in prison.  Court records show that Nicholas had over $70 million in assets at the time of his arrest.  He pled guilty and is still in court, waiting to be sentenced.  But as for Michael Turpin, he was really mad that he lost $23 million.  Of course he would be, but he also had fifty other crypto accounts and they were all fine, so Iâm not sure what percentage of his crypto funds were stolen, but he was still furious, so mad that he sued both Nicholas and AT&amp;T.  He sued AT&amp;T for $200 million, claiming the person who talked with him on the phone said his phone number is secure and cannot be SIM-swapped, yet it was.  He wants AT&amp;T to admit that they are the biggest reason why his money was stolen.  However, the judge dismissed the case.  But Turpin also sued the hacker, Nicholas, and he won that lawsuit.  The judge favored on the side of Turpin and granted him $75 million.  So, while Turpin lost $24 million, he was ultimately given $75 million in compensation.  Wild stuff.</p>
+
+<p>DREW:	Big advice to crypto-investors out there or someone holding Coinbases, this is gonna be very useful for you.  Use designated e-mails for things that you do.  Separate your personal e-mail from your crypto-investor e-mail, I would say.</p>
+
+<p>JACK:	Alright, this makes sense.  Weâve now graduated from donât reuse passwords to donât reuse e-mails on high-profile accounts.  If you have an e-mail address that was just for your crypto exchange and you used it nowhere else, then it would be really hard to discover that e-mail address and try to crack it, because after all, you need a username and a password to get into these places, so why not make the username really hard to find?  If your username is the same e-mail address that you use for everything, then thatâs like giving half of your login to whoever you chat with.  Now, we just went over the 100 steps it takes to SIM-swap someone and steal all their money, but I want to take a step back and look at this for a moment.  This wasnât a quick and simple method to do this.  It took a whole lot of research to find just a good target, and this is important to know, because people ask me questions all the time like oh, whatâs the real danger if I put my birth date on my Facebook profile?  Theyâre expecting some sort of quick and simple way a hacker can use it against them, but itâs not always quick and simple.  If these kind of criminals get a whiff that youâve got something that they want, they will case out your life and build a massive report on you so that they can completely own your digital life and become you.</p>
+
+<p>Every little scrap of extra information they can get about you can potentially mean a massive payday for them.  If some obscure website you had an account with gets breached and they get the password you used and you reuse that password somewhere else, that just opens doors for them.  Obviously getting into your e-mail and phone number is valuable to them, so theyâll really love it if you just post that publicly, but then there are the little things; what city youâre in, what browser you use, what things you like, where you like to get coffee, and who your family members are.  All these things can be used to exploit you further.  If they know what city youâre in, they can use a proxy in your location to make their traffic look like itâs coming from somewhere close to you.  If they know what browser you use, thatâll help them look more like you when theyâre trying to access your accounts, and if they know what things you like, that might tell them about some other areas of your life to check out, and if they know where you like to get coffee, this might result in them meeting you there and picking your pockets while youâre standing in line for your latte.</p>
+
+<p>If they have information about who your family members are, those family members might get targeted.  Drew here told me a story about how one time when they wanted to get into some guyâs account, they texted the wife posing as the husband to get her to read off the 2-factor authentication codes over text messages.  The more information they have on you, the easier it makes their job.  Imagine they had full access to your bank account and decided to transfer all the money out, but your bank decided, wait, something doesnât seem right, and they challenge the transfer and say hm, just to make sure itâs you, whatâs your birthday?  Now, that one piece of data that you thought was innocent to just share publicly could have been your savior if you didnât post it to Facebook.  I hope youâre convinced now to never share your private and personal information on a public website.  What do you call this, this group?</p>
+
+<p>DREW:	Thereâs a few different words.  We call it com, first of all.  Iâm sure youâve heard com, but we just vaguely call ourselves com.</p>
+
+<p>JACK:	Com, spelled C-O-M; itâs short for community, and this is new to me.  Back in my day, we called it the scene.  Now I guess itâs the community.</p>
+
+<p>DREW:	Yeah, we just call it com, though.  Then we call â thereâs simming com and thereâs â oh, thereâs cracking com, thereâs Roblox com, thereâs â trying to think.  Oh, thereâs Twitch com.  People have bought Twitches.  Thereâs one vanilla com.  Thereâs infosec com.</p>
+
+<p>JACK:	Huh, I wasnât familiar with infosec com, but I listened to Drew explain it more.  The way he says it is that thereâs some people in the IT security space who want to be part of infosec Twitter and respect it as good security researchers, but also want to do things that are illegal or unethical, sort of acting like both an innocent white hat and a shady black hat at the same time, such as Ryan Phobia Stevenson.  This is the guy who reported a few bugs that he found in telecom companies and was awarded for it.  But then he used those bugs to grab customer data from telecom companies and sell them on underground markets.  The guy was double-dipping.  It sounds like there are coms for every little area of focus that people can make money at online.  But the common thread in all this is that theyâre all unethical coms, and thatâs why I call them dirty coms.  These are nasty communities.  Letâs talk about NFTs.  So, every day in the news Iâm seeing another attack on NFTs such as somebody scamming someone out of their Bored Ape orâ¦</p>
+
+<p>DREW:	Yeah, of course.</p>
+
+<p>JACK:	Orâ¦</p>
+
+<p>DREW:	The classicâ¦</p>
+
+<p>JACK:	Okay, go on.  Youâve seen this.  Is it somebody from your coms that are conducting these things?</p>
+
+<p>DREW:	Well, yeah.  Okay, so, itâs from the initial really, really rich SIM com that I had mentioned.  So, those initial rich simmers that are not in the current one, they now steal NFTs.  Thereâs a notable group of people I know â Iâm not gonna say them by name, but basically thereâs just people who literally go on Discords; someone says they need help with an NFT.  They message them, they post their links.</p>
+
+<p>JACK:	Huh, I witnessed this firsthand just this week.  I was in an NFT Discord.  Oh, and if you donât know what NFT is, in this case itâs just digital art that you can buy and sell, and these pieces of digital art are going for like, thousands of dollars each, and sometimes even hundreds of thousands of dollars each.  In Discord, I got a direct message saying I was selected to be on a pre-sale list for one of these NFT drops and I have to buy it now.  But of course, I didnât click the link.  [MUSIC] But someone in the channel did, and the site said in order to mint the NFT, you just need to connect your MetaMask crypto wallet and enter your twenty-four-word seed phrase.  Now, that twenty-four-word seed phrase is not something you should ever share ever.  Thatâs the private password, basically, to your crypto wallet, and if you give someone that, you basically handed them control of your entire crypto wallet.  Well, this person put their seed phrase into the bogus website, and as soon as they did, the thief got in their crypto wallet and took all their valuable NFTs and sold them for like, half-price.  The thief made about $40,000 in Ethereum in like, five minutes.  It was absolutely crazy to watch this person get their account drained right in front of my eyes, and there was nothing that anyone could do to stop it.</p>
+
+<p>Thereâs no shortage of stories of people getting digitally mugged and their crypto wallet stolen and NFTs, and I think the reason is because these crypto wallets hold tons of money and theyâre just like browser add-ons.  If you connect your crypto wallet to the wrong site, itâs game over, and itâs so easy to connect it to the wrong site.  Itâs kind of like if you have your bank account accessible right in the browser as a plug-in, and all the sites youâre visiting all want to take a look at it.  But this is just the beginning; almost every day this happens.  There are so many scammers trying to get access to peopleâs crypto wallets, which might have crypto currency in it, or an NFT.  The scams are vast and fast, coming at you from every angle if you play in this space.  For instance, another big scam I saw the other day was when an NFT was just about to launch their project, and on launch day is a big day.  Everyone who wants to be part of it is ready to rush to mint their tokens and hope that it goes up in price.  So, thereâs a frenzy in those moments because thereâs a limited supply, and you donât want to be bought out.  So, already, when people are in a rush to buy something, theyâre prone to make mistakes, and typically eager buyers will be in the Discord chat room for that NFT to watch whatâs going on.  But thereâs a whole slough of things that can go wrong with this.  First, the owner of the Discord can get hacked, and hereâs how that happens.</p>
+
+<p>DREW:	They built up their credibility through a friend; thatâs how it always goes.  Hey, my friend says that I should talk to you.  He eventually â he eases his way into sending some sort of file that they can actually Discord token log him with.</p>
+
+<p>JACK:	If you use Discord, chances are you donât enter your username and password every time you visit the site or open the app.  Thatâs because once you authenticate, thereâs a little authentication token that exists on your computer which keeps you logged in.  But if you can just take the authentication token, then you can log in as that person without needing a password.  The authentication token has all the stuff in there, and yeah, if you can get someone to install your malware, the malware can steal the token.  [MUSIC] Okay, so if you can access a moderatorâs account on a popular Discord channel thatâs about to launch an NFT, then you can make a ton of money.  All you need to do is copy the official website of this NFT, which is super easy, and make a similar-looking URL with one letter different, and change where the money goes when someone buys the NFT.  Instead of it going to the NFT-maker, itâs now going to your wallet.  So, now all you need to do is direct people to your page, and since youâre a moderator, you can.</p>
+
+<p>DREW:	Post a main message, guns blazing, as we call it.</p>
+
+<p>JACK:	The message might read, âMinting is now live, open to the public, but hurry; weâll be closing in ten minutesâ.  Some of these Discord channels have over 50,000 people in there, ready to buy.  You can imagine if 50,000 people see a message like this, that the project has gone live and theyâre ready to mint, that theyâll come flooding to the site to buy their NFTs.  Iâve seen this happen over and over.  Scammers are infecting Discord and are making over $100,000 in ten minutes doing this.  But there are other scams that are going on on Discord, too.</p>
+
+<p>DREW:	There is people who actually buy NFT Discords, that people donât even realize.  People grow NFT Discords using growth services.  They get shout-out packages from people on Instagram, verify people.  They grow them just to exit scam or just to sell them to someone who will exit scam.</p>
+
+<p>JACK:	Oh yeah, Iâve seen this, too.  If you find an NFT project that has 100,000 followers on Twitter and 80,000 members on Discord, youâre gonna think that thatâs a hot NFT project and be more excited about it.  But the numbers are all faked.  Itâs a Discord channel that was just bought last week, and it came with 80,000 members already in it, but theyâre all bots.  So, it creates a false buzz about it, and they launch a project and people pay them, and they get nothing for it except for some cheap piece of art that was made by someone on Fiverr.  The creators just grab the money and leave.  Again, a scam like this can earn someone over $100,000 if done right.  But these are certainly pretty involved and complex scams.  It takes a long time; you have to build a website, buy an NFT server, create all the artwork.  Itâs not easy and takes some real finesse.  But then, if that wasnât enough NFT scams going around, thereâs also influencer scams happening.</p>
+
+<p>DREW:	They get a reputable person to be their upfront.  They are these rich people who are crypto influencers who convince people to fall for these tricks, like their friends.  They convince their friends to fall for NFT scams, and the person setting them up is these millionaire SIM-swappers.  Itâs horrible.</p>
+
+<p>JACK:	Yikes, man, you canât even trust your friends in NFTland.  They might be getting paid by the scammers to scam you.  Iâve dabbled in these NFTs and Iâll tell you, itâs not for the beginner.  Itâs fraught with landmines, hackers, thieves, scammers, criminals, and so much more, which to me is fun to see the craziness happening all around.  Itâs not for everyone, and these people are trying hard to reach into your crypto wallet and drain your assets.  They can do it with impunity, because itâs so hard to trace crypto heists.</p>
+
+<p>DREW:	Those people, that was all for profit, pretty much, like Joel Ortiz, Nicholas Truglia, Xavier Clemente.</p>
+
+<p>JACK:	Why are you naming people here?</p>
+
+<p>DREW:	I mean, theyâre all public names, arrested inâ¦</p>
+
+<p>JACK:	Oh, okay.  Oh, theyâve â these have all been arrested?</p>
+
+<p>DREW:	These are probably the most famous SIM-swappers that have been arrested; PlugWalkJoe, AKA Joseph, James OâConnor, whatever.</p>
+
+<p>JACK:	Okay, Iâve gotta look up what these people did.  [MUSIC] Alright, Joel Ortiz was arrested for SIM-swapping.  In fact, he was the first-ever person to be convicted for SIM-swapping.  This is wild; 2019 is the first time a SIM-swapper was ever convicted.  This is truly the definition of a modern crime if only three years ago was the first time anyoneâs ever been convicted of this.  So, Joel Ortiz was twenty-one from Boston, and according to police, he scammed forty people and stole a total of $7 million conducting SIM-swaps.  He was arrested and got ten years in prison for this.  We already talked about Nicholas Truglia.  Heâs awaiting sentencing, but Drew also mentioned Xavier Clemente.  This guy was nineteen years old when he was arrested for SIM-swapping.  Police say he stole over one million dollars in cryptocurrencies.  Then thereâs PlugWalkJoe, James OâConnor.  He was twenty-two, living in the UK, when he was arrested for SIM-swapping.  Authorities say he stole over $700,000 doing this.  But the list just goes on and on.  Thereâs Yousef Selassie, a nineteen-year-old from Brooklyn, who was arrested for stealing a million dollars in cryptocurrency.</p>
+
+<p>Thereâs a guy, goes by the nickname Baby Al Capone; he stole $20 million in cryptocurrency.  This guy was just fifteen years old when he was arrested.  Thereâs two more guys; Ahmad Hared and Matthew Ditman.  Theyâre facing charges for working together to do a SIM-swap and steal some crypto, and thereâs Eric Meigs, a guy who was arrested for SIM-swapping; he stole over $500,000 doing it.  Declan Harrington pled guilty to doing SIM-swapping attacks, and of course, Shane Sonderman from Episode 106 was arrested for SIM-swapping, and currently heâs spending five years in prison.  Thereâs Corey De Rose, a twenty-two-year-old from the UK who was accused of stealing 100 Bitcoins and is now facing prison time.  Oh, and by the way, the items confiscated by the police are incredible; luxury watches, luxury cars, penthouse apartments.  These kids are blowing it as fast as they get it, and almost all of them have gambling addictions, where theyâll put some money in an online casino and spin the wheel and try to hit it even bigger.  They kind of like showing off what theyâre willing to wager during live streams and stuff so that others can see how much money they have.  Itâs nuts.</p>
+
+<p>DREW:	So, on their Telegram channels, they actively post screenshots of their targets and how much money is in them and that they just scammed them for millions of dollars.  You can confirm this because they will literally show you the TxIDs and their Bitcoins wallets filled with millions of dollars.  Theyâll do thousand-dollar giveaways every day.  They just do ridiculously crazy things with their money âcause theyâre kids.</p>
+
+<p>JACK:	This list goes on and on.  A lot of people are being arrested that are under eighteen years old, and so, we just never see their names in the news.  Some of them get caught and are just forced to give back the cryptocurrency or NFTs they stole, and they just get a stern warning.  [MUSIC] I donât know about you, but all this just blows me away.  I had no idea what this underground community looked like before now.  But now I feel like my eyes have adjusted and I can see in the dark.  Do you feel that way too?  I feel like itâs an all-out war zone on the internet right now.  Yeah, every day we hear about another company getting hit with ransomware or a data breach, but all that is nimby.  Itâs not in my backyard.  This is what is in my backyard.  This is teenagers targeting regular people, and their nicknames are no coincidence.  One goes by Baby Al Capone, another goes by Billy the Kid.  Billy the Kid used to rob trains back in the old days.  He would just stick up random people and demand money from them, and it seems like the same thing is going on here.  If you make any mention that you have a lot of cryptocurrency publicly, you can probably expect that someoneâs gonna want to steal that from you.  Itâs not the most easy thing in the world to keep safe.  Itâs really tricky.</p>
+
+<p>So, if youâre holding crypto, I strongly encourage you to not put all your stuff in one address.  Break it up into different wallets, because if something gets compromised, you donât want them taking the whole piggy bank.  Phone companies should probably step up their security.  It sounds like theyâre trying to make it harder, and thatâs why people are paying $10,000 per SIM-swap today, but how can they eliminate this when thereâs insiders who work as regional managers who are in on the cut of this?  They might get an equivalent to a whole yearâs worth of salary by helping a SIM-swapper do a million-dollar lick.  That could be a tough thing to turn down for someone who really needs the money.  Maybe the answer is not to use SIM cards anymore and just keep a Wi-Fi hot spot in your pocket at all times and bounce your phone off it when you need to call someone.  I donât know.  Exchanges like Coinbase do a fairly good job at making it hard for criminals to get into someoneâs account.  In fact, the exploit that Drew said which let someone check the balance of an account without 2FA, I think Coinbase reimbursed all the people who were hit with that exploit, and they continue to improve.</p>
+
+<p>But perhaps they should force everyone to use Google Authenticator.  That would make it harder for these people, or maybe give you the option to have a second password on the site thatâs just for transfers.  The problem is, the harder they make it for criminals to steal stuff, the harder they make it for users to use the site.  So, it becomes a difficult balance.  On top of that, Iâm positive North Korea is hitting Coinbase all the time, trying to find a hot wallet somewhere and steal that.  So, they really have a heavy load that theyâve gotta defend against.  No pressure, right?  But it seems obvious to me at least that even if you fix a few of these problems, the people in these dirty coms just find another way to do it.  As the internet moves at the speed it does, software and websites donât always put security first.  These are some of the consequences for not doing that.  Like I was saying at the beginning, thereâs not a lot of wisdom being passed down from generation to generation on what the dangers of the internet are, whether itâs for the users of the site or the teenagers trying to hack into them.  I think itâs gonna get worse before it gets better.</p>
+
+<p>It might even take forty more years before we see a world where people go online in a safe, responsible manner, where users value their privacy and security above all, and know not to install apps or buy devices that put your privacy at risk, and have a strong understanding of the digital dangers that are out there, and do things to protect themselves.  Thatâs why I thought this episode was important for you to listen to.  Now you have a much clearer view into why someone would target you and how they do it, when maybe you never even thought you were the target before.  This is why things like Defcon exist, which is a conference that hackers to go to show off all the new ways theyâve learned how to hack into things.  The primary focus there is to share offensive hacking techniques, and sharing these techniques has arguably made security better, because if people donât share them, then we donât know that problem exists, and you canât do things to defend against it.</p>
+
+<p>The real criminals and nation state actors do not share their techniques publicly because they donât want it fixed.  We canât simply ignore that and hope security problems somehow magically get fixed.  My hope is that now that youâve heard all these techniques that you will now take your digital life more seriously than you were before.  I imagine a world where users were so well-educated on security that they take it upon themselves to overly secure their environments, because theyâve been hit too many times by bad actors or were just taught properly how to practice safe internet usage.  Thereâs this part in the TV show Mr. Robot where Elliot, a hacker, goes into an office building and he wants to use someoneâs computer, and he looks around to try to find a good person to social engineer to get them to stand up so he can use their terminal.  He sees an older lady sniffing Wite-Out, and he thinks okay, surely an older lady sniffing Wite-Out would be the perfect candidate to convince to let Elliot use her computer.  [MUSIC] Hereâs the scene.</p>
+
+<p>ELLIOT:	Hi, Edie.  Iâm Henry from IT.</p>
+
+<p>EDIE:	Hello.</p>
+
+<p>ELLIOT:	We detected you using some unauthorized remote access software to connect to your computer workstation from home.</p>
+
+<p>EDIE:	Oh, my.  That canât be true.</p>
+
+<p>ELLIOT:	Donât worry; Iâm just gonna take a look at your machine and perform an assessment to make sure you donât have an unauthorized desktop sharing service installed.</p>
+
+<p>EDIE:	Iâm gonna have to contest that.  I harden my install further than the standard configuration, including a restrictive host base firewall rule set and whitelisting to block unauthorized apps from running.</p>
+
+<p>ELLIOT:	I might have chosen the wrong candidate.</p>
+
+<p>JACK:	Isnât that just beautiful?  That lady knows her digital environment so well and has taken so many security precautions.  It brings tears to my eyes.  Imagine a world where the average internet user is that educated and serious about their digital safety.  But itâs going to take a long time for us to get there.  Sometimes things need to break down before they can break through.  Itâs a war zone out there.  Be careful, but be brave.  Hang in there.  You can do it.  Take your own digital security seriously.  Practice good digital hygiene.  Good luck dodging the bullets.</p>
+
+<p>(OUTRO):	[OUTRO MUSIC] A big thank you to Drew for sharing this inside look to the various coms and whatâs going on in there.  This show is made by me, SIM Shady, Jack Rhysider.  Sound design and original music was created by the reactivator, Andrew Meriwether.  Editing help this episode by the sleeping Damienne, and our associate producer just back from his trip to Pancakes Retirement Ceremony, is Ray [REDACTED].  Our theme music is by the heat-bringing Breakmaster Cylinder.  The one nice thing about getting SIM-swapped is you donât get any annoying telemarketers anymore.  Sometimes itâs so bad, Iâm not sure which is worse anyway.  This is Darknet Diaries.</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

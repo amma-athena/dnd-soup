@@ -1,0 +1,678 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>Nerdcore â Darknet Diaries</title>
+	<meta name="description" content="In February 2018, during the Winter Olympics in Pyeongchang South Korea, a cyber attack struck, wiping out a lot of the Olympic's digital infrastructure. Teams rushed to get things back up, but it ...">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Nerdcore â Darknet Diaries">  
+	<meta name="twitter:description" content="In February 2018, during the Winter Olympics in Pyeongchang South Korea, a cyber attack struck, wiping out a lot of the Olympic's digital infrastructure. Teams rushed to get things back up, but it ...">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/listening.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/78/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Nerdcore â Darknet Diaries" />
+	<meta property="og:description"        content="In February 2018, during the Winter Olympics in Pyeongchang South Korea, a cyber attack struck, wiping out a lot of the Olympic's digital infrastructure. Teams rushed to get things back up, but it was bad. Malware had repeatedly wiped the domain controllers rendering a lot of the network unusable. Who would do such a thing?" />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/listening.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/78/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/listening.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/78/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="Nerdcore â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/listening.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 78: Nerdcore</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://www.podtrac.com/pts/redirect.mp3/traffic.megaphone.fm/ADV8112097820.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/78/",
+			   "title": "Ep 78: Nerdcore"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/78">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[START OF RECORDING]
+JACK:	[MUSIC] Hey, this has been a weird year, hasnât it?  Well, this is gonna be a weird episode.  Are you ready to go on a musical adventure with me?  Yeah?  Okay, letâs do this.  Here, check this out.  [MUSIC] Did you just hear what I heard? âPass the hashâ?  âTrojan all the firmwareâ?  What is this?  âMan-in-the-middleâ?  âMy wire-taps are fearedâ?  Was this song made just for me?</p>
+
+<p>Okay, okay, okay, Iâm hooked.  I want to hear more and if you do too, come along with me and letâs dive into the world of nerdcore music.  But two quick warnings; first, this episode has explicit lyrics. Swear words and stuff. Second, make sure to listen to this one at 1x speed, okay? Now turn it up.</p>
+
+<!--more-->
+
+<p>(INTRO):	[INTRO MUSIC] These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	Okay, first on the playlist is YTCracker.</p>
+
+<p>YTC:	This is DJMC YTCracker.</p>
+
+<p>JACK:	Thatâs spelled with the letter Y, the letter T, and then Cracker.  Now, to give you a taste of what YTCrackerâs music sounds like, hereâs an appetizer.  [MUSIC] You hear all this?  âLiving like the archetypal internet kingpinâ?  âTraffic on the scanners been shallow so Iâm in a shadowâ?  Then he says âFingers on the keyboard typing, showing my eliteness.â  I guess that sort of frames my curiosity.  How elite are nerdcore rappers?  Who is YTCracker?  To find that out, we have to stop and rewind the tape to when he was a kid.  [MUSIC] He grew up in California and in Colorado and was introduced into tech by his father.</p>
+
+<p>YTC:	He worked for Hughes Aircraft and he was working on peacekeeper missiles, just all the cold war cool stuff, but absolutely hated California.</p>
+
+<p>JACK:	This is YTCracker talking.</p>
+
+<p>YTC:	Moved back to Colorado and he was working with Martin Marietta, which eventually became Lockheed Martin.  Heâs very much hardware oriented and I kinda fell more into the software field, but it was lucky to have a computer in my house kinda when they werenât as ubiquitous as they are now.  I was really advantaged, I think, by just â the first time I ever touched a computer, I was just super-fascinated with them.  Just wanted to figure out everything; how they worked.</p>
+
+<p>JACK:	[MUSIC] Weâre talking the 90s here, when YTCracker was in high school.  He was getting online then and looking to see what was there which by the way, there wasnât much online at the time.</p>
+
+<p>YTC:	I was really into the bulletin board scene, locally.  I think from there is kinda where I started reading a lot of texts; text files, textzines, and sort of the tales of the underground and got real fascinated with tone phreaking and hacking and stuff, sorta being a natural extension to the understanding how computers worked.</p>
+
+<p>JACK:	The internet and computers were fascinating to him, so he kept going deeper and deeper to learn more about it.</p>
+
+<p>YTC:	[MUSIC] My first real hack, I think â there was a â the public library had a bulletin board system.  I found out how to drop into a shell.  I turned it into an Eggdrop bot.</p>
+
+<p>JACK:	At that time, most people didnât have a persistent connection to the internet, but his library did.  He installed an IRC bot on it which could act sort of like an admin of a chatroom, something that was always vigilant, watching everything that was going on.  This was cool as a teenager to have remote control over an always-on computer and to actually put it to use.</p>
+
+<p>YTC:	Yeah, I just kind of really got addicted to the real breaking [00:05:00] into stuff.  I just kinda went on this little bit of a rampage, I guess, after that.  I hacked pretty much every school district in the state.</p>
+
+<p>JACK:	[MUSIC] Now, before we get too far down his hacking path, at this same time he was also learning how to make music on his computer.  Oh, and just so you know, all the songs you hear while weâre talking with YTCracker were made by him.  In the 90s, there were these programs called trackers which would let you play samples at different pitches to make music.</p>
+
+<p>YTC:	Scream Tracker was the first one that I had used.  Actually, a couple of the computer guys that I had â the other hacker dudes were super into electronic music.</p>
+
+<p>JACK:	Hereâs one of the songs he made while in high school using Scream Tracker.  [MUSIC] You know, I wasnât gonna say anything but that intro brings back memories I totally forgot about.  When I was a teenager around that same time, I found some text-to-speech software.  Whatever I wrote, the computer would try to say it.  You could do male voices or female voices, British or American accents.  When I discovered this as a teenager, I made the voice say sexy things, too.  Possibly all teenage boys who discover text-to-speech programs for the first time get the computer to say something dirty just to giggle.</p>
+
+<p>At this time in the 90s, the cool place to be part of was the demo scene and YTCracker was right in the middle of it.  The demo scene was its own subculture of the internet.  It pretty much was just a audio and visual showcase made by independent artists.  Demos were little programs, executables that when you ran it, it would just display moving graphics and play music.  Thatâs all it did.  But in the 90s, it was really cool to scroll through scene.org, download files, and run them to see what they did.  Since YTCracker was making music, he was all about the demo scene, uploading his music there and making friends with other electronic musicians.</p>
+
+<p>YTC:	I looked on scene.org and I canât find a lot of the older stuff that I had.  It was definitely on bulletin boards but we had this group called the Pu Tang Clan, we had one called Multisync, and then there was a group called Category 5.</p>
+
+<p>JACK:	At this point, YTCracker was really into computers, using them to make music with other people and to hack stuff, too.  Being part of the demo scene sometimes blended right into the hacker scene because a lot of apps that were used to play pirated games had cool little graphics and music built into the app to say this game was cracked by our hacker group which made the hacker group so much cooler.</p>
+
+<p>YTC:	I remember WinNuke had come out and it was like, you send out a band packet to port 139 and it would crash someoneâs computer if you â this is prior to consumer firewalls and everything like that.  Basically, if you had somebodyâs IP address and they had a Windows machine, you could invariably crash them.  I remember having that and one of the SysOps at the Southern BBS I had gone in is like have you ever been on AOL?  I hadnât, but I was obviously aware of it.  He was like, you can just knock people offline there.  Iâll try it, too.  I was like oh, thatâs so cool.</p>
+
+<p>JACK:	Yeah, so America Online or AOL was a way to get online in the 90s but it was designed for dummies to use the internet.  So, because it was so super-easy to use, it attracted a lot of newbies to the internet.  In some IRC chatrooms, this meant AOL users were easy targets to try to hack.  YTCracker was finding ways to hack into AOL servers and look up information on their users.</p>
+
+<p>YTC:	We were working on defacing keywords.  We had access to the CRIS.  It was the Consumer Resource Information Service so you could look up â on AOL, you can look people up and get their credit card information, their address, phone number, you know, all the notes on the account.  Really, it was crazy âcause back then when people were actually anonymous on the internet and werenât trying to put all their real information on Facebook and stuff, it was really just funny âcause weâd be talking shit to somebody on AOL and then tell them where they live.  You wouldnât see them sign-on for weeks âcause they would just be scared out of their minds.</p>
+
+<p>JACK:	Now, all this was going on while YTCracker was still in high school and heâs also hacking into the school because why not, right?  I mean, for a teenager, itâs sometimes just a simple question of letâs see if the school, which is trying to teach me about computers, knows anything about how to secure their own network.  He was able to get into the schoolâs database which allowed him to change grades for any student in the school.</p>
+
+<p>YTC:	I just had the perception, basically, that if you changed one grade in a system, then itâs obviously easy to find [00:10:00] out who is behind it and stuff.  There was a method to changing random grades and stuff so there was no way to really associate it with anybody.</p>
+
+<p>JACK:	You changed your own grade?</p>
+
+<p>YTC:	[MUSIC] I didnât change my own grades, no.  Never changed my own grades.</p>
+
+<p>JACK:	You just screwed with other students?</p>
+
+<p>YTC:	Changed others, yeah.  Thatâs the best way to do it.  Iâd basically gotten into all the record systems.  I defaced all the web pages later.</p>
+
+<p>JACK:	Defacing a website is pretty much just making changes to a website when youâre not supposed to be able to.</p>
+
+<p>YTC:	I remember replacing the entire front page.  It was like, all youâd have to do is go to the domain and you would see it there.  I would leave links to the original pages and stuff, but yeah, just replacing the entirely of the page.  Sometimes I would mess with theâ¦just take the existing page thatâs there and just mess with the text to make it funny and edit the pictures.  Sometimes Iâd replace it completely.  But again, I think it was the competitive atmosphere that â again, amongst ourselves, we were just trying to find the biggest fish to farm.</p>
+
+<p>JACK:	He was gaining street cred as a hacker, earning the respect of more people in the chatrooms that he was in.</p>
+
+<p>YTC:	I started getting into â I was really into hip-hop and everything so graffiti was one of the elements of hip-hop, I guess.  I kind of really liked web page defacement.  It seemed to be the most hip-hop of all of the hacks you could do.  I remember the first series.  There was a cold fusion bug when it was in default upload, there was â in the examples of the cold fusion server â but some people would just leave this directory up there and it allowed you to just arbitrarily upload files to web pages.  I remember just grinding out local car dealerships, web pages I would see on TV.  Again, this was back in the late 90s and early 2000s, so it wasnât â most people had AOL keywords back then which was how you would visit them on the internet and so many people were on AOL.  Like I said, defacing keywords and defacing web pages just became this sort of funny way to use the hacking but notâ¦there was glory in it, I guess.  Youâre not stealing nuclear secrets, though.</p>
+
+<p>JACK:	[MUSIC] This was fun.  This was a rush for him.  Making music and defacing websites became his two biggest hobbies.</p>
+
+<p>YTC:	First it was high-value-target-type stuff, corporate.  Then for whatever reason, it was just like the .mils and the .govs just became sort of enticing, shiny Pokemon to me.</p>
+
+<p>JACK:	.mils and .govs?  Those are top-level domains.  Heâs talking about any website that ends in .mil or .gov.  Heâs targeting military and government websites now.  Some of the ways he got in were pretty simple, too.  He just had a handful of techniques and he would try each technique to see if it worked.  These were sometimes simple tools just to check if the web server was vulnerable.  If so, heâd exploit it.</p>
+
+<p>YTC:	I did â yeah, the city of Colorado Springs was my local town and I hacked the USGS Texas Department of Public Safety.  Itâs like their sheriff department.  I did AT&amp;T, Acer, the FAA, New York Department of Agriculture, Oregon State Construction Contractorâs Board, the Oregon State Board of Education, pretty much every school district in Colorado.  The Goddard Space International Program, the National Training Center for the Bureau of Land and Management.  Yeah, it was a â it was fun but again, my purpose was just making graffiti.  I wasnât really trying to disrupt the inner workings of the US government at the time.</p>
+
+<p>JACK:	At this point, are you feeling like youâre gonna get caught?</p>
+
+<p>YTC:	I was fairly certain â âcause the handle that I went by, YTCracker, the people â they knew me as that anyway âcause I had done music under it and stuff.  It wasnât like kind of a secret, and thatâs part of where â I didnât delete logs.  I purposely was â I was just making it so â I didnât really think about the consequences though, at that time.  I wasnât eighteen, so I figured anything that happened to me, I could just get adjudicated out of, or whatever.  [00:15:00]</p>
+
+<p>JACK:	[MUSIC] At this point, YTCracker discovered a pretty interesting thing that could potentially earn him money.  He found some websites had referral programs.  Basically, the website would pay anyone cash for referring a new user to the site.  YTCracker realized hey, if I had a lot of e-mail addresses, I could send them all an e-mail telling them to go sign up at this website and Iâd get paid for sending people there.  He entered into the world of spam.  Step one though is getting the e-mail addresses.</p>
+
+<p>YTC:	Okay, so, on AOL there was a member directory but then there was also a bunch of chatrooms.  In the chatrooms there was a feature you can click called Whoâs Online?  It would list who was in that room at the time.  The max room size is about twenty-three, twenty-four people.  There was just programs itâll just automatically go through and click.  To gather the names, pretty much you would just go to all the public rooms and you would cycle through.  Initially, there wasnât any rate limits so you could just basically get the entirety of AOL and just have something thatâs constantly running and grabbing names from the member directory.  You could take a dictionary file and then search for certain things that would be in peopleâs profiles.  You would just scale out that way.</p>
+
+<p>JACK:	You got what, a list of a few hundred, a few thousand?</p>
+
+<p>YTC:	Millions.</p>
+
+<p>JACK:	Okay, step one is done.  He has millions of e-mail addresses.  Next is to find the most profitable website that pays for referrals but doesnât mind if people use spam to get those referrals.  After researching what websites to promote, he found the perfect site.</p>
+
+<p>YTC:	Porn was pretty much the â I wasnât even old enough really to view it, but a lot of these companies, they outwardly had a policy against spamming but realistically under the hood, everybody knew it was just kinda known this is how the traffic gets generated.  There was choices to get paid per click or per sign-up.  Depending on how your traffic backed out â in spam, obviously, itâs just â you want to go with the pay-per-click model.</p>
+
+<p>JACK:	[MUSIC] There he goes, sending millions of e-mails to people urging them to visit porn sites and to join as a member.  The more people he got to click, the more money heâd make.  You were making $1,000 a week, or?</p>
+
+<p>YTC:	Yeah, just about.</p>
+
+<p>JACK:	Thatâs pretty good for a seventeen-year-old.</p>
+
+<p>YTC:	Yeah, it was amazing.</p>
+
+<p>JACK:	Do you remember the things you were buying as a seventeen-year-old?</p>
+
+<p>YTC:	I mean, lots of computer equipment.  My wardrobe was insane.  I had just the most insane â EKKO was my favorite clothing brand and I pretty much had every piece that they owned.  I was taking my friends out to dinner and everything all the time, bought a car.  I donât know, just whatever.  Again, it was justâ¦</p>
+
+<p>JACK:	Whatâd your parents think that you had â howâd you get this money?</p>
+
+<p>YTC:	They knew, but my dad was always just really â my parents are really traditional and I was kind of, at that point, fucking education and stuff.  I realized that I make more than my teacher, not doing even â not even really working.  This whole kind of teenage rebellion thing where every teenager does think that they know everything, but at that stage I was really like well, if this is whatâs possible, then why do I need to continue to do this type of stuff?  Yeah, I think my parents â my dad was trying to instill work ethic in me; going to work and showing up and this type of stuff.  I was like no, itâs the money thatâs important.  Itâs not the job.  Itâs the byproduct â the end result of what youâre working for is the key here.  We were at odds, I guess, philosophically.  [MUSIC] [00:20:00]</p>
+
+<p>JACK:	Somewhere around here, YTCracker dropped out of high school, which I understand.  Heâs running circles around the schoolâs network, so thereâs probably not much they can teach him about computers.  Heâs making more money than his teachers.  Heâll feeling like heâs got life figured out.  [MUSIC]</p>
+
+<p>HOST:	[MUSIC] Cyber-crime seems to be how some people, particularly juveniles, feel important.  For YTCracker, a seventeen-year-old dropout, this meant compromising and defacing multiple websites.</p>
+
+<p>YTC:	Kids like us, we go out every day, we have fun, then we come home, rule the world.</p>
+
+<p>HOST:	He came to the attention of DCIS when he illegally accessed a defense contract management agency web server.  Once inside, he replaced DCMA information with text and graphics in which he bragged about his exploits.  The pattern was repeated on over forty websites including servers maintained by NASA.  Agents from DCIS, NASA, as well as the FBI began to close in on the juvenile.  Meanwhile, police in Colorado Springs were conducting their own investigation.  They were tracking down an individual who had hacked into local school records.  The minor responsible for the defacements was soon identified and agents began to build their case.  YTCracker knew they were onto him.</p>
+
+<p>YTC:	Detective DeHart published a 314-page case report on the whole thing.  I was just like, thatâs huge.</p>
+
+<p>HOST:	The seventeen-year-old suspect eventually confessed to one count of computer crime under Colorado law.  He was placed on two yearâs probation and fined $24,000.</p>
+
+<p>YTC:	[MUSIC] I think it was that the ride was over, type thing.  The one hack that is still kind of â again, this was sort of a gentlemanâs agreement I would say, but they were just like look, if you didnât fuck with the government, we probably wouldnât have even come after you.  I was like, I thought that was pretty interesting.  I just had this gentlemanâs agreement with the government ever since that I just donât hack them.  Ever since then, Iâve pretty much stayed out of â I havenât been raided since.  Itâs not like I kept my nose the cleanest but at the same time, I was the â pretty much just the biggest takeaway is that the government will really roll over you if â they have an infinite budget and infinite time if you humiliate them.</p>
+
+<p>JACK:	But while he had a truce with government websites, he didnât see any problem with continuing with his spamming career.</p>
+
+<p>YTC:	Spamming is life.  [MUSIC] âCause I realized that hacking is much more rewarding when you are making money doing it, so that was the onus for a lot of it and defacing things wasnât really profitable unless youâre obviously defacing something and putting a link to your gas card which wasâ¦[MUSIC] I think that â and again, people have varying opinions on it.  Itâs one of those things that I think everybody wants to do or wishes they could do regardless of how annoying it is.  Well, I wonât say everybody but even in todayâs culture, people are just like, look into my mixed tape or check out my YouTube channel; like and subscribe-type stuff that really â getting into a million, ten million, a hundred million inboxes.  If you can do that and get that many eyeballs on your [00:25:00] thing, youâre obviously doing pretty well.</p>
+
+<p>JACK:	At some point he realized online pharmacies were also paying very well for referrals.  So, he started sending spam trying to get people to buy medications from certain pharmacies.  Then he also found sites that you could buy fake diplomas from.  They were also paying well for referrals.</p>
+
+<p>M1:	[MUSIC] If you send me another fucking text message to my cell phone, weâre gonna have a problem.  Better knock this shit off.</p>
+
+<p>YTC:	We blasted this diploma spam.</p>
+
+<p>JACK:	He actually figured out a way to send a bunch of spam through text messages in some campaigns.</p>
+
+<p>M1:	[MUSIC] I will sue you for every fucking thing youâve got.  Do not call or text my phone again.</p>
+
+<p>YTC:	A lot of the calls that are on that song are actually people that were spammed and didnât want diplomas.</p>
+
+<p>F1:	[MUSIC] You can kiss my fucking ass and if I ever get another goddamn text messageâ¦</p>
+
+<p>JACK:	Now you might be wondering, isnât this illegal? Well ya now it is.  The CAN SPAM act was inacted in 2003. Which was right about this time.  CANSPAM is an acronym and it stands for Controlling the Assault of Non-Solicited Pornography And Marketing.</p>
+
+<p>Ya after that came out, some spammers took a big hit, going to prison and getting hit with millions of dollars in fines.
+Ytcracker had to learn how to keep low and out of trouble while continuing to spam. Becaue honestly, major companies spam us all day long, and they do it legally. So it was just a matter of making smart business choices. And with his years of background in doing this, he was really good at it. And he was able to even legitimize this whole business. Incorporating it, claiming the income on taxes and stuff.</p>
+
+<p>YTC:	[MUSIC] I guess kinda what broke me out more into quote, unquote âserious musicianshipâ or something was when I released NerdRap Entertainment System in 2005.  It got traction just on the internet at large.  [MUSIC]</p>
+
+<p>JACK:	While this album is called NerdRap Entertainment Systems, there was another rapper who named the whole genre.</p>
+
+<p>YTC:	MC Frontalot, he came out with a song called Nerdcore Rising.  The genre, right around I would say 2006, 2007, started to really kinda gain steam, but Frontalot is credited with naming it.  Realistically, thereâs â even within quote, unquote ânerdcoreâ thereâs all these subgenres where Frontalotâs a graphic designer, does web pages and stuff, but obviously highly nerdy.  But his content is different than MC Lars which is â heâs a literature â he has a degree from Stanford in 19th Century Literature so a lot of his rhymes are more centered around the poetry and prose of that era.  Me, I had been doing music obviously prior to that but my stuff was â I just â it was kind of like this gangster rap for nerds-type thing where Iâm talking about hacking, doing all this stuff, criminal stuff on the computer, and not outside in the real world, type thing.  Nerdcore sort of encompasses all of this â what we know we considered nerd culture, but now has kinda become fused more into mainstream as technologies popped up a lot more.</p>
+
+<p>JACK:	[MUSIC] Yeah.  Do you think that itâs unfortunate itâs called nerdcore?</p>
+
+<p>YTC:	Not entirely.  I found it â have always found it kind of an apt way to describe â Iâve always been proud to associate with the genre.  Iâm considered one of the forefathers of it.  [MUSIC]</p>
+
+<p>JACK:	The nerdcore genre isnât always about hacking.  Thereâs a lot of nerdcore songs about video games, graphic design, programming, DnD, comic books, and sci-fi shows.  Nerds cover a big range of topics which means while I consider myself a nerd, I often run into nerds that I have no common interests with.  [00:30:00]</p>
+
+<p>YTC:	We are not the same.  Yeah, I â well, so, and this is part of where â I got Nerd Life tattooed across my stomach.  [MUSIC] It was kind of a play on Thug Life that Tupac had, but I got it on the seventh anniversary of his death, like when he was supposed to come back.  It was September 13th, 2003.  But if you looked at older interviews of Tupac and stuff before he had gone really hard, he was super-into drama, he was kind of effeminate and you could sort of see this â that even to â people can be nerdy about anything, I guess, is the biggest takeaway.</p>
+
+<p>Like you said, I think that the â more of a beautiful way to communicate it that again, the people arenât â if this guyâs into comics and youâre into this, some people are sports nerds.  Some people know everything about this baseball player or that basketball player or something.  Itâs just, I think the accumulation of knowledge of more like what I identify with and what I say that nerd life is, is itâs just being passionate about something to some crazy, large degree.  Mine just happened to be computers.  [MUSIC]</p>
+
+<p>JACK:	YTCrackerâs music career has been pretty successful.  Heâs been able to do international tours with his music and play tons of live shows every year.</p>
+
+<p>YTC:	I get probably five, six fan mails a day that are just â I got into computer security âcause of you or I listen to your music all the time while Iâm coding or whatever.  That to me is just the â I just â teaching through music or getting people inspired that way is a lot â like, thatâs where I feel the success comes in, is that my fans, by and large, are all relatively smart and again, passionate.  You kind of have to be to be a fan, whereas once â if youâre a Drake fan, nothing against Drake, but you have all â this cross section is way different and people donât â I wouldnât say that Drake inspired people to code or something.  Itâs a little bit different.  Do you know who DeadMau5 is?</p>
+
+<p>JACK:	Yeah.</p>
+
+<p>YTC:	Yeah, so, he actually plucked AntiSec out of the weeds.  Heâs been playing it out now but weâre re-releasing it on Mou5trap, his remix.  [MUSIC] Itâs kind of going mainstream in a sense, where DeadMau5 is putting it on his album and stuff.  Thereâs a little bit of that thing still thatâs happening to this day.</p>
+
+<p>JACK:	Okay, so yeah, YTCracker made this song called AntiSec.  Here, take a listen.  [MUSIC] This is a song about LulzSec which Iâll have to do a future episode on sometime.  But basically, operation AntiSec was a hacking campaign conducted by a group of anonymous hackers called LulzSec.  They hacked into a ton of websites including Sony, PVS, the US Senate, and a bunch of other sites.</p>
+
+<p>YTC:	The LulzSec; kind of anonymous phenomenon.  I was involved in Project Chanology and some of the other stuff but yeah, the scene right around that time was really booming.  [MUSIC]</p>
+
+<p>JACK:	Huh, it sounds like he was there watching what LulzSec was doing.  And at least being present for some of the things they did.  So, since he had a front row seat and was watching it all go down and it was making major news, why not write a song about it?  [MUSIC] [00:35:00] Another thing that YTCracker got involved with along his journey was Bitcoin.  One of the songs heâs known for is this one called Bitcoin Baron.  [MUSIC] Bitcoin is currently worth something like $10,000 each right now but when he got in, it was only like $50 per coin.</p>
+
+<p>YTC:	When Bitcoin was around $60 or something, people were like what do we do with â what can be done with this?  Jason was like, just, well â Iâll feed homeless people with it.</p>
+
+<p>JACK:	Yeah, YTCracker and Jason have fed over 200,000 people now through their Bitcoin charity.  [MUSIC] Now, these days, YTCracker holds a day job doing information security work.</p>
+
+<p>YTC:	Currently, Iâm working at Ring.</p>
+
+<p>JACK:	Ring is a internet connected camera that Amazon makes that goes on your front door.</p>
+
+<p>YTC:	Iâm part of Amazon digital security but I work under â more for the Ring subsidiary and thereâs a lot of considerations like privacy and security there that obviously â I want to make â if I started a camera company tomorrow, I wouldnât have the reach and impact that Ring does.  [MUSIC] As a utility, just being part of that pipeline and being able to affect the products the way that I would like to see them distributed is a real â thatâs where I see the benefit of working with a Google or a Facebook or an Amazon is that again, you can be in the trenches and you can affect the change that you want to see in these devices and put your mark on them.  [MUSIC]</p>
+
+<p>JACK:	What do you want to be known as, Ohm-I?</p>
+
+<p>OHM-I:	Yeah, thatâs fine.</p>
+
+<p>JACK:	Ohm-I, I like that âcause itâs like the Ohm as in the resistor.</p>
+
+<p>OHM-I:	Thatâs where it came from.</p>
+
+<p>JACK:	I would be current.</p>
+
+<p>OHM-I:	Yeah, I is current.</p>
+
+<p>JACK:	Alright, we got Ohm-I up next and I actually saw Ohm-I live once at an after-party for a security conference.  Letâs take a listen to his music.  [MUSIC] So, did you steal WiFi as a kid?</p>
+
+<p>OHM-I:	Yeah, so growing up, we didnât have WiFi.  There was a router in the living room but my room was not anywhere close to it.  The one house around me that had their WiFi open â and I would sit in my room and try to play games or I would watch a lot of anime.  Obviously, I didnât know the legalities of it at the time âcause I was young, but it was open and I needed internet.  [MUSIC] [00:40:00]</p>
+
+<p>JACK:	Itâs true, isnât it?  At least for me, thatâs all I needed growing up.  Ohm-I grew up in Brooklyn and his passion with computers started in junior high.</p>
+
+<p>OHM-I:	Maybe Iâll explain New York first, alright?  The way the New York school system works is that once you reach the eighth grade you get this big book of schools in New York, and thereâs a lot of schools in New York.  You have to apply for your schools that you want to go to.  When I was in junior high school, there was one school called Brooklyn Tech.  I actually failed to get into that school âcause I didnât score high enough.  But what happened was my music teachers in junior high school, they saw that; they saw where I was planning on going and someone put my name on a list of standby people to get into Brooklyn Tech.</p>
+
+<p>Brooklyn Tech is very technical-heavy, right, so they had an Aerospace Engineering Major.  This high school had majors.  Thatâs how serious it was.  I was like yeah, I got a thing, I got in.  My major in high school was computer science so I took AP Java, computer architecture, a prep for an A+ course, but I â all these technical, really in-depth courses â which I failed most of them âcause I stopped going to classes like, halfway through.  That was my initial exposure to most of the tech industry.  I did pretty well.  I did the projects and stuff.  I just didnât go to class half the time.</p>
+
+<p>JACK:	Yeah.  Then, how were you into music at the time?</p>
+
+<p>OHM-I:	That was from junior high school when I was in band.  I picked up alto saxophone and I was playing that for a couple years.  Then when I got to high school, New York has whatâs called the All State Band.  There was All State Marching Band, All State Jazz Band.  I joined the All State Marching Band and eventually I picked up baritone saxophone and French horn and trombone.  I was just playing all these instruments and I was like yeah, I wanna go be a video game composer when I leave high school.  That didnât happen, but that was the goal at the time.</p>
+
+<p>JACK:	Huh.  That makes me think; are people who make music for video games also nerdcore musicians?  [MUSIC] I mean, shoot, some of the rappers here are taking video game sounds and putting them in their songs, so maybe.  Well, Ohm-I was really into video games and computers at the time which he says in one of his songs sort of made him different.  [MUSIC]</p>
+
+<p>OHM-I:	So, okay, the first thing I donât understand is that in a lot of black neighborhoods thereâs an expectation â at least back in the 90s and maybe still now â you sort of fit in a certain way, right?  If you like certain things or if you talk a certain way, people will say oh, you talk like youâre white or you talk all proper, all that kinda stuff.  It was one of those things that at the time, I was like oh, okay, sure.  But it was one of those things that kinda stuck with me because it made me feel like I didnât fit in at the time, especially going to a school in Fort Green and Brooklyn which now isnât as black as it used to be.  But itâs definitely gentrified.  But it was one of those things just growing up.</p>
+
+<p>It was what I was told by other people who look like me.  It was youâre too white or you like white girls or something like that.  It was kinda like okay, sure.  [MUSIC] For whatever reason, thereâs always been this expectation that because Iâm tall, right, that I play basketball.  I never really got into playing sports.  I never really cared too much to watch it.  Iâd get really annoyed when people had that â put that expectation on me like Iâm supposed to know something.  I joined the Navy.  I left New York and I was doing electronics.  I had my hands in a lot of deep network and radar electronic stuff.</p>
+
+<p>JACK:	He spent years in the Navy doing this stuff and he was thinking about getting out and doing something else, but then he saw a new opportunity.</p>
+
+<p>OHM-I:	The Navy has this role for Cryptologic Technicians for networks who do mostly â itâs like the cyber field for the Navy.  I was like you know what?  Iâm gonna give this a shot.  Iâll stay in for four more [00:45:00] years and see how it goes.</p>
+
+<p>JACK:	He ended up spending ten years in the Navy and then he got out of there and transitioned back to civilian life.  [MUSIC] When he got out of the Navy, he got a job as a penetration tester.  [MUSIC]</p>
+
+<p>OHM-I:	I was a web app pen tester and as I was doing this pen test for whatever site it was, they had ASP and I was like oh, what can I do with this?</p>
+
+<p>JACK:	He decided to write his own tool to give him command line access to this machine.</p>
+
+<p>OHM-I:	Being able to take over an entire box to me was -super-exciting the first time I did it.  Being able to take over an entire box just through a web shell and writing .NET payloads and all these other cool things that people were doing, they all were just kinda like oh, youâre doing cool research in .NET?  Let me go figure out how to write this web shell.  It was definitely an experience and one of my favorite experiences from that job.  [MUSIC] I wrote that song specifically for my resume because I knew that getting out of the Navy, getting a job was gonna be a little hard.  I had some experiences with some companies who explicitly mentioned that they had a hard time hiring veterans because of personality issues and personality conflicts.  But I just wanted to do something unique for my resume so I just left a link to the song at the bottom of the footer.  I was like hey, check out this song.  Hire me, please.  Please.</p>
+
+<p>JACK:	Well, how did it work?</p>
+
+<p>OHM-I:	It didnât.</p>
+
+<p>JACK:	Oh.</p>
+
+<p>OHM-I:	The companies that interviewed me â the song aside â I just didnât get hired.  I already knew it was gonna be an uphill battle.</p>
+
+<p>JACK:	Did they comment at all on like, oh, cool song, but no.</p>
+
+<p>OHM-I:	One of the companies, that was one of the first things they brought up on the phone interview, the phone screening.  I was like, I guess it worked.  I guess I did a good thing there.</p>
+
+<p>JACK:	Ohm-I is really into Python.  He learned it while in the Navy but heâs been using it ever since.  His Twitter bio even says Python is life.  So, I asked him how does being good at Python make you good at doing security work?</p>
+
+<p>OHM-I:	Oh man, Python makes it easy.  Because Python is super well-supported by so many people and thereâs always someone writing a new library somewhere, it makes it one of the most versatile languages.  I would say that no matter what your field is in InfoSec, you can probably use Python for something because thereâs always something that you can automate, thereâs always something that you can make easier.  For sure, Python is one of the most approachable languages to do that in.  [MUSIC]</p>
+
+<p>JACK:	Like any human, nerdcore rappers suffer from loss and heartbreak, too.  Hereâs how Ohm-I brings his relationship experiences into his music.  [MUSIC] [00:50:00]</p>
+
+<p>OHM-I:	Oh, yeah, so that song is about my ex-girlfriend.  I am not a very emotionally available person.  Iâll say that out loud.  It was basically that, right?  I donât always open up to people.  Yeah.  I sent her that song and she didnât understand any of the references.  I was like, this is just me expressing my feelings.  [MUSIC]</p>
+
+<p>JACK:	It does seem comical at the same time as being sad, that in all of this nerdcore seems comical; like, oh my gosh, I get that joke but I feel so nerdy getting it.</p>
+
+<p>OHM-I:	Yeah, and then thatâs definitely the vibe that I think a lot of â that nerdcore has gone for since inception, is like, that I get this particular line âcause I can relate to it.  [MUSIC]</p>
+
+<p>JACK:	Now, Ohm-I is working on the red team at Azure.  This is the cloud computing service that Microsoft offers.</p>
+
+<p>OHM-I:	Our job is to perform red team assessments against teams working on Azure products and services.  Weâre an internal team, right?  We donât do customer-facing engagements.  We basically just hack away and try to find new things either within Azure or against specific teams and how they organize their infrastructure or whatever else they have to organize.</p>
+
+<p>JACK:	But get this; while yeah, heâs hacking on Azure itself sometimes, his scope goes way beyond the product.</p>
+
+<p>OHM-I:	Right.  If you take Azure Functions, for example, weâre not looking for vulnerabilities in Azure Functions.  Thatâs for the product engineer teams and security assurance team.  Weâre looking for ways to hack the Azure Functions development team and any vulnerabilities that they may have that might lead us to take over this service, for example, which now has bigger implications down the line.</p>
+
+<p>JACK:	Wow, thatâs crazy, huh?  Heâs trying to hack the people who work at Microsoft in order to help keep Microsoft products more secure.  Wild.  [MUSIC] The last song I want to leave you with from Ohm-I; itâs called Tabs and I absolutely love it.  [MUSIC] Our last musical act is none other than Dual Core.</p>
+
+<p>INT80:	Yes, I am Int80.  Iâm the rapper in Dual Core and I consent to this recording for the use of Darknet Diaries.</p>
+
+<p>JACK:	Okay, just to clear things up, Int80 is the name of the rapper, the guy weâre talking with, and Dual Core is the name of the rap group.</p>
+
+<p>INT80:	Iâm beyond excited to be on the podcast.  Your podcast is literally my favorite one.  Iâve listened to every single episode.  I canât say that about any other podcast.  As soon as new episodes come out, itâs the first thing that I listen to.</p>
+
+<p>JACK:	Whoa, itâs always a trip for me to meet someone and find out that we have mutual respect for each otherâs work.  I really dig Dual Coreâs music, too.  Here, check this out.  [MUSIC] [00:55:00] So, you ready to start?</p>
+
+<p>INT80:	Sure.  Letâs do it.</p>
+
+<p>JACK:	Alright, so what was going on in high school?  Were you a nerd then?</p>
+
+<p>INT80:	Absolutely, yeah.  I got in trouble in high school.  I took a C++ programming class and sent â using Net Send, I sent a message to all the Windows computers saying there was a virus in the system and I waited until everybody had logged out at the end of the class period.  The next class period came in and they all logged in and got this message box popping up saying there was a virus and I got kicked off the computers for like, a week.</p>
+
+<p>JACK:	It was in high school where he started making music.</p>
+
+<p>INT80:	I listened to hip-hop.  There was a kid that I used to program and hack with on AOL and he lived in New Jersey.  We would either be talking about hacking or programming or hip-hop.  Weâd have discussions of who the best rapper was, etc.  Heâs actually the one that got me started rapping.  He sent me an e-mail with a rap verse that he wrote about how he was a better hacker than I was.  [MUSIC]  I paid it no mind âcause I knew that I was a better hacker than him.  He kept bugging me to write a response back so eventually I wrote a response and that was my first rap verse that I ever wrote, and it was about how I was a better hacker and programmer than he was.  [MUSIC] I remember making my first website.  I was just learning HTML but obviously I didnât know HTML particularly well.  I went to paste something into an IM to somebody and I thought I had some other content in the clipboard but what I had was the markup from the website that I was building.</p>
+
+<p>It was all messed up and it crashed AOL or it froze it or something bad happened.  I was curious as to what happened so I looked at what was in my clipboard and it was the markup from my website.  There were some syntax errors, like the tags or the values were wrong or something.  At that point I realized okay, what if I intentionally put bad values in the markup and then send that to somebody?  Then I just started manually fuzzing; putting in strange values like having a font size of a bunch of nines or starting the HTML with an ending HTML tag.  What would happen is there were all these bugs in the AOL client and you would get kicked offline or AOL would freeze up or crash or something bad would happen.  At the time, it was dial-up, so it took you like ten minutes to get back online.  Youâd be in a chatroom and someone would argue with you.</p>
+
+<p>Youâd turn off your IMs and send them an IM with this awful HTML in it and their client would crash and they would go off â go away and get kicked offline.  [MUSIC] I used to trade these punt strings, this malformed HTML, for stolen accounts so that I could keep access.  My parents would always get upset with me for some reason and then theyâd take away my AOL access.  I had all these stolen accounts so that I could continue having access to the internet.  What really drove me into programming was I had a secret stash of punt strings that I refused to share to anybody âcause they were so good.  I needed a way to weaponize those.  That drove me to learning Visual Basic and the Windows API so that I could write my own punters to then kick people offline.</p>
+
+<p>JACK:	Dual Core actually collaborated with YTCracker on this song.  Itâs called I Remember.  [MUSIC]</p>
+
+<p>INT80:	I actually did not want to do computers as a career.  I went to school; I have a Bachelor of Arts in Political Science and I wanted to be a lawyer.  I really enjoyed classes like Civil Liberties and Criminal Justice.  I really enjoyed doing case studies, writing about dissenting opinions and concurring opinions.  I always thought of the movie The Matrix where they show Thomas Anderson in his cubicle after heâs just been yelled at by his boss.  It just looks like such a drab situation to be in.  That was my stereotypical view when I was younger about what having a career in computers would be like.  But I was approaching graduating from my Political Science degree and I went to a Law Day at a law school.  Learning about how much you had to read and write was unbearable for me.  [01:00:00] I decided hacking computers is really fun and maybe I can get a job doing that or at least programming and building web apps and stuff which is something I had been doing at that point.</p>
+
+<p>JACK:	His first computer job was doing website development.  He then started hanging out at security meetups and from there, he got an internship doing security work.  After that, he went to get a job doing application security which is where heâs paid to find bugs in the software that the company makes.</p>
+
+<p>INT80:	Right, except I was a consultant so I would basically be on a five-day engagement.  We would do white box or black box assessments; white box being where you have exposure to the entire source code and black box where youâre just targeting a regular site or an application without any knowledge of its source code.  Then yeah, for the first four days, youâre pretty much hacking and just trying to find bugs, unfortunately.  I think in one of my first assessments, I think I pivoted through the network and got domain admin and checked in with the engagement manager and said okay, Iâve got domain admin.  Now what?  They were like no, thatâs not what youâre supposed to do.  Youâre just supposed to take a screenshot of the alert box and put that in the report.  [MUSIC] Letâs see, at that point I think we had just started Dual Core.  I know we started Dual Core in 2006.  That was when we were making our first album Zero One.  In 2007, that was when I â that was when we released our first album Zero One.  Also in 2007 is when I got my first application security job.</p>
+
+<p>I remember when I started at the company, people already knew about Dual Core which was mind-blowing to me because I was just some kid recording rap songs in a basement in Cincinnati. It was a shock to walk into a place and people already knew my music that had only been out for a few months.  [MUSIC]Dual Core is two people; itâs myself, Int80.  Iâm the rapper in the group and then the other half is c64.  I write and record all the rap songs and I have the moustache, and c64 makes all the beats.  He does all of the mixing.  He does all of the artwork, does some of our social media stuff, and heâs basically all of the talent in the group.  Iâm just kind of the loud person in front.  [MUSIC] Penny Arcade published a blog post about our album which got our music in front of a bunch of listeners.  I kind of used that as a springboard to start booking shows as rabidly as I could.  I said Penny Arcade is a big fan of our music.  Hereâs the link to their blog post.</p>
+
+<p>You should totally book Dual Core.  We ended up playing at Defcon that year just a few months after that.  We were the first ever live hip-hop act to play at Defcon.  Iâve been playing every year since 2007, live in person, except for 2020 with the pandemic.  [MUSIC] Yeah, I then moved into a position doing reverse-engineering.  I was essentially cracking copy protection.  Companies would come in with copy protection that would go on a particular device and they would want to know how fast it could be broken.  We have three objectives, usually.  [MUSIC] One would be to pirate the intellectual property, one would be to reverse-engineer the protection to get a full understanding of the protection, and then the third objective would be to tamper the protection without being detected.</p>
+
+<p>[MUSIC] [01:05:00] I went and worked at a social media platform that we all know and have probably used at some point.  I worked on building threat systems for them.  Our goal was to be able to find any malware that was spreading or communicating across the platform and then sandbox it, pick it apart programatically, figure out what it was doing, siphon out indicators and then build new signatures and put it all on our compute and fabric storage, and then programatically associate it with any other families.  Then we could put detections and filtering in place to stop future campaigns and alert victims that were on the platform.</p>
+
+<p>JACK:	While there, he discovered some malware on the platform which would mine Litecoin.  This is a cryptocurrency like Bitcoin.  Heâd clean the malware off the infected systems but he realized he could do more than just stop it in his network.</p>
+
+<p>INT80:	I reached out to the Litecoin mining pool and asked them if they would stop â basically stop all of the progress for this particular account.  I had evidence of you know, these are the malware samples, hereâs in the code where itâs using your pool, etc.  Also, the malware had stages up on Dropbox, so I worked with Dropbox and said hey, this is â this malware is staging off of your platform.  Can we find all of the instances of it?  Dropbox was able to find them all.  Then the C2 was at some hosting company, so I reached out to the hosting provider and I said hey, this malware has got its C2 on a VPS in your hosting setup.  Can I get a copy of the VPS?  They said, sure.  They gave me a copy of the VPS and that gave me all of the logs and keys that the malware authors used to login and check into the C2.  Then on a particular Friday, I said hey, on this Friday coming up at 9:00 AM Pacific Time, letâs kill everything off.  So, we did.</p>
+
+<p>We did this coordinated takedown and that Friday at 9:00 AM, the malware ceased to exist on the internet.  It was super fun.  [MUSIC] After leaving the social media platform, I took a job as a red team operator.  I worked on the red team at Salesforce and our job was basically to make the bad things happen.  [MUSIC] We would start any red team operation with asking the question whatâs the worst thing that can happen to this business?  The Salesforce has a number of acquisitions so there was always fresh attack surface for us to look at.  We basically would try to go after things that were really important or critical to the business, things that mattered the most because if youâre handing in a report to executives and you just say look, I popped an alert box, no executive understands why thatâs important, maybe not even what that is.</p>
+
+<p>But if youâre able to say I have a copy of all of your customer data and Iâve put backdoors in the source code that makes your business run, and those are the most important things to your business, theyâre gonna understand weâre gonna be out of business or the stockâs gonna take a hit or bad things are gonna happen.  We would do that kind of stuff, right?  We would try to exfil customer data or we would try to backdoor source code or weâd break into places sometimes.  Trying to frame the objectives in a more high-level way and telling a story rather than just handing in a report that people might not read.  [MUSIC]</p>
+
+<p>JACK:	But that job didnât last long.  If you Google Defcon Salesforce, youâll see articles about a mishap that happened.  He got caught up in all that.</p>
+
+<p>INT80:	I have since pivoted into a cloud engineering kind of role.  I build [01:10:00] cool stuff but I also break things.  Itâs a nice balance of getting both sides of it, right; being able to construct and then also tear down and see how to construct it better in the future.  [MUSIC] The song All the Things came about by randomly being at Defcon one year.  A friend of mine, Vyrus from DC949 came up to me and said hey, drink all the booze, hack all the things.  Thatâs how weâre doing it this year.  I said oh, thatâs cool.  Sounds like fun.  My producer was in from the UK.  He had flown all the way to Vegas.  Also with me was Dale Chase and we were rolling around playing parties.  I think it was our fourth party of the night, and we get there and the whole pool place is packed.  The pool area is just filled with people all waiting for a Dual Core show.</p>
+
+<p>Weâre like, alright.  We show up.  My producer and I are talking and theyâre like, what if we played a set where â just kinda make it up as we go?  My producer was like, sounds good.  c64 is just throwing on whatever beats that he wants to throw on.  Weâre not sticking to any particular set.  Weâre just going for it.  Dale and I are just kind of rapping verses, weâre putting in hooks where we can, and my producer plays this one beat and I said, letâs do a freestyle.  I like this beat; sounds good.  Letâs do a freestyle.</p>
+
+<p>Iâd just say alright, in the chorus Iâm gonna say drink all the booze and everybody yell âhack all the things.â  It was amazing.  We started the freestyle and we got to the chorus and I yelled drink all the booze.  Now itâs four-something in the morning in Vegas and the entire pool area is just people screaming âhack all the thingsâ.  [MUSIC] Several years after the song had been out, I got an e-mail and it was a person who said hi, I work on the game Watchdogs at Ubisoft and we were making Watchdogs 2 but nobody knows yet.  I saw you play at Defcon and I need your music in the game.  How do we do that?  I said, send me an NDA and weâll get everything set up and weâll make it happen.  They ended up including All the Things in Watchdogs 2.  [MUSIC]</p>
+
+<p>JACK:	Dual Core has continually grown more popular over time, and so much that heâs been able to book live shows all over.</p>
+
+<p>INT80:	Iâve played all across the US, Canada, Iâve played in Columbia, Iâve played in Brazil, Iâve played in Dubai, and Iâve played all across Europe as well.  We even did a three-week tour, me and my producer, in the UK.  [MUSIC] But when I started, I always thought that my ideal week would look like hacking stuff Monday through Friday and then playing rap shows on the weekends.  That is the structure that I kind of derived or composed and have stuck with all these years.  Itâs worked out really well.  Iâve done some tours where weâre on the road for anywhere from three to eight weeks but for the most part, a normal week for me is like Monday, I go to work, and then Thursday or Friday Iâll fly out and play shows, and then Sunday or Monday Iâll fly back, and Monday Iâm back at work again.</p>
+
+<p>JACK:	Dual Core has done some collaborations with other nerdcore rappers, but not all nerdcore rappers are hackers.  Like we were saying before, some nerdcore rappers talk about video games and some talk about anime.  But in order for Dual Core to collaborate with others, he created a file-sharing system on a server that he set up.  However, he set it up using SCP which is a secure file-transfer method but it takes a couple steps to set up.</p>
+
+<p>INT80:	When I started doing collaborations with folks, Iâd say hey, hereâs a â send me your SSH public key and Iâll set you up with a user account, and then you can SFTP or SCP your waves up.  I thought everybody was a hacker like I was in the nerd rap scene, and I think YTCracker was the only person that when I said that, he didnât blink an eye.  He said okay, no problem, hereâs my SSH key, good to go.  Meanwhile, everybody else was like what is SSH?  [01:15:00] What is a key?  What is SCP?  How do I get you the files?  I always thought that was a really funny experience, having the realization that there arenât many hackers that are out making rap music.</p>
+
+<p>JACK:	[MUSIC] See, thatâs what I think is interesting about this sliver of music in the world.  The lyrics are about this specific type of computer usage.  But not only that; itâs made by hackers themselves for other hackers who want to hear songs about hacking.  Hey, I dig it.  After chatting with these guys, I really am surprised at how much theyâre actually doing security themselves.  I donât know why but I just assumed they were wannabe hackers.  But no, they arenât.  They really are doing this stuff.  Now, when I listen to nerdcore, I have a newfound respect for the musicians behind it.</p>
+
+<p>(OUTRO):	[OUTRO MUSIC] A big thank you to YTCracker, Ohm-I, and Int80 from Dual Core.  I never had guests bring their own soundtracks before, but this was a fun ride. If you want to just listen to the music from this episode Iâve created a playlist for you. Go to darknetdiaries.com/episode/78. While there youâll also find more about each of these artists, and dive into their music because they have tons more songs to discover.</p>
+
+<p>Also, I want to give a big thanks to all my Patreon members.  Those who are donating to this show are a massive help for the showâs success.  Thank you so much.  But I did the math and less than 1% of my audience is helping the show through Patreon.</p>
+
+<p>Look, if youâve gone through every episode and canât wait for new episodes, consider donating to the show.  This tells me most of all that you like it and want more of it which motivates me to keep going and to make it better.  If you want to help, please visit patreon.com/darknetdiaries.  Thank you.  This show is made by me, sir dollar string, Jack Rhysider.  Editing help this episode by the funky cherry Damienne and our theme music is by Biggie Doom, AKA Breakmaster Cylinder.  Even though for some weird reason I think 1024 is a perfectly round number, this is Darknet Diaries.</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

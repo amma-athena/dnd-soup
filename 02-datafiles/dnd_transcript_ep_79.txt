@@ -1,0 +1,637 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>Dark Basin â Darknet Diaries</title>
+	<meta name="description" content="What do you do when you find yourself the target of a massive hacking campaign, and you are getting thousands of phishing emails and someone following you in your car. You might turn to Citizen Lab...">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Dark Basin â Darknet Diaries">  
+	<meta name="twitter:description" content="What do you do when you find yourself the target of a massive hacking campaign, and you are getting thousands of phishing emails and someone following you in your car. You might turn to Citizen Lab...">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/darkbasin.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/79/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Dark Basin â Darknet Diaries" />
+	<meta property="og:description"        content="What do you do when you find yourself the target of a massive hacking campaign, and you are getting thousands of phishing emails and someone following you in your car. You might turn to Citizen Lab who has the ability to research who is behind this and help bring the hackers to justice." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/darkbasin.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/79/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/darkbasin.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/79/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="Dark Basin â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/darkbasin.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 79: Dark Basin</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://www.podtrac.com/pts/redirect.mp3/traffic.megaphone.fm/ADV4345070838.mp3?updated=1605203326"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/79/",
+			   "title": "Ep 79: Dark Basin"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/79">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>JACK:	Good versus evil.  This is something I think about a lot, and Iâve come to the conclusion that itâs not a fair fight.  [MUSIC] The good team has virtues such as ethics and morals, and tries to do whatâs right.  But the evil team by definition lacks virtues.  They have no problem breaking the law or playing dirty to complete their objectives, but the good team will uphold the law.  So, if you have an evil hacker in the world, theyâre not gonna play fair or with morals to accomplish their mission.  Theyâre going to deceive, lie, cheat, threaten, break laws, and be reckless.  It doesnât matter what it takes for them to be successful, and the hackers on the good team donât do that stuff.  Theyâre accountable, responsible, honest, considerate, and strive to have excellence in all that they do.  To me, this means itâs not a fair fight.  One side fights dirty and acts in bad faith and canât be trusted, while the other canât fight like that since their hands are tied to morals and integrity.
+<!--more-->
+But as you get into the weeds, itâs so hard to figure out whoâs good and whoâs evil and whatâs right and whatâs wrong.  Sometimes you have to break the law to do whatâs right.  Sometimes good people just donât know theyâre breaking the law because thereâs so many stupid laws out there that just should be removed.  Sometimes thereâs good people with good intentions, but their actions have horrible consequences.  Thereâs also people who seem to be evil but theyâre just misunderstood.  What theyâre doing might be controversial or really hard, but they know someone has to do it to make the world right.  But with all that said, I still believe this story is about how a bad company hired an evil group to hack into good people.</p>
+
+<p>INTRO:	[INTRO MUSIC] These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSC ENDS]</p>
+
+<p>JACK:	Iâm recording this call to use on the podcast Darknet Diaries.  Thatâs alright with you, correct?</p>
+
+<p>MATTHEW:	Yes, thatâs fine, yep.</p>
+
+<p>JACK:	Alright, so letâs start with whatâs your name and whatâs your title?</p>
+
+<p>MATTHEW:	My name is Matthew Earl.  Iâm the managing partner of ShadowFall Capital Research.</p>
+
+<p>JACK:	What is this ShadowFall?</p>
+
+<p>MATTHEW:	We are a short-focused firm that looks into companies that are listed that we think are either using aggressive accounting; sometimes thatâs just aggressive accounting, sometimes thatâs possibly fraudulent practices or unethical conduct by management.  Or it might beâ¦</p>
+
+<p>JACK:	[MUSIC] Iâve never heard of a short-focused firm before and had to spend some time figuring this out, but basically what Matt does is he looks for companies that are about to tank in the stock market and then short that stock, which means if their stock price goes down, Matthew makes money.  As a short seller, heâs gotta do his homework into which companies are ripe to be shorted.  Back in 2015, Matthew started watching a German payment company called Wirecard AG.  They had announced that they were going to buy an Indian company for over 300 million euros which just didnât seem right.</p>
+
+<p>MATTHEW:	When I looked at that acquisition, it didnât look as though it was worth 340 million euros.  I thought well, thatâs kind of interesting, and Iâll dig a bit more into this company.</p>
+
+<p>JACK:	[MUSIC] Matthew was interested because an over-valued buy might mean that Wirecard [00:05:00] was misrepresenting themself or mismanaging their money or doing something wrong, which makes it a good target to short the stocks.  As he looked into things, it became obvious.</p>
+
+<p>MATTHEW:	This looks like a classic accounting fraud.</p>
+
+<p>JACK:	To add to that, Wirecard also had a checkered past.</p>
+
+<p>MATTHEW:	As I looked into the history of the company, there were allegations that had been raised in the past against it that it was embroiled in money laundering.</p>
+
+<p>JACK:	These allegations went back a couple years.  German prosecutors investigated Wirecard about money laundering connections to online gambling in the US.  They even raided Wirecardâs offices but didnât come up with anything.  Wirecard insisted they werenât doing anything wrong, but Matthew wasnât convinced.</p>
+
+<p>MATTHEW:	Then when I conducted more research into the company, I worked out that it seemed as though they had set up an entire structure, a network of companies that were used for money laundering purposes.</p>
+
+<p>JACK:	At this point, Matthew invests in shorting Wirecard, believing that this companyâs stocks are going to go down once the truth catches up with the company.  [MUSIC] He also felt that authorities and the public needed to know about this, but he wanted to protect himself from backlash, so he published under an alias; Zatarra Research.  The report dropped on February, 2016.  It alleged that Wirecard was deceiving its shareholders, was tied up in money laundering, and had defrauded Visa and Mastercard.  Wirecard didnât like these accusations and pushed back, saying Zatarraâs claims were baseless.  At this point, things took a bad turn for Matthew Earl because in the following months, his Zatarra cover got blown.  In December, a document was spread around online, accusing him of criminal insider trading and market manipulation.</p>
+
+<p>MATTHEW:	It was extremely concerning because obviously very serious allegations were within the document, again, accusing me of being a criminal, of falsifying all the research, of being in â colluding with journalists.</p>
+
+<p>JACK:	Even worse, the document had creepy surveillance photos of Matthew.</p>
+
+<p>MATTHEW:	There were pictures taken of my house, of myself opening the front door, and it was very clear from those pictures that the photographs had been taken not in the winter months of December but they had been taken in the summer months.</p>
+
+<p>JACK:	[MUSIC] Someone had been watching Matthew for months, but he was just finding out about it now.  This put him on high alert.  It wasnât much later that he noticed a strange car parked on his street.  He lived in a cul-de-sac with only a few houses, so it was easy to spot something out of place.</p>
+
+<p>MATTHEW:	Suddenly I saw a black Mercedes Coupe that had parked outside, and there were a couple of guys that were looking around.  It just seemed unusual as it happened.  Because it seemed so unusual, I took a photo of it, of the vehicle and the license plate, and it was around 9:00 in the morning.  I was going into London later that day and as I was driving up to the station, I noticed that their vehicle suddenly appeared.  I realized that they had been â there was a car following me.  Not quite certain, but then as I got out of the car to go to the station, Iâd realized I had left my wallet at home.  So, I turned âround and this black Mercedes Coupe; I donât think he expected me to turn around.  He just kind of froze and was staring at me.  It was quite obvious that I was being followed at that point, so I just went straight home.  I noticed then, when I got home, that there was another car where there was a guy sat in there with a camera taking photos as well.</p>
+
+<p>JACK:	Whoa, this is like a movie.  Matthew called the cops and said to send someone by.  Matthew also called his lawyer who offered to send an ex-special forces guy to come protect Matthew.  Matthew turned him down; he wasnât excited that people were watching his house and his family, but he didnât feel like bodily harm was coming his way.</p>
+
+<p>MATTHEW:	It was just a very odd few days.</p>
+
+<p>JACK:	It got weirder.  A couple of days later, two men from an investigative agency called Kroll showed up at his door.</p>
+
+<p>MATTHEW:	They asked me; they said, are you Matthew Earl?  I said, yes.  They said, youâve got a strong interest in Wirecard, havenât you?  I said, well, Iâve written on the company.  They said yes, but would you like to talk to us about it?  They were quite sinister and quite creepy, in fact.</p>
+
+<p>JACK:	Matthew didnât want to talk to them about anything.  The two men let him know that they were there on behalf of Wirecard and gave him a letter.  It was from Jones Day, a law firm representing Wirecard.  Matthew says the letter accused him of collusion, conspiracy, defamation, liable, and market manipulation.  That was just the beginning.  The surveillance and threatening letters continued for months.</p>
+
+<p>MATTHEW:	With the sinister nature of the surveillance, whatâs their ultimate intention?  Is it to intimidate just from a distance or is it to go further beyond that, I guess?  Because I can tell you itâs not nice having car â vehicles parked outside your house and being followed to the station.  [00:10:00] When I drove out with my children in the car, there were the vehicles following me then.  We had have our â the school have passwords put up with the school so that when we collected the children from the school, that those passwords had to be given so that no strangers could take them, had to have the police around.  They took it so seriously with the surveillance that our home line was put on rapid response, so if we were to dial 999, your equivalent of 911, and even just hung up, then the police would automatically send a response vehicle âround.  It was pretty stressful and frightening, certainly for the first couple of weeks.</p>
+
+<p>JACK:	What was the worst part of all this for you?</p>
+
+<p>MATTHEW:	I think it was the uncertainty as to what they would do, because obviously they had gone to the lengths to put me under surveillance, to try to discredit myself.  It was, well, would they be satisfied with that or would there be anything else that they would â would there be any physical danger?</p>
+
+<p>JACK:	[MUSIC] On top of everything, Matthew started getting these suspicious e-mails.</p>
+
+<p>MATTHEW:	They were relentless.  They came thick and fast.  Ultimately, over I guess three years, I received well over 3,000 e-mails.</p>
+
+<p>JACK:	He could always tell that there was something a little bit off about these e-mails, but they were put together in a pretty convincing way.  He got e-mails with links that looked like they came from his sister.  Heâd get a Dropbox link that supposedly came from his friends and family, and heâd get links to news articles about Wirecard.</p>
+
+<p>MATTHEW:	It was astonishing just how much information, detail, they had in order to craft these e-mails that they were sending to me.</p>
+
+<p>JACK:	Which surprised Matthew because he didnât feel like he had much of a social media presence.  He was on Twitter, but didnât have Facebook or LinkedIn.</p>
+
+<p>MATTHEW:	Whoever was sending these e-mails clearly had an understanding as to what subject matters I was interested in, who my friends were, who my family were.</p>
+
+<p>JACK:	There were so many e-mails coming in.  At one point, Matthew was worried that one of his kids might pick up his phone and play a game and accidentally click on a suspicious link.</p>
+
+<p>MATTHEW:	It was horrible, very stressful.  Then ultimately, as time passed, it just became very frustrating because you think well, why wonât they ever stop?  Just give it a rest, right?  They didnât.  That was the thing.</p>
+
+<p>JACK:	Matthew believes that somehow he didnât click on any of the bad links.  [MUSIC] But who was sending these to him?  He knew the Kroll investigators and Jones Day were with Wirecard, but were these e-mails from them, too?  Matthew showed them to his lawyer.</p>
+
+<p>MATTHEW:	They were amazed.  They said that this level of sophistication within the e-mails was something they thought could almost be state-sponsored.  They said it was just unbelievable.</p>
+
+<p>JACK:	It turns out Matthew wasnât the only person on the receiving end of these relentless hacking attempts.  A journalist who had also written about Wirecard were getting these weird e-mails, too.  Matthew told this journalist heâs getting the same e-mails and asked what to do.  The journalist suggested Matthew send the e-mails to Citizen Lab in Toronto, Canada.  In the spring of 2017, Matthew got in contact with Citizen Lab and started showing his e-mails to them.  By this point, Citizen Lab already had quite a case built on who might be sending these e-mails.  So, I called the researchers at Citizen Lab to get the story.</p>
+
+<p>JOHN:	[MUSIC] Iâm John Scott-Railton.  Iâm a senior researcher at Citizen Lab at the University of Torontoâs Munk School, and with me isâ¦</p>
+
+<p>ADAM:	Iâm Adam Hulcoop, a research fellow at the Citizen Lab.</p>
+
+<p>JACK:	Citizen Lab is all about protecting free expression, transparency, and accountability on the internet.  They put a real emphasis on helping defend human rights organizations and other groups from cyber-attacks, people that might not be able to defend themselves.  John says the primary focus is to understand digital threats against civil society.</p>
+
+<p>JOHN:	This is like, threats against journalists and human rights defenders, opposition politicians, and so on.  A big focus of our work is that these groups face the same kind of threats that are also pointed against governments and industry.  They usually canât pay for security.</p>
+
+<p>JACK:	In my mind, youâre superheroes because there are people who are desperately in need of help and youâre just gonna help them free of charge.  Itâs amazing what you do.</p>
+
+<p>JOHN:	Itâs absolutely an area of need.  Youâd be amazed at how many organizations are doing really important work around the globe but are not really equipped to protect themselves.  Theyâre too busy protecting others.</p>
+
+<p>JACK:	[MUSIC] Thatâs what made Matthew Earl a good fit with Citizen Lab.  He was just one guy up against whoever was bombarding him with e-mails.  Citizen Lab was able to step in and help.  Adam says their work is rooted in open-source intelligence, or OSINT.  Are you a forensics person, a [00:15:00] threat intelligent â how do you know these techniques?</p>
+
+<p>ADAM:	I think thatâs just sort of the â thatâs the study of computer forensics, of attacking techniques.  As weâve been doing this year over year and these are the things you learn, these are the techniques and tricks and investigative steps that you learn and you share in your community of investigators and with your peers.</p>
+
+<p>JACK:	Citizen Lab takes their work seriously.  Their research is evidence-based, theyâre ethical, and work with the victims to compile evidence and build cases.  They rely on victims sending them suspicious e-mails or infected machines, and also on publicly-available data when building a case.  Citizen Labâs investigation into the hacking group began a bit before they heard from Matthew Earl.  A Reuters journalist writing about Wirecard was the first to tip them off.</p>
+
+<p>ADAM:	Someone had sent us a ping saying hey, you know, something weird; Iâve gotten these â this strange set of e-mails and something seems wrong.  Can you guys take a look at this?</p>
+
+<p>JACK:	John and Adam said it looked like a somewhat convincing phishing e-mail.  So, this phishing e-mail that you first got, how good was it?  Was it really good to the point where you would have been tricked or the average person would have been tricked to clicking it, or was it kind of lame?</p>
+
+<p>JOHN:	I would say it was like the kind of phishing e-mail that winds up being statistically effective against a certain percentage of any basic users.  Adam, what do you think?</p>
+
+<p>ADAM:	Yeah, I would say itâs very convincing.  I would say the majority of the samples that we examined, they really were copies of notification messages that everybody gets throughout the course of using the internet and communicating with friends and family.</p>
+
+<p>JACK:	[MUSIC] These e-mails were meticulously crafted specifically for the target victims.  That much was certain, and it seemed like all of the victims were involved with researching Wirecard and exposing Wirecard, so the question was were the hackers within Wirecard sending these phishing e-mails, or who was behind this?  If you clicked on them, what would they do?  Weâll try to answer those questions after the break.  Stay with us.  The researchers at Citizen Lab got right to work investigating these e-mails.  They created a sort of sandbox computer which let them click the link, a safe place to allow them to what they call âdetonate the linkâ to see what happens.  When they clicked it, it took them to a site which asked for their login credentials.  Adam says the page looked pretty legit.</p>
+
+<p>ADAM:	When you click that link, the phishing site you land on knows who is coming and they can pre-load that text and pre-load that screen to make it look like â youâve already been signed into your Gmail; just re-enter your password for us.</p>
+
+<p>JACK:	Thatâs the goal, to get you to enter your password.  If these hackers could get the password to the victimâs e-mail, they would have access to the e-mail and be able to read what that person was working on and what theyâre gonna do next.  That was the intention of these phishing e-mails.  While John and Adam were looking over these e-mails, they noticed something about the phishing links.  Hereâs Adam.</p>
+
+<p>ADAM:	We took a look at an e-mail and sure enough, in there, we found some suspicious links that were shortened using a URL shortener.  That kind of sparked the investigation.</p>
+
+<p>JACK:	Hm.  A good example of a URL shortener is TinyURL or Bitly.  Basically, what they do is take a really long URL, something thatâs hard to type or memorize, and shorten it into something small and tidy.  When you click on the shortened URL, it redirects you to the longer URL automatically.  This makes it easier to share, but if youâre a hacker working with long phishing links, a URL shortener is a way to hide what the actual URL is, because you might be hesitant to click on a [MUSIC] website which is in another country or has some weird domain, but people use Bitly links all the [00:20:00] time, so itâs more common for us to see and therefore, we might click on it.  John and Adam started to dig into these shortened URLs to use by this hacking group.</p>
+
+<p>ADAM:	We started to peel them back and take a look.  Okay, where does this shortened URL come from?  Where was it residing?</p>
+
+<p>JACK:	Fortunately for Citizen Lab, this hacking group didnât use a commercial shortener like Bitly.  They used shorteners created with open-source software, and this particular software conveniently sequenced each shortened URL which was an amazing find for Adam.</p>
+
+<p>ADAM:	As we started to look closely and examine this publicly-available URL shortener, we learned that hm, interestingly, you could enumerate the different short URLs that were generated by this software.  So, thatâs what we did.  We started enumerating through the different short URLs that were already created and present hosted on the same shortener, the same site, if you will.</p>
+
+<p>JACK:	[MUSIC] Enumerating meant they could just add one more number to each URL and see the phishing URLs that the hacking team was sending out.  The link shortener software they were using was easy to step through every shortened URL that was ever made, which gave Adam and the team a massive amount of information related to this hacking group.  They were starting to collect enough information on this shady hacker group at this point, and they decided to give them a name.  Dark Basin was what Citizen Lab named this hacking group.  Adam and John and the team at Citizen Lab began walking through all of the shortened URLs, saving all of these pages to put in a sort of file that they were building on Dark Basin.</p>
+
+<p>ADAM:	We had to actually create scripts that would do this enumeration for us on a continuous basis.  We would wake up in the morning and just be faced with thousands of new phishing links, like, daily for quite a period of time.  Every day we were waking up to thousands and thousands of new phishing links and just this massive pile of information.  To me, personally, that was very exciting in the sense that we knew we were onto something very, very big here with that quantity of attack telemetry.  That was certainly, I would say from an investigative standpoint, the highlight to me.  It got us very hooked into the investigation and it really made it clear to us that thereâs definitely something worth the effort to uncover here.</p>
+
+<p>JACK:	E-mails were sent to victims with phishing links in them, but now Citizen Lab just uncovered a huge amount of those phishing links.  They didnât have the e-mails, but they could now see all the websites that they were trying to send victims to, websites that looked like logins to a victimâs account, but really werenât.  [MUSIC] Suddenly, they were able to see how wide this campaign was by looking through thousands of phishing websites and analyzing them.  But they wanted to take this a step further.  Adam had a plan.</p>
+
+<p>ADAM:	As we started to look at more and more of them, we were seeing that the operators of this shortener had encoded the targetâs e-mail address into that un-shortened URL.  This is where it really started to unravel.</p>
+
+<p>JOHN:	Yeah, so itâs a bonus when the threat actor provides a mechanism for the list of targets.  We just crawled all the shorteners that we could find; first, the ones that we found in this message, and then others that were linked to it with infrastructure analysis.</p>
+
+<p>JACK:	John and Adam found almost thirty different URL shorteners used by this Dark Basin hacking group.  They kept enumerating and pulling out long URLs, then extracting target e-mails.  They figured they could look up some of the targets online, try to uncover who these people were in real life.  Maybe this would shed some light on why they had been targeted in the first place which would lead to more clues about who Dark Basin is.  Surprisingly, their target database grew to thousands of e-mail addresses.  While one journalist and Matthew Earl were the victims that came to them with these e-mails to begin with, the team at Citizen Lab were uncovering that hundreds of people were actually being targeted by this same Dark Basin hacking group.  They could see that these hackers were targeting unique victims because e-mail addresses of the victims were in the phishing URLs.  Hereâs John.</p>
+
+<p>JOHN:	Just very quickly gave us the sense of a massive scope of targeting.  We went through the same analytical dance that I think most organizations do when they find a big threat actor which is like oh, this has gotta be Russia, right?  We found a government actor for sure because of all the targets.</p>
+
+<p>JACK:	Because this was such a big hacking campaign, it meant that whoever did this had interests in people all over the world in many different sectors.  Who would do that?  Possibly a nation state actor.  But you canât just say oh, itâs Russia, without evidence.  Itâs a decent theory, but we need proof.  They kept digging, analyzing the targets, building maps and clusters, like where the targets were in the world, and what kind of businesses do they work for, like, are they all journalists or do they all work in tech or something like that?  [MUSIC] [00:25:00] Any commonalities between targets can help paint this picture because then you start asking who would have an interest in hacking people like that?</p>
+
+<p>JOHN:	As we expanded out our digging, it became pretty clear that our targets were not just the bread and butter of a nation state actor.  I just say Russia as an example, but it wasnât just energy companies.  It wasnât just journalists.  It was like, people who appeared to be having semi-public divorces, random people or people who owned â two people who owned a house-building company somewhere.  It became pretty clear that because of the sheer variety of the targeting, it didnât make sense for this to be anything other than a bunch of different targeting requirements coming from very different kinds of players.  We began getting this sense like, oh, you know what?  This doesnât look like a government.  This looks mercenary.</p>
+
+<p>JACK:	Mercenary.  That would mean these hackers are for hire, and a bunch of different people all over the world have hired this hacker group to carry out different objectives.  Because theyâre seeing so many random targets, it must mean itâs coming from a hacker group who takes random jobs from random people.  This was a pretty good assumption, and sometimes you have to start with an assumption and work backwards to try to see if thereâs evidence backing it up.  John and Adam started going in this direction.  [MUSIC] They wanted to figure out who this hacking group was, what motivated them, and maybe most important; who was hiring them?</p>
+
+<p>JOHN:	That kind of discovery really shaped how we began approaching, which is we have to then understand okay, there are clusters of targets within here who will all be part of the same package that this group was paid to target.  We should take these groups and start engaging them, try to figure out why they might have been targeted, who might be behind it.</p>
+
+<p>JACK:	 This meant doing all that open-source intelligence-gathering, or OSINT, for short.  Theyâd have to crawl the web and do a digital investigation to figure out who the people were that were being targeted and if they were connected to other Dark Basin targets.  John says it took a lot of work.</p>
+
+<p>JOHN:	A couple of colleagues at the Citizen Lab spent â I donât want to say the best years of their lives, but they spent a substantial amount of time working with us to OSINT the shit out of all of these e-mail addresses to try to figure out who these people were and then to do clustering.</p>
+
+<p>JACK:	What they were trying to do is figure out if the targets had anything in common because if they found commonalities, [MUSIC] this could help define who the adversary might be.  As groups of targets started to take shape, Adam says there were some that bubbled up to the top.</p>
+
+<p>ADAM:	Early in this investigation I would say, there was a lot of targeting that was going at these financial clusters and the short sellers and the people who were investigating Wirecard; the journalists and so forth.</p>
+
+<p>JOHN:	Basically, everybody who reported on or was critical of the financial practices of Wirecard got targeted by this group over years and very extensively.  Some of those targets were in touch with the lab and were helping us track and understand the kinds of things that were hitting their inboxes.</p>
+
+<p>JACK:	Again, thatâs the cluster that included that British short seller, Matthew Earl, and the Reuters journalist who helped kick off this investigation.  But John says thereâs another clue which really got Citizen Labâs attention early on.</p>
+
+<p>JOHN:	We do an initial set of clustering.  Weâve got clusters who are in the financial sector and weâve got clusters who are kind of in politics that want international targets, and then one group really jumps out, and this is a whole bunch of American environmental NGOs with familiar names like Greenpeace and a bunch of others.</p>
+
+<p>JACK: 	Some of these other groups that were being phished were people who were involved with the Rockefeller Family Fund, the Climate Investigations Center, and the Center for International Environmental Law.</p>
+
+<p>JOHN:	It wasnât immediately clear why they were all connected.  There were a lot of them and it seemed to be â in some cases â some very specific people had gotten really heavily targeted, then there were people who were kind of one-step-away connected to them.  From what began as just desk research eventually wound up as like, me hopping on a plane and going and meeting with people and getting groups of people together to try to [MUSIC] figure out why on earth they were all being targeted at the same time.</p>
+
+<p>JACK:	John went to a conference at this point which was unrelated to this investigation.</p>
+
+<p>JOHN:	I was at a conference and doing the hallway track where you take a break from the sessions, and sitting at a little table.  This guy and a couple other people sit down at a table and people go around, do the introductions, and he introduces himself.  I have this holy smoke moment âcause he was one of the targets.</p>
+
+<p>JACK:	John was sitting face-to-face with one of the people he had been investigating for quite a while, a victim of this phishing campaign.  At a large conference like this, it was just sheer luck to run into this guy.  But John didnât want to say anything in front of everyone at this table, so John got his business card and then called him up later, and things really snowballed from there.</p>
+
+<p>JOHN:	It was [00:30:00] from that initial connection that I pulled together meetings with these organizations, so one of the first pieces of feedback that came back was like, oh, we knew something was going on.  We had this feeling.  Some of the organizations had kind of a memory of getting a lot of weird e-mails.  Some of the people were sort of like, I feel like Iâm under attack.  Well, link them all together, is that they were all doing advocacy on a campaign called the ExxonKnew Campaign.</p>
+
+<p>HOST:	[MUSIC] Guess who knew about climate change decades before most people had even heard of it; Exxon Mobile, one of the worldâs biggest oil companies.  They knew this from their own research back in 1977.  Ironic, âcause now theyâre one of the leading opponents of climate change science.</p>
+
+<p>JACK:	This ExxonKnew Campaign involved a bunch of environmental groups that alleged that Exxon knew about climate change but lied to the public about it.  The gist is that this deception strategy helped Exxon make billions of dollars while slowing the response to climate change.  ExxonKnew compares to what Big Tobacco did in the â90s which was misleading people about the harmful effects of smoking.  For some reason, all these environmental groups that were against Exxon were getting phished big-time, and probably hacked.  For John and Adam, their new acquaintances were a way to get more data on Dark Basin.  They coached them up to look for phishing e-mails past and present, and put them in a timeline of attacks.</p>
+
+<p>JOHN:	[MUSIC] One of the most remarkable things that came out of our digging was that there was this private e-mail thread that had made its way into the US press and some articles that were critical of the campaign; ultimately, sort of accusing these organizations of somehow conspiring to make the oil industry look bad.</p>
+
+<p>JACK:	This e-mail thread had an agenda for an early meeting between ExxonKnew organizers.  It included peopleâs names and e-mail addresses in the header.  It outlined a group of goals for de-legitimizing Exxon, like devestment and potential media campaigns.  The leak popped up in the news cycle, and Exxon also posted it to their website with a bunch of information about ExxonKnew.  They used it as evidence that activists were leveraging the press and public officials to damage the company.  But for John and Adam, the leak was important because of how it matched up with their timeline of Dark Basin phishing against ExxonKnew.</p>
+
+<p>JOHN:	What was fascinating is that when we timelined some of that stuff, some of that â we could say, leak-flavored product against the phishing, it became clear that [MUSIC] this was this big wave of phishing that happened and then stopped right before that leak material was made public.</p>
+
+<p>JACK:	They noticed another wave a few months later.  The New York Attorney General who had launched a yearâs long investigation into Exxon made a court filing that accused Exxon of misleading investors about how it accounted for climate change risks.  Dark Basin phishing e-mails rained down on ExxonKnew members after the filing.  Wirecard and ExxonKnew offered a ton of circumstantial evidence that showed that the Dark Basin hacking group was trying to hack the people who were actively exposing these companiesâ wrongdoing.  But John and Adam found that Dark Basin went way beyond these two stories.  Their spread was massive.  They hit government officials, political candidates, financial firms, pharmaceutical companies, advocacy groups, and smaller targets like divorce cases.  Itâs alarming how wide their reach was, but all this data was being collected by Citizen Lab to try to understand who Dark Basin was.  John and Adam had loads of historical data and theyâd regularly get new stuff rolling in.  The trail was never really cold.</p>
+
+<p>JOHN:	There would be a moment where weâd just be like oh, man, we got nothing.  Weâre no longer â we have all this retrospective stuff but we canât track them today.  Then, as often as not, a target would get in touch and say hey, I just got this e-mail today.  Here you go, and there would be our next piece of infrastructure and we would claw back some visibility.</p>
+
+<p>JACK:	Which was important because John and Adam were still trying to figure out who was behind Dark Basin and where they were.  We can start kind of with youâre â trying to figure out whoâs doing this.</p>
+
+<p>JOHN:	Yeah, so this was an interesting challenge for us because we got to the mercenary part long before we figured out who the sort of mercenaries were in this case.</p>
+
+<p>JACK:	Fortunately, John and Adam had some help with their investigation into these mercenaries, some additional clues to help guide them.  [MUSIC] They collaborated with NortonLifeLock which is a security application, and they were also tracking Dark Basin, but they called this group Mercenary.Amanda.  There was this other report from the Electronic Frontier Foundation.  Back in 2017, EFF had identified an advanced spear phishing campaign that attacked internet freedom advocacy groups.  The attackers sent out legit-looking e-mails asking people to go to Google, Dropbox, and LinkedIn to log in.  If they did, [00:35:00] it would steal their login credentials.  Sounds familiar, right?  EFF figured out that whoever was running the attacks was probably working out of an office in a particular timezone.  John says they saw that, too.</p>
+
+<p>JOHN:	We began spotting all of these different things that started pointing to a particular player.  The first thing that really clued us in was that the timing of the attacks appeared to fit the time frame of Indiaâs timezone.</p>
+
+<p>JACK:	India is a big country, but it only has one timezone, India Standard Time, which is GMT+5:30.  What John and Adam saw was that the attacks happened within what would be a typical work day in India.  They also saw that India Standard Time was stamped into some of Dark Basinâs phishing code.  But some threat actors put in fake clues to throw people off, and so itâs possible they faked the timezone in the code and purposely were active during business hours in India to hide themselves, but the Indian connection didnât stop with the timezone.  Adam says the names of the URL shorteners were another clue.</p>
+
+<p>ADAM:	As we tracked these URL shorteners, they were using an open-source shortening software and that software, one of the things that it had was a web UI, like a web front end.  They had given them titles, and the titles in several cases reflected things that had cultural significance in India.</p>
+
+<p>JACK:	A couple were named after important events like Holi and Rongali.  Adam says they came across even more helpful information because Dark Basin didnât do much to cover their tracks.  They left stuff out in the open sometimes.</p>
+
+<p>ADAM:	We also were able to collect log files from the credential phishing websites.  They just left them there, left them open.</p>
+
+<p>JACK:	In these log files, John and Adam could see Dark Basin hackers running tests to make sure their phishing code worked.  The IPs running these tests were from India.</p>
+
+<p>ADAM:	But there were other cases where they worked, where they were â youâd have a test with a VPN and then right away, the same link would have been tested again, but it was actually coming from an Indian-based broadband provider.</p>
+
+<p>JACK:	This was another piece of the pie.  They had the timestamps, the URL shortener names, and now IP addresses all linking this to India.</p>
+
+<p>ADAM:	We had these pieces falling into place that were suggestive; each piece was another little bread crumb suggesting operators working out of India.</p>
+
+<p>JACK:	To me, at least, all this information Citizen Lab was collecting from their investigation was really impressive.  I wouldnât have thought to try to enumerate the URL shortener or even look to see if there were log files visible in the phishing websites.  But with all this information, Citizen Lab now had an idea of where Dark Basin was.  But they were still hunting for the who.</p>
+
+<p>JOHN:	[MUSIC] Then we get â we get sort of the next layer of clues.</p>
+
+<p>JACK:	John says Dark Basin hackers made some glaring errors when testing their phishing kits.</p>
+
+<p>JOHN:	What really caught our attention is that the operators didnât just do some tests.  Their compartmentation was not great.  Where it got really interesting is that in some cases, to test out things, operators would share stuff that might be more personally relevant to them on the shorteners.</p>
+
+<p>JACK:	See, since the hackers set up this URL shortener, they actually used it to send links between each other.  In one case, a Dark Basin hacker shared a link with another Dark Basin hacker which took them to a shared drive, and that had a resume or a CV there.</p>
+
+<p>JOHN:	The CV described a bunch of skills and responsibilities like information-gathering about target, create phishing page and campaign for target, e-mail investigation, e-mail tracking.</p>
+
+<p>JACK:	Of all the things a hacker could share to test their phishing kit, these guys shared something personal.  It was a job description that seemed to look a lot like what Dark Basin hackers were doing.  Because of this CV, Citizen Lab had somebodyâs name and the name of a company in India they worked for.  John looked the guy up.</p>
+
+<p>JOHN:	The guy, when we looked at him, listed his job description as a penetration tester for a company called BellTroX InfoTech Services.  It didnât end there.  We also found another person who also listed his employer as BellTroX InfoTech Services posting online on a message board.</p>
+
+<p>JACK:	This other guy was offering up more than just a job description.  He was sharing company secrets, pulling back the curtains.</p>
+
+<p>JOHN:	Heâs like hey, let me show you this cool technique that Iâve got.  Look at these swank-looking phishing pages that Iâve generated.  The screenshots included the infrastructure that belonged to this operation.</p>
+
+<p>JACK:	[MUSIC] These employees were evidence that BellTroX, a company based in New Delhi, was into phishing and probably hacking, too.  John and Adam dug deeper.</p>
+
+<p>JOHN:	BellTroX had a web presence [00:40:00] and the web presence described them as doing penetration testing, certified ethical hacking, and also medical transcription, and a couple of other strange activities.  In the marketplace for e-mail compromise, certified ethical hacking and penetration testing are unfortunately often used as code language for âweâll hack inboxes for you.â  We were never able to find out whether they actually did do medical transcription, but it seemed like a clever front for their real activity.</p>
+
+<p>JACK:	Was that real activity being Dark Basin a massive hack-for-hire mercenary outfit?  John says BellTroX left a lot of incriminating info out there in the open.</p>
+
+<p>JOHN:	One of the things that made this investigation possible is that BellTroX was noisy.  Their people had a lot of stuff that were publicly exposed.  This meant that they would do things like post online.  They had LinkedIn pages with likes and that often described exactly what it was that they did, [MUSIC] like e-mail hacking and penetration.  The LinkedIn profiles ranged a bit, but some of the guys looked like they had been at this game for a while and they had profiles, pictures of hacker types with sunglasses and binary streaming by in the background and goofy e-mail addresses with 007 in them, offering all kinds of wares.  Then others seemed a bit more professionalized.  It was very clear that some of the people who worked at BellTroX were offering what were clearly illegal services.</p>
+
+<p>JACK:	This wasnât a case of a few bad apples in an otherwise innocent IT company.  BellTroXâs history of illicit activities went all the way to the top to the guy running the show; Sumit Gupta.  John says Sumit Gupta has a history in the hack-for-hire business.</p>
+
+<p>JOHN:	The owner of BellTroX has been indicted and charged and is currently a fugitive from justice in the US, but not because of this latest case, but because thereâs an earlier set of cases where he was part of a group working with American private investigators to do exactly the same kind of activity.</p>
+
+<p>JACK:	The prior case offers important insight into understanding Sumit Gupta, the work that BellTroX was doing, and where their clients were coming from.  But to understand this, weâve got to turn back the clock to 2012.  Itâs a time before NortonLifeLock and Citizen Lab were tracking Dark Basin at all, and before the EFF reported about an advanced spear phishing campaign.  Back in 2012, there were two competing American companies that sold nutritional supplements.  One was named Visalus and the other was named Ocean Avenue.  Some of Visalusâ distributors had signed on with Ocean Avenue, so Visalus sued, accusing the distributors of violating a non-compete agreement.  Amid the ensuing court battle, Visalus hired two private investigators to look into Ocean Avenue.  They wanted information to bolster their case, but things went a little too far.  The private investigators hired hackers to break into Ocean Avenueâs computers which was totally illegal.  One of the hackers was Sumit Gupta.</p>
+
+<p>[MUSIC] These guys successfully got into Ocean Avenueâs computers, but their operation came unglued.  One of the hackers got cold feet and confessed to one of the targets.  This led to a 2015 federal grand jury indictment which named five members of the scheme and charged them with ten counts related to conspiracy, accessing protected computers, and intercepting electronic communications.  Everyone but Sumit, who was believed to be in India, pleaded out.  The two PIs and their Visalus contact were sentenced to probation.  The hackers who had fessed up actually had a prior record and were sentenced to three years in prison.  Sumitâs case was turned into a fugital criminal one.  The FBI got in touch with their New Delhi branch, but Sumit remained at large.  Itâs been eight years since Sumit was known to be involved in this hack-for-hire scheme with the Visalus case.  It seems like heâs been busy, too.  Sumit has taken this model of working with private investigators to the next level.  The PI thing is something John says they saw with BellTroX.</p>
+
+<p>JOHN:	One of the things that we learned pretty quickly is that BellTroX and their people would openly solicit online.  One of the big audiences that they seemed to be targeting was American and Western private investigators, offering all kinds of e-mail based targeting services with, in some cases, coded language and in other cases just saying exactly what they would do for you.  Their pages had endorsements from hundreds of Western private investigators.  It doesnât take a very sophisticated person to feel that thereâs something off about this company.  It led to this question; why have all these private investigators vouched for this random Indian medical transcription/penetration testing company?  Imagine if a private investigator is hiring a bunch of hackers; theyâre not gonna splash it all over the place which is why it was so [00:45:00] interesting that private investigators did still feel comfortable vouching for these guys on LinkedIn.</p>
+
+<p>JACK:	This was a big, loud clue along with the others that something wasnât right with this company, BellTroX.  This supposedly innocent Indian company was up to something, although the PI thing kind of makes sense, right?  Thereâs a vast network of professional investigators out there.  Why not tap into their market and position yourself and services as a go-to tool in their toolbox?  Forget the legalities.</p>
+
+<p>JOHN:	[MUSIC] It made us think that maybe the kind of practice that BellTroX is engaged in is not that uncommon in the field of private investigations.  Subsequent discussions with private investigators and others has made it clear that is the case, and that a lot of PIs do use this kind of service as part of their investigations.</p>
+
+<p>JACK:	Hereâs something else to support that; Sumit Gupta has a Pod.io profile still up on the internet.  Heâs listed as Sumit Vishnoi, one of his known aliases which is also in his court records.  His profile says heâs with BellTroX which is described as a cyber-intelligence company.  The clients heâs interested in are private investigators, corporate lawyers, corporate investigators, corporate firms, celebrities, and politicians.  Thereâs nothing about medical transcription.  Itâs pretty clear that he and BellTroX were interested in and hooked in with private investigators.  But what remains unclear is who mightâve been on the other end of this client chain.  Who hired the PIs?  Thatâs hard for Citizen Lab to say.</p>
+
+<p>JOHN: 	The challenge for us is to apply the same level of rigor to all of our investigative pieces, and there are pieces that can be seen about these groups and pieces that are not seeable by us.  For example, itâs very likely the case that anybody who is a big company who hired BellTroX may have done it through layers.  Maybe they hired a law firm who hired an investigator who hired an intermediary who hired BellTroX.  We donât really know.  Itâs very hard to make statements like so-and-so hired so-and-so, even.  We want to be careful to get these things right.</p>
+
+<p>JACK:	Citizen Lab doesnât have hard evidence on somebody like Exxon or Wirecard directly hiring BellTroX or even having it done through a middle-man.  What they can see is that there were all these phishing attacks on sets of targets, and they have a lot of circumstantial evidence linking those attacks.  You never know for sure when it comes to this, so all you can say is that you have a high confidence in your assessment.</p>
+
+<p>JOHN:	Our mental model for what goes on is that private investigators hire BellTroX to gain access to material that could then be used in all sorts of different ways.  It could be leaked to the press, it could be used in a legal dispute to apply leverage, it could be about figuring out an opposing partyâs strategy in something political.  Indeed, we think we felt evidence of all those things.</p>
+
+<p>JACK:	When looking at the big picture of this hack-for-hire scheme, John says the motivations seemed different than other types of attacks.</p>
+
+<p>JOHN:	What this really showed us was that there is a very large industry that does this and that pretty much wherever you scratch, whatever vertical youâre looking at, a component of the hacking that large organizations and small organizations face is this kind of stuff which is different than ransomware.  Itâs different than business e-mail compromise.  Itâs different than CEO fraud.  Itâs just part of the complete breakfast of bad stuff that maybe points at an organization.  Whatâs different about this from some of those other cases, that the motivations here do not appear to be primarily financial.  Theyâre not trying to get into bank accounts.  Theyâre not trying to trigger wire transfers.  Theyâre looking for, in some ways, the even more valuable commodity which is a commodity thatâs directly beneficial to the adversary of a company which is real different than a parasitic commercial operation trying to steal a bunch of money.</p>
+
+<p>JACK:	In their report, Citizen Lab calls large-scale hacking operations like Dark Basin a threat to democracy.  They say itâs a tool for the powerful and can be used to attack people who canât defend themselves.  Itâs a brazen approach that really stood out to Adam.  He says the way BellTroX went about their business was shocking.</p>
+
+<p>ADAM:	From my perspective, this kind of activity coming from an organization that â it has the public face; like, BellTroX is a company.  Theyâre out there.  Theyâre publicly advertising services in and around this sphere, and theyâre out there operating completely in the open.  To me, thatâs just even more egregious than what we know is out there.  For example, on the dark web, you know that there are contractors and people working piecemeal to selling services of this kind, of hacking e-mail and hacking social media accounts and so forth, sort of onesie-twosie style.  But having a company basically existing in public and operating like this is especially egregious.</p>
+
+<p>JOHN:	[MUSIC] Yeah, to build on what Adamâs saying, thereâs another problem which is it doesnât look that different from some of the other kinds of phishing that companies face where they just look at it [00:50:00] and theyâre like, okay, caught this, right?  Caught the doing business.  But the risk behind this is in some ways a lot greater because itâs part of a package of things, right?  The targeting doesnât end with the successful exfiltration of an e-mail.  It would end with the successful use of the information in that e-mail to harm somebody, a company, to harm a reputation.  Very different stuff, but on the initial technical end, it kind of looks the same.  Weâve also gotten the sense that big platforms are just starting to really come to terms with how bad the problem is.  We know that Google, earlier this year, for the first time in one of their publications from the TAG Group, theyâre talking about this.  We hope to see other big platforms taking these groups seriously and adding them to their list of threat actors that need to be constantly tracked and mitigated against.</p>
+
+<p>JACK:	Keeping tabs on such a big operation takes a lot of committed organizations like the Google Threat Analysis Group that John just mentioned.  Yet in the end, a lot of these groups can only go far because like Citizen Lab, theyâre using open-source methods.  They canât hack BellTroX to get hard information.  Thatâs illegal.</p>
+
+<p>JOHN:	I think one of the challenges with a group like this though is that thereâs only so much that researchers â whether itâs like NortonLifeLock or Citizen Lab â we can actually do once we get to that â the front door of an enterprise and then maybe the personal postings of people.  Part of what was very important in this case was that there was a criminal investigation that got kicked off because those investigations have access to legally-authorized resources that we just donât.</p>
+
+<p>JACK:	See, this brings us back to the whole good versus evil thing.  Adam and John at Citizen Lab will only investigate this up to what theyâre legally allowed to do.  Theyâre not gonna break the law to figure this out, yet whoever is behind Dark Basin apparently has no problem breaking laws by hacking into their victimsâ accounts.  I think Dark Basin is evil, but theyâre just the weapon here.  Whoever is hiring them is the real villain here, right?  But when you break down good and evil, things turn gray really fast.  Because, suppose Wirecard or Exxon did hire Dark Basin to spy on journalists and activists.  The executives in those companies probably saw the journalists and activists as being the evil people trying to wreck the company.  The decision-makers were trying to protect the company they worked for because in their eyes, the company is great and worth fighting for, and thereâs a lot of shareholders who also believe in the company.  I donât know.  Iâm trying to find a way that the evil side has an out here, but Iâm struggling.</p>
+
+<p>I just donât see that whoever hired Dark Basin to hack peopleâs accounts was acting in good faith or had any morals or integrity, because if I saw activists or journalists exposing crimes my company committed and I felt that my company was great and worth fighting for, I think the right thing to do would be to investigate the crimes and to put a stop to them, repair what was done wrong and not silence the news about it or threaten people just so I could keep getting away with breaking the law.  At the request of some of the targets they were working with, Citizen Lab got in touch with the US Department of Justice who started a criminal investigation.  So far, a guy named Aviram Azari has been indicted and arrested for engaging in a hack-for-hire scheme.  A lot of the stuff in the indictment sounds pretty familiar at this point.  Aviram is an Israeli private investigator.  Heâs charged with conspiring with others to hack computers.  He allegedly exchanged e-mails with an unnamed co-conspirator who said he had a team of sophisticated developers that could break into e-mail accounts.  Aviram was invited to India to meet with the senior management of this organization which to me sounds like it could be BellTroX or Dark Basin.</p>
+
+<p>This June, Citizen Lab released their Dark Basin report, and it was widely covered by the press.  Reuters was able to interview Sumit Gupta, but he denied any wrongdoing.  He said all he did was help private investigators download e-mails after they gave him login information.  He added that he was just providing tech support.  Although heâs been a fugitive in the US since 2017, it appears heâs still at large in India.  The Citizen Lab report also prompted responses from some of the companies like Exxon and Wirecard.  To be clear, the report didnât accuse them of anything.  In a New York Times article, an Exxon spokesperson said the company didnât know of any involvement with this specific hacking group identified in the Citizen Lab report.  Wirecard also told the Financial Times that they didnât have anything to do with this hacker group in India.  But coincidentally, Wirecard tanked not long after this Dark Basin report came out.</p>
+
+<p>JOHN:	[MUSIC] Whatâs interesting is that not long after our report dropped, it became clear that there were very serious problems with financial management at Wirecard.</p>
+
+<p>JACK:	[00:55:00] The timing was total coincidence, but in June 2020, things did go sideways at Wirecard.  Journalists and short sellers like Matthew Earl for years had accused Wirecard of financial wrongdoing, but the company had strongly defended its position, saying that its critics were colluding to bring them down.  In the years after Matthew Earlâs report came out, Wirecardâs stock had actually gone up and Matthew had to unload his short position.  But according to The Wall Street Journal, this year, an audit came back saying Wirecard was missing over two billion dollars in money.  The fallout was quick.  On June 5th, Wirecard headquarters in Germany was raided by prosecutors and police.  CEO Markus Braun was arrested and the COO, Jan Marsalek, had vanished.  By the end of June, Wirecard had filed for insolvency; unable to cover its debts.  John says the collapse of Wirecard and the Citizen Lab report are a welcome atonement for some.</p>
+
+<p>JOHN:	It was a very quick and sort of coincidental turn of events that our reporting happened just before that, but it does have the feature of vindicating the targets who for years had been saying look, thereâs something wrong with this company.</p>
+
+<p>JACK:	That was a big deal for Matthew Earl.  He had been harassed with surveillance, legal letters, and phishing e-mails for years.  It had been going on for so long, it just became normal for him.  He was relieved when the Citizen Lab report came out linking the phishing to BellTroX.</p>
+
+<p>MATTHEW:	There was a vindication to it as well and also, it made it easier to tell people about this whole affair, because if you were to tell someone that thereâs a German bank thatâs had you under surveillance for several years and theyâre operating â theyâve got an approach where theyâre trying to hack into your e-mail and discredit you, then youâd sound a bit like a conspiracy nut despite the fact that itâs all true.  If youâve got a reputable organization such as Citizen Lab that is able to highlight this and to add credibility to that, then thatâs incredibly helpful in able to â in being able to tell people about it and describe your experience, and know that actually yes, it is true, and you havenât made it all up.</p>
+
+<p>OUTRO:	[OUTRO MUSIC] A big thank-you to Matthew Earl, Adam Hulcoop, and John Scott-Railton for sharing this incredible story with us.  You can learn more about Citizen Lab at citizenlab.ca.  As always, you can visit darknetdiaries.com to see additional links and information, as well as original artwork I make for each episode.  Speaking of artwork, Iâve been busy making tons of designs into t-shirts.  You gotta check out the shop which has dozens of shirts right now, and Iâm sure youâll find a design you will love.  Visit shop.darknetdiaries.com and of course, I ship worldwide.  This show is made by me, the karate skid, Jack Rhysider.  Sound design and original music created this episode by Garrett Tiedemann who probably dreams in music.  This episode was produced by the outdoorsman, Charles bolstere, and editing help this episode by the dream-weaver, Damienne.  Our theme music is by the advanced persistent beat known as Breakmaster Cylinder.  Even though Iâm in security, it doesnât mean Iâm insecure.  This is Darknet Diaries.</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

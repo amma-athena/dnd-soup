@@ -1,0 +1,533 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>Black Duck Eggs â Darknet Diaries</title>
+	<meta name="description" content="Ira Winkler's specialty is assembling elite teams of special forces and intelligence officers to go after companies. Ira shares a story about a time he and his team broke into a global 5 company. A...">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Black Duck Eggs â Darknet Diaries">  
+	<meta name="twitter:description" content="Ira Winkler's specialty is assembling elite teams of special forces and intelligence officers to go after companies. Ira shares a story about a time he and his team broke into a global 5 company. A...">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/blackduckeggs.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/21/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Black Duck Eggs â Darknet Diaries" />
+	<meta property="og:description"        content="Ira Winkler's specialty is assembling elite teams of special forces and intelligence officers to go after companies. Ira shares a story about a time he and his team broke into a global 5 company. A company so large that theft of intellictual property could result in billions of dollars of damage. <br><br>Ira's consulting company: <a href='http://www.securementem.com/'>Secure Mentum</a>.<br><br>His books: <a href='https://www.amazon.com/gp/product/0764584685/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0764584685&linkCode=as2&tag=tunn01-20&linkId=8f8a26b3c5fe68e6c8913ceea8adb0f5'>Spies Among Us</a>, <a href='https://www.amazon.com/gp/product/0128093161/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0128093161&linkCode=as2&tag=tunn01-20&linkId=ac08090c6d15b5ad2c77789fbcf50d56'>Advanced Persistent Security</a>, <a href='https://www.amazon.com/gp/product/0895263904/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0895263904&linkCode=as2&tag=tunn01-20&linkId=63e40c57a8bf8f04f077f55d6ed21455'>Through the Eyes of the Enemy</a>. " />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/blackduckeggs.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/21/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/blackduckeggs.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/21/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="Black Duck Eggs â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/blackduckeggs.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 21: Black Duck Eggs</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://traffic.megaphone.fm/ADV9980377945.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/21/",
+			   "title": "Ep 21: Black Duck Eggs"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/21">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[FULL TRANSCRIPT]</p>
+
+<p>JACK:	A lot of hackers act alone, do it solo, and treat it like an art form.  They plan their attack, feel for what to do next, attempt to exploit the system.  They rely on their intuition to conduct a hack but Ira does it differently.
+<!--more--></p>
+
+<p>IRA:	I specialize in putting together teams of former Special Forces and intelligence officers to go after organizations.</p>
+
+<p>JACK:	Ira is methodical, follows a playbook, and works with highly trained people.  The jobs Ira does are bigger than what one person is capable of.  He needs a crew of specialized people, each one with a different mastery of their craft.  Heâs assembled one of the most elite hacking teams in the country.  Each member is incredibly skilled.  They rely more on their training and what steps are required to accomplish the task and less on intuition.  The plan of attack is structured and methodical.</p>
+
+<p>IRA:	Yeah.</p>
+
+<p>JACK:	Think of it like Oceanâs Eleven.</p>
+
+<p>IRA:	I donât even want to call it Oceanâs Eleven âcause thatâs kind of amateurish hours.</p>
+
+<p>JACK:	This team is about to embark on a mission where over a billion dollars are at stake.</p>
+
+<p>IRA:	The first time you steal a billion dollars, itâs a bit of a rush.  After youâve done this so many times, itâs almost expected.</p>
+
+<p>JACK (INTRO):	[INTRO MUSIC]  These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	Iâve been told that some of my listeners are nine year olds.  Crazy, huh?  So hey, whatâs up, kids?  But because of this Iâm gonna have to give warnings as needed and in this particular episode it does have bad language.  Sorry, kids.  Youâve been warned.  I want you to meet Ira Winkler.</p>
+
+<p>IRA:	Hey there.</p>
+
+<p>JACK:	Eight years ago I heard Ira talk at a security conference and he blew me away.  Itâs one of those talks that Iâll never forget and Iâm very excited to be able to talk to him again because he leads a very interesting life.  Ira looks at the world differently than you or I.  Heâs quick to see a vulnerability either in a person or a building or a computer and exploit it.  Heâs good at this because of his background.  He was fascinated early on by the human brain so he got a college degree in psychology.  After getting a degree he had a hard time finding a job.  He thought maybe the US government would hire him so he took their aptitude test.</p>
+
+<p>IRA:	Did really well; basically, if I got a clearance I got a job.  I got the clearance.  They said wow, you have really good computer aptitude.  You want a computer internship?  Iâm like no, I hate computers.  I want nothing to do with them.  Theyâre like, what about cryptanalysis?  Itâll be like playing games.  Iâm like I donât want to look at ones and zeros all day.</p>
+
+<p>JACK:	But he didnât see any better option.</p>
+
+<p>IRA:	Finally I took a job as an Intelligence Analyst for the National Signals Intelligence Operations Center which was known as NSTOC which was the only room that actually looks cool in NSA.</p>
+
+<p>JACK:	Part of this job was to decipher encrypted messages.  This is called cryptanalysis.  Here within the walls of the NSA he was learning about computer security.  He was understanding what encryption is secure and what isnât in a very real world, hands-on way.  He taught himself how to program to do his job better butâ¦</p>
+
+<p>IRA:	Ironically I hated cryptanalysis.  I hated computers.  My first technical computer job was programming super computers to do cryptanalysis so that was bizarre.</p>
+
+<p>JACK:	He eventually moved to another department, this time doing research and development for a tactical signals intelligence.</p>
+
+<p>IRA:	Itâs where I was running around Europe helping people in little green trucks do stuff.</p>
+
+<p>JACK:	Do stuff.  Ira is secretive about what he did at the NSA because he has to be.  The Signalâs Intelligence is collecting information from the enemy and the enemies are everywhere.  Thereâs always a threat [00:05:00] brooding somewhere, possibly in other countries planning an attack on us, or terrorist groups meeting to discuss their next steps.  Signalâs intelligence is knowing what the enemy is up to.  You do this by finding where they are and then figure out a way to intercept those conversations.  While running around in Europe helping people in little green trucks, Ira became more worldly and started to learn how spies operate.  But eventually he left the NSA and joined a contracting company.  He did various IT tasks but then one day a new contract job was given to him.</p>
+
+<p>IRA:	They were like well, we have a contract to find out as much about the company as possible without breaking into their computer systems.</p>
+
+<p>JACK:	Basically the contract was to use social engineering against an investment bank to see if he could get access to it.  Now keep in mind this is the early 90s so not a lot was known about social engineering at the time.</p>
+
+<p>IRA:	I just started going ahead and basically, my intelligence background â having worked in NSA, working with a bunch of other intelligence agencies along the way and stuff, I just used essentially basic human elicitation techniques to lie to people over the phone.</p>
+
+<p>JACK:	Human elicitation is the act of getting someone to tell you a piece of information.  With his experience and intelligence-gathering at the NSA and being a psychology major, Ira took an interest to this and did pretty good at getting people to tell him information they shouldnât be telling him.  For instance, he might start out by simply asking an employee for a phone number and getting it, and then slowly asking for more and more stuff until he has a whole phone directory.  Eventually the personâs giving him loads of information that they shouldnât be giving him.</p>
+
+<p>IRA:	Iâd get them to slowly give away information and then I started getting lots of login IDs and passwords.  I even got the investment bank to send me a computer preconfigured for their VPN.  That was fun.</p>
+
+<p>JACK:	Getting people to tell him information they shouldnât be telling him came naturally and he realized he was good at this.</p>
+
+<p>IRA:	By the end of three days I had supposedly used their IDs and logins to make financial transactions.</p>
+
+<p>JACK:	By using just a phone and his wits, Ira was eventually able to take over the bank.  He gave a talk at a security conference and wrote an article about how he did this.  People responded in ways he didnât see coming.  They were so impressed with his methods and abilities.</p>
+
+<p>IRA:	Then when it got really well-publicized and people started coming to me to do weirder and weirder stuff, they were like well, we want you to come into our company as a temporary employee and rob us blind.  So I did.</p>
+
+<p>JACK:	Thatâs how Iraâs career got started as a social engineer and penetration tester.  He was paid to test whether he could access places he shouldnât be allowed to access, or get information he shouldnât be allowed to get because this is what bad guys will try to do and companies wanted to protect themselves.  As the jobs got weirder and weirder he got better and better at gaining unauthorized access.  He eventually started getting so many jobs that he started his own security consulting company.  [MUSIC]  But hereâs where things get totally crazy.</p>
+
+<p>Ira has a background in national intelligence and is very familiar with how spies operate.  Like, real military-trained spies.  He met many of them at his time working for the government so when he started doing his own penetration testing he would ask some of his spy friends to help him on certain missions.  Over time Ira was able to build a crack team of highly trained special agents to help him break into buildings and steal information.  Ira started taking on bigger jobs and using his crew to get into some of the most secure buildings, buildings such as nuclear reactor facilities and banks.  Ira became known as one of the best to hire to do penetration testing because he brings a team like nobody else can.</p>
+
+<p>IRA:	I like to call them more espionage simulations.  I specialize in putting together teams of former Special Forces and intelligence officers to actually go after organizations like real high-level adversaries would.</p>
+
+<p>JACK:	Yeah.  The media has called him the modern-day James Bond.  Depending on the job, heâll put together an elite team for the task.  For instance, thereâs Stu.</p>
+
+<p>IRA:	Stuâs a former Navy seal.</p>
+
+<p>JACK:	Heâs extremely fit, agile, tactical, and has years of training in espionage and raiding.  Yeah, raiding.  He knows where to look for weak points in a structure, knows how to use a grappling hook, and heâs good at going undetected by security.  He helps Ira whenever thereâs a need for physical intrusions.</p>
+
+<p>IRA:	Stu has an innate nature.  Frankly one time, he took advantage of a situation much quicker than â Iâm mad at myself I didnât do this.  But we were once in a security room having our pictures taken for badges and the guard walks out.  Heâs like Iâve got to go to the other room and pick up the badges.  Stuâs like, Ira, lean against the door for a second.  So I go lean against the door.  Stu goes behind the desk and pulls up a bunch of blank badges, like valid security badges, and grabs them.</p>
+
+<p>JACK:	These are some of the things Ira tests for.  Him and Stu look for physical vulnerabilities like this and report them.  [MUSIC]  Then thereâs Tony.</p>
+
+<p>IRA:	Former Army counterintelligence officer.</p>
+
+<p>JACK:	Tony has been trained to look for threats against his [00:10:00] country.  Heâs good at collecting this information by using traditional spying techniques; gaining physical access to a building, stealing documents, or simply doing social engineering.</p>
+
+<p>IRA:	Tony is also good on the physical side but we primarily used him for the telephone social engineering.  He would be an intelligence specialist in human intelligence.  He was trained in counterintelligence so he would know how to conduct interviews, he would know how to elicit information, and so on.</p>
+
+<p>JACK:	Tony has been trained to follow a process to get someone to divulge information that would in essence, betray their own country.  Heâs tricky and clever and extremely good at what he does.</p>
+
+<p>IRA:	Thereâs a process of establishing a relationship and elevating the relationship to the point where you get people to slowly divulge non-important information to where you slowly raise the stake of what level of information they give out âtil at some point theyâre pretty much over the hump and theyâre screwed.</p>
+
+<p>JACK:	Tony comes across as a nice guy in every man, someone who you might think as a good, wholesome gentleman.  Heâs calm and courteous which comes in handy when youâre trying to get information from every day, normal people who might not even know they have valuable information to divulge, like say, the front desk receptionist.</p>
+
+<p>IRA:	He has this nice â you know, just a slow speaker.  Heâs kind of like you expect to see when youâre driving through Kansas and stop to ask for directions.  You would swear he was a good old country boy.</p>
+
+<p>JACK:	Then thereâs Stan.  Stan is kind of my favorite.</p>
+
+<p>IRA:	Stan was a Colonel in the GRU before he defected over.</p>
+
+<p>JACK:	The GRU is Russiaâs foreign intelligence agency similar to the CIA.  Theyâre often trained to follow spies or be deployed in foreign lands and collect information.  Stan has extensive training in intelligence-gathering.</p>
+
+<p>IRA:	Stanâs background, besides him being a Russian operative, his primary target while he was in the GRU was against China.  He speaks fluent Mandarin.  He also reads Chinese and all that before he came to the US where he was obviously focused on targeting US intelligence-type stuff.</p>
+
+<p>JACK:	Stan came to the US to collect data on US government and report it back to Russia.  Heâs a masterful spy.  He would often go to Washington DC and hang out in bars.  Heâd ask someone for a cigarette and start a conversation.  Heâd learn they work for a government agency; no surprise in Washington DC.  But over time Stan would build trust with that person and get them to divulge government secrets.</p>
+
+<p>IRA:	Stan was referred to me as one of the most successful GRU agents targeting the US in history.  Stan literally gets people to betray his country under penalty of death, which is a different level of social engineering than getting somebody to give up a password.  We use him to target an organization the way a real foreign operative would, because everybody thinks of spying like James Bond but the actual traditional espionage is done by spies like Stan.  What they try to do is they try to find access to people with information and get them to divulge it either knowingly or unknowingly to him.  This is kind of like, I donât even want to call it Oceanâs Eleven âcause thatâs kind of amateurish hours.</p>
+
+<p>JACK:	Stu, Tony, and Stan have had training in some of the most advanced places in the world and have enough experience to have mastered their craft.  This is just some of the members of Iraâs team.  Their combined skills make them potentially one of the most advanced hacking teams in the world.</p>
+
+<p>IRA:	I just know them from my intelligence background but hereâs the difference between somebody who goes around, Iâm a social engineer; itâs like you know these people if they get caught they just give the get out of jail free card.  Youâre talking about Stan, who was in China being monitored, who had radioactive powder put on his doorknob so it was easier to track him.  Stan knew any moment in time he could be pulled off the street, tortured, and killed.  Stu, Navy seal; he knows any point in time, he gets captured, heâs dead.  Weâre talking about people who have a fundamental aversion to be captured, not because theyâre afraid theyâll have to pull out their get out of jail free card and itâll be embarrassing.  Weâre talking people who know to do this because their lives depended on it.</p>
+
+<p>JACK:	[MUSIC]  As Iraâs reputation went up as an elite pen tester, he got a contract from one of the biggest companies in the world.</p>
+
+<p>IRA:	Global 5 company.</p>
+
+<p>JACK:	They wanted him to do an espionage simulation against them to see how vulnerable they are.  Now, a Global 5 company is worth hundreds of billions of dollars which means the company has a lot to lose.  One thing in particular that would cause a lot of financial damage is all the research and development information.  Itâs the stuff like the source code for their systems or all the technology theyâre coming out with in the next few years.</p>
+
+<p>IRA:	That was our primary target, to prove we could get access to all the RND data.</p>
+
+<p>JACK:	If this were to be stolen by another competitor [00:15:00] or government it could cost them billions of dollars.  Iraâs job was to find as many weaknesses as possible to help secure them.</p>
+
+<p>IRA:	Primarily it was just, I hate to say it, grab âem by the balls and squeeze.</p>
+
+<p>JACK:	Ira started researching and planning the mission.  He first figured out the location of the RND department which turned out to be in a small town in the middle of nowhere.  He used Google Maps and other tools to learn more.  There was a fence around the whole property and stationed guards to restrict people from being able to drive in.  He determined the building was going to be locked and the data he was looking for would be in their computer operations center.  He was able to make some phone calls and figure all this out pretty quickly.  As he sized up the job he knew he was gonna need some help so he assigned Stu, Tony, and Stan to the mission.  All four of them fly to the small town where the research and development office was located.  The team arrives one by one; the ex-NSA agent, the Navy seal, the Army counterintelligence officer, and the Russian spy.</p>
+
+<p>IRA:	Tony ironically was responsible for following Russian spies around Europe while he was in the army.  It was kind of funny to have him stay and working on the project together.  I flew in late at night and all I wanted was a stupid bottle of water that the hotel didnât have so Iâm driving around trying to â in this little strip mall type of place and all of a sudden, Iâm driving around late at night, and I look in my rear-view mirror and thereâs a car behind me.  I was driving pretty slow, which is unusual for me âcause I was looking to see what stores might be open.  Anyway, I moved over to let the car go by me and then the car moves over with me.</p>
+
+<p>Then itâs like, am I being followed?  So I switched lanes once again and the car follows me again.  Iâm like, Iâm being followed.  [MUSIC]  Most people think okay, speed off.  Thatâs not what you do when youâre being followed in the real world.  One of the gas station â open up with a little Quick Mark in it.  Basically Iâm driving and I do make the sharp turn like Iâm gonna drive past, and I make the sharp turn into the gas station, pull my car up to where I can get out of the car and go straight into the door of the Quick Mark, blocking everything.  What happened was the car pulls behind me.  It turns out to be an unmarked police car.</p>
+
+<p>Iâm kind of relieved itâs a police car.  The cop gets out.  I go what the hell were you following me for?  Heâs like, why were you cutting over?  I go âcause I was being followed.  The guy couldnât argue with me.  He goes well, you were driving kind of, you know, you were driving below the â I go when is driving below the speed limit an area of concern?  Like, a crime?  It was kind of funny but I was calling out the cop for following me.</p>
+
+<p>JACK:	The squad begins the mission.  First they scout the building and watch what people are wearing as they come and go.  They notice which points of entries there are and how traffic flows.  Then they regroup to put clothes on to physically blend in with other employees.  Ira puts on a shirt with the corporate logo on it.  They suited up and got ready and at last, theyâre all set.  Itâs now go time.  All four of them get in the car and drive to the building.</p>
+
+<p>IRA:	We ended up going there.  They had a campus-like setting for their RND center.</p>
+
+<p>JACK:	There was a guard gate to get onto the campus with actual guards checking everyone coming through.  But there was a lot of traffic that morning.</p>
+
+<p>IRA:	Everybody was just lined up coming off the main road and stuff.  You hold up something that looks like a badge and they donât check.  Nobody wants to slow down the morning rush hour.  They just waved us through.  We knew where their computer operation center was so this was like day one.  Drove everybody in and then weâre like okay, letâs get in.  I told everybody yeah, hold on a second.  Letâs just stand here by the door.</p>
+
+<p>JACK:	The team waits around acting inconspicuous while Ira forms a plan.  He tries the door; itâs locked.  He thinks maybe he can tailgate someone in and waits for someone to come out.</p>
+
+<p>IRA:	Then I started hearing somebody come out.  There was a crypto-lock on the door and I just started acting like Iâm pressing buttons.  The guy goes out, holds the door open for me, I and my team go in.  They quickly orient themselves in the building and start heading to the computer operations center.  They act like they belong, walking deliberately but not too fast, scanning the room but careful not to be obvious.  They try to blend in and go unnoticed.  They eventually found the room they were looking for and gained access to it.  Once thereâ¦</p>
+
+<p>IRA:	We find out that all their critical servers were left logged on as admin.  Pretty much, we just added a new .rhost entry for when we had control over, so we were able to basically get a trusted relationship on all of the critical servers within the room without causing any significant damage.  Then the technical operation was done.  While we were walking around though, [00:20:00] Stan was walking â heâs like what are these Chinese-American dictionaries doing on the shelf here?  Iâm like have you seen US colleges lately, Stan?  Sarcastically.  Stanâs like Iâll look into this.  Anyway, we were done day one where Stu and I were like, we physically compromised every â the critical information we needed.</p>
+
+<p>JACK:	They head back to the car with the feeling of mission accomplished.  But Iraâs done this so much he doesnât really get excited anymore.</p>
+
+<p>IRA:	Well, the first time you steal a billion dollars itâs a bit of a rush.  After youâve done this so many times itâs almost expected.  Frankly, it was really unclimactic  to actually take over control of all their computers in the RND center.</p>
+
+<p>JACK:	There were still a couple more objectives that the team wanted to do.  Tony made some phone calls and was trying to get people to tell him usernames and passwords over the phone.</p>
+
+<p>IRA:	Of course, Tony was able to get information right and left.</p>
+
+<p>JACK:	Stan was doing what spies do; he was going around town doing a counterintelligence assessment.  Basically he was looking around for anything suspicious.  Ira began compiling his findings in a report, showing exactly how much damage he could have done to the company with what he found.  But because the team finished early they had a few days with nothing to do in this small town.</p>
+
+<p>IRA:	We had time to kill.  We drove around, looked at different restaurants and so on, and figure out where weâre gonna go.  A couple days later, after I go â I remember, Iâm like done.  I moved on to a different project while Stan was doing his counterintelligence assessment of the area.  Calls me up two days later, goes Ira, there are black duck eggs on the menu.  Iâm like, what the fuck?  Is this what weâre paying you for?  Heâs like Ira, my naÃ¯ve American friend, he goes donât you know black duck eggs, delicacy China.  Then you start putting it together.</p>
+
+<p>He goes Ira I go to Chinese restaurant number one that we drive past.  Chinese restaurant number one; people friendly, food not so good.  I go, Chinese restaurant number two, walk in, menu written only in Chinese.  Delicacies you canât get in San Francisco let alone this little piece of shit town in the middle of nowhere.  I start talking to them in Mandarin and they get very, very worried.  What funny Russian guy doing talking fluent Mandarin?  Then heâs like Ira, this special menu only Chinese people would appreciate.  Number two, you hold meeting there.  They give you free meeting room and then they give you big discount if you want to hold meeting there.  Iâm sure there must be recordings.</p>
+
+<p>JACK:	Stan started adding up all the signs.  This restaurant was very unusual but only someone fluent in Chinese culture would recognize how unusual it was.</p>
+
+<p>IRA:	Stan essentially found the Chinese intelligence operation operating across the street.</p>
+
+<p>JACK:	A Chinese intelligence operation in the middle of this small town, directly across the street from the research and development center of a Global 5 company led Ira and the team to one conclusion; itâs a high probability that this Chinese restaurant was there to steal trade secrets from the company and send them back to Chinaâs government agencies.  This restaurant may have been used to recruit employees of the company and help gather information.  Often temp employees are converted to spies, being there for only a short time means youâre less likely to get caught.  Or perhaps they would simply record all conversations that took place in that restaurant, hoping to catch secrets or something more sinister.</p>
+
+<p>IRA:	What they do is they set up a social situation where people come in, see that they can read the special menu.  They talk to them, say my friend, I see you like our special menu.  Are you from China?  Are you here on a VISA?  Do you have family back there?  Would you like your family to stay alive?  Is your loyalty to this temporary employer or is your loyalty to your motherland?  You know, a whole bunch of stuff like that.  Thatâs how Chinese intelligence operations acts and thereâs been multiple times Stan has found Chinese intelligence operations operating out of Chinese social clubs in different areas and so on.  Stan comes up with these what-the-fuck moments but heâs good at what he does.  Oh yeah, and he goes oh, by the way, I was followed.</p>
+
+<p>I go how do you know you were followed?  He goes oh, they were not very good.  I go why werenât they very good?  Heâs like well, I think I find them, I start making lots of right turns and they keep following me around the block.  Then I made a U-turn and theyâre not very good.  I go why arenât they very good?  They hit a pole when they went to make a U-turn to follow me.  I go I just hope they werenât corporate security or weâre screwed.  [MUSIC]  We reported it to the security manager and the CSO and the CSO was like what the fuck am I supposed to do about China?  Iâm taking care of their computers.</p>
+
+<p>JACK:	This Chief Security Officer has seen a lot of pen test reports, but not even in his wildest imagination was a Chinese intelligence operation even a possibility.</p>
+
+<p>IRA:	Weâre like well, you should talk to the FBI, find out if the FBI knows this or whatever.  The guy was like, I donât know.  Stan, because of his situation, he obviously has to stay in touch with the FBI so Stan informed the FBI [00:25:00] about the operation.</p>
+
+<p>JACK:	But thereâs one last step, the biggest one.  Ira needs to present his findings to the CEO in a way that the CEO can understand.</p>
+
+<p>IRA:	In this case what happened was, after three days Iâm like okay, hereâs your mergers and acquisitions data which is worth billions because of the negotiation points that you would have.  If other companies knew what you were targeting and so on, again, it could ruin things.  Hereâs your new technologies coming out in three years, we have full control of your entire network.  Again, I was showing him the business value of all the loss of the vulnerabilities found.  âCause thereâs a difference between finding vulnerabilities and demonstrating the potential cost of the vulnerabilities that matters.</p>
+
+<p>JACK:	This is another thing that impresses me about Ira; he doesnât simply put in the report what is vulnerable but he gives a clear dollar amount to the CEO of how much a theft like this could cost the company.  When the CEO sees vulnerabilities in terms of dollar amounts, action happens much quicker because theyâre speaking the same language.</p>
+
+<p>IRA:	In this case all the research and development, frankly China would have loved to get their hands on it if they didnât already have it.  If you were going to ask me, Iâll bet China did have it by that point in time.</p>
+
+<p>JACK:	Years later the company gets a new CSO and Ira asks him about the Chinese intelligence operation across the street.  The CSO told Iraâ¦</p>
+
+<p>IRA:	Oh yeah, we actually made a dozen arrests out of that restaurant.</p>
+
+<p>JACK:	The FBI was able to dismantle this Chinese intelligence operation.  This could have went on for years if it wasnât for Ira and his team, a squad so good that they can blend into their surroundings anywhere in the world, disappearing into crowds, gathering information.  Not acting like James Bond and shooting up the place and making a scene, but instead theyâre more stealthy and they might be the one asking you for a smoke at the bar or calling you up and asking for help.  Perhaps the next time you go out you can start looking for anything out of place.  Someone might be acting too nice but also asking a lot of questions or you might notice that guy in the corner of the Chinese restaurant eating alone with a Russian accent.  The spies are among us.</p>
+
+<p>JACK (OUTRO):	[OUTRO MUSIC]  Youâve been listening to Darknet Diaries.  If you liked Iraâs story and want to hear more, youâre in luck.  He wrote numerous books.  Spies Among Us is one of the books he wrote which has great stories just like this one.  He tells the story about how his team was able to steal nuclear reactor plans in under three hours.  Heâs currently in the process of updating that book so look for a newer version of that soon.  If you want to know more of how to protect your company from attacks like this, check out the book Advanced Persistent Security.</p>
+
+<p>You can also go to securementum.com to learn more about what Ira does.  If you want to know more about Stan check out the book Through the Eyes of the Enemy.  Itâs Stanâs autobiography and Ira actually helped co-author the book.  Links to these will be in the show notes.  This show is made by me, Jack Rhysider.  Story editing is by Stephanie Jenz.  Some songs were made by Wesley Slover and the theme music is made by the esoteric Breakmaster Cylinder.  Also please visit darknetdiaries.com/donate to help support this show.  It really means a lot to me.  Thank you.</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+<p>Transcription performed by Leah Hervoly
+www.leahtranscribes.com</p>
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

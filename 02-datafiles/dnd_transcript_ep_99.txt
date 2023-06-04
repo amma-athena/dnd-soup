@@ -1,0 +1,613 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>The Spy â Darknet Diaries</title>
+	<meta name="description" content="Igor works as a private investigator in NYC. He's often sitting in cars keeping a distant eye on someone with binoculars. Or following someone through the busy streets of New York. In this episode ...">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="The Spy â Darknet Diaries">  
+	<meta name="twitter:description" content="Igor works as a private investigator in NYC. He's often sitting in cars keeping a distant eye on someone with binoculars. Or following someone through the busy streets of New York. In this episode ...">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/thespy.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/99/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="The Spy â Darknet Diaries" />
+	<meta property="og:description"        content="Igor works as a private investigator in NYC. He's often sitting in cars keeping a distant eye on someone with binoculars. Or following someone through the busy streets of New York. In this episode we hear about a time when Igor was on a case but sensed that something wasn't right." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/thespy.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/99/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/thespy.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/99/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="The Spy â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/thespy.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 99: The Spy</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://www.podtrac.com/pts/redirect.mp3/traffic.megaphone.fm/ADV3785322342.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/99/",
+			   "title": "Ep 99: The Spy"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/99">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[START OF RECORDING]</p>
+
+<p>JACK:	I love a good spy story.  Itâs so intriguing for me to think that someone among us might not be who we think they are.  Theyâre fake in their name, their background, and their purpose trying to get information of some kind.  Itâs always interesting to see what kind of methods these people use to communicate right in plain sight, but to the untrained eye, you have no idea that a message was being sent.  Like, for instance, thereâs been times when spies would tie their shoelaces in a specific way to communicate certain things.  So like, if your shoelaces had extra knots in them, it could mean something like donât approach me, or if the shoe was tied with laces crossed over it or under it, that might mean okay, all clear; come give me the message.
+<!--more-->
+Or maybe if the shoe was untied, it means youâve been spotted; get out.  Whatâs cool about this trick is you can have one message on one shoe and a different message on another.  This way the person could send a different message depending on the situation.  Like, if one shoe said wait and the other shoe said all clear, the person could just put out their shoe that had the right message on it at the time and cover up the other shoe somehow, like by sitting on it or something.  I love hearing about spy tricks and methods that they call trade craft, and in this episode, weâll hear a story about a spy and how they operate.</p>
+
+<p>(INTRO):	[INTRO MUSIC] These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	Okay, I donât even know where to start with this story.  Iâve got so much tape here to play for you, itâs crazy.  In fact, Iâm pretty sure Iâm not gonna be able to fit it all in one episode, so this is just gonna be a two-parter.  But yeah, seriously, where do I even start?  Okay, okay, Iâll start with my favorite part which is not the beginning of the story.  Alright, so one day on Twitter I got this message from a guy named Igor.  He said, I listen to your episodes.  Very good pods.  Then he says, if I can ever help with anything, let me know.  I said okay, thanks.  Well, what are you good at?  He says he does surveillance in New York City.  While I donât need anyone to do surveillance for me in New York City, I was immediately curious to hear more, so I called him up.</p>
+
+<p>IGOR:	Hello?</p>
+
+<p>JACK:	Hey.  This is Jack.</p>
+
+<p>IGOR:	Hi, how are?</p>
+
+<p>JACK:	Igor?</p>
+
+<p>IGOR:	Yeah, this is Igor.  Nice to meet you.</p>
+
+<p>JACK:	Nice to meet you, too.  What are you doing now?</p>
+
+<p>IGOR:	Right now Iâm sitting in my car in Queens in New York.  Iâm on the surveillance, just waiting.</p>
+
+<p>JACK:	What are you surveiling?</p>
+
+<p>IGOR:	Oh, this is a â an insurance defense job, so weâre waiting for a guy who has claimed an injury and heâs receiving some benefits from the insurance carrier, and they want to see how heâs actually physically doing, if itâs true with what heâs claiming.  Their goal is to see exactly whatâs the real situation, and then if it doesnât match, they have a reason to offer him less money or jam him in the corner and tell him theyâre not gonna give him anything, or decline his claim, et cetera.</p>
+
+<p>JACK:	How can you do that and talk on the phone at the same time?</p>
+
+<p>IGOR:	Right now, the person Iâm watching, heâs inside his house, so Iâm waiting for him to leave.  Until he comes out of his house, gets in his car, starts the car â I know him already, so he warms up the car.  So, Iâll have about five, six minutes to react.  Iâll be able to say Jack, Iâm gonna have to go in a few minutes.  But Iâm also working with another guy, so we have two sets of eyes on the house and the car.</p>
+
+<p>JACK:	[MUSIC] Thatâs how I met Igor.  Igorâs a Ukrainian immigrant and heâs a private eye in New York City; sitting in cars, watching people and buildings.  Thatâs what he does all day and sometimes all night.  He sees a lot.  Naturally, I was curious and fascinated.  I asked if he has any interesting stories from doing this kind of work and oh boy, does he ever.</p>
+
+<p>IGOR:	So, I was working with a friend of mine, a guy I knew for many years, as a subcontractor.  We were working for Black Cube which is an Israeli intelligence company.</p>
+
+<p>JACK:	Wait, what?  Black Cube, the Israeli intelligence company?  Iâm not familiar with them, so letâs take a quick detour and listen to some news clips to hear who Black Cube is.</p>
+
+<p>ILANA:	Behind a heavy locked door, a high-tech environment, and also the salary and benefits of the group of brilliant people who sit there, some of them are graduates of the Mossad and other classified units.  But the product which they are producing can be dark and much more dangerous [00:05:00] than what they imagined.  They are called Black Cube and their official goal is to provide business intelligence.</p>
+
+<p>JACK:	That was a clip from the Israeli TV show Uvda, and the reporter is Ilana Dayan.  In that episode, she revealed that Black Cube was hired by people to carry out different spying campaigns.  Like, sometimes billionaires hire Black Cube to spy on political opponents.  Sometimes foreign countries will hire Black Cube to spy on their adversaries.  But in this case, Black Cube was contacting Igorâs boss to do some spying for them.  This is likely because Black Cube probably doesnât have permission to do surveillance in New York, so they contracted the work to two New York surveillance guys; Igor and his boss.  See, Igor did not know he was working for Black Cube at this point.  He was just working for a guy named Roman Khaykin, and it was this Khaykin guy who was being contracted by Black Cube.</p>
+
+<p>IGOR:	We were doing different types of jobs for them, all involving some form of surveillance, and at some point they assigned us to follow Ronan Farrow and Jodi Kantor.</p>
+
+<p>JACK:   Whoa, wait a minute these are some famous names I recognize. Ronan Farrow is a journalist for the New Yorker and Jody Kantor is a journalist for the New York Times.  And Ronan Farrows parents are Mia Farrow and Woody Allen.</p>
+
+<p>IGOR:	My boss Roman Khaykin sent me the pictures with the pin drops.</p>
+
+<p>JACK:	Pin drops are locations on a map where these two people are.</p>
+
+<p>IGOR:	I was sitting on Jodiâs Kantorâs house and while I was at Jodi Kantorâs house, Khaykin messaged me and says hey, the client has new information.  You need to go to the city.  Weâre gonna try to get Ronan Farrowâs location, so letâs meet in the city.  Iâm at a dentist.  Once we get his location, weâll go from there.  I said okay, cool.  Iâll head to the city.  We made a little plan, like, Iâll head to Ronan Farrowâs house, and Khaykin would come to the city and he would go to the area closer to downtown, so we would kind of â whenever we got the location, we would not be too far away from any potential spot where Farrow may be.</p>
+
+<p>JACK:	They were expecting more pin drops from Black Cube to know the exact location of where Ronan Farrow was.</p>
+
+<p>IGOR:	You know, Black Cube is a private intelligence company, so they operate in a compartmentalized kind of basis.  Khaykin wouldnât tell me exactly where theyâre coming from, but he explained the method to me.  The method was that a text message with some sort of an annoying spam would be sent to Ronan Farrow.  Farrow would be offered two options.  Yes, they receive more spam; no to stop receiving spam.  He replies yes or no, the geolocation gets received with the reply.  So, itâs not a constant tracking but whenever a target replies, the geolocation comes with the reply.  They were able to do it a couple of times.</p>
+
+<p>JACK:	So, they drive into downtown New York City to look for Ronan Farrow, but they never actually find him.  But Igor is a curious person and started trying to figure out why someone might be paying him to spy on Ronan Farrow.  So, he starts reading all these articles that Farrow is putting out.  One of the articles he publishes says Ronan thinks heâs being watched by Black Cube.  This is when Igor connected the dots.</p>
+
+<p>IGOR:	[MUSIC] I went to my boss, my friend, my boss, Roman Khaykin.  I confronted Khaykin and he confirmed that weâre working for Black Cube and in fact, that we are working on the Harvey Weinstein story.</p>
+
+<p>JACK:	Ronan Farrow was doing a story on Harvey Weinstein who was accused of sexually harassing women in the Hollywood movie industry.  Well, his investigation uncovered that Harvey Weinstein had hired Black Cube to spy on his victims that he sexually assaulted to try to find information on them and discredit them.  Somehow, Weinstein discovered that Ronan Farrow was working on this story and hired Black Cube to also spy on Farrow to try to discredit him, too.  Igor realized that he was wrapped up in all this and that yeah, he was actually working for Harvey Weinstein.</p>
+
+<p>IGOR:	I felt very uneasy being sent to do surveillance on journalists because these are publications that I respect, The New Yorker and The New York Times.  Iâve been reading The New York Times since I was in high school.  It was a very important thing in my life.  I enjoyed it.  I thought itâs very â you know, itâs a very good, informative paper.  I always thought itâs a cool model, you know, all the news thatâs fit to print.  I felt uneasy and in my mind I was thinking, I have to follow through with this.  But I think what weâre doing could potentially be [00:10:00] a negative thing, because I was told that our job was to ascertain their sources.  I knew that if weâre looking for sources of two different journalists at two different publications, itâs either â itâs â could be used to scoop them but it could also be probably used to basically kill the story or to damage them in some way.</p>
+
+<p>I already knew that weâre working for a company thatâs a little bit iffy and I was on guard, but I went through with it anyways.  I said okay, whatever, Iâll continue.  No problem.  We continued working together.  We were doing other jobs for Black Cube, and I tried to contact law enforcement with very little success.  I tried to get advice from friends who knew people in law enforcement, and nothing panned out of it, so at some point I felt that there was no outlet for me to go to to kind of expose this problem of a private intelligence company following journalists for a rapist to be able to kill their story.  I decided to call Ronan Farrow, so I contacted Farrow and we met up.  I said hey, Iâve been following Jodi Kantor.  I was assigned to follow you.</p>
+
+<p>JACK:	Wow, to be assigned to spy on Ronan Farrow but then completely flip and actually call Ronan to tell him that youâre spying on him, that must have been some meeting.  As the two talked, Ronan did confirm he was receiving a lot of spam text, and Igor explained thatâs how they knew where he was.</p>
+
+<p>IGOR:	Ronan Farrow, I thought I was gonna talk to him and say hey, we followed you.  Your hunch is right.  Be careful; Black Cube seem like bad people.  Nice to meet you.  Good luck.  Maybe text time if I ever see you, sign the book that you wrote.  I bought his book.  He says Iâm writing a book about this Weinstein thing.  You want to stay in touch and help me?  I said okay, Iâll help you.  I said, you seem like a nice guy.  He convinced me a little, but then I felt itâs a very noble cause.</p>
+
+<p>JACK:	This is how Igor sort of switched sides; one day doing dirty work for Harvey Weinstein and the next helping journalists like Ronan Farrow out.</p>
+
+<p>IGOR:	After meeting with Farrow, Iâm talking to him periodically, Iâm sharing information of what work Iâm doing with Khaykin from Black Cube.  Iâm sharing with him almost like, immediately.  Whenever I have something from Black Cube, I share with Farrow.  He tries to figure out if this is relevant to him or to something heâs working on or whatever.  One day in January, I get â Iâm with Khaykin and Khaykin tells me that [MUSIC] he has to cover a job for Black Cube, but he canât make it because he has plans with his daughter.  I said hey, Iâm free.  I could â you know, itâs an evening job or whatever.  Itâs a late afternoon job.  I said if you want, Iâll fill in for you.  He says no, itâs a very important job.  I have to be there myself.  I said well, why donât you tell the client youâll go there with me and when you have to leave, you go hang out with your daughter?</p>
+
+<p>Iâll go and Iâll stay in your place.  We agree on this plan.  We head into the city, to the Peninsula Hotel, and Khaykin tells me the agent will be there.  You already know him.  Heâs the guy that you saw last summer that wears a goatee and glasses.  Thatâs basically kind of how he described him, âcause they didnât use names.  They never told me any names.  They were very secretive about that.  I said okay, I know that guy.  Iâve seen him multiple times.  I said okay, Roman, I recognize who youâre talking about.  Then he showed me a picture of John Scott-Railton.  He said, this is the target.  So, this is whoâs gonna be at the meeting who Black Cube is targeting.</p>
+
+<p>JACK:	Oh, John Scott-Railton?  JSR is the target?  That name is very familiar.  Actually, in Darknet Diaries Episode 79 called Dark Basin, I interviewed John Scott-Railton to hear about how a private intelligence company tried to hack and steal information from certain targets.  John works for Citizen Lab and does investigative work to try to uncover hacking campaigns.  Of course, when he publishes this work, those companies he exposes probably get pretty mad for having their cover blown.  JSR and Citizen Lab does amazing investigative work, but still, Iâm surprised that heâs being targeted by Black Cube.  Oh man, this is just getting deeper.  Well, weâve gotta call JSR now to find out what happens.</p>
+
+<p>JOHN:	What happened is one of my colleagues was basically approached by somebody who claimed to be interested in financial solutions in banking for refugees which is a really important problem.  If youâre a refugee and you flee a conflict, you probably donât flee with access to your bank account.  [00:15:00] So, this is a huge problem that refugees face and my colleague was extremely sympathetic to this issue.  So, he goes to a meeting, meets this guy, and what the guy really wants to do is not talk about refugees and banking, but to quiz my colleague on his background, his family, his family history, and then ask a lot of questions about the Citizen Lab.  My colleague, Bahr Abdul Razzak, is a very thoughtful, smart guy.  He immediately recognized that something was amiss, played it cool, and then as soon as he left the meeting called me up and said look, something really strange is going on here.  I think I was the target of some kind of an operation.</p>
+
+<p>[MUSIC] So, immediately after this happened, at the lab we began trying to figure out well, who did Bahr meet with?  Who was this guy?  It didnât take long for us to determine the digital identity that the guy had created was almost paper-thin.  There was like, an accommodation address somewhere in Spain, some company; FlameTech.  But it all looked fake.  This gave us the impression that we were looking at some kind of an operative, some kind of an agent.  We began to ask ourselves like well, so who would do this?  Going through the questions that he asked Bahr, it seemed like the main objective was learning about Citizen Labâs work and then potentially finding something that could be used against the lab, maybe to discredit our work.  As we were moving on with our investigation, we got in touch with a reporter and said well, we should â this is a really interesting story, researchers working on NSO targeted by this weird attempt, a mystery man.  That story was just about ready for publication with Raphael Satter, then at the Associated Press, when I got a message claiming to be from a guy named Michel Lambert.  Michel pronounced himself extremely interested in the work that I had been doing almost a decade before, using kites to fly robotic cameras over West Africa.</p>
+
+<p>JACK:	See, on JSRâs blog, he has this research that he did about using kites to conduct aerial photography, and this guy Michel was acting very fascinated with all the aspects of aerial photography using kites, seemingly wanting to do this method himself to conduct some kind of similar research.</p>
+
+<p>JOHN:	I immediately sensed that something was off because anybody, even people living under a rock know that drones have happened in the interim, and thereâs no real reason to deal with the vicissitudes of the wind and some kite and strings and so on.  Like, whatâs that all about?  So, I contacted Satter and said why donât you hold off on this story?  Letâs see where this goes.</p>
+
+<p>JACK:	[MUSIC] Michel wanted to talk on the phone, so John gave him his phone number.</p>
+
+<p>JOHN:	[RINGTONG] Hello?</p>
+
+<p>MICHEL:	[FRENCH]</p>
+
+<p>JOHN:	[FRENCH] English as well.  [FRENCH] Thereâs this little â thereâs this crazy little detail, so like, when the Lambert alias first called me on the phone, there was a strange moment; he just immediately started speaking French to me.  The thing is, I speak French but I donât advertise it.  At that point, it wasnât really something that I felt people knew about me.  I remember this moment; this guy picks up and â bonjour.  Iâm thinking like, do they have some dossier on me?  They must.  Maybe he just does it to everyone.  But in any case, he immediately launched into this French conversation.</p>
+
+<p>MICHEL:	[FRENCH]</p>
+
+<p>JACK:	Of course, JSR being JSR, heâs trying to record and document everything that this Michel Lambert guy is telling him.  So, what youâre hearing is the actual phone call between them, because JSR knows something strange is going on here and having evidence of it might be really helpful at figuring all this out.  So, the phone call ends with Michel wanting to meet up in New York City in a swank hotel restaurant to talk about how to do aerial photography with kites, and JSR agrees to the meeting.</p>
+
+<p>MICHEL:	Au revoir.</p>
+
+<p>JOHN:	Au revoir.</p>
+
+<p>JACK:	This is when Igor gets told about this meeting, and he needs to watch the agent Michel and keep an eye on the target, JSR.</p>
+
+<p>IGOR:	So, in my mind, I understand the agent is the operative from Black Cube and the target is somebody that Black Cube is trying to put in a situation where theyâre trying to embarrass them or theyâre trying to get them to say something racist or antisemitic or something thatâs embarrassing on tape.  My job is to take pictures with the back of the head of the agent and the face of the target.  [00:20:00] In case that they do get the target to say something negative, they could potentially throw the story to the press with a nice picture of the target just for face value, for having a picture on â with the story.</p>
+
+<p>Then once they split up, once the meeting is over, my job now involves a counter-surveillance role, so now I follow the Black Cube agent for a few blocks and I make sure to check if heâs being followed.  Because for instance, if JSR had suspicions of Michel and he decided to go to the first meeting without journalists but he decided to just go there to see what itâs about, and he decided to bring a surveillance team to figure out who Michel really is, my job was to make sure that if somebodyâs following Michel, I donât get caught but I tell Michel through Khaykin; hey, thereâs a guy following you.  Then at that point, Black Cube would be able to make a decision and would be able to understand that the person that they met with did not have full trust of them, you know?</p>
+
+<p>JACK:	Oh man, this is about to get crazy, because this is becoming a game of spy versus spy.  Igor will be watching the agentâs back, and JSR is all set up to spy on the spy.  Stay with us because after the break, it all goes wrong.  A date was set for the meeting between JSR and Michel.  JSR hatches a plan.</p>
+
+<p>JOHN:	The thinking was pretty simple; this person is obviously coming under a false pretense and they may be coming with the objective of harming me, harming my colleaguesâ reputations, but most importantly, probably the objective is to deny justice to the victims of hacking by trying to discredit their research in some way, or otherwise create problems for the lab.  So, we decided that the best approach would be to play it into a meeting and actually have an in-person sit down with this character, Michel Lambert, but bring some people with us, a reporting team led by Satter who would at the right time confront Lambert while we were meeting and ask him some pointed questions about why he didnât really exist and why his company didnât appear to exist.</p>
+
+<p>JACK:	JSR meets up with Raphael Satter, the reporter from the Associated Press, and prepares for the meeting.</p>
+
+<p>JOHN:	The period before the meeting was pretty intense for us because of course youâre second-guessing everything.  Youâre wondering well, what on the off-chance you do if actually this turns out to be a legitimate meeting?  [MUSIC] Is the person going to guess that weâre onto them?  Am I gonna be able to maintain this deception?  I really wanted it to work and I felt very strongly that to protect my colleagues, it was important that I do this job really well.  So, up to late â or the early hours in the night beforehand, I was assembling my own video camera necktie.  The reason was, I had sort of felt like, maybe I should bought â buy a pen camera or something like that, you know?  Something I can â some spy tech.</p>
+
+<p>Then I thought well, if I buy something spy-techy, if this guyâs any good, heâs gonna look at it and heâs gonna be like well, I know what that is, right?  Heâs pointing a pen camera at me.  So, I didnât want a scenario where we were both pointing our pen cameras at each other or something like that so I thought well, Iâll have to make my own thing.  So, I buy a necktie, cannibalize a bunch of the things in the hotel room that Iâm staying at, disassemble a baby video monitor and a bunch of other things and create a reasonable approximation of a covert camera video necktie.  So, the day of the meeting comes and of course, things start going wrong.  I had this plan to make a bunch of time available so that Iâd get there in due time but not too early.  Wouldnât want to be suspicious.  Instead, I shamble out and discover that it is pouring rain.</p>
+
+<p>As anybody whoâs been in New York will tell you, getting a taxi in the pouring rain ainât easy.  Finally I find myself a ride and get in, and Iâm already wearing my video necktie and Iâm super jazzed up, but also quite concerned.  I begin to become concerned that Iâm gonna be late and theyâre gonna smell a rat and call it off.  Weâre getting there, getting closer, getting closer, and a couple blocks away thereâs a complete premium New York gridlock traffic jam.  I just sort of say well, to hell with it, and pop out and just run [MUSIC] with my pockets filled with recording gear towards the meeting venue.  [00:25:00] I had actually managed to break my necktie camera.  I had to change out; I brought a spare, changed out my necktie, and make it.  I arrive soaking wet and feeling about as awkward and ill-prepared as I probably felt when I took the SAT as a kid.</p>
+
+<p>So, I make it to this swank restaurant.  I show up and Iâm just like, Iâm evaporating.  Iâm soaking and exhausted and just sure that the whole game is up; everythingâs gonna fall apart.  The maÃ®tre dâ comes up to me and heâs like well, can I help you?  I said yes, Iâm â and I realized I donât know what to tell this person.  So, I just â well, Iâm here with Mr. Michel Lambert.  Ah, of course, the man says, and walks me to the back.  As we reached the back of the restaurant, a man is sitting at a table behind a pillar, not visible from the front.  He stands up and greets me and then walks me to another table right by the window.  So, already itâs an awkward piece of stage direction footwork.  Like, what is this weird table-shift that this guyâs doing?  But heâs very cordial and we immediately begin on small talk.  Iâm sitting there evaporating and hoping I donât mess up.</p>
+
+<p>JACK:	Okay, so where is Raphael Satter at this point?</p>
+
+<p>JOHN:	Well, so, Satter has brought a videographer with him, and we have a sports photographer stationed outside the hotel to sort of catch them if they walk out, right?  We want close and some long shot cover.  Satter and his colleague didnât have a budget for this and so, I think they ordered â this is a fancy restaurant â they ordered a shrimp cocktail and some waters, and they are sitting at a booth not super-far as luck would have it, from where we end up sitting, eating their shrimp cocktail.  We had kind of thought about where these operators would have wanted the meeting to take place, figuring that well, theyâre gonna be recording for sound and audio, so theyâre gonna have a certain set of desirables, and we kind of guessed where we should put Satter and his colleague if at all possible to record or catch things.  It ended up working quite well.  So, I get in and scrupulously avoid looking at Satter and his colleague, right?  The plan was for them to arrive before even this Lambert alias got there, so he wouldnât necessarily feel a rat, right, and just act normal.  Somehow, despite the fact that they were carrying a camera in a duffel bag, like a big production camera, nobody seems to have noticed them.</p>
+
+<p>JACK:	As soon as JSR arrives, Michel insists that JSR has a martini with him.</p>
+
+<p>JOHN:	No martini for me. You know what?  Tea would be great, black tea.</p>
+
+<p>JACK:	But JSR refuses the drink and asks for tea instead.  They sit down near a window where they can both be clearly seen from the street, and together they sit and talk in French.</p>
+
+<p>JOHN:	[FRENCH]</p>
+
+<p>JACK:	About nothing, really; just like, where they both know French from and what countries theyâve visited.  Itâs meaningless chit-chat, and while JSRâs camera necktie was broken, he did manage to still record the audio.  They order a fancy meal and eat it together.</p>
+
+<p>WAITER:	We have lobster bisque.</p>
+
+<p>JOHN:	Ah, lobster bisque.  Okay, great.</p>
+
+<p>WAITER:	We have nice Beef Bourguignon today.</p>
+
+<p>IGOR:	Let me tell you this part in detail.  [MUSIC] We arrive, we park.  I park my car in the garage.  Khaykin parks on the hydrant, and I have to jump in Khaykinâs car to keep the car from getting a ticket.  Khaykin goes inside.  When you walk inside the restaurant, thereâs three sections to the right and the target and the agent are in the furthest section to the right.  To the left thereâs a single section which is a bar.  Iâve been there before âcause weâve covered a few meetings there before, so I know the layout very well.</p>
+
+<p>JOHN:	I tried to be very surveillance-unaware.  I tried to really never stare and never look.  But I did clock a guy holding up his cell phone in a really awkward way and was pretty convinced that he was taking my picture.  He was sort of behind Michel and to the side.  They try to have a recorder stationed in such a way that the fact of the operative is not included in the video footage so they donât have to blur it or something or they donât have footage with an operativeâs face in it.</p>
+
+<p>IGOR:	Khaykin comes back out a few minutes later, maybe twenty minutes later.  He shows me the pictures that he had already sent me by text message.  I show him the pictures I took outside, and Khaykin says to me Igor, the meeting is going very well.  [MUSIC] This is very unusual, so this is like a very interesting point.  My ears kind of point up.  Iâm like, okay, the meeting is going very well.  Igor, I want you to sit at the bar where youâre going to have a limited view.  [00:30:00] Youâre not gonna be able to see the meeting anymore.  We donât need to be close to them.  We donât need to be in the restaurant.  I want you to be in the bar where youâre going to have a view of the top of the stairs.  When the subjects leave, right, when the target and the agent leave, you are going to follow them.  The meeting is going so well, in fact, they might even go to have drinks somewhere else.  They might go hang out.  The meeting is going great.</p>
+
+<p>Very unusual.  Usually these meetings, they split up and they donât continue hanging out.  Usually they have a set time and once theyâre done, they leave, and we do the counter-surveillance bit, and itâs over.  I say Roman, I understand.  Totally, totally cool.  Iâm gonna sit, watch the top of the stairs.  When I see the agent and the target leave, if they stay together, Iâm gonna follow them until they split up.  When they split up, Iâm gonna make sure that the agent is not followed and Iâm free to go.  Khaykin says Igor, itâs going so great, I want you to relax.  Again, something that usually never happens.  Usually itâs very tense, weâre going over possibilities, weâre prepping, weâre talking about what could happen, weâre discussing whoâs parked outside.  Roman says donât worry; itâs going really well.  Relax.  Have a drink.  Have a burger.  Have whatever you want.  Again, something very unusual because Black Cube are very cheap.  I mean, these guys are such cheapskates.</p>
+
+<p>They send me to a restaurant to do a job that had a prix fixe menu.  They picked the restaurant and I chose the cheapest prix fixe option and they questioned me on the bill.  I took a picture of the menu âcause I had a feeling that somebodyâs gonna ask me like, whyâd you eat so much, you know?  But in reality, itâs not a lot of food; itâs a prix fixe menu.  You donât have any options, right?  Itâs very unusual for Black Cube to tell Roman or to Roman to have the liberty to say hey, go ahead; splurge for a latte today.  Relax.  But Iâm thinking that since things are going very well and the client, he was very particular about you following instructions.  They would get very angry if I deviated a little bit and I took pictures more liberally including the face of their agent.  They would get really pissed at that.  So, I go in the bar.</p>
+
+<p>JACK:	When â can you explain what kind of equipment you have with the pictures and the microphones and stuff?</p>
+
+<p>IGOR:	Oh, yeah.  No microphones because we canât eavesdrop by law, and for pictures, I use my phone.  I use an iPhone.</p>
+
+<p>JACK:	Okay.</p>
+
+<p>IGOR:	I have a video camera.  I use a camcorder.  Itâs like a prosumer Panasonic camcorder.  Itâs about a thousand bucks.  So, I go in the hotel and Khaykin has to leave.  [MUSIC] He takes his car off the fire hydrant and he drives home to do his thing with his daughter.  As I walk into the hotel, thereâs a photoshoot with models and professional photographers, equipment, people bringing coffee and water.  Weâre talking about a real photoshoot, right?  Itâs in the lobby of the hotel.  Khaykin just came out of the lobby of the hotel.  He didnât say anything to me and I think to myself, well, itâs a professional photoshoot.  This is not some kind of secret photoshoot to catch the agent, right?  Because this is a real photoshoot.</p>
+
+<p>I talked to the people who work â who are working at the photoshoot and they tell me that theyâre working for the hotel magazine.  Itâs an internal magazine for their guests and theyâre making this photoshoot for that.  Iâm content because theyâre working with the hotel management.  I do a little bit of amateur photography, so I know that the equipment theyâre using, itâs â you know, theyâre using lenses that are not like telephoto lenses; theyâre basically using lenses that are for â theyâre portrait lenses and they have a couple of wide angle lenses.  I see that they use nice Canon cameras.  Sounds good to me.  Itâs a pro photoshoot.  Nothing to do with me.  Iâm going upstairs to the bar.  I get into the bar, I watch the stairs, I order some stuff, and Iâm watching the stairs.  An hour passes by or so.</p>
+
+<p>JACK:	Now, Igor canât see JSR or Michel from the bar.  Heâs just around the corner, but he knows this place well and knows that thereâs only one way in and out, so heâs watching the exit.  He sees the people from the photoshoot downstairs come up and have a drink.  He sits there stationed with his eyes on the doorway.</p>
+
+<p>JOHN:	Within a couple of minutes of the conversation starting, he was using this weird offensive term to refer to the way that Africans speak French and trying to get me to laugh along.  It was the strangest conversational gambit.  I began to feel at this point [00:35:00] that this guy maybe wasnât sure how long heâd have me at that table for or how long the deception would work, and so, he wanted to get me saying something perhaps racist or offensive right away, something that could be laughed about.</p>
+
+<p>MICHEL:	[FRENCH]</p>
+
+<p>JOHN:	Then the conversation was an hour of sort of him semi-boasting, semi-chatting, trying to get biographical details on me, talking about all the African leaders heâd met, the time that heâd spent in Africa, various other things.  But the strangest part of this whole conversation is that the guy had cue cards with him.  They were like, green and yellow and red pastel cue cards, big index cards.  [MUSIC] As the conversation is going on, the boring questions to me are green cue cards.  Then right around the one-hour mark, as the conversation starts getting a little bit more interesting, as I recall it, the yellow cards come out.  Then heâs starting to ask questions about Citizen Lab.  Up until that point, he had been sort of preserving the ruse that heâs just a rich guy who would really like to hire me to fly kites in Africa or something.  Then he kinda doubles in for the really good questions, like oh, tell me more about Citizen Lab, and at various times tries to prompt me to say things like Citizen Labâs work would be somehow motivated by racism or some â I mean, really wild stuff, and deeply offensive.</p>
+
+<p>JOHN:	Who would be using that racist element?</p>
+
+<p>MICHEL:	You said that it was journalists in Mexico, etc, etc.</p>
+
+<p>JOHN:	Well, that would be very upsetting if it were happening, I think.  I began to feel that he had this list on his cards that were like, well, if you canât get some good, juicy information about the lab, maybe he can get me to say something offensive.  I felt like he had this shopping list.  He was going through it all and going through it all.  Our conversation plods on for like, it must have been about ninety minutes.  He will come in conversationally on a tangent, try to get me to say something about the lab or NSO and then back right off if I push back a little bit.  For somebody who, at various points in the conversation, pretended to have no knowledge of technical stuff, he seems remarkably well-informed about export controls.  The impression of him as a bumbling spy was kinda cemented by the fact that he had this pen in his hand, big thick pen, and at various points when Iâd be talking, heâd be like holding the tip of the pen pointed at me, like the tip of the pen cap pointed at me.  There was a hole in the middle of the pen cap, and I thought it was undoubtedly a camera and he wanted to get me on video.</p>
+
+<p>I think I learned later that it might have been a microphone, but it really felt bumbling.  As this is going on, I am getting messages from the â from Satter saying like, everything okay?  Is it going alright?  Yeah, yeah, itâs going alright.  Then I get this alarmed message thatâs like hey, our batteries are running low.  Can you wrap it up?  So, I have to come up with some pretext to wrap this â at this point ridiculous conversation up.  At one point he invites me to leave with him to go to a cigar bar.  Like, weâll go together, itâll be great.  So, I find a way to distract him, talking about kites flying and buildings.  I point at the window next to us and I say, look out the window; if I was trying to fly a kite on this building, hereâs what Iâd do.  Youâd think like, how could you even use a kite out in this?  The answer is, itâs still possible.  You get on the rooftops.  He dutifully looks out the window, and when he looks back at me, Raphael Satter is pulling up a chair.</p>
+
+<p>RAPHAEL:	Hi.  My nameâs Raphael Satter.  Iâm a journalist with the Associated Press, England.  Iâd like to speak to you about your company, CPW Consulting.</p>
+
+<p>MICHEL:  I donât have to speak with you.</p>
+
+<p>JOHN:	Satter then pressures him and the guy doesnât really have any good answers about why his company isnât real, why he doesnât appear to be real.  So, as Satter is asking him questions about who he is, he really is, the guy makes a gambit to leave and then, realizing his mistake, he comes back and tries to pay for the â his lunch.  [MUSIC] As heâs trying to pay, Satter and the camera are right there asking questions.  By then, the restaurant has basically cleared out.  The only people left, I â at this point I think, are probably the people on his team.  Thatâs what Iâm thinking, the people on his team or the people on my team and maybe a few lunch stragglers.  So, itâs really a crazy scenario.  The guy is just trying to avoid the camera which is really hard to do in a rather limited space restaurant while trying to pay.</p>
+
+<p>[00:40:00] So, is peppered by questions, and finally you can just feel his terror grow and thereâs almost like a Yakety Sax moment as heâs being followed around by me, by the cameraman, by Satter asking him all these questions.  He finally spots an open door in the back to a private dining room and goes inside.  Thereâs a restaurant staffer there.  He tries to pull the door closed behind him but heâs clearly had such an adrenaline dump that heâs just like, tunnel vision and doesnât notice that thereâs a stopper on the door, so heâs trying to pull this door closed, doesnât get it, and asks the restaurant employee for help; these people are bothering me.  So, the restaurant employee dutifully pushes out the stopper and closes the door, and thatâs the last we see of this guy.</p>
+
+<p>IGOR:	At some point, now my phone starts ringing and I see itâs Khaykin calling.  Iâm watching the stairs; nobody has left, but I see at the top of the stairs a guy with bushy hair and a guy with a camera, with a video camera that they use for news broadcasting or something, for live news.  I think, thatâs a little weird but considering thereâs a photoshoot going on here, maybe these guys just are working with the photoshoot, you know?  I pick up the phone.  Iâm looking at those guys, and Iâm thinking ah, those guys â probably doesnât mean anything.  Roman Khaykin is screaming into the phone, Igor, whatâs going on?  [MUSIC] Who are those people with the cameras?  I go Khaykin, what are you worried about?  Theyâre doing a photoshoot for the hotel magazine.  I talked with them.  He goes oh, are you sure?  I go yeah, yeah, Iâm looking at them right now.  Thereâs a dozen people; thereâs two guys with cameras.</p>
+
+<p>They got lights set up.  Itâs a professional photoshoot.  Heâs waiting, heâs kind of silent, then heâs like no, no, no, who are the people with the cameras?  Whoâs the journalist?  Now it clicks in my mind that Iâm staring at basically â Iâm staring at Raphael Satter and the AP videographer.  But I donât know them, right?  I donât know their names.  Iâve never seen them before but Iâm staring at them and Iâm like, Roman, there is a guy here with a big video camera and another guy with bushy hair.  Heâs like okay, the agent is in trouble.  Heâs hiding in the back somewhere.  We need to help get him out of there.  Help get him out of there.  Figure out whatâs going on.  Take pictures of everybody.  This is a problem.  This is a problem.  Where did they come from?  I said Roman, I donât know.  Iâm gonna go figure out, but they must have been here when you arrived because they never came in and they never came out.  This is the first time Iâm seeing them.  If theyâre coming from inside the restaurant, clearly theyâve been there longer than me and theyâve been there when you came in, right?</p>
+
+<p>Okay, figure it out.  Iâm running around now trying to figure things out.  Heâs still yelling into my ear.  Iâm calling him back and Iâm taking videos with my phone.  I have an app â oh, this is kind of neat; I have an app on my phone that you could double-tap the screen and it turns the screen off.  So, it can â itâs rolling video but the screen is blank.  Itâs just a black screen as if the phone is off.  Thatâs the kind of â thatâs the cool feature about it.  So, Iâm taking video of whatâs going on, taking identifiable video of people, of Raphael Satter, of the videographer from Associated Press, of John Scott-Railton, and Iâm trying to figure out whatâs going on, kind of listening with â for all the commotion.  Roman tells me you know, we have to help get Michel out of there, but heâs not calling him Michel.  He say, we have to help get the agent out.  The agent is somewhere; heâs hiding.  You need to help him get out.  I said okay, tell me where â tell me what to do.  How do I help him get out?  What does he need?  He goes, Iâll call him back.  You get the video; figure out whatâs going on.  In the meantime, get pictures of everybody so we could figure out whoâs who later.  So, Iâm doing that.</p>
+
+<p>Periodically Khaykin is calling me, yelling into the phone frantically, and Iâm waiting outside.  Raphael Satter, John Scott-Railton, and the two AP people; the photographer, the videographer, gather outside.  I get some pictures of them, and they split up and they leave.  I take notice that JSRâs wearing a very professional outfit and heâs a very smart-looking guy.  I watch people all the time, so Iâm thinking this guyâs very smart.  I hope I get to meet him one day âcause it looks like he organized all this.  He clearly looks like the smartest guy in the room.  He knows whatâs going on.  In my mind I put a checkmark; JSR, smart guy, smart dress, interesting.  I look at Raphael Satter and I say Raphael Satter, heâs not prepared for the weather.  Weâre in New York; itâs cold.  Itâs wet outside.  Heâs wearing ASICS running shoes.  [00:45:00] I said, he must be the guy whoâs here doing something else.  [MUSIC] I donât know what his role is, but weâll put a checkmark that heâs not prepared to be outside for a while.  Then the videographer, the photographer from the Associated Press are dressed like theyâre ready to hike up Mount Everest.</p>
+
+<p>They got hiking boots, they got cold weather gear, they got good jackets, they got â theyâre ready to spend a lot of time outside.  I said okay, these guys are the professional photographers that are gonna be â that were told to be prepared to wait, and they were ready to wait outside in the cold.  I report back to Khaykin.  He says okay, good, you got their pictures.  I got their pictures; great.  Send them to me later.  You need to go to the Marriott hotel around the corner, get your car, pick up the agent.  I say okay, he was able to get out?  He says, yeah.  He found the back exit somewhere?  âCause Iâm standing in the front lobby and Iâm watching the front.  So, he found another way to get out of the building.  He got out, and he made his own way to the Marriott hotel around the corner.  I go get my car and I have â my carâs tinted out, so you canât really see inside.  Even the windshield is tinted, so you canât make faces out when youâre standing next to my car.  I drive to the Marriott hotel.</p>
+
+<p>I tell Khaykin Iâm there.  The agent comes out, gets in the back of my car, and Khaykin tells me on the phone, whatever he needs, offer him whatever he needs.  You are to do whatever he says.  In my mind Iâm thinking yeah, yeah, whatever he says, but Iâm not putting no fucking dead bodies in the car.  I mean, whatever he says, itâs a very wide meaning, but meanwhile Iâm agreeing with Khaykin.  I said yeah, of course, Roman.  Anything he needs.  The guy gets in the car; heâs a very pleasant old man.  Kinda reminded me a little bit of a grandpa character from a movie of some sort.  Heâs talking either in Hebrew or in French.  Heâs not speaking English.  Heâs talking to someone.  I shake his hand.  He gets in the back; he doesnât introduce himself.  I say my name is Igor.  He tells me, go to this hotel.  I drive to this hotel and I drive around to make sure that Iâm not being followed.</p>
+
+<p>JACK:	Are you good at that?  Are you good at lose â like, seeing if youâve been followed, and you know the way around?</p>
+
+<p>IGOR:	Well, yeah.  I follow people all the time, so itâs easy for me to figure out how to check if Iâm being followed, right?  I guess sometimes we get paranoid, so we just check.</p>
+
+<p>JACK:	Can you explain how to check if youâve been followed, if youâre being followed?  Like, your â kind of your methods?</p>
+
+<p>IGOR:	[MUSIC] So, Iâll tell you about that specific scenario.  We were in midtown Manhattan where the traffic in the evening is pretty heavy.  Thereâs a lot of traffic lights and thereâs a lot of movement.  So, itâs not easy to drive in a â like, ideally if youâre driving on the highway, right, if you slow down or you speed up, the person whoâs following you has to match what youâre doing, so thatâs how you could force somebody to show themselves that they would be distinct from the rest of the traffic.  You could get off the highway and see who gets off the highway with you.  You could go to a McDonalds drive-through, come out, you could go to a bank drive-through, come out, and youâre seeing who is constantly showing up in the same cars?  Whoâs making the same turns?</p>
+
+<p>You get back on the highway; who is back on the highway?  Who was there a half-hour ago?  In midtown, you canât do that because thereâs so many cars.  Youâll never â you canât possibly remember all the cars.  So, in midtown, the goal is to drive down quiet streets, force somebody to stay behind, and then have to chase you down when you get to the next corner, or go into â in midtown thereâs a lot of garages that you enter, letâs say, at 51st Street, but you exit on 52nd Street, and theyâre going in â theyâre one-way streets, so theyâre going in opposite directions.  The avenues are going in opposite directions also.  So, if I go into a garage letâs say on 51st, exist on 52nd and I come out to the avenue, and â so, Iâm changing my direction of travel and Iâm forcing someone to go through a garage, because thereâs no way that they could circle that block and get to the corner where Iâll come out.  You know what Iâm saying?</p>
+
+<p>JACK:	Yeah.</p>
+
+<p>IGOR:	So, I do a couple of those things.  Rush hour traffic is dying down now and everything is cool.  Iâm content.  Thereâs no cars following us.  Heâs the professional; he seems content.  Heâs just talking constantly into his phone.  I drive to his hotel, also in midtown.  He gives me a claim check to give to the guy in the lobby to take his luggage out of storage, which immediately in my mind, I say oh shit, Iâm gonna have this guyâs luggage in my hand.  [MUSIC] [00:50:00] What are the chances that this professional spy is gonna have his name tag on his luggage in case it gets lost?  If he has it, I gotta get a picture âcause Iâll have his name.  The second thing that Iâm thinking; itâs PM, right?  Itâs in the evening.  His luggage is in the hotel lobby in storage.  That means that he stayed at this hotel, but he checked out the same morning.  So, he had plans to leave the hotel and probably leave New York tonight.</p>
+
+<p>JACK:	I love the way a private investigator thinks.  When you think about that â I donât think about it like that, but I love hearing the way you think it through.</p>
+
+<p>IGOR:	Yeah, I mean, itâs just â for me, itâs like, I guess weâre overthinking everything.  Itâs just helpful at work.  So, whatever, I give the guy five bucks because I want the guy to get the luggage and not make me wait.  I have Michel in my car.  Itâs parked illegally.  Itâs tinted out; nobody could see him, and I explained that to him before I leave.  I say look, the car has tinted windows.  No one can see your face.  Stay in the car; no one will see you.  We were not followed.  I get the luggage in the lobby, I look at the â this guy, this fucker has a name tag on the luggage and Iâm thinking, are you a â seriously, are you a spy?  I look; it has his name tag and his address on the luggage.</p>
+
+<p>JACK:	His luggage did not say Michel Lambert.  It had a completely different name.</p>
+
+<p>IGOR:	I think alright, Iâm gonna snap a picture of this, but Iâm not gonna do it in the lobby âcause I donât know where Michel is, âcause now I left him uncontrolled.  Heâs in my car but I donât know if he came out, if heâs looking over my shoulder.  Iâm gonna put the luggage in the trunk.  When I put the luggage in the trunk, Michelâs head is going to be facing forward âcause I have an SUV.  Heâs not gonna see me.  I put my camera app on with the black screen and I snap a picture of the luggage when I put it in the trunk, and I close the trunk.  I swipe my finger and the app goes away.  Itâs gone, so when I put my phone back on the magnet on the dashboard, Michel is not gonna see that I had the camera app on.  He tells me to drive him to another hotel in the area.  I drive him to a hotel, but he doesnât like it.  He says, whereâs the lobby?  [MUSIC] I say, itâs on the second floor, I think.  This is New York, so sometimes the lobby is not gonna be on the first floor âcause they have a business there.</p>
+
+<p>He goes no, no, no, I need a hotel with a street-facing lobby.  I say okay, I understand; you want to be able to see outside and you want to be able to see whatâs going on.  I say okay, give me a second, thereâs another hotel around the corner.  The only thing that he asked me in the car â he asked me, who were those people at the restaurant?  I said Iâm not sure, but I think the guy you met with brought the guy with the bushy hair and I think that they brought those people with them because those people were dressed like paparazzi would dress to wait for a celebrity outside.  They might be paparazzi âcause they had very professional photo equipment.  He says okay, thank you, whatever, and he continues talking on the phone.  The only thing that I picked up from him talking on the phone is that he was trying to get a flight to Israel because he was saying the word direct Tel Aviv.</p>
+
+<p>Then he was saying some other phrasing, and then he would say London, Heathrow, or he would say Berlin or Paris, and then he would say direct Tel Aviv, so I couldnât understand the context, but he was offering options of cities where there are airports that you could connect a flight to Israel.  I think he was trying to get somebody, whoever was on the phone, to get him home, to get him to Israel.  Later, analyzing this post-fact, I realized that theyâre a very economic company, so what I have a feeling was going on is he probably had another gig lined up, so he had travel plans to go somewhere else.  But because the operation went to shit, there were photographers taking his picture and the journalist talking to him, he believed that his face could end up being on TV or in a publication tomorrow.  So, in the scenario where an intelligence operative gets his picture taken, itâs the worst thing.  Intelligence operatives typically donât want their picture taken because it prevents them from doing things covertly.</p>
+
+<p>So, he needed to get home just in case.  I donât think that there was a risk that he was gonna get thrown in jail, but I think as a standard operative procedure, when you get your picture taken, you gotta go to a safe place which for him was Israel.  I take him to the Riu Plaza in New York which has a very big glass lobby, and I thought right â but once he told me he wants a street-facing lobby, [00:55:00] I tell him thereâs a spot around the corner with a big glass lobby and you could sit in the restaurant or the bar and you could see the street and you could be far away, removed from the street, that nobody would see you.  I take him there, I shake hands, and that was it.  He went on his way and I went on my way.</p>
+
+<p>JACK:	Well, after all this, Raphael Satter went back to the Associated Press to investigate this Michel person.  At the same time, Igor was sending all this information to Ronan Farrow.</p>
+
+<p>IGOR:	I send Farrow all the pictures and I say Ronan, I donât know what happened here.  Do you know anybody in these pictures?  He goes yeah, in fact, I do know them.  One of them is a reporter for the Associated Press, Raphael Satter, and one of them is a researcher, John Scott-Railton.  I go, great.  As me and Farrow are talking, a couple hours later, Farrow tells me that Raphael Satter happened to send all of their media to Farrow to review just because Satter knew that Farrow was working on the story.  They decided to I guess share or discuss, and Farrow was looking at pictures of Khaykin and other pictures from the â that Satter and JSR took.  I asked Farrow; I said Farrow, is my picture in there or no?  He goes, your picture is not in there but your boss is.  I said, good for my boss.  Iâm glad my picture is not in there.  Thatâs awesome.</p>
+
+<p>JACK:	So, Raphael Satter puts all this together and publishes the story in The New York Times, titled The Case of the Bumbling Spy: A Watchdog Group Gets Him on Camera.  The story explains that they reached out to Uvda, that Israeli investigative journalism show, which you actually heard a clip from earlier in this episode.  Uvda recognized the photo of Michel and was able to identify him as someone who works for Black Cube.</p>
+
+<p>JOHN:	What happened rather quickly after the initial story is that people saw his face and people saw his face in his home country of Israel and tipped off reporters.  Within a few days, The New York Times had the story that he was a former Israeli intelligence officer or official named Aharon Almog-Assoulin.  He also was some kind of a city councilman in his city, or had been.  This of course was bad news for the guy because not only was he named, which is obviously poison if youâre a â an intelligence operative, but also he seemed to be uniquely ill-prepared for what was going on, and bumbling.</p>
+
+<p>IGOR:	Next day, Iâm meeting up with Khaykin and Khaykin tells me that because of what happened, weâre gonna have a team meeting with Black Cube next week on Wednesday.  I say okay, cool.  Iâm thinking in my head, next week Wednesday Iâm gonna get to meet a manager from Black Cube which will be awesome.  Theyâre probably going to give us some professional training and explain to us what we did wrong.  Thereâs probably gonna be a debrief of this situation.  This is great.  So, I get in touch with Farrow. I tell him next week on Wednesday thereâs gonna be a manager from Black Cube coming here.  Weâre gonna have a team meeting.  I canât wait; Iâm so excited.  So, as we get into next week, Khaykin tells me tomorrow youâre gonna be polygraphed.  Donât have any alcohol and donât take any drugs tonight.</p>
+
+<p>JACK:	[MUSIC] Long story short, he gets a lawyer who tells him not to take the polygraph.</p>
+
+<p>IGOR:	So, whatever, I gave them an excuse why Iâm not gonna be taking the polygraph, and Khaykin was very upset.  He tried to convince me to go there.  When I told him finally Iâm definitely not going there, he asked me the polygraph questions on the phone and I think somebody from Black Cube was listening in on the call, like kind of on a three-way call.  Some of the questions they asked me is they wanted to know how much the journalists paid me.</p>
+
+<p>JACK:	They thought that JSR or Raphael Satter paid him to tip them off that Michel wasnât who he said he was.  They had no idea how JSR was so prepared and figured all this out.</p>
+
+<p>IGOR:	That totally made â that totally blew my mind up inside.  I wanted to really throw something at them through the phone, you know?  I got so angry.  I was thinking these people are so, so ignorant of the way that the American system of journalism, of our freedom that they donât have this concept.  They think the journalists paid for stories?  It really pissed me off.  [01:00:00] Of course, I didnât show that I told them.  I said Khaykin, what do you think Iâm worth?  I said, I donât know anybodyâs name.  I donât know what weâre doing.  I donât know anything.  I said, why would anybody pay me?  Plus, I donât even know in advance what weâre gonna be doing tomorrow.  Itâs always last-minute, which is also kind of a way to compartmentalize.  If Iâm the guy on the ground, they donât tell me anything in advance.  Khaykin may know in advance that thereâs a job for tomorrow but heâs not gonna tell me until the day before.  So, I donât have time to tell anybody else, you know?  I was just very offended by that, that they had this concept that they believed journalists would pay for a story or pay a source to be a source.  So, whatever.</p>
+
+<p>I told him, I said listen; they didnât pay me anything.  Iâm worthless.  I said, why would any journalist want to talk to me?  What am I gonna tell them?  My name is Igor.  I live in New Jersey.  I said you know, these guys, they need to get off their high horse and â or take me down from the pedestal.  I forget what I said, but I basically said â I said, this is nonsense.  Why would any journalist care about Igor?  I said ah, I â and I explained to Khaykin â because Raphael Satterâs story already printed, I explained to him that in the story, Raphael Satter explains how John Scott-Railton figured out that he was being targeted by Black Cube because his colleagues were being targeted and other people were being targeted.  They were recycling the plot.  It was easy for JSR to catch onto that, and once they started looking into the fact that this guyâs company, the company â I think it was called CPL Consulting or something, that the company was fake, there was nothing at that address and all these things, and they figured out that yeah, this was really â this was truly a ploy to get information out of John Scott-Railton.  But Roman didnât want to hear that.</p>
+
+<p>He was just â kept asking me how much the journalists paid me.  I mean, at some point I told him this conversation is going in a circle, so I said okay, Iâm not taking the polygraph.  You want to fire me?  Fire me.  He said well, the client is gonna fire me.  I said well, tell them you fired me and maybe they wouldnât fire you.  But what do you want me to tell you?  I said, I gave you a heads-up back like, three, four months ago or six months ago.  I said when theyâre gonna need a guy to blame, youâre gonna be the blame guy.  [MUSIC] So, youâre not seeing that because youâre not looking at this from the side, but when Black Cube are gonna need a fall guy, when theyâre gonna need a guy to point the finger and say he broke the law, theyâre gonna say you broke the law.  Youâre the guy who has a license in New York.  Theyâre gonna say that you knew the law and you did something illegal.  Theyâre not gonna say we did something illegal.  Theyâre gonna say weâre in Israel, weâre a foreign company, weâre untouchable in New York but you guys got Roman over there; heâs the lawbreaker.  It ended up kind of being that way.</p>
+
+<p>At some point later, I talked to Ronan Farrow and when they called for comment from Black Cube, Black Cube said oh, that illegal stuff with the phone tracking, oh, we werenât doing that.  That was all Romanâs idea.  So, itâs kind of â thatâs â anyways, thatâs how it played out.  I didnât meet JSR for a long time.  I kept asking Farrow to introduce me to Raphael Satter, but Farrow was ready to book it.  He didnât want to get scooped, so he kept telling me heâll introduce me to Raphael later.  I just wanted to shake Raphaelâs hand and just shake Johnâs hand and say guys, you did a great job.  I happened to be there and I thought it was amazing.  You guys are awesome.  Iâve been reading about you.  Iâm your biggest fan.  You guys are amazing guys.  Farrow kept delaying the meeting, so at some point I just messaged Raphael and I started talking to him.  I sent him some pictures from that day so he knew that I was really there.  He introduced me to JSR and I said we should all hang out sometime, have dinner in New York.  At some point we arranged to do that.</p>
+
+<p>JOHN:	Itâs a remarkable thing; when youâre in a situation like that, not that Iâve been in very many, but this one was stressful and fraught.  I feel like I remember most of the moments from it better than many things that have happened in my life.  [01:05:00] Yeah, this was a very intense experience for me.  Of course, I had spent hours, hours and hours trying to think about the opposition, trying to figure out what â and put myself in the mind of whoever was planning on the Black Cube side, whoever was doing the organizing and the thinking, who might be responsible for that.  I had another sense of a person outside of the hotel who, when we left and did a regroup, who kind of monitored us and was very attentive to us.  I remembered his clothing really well.  That turned out to be Igor.  So, during the conversation I had with Igor, there was a moment where I was like, were you wearing this?</p>
+
+<p>I remember you when you were talking to the doorman.  Yes, yes.  But to set the stage emotionally, this was a thing where I had spent a lot of time trying to figure out who was on the other side and what they might have been thinking, and to not only get an opportunity to meet one of them but one of them who had done a righteous and good thing by turning whistleblower, was a profound experience for me.  I had deep respect for Igor and his choice to turn whistleblower when he realized that this was really bad.  [MUSIC] So, meeting him was in some ways like a beautiful coda to what had been an attempt to try to subvert my work and that of my colleague and the ability of the victims that we support to get justice, and turns out I pick up a friend in the process.  So, no complaints.</p>
+
+<p>JACK:	Yeah.  So, what does this mean that Black Cube was spying on you, I guess?</p>
+
+<p>JOHN:	Well, I think it raises the obvious question; a lot of money was clearly spent to make this happen.  Who spent that money and what were they interested in?  Why was discrediting us so worth it?  As we learned, the story doesnât end there.  Others including lawyers representing victims of NSO Group were also targeted by the same operation, also to meetings or attempted to be lured into meetings.</p>
+
+<p>JACK:	Well, so, hold on, how does this tie into NSO?</p>
+
+<p>JOHN:	Well, the lawyers representing a group of victims of NSO spyware in court cases brought in Israel and elsewhere, those lawyers were also targeted by spies, by anonymous spies who tried to wine and dine them and get them to say things about the case.</p>
+
+<p>JACK:	So, this might have been in connection with the NSO Group?  Itâs not clear exactly if it is and there isnât any hard evidence which definitely links it, but we can infer that it was them.  I mean, NSO did come up in their meeting quite a few times, so itâs a strong theory.  But this means just as we were about to get to the bottom of this story, the bottom just fell out because JSR has been investigating the NSO Group for years and years and has published multiple reports about what the NSO has done. So yeah, letâs talk about them next.  Who is the NSO Group and why has JSR been investigating them for years?  Thatâs exactly where weâll pick up in the next episode.  John, do you have any closing thoughts?</p>
+
+<p>JOHN:	I think at the end of the day, the experience that I had gave me something really interesting which is I had ten years of my life working with victims of spyware, people who were targeted by spyware as part of the efforts of their repressive government to mute their voice.  I had heard countless stories of victims and of what it felt like to know that you were being targeted by a government or by spyware.  In the smallest of ways, what this moment gave me was a bit of a sense of what that feels like, to be in a city and to not know whether someone is following you, to have the sense that thereâs a well-resourced entity thatâs trying to dig up dirt on you, maybe to discredit you, to target your friends and your colleagues, itâs a terrible feeling and I wouldnât wish it on anyone.</p>
+
+<p>(OUTRO):	[OUTRO MUSIC] [01:10:00] A big thank you to Igor and JSR for sharing this crazy story with us.  If you found this episode interesting, you might want to check out Ronan Farrowâs podcast called The Catch and Kill.  In fact, Episode 1 of that podcast is the story you just heard, but from Ronan Farrowâs perspective.  It even has JSR and Igor as the guests in it.  Igor is who brought me this story, though.  I only heard the podcast after I did my interviews with him.  Anyway, after Episode 1 of The Catch and Kill podcast, it goes into all the Harvey Weinstein stuff which is a different path than where weâre going.  Weâre going to be veering directly into the NSO Group in the next episode.</p>
+
+<p>Do you get mad when youâre all caught-up on new episodes and have to wait two weeks for the next one?  Look, if thatâs the case, it obviously means you really like the show and should consider donating to it to help it along.  Donations to independent creators really go a long way at helping get new content out to you, so please visit patreon.com/darknetdiaries and consider supporting the show, or you can subscribe to Darknet Diaries Plus on Apple Podcasts.  Thank you.  This show is made by me, the secret squirrel, Jack Rhysider.  Sound design this episode was done by the sound of silence, Andrew Meriwether.  Editing help this episode by the feline supernova, Damienne, and our theme music is by the 3D waffle, Breakmaster Cylinder.  Even though they never caught the hacker, why?  Well, because he ran somewhere, this is Darknet Diaries.</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

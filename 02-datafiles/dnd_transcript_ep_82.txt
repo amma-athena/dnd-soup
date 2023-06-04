@@ -1,0 +1,647 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>Master of Pwn â Darknet Diaries</title>
+	<meta name="description" content="The Zero Day Initiative runs a contest called Pwn2Own. The contest calls the best hackers in the world to demonstrate they can hack into software that should be secure. Like browsers, phones, even ...">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Master of Pwn â Darknet Diaries">  
+	<meta name="twitter:description" content="The Zero Day Initiative runs a contest called Pwn2Own. The contest calls the best hackers in the world to demonstrate they can hack into software that should be secure. Like browsers, phones, even ...">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/pwned.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/82/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Master of Pwn â Darknet Diaries" />
+	<meta property="og:description"        content="The Zero Day Initiative runs a contest called Pwn2Own. The contest calls the best hackers in the world to demonstrate they can hack into software that should be secure. Like browsers, phones, even cars. Whoever can demonstrate the most vulnerabilities will be crowned the Master of Pwn." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/pwned.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/82/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/pwned.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/82/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="Master of Pwn â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/pwned.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 82: Master of Pwn</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://www.podtrac.com/pts/redirect.mp3/traffic.megaphone.fm/ADV2643452814.mp3?updated=1609458395"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/82/",
+			   "title": "Ep 82: Master of Pwn"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/82">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[START OF RECORDING]</p>
+
+<p>JACK:	Alright, pop quiz.  Who is the best hacker in the world?  Well, I think Iâve found him.  Oh, itâs two guys, actually; Pedro and Radek.  They won the 2020 Masters of Pwn Award which for now means theyâre the best.</p>
+
+<p>PEDRO:	Oh, wow.  As much â we really appreciate that and as much as we would like to think we are, that would be unfair, you know?  Itâs quite a nice title to have and weâre quite happy with it.  But the fact is thereâs a lot of good hackers that stay in the shadows and I know for a fact a lot of them are better than us.
+<!--more-->
+JACK:	See, hereâs the thing; Master of Pwn is the title given to the winner of the Pwn2Own hacker competition.  Weâll get into what all that means later but this is a very prestigious event with hundreds of thousands of dollars in prize money at stake.  In fact, I think itâs the highest-paying hacker contest out there.  When you have a well-known hacker contest with high-paying rewards and the rules are fair and transparent and itâs open for anyone in the world to compete in, then yeah, I think whoever wins it can possibly say theyâre the best hackers in the world.  I mean, how else can you prove that except through a fair and open competition, right?</p>
+
+<p>RADEK:	Yeah, itâs very good to be crowned the Master of Pwn and of course, anybody can challenge that.  But as Pedro said, there are a lot of people that stay in the shadow or they use different competitions or, you know, formats to compete with the rest of the world.</p>
+
+<p>(INTRO):	[INTRO MUSIC] These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK: 	Okay, today weâre talking with two guys from ZDI which stands for the Zero Day Initiative.</p>
+
+<p>DUSTIN:	My name is Dustin Childs.  Iâm the Senior Communications Manager for the Zero Day Initiative.</p>
+
+<p>BRIAN:	My name is Brian Gorenc.  Iâm the Senior Director of Vulnerability Research here at Trend Micro.  I run the Zero Day Initiative along with a couple other things here at Trend all focusing on exploitation and vulnerability discovery.</p>
+
+<p>JACK:	Alright, so youâre both part of Zero Day Initiative.  What is the Zero Day Initiative?</p>
+
+<p>DUSTIN:	ZDI is the worldâs largest vendor agnostic bug-bounty program.  That means we buy bugs in products from various vendors across the spectrum of IT.</p>
+
+<p>JACK:	Hm, well, thatâs interesting.  These guys are bug-buyers.  Specifically, they buy zero-day vulnerabilities.  Zero-day vulnerabilities are bugs that the software developer or vendor doesnât know exist or has not fixed.  This vulnerability can be exploited on the latest and greatest software updates.  If someone can demonstrate they can exploit fully-updated software, the ZDI team will buy that exploit from them.</p>
+
+<p>DUSTIN:	We buy Microsoft, we buy Apple, we buy Google, we buy Cisco, we buy IBM.  We buy a bunch of different bugs.</p>
+
+<p>JACK:	Now, the thing is, ZDI is ran by Trend Micro which is a cyber-security company that makes different products like the TippingPoint Intrusion Detection System.  Now, an intrusion detection system examines the network traffic and looks for someone trying to exploit something.  It alerts and triggers and tells the admin check this out; there might be something wrong here.  ZDI was created in order to enrich the vulnerabilities that their intrusion detection system can detect.  They thought by buying bugs, it would make their product better.  But at the same time, when theyâre buying a bug, they also tell the vendor that thereâs a serious vulnerability in their product and this needs to be fixed now.  While a lot of software vendors have their own bug-bounty program which pays people to report bugs to them, they donât give ZDI any money for the bugs that ZDI reports.</p>
+
+<p>DUSTIN:	I wish it worked that way.  It would save our budget a lot.  Now, we buy the bugs â letâs take Microsoft Edge bug just as an example, hypothetically.  We buy a bug at Microsoft Edge and then what we do is we create a filter for our products and then push that out to Trend Micro products ahead of Microsoft releasing a patch for Edge.</p>
+
+<p>JACK:	Yeah, so, I guess my question is why doesnât â so, you said Edge is an example; why wouldnât Microsoft pay for this bug or why donât they pay more for it?</p>
+
+<p>DUSTIN:	Microsoft would pay for it and they probably would pay more, but their advantage is with going to ZDI.  Certain researchers donât want to be known to the vendors.  Certain researchers donât want to deal with the disclosure.  Weâve had a lot of interesting disclosures over the years.  We also have kind of a frequent flyer program so the more you report to us, the higher levels of bonuses you can get.  Weâre kind of a known entity.  With some vendors, researchers have had the experience where they report bugs and then they just kinda get blown off.  [00:05:00] The vendors know who ZDI is.  Weâve been around long enough, so researchers know that if they report it to us, their bugâs not gonna get just ignored.</p>
+
+<p>JACK:	Mm-hm.  Iâve talked with a few researchers who have found it frustrating when they tell a company about a bug they found, but that company just ignores them.  So, security researchers donât always want to go through the hassle of having to convince a company that thereâs this bug and you need to fix it and hereâs how.  Instead, they just submit it to ZDI and then ZDI does all the legwork to try to get the vendor to fix it, because hereâs the thing; ZDI puts pressure on the vendor to make them move quick.</p>
+
+<p>DUSTIN:	[MUSIC] Yes, we have a 120-day disclosure timeline right now for vendors so from the time we report it to you, to any particular vendor, they have 120 days to work with us to get a public solution available whether itâs a patch or an advisory, some sort of fix out to the public.  Then if it exceeds that timeline, then we do disclose a certain amount of information so the people can take other matters to protect their resources.</p>
+
+<p>JACK:	Mm-hm.  See?  ZDI has a heavy hand here.  When they give a bug to a vendor, a timer starts, and if the vendor doesnât fix this problem in 120 days, then ZDI will publicly tell the world about this bug.  This has given ZDI quite a reputation because if youâre a vendor and ZDI calls you up, you better listen and get things fixed quick or else your customers are going to be victim to many attacks.  This has happened.  Vendors have ignored ZDI and the timer sometimes expires.</p>
+
+<p>DUSTIN:	Sometimes the vendor disagrees with the severity of the bug.  We had a bug in the Foxit PDF Reader and it only hit when the protected mode was disabled.  They said because of that, weâre not gonna fix it.  We said we disagree with that and we think it should be fixed, so weâre gonna go public with it.  We went public with it.  They published a blog â we published a blog and later that afternoon they came back and said you know what?  We changed our mind.  We are gonna fix it.  A week later, a patch was available.  Clearly, if it only took them a week to make the patch, it wasnât a technical issue.  It was just a âwe donât want to patch this for philosophical reasons.â  By going public with it, that changed their mind.</p>
+
+<p>JACK:	ZDI was doing this bug-buying stuff for a few years but then came CanSecWest.  [MUSIC] CanSecWest is a security conference in Vancouver, Canada.</p>
+
+<p>DUSTIN:	A conference organizer had a MacBook; MacBooks had a reputation in the public as being essentially hack-proof.  Everyone in the community knew that wasnât true, though.  He wanted to kinda demonstrate that so at the conference he said okay, Iâm gonna put this MacBook on this network.  If you pwn it, you can own it.  Hey ZDI, would you buy the bug?  We said yes, weâll pay $10,000 for the bug.</p>
+
+<p>JACK:	An impromptu contest was launched.  If someone at CanSecWest had a working exploit for a fully-updated MacBook Air, they could try attacking it.  The challenge was to get into it without the user having to do anything like click a link or a pop-up or anything.  Simply having the MacBook on the same network as an attacker was all that was needed because if someone can take a computer over like this, this means theyâve pwned the computer.  The rules are that if you pwn it, you can own it, which is different than owning it in a hacking sense.  If you attack something and you get into it, you pretty much own that system.  But in this case, youâre actually given the MacBook Air and say here, you got into it.  You can own it now.  Itâs yours.  But then on top of that, ZDI was also offering a $10,000 reward if you can do it, too.  Thatâs a pretty nice reward which means hackers were spending time trying to hack into this MacBook Air during the conference which lasted three days.  Did somebody pwn it?</p>
+
+<p>DUSTIN:	Dino Dai Zovi; yes, he did.  That was before my time but I believe he used a bug in QuickTime to take over the system.</p>
+
+<p>JACK:	This was such an exciting event for ZDI that they decided to keep this contest going.  [MUSIC] Since 2007, the Pwn2Own contest has been going on every year at CanSecWest.</p>
+
+<p>DUSTIN:	Yes, from that point it became an annual thing and it grew.  Initially, it started primarily with browsers.</p>
+
+<p>JACK:	The Pwn2Own contest for the next few years was just for web browsers; Chrome, Firefox, IE, Safari.  They announced the contest rules; the browsers will be fully updated on the latest patches and the contestant will need to exploit a bug in the browser and try to take over the computer.  The only interaction the user has to do is browse to the attackerâs website.</p>
+
+<p>DUSTIN:	I would say, just browse to the website.  No user interaction after that.</p>
+
+<p>BRIAN:	Yeah, we actually have rules in the contest that require the exploit work without any user interaction, so all theâ¦</p>
+
+<p>JACK:	Other than going to the website.</p>
+
+<p>BRIAN:	Other than going to the website.  Then once you hit the website, the machine is compromised and the attackerâs shell code is executing.</p>
+
+<p>JACK:	Okay, that gives me chills just thinking about it âcause I always assumed if I [00:10:00] just go and â as long as I donât click âare you sure you want to run this thingâ, itâs very bad or something or thereâs a little padlock in the top.  Thereâs all these little things I look for when Iâm going to shady-looking websites.  But now youâre telling me itâs possible that even if all that, I could still be pwned.</p>
+
+<p>DUSTIN:	Thatâs correct.</p>
+
+<p>BRIAN:	100%.</p>
+
+<p>JACK:	[MUSIC] Thereâs a few different combinations of potential attack scenarios here.  Itâs not just for browsers; thereâs also three different operating systems, too.  They would ask the contestants what browser and what operating system do you want us to visit your website with?  You can pick macOS, Windows, or Linux, because writing an exploit for each of these is a little different.  Next year in 2008, Charlie Miller wrote an exploit for Safari on macOS.  When the contest organizers went to Charlieâs website, Charlie exploited that computer and completely took it over.  From then on, the contest grew bigger and bigger and bigger.  In 2014, a security research team known as Vupen came to compete at Pwn2Own.</p>
+
+<p>BRIAN:	Yeah, the Vupen Chromoscope is actually quite interesting, that â what happened in 2014.  Itâs I think still to this day one of my favorite exploit chains that we received from Vupen.  Vupen was â at the contest was targeting Google Chrome.  Obviously at the time, itâs still to this day is considered one of the most â hardest browsers to actually compromise.  What they ended up doing is they had their server, we have the attack laptop and the â one of the ZDI team members surfs to their controlled web page.  It basically says Waiting.  Whatâs happening underneath the covers is actually theyâre exploiting a use-after-free in Googleâs renderer process.</p>
+
+<p>JACK:	Use-after-free is a classic exploit.  A browser has an object in the computer memory in order for it to work, but what an attacker might do is delete that object from memory somehow but not tell the browser that the object was deleted.  The browser still thinks something is there but the attacker will put something else in that spot of the memory, so when the browser goes to run the program thatâs in that piece of memory, itâs running the attackerâs code instead which can be something malicious.</p>
+
+<p>BRIAN:	Once theyâve actually successfully exploited the use-after-free, they move on to try to escape the sandbox.</p>
+
+<p>JACK:	Getting out of the sandbox is the next big hurdle.  Most modern browsers today render websites in a sandbox.  If you think about it, when youâre browsing the internet, youâre loading all kinds of content from people you donât trust; images, sound files, JavaScript.  Itâs all being downloaded and opened on your computer.  Browsers place all that in a sandbox which is a place where all this can be opened but nothing in the sandbox should ever be able to interact with anything else in the computer.  A sandbox is a safe place to load untrusted content without the fear of it spreading to the rest of the computer or even to other tabs within the browser.  Sandboxes have a very strict amount of privileges and something they donât allow for is someone to fully take over a computer, so this is why attackers need to learn how to escape the sandbox to take over a computer which is what Vupen came to demonstrate live on stage during the contest.</p>
+
+<p>BRIAN:	The way that they did this was they actually used an undocumented feature in Windows which allowed them to load a com control onto the clipboard of the operating system.  What ended up happening is every time you would right click, the com control would get instantiated and execute attacker control code outside of the sandbox itself.  It was this kinda slick way of escaping the Chrome sandbox using some of the undocumented features in the Windows operating system.</p>
+
+<p>JACK:	Now, to me at least, this is exciting to watch.  Itâs not quite a spectator sport though, so itâs just about as good to hear about it later as it is to see it live, but itâs exciting in the sense that an unknown bug to a major browser is going to be exploited right here on stage, right now.</p>
+
+<p>BRIAN:	Itâs usually very exciting, right?  You know whatâs happening on the contestant side is, you know, theyâve put a lot of time and effort into first finding the vulnerability and finding the sandbox escape and then taking the time to write the exploit, make it reliable, make it so that thereâs no user interaction.  It comes to this point in the contest where itâs all on the line, right?  You have five minutes to make the exploit work.  Thereâs a lot of tension that occurs in the air and in the room when it comes to that point of actually surfing to the web page.  For us and ZDI, weâre always very much â we want the contestant to win, right?  We want to pay the bounty.  We want to be involved in the disclosure process.</p>
+
+<p>We want to see them be successful because ultimately whatâs gonna happen is the vendorâs gonna release the patch thatâs gonna remove this exploit from being used in the wild.  Weâre also very excited when the actual exploit works because we look at exploits as kind of art, right?  Thereâs always [00:15:00] unique things that theyâre doing to make the exploit work by using different exploit techniques, unique bugs, things that have never been seen before.  When the exploit is successful, it gives us an opportunity to go take a look at that exploit chain, understand how they put it together, look at the vulnerabilities that they were using and see if thereâs any interesting new techniques that we can kind of provide protections for but also recognize all of the efforts that they â that the contestant has put into actually developing that exploit.</p>
+
+<p>JACK:	The Vupen team sat down, got their malicious web server ready, then told ZDI to browse to their web server.  After ZDI went to the website, a few moments later, the calculator app launched on ZDIâs computer which proves that the Vupen team was able to get into that computer and launch whatever program they wanted.</p>
+
+<p>BRIAN:	I remember when we were sitting in the disclosure room at the contest going through the exploit with Microsoft and Google at the time, they were all kind of â we were all kind of sitting there surprised at how efficient this was and the fact that they were leveraging something that was undocumented in an operating system that would allow them to execute code and escape the sandbox which at the time was something that was â still was relatively rare to see.  But it was fun to â you just sort of go to a website, the browser doesnât crash, and then you minimize the browser and start right-clicking on the desktop and calculators start popping up on the screen, demonstrating that they did have complete control of the computer at that point.</p>
+
+<p>JACK:	[MUSIC] Demonstrating this vulnerability and having it work earned Vupen $100,000 in prize money.  Over the course of time, Vupen has gone to Pwn2Own and taken prize money home many times.  See, Vupen was this team of security researchers who were in the business of finding vulnerabilities and selling them to law enforcement.  This was actually their whole business which brings me to the question; is $100,000 a lot for a bug like this?  Well, it seems like it is.  Itâs a lot for ZDI.  Thatâs for sure.  But letâs talk about some options, what else you could do with a zero-day bug like this.  If the vendor had a bug bounty program, you could submit to them and some vendors pay pretty well, but do they pay $100,000 for a bug?  Well, Googleâs maximum payout for a bug is currently set to $30,000.  But a security researcher in 2009 was able to demonstrate that he could take over a Pixel 3 phone with just one click, and Google paid him $200,000 for that one.</p>
+
+<p>But the reason that was so high is because the researcher was able to chain a few different exploits together to get this working, so they actually used multiple bugs to do that.  Sometimes vendors will pay double when they want researchers to focus on a particular product.  Itâs sometimes hard to get vendors to look at bugs that you give them and get them to pay out.  Obviously taking full control over a computer using an unknown bug will be one of the higher-paying bugs, but then thereâs a few other markets for places you can go to tell zero-day exploits.  The dark web is one place, but itâs shady and shifty.  Is someone really gonna roll up and pay $100,000 for a vulnerability on a darknet marketplace?  How do you know itâs an actual zero-day vulnerability?  How do you know that youâll get working code and youâre gonna be taught how to use it properly?  Or how do you know where it even came from?  Maybe the seller will sell it to you and then sell it to your adversary the next day.  Think about whoâs buying and selling zero-day bugs on the dark web; probably criminals, right?</p>
+
+<p>People with ill-intent at least.  The market for this on the dark web is starting to dry up and so, thereâs law enforcement.  Places like the NSA and FBI sometimes use zero-day bugs to get into things.  The classic example is the San Bernardino iPhone story.  This was an iPhone recovered from one of the terrorists who did an attack in 2015.  The iPhone was password-protected and the FBI wanted Apple to unlock it but Apple refused, mostly saying they donât have the ability to do that and theyâve designed the phone in such a way that itâs impossible even for Apple to unlock it.  The court wasnât able to force Apple to do it, so the FBI had to go to Plan B which was to hack into it.  We donât know the specifics but the story goes that the FBI bought a zero-day bug for a million dollars to get into that iPhone.  An exploit to get into a locked iPhone goes for a million dollars on the gray market.  There are mercenaries too, hacking groups who work for the highest bidder to hack into a target.  An example here is Project Raven.  In fact, in Episode 47, I talk about Project Raven.</p>
+
+<p>This was basically a hacking group who was contracted by the UAE to hack into its adversaries.  One of the hacking tools they used is called Karma.  This allowed Project Raven operatives to access information on a targetâs iPhone without the target having to click or do anything.  Simply by sending a message to that iPhone was all it took.  But we believe Karma was an exploit that was purchased outside of the UAE.  We donât know how much they paid for it, but [00:20:00] it sure is probably worth a million dollars since Project Raven was able to use it for years on dozens of targets without it being patched.  Any time the UAE government wanted to spy on someoneâs iPhone, they had a pretty easy and quick way to do it.  See, the thing is, weâre in the era of cyber-arms industry where buying and selling zero-day exploits is fairly common among nations and mercenaries, because having that slight edge on an adversary can really go a long way for a nationâs intelligence-gathering.</p>
+
+<p>DUSTIN:	Yes, there is the exploit broker market and the black market that can pay a lot more.  Thereâs different concerns that researchers have reporting it that way.  One thing is you go to Pwn2Own and thereâs press coverage and thereâs adoration and thereâs Pwnie Awards that a lot of Pwn2Own stuff gets submitted for, so you kinda make your name a little bit more well-known.  If you sell to an exploit broker, your name will never be associated with your research and your research could be used by an oppressive regime to monitor people or something.  Some people have ethical problems with that.  Some people just see two commas in a dollar figure and say thatâll sort itself out.  Itâs one thing that we do compete against.</p>
+
+<p>JACK:	Vupen has demonstrated eleven zero-day vulnerabilities at Pwn2Own over the course of a few years, but that team has now morphed into whatâs called Zerodium which they still work to acquire zero-day exploits and report on them.  Zerodium has their own researchers trying to develop zero-day exploits, but also spends a significant amount to buy exploits.  That just makes me wonder why Vupen decided to publicly share these with ZDI.  Maybe to become known as the people who have lots of zero-day bugs, so many that theyâre willing to share them with ZDI.  Iâd like to interview these guys one day but in my experience, zero-day brokers just donât like talking publicly.  [MUSIC] Iâm reading this article on forbes.com.  The article is titled 30 Under 30 Asia.  They pick thirty people under thirty years old that are noteworthy and making a name for themselves.  One person on this list is named Junghoon Lee.  Let me read what Forbes wrote about him.  âLee, better known as his online alias Lokihardt is said to be able to hack into any computer, smart phone, program, or browser from Apple iPhone to Microsoft Edge, Google Chrome, or Safari.â  Whoâs this guy, Korean Junghoon Lee?  What did he exploit?</p>
+
+<p>DUSTIN:	He exploited everything.  I think he exploited Chrome, he exploited IE, and he exploited Safari.</p>
+
+<p>JACK:	Okay, letâs talk about that, then.</p>
+
+<p>BRIAN:	Yeah, they say he goes by the handle of Lokihardt.  If I remember correctly, he was actually â kind of worked in the game community, a game developer.  He kind of had a unique way of looking at vulnerabilities that he would find in the browsers.  Typically what he would find is race conditions.  Heâd find a place where code is raced in a very specific point and find a way to exploit that in a way that would allow him to get code execution.  I remember about his attempts is that a lot of them were race conditions and kind of unique bugs that not â normal fuzzers and testing techniques wouldnât find and thatâs why Iâve really enjoyed his approach to looking for bugs.  I think one of the most interesting ones I remember from him was he had a â I think it was an IE exploit where to escape the sandbox, he actually forced the browser to open up the on-screen keyboard and he was clicking on the keyboard with his exploit code to actually execute commands on the actual operating system itself.</p>
+
+<p>It was really â it was actually â that one was very visually fun to see because he would go to the attacker control web page, he would exploit the browser, and he brought up the virtual keyboard to actually start clicking on different keys on the keyboard.  I think the attempt didnât work at Pwn2Own because he had tested his exploit against I think the Korean version of the operating system and we were running against the English version of the operating system.  So, the keyboard points were slightly off.  As a result, he didnât actually get code execution outside of the sandbox, but it was one of the more interesting exploits that we had seen at the actual contest.</p>
+
+<p>DUSTIN:	I think his largest payout was $110,000.  Over the three-day program, he won $225,000.</p>
+
+<p>JACK:	Whoa, thatâs crazy.  Thatâs some young Korean guy; just showed up to Pwn2Own, demonstrated how he can take over computers running Chrome, Edge, and Safari and then walked out with a few hundred thousand dollars.  Who are these guys?  Well, Google was apparently really impressed with this work, so they offered him a job.  So, Lokihardt took the job and moved to Sunnyvale and started working at Google, but I donât think he works there anymore now.  When this contest happens, I mean, since 2007 and 2017 at least, thatâs ten years of â browsers are getting pwned every year.</p>
+
+<p>DUSTIN:	Yes.</p>
+
+<p>JACK:	What do the browser companies think of this event?</p>
+
+<p>DUSTIN:	[00:25:00] Well, weâve heard from Microsoft that they actually like it because theyâre getting research that they would not otherwise do.  Especially the security folks; they can go to their management and go look, the secure initiative that we want to do, these mitigations that we want to implement, see, at Pwn2Own were getting popped.  If we implement this mitigation, maybe we wonât get popped so easily.  I wouldnât say they love it but I think they â that they definitely appreciate it.  Most of our vendors we have a very good relationship with so that they know that weâre also a fair broker and weâre not gonna do stuff just to make ourselves look good.  They know that overall, their products are gonna get more secure.</p>
+
+<p>BRIAN:	I think you can look at the contest, too, over the years, too, is that early days in Pwn2Own, a lot of these vendors were not really enjoying being part of the contest but over the years theyâve actually started to see the value.  Theyâve actually started to sponsor the conference and they want to be more involved with the actual research community.  As a result, youâre seeing a lot of these vendors open up and use that data to actually improve things like the sandbox and the rendering engines inside of the browser.</p>
+
+<p>JACK:	While initially Pwn2Own was just browsers, itâs now expanded well beyond that.</p>
+
+<p>DUSTIN:	[MUSIC] Over the years, weâve added applications and other technologies.  It really kinda started with Flash and Java which kinda makes sense âcause thatâs things that are occurring in the browser.  But then we ended up adding enterprise applications like Microsoft Office and Adobe Reader.  Phones at some point came into it as well with the BlackBerry and iPhones.  Then we really started focusing on the operating system and sandbox escapes.  In 2016, we introduced the virtualization category, then we added in 2018 IoT devices, and in 2020 we even added Pwn2Own specifically for industrial control systems and SCADA products.  Itâs really grown over the years as itâs formalized to really spread out and look at a wide range of enterprise products, consumer products, and now ICS and SCADA products.</p>
+
+<p>JACK:	This event has made quite a name for itself.  Vendors know exactly what day Pwn2Own is happening and sometimes push patches to their products just before the event.  But I do wonder what vendors think when they get added to the list of targets in Pwn2Own.  Do their eyes widen when they realize theyâre now gonna be in the crosshairs of the worldâs greatest hackers?</p>
+
+<p>DUSTIN:	Yes, weâve had vendors actually try to opt out of participating but we let them know thatâs not really an option.  But then by the end, they were actually enthusiastic and like Brian says, Microsoft is a co-sponsor of Pwn2Own now, as VMware is, too.</p>
+
+<p>JACK:	Now, while Pwn2Own was always about testing the security of browsers, one year they didnât allow testing in Firefox.</p>
+
+<p>DUSTIN:	[MUSIC] Yes, there was one year we did not include Firefox primarily because they hadnât made any significant new security improvements over the year.  At the time, they werenât even sandboxed.</p>
+
+<p>JACK:	Yeah, Firefox just wasnât updating the security of their browsers enough for ZDI to feel confident in testing it.  In fact, Brian was quoted saying âWe wanted to focus on browsers that have made serious security improvements in the last year.â  When the Firefox CEO saw that, he tweeted âOuchâ, which I think was quite embarrassing for them.  But since then, Firefox has been included again and theyâre putting a lot of focus into securing their product.  As Pwn2Own continued and grew year after year, it became more and more prestigious to be a prize-winner from the contest.  In fact, to make things even more prestigious, they started a thing called Master of Pwn.</p>
+
+<p>DUSTIN:	[MUSIC] In 2016, we created this title called Master of Pwn.  The way Pwn2Own works logistically is at the beginning of the contest, everyoneâs name whoâs participating goes into a hat and we draw names out of a hat and thatâs the order that you go.  Weâre looking for the first win in a category and thatâs the full winner.  Everything subsequent, the prize money goes down for additional rounds.  If a Chrome exploit is worth $75,000 in the first round, it may only be worth $35,000 in the second round.  Thereâs a randomness of luck into the contest.  You might end up with the best research but if you have a bad draw, you get a lot less money.  We introduced the concept of Master of Pwn to crown the overall winner where, okay, that Chrome bug is gonna be worth ten points but itâs worth ten points the first round, the second round, the third round, and so on.  If youâve got the best research but have a bad draw, you could still be crowned the overall winner of Pwn2Own, Master of Pwn, if you end up with the most points.</p>
+
+<p>BRIAN:	This is where it got really competitive.  What ended up happening is in the Pwn2Own evolution, is we started to experience more and more teams in the contest.  The purpose of the team was to actually try to land an exploit in every category and try to accumulate enough points to win that Master of Pwn.  [00:30:00] Because thereâs a lot of press and thereâs a lot of notoriety that goes along with the Pwn2Own contest, companies started to form very large teams to actually compete against other companies.  Some of the top players in the space was two Chinese companies; one Tencent and the other 360 who developed really advanced and elite teams to participate in Pwn2Own.  These teams would be large enough where they would have individual researchers looking at different subsystems to find bugs and then would put them all together to actually bring a large number of exploit chains to the contest so that they could make an attempt to win the Master of Pwn.</p>
+
+<p>Between those two companies, it was quite competitive.  What ended up happening one year is that the â during our ten-year anniversary, the two teams were very close to winning the actual Master of Pwn award.  It came down to the rules in the contest.  The rules in the contest require that you use a zero-day and that itâs unknown to the vendor, but occasionally there can be collisions.  We call them vulnerability collisions where one researcher submits a vulnerability and another researcher submits the same vulnerability and a collision occurs.  As a result, the person who has the first â who uses it first in the contest based off of the draw is â gets the points for that specific vulnerability.  Years prior, the collisions would occur and the â and they would happen within the contest.  But what ended up happening as we â as the competition for the Master of Pwn became more and more important to these companies, they would actually start researching the â basically reverse-engineering the other research teamâs researchers, looking at how they would go about finding bugs and try to find the same bugs that they were finding and submit them to the vendor prior to the contest.</p>
+
+<p>JACK:	Yeah, in 2017, the Chinese team from Tencent blocked the Chinese team called 360 by submitting one of 360âs bugs a few days earlier.  Thatâs just crazy to me.  Tencent didnât hack 360 directly but instead studied how 360 went about finding bugs.  I think what happened is someone from 360 gave a talk at a security conference explaining how to look for bugs or something like that, and someone from the rival team of Tencent was there and took notes and learned the technique and found bugs that 360 probably would have found.  They told Google about this just to mess with 360 to keep them from getting points for that bug.  Thatâs wild, but this rivalry between Tencent and 360 goes way beyond Pwn2Own.  These two companies have been feuding over things for a long time and theyâre not just fighting over whoâs the Master of Pwn.</p>
+
+<p>DUSTIN:	The title comes with a trophy.  Thatâs very important to them as well, and it usually comes with a jacket.  We have a lot of fun with the various jackets that weâve had over the years.  Weâve had a smoking jacket.  The tenth anniversary, we had a custom bomber jacket made up.  It was really cool.  This year we have a custom hazmat suit for the Pwn to â Master of Pwn winner.  But really, itâs the notoriety that theyâre looking for.  That title of Master of Pwn, itâs â especially in certain communities, itâs really well-respected.</p>
+
+<p>JACK:	[MUSIC] Okay, so this team 360, the same year they were getting blocked by Tencent was the same year VMware made its debut at Pwn2Own.  Now, if you arenât aware, VMware is a way to run multiple virtual servers on one computer.  Years ago, you might have one mail server and one domain server and one web server, and each one of these were on their own physical computer in a data center somewhere.  But with VMware, thereâs now one physical server with many virtual servers inside it, all separated into their own container.  They can all share the same hardware resources.  Itâs important to test VMware for security holes since it runs all these different operating systems.  The way Pwn2Own set up the contest was they installed the latest version of Windows, then installed the latest version of VMware workstation, and in that VMware workstation they installed another latest version of Windows.  From the virtual Windows computer, they loaded up the Edge browser and went to 360âs website.</p>
+
+<p>BRIAN:	Thatâs all you had to do.  At that point, we took our hands off of the computer and watched the exploit work, effectively.  What was happening behind the scenes is they were abusing a vulnerability in the browser that would allow them to get an exploit primitive that would allow them to do an out-of-bound write and an out-of-bound read.  This would allow them to exploit the browser.  Then they started to attack the Windows kernel because the vulnerability in VMware that they needed to access was one that required an escalation of privilege.  It needed to be running an escalation to get access to that drive.  Once they exploited the [00:35:00] operating system, the guest operating system, they started attacking the VGA driver of VMware workstation.</p>
+
+<p>Once they finished exploiting the VMware VGA driver in VMware, the screen in the guest operating system would resize and then a calculator would pop up.  Now, that calculator would normally be in the guest operating system but in this case, that calculator was actually running on the host operating system.  They were actually able to get code execution in the browser, then get code execution on the guest operating system, then exploit a vulnerability in VG â in the VGA driver in VMware workstation which would allow them to escape the VMware workstation hypervisor and execute code on the host operating system to completely compromise the actual host operating system.</p>
+
+<p>JACK:	Wow, that is so incredible to me.  Thatâs honestly one of the most astounding hacks Iâve ever heard of.  You should not be able to take control over a computer by just browsing to a website.  That alone is still blowing my mind that teams are able to do that at Pwn2Own practically every year.  But then escape out of the virtual computer and get full access to the host computer?  Thatâs just insane because the guest operating system should absolutely have no way to access the hostâs operating system.  For instance, Iâve seen honeypots ran from within VMs and Iâve seen people using VMs to open malware or phishing e-mails or browse the shady sites because whatâs the worst that could happen?  The VM could be infected but thatâs easy to delete and create a new one.  But now, now we see 360 demonstrate that no, it is possible to escape out of a virtual machine and get access to the host computer.  That just sends chills through me.</p>
+
+<p>BRIAN:	It was crazy to watch and the first time I saw it, I was amazed to see how efficient it was and how amazing the actual exploit was.  I remember it took quite a bit of time.  It took I think a minute or two to actually pull off because it was a lot of activity going on in the exploit but when it popped calc on the host, everybody cheered and was quite excited to see that actually happen live in front of everybody.</p>
+
+<p>JACK:	360 won $105,000 for demonstrating that attack chain.  Thereâs so many incredible exploits that get demonstrated at Pwn2Own.  Iâm fascinated by so many.  For instance, George Hotz has competed in this and walked away with prize money multiple times.  Heâs the guy who jailbroke the first iPhone, modified the PlayStation which caused a crazy lawsuit, and is a member of the PPP CTF team which has won like, six black badges at Defcon now and has created a company which develops software for self-driving cars.  [MUSIC] Thereâs another team I think is worth mentioning; itâs called Fluoroacetate.</p>
+
+<p>DUSTIN:	Yeah, thatâs their team name and itâs actually a pun because itâs based off of a pesticide, so theyâre bug-killers.</p>
+
+<p>JACK:	Itâs made up of two people, Richard Zhu and Amat Cama.</p>
+
+<p>DUSTIN: 	Theyâre definitely an interesting pair.  Amat is from Senegal and then Richard lives on â in the US.</p>
+
+<p>JACK:	Before forming the team, they had both been going to Pwn2Own just as independent researchers.  In 2017, Richard Zhu brought an exploit for the Microsoft Edge browser to demonstrate.  The Pwn2Own contest organizers used Microsoft Edge to browse to Richardâs server and thatâs it; hands off the keyboard.  From there, Richard tried to use that session to take over that computer.  But something went wrong on his first attempt.  The exploit didnât work.  Now, contestants have five minutes to show their exploit and while up there on stage all alone, Richard began typing, fixing his exploit on the timer.  He said okay, try again.  So, the contest organizers tried again and went to his website.  He tried to exploit the browser but it didnât work again.  There was still time on the clock, so Richard went back to troubleshooting, trying to get the exploit to reliably trigger.</p>
+
+<p>BRIAN:	I remember his hands were shaking quite a bit as we got closer to the end of the clock.</p>
+
+<p>JACK:	Can you imagine?  Youâre at the yearly Pwn2Own.  Everyone is watching to see if youâve got what it takes and youâre trying to type and debug code live in front of people.  Itâs gotta be nerve-wracking.  But he got something ready and he asked them to try again, and this time it worked.  He was able to take control of that session and open a calculator on the computer that went to his web server.  He still had 1:37 left on the clock when it was over.  He won $70,000 for that exploit.  Thatâs who Richard is.  The other guy on this team is Amat.</p>
+
+<p>BRIAN:	Amatâs specialty was actually â was baseband exploitation.</p>
+
+<p>JACK:	Baseband is a technology that mobile phones use.  Itâs a type of signal with a specific frequency range.  If you think about all the different wireless signals coming in and out of your phone; thereâs WiFi of course, thereâs Bluetooth and NFC, [00:40:00] and to make calls, it uses baseband.</p>
+
+<p>BRIAN:	What he is very good at is actually exploiting the baseband processor in the phones.</p>
+
+<p>JACK:	Pwn2Own now has a baseband category for people who want to try to hack phones through this wireless signal.  Hereâs the scenario; your phone tries to connect to the nearest base station to get a signal from the carrier.  But suppose someone pulls up with a van right outside your house and in that van is a rogue base station acting like a carrier cell tower.  Well, your phone might connect to that base station.  The question is, if it does connect to a rogue cell tower, what could that base station do to your phone?  Keep in mind, weâre only talking about the baseband frequency here which is not the same as TCPIP or whatever networking we all might be familiar with.  This is what Amat was researching for Pwn2Own.</p>
+
+<p>BRIAN:	Well, thereâs a protocol that happens between the base station and the actual phone itself for communication purposes.  Then usually what ends up happening is Amat will have found a weakness in this â in the implementation of this protocol and heâll exploit a vulnerability inside of the process â inside of the baseband processor to gain code execution in that part of the phone.  Using just stack overflows and some of the more classic vulnerabilities over time, thatâs what weâve seen a lot inside of the baseband processors.</p>
+
+<p>JACK:	Okay, so he earns money for that?</p>
+
+<p>BRIAN:	Yes, he does.  From 2017 to 2019, the Samsung Galaxy was part of the contest and it was actually exploited via baseband three years in a row.</p>
+
+<p>DUSTIN:	Each of those was $50,000 plus.</p>
+
+<p>JACK:	Wow.  Iâm just glad that someone is there poking at this stuff.  Thereâs so much technology integrated into our personal and private lives that we donât even realize is there, and I sure hope itâs all secure.  I guess we have Amat to thank for finding vulnerabilities in the way some phones handle the baseband processing and getting that stuff fixed.  But anyway, these two guys Richard and Amat were really doing well at Pwn2Own on their own, winning prize money year after year, so they decided to team up and they called themselves Team Fluoroacetate.  From there, they just started dominating.</p>
+
+<p>DUSTIN:	[MUSIC] Well, they kinda take over Pwn2Own for a couple years.  They really compliment each other very well with how they are able to research.  Starting at about 2018, they took over Pwn2Own Vancouver as well as Pwn2Own Tokyo and were definitely scoring more points than everyone else.  They were bringing a lot of great research to the contest and leaving with a lot of our cash.</p>
+
+<p>JACK:	Alright, so Fluoroacetate retrieved a deleted photo from an iPhone?</p>
+
+<p>BRIAN:	In this case, what we end up doing at the contest is we â the way that you demonstrate the code execution on a phone is we have SMS messages and photos on the phone that weâve taken.  We usually take silly photos before we put the phone inside of the RF enclosure.  There was a year where we actually â we deleted one of the photos from the phone because we did not want it to â it was not something we wanted to show in front of the entire audience.  But what ended up happening is they actually exploited a vulnerability in the browser and retrieved the photo archive from the phone.  The first photo that they pulled up was actually the photo that we had deleted.  It was â didnât show up on the phone as being actively there but it was clearly there still in the cache.  The exploit was actually able to retrieve deleted content from the phone that just hadnât been removed by the cache yet.</p>
+
+<p>JACK:	Everyone was properly shocked by this.  The Pwn2Own guys were like, how did they recover a deleted photo?  Itâs been deleted from the phone.  But not only that; again, the simplicity of this is just so stunning to me.  Just by going to a malicious website is all the user had to do to get their phone completely taken over.  Thereâs no need for the user to click Install on something or accept any weird pop-up.  Just visiting the website was all it took.</p>
+
+<p>DUSTIN:	In 2019, we partnered with Tesla to have it â a Model 3 available to hack at Pwn2Own.  As part of that, we got different head units from Tesla and we shipped them around the world to various researchers including Richard and Amat.</p>
+
+<p>JACK:	Okay, so the head unit is just the electronics inside the car, the infotainment system on the front dashboard, really, because that head unit can basically control the whole car.  If you can exploit that, you can pretty much take over the whole car.  They shipped these head units out to some of the contestants like Richard and Amat to try to hack into it.</p>
+
+<p>DUSTIN:	Amat forgot that Senegal runs its electricity different than California.  He plugged it into a 220 outlet when it was set to 110 and it immediately fried the head unit.</p>
+
+<p>JACK:	Oh, man.  Ouch.  But he got a new power brick and he was lucky that was the only [00:45:00] thing that got fried.  Once they had the Tesla head unit all back together, they started hacking away at it and they found an exploit.  They brought their exploit to the Pwn2Own event where there was a complete Tesla Model 3 in the parking lot.  Inside the Tesla on the dashboard is a little computer with a touch screen and everything, and on that is a web browser.  From that web browser, they visited Team Fluoroacetateâs website and they were able to exploit that session and take over the Tesla.</p>
+
+<p>DUSTIN:	That was enough for them to win a Tesla Model 3.</p>
+
+<p>JACK:	Of course they got to keep the car.  Itâs Pwn2Own.  If you pwn it, you own it, remember?  Ah, this contest is cool.  It really brings out some crazy bugs that should have absolutely been fixed.</p>
+
+<p>DUSTIN:	From my perspective, one of the things I like about the contest is it really allows us to guide researchers in specific areas.  What usually happens is weâre sitting around just trying to come up with what categories we want to see really cool research in, and then we include that in Pwn2Own.  Then hopefully that encourages researchers to do research in that area and then report those bugs.  Thatâs kinda how we came up with the virtualization category, is we just said we want to see VMware bugs and we werenât getting any in the program.  Then we started getting VMware bugs and now we get quite a few, starting with just a couple in 2017.  That to me is a great value to the program as well.</p>
+
+<p>BRIAN:	Yeah, itâs quite fun.  I think from my perspective, Iâve been involved in it â with it now for quite a bit of time and you really get to see the change in the way that the community approaches the problem of exploitation.  Back when I first started it was small teams, individuals participating in the program, and then small companies got involved like Vupen where they would actually have a workforce that was developing exploits for the contest and then very large organizations, some of the biggest companies in China participating at a large scale, bringing exploits for every single category, every single target.  Then itâs shifting back to the small, individual researchers again.  The fact that it is possible to write some of these exploits and research these attack surfaces as an individual I think is important for people to see.  Then now, again, weâve got small teams starting to participate again.</p>
+
+<p>JACK:	While Pwn2Own is not really a spectator sport, itâs still an exciting contest.  They donât really show anything to the audience because they need to verify the exploit before giving points and they donât want other teams to see how it was done.  So, thereâs not much to see if you go.  But what happens in the wires is where the exciting part happens and the people who compete in it, yeah, Iâm gonna say this is the big leagues.  Itâs a place to demonstrate youâre one of the top-tier hackers in the world which brings us back to Pedro and Radek, the two guys you heard at the beginning.  Together, theyâre known as Team Flashback.  I had the chance to talk with them after they won the Masters of Pwn in November, 2020.</p>
+
+<p>PEDRO:	Okay, so our team is called Flashback.  We just thought it was quite a cool name to have and we just went with it.  Also kind of related to hardware hacking which was pretty much what we do, right, is flashing something, you know?  Hence, Flashback.</p>
+
+<p>JACK:	This is Pedro but Iâve gotta say both Pedro and Radek do sound very similar to me.</p>
+
+<p>PEDRO:	So, we met â actually, the way we met was Radek hired me.  He hired me as an external consultant for the company he was working at the time.  We got along pretty well.  Fast forward, we like the same stuff.  For example, we like motorbikes, so weâd go on motorbike trips.  This was 2018.  We decided that we wanted to do something together when we were in one of these motorbike trips.  Then the initial idea was for us to provide some training, specialized training in this area.  But then this opportunity of Pwn2Own just appeared out of nowhere.  I just remember â Radek, I just suggested to him, and from then on it just caught fire, you know?  Then we just decided to go for all Pwn2Owns we could.</p>
+
+<p>JACK:	Okay, now, hold on a second.  It doesnât work that way because trying to find a zero-day vulnerability in some of the most secure software; I mean, the browsers are working really hard.  Youâre going against Google engineers here and Microsoft engineers to say we think we can find something that you guys overlooked.  What gave you that confidence that you think you can find zero-day vulnerabilities?  Have you historically been good at finding these things or why this?</p>
+
+<p>RADEK:	As Pedro mentioned, we know each other for some time already.  When I hired Pedro for the project that I was doing at work, we team up pretty fast together.  We were starting to find vulns in software for Cloud, for network devices.  It immediately clicked, our personality, that we can work for â efficient together and [00:50:00] find zero-days or vulns super-fast.  Yeah, if you look actually at our history or achievements; so, Pedro has like, I donât know, what, is it like over 100 RCEs under his name?  I always thought I would stay in the shadows so I didnât publish a lot of vulnerabilities.  But I think we had quite a lot of achievements already, this far.</p>
+
+<p>JACK:	RCE is remote code execution and yeah, Googling Pedroâs name, I see a bunch of hits of vulnerabilities with his name on them, specifically vulnerabilities which allow him to execute remote commands on a device using an unknown vulnerability.  For this team, theyâre both professionals in the security field who like looking for vulnerabilities in products.</p>
+
+<p>PEDRO:	Yeah, we had some experience.  Like you said, we just clicked together and then yeah, we just â itâs a game of perseverance, right?  Finding any vulnerability is all about perseverance.  I mean, how hard and how deep you want to go and what kind of patience you have âcause it really tests your patience.</p>
+
+<p>JACK:	What they like poking at most are hardware devices like routers that you would find in your house.  These are physical devices, yes, but they have software running on them, too.  This combination of how the software interacts with the hardware is where theyâre looking for vulnerabilities.</p>
+
+<p>RADEK:	For us, the approach is, well, we both work together on the target.  We are in different time zones so we can kind of split the work.  That works super-good because when I wake up, I got some results from Pedro.  Then he takes over and so, I take over.  That works pretty good.</p>
+
+<p>JACK:	Are you both having a way or trying to do the same kind of thing or is somebody good at networking while the other oneâs good at reverse engineering?  What are your strong points in â as a team here?</p>
+
+<p>RADEK:	We have a lot of overlaps in terms of finding vulns or exploitation but obviously, one each of us had a bit more edge on specific aspects.  For instance, I am a little bit better at the hardware side, so taking the VMware from the devices and doing some hardware modification while Pedro is better in writing exploits.  While we both could do the same, itâs just way â much faster, efficient, if you focus on the areas that you are better in.  Still, when we always work on a target, we always work together.  We never like to disconnect the activities.  We always go through it together with the the attack vectors, and so on.  We always are in sync full-time.</p>
+
+<p>PEDRO:	The goal is to always achieve remote code execution.  In our jobs, we kinda do a little bit different role because weâre more on the defensive side or offensive, but to try to help companies.  We basically catalogue all the vulnerabilities we found.  Can be some file disclosure, some unauthenticated download, et cetera.  But for Pwn2Own, really, all we care is get control of the device and gain remote code execution by whatever means possible.  Sometimes those means can be quite simple in some cases and other times can be very convoluted, very complicated with exploits, chaining five and six exploits into one in order to get this remote code execution.</p>
+
+<p>JACK:	[MUSIC] One of the vulnerabilities they found was on a normal off-the-shelf home router.  They got one and looked inside at the software and they saw what services were running on this router and started scrutinizing each service to see if any of them had a vulnerability.  After a week, they had developed a fully-functional remote code execution.  Hereâs how that works; these routers sit in our homes, okay?  One side is connected to all the computers inside the home and the other side is connected to the internet, your ISP.  They found a way to craft a packet in such a way that the router would process it and then execute whatever commands were in that payload.</p>
+
+<p>PEDRO:	But in this case was quite tricky because we could only really inject one or two characters at a time.  What we did is we basically wrote a file to the operating system by exploiting the vulnerability multiple times, injecting one character at a time until we build the command we wanted, and then we just executed that file.  Thatâs how we got our root shell.</p>
+
+<p>JACK:	When they were able to conduct this exploit for the first time, it was quite exciting.</p>
+
+<p>RADEK:	Oh yeah, this is the best feeling in the world, you can say.  People might think that the more exploits you develop and you have, itâs kind of â get normal but for me at least and I see with Pedro as well, every single time we got the new exploit, a new RCE, itâs just like a fresh, completely new experience.  You are super-hyped and super-happy that you finally got it.  You feel like you walk elevated and you just donât want to stop.  [00:55:00] Thatâs the super-big reward.</p>
+
+<p>PEDRO:	Yeah, you giggle like a schoolgirl, really.</p>
+
+<p>RADEK:	Yeah.</p>
+
+<p>JACK:	This is such a scary exploit.  Anyone on the internet who has this exploit can send some packets to your router and get a root shell from that.  A root shell means you could do anything you want on that router, including looking at all traffic coming in and out of your home.  This is the kind of exploit that governments and mercenary hackers would love to get their hands on.  But Team Flashback is not interested in selling their vulnerabilities to people like that.</p>
+
+<p>RADEK:	Well, in the first place, we wanted to participate in Pwn2Own, so we were going after the targets which were on the list for Pwn2Own.  We were playing by the rules.  Of course, we could sell it to the broker or somebody but we believe that was the best way forward for us, to participate in Pwn2Own.  Yeah, I think this is a pretty dangerous exploit, especially the one side.  The things that NSA or any malicious actor has some capabilities could hack any router of this type, the home router.  Actually, two of our exploits were delivering a persistent back door.  Once you exploit it, the user is not even aware of the exploit being planted or the back door being planted on your device which actually survives factory reset.  It will stay there forever until we hack it back.</p>
+
+<p>JACK:	Wow.  Okay, yeah, I mean, you want to do Pwn2Own âcause you want to prove youâre the Masters of Pwn and the best hackers in the world.</p>
+
+<p>PEDRO:	That was our goal, yeah.  I mean, itâs all about motivation, right?  Our motivation is not money.  We can tell you.  Iâm talking for myself, but I know Radek thinks the same.  We could make a lot more money selling this in the gray market.</p>
+
+<p>JACK:	You said youâre not motivated by money.  What are you motivated by?</p>
+
+<p>PEDRO:	I think in my particular case, itâs not as much fame but itâs more like respect.  I really love hacking.  As I said, I spend all my waking hours doing it, basically.  When you love something, you want to be respected by your peers, right?  It doesnât mean that I have to be the best guy ever or that people have to fawn over me.  Thatâs not what Iâm looking after.  Iâm looking for to be respected by the same people that you respect, right?  I think everyone in every field, not just the cyber-security, thatâs what they really aim for.  This is a way to do it.  Honestly, obviously money also plays a role but in the end, I got my other job and Radek has got his other job that gives money.  The Pwn2Own prizes are not bad at all.  Yeah, we could get more in the gray market but itâs just not worth not having the fame and the respect we can get from Pwn2Own.</p>
+
+<p>JACK:	Together, Team Flashback has brought eleven working zero-day exploits to three different Pwn2Own events and have taken money home from each event.  In the November 2020 Pwn2Own, they won Masters of Pwn.</p>
+
+<p>RADEK:	Well, in total, I think it was 50k for 2019 Tokyo.</p>
+
+<p>PEDRO:	55.</p>
+
+<p>RADEK:	55.  Then 75k for Miami in January.  That was industrial control systems hacking.  Now, was the 40, Pedro?</p>
+
+<p>PEDRO:	40 plus the bonus, I think.</p>
+
+<p>RADEK:	Yeah, plus the bonus; 25k.  It was â I donât know how much.  Aroundâ¦</p>
+
+<p>PEDRO:	200k in a year which is pretty good even if divided by two.</p>
+
+<p>JACK:	Wow, you could â yeah, you could live off that.</p>
+
+<p>RADEK:	Well, thatâs only our side job, you know, for the weekends.</p>
+
+<p>PEDRO:	Well, I wish, because it consumes a month, but yeah.  But it was worth it.  The motivation is not money, right?  But itâs always good to also have a bit in your pocket.</p>
+
+<p>JACK:	[MUSIC] Now, itâs common to experience something weird when competing at Pwn2Own, and Team Flashback had something weird happen to them, too.  In 2020 they brought six working vulnerabilities to the competition but were only able to execute four of them.  Two of them were mysteriously patched just days before the event.  They donât know why.  Maybe the vendor found it.  Maybe another team submitted it ahead of time.  Who knows if something shady went on?</p>
+
+<p>PEDRO:	Yeah, thereâs a lot of dirty tricks in the history of ZDI.  This is a well-known thing.  From what we heard, unofficially from the ZDI guys, this is quite common or used to be quite [01:00:00] common because thereâs a thing â thereâs been a shift in the last few years.  In the beginning, Pwn2Own was mostly independent researchers and independent teams like us.  Then it shifted to company-supported.  For example, Tencent and 360, they still â theyâre blocked by the Chinese government to participate in Pwn2Own but they have their own Chinese Pwn2Own.  If you look, they have amazing results.  I mean, letâs be honest, way better than us.  But these guys, theyâre like basically twenty â the winning team in the Chinese Pwn2Own is here; it had nineteen people.  That plus corporate backing, you canât really beat as an independent.  The good side of the Chinese not being allowed to participate in the competition is that weâre back again to independent researchers.  Iâd say 50/50; you got company teams but theyâre a little bit smaller and the rest are independent researchers like myself and Radek.</p>
+
+<p>JACK:	Yeah, in 2018, the Chinese government wrote a new policy to discourage security researchers from participating in sharing exploits at foreign hacking competitions like Pwn2Own or even CTFs.  I guess they want to keep the exploits within China and not share them.  Huh.  Oh yeah, CTFs; this is a totally different kind of hacker contest.  Itâs called Capture the Flag.  If you want to know more about this, check out Episode 43 called PPP.  Actually, in that episode I said whoever wins Defconâs Capture the Flag contest can rightly claim to be the best hackers in the world.  But Iâm starting to think that Pwn2Own is right up there too as being one of the most prestigious hacking events.  Iâm pretty sure itâs one of the highest-paying hacker contests, too.  But like these guys said, there are certainly better hackers out there.  Theyâre just in the shadows.  But it makes you think about how precious a zero-day exploit is.</p>
+
+<p>Together, Radek and Pedro have found over 200 zero-day exploits which can do remote code execution while other governments and mercenary hacker groups out there are buying exploits and holding onto them tight, treating them as precious, expensive, top-secret tools.  What does that say about hackers who have so many zero-days that have no problem demonstrating them at contests versus hackers who would never share their zero-days with others?  I donât know, actually.  But I do get worried sometimes that zero-day hacking tools are sometimes only available for the elite or rich to buy and are used for nefarious reasons.  Something like ZDI is out there trying to level that playing field, making those exploits no longer usable because weâre all patching our routers and computers and phones and software and operating systems, right?  Because when we apply patches to software, it fixes any vulnerabilities that that vendor knows about, rendering attacks like this useless.  Again, Iâm urging you; patch your stuff.  Guys, how did you celebrate when you won Masters of Pwn?</p>
+
+<p>PEDRO:	Well, due to coronavirus, we canât celebrate together unfortunately, but I guess I got drunk that day.  I can tell that.</p>
+
+<p>RADEK:	But yeah, it definitely â it is a good feeling.  We were aiming for Masters of Pwn.  We are super-happy it happened.  Iâm sure weâre gonna celebrate properly when the coronavirus situation is over and we can meet again.  Probably gonna do some motorbike trip and think about the future, what the next projectâ¦</p>
+
+<p>PEDRO:	Hack some more.</p>
+
+<p>RADEK:	â¦yeah, hack some more stuff.</p>
+
+<p>(OUTRO):	[OUTRO MUSIC] A big thank-you to Dustin Childs and Brian Gorenc from the Zero Day Initiative.  Thanks for all the contests you put together and the money youâve paid out for this.  It really does help us all stay more secure.  2020 marks the 15th anniversary of ZDI and itâs still going strong and bigger than ever.  Canât wait to see what stories come out in the next fifteen years.  Also a big thank-you to Pedro and Radek from Team Flashback.  Congrats on the win and good luck in your next contest.  If you like this show, if it brings value to you, consider donating to it through Patreon.</p>
+
+<p>When you buy a book or watch a movie, you pay for it before you know if itâs worth money.  But I give you this show without any upfront costs or barrier so you can decide if it brings value to you and is worth supporting.  Please show your appreciation for the show by visiting patreon.com/darknetdiaries and become a member.  Thank you.  This show is made by me, the master of nothing, Jack Rhysider.  Editing help this episode by the little pony, Damienne, and our theme music is by the Saturn ring-collector, Breakmaster Cylinder.  Even though I pour gas on my firewall whenever I really need to stoke that fire inside it, this is Darknet Diaries.  [01:05:00]</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

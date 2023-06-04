@@ -1,0 +1,551 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>Alethe â Darknet Diaries</title>
+	<meta name="description" content="Alethe is a social engineer. Professionally she tries to trick people to give her passwords and access that she shouldn't have. But her journey to this point is interesting and in this episode she ...">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Alethe â Darknet Diaries">  
+	<meta name="twitter:description" content="Alethe is a social engineer. Professionally she tries to trick people to give her passwords and access that she shouldn't have. But her journey to this point is interesting and in this episode she ...">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/dragonfly.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/107/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Alethe â Darknet Diaries" />
+	<meta property="og:description"        content="Alethe is a social engineer. Professionally she tries to trick people to give her passwords and access that she shouldn't have. But her journey to this point is interesting and in this episode she tells us how she became a social engineer." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/dragonfly.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/107/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/dragonfly.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/107/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="Alethe â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/dragonfly.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 107: Alethe</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://www.podtrac.com/pts/redirect.mp3/traffic.megaphone.fm/ADV5908142573.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/107/",
+			   "title": "Ep 107: Alethe"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/107">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[START OF RECORDING]</p>
+
+<p>JACK:	Okay, so, one year when I was in college, I took a job at the Renaissance Festival.  If you donât know what that is, itâs a place where people dress up like they did in the 15th century and do things from that time period like jousting and falconry, and eating old-fashioned food.  Itâs almost like an amusement park, with tall walls all around it, and you have to pay to get inside.  [MUSIC] Well, when I got a job there, my boss forgot to give me an employee pass to get in.  So, every day that I came to work, I had to find a way to sneak into the festival.  This was such a fun thing for me to do because I had an honest reason to sneak into the Renaissance Festival.  I figured out where employees park and I saw there was a security guard watching the back gates and side entrances and stuff.  But I quickly learned their habits and was able to find ways to go around them.  Over time, the security guard started to notice me more and more and thought I was suspicious because I was showing up every day and always avoiding them.  Once, they even got in their golf cart and came straight towards me.  I just ducked behind some trees or some cars or something and waited for them to roll on by in their golf cart.
+<!--more-->
+Then when the coast was clear, Iâd pop up and go the other way and figure out a way to get in the festival.  This went on for months until my boss said hey, I was talking with the front office today and we were going over some things, and I realized I never gave you an employee badge.  How have you been getting in every day?  I said well, itâs no problem; Iâve got ways of getting in.  He said hm, I bet you do, but I donât want to be the one to be blamed if you get caught.  I said okay, okay, Iâll just say I work at some other area of the festival.  This way it wonât come back to you.  He was flabbergasted but gave me an employee badge anyway which was actually good, because the security guard finally caught me the next day and was all like, finally gotcha; now youâre coming with me, pal.  I was like, but look, I have an employee pass.  Then he was flabbergasted because he thought heâd caught me doing something wrong.  Well, he did the right thing and he actually escorted me to the front office to make sure my badge was valid.  Fun times there.  Fun times.</p>
+
+<p>(INTRO):	[INTRO MUSIC] These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	Can you pronounce your name for me?</p>
+
+<p>ALETHE:	Sure.  My name is pronounced Alethe, like a lethal weapon.</p>
+
+<p>JACK:	What are you doing these days with social engineering type stuff?</p>
+
+<p>ALETHE:	So, I work for a company called Critical Insight.  Client base is really centered around organizations that provide critical infrastructure, so hospitals, water systems, manufacturing, DoD contractors, but kind of my core interest is growing our social engineering side to do more vishing, phishing, and more actual social engineering physicals where weâre doing the engagements onsite.</p>
+
+<p>JACK:	Yeah, Aletheâs job is to social engineer Department of Defense contractors to try to get them to do things they really shouldnât do.  But how did Alethe get to this point?  Well, thatâs actually a very interesting story, so letâs rewind to when she was a kid.</p>
+
+<p>ALETHE:	[MUSIC] So, this is kind of a weird, weird journey, so buckle up because this is definitely not the normal how-did-you-get-into-infosec type of story.  But I always tell people I am not good at reading people because Iâm a social engineer.  Iâm a social engineer because Iâm good at reading people.  The way that I became good at reading people is through a very chaotic series of unfortunate events and terrible relationships.  Really, thatâs the core of how I became who I am, is a series of really crazy events.</p>
+
+<p>JACK:	Can we go that far back?</p>
+
+<p>ALETHE:	Weâre gonna go â weâre gonna â yeah, weâre gonna go all the way back to the beginning.  [MUSIC] So, I was born and raised in South Africa by American parents.  When I was around five or six, things with my parents werenât going so great.  By the time I was seven, they had separated and were living in different houses.  This was kind of the beginning of me having to grow up pretty quickly.  My mom was always kind of like the cool big sister, and she really let me have so much freedom as a kid just to explore my own creative ideas and do some really dangerous stuff without really putting guardrails on me.  I was the oldest of three kids and so, I kind of ended up taking charge of my younger siblings.  When I was seven or eight, we left the country kind of under the cover of darkness and without the knowledge of my dad.  So, we moved from South Africa to Botswana to live with my grandparents for a while while my mom kinda figured out what she was gonna do.  Then we moved from Botswana to California around the time I started fourth grade.  When we were living there, we were â my brothers and I were welfare kids, and this is kind of where I got started, really honestly started, in social engineering.  I was always kind of a manipulative kid.  I could figure out how to get adults to do what I wanted them to do for me.  But this is really where things started to get interesting.</p>
+
+<p>JACK:	She was a latchkey kid, meaning sheâd be home alone with her brothers while her mom was at work.  This gave her freedoms to do things without an adult telling her what to do.  On top of that, her family didnât have that much money.</p>
+
+<p>ALETHE:	In the 90s, it was like, my mom would just kick us out on the weekends and I would just rollerblade around town for twelve hours and get the bus, go downtown, go through all the shops.  I learned to shoplift.  We would sneak into movie theatres, we would just get into pretty harmless trouble just as pre-teenage kids rolling around downtown doing whatever the heck we could get away with.</p>
+
+<p>JACK:	She was practicing how to be sneaky and manipulate adults into getting what she wanted.</p>
+
+<p>ALETHE:	At the age of eleven, I had my own videotape, like VHS cassette tape rental account at the movie store that was between my school and my house.  They would let eleven-year-old me come in and rent movies and take them home and trusted me to bring them back.  They opened the account for me with no ID, no nothing.</p>
+
+<p>JACK:	In seventh grade, she moved back to South Africa to live with her dad for a while, and he enrolled her in a very strict Catholic school.</p>
+
+<p>ALETHE:	I made the worst possible mistake that any new kid â I mean, I wasnât a stranger to being a new kid in a new school where people already had established friends and relationships, and you were a complete outsider because I had done it now a few times.  But this time I decided that I was gonna try to be one of the cool kids, which was the worst thing I ever could have done ever, ever, ever, because I started making up just total BS stories about all these crazy things that I did when I lived in America.  It was like, the worst â it totally backfired.  So, this was a really great lesson for me as a social engineer, that over-embellishing â instead of having all the kids at my new school think I was super cool, they actually thought I was a complete and total idiot.</p>
+
+<p>JACK:	Kids were picking fights with her.  Nobody trusted her.  The only friends that she made were other liars.  She didnât like that.  Her dad moved her to another school, and this one was an all-girls school.  Now, this was in the late 90s in South Africa, and not many schools had computer programs then, but this one actually had a computer lab and really tried to get the girls into computers.</p>
+
+<p>ALETHE:	So, I started doing computer science.  I learned to code in Turbo Pascal.  I was just completely hardcore sucked into this idea that I was going to learn to code so that I could hack this game that we would play just on the LAN at the school that was called LORD, Legend of the Red Dragon.  Itâs a completely text-based roleplay game type scenario.  So, I was obsessed with this game and I would spend most of coding class playing the game, and then catch up on all the coding stuff after school and do my assignments and stuff like that then.  But I just became completely obsessed with computers and technology and coding, and I just went completely all-in on biology and computer science, and that was my thing.  When I graduated, I went to school at the University of Capetown and I was doing a Bachelors in Chemical and Molecular Sciences with a minor in Computer Science.</p>
+
+<p>This was the year that I just decided to completely just [MUSIC] demolish my life.  I was eighteen and my parents were super-strict, so I decided I was gonna just ditch class and go hang out with my boyfriend and just be a kid, âcause I finally had some freedom outside of this very structured all-girls uniform Catholic school environment.  So, I got into trouble.  I got into big trouble, and I started â for years, I had been hanging out in IRC chat rooms and stuff, talking to just random people.  I started a few friendships with people and some of them escalated over the course of four or five years, and even though I had a boyfriend in real life, I also had a few people that I was keeping in contact with over on IRC chat rooms.  One of these people essentially groomed me over the course of four or five years, and it got to the point where I so implicitly trusted this person and was so turned against my own family that I made some really, really terrible decisions, like awful decisions.</p>
+
+<p>JACK:	The person she was chatting with online was from Virginia, on the other side of the world from where Alethe was, in South Africa.  The person asked Alethe a lot of personal details.  ASL, to begin with; age, sex, location, then more details like her phone number and eventually her address.  When they got her address, thatâs when things got weird.</p>
+
+<p>ALETHE:	[MUSIC] They were sending me care packages from the United States.  So, all I know is that the packages came from Virginia, and that when my folks figured out what was going on, they lost it.  It really freaked them out, and they were completely justified in their freaking out, for sure.  So, it was kind of like the catalyst of this series of events that eventually let â it ended in me getting kicked out, and South Africa is not the greatest place for you to live alone as a young woman.  Itâs very dangerous, so my dad was like look, you canât stay here.  Youâre not going to class, youâre not holding up your end of the bargain, basically.  He was completely justified in doing this, but he gave me the opportunity to move back to the states and kind of reboot my life.  I think it really was the best possible scenario, given the damage that I had done.  I was very destructive in my own life, just had destructive tendencies.  I struggled with depression and anxiety, and just trying to find and figure out who I was was gonna be something that I would be a lot more successful doing here in the states.</p>
+
+<p>JACK:	So, she moved from South Africa back to California, which is where sheâs been for the last twenty years.  But it wasnât easy getting established back in the states.  Her college credits didnât transfer, which meant she had to start over with college, and she didnât have a good job to get by with.  Her future was just not looking so good, and that led her to depression and anxiety, and she was worrying about how sheâd find food just to live.</p>
+
+<p>ALETHE:	I literally took a job scooping poop at a pet store for minimum wage, and at the time, that was $6.25 an hour.  I loved that job because everybody there was so neat, and I got to play with puppies, which was great.</p>
+
+<p>JACK:	Working retail taught her some new skills about how to deal with angry customers.  It improved her social and communication skills, and then she got a job at a title company where she had to research who owned certain properties.</p>
+
+<p>ALETHE:	Through the course of these positions, I learned a lot about public record.  I was essentially searching public record for information about people and property and putting together chains of title of property.  Like, from the beginning of time until now, whoâs owned this property?  What documents have been recorded against it?  What easements or leans are against the property, et cetera?</p>
+
+<p>JACK:	This is where she picked up some OSINT skills.   OSINT is an acronym; it stands for Open Source Intelligence Gathering.  She was learning how to find people and what properties theyâve owned over time.  If it was owned by a business, then she could look up who the owners of that business were.  There are a lot of details in public records, and she became a whiz at mining these public records to find the information she needed.  But then she quit doing that and had a string of other jobs that all gave her new knowledge in different areas such as selling mobile phones, doing social media management, marketing, doing tech support for software.  Then she landed a job at a staffing company where she was doing research and writing reports.  Around that time, her and her husband started an IT company themselves.  It was small and not big enough for them to quit their job and do it full-time, but they wanted to make sure their services were secure, which is how they heard about Defcon.  [MUSIC] Defcon is the largest hacking conference held every year in Las Vegas, Nevada.</p>
+
+<p>ALETHE:	The first Defcon that I went to, I discovered the Social Engineering Village and it was kinda like, everything I had been doing since I was a kid kind of all coming together under one umbrella called social engineering.</p>
+
+<p>JACK:	At Defcon they have these villages; thereâs bio-hacking villages which has people hacking medical devices and their own bodies.  Thereâs a Car Hacking Village where they have an actual car in the conference that you can try to hack into, and thereâs just so many.  Thereâs Lockpick Village, IoT Village, Wireless Village, Voting Machine Village, but one of the most popular is the Social Engineering Village.  Here, they have speakers up on stage sharing their tricks of the trade, which is basically how to manipulate people to get them to do things that you want them to do, such as letting you in a secure building, clicking a link in a phishing e-mail, or calling someone up and getting them to tell you a key bit of information that might help you break into the place.</p>
+
+<p>ALETHE:	At first, I was really focused on the manipulation and the coercion and all of the negatively slanted words that really fall under social engineering.  It just completely captured my attention and my focus.</p>
+
+<p>JACK:	But if you hang out in the Social Engineering Village long enough, youâll realize that the main event is the contest, and the final round of the contest is done on stage live in front of everyone.  The contestant goes into a soundproof booth and calls up a company to try to get someone there to tell them some key information, and this is broadcasted live in the conference room in front of everyone.</p>
+
+<p>ALETHE:	They told me about the social engineering Capture the Flag contest where they put folks into a soundproof booth, they give them twenty minutes, and they call a target company, and they have to elicit information from the employees of their target company over the phone.  [MUSIC] I was completely floored.  I thought there is no way I could ever do something like that.  That is absolutely insane.  Iâm the type of person that will send 150 e-mails before I pick up the phone just to avoid talking to people.  Generally speaking, thatâs me.  I was like, this is nuts.  Thereâs no way that I can ever do something like that.  Thatâs crazy, but I want to watch this happen.  So, the next year, we went to Defcon and I was like, see you, everybody that I came with; Iâm gonna go grab some food and sit in the back of SE Village all day to make sure that I can listen to all these calls.  So, I went to Starbucks, I grabbed breakfast and a couple snacks and a coffee and a water, and then I stayed for the rest of the day to listen to the remaining contestants.  Then the next day, I kinda did the same thing.  I didnât leave; I didnât leave to go to the bathroom, I didnât leave to go get lunch.  I was there from like 10:00 until after 2:00 when they ended the last of the seven calls for each day.</p>
+
+<p>JACK:	These are always interesting calls to watch.  Itâs live, so you donât know whatâs gonna happen next, but the contestant has a goal to get certain flags.  The flags might be the things like what make and model is your laptop?  Are security guards watching the front door?  What software is on the laptop?  What are the password policies at the company, or other security-related pieces of information.  The more flags you get, the more points you get.</p>
+
+<p>ALETHE:	[MUSIC] So, the neat thing about the social engineering Capture the Flag is that each of the contestants â and thereâs only fourteen each year, they are selected from a group of two hundred or three hundred applicants, and they get a Fortune 500 company as a target about six weeks ahead of Defcon.  They get four weeks to do OSINT and investigate that target and find as much information as they can about them, and then see if they can find very specific flags of information that the contest runners have assigned points.  Then they compile a report, they submit that to the contest runner and itâs graded, and then they use all the information that they found during the course of their OSINT, their investigation, to then call that target from a soundproof booth in front of five hundred to a thousand hackers, live, in a room with a twenty-minute time limit.  It is like, the most high-pressure, crazy situation ever and youâre just praying that somebody answers the phone.  Then once they do answer the phone, youâre praying that you can keep your stuff together and remember who you decided you were gonna pretend to be to get these people to give you those same flags of information or confirm them, if you already know, over the phone.</p>
+
+<p>JACK:	The more Alethe watched these people make these phone calls and try to social engineer people, the more she wanted to do that.</p>
+
+<p>ALETHE:	I saw the movie Hackers after it first arrived in South Africa and it was just like, oh my gosh, this is who I want to be.  I thought for the longest time that I just wanted to be Dade and be cool like him.  That was the first time I saw social engineering, that part where he social engineers the guy at the TV station.</p>
+
+<p>JACK:	Hereâs the clip sheâs referring to, from the 1995 film called Hackers.</p>
+
+<p>NORM:	[MUSIC] Security.  Norm, Norm speaking.</p>
+
+<p>DADE:	Norman?  This is Mr. Eddie Vedder from accounting.  I just had a power surge here at home that wiped out a file I was working on.  Listen, Iâm in big trouble.  You know anything about computers?</p>
+
+<p>NORM:	Uh, geeâ¦</p>
+
+<p>DADE:	Right, well, my BLT drive on my computer just went AWOL and I got this big project due tomorrow for Mr. Kawasaki, and if I donât get it in, heâs gonna ask me to commit Hari Kari.  Yeah, you know these Japanese management techniques.  Could you read me the number on the modem?  Itâs a little boxy thing, Norm, with switches on it.  Lets my computer talk to the one there.</p>
+
+<p>NORM:	2125554240.</p>
+
+<p>ALETHE:	It just completely floored me.  I thought that that was the coolest thing ever, ever, and I wanted to be like that so badly.  It felt like I kinda put all that stuff on hold for â I think I was a teenager when I saw that, so it felt like I put all that stuff on hold for like, ten or fifteen years.  Then walking into Defcon the first time, it was just like, oh my god, Iâm home.  These are my people.  This is the island of misfit toys that I have been looking for [MUSIC] for over a decade.  Everybody was so flipping welcoming and accepting and supportive and awesome that I was just like, I want to live here.  So, it was kinda like finding my niche.  After the second Defcon, after watching all of the calls at SE Village and seeing actual, real social engineers do the thing in front of everyone and just â I just wanted to be like that.  I wanted to have that confidence and I really wanted to push myself to get more comfortable with having uncomfortable conversations with people, because I felt like it would just make me a better business owner, a better communicator, a better employee, a better parent, a better spouse.  I just didnât think that I could really go wrong with improving those types of skills.</p>
+
+<p>JACK:	She goes home that year thinking about competing in the next social engineering Capture the Flag contest.  She wants to try it, but she doesnât think sheâll qualify, and she questions herself.  But then at the last minute, she decides to apply to be a contestant.</p>
+
+<p>ALETHE:	I ended up getting selected as one of the fourteen contestants.</p>
+
+<p>JACK:	About three months before Defcon, they assign the contestants their target.  Alethe was assigned a trucking company in the US, and she had about four weeks to do OSINT on them and turn in her report.  Now, with OSINT, you can only get data thatâs publicly available.  You canât call someone or phish someone or hack into something to get the information.  She had to find as much information as she could about this company through public sources such as going to the companyâs LinkedIn and seeing who works there and then finding those employees on their social media accounts and looking at their profiles.  This first round of the contest is to try to gather certain flags or pieces of information from the company and compile that into a report and turn it in a month before Defcon begins.</p>
+
+<p>ALETHE:	So, flags, they are everything from information that will â that would help in the contest of a physical pen test, so who does the garbage service, whoâs the janitorial service provider, who runs the cafeteria, whoâs the vending machine service and repair company, those kind of things.  Then thereâs company-wide type technology, like whoâs the VPN provider, do they have Wi-Fi available on site, what is the SSID or the name of that Wi-Fi that is available to guests or internally, the version and the type of browser they use, their PDF viewer, the â whether or not they use a specific parcel service, the make and model of the laptop or computer that the employee was issued.</p>
+
+<p>JACK:	Alethe begins collecting data on this trucking company.</p>
+
+<p>ALETHE:	[MUSIC] So, I had a tough time figuring out the best way to do this.  In brief, I basically â I started at the company website and then from there, Iâll move into company review websites like Glassdoor and Indeed to learn about company culture and any inflammatory things that I can use to kind of build rapport with the employees.  Then from there, I look at job â open job descriptions, if they name any specific types of technology or Help Desk services that they use and things like that can be useful to me.  Then once Iâm done with company review websites and job descriptions, then Iâll get into some more detailed snooping.  Usually this involves a lot of Google dorking because now Iâve kinda got an idea of what type of pretext Iâm gonna use, and I want to find more information to support that pretext.  So, say I want to impersonate an internal employee and call the Help Desk, then I might be Google dorking to look for all documents that are on that domain that are a file type PDF that contain the word âonboardingâ or ânew hireâ or something like that, âcause I want to find where it says if somebodyâs abusing technology, call this number, and usually thatâs their internal Help Desk.</p>
+
+<p>So, thatâs kind of an example.  But I kind of just â I use a lot of social media as well, so I will find the address of the headquarters or the branch locations that I want to target and â or where the employees sit, who I want to target.  Then I will put that address into Instagram, into the location search, and find all the pictures that are geotagged to that location and see if I can find things in those pictures that will help me, stuff like employee badges, things that would show employee ID numbers so I can get a good idea of what those look like and how theyâre composed.  Iâll also look for pictures where â thereâs always one where itâs like, the Starbucks coffee cup in front of the open monitor with all their applications open.  Thatâs my favorite.  Then from there, I just kind of snoop around until I find some more of the stuff that I want.  I want to know who the cafeteria vendor is.  One of my most favorite pretexts is that I will call and pretend to be from the corporate office of the cafeteria vendor for the cafeteria thatâs within the headquarters or the office of â office building of my target company, because itâs usually â itâs not close enough to them for them to go oh, whatâs your name?</p>
+
+<p>Let me put it in the global directory and pull you up, but because itâs an entity that has authorization to be within their building, itâs kind of inherited the trust of that organization, and so therefore I would inherit it, saying that I work for that cafeteria vendor, that theyâve already had an existing working relationship with forever.  So, the more information I can gain through OSINT, the better equipped Iâm gonna be on the calls, and thatâs really where I think the majority of social engineers, especially in the context of the social engineering Capture the Flag have been successful, is just being over-prepared with knowledge about the company and what they have, use, and do.</p>
+
+<p>JACK:	She spends the four weeks collecting as much data as she could about this.</p>
+
+<p>ALETHE:	I turned in my report and I was kinda like well, hopefully that wasnât terrible.  I was actually fifth out of fourteen; my report was scored fifth-highest points based on the flags of information that I found on the target.</p>
+
+<p>JACK:	Whoa, thatâs pretty good for a first-time competitor.  The final score is a combination of the points you get from this report and the points you get from the live, on-stage call at Defcon.  So, she has a chance of being in the top few if she can outscore some of the others that did better than her on their report.</p>
+
+<p>ALETHE:	So, what happens at Defcon for the actual competition is you report to SE Village, they get you checked in and whatnot, and then when itâs your turn, they put you into the booth, you get a pair of headphones, and you are sitting on a stool in front of a pretty high-quality microphone.  You have a list of the numbers that you want to call, and you have a list of the numbers that you would like to spoof to support your pretext, or who youâve decided youâre gonna pretend to be.</p>
+
+<p>JACK:	Now, the target they gave her is just this company.  They didnât provide any phone numbers or specific people to target at the company.  That was all up to Alethe to figure out which person or people to target and what their phone numbers were.  The company that runs the Social Engineering Village has some pretty good lawyers to help make sure this is all legal.  So, Alethe provided the phone numbers to the contest runner who then dials a number and connects her to the call.</p>
+
+<p>ALETHE:	[MUSIC] During the contest, not only are you on a stage in a booth with glass in front of you and everyone watching, but they also have cameras inside the booth.  So, youâre on two or three giant screens in this enormous ballroom inside a casino at Defcon, and everyone is just watching your every twitch.  So, once youâre ready to go, they start the twenty minutes on the timer, and itâs a big, red numbered timer that they hold in front of your face.  Then you say call Number 1 or 2 or 3 or whatever it is on your list, and Spoof Number 1 or 2 or 3 or whatever it is on your list, and you go.</p>
+
+<p>JACK:	Alethe was prepared for this, though.  She had a plan.  She had a pretext ready, which is who she was going to pretend to be when calling these people.  She had practiced this pretext in her head, and she knew a lot about the people she was going to be calling from all the past research she did on them.</p>
+
+<p>ALETHE:	So, you can bring whatever material you want into the booth.  There are people that like to bring props like keyboards and stuff like that.  I went very low-tech.  [MUSIC] I brought in three sheets of paper, and one of them was a list of all the flags that Iâd made my top priorities of each of the flags that I wanted to get, and then I kinda drop a four square for my pretext.  I have a magic quadrant kind of an idea, but one square is who I am and my information of me, my pretext person that Iâm pretending to be, one square is who Iâm targeting; their phone number, their information, e-mail address and whatever about them so that I remember who Iâm talking to and I donât freak out.  Then I have a box that has the key points of my pretext, like what company do I work for, why am I calling, what do I need?  Then I have the other box thatâs my goals for the call.  Like, these are the flags that I want to get out of this call.</p>
+
+<p>JACK:	She was able to get a few more flags from this other person, and then her time was up.  So, she ended the call.  On Saturday, they tally up the scores and announce the winners.  Alethe got sixth place, but to her, she had a blast.</p>
+
+<p>ALETHE:	Having the ability to make people laugh and have them respond to what I was doing in that way was just phenomenally rewarding.  It made me feel amazing.  So, after that, I was like, this is what I want to do for my life.  [MUSIC] This is it.</p>
+
+<p>JACK:	While she was in Vegas that year, something else happened.</p>
+
+<p>ALETHE:	At that Defcon, I ended up getting pregnant.</p>
+
+<p>JACK:	Now, she knew she wanted to compete in next yearâs social engineering Capture the Flag, which was one year away, and by this point in her life, she already had three kids.  This was such an important competition for her.  She was absolutely determined to compete.  So, May rolls around, which is when you apply for the contest.</p>
+
+<p>ALETHE:	I applied while very pregnant.</p>
+
+<p>JACK:	She gets accepted to compete.  She has the baby, and shortly after that, they give her the target.</p>
+
+<p>ALETHE:	So, I was on maternity leave and I was like, I can use my maternity leave to do the OSINT.  That would be perfect because I wonât be juggling a newborn and work and the OSINT.  Itâll just be a newborn and the OSINT and the other three kids.</p>
+
+<p>JACK:	So, she spends her maternity leave doing the OSINT part, researching the client, finding the best way to approach them, and gathering as many flags as she could for the report.</p>
+
+<p>ALETHE:	I only focused on doing better than I had the year before.  That was my main objective, was I just want to do better than sixth.  Thatâs it.  If I can get into the top three, that would be amazing, but I just want to do better than I did the year before.  I almost did not want to win.  I didnât want to win because as soon as you win, you canât compete anymore; youâre out.  I really enjoy playing the game more than anything.  So, I went into it determined to do better than sixth.  I did the OSINT for my report, I turned the report in, and I ended up placing third in the report scoring.  So, I was like hey, if I hold third, that would be crazy.  If I was able to push it up to second after the call round, thatâll be nuts.  [MUSIC] So, I went to Defcon, took the baby.</p>
+
+<p>JACK:	For this trip to Defcon, she takes herself and her three-month old baby, and her husband.  The other three kids stayed back at home in California.  So, they fly out to Las Vegas.  Defcon starts on Thursday and goes all weekend to Sunday.  She had to get back home by Sunday night because her kids started school Monday morning.</p>
+
+<p>ALETHE:	So, I ended up bringing a three-month-old baby with me to Defcon, which I donât recommend, and I highly discourage anyone to do in the future, because itâs not great.  Itâs not a fun experience.  But I committed to competing and I wasnât sure if I was gonna be able to compete after that.  So, I was just like, Iâm gonna go for it.  Sheâll be young enough and Iâm an experienced enough mother to know that a kid under the age of four months is highly portable, easy to feed, very easy to take care of, and very cooperative compared to the toddler age for going to Vegas.  So, in the morning, I just got all my stuff ready, went to SE Village.  I was competing on the first day, which was Thursday, and I was the last person to compete that day, so I was seventh on the first day.   I tried to watch the rest of the calls, but I really wanted to be respectful of the other contestants, so if the baby got fussy, I would walk out to the hallway and go take care of her or stand in the back of the room just so that other people could see and I wasnât a distraction or being distracted.  So, I missed so many of the calls which sucked because I really wanted to watch them all.</p>
+
+<p>Then when it was my turn to go, I ran to the bathroom five minutes before my time, and Iâm like, donât worry, Iâm coming back!  Then change the baby, finish nursing the baby.  I run back up to the front, throw the baby at my husband, and just prayed she didnât start crying while I was in the booth, because as a mom, it just triggers you, especially very shortly after having a baby; if you hear a baby crying, it just sidetracks your whole brain, and I wanted to be able to maintain that focus.  So, I was praying she wouldnât start crying, and sure enough, as soon as I started dialing the first number, she started crying.  I think itâs just because they were like, broadcasting the ringing of the phone out to the whole room, but it was just kind of an overwhelming situation for her, which I totally appreciate.  So, I just had to put myself in the zone and ignore everything outside of the booth.  Everything outside of the booth just was blackness and I had to focus on who I am, who Iâm calling, what Iâm doing, what Iâm saying.  [MUSIC] Thatâs all that matters right now.  So, my first call was gonna be to tech support and I was gonna pretext as a new intern because itâs summer, and this company had a lot of summer interns and they were very public about that on social media, so it fit.</p>
+
+<p>I was just gonna be like, Iâm trying to go to this website for training and I canât get there.  Can you help me?  Can you try it?  Finally, I convinced this person to go to the link, and they confirmed what they saw, and then I just said oh my gosh, Iâm such an idiot.  I wasnât even on the internet.  I just tried to get off the phone with them as quickly as possible so I could salvage as much of my twenty minutes as I could.  So, after that call, I hung up and I decided that I was going to target their regional sales people, their remote salespeople that were responsible for various regions of the United States.  My target was a ginormous tobacco company, so I almost didnât feel bad.  So, I ended up getting their cell phone numbers and â through my OSINT for these regional salespeople, and I learned a ton about how they treat their salespeople from the company reviews that were left on Glassdoor by salespeople.  I knew that they had company cars, company laptops, company cell phones, and all that stuff.  So, I knew a lot of what they would have already, and I could just make this super easy and ask them to confirm it.  But I needed to figure out how I was going to give myself the authority to ask those questions without raising their eyebrow, so to speak.</p>
+
+<p>So, the pretext that I came up with was I was helping IT contact people whose computers hadnât connected to the VPN in a while because we were getting ready to replace remote workersâ laptops, and we were trying to confirm what software and applications they had on their computer before we ship the replacement computers out.  [MUSIC] Every remote worker wants a new laptop because every remotely-deployed laptop has issues.  Itâs just a fact.  So, I was like, Iâm incentivizing them with a new laptop.  They are going to trust me because I sound nice and likeable, and Iâm an internal employee.  So, I started the call by saying hi, this is Bethany.  Iâm calling from the headquarters in this town.  So, immediately they know who I am, where Iâm calling from, and that Iâm an internal employee, so Iâve knocked all those things out of the list of objections already.  Iâve made them feel better about the fact that Iâm internal by saying where I am located, so they feel safe that Iâm calling from the headquarters and I know where that is and it sounds legit.  Then I gave myself a name that was a little younger, and I tried to sound â like, I raised my voice a teeny bit just to sound a little younger.</p>
+
+<p>Then if they pushed back about the IT part, I was just gonna be like yeah, Iâm an intern; Iâm just helping IT and so, I donât know, but they just gave me this list and the sooner I can get this done, the faster youâll get your laptop, basically.  Zero people pushed back.  No people.  So, I just â I said weâre getting ready to send out these laptops.  Do you have a couple minutes just to go through your computer with me and answer a few questions to make sure that we get you all the programs and applications that you need installed before we ship this out?  Theyâre like, of course I do.  I talked to one gentlemen and then he was like â he was super helpful, and I got through my whole list of flags, really.  Like, every single flag, he just gave it to me.  Then I very politely ended the call and I decided instead of calling the person that Iâd planned to call, I was gonna call the next one.  I donât know why I decided to do that, but I did.  It was just the most amazing success on each one of the calls, and on the last call, the guy that I called was like, oh man, well, Iâm not on my computer because Iâm actually three months into my four-month paternity leave.  I was expecting him to shut me down.  I just said oh no, Iâm so sorry.  Iâm so sorry to bother you.</p>
+
+<p>Let me let you go, because I was trying to conserve as much time as possible to try to make another call.  Heâs all well, hold on, let me just go get the laptop.  I was like, what?  So, he went and got the laptop and as he was booting it up, I was just like okay, shoot, what can I get out of him while this thing is booting up?  [MUSIC] I was just like yeah, thatâs so crazy.  I just had a baby too, which is totally true; Iâm looking at my three-month old baby.  He was like, instantly ready to just tell me everything.  So, I asked him, while your computerâs booting up, is it the â this brand, this model?  Heâs like, yeah.  I was like and, did you have to type in the thing for BitLocker just now?  Heâs like, oh yeah.  I was like and â you know, and I just walked him through all the stuff.  At the end of the call, it was like, I knew I had seconds left and I wanted to make sure that I ended it on a nice note and it wasnât just like a click, hang up.  So, I wrap things up with a bow and just thank the guy profusely and told him to enjoy the rest of his leave.  I still feel freaking awful for every single one of these calls.</p>
+
+<p>I feel gross about what happened after I hung up, and did they ever reach out to IT?  Did they figure it out that they got scammed?  Or what did they feel about that?  Did I make them feel bad?  âCause I really hate that.  I hate that aspect.  The nice thing about doing this for real, for money, with clients who know Iâm gonna call them and who I give a report to, is that I can kinda beg forgiveness after the fact and make amends, so to speak, with them, and just be like, yeah, sorry.  That was a test and you did really great at this part, but you did really bad at this part.  This is a safe learning experience.  Itâs much better that you failed now than with an actual attacker, kind of a thing.  But these scenarios, itâs just like, I still wonder.  I still remember the names of the people that I targeted the first time around.  I wonder how they are and how their kids are, how the jobâs going.  I feel like weâre friends âcause I just completely over-researched all of them.</p>
+
+<p>JACK:	She came out of the booth and felt really good about the points she scored.  She knew she got a lot of great flags and used her time very effectively.  The audience seemed to really like it, too.  They seemed entertained.  These calls arenât recorded, so I canât play any of them for you.  Nevada is a two-party consent state, so they canât record them by law.  But despite her feeling good about it, there were still seven more contestants competing the next day, and two of those were the ones in first and second place.  So, it was too hard to tell if she had won at that point, and wouldnât know until Saturday.  So, Friday, the rest of the contestants do their things, and then Saturday rolls around.  Alethe goes to the party where they announce the winners.</p>
+
+<p>ALETHE:	They announce the second place and it wasnât me.  I was like oh, well, you know.  Maybe next year.  Then they announced that I won [MUSIC] and I just was like â first thing I said was, oh shit.  Iâm like, holding a baby and Iâm like, I donât even â how to â how do I know â I donât even know what to do with myself.  So, it was really, really amazing.  Then I realized that my flight â I didnât expect to win.  I had scheduled a flight that left at 3:00 PM on Sunday from Las Vegas, and closing ceremonies start at 4:00.  So, the airport that we fly in and out of, thereâs one flight per day, so that â if you miss that flight, youâre it â youâre done.  I had a kindergartener that was starting his first day of school on Monday morning, so there was no getting back on Monday sometime.  It had to be Sunday.  So, we ended up missing the flight, and we went to closing ceremonies âcause itâs just â itâs a once-in-a-lifetime opportunity.</p>
+
+<p>HOST:	Welcome to the stage of the social engineering contest.  [APPLAUSE]</p>
+
+<p>ALETHE:	I took the baby up on stage with me.</p>
+
+<p>HOST:	Okay, so, is this the first time thereâs a baby on stage at Defcon?  So, she won the SECTF.  No, just kidding; she didnât.  She didnât.  [LAUGHTER] It was the second year in a row that women dominated the competition.  We, again, have two women in the first and second place, so good job.  Keep it coming.  Our first place winner, Alethe, is standing here.  Iâm gonna give her a bottle of alcohol, okay?  [APPLAUSE] Iâm gonna give her a tenth-year SE Head Award, and Defconâs gonna give her a black badge.  [APPLAUSE]</p>
+
+<p>JACK:	[MUSIC] The coveted black badge.  By winning this contest, the main prize you get is a Defcon black badge, which is very prestigious, despite the award ceremony being hosted by a guy named Grifter.  On paper, all it does is it gives you free access to Defcon for life, but it carries a lot of prestige.  Lots of companies out there will hire someone who has earned a black badge from Defcon because they know Defcon contests are incredibly competitive and whoever wins it must be very good at what they do.</p>
+
+<p>ALETHE:	Just an incredible honor, and as soon as we were done on stage, then I had to like â we ran back to the hotel, got our bags out of the bellhop, drove to the airport, and then rented a car at the airport and then drove home overnight.</p>
+
+<p>JACK:	The ride home was something like a seven-hour drive.  Yeah, a baby in the car on an all-night drive, trying to get back before school starts in the morning, it was very tiring.  [MUSIC] In the car ride home, Alethe began wondering where her career would go from here.  She hoped someone would hire her to do this for a living, but if that didnât happen, she thought maybe sheâll just start her own business doing this, like a consultant.  They got home around 2:00 AM and got everyone to bed.</p>
+
+<p>ALETHE:	After that, it was like, I got two hours of sleep, woke up, got the chalkboards all made up, and then did first day of school pictures with my kids, and it was like back to normal life.  I went back to work at the staffing company.</p>
+
+<p>JACK:	Going back to work at that staffing company was not nearly as fun as the rush of doing social engineering engagements.  So, she set off searching for a new role as a social engineer somewhere.  You know what?  There are quite a few companies out there that do hire social engineers.  It can be included as part of a security assessment to see if the company has any weak points that a social engineer can expose.  Sometimes social engineers go onsite to do a physical assessment to try to find a way in the building and plant some rogue hardware in the network that someone can jump into from outside and then bounce off to get inside the network.  The human is the weak link in many organizations, and hiring a social engineer can help you make that link stronger.  This is what Alethe wanted to do.</p>
+
+<p>ALETHE:	I was trying to get into information security, but I was lacking a lot of the full-scale pen-testing skills at that point.  So, I was applying to jobs and people were thinking sheâs got a black badge, she knows everything.  Then they were looking at my resume and going, wait a second.  I was getting messages on LinkedIn from German CEOs asking if I was actually me, because my resume didnât match this person that was in this German article about a social engineer who won the black badge.</p>
+
+<p>JACK:	She didnât have any luck finding a job as a social engineer, but sheâs Alethe, and when Alethe is determined to do something, nothing will stop her.</p>
+
+<p>ALETHE:	I actually ended up deciding that I was gonna start consulting on the side, and I did it with the blessing of the staffing company and my boss there.  But I started doing security awareness training and then social engineering assessments and testing, phishing on my own as a consultant.  I mean, I started a number of businesses.  My husband and I have started a number of businesses, and it wasnât too far-fetched for me to create my own consulting revenue.  So, thatâs what I started doing.  I started consulting through Dragonfly Security, and I built up a nice little client base here locally.</p>
+
+<p>JACK:	Some of these companies already have security awareness training.  This is where every employee of the company has to watch a thirty-minute presentation and then take a quiz about what security best practices there are.  But some companies want to take this training a step further and send phishing e-mails to all employees to see if any of them would still fall for it after theyâve been trained in security awareness.</p>
+
+<p>ALETHE:	I donât believe personally in setting your employees up to fail, so I always encourage doing the security awareness training at least within six months of doing testing.  But itâs really â itâs an opportunity for employees to learn from the experience and practice defending against these types of attacks, because itâs something that if youâre caught off-guard, it can be extremely easy to fall for the types of tactics that these manipulators will use, and the psychology behind social engineering, which really centers around the six principles of influence.  So, all the stuff that scammers use to trick you into answering their questions, and also that used cars salesmen use to get you to buy a car.  But itâs an opportunity for clients to sometimes check a compliance box, but more often than not, itâs really to make sure that their staff are absorbing the security awareness training and that theyâre able to defend against these kind of attacks in a real world simulation.</p>
+
+<p>JACK:	So, she did that for a while on her own, but really wanted to be part of a team where she could learn from others who do this, and to be able to focus on it more, because as an independent contractor, youâre spending half your time just trying to find clients.  So, she eventually found an opportunity to join a company called Critical Insight which does provide penetration testing to clients as well as social engineering engagements.  This is where Alethe is today.  One of the things she does there is try sending phishing e-mails to clients to test their reactions to it.</p>
+
+<p>ALETHE:	[MUSIC] In a phishing engagement, Iâm going to try to phish every person at least twice during the campaigns that I launch against the client.  I do this because â and not for the purposes of just collecting statistical information like how many clicked on the link, how many opened the e-mail.  What Iâm actually focused on is how many people report that phishing e-mail, how quickly is the first report received, and what types of internal communications are happening at the client during the course of the campaign.  Like, thatâs what Iâm really looking for.  Thatâs what I want to see.  I donât really put a lot of emphasis on how many clicks there were, though I do report it.  Typically, I would expect between 10% or 20% click rate from the average organization.  Maybe four or five years ago it would have been a 30% to 40%, 30% to 60% click rate.  But now that people are becoming more security conscious and more aware of social engineering, that number is going down.</p>
+
+<p>JACK:	So, when a company hires her to run a phishing campaign on the company, hereâs what sheâll do.</p>
+
+<p>ALETHE:	What I typically do, I will set up a landing page that is to collect credentials and I will set that landing page up to look like an internal portal that that employee is used to putting their credentials in.  Then I will, over the phone, direct them to go to my suspicious URL.  So, company.us or company.org if thatâs something thatâs not registered by the company already.  Then theyâll go there, and itâs a fail if they go there, and then itâs a fail, another fail, if they enter their credentials and Iâm able to capture those credentials, because now I can log in as them and get to things that I should not be able to get to.</p>
+
+<p>JACK:	Sometimes she sends an e-mail like this to everyone in the company.  Sometimes sheâs given the task to target certain individuals, like perhaps some key people in the company.  On assignments where she has to target certain individuals, sheâll sometimes do vishing calls.  This is like phishing, but itâs a phone call.  Just like during the contest she practiced in, sheâll call up people to try to get information from them or get them to do something they shouldnât, and then put that in her report.  Her clients are often involved with critical infrastructure or even Department of Defense contractors.  So, thatâs the story of how Alethe became a person whose day job is phishing Department of Defense contractors.  Itâs a wild and weird journey for her to get here.  Sometimes we need to go through wild and weird journeys just to find our true calling.</p>
+
+<p>ALETHE:	All of that crazy stuff really has allowed me to get better at â able to pivot in conversations and kind of critically solve problems very quickly.  Thatâs something that I think is really beneficial for social engineers.  I know a lot of social engineers encourage people to do improv.  Iâve never done improv, but I think that just naturally running towards uncomfortable conversations that are organic and real is the only way to really get good at this stuff.</p>
+
+<p>JACK:	Running towards uncomfortable conversations that are organic and real is the best way to get good at this.</p>
+
+<p>ALETHE:	Like, take your mixer that you bought at Costco eight years ago and go try to return it.</p>
+
+<p>JACK:	Huh.  I wonder if Iâd be good at this, because Iâve had quite a bit of uncomfortable conversations, and I donât have that social anxiety that comes with them anymore, like sneaking into the Renaissance Festival; thatâs no problem.  I donât mind dumpster-diving or asking a store if I can have things that arenât actually for sale there like decorations or promotional banners or something.  [MUSIC] I have zero worry about being kicked out of a place that Iâm not supposed to be in.  Maybe this is the job for me.</p>
+
+<p>(OUTRO):	A big thank-you to Alethe Denis for sharing this wild adventure with us.  If youâre on Twitter, you should follow her there.  Her name is @AletheDenis.  If you want to know more about social engineering, Iâve got some book recommendations for you in the show notes, but you can also find them at darknetdiaries.com/books, so go check those out.</p>
+
+<p>I try real hard to provide a valuable show to you by going through the painstaking process of putting all this together and getting you a new episode every two weeks.  Am I doing good?  Do you find this show valuable?  If so, please consider supporting it through Patreon or through Apple Podcasts.  By supporting the show, it tells me that you like it and want more of it, so thank you.  This show is made by me, the slow reader, Jack Rhysider.  Sound design by the fast-traveling Andrew Meriwether, and our associate producer just back from his trip at a watery get-together is Ray [REDACTED].  Our theme music is by the bountiful Breakmaster Cylinder.  I like to play chess against computers, but I donât get upset when the computer beats me because Iâll always just challenge them to a round of kickboxing afterwards, and I always win that.  This is Darknet Diaries.</p>
+
+<p>[MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

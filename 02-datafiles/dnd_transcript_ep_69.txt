@@ -1,0 +1,686 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>Human Hacker â Darknet Diaries</title>
+	<meta name="description" content="We all know that computers and networks are vulnerable to hacking and malicious actors, but what about us, the humans who interface with these devices? Con games, scams, and strategic deception are...">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Human Hacker â Darknet Diaries">  
+	<meta name="twitter:description" content="We all know that computers and networks are vulnerable to hacking and malicious actors, but what about us, the humans who interface with these devices? Con games, scams, and strategic deception are...">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/humanhacker.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/69/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Human Hacker â Darknet Diaries" />
+	<meta property="og:description"        content="We all know that computers and networks are vulnerable to hacking and malicious actors, but what about us, the humans who interface with these devices? Con games, scams, and strategic deception are far older than computers, and in the modern era, these techniques can make humans the weakest link in even the most secure system. This episode, security consultant and master social engineer, Christopher Hadnagy, joins us to share his stories and wisdom. He describes what it was like to be a social engineer before the world knew what social engineering was and tells some of his amazing stories from his long career in penetration testing." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/humanhacker.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/69/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/humanhacker.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/69/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="Human Hacker â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/humanhacker.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 69: Human Hacker</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://traffic.megaphone.fm/ADV1901582165.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/69/",
+			   "title": "Ep 69: Human Hacker"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/69">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[START OF RECORDING]
+JACK:	Before we really had the term âsocial engineerâ, people used to just say âcon artistâ because what a con game is, is where you gain someoneâs trust and then defraud them.  Social engineers gain peopleâs trust in order to trick them.  Same thing.  One of my favorite con artists was George C. Parker.   He made a living off of selling things he didnât own.  He lived in New York City in the early 1900s.  A lot of immigrants were moving into the city and he wanted to take advantage of their lack of knowledge about the city.  Grantâs Tomb was built in 1897 which is the final resting place for Ulysses S. Grant.  Itâs right in Manhattan and itâs an extraordinary monument.  You can even go inside and look at the casket.  Itâs a popular tourist attraction.  George C. Parker saw so many people coming to see Grantâs Tomb, he wanted to somehow make money off this, and not by selling popcorn or hot dogs or flowers.
+<!--more--></p>
+
+<p>No, Georgeâs idea was to sell Grantâs Tomb itself even though he didnât own it.  He got to work drafting up fake documents which showed he was the grandson of Ulysses S. Grant and then he rented an office to look like a legal place where you can make such a transaction, and then he went around town looking for victims.  Thereâs a lot of people walking around in New York City stopping for shoe shines, grabbing the paper.  Itâs easy to strike up conversations with anyone.  George found someone interested in buying Grantâs Tomb.  George forged some documents which looked like he was the owner and he told the victim that he could make a lot of money off this place if he would just charge people to come take a look at the casket.</p>
+
+<p>So, he made the deal.  He sold Grantâs Tomb to someone even though he didnât own it.  In the following decades, George C. Parker went on to sell dozens of other landmarks in New York City.  He sold the rights to plays and operas.  He sold Madison Square Garden to someone once.  He sold The Metropolitan Museum of Art once, and the Statue of Liberty.  But my favorite thing that he sold was the Brooklyn Bridge itself.  He would tell people that they could set up a toll booth on the Brooklyn Bridge and make a lot of money from all the cars passing by.  This was such a great con game that George sometimes sold the Brooklyn Bridge twice a week.  The city would often have to come out and stop victims from erecting toll booths on the bridge.  Thatâs where we get the term âif you believe that, Iâve got a bridge to sell you.â</p>
+
+<p>JACK (INTRO):	[INTRO MUSIC] These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	Can we start out with who you are and what do you do?</p>
+
+<p>CHRIS:	Sure.  Itâs kind of a loaded question; Chris Hadnagy and primarily Iâm the CEO or my fun title is Chief Human Hacker of Social Engineer LLC.  But I also run social-engineer.org which is a free resource for social engineers or people interested in the topic where they can educate themselves and learn about things like stories and the science behind it.  Then I also run a nonprofit called The Innocent Lives Foundation.</p>
+
+<p>JACK:	How did you get into social engineering?</p>
+
+<p>CHRIS:	Oh, thatâs fun.  I was working in the industry but doing vulnerability assessments, so I want to say maybe many of us started off that way but Iâm not sure.  But yeah, back in the day, just kind of doing what I would say very light security and understanding light security and then doing vuln assessments.  Then I took a course called Pentesting with [00:05:00] BackTrack at the time before it was Kali and got addicted to pen testing.  Ended up spending way more time than was healthy inside their labs and cracked a server that hadnât been cracked at the time and got a job offer from OffSec to work with them as their ops manager.</p>
+
+<p>Through that process of working with them and learning about real pen testing and how to do it, I found that my natural niche in the field was people, talking to people and learning how to influence them.  I started to write a framework on social engineering.  Thatâs what the social-engineer.org site is basically based on, is that framework.  When that framework came out, I got a book offer to write my first book which no one should read, and from there my company was started and now weâre here eleven years later.</p>
+
+<p>JACK:	Over a decade ago, Chris set up the website social-engineer.org.  There, he started writing a framework to do social engineering which is a guide, if you will, on how to do it.  He wrote a code of ethics, he defined a bunch of terms, and he outlines many of the different methods and attacks.</p>
+
+<p>CHRIS:	It came about because I wanted to understand social engineering from a scientific and an artistic level.  [MUSIC] The way I went about it was kind of looked at my bookshelf and said man, I read this book âcause I wanted to understand âxâ, so letâs say âinfluenceâ.  I wanted to understand influence so I bought Robert Cialdiniâs book and I read it and I studied it.  Then I took principles from that and tried them on a phishing e-mail or tried them where we were breaking into a building, so I would write that down.  I went through my bookshelf and just outlined these are the skills I used, these are the places I learned them, and hereâs how â what I took away from those lessons.  Through that, it took about nine or ten months that formulated the social engineering framework that is still alive on the site today.  Itâs been updated, of course, since that time.  But took about a year to do and it came out right around 2009.</p>
+
+<p>JACK:	Yeah, so Chris here, the Chief Human Hacker, has literally written the book on social engineering; actually, three of them at this point but back in 2010 on top of the framework he was writing, he was also writing newsletters on social engineering and putting out a podcast about it.</p>
+
+<p>CHRIS:	Then companies start calling âcause theyâre reading this, they see it.  Again, itâs the first time anyoneâs ever defined it.  Theyâre saying hey, would you come and test our company?  Will you come and pen test us?  Or will you come and phish us and tell us how we did?  I was like yeah, sure, we would try that.  Again, at this time in history, there was no companies doing this so it was â what do we charge them?  How do we make a business out of this?  We were trying to figure it out all as we went.  Thatâs what started my company at that time which was about 2010, â11 time is when I separated then formed my own company focused strictly on social engineering.</p>
+
+<p>JACK:	Youâre aware of what a phishing e-mail is, right?  An e-mail designed to get you to click a link in there which will harm you somehow, whether it will get you to download malware or scam you or whatever.  When Chris gets a call to do a phishing campaign against a company, he gives them two options.</p>
+
+<p>CHRIS:	You have the security awareness phishing and then you have pen test phishing, right?  Security awareness phishing, the goal is education at the end.  Those are usually done company-wide, like, everybody, no matter if thereâs 1,000 people or 100,000 people.  Theyâre done every month and the goal is to get them to click a link that then brings them to an educational page, âcause our end goal with that kind of phishing is to teach them how to catch it and how to report it properly.  But in pen test phishing, the goal is much different.  Pen test phishing, our goal is to steal credentials, to install an implant to get a trojan or malware on the machine; somehow to compromise the network or the people for the pen test that weâre doing.</p>
+
+<p>JACK:	Now, Iâve worked with, I donât know, hundreds of clients as a security engineer myself.  Boy, let me tell you, none of them were interested in me doing phishing attacks on their employees.  In fact, my own company that I was working for wouldnât even let me do phishing tests on our own employees.  Itâs just rare for companies today to try to phish their employees but it was extra-rare to see companies doing this in 2010.</p>
+
+<p>CHRIS:	I got called by a really large financial institution and they said weâve been doing SE internally for a while and we use your framework now.  Would you be willing to work with us in actually testing our people?  For me, it was a shock âcause like you, I had the same experience.  We would do a pen test for a client and I would say to them hey, can we send some phishing e-mails?  They were like nah, we donât really care about that.  I would offer them for free.  I would say, let me send five for free.  If you like what you see, we could talk about more on pay.  Then they would be like okay, yeah, you could send a few.  They would always work and they would be like nah, I donât want to pay for them; they just worked too good.  Itâs like, but [00:10:00] thatâs why we should do it, you know?</p>
+
+<p>You were right; I was hitting this roadblock where companies didnât want to do it but then this large financial institution says letâs do this and all of a sudden we are full-board doing SE testing and phishing and all this other work in a major company thatâs global, and that word spread.  Soon as that happened, we â other companies started saying well, if youâre working with them, maybe we should consider that.  That is when we were sitting back saying okay, I donât even know â how the heck do we charge for this stuff?  Where do you come up with pricing?  How do you figure out what a service should look like since there was no go-to-glass-door and figure out what a typical social engineer makes, you know?  It was just figuring it out as we went.  Then, youâre right, it still was a struggle.</p>
+
+<p>First five years, I donât â it was like pulling teeth.  You would approach companies and they would be like, why do I need this?  It was a lot of education.  Then as media started picking up stories of phishing attacks and vishing attacks and social engineering impersonation attacks, as media covered those more and more, it got to the point where people, companies, C-levels were hearing these stories and going wow, this is a problem, and thatâs when it became easier to now sell those services like it is today where most companies know they need social engineering services.  But of course, as it wasnât before, thereâs a lot more competition.  Itâs like every other industry; now they have to pick and choose who they deal with.</p>
+
+<p>JACK:	Chris sometimes gets calls to send everyone in the company phishing e-mails and the goal is to give the employees education and awareness of this kind of attack.</p>
+
+<p>CHRIS:	For us, itâs â we levelized, what I call levelized the phish, so we have three different tiers.  Letâs say itâs the same phish; like, right now one of the big things thatâs going around in the real world is since everyoneâs working from home, itâs new work-at-home policies, right?  [MUSIC] So, if youâre working from home, hereâs some policies you need to read.  A phish like that, letâs say with a really basic levelized number one, it might only â it might look like itâs just coming randomly to you.  Itâs not personalized, itâs not branded, and it has even some spelling and grammar errors.</p>
+
+<p>A level two might come to you and itâs not personalized but thereâs no errors in it.  It looks a little more realistic.  Then a level three looks like itâs coming from your HR department.  All of these are geared to teach the employee two things; one is can they catch the phish?  Weâre recording a lot of data.  Did they report it properly if they caught it?  If not, when they clicked it, did they go to the landing page that was given to them and read the information which in security awareness, a lot of people love to push ten, fifteen, twenty-minute CBTs.</p>
+
+<p>JACK:	CBTs are computer-based training, like your typical security awareness training you might get at a company.</p>
+
+<p>CHRIS:	Those arenât great.  Those have a use and a purpose but theyâre not great for what weâre talking about here.  You want to give someone some information they can digest in sixty to ninety seconds.  It should be a âhey, you just clicked on a phish.  Hereâs how you could have caught it.  Please report it to this address.â  We find that that kind of security awareness phishing program helps keep the idea of phishing in peopleâs minds and theyâre much more aware about all phish throughout the month.</p>
+
+<p>JACK:	This kind of training works amazingly well.  It really sticks with the employees who did click the link and got phished.  That sixty seconds where they learned that they clicked on a malicious link is a powerful moment.  Their online awareness and digital hygiene are instantly leveled up.</p>
+
+<p>CHRIS:	When weâve had clients that use a levelized approach that do it consistently, so these are the things; you have to have a levelized approach, do it consistently, and have messaging that isnât damaging.  What do I mean by that?  Everyoneâs afraid of Covid-19 right now.  If we start phishing people with like, letâs say a phish that says âFind out who in the office was diagnosed with Covid-19.â  Everyoneâs gonna click that and when they find out itâs a test, theyâre gonna feel hurt, especially if someone lost a family member.</p>
+
+<p>Letâs say someone had a family member die because of the virus and now they find out you used that virus as part of education, theyâre gonna feel really hurt and youâve taken away the ability to educate them.  Your program has to be levelized, consistent, regular, and also, it has to not step over that moral line.  When you do that, weâve â probably the case I love to use the most, is we phished a client we had with â for five years and after three years of consistently phishing them, they had a 78% reduction in actual malware on their network.  Actual malware-related cases on their network reduced by 78% âcause people were catching phish and reporting them properly without clicking them.  Thatâs a huge win when you think about doing it right.</p>
+
+<p>JACK:	Pretty impressive, [00:15:00] huh?  Conducting phishing campaigns on everyone in the company as part of your security awareness training seems like a no-brainer in terms of how it helps improve the security of a company because a ton of malware enters a company by people clicking phishing e-mails.  Itâs crazy these are still effective today even though most people know about phishing attacks and have been told over and over not to click on suspicious links.  You know what Iâve seen some companies do?  Where I used to work, they used to give a bonus to employees who could demonstrate healthy behaviors like if you didnât smoke and you went to the doctor for preventative care and did regular exercise, they would incentivize you and give you a extra $500 a year as a health bonus.</p>
+
+<p>But some companies take this a step further and incentivize people demonstrating proper security hygiene.  Like, if youâre tested with phishing e-mails every month and pass and then have implemented two-factor authentication properly, and then you use a password manager and youâre virus-free for a year, you might get a digital health bonus too, because some companies can really save money by incentivizing their employees to be more vigilant and secure which results in less infections company-wide, because the overall benefit to security outweighs the cost.  But enough about security awareness training.  I want to hear a story about when Chris had to do a penetration test on a client.</p>
+
+<p>CHRIS:	I had just hired Ryan.  Heâs my COO now and him and I were just working together; this was literally our â one of our first jobs together, going back a couple years now.  We were hired to go break into a couple banks in the country of Jamaica.  This is an interesting one because itâs my first time breaking into banks in a foreign country.  We didnât know what to expect in doing the job, like what was â when we arrive, were they gonna be armed?  Were they not gonna be armed?  How hostile would they be?</p>
+
+<p>JACK:	Their task was to get into the bank in the middle of the day.  Really, this was to see if they could get past security and into the inner areas of the bank because this bank wasnât really where customers come in, typically.  Two foreigners just walking in off the street with no business being in there should not be able to get in this building.  Security should stop them at the front door but if they get in, the doors to every secure area in the building should be locked.</p>
+
+<p>CHRIS:	One of our jobs was that we had to put a USB key into random computers and hack the network.  We had to have different pieces of software and malware on the USB keys that would allow us to show them that we couldâve â we werenât allowed to steal anything or get into sensitive parts of the bank but if we were to gain access to the network, they wanted us to prove that we would have been able to destroy them if we gained access to that part.  They wanted us to have software and tools with us that can prove those parts while recording also so we could show them what it is that we were doing.</p>
+
+<p>JACK:	On top of that, they were told to report any security issues they found along the way.  The objective is set; time to get to work.</p>
+
+<p>CHRIS:	[MUSIC] We had done a lot of OSINT and we found that the bank was undergoing an audit from an American company.</p>
+
+<p>JACK:	Okay, OSINT is open-source intelligence-gathering which is where you look in public areas online for private information about a company.  Chris didnât say how he did it but hereâs how I would start.  First, go to the companyâs LinkedIn profile.  This typically lists a bunch of employees who work for that company.  From there, you might see employees posting stuff right on LinkedIn like âUgh, itâs audit time again.  Can you believe it?â  But if no clues like that show up, you can take this a step further.  You take the names of the employees that are on LinkedIn and then try to find their Facebook profiles to see what theyâre posting there and look through all that.</p>
+
+<p>If nothing is there, then take it another step further; try to take that name and see if you can find their Reddit profile or their Stack Overflow name or some Twitter name or something else that you can go and scour those posts, then.  You keep pivoting around and eventually youâll find someone somewhere posting something that they shouldnât be posting.  In this case, Chris found people posting information about a network audit being conducted by an American company on this Jamaican bank.  Specifically, it was a PCI audit which stands for Payment Card Industry.  Basically, if any business wants to process credit cards, they need to pass a yearly PCI audit.  Since Chris and Ryan are both from the US and understands the ins and outs of PCI, this would be a perfect cover or pretext.  They were gonna pretend to be PCI auditors to try to get access to the building.</p>
+
+<p>CHRIS:	We had printed business cards and button-up shirts with that companyâs name on it, grabbed some clipboards, and we arrive in Jamaica.  We drive to the location to scope it out first day.  [MUSIC] Itâs a pretty big building.  It was maybe three or four [00:20:00] stories high, huge square.  The whole parking lot is surrounded by a fence that has barbed wire pointing in.  There is a guard as you pull into the parking lot.  Thereâs a guard booth with two guards sitting in it at the edge of the parking lot.</p>
+
+<p>JACK:	They drive up to the guard gate, prepared to lie their way in somehow.</p>
+
+<p>CHRIS:	Because it was daytime and it was â they were expecting customers in and out, we werenât stopped at the gate.  We were stopped but they were â we just said oh yeah, weâre here to do some banking, and they let us right in.  There was no issues.</p>
+
+<p>JACK:	As they entered the parking lot, they see some guys whiz by on dirt bikes.  [BIKE ENGINES] Not only were they on dirt bikes but as they drove by, Chris and Ryan saw that mounted on the side of the dirt bikes were sawed-off shotguns.</p>
+
+<p>CHRIS:	They were security.  They were bank security where like, that â in America, bank securityâs a security guard.  Maybe he has a gun on his belt but heâs sitting at the desk or up front.  These guys were on dirt bikes driving through the parking lot.  It was just crazy.  We were like, what?  Ryan and I pulled up.  The first thing, we both looked at each other and we both had this immediate thought like, are we still gonna do this job?  You know, Ryan, he says it; he goes, I didnât sign up for this.  Iâm like well, we just flew all the way here from America to Jamaica.  Itâd be a real shame to just come all this way and not even try.</p>
+
+<p>Heâs like, they have shotguns on dirt bikes.  Iâm like yeah, itâs a little odd.  But a gunâs a gun and weâre breaking into armed facilities in America and those facilities, we have a risk of getting shot, too.  Yeah, maybe theyâre not on dirt bikes running around the parking lot but still, getting shot with a shotgun or a rifle or an AR is no different; itâs all gonna suck and weâre gonna get shot, so â and we do those jobs.  That was really poor reasoning but that was my reasoning.  He went along with it and we did it.  Looking back, Iâm like phew, boy, that was a scary, scary moment.</p>
+
+<p>JACK:	They took a deep breath, drove through the parking lot, and parked.  The dirt bikes were whizzing by and they were just adding a whole new level of stress that they werenât expecting.  Got out of the van and suited up.  They put on a shirt with the companyâs name that was conducting the audit.  They got their fake business cards ready and of course, my favoriteâ¦</p>
+
+<p>CHRIS:	The clipboard.  The clipboardâs hollow so inside the clipboard are USB keys and other tools that we may need; lockpicks, a camera that we can videotape things with.  Inside the clipboard are a lot of different things that we can carry so we donât have to have them all in our hands when weâre walking in.</p>
+
+<p>JACK:	They take a look at this building.</p>
+
+<p>CHRIS:	[MUSIC] The building is mirrored glass so as youâre approaching it, you canât see through the windows âcause all the glass is mirrored.</p>
+
+<p>JACK:	They got a little information about whatâs inside this building before coming in, so they know what it looks like inside before they even get in.</p>
+
+<p>CHRIS:	As you open the front doors, thereâs a security guard desk right there with a metal detector.  The security guards are sitting behind a desk but you have to walk through the front doors right past them to get to the staircase.  That is the only access into the building, so thereâs no other access into that particular building in that area.  You can go around the back; there were some loading docks and other areas but the front door was the only access in through the security guards to get to the rest of the bank.</p>
+
+<p>JACK:	They walk up to the building.</p>
+
+<p>CHRIS:	As weâre getting closer to the door, I said to Ryan, look, Iâm just gonna get on my phone, act like Iâm having a conversation.  When we get inside, Iâm gonna say something like hey, weâre coming upstairs now; just wait.  Weâll finish the audit in a minute, and weâll just walk past security like we belong.  Heâs like, is that gonna work?  Iâm like well, letâs find out.  I open the front door, walk in, I pick up my phone, put it to my ear.  Iâm like yeah, yeah, Jack, weâre in the front.  Weâre coming upstairs.  We walk right past security and they donât even stop us.  I mean, not even flinch.  You donât have time to pause and be like, what the heck?  But as weâre walking up the stairs, weâre both like what the heck?  Like, that was way too easy.</p>
+
+<p>We get upstairs and we realize we donât have time to stop and breathe and figure out where we go.  I round the corner and thereâs a room that says ATM testing center; big sign on it says ATM testing center.  Thereâs a woman whoâs walking right in front of us and she enters the room.  I just make a quick right and I enter the room right behind her.  Ryan follows right along.  We get in the room and she kind of startled; she turns around and she looks at me like what are you doing?  Iâm like oh, weâre here doing the audit for PCI.  Weâre finishing it up.  Sheâs like oh, okay.  She just turns around and lets us in this room.</p>
+
+<p>JACK:	They made it in.  They look around this room.  It seems to be where they repair ATMs, big machines which may or may not have cash in them, but theyâre all opened up in pieces around the [00:25:00] room.</p>
+
+<p>CHRIS:	Now, Ryan is like, literally climbing up inside giant ATMs, taking pictures of all their circuit boards and parts.  Thereâs a guy over with a computer testing out this ATM so I walk up to him and I say, explain to me what youâre doing.  He walks me through how they code their ATMs, he shows me their software.  Heâs basically giving me a free education on ATMs and Iâm videotaping the whole thing and he doesnât know Iâm covertly videotaping it.  We were in that room for probably about thirty minutes to the point where we were like, we have to leave otherwise itâs gonna look really awkward that we just keep hanging out here talking to these people.  We tell them okay, weâre done.  We exit.</p>
+
+<p>JACK:	[MUSIC] Now, remember, they are in Jamaica so they look out of place here.  But they had a ruse.</p>
+
+<p>CHRIS:	Weâre the only two white guys in literally this whole building.  It was definitely culturally interesting there because we definitely stood out.  Thatâs why we chose that we were working for an American audit company.  That made sense of why we were there, that we werenât trying to be locals, we didnât try to make-believe we lived there, we didnât try to make-believe anything that would throw them off.  We were like yep, we just came in, flew in from America last night and weâre finishing the audit.</p>
+
+<p>JACK:	They wander the halls with a clipboard in hand, looking for something else of interest.</p>
+
+<p>CHRIS:	Thereâs a long hallway and at the end of the hallway, thereâs these two glass doors that we could see through.  Thereâs a call center; I can see all these men and women sitting on phones and headsets, these rows of computers.  Iâm like okay, thatâs a call center.  Thereâs a RFID pad right next to the door so we assume okay, the doorâs locked.  We canât go just yanking on it.  Iâm walking really slow towards the door in the hopes that someone would either enter or exit and I would be able to hold the door for them or catch the door with my foot and get in without having to have a key.  Itâs like, you canât even plan this as smoothly.  As I approached the door, this womanâs exiting and I go oh, let me hold that for you.  I pull the door, she unlocks it, and I hold it for her.  She says a really nice thank you and Ryan and I walk into the test center.</p>
+
+<p>JACK:	They get in this large office room.  [BEEPING, DIALING] Rows and rows of desks and cubicles are here, lots of people all over with headsets on, talking to customers on the phone.</p>
+
+<p>CHRIS:	Weâre trying to find a quiet, open spot.  Weâre walking up and down these aisles kinda slowly and I go down this one aisle and thereâs a computer thatâs on but itâs at its lock screen.  Thereâs a woman sitting right next to it on her computer so I just say to her, hey, I need you to put your password in this computer here.  She looks; she stops and looks at me and sheâs like, what?  What do you mean?  I said I need you to log in to this computer.  Sheâs like, but Iâm using this one.  Iâm like yes, I know, but I need you to log into this computer, too.  She goes, okay.  She just gets up and as sheâs typing her password, I start recording on my phone and I hold my phone over the keyboard so Iâm recording her password on my phone.</p>
+
+<p>JACK:	Does she see you do this?</p>
+
+<p>CHRIS:	She doesnât, so Iâm doing it where Iâm holding my phone on the back of a clipboard.  I make a big stink about looking away from her so she thinks Iâm not watching her put her password in, but Iâm recording it on my phone.  I call Ryan over.  He sits down, he pulls out one of the USB keys and he starts hacking the network from there.  [MUSIC] While Ryanâs doing that, I just turn around and I notice that thereâs this guy sitting at a desk right behind us about five or six feet and he gets up to use the bathroom, I assume.</p>
+
+<p>He just gets up from his desk and he walks away.  When he walks away, he leaves his computer unlocked, he leaves his badge on the desk, he leaves everything there.  So, I go over to his computer and sit down and just start scrolling through banking screens, applications, I take a picture of his badge for cloning later.  Then Ryan comes over and he starts hacking that computer.  We now are on these two machines and weâre like okay, weâve been in the ATM testing center, we hacked the network, weâve run two different machines, itâs time for us to start exiting.</p>
+
+<p>JACK:	Ryan and Chris start packing up and planning their escape out of there.</p>
+
+<p>CHRIS:	We start thinking of an exit strategy and a woman comes over and she says what are you doing here?  Weâre like oh, weâre finishing up the PCI audits so weâre just testing speeds on these computers.  Sheâs like okay, and she walks away.  Iâm like man, that was way too easy.  Well, two minutes later she comes back with a manager and the manager says who is your contact here?  I said oh, you know, I donât have a contact here.  She goes, everyone whoâs allowed in the bank has a contact.  How did you get in here?  I said well, weâre working with that American audit company.  I said the name and she goes, yeah, I know them.  Theyâve been here for the last month.  Iâm like right, and weâre just finishing up the audit on speed and other things, so I just was told to come do the test.  I said, I can give you my American contact.  Sheâs like no, I need your local.  She goes, come with me.</p>
+
+<p>JACK:	She begins escorting Chris and Ryan to the security desk at the front door of the building.  Now, Chris is already a step ahead.  He thought [00:30:00] about what he would do if he got caught because itâs never over when you get caught.  This mission has just changed to see if you can escape from being caught.  Chrisâs plan was pretty brilliant.  Back in their van, in the parking lot of this building, is a third guy they brought with them.</p>
+
+<p>CHRIS:	Heâs a local in Jamaica that works for a pen test company that was â the bank was his client, so they had hired us to come down and do the social engineering part.  I said look, you sit in the van, youâre our local banker guy so you use this name and if they call, you answer as this, right?</p>
+
+<p>JACK:	Pretty clever.  Someone with a local accent who could pretend to vouch for them might just be a pretty convincing fake get out of jail free card.</p>
+
+<p>CHRIS:	We get to security and she says check on these people, and then she leaves.  I tell the security guy; Iâm like look, you want to talk to my contact here at the bank?  Heâs like, yes.  So, I call on the phone.</p>
+
+<p>JACK:	Chris uses his own cell phone to call his buddy whoâs just in the van in the parking lot to pose as someone who works at this company.</p>
+
+<p>CHRIS:	I say hey, I need you to talk to the security guard.  The security guard said so, you know, do you know these two people?  We gave them the fake names âcause we have fake business cards.  He said oh yeah, yeah.  They work for this company, this auditing company.  Heâs like yep, thatâs what their card says.  Heâs like yeah, theyâre supposed to be there doing a speed and internet connectivity test.  Heâs like yeah, thatâs what they were doing.  Heâs like okay, that sounds legitimate.  Heâs like, great, then please let them continue doing their job.  That was it.  Then at that point he said well, youâre verified.</p>
+
+<p>Iâm like okay, well, [MUSIC] weâre gonna just take a break and then weâll come back âcause we, at this point, we didnât know if going back into the building was gonna get us arrested.  I donât know about you; Iâve been arrested a lot of times on jobs in the states.  Getting out of thatâs relatively easy.  I did not know how getting arrested in Jamaica was gonna be so we decided to exit the building.  Plus, we hacked the network, we hacked the ATM stuff, so we were like yeah, weâre pretty much done here.  So, we exited the building and then went to our next location.</p>
+
+<p>JACK:	All objectives on the first building have been accomplished; in and out, no problem, easy-peasy, at least to someone whoâs as skilled as Chris and Ryan.  Time to head over to the second bank building.  The next one though, is where their NOC is.  This is the Network Operations Center, the room where a bunch of network technicians and engineers are all actively looking for network security incidents within the bankâs network to resolve them.  Well, Chris and Ryan are about to be two major network security incidents if they can get into the NOC.  So, this should be an interesting match.</p>
+
+<p>CHRIS:	Inside the banking property which looked just like the other property; you know, the barbed wire fence, the whole nine yards.  There was a smaller building that was surrounded by another barbed wire fence and that was the NOC.  We ring the bell and the security guard comes out and he says whatâs your name?  I told him what we were doing and he looks at his list and heâs like, you are not on the list.  Iâm gonna need to call and get approval.  I said, oh man, if you can â I said, look, weâre two Americans and weâre not used to the heat here.  Can we come in and wait in the air conditioning while you make the calls and verify us?  He thought about it for like, a good five, ten seconds and heâs like yeah, okay.  He presses the button, unlocks the gate, and we get in.  Iâm thinking this is it; weâre gonna â while heâs in his office making calls, weâre gonna hack the whole NOC, weâre gonna be out.</p>
+
+<p>He lets us into the front, weâre sitting by these two computers which Iâm like Ryan, as soon as he leaves, this is it.  He goes âkay, you guys wait here.  I gotta go to my office.  Weâre like sure, no problem.  We wonât move.  Weâll just sit here in the nice AC.  Thanks for being so cool.  He gets up and he puts his head around the corner and he yells something to some guy.  I couldnât understand what it was.  A second later this dude, I swear, [MUSIC] he was the biggest man Iâve ever seen in my life and I am by no means a small person.  This guy made me look like a miniature human.</p>
+
+<p>This guy mustâve been 6â10, 6â11, and he was as wide as a doorway.  He had a flak jacket on that had knives at different intervals in his flak jacket.  He had a giant billy stick on his one hip.  On his other hip, he had a sawed-off shotgun, and then he had a handgun on the belt on his other side.  This guy comes and he stands with his arms folded in the doorway.  I just leaned over to touch the computer and he went mm-mm.  Just like that.  I went no, no, Iâm not doing anything, man.  Not doing anything.  Ryan leans over and heâs like, Iâm not gonna try it.  Iâm like, donât try.  Donât try.</p>
+
+<p>JACK:	At this point Chris makes a decision; this is not gonna work.  Time to figure out a way to escape.  But you donât want to just get up and run while this big guy with weapons is staring at you.  But Chris has prepped really well for this and has a plan.  [MUSIC] [00:35:00] That morning, before coming into this building, he compiled a lot of data on this company.  He scoured the internet and researched a bunch of employees here and even made some phone calls to talk with some of those people.  All this was done that same morning.</p>
+
+<p>CHRIS:	We went to LinkedIn and we pulled up the employees of this bank.  Then we found ones who listed their phone numbers and we started calling people who were in positions that we thought would be able to say, like, that would be our contacts if we were legitimate auditors.  So, calling the CISO or the CIO.  What we wanted to do was call them, ask them a couple weird questions and nothing about audits.  Just be like oh, hey, is this Joe?  Theyâd be like, no, this is not Joe; to hear their voice and we were hoping that if one of them sounded a lot like our Jamaican contact, like, if they were older or if they had a rough voice or whatever, if they sounded similar, then we could have that guy play the part of the CISO and then give us that fake permission.</p>
+
+<p>JACK:	You get it, right?  They were trying to find somebody within the company that sounded like their third guy in the van so that he could pretend to be the person on the phone.  One of the people they tried calling was the Chief Information Officer.  But when they called the CIO, they never got through.</p>
+
+<p>CHRIS:	The secretary said oh, heâs not in today.  Heâs on a business trip.  He flew to another island.  Then I just asked so, when will he be back?  Well, not âtil later this afternoon.  Okay, great.  Weâll call back then.</p>
+
+<p>JACK:	Now, he took this little bit of information he learned earlier that day and heâs sitting in the building with the NOC and this huge armed guard is staring at him.  He waits for the other guard to come back.</p>
+
+<p>CHRIS:	When the guy came back, heâs like look, I canât verify you.  No one knows who you are.  Iâm a little worried.  I said ah, you know, the guy whoâs supposed to be in contact with us, I heard heâs off the island today.  Heâs on a business trip somewhere.  He said yeah, thatâs what they told me.  That was the only thing that saved us because I knew a story that he had found out just now on the phone.  I said yeah, well, that guyâs our contact.  You know what?  Why donât we do this; heâs supposed to be back in a couple hours so why donât we go?</p>
+
+<p>We have another site that weâre supposed to go to.  Weâll go do that site and then weâll come back in a couple hours when heâs landed from his business trip.  Heâs like okay, thatâs cool.  We got the heck out of there and left and never came back.  We had no other sites; we were done but we were like, we just needed to get out of there before King Kong broke us into little pieces, you know?  We did nothing there.  We didnât hack that.  We completely failed on that job but it was like, this guy could break both of us in half without thinking about it.</p>
+
+<p>JACK:	Failing is actually good.  It means their security was better than Chris, and Chris is a professional.  At this point, Chris and Ryan write up a full report and have a meeting with the client to go over everything.</p>
+
+<p>CHRIS:	Yeah, you know, thatâs what I love about working with clients like that, is they were very happy.  They werenât mad, they werenât like oh, you guys are jerks.  They really loved the story, they loved how far we went, they loved that we also didnât try to hurt anybody or damage anybody.  They loved that we followed all the rules but mostly they just loved that we proved where their vulnerabilities were.  âCause at the end they said well, what could have stopped you?  I gave them three or five different points or where we could have been stopped at any point in time.</p>
+
+<p>JACK:	Iâm interested to hear those points.</p>
+
+<p>CHRIS:	Sure.  The first point was when we entered the building on the phone.  The security guard didnât stop us and he should have.  He should have said whoa, whoa, hang on, before you get upstairs, who are you here to see?  I would have came up with the same fake name and he would have went, I donât see you on the list.  Let me call upstairs and see if Jack is there, and when he called upstairs and thereâs no Jack, I would have been stopped.  That was the first time I could have been stopped.  The second time is when I entered the ATM center with Ryan and the lady turned around and went whoa, what are you doing in here?  I said, PCI audit.  She should have said well, I donât have you authorized in this room.  This is a private room.  It had a whole separate security system.  She could have called downstairs to security and say hey, are there supposed to be auditors doing the ATM center?  That may have triggered them to check in and I could have been stopped there.</p>
+
+<p>JACK:	Yeah, or just, she could have just shut the door and saidâ¦</p>
+
+<p>CHRIS:	Yeah, youâre not allowed in.  The third time was when we were in the call center and I said to that woman, put your password in here.  She should have said, I donât think Iâm allowed to do that; let me go get my manager, or just rejected entering her password.  She didnât do that.  The fourth time was when we went over to the computer that the guy didnât lock.  He could have stopped us by locking his computer before he left for the bathroom.  Then the fifth time was back at the security guards when we called the fake Jack and said, hey, yeah, here, talk to our contact here.  He accepted that we were telling the truth and let us â was gonna let us back in.</p>
+
+<p>That could have stopped us, if he was like, Iâm not handling your phone.  I want to call this guy directly on the extension I know.  He took my phone which could have been any person and spoke to him as a bank contact.  He could have just called the extension directly instead of trusting me.  When I told him those five things, they were like yeah, those are all good points.  Iâm [00:40:00] like you know, you set training and you set policies in place and then you train them on those policies and you give them avenues to do this smart, and next time we will not be able to break in.</p>
+
+<p>JACK:	[MUSIC] A few years later, Chris and Ryan were back in the United States.  They got a job to break into a building and gain remote access to the network inside.  The guy who hired Chris and Ryan to try to break in was the head of physical security of the building.  The head of security authorized this which is what made it legal and Chris had printed out this authorization letter and put it in his pocket because if all goes wrong, theyâve got this letter which says the head of security paid them to test this facility.  They plan out their pretext or ruse.</p>
+
+<p>They were going to pose as pest control which could get them access into the building and then from there, they could try to sneak a USB drive into one of the computers.  They had a uniform, spray bottles, boxes, and more to look like they were actually doing pest control.  They decided to go the night before to scout out the place.  [MUSIC] Itâs a big office building; lots of glass windows and even a glass door in the front.  They came by at night.  There was no security around.  They tugged on the doors but they were locked.  So, they decided to try an old trick.</p>
+
+<p>CHRIS:	Yeah, there was like, two glass doors that led into the place and they had a gap in-between them that was wide enough for us to shove a USB key through.</p>
+
+<p>JACK:	Their theory is that if they slip one of their malicious USB sticks through the gap of the door and into the building, when someone finds it the next day, they might be just curious enough to see whatâs on it and plug it into a computer, which by the way, you should never do.  USB keys can contain a ton of icky malware that you want to avoid.  But if a user opened any of the files that were on this USB drive, it would create a reverse connection back to Chrisâs server which would allow him remote access to that computer the user plugged the USB key into.  They shoved this USB stick through the gap of the door.</p>
+
+<p>CHRIS:	There was two sets of these doors and what â sadly, the first door, perfect; we did great.  The second door, nobody ever uses it and we didnât know that.  When we slid the USB key through, when someone found it the next morning, they went hey, you know that door that is like, totally never used?  Thereâs a USB key on the floor there.  That made security go look at the video tapes from the night before.  They saw Ryan and I at the building outside sliding these keys through the door.  We didnât know that.  None of this we knew.  The next day we come and Iâm reversing into my parking spot.  Iâm in this big, huge SUV and Iâm reversing into the parking spot.  I had just turned around to make sure I wasnât hitting anything and I heard the door open.</p>
+
+<p>I thought Ryan was getting out and when I turned back, thereâs a cop that ripped Ryan out â a security guard, but an armed security guard who ripped Ryan out of the front door [MUSIC] and had him slammed on the hood and was cuffing him.  Now, Ryan knows this, everyone knows this; look, if we gotta get away, I may run so I can come back and break in later.  Like, youâre gonna have to deal with it.  I put the car in drive like Iâm gonna flee.  Heâs looking at me shaking his head like donât leave me, man.  Iâm like, see ya, sucker.  Iâm just about to take my foot off the break and a woman jumps out in front of the car with her gun drawn and sheâs like, get out of the car.  Iâm like hey, hey, put the gun away.  Weâre all good.  I put it in park and sheâs like, get out of the car.  Iâm like, Iâm not getting out of the car until you put the gun away.</p>
+
+<p>I need you to put the gun away.  Sheâs like, Iâm not putting the gun away.  Weâre yelling back and forth and eventually I get out of the car.  She was short.  She mustâve been like, 5â2, 5â3, and Iâm 6â3.  She slammed me on the hood so hard that it knocked my hat [00:45:00] and my sunglasses off and they flew across the hood.  Before my face bounced off the hood, she had both my arms in cuffs.  It was so impressive, I said, whoa, that was maybe the quickest cuffing Iâve ever had.  It just came out of my mouth, right?  She goes, you get cuffed all the time, donât you, scumbag?  Iâm like, okay, I can see youâre very angry.  I donât know why youâre so angry.  Weâre just driving, pulling in here.  Weâre doing some pest control.  Sheâs like, youâre not doing pest control, scum.  Then she like, takes me up and she stands me up.</p>
+
+<p>Iâm like hey, itâs really hot here.  It was the summertime in a really hot area.  Iâm like, can we go over to the shade?  She takes us over to the shade.  Ryan and I are now kneeling on the ground like in execution-style.  Weâre on our knees, both of us cuffed behind our back.  Theyâre like, what are you doing here?  Ryan whispers to me, give her the letter.  Iâm like, no, no, we can get out of this.  Iâm like, weâre here doing pest control.  Sheâs like, youâre not doing pest control.  Iâm like, we are.  I said look, go open the back of our SUV; youâll see the â we had pest control sprayers and we had fake chemical cartons and everything.  We had all the stuff that looked the deal.  Sheâs like, youâre not here doing pest control.  Iâm like, just open it up and look.  So, they see the pest control equipment and sheâs like, I donât believe you.</p>
+
+<p>Iâm like, I donât know why you donât believe me.  Look, I got a work order.  My clipboardâs in the car if you want to get it.  Sheâs like, Iâm not going anywhere, scum.  What are you doing here?  Iâm like, Iâm telling you, I donât know how many ways to answer it.  Then Ryanâs like dude, the letter.  Theyâre getting mad.  Iâm like no, we donât need the letter.  Then the guy guard comes over and heâs like, why were you here at 11:00 last night?  Iâm like, crap.  Iâm quickly thinking and Iâm like well, one of the things we were hired to spray for were scorpions and they donât come out in the daytime.  This breed of scorpion only comes out at nighttime so we came at night to just check the area to make sure that we were gonna spray at night.  He said, we saw you on video.  We didnât see any sprayers.  You were just walking around the building looking at our doors.  Iâm like well, we were just scoping it out.</p>
+
+<p>Weâre gonna do the spraying now and tonight.  Heâs like, what are you really doing here?  Iâm like no, Iâm telling you, thatâs the truth.  Ryanâs like, give him the letter, dangit.  Iâm like no, man, we can do this.  Iâm feeling like weâre gonna win this, right?  Then he goes, what about the USB keys you dropped?  Then Iâm like, crap.  Yeah, now itâs over.  Iâm like okay, look man, thereâs a letter in that clipboard.  Heâs like, Iâm not grabbing your clipboard.  For all I know, itâs some kind of device.  Iâm like no, no, just grab the letter please.  You can grab the letter.  The lady goes over, she grabs the letter, they open it and they see the contact name and they know him personally and theyâre like that mother.  I canât believe it.</p>
+
+<p>Iâm like, yeah.  Yeah, heâs a real jerk.  That guyâs a jerk; you should uncuff us.  Weâre buddies.  Sheâs like, weâre not uncuffing you, scum.  Iâm like, no, come on, weâre not scum anymore.  Now you know weâre good guys, right?  Sheâs like, no.  We stayed kneeling there on the ground for like, ten more minutes while we waited for our contact to come out who we found out was in the bushes filming us getting arrested.  Weâre like, really, man?  Heâs like, this was great.  These guys did so good.  Iâm like yeah, they did great, but you could have saved us.  Heâs like no, this was awesome.</p>
+
+<p>JACK:	The name on the letter was actually the security guardâs boss.  Once they called him and he said yep, this is all a test, the situation calmed down and the security guards eventually started laughing about this whole situation and started asking Chris and Ryan what are their jobs as pen testers?  Everyone started being more friendly.</p>
+
+<p>CHRIS:	The whole time, Iâm grilling them for info.  Iâm like, so yeah, you guys did really good.  We should have came later but youâre probably here twenty-four hours, right?  Theyâre like no, no, no.  No security here is after 7:00 p.m.  Iâm like oh, yeah, we should have chose then.  Thatâs too bad.  I got their schedules, you know, like from them just by talking.  Then we come back that night at like, 9:00 p.m. after theyâre gone and we break into the place and we break into their office.  We stole their badges and some of their stuff for getting into other buildings.  Then I left all of my pest control equipment on their desks with a big thank you note and a couple smiley hearts.  The next day when they came in, they knew that we had broken into all the cameras and us stealing their stuff, but then our pest control equipment was on their desk.  A little fun humor back and forth.</p>
+
+<p>JACK:	[MUSIC] Okay, for this next story â actually, can I just take a moment and say thank you for being here as a listener?  I mean, look at this; weâre what, forty minutes into this episode and youâre still with me?  [00:50:00] Itâs unbelievable.  Just, thanks so much for being here with me, right here, right now.  For you, the listener whoâs made it this far, I have something Iâm really excited to be able to share with you.  This is a rare find and Iâve been looking for something like this for quite a while so I was really excited when Chris said he could do it.  The story starts with Chris doing a phishing campaign against a company with the goal of raising security awareness for the company.</p>
+
+<p>CHRIS:	In this particular test, we started off with a phishing e-mail and it was out to 1,000 people.  It was about a brand-new iPhone.  To register to win one of the brand-new iPhones, all you had to do was go to this website and put in your credentials for your computer.  It was a corporate-sponsored raffle so you went to a site that looked like your corporate site, entered the info, and then you were entered to win one of these iPhones.</p>
+
+<p>JACK:	So many of the people in this company wanted a free iPhone and the e-mail looked like it was sponsored by the company itself, so the employees were like heck yeah, let me register to win this thing.  From this e-mail alone, Chris got 750 people to click the link and then go to his website and enter in their work username and password.  Itâs insane.  At this point, you could send each of these people an e-mail explaining how the raffle was just a test and they failed.  That could be the end of the security awareness training.  But besides raising awareness, Chris had a secondary objective which was to also gain remote access to the network inside.  He comes up with a plan.</p>
+
+<p>CHRIS:	We had their username and password but our job was to gain access to their network remotely.  The goal was to call each one of these people and tell them that the link they just clicked on was a phish and that they had the â hopefully they went when they were notified of that, that it was a phish, that they had to go change their password and that once they changed their password, we had to just make sure that there was no residual malware on the computer from clicking that phish.  To clean their system, we created a PC cleaner program for them that would clean their machine from any malware.  Of course, it was not a PC cleaner; it was a meterpreter reverse-shell that gave us access into their machine.</p>
+
+<p>JACK:	The goal was to call like, twenty-five people who clicked the link and somehow convince them to run some malware.  This is vishing which is voice-phishing, but like I was saying earlier, itâs the same thing that con artists have been doing for a hundred years.  Chris changed into Paul and acted like heâs from tech support.  He e-mails one of the people who clicked the phish and told them hey, look, this was a phishing e-mail.  You clicked it.  You shouldnât have; change your password immediately.  Then Chris, or Paul now, calls up the employee.  Hereâs the actual vishing call that took place.</p>
+
+<p>CHRIS:	This is Paul from tech support.  How you doing?</p>
+
+<p>MSPKR:	Good.</p>
+
+<p>CHRIS:	We got that you filled out for that iPhone, the iPhoneâ¦</p>
+
+<p>MSPKR:	Yep, yep.</p>
+
+<p>CHRIS:	You went in and did your password change?</p>
+
+<p>MSPKR:	Yes, I did.</p>
+
+<p>CHRIS:	Okay, excellent.  Just wanted to tell you that was really good.  Thatâs the way it should have been handled.</p>
+
+<p>MSPKR:	Okay, yeah.  As soon as we realized it, two of us jumped right on it.</p>
+
+<p>CHRIS:	Okay, so there was another guy on your team that â also?</p>
+
+<p>MSPKR:	Yeah, I think it was JR [CENSORED].</p>
+
+<p>CHRIS:	JR?  Okay.  Just gonna write down that Iâll be talking to him later on.  Just to follow-up what weâre doing, are you on the VPN right now?  Youâre on your work machine?</p>
+
+<p>MSPKR:	Yes.</p>
+
+<p>CHRIS:	Okay, Iâm gonna give you an internal address.  Itâs an FTP site that we set up for the [CENSORED] employees.  You can go there; you can see thereâs one file there youâll be able to download and it will just clean up any residual mess from that website that we did â that we used for the audit.</p>
+
+<p>MSPKR:	Okay.</p>
+
+<p>CHRIS:	So, if youâre at your machine, just open up a browser and Iâll give you the address.</p>
+
+<p>MSPKR:	You mean like go on like Iâm gonna send an e-mail?  Iâm not realâ¦</p>
+
+<p>CHRIS:	Well, Internet Explorer?  You can open up that.</p>
+
+<p>MSPKR:	Okay, yep, I got the â okay.</p>
+
+<p>CHRIS:	Then up at the top line, the address, type in ftpâ¦</p>
+
+<p>MSPKR:	Ftp?</p>
+
+<p>CHRIS:	Yep, F as in Frank, T as in Tom, and then P as in Paul, and then a colon.  Then two slashes and these are the slashes that are by your question mark, the same button as your question mark.</p>
+
+<p>MSPKR:	Gotcha; ftp.  Okay.</p>
+
+<p>CHRIS:	Then the word is update- and the dash is like the minus sign.</p>
+
+<p>MSPKR:	Gotcha.</p>
+
+<p>CHRIS:	[CENSORED].com.</p>
+
+<p>MSPKR:	Okay.</p>
+
+<p>CHRIS:	When you close that, you should open up â it should say index sub and it should have one file.  Thereâs a file called [CENSORED] PC Checker.</p>
+
+<p>MSPKR:	Okay, yeah, no, itâs here.  Okay, double-click on that?</p>
+
+<p>CHRIS:	Yeah, click on that.</p>
+
+<p>MSPKR:	Okay.</p>
+
+<p>CHRIS:	It should download or it should ask you [00:55:00] if you want to Run or Save.  Click Run.</p>
+
+<p>MSPKR:	Okay.</p>
+
+<p>CHRIS:	If everything goes good, you should get no alerts.  If you have a residual problem from that site then youâll get a message but if nothing happens, then everythingâs clean and good and weâre done.</p>
+
+<p>MSPKR:	Okay, I just got a second thing.  It said, âThe publisher could not be verified.  Are you sure you want to run this software?â</p>
+
+<p>CHRIS:	Yeah, click OK.</p>
+
+<p>MSPKR:	Run again?  Okay, now it took me back to the original screen.</p>
+
+<p>CHRIS:	Okay, thatâs good.  If you got no error message, then youâre good to go.  Youâre clean.</p>
+
+<p>MSPKR:	Okay, well, thanks for the help.</p>
+
+<p>CHRIS:	Not a problem.  Weâll talk to you later.</p>
+
+<p>MSPKR:	Yeah, sorry about clicking on that.</p>
+
+<p>CHRIS:	Itâs okay, thanks for thinking about it afterward though.</p>
+
+<p>MSPKR:	Okay, man.  Alright, thanks.</p>
+
+<p>CHRIS:	Bye.</p>
+
+<p>JACK:	Just like that, Chris has gained remote access to this guyâs computer.  He can now do anything he wants on it; open a webcam, turn on the microphone, record keystrokes, transfer files, screenshot the desktop, or move to another computer deeper inside.  This is fascinating so let me break it down for you.  [MUSIC] The company had state-of-the-art network equipment, a firewall to block all the bad connections coming into the building or going out of the building, an intrusion detection system to inspect traffic coming and going and blocking anything that looks malicious.  The employees all have antivirus on their PCs too, to stop any bad software from running.  But of course, none of their security listens for phishing phone calls.</p>
+
+<p>It bypasses all that.  Thatâs one problem.  Then Chris got the employee to download this executable software.  They downloaded it and ran it.  There was a warning; are you sure you want to run this kind of thing?  But the computer didnât lock it from running.  Once the program was ran, it started a reverse connection back to Chrisâs computer.  To all of the security devices in the network this simply looked like a regular web request, Chrisâs server, and from there, Chris was able to ride that connection back into the employeeâs PC and get in.  This is easily set up, too, with a tool called Metasploit.  This is just a reverse-shell put on the victimâs PC.  Antivirus doesnât stop it, either.</p>
+
+<p>CHRIS:	No, because it wasnât seen as a virus.</p>
+
+<p>JACK:	Itâs taking advantage of the built-in remote-control capabilities within Windows itself.  Even a fully-updated computer has the ability to run remote-access commands on it and thatâs all this did.  When you get someone inside the company to run this program, itâs all it takes to bypass everything thatâs supposed to stop it.  Scary stuff.</p>
+
+<p>CHRIS:	I think a lot of times when we talk about this topic, people go âI would never fall for that.â  When you hear this guy, he sounds like a normal, everyday guy, a guy you probably work with.  He sounds like just an average dude.  Heâs not dumb, heâs not just throwing security to the wind.  He sounds like your average, everyday guy and heâs just like oh my gosh, I canât believe I clicked on that phish.  Thanks for helping me.  I donât like that phrase âthereâs no patch for human stupidity.â  We donât use that because that means that everyone that falls for these things is stupid and I donât think thatâs true.  This guy wasnât stupid.  I think when people hear the call, they get to put themselves in it and go yeah, I get that.</p>
+
+<p>That could have been me.  There probably are some current steps that companies can take to stop these things.  This was a couple years ago; now weâd probably have to do a little more fancier footwork with meterpreter.  I do think a lot of antiviruses do detect reverse-shells now.  Maybe a packet inspection system could have stopped this but we embedded this just in a normal exe. over an encrypted tunnel and had no malware in it, no trojans, and no viruses.  We wanted to get on the machine and then exploit it once we were on.  It literally was, for any lack â intents and purposes, it was like opening up an SSH server on the box.  Thatâs it.  It was just opening up a reverse connection.</p>
+
+<p>JACK:	Now, a lot of my listeners ask me all the time, how can you practice social engineering?  So, I asked Chris.</p>
+
+<p>CHRIS:	[MUSIC] This is a question I get all the time in my classes âcause you really canât just go out and break into places or phish people for fun.  I say look, when you look at SE as a science, it is literally just learning how to communicate with people on a level that they like to be communicated with, learning how to get that person to open up to you.  You could do that without having to be a pen tester.  Maybe not now âcause of Covid-19 but you could do this with delivery people, you could do this when you go to Starbucks the next time.</p>
+
+<p>You can have a conversation with a complete stranger and get information from that stranger thatâs non-malicious.  What is their full name?  Where do they live?  What job do they have?  How many kids do they have?  Are they married?  What did they do in their career?  Whereâd they go to school? All these questions which are [01:00:00] vital to understand about a person that youâre â if youâre a pen tester, you can get in a normal conversation.  The more comfortable you are just having a conversation with a random human, the easier being a social engineer will be when itâs time to do it for a living.</p>
+
+<p>JACK:	If you want to know more about social engineering, check out Chrisâs book Social Engineering: The Science of Human Hacking.  Make sure you get the updated second edition.  This is a great book which breaks down all the concepts of how to be a great social engineer.</p>
+
+<p>CHRIS:	Thatâs probably my favorite book that Iâve written.  Iâve written four and that one is â I feel like itâs eleven years of my experience and science behind it, so unlike the first edition of that which was very new and it was not very well-written, this one I feel was like, really done well.  Like Cialdiniâs book called Influence, thatâs an amazing book.  Joe Navarroâs book on What Every Body is Saying is just a phenomenal book.  Ekmanâs book on Emotions Revealed, all about nonverbals, is truly a great book.</p>
+
+<p>Amy Cuddyâs book called Presence on getting yourself into character; I could just kind of list books after books about books that Iâve read that are integral to my life that may be not about social engineering but theyâre about an aspect of communications and social engineering.  Robin Dreekeâs book on The Top 10 Ways to Build Rapport with Anyone Fast.  These books are integral to understand them if you are going to be a social engineer.</p>
+
+<p>JACK:	Of course, Iâll have links to all these books and more in the show notes so make sure to visit darknetdiaries.com/episode/69.  Besides being the Chief Human Hacker for his company and writing books on it, Chris has accomplished so much more.  Heâs the one who started the social engineering village at Defcon which is the most popular village at Defcon.  It has some great talks but it also has a competition where contestants have to social engineer someone live on stage over the phone in front of a crowd.  Itâs awesome to watch and to learn new tricks.</p>
+
+<p>I might have to do an episode just on that village alone one day.  On top of that, he started a non-profit called The Innocent Lives Foundation where people use OSINT and hacking skills to try to help authorities find and capture child predators or human traffickers.  I think weâre gonna have to have Chris come back on to tell his stories about that and more, but weâll have to save that for another time.  Wow, thank you so much for sharing this.  Iâm gonna leave it with this last question; have you ever been phished?</p>
+
+<p>CHRIS:	Yes.  You know, I love that question because I think sometimes people that are in the industry donât want to talk about the times they were hacked.  Yeah, I got phished hardcore.  I probably have been phished a couple times but the most notable to me, âcause I fell for this hook, line, and sinker, is â I am an Amazon junkie.  I love â I buy everything on Amazon that I can.  I was preparing for Defcon and I must have ordered like, ten, twenty things for the kidâs competition out of Vegas.  Iâm packing up my office for Defcon and I get an e-mail that looks just like an Amazon order e-mail and it says one of your recent orders will not be shipped due to a declined credit card.  Everything I always tell my customers is donât ever click those links in the e-mail.</p>
+
+<p>You open up your browser, you go to amazon.com, you log into your account, and it will tell you exactly what the problem is.  But not critically thinking, being stressed about Defcon, packing my office, seeing that e-mail, going oh my gosh, how can it be declined?  My credit card never gets declined.  I clicked the link.  The browser opens, I go to a page that says â it looks like Amazon login page.  It looks identical to it but Iâm one of those guys that has my username saved but not my password.  I start typing my password and when I go to click the Submit button, before I click it, I realize my usernameâs not there.  Iâm like, what the heck?  My usernameâs always there.  I look up at the URL bar and it was like, somethingsomething.ru.  Iâm like, oh my gosh, I just got â I just clicked a phish and literally fell for it from a Russian site.</p>
+
+<p>Of course, you know, cleaned the computer, changed my passwords, burned the house down, sell the family, move to another country, do all the normal things you do when you click on a phish.  Then I tell my team; Iâm like, I just got phished.  Iâm never telling anyone.  Thatâs so embarrassing.  Then one of the people on my team, sheâs like, you need to tell the whole world this story.  This can help so many people âcause youâre the guy who wrote the book on phishing.  You need to tell the story how you got phished.  I thought about it and Iâm like yeah, thatâs a pretty good point.  I do tell the story now but I fell for that 100% because that e-mail, if I did not look at that URL bar, I would have clicked Submit and given them my credentials.  The only thing that caught me was the one flaw that my username was not in that box.</p>
+
+<p>Otherwise I fell for that thing 100%.  Later on, when I went back and inspected the [01:05:00] e-mail, it was like, for a George Foreman Grill and some Lee press-on nails.  It was like, not even real items that I would ever order.  Iâm like oh my gosh, if I had just read the dang e-mail, I could have caught it.  If I had looked at the URL bar, I could have â if I opened my browser and typed the address.  Thereâs like, five ways I could have caught that phish and I ignored them all because of stress and lack of critical thinking.  Iâm like yeah, yep, Iâve been phished, man.  Iâve fallen for it.</p>
+
+<p>JACK (OUTRO):	[OUTRO MUSIC] A big thank you to Christopher Hadnagy, the Human Hacker, for being here.  You can learn more about him by visiting social-engineer.org or check out his podcast which is just called The Social Engineer Podcast.  As always, for every episode, thereâll be links of all this stuff out on darknetdiaries.com so head over there.  While there, check out the bonus Darknet Diaries episodes.  These are exclusive to Patreon members.</p>
+
+<p>If this show brings value to you, if youâve binged through all 69 episodes now and canât wait for the next one, keep in mind, you got all that entertainment for free and itâs because of the help of Patreon members that this show keeps running, so please consider joining Patreon to help support the show and unlock some bonus episodes.  This show is made by me, the ghost in the shell code, Jack Rhysider.  Sound design and original music was created by the sometimes-bored Andrew Meriwether.  Editing help this episode was by the devilish Damienne, and our theme music is by the maraca-wielding Breakmaster Cylinder.  Even though when management sends me an e-mail, sometimes I write back with just âUnsubscribeâ, this is Darknet Diaries.</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

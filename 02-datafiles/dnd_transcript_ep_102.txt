@@ -1,0 +1,855 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>Money Maker â Darknet Diaries</title>
+	<meta name="description" content="Frank Bourassa had an idea. He was going to make money. Literally. Listen to the story of a master counterfeiter.">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Money Maker â Darknet Diaries">  
+	<meta name="twitter:description" content="Frank Bourassa had an idea. He was going to make money. Literally. Listen to the story of a master counterfeiter.">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/moneymaker.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/102/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Money Maker â Darknet Diaries" />
+	<meta property="og:description"        content="Frank Bourassa had an idea. He was going to make money. Literally. Listen to the story of a master counterfeiter." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/moneymaker.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/102/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/moneymaker.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/102/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="Money Maker â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/moneymaker.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 102: Money Maker</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://www.podtrac.com/pts/redirect.mp3/traffic.megaphone.fm/ADV5244291503.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/102/",
+			   "title": "Ep 102: Money Maker"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/102">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[START OF RECORDING]</p>
+
+<p>JACK:	Frank Bourassa is wired a certain way.</p>
+
+<p>FRANK:	I like things that are going to be challenging and difficult that just feeds my mind and my brain.</p>
+
+<p>JACK:	[MUSIC] Frank thrives in complex situations that require tough problem-solving.  He needs this in his life whether itâs for work or play.  He likes playing games that have high stakes like either get-rich or go-to-prison type of games, because games like these keep him engaged.</p>
+
+<!--more-->
+
+<p>FRANK:	If you fail, that makes it even more real, and those are the basic stuff that needs to be in there to grab my interest.  If I donât have that, Iâm just not interested at all.</p>
+
+<p>JACK:	Heâs been like this since he was a kid in school.</p>
+
+<p>FRANK:	School was a very boring place for me.  They just take five hours explaining something that we can get in five minutes.  Youâre just simmering in boredom trying to learn things youâre never gonna use in your whole life.  I donât know why you do that.  Itâs so ridiculous.</p>
+
+<p>JACK:	He grew up in Trois-RiviÃ¨res, Quebec, Canada.  Itâs a small city that has about 130,000 people living there, and itâs a two-hour drive northeast from Montreal.  Frankâs in his fifties now, and itâs only from this perspective that he can look back on a truly remarkable life as a career criminal.</p>
+
+<p>(INTRO):	[INTRO MUSIC] These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	When Frank was in high school, he saw that some, kids he knew were stealing clothes from stores. And selling them to other kids at school.</p>
+
+<p>FRANK: 	Well they were moving quite a bit of stuff.</p>
+
+<p>JACK: 	He decided he wanted to be part of this too.</p>
+
+<p>FRANK:	If I can buy some of that and resell some of that, then it might be a penny for me in there somewhere.</p>
+
+<p>JACK: 	So as early as high school is when Frank started comitting crimes. And you know what, it was going pretty good for a teenager. It wasnât amazing. But it really opened his eyes. And he started thinking more like a criminal. But this lead to him getting kicked out of high school. And from there he got really into cars and eventually became an auto mechanic.</p>
+
+<p>FRANK:	I really, really enjoyed that too âcause there was a lot to learn and it was fun.  It is food for brain once again. I got into the classic phases; I got motorcycles and girls and stuff like that.  I devoted myself heavily to that.</p>
+
+<p>JACK: He thrived in this environment. But he was a bit of a workaholic. He loved doing mechanic work doing so much that he started up his own garage, but sold that to start up his own car part factory.</p>
+
+<p>FRANK:	We manufactured brake parts for cars.</p>
+
+<p>JACK:	It was a complex business and it checked all the boxes for things he liked doing.  It was challenging, it made him think, and it expanded his skill set with cars and as a business person.  Frank worked hard at running this factory.</p>
+
+<p>FRANK:	[MUSIC] I was working twenty hours a day.  I wasnât tired, so I didnât feel like I needed to sleep.  [00:05:00] I just enjoyed it so much âcause itâs very real and dynamic and rewarding.  Youâre busy doing exactly what you want, and you get to drive this thing where you want it to go, and if you do good, you succeed.</p>
+
+<p>JACK:	But at some point during this new endeavor, Frank went criminal again.  He was seeing that people in his town were making good money selling marijuana.</p>
+
+<p>FRANK:	Some people I knew were dealing that a lot.  Then I said well, Iâm gonna apply kinda the same MO as I did in high school with the clothing stuff.  So, I say maybe I can buy some off you and then resell it.</p>
+
+<p>JACK:	Now, when Frank finds something he really likes doing, he commits to it 100%.  In fact, he over-commits.  He was spending a crazy amount of hours at this factory.  He saw that the more he worked, the more rewards there were, so he just spent as much time as humanly possible making brake pads for his company.  But when he would focus entirely on that, it meant that other parts of his life were suffering.</p>
+
+<p>FRANK:	I literally burned myself out.  I really did, and damn, did I crash.</p>
+
+<p>JACK:	[MUSIC] It all started one morning.</p>
+
+<p>FRANK:	I just woke up and I just â I was dripping in sweat, I was shaking.  I didnât know what the hell was happening.</p>
+
+<p>JACK:	Frank was in bad shape.  He knew something wasnât right with his body.  He couldnât even go to work which was his favorite place that he loved going to the most.</p>
+
+<p>FRANK:	I was physically shaking like a leaf twenty-four hours a day, literal shaking that you can see with your own eyes.  It was horrible.</p>
+
+<p>JACK:	Instead of going to work, he went to the hospital.</p>
+
+<p>FRANK:	The doctor was pumping pouches left and right into me, a bunch of different vitamins and minerals and amino acids and stuff.  I was out of everything.  I drained myself out of a bunch of different stuff, and that wreaked havoc on me for a long time.</p>
+
+<p>JACK:	He came home from the hospital more calm, but something changed inside him after this.  The symptoms would sneak up on him a lot more often.  [MUSIC] Like, he would have trouble concentrating a lot.</p>
+
+<p>FRANK:	Brain is just on hyperdrive, just too much information, too short a time.  You canât function properly.  Itâs way, way too overwhelming.  You think youâre going to die âcause itâs so unreal how horrific an experience that is.  So, you canât make sense of it which is â just amplifies the problem.</p>
+
+<p>JACK:	There was a negative feedback loop; when he couldnât concentrate, he would get worried about his mental health, and this would make it worse and heâd start to shake, and the shaking would make him worry even more.  All this made him feel like he was headed towards a breaking point.</p>
+
+<p>FRANK:	You canât make left from right anymore.  Itâs very, very overwhelming, horrifically.</p>
+
+<p>JACK:	This was Frankâs life day-in and day-out, not knowing if tomorrow would be a normal day or one where he couldnât function at all.</p>
+
+<p>FRANK:	You just canât live like that.  [MUSIC] You have to figure this out.  You have to â and fix it.</p>
+
+<p>JACK:	Frank was determined to figure out what was going wrong with him, so he went to another doctor, but they didnât give him a good answer, so he scheduled an appointment for another doctor, but they didnât know exactly, either.  He kept making more appointments but wasnât satisfied with what the doctors were telling him.  At some point, he couldnât take it anymore.  The shaking and worrying was just too much and it was too often, so he looked up the top doctor in his province and went straight to their office with no appointment or anything.</p>
+
+<p>FRANK:	I just walked straight into the hospital and I barged into his department and into his office.</p>
+
+<p>JACK:	Frank says to the doctorâ¦</p>
+
+<p>FRANK:	Youâre gonna take care of me right now.  Youâre gonna tell me what I have right now.</p>
+
+<p>JACK:	The doctor asked Frank about his symptoms and what he was worried about.</p>
+
+<p>FRANK:	I canât make sense of it.  I think â Iâm worried about going insane.  Thatâs how it feels like.</p>
+
+<p>JACK:	The doctor talked it out with Frank and told him he wasnât going insane.  Instead, he was suffering from panic attacks, and explained more about what means.</p>
+
+<p>FRANK:	It matched with what I was experiencing and what I felt.</p>
+
+<p>JACK:	The diagnosis was a breakthrough moment for Frank.  Now he knew what was going on, which gave him something to focus on.</p>
+
+<p>FRANK:	So, from this moment, I could put a target on this beast that was trying to hammer me down, could put a name to it.  Then I knew what it was.  Then I could go after it, which is exactly what I did.  I researched everything about it; what to do, what could fix it, different therapies, different treatment, different drugs, different A, and beat the crap out of it until I kicked it out.</p>
+
+<p>JACK:	[MUSIC] This recovery process wasnât overnight.  Frank sold the brake factory and took off on a much-needed vacation with his girlfriend.  They spent some time in [00:10:00] Europe where Frank, whoâs a big fan of HBOâs Band of Brothers, visited World War II battlefields.  After about two years of travel and rest, Frank went back to Trois-RiviÃ¨res, Canada.  He was ready to get a job again, but he didnât want to do something that was super-demanding.</p>
+
+<p>FRANK:	Well, working every day hours on end wasnât possibly â wasnât something I could do.</p>
+
+<p>JACK:	It was hard for Frank to take it easy.  He likes being immersed in work and being busy.  He also preferred working for himself and not for some boss, so he started a little side gig back up that he used to do.  He went back to selling weed.  Oh, and just a little tidbit; this was around 2005, and since then, in 2018, Canada has completely legalized recreational marijuana.</p>
+
+<p>FRANK:	This grew really, really good and quick, so it was hugely successful at the time.  It was the most successful anything I had done.</p>
+
+<p>JACK:	[MUSIC] Frank had connections with big-time dealers in another town, and would buy big quantities from them and then sell smaller quantities locally.  It was very lucrative for him, but it didnât last.  Police busted a guy that Frank was in cahoots with.  Frank had sold him some weed and growing equipment, which led the cops back to Frank.  In 2006, Frank was arrested on drug charges.  He had to spend three months on house arrest from it, but being hit with something like this really gave him time to think about what his future would be.</p>
+
+<p>FRANK:	It was either going back to running a business, which I had done before, and it led to burning myself out.</p>
+
+<p>JACK:	But there was another idea taking shape in his head.  He didnât mind doing illegal things, and he saw that certain illegal activities had big payoffs, so he started to think what would be something he could do illegally that a little bit of work could earn him a lot of money?</p>
+
+<p>FRANK:	[MUSIC] What is it I could do?  What am I not seeing that I should be seeing?  What could I create that I could then see, that I could then hop in on?  That type of thing.</p>
+
+<p>JACK:	Lots of ideas came to him, but none were right.  Like, robbing a bank is just too messy and too dangerous.  Running drugs got him in trouble already once before, so not that.  But what else was there?  Stealing cars?  Cars are just kinda too big to hide, and it turns regular people into victims, so that wasnât right.  He just couldnât think of anything that would be the perfect mix of being able to stay safe and be able to make money from it.  Years go by, and Frank still hasnât thought of the perfect thing to try.  But then one evening, suddenly, everything changed.  [MUSIC] Frank was out driving around town and he pulled up to a red light and stopped.  He looked up at the light and just stared at it for a moment.</p>
+
+<p>FRANK:	Then it just â boom, it was this moment where everything â all the fog cleared up, everything.  It was just so obvious that it was this one thing that I needed to do.</p>
+
+<p>JACK:	Frank felt like this idea was the ultimate shortcut to everything that everyone works towards.</p>
+
+<p>FRANK:	Everyone wakes up in the morning so they can have a little more money at the end of the day.  So, I said well, why donât I just skip a whole bunch of those steps and go directly to money?</p>
+
+<p>JACK:	Instead of finding a way to make money, just make money.</p>
+
+<p>FRANK:	Yeah.  It really is the end goal.  It really is.</p>
+
+<p>JACK:	[MUSIC] Frank thought going to work to earn money was like a maze that you had to solve slowly, and he just wanted to go around the maze and head directly to the exit by making counterfeit money himself; just print the cash himself.  But he knew this would be really complex.  Heâd have to do a bunch of research, problem-solving, and bonus; the consequences were very real.  Counterfeiting is 100% illegal in Canada.  According to Canadaâs federal code, counts of making, possessing, and selling counterfeit money carry penalties of up to fourteen years in prison.  If he got busted doing this, he could spend decades in prison.  But on the upside, this could make him extremely rich.</p>
+
+<p>FRANK:	Iâve been told by drug exporters that oh, this is scary stuff what youâre going into.  I just couldnât believe my ears.  They are heavy people doing heavy stuff, and they were frightened by â they thought it was extremely edgy and risky, and it needs to be taken really seriously.  I wasnât expecting that.</p>
+
+<p>JACK:	[MUSIC] Itâs strange how hardened criminals and drug dealers were scared of handling counterfeit money.  Frank just saw it as another illicit item.  Not only that, but money is something everyone wants, so every day, he loved the idea more and more.</p>
+
+<p>FRANK:	[00:15:00] It checked all of the boxes in one moment.  It was a strange thing.</p>
+
+<p>JACK:	But Frank didnât have a clue where to begin.</p>
+
+<p>FRANK:	I didnât know anything about money more than the next guy does.</p>
+
+<p>JACK:	He just had question after question.</p>
+
+<p>FRANK:	What do I need to copy?  What do I need to make to make a perfect one?  The security features and the different elements and the properties and the thicknesses, the composition, and chemical properties and physical properties.  So, I started from scratch.</p>
+
+<p>JACK:	[MUSIC] The first thing Frank had to figure out was what countryâs currency should he try to counterfeit?</p>
+
+<p>FRANK:	I had traveled a ton, and you get to realize that thereâs not a single place on the planet where they donât take the US bank note.  It works everywhere.  I mean, even the darkest alleys to the largest shopping malls.  Anywhere, any country, thereâs not one place thatâs not gonna accept it.</p>
+
+<p>JACK:	Okay, so US currency it is.  Even though heâs in Canada, he thinks he can still profit off this.  Next step; which denomination should he copy?  The one-dollar bill?  The five-dollar bill?  The ten, twenty, fifty, or hundred?  This was another no-brainer for Frank, though.  The US twenty-dollar bill was right there in the sweet spot of being a very common bill and worth enough to go through the hassle of making.</p>
+
+<p>FRANK:	There are organizations all over the world that are gonna come after you to stop you.  This is all they do.  This is the purpose of why they were created.  You need to be invisible.  You need to not bring attention.  You need to not stand out.  So if you want to do a hundred dollars, well sure you can do that, âcause itâs five times the amount compared to twenty; sure.  It looks like it makes sense.  Doesnât make sense at all âcause everyoneâs gonna look more and gonna scrutinize more a hundred-dollar bill than they will a twenty.  Itâs added attention that you donât want.  You want less, as less as possible.  A twenty is the one denomination that they â everyone used.  This doesnât raise anyoneâs eyebrows.  This is exactly the one you want.</p>
+
+<p>JACK:	[MUSIC] Okay, these were relatively quick and easy questions to answer compared to what came next, because Frank had to figure out how to actually copy and print a twenty-dollar bill.  That was going to take some serious research.  He would start his research on the internet, but immediately his paranoia kicked in.  If he googled how to create a counterfeit twenty-dollar bill, who would see that?  His computer would have the history of it, but would Google track him for typing a search like that?  He didnât know, so he just didnât want to take any chances, and went down to a coffee shop to start his research there.  His first search wasâ¦</p>
+
+<p>FRANK:	US bank note twenty security features.  Something like that.</p>
+
+<p>JACK:	Results popped up on the screen, and one of the first results was the US Secret Services website.</p>
+
+<p>FRANK:	Itâs literally one of the first sites if not the first site that I visited just âcause it pops up on top.</p>
+
+<p>JACK:	Yeah, the Secret Service is responsible for protecting the president, but their first job, the one that they were actually founded for, is to safeguard US currency and stop counterfeiters.  Their websiteâs history page is topped with an old-timey picture of an agent busting up a counterfeit coin operation.  Further down, you find out that the Secret Service got started in 1865.  It was just after the Civil War ended and there was a lot of counterfeit currency in the country.  The federal government stood up the Secret Service to help crack down on all the fake money.  They didnât become presidential bodyguards until 1901, after President McKinley was assassinated.  [MUSIC] So yeah, if you want to learn about US bank notes, the Secret Serviceâs website is a great place to start.  Theyâve got PDFs and links to other websites that explain the major features of all US currency.  So, letâs take a look at the US twenty-dollar bill, since thatâs what Frank wanted to copy.</p>
+
+<p>Thatâs the one with Andrew Jacksonâs face on it.  Iâm gonna pull one out myself and walk you through whatâs on here.  Okay, so on the front of the bill thereâs a serial number printed in the upper-left corner and the lower-right.  Also in the lower-right, thereâs a special 20 printed with color-shifting ink.  It goes from copper to green depending on how you look at it.  Over on the left, just left of the US Federal Reserve seal, thereâs a security thread embedded in the paper.  You have to hold it up to the light just to see it right.  Then, that tiny thread, you can barely make out the words USA Twenty.  Then there are little flags microprinted in the strip.  If you keep holding the bill up to the light and look over to the right side, thereâs a watermark of Andrew Jacksonâs face.  These are all things that servers, cashiers, and bank tellers might look for when taking cash.  Thatâs why all this stuff is posted on the internet, so people can actually learn how to spot fake money.  But for someone like Frank Bourassa, this was a valuable learning tool.</p>
+
+<p>FRANK:	So, you know [00:20:00] more leaving this site than you did going in, which is progress.</p>
+
+<p>JACK:	But still, how do you make all this?  If youâre an aspiring counterfeiter like Frank and want to know more, the US Treasury Departmentâs Bureau of Engraving and Printing website is just a click away.  [MUSIC] Their URL is very fitting; moneyfactory.gov.  The Treasury Department is responsible for designing and printing the USâs paper money, but not coins.  Thatâs the US Mint.  On the Treasuryâs website, you can read about the entire printing process from engraved printing plates to finished bank notes.  Frank found this website too and was kind of amazed that they listed every step of how they print money.  First, engravers scratch a billâs design into different hunks of metal.  The designs are then put together into one etching.  This master gets copied over and over into a bigger metal plate, so that instead of a single engraving, you have a bunch laid out in a grid on a plate.  For example, when they print the twenty-dollar bill, they arrange it in an eight-by-four grid, meaning there are thirty-two etchings or bills per sheet.</p>
+
+<p>Then these printing plates are loaded into a big industrial printing press where ink and paper is added.  The site even says exactly where they buy the paper from, a company in Massachusetts called Crane &amp; Co.  Blank sheets of paper are sent through the printing press, plates get inked, and then pressed onto the paper.  At the other end, the paper dries, and the sheets go through the process again for each color.  Then the sheets go through the whole process again, printing on the back side.  After that, thereâs a few more finishing steps; serial numbers are added and the money is inspected for correctness.  Finally, sheets are cut into individual bills, packaged, and shipped out.  The US Treasury site says they can print about 8,000 sheets an hour, which if they printed twenties, thatâs over $5 million printed an hour.  Okay, that was a lot for Frank to take in.  This is not going to be a simple process.  But Frank thought it still was doable because at the end of the day, itâs just paper, ink, and printers.</p>
+
+<p>FRANK:	The single most difficult feature to reproduce on the bank note is the feel.  Everyone knows the feel âcause everyone is used to handling them every day.  So, if you take a regular piece of paper and if you take â a bank, well, even in pitch dark, anyoneâs gonna be able to tell this is not right, this is right.  Everyoneâs kind of an expert at it âcause everyone is so used to handling them every day.</p>
+
+<p>JACK:	Getting the feel right starts with a specific blend of paper.  According to the US Treasuryâs website, thatâs a 75%-25% cotton-linen mix, and the way the ink is laid on also adds a unique feel.  Itâs raised up off the paper just a little bit to give it some texture.  You can test this on a twenty-dollar bill by running your finger over Andrew Jacksonâs collar.  You can feel itâs a little rough right there.  Frank found that there are security fibers and chemicals also added to the paper mix, [MUSIC] stuff you have to know about if you want to beat something like a simple counterfeit pen.</p>
+
+<p>FRANK:	You have to dig a ton to find the actual recipe.  So, itâs just grinding research work that you need to be really good at.  Iâm extremely good at researching.  Itâs one of the stuff that Iâm really good.  I can find stuff, I can figure out stuff, and you have to apply yourself a ton to it to be able to dig out the recipe.</p>
+
+<p>JACK:	Frank was still in his research phase, trying to understand every detail of what went into making a twenty-dollar bill, but he was more than willing to put in all this time and research because he knew the rewards were great, and that any tiny mistake on a bill could get him busted.  He needed this to be exact and precise.  He treated this research like rocket science.</p>
+
+<p>FRANK:	You build a rocket or something, by the time youâre up to building that rocket, you have to have figured out what you need; this size engine, this place, and it needs to be this software.  You have to have it figured out by the time you get to that.  You canât just say well, Iâm gonna walk blindly and see what gives.  No, you canât.  Itâs tricky business for sure.</p>
+
+<p>JACK:	Frank determined that the equipment used in this process was not consumer-grade stuff.  Like, some kind of home office Inkjet printer would not make it look right and it would not make it feel right.  So, he knew he had to get some expensive equipment to get this job done right.</p>
+
+<p>FRANK:	Who wants to invest into something that can land you in jail for fifty years, producing something thatâs gonna crack or smear?</p>
+
+<p>JACK:	Frank is not the kind of guy who practices with the wrong equipment and slowly improves over time.  Heâd rather get all the right equipment from day one and get as close to perfect as possible on his first print.  This means he needed to understand the process in so much [00:25:00] depth that he could replicate the exact process that the US Treasury follows step-by-step in order to make his money look exactly the same.</p>
+
+<p>FRANK:	I had worked, I donât â thousands of hours on it.  Thousands of hours.  This is what you need to get, and not anything different.</p>
+
+<p>JACK:	[MUSIC] Frank planned to print a lot of money.  He was ready to invest hundreds of thousands of dollars from his own savings and go into debt to make this work.  He penciled out a plan; by buying this amount of ink and that amount of paper would allow him to print twelve million twenty-dollar bills.  Thatâs $250 million worth of fake money.  But once he printed all that money, then what?  He canât just stick it in the bank and retire; the bank would be too suspicious of somebody walking in with twelve million twenty-dollar bills.  So, he would need a plan to launder this money once he got it.  He already had connections with some drug traffickers and criminals.  His plan was to sell each twenty-dollar bill to them for $6 each.  If he could sell all twelve million of his bills, this would result in him making $75 million from this.</p>
+
+<p>He looked at this number; $75 million.  That was the goal, and to Frank, that was worth going through all this to make it work.  Stay with us because after the break, Frank goes all-in.  Frank pinned that number firmly in his conscious; $75 million.  He knew that in order to get to that payday, it would take a lot of work, so he began his lengthy shopping spree of supplies.  The big things he needed to get were the ink, the printing plates, the printing presses, and the paper.  Weâll start with the printing presses because thatâs the foundation.  Everything has to go through that.  What Frank needed was an offset printing press.  Itâs one of the types of printers that the US Treasury uses to print their money.  Theyâre good for printing lots of pages really fast.  Itâs the kind of thing that youâd print a magazine or newspaper with.  [MUSIC] Thereâs some videos on YouTube which explains how they work.</p>
+
+<p>VIDEO AUDIO:	A sheet-fed offset press consists of four main sectionsâ¦</p>
+
+<p>JACK:	Thereâs a feeder, a printing system, delivery system, and control system.  These things are huge.  The printing system consists of two main parts; a place to put ink and a place for these metal plates.  Basically, a metal plate has an etching of what should be printed, and a layer of ink is spread across that, and then itâs pressed down onto the paper.  So, paper comes through, gets printed, then it has to dry, and then it goes to another color and does it again, and then it has to get flipped over, and new plates have to be added for the back side of the bills, and then the backs get printed.  After that, the paper has to dry again, and then it can be cut into individual bills.  I think what you really need to know here is that buying an offset printing press is totally legal and theyâre fairly common.  Any large print shop that prints magazines or newspapers will have one, and you can buy a used printing press for a few hundred dollars up to a few thousand dollars depending on what year it was made and what colors it prints, and accessories.  But Frank was out of his element here.  He did not know how to shop for a printing press, so he needed help.</p>
+
+<p>FRANK:	[MUSIC] You gotta find someone who knows everything about it.  Like a used car; is this one a good used car or is it a â junk?  Itâs the same thing, so you gotta find someone who knows about it, whoâs gonna go check him out, inspect them, and tell you yeah, this oneâs good, this oneâs crap.  This dude that you need to do that, well, I didnât know any such dude any more than you do.</p>
+
+<p>JACK:	Frank had to find a guy, which he did, but he wanted to be careful.  Frank couldnât say he needed a press to make counterfeit money, so he came up with a story, telling this guy that he was given a contract to print pamphlets for a shampoo company, and he needed help buying a printer and to learn how to use it.  With this guyâs help, Frank bought a used Heidelberg four-color offset printing press, and this thing was huge, like the size of a truck.  With it, Frank could pretty much print anything; the shampoo pamphlets, posters, magazines, or millions of fake twenty-dollar bills.  Frank rented a large building from a farmer near Trois-RiviÃ¨res, the Canadian town where he lived.  It was a little bit outside of town.  The building looked like a warehouse; there were no windows, no signs, nice and discreet.  It even had a little bit of green paint on it, the perfect place to print some money.  They cut a deal on a no-questions-asked basis.  It would become Frankâs hideout and headquarters for the rest of the operation.  [MUSIC] He had the printing press delivered into the building and closed up the big, roll-up doors.  Then Frank paid this printing guy to show him how to run everything.</p>
+
+<p>FRANK:	You need to become an expert at printing one thing.  Thereâs a bunch of different things you could print that implied [00:30:00] different skills and different techniques which I donât know, but this one, I need to know everything about.</p>
+
+<p>JACK:	Frank got busy learning and practicing.</p>
+
+<p>FRANK:	You gotta practice and you gotta know when â how does it look when this is too far off, then when this dial is too high or too low, and when this â so, you gotta practice, practice, practice, which is what I did.  At the same time, well, youâre just fine tuning until you get to oh yeah, now Iâm getting â now Iâm getting â oh, this â yeah, now Iâm getting it.  Then you come to a point like anything else; if you just keep at it, well, you get good, then you say alright, now Iâve got this.  Now youâre good to go.</p>
+
+<p>JACK:	There were still lots of supplies Frank needed for his counterfeit scheme, like ink.  Heâd need the CMYK inks and color-shifting inks.  These were relatively easy to get, though.  He looked around online and placed an order.  Thereâs nothing fishy about ordering some ink, even if itâs the exact same kind thatâs on money.  Next, he needed eight separate metal printing plates, one for each color, and one set for the front, and one set for the back.  Each plate contains a grid of what the twenty-dollar bills will look like, just like how the US Treasury does it.  This was tricky though, because these metal plates actually have the lines etched into them.  The ink is put on them and then pressed onto the paper.  Frank doesnât have the machine to etch these metal plates themselves, so he had to order these somewhere.  But printing plates are actually pretty common, so it was actually easy for him to find a company willing to make these without them making any kind of fuss.  He just needed to figure out what kind of file they needed, and then create the etching and get it all worked up in Photoshop, and then send it to them.</p>
+
+<p>FRANK:	This is by far the trickiest part of it all.  [MUSIC] It is insane to get that.  It really is.</p>
+
+<p>JACK:	Because the bills themselves are very intricate; theyâre flowery and ornate, and with multiple colors.  Getting it exactly right wasnât straightforward and took time and precision.  He spent a long time zooming far into photos of twenty-dollar bills and analyzing every inch of it.  By the time he had his plate drawings done, he knew more about twenties than ever before.</p>
+
+<p>FRANK:	I mean, every pixel of it looks like a twenty-dollar bank note âcause itâs what it is.  It couldnât be more obvious that itâs what it is.</p>
+
+<p>JACK:	Okay, at this point he has the printer, the ink, and the metal plates.  The last step is to get the paper.  If you ask any counterfeiter, theyâll say that this is the hardest part.  This was going to be the biggest obstacle.  Frank searched the internet to try to find someone who can make this exact blend of paper.</p>
+
+<p>FRANK:	You gotta find someone whoâs gonna want to do it for you, âcause you canât go with Staples and say hey, could you get me that?  Itâs just not gonna happen, right?  So, you gotta find someone somewhere whoâs gonna want to do that for you without it looking suspicious.</p>
+
+<p>JACK:	The US Treasury gets its paper from Crane &amp; Co.  According to their website, Crane has been around for over two hundred years and theyâve been under a contract to make the US bank notes ever since 1879.  So, why not just buy the paper from Crane?</p>
+
+<p>FRANK:	If you call Crane Paper and you say hey, dude, could you sell me a couple of pallets or a couple of rolls, or a â well, whoâs gonna want to call them specifically to have that specific type of paper?  Theyâre gonna call the cops right away.</p>
+
+<p>JACK:	[MUSIC] So, Frank started looking at other paper mills, but with this step, he needed to be very careful.  He figured paper mills would have an eye out for counterfeiters, that this paper thing was a particularly risky part of the entire scheme.  He didnât want to burn himself before printing a single dollar.</p>
+
+<p>FRANK:	Law-abiding people donât like criminals.  Itâs just the nature of the thing, and itâs fine that itâs like that.  Itâs supposed to be like that.  Law-abiding people who see something illegal going on, theyâre gonna call, theyâre gonna tell, theyâre gonna â they â this is what they do, âcause they see something that needs to be stopped.  Itâs just how it is.  You have to be mindful of that.  You need one screw-up and itâs gonna be the same as if you screwed the whole thing up.  Any single point you screw up, itâs the same results; the end of you.</p>
+
+<p>JACK:	To keep a low profile, Frank didnât even try to ask any paper companies in the US or Canada.  Thatâs too close to the US.  He wanted to find a paper company far off in a distant land.</p>
+
+<p>FRANK:	So, you end up looking further away.  So, you end up in Europe or Asia or something, which is exactly what I did and why I did it, âcause itâs the obvious thing to do.</p>
+
+<p>JACK:	Again, he came up with a fake story as to why he needed [00:35:00] this paper, just to convince any suspicious paper company why heâs asking about this exact kind of paper that the US money is printed on.</p>
+
+<p>FRANK:	I had set up a fake company.  We were this investment firm.  I was one of the people in charge of some department over there, and I was given the task to â they wanted to produce a new bond for one of the clients that this firm had that I created.  So, I was the one in charge of creating this new bond along with the client so that everything is perfect.</p>
+
+<p>JACK:	[MUSIC] His cover story was that his company was printing bond certificates, which is not so common anymore, but some companies still do print these.  Think of a bond as sort of an official IOU or a loan from a company to a person.  These bonds look really special, sort of like a stock certificate.  They have floral borders and big numbers printed on them and that kind of stuff, and itâs completely legal for someone to create their own corporate bonds.  So, this was a good story as to why he needed a very specific paper that looked and felt prestigious.  So, what Frank needed specifically was paper that is a 75%-25% cotton-linen blend with a 21 lb. thickness, with a watermark, and a security strip going through it.  He thought if he asked for all this at once, it might raise suspicion, so he researched tirelessly online, but nobody was selling paper like that.  So, he knew he needed to find someone to make it for him custom.  He called up places and started asking some vague questions.</p>
+
+<p>FRANK:	Iâm looking to get a custom-type paper for a client of mine whoâs looking for this.  So, is that stuff that you do or not?  Or how does that work?</p>
+
+<p>JACK:	Some said we donât do any custom orders.  Others saidâ¦</p>
+
+<p>FRANK:	Yeah, sure, we can do custom.  Alright, so, whatâs the quantity?  How does that work?  Whatâs the minimum quantity that you can do?</p>
+
+<p>JACK:	Then they might say something like, our minimum for a custom order is twenty truckloads.</p>
+
+<p>FRANK:	So, I said well, thatâs not gonna work.</p>
+
+<p>JACK:	[MUSIC] Frank couldnât afford that much paper, but also, his warehouse couldnât hold twenty truckloads, and getting that much delivered would also be harder to keep secret.  He needed a smaller run which made him one of those annoying customers that large paper companies donât like dealing with.  He looked around online for smaller companies, even looking at maps to find mills and small buildings, hoping that theyâd be willing to do a limited run.  Finally, he found a paper company in Switzerland that was a good match.  This company was willing to do a custom batch just for him, and they were willing to sell him just a few pallets of paper.  So, he started asking for one thing at a time.  First, he would say something like he wanted the feel to be just right, and that he likes the feel of a cotton-linen blended paper, and asked if they can make it like that.  They said yeah, sure, what kind of blend are you thinking?  Heâs probably acting like well, 50%-50% is probably too floppy, so Iâm thinking like, 75%-25% blend.  Thatâs probably good for a bond certificate, right?  What do you think?  They said yeah, well, 75%-25% blend is doable.</p>
+
+<p>FRANK:	Then you have to have special security fibers that are in the bank note with specific ratios, so you gotta find those fibers, you gotta source them somewhere, you gotta send them to the paper mill.  You got chemicals that you need to send to them to add to the mix, âcause the bank note got chemical properties that no other papers have.  Thereâs a reason.</p>
+
+<p>JACK:	That reason, of course, is to prevent counterfeiting.</p>
+
+<p>FRANK:	Itâs all stuff that you need to tell them.  Well, if I send you this, could you possibly add that to the mix?</p>
+
+<p>JACK:	Then there was the watermark.  On an official twenty-dollar bill, thereâs a picture of Andrew Jacksonâs face [MUSIC] sort of etched into the paper itself.  Itâs not printed on; itâs pressed into the paper when the paperâs still wet.  Itâs not something that Frank can add later.</p>
+
+<p>FRANK:	Just to have the watermark, you have to have a whole drum that rolls on the paper while itâs in the pulp state.</p>
+
+<p>JACK:	So, Frank needs to get someone to make him a drum that the paper company can use to add the watermark.  He figured it was better for him to get the drum made and then send that to the paper company.  So, he shopped around online for people who make watermark drums, and he specifically looked for people who would not know what Andrew Jackson looked like.</p>
+
+<p>FRANK:	Andrew Jackson to you, I mean, is this whole â everything character.  Heâs a lot of things to you.  Well, the dude from Kazakhstan, on the bank note, well, heâs a dude to them, too.  Heâs got a date of birth, heâs super important, heâs â well, you know nothing about this dude.  You donât know.  You donât care.  You have no clue what he looks like, what he does.  You donât, so if someone from Kazakhstan calls you and say well, you want to do this watermark of this dude, [00:40:00] youâre not gonna know about it.  Youâre not gonna care.  Itâs not illegal in your country.  You donât know the dude.  Youâre not gonna think twice about it.  Youâre just gonna â yeah, sure, I can do that.  Send me whatever artwork you want of your dude, and I â yeah, Iâm gonna make this watermark for you.</p>
+
+<p>JACK:	[MUSIC] So, now that he had the watermark drum made, he simply sent it to the paper company in Switzerland and asked them to use this drum to add a watermark.  They were fine with this request since their machinery supported that, and this plan was working.  They didnât ask any questions about who it was or what was on the watermark, and if they did, he was prepared to say it was the portrait of their CEO or something.  At this point, the paper company has the order of the specific blend with 21 lb. thickness and the watermark.  He tells them thatâs it; thatâs perfect, but he needs to check with his boss one more time before approving it to be made.  But he was really lying; he really needed one more featured added, but his tactic is just to slowly add these little features one by one so that it doesnât raise any concerns at the paper company.  The last thing he needed to get right was the security strip, the little strip inside the paper that can only be seen when you hold it up to the light.  It says USA Twenty on it, and has an American flag.  This was a very important feature that Frank really wanted to add.</p>
+
+<p>FRANK:	When you get to the security strip, thatâs something else.</p>
+
+<p>JACK:	Itâs almost like a thread.  Itâs very thin and needs to run across the paper.  Asking for it to say USA Twenty was really making Frank nervous.  This might be too obvious of what heâs requesting, that it looks an awful lot like US money.</p>
+
+<p>FRANK:	The deeper you go into the different components of the paper, well, the more specific it becomes, and it looks like bank note paper.</p>
+
+<p>JACK:	His trick here was to first ask them to make a security strip that says something else, which would seem less suspicious to the paper company.</p>
+
+<p>FRANK:	The conversation that I had with them about the strip [MUSIC] until the very last minute was that it was going to be USA thirtyâs and forty dollar bonds.  It wasnât going to be twenty.  There was no mention of twenties until the very last second, âcause twenty tells immediately what it could be.  Maybe they pick up on it, maybe they wouldnât.  But if you wait a little bit, then youâre building on this rapport with this person, then you have some â a kind of a history with them.</p>
+
+<p>JACK:	Frank then called them and made the final adjustment to the paper; the boss changed his mind and only wants it to say Twenty on the security strip.  That worked.  Maybe they trusted Frank.  Maybe they believed his story, or maybe they just didnât care.  Either way, they met all of his requests and made the paper.  They shipped it across the Atlantic to a port in Montreal, about an hour and a half from Trois-RiviÃ¨res where Frankâs operation was.  This would be the last major step in Frankâs plan, but getting the paper from the port to his headquarters still needed to be done.  First he had to wait a few weeks for it to arrive, but he ordered it under a fake name and to an address far away from him, so he needs a plan for picking up this paper.  To do that, he needs to be extremely careful in case the paper company tipped off authorities.  He had to plan to pick up the paper assuming it was under surveillance.</p>
+
+<p>FRANK:	Itâs a critical step of the operation where you can go from anonymous to being known by everyone who might be doing surveillance on it.</p>
+
+<p>JACK:	Yeah, up to this point, the paper company didnât know Frankâs real name, and if he just comes and picks it up himself, now his real identity is connected to it, and if authorities were following the paper, they could arrest or question him or whoeverâs picking it up and possibly nab Frank, so he needed to be careful picking it up.</p>
+
+<p>FRANK:	There might be fifty people having eyes on it.  There might be zero.  Both scenarios are gonna look exactly the same âcause thereâs no chances of them stopping you.  Theyâre gonna want to roll with it and see where youâre going.  This is what they want to know.</p>
+
+<p>JACK:	So many scenarios went through Frankâs head about how the authorities might try to catch him if they were watching the paper.  He worked really hard to get to this point and did not want to screw things up now.</p>
+
+<p>FRANK:	So, you gotta try somehow to find out if thereâs surveillance on it or not.</p>
+
+<p>JACK:	Frank sat and thought for a few days and came up with an elaborate plan to get the paper to his warehouse.  He was going to need multiple vehicles and drivers.  He rounded up what he needed, explained the plan to the other guys, and it was time to start the mission.  All was set.  [MUSIC] He began phase one; surveillance.  Once Frank heard the paper arrived, he went down to the port and spent a few days just watching the port and where the paper was.  He wanted to sit and see what cars came in and out of the port, and if someone looked like they were also watching the paper.  Now, keep in mind, he ordered [00:45:00] multiple pallets of paper, so itâs a big load, and it was sitting at this port which handles shipments like this all the time.  But after a few days of watching, everything seemed calm there.  Phase one was complete.  Onto phase two; get the paper from the port onto the truck.  Frank got a truck and a driver to go down and get the shipment.</p>
+
+<p>FRANK:	So, my guy went to pick it up, and then he left.</p>
+
+<p>JACK:	[MUSIC] At this point theyâre on the road, and three vehicles are involved; thereâs the truck with the paper in it, Frank is driving his car behind that, and thereâs a third person driving another car.  They were all communicating with each other through radios.</p>
+
+<p>FRANK:	So, I had hired a different guy.  His job was to follow my first guy who was in the truck with the paper.  He was to follow him in a car right behind him.</p>
+
+<p>JACK:	So, it was the truck, and directly behind that truck was this other driver that he hired.</p>
+
+<p>FRANK:	So, I had planned out a route going from the port leading to the highway.  I said, I cut a route where the entrance to the highway, at one point, it narrows down to one lane.</p>
+
+<p>JACK:	The plan was that when they got on this narrow bridge, Frank would have the truck over first, and then the guy right behind the truck would block the bridge as soon as the truck went over, like fake a breakdown or something and block all the lanes so no cars could get by.</p>
+
+<p>FRANK:	So, whoever was following behind, well, they couldnât follow anymore âcause he was stuck in traffic with cars piling up behind.  This guy was paid to stall his car twenty minutes right in that one-lane thing there.</p>
+
+<p>JACK:	Then Frank would watch the other motorists to see how their reaction was to the situation.</p>
+
+<p>FRANK:	If you see people jumping out of their cars and running on foot to try to switch vehicles, you can say well, this is not good.</p>
+
+<p>JACK:	So, they got on the bridge, the truck went over, and then Frankâs other driver hit the brakes in the middle, causing all lanes of traffic on the bridge to come to a stop.  The guy got out and popped the hood and threw his hands up in the air.  Frank watched as the traffic started to pile up.  Motorists were angry, but nobody was doing anything like jumping on the roof of their car with binoculars on the truck, or people on some kind of radio telling other cars that theyâre stuck at the bridge.  Then Frank craned his neck skyward and looked for a helicopter or airplane, but he didnât see anything.  Everything seemed fine.  He radioed to the guy stuck on the bridge to pack it up and move on; itâs all clear.</p>
+
+<p>FRANK:	So, the only thing that was left, possibly, was electronic surveillance, like a bug somewhere in the box or in one of the pallets or something like that.</p>
+
+<p>JACK:	Frank had a plan for that, too.  They werenât going to take the paper directly to the print shop.  Instead, he asked the driver to drive the truck around for a while and then park it in a lot about a half-hour from Trois-RiviÃ¨res.  Then theyâd leave the truck parked there for a few days.</p>
+
+<p>FRANK:	We put surveillance on the car for three days there, see if anyone would come close or circle around, cars that would come back a couple times, anything that would stand out, once again.  Not that there was necessarily going to be anything, but you gotta try.</p>
+
+<p>JACK:	After three days, nothing.  So, onto the final phase.  They wanted to switch the paper from that truck to another truck.  By this point, Frank hired a few guys that he trusted to help do the printing.  He had them thoroughly go through every box, looking for any kind of electronic tracking device.  They checked the paper, the boxes, the pallets.  It all looked good.  They loaded these boxes onto new pallets and put them in the second truck.</p>
+
+<p>FRANK:	So, by now, I was sure that we were free.  I was sure enough to the point where I drove the truck to my print shop.  This is how sure â how safe I felt about it being not bugged.</p>
+
+<p>JACK:	[MUSIC] This was the moment Frank had worked towards for months and months.  He says he spent about $320,000 of his own money getting all this equipment and supplies.  But now, everything was in place to start printing counterfeit money.  He was giddy with excitement at this point.</p>
+
+<p>FRANK:	Jesus fuck, I mean, this is really it.  Itâs like the official beginning of the race, is what it is.  You have all you need, you donât need anything else, no one can stop you at this point âcause you havenât sold anything.</p>
+
+<p>JACK:	He taught the other guys how to use the printer, and they practiced with regular paper, but now they were ready to do their first test run with the right paper and the right ink.  It was showtime.</p>
+
+<p>FRANK:	[MUSIC] Now just a matter of re-tuning everything until you hit everything perfectly where it needs to be.  Then youâre fully dialed-in, exactly the right color, perfectly the right paper, everything.  Now youâre good to go.</p>
+
+<p>JACK:	[00:50:00] The test print looked good.  The money felt right.  The plan was working.  Frank says the results were impressive and that theyâd shuffle real bills in with the fake ones to see if they could spot the difference.</p>
+
+<p>FRANK:	Try to tell which is which.  You canât tell.  Just no way to tell.</p>
+
+<p>JACK:	The plan was going good, but there was a lot of work still needed to be done.  Printing twelve million twenty-dollar bills takes a long time.</p>
+
+<p>FRANK:	It sure wasnât party mode.  At this point itâs just factory work.  Thatâs exactly what it is.  You just go in and yeah, you put your suit on, and then you print, print, print all day, all day, all day, and then you leave.  Then the next day.  Itâs literally grinding factory work.</p>
+
+<p>JACK:	[MUSIC] Frank had his helpers doing a lot of work.  This operation was just too much for one person; opening boxes of paper, feeding it into the printers, loading up the ink, getting the metal plates in place, printing one side, letting it dry, then printing on the other side.</p>
+
+<p>FRANK:	I mean, printing presses just spew out paper.  You just feed trolleys at the end of it, and then it will stack up trolleys a couple feet thick.</p>
+
+<p>JACK:	Then they take big stacks of paper off the trolley carts, cut the bills, and put some finishing touches on them.  It seemed that Frank had made some very convincing twenty-dollar bills.  He was counterfeiting millions of US dollars and he wasnât slowing down.  His plan was to print the money as fast as he could, then stash it somewhere, and then hide all the evidence that this ever happened.</p>
+
+<p>FRANK:	[MUSIC] Well, you donât want that sitting there.  You want to get rid of that yesterday.</p>
+
+<p>JACK:	Frank and his crew were able to print 12.5 million twenty-dollar bills.  Thatâs $250 million worth of fake money, and thatâs incredible.  It looked real, it smelled real, it felt real.  Now, Frank paid his crew real nice for this.  Nobody was allowed to take any of this fake money home or anything, and Frank sure wasnât going to spend this money himself.  Thatâs just too risky.  You donât want to show up at a gas station, buy gas for twenty dollars, and then when the fake bills get discovered, thereâs all this surveillance footage of him pulling the money out.  You donât go through all that to get caught over twenty dollars.  He needed to sell this money, and fast.</p>
+
+<p>FRANK:	So, you got tons of money piled up.  Itâs good âcause itâs a possible profit, but if you were to get caught, well, itâs evidence against you.  So, youâre in a hurry to get the paper, youâre in a hurry to get printed, youâre happy when you do, and when you do, youâre in a hurry to get rid of it.  âCause if you get caught with it, itâs not good.  Itâs a end-of-your-life scenario.  [MUSIC] This is how serious it is.</p>
+
+<p>JACK:	To make selling fast and efficient, Frank actually lined up clients before he started printing.  He tapped into his criminal network of drug traffickers who exported overseas.  Frank didnât want his cash getting out into the states.  Instead, he wanted it pushed to Europe, Asia, Africa, somewhere far away.  He made contact with four potential clients that could help make this happen.  Now that the printing was done, he followed up with those clients to offer free samples of his product.  Yes, Frank gave out nice little free sample packs of money to show potential buyers how it looked.</p>
+
+<p>FRANK:	The whole line from the initial exporter down to the last people in his crew, operation, whatever it is, well, I want them to have it.  I want them to try it, I want them to test it, I want them to know for a fact that it is perfect, and I want them to tell me oh yeah, we are fine.  It is perfect.  We are in.</p>
+
+<p>JACK:	The deal was that Frank was offering to sell this fake money for thirty cents on the dollar.  So, for $3,000 you could buy $10,000 worth of Frankâs money.  Thatâs pretty good considering Frankâs money looked so good.  The free samples paid off because Frankâs clients started agreeing to buy fake cash from him.  They were so convinced the bills looked real that they wanted more, which was good for Frank because by this time, Frank had spent every last cent he had to get to this point.</p>
+
+<p>FRANK:	Iâm down to no nickel left.  I sunk everything into this.  Then you start making the sales, and then youâre seeing profit coming back from it, which is really, really nice.</p>
+
+<p>JACK:	People started agreeing to buy fake money from him, but everyone was a little skittish at first.  Neither buyer or seller really made these kind of deals before.  But it sort of went down like a typical drug buy.  [MUSIC] First, Frank didnât want to be there for the deal, so he had another person do the sale for him.  They would show the buyer a box of fake twenties, and the buyer would have a duffel bag of real money.  Itâs a little tense when so much money is being exchanged.  Frank would offer to sell smaller quantities at first, like thousands of dollars at a time just to show them he was trustworthy.</p>
+
+<p>FRANK:	You cannot be more upfront than this, and this matters [00:55:00] âcause it shows that no part of you wants to screw them over.  Youâre in for doing solid, proper business, and itâs important you do that.</p>
+
+<p>JACK:	After his clients were able to take these samples and make some smaller buys, they were coming back for bigger buys.  The plan was actually working.  Frank quickly made back his $300,000 that he invested into this scheme.</p>
+
+<p>FRANK:	Itâs a really good place to be; youâre back to where you were, and then you got this whole pile in front of you that you can profit from.  Now, that felt really good.</p>
+
+<p>JACK:	Things were going good; more buyers were in and he knew from here on out, all was profit.  He ran his calculations again, and if he could sell his entire inventory at this rate, yeah, he could make 75 million real dollars from it all.  It was just a matter of time to get through it all, and he needed to get this fake money as far away from him as possible as fast as possible.  Of course, Frank was real careful with every buy, too.  He set up a network of runners to shuttle cash to his clients.  The main stash was at a hidden location, and there were smaller stashes spread around different places.  When a client needed to make a buy, a runner would go to a stash, grab the money, and deliver it.  If one of the smaller stashes ran low, a runner would simply resupply from the main stash.  Frank set it up this way to distance himself from the operation and make it so that not any one person knew what the whole operation was.</p>
+
+<p>FRANK:	[MUSIC] Now you got stuff on the streets.  Any one of those bills is added risk to you âcause all those people, any one of them can be under investigation for any number of things.  You want to be beyond invisible at that point.</p>
+
+<p>JACK:	There was a bottleneck, though.  Frank didnât want to advertise this sale to everyone, because he wanted to limit the exposure.  He only told a few drug traffickers about this money, and out of them, only four were repeat buyers.  The amount of money bought by these four clients, well, it just wasnât moving fast enough.</p>
+
+<p>FRANK:	[MUSIC] It was going a little slower than how I thought it was going to go.</p>
+
+<p>JACK:	So, Frank decided to add another client.</p>
+
+<p>FRANK:	So, I said weâre gonna add a fifth one.  Weâll see if that works, and maybe a sixth one.  Weâll see.  But we need to at least add one.</p>
+
+<p>JACK:	So, Frank checks in with one of his guys to help expand the network.  Turns out that Frankâs guy knew someone that might be able to help; a guy named Ãric.</p>
+
+<p>FRANK:	I had him checked out and all that.  He was solid.  I okayed it and it was fine.</p>
+
+<p>JACK:	This guy Ãric ran a gang that trafficked stolen construction equipment.  Even better though, Ãric knew a guy who wanted to buy counterfeit cash.  So, he got Frank connected, but Ãric helped out by being the middle man.  Heâd get the money from Frank and then pass it off to this new client.  Things were rolling.  [MUSIC] Frank sold him a chunk of $100,000 for $30,000 in real cash.</p>
+
+<p>FRANK:	I sold him a first order and the next day he said well, weâd like to buy some more.  I said, fine.  Then next day, then next day; did that for four or five days or something.</p>
+
+<p>JACK:	Normally, Frank would have a runner deliver the cash, but this deal came together quickly, and Frank wanted to oversee it himself, so he broke protocol and handled the cash himself, delivering the cash himself.  Now, at the time, Frank was living with his girlfriend, but he had a very strict policy on what she was allowed to know about this, which was nothing at all.  The more she knew, the more trouble she could be in if things didnât go well.  So, he didnât want to get her involved at all.</p>
+
+<p>FRANK:	Girlfriends knowing anything that you do makes no sense unless thereâs an absolute need for anyone to know what it is that youâre doing.  It makes no sense for them to know.</p>
+
+<p>JACK:	The fake bills started making their way through the system, showing up in strip clubs in Illinois and Michigan at first, then grocery stores and restaurants along the East Coast of the US.  It was very hard for people to detect this fake money, so it would often pass a few times without anyone knowing it was even fake.  [MUSIC] In the early morning hours of May 23rd, 2012, Frank was asleep at his girlfriendâs house.  At around 5:00 AM, he heard a loud noise which jerked him awake.</p>
+
+<p>FRANK:	Just waken up by tons of people banging on every door and window all around the house.  Bang, bang, bang.  So, youâre startled; you wake up, your heartâs racing, you know somethingâs totally different.  After two seconds of being awake, then you come to realize oh fuck, thatâs today?  Damn.  Thereâs nothing you can do.</p>
+
+<p>JACK:	[01:00:00] He looked out the window and his heart sank.  It was the Royal Canadian Mounted Police and they had completely surrounded the house.  Frank knew he had no way out.</p>
+
+<p>FRANK:	So, you just go up to the door, you open up, they come in, and they flood in.  They search, they seize, they take everything, everything.  They cuff you, they leave with you.</p>
+
+<p>JACK:	According to an RCMP press release that came out the next day, it was a joint force of RCMP, Quebec Provincial Police, and the US Secret Service that raided six different locations and arrested four people, including Frank.  The sting was part of something called Project Cranium which was the investigation into Frankâs operation.  When they searched Frankâs house, they found almost one million dollars in counterfeit twenties in his safe.  They also found printing equipment used to add holographic details to fake bills.  In a CBC article that also came out on the following day, the RCMP spokesperson described the operation as highly sophisticated and that the counterfeit bills were basically undetectable to the naked eye.  [MUSIC] After the raid, authorities brought Frank to an interrogation room.</p>
+
+<p>FRANK:	You get into the interrogation and now theyâre trying to squeeze you, and you try to tell them nothing âcause this is what you gotta do.</p>
+
+<p>JACK:	Frank was so careful and spent so much time on this operation that he wasnât gonna let them just squeeze answers out of him.  He kept quiet and had a stoic look on his face with any questions they asked.  But then the cops brought up his girlfriend.</p>
+
+<p>FRANK:	They used the girlfriend.  They said well, this was into the house, the house under her name, so sheâs in on it.  We can charge her.  Then youâre really in a bad spot âcause you canât let that happen.  So, now theyâre really squeezing you good.  They really are.  Itâs a tough spot to get out of.</p>
+
+<p>JACK:	Piling on the bad news, authorities in the room told Frank he was facing counts of fabrication, possession, and distribution of counterfeit money.  Since it was US money, they were saying they would extradite him to the United States where he could face twenty years for each count, a total of sixty years in federal prison.</p>
+
+<p>FRANK:	Thereâs no part of you who doubts that theyâre gonna extradite you, âcause the Secret Service, with their bulletproof vests written Secret Service on it, were in my living room.  So, you know they are here, they are taking it seriously, and they mean to pursue it.</p>
+
+<p>JACK:	[MUSIC] Frank later learned that Ãric, the guy who he was selling hundreds of thousands of fake bills to, it was his crew that had been infiltrated by an undercover Canadian cop, and the cop was actually the guy Ãric was passing the money to.  He didnât know that Ãric was compromised, and this is how Frank got caught.  Frank had a hard choice to make; if he stayed quiet, it was likely that his girlfriend would be charged with all kinds of criminal activity.  He did not want his girlfriend tangled up in this.  He took huge measures to make sure she had nothing to do with this so she could not get in any trouble for this.  So, his other option was to fess up to the operation in hopes that theyâd let her go.</p>
+
+<p>FRANK:	But what are you gonna do?  Itâs your thing.  Itâs you, so you gotta take it.</p>
+
+<p>JACK:	Despite the consequences, Frank talked.  He admitted that yes, heâs the one who printed the money, and he told them his girlfriend had no clue and was innocent in this whole deal.  He knew this was all being recorded, too.</p>
+
+<p>FRANK:	Youâre literally hanging yourself and thereâs no way out of it.  You leave the interrogation room thinking and feeling that the â itâs the end of your life.  Itâs you getting locked up stateside.  Itâs the floor vaporizing from under you, literally.  Thereâs no future ahead of you.</p>
+
+<p>JACK:	[MUSIC] This was the last thing Frank wanted to do, but he felt like he had no choice.  Once questioning was over, authorities booked Frank into a jail and denied him bail.  He was stuck for now.</p>
+
+<p>FRANK:	By design, you have to know going in; you have to tackle any criminal operation going in that it is possibly going to stop, if not likely going to stop, âcause there are people whose job, whose sole job is to stop you.  Theyâre gonna come take everything from you so that you cannot maneuver.  This is what they do.  So, itâs not a pleasant time for sure, but you have to know that going in.  Itâs part of the deal.  Anything youâre gonna need to have access to, you need to prepare for it.  [01:05:00] So, if you need phones, if you need this, if you need money, if you need â you need to prep ahead of time.  You gotta plan for the exit strategy âcause you can crash at any time.</p>
+
+<p>JACK:	Frank had previously set up a lawyer in case a situation like this were to happen, and his lawyer got busy trying to get Frank out of jail.  The Canadian courts were considering extraditing Frank to the US to be tried there, but Frank says his lawyer was able to block extradition, and thatâs because the lawyer pointed out that the RCMP did not have adequate surveillance footage of Frank.  Hereâs what happened; [MUSIC] on one of the days that Frank delivered cash for the undercover RCMP officer, a helicopter was hovering overhead and it was recording video of this transaction.  But at the meeting location, Frank instinctively parked his car underneath something that had a roof over his head where he could unload the cash without anyone seeing from far away.  He says thatâs why he picked this spot in the first place, because it was a good place to hide.</p>
+
+<p>FRANK:	So, they lost sight of me for a bit and because of that, they couldnât justify having eyes on the boxes of counterfeit 100% of the time.</p>
+
+<p>JACK:	This meant the cops didnât have actual video evidence of Frank handling the money, and Frank says this is why the extradition got thrown out.  Frankâs lawyer then negotiated bail.  After six weeks, Frank got out on $10,000 bail.  But Frank still had to answer to the Canadian government or the Crown where he was looking at hard time for the same charges; fabrication, possession, and distribution.  Since this was Frankâs first counterfeiting offence, he was hoping his lawyer could negotiate some kind of deal.</p>
+
+<p>FRANK:	So, if you do something one time and then you get caught, then you drop out of it.  This is the least amount of consequence that you can have for an offence.  So, my counterfeiting days were over for the rest of my life.  Whatever money I had left, well, I wasnât gonna start selling it ever again.</p>
+
+<p>JACK:	At this point, Frank had only sold a few million dollars in fake money out of the $250 million that he printed.  He knew that there was a stash of $200 million still out there, and he knew that the cops didnât find it.  In fact, the cops didnât know about it at all.  They thought they seized all the fake money.  Only Frank and one of his closest guys knew about it.  Frankâs plan was to get his sentence reduced as much as possible, then use the $200 million in counterfeit cash as a bargaining chip to cut an even better deal.</p>
+
+<p>FRANK:	Hopefully this will work, but this is the one thing that I had left.  It was the only thing I had.</p>
+
+<p>JACK:	[MUSIC] So, court appearance after court appearance, and the lawyer is trying to negotiate with the Crown to get the punishment reduced.</p>
+
+<p>FRANK:	I want it as close to zero as possible, so the only way to let it go as close to zero as possible is to string every bit of the talent that my lawyer has.</p>
+
+<p>JACK:	The lawyer gets the sentence down from decades to a handful of years, and this was all a plea bargain.  If Frank admitted that he was guilty at this point, he would just get a few years of prison without even a trial.  Itâs quite amazing that the lawyer was able to reduce it so much.</p>
+
+<p>FRANK:	Sheer, grinding work.  All him; nothing else but him.  Heâs a legend.</p>
+
+<p>JACK:	But even though his sentence was reduced to a handful of years, Frank still didnât take it.</p>
+
+<p>FRANK:	I could see every court appearance that we went to was getting nastier and meaner âcause everybody was pissed, âcause all I kept saying to them out there was no, I donât want this deal.  I want lower, I want lower.</p>
+
+<p>JACK:	According to Frank, the Crownâs prosecuting attorney had enough at this point.  Frank wasnât going to take the plea deal, so they saidâ¦</p>
+
+<p>FRANK:	Well, fuck it then.  Weâre going to fucking trial.</p>
+
+<p>JACK:	Which was risky for Frank.  He felt nervous because of this, because if he was acquitted, well, great; he got out of the whole thing.  But if he was found guilty, heâd probably end up with a much bigger prison time than what this plea deal was.  [MUSIC] So, this was the moment for him to play his last-ditch card, the bargaining chip that he was waiting this whole time for.</p>
+
+<p>FRANK:	Then take out my Ace, which is exactly what I did.</p>
+
+<p>JACK:	Before the trial began, Frank finally told his lawyer that heâs got $200 million in counterfeit twenties and heâs wondering if they can use that to bargain with at all.  His lawyer was willing to give it a try.  But Frank wanted to move the money to a new hiding spot before telling the courts about it.  This way, heâd have it all ready in case they wanted to make the deal.</p>
+
+<p>FRANK:	So, I made my call, set up my plan in motion, called my guy.  My guy went over there.  I had set up ahead of time that he was gonna put them in the truck and put the truck in a particular place in a parking lot.  I hid the truck right next to the main boulevard in the city.  It was sitting there for [01:10:00] a couple of months.</p>
+
+<p>JACK:	In the back of this box truck was $200 million in counterfeit cash and the printing press.  Now he was ready to bargain.  On the first day of court, they started with this, saying that Frank knows where $200 million in counterfeit money is, and heâs willing to turn it over if he can get his sentence reduced.  The court was shocked with this news.  They thought they had confiscated everything and didnât know that there was more money out there.  But this worked.  The Crown was willing to negotiate one more time.  Frank worked out a deal that heâd turn over the $200 million and his Heidelberg printing press.  In exchange, the Crown would drop the counterfeiting charges.  But there was a tiny catch; the Crown didnât want this stuff immediately.  They set up an exchange for a month out.  Frank thought that they were doing this to try to find the money before the date, which would get him in even more trouble.</p>
+
+<p>FRANK:	[MUSIC] They wanted to get that money, but they wanted to get it themselves so that they could keep the charges on me.  So, by giving this drop date, a later time, well, in their heads they said well, somewhere, somehow heâs gonna have to do something to get this money to move places.  Heâs gonna have to do something.  So, weâre gonna try to catch him doing it.  The deal was if I got caught before that drop date with anything, I was getting hammered with it.  My lawyer said do you understand what that means?  Theyâre gonna be on you like your own fucking shadow.  I said alright, where do I sign?</p>
+
+<p>JACK:	Frank didnât care because he already stashed the money and the printing press in the back of that box truck and thought for sure nobody would look there.  So, all he had to do was lay low for a month.  Frank says the cops were all over him during that month.</p>
+
+<p>FRANK:	I mean, surveillance was on me 24/7 at that point.  Helicopters and all that everyday.  I opened up the curtain; they were right in front of me.  They werenât hiding.  They just figured we just need to tail this dude 24/7.  [MUSIC] Heâs gotta do something at some point, then weâre gonna cuff him.  Then heâs done.</p>
+
+<p>JACK:	As long as they didnât find that truck, Frank was safe.  So, January 31st, 2014 rolls around.  Itâs the morning of the drop date.</p>
+
+<p>FRANK:	My guy left the key ring to the truck behind a specific tree in a little wooded area, and so I went to the court with them following me.  I stopped, I grabbed the key ring, and then I headed onto court.  Then once I got there, I gave the key ring to my lawyer.  I said, here it is, all of it as promised.  They were pissed, extremely pissed.</p>
+
+<p>JACK:	They were mad because he had hidden this information from them.  They were mad because he wasted a lot of the courtâs time.  They were mad because they didnât find this money themselves.  Frank outsmarted them.  They wanted him to drive to the pickup location, so he got in his car and a convoy of black SUV police cars followed him through town.  It was weird being followed by that many police through town.</p>
+
+<p>FRANK:	There was a K-9 unit, plus there was the bomb squad, people in hazmat suits and bomb suits and stuff.  It was packed, packed, packed.  I said damn, for me?  I was really, really surprised by that.  It was ridiculous.</p>
+
+<p>JACK:	He slowly drove through town and watched people on the street looking back at him, and wondered what they were thinking.  Maybe the president is in town, they thought.  Maybe this is a big drug bust.  Helicopters were flying over him, following him.  Nobody watching from the street thought that all this was to pick up some counterfeit money, thatâs for sure.  He arrived in the parking lot.  He got out of the car and stood in front of the box truck where the money was, and he told the police this is it.  The police did not trust the situation one bit.  A bomb squad came in first and swept the truck, and then asked Frank to unlock and open the truck in case it was booby-trapped.</p>
+
+<p>FRANK:	Would you be willing to open up the doors?  Yeah, sure.  Iâll open the door.  Would you walk inside just in case it might be a trap?  Yeah, sure, sure, sure.  Then, would you start the truck just in case somethingâs â yeah, sure, sure, sure.  I started the truck.  So, thatâs fine.</p>
+
+<p>JACK:	At this point, the police felt like it was safe enough to go into the back of the truck and check it out.  I saw pictures of what it looked like back there.  In the back of the truck was the printing press.  When you look behind that, there were pallets of boxes.  Inside the boxes were stacks and stacks and stacks of fake twenties.  So much money was in this truck.  Frankâs in the pictures, too.  Heâs wearing a dark blue [01:15:00] sweatshirt with a black, puffy vest over it.  Heâs got a goatee and his hair is pushed up in a faux-hawk.  He looks tired, maybe a bit relieved.  There are two cops in the photo going through the boxes and sure enough, this truck was loaded up with millions of fake twenty-dollar bills.  Once the cops confirmed that this was what Frank said it was, then the cops had one more request.  They wanted him to drive the truck back to RCMP headquarters.</p>
+
+<p>FRANK:	I drove the fucking truck.  [MUSIC] I was alone in the truck surrounded, surrounded by black suburbans full of cops, helicopters, tons of police force blocking every road.</p>
+
+<p>JACK:	Frank says the cops were worried about a bomb still and that maybe he had an explosive set to a timer or that if the truck went over a certain speed, it would blow up.</p>
+
+<p>FRANK:	This is by far the strangest thing that â even to me, even to this day, this is really, really strange.</p>
+
+<p>JACK:	As he drove down the street, the irony of the scene wasnât lost on Frank.  If he had done this just one day before, they would have tried to bust him and throw him in jail.</p>
+
+<p>FRANK:	So, the same action carries a totally different weight to it, right?  This was the very same money.  The very same counterfeit action that I was being charged with now was totally okay.  So, the exact same criteria are horrible one day and then okay the next day.  Because of some papers, it made it okay.  I said Jesus fuck, this is a strange world.</p>
+
+<p>JACK:	In this strange and twisted story, the Crown dropped all counterfeiting charges against Frank after he turned this money and equipment in.  He says they did charge him a $1,500 fine for a drug-related charge.  Numerous articles say that when the cops raided Frank back in 2012, they found drugs in his car.  Otherwise, the only time served that he had for this counterfeiting scheme was the six weeks he spent in jail waiting to get out on bail.  The other guy that he sold money to, Ãric, the one who ultimately got him caught, he was sentenced to thirty-one months in prison over his stolen construction equipment and his ties to Frank.  [MUSIC] These days, Frank says heâs gone totally legit.  In fact, he turned the skills gleaned from counterfeiting into a real business.</p>
+
+<p>FRANK:	Right after my court case, I got involved into consulting for counterfeiting protection.  Iâve been doing that ever since.</p>
+
+<p>JACK:	If you go to Frankâs website, frankbourassa.com, you can read more about his trademarked MASTERY AEGISâ¢ program.  Itâs his method for evaluating and giving feedback to organizations to stop fraud and counterfeiting.  He feels heâs uniquely suited to help identify counterfeit operations.</p>
+
+<p>FRANK:	Itâs a nice challenge, itâs new stuff all the time, and I need to hit it dead-on âcause if Iâm going to do it, well, I want it to be perfect, and it impacts the people I do it for a lot, [MUSIC] âcause I know what makes it impossible to counterfeit something, and I make sure to do that.  So, I affect the bottom lines a ton to the people I do it for, so I know I have a lot of positive impact on those people, and that I really like.  I call it my redemption through protection effort, âcause how I turned it, it sums up the essence of what I like about it.</p>
+
+<p>JACK:	Frank says heâs even reached out to the US about their currency.</p>
+
+<p>FRANK:	I even offered them to redo your currency, where not a single soul will be able to counterfeit it, âcause I know what would stop me dead in my tracks, and I could do that.  So, I even offered them that.</p>
+
+<p>JACK:	Frank says they turned him down on the offer, though.  Now, thereâs something about Frankâs story here thatâs missing, and if youâve been paying attention, you might have noticed that the numbers donât add up.  You told me you printed $250 million.</p>
+
+<p>FRANK:	Yes.</p>
+
+<p>JACK:	Thatâs what the authorities say that they counted up how much paper you ordered and stuff; they were able to calculate you had printed about $250 million.</p>
+
+<p>FRANK:	Yes.</p>
+
+<p>JACK:	You gave up $200 million to them.</p>
+
+<p>FRANK:	Thereâs a mismatch.</p>
+
+<p>JACK:	Whereâs the other $50 million, Frank?</p>
+
+<p>FRANK:	[LAUGHING] Wait, thereâs a mismatch.</p>
+
+<p>JACK:	Yeah, it doesnât add up.</p>
+
+<p>FRANK:	[01:20:00] Damn, I need to look for that somewhere.  Let me get back to you on that.  Iâm gonna look into that, Iâm gonna look into that.</p>
+
+<p>(OUTRO):	[OUTRO MUSIC] A big thank-you to Frank Bourassa for coming on the show and telling us this incredible story.  You can learn more about him at frankbourassa.com or check out the show notes for links.  If you like this show, if it brings value to you, consider donating to it through Patreon.  By directly supporting the show, it helps keep ads at a minimum and it helps create the show, and it tells me that you want more of it.  So, please visit patreon.com/darknetdiaries and consider supporting the show.  Thank you.  This show is made by me, the never-fake Jack Rhysider.  This episode was produced by the cash-clenching Charles Bolte, sound design and original music by the key-tickler Garrett Tiedemann, mixing done by Proximity Sound, editing help by the sunny Damienne, and our theme music is by the mysterious Breakmaster Cylinder.  There was this one time where I went to New York and I had a fake fifty-dollar bill.  It was like, twice the size of a normal bill, and someone on the street came up to me and said hey, do you want to buy a fake Rolex watch?  I said hell yeah, is fifty dollars good?  They said yeah, and I pulled out my giant, fake fifty-dollar bill and said okay, here.  They were like, what the heck?  Iâm like hey, fake watch for fake money, right?  This is Darknet Diaries.</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

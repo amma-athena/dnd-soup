@@ -1,0 +1,499 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>RockYou â Darknet Diaries</title>
+	<meta name="description" content="In 2009 a hacker broke into a website with millions of users and downloaded the entire user database. What that hacker did with the data has changed the way we view account security even today.">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="RockYou â Darknet Diaries">  
+	<meta name="twitter:description" content="In 2009 a hacker broke into a website with millions of users and downloaded the entire user database. What that hacker did with the data has changed the way we view account security even today.">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/rockyou.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/33/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="RockYou â Darknet Diaries" />
+	<meta property="og:description"        content="In 2009 a hacker broke into a website with millions of users and downloaded the entire user database. What that hacker did with the data has changed the way we view account security even today." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/rockyou.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/33/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/rockyou.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/33/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="RockYou â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/rockyou.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 33: RockYou</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://traffic.megaphone.fm/ADV8668553535.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/33/",
+			   "title": "Ep 33: RockYou"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/33">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[FULL TRANSCRIPT]</p>
+
+<p>JACK:	Letâs start out with tell us your name and what do you do.</p>
+
+<p>TROY:	My name is Troy Hunt.  I am an Australian security researcher, I guess.  That term seems to be used a lot.  I run the data breach notification service Have I Been Pwned?  I write some online training for people, and speak at events.
+<!--more--></p>
+
+<p>JACK:	Troyâs website haveibeenpwned.com is amazing.  Basically if thereâs a data breach out there where the data is public, Troy knows about it.  He collects all the breach data and puts it into his database and lets people search for their e-mail address to see if their account has been in a breach.</p>
+
+<p>TROY:	Yeah, so a typical example [inaudible] pops up and says look, Iâve got the data.  Itâs often via an e-mail or a Twitter DM.  I said look, would you like if I Have I Been Pwned?  They often send me a link to Mega.  Theyâll put a Mega.NZ somewhere.  Sometimes they ask for attribution as well.  Some people want either the notoriety or the fame, as it may be.  I get through, grab that data, validate that itâs actually legitimate, then load it in, write it up, and publish it.</p>
+
+<p>JACK:	Heâs been running this site since 2013, adding all the public and semi-public user account data breach details that he could find.  His site has truly changed how we view our account security.</p>
+
+<p>TROY:	Yeah, where to even begin?  I guess one of the things that amazes me â Iâm looking at the record count now having just loaded the Dubsmash data last night.  It said itâs almost 6.9 billion records.  I remember when I started it.  It was like 155 million records in there.  I was like wow; this is a lot of data.  I wonder if itâs gonna be able to get much bigger.</p>
+
+<p>JACK:	That is, there have been 6.9 billion e-mail addresses seen in data breaches in the last ten years or so.  Thatâs a lot of e-mail addresses.</p>
+
+<p>TROY:	This is 6.9 billion breached accounts.  As an example, my own e-mail address has been seen fifteen times.  Of that 6.9 billion, fifteen of them are me.  This is not unique e-mail addresses.  Unique e-mail addresses is more around the four billion something.  I sort of wonder if youâre doing the mental arithmetic here and going well, hang on a moment.  How many people are there out there that are actually connected to the internet?  You sort of realize that this is a really significant portion of online accounts.</p>
+
+<p>JACK:	You can imagine if you post the data breach details for people to search on, Troyâs gonna get some interesting feedback.</p>
+
+<p>TROY: 	I remember one company said look, weâve gone and done a domain search.  The same three guys in the warehouse are on basically every porn site.  We need to be really, really confident that this information is accurate because weâve gotta go and have some very uncomfortable chats with some of the guys in the warehouse.</p>
+
+<p>JACK:	Can you imagine signing up for a porn site with your work e-mail address and then having it show up in a breach notification to your boss?  Ugh.  But there are so many breaches happening these days that itâs hard for Troy to keep up on all of it.</p>
+
+<p>TROY:	Yeah, honestly at the moment it is wearing me out because itâs so much work.  It really dawned on me in January where I loaded one of these credentials [inaudible] 773 million records.  I loaded it just as I got on a plane to go overseas and have a few days out in the snow with some friends.  I just got thousands of e-mails and tweets and media.  I just got absolutely bombarded right at a time I was trying to switch off.  I actually started to become really conscious of the mental toll itâs taking, if Iâm honest.  That bit is hard.  Then underlying that thereâs just this massively increasing stream of data, I would have multiple breaches a day sent to me of all different scale, of course.  At the moment Iâm sort of working through this whole lot which was published in just the last couple of weeks which had things like my heritage and Dubsmash, my fitness pill, and all these.  There was about a quarter of a billion records there across different unique incidents.  I need to verify each one of those and then load the data and send the e-mails and then deal with the onslaught of feedback from it.</p>
+
+<p>JACK:	At this point Troy has added hundreds of website dumps into his database.  Breaches today are really quite common.  But letâs roll back the clock and dive into a breach that happened a long time ago but had a big impact on how we view security today.</p>
+
+<p>JACK (INTRO):	[INTRO MUSIC]  These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	The common thread on where a hacker comes from is that many of them had a computer in their home as a teenager.  [MUSIC]  When a teenager has a computer theyâll probably want to play video games on it.  Some will be curious about those games and start playing with the mechanics of the game itself by exploring the files of the game, maybe changing [00:05:00] one of them to see what it does.  They might then look online for cheats or even hacks to make the game do things itâs not supposed to.  This might fascinate a teenager even more.  They begin to think about more things they can do with this; maybe write a program to automate the video game or find a way to make copies of it for friends.  The curious mind and the endless tunnel of the internet is a beautiful combination but having that while being a teenager can be even more powerful.</p>
+
+<p>If youâre in high school or college living at home with no job and have an obsessive fascination with that hunk of metal in the corner of your room, you can spend an insane amount of time on that thing, literally staying up all night on the computer, sleeping only a couple hours, and then going to class is not that uncommon.  As soon as schoolâs out, theyâll go right back to the computer again.  Itâs not just playing video games but also learning HTML or how to code and finding different things to learn on the internet.  A teenager can easily spend ten hours a day on a computer.  They can learn how to build things and how to break things.  Making stuff and breaking stuff becomes the new obsession.  Malcolm Gladwell once famously wrote that you can master something if you spend 10,000 hours doing it.  If you spend ten hours a day for three years, thatâs 10,000 hours.</p>
+
+<p>Not everyone has this opportunity of owning a computer, having an endless curiosity towards technology, and not having that much responsibility as a teenager.  If you had this, consider yourself privileged because having access to a world of information right there in your bedroom, having the luxury of time to be able to spend countless hours on it is not something everyone has.  But like I was saying, this is the common story of how many hackers got started, or security professionals.  Theyâre really two sides of the same coin.  This is how I imagine Tom got started with computers.  Tom was your average security professional.  He likely did the time of spending the 10,000 hours in front of a computer and worked his way up, getting a solid gig securing the network for a company.  He knew computers well.  Oh, and Tomâs not his real name, by the way.  Thatâs just the name given to him by the New York Times.</p>
+
+<p>Tom could code, troubleshoot PC problems, and he knew his way around databases really well.  Somewhere along the way of learning all this, he got curious about hacking.  He started looking at websites to learn how you can do things to computers you really shouldnât be allowed to do.  He thought this was cool and wanted to learn more; found a website that had all kinds of tutorials on how to hack, [MUSIC] how to write a bot, how to write exploits in Python, stuff like that.  The site had a forum too, and he joined it and used it to ask questions and learn more about hacking.  The weird thing about the internet; itâs so big, right?  Thereâs so many corners and pockets of people in each crevice of it that wherever you go it feels like everyone is doing this thing.  If you go on Instagram it feels like everyoneâs traveling.  If you go on Facebook it feels like everyoneâs having babies.  If you go on a hacker forum it feels like everyone is hacking.</p>
+
+<p>I donât know if Tom was just bored at work or felt mischievous or just thought that because he hangs out in the hacking forums that it appeared that everyone was doing this, but it seemed cool to hack.  These forums would sometimes have a post of someone showing you step-by-step how a specific website is vulnerable to an attack.  If you were quick enough you could follow the steps and get in and look around.  Tom was seeing this, a lot of this, and started to poke around at websites himself to see if he could find a hackable website.  The thing is, the internet is huge though, and itâs hard to know where to look to try to find a website thatâs vulnerable.  At least, there wasnât a good spot back in 2009 when this story took place, so Tom would visit websites he knew about and start checking to see if they were exploitable.  He was going through a bunch of websites that he could think of and testing if any of them were vulnerable to certain attacks.</p>
+
+<p>He would go to these websites and click the login button and then put a single quote in for the username and password and hit Log In.  The website should come back with a message saying Invalid Login, User Not Found, or something like this.  But one website he did this on said something else.  Instead it looked like the website had crashed.  The whole page went blank and it just displayed a little error saying You Have an Error in Your SQL Syntax.  You might be thinking wait, how is it that if you put a single quote in for the username and try to log in with just that it gives you an error saying your SQL syntax isnât right?  Well, Iâll tell you.  SQL, or often called sequel, is the language used to talk to databases.  Websites that have users that can log in have a database where the user information is kept.  When a user tries to log into the site, the website has to ask the database if that user is in the database.</p>
+
+<p>In this case Tom asked if thereâs a user thatâs just a single quote exists.  This single quote was passed right into the database query, but SQL treats single quotes special.  Web developers should not trust inputs from the user and should sanitize them and parse it differently.  But when Tom saw the website was telling him he had a SQL syntax error he knew immediately what this meant.  The website was not sanitizing its user inputs properly and he could issue SQL commands and query the database [00:10:00] right through the username field of the login page.  This is known as SQL injection and itâs been a known attack since 1998 but still even today web developers struggle to properly sanitize user inputs.  Itâs constantly been one of the biggest threats to websites.  Tom saw this website was vulnerable to SQL injection and started seeing what kind of fun he could have.</p>
+
+<p>Oh, I should say this website he found the SQL injection on was csfd.cz which is like IMDB but in the Czech Republic.  Itâs an online movie database in Czech.  He started passing SQL commands to the database through this login page.  First he discovered the database name which was called Public.  Okay.  Next he looked at the tables within the database.  There were forty-two tables here, things like Forum, Posts, Film Names, Film Ratings, and things like that.  Not a big deal.  This is all public information that you could theoretically scrape from the website if you wanted to anyways.  But then he saw a table that caught his eye; UÅ¾ivatelÃ©, which is a Czech word meaning âusers.â  [MUSIC ]  He quickly issued a command to see the contents of this userâs table and sure enough it had all the user data.  He saw usernames, hashed passwords, and e-mail addresses of every user on the site.</p>
+
+<p>Now keep in mind, heâs doing all of these SQL queries from the login page of the website.  Heâs not even a user on this site and still he could see all of the database content.  This was a big deal for this fairly popular Czech website to have been accessed by Tom like this.  This put a big smile on Tomâs face.  He looked to see how many users there were on the site and there were 187,000.  This included their login name, e-mail, and password hash.  A password hash is not a password; itâs what the passwords look like after you run it through an algorithm called a hash.  This is how you should store passwords, hashed.  A large list of password hashes like this could be cracked over time so he started downloading them all.  He spent a few weeks looking around the database and site.  Heâd go to work, do his day job, and then come home and continue poking around this website until one day Tom lost access to the website and saw an e-mail from this Czech movie database which was sent to all customers.</p>
+
+<p>It said theyâre migrating to a different database with different password storage.  Something about this e-mail upset Tom.  He thought they were lying to their customers and hiding the fact that theyâve been breached.  Tom wanted to tell the world that he hacked this site and thatâs why theyâre wanting to change databases.  He decided to make a blog post but whereâs a safe place to post about hacks?  WordPress and Blogger sometimes took down illegal content so that wasnât gonna work.  Registering his own domain and hosting it himself, I donât know, just wasnât a good option.  So he gave BayWords a try.  BayWords was a simple blogging platform and it was started by the same people who started The Pirate Bay.  It was meant to be a free-speech zone for people who wanted to blog about things that might be taken down by other platforms.  Tom made a BayWords account and makes his first blog post under the name IGIGI.</p>
+
+<p>His post said the csfd.cz website has been hacked.  He said if you get an e-mail from the company saying they are migrating servers, donât believe it, and that they were trying to recover from Tom breaking in and downloading all their stuff.  Tom also said his access was terminated but he still had two other ways into the network.  He then goes on to post samples, snippets of what heâs stolen.  This included all the names of the tables as well as twenty username and password hashes.  Then he spread his post around a few hacking forums to show what he did.  A few people commented on this post, some calling him an idiot, others saying he had no ethics.  Someone else encouraged him to post the entire database.  I donât know what the websites themselves did because I couldnât find any news stories about this breach other than Tomâs post.  But this was great fun for Tom.  He really enjoyed the feeling of hunting for insecure websites and breaking into them and looking at their databases.  He kept looking for more.</p>
+
+<p>Two days after posting that he hacked into the Czech movie database website he made another BayWords post, [MUSIC] this time saying he hacked into a Slovakian architecture firm.  He posted a sample data set from there.  The next day another post, saying he hacked into a Czech e-commerce store and this one was actually storing their passwords in clear text.  Then the very next day he hacked into another Czech website which posts dark humor content; videos and jokes and stuff like that.  In fact, this was a site he said he actually liked so he had a lot of fun hacking into it.  [MUSIC]  Tom was on a terror, finding website after website vulnerable to SQL injection and hacking it, downloading the user database, and posting it like a trophy to his BayWords blog.  But he wanted more.  He needed more.  This hacking stuff was a wild rush of adrenaline and fun, so much different than his plain old day job and it was getting him notoriety.  I have a feeling Tom was from the Czech Republic or Slovakia because all the websites he hacked were all there.  Itâs just a lot harder to hack a website thatâs in a foreign language.</p>
+
+<p>One of the hacking forums he liked to go to had a section where people would post vulnerabilities they found on websites.  One of these posts [00:15:00] said that rockyou.com was vulnerable to SQL injection.  Rockyou.com was a popular American website at the time.  They built widgets and tools for social media.  For instance, they built a Facebook app called SuperWall back in 2007.  This gave you the ability to post more cool stuff to your Facebook wall like videos and images and stuff.  People loved this app and it grew in popularity.  Over 100,000 people installed it and they liked to decorate their Facebook pages in unique ways.  Now, to use RockYou apps you had to make an account at rockyou.com but because it was so integrated into your social media, RockYou also needed access to your Facebook or MySpace pages, too.</p>
+
+<p>They were also making social media games, too.  They were killing it on Facebook and MySpace with tons of great apps to enhance the social media experience.  RockYou was getting invited to exclusive events and getting early access to API features and abilities.  More and more people started using the RockYou apps.  The company was looking to be a promising startup.  They raised ten million dollars in funding, then another three million.  They just kept getting more and more funding, hiring more employees, too.  They were aggressively becoming a successful startup and their popularity was booming.  RockYou was growing fast but they were making some mistakes along the way.  [MUSIC]  One mistake that RockYou made was an e-mail they sent to all 450 of their ad partners talking about an upcoming change.  The mistake was that they e-mailed them all in the CC field and not the BCC field, so all 450 of their ad partners knew what their competition was.  Many of them were Facebook ad makers themselves.</p>
+
+<p>Zynga was on this list and they took advantage of it and started e-mailing many of the people on the list asking if theyâd like to come work at Zynga.  There was a huge Reply All e-mail chain that resulted in this and it was bad and hilarious.  The vice president of RockYou came out and apologized for the e-mail and promised to take privacy more seriously and correct the issue.  But guess what?  Two months later they did the same thing again, accidentally Ccâing the entire ad partner list.  Then they did it again not long after that.  This began infuriating some ad partners.  Mistakes were made, thatâs for sure.  Another security issue that RockYou had was their password policy.  Your password had to be a minimum length of five characters long and could not include any special characters.  This is really weak even for 2009 standards.  RockYou would be made fun of for that over and over.</p>
+
+<p>In November 2009 when someone posted on this hacker forum that rockyou.com was vulnerable to a SQL injection, this caught Tomâs interest big time.  He immediately started checking for himself and sure enough he was able to get right in.  This was a massive database.  Forget about the 187,000 users in that Czech movie database website.  RockYou had millions of users.  Tom was blown away by this.  [MUSIC]  Such a big and fast-growing company with such a simple vulnerability.  In fact, the SQL injection Tom used to get in was very close to the same one posted in a Phrack magazine in 1998.  So eleven years later rockyou.com was open to the same exact vulnerability.  They didnât have their userâs best interests in mind so Tom started going through the rockyou.com database and taking all of the user data he could find, downloading hundreds of thousands of logins which quickly became millions, and then tens of millions.  This took a while for him to get all this and he would spend days downloading all this data out of the database.  What he does with that data will change the way we view password security even today.  Tom wasnât the only one that noticed the forum post that RockYou was vulnerable to SQL injection.  Someone else had noticed this, too.</p>
+
+<p>AMICHAI:	My name is Amichai Shulman and by 2009 I was working with Imperva, a company that I founded in 2002.</p>
+
+<p>JACK:	Amichai has a strong background in security.  In fact he started out in Unit 8200, the secret Israeli military division.</p>
+
+<p>AMICHAI:	Yes, I spent eight years in the military.  One of the lessons, the bigger lessons, being on the defensive side in the military, was that when youâre in the military you think you can command people to do things.  You go to application programmers and you tell them you have to write secure code.  Thatâs an order.  You have to use prepared statements so you donât get SQL injection.  Thatâs an order.  When you see that this kind of practice cannot be enforced in the military, youâll get to understand that it is even less effective in commercial environments.</p>
+
+<p>JACK:	Sometime after Amichai finished his time in 8200 he went off and co-founded a company called Imperva which helps companies secure their applications.  He was [00:20:00] good at defending the network and put his expertise to use.  In December of 2009 a security researcher at Imperva saw the forum post that rockyou.com was vulnerable to a SQL injection.  He notified RockYou of this vulnerability and RockYou quickly got to work fixing the problem.  They worked all weekend to resolve this SQL injection on their site but while doing so they realized it was too late.  RockYou had seen that someone else had been in the site and downloaded a copy of their entire database.  A small news article came out about Imperva warning RockYou of this vulnerability.  Tom, the hacker, saw this article and went crazy.  By this point not only did he hack into the site but he had downloaded their entire user database.</p>
+
+<p>Tom downloaded 32 million user accounts from rockyou.com.  He looked at the 32 million accounts he stole and then looked at the article which said the vulnerability was fixed.  He thought well, itâs too late.  Youâve already been hacked.  The privacy policy on RockYouâs website was not the best; first it says the company makes reasonable efforts to keep its userâs data safe but the security is not insured and you should use the site at your own risk.  It actually says when you give any data to RockYou you are doing so at your own risk.  Then the policy goes on to say that if RockYou learns of a breach they may contact their customers to tell them.  Well, Tom had breached them and they werenât notifying their customers.  He wanted to expose their weak security and get them to admit that theyâve been breached.  So what does Tom do?  He writes another post on his BayWords account, this being the fifth post of the month of him hacking into various websites.</p>
+
+<p>On December 15, 2009 Tom posts to his blog saying that heâs taken 32 million accounts from the rockyou.com website.  He shows us a little snippet of what he took then he even taunts RockYou by saying donât lie to your customers or Iâll post everything.  Someone saw this BayWords post and tweeted, tipping off a few news outlets of the breach.  TechCrunch was the first report on it saying that 32 million user records were stolen from rockyou.com and urges the readers to change their password immediately.  The journalist posted this right away and then examined the snippets from Tomâs dump closer and saw something else.  RockYou had been storing the user passwords in clear text.  What Tom posted a snippet of wasnât a hash of the userâs password; it was the actual passwords.  He only posted about 24 user details and he slightly obscured the password but still, what Tom had was 32 million usernames with their password.  This was a huge lack of security on RockYou.  Storing user passwords in clear text is a terrible idea.</p>
+
+<p>You might think oh, well, itâs 2009.  Times were different then.  But the Linux operating system had been already hashing their passwords for ten years by then, so it was not a fringe idea to hash passwords.  The thing is we all reuse passwords, especially back in 2009, so these passwords might also work on the userâs e-mail, social media, and banking logins.  Tom even wondered what percent of these people have PayPal accounts and if the password would work there, too.  If he just took ten dollars from each of those accounts heâd probably have a lot of money.  But something even more shocking was shown in the small snippet Tom posted.  Not only was RockYou storing logins to their own site but they were also storing the login and usernames for social media sites, too.  Because if you wanted to use a RockYou MySpace app, youâd have to log into both MySpace and RockYou to use it.</p>
+
+<p>RockYou would capture these MySpace logins and store them on their own site again in clear text, not encrypted, not hashed, not secure at all.  Tech Crunch saw this, posted a second article, and they reached out to RockYou asking when theyâre going to tell their customers of this breach.  Within 24 hours of Tech Crunch writing the article, RockYou did send a notification to its customers saying there had been a breach and that a person took usernames and passwords.  They didnât say anything about the social media usernames and passwords and they didnât mention the passwords were stored in clear text but they did make sure to say several times that they take security and privacy very seriously.  News of this breach spread fast.  RockYou was a popular site and in fact by that time in 2009, this was around the fifth biggest breach of all time.  32 million records was a lot so this was big news.  Tom looked through the 32 million username and password records and he had wondered what he should do with it.</p>
+
+<p>He liked looking at what passwords people were using.  A lot were just their first name or band name they like.  This fascinated Tom and he kept looking at peopleâs password choices.  Of course, a lot of them were really bad since the minimum length had to be five characters and no special characters were even allowed.  Tom thought if heâs finding this interesting, maybe other people would find this interesting, too.  He extracted only the passwords out of the dump, all 32 million of them, and put them in a text file.  There were no usernames, no e-mail addresses, just 32 million passwords.  He posted this to RapidShare, a popular file sharing site, and he told a few people in a hacker forum about it.  Amichai noticed this and grabbed a copy of the password list because this could be really interesting.</p>
+
+<p>AMICHAI:	I think [00:25:00] at least for me, the first time that we saw that many passwords in single file and said okay, what can we do with it?</p>
+
+<p>JACK:	[MUSIC]  When the password list got in the wild, some news sites reached out to Imperva for another comment but for Amichai to go through 32 million passwords was going to take a long time.</p>
+
+<p>AMICHAI:	I have to say our PR agency was not happy about it because I told them itâs going to take time and weâre not going to have a comment on this in two hours.  It will take us at least a week to process the file and understand what we can find and learn from it.  They were not happy to begin with.</p>
+
+<p>JACK:	This got downloaded by many other hackers really quick.  This was hot stuff.  Like I said, this was around the fifth largest breach at the time and since these passwords were in clear text, this was an amazing data set of words to try when cracking passwords.  Previously there were simple dictionary words lists but now this is a massive list of actual passwords people are using.  The RapidShare link didnât stay up long.  It was taken down pretty quick and it didnât matter; the password list got out in the wild and at that point started getting shared and spread among many hackers and security professionals online.  Amichai and Imperva started making sense of the password list.  They looked at what were the most commonly-used passwords on the list.  Here, Iâll read them to you.  Each one of these passwords Iâm about to read has at least ten thousand people each who use this password.</p>
+
+<ol>
+  <li>290,000 people used that password.  12345. 123456789.  Password.  I love you.  Princess.  1234567.  RockYou.  Yeah, 20,000 people used RockYou as their password.  12345678abc123.  Nicole.  Daniel.  Babygirl.  Monkey.  Lovely.  Jessica.  654321.  Michael.  Ashley.  Cordy.  111111000000.  Michelle.  Tigger.  Sunshine.  Chocolate.  Password with a number 1 at the end.  Ah, very clever.  Only 11,000 people thought of that one.  Soccer.  Anthony.  Friends.  Butterfly.  Purple.  Angel.  Jordan.</li>
+</ol>
+
+<p>AMICHAI:	This was an eye-opener for us.  When you got that large proportion of entries that corresponded to a relatively small number of unique passwords, that was like an ah-ha moment for us.</p>
+
+<p>JACK:	[MUSIC]  This was incredible data.  It was such a rare glimpse into what passwords people are actually using in the real word on a massive scale.  Nothing like this had ever been seen before.  Amichai found that if you take the top five thousand most frequently used passwords you could crack 20% of all passwords.</p>
+
+<p>AMICHAI:	Thatâs a huge thing because it changed the way that we were thinking about credential theft attacks or what would attackers do with this kind of file.</p>
+
+<p>JACK:	Or put it another way; if I wanted to get into a single userâs account not on RockYou but on any site, Facebook, Gmail, a bank, if I try each of those top five thousand passwords, I have a 20% chance of getting into that single account.</p>
+
+<p>AMICHAI:	Exactly.  Either way you look at it, you understand that relying on the fact that attackers will use high-volume, noisy, brute force attack against every possible password is not the way to protect attacks.  I do think that once we understood that it was actually easier for us to really detect more attacks than we thought were in the wild.  Again, I think that this publication with the large number ignited the whole discussion about password strength.</p>
+
+<p>JACK:	As you can see, this was a goldmine for hackers to have.  With a password set like this, the likelihood of them hacking other accounts significantly went up.  Hackers were able to use this password list to get into many accounts after this but at the same time it gave defenders the ability to know how to detect such an attack.  Because now we know attackers really donât need to try millions of potential passwords.  They could just try the top five thousand, or maybe the top thousand, or the top five hundred, or even the top five and still have a percent chance of getting in.</p>
+
+<p>AMICHAI:	When we came up with the report almost two weeks after the incident, it turned out that New York Times showed a lot of interest.  [00:30:00] It got us much, much more publicity.  PR people were not that mad at the time.</p>
+
+<p>JACK:	[MUSIC] This article actually hit the front page of New York Times and it said, âIf your password is still 123456 it might as well be Hack Me.â  RockYou sent more notifications to its customers outlining certain steps theyâre taking to ensure security going forward.  They started hashing their passwords after that, too.  But this breached caused them major loss of customers.  Many people were deleting their accounts and avoided using their apps.  Their growth and climb to success had stalled and was actually detracting.  About a year after the breach RockYou announced a massive amount of layoffs.  Many people were let go as the company restructured its resources.  The co-founder himself stepped down from his position as CEO.  RockYou was determined to recover though, and rise up again.  One of their arch rivals was bought out by Google and RockYou had gotten even more funding from venture capitalists.  They used it to buy up a few small-time video game studios and continued to create apps for social media.  By another strange turn of events, this hack was mainstream enough that it was actually a question in a game show.</p>
+
+<p>HOST:	All right, youâve got one million dollars.  Iâve got seven questions.  Letâs play the Million Dollar Money Drop.  [APPLAUSE]</p>
+
+<p>JACK:	Fox created a game show called Million Dollar Money Drop.  A husband and wife couple is asked some trivia questions and they have a chance to make a million dollars.  One couple was doing really well and had worked their way up.  If they could answer this next question correctly, they would win $580,000.</p>
+
+<p>HOST:	Letâs take a look at the questions.</p>
+
+<p>AMICHAI:	[BACKGROUND TALKING]  It was something like âIn the Imperva report what was the most common password?â  Something like that.</p>
+
+<p>HOST:	Sixty seconds.  The clock has started.</p>
+
+<p>JACK:	Okay, pop quiz.  Letâs see if youâre listening.  Do you remember the most common password I mentioned a few minutes ago?  Here are the answers to pick from: I love you, password, and 1233456.</p>
+
+<p>WIFE:	No!  Oh no!</p>
+
+<p>AMICHAI:	The contestants, they got the answer wrong.</p>
+
+<p>JACK:	They put all their money on password but the right answer was 123456.  They ended up losing $580,000.</p>
+
+<p>AMICHAI: 	Then six months later the contestants sued the broadcasting company because they claimed it was a tricky question.</p>
+
+<p>JACK:	They were claiming that the way the question was worded seemed like they were asking whatâs the most common password, and they didnât know the report only covered the RockYou database.  Which I have to admit is a really weird question even for me, who follows security.  To mention a specific security report by name?  Whoâs going to know whatâs in that report off the top of their head?  Strangely enough this game show had another lawsuit against them on a different episode.  The contestants had an $800,000 question but got it wrong and then when they went home they looked it up and found they were actually right.  They sued the game show which admitted they made a mistake and invited them back on to compete again.  But neither of these contestants got anything for suing the game show because Fox cancelled the entire game show a year after it debuted.  [MUSIC] A couple class actions lawsuits sprang up against RockYou, one in Indiana and the other in California.</p>
+
+<p>The California one went on to court and RockYou asked the judge to dismiss it entirely.  RockYou was claiming that while the customerâs data was stolen, the customers couldnât provide any evidence showing that this had caused them any harm.  This is what a lot of class action lawsuits come down to after a breach; whether thereâs any identifiable damage done to the customers or not.  But the judge disagreed with RockYou and didnât dismiss the case.  The judge said that while there wasnât any visible harm done to customers, there was an unidentifiable amount of harm done.  The victims felt violated by having their private information exposed like that.  To the judge, that was enough.  RockYou settled this class action lawsuit by paying the plaintiffs $2,000 and also covering their lawyer fees.  While it seems like a small amount, it kind of changed the way lawsuits were handled after this.  Simply by having your personal identifying information stolen is now worth some money.  Itâs kind of a warning to other online companies.</p>
+
+<p>After that lawsuit was over, the Federal Trade Commission had a few things to add.  The FTC investigated the breach and found that RockYou had stored almost 180,000 childrenâs records, too.  These are people who are under thirteen that had accounts on RockYouâs website.  When handling the childrenâs data, extra security precautions have to take place which fall under The Childrenâs Online Privacy Protection Act.  The FTC determined that RockYou had known that children were users on the site and they didnât protect their data which put them in violation of these rules.  Specifically, the rules they broke were not obtaining parentâs permission before registering them to the site, and not protecting the confidentiality and security of personal identifiable information of children.  Because they violated these rules, the FTC fined RockYou $250,000.</p>
+
+<p>Not only that, they demanded RockYou delete all information relating to children under thirteen, but they also must undergo security audits from a third party [00:35:00] every other year for the next twenty years.  Violating any of this will cause even more fines.  RockYou continued to build up its reputation.  They purchased more game studios and made more apps after that.  They hired more key people and had some fairly successful games but something about their business model didnât work as well as theyâd hope.  They struggled to keep things going and had some internal failures.  I started researching this story earlier this year.  I went to rockyou.comâs website last month to check it out.  It looked sharp, hip, trendy, and they were talking about their future.  About eight months ago they got another ten million dollars in funding and they just acquired a company called Mom.me in January.  They were announcing theyâre going to upgrade their servers in the next coming weeks.</p>
+
+<p>It looked like good things were ahead for RockYou but a few weeks ago I went back to the website and it was totally down.  [MUSIC]  Itâs been down for three weeks now. If you try to go to rockyou.com right now it says Error Connection Reset.  This is odd because the site was just there last month.  I turned to look for their Twitter account and itâs been deleted.  Their Facebook page is also gone.  Itâs like their entire company vanished right in front of my eyes.  I did some research and I found whatâs going on.  On February 13th, 2019 RockYou filed Chapter Seven bankruptcy in New York State.  They seemed to have quietly closed up shop.  Itâs really weird because thereâs just no mention of this in any tech publications or new sites at all.  But from the looks of it they may be gone forever.  I donât know why the company had done so poorly in the last ten years since this breach so Iâm gonna guess there were a series of other problems they faced and they just couldnât overcome, perhaps a few bad investments or poor leadership decisions.</p>
+
+<p>It looks like they were running some poker and bingo games that paid out with real money but a lot of people never got paid and got mad the site shut down while owing them money.  It even says in the bankruptcy documents that thereâs over $500,000 in unpaid customer winnings.  What happened to Tom, you might ask?  I donât know.  After he posted this RockYou breach data he kept blogging for a few more days after that.  Then he did an interview with a news outlet and then disappeared, seemingly forever.  We donât even know his name.  He went by IGIGI on his blog post and Tom is just a name the New York Times gave him.  Thereâs never any news of him getting caught or facing charges.  Tom said in the interview, âTheyâre now hunting for me but why?  I didnât do anything wrong.  They should now be in jail because they put all those people at risk.  What I did was just for illustration.â  Tom wants us to think about who the real villain is here.  He thinks it wasnât him.  RockYou thinks it wasnât them.  Can you be the victim and the villain at the same time?  These are good questions.  I asked Troy Hunt what he thought of the punishment that RockYou got from this.</p>
+
+<p>TROY:	Itâs an interesting question because for me, particularly around things like class actions, thereâs always this question of impact.  If weâre talking about individuals out there that have taken part in a class action, I guess I would like to assume that in order for there to be retribution from a company there needs to have been some sort of damages.  The hesitation I have with RockYou is that when weâre just talking about a whole heap of passwords not associated to individuals floating around, itâs probably very hard to draw that back and say oh, I had my identity stolen because of RockYou.</p>
+
+<p>Well, the only way that really makes sense is if youâre using that same password everywhere and someone guessed what it was.  Iâm a little bit hesitant on the class action side of thing unless thereâs a really clear line of attribution back to the original incident.  Iâm more supportive of regulatory penalties where we have someone like the FTC being able to say look, you guys just simply didnât do enough to protect your customers.  Weâre going to ping you at that level.  Iâm more supportive of that.  If Iâm honest, Iâd like to say it happened a lot more.</p>
+
+<p>JACK:	This data breach changed the way we think about password cracking even today.</p>
+
+<p>TROY:	RockYou has sort of been one of those canonical sets of data that people have had for many, many years.  I guess the interesting thing is now, a decade on, we know that people are still using the same sorts of passwords that they were back then, as well.  The long-term value of RockYou is still there.</p>
+
+<p>JACK:	For years the data Tom posted was the very best password list you could use when cracking passwords.  In fact, it became so good and passed around so much that it became included in many popular hacking programs and OSâs.  Even today Kali Linux, a popular hacking operation system, comes with the RockYou password list on it by default.  You can find it right there in the user share words list directory.  Iâve personally used this words list to crack many passwords in my time.  Now, I know where it came from.  Bye, Tom. Thanks for all the cracked passwords.</p>
+
+<p>JACK (OUTRO):	[OUTRO MUSIC]  Youâve been listening to Darknet Diaries.  A big thanks goes to Amichai Shulman.  The company he helped start, Imperva, was just [00:40:00] acquired a month ago for 2.1 billion dollars but Amichai left the company just before this acquisition.  Another big thanks goes to Troy Hunt.  He recommends to use a unique, complex password for every website you visit and to check haveibeenpwned.com to see if your e-mail has been seen in a breach.  For show notes and links check out darknetdiaries.com.  Please tell your friends about this show.  It always really makes my day when I hear you do that.  This show is made by me, the dark spark, Jack Rhysider.  Theme music is made by the hashed and salted Breakmaster Cylinder.  Look for a new episode in two weeks.</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+<p>Transcription performed by Leah Hervoly
+www.leahtranscribes.com</p>
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

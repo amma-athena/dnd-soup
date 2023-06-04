@@ -1,0 +1,717 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>Arya â Darknet Diaries</title>
+	<meta name="description" content="Arya Ebrahami has had quite a personal relationship with darknet marketplaces. In this episode youâll hear about his adventures on tor.">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Arya â Darknet Diaries">  
+	<meta name="twitter:description" content="Arya Ebrahami has had quite a personal relationship with darknet marketplaces. In this episode youâll hear about his adventures on tor.">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/darkwork.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/104/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Arya â Darknet Diaries" />
+	<meta property="og:description"        content="Arya Ebrahami has had quite a personal relationship with darknet marketplaces. In this episode youâll hear about his adventures on tor." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/darkwork.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/104/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/darkwork.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/104/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="Arya â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/darkwork.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 104: Arya</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://www.podtrac.com/pts/redirect.mp3/traffic.megaphone.fm/ADV6801308101.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/104/",
+			   "title": "Ep 104: Arya"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/104">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[START OF RECORDING]</p>
+
+<p>JACK:	[MUSIC] Hello.  This is an episode about darknet marketplaces, and it has swear words and it talks about drugs throughout the whole episode.  It might not be appropriate for some audiences, so consider this a content warning.  Also, I highly recommend that you listen to Episode 24 first.  Itâs called Operation Bayonet and it goes into depth of what darknet marketplace are, like AlphaBay, and thereâs some overlap between this episode and that one, and itâs just good to have a strong reference point of the whole scene before getting into this one.  Okay, with that housekeeping out of the way, letâs get into the episode.
+<!--more-->
+(INTRO):	[INTRO MUSIC] These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	In this episode, weâll hear a story from Arya Ebrahami.  Arya is no stranger to trouble.</p>
+
+<p>ARYA:	So, I had been getting in trouble my entire life, man.  Just like, disciplinary issues since I was a kid; bringing knives to school in elementary.  I got expelled.  By the time ninth grade came around, they finally let me back into my countyâs public school.  I messed that up; I brought weed to school.  Obviously schools have a zero-tolerance policy for drugs, so I got expelled again, andâ¦</p>
+
+<p>JACK:	How old were you then?</p>
+
+<p>ARYA:	I was fourteen at the time, in ninth grade.</p>
+
+<p>JACK:	How did you get weed when you were fourteen?</p>
+
+<p>ARYA:	Honestly, you know what?  I do remember, actually.  I visited my sister when she was in college and that was the first time I smoked weed.  I was actually twelve years old then.</p>
+
+<p>JACK:	Now, of course, his parents werenât happy that he was expelled from school for drugs.  They had big dreams of what Arya may become, and wanted him to succeed.</p>
+
+<p>ARYA:	Yeah, dude.  You know, itâs the Middle Eastern dream.  Itâs like, you could have been professional doctor, you could have been professional lawyer, you could have been policeman, but no; you want to be professional felony.  Iâm like, you mean felon?  But yeah, man.  Itâs a lot of high hopes being from a Middle Eastern family.</p>
+
+<p>JACK:	His parents immigrated to the US before he was born and did pretty well for themselves.</p>
+
+<p>ARYA:	They came from Iran.  My dad came here in â87, I believe.  My mom came here in â93.  Yeah, so, full citizens now, though; just a disclaimer.</p>
+
+<p>JACK:	Arya lived at home with his mother and father in Virginia, not too far from Washington, DC.  But the school would not let him come back after this whole weed incident at all.  He was permanently expelled.  His parents found him a remote learning academy where he could take courses online, so he did that for his tenth grade year.</p>
+
+<p>ARYA:	Eleventh grade, I got accepted into a Christian school.  No other school would accept me, which is when everything started, pretty much.  Thatâs when the whole crime spree started.</p>
+
+<p>JACK:	[MUSIC] The crime spree started when he wanted to buy a fake ID.</p>
+
+<p>ARYA:	I just want things that I canât have, so thatâs originally why I started getting the fake IDs.  At the same time, man, I think a part of me wanted to feel accepted.  I was so left out of so much shit and I just kept getting in trouble.  I just â I was looking for a home.  I needed friends and I just wanted to fit in, you know?  I wanted people to like me.  I wanted to be the cool kid, you know?  I can get the alcohol for the parties and whatnot.  So, thatâs originally what had me start my venture searching for fakes.</p>
+
+<p>JACK:	He goes online, finds a few websites in China that are selling fake IDs.  He sends them money but gets nothing back.  He was scammed three times trying to buy fake IDs this way.</p>
+
+<p>ARYA:	Iâm pretty sure it was the same asshole that got me every single time.  Thatâs the worst part about it.  But Iâm sending money, man.  After the third time of getting scammed, I was like fuck this, dude.  Why donât I just learn how to make them?</p>
+
+<p>JACK:	So, he goes online to try to figure out how to make a fake ID himself, and he finds this website called reallygoodfakes.com.</p>
+
+<p>ARYA:	On their homepage they had a video of them making a New York drivers license, like their step-by-step type thing to show weâre not scammers.  So, Iâm watching this video, Iâm taking note of everything I can in this video; Iâm looking at the printers theyâre using, the type of papers theyâre using, Iâm looking at their template.  Iâm like okay, so, I have everything, I have all the equipment.  I know what I need to get.  Now, how do I get this template so I can print these fakes?  I can just edit it in Photoshop.  So, I started going on Google.</p>
+
+<p>JACK:	He eventually finds a website that had a bunch of Photoshop files of different state drivers licenses.  These were the templates where he could just insert the photo of a person, change the name, and hit Print.  This is what he was looking for, but the only state he knew how to make was New York, since thatâs what that website taught him how to make.</p>
+
+<p>ARYA:	So, I told a couple of friends.  I remember at the time I was in â I was â this was tenth grade going into eleventh grade, so this is like, summer of 2012.  So, I asked my older friends who are already eighteen, and Iâm like hey guys, get me some startup money.  Iâll make you some fakes.  [MUSIC] So, this is the funniest part.  So, I get four friends.  My friend gets four of his friends; they all invest like, twenty-five bucks into me.  I go to Staples and I buy the shittiest printer you can find.  Itâs not even the one that was in the video.  I buy a shitty printer, I buy computer paper, and I buy lamination from Staples.  Everything from Staples.</p>
+
+<p>I come home and I download the template, I downloaded Photoshop, I edit it, and I printed out a New York template with the name edited and my friendsâ pictures on there.  Iâve printed it out â I cut it out with scissors because I didnât have a card-cutter at the time.  I didnât have enough money.  This is just like the start.  I had no startup money.  So, Iâm trying as best as I can to carefully cut the ID off the computer paper.  The final result was the worst, shittiest, lowest-quality New York fake ID you can find.  So, I give them to my friends.  I held up my part of the bargain which is in exchange for your investment, Iâll make you guys fakes.  These are the type of fakes that you canât take out of your wallet.  You kinda just slap it in the cashierâs face.  Like, you see it, you see it, you see it.  It worked though, man.  It worked.</p>
+
+<p>JACK:	It worked for what?  What did your friends buy?</p>
+
+<p>ARYA:	They ended up going â they had Beach Week, actually.  They would text me while they were there, like, it worked.  Iâm like, thereâs no fucking way in hell that shit worked.  Iâm using an Inkjet printer, man, on computer paper with clear lamination thatâs like, 1 mm thick.  Thereâs no way this worked.  These IDs donât scan.  They have barcodes on them; god knows what the barcodes say or what theyâre encoded with, because I wasnât encoding the bar codes at the time.  They had no UV holograms.  They had no holograms, period.  They just worked, though.</p>
+
+<p>JACK:	Soon after that, people in his town knew that Arya could hook you up with a fake ID.  So, he makes some more and sells them to people around town.  This gives him more money to buy the right equipment, so he reinvests in this illicit fake ID company; buying a better printer, the right kind of lamination, and he even gets the barcode to actually scan if someone were to scan it.  Which, by the way, the barcode data is just whatâs on the card itself, so itâs possible to generate it yourself.</p>
+
+<p>ARYA:	So, I got this â I got everything down.  Now I have to figure out how to get the UV holograms, like the holograms that show up when you put it under a black light.</p>
+
+<p>JACK:	Not a problem for a resourceful sixteen-year-old kid.  A few Google searches shows him exactly where to buy the UV ink and printer.  He orders it from his phone while in first period class, and gets it shipped to his house.  When it gets there, he prints a new ID with the UV ink.</p>
+
+<p>ARYA:	So, I run it under my black light, man, and when that fucking hologram popped up on there that was invisible to the naked eye, when I saw it, I was like dude, these things are fucking official.  Itâs a go.  Itâs go-time now.</p>
+
+<p>JACK:	These IDs werenât perfect, but they were pretty good.  So now, it was time to start selling them.</p>
+
+<p>ARYA:	So, the original goal was to just do it locally.  I had met somebody on Xbox though, many years ago, three years prior to all of this, in 2010.  This person is â he was really good with web development, you know?  So, I had reached out to him and I was like dude, can you make a website?  Can you make me a website?  Yeah, he ended up doing just that.</p>
+
+<p>JACK:	[MUSIC] To advertise his website, Arya decided to use YouTube.  Specifically, he would go into the comment section of YouTube videos that he thinks maybe his customers would watch, and then he would post a link to his fake ID website.  Now, the funny thing here is that Arya used a YouTube account which had his real name on it, because he was just sixteen and just didnât think it through enough.  But pasting links to his website all over YouTube was actually working.  People were coming to his website and buying fake IDs.</p>
+
+<p>ARYA:	At the time, because Bitcoin was not really that big yet, which didnât happen for years later, I was only accepting Green Dot money pack codes.</p>
+
+<p>JACK:	This is a way to send money to any prepaid debit card, and itâs mostly anonymous since you can buy the card in a store with cash, and you just need to send the code thatâs on the back of the card to someone in order to give them money.  This was going well.  Not huge, but it was bringing in more money to buy even better equipment with, which allowed him to expand and make other states.  Illinois was the next state he started making and selling IDs for.  Month after month, he continues this process into 2013.  He keeps posting links in the YouTube comments to his site, and word-of-mouth is helping it grow, too.</p>
+
+<p>ARYA:	So, that goes on, man, and everythingâs all good.  Everythingâs good.  Iâm making a lot of money at this point.  Iâm probably raking in like, a thousand bucks a week.</p>
+
+<p>JACK:	Heâd get somewhere between three to ten orders a day, and then come home from school and spend a few hours every day creating these fake IDs.</p>
+
+<p>ARYA:	So, Iâd spend a couple hours a day, every day, after I came home from school.  My room smelled like burning plastic.  My parents obviously ended up smelling it and they would see it.  They would come in, man, they would see this, and they were just so disappointed but they know at this point they canât tell me anything because Iâm making enough money for me to move out.  I donât think they wanted that.</p>
+
+<p>JACK:	He was getting all kinds of weird orders, too, so he had to start making some rules on who he would sell fake IDs to.</p>
+
+<p>ARYA:	The original thing was that we would not sell to anybody that was over twenty-one or that looked over twenty-one, because my entire thought was why would people who are over twenty-one need IDs unless it was for fraud or terrorism, or something serious?  I also had a rule that if you looked too young, I wouldnât give you a fake ID.  Iâd just deny your order.  I actually stuck to that, man.  Believe it or not, I really stuck to that, because I didnât believe in â like, if youâre fifteen, I think thatâs too young to be going to try to buy alcohol.  You could really get hurt.  I donât know, I had some sort of conscience at the time.  If you looked over â too old, Iâm like, why do you need a fake?  That doesnât make sense to me.  So, any time someone looked any â the only people I would approve were the ones that looked anywhere between seventeen to twenty.  Iâd use my best judgement and based off that, Iâd make their order.</p>
+
+<p>JACK:	Things were going good.  Months go by and the business continued to grow.  He had saved up almost $10,000 by May.  But then something happened which ruined everything.  One day, he went on one of the fake ID forums and saw that someone doxxed him.  [MUSIC] They posted his picture and name and address for anyone to see.</p>
+
+<p>ARYA:	They put it out all over the internet; noveltyidstore.com is a scam run by Arya Ebrahami.  It was just â it was bad, man.  I got doxxed and we shut down the website.  I was like dude, I was so sloppy with this.  People canât know.</p>
+
+<p>JACK:	Itâs kinda funny; he called his website Novelty ID Store, which I think was a veiled attempt at trying to make it look like it was a legal site, but it really wasnât.  Manufacturing fake IDs is highly illegal, and now his real name and address is out there tied to it and exposed to the public.  He thought for a while, who would do this to him?  He determined it must have been a competitor fake ID website.</p>
+
+<p>ARYA:	It was a guy named Delaware Fakes.  He was a whole separate company.  I had actually tried making an order from them the year prior to me learning how to make fakes, and I had gotten scammed by them, too.  But they still had my order information and my picture, so they were the first people to dox me.</p>
+
+<p>JACK:	So, he shut down that website and was done.  This actually scared him.  He knew this was illegal and didnât want to get caught, so he distanced himself from this.  But man, he looked at that money he made from this and it was nice, really nice.  He had all this equipment and knew how to make fake IDs pretty well at this point.  So maybe thereâs another way to sell fake IDs.  Thatâs when he stumbled onto Silk Road, a darknet marketplace which primarily sold drugs on it, but also had some fake IDs for sale there, too.  He decided to make a vendor account on Silk Road to sell fake IDs.</p>
+
+<p>ARYA:	There was only two of us.  There was two vendors on Silk Road for fake IDs.  So, there was Ted Danzig and then there was me.  I offered Illinois and he offered Ohio.</p>
+
+<p>JACK:	So, Arya jumped in and started listing his fake-ID-making service on the site.  His vendor name there was Oracle, and the price was $150 per fake ID.</p>
+
+<p>ARYA:	Man, let me tell you, dude; that â I got more business from Silk Road 1 than I had ever gotten from my website.  It was insane.  It was just ludicrous.  So, what used to be two hours I spent a day became literally every waking hour Iâd come home from school until I went to sleep â was making fake IDs.  I am now seventeen years old and Iâm making like, $10,000 a month.  It was just â it was disgusting.  Iâm getting paid in Bitcoin, dude.  Iâm literally getting paid in Bitcoin.  Iâm getting paid like â I ended up â my wallet, at the height of it all, the most I had at one time was like, 234.</p>
+
+<p>JACK:	In 2013, the price for one Bitcoin was about $100, so his 234 Bitcoins was worth about $23,000.  Now, keep in mind, heâs still in high school at this time, so heâs living sort of a double life.</p>
+
+<p>ARYA:	[MUSIC] The double life was being a church boy on the surface when I was going to this Christian school, and then coming home and hammering out a hundred fake IDs.  That year, actually, I started using Adderall.  So, Iâd take my Adderall in the morning time, Iâd go to this Christian school, and it was under control for a little while.  Iâd come home from school and get on the dark web, start punching out IDs, and yeah.</p>
+
+<p>JACK:	Adderall is typically prescribed to people with ADHD, but because it creates dopamine and serotonin in the brain, people take it to get euphoric feelings.  Youâve got to be careful with this stuff though, because if your body relies on drugs to produce dopamine, it might forget how to naturally do that itself, which is what causes addiction.  Arya tried to keep it under control and only took one pill a day.  This helped him stay on top of all the work he needed to do.  He took Adderall all through his high school years.  Arya was now seventeen years old and his opsec was not that great.  This means he didnât have the best security in mind when he was running this business on a darknet marketplace.  Like, he would use his own handwriting to hand-write the labels of all the envelopes that got shipped out, and his fingerprints were all over these packages.  He made up a street as a return address, but he still used his same city and zip code on it.  At this point, he was getting so many orders that he just stopped having any rules on who could get an ID and who couldnât.</p>
+
+<p>ARYA:	On Silk Road, I didnât give a fuck.  I wasnât even â I like, threw that rule out the window.  I just wasnât paying attention anymore.  I made every order that came in on Silk Road.  I made it and I sent it.</p>
+
+<p>JACK:	Now, you might be wondering, how bad could it be if someone buys a fake ID?  Well, thereâs a lot of criminal activity you can do with a fake ID, and not just buying alcohol or cigarettes.  [MUSIC] Thereâs one story about a teenager who bought a fake ID from Ted Danzig off of Silk Road and then used it illegally to buy a firearm, and then used that firearm to shoot and kill a police officer.  Fake IDs are used a lot by carders, too; people who steal credit cards and need to cash out on them.  Theyâll call Western Union and use their stolen credit card to send money to their fake name and fake ID, and then go pick up the stolen cash using the fake ID.  In fact, Arya was making his own fake IDs to go pick up payments from Western Union, too.</p>
+
+<p>ARYA:	One of my payment options later on in a different website was accepting Western Union, and I had like, ten different fake IDs.  I would go all throughout the Northern Virginia area to pick up the money, which was another huge opsec issue, because here I am picking up the money.  My face is on camera, so all the feds have to do is make a fake order for themselves, see where the money was picked up, and then look at the camera, and there I am, smiling right there, waving at them.</p>
+
+<p>JACK:	So, he continues this operation all through the summer and into his senior year of high school.  He was making thousands of dollars doing this.</p>
+
+<p>ARYA:	I had made so much money, I didnât know what to do with it.  I would go to like, Chipotle, and every day after school, dude, they had â Iâd go to Chipotle or Five Guys and I would give the cashier like, two hundred bucks, and Iâd say, just pay for everyone until the money runs out.  I just â making so much, I was buying â I had everything I wanted.  Most of my money, man â my priorities have shifted now, but my money back then was spent on designer clothes and just â I bought this nine â my fan is actually on right now.  I think it was my first big purchase.  It was a $900 fan, a Dyson fan thatâs like a bladeless â you know, the ones that donât have blades in them.  The air just kinda comes out of the side.  Itâs blowing on me right now.  Iâm looking at this thing like dude, youâre my first big purchase.  Nine hundred bucks on a fucking fan.  Like, why?</p>
+
+<p>JACK:	He was driving a Mercedes at the time, but he didnât pay for it.</p>
+
+<p>ARYA:	Yeah it was a C240 and I got that summer of 2013.  Our neighbor was actually selling it for like, $8,000 and it only had like, 40,000 miles on it.  As a gift for me getting my license, my parents got me a car, I guess.</p>
+
+<p>JACK:	Things were going way better than expected for Arya.  No need to expand or do more since heâs barely able to keep up with the orders that are coming in.  But then, on October 2nd, 2013, everything came crashing down.  The FBI arrested the owner of Silk Road [MUSIC] and seized the site.</p>
+
+<p>ARYA:	My mom had picked me up from school that day.  I used to access Silk Road from Tor on my phone all the time, all day throughout school so I can get myself excited, so like, when I get out of school, I can make these IDs or whatever and see how much money I got today.  We went out to eat and I remember getting on my phone while we were eating and I saw the banner, like, the âThis site â this hidden service has been seized.â  Bitcoin at the time, I think it was like $101 or something like that.  It was so low, dude.  It was in the low hundreds.  I went to check my Coinbase accountâ¦</p>
+
+<p>JACK:	Coinbase is a website used to convert Bitcoin into US dollars.</p>
+
+<p>ARYA:	â¦Bitcoin had dropped from like, $101 to $93.  Iâm freaking out âcause I got 234 of them.  Iâm like fuck, fuck.  Dude, I gotta sell right now.  Itâs over for me.  Iâm gonna be broke.  So, I sold all of my Bitcoin, dude.  Literally all of it for like, $23,000.  234 Bitcoin for 23k.</p>
+
+<p>JACK:	Criminals back then would use Bitcoin as a way to accept and send payments anonymously.  It was more convenient than Western Union or Green Dot money packs.  But little did they know that Bitcoin was going to grow from $100 per coin to over $50,000 per coin in the next eight years.  But when Silk Road was taken down, Aryaâs fake ID business came to a complete halt.  He suddenly went from having tons of orders to fill to zero.  But by this point, he had developed a bit of a habit of spending money, a lot, and this didnât slow down his spending spree.</p>
+
+<p>ARYA:	I would get a $20 meal at a Hibachi restaurant, and â but I left a $300 tip on a $28 meal.  The manager came over and I had to sign papers though, to leave tips this big.  So, I knew at the time, dude, I was like Iâm gonna burn through this money fast.  So, I reached back out to my friend who was a developer, like the web developer.  I was like dude, itâs time to launch a new website.  So, we did that.  He made a new website and that launched in late 2013.  That website blew up fast because everyone knew who Oracle was from Silk Road.  Went to Reddit; I took it to Reddit, and this is when Redditâs fake IDs subreddit existed before it got banned.  I said hey everyone, itâs Oracle from Silk Road, veteran vendor from Silk Road.  Hereâs my Clearnet website.  That one was called noveltyids.co.  Noveltyids.co was the biggest website.</p>
+
+<p>I mean, the thing was, we were running the fake ID market.  I remember the first day we launched, dude; I had like, ten orders the first fucking day.  So, Iâm still in high school, right?  Iâm in twelfth grade.  Shit continues, going down the same path.  Iâm just spending all my time making fake IDs.  Eventually â that was probably late 2013.  By March or April I remember I was going on vacation.  I was going to the Virgin Islands and I had gotten doxxed.  Somebody doxxed Oracle and they tied it to me.  I was like oh, fuck.  This is not good.  Obviously what I do is deny it and continue business because as long as I deny it, itâs â thereâs no way to prove I am Oracle.  I donât know who did it, dude.  To this day, I donât know how the fuck my name got tied to Oracle, but it did.</p>
+
+<p>JACK:	Even though his name was now tied to his fake ID business, he still decided to keep it up and running.  I donât think he understood the risk he was taking with that decision though, but this is the double-edged sword that all illegal online vendors face; the more theyâre known, the more trusted they become and the more business they get.  But at the same time, it means the more attention is on them from the police or other online enemies.  Now that he was back to selling IDs on his own website, he lowered the price from $150 down to $100 per fake ID.  His website was picking up business and once again, every day after school, he was making fake IDs and sending them out.  [MUSIC] He was doing this so much that he was starting to get tired from doing it all the time.  He was buying the holograms from a vendor in China and over time, as he got to know this vendor, he discovered they were also making and selling fake IDs for US states and shipping them from China to the US.  So, Arya gets an idea.</p>
+
+<p>ARYA:	So, at this point, dude, itâs like â this is like, June of 2014.  I ask him; I reach out to him, like dude, can you give me some of your employees?  Iâm like, I canât do this every day.  Iâm getting tired at this point.  Iâve been making fake IDs for almost two years.  Itâs getting out of hand.  I donât have any time to do anything.  I have so many orders.  So, this guy gives me a couple of his employees, and I give them access to the admin panel.</p>
+
+<p>JACK:	He made a deal with this Chinese vendor that they would see the orders come in and make the fake IDs and then send them out to whoever bought them, and Arya would collect the money and then send them the cash to pay for their services for making these fake IDs.  He sort of outsourced this whole business.</p>
+
+<p>ARYA:	Now, at this point, Iâm just collecting money and Iâm not even making the IDs anymore.  Thereâs people in China who are making them.  They would download all the orders for that week, they would ship them out, they would send me my invoice, and Iâd go to Western Union and Iâd send them like, two, three, four, five, six grand a week.  Iâd also, at the same time, profit two, three, four, five, six grand for not doing shit, just pretty much facilitating these transactions.</p>
+
+<p>JACK:	Things were going great for him.  He had money to spend, a nice car, and a girlfriend that he was really in love with.  But he wasnât honest with her on where he was getting this money.</p>
+
+<p>ARYA:	I had been lying to her, dude, the whole time throughout our relationship.  She didnât know where I was getting all this money from, but she was there for all of it.  She saw the way we got to go out and eat, the way I was spending money, and I just told her; Iâm like, Iâm an investor in Bitcoin.  I trade Bitcoin.  This is what I do.  Like, the most fucking cliche thing you could say when youâre doing illegal activity, pretty much.</p>
+
+<p>JACK:	He even kept the printing equipment mostly hidden from her.</p>
+
+<p>ARYA:	Well, she saw them but she didnât know what they were âcause I never did anything in front of her, ever.  When she went to sleep, I would get on my computer and make the templates and all this stuff, but she never saw anything.  She saw it but she didnât know what it was.  You know?  [MUSIC] Weâre just naive, young teenagers.  But I came out to her one day, the day before I graduated high school, and I told her this is what I had been doing the whole time.  âCause I figured dude, if Iâm gonna marry this girl, I have to tell her, âcause thatâs what I wanted to do, was marry that girl.  So, I told her.  It crushed her.  It broke her heart.  We broke up, and I got really, really bad into Xanax.  I mean, bad, dude.  That destroy â it ruined my life.</p>
+
+<p>JACK:	Arya had been taking Adderall all through high school.</p>
+
+<p>ARYA:	It was under control.  Iâd take one a day, sometimes two.  When this breakup happened, I started taking 300mg of Adderall daily.  I mean, I was buying it online, I was buying multiple peopleâs entire scripts.  Like, friends who were getting thirty Adderalls, I would pay them three hundred bucks for their scripts.  Iâm just eating Adderall.  My friend had introduced me to Xanax because I had told him; I was like dude, I donât know how to go to sleep at nighttime.  I take so much.  Heâs like bro, have you tried Xanax?  So, now Iâm looking on the dark web to find Xanax.  I find it, and now Iâm taking literally 40mg of Xanax a day.  Iâd take a 30mg Adderall and then Iâd counterbalance that with a 2mg Xanax, but the shit that I was getting online was pressed, and they were advertised as 4mg.  So, it was just â it was disgusting, dude.</p>
+
+<p>JACK:	Now, Xanax is most commonly used to treat anxiety.  This is not always why people take it.</p>
+
+<p>ARYA:	It is not, dude.  So, humans, we need to have natural fear.  We have to.  It helps us dictate what we can and canât do.  If you take enough Xanax, man, that natural fear that keeps you safe from doing shit you shouldnât be doing âcause you know it can either hurt you or put you in jail or youâll end up somewhere bad, that voice of reasoning in your head is just gone.  I mean, it is literally gone.  Everything sounds like a good idea.  You think youâre invincible on this shit, dude.  So, here I am, just spiraling out of control.  Now Iâm ordering thousands of Xanax online.  I had friends, man, but they werenât making money like that.  I figured if I can get a thousand Xanax online for $1,000, I can charge my friend $2,000, and then he can go around and turn that into $5,000, you know?</p>
+
+<p>JACK:	Now, even though Silk Road was taken down, there were other darknet marketplaces up and running.  So, he was now a customer on some of these other websites, buying drugs off these darknet marketplaces.</p>
+
+<p>ARYA:	Any darknets that I can find a good price on, âcause they started popping up everywhere after Silk Road got taken down.  Agora was one of them.  So, Iâm buying all my friends these Xanax.  Now, dude, Iâm just so lost in the sauce that I stopped giving a fuck about the fake ID business.  I literally â Iâm like, just receiving orders.  Iâm not fulfilling them.  Iâm not sending them to the manufacturers to make them.  Iâm just literally â just gone.</p>
+
+<p>JACK:	He graduates high school and itâs now summer.  Heâs feeling crushed by this breakup still, and while the drugs help him feel better from it, he needed more drugs to keep feeling good all the time.  He just didnât feel like doing anything with the fake ID business anymore, but those orders kept coming in.</p>
+
+<p>ARYA:	Iâm behind probably like, $100,000 in orders and I just didnât care, dude.  I just did not care.  My life just â I thought there was no point in anything after I broke up with my girlfriend.  Late 2014, [MUSIC] this market called Nucleus popped up.  I donât know why, but I applied â I reached â this is when Nucleus first came out, and it ended up becoming the biggest darknet site at the time.  But I reached out to them and I was like, if you guys need a staff member, let me know whatâs up.  I go by Oracle.  I was a vendor for fake IDs on Silk Road.  They reached back out to me and I became staff on their website.</p>
+
+<p>JACK:	Whoa, Aryaâs journey through the dark web is interesting.  He started out as a vendor, then went to being a customer, now is part of the staff to help run the Nucleus darknet marketplace.  Stay with us because after the break, he gets even deeper into it all.  At this point, Arya had three streams of income; he was running a fake ID business, he was buying and selling Xanax, and now he was a moderator on the Nucleus darknet marketplace.</p>
+
+<p>ARYA:	I did support tickets, I handled their forum.</p>
+
+<p>JACK:	Now, Nucleus mostly had drugs for sale on their site.</p>
+
+<p>ARYA:	I mean, heroine, cocaine, Xanax, weed, shrooms, research chemicals, everything.  I think they were French, to be honest, dude, because their English was so bad.  They needed me to â and I was really good with my English, really good with punctuation, grammar, I knew where everything was supposed to be.  I had written up their entire website for them.  I had rewrote it so it made sense to the public.  Nucleus was paying â at the time it was a solid, flat rate of five Bitcoin a week.  Regardless of what the price was, every Sunday weâd get paid, and it would be directly deposited into our Nucleus account.</p>
+
+<p>JACK:	While he was doing this, he still was sort of doing the fake ID stuff, but he was very inconsistent.</p>
+
+<p>ARYA:	It was bad.  It was bad.  I would randomly fulfill orders.  Pretty much if you were lucky, you would get your ID, at this point.</p>
+
+<p>JACK:	So, for the next five or six months, this is what he did; a little bit doing fake IDs still, a little bit buying and selling Xanax, and a little bit of this forum moderation.  But his schedule was not consistent and was all over the place.</p>
+
+<p>ARYA:	It just depended on where the drugs took me that day.  [MUSIC] Iâd wake up â after being awake for three days straight binging Adderall and Xanax, Iâd wake up and Iâd literally just do what the drugs told me to do.  If they said moderate today, Iâd moderate and Iâd go ham on moderating.  If they said go out and be a drug dealer, go out and be a drug dealer.  If it said be a fucking fake ID kingpin, be a fake ID kingpin.  I had no sense of direction, dude.  I was literally lost in the sauce.  The drugs dictated every move I made.  Whatever feeling the Xanax gave me that day or the Adderall pushed me to do is what I did.</p>
+
+<p>JACK:	Of course, with the Adderall and Xanax coursing through his system, heâs on a roller coaster of feelings and experiences.</p>
+
+<p>ARYA:	In the moment, when the drugs first kick in, yeah, yeah, it felt great.  It felt like I got my shit together, Iâm doing it, Iâm making so much money.  But in reality, dude, from any businessmanâs perspective, itâs like dude, youâre a fucking mess.  You canât even stay focused on one task.  But in the moment it felt good, dude.  It felt great until you sober up and then you look at â dude, who am I?  Am I a Christian boy?  Am I a drug dealer?  Am I a fake ID kingpin?  What the fuck am I?  Am I a market moderator?  Am I a staff?  Dude, I had literally a personality crisis.  I didnât know who I was.</p>
+
+<p>JACK:	Somewhere in the back of his head, he knew all this was illegal, which added stress to it all, too.</p>
+
+<p>ARYA:	If you looked at me a year prior, I was this seventeen-year-old kid who was â only had a fake ID operation who was steady making money, who was taking drugs but had it under control, to somebody who was now involved in three or four different ventures, all of which can put you in prison for a very long time.  But then you combine them all together; itâs like wow, dude, you could really go to prison for a long time.  I had just become a whole different person, man.  I didnât even know who I was.  I couldnât even tell you.</p>
+
+<p>JACK:	He tried going to college to actually study cyber-security, and some days he was really into it and did really well.  But other days he wasnât at all, and just didnât go to class.  So, he ended up dropping out of college.  Back on Nucleus, the site was getting more popular, which meant Arya was getting busier.</p>
+
+<p>ARYA:	The admin refused to hire more people.  There was three of us and we had hundreds of thousands of users, and it was like dude, what the fuck, man?  I canât â this is not cool.  We need to have more support because weâre getting fifty disputes a day.  How the fuck do you think two people who have lives can manage to handle fifty disputes a day and hundreds of support tickets?</p>
+
+<p>JACK:	So, he looked around the darknet to see what other marketplaces were there, and maybe he could work for a different one.  He saw that AlphaBay was becoming one of the largest markets at the time, and this would be a step up for him.  He reached out to one of the moderators of AlphaBay, and they started talking.  He was asking if he could help do moderation.</p>
+
+<p>ARYA:	I told him I was a staff member at Nucleus and he told me that heâll talk to the team and see if he can get me hired there.  Sure enough, thatâs what happened.</p>
+
+<p>JACK:	They gave him access, and he was now part of the staff on AlphaBay, helping them run the site.  They were paying him in Bitcoin every week.</p>
+
+<p>ARYA:	Yeah, $800 in Bitcoin, which would get directly added to my balance on my account.  Every Sunday, I believe, or every â it was either every Friday or Sunday.  But youâd log in and youâd have eight hundred bucks in there.  That was the pay as a junior moderator.</p>
+
+<p>JACK:	So, now heâs doing moderation for AlphaBay, just like he was doing for Nucleus.</p>
+
+<p>ARYA:	Same exact thing as Nucleus.  Like, literally the same thing.</p>
+
+<p>JACK:	Often, he would handle disputes between customer and vendor.  The customer would buy something and not get it, and then open a dispute.  So, heâd have to ask the vendor hey, did you ship this yet?  Can you show proof that you did?  This is what he mainly focused on.  Okay, so I saw a Reddit thread just yesterday, I think it was, which was like, âStrip club DJs, what have you seen that youâre not telling us?â  So, now I want to ask you, darknet market moderator, what have you seen on there that would just blow our minds?</p>
+
+<p>ARYA:	I mean, Iâll tell you the one thing thatâs â the one thing that blew my mind was how much money the admin was making a day off commissions.  I do remember asking another moderator, how much is the site generating a day in commission?  Like, how much is the admin profiting?  This man told me the admin was making $40,000 a day.  Forty grand a day, dude.</p>
+
+<p>JACK:	Now, if you listen to Episode 24 of this podcast, called Operation Bayonet, it is all about AlphaBay, and we learn that the admin was a guy named Alex and that later we learn that he made tens of millions of dollars from running this place, which was all from commissions.  When somebody buys something on the site, a small percentage of that goes to the admin who ran the site.  Did you get to speak with the admin ever?</p>
+
+<p>ARYA:	All the time.  I would talk to admin on Jabber.</p>
+
+<p>JACK:	Jabber is a chat app which runs on the regular internet, which if you use the OTR plugin, it will encrypt your message end-to-end.  Arya would really only talk with AlphaBayâs admin for business purposes, like to reset a userâs password.  Now, his opsec was getting a little better by this point.  He was learning how to encrypt his hard drives and use Tails, [MUSIC] and he went by a new username on AlphaBay; 6pathsage, which hadnât ever been doxxed before, but there was still this trail of information with his fake ID business.  That site was doxxed a while back, but he didnât want to let that reputation go.  So, this wasnât good.</p>
+
+<p>ARYA:	Not only that; I wasnât tumbling my Bitcoin that I was getting paid for from AlphaBay.  I wasnât even trying to.  I was doing the same thing I was doing with Silk Road, which was sending it to a Coinbase account and cashing out.</p>
+
+<p>JACK:	The reason why this is an issue is because if the feds knew his Bitcoin address, they could issue a warrant and take it to Coinbase which is an American company, and ask for information about the owner of that wallet.  Coinbase has all the real information for its users; IDs, bank accounts, addresses.  But this, I imagine, is a problem for a lot of people.  They want to hold their Bitcoin and be private about it, but in order to cash it out, you need an exchange.  The trustworthy ones are audited and have to comply by US law.  So, you either have to deal with a shady place that you canât really trust to cash out your Bitcoin, or go to a reputable one who you can trust, but they also have to collect your personal information.  So, you have to pick one to cash out your Bitcoin.  Do you want privacy or one thatâs trustworthy?  You donât get both.  By this point, it was 2015 and the guy who was arrested for running Silk Road, Ross Ulbricht, had his trial and was given two life sentences in prison.  Arya saw this news.</p>
+
+<p>ARYA:	I knew that he had been sentenced and what he got, which was the two life sentences, but I just thought I was different.  Again, full-blown drug addict doing all this.  This is not of sober mind.  This is just all in the mind of a pure drug addict whoâs living his life in a haze.  So, I just didnât care, dude.  Iâm a martyr on AlphaBay, but I also have a separate account that Iâm buying â Iâm still buying thousands of Xanax.  I found a vendor on AlphaBay that I ended up becoming his number-one customer.  It was this vendor named PharmaKing, and he had the best Xanax.  So, while Iâm moderating, Iâm still ordering Xanax.</p>
+
+<p>JACK:	The Xanax really wasnât making him that much money.  He mostly got it so his friends could resell it so they could make money.  They were selling it for much bigger profits, because he didnât like being the only one with all this throwaway cash that he could buy things and have fun with.  He thought it was much funner if his friends had money, too.  His main income was still through these fake IDs, though.</p>
+
+<p>ARYA:	At this point, dude, the fake ID business is a scam.  Itâs running as a scam would.  Iâm still getting all of these orders and Iâm still collecting all of the money for it, but Iâm not fulfilling the orders.  So, in a sense, dude, I guess you could say I was just scamming people.  I was just taking their money.  I was spending it and I wasnât doing my part of the bargain which was making their IDs and sending it to them.</p>
+
+<p>JACK:	All he had to do was send the money and orders to those people in China who would make those IDs and ship them out.  They would do all the hard work.  But he wasnât even doing that.</p>
+
+<p>ARYA:	Thatâs it, dude.  I know, I know.  But I just became so greedy, man, and just did not care, just didnât care.  I was just an asshole, just a fucking pure piece of shit dickhead.  [MUSIC] I didnât care about anyone, just wanted all this money.  Like, why should I pay them?  I donât know, dude.  Eventually it got out to the world on Reddit that this websiteâs a scam, so the orders started going â they started going down in volume a lot over time.  Then it went from making $5,000, $6,000 a week â went to making a couple hundred dollars a week.  So, I was maintaining.  I was still making good money for the age I was, being eighteen and not having any bills to pay âcause I live with my parents.  I donât have any bills to pay, so I was still making good money.  I was comfortably living through all this, even making eight hundred bucks a week, even having a website that was barely running at this point, and between the money that I was making from the Xanax.</p>
+
+<p>JACK:	Ever since he graduated from high school, his life was going downhill fast.  The Xanax turned him into a different person.  He was arrested a few times while driving under the influence of it, and lost his license from that.</p>
+
+<p>ARYA:	I had totaled my car in late 2014.  I had no car, so I had no â at this point, dude, Iâm Ubering.  Iâm Ubering everywhere.  I have no car âcause I totaled my car in late 2014 off Xanax, crashed it so many times, dude.  I lost my license because of drug charges I got, so I figured whatâs the point in buying a car if I donât even have a license?</p>
+
+<p>JACK:	Arya was starting to form a relationship with the police.  He was not obeying traffic laws very well.  He was driving while intoxicated sometimes.  He was getting pulled over fairly frequently, but the police never found any evidence of it being more than that.  They didnât discover that he was buying thousands of Xanax at a time or was moderating a major darknet marketplace or was selling highly-illegal fake IDs.  So, each time he was just hit with a minor penalty compared to what he potentially could have got if they only knew.  Now, a very strange turn of events happened here.  Arya had his fake IDs website, right?  But he needed help with some technical aspect of it that he just didnât know how to do.  He knew another guy who was running another fake ID website, and they chatted sometimes.  Arya reached out and asked him for help on the website.  So, the two set up TeamViewer, a way for this other guy to see Aryaâs computer.  They started a screen-sharing session, and Arya connected to the web server and got access to everything so he could give this guy access to what needed to be done through his computer.  The webmaster for this fake ID was like yeah, I think I can help with this.  Let me control your computer.  So, Arya gave him control through the TeamViewer and was watching him make the changes.</p>
+
+<p>ARYA:	[MUSIC] I guess I fell asleep, right?  I was high off Xanax and I fell asleep on my keyboard, âcause that happened all the time.  I would literally pass out âcause Iâd be up for three days straight, and Iâd just crash one day and Iâd wake up on the floor.  So, while heâs on my TeamViewer one day and my TrueCrypt partitions are open âcause I had decrypted them, all of my text files that had my web server information and hosting information and all that good stuff, it â I guess he went through my computer, right?  Now he has â and he keeps it on the downlow.  I donât even know Iâve been compromised, but he goes through all of my TrueCrypt volumes and he saves all of my fucking information; my wall â my Bitcoin wallets, my seed phrases, web server info, domain hosting info.</p>
+
+<p>JACK:	Arya woke up and the TeamViewer session had ended, and he had no idea this guy copied everything off his computer, which was his competitor for fake IDs.  But the guy did actually help Arya and made the changes he was supposed to do; just did a couple other things while Arya wasnât looking.  By this point, Aryaâs income had started to slow down.  The fake ID stuff just wasnât bringing in what it used to, but that didnât slow down his spending or lifestyle.  [MUSIC] He would often hit up the mall and go nuts, buying Gucci belts and jackets, Louis Vuitton clothes, a mini-fridge for his bedroom, computers, TVs, watches, all this kind of stuff.  As fast as he got the money, he was spending it.  Occasionally heâd get together with some friends and drive over to Ocean City, Maryland, about three hours away, which is a beach town.  It has a boardwalk and amusement rides.  Itâs actually a great place for teenagers to hang out, and Arya was eighteen at this point, so he had a fun time there.  Of course, when he would go down to Ocean City though, he liked to party down there.  On one trip, he goes down with two young ladies and a friend.  They park their car, but for some reason they attract the attention of the police, who start looking in the windows of their car.</p>
+
+<p>ARYA:	So, I guess they saw a piece of weed through the window, like on the floor, like a small piece of weed.  Guess who goes to jail that night?  Me and the owner of the car.  I went to jail because I was driving the car when we decided to leave.  The girl went to jail that night because she owned the car.  They also found Adderall, like a bottle of Adderall on me when â I scratched the label off so they didnât know who it belonged to, but I got charged with a possession of a Schedule 1, Schedule 2 narcotic and possession of marijuana that night.</p>
+
+<p>JACK:	Heâs only held in jail for eight hours and they let him out the next day, because again, the police found no reason to believe that he was affiliated with all these other ventures that he was cooking up.  So, he gets out of jail in the morning, and a few more of his friends drive out and join him in Ocean City.  One of his friends brought him a package, [MUSIC] something that he ordered from a darknet market, and it was delivered to Aryaâs PO box.</p>
+
+<p>ARYA:	I bought fake money in early 2015.  I had bought fake money online on Evolution market.  I was high in Ocean City one day, and these bills were not good.  They were just â I â and I did it for the fuck of it.  I didnât need to do it.  I just thought okay, cool, I can get $1,000 of fake twenties for two hundred bucks.  Why not?  I thought itâd be a good idea to go to Ocean City and ball it out.  I got caught the first place I decided to spend it, which was a restaurant.  Got caught.</p>
+
+<p>JACK:	Yep, arrested two days in a row.  This is the problem that I first ran into when researching Aryaâs story.  As I dug into his criminal record, there were pages and pages of criminal charges and violations.  You already heard that he was driving while intoxicated, and reckless driving, and possession of marijuana, and now using counterfeit money.  But this is just the beginning.  Throughout 2015 and 2016, he was arrested or ticketed for so many more offenses; failing to stop at a red light, driving without a license, operating an unlicensed motor vehicle, purchasing and possessing alcohol while underage, trying to buy things with a stolen credit card.</p>
+
+<p>In fact, I see ten violations of him using stolen credit cards.  Then thereâs trespassing, public swearing, public intoxication, possession of fictitious ID, driving a car with the windows tinted too much, and speeding.  Actually, there are three speeding tickets, and on top of that, there are many more penalties of him just not showing up to court or paying these penalties when he was supposed to, and stuff like that.  Arya just didnât care at all.  He was on some kind of rampage.  All he wanted to do was have fun.  But on this trip to Ocean City, the fun stopped because he was arrested two times in two days.  So, the police searched him and put him back in the back of a police truck, and took him to jail.</p>
+
+<p>ARYA:	When they searched me, they didnât see the twelve Xanax in my pocket.</p>
+
+<p>JACK:	So, heâs in the back of the police truck with twelve Xanax bars in sort of a secret pocket in his pants.</p>
+
+<p>ARYA:	My hands are cuffed behind my back, but there is some leeway to where I can reach my pocket if I just move my arms.  So, Iâm thinking oh my god, dude, Iâm about to go to jail and theyâre gonna search me again.  Theyâre gonna strip me.  [MUSIC] Iâm gonna â theyâre gonna find the Xanax and Iâm gonna get in more trouble.  Iâm like, so what do I do?  My friend that was actually at the restaurant with me, he got arrested, too.  He had nothing to do with the fake money, though.  He had absolutely zero to do with it.  But because he was with me, he got arrested.  Iâm like dude, what do I do?  Heâs like bro, you gotta do what you gotta do.  So I put â I go in my pocket, I grab the bag of Xanax, and I put it in-between my ass cheeks, right?  So, we go into the jail and I had been arrested the night prior in Ocean City for possession of marijuana.</p>
+
+<p>I just got released that morning.  I just got released.  I was out for all of like, forty-five minutes until I got caught with the fake money, so now Iâm getting processed back into the jail.  I get there and the officerâs like, you were just released.  How the fuck are you back here?  So, Iâm in the holding cell.  I had the Xanax in the little baggy in-between my ass cheeks, and Iâm in the holding cell popping bars, dude.  Iâm just eating them like candy.  Iâm like, Iâm not getting caught with this shit.  So, I pass out for â I donât even know how long.  Theyâre like, Secret Service wants to talk to you.  So, Secret Service is like, where did you get the money from?  Iâm like, I met with some guy on LocalBitcoin who I sold Bitcoin to, and he gave me cash.  They were like, where did you meet him?  I was like, on the boardwalk.</p>
+
+<p>JACK:	He lied to the Secret Service.  He bought the money from a darknet marketplace; not LocalBitcoins.  But he was so lost in the sauce, as he puts it, that he was just willing to do anything to get out of the situation and back to a lifestyle of having fun.  This time, he would have to stay in jail much longer though, unless he paid his bond.</p>
+
+<p>ARYA:	The magistrate or commissioner, he gave me a $20,000 bond.  So, Iâm calling my parents from the holding cell saying can you pay this 10% so I can get out of jail?  So, my parents wouldnât pay it.  They just didnât, so my friends ended up paying my bond and I ended up obviously paying them back.  But my friends paid my bond, they co-signed, and I was out.</p>
+
+<p>JACK:	Now, perhaps incidents like this should scare a person straight, right?  Seeing what itâs like inside a jail should make you realize that thatâs where youâre headed unless you turn things around, and fast.  But Arya was hardly fazed by this.</p>
+
+<p>ARYA:	At this point, dude, the most I had spent in jail was like â I accumulated maybe twenty hours in jail.  To someone whoâs in the prime of their drug addiction, nothing is gonna stop me from using my drugs, like nothing.  It just wasnât enough, dude.</p>
+
+<p>JACK:	So, he continues to party it up and live the lifestyle that heâs been living.  But eventually his court case comes up in Ocean City, and he has to go down and see the judge to see whatâs gonna happen to him.</p>
+
+<p>ARYA:	I got convicted of fifty counts of â or forty-eight counts, I guess, of possession of fake US â or fake US currency or some â I think thatâs what the charge is called.</p>
+
+<p>JACK:	He had to serve some jail time, but for some reason, they donât make him do it all at once.  The first round was that he had to go in for sixty days, and then the second round I think was gonna be nine months.  So, he goes to jail for two months.  While he was in jail, the guy from that competitor fake ID website, the one that helped Arya with the web server problem and then copied all his information when he fell asleep, that guy decided this was the perfect time to make a move.</p>
+
+<p>ARYA:	But he saw it as the perfect opportunity to â why would I let his website go to waste and â when I could be collecting this traffic for my website?  So, yeah, he ends up redirecting my domain, my name servers, to his website.  Thatâs â yeah, thatâs while I was in jail.</p>
+
+<p>JACK:	After being in the clink for a couple months, he gets out and goes back home.</p>
+
+<p>ARYA:	Iâm still a moderator.  I donât know how.  I havenât done any activity in two months, but I get back and itâs like nothing had happened.  They didnât even notice I was gone.  I got right back into it, right back into the drugs, right back into everything.</p>
+
+<p>JACK:	But it wasnât the same.  He still had all the things he bought before; the designer clothes, the watches and stuff, but his income had gone way down.  He was on the other side of this high and mighty wave that he was riding.</p>
+
+<p>ARYA:	[MUSIC] You look at someone who had everything, dude, who literally had the world in his fucking palms, and by January 2016 was a full-blown drug addict who was just barely getting by.  January 14th, 2016, Iâm in the car with some friends.  We got a sale for like, 130 Xanax.  My friend drives me to go do this sale, and I sell it to these two people.  I get back in my friendâs car and weâre driving, and we get pulled over for speeding.  Iâm in the back seat and thereâs somebody in the passenger, and thereâs somebody in the driverâs seat.  As we were getting pulled over, I told everybody in the car â I was like, everybody throw everything you got in this backpack.  I had my backpack on me which was all â I also had my laptop that I used for moderating and everything, but the laptop was encrypted.  So, everyone throws their drugs into my backpack and I tell everybody before the officer even fully pulls us over; Iâm like, nobody claim the backpack.</p>
+
+<p>Weâre all gonna go down, and weâre gonna beat it, right?  We get pulled over and the officer looks directly at me and he goes, you; get out of the car.  So, I donât know if I got set up or not.  I think I got set up.  The officer tells me to get out of the car.  He smells weed.  He searches the car, he searches the backpack, finds 200 Xanax in there.  So, the officer sits me down in front of his car.  Iâm handcuffed.  Itâs cold; itâs like, 2:00 in the morning on January 14th, 2016.  Iâm sitting on the ground and Iâm high as fuck.  I just remember the officer coming back to me and he was like, the driver said it was your backpack.  Iâm like fuck, Iâm going to jail.  So, I go to jail that night.  Dude, I go to sleep for four days.  I had a lawyer on retainer âcause I just figured â dude, I knew this was all gonna come to an end, so I had slowly â every couple weeks, I would add money to my account with my lawyer in case something went down.  So, eventually this goes down and my lawyer canât get ahold of me âcause Iâm passed out in the holding cell.  They canât wake me up.</p>
+
+<p>Iâm just so â Iâm just going through withdrawals.  Eventually I come to and my lawyer finally gets ahold of me.  He comes to visit me at the jail and he was like Arya, you fucking idiot.  Heâs like, this is gonna put you in prison.  This is it.  So, Iâm sitting in jail.  At this time, my only charge is distribution of Xanax.  Thatâs the only one I got.  I go to court and the prosecution would say the lab results arenât back yet, so we canât proceed with the case until the lab results come back and they verify that it is Xanax.  So continuance, continuance, continuance.  At this point, dude, it was July 31st, 2016.  Iâm in jail for seven months now.  Iâm still not â sense, I donât know whatâs going on.  I wake up one morning; I think it was like, Wednesday, August 10, and theyâre like, Ebrahami, intake is calling you.  So, they send me the intake and thereâs mass detectives sitting in the intake.</p>
+
+<p>JACK:	The detectives werenât saying much, except that they wanted Arya to come with them to go see the judge.  At some point that morning, heâs able to make a call to his friends to see if they knew anything.</p>
+
+<p>ARYA:	When I talked to my friends on the phone, they said a huge drug bust went down in our county.  Iâm thinking oh gosh, they finally got all of us.  Like, weâre hit; they found out about the drug â the Xanax ring.</p>
+
+<p>JACK:	The detectives take him to go see the judge or magistrate.</p>
+
+<p>ARYA:	The detectives give the magistrate ten new felony charges.</p>
+
+<p>JACK:	The house of cards was crumbling.  The detectives were onto him.  After seven months of just having one charge of possession of Xanax, he now had ten new felony charges.</p>
+
+<p>ARYA:	Now I have six counts of conspiracy to distribute drugs.  I got two counts of money laundering and two counts of manufacturing fake IDs.  Iâm now preparing myself mentally that Iâm gonna be in prison for a long time.</p>
+
+<p>JACK:	Arya took a closer look at these charges and realized how big of a situation this became, because he wasnât the only person being charged with the distribution of Xanax.  There were twenty-seven other people being charged, too, and Arya recognized all of them.</p>
+
+<p>ARYA:	Remember, during all that time I was ordering thousands of Xanax during all this, so I didnât realize that â how big â what I was doing.  Like, 1,000 Xanax, that itself was a lot, but then you add up how many times I made a 1,000-Xanax order, and it was over twenty times, dude.  So, every time â itâs not like people were going un-arrested throughout all this.  People were getting arrested for possession of Xanax, distribution.  There was a Xanax problem in my county and I didnât realize that I was the one that started that.  I had no idea.  I didnât realize â I just did not think about how far down the line my actions were affecting other people and other families.</p>
+
+<p>JACK:	The people being charged were his friends who he would sell large quantities of Xanax to, and then they would turn around and sell them to other people for even more money.  The county police called his Operation Breaking Bars, and they released a press statement showing the mugshots of all twenty-eight people that were arrested.  All but two of them were between the ages of eighteen and twenty-three, which if you have a bunch of nineteen and twenty-year-olds all arrested for the same thing and a lot of their mugshots look similar too, it kinda makes you wonder if they were all friends.</p>
+
+<p>ARYA:	I know every single one of them.  Every one of them, dude.  In some way or another, I was either directly or indirectly involved, because I was giving â I would make these purchases for 1,000 Xanax and I would give them to my best friend who would then in turn go give them out to everybody else.  So, the whole county had a Xanax problem.</p>
+
+<p>JACK:	But there are two guys on here that sort of stand out, because one of them is fifty-five years old, and the other is fifty-nine.</p>
+
+<p>ARYA:	Yeah.  So, one of them was a doctor who, to this day, he actually lived in my neighborhood.  I believe he was wrongfully charged.  That doctor had nothing to do with any of this, any of it whatsoever.  Then the other one, the other older gentleman was actually the father of the guy that told the police that it was my Xanax when we got pulled over.  I assume he did the same thing when the police raided his house and they found all his Xanax.  It wouldnât surprise me if he told them that it was his dadâs Xanax, âcause thatâs just the type of guy he is, and thatâs why his dad got charged.</p>
+
+<p>JACK:	After reading some articles on this doctor who was also arrested, it sounds like he was prescribing people Xanax and then those patients were selling those scripts or pills illegally, which Arya said earlier that he would sometimes buy prescriptions from people to get more drugs, so this doctor wasnât directly involved with any of this.  However, he may have been over-prescribing it to people who were selling it or abusing it.  So, all these people are arrested and come to court, and almost all of them get out on bond.  But Arya didnât have the option to get out on bond.  The magistrate wouldnât allow it.  So, Arya goes back to jail to wait until his court day.  Eventually his court day comes.</p>
+
+<p>ARYA:	Go to court that morning, dude, and my court date is at 9:00 AM.  Everybody in this case, everybody you see in that report had court at the same time, in the same courtroom, on the same day.  It was so awkward.  Me and the other guys that didnât make bond, weâre all in the holding cell together, and they would go out to court; theyâd come back.  Iâd say what happened, what happened?  Theyâd say, I got my case continued.  I was like okay, itâs weird.  [MUSIC] So, everyone gets a continuance and itâs like, itâs going on five or six hours now Iâm waiting in the holding cell.  My lawyer finally comes and he pulls me out the holding cell.  Heâs like, itâs not looking good.  Iâm like, what do you mean?  He was like, twenty people just told the prosecution that you were the one ordering the Xanax online.  Heâs like, you have two options here.  I was like â heâs like, thatâs why everyoneâs case got continued, because the prosecution wants to see whether you want to fight this and go to trial and they can use all these people, all these twenty people as witnesses at your trial, or if you want to just take the charge, like all your charges and just do your time.</p>
+
+<p>Heâs like, what do you want to do?  Now Iâm thinking okay, Iâm really considering trial, but the thing about trial in Virginia is if you go to a jury trial in Virginia and you get found guilty, dude, you are gonna do ten times the amount of time youâre gonna do when you take a plea deal.  So I was like, whatâs my plea deal looking like?  Heâs like, there is no plea deal.  Heâs like, you take all ten felonies.  Thatâs the only deal theyâre offering.  You take every charge; nothing dropped.  Now Iâm like okay, Iâm really considering trial and my lawyer is telling me dude, thereâs twenty people.  Heâs like, if it was just one or two witnesses, I can probably persuade them, the jury at trial, like, theyâre lying to save their own ass, but twenty people? Heâs like, I canât fight twenty people.  I said, how much time am I looking at?  He said, the low end of your guidelines is three years and the high end is five years.  I was like man, Iâm just gonna do my time.  So, thatâs what I did.</p>
+
+<p>JACK:	So, he was sent to prison.  They actually sentenced him to five years in prison, which for a twenty-year-old is some prime years of life to lose.  But these were his consequences for what he did.  Or was it?  The charges he pled guilty to were for drug trafficking and manufacturing fake IDs.  At no point were there any charges for him moderating a darknet marketplace.  But a month later, his lawyer comes to him with more news.  He says some federal investigators wanted to talk with him.  Arya said he didnât want to, but his lawyer said if you donât talk with them, theyâll indict you on two new charges.  Arya asked what were the charges?</p>
+
+<p>ARYA:	One of them was aggravated identity theft for the fake IDs, and then the other one was mail fraud for shipping the fake IDs through the mail.  So, he was like, do you want to talk to them?  I said well, what do they want to know?  Heâs like, they want to know your story.  I was like, what do you mean?  Heâs like, they want to know how you went from where you did to where you are now.  I was like, okay.  So, he ended up setting up a proffer agreement which is like a queen for â itâs pretty much an immunity agreement to where I can tell them every illegal thing Iâve ever done without prosecution.  So, thatâs what he did, man.  Thatâs exactly what he did.  So, the feds, on October 14th, 2016, they transferred me out of the jail.  They took me with â in handcuffs, and I went and I sat down with the Department of Justice and I told them my entire story.  They, at this point, dude â and I donât know âtil this day how they knew I was a moderator, but they presented â they told me; they said we know youâre a moderator on Nucleus and we know youâre a moderator on AlphaBay.  I was able to tell them everything, dude.  I was like yeah, this is exactly what I did.  This is how I â pretty much the same story I just told you, I told them.  Thatâs why I can talk about this, because of that proffer agreement, that I canât be prosecuted for it.</p>
+
+<p>JACK:	Under the proffer agreement terms, even though he admitted to other illegal activities, he was not charged with any of them, which means even though there was a federal investigation on him, he never faced any federal charges.  The feds listened to the whole story, which gave them information so they can fight these crimes better, and perhaps arrest others involved.  During the meeting with the feds, Arya learned something strange was going on.</p>
+
+<p>ARYA:	[MUSIC] Somebody had been moderating my staff account on AlphaBay the entire time I was locked up, and they wanted my password.  I gave them my password.  They had a laptop with them and they tried logging into AlphaBay with my staff account and they couldnât log in.  I was like â and they told me that someone has been using it this whole time I was in jail, and itâs like I had never left.  So, I was like you know, I did my part.  I did the best I can.  Iâm sorry.  And that was that.  They left it alone.  They knew that there was nothing else that I could do.  I gave them everything I could give them, which wasnât really anything.  The primary thing that they wanted was my AlphaBay staff account login, and they couldnât do anything with that âcause somebody else had ran the account, and I donât know â honestly, I donât know who.</p>
+
+<p>JACK:	His hunch was it was that guy who was running the competitor fake ID website, the guy who copied all his files when he was sleeping.  It was probably him who logged into AlphaBay as Arya and was doing stuff, because that guy had access to all of Aryaâs login information, so that makes the most sense.  But in the world of darknet markets, sometimes people take over usernames to hide themselves in the shadows of others, so itâs possible that the admin of AlphaBay saw that Arya wasnât logging in as much anymore and just reset his password and gave that to someone else to take over the account.  But whatever happened, Aryaâs password wouldnât work to let him log in anymore, which might have been some very helpful information for the feds to try to take down AlphaBay.  The feds knew he had Bitcoin and kept asking him about it, but he spent everything that was on his phone and in his Coinbase account.  The only thing left he had was eight Bitcoin on his laptop, and they brought this laptop to him, because when he was arrested, he had this laptop on him.  But something happened to the laptop; it either overheated or broke when he was arrested.  It wouldnât boot or load the OS at all.  Thatâs the only place he had his Bitcoin at the time, so neither him or the feds were able to get into this laptop at all.</p>
+
+<p>ARYA:	Yeah, yeah.  But they were pressing me out about the Bitcoin.  They were like, whatâd you do with all this money?  I was like guys, I spent it.  They were really drilling me about that.  I was like, I spent every dollar of it.  I was like, you guys know â dude, the file that they had on me, they had been watching me for four years.  For four years they were watching me leading up to this.  From the day I started doing this shit, they knew.  They knew everything.  At least thatâs what my lawyer told me.  But when I saw my file and how fat that thing was â I mean, they had logs of my Jabber conversations with the OTR plugin, which makes me now know Jabber is not secure.  OTR is not secure, âcause they had my logs in clear text.  Like, how the fuck did you get that?</p>
+
+<p>JACK:	The federal authorities held up their end of the deal and didnât give him any new charges, and he still had to serve five years in prison.  So, prison was his life for a long time.  While he was sitting slowly watching time go by, he was able to tune into the nightly news, and thatâs when he saw that AlphaBay had been taken down by the feds.</p>
+
+<p>ARYA:	I saw it on the news.  It was eleven oâclock news; it said AlphaBay got taken down and that the admin had killed himself.  Dude, it was weird.  It was just weird to see that.  It was like â again, I went into a twilight zone seeing that.  But Iâm like dude, this is somebody that I talked to.  I had talked to this man all the time.</p>
+
+<p>JACK:	Arya signed up for many different programs while in prison, like drug rehab programs and educational programs, and he was also getting more religious and was studying the Bible a lot more.  He hoped that by showing the judge that he had good behavior and was completing these programs that he might not have to serve the whole five years.  So, years go by of him doing these programs.</p>
+
+<p>ARYA:	By June of 2018, I had written the judge three different times to reconsider my sentence.  Every time Iâd get a letter back; denied, denied, denied.</p>
+
+<p>JACK:	His family started missing him and hired a new lawyer to try to help him.  The lawyer was able to convince the judge to reconsider the sentence.  The judge saw Arya had taken all these programs and was doing really good.</p>
+
+<p>ARYA:	He said okay, youâve been in jail for two and a half years now.  Hereâs what Iâm going to do for you; Iâm gonna suspend the remainder of your sentence on the condition that you complete this program, which is an intensive drug rehabilitation program, but this one isnât in the county jail.  Itâs in a prison.  Heâs like, you finish this program, itâs a one-year program.  Once you finish that, theyâll release you.  I said okay, Iâll take â âcause I had â at this point, I had two years remaining on my sentence.  I said Iâll take one year in exchange for not doing two years.  Iâll take that all day, any day.</p>
+
+<p>JACK:	But things didnât go as planned.</p>
+
+<p>ARYA:	Iâm out of court.  I come back and I start going to sleep, and the jail was like â the officerâs like, Ebrahami, intake needs you.  Dude, I am pissed.  I am so pissed âcause Iâm thinking Iâm getting more charges.  Like, what the â Iâm like, is this shit ever gonna end?  How long am I gonna be locked up for?  [MUSIC] Dude, I go to intake and the magistrate was like wow, it looks like your reconsideration hearing went well today.  Heâs like, looks like you got all your time taken back.  Youâre going home.  I was like, excuse me?  Excuse me?  Iâm going home?  Dude, I got back to the holding cell and I called my lawyer.  I was like, theyâre releasing me.  She was like, give me a call back in an hour.  Let me figure out whatâs going on.  So, I called her back in an hour and she was like, the judgeâs clerk messed up your paperwork.  They put nothing in there about the program.  So, as far as the jail knew, the paperwork that they got from the courthouse said that my time was over.</p>
+
+<p>I guess the clerk only heard the part where the judge said Iâm gonna suspend the remainder of your sentence, but didnât note anything after the fact that on the condition of you doing this one-year program in prison.  So, dude, Iâm calling my family.  Iâm like guys, do I tell them that they messed up?  My parents are like, no.  Just donât â we want you home.  We miss you.  Donât say anything.  Iâm calling my friends; Iâm like guys, what do I do?  Do I tell them that they messed up?  No, donât say anything.  Just take it.  So, I called my lawyer back and I was like blah, blah, blah.  I was like, I canât have this sort of opportunity present itself and say no to it.  She was going over all the different scenarios of what could happen should they find out later on.  Iâm like, I donât care.  Iâm risking it.</p>
+
+<p>JACK:	So, he decides not to tell them that they messed up the paperwork and prepares to leave prison.  But thereâs another problem.  Remember when he went to Ocean City, Maryland and got caught with counterfeit money?  Well, he was supposed to go back there to report for his probation and to return to court.  But because he was in prison in Virginia, he could not go to court in Maryland.  So, as heâs getting released, they check if he has any outstanding warrants and sure enough, thereâs one for him in Maryland.  So, heâs released from prison, but the police from Maryland drive all the way out to him to pick him up to take him to the jail in Ocean City where heâs warranted.</p>
+
+<p>ARYA:	I got sent to Maryland.  I go in front of the judge and my lawyer was like Your Honor, he just did all this time in Virginia.  Thatâs why he has a violation here.  The judge gave me a bond for my probation violation and set me a court date for sentencing in July.  So, I paid bond, right?  It was ninety fucking dollars, dude.  $90.  Iâm out.  Iâm released.  Iâm walking around in Maryland thinking to myself, how the fuck did I go from doing another year â like dude, Iâm just â you know, think about it in that â in the mindset of someone whoâs been locked up for two and a half years, man, had to do another year, to now, days later, being released.</p>
+
+<p>JACK:	He took a three-hour taxi ride all the way back to Virginia, and goes home.  But it was weird.</p>
+
+<p>ARYA:	I had mentally prepared myself to do all this time and now Iâm seeing my nephews; I see my sister, my mom, my dad.  Man, it was just amazing.  We went out to eat dinner at a Mexican restaurant that night and it was just unreal.</p>
+
+<p>JACK:	His Ocean City court date was set about a month out, and in that time, Arya was good.  He didnât do anything illegal and stayed clear from drugs.  He learned his lesson.  On the day of his court case, his family drove him down to Ocean City to see the judge.  His lawyer told the judge how he just served two and a half years in prison and thatâs why he couldnât show up to court, and thatâs why he violated his probation.</p>
+
+<p>ARYA:	When he gave me time to speak at my sentencing, he was like, do you have anything to say?  I was like Your Honor, I just did two and a half years in Virginia.  I was like, I learned â I was like, Iâve grown up.  I was a little kid when I made all these mistakes and decisions.  Iâm like, Iâm an adult now.  I was like, I need one more chance.  I promise you I wonât ruin it.  [MUSIC] Heâs like, I gave you another chance when I put you on probation.  Iâm gonna give you the remainder of your backup time.</p>
+
+<p>JACK:	The judge said he still needed to serve nine months in jail from his original sentence and did not give any leeway or shorten the time at all.  The bailiff escorted him directly to jail.</p>
+
+<p>ARYA:	Iâm sick.  I am sick.  I have been out for like, twenty-three days after doing two and a half years, and now Iâm going back to jail for nine months.  I looked back at my parents, man, and I can just see heartbreak.  It was just terrible.  I was sick to my stomach.  So, I went back to jail in Maryland.</p>
+
+<p>JACK:	So, back to jail he goes.  Even though he was sentenced to nine months, he only had to serve six, so he does his six months in jail and gets back out, and goes back home to Virginia to his parentsâ house.  Now that heâs out of jail, he still has probation from his main drug trafficking case, so he has to report to his probation officer frequently, and she comes by and checks on him to make sure heâs not violating any of the terms.  He continues to report to his probation officer during all this time, and actually gets a job as a server in a restaurant.  But then one day, his probation officer was reviewing his files and saw the discrepancy in his paperwork.  She notices heâs supposed to be in prison right now, doing that one-year-long drug program still.  So, she calls him up.</p>
+
+<p>ARYA:	She was like, how are you out right now?  I was like oh, fuck.  I was like, itâs all coming back.  Itâs like itâs catching up to me.  She pretty much said you have to turn yourself in.  In my head Iâm like, I am not ever going back to jail.  I am so over it.  Iâm done with jail.  I hired a lawyer and â âcause she gave me two weeks to turn myself in to go finish my time.  I still had to go to prison to do this year program, so I hired a lawyer.  We go in front of the judge and the motion was a motion to reconsider my reconsidered sentence.  Weâre asking for a reconsideration on top of what the judge already reconsidered.  Remember, Iâm out for â Iâve been out for six months now.  Iâm doing good.  Iâm chilling, Iâm working.  Iâm working at a restaurant; Iâm a server.  Iâm not doing anything illegal.  Iâm just relaxing.  Iâm a normal person now.  We go in front of the judge and the judge was like â heâs like, I remember you.  He was like, you had the Bitcoin case.</p>
+
+<p>The judge was like, I donât want to be the one to do this.  Heâs like, I donât want to pull the rug from underneath your feet, but you owe the commonwealth a debt.  You have a debt to pay.  So, my lawyer suggested â thereâs two modules to that prison, that one-year prison program.  Thereâs a six-month version of it and thereâs a one-year version of it.  My lawyer had suggested to the judge hey, heâs been out for six months on good behavior.  Take that into consideration when you sentence him next week, that heâs been out for this long, and just give him the six-month version of the program.  So, I go back to court for sentencing â re-sentencing, I guess, and the judge gave me the six-month version.  So, I went back to the county jail that day.  That was June 6th, 2018.  I went back to the county jail and I stayed there until about July â late July, and then the Department of Corrections came to pick me up.  I went to prison and I finished my six months there, and I was done.  I had been out since then, and I got out on my birthday last year, January 10th, 2020, and now itâs just a story to tell.</p>
+
+<p>JACK:	So, Arya is now done with prison, done with drugs, done with the illegal life.  Heâs feeling great and optimistic about the future.  Heâs currently working in a smoke shop and trading crypto to get by.  In fact, heâs really getting into crypto, so much that he launched his own cryptocoin, which you can find more about at lofi-defi.net.  He seems to be investing in long shot opportunities where you can invest a little bit, but then it has the potential of making a lot of money.  Because, of all the stuff he got into, the Bitcoin was really the stuff that he should have held onto but got away.  He had Bitcoin on his laptop when he was arrested, but that laptop broke somehow, and the feds still have it.  Thereâs no way for him to access it.  But there are eight Bitcoins on that computer still, which at the time was only worth $1,000, but today is worth over $400,000.  So, thereâs not a moment that goes by that he doesnât look back at this Bitcoin that he had and wishes he had kept it somehow.</p>
+
+<p>ARYA:	Gosh, dude, I know.  I bang my head against the wall.  I wake up, dude; the first thing I do is I just run into my wall headfirst.  Every day, itâs the first thing I do.</p>
+
+<p>JACK:	Arya is chasing that wave of crypto, and thatâs why heâs excited to invest in it today, and heâs only twenty-five years old still, and has a whole lifetime ahead of him.  [MUSIC] But at the same time, he already has a lifetime of stories.</p>
+
+<p>ARYA:	Thatâs what happened, dude.</p>
+
+<p>(OUTRO):	A big thank you to Arya Ebrahami for sharing this story with us.  Just as a reminder, you can get an ad-free version of this show and bonus episodes.  You can do this by either subscribing to Darknet Diaries Plus on Apple Podcast, or by visiting patreon.com/darknetdiaries.  If you do, itâll really help the show, so thanks a lot.  This show is made by me, dark venom, Jack Rhysider.  Editing help and sound design by the tab-clicking Andrew Meriwether.  Our associate producer just back from the poolside potluck is Ray [Redacted].  Youâre currently listening to Dreamer #12085 which is an NFT I just bought, and our theme music is by the fanciful Breakmaster Cylinder.  Hey, I just found out that Albert Einstein was a real person.  All this time I just thought he was a theoretical physicist.  This is Darknet Diaries.</p>
+
+<p>[MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

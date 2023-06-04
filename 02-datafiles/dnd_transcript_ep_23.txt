@@ -1,0 +1,495 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>Vladimir Levin â Darknet Diaries</title>
+	<meta name="description" content="When banks started coming online, they almost immediately started being targeted by hackers. Vladimir Levin was one of the first ever known hacker to try to rob a bank. He succeeded a little, and f...">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Vladimir Levin â Darknet Diaries">  
+	<meta name="twitter:description" content="When banks started coming online, they almost immediately started being targeted by hackers. Vladimir Levin was one of the first ever known hacker to try to rob a bank. He succeeded a little, and f...">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/levin.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/23/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Vladimir Levin â Darknet Diaries" />
+	<meta property="og:description"        content="When banks started coming online, they almost immediately started being targeted by hackers. Vladimir Levin was one of the first ever known hacker to try to rob a bank. He succeeded a little, and failed a lot. Vladimir would go down in the history books as one of the most notorious hackers of all time because of his attempted online bank robberies." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/levin.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/23/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/levin.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/23/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="Vladimir Levin â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/levin.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 23: Vladimir Levin</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://traffic.megaphone.fm/ADV2249492375.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/23/",
+			   "title": "Ep 23: Vladimir Levin"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/23">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[FULL TRANSCRIPT]</p>
+
+<p>JACK:	For over two hundred years bank robberies have stayed relatively the same.  Youâd have to go into the bank itself, demand the cash, often with violence, grab what you can and get out of there.  But as banks started coming online and being digitally connected to each other, a whole new way to rob a bank started happening.  This is the story of the first online bank robbery.
+<!--more--></p>
+
+<p>JACK (INTRO):	[INTRO MUSIC]  These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	In the early days of the internet there were a few different competing internets.  There was ARPANET, Telenet, Tymnet, and some others.  Each one of these networks spoke a completely different protocol.  People, machines, and computers on Telenet could not talk to people, machines, and computers on the internet.  They both kind of had their own ecosystem.  There might be a few computers that could connect to both networks at once but those bridges and connections were rare.  One of these early competing networks was Telenet.  This is different than Telnet.  Telenet was a full-blown network kind of like its own internet and it used a completely different protocol than the internet.</p>
+
+<p>It used whatâs known as the X.25 protocol to communicate between two systems.  The internet at first was only available to governments to connect to but Telenet was the first public available network so it began picking up in popularity.  By 1980 Telenet was available in seven major cities and US phone companies had set up over 1,000 network switches to route packets around the US.  Another reason why this X.25 protocol became popular was because it was free to connect to this network.  All you needed was a modem and a phone line.  You didnât have to pay any ISP fees; just dial into one of the switches and away you go.  From there you can get to any system thatâs also on the Telenet network.  Large companies started connecting to this network to be able to communicate between branches.</p>
+
+<p>Companies such as Apple, Dun &amp; Bradstreet, Westinghouse, Boeing, and Sprint were all connected to this network.  In fact Sprint saw big future in Telenet and actually acquired it themselves, renaming the whole network from Telenet to Sprintnet and Sprintnet continued to grow in popularity, connecting a dozen more states by the 1990s.  Getting around on Sprintnet was not as easy as just Googling and finding what youâre looking for.  It was mostly bulletin boards.  You would read about a certain bulletin board in a magazine or from a friend, dial into Sprintnet, set your parameters on your modem, and type in some numbers and commands, get the command prompt in.  If youâre lucky youâd get to the bulletin board which is kind of like an online forum but was a simple and crude way to exchange information across the country.</p>
+
+<p>Sprintnet was not user-friendly.  It took a lot of practice and patience to not only connect to it but then also find anything remotely interesting once there.  The internet today has billions of users and millions of websites but Sprintnet in the 90s only had a few thousand servers connected to it.  It was kind of a ghost yard unless you had something specific you needed to do.  Going around in that time was an online magazine called Phrack.  By 1993 there were already 41 issues released and each issue outlined numerous new hacking techniques and helpful information for hackers.  Phrack is the longest-running online hacker magazine and still is kind of releasing issues today.  In March of 1993, issue 42 of Phrack was released and in this issue there was a massive listing of all known Sprintnet numbers.</p>
+
+<p>There were details on how to connect to all of them and what each system might be.  It broke down into sections of states or companies connected to Sprintnet such as numbers to dial into Apple, Westinghouse, and a bunch of numbers to connect into Citibank.  Citibank is a major bank in the US and headquartered in [00:05:00] New York City.  This issue of Phrack told you the online location of 363 different Citibank computers.  Citibank used Sprintnet to communicate between their major offices and other banks that were connected to it.  The Citibank offices were in Singapore, Manila, Tokyo, New York, Milan, Paris, and they were all connected over Sprintnet.  These systems were UNIX Systems, VAX computers, deck servers, mail servers, and more.  Phrack had just unveiled the addresses of all these systems at Citibank.</p>
+
+<p>It kind of looked like a phone book or a directory listing.  It was the area code and then a one-to-four digit number which was the network address.  This was just a map of what was out there and it didnât actually tell you how to hack into any of it.  A couple of hackers in St. Petersburg, Russia took notice of all these Citibank systems and began dialing into them.  Their goal was simply to find if any of the Citibank computers were connected to the internet so they could go through Citibank to get onto the internet.  Because at that time, it cost to connect to the internet but it was free to connect to Sprintnet so the hackers just wanted to find a free way to get on the internet.  The two hackers spent a lot of time scouring the Citibankâs network, connecting to one number after another, learning whatâs there and seeing what you can do once you get there.</p>
+
+<p>For over a year they kind of poked at it but didnât really find anything interesting.  Most connections simply wouldnât let you do anything at all or were password protected.  But these two Russian hackers kept at it, connecting to these nodes over and over trying to see if thereâs anything new there.  One day one of the systems that normally asked them for a password was wide open.  [MUSIC]  Someone had used that computer and forgot to log out.  On these old systems you could sort of ride in on other peopleâs logins.  The hacker quickly tried to see if their access would allow them to see the password.  Sure enough, it did.  Sitting there in the config file was the username and password in clear text.  It wasnât great security in 1994 so this was something youâd see sometimes.  But once the hacker got one known password they were able to get more passwords.</p>
+
+<p>They scanned all 363 Citibank nodes to see which ones they could log in with with these new passwords.  Before long these two hackers had gained access to numerous Citibank devices and from there they were able to map out a large portion of the Citibank network and eventually the hacker found a device in Chile that was connected to the internet.  They were now able to dial into that system and get to the internet for free without having to pay for America Online or CompuServe or whatever it was at the time.  This satisfied one of these Russian hackers but the other dug deeper.  His name was Buckazoid.  Buckazoid was fascinated with all the access they gained to Citibankâs network and couldnât let it go.  He would connect to some and watch what people did on there and try to take a guess at what each of the computers was for.</p>
+
+<p>He eventually found his way onto a computer that looked like it was used to transfer money.  Operators of this machine would log in, type in the bank, the bank account number, the amount to transfer, and away the money would go.  This was amazing.  Buckazoid had discovered the exact place and commands and logins needed to transfer money from one bank to another, but he also noticed this computer logged everything, every command, every connection, and every transfer that was done.  He believed these logs would probably have been printed out every day and put on a shelf for long-term reference.  At that time Citibank was processing half a trillion dollars a day through these systems.  Even though there was a lot of logs, a rogue transfer might go undetected.  Buckazoid and his hacker friend did not take that chance.  Instead he told another computer guy in St. Petersburg named Vladimir Levin what he found.</p>
+
+<p>Vladimir was very interested in what Buckazoid found and gave him a hundred dollars for all the information; how to connect, usernames and passwords, which systems to connect to, and how to do the bank transfer.  This kind of freaked out Buckazoid and his hacker friend so they disappeared from the Citibank network, thinking it was too risky to hang out there now that Vladimir knew their secret.  The story of Buckazoid and his hacker friend in St. Petersburg may not be true.  These hackers have never been found and the hackers like this donât like telling their stories but there was one Russian blog post about this.  Thatâs all Iâm going by but this story makes a lot of sense to me because it matches a lot of other details that were going on at the time.</p>
+
+<p>Like, I confirmed the Citibank codes were actually published in the Phrack magazine at that time and a few other things.  But what we do know for sure is that by that summer of 1994, Vladimir Levin in St. Petersburg, Russia had everything he needed to make a rogue money transfer out of Citibank.  Vladimir was thirty years old, living in St. Petersburg, Russia and he was really into computers.  PCs were just becoming a thing at this time and Vladimir would put computers together for people and deal with computer parts.  He also had a day job where heâd work for a software company.  But he had a bit of a dark side to him.  Perhaps it was because of growing up and seeing the lawless side of Russia.</p>
+
+<p>Whatever it was, he wasnât afraid of hanging out with some rough guys or stealing some stuff.  Vladimir checked his access to the [00:10:00] Citibank computer.  He went to work where the good computers are.  He dialed into Sprintnet.  He logged into the Citibank cash management system and confirmed he could type commands in it.  [BEEPING]  All he would need to do is type a few keystrokes, hit Enter, and the money would be transferred to wherever he wanted.  He knew this was a big deal and didnât want to transfer the money to himself right there in St. Petersburg.  He met up with a friend who agreed to go to Finland and theyâd send the money there.  The friend arrived in Finland and stood by waiting for Vladimir.  [TYPING, DIALING]  Vladimir went to work and fired up his computer, dialed into Sprintnet, logged into the Citibank computer, and typed in the commands to transfer some money to Finland and hit Enter.</p>
+
+<p>[POWER SURGE]  The computer accepted the commands and the transfer was complete.  Vladimir called his friend in Finland and told him to withdraw the money.  The friend went to the bank and sure enough, there was a brand-new $400,000 in his account.  He withdrew all $400,000 and got out of the country.  [MUSIC]  The excitement of stealing this much money gave Vladimir wild dreams.  This was easy.  This was way too easy.  He wanted to do it again and again and started thinking of ways to conduct the next one.  But on the other side of the globe in New York City, this transaction raised alarms.  The Citibank IT staff noticed this but they were too slow to react to stop the transfer.  The VAX computer that their cash management system was on logged every transaction and this one triggered an alert.  This was a lot of money so Citibank quickly called the FBI.  [PHONE RINGING]  I called the FBI too.</p>
+
+<p>STEVE:	Hello.</p>
+
+<p>JACK:	So we can get the inside scoop to this story.</p>
+
+<p>STEVE:	Iâm Steve Garfinkel.  Iâm a retired FBI agent.  I spent twenty-one years in the FBI and I was a case agent on the Vladimir Levin case.</p>
+
+<p>JACK:	I was able to talk to Steve as he was driving back home from a summer trip.  He had a long drive on his hands.</p>
+
+<p>STEVE:	Five hours altogether, yep.</p>
+
+<p>JACK:	He was willing to talk to me on this car ride.  We talked about podcasts we listen to.</p>
+
+<p>STEVE:	You should listen to that.  Itâs really a good story.</p>
+
+<p>JACK:	And computer problems.</p>
+
+<p>STEVE:	My freaking Mac Book totally crashed.</p>
+
+<p>JACK:	But of course, I was fascinated with the Vladimir Levin case.</p>
+
+<p>STEVE:	Yeah, so the case started in summer of 1994 and I was working in the FBI New York office and contacted by the victim bank here which was Citibank.  [MUSIC]  When I started this the FBI definitely did not have a cyber-division.  There were no computer squads so I was not a computer expert by any means.  For me, it was a lot of on-the-job training.  My role was not so much to figure out the bits and the bytes as to what happened but to â what every FBI agent does which is you gather evidence thatâs going to be used in a prosecution.</p>
+
+<p>JACK:	The technical parts to this were all handled by Citibank.  They had an IT department with a great system in place for detecting fraudulent transactions and they would give this information to Steve at the FBI.</p>
+
+<p>STEVE:	They were basically monitoring this system and they knew when a bad transfer was happening.</p>
+
+<p>JACK:	Citibankâs ears were perked up, waiting for the next alert.  They knew exactly how to detect a bad transfer and now they were ready to call the FBI the moment they detected it.</p>
+
+<p>STEVE:	So what we started doing at that point was trying to identify who the bad bennies are.  The bad guys are gonna want to take the money out.</p>
+
+<p>JACK:	A bad benny or beneficiary is the receiving bank that the money is fraudulently sent to.  The FBI was poised and ready for this to happen again.  Back in St. Petersburg Vladimir had a friend who was a neurosurgeon but this guy found out he could make more money as a computer-distributor than a brain surgeon so he switched to doing that instead.  Vladimir knew this neurosurgeon computer-distributor and told him about the money transfer that he knew how to do.  The neurosurgeon was connected to some shady guys and knew just who could help.  He introduced Vladimir to a few guys from the Tambov gang.</p>
+
+<p>This is a gang out of Tambov Russia who are ex-wrestlers and they turned into regular street thugs.  [MUSIC]  The gang was rough.  Picture your average mafia-style gang.  Theyâd go into businesses and threaten the owner with violence unless theyâd pay the gang a commission.  In exchange the gang would watch over the businesses to make sure nobody else would rob the place.  This was known as a protection racket and the gang was making a name for itself clashing with other gangs, taking over new territories, and leaving a trail of blood wherever it would go.  Vladimir met up with this Tambov gang asking for help to go around the world and collect money from these bank transfers.  The Tambov gang agreed to this plan and would finance the people to fly to foreign countries, set up bank accounts there, and collect the money and fly back.</p>
+
+<p>The plan [00:15:00] was in place and the next chapter was about to begin.  The Tambov gang sent someone to Argentina who opened a bank account there and gave Vladimir the bank account number.  Vladimir went to work, turned on his computer, connected to Sprintnet, logged into the Citibank computer and typed in the commands to make the transfer.  [POWER SURGE]  The money was deposited in the bank account in Argentina.  But Citibank caught this transaction immediately.</p>
+
+<p>STEVE:	The bank was monitoring their systems.  We knew that there was a bad transfer going to this bank.</p>
+
+<p>JACK:	The FBI was able to notify the bank in time to freeze the account.  When that member of the Tambov gang went to withdraw the funds, the account was frozen and he couldnât get it out so he quickly left the bank.  It all happened too fast for the Argentina police to catch them.  This mission was a failure for Vladimir and a success for Citibank but this wouldnât slow him down at all.  Vladimir quickly set up another attempt with the Tambov gang, this time in Israel.  Vladimir went to work.  [BEEPING, POWER SURGE]  He transferred a large amount of money to this accomplice in Israel.  Citibank detected this bad transfer right away and notified the FBI.</p>
+
+<p>STEVE:	The Israeli cops arrested a guy by the name of Aleksey Loshmanov.</p>
+
+<p>JACK:	Another failed transfer for Vladimir.  Vladimir wasnât sure how these banks were detecting this.  He thought he just caught a couple bad breaks.  Vladimir worked with the gang to coordinate another attempt.  This time a guy named Yevgeny Korolkov would travel with his wife to San Francisco and open up numerous bank accounts there.  The plan was to do multiple bank transfers to see if any of them would go through.  Yevgeny set up five bank accounts in San Francisco and was ready for the transfers.  But for some reason he wasnât able to wait around.  He left the country and went back to Russia, but he left his young wife Katarina behind to withdraw the money.  Vladimir got the bank account numbers and went to work.  [BEEPING, POWER TRANSFER]  The transfer was complete and they notified Katarina.  She went to the bank to withdraw the money.</p>
+
+<p>STEVE:	At that point the bank was monitoring their systems.  We knew that there was a bad transfer going to this â one of the, I think it was Sumitomo Bank in San Francisco.  She came in to make a withdrawal and they said oh, somethingâs not right here.  Youâll have to come back tomorrow to pick up the money, to make the withdrawal.  When she came back the following day FBI San Francisco office was waiting for her and arrested her.</p>
+
+<p>JACK:	When the FBI agents searched her apartment in San Francisco her bags were already packed and there was a one-way plane ticket to Russia.  But instead of going back to Russia she took a one-way trip to New York City where she would sit in a jail and await her trial.</p>
+
+<p>STEVE:	She was gonna go to trial.  Just before trial she agreed to cooperate.  She calls her husband in Russia.</p>
+
+<p>JACK:	She apparently was really mad at her husband for leaving her behind and getting her in jail.  She demanded he come back to help get her out.  One FBI agent said that she practically read him The Riot Act over the phone.</p>
+
+<p>STEVE:	We convinced her husband to, over the phone, to cooperate with us.</p>
+
+<p>JACK:	This was a stroke of luck for the FBI.  The guy who got arrested in Israel got a nice private lawyer but Katarina had a public defendant so her husband got real mad about this and wanted to come out and help her.  Once Yevgeny agreed to cooperate the FBI was able to convince him to call Vladimir Levin on the phone.</p>
+
+<p>STEVE:	We convince him.  This is all over the phone, New York to Russia to call Levin while weâre listening to the call.  Itâs a three-way call.  Levin doesnât know this.  So Korolkov and Levin speak.  We basically get Levin admitting to the whole scheme.</p>
+
+<p>JACK:	Now the FBI has their proof of who was behind this case with a name and location.  This would be enough evidence to begin going after Vladimir.</p>
+
+<p>STEVE:	But we get an arrest warrant for Levin but we had no extradition agreement with the Russians.  The Russians arenât going to arrest Levin.</p>
+
+<p>JACK:	Yevgeny Korolkov flies from Russia to New York to come help his wife and to turn himself in.  Steve and the FBI team were waiting for him at the airport.  As soon as he de-boards the plane the FBI move in to arrest him but he has something that totally surprises the FBI.  He brought his six year old daughter.</p>
+
+<p>STEVE:	He shows up at the airport with the girl.  Iâm like what the â nobody said anything about them having a daughter.</p>
+
+<p>JACK:	The FBI is totally flabbergasted on what to do about this girl.</p>
+
+<p>STEVE:	We canât have them both in jail with their daughter here.  That wasnât gonna work.</p>
+
+<p>JACK:	To top that off the immigration officers refusing to allow Korolkov and his daughter into the country.</p>
+
+<p>STEVE:	[00:20:00] He doesnât have a VISA.  The whole thing was a mess.  Immigration wasnât gonna let him into the country and Iâm standing there at Immigration.  They couldnât care less, me being an FBI agent and this is a witness.  Then I look at the guyâs nametag, the Immigration guy.  Itâs a guy I went to summer camp with when I was a kid.  Heâs like oh, Steve, yeah, no problem.  Heâs like yeah, he can come in the country.  Yeah [audible].</p>
+
+<p>JACK:	So Yevgeny and Katarina both get locked up in jail.  Steve took the six year old daughter around with him until he could figure out what to do with her.</p>
+
+<p>STEVE:	We werenât in the office really.  She was in the office I think for a short amount of time.  But we were just kind of driving.  Then at some point the kid got carsick and she puked in the back of my Crown Vic.  Thatâs another couple hours to talk about.</p>
+
+<p>JACK:	Eventually Steve got the mother out on bail and got some informant funds to help them out.  The mother couldnât leave the country because she was needed to cooperate with the case but because of this kid Steve helped them out andâ¦</p>
+
+<p>STEVE:	Get them an apartment.  Not only that, I get her an apartment, plus I got her registered in school and a vaccine.  They wonât register the kid without their vaccine.  I should have got an award for being a social worker that day.  It was crazy.</p>
+
+<p>JACK:	At this point Vladimir strikes again, this time transferring 1.5 million dollars to a bank in Rotterdam in the Netherlands.  Quickly, Citibank called the FBI.</p>
+
+<p>STEVE:	The first thing they did is call the bank and said hey, you got a million and a half dollars going there.  Itâs a bad transfer.  They, at the same time, were calling the cops and getting everyone on board.  The Dutch police arrested a Anatoly Lysenkov, the guy who was arrested in Holland picking up money.  He thought he was gonna pick up one and a half million dollars in a bank in Holland.  He got to the bank and the Dutch cops were waiting for him.  They locked him up.  I traveled to Holland.  I interviewed him while I was there and he denied everything, made up some stories, he was picking up the money for somebody.  He didnât know it was stolen funds.  Anyway, we end up â he waives the extradition, came to the US.  Then when we went to interview him in the US he said well, first of all my name is not Anatoly Lysenkov.  My name is Vladimir Voronin.  Then he tells us the whole story.</p>
+
+<p>JACK:	Back in St. Petersburg, Vladimir Levin continued to attempt to do money transfers. [POWER SURGES]  In the course of the next six months he conducted dozens of transfer attempts totalling over ten million dollars.  All attempts were foiled by Citibank and the FBI.  The FBI was getting closer to finding Vladimir but because he was in Russia the police there wouldnât cooperate entirely with the FBI to arrest him.  But the FBI did tell the Russian police theyâre looking for him.</p>
+
+<p>STEVE:	Turns out when we did that phone call between Korolkov and Levin and we were listening in, the Russian cops were listening in too.</p>
+
+<p>JACK:	The Russian police were tracking the Tambov gang which led them to Vladimir so they were listening in on the call looking for information on what the next crime might be committed in Russia.</p>
+
+<p>STEVE:	[MUSIC]  They tipped us off when Levin was leaving the country.  Levin was flying from St. Petersburg to Holland.  Iâm not sure if it was where in Holland, Amsterdam, or Rotterdam probably.  But he had to change planes in London.  He was flying through Stansted Airport.</p>
+
+<p>JACK:	When Steve and the FBI got this tip they immediately called the UK police who were able to quickly go to the airport and find Vladimir waiting in the lounge and arrested him.  Vladimir was held in UK police custody and put in jail but Vladimir was denying the involvement in the whole thing, saying he had nothing to do with the hacking and claiming complete innocence.  This made the FBI wonder a little if they had the right guy.  The only evidence they had was a phone call between Korolkov and Vladimir where Vladimir was admitting to it.</p>
+
+<p>STEVE:	The Russian cops arrested a bunch of people who were part of this Tambov gang and they seized a bunch of computers from Levin that were from that business.  [MUSIC]  I went to Russia and we did a search of those computers.  I went over there with a guy who was an FBI agent who was a forensic examiner.  We basically found the smoking gun stuff on that computer.  We know that was the computer they were using to hack into the bank.  Then when we found that smoking gun [00:25:00] stuff on the computer, it was in the police headquarters in St. Petersburg and it was about 11:00 in the morning and that precipitated a big celebration.</p>
+
+<p>[MUSIC]  I have to say at the end of that day, I donât think before that day or after that day, I have never drank so much vodka.  It was a huge celebration.  We were drinking vodka, eating pickles.  It was actually a very crazy day.  We ended up going to a party somewhere that night.  It was really â nobody answered the bell the following morning, put it that way.</p>
+
+<p>JACK:	Now the FBI have felt confident they completely busted this crew up.  They arrested the main hacker involved, seized the computers that were used to do this with, and arrested four members of this gang. Vladimir Levin was still being held in a jail in the UK.</p>
+
+<p>STEVE:	At some point I actually â we went to England.  I went to London.  We had an extradition hearing.</p>
+
+<p>JACK:	After being held for thirty months in UK jails, Vladimir Levin was extradited to the US.  During his trial in the US, after he saw the amount of evidence they had against him, he pled guilty and explained and admitted to everything.  Vladimir Levin attempted forty fraudulent money transfers totalling ten million dollars.  He was able to successfully steal $400,000 and that was before the FBI got involved.  Neither Citibank or the FBI could recover that $400,000.  Itâs believed that money was used to purchase guns and weapons.  Vladimir was sentenced to three years in prison but the thirty months that he was being held in UK jails counted towards this, so he only had to serve less than a year in US prison.  He was also sentenced to pay back $240,000 in restitution.</p>
+
+<p>STEVE:	I have no idea what happened to him.  I even heard at one point that he went to â he was in Eastern Europe, not in Russia.  He was in Prague and I had heard he had been killed.  I donât know if any of thatâs true.  Iâd be kind of curious as to whatever really happened to him.</p>
+
+<p>JACK:	[MUSIC]  I wasnât able to track down what heâs up to, either.  He probably changed his name after this because Vladimir Levin went down in the history books as one of the most notorious hackers of all time.  Thatâs because he was the first-known online bank robber.  Vladimir didnât use a gun or a mask or even a note.  He did the whole thing from across the world.  In 1994 this was a really big deal and being the first in something like this will often make you famous.  Since this incident, the world changed.  More crimes started being conducted online.</p>
+
+<p>STEVE:	[MUSIC]  About a year, year and a half later, the FBI formed its first computer crime squad.  There was one in San Francisco, there was one in DC, and we formed one in New York.  I ended up on that squad.  Every crime now digital forensics are involved.  Even if you talk to any homicide investigator, those homicides now are key evidence found in a digital form.  Thatâs really I think a huge change in law enforcement.  You look at any kind of crime out there, any kind, and it involved digital forensics.</p>
+
+<p>JACK:	Itâs amazing to witness firsthand the digital transformation our world went through in the last thirty years.  We were here for it.  Generations from now weâll look back on the 1980s and think it was so primitive and crude.  Computers and the internet have changed every one of our lives in almost every way.  How we meet friends, how we order food, and how we go to school.  How we solve crimes, and even how some people rob banks.</p>
+
+<p>JACK (OUTRO):	[OUTRO MUSIC] Youâve been listening to Darknet Diaries.  Please consider donating to help support this show by visiting darknetdiaries.com/donate.  It really helps a lot.  This show is made by me, the Karate Skid, Jack Rhysider and the theme music is made by the masked Breakmaster Cylinder.</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+<p>Transcription performed by Leah Hervoly
+www.leahtranscribes.com</p>
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

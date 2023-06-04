@@ -1,0 +1,397 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>The Peculiar Case of the VTech Hacker â Darknet Diaries</title>
+	<meta name="description" content="VTech makes toy tablets, laptops, and watches for kids. In 2015, they were breached. The hacker downloaded gigs of children's data. Discover what the hacker did once he took the data.">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="The Peculiar Case of the VTech Hacker â Darknet Diaries">  
+	<meta name="twitter:description" content="VTech makes toy tablets, laptops, and watches for kids. In 2015, they were breached. The hacker downloaded gigs of children's data. Discover what the hacker did once he took the data.">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/vtech2.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/2/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="The Peculiar Case of the VTech Hacker â Darknet Diaries" />
+	<meta property="og:description"        content="VTech makes toy tablets, laptops, and watches for kids. In 2015, they were breached. The hacker downloaded gigs of children's data. Discover what the hacker did once he took the data." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/vtech2.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/2/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/vtech2.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/2/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="The Peculiar Case of the VTech Hacker â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/vtech2.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 2: The Peculiar Case of the VTech Hacker</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://traffic.megaphone.fm/ADV9527233503.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/2/",
+			   "title": "Ep 2: The Peculiar Case of the VTech Hacker"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/2">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[FULL TRANSCRIPT]</p>
+
+<p>[INTRO MUSIC]</p>
+
+<p>REPORTER:	Itâs Tuesday, December 15, 2015, and a suspect has been arrested in the VTech Kidsâ Toy Hacking case.  UK police slapped the cuffs on a 21-year old man just a few hours ago as part of an ongoing investigation into the hacking.  Estimates indicate almost 6.5 million kidsâ profiles and almost five million adult accounts were compromised in what might be described as the most unscrupulous hack to hit headlines in years.  No credit card info was obtained but childrenâs names and addresses are said to have been accessed, which aside from being a black eye on VTech, is just straight up creepy.  The suspect hasnât yet been named but something tells us his next few days behind bars probably wonât be so enjoyable.  Happy holidays, creep.
+<!--more--></p>
+
+<p>[INTRO MUSIC]</p>
+
+<p>JACK (INTRO):	This is Darknet Diaries, true stories from the dark side of the internet.  Iâm Jack Rhysider.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	Kids today see their parents using tablets and phones and they want to play, too.  [BACKGROUND MUSIC]  Toy makers have tried to capitalize this by offering child-friendly tablets and smart watches.  These kid-friendly devices are online and connected to the internet just like any other tablet.  They have features that let the child send messages from their tablet to their parentâs phone.  Not just chats, though.</p>
+
+<p>The kid can send pictures, videos, or voice recordings.  VTech is one maker of these kind of kid-friendly devices.  They make tablets and phone apps that are specifically designed for kids.  When you buy a VTech tablet it asks you to register the device.  They ask for the parentâs name and the physical address as well as the username and password.  Then the toy tablet also asks for the childâs name, if they are a boy or a girl, and what their birthday is.  It even suggests you take a picture of the child using the tablet to set up a profile.  This registration allows the parentâs phone to connect to their kidâs tablets.  The technology VTech created that connects a parentâs phone to a kidâs tablet is called Kid Connect.  VTech also created its own app store called The Learning Lodge where you can use their tablet to download apps, games, and books.  Take a guess at what happens when hackers get ahold of these toy tablets.</p>
+
+<p>They end up pushing the tablets to the limits.  Thereâs a forum dedicated to hacking the VTech tablets.  People have been able to do all sorts of things.  One hacker took the thing apart and with a soldering iron, was able to get into the underlying operating system which is Linux.  From there, the hackers were able to get root access to it.  Then eventually, someone showed us they got the little toy tablet to play Doom, that old PC game from the 90s.  The hardware hacker community is often heard saying if you canât open it, you donât own it.  Just like itâs legal to do work on your own car, itâs also legal to modify the electronics you own.  You may void the warranty but itâs not illegal to take it apart and do whatever you want to it.  As this forum grew in popularity it eventually attracted a different kind of hacker.  Instead of a hardware hacker, this guy was a network hacker.  He browsed around and found the tablets talk frequently to a website called planetvtech.com.  He took a look at that website and almost immediately found it was vulnerable to SQL injection.</p>
+
+<p>SQL injections are the number one risk websites face.  It takes advantage of weak code and tries to exploit the underlying database.  Network hackers like this are often already equipped with loads of scripts and programs that automatically execute attack.  Out of sheer curiosity, with a few key strokes, this hacker ran a script against planetvtech.com which attempted to exploit SQL.  To his surprise, it worked.  He had shell access to the website.  A few keystrokes later, he then had root access.  He said to himself, quote, âHoly fuck.  I have root.  That was easy.  What can I find?â  End quote.  He had full access to the planetvtech.com website.  100 percent control of it.  Once the hacker was in the web server he took a look around.  He saw numerous other servers on the VTech network, including a database server.  He was able to hop into the database and when looking around there, he found the database was huge.  The hacker grabbed a copy of everything in the database, downloaded the whole thing, then moved on to another database and grabbed a copy of everything there, too.  The hacker then disconnected from the VTech servers.  [MUSIC ENDS]</p>
+
+<p>He knew he had committed a crime and a wave of nervousness swept across him.  This breach occurred around November 16, 2015.  The hacker was equal parts disappointed and excited.  He thought getting into the VTech network was way too easy.  In a very short time he was able to take all the contents of their multiple databases.  [MUSIC CONTINUES]  With a copy of the VTech database on his own computer, he was able to slowly go through it and see what data he had.  The first thing he noticed was a table called Parent.  It had the following fields: First Name, Last Name, E-Mail Address, Encrypted Password, Secret Question, Secret Answer, Home Address, IP Address.  As the hacker looked, he realized this is the entire user database for everyone whoâs registered at the site.  There were 4.8 million people listed in this table.  He could not believe his eyes.</p>
+
+<p>A list of 4.8 million user accounts would be a hot item on the dark net.  A list this large could bring in some decent Bitcoin but the hacker had no intention on selling the data.  The hacker took another look at the database and found another interesting table called Member.  It contained childrenâs names, birthdays, gender, and their parentâs ID.  The hacker realized by combining the two tables he could positively identify what the last name of the child was and where they live.  This table contained the information of 200,000 children.  By looking at the birth dates, the average age of the child was five years old.  Hacker turned his computer off and took a walk to think about what to do.  He was much more angry than he was excited.  He was angry that VTech was so careless with securing their site and with the personal information of so many children so easily obtained.  It became clear to the hacker that he had to get VTech to admit that they have a security problem and to fix it.  Having such lax security for personal children data was unacceptable to the hacker so he began thinking of ways to fix the problem.  He could go in and fix it himself but that wouldnât teach VTech how to keep it secure in the future.  He thought about reaching out to VTech but he thought theyâd never listen to him, or theyâd try to fix it and deny it was ever a problem.  The hacker took a few days to think about what to do.</p>
+
+<p>He decided to tell the media.  This way the story will break worldwide and VTech would have to solve the problem fast.  He decided to reach out to Lorenzo Franceschi-Bicchierai, a reporter for Viceâs Motherboard.  Motherboard is a news outlet specifically covering stories related to computers and Lorenzo had been breaking a lot of really great stories about breaches.  Many security reporters provide numerous ways for people to reach them anonymously, sometimes through signal or using PGP e-mails, encrypted chat, or other means.  The hacker connected with Lorenzo securely and asked to remain anonymous.  He gave Lorenzo the 4.8 million user records and the 200,000 children records and asked him to break the story.  He clearly told Lorenzo that he was an ethical hacker and had no intention on using this data for anything malicious.  The hacker told Lorenzo, quote, âProfiting from database dumps is not something I do, especially not if children are involved.  I just want issues made aware and fixed.  It was pretty easy to dump so someone with darker motives could easily get it.  Frankly, it makes me sick that I was able to get all this stuff.  VTech should have the book thrown at âem.  They have shitty security.â  End quote.</p>
+
+<p>Lorenzo now had the burden to figure out what to do.  The first thing he tried to do is determine if the hacker is telling the truth and if this data is new and legit.  The worst thing a reporter can do is falsely accuse someone of wrongdoing.  That would be slander.  That would ruin the reporterâs reputation, so Lorenzo send the dump to Troy Hunt to validate it.  Troy is a security researcher most famously known for running the website haveibeenpwned.com.  Troy obtains as many e-mail dumps as he can.  These are giant lists of e-mail addresses that are seen in security breaches.  He then turns his list into a public service to allow anyone to search his website to see if their e-mail address was part of a breach.  At first you may think a site like that is a phishing scam, and some are, but Troy has proven himself to be ethical and legit.  He and his website are trustworthy.  He has over four billion e-mail addresses in his database which he gathered from all public breaches.  Troy took a look at this new dump from Lorenzo.  He found the password field wasnât encrypted in the database like it said it was.</p>
+
+<p>Instead the passwords were stored using a basic unsalted MD5 hash.  Without going into too much detail of what MD5 is, just know itâs bad security practice to store your passwords this way.  Some MD5 hashes you can simply Google and find the password.  There are super computers that can brute force an MD5 hash and crack it fairly quickly.  Storing passwords as MD5 hashes is a severe lack of security.  Troy was at first shocked by this.  He then went to the website to see what it looked like.  He immediately noticed the site doesnât use HTTPS anywhere, not for authentication or the API, nothing.  He also noticed the site was running ASP 2.0 which by that time had been unsupported by Microsoft for over four years.  He also noticed some parts of the website were leaking more information than they should, returning errors with surprising results.  A failed login message would actually show the SQL query used to log in.  Troy was shocked by the details he could gather simply by using the site and not even trying to hack it.</p>
+
+<p>The dump passed the sniff test for Troy, but at almost five million user records, he wanted help to verify the contents were legit.  Troyâs website Have I Been Pwned? was wildly successful and he offered an additional service; not only could you check your e-mail to see if it had been in a breach, but you could also give him your e-mail and heâll notify you if it shows up in any future breaches.  By this time Troy had almost 300,000 subscribers to this e-mail watch list.  Troy looked through his subscribers and tried to find any that also showed up in the VTech user dump.  He did, in fact, find many matching e-mail addresses so he reached out to those people.  He asked if they had a VTech account and asked if the home address and ISP were accurate.  This is what their responses were.  âYes, thatâs accurate.  I did register at VTech so I could download add-ons for a toy laptop.â  âYes, that is accurate.  Itâs an old address.  I was at that ISP at that time so I can verify the info.  I would have used the VTech website for my daughter around that time, too.â  âYes, I did access VTech Learning Lodge in 2014 after purchasing Cora Cub for my child.  In order to personalize its voice-activated feature you had to join The Learning Lodge.â  At this point, Troy was convinced the dump was legit and told Lorenzo what he found.</p>
+
+<p>JACK:	By this time Lorenzo had already reached out to VTech multiple times.  Over and over, Lorenzo was getting no response or being redirected to somewhere else.  Eventually, days later, Lorenzo got the following response from a VTech spokesperson named Grace Ping.  Quote, âOn November 14, an unauthorized party accessed VTech customer data on our Learning Lodge app store customer database.  We were not aware of this unauthorized access until you alerted us.â  End quote.  VTech claims they received the e-mail from Lorenzo, found evidence of the hack the next day, then three days later issued  a press released and notified their customers through e-mail.  Their initial press statement was vague and unclear as to what was taken and who was impacted.  It also said the passwords were encrypted but technically MD5 hashing is not an encryption method.  The date didnât line up either because the data in the dump was time-stamped two days after they said the breach took place.</p>
+
+<p>But they did take down the following websites: planetvtech.com, vsmilelink.com, and sleepybearlullabytime.com.  Taking these websites down must have been a big decision for VTech.  Imagine the app store being down on your phone for over a month.  No updates, no downloads, no sending messages between devices.  Their toys lost major functionality during that time but the company did the right thing by shutting the servers down.  If not, they would have attracted many other hackers and had a much bigger catastrophe on their hands.  Once the vulnerable websites were offline and a press statement was issued, Lorenzo then published his article indicating VTech suffered a data breach.  He published all the details of what the hacker had given him.  Troy Hunt followed up with a scathing blog post of his own.  The news spread quickly of VTechâs poor security controls.  Parents around the world were outraged their childrenâs information was leaked.  VTech is a company based in Hong Kong but they have a large market in the US, Spain, UK, Germany, and France.  VTechâs stock began to tumble.</p>
+
+<p>Troy was also facing an ethical dilemma.  His website haveibeenpwned.com allowed users to search e-mails that were seen in public data breaches.  He added the 4.8 million e-mail addresses to his site but refused to make the childrenâs names searchable.  The hacker who broke into VTech took another look at the data he grabbed.  To his surprise he found even more data than he initially realized.  There was a certain directory that had 190 gigabytes of data.  As he looked through it he found it contained over 100,000 pictures that children took with their tablets, watches, or laptops.  Many of these photos were duplicates, blurry, or just black so it was hard to guess as to how many actual photos there were.  The hacker looked further through the files he took.  He found there were chat logs which went back a whole year.  Theses would be all chat messages that were sent between the childâs tablet and the parentâs phone.  Looking at the data even further, the hacker found a directory full of audio files.  He opened one and played it.  This is what he heard.</p>
+
+<p>CHILD:	I pledge allegiance to the flag of the United States America and to the Republic for which is stands, one nation under God and [inaudible].</p>
+
+<p>JACK: 	There were thousands of recordings like this.  These are recordings of kids talking into their tablets.  The hacker reached back out to Lorenzo and gave him the 190 gigabytes of photos, the yearsâ worth of chat logs, and numerous voice recordings.  A few days later Lorenzo published a second article on Motherboard with these new findings.  We are now able to see redacted pictures of children and hear their voices.  This adds salt to VTechâs wounds.  More parents are realizing their childâs personal information was not kept safe.  The hacker told Lorenzo he was pleased with the way that news stories were spreading awareness of the problem.  Quote, âIt is as much coverage as I had hoped for.â  End quote.  The hacker went on to say he might move to a new target.  Quote, âMaybe into VTechâs competitors, I donât know.â  End quote.  On December 1, two weeks after the breach, VTech published an FAQ.  It contained more information about the hack.  VTech claims that not just 200,000 children accounts were taken, but instead that number was 6.3 million children accounts.</p>
+
+<p>But VTech did not admit than any photos were taken.  Then US Senators Edward Markey and Joe Barton sent VTech a letter pointing at The Childrenâs Online Privacy Protection Act, otherwise known as COPPA, an act established in 1998 to protect children online.  Their letter also consisted of nine questions they wanted VTech to answer such as what information do you collect on children under twelve?  What do you use that information for?  Do you sell any of that to anyone?  What encryption is used to secure the data?  VTech didnât immediately respond but they eventually updated their FAQ to answer some of these questions.  A week after the breach VTech hired a security firm called FireEye to help with incident response.  FireEye was able to find the security issues and resolve them.  On January 25, two months after the servers were taken down, they were partially restored.  Users could update and register their devices again but still could not use the app store.</p>
+
+<p>A month after the breach, a specialized crime unit in England caught and arrested a 21-year old man in a town west of London.  He was arrested on a suspicion of unauthorized use of a computer outlining The Computer Misuse Act of 1990.  The crime unit also seized multiple electronic items found.  They also mentioned this may be related to VTech but the press release did not say the name of the man they arrested.  Lorenzo attempted to reach out to the hacker but he never got a response.  Two months after the breach, Lorenzo was attending an electronics trade show and found one of the booths was VTech.  They were launching a brand new line of products.  These werenât for kids, though.  They were selling smart light bulbs, door sensors, and security cameras.  When Lorenzo asked the VTech marketing director if itâs secure, he said they are quote, âgoing through penetration tests by a third party and everything is going to be very secure.â  End quote.</p>
+
+<p>The next month, VTech changed the terms of service on their website.  It now read, in all capital letters, YOU ACKNOWLEDGE AND AGREE THAT ANY INFORMATION YOU SEND OR RECEIVE DURING YOUR USE OF THIS SITE MAY NOT BE SECURE AND MAY BE INTERCEPTED OR LATER ACQUIRED BY UNAUTHORIZED PARTIES.  It appears that VTech thinks they can relieve themselves of any misdoings by simply letting their customers know their data may be insecure and hacked at any time.  A few lawyers commented on this and believe a clause like that wonât hold water in the US or UK, citing things like COPPA laws.  Numerous politicians and state attorneys contacted VTech to discuss the COPPA laws in detail.  VTech has updated their privacy policy to be more compliant with COPPA.  For instance, they now state in their privacy policy that all pictures and voice messages are encrypted when stored.  VTechâs stock was on a downtrend before the breach and after the breach the stock dropped by 13 percent.  Within three months it was back above where it was before the breach.  Their toys continue to be sold in major toy stores around the world.</p>
+
+<p>In the following weeks after the breach, several upset parents sued VTech North America.  The suits were consolidated into a single, class action lawsuit.  Plaintiffs included eight adults and fourteen children.  A year and a half later, in July 2017, the case went before a judge.  VTech asked the judge to dismiss the case, which the judge granted.  He dismissed the case because the plaintiffs could not show how they were harmed.  The judge could not find any proof that identity theft or any damage was done to the plaintiffs.  The judge cited Lorenzoâs article, saying the breach was done by someone who did not have any intention to use the data in a malicious manner.  Thereâs an update to this story.  On January 8, 2018, the FTC did find VTech to have violated COPPA laws.  VTech agreed to pay the $650,000 fine imposed by the FTC but they also issued a press release saying they havenât violated any laws.  Theyâre also required to revise their security program and conduct security audits for the next twenty years.  [MUSIC]  We have not seen the contents of this dump show up on any dark net site.  This leads me to believe the hacker upheld his promise and not try to profit from the data he stole.</p>
+
+<p>The VTech FAQ had a question on it asking what happened to the hacker who was arrested.  For over a year the FAQ simply referred people to the press release put out by the crime unit that arrested him.  The press release had very little information.  It didnât even include his name.  In December 2016, over a year after the breach occurred, VTech updated their FAQ with a different answer to this question.  It said the man who was caught simply received a formal police caution in November 2016.  If this is true it means he was detained for a full year before receiving a police caution.  Police cautions are usually reserved for minor crimes to sometimes save on filling out full police reports, but still put the crime on the record.  Perhaps FAQ has a typo on the year.  Even now, two years later, itâs still unclear exactly what happened to the hacker.  We donât know if he was arrested or not.  We donât even know his name or his status.  If he did only receive a police caution, then the storyâs over.  But he might still be sitting in jail somewhere.  While the hacker did commit a crime, his intention was simply to be a whistle blower with his primary goal of improving the security of childrenâs data.  [OUTRO MUSIC STARTS]  Youâve been listening to Darknet Diaries.  For show notes and links, check out darknetdiaries.com.  Music is provided by Ian Alex Mac, Kevin MacLeod, and Chris Zabriskie.</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+<p>Transcription performed by Leah Hervoly
+www.leahtranscribes.com</p>
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

@@ -1,0 +1,643 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>HD â Darknet Diaries</title>
+	<meta name="description" content="HD Moore invented a hacking tool called Metasploit. He crammed it with tons of exploits and payloads that can be used to hack into computers. What could possibly go wrong?">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="HD â Darknet Diaries">  
+	<meta name="twitter:description" content="HD Moore invented a hacking tool called Metasploit. He crammed it with tons of exploits and payloads that can be used to hack into computers. What could possibly go wrong?">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/dragon.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/114/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="HD â Darknet Diaries" />
+	<meta property="og:description"        content="HD Moore invented a hacking tool called Metasploit. He crammed it with tons of exploits and payloads that can be used to hack into computers. What could possibly go wrong?" />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/dragon.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/114/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/dragon.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/114/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="HD â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/dragon.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 114: HD</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://www.podtrac.com/pts/redirect.mp3/traffic.megaphone.fm/ADV5343057961.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/114/",
+			   "title": "Ep 114: HD"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/114">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[START OF RECORDING]</p>
+
+<p>JACK:	Did you know that in 1982, a robot was arrested by the police?  [MUSIC] Yeah, get this; it was standing on North Beverly Drive in Los Angeles, and it was there handing out business cards to people.  It could talk, too, and it was telling people random robot things.  Well, it was causing a commotion.  People were just standing around it, staring.  Traffic jams, honking; it was making a scene.  The police wanted to put a stop to it.  They looked around and in the robot to try to find who was controlling it, but they couldnât figure it out, so they started dragging it off, and the robot started screaming âhelp, theyâre trying to take me apart.â  The officer disconnected the power source and took the robot into custody.  They put it in the cop car and drove it down to the Beverly Hills Police Station.  It turned out, it was two teenage boys that were remotely controlling it.  They borrowed their fatherâs robot to pass out his robot factory business cards.  [INTRO MUSIC] Itâs funny how time changes our interest in things.  If a robot stood on the same corner today handing out business cards, it would hardly be noticed.  But in 1982, that was quite the scene.  Sometimes it just take us a while to get accustomed to the future.</p>
+
+<p>(INTRO):	These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	You ready to get into it?  You have your sixth cup of coffee today?</p>
+
+<p>HD:	I did, yeah.  I finished the whole pot.</p>
+
+<p>JACK:	You feelâ¦you sound like a guy whoâs just really turned on to like, 11.</p>
+
+<p>HD:	I just devolved, I think.</p>
+
+<p>JACK:	You talk fast, youâve built things quickly; itâs just moving all the time for you.  Okay, so, whatâs your name?</p>
+
+<p>HD:	HD Moore.</p>
+
+<p>JACK:	How did youâ¦what was some of the early stuff that you were doing security or hacking wise when you were a teenager?</p>
+
+<p>HD:	I was the internet hoodlum.  Got my start on the old BBS days, go to hang out with a friend of mine; heâd fall asleep early, leave his Mac there with his various BBS accounts, and start dialing around, figure out what we could get to, download the zines, figure out how to dial into all the fun UNIX machines in town.</p>
+
+<p>JACK:	How to dial into all the fun UNIX machines in town?  See, back in the 90s, there werenât a lot of websites that you could just spend your time endlessly scrolling through, [MUSIC] but there were a bunch of computers configured to accept connections from outsiders.  The way to connect to these computers wasnât over the internet, but simply to dial up that phone number directly and see if a computer picked up.  If a computer picks up, now itâs time to figure out what even is this machine, and why is it listening to people dialing into it?  You could find some weird stuff listening for inbound connections, stuff you probably shouldnât be getting into, but the system just was not configured to stop anyone.  HD lived in Austin, Texas, and was curious to find if any computers were listening for connections in his town.  So, he started dialing random numbers to see if any would be picked up by a computer.</p>
+
+<p>HD:	At one point, my mother was working as a medical transcriptionist, and the great thing in the early days of the internet is that to do that, we had to have a whole lot of phone lines going to the house.  We had two or three regular POTS lines, we had an ISDN line, and two computers.  She went to bed pretty early, so as soon as she was down, I was up, and I was running ToneLoc across the entire 512 area code pretty much every night for years.  Then whenever you find something interesting, you try to figure out what it is and what you can do with it.  Some of the fun highlights from back then are like, turning the HVAC on and off at the various department stores, dialing into radio transmission towers and playing with that stuff.  This is obviously well before I was eighteen and was too concerned about the consequences, but just that whole process really got me into security, security research, and eventually the internet.</p>
+
+<p>JACK:	This was really fun for HD, poking around in the dark, trying to find something interesting, and then getting lost in that system for a while.  He was fascinated by it all.  Eventually, the internet started forming a little more, and IRC picked up in popularity.  This was just a chat room, and HD was spending a lot of time in the Phrack chat channel.  Now, Phrack is the longest-running hacker magazine.  The first issue was published in 1985, and by the 90s, they had quite a trove of information.  If you wanted to learn how to hack or break computers, start by reading every issue of Phrack, and by the time youâre done, youâll be pretty knowledgeable of hacking.  So, the Phrack chat channel felt like home to HD, and he loved hanging out there, learning about hacking.</p>
+
+<p>HD:	Weâre all using our silly aliases and playing with exploits and generally causing havoc between each other.  Out of the blue, I get a message from somebody saying hey, you looking for a job?  Iâm like yeah, actually I am.  Heâs like well, youâre not too far; how far are you from San Antonio?  Iâm like well, I could drive there.  So, he set me up with a interview with Computer Sciences Corporation, which is now just called CSC, and they were doing work for â I think at the time it was called AFIC, or â it eventually became AIA.  But the Air Intelligence Agency, so the US Air Forceâs Intelligence wing, and they were basically building tools for various red teams inside the Air Force.  I was like, that sounds like a lot of fun, writing exploits for the military.  Iâm all about that.  So, I was a really terrible programmer and Iâm not much of a better one these days, but it was a fun first job to go down there and get these somewhat vague briefs about â we need a tool that listens on the network for packets and does these things with them, or scans the network looking for open registry keys and does this other stuff, so that was my first kinda professional experience of building offensive tooling.</p>
+
+<p>JACK:	I think itâs kinda weird that a recruiter for a DoD contractor was looking in the Phrack chat room to find people to come build hacker tools in order to test the defenses of the Air Force, but thatâs what happened.  HD was now using his hacking skills for good, and while he was in high school, even.  At some point while working for this contractor, they asked him to see if he can hack into a local business.  That business had actually paid for a security assessment and wanted to see if they were vulnerable.</p>
+
+<p>HD:	It was a lot of fun.  We basically just walked in and owned everything.  It was great; outside, inside, their HP 3000 servers, everything between, had a blast doing it.  We went back to CSC and said hey, weâd like to start doing more commercial pen tests, and they came back and said nope, weâre federal; thatâs it.  So, we took the whole team and started a startup.  That was Digital Defense.</p>
+
+<p>JACK:	HD loved doing security assessments for customers, and this is a penetration test.  Customers would hire them to see if their computers were vulnerable, and they did other things too, like monitoring for security events, and helped secure the network better.  [MUSIC] But there was a problem, a big one, if you ask me.  Back in the late 90s, exploits were hard to come by.  See, let me walk you through how a typical pen test works.  First, you typically want to start out with a vulnerability scanner.  This will tell you what computers are on the network, what services are running, what apps are running, and maybe even give you an idea of what versions that software is running, too, because sometimes when you connect to that computer, itâll tell you what version of software itâs running.  Now, as a pen tester, once you know the version of an application that a computer is running, you can go look up to see if thereâs any known vulnerabilities.  Maybe thatâs an old version that theyâre running.  Hereâs where the problem lies; suppose that yes, you did find a system that was not updated and was running an old version of software that has a known vulnerability.  Itâs simply not enough to tell the client that their server is not patched and needs to be updated.</p>
+
+<p>The client might push back and say well, whatâs really the risk for not updating?  So, thatâs why a pen tester has to actually exploit the system to prove what could go wrong if they donât update.  They need to act like an adversary would.  But to get that exploit so that you can demonstrate to the client that this machine is vulnerable, thatâs the hard part.  At least, it was in the 90s.  Some hacker websites would have exploits that you could download.  Those were often pretty old and out of date.  So, then you might start feeling around in chat rooms, trying to see whoâs got the goods.  If youâre lucky, you get pointed to an FTP server to download some exploits, but it has no documentation, and who knows what this exploit does?  It could be an actual virus.  As a professional penetration tester, you really canât just download some random exploit from the internet and launch it on your customerâs network; no way.  Who knows what that thing does?  It could infect the whole network with some nasty virus or create some backdoor that other hackers can get into.  So, back then, there just wasnât a place to get good exploits from, and especially, there wasnât a place to get the latest and greatest ones.</p>
+
+<p>HD:	As you start rolling into the 2000s, what happened is all the folks who previously were sharing their exploits with the researchers, with kinda the community, they obviously started either just getting real jobs and stopped sharing their tools or they thought there was ethical issues with that.  But basically, it all dried up.  It turned into some commercial firms.  Like, Core Impact was targeted around the same time to commercialize exploit tooling.  Other folk just decided they werenât doing it anymore or they got in trouble.  So, if you were a security firm trying to do pen tests for your customers, it was really difficult to get exploits back then and really difficult to know whether they were safe or not without rewriting every byte of shell code from scratch.  So, the challenge of getting the right tools and exploits, you had to build a lot of it in-house.</p>
+
+<p>JACK:	Well, this company that he was working for didnât really have the ability or expertise or resources to develop their own exploit toolkit.  But HD, being someone whoâs fiercely driven and part of this hacker culture, was acquiring quite a bit of exploits and learning how they worked, and was able to code some of his own.  But these exploits were unorganized; they were scattered all over his computer, the documentation wasnât there, it was hard to share it with some of his teammates, and thatâs why HD Moore decided to make Metasploit.  [MUSIC] Metasploit is an exploit toolkit, which basically means itâs a single application that has loads of exploits built into it.  So, once you load it up, you can pick which exploit to use, input some parameters, and launch it on the target.  It was not so great, but it was a basic collection of vulnerabilities that HD knew and could trust that werenât filled with viruses.  This little tool he built was helping him do security assessments, and now that heâs made a framework, he can continually add new vulnerabilities to make it better.  But there are new vulnerabilities being discovered all the time, so it was an endless job to keep adding stuff to Metasploit.</p>
+
+<p>HD:	Yeah, I mean, itâs a combination of finding vulnerabilities myself, sharing with your friends, reporting some of them, not reporting others at the time, and then just me and my friend sharing exploits all day long.  I wrote some; they werenât very good, but Iâd write stuff all the time.  Then you get access to one of the really interesting ones or really high-profile ones, and play with it a little bit and see what you can do with it.  What ended up being the first version of Metasploit was very menu-based, very terminal-based.  We kinda picked the exploit, picks â picked the NOP encoder, the exploit encoder, and the payload, and put them all together, and then send it.  By the time we got to Metasploit 2, we threw all that out the window and came up with â the idea was that you can assemble an exploit like Legos.  So, it wasnât â prior to this, most exploits had maybe one payload, maybe two payloads.</p>
+
+<p>JACK:	Oh yeah, a payload.  A payload is what you want your computer to do after a vulnerability gets exploited.  Imagine a needle and syringe; the needle is the exploit.  It gets you past the defenses and into the system, but an empty syringe does nothing.  The payload is whateverâs in the syringe, the thing that gets injected into the computer after itâs penetrated.  So, what is a typical payload?  Well, it could be to open the door and give you command line access, or it could be to upload a file and execute it on that computer you just got into, or it could be to reboot the computer.  The exploit is the way in, and the payload is the action taken once you get in.  Yeah, the exploits that you would get your hands on back then, then had built-in payloads.</p>
+
+<p>Changing the payload wasnât always even an option unless you had access to the source code of the exploit and could build your own payload.  Even if you did that, what happens the next time when you want to use that exploit with a different payload?  Youâd have to recompile the whole thing with something new and then fiddle with it to get it to actually work.  Of course, you donât want to run some payload that someone else made on one of your customerâs computers unless you can examine the source code and see what it does.  HD saw this was a problem and modularized how you build an attack.  He made this easy, with Metasploit, giving you the option to pick the exploit, pick the payload, and then choose your target.  It made hacking a thousand times easier.</p>
+
+<p>HD:	So, instead of being stuck with one payload or one exploit, you could take any payload, any exploit, any encoder, any NOP generator and stuck â stick them all together into a chain.  It was great for a bunch of reasons; a lot more flexibility during pen tests, you could experiment with really interesting types of payloads that were non-standard, and because everything was randomized all the time, a lot of the network-based detection tools couldnât keep up.</p>
+
+<p>JACK:	Because everything was randomized?  This is actually a really clever thing he added to the tool.  So, if you put yourself in a defenderâs shoes, they obviously donât want exploits being run in the network, and they want to identify them and not let those programs run, right?  A defender might even make a rule in the antivirus program that says hey, if thereâs a program that is this size and has this many bytes and is this long and is called this, then itâs a known virus.  Do not let this program run.  Well, what Metasploit did was randomize all these parts.  Theyâd give it a random name and a random size and all kinds of random characters, simply so that antivirus tools would have a hard time detecting it.  It makes sense for Metasploit to try to evade antivirus, because securing your network should be multilayered.  The first layer would be to make sure the computers in your network are up to date and on the latest patch.  Then the next layer should be to have them configured correctly.  If both of those fail, then antivirus can inspect whatâs happening and try to stop an attack in progress.  But if antivirus is blocking it, it hasnât even tested whether that system is secure or not.  So, it needs to go around antivirus tools to actually test the server, and a good pen tester will test multiple layers to make sure each layer of defense is actually working.</p>
+
+<p>HD:	So, by definition, Metasploit was evasive by default.</p>
+
+<p>JACK:	[MUSIC] Now, at the time, HD was using this tool to conduct penetration tests on people who wanted to see if their network was hackable.  HD was one of the initial people to join this company, but he wasnât in any sort of leadership role or a manager or anything.  So, imagine for a moment youâre HDâs boss, and HD shows you this home brew exploit toolkit which is programmed to seek out and exploit known vulnerabilities in computers and payloads built into it.  Now, clearly, in the right hands, this is a weapon.  Itâs an attackerâs dream come true.  Some of the vulnerabilities in it are high-quality and make them very dangerous, giving you access to pretty much anything at the time.  Him bringing in Metasploit to work was like bringing in a bucket of hypodermic syringes with their safety caps off, and some of these were picked up off shady, underground places.  Some of them were DIY homemade, and with syringes, you typically see them in the hands of highly-skilled professionals like doctors or people who need beneficial medicine, or drug addicts.  So, a bucket of syringes can be extremely dangerous or extremely beneficial.  Thereâs no real middle ground.  It was the same with Metasploit; it was a bucket of some pretty scary exploits that if you let loose in the office would be a pretty big problem.  So, bringing in a toolkit like this to work, well, HDâs employer was not supportive of this tool.</p>
+
+<p>HD:	I guess more accurately, they were terrified of it.  They did not want to be associated with anything I was working on.  But at the same time, they were kinda stuck with me because I was running most pen test operations.</p>
+
+<p>JACK:	Why were they terrified of it?</p>
+
+<p>HD:	There was a lot of fear of exploits and liability.  The worry was that if we released an exploit and something â someone bad used it to hack into somebody else, somehow my company would become liable.  So, they wanted to stay as far away from it as they possibly could.  It didnât help that our primary client base were credit unions, which were kinda naturally conservative and probably still are.  They didnât want to know that the people they hired for security assessments were also releasing and open-sourcing exploit tools on the internet.</p>
+
+<p>JACK:	This is an interesting dichotomy, isnât it?  On one hand, if youâre gonna be testing if a company is hackable, you need these attack tools, these weapons.  But nobody ever asks a pen tester, where are you gonna get your weapons from?  They just assume, since youâre a hacker, you know how to do it.  But itâs not like you can just type a few commands to get around some security measures.  Thatâs like reinventing the wheel every time you want to do an assessment.  You need tools for the job, a set of attacks that you know work well and you can trust that wonât put malware on your customerâs network or cause harm.  But thatâs a lot of work to make sure of, and if you make a hacking tool like this for yourself and maybe put it out there for someone else to use, that does sound like it could come back and bite you.  If someone uses it to actually commit a crime with, how much are you liable for that?  So, he had to make a decision on what to do with this Metasploit tool.  If his work wasnât going to help him with it, what should he do with it?</p>
+
+<p>HD:	[MUSIC] Well, itâs one of those things where on one hand, they wouldnât support it; other hand, we desperately needed this tool to do our job.  It became a nights and weekends thing.  So, Iâd clock out of work and Iâd go spend the rest of the night not sleeping, working on exploits, working on a shell code, and â not particularly good exploits, but I got better eventually, and finally got to the point that we had something that was worth using all on its own that wasnât just a crappy script kiddie tool or a rewrite of a bunch of new exploits; it was actually something that had some legs to it.  That led to â I think my first trip was to Hack the Box, Malaysia, to talk about it.  It was a great experience to really get feedback about how different it was from what other people were doing at the time.  That really kind of helped give me motivation to keep working on it.  It also helped me find people to work on it with.  So, Annette, Spoonm shortly after, I met Matt Miller or Skape right after that.  They joined the team and we just kinda kept it going as this side project for the next few years.</p>
+
+<p>JACK:	So, in 2002 is when he first shared Metasploit with others, which immediately got a few people so interested in it, they wanted to help make it.  With a few people helping him, in 2003, he decided to release Metasploit publicly for others to download and use.  After all, it was providing him a lot of value to do his job better, so it would probably make it easier for other penetration testers to do their job, too.  He also decided to give it away free, and importantly, he made it open-source, so anyone could inspect the code to verify thereâs nothing too bad going on in there.</p>
+
+<p>HD:	So, metasploit.com was created, and that was where we first started posting some interesting variants of Windows shell code that we came up with that were much smaller that was available otherwise.  Then eventually, it became where we shared the Metasploit framework code.  The downside, of course, is it gave everyone else a target to go after.  So, as soon as we started posting versions of Metasploit framework to metasploit.com, we started getting DDoS attacks, exploit attempts.  It got so bad that one guy actually couldnât hack our server, so he hacked our ISP, ARP-spoofed the gateway by hacking the ISPâs infrastructure, and then used that to redirect our web page to his own web server.  So, he couldnât hack our web server or deface it, but heâd just redirect the entire ISPâs traffic just to be able to deface metasploit.com.</p>
+
+<p>JACK:	Wait, the Metasploit website was getting attacked?  By who?</p>
+
+<p>HD:	[MUSIC] In the early days, everyone hated Metasploit.  My employer hated Metasploit, our customers hated Metasploit.  They thought it was dangerous.  All the black hats, all the folks who were trading exploits underground, they absolutely hated it because weâre taking what they thought was theirs and making it available to everybody else.  So, itâs one of those things where the professionals in the space hated it because they thought it was a script kitty tool.  The black hats hated it âcause they thought weâre taking away from what they had, and all the professional folks and employers and customers thought it was sketchy to start with, so it took a long time to get past that.  But in the meantime, we were getting DDoS attacks, weâre having people try to deface the website, weâre having folks spoof my identity and spoof all kinds of terrible things on the internet under my name, you name it.</p>
+
+<p>JACK:	Someone decided to attack HD for publishing exploits.  They couldnât figure out a good attack on him, so they spent time figuring out where he worked and decided to attack his employer.  They scanned the websites that his employer had, and found a demo site.  It wasnât the employerâs main site; it was a tool to demonstrate how to crack passwords.  Well, this demo site was running the Samba service, but it was fully patched, so there shouldnât be a way to hack into this through the Samba service.  HD even tried attacking it with Metasploit, but couldnât figure out a way in.  But there was someone who did know of a Samba vulnerability.  They developed their own exploit and attacked HDâs employerâs website and tried to get inside the system.  But their payload didnât work that well, and it crashed the server.</p>
+
+<p>HD:	So, I got this alert saying the machine was basically shut down, it crashed.  Weâre capturing all the traffic going in in that machine just fine to start with, but by doing that, we were able to carve out the initial exploit.</p>
+
+<p>JACK:	Wow, this is fascinating.  Because HD was capturing all traffic going into and out of that machine, he was able to find the exact code that was used to exploit the Samba service, which is incredible.  I mean, itâs like finding a needle in a haystack.  But then as he examined this code that was used to exploit the system, he realized this was a completely unknown vulnerability to everyone, which is called a zero-day exploit.  HD was able to analyze this and learn how to use it himself.</p>
+
+<p>HD:	Did some analysis on it, contacted the Samba team saying hey, thereâs a really awful remote 0-day in Samba.  So, we wrote our own version of the exploit, put it on metasploit.com, and that was kind of the beginning of a long, long war with â I donât even know which group it was, but they spent the next two weeks DDossing our website for leaking their exploit.  Not only leaking it, but writing a better version.</p>
+
+<p>JACK:	Thatâs brilliant.  Because someone didnât like that HD created Metasploit, they attacked his employer, which made him discover their exploit, which he then reported to the Samba team to get it fixed, and then he added it into his tool, Metasploit.  This made his attacker so much more mad at him, and he continued to get attacked like this all the time.</p>
+
+<p>HD:	Folks like emailing my boss telling them to fire me, things like that.  Weâve had someâ¦</p>
+
+<p>JACK:	But yeah, why are people wanting you to be fired?</p>
+
+<p>HD:	They felt that publishing exploits was irresponsible and I was a liability to the company, and they didnât want me to have a job because of what I was doing in my spare time.</p>
+
+<p>JACK:	Huh.  Did they have a point?  Did you feel it with them?</p>
+
+<p>HD:	It was good motivation to try harder.</p>
+
+<p>JACK:	Okay, so, the idea that somebodyâs going to be upset with a side project youâre working on on the weekends to the point where theyâre gonna say, I need to get this guy HD; Iâm gonna ruin him, Iâm gonna e-mail his boss and tell his boss to fire him, that sounds like cancel culture to me before they even had the term âcancel cultureâ.</p>
+
+<p>HD:	I guess itâs not that different.  I feel like maybe it was the equivalent of a moral, ethical dilemma for them at the time.  They thought somehow I was doing something that was morally wrong and therefore needed to be punished.  But yeah, thereâs definitely a lot of that.  There is pressure not just from black hat researchers and from customers who didnât like what I was doing, but also from other security vendors saying well, if you want business with us, then you have to bury this vulnerability.  You canât talk about this one.</p>
+
+<p>JACK:	[MUSIC] Whoa, so when he would find a vulnerability in one of the companies that were a business partner of his employer, that company was absolutely not happy when HD published the exploit and added it into Metasploit.  Because remember, Metasploit makes hacking so much easier, which means if itâs in the tool, itâs now easy to exploit that companyâs products.  So, theyâd get mad at him, ask him to take down the blog posts that talk about this vulnerability, and remove it from the tool.  They would even threaten to take away the partner status that they had with his employer if he didnât comply.  Things were getting pretty ugly, and his employer was growing increasingly unhappy with HD.  He was frequently finding himself in the crosshairs of many attacks, but this is his territory; hacking, attacks, defending.  Thatâs what he does during the day as his day job, but itâs also what he does at night for fun, and he even dreams about this kind of stuff.  So, if someone attacks HD Moore, you know heâs gonna have fun with that.</p>
+
+<p>HD:	What happened is some vulnerability we published was being actively exploited by some black hats who were building a botnet, and they were so mad about it, they decided they were gonna use that botnet to DDoS metasploit.com.  What they didnât realize, though, was Metasploit wasnât a company.  Metasploit was just a side project I was running in my spare time, and I thought the whole thing was hilarious that they were spending all this time DDossing it.  But I didnât like the fact they were DDossing an ISP that I liked working with.</p>
+
+<p>JACK:	So, this botnet was flooding both of his DNS names, metasploit.com and www.metasploit.com.  It was sending so much traffic that the site was unusable by anyone and was essentially down.  HD investigated this botnet a bit and discovered where the botnet was being controlled from.  He found their command and control server, or C2 server.</p>
+
+<p>HD:	They just happened to also have two command and control servers.  So, a light bulb goes off.  Itâs like, well, letâs point www.metasploit.com to one of their C2s and their domain name to the other one and just sit back and wait a couple weeks, see what happens, right?  So, what happened is because those are the control servers for the botnet and a botnet was DDossing its control servers, they got locked out of their botnet until we changed the DNS settings.  So, we essentially hijacked their own botnet to basically flood their own C2 indefinitely until they finally e-mailed us a week later saying please can we have it back?</p>
+
+<p>JACK:	Wait, what?  They e-mailed you?</p>
+
+<p>HD:	Yeah, âcause they didnât know how else to get ahold of us.  So, they basically lost their botnet.  We said okay, well, donât DDoS us again.  They went okay, we wonât, and that was the end of that.  We never got DDossed again.</p>
+
+<p>JACK:	Weâre gonna take a quick ad break here, but stay with us because HDâs just getting started with the stories that he has.  Who do you associate yourself with?  Because Iâm feeling like youâve got three legs in three different buckets, here.  On one leg, youâre standing in the Phrack IRC channel, which is black hat hackers, typically, at the time, right?  These are the people who may be either just, I donât know, hacktivists or cyber criminals proper.  Then youâve got your relationship with the DoD, and then youâve got your professional relationship where youâre trying to show yourself, like look, Iâve got some real chops here; I can do this kind of penetration work for a fee.  Iâm a professional, this kind of thing, and Iâve got actually a tool that Iâm developing that can be used for professionals.  So, how â where in this scenario do you feel like youâre most at home?</p>
+
+<p>HD:	Good question.  I definitely felt like an outsider in all those groups.  The Phrack channel went through a big change right around 2000 or so, where it used to be some pretty well-respected hacker researcher types, and got taken over by a group of trolls that called themselves Phrack High Council, and those folks and I did not get along.  That led to this multi-year constant trolling and chaos and things like that.  Even professionally though, I didnât really have anyone I could really hang out with besides my coworkers, and I had some good friends there, but there wasnât â I almost kinda felt like an outsider in all three of those camps, I guess.</p>
+
+<p>JACK:	Yeah, because I know about this sort of infighting in the hacker communities.  When a hacker thinks theyâre hot stuff, they post something, they make a website, whatever.  Other hackers will try to dox them and attack their website, and itâs just constantly doing that.  Did you feel like thatâs kinda what this was, was just hacker versus hacker?  Like look, Iâm a smarter hacker than you are?  Or did it feel like no, youâre not one of us; get the hell out of here kind of attack?</p>
+
+<p>HD:	It definitely wasnât friendly.  Some friends and I would always go after each otherâs stuff and it wasnât a big deal.  You say hey, look, check your home directory; thereâs a file there, or whatever it is, right?  These are folks who â they would steal your mail spool, theyâd publish it on the internet, they would forge stuff in your name, theyâd try to get you fired, theyâd try to get you arrested.  They do everything â this is prior to swatting, of course, but this is pretty much everything they could do to ruin your life.  This was no holds barred; weâre ruining you and good luck fighting back.  So, this is definitely not the fun kind.</p>
+
+<p>JACK:	Now, by this point, HD and the team working on Metasploit have found lots of new unknown vulnerabilities themselves, stuff that the software maker has no idea is even a problem.  They do this by scanning the internet, attacking their own test servers, and trying to break their own computers.  But what do you do when you find an unknown vulnerability in some software?  Well, the best avenue is to find a good way to report it to the vendor, right?  But HD has had a bit of a history with reporting bugs to vendors.</p>
+
+<p>HD:	When I was in teenage years and still kind of in high school, I was working on a bunch of the NT4 exploits for fun, like the old HGR buffer overflow and things like that.  While I was putting around one day, I found a way to bypass their country validation for downloading â I think it was NTs, Service Pack 4 for Microsoft.  So, instead of it looking at your IP address doing geolocation, itâd look at a parameter you put in the URL instead, and you can basically download the high encryption version of NT SP6 from Russia or wherever else, which was not a good thing at the time because of all the expert controls.  So, I contact the Microsoft security team which was pretty nascent back then, and said hey, you can bypass all your expert controls; this is probably not good.  They were like well, what do you want?  Iâm like, I donât want anything, but what do you got?  They said well, what are you looking for?  Iâm like, can I have an MSDN license?  Thatâd be awesome.  That was the beginning of a long series of really weird interactions with the security team there.  Fast forward toâ¦</p>
+
+<p>JACK:	Iâm trying to remember what a MSDN license was.</p>
+
+<p>HD:	MSDN was the license that gave you access to all the operating system CDs and media for everything Microsoft made.  So, if you had an MSDN license, you basically have a â you can install any version of Windows you want, any version of Exchange Server, all that stuff.  So, as a hacker or someone doing security research, it was a gold mine âcause you have all the bulk installers and data all in one place.</p>
+
+<p>JACK:	Got it.  Okay.</p>
+
+<p>HD:	So, fast forward to my first startup and finding vulnerabilities in Microsoft products and doing a lot of work on asp.net and configurations and other stuff we run into during pen testing, and Microsoft did not like having vulnerabilities reported.  They do anything they can to shut you up.  They did not like having someone ex â releasing exploits for vulnerabilities on their platform.  The first startup I worked at was a Microsoft partner, so we had a discount for MSDN and things like that for internal licenses, and a gentleman at Microsoft kept calling our [MUSIC] RCO saying hey, you need to stop letting this guy publish stuff.  You need to fire this person or weâre going to take away your partnership license.  So, they kept putting pressure on my coworkers and my boss and the CEO to get rid of me, basically, because of the work I was doing to publish vulnerabilities.  That just made me angry; I had got a chip on my shoulder pretty early on about that, and by the time I got to the Hack the Box contest in Malaysia to announce Metasploit, they had a Windows 2000â¦what was it?  Windows 2003 server, I think it was being announced at that time, and they had a CTF for it.  I was like great, Iâll do this CTF.</p>
+
+<p>JACK:	So, CTF stands for Capture the Flag.  Itâs a challenge that a lot of these hack conferences have, where they put a computer in the middle of the room and see who can hack into it.  In this case, it was a fully-patched Windows computer, and HD was curious if he could find a vulnerability to get into it.  So, he creates some tools to send it random commands and inputs, anything that he could send to it to try to cause it to malfunction.  Sure enough, he did get a fully-patched Windows computer to malfunction.  So, he examined the data that he sent to this computer to cause it to malfunction, and he was able to use that to create an exploit which got him remote access to the system.  Now, since this was an unknown bug to Microsoft and Microsoft was there at this hacker conference sponsoring the thing, he went up to them and told them about it.</p>
+
+<p>HD:	They were like great, report it to us.  Iâm like no, itâs mine.  Am I gonna get a reward for it?  What are you gonna do with it?  I found this vulnerability.  Itâs mine to do what I want to with it.  So, I reported it to the Hack the Box where I was like hey, Microsoftâs trying to pressure me to not disclose this thing that I found.  Thatâs not the point, right?  The point is yeah, I found a bug in your server; now Iâm gonna talk about it.  Iâm gonna share it with you, but the idea is to go publish it afterwards.  They shut the whole thing down.  [MUSIC] So, I heard secondhand that Microsoft threatened to pull sponsorship of the Hack the Box conference if they let that vulnerability get published.  So, the whole thing got swept under the rug.</p>
+
+<p>JACK:	See, at the time, Microsoft didnât take their security as seriously as they should.  They werenât publishing all the bugs that they were finding or rewarding people for the bugs they found.  As HD tells it, they were asking people to not publish bugs publicly.  They thought it was just better to hide some of these attacks so that nobody knows about it.  But around this time, in 2002, Bill Gates sent a famous memo to everyone at Microsoft which said security is now a priority of the business, and they started a new initiative called the Trustworthy Computing Group.  Well, HD saw that this bug he found was causing problems with the conference and he liked the conference and didnât want them to lose their biggest sponsor, so he agreed to just sit on this bug and do nothing with it.  Six months later, someone else found the same bug and reported it to Microsoft, and they were able to fix it.  It was only then that HD published his version of it.</p>
+
+<p>HD:	So, the short version is, Iâm more than happy to tell the vendors about it, but I also want to make it public at some point.  These are vendors that, at the time, were sitting on vulnerabilities more than a year, two years, maybe never disclosing it.  They had no motivation to ever disclose a vulnerability reported to them, and they would do anything they could to pressure you not to.  Microsoft was probably the â one of the biggest offenders at the time of pressuring researchers into not disclosing vulnerabilities they found.</p>
+
+<p>JACK:	Do you know if there was a â even a vulnerability list that they had published at the â at that time?</p>
+
+<p>HD:	I think Microsoft â there were CVEs at the time and Microsoft had their security advisories, but the security advisors were just the tip of an iceberg.  There was so much stuff being reported to them that they would just shut down.  The challenge with keeping these secret whether itâs because youâre the vendor and donât want people to know about it and itâs bad marketing or whether youâre a black hat and trying to use it to break into systems is that nobody else out there can protect themselves.  They canât test themselves.  They donât know whether theyâre actually vulnerable, whether the security product they bought to prevent exploitation is actually working, right?  So, one of the great things about having a publicly available exploit for a recently disclosed vulnerability is you can make sure that all your mitigations, all your control, all your detection, are actually working the way theyâre supposed to.  Everybody else did not want that.</p>
+
+<p>JACK:	At the time, Microsoftâs browser was Internet Explorer.  With the chip on his shoulder from dealing with Microsoft in the past, HD decided to see how many vulnerabilities he could find in Internet Explorer.</p>
+
+<p>HD:	[MUSIC] Basically were myself, a couple friends; we put together some browser fuzzers.  We used the browserâs own JavaScript engine to just find hundreds and hundreds of vulnerabilities.  We tested every single ActiveX control across Windows and just found bugs in all of them at once.  So, we basically created this mass vulnerability generator, and weâre sitting on probably like, 600, 700 vulnerabilities at the time, and the vendors were just not moving on it.</p>
+
+<p>JACK:	He kept reporting bug after bug to Microsoft, but from his perspective, nothing was getting done.  So now, what do you do when youâve told the vendor about a bunch of bugs and they didnât act on it, and you have hundreds more?</p>
+
+<p>HD:	It got to the point that we just gave up.  We said you know what?  Weâre gonna do an entire month; weâre gonna just drop an 0-day every single day for a month straight, and weâll still have hundreds left over afterwards.  It was that particular sequence and that particular event that I think finally killed ActiveX and Internet Explorer.</p>
+
+<p>JACK:	Why?  Why do you think that?</p>
+
+<p>HD:	Well, after the thirty or fortieth ActiveX vulnerability reported, then weâre like, hey guys, we have 200 or 300 more.  We can keep â we can go â keep going all year at this point.  It was a good indication that they realized there was no safe way to implement ActiveX control and Internet Explorer.</p>
+
+<p>JACK:	Microsoft was realizing the security in their products wasnât cutting it.  They needed to do better, and they were working on that.  In fact, what they started doing was offering jobs to people who were reporting bugs to them.</p>
+
+<p>HD:	So, if you were someone who was previously reporting a bunch of vulnerabilities to Microsoft, all of a sudden you got a job offer instead.  I mean, thereâs a amazing security research group called LSD out of Poland, and three of the four folks that were part of this group joined Microsoft during this time.</p>
+
+<p>JACK:	Well, did they contact you?</p>
+
+<p>HD:	Weâre friends.  I met them in Malaysia and I see them at conferences and stuff like that.  I definitely got a few offers from Microsoft early on, but I kinda pushed back with ridiculous terms, like no way in hell, essentially, mostly because I felt like they didnât really have the best interest of the community at heart.  They definitely â they would shut down anything I was working on.  For the most part, it was true; folks who took a job at Microsoft after doing vulnerability research before, you never heard a peep out of them again.</p>
+
+<p>JACK:	Hm, can you imagine if that happened?  If HD got hired by Microsoft?  They might have tried to close down Metasploit altogether, and what a loss that would have been.  Because, Metasploit was starting to pick up some traction, and while it was hated by many, it was being used by many more.  Pen testers all over were beginning to use it as one of their primary tools to test the security of a network.  It was shaping up to be a vital and amazing tool as a pen tester, because it made their job so much easier than before.  As the need for pen testers rose, the need for better pen tester tools rose, too.  Of course, the whole time, Metasploit was free and open-source, so the community could just look at the source code and verify there wasnât anything malicious getting installed on someoneâs computer once you hack into it.  The security community was slowly adopting it and liking it more and more every day.  Well, as time went on, Microsoft really did step up their game on handling bugs found by researchers.  They were patching things much quicker and were learning that they cannot control the bugs that outside researchers discover.</p>
+
+<p>Thatâs kind of a hard thing even for companies to understand today.  If someone finds a bug in your product, you canât control what that person does with that bug.  You can try to offer a bug bounty reward to them, but that doesnât mean researchers will take it.  They might sell it to someone else or publish it publicly for everyone to see.  Software vendors cannot control what people do with the bugs they find, and people like HD, who was just publishing vulnerabilities all the time, were making that point crystal clear.  [MUSIC] Microsoft has an internal conference thatâs just for Microsoft employees.  Itâs called BlueHat, and at some point, they started inviting security researchers from outside Microsoft to come talk at it.  HD knew one of the researchers who was giving a talk, and was invited to come co-present at BlueHat.  So, HD got to go to this exclusive Microsoft conference and present to their developers.  I just imagine your talk is just like, here are the 400 things wrong with Microsoft.</p>
+
+<p>HD:	Yeah, it was a lot of that.  It was like, one good example is back in â what was it?  2005 or so, I was on the flight over to BlueHat and I was playing with a toolkit that I was calling KarMetasploit at the time or Karma meets Metasploit.  Karma was a way to convince wireless clients to join your fake access point and then immediately start talking to you and try to authenticate to you like youâre a file sharer or printer.  So, essentially, if you had your Wi-Fi card enabled, letâs say on an airplane, and someone was writing this tool on a different laptop in the same airplane, they would then join your fake access point, try to access company resources automatically, give you their password both times, and then provide a lot of exploitable scenarios where you can actually take over their machine.  So, we thought itâd be fun to run this tool on the actual airplane as we were flying to BlueHat, and lo and behold, we end up collecting a bunch of password hashes from Microsoft employees in the process.</p>
+
+<p>JACK:	You little stinker.</p>
+
+<p>HD:	It was fun times.</p>
+
+<p>JACK:	Where are you on this whole responsible disclosure thing?  Do you want to get this stuff fixed ASAP or are you more â where do you â what do you think you should do with a vulnerability if you find it?</p>
+
+<p>HD:	After going down that path a few hundred times, the fastest way to get a vulnerability fixed is to publish it on the internet that day.  Whether itâs responsible or not, itâs effective.</p>
+
+<p>JACK:	Well, he has a point.  Itâs true; if you find a bug and want it fixed as fast as possible, make it known to the world in the biggest and loudest way, and it will get fixed fast.  But even though thatâs the fastest path to getting a bug fixed, itâs not the responsible way to do it, because doing that exposes a lot of people who canât do anything to stop that attack.  It means criminals can use it before itâs fixed, and this puts a lot of people at risk, which means youâre probably doing more damage than helping.  Itâs better to privately tell the software maker and give them time to fix it.  But then when they arenât fixing it and youâve given them plenty of time, then they might need a little fire under them to get them moving on it.  Sometimes to get a company motivated, youâve got to give them a little bad PR.</p>
+
+<p>HD:	Definitely depends on the vulnerability.  These days, Iâve been leaning towards kind of a 98 disclosure policy, where you tell the vendor about it for forty-five days, then you tell somebody else about it is a dead manâs switch.  If the vendor sits on it and it leaks, the other personâs gonna publish it no matter what.  Iâve been using that strategy by working with US-CERT for the last few years, where whenever you publish a vulnerability to a vendor, they get forty-five days of only them having access to it, and then forty-five days later, it goes to US-CERT, or sorry, CERT CC, and they can â theyâre basically guaranteed to publish it after forty-five days.  So, the great thing about that model is youâre kinda splitting the responsibility; youâre in â youâre making sure that the vendor takes it seriously and gets the patch out in time, but youâre also not having to publish it directly on the internet.  So, having a third party like that really reduces the ability of the vendor to pressure any individual researcher from not disclosing, because itâs already in the hands of another party at that point.</p>
+
+<p>JACK:	There are a few groups that have adopted this same model.  Trend Micro has the Zero Day Initiative, and Google has Project Zero.  Both of these groups look for vulnerabilities and report them to the vendor, and then give the vendor ninety days to fix it.  Then theyâre gonna publish it publicly.  So, the vendor knows if they get a bug report from any of these groups, they have to act quick and get it fixed before it becomes public, because that would be a PR nightmare.  Itâs wild to see major tech firms like Google playing this sort of hardball game with software makers.  But this has been working pretty well. Because now we see things like Trend Micro publishing some zero days on big companies like HP. Because HP wasnât fixing their vulnerabilities fast enough.</p>
+
+<p>HD:	Yeah, itâs great.  I think itâs effective; sometimes you have to.  The folks that you chatted with at HP about, theyâre like yep, thatâs the only way that teamâs gonna get the resource needed to fix the product, is if we publish it a zero-day.</p>
+
+<p>JACK:	[MUSIC] At some point, Metasploit got a new feature called Meterpreter.</p>
+
+<p>HD:	Meterpreter was the brainchild of Matthew Miller, Skape, and a lot of other folks worked on it, but he was really the architect behind it.</p>
+
+<p>JACK:	Meterpreter is a payload.  Remember, the payload is the action you want to happen after your exploit opens the door for you.  But the Meterpreter payload is kind of like the ultimate payload.  It lets you do so much on the target system that you just hacked into; you can look at what processes are running, you can upload a file to that system or download a file.  It helps you elevate your privileges or grab the hash file where the passwords are stored.  I mean, think about that for a second.  Letâs say you use Metasploit to get into a computer, and with one command, hashdump, it knows exactly where the password file is on that computer and it just goes and grabs it and downloads it to your computer so you can just start cracking passwords locally if you want.  You donât need to know where the password files are stored on that computer; Meterpreter knows that for you.  You just need to know the one command, hashdump, and you got them.  But Meterpreter does so much more than this; it lets you turn the mic on and listen to anything the mic is picking up.  It lets you turn the webcam on and see what that computer can see.  It lets you take screenshots of what the user is doing right now.  It lets you install a keylogger if you want to see what keys the user is pushing.  Meterpreter is incredible, but with a payload like this, it makes Metasploit so much more dangerous.  I mean, all these features can be easily abused by the wrong person and can cause lots of damage.</p>
+
+<p>HD:	On the vendor side, it was scary for them because instead of exploits being these really simple payloads that they would drop, they could easily detect.  Now exploits could drop anything.  They could drop TLS-encrypted connect packs.  They could drop basically mini-malwares instead that are able to automatically dump password hashes and communicate back over any protocol you want.  So, we made the payload side of the exploitation process incredibly more complicated and way more powerful.  This is kinda one of those points where some of the features of Metasploit, especially around Meterpreter, started getting really close to the malware world.</p>
+
+<p>JACK:	Right, and I think thatâs where I want to head, but youâre not just doing a proof of concept of okay, look, I can get into your machine and I â hereâs who am I or something and what process ID Iâm running as.  Youâre building this â Meterpreter gives you full access to that computer, which allows you to screenshot, do keyboard sniffing, whatever, all these things that are a lot more thumb-in-your-eye kinda thing, and I donât know if thatâs taking it too far.  Thatâs what Iâm â itâs not just a proof of concept; itâs â we can completely destroy this machine if we wanted, which I guess you have to kind of prove that in order to show the voracity of this vulnerability, but it just â itâs almost going too far for me.  What do you think?</p>
+
+<p>HD:	Well, one of my favorite things with Meterpreter is we had a way to load the VNC desktop-sharing service in memory as part of the payload itself.  We had it wired up in Metasploit, so you literally run the Metasploit exploit and youâd be â immediately get a desktop on your screen, be able to move the mouse cursor, be able to type on their keyboard.  It was immediate remote, gooey access to a machine over the exploit channel itself, which is just mind-blowing at the time for payloads, âcause it didnât depend on RDP or anything like that.  It didnât depend on the firewall being open âcause they do a connect back to you and then proxies it.  It was just amazing delivery.  That specific payload blew so many minds that it was really easy for us to show the impact of an exploit.</p>
+
+<p>If youâre trying to show an executive after doing a pen test, hey, we got into your server; hereâs a command prompt of us doing a directory listing, thatâs one thing.  But if youâre showing that you literally take over their server and youâre moving the mouse on their desktop within two seconds of connecting to the network, that is an entirely different level of impact that you can show.  It also let us build a lot of other really complex, really interesting use cases where it really shows what the impact of the exploit is.  It isnât just like oh, youâve got a bug and you didnât patch it and now Iâve got a command shell.  Itâs like no, no; I have all this access to your system, whatever it happens to be.</p>
+
+<p>JACK:	Yeah, I guess thatâs kinda what drew me to Metasploit as well, is like, oh my gosh, itâs not just a exploit, itâs what you do with the exploit after you get in.  But as you were saying, the Meterpreter started getting close to being its own malware.  Explain what you mean by that.</p>
+
+<p>HD:	Well, a lot of the malware payloads even today are written in C and theyâve got all these advanced communication channels and C2 contact mechanisms and all this boiler plate stuff that they do, like providing the ability to chainload payloads, download more stuff, talk to back ends, bounce between different back ends.  We got Meterpreter to the point that it actually had the same capabilities as some of the more advanced malware that are out there, and thatâs when it started getting a little swiffy for me, âcause itâs like, we donât want to be in the malware business.  Weâre here to show the impact of exploits and let people test their systems and to generally demonstrate the security impact of a failed security control or a missing patch.  But weâre not here to persistently infect machines, and Meterpreter got very, very close to that line.  The thing that really separated it from actual malware is the fact it was always memory-based only.  It was never on disk at all.</p>
+
+<p>JACK:	[MUSIC] Hm, this is a strange territory to be in.  Metasploit is a tool thatâs sole job is to hack into computers.  Whether you have permission to do that or not, thatâs the purpose of it.  But it seems to be the intent of the person using it that tells us whether Metasploit is malware or a useful tool.  So, the Metasploit team had to be very careful on how far they took this tool.  Now, this is a multi-open-source, multi-developer project.  Did you have some sort of manifesto that said â or a meeting that said okay guys, hereâs â weâre gonna push this all the way it goes, except no persistence.  Was there a manifesto of likeâ¦?  Like you just said, you donât want to leave your customers weaker.  This is a secure â this is a professional tool; itâs something written out there.</p>
+
+<p>HD:	It was never a written manifesto, but it wasnât a ethical boundary; it was just a practical boundary.  Youâre not gonna use Metasploit for a pen test if it leaves garbage all over your machine afterwards or backdoors it in a way thatâs difficult to fix.  Some exploits require temporarily creating a backdoor user account or otherwise creating something that would otherwise create more exposure, and weâre always really careful to document what the after-exploit scenario looks like.  Okay, after you run this thing, you need to do this other thing, so we created these post-cleanup modules that would remove the trace of whatever the thing was.  But that was something that I also agonized over, âcause I really hated having to create any kind of â like, have to lower the security of the system as part of the exploitation process.  Also, that was counterintuitive; that was kinda going against what weâre trying to do in the first place.</p>
+
+<p>JACK:	Yeah, I know.  I mean, Iâm not explaining it well, but it just seems like youâre putting your thumb right in the customerâs eye and youâre like well, we donât want to hurt you.</p>
+
+<p>HD:	Well, thatâs the thing; youâre trying to be a professional adversary.  So, you have to have the most possible brutal, malicious approach to the problem in the sense that youâre gonna use the same technique someone else would.  But then you need to draw the line about where you leave the customer afterwards and what the actual impact of the attack is.</p>
+
+<p>JACK:	[MUSIC] Okay, so we heard HD has many adversaries, right?  Cyber criminals donât like him publishing their weapons and making them ineffective, old school hackers donât like that heâs making hacking so easy that a script kitty can do some amazing stuff, and vendors donât like that heâs publishing their bugs.  Heâs getting hit on all sides by these people.  But thereâs one more group thatâs also not happy about Metasploit; law enforcement.  There were crimes committed with Metasploit.</p>
+
+<p>HD:	Thatâs my first experience writing Windows shell code.  The first Windows shell code ever published by Metasploit ended up in the Blaster worm almost immediately afterwards.</p>
+
+<p>JACK:	See what I mean?  There was a massive worm that was using information that he published to do dirty work out there.  I just read an article today that said in 2020, there were over 1,000 malware campaigns that used Metasploit.  So, what happens in this situation when youâre making tools that criminals are using?  Well, letâs go back and look at a few other cases.  I did an episode on the Mariposa botnet.  The people who launched this botnet all got arrested, but they werenât the ones who developed the botnet.  The Butterfly botnet was created by a guy named Iserdo, but this Iserdo guy, all he did was develop the tool and put it out there.  He never used it to attack anyone, but he was arrested and sentenced to jail just for developing the tool.  What the court proved was that he was knowingly giving it to criminals to commit crimes.  Or letâs look at Marcus Hutchins; he developed malware which became known as Kronos, but he only developed it.  He never launched it on anyone.  But it was because he was giving it to someone who did use it to go and attack banks is why Marcus was arrested by the FBI.  In both of these cases, what it came down to was whether or not the software maker was knowingly giving these hacking tools to someone who had intent on breaking the law with it.  But HD claims he has no responsibility with what people do with his tool.</p>
+
+<p>HD:	I donât know, if you bake a bunch of cookies and put them on the sheet â in the street and say free cookies, are we responsible if a criminal eats a cookie?  I donât know.  I feel like itâs different.  Itâs open-source, itâs community-based, itâs open domain.  Everyoneâs on the same playing field.  I feel like itâs one of those things where if youâre only providing those exploits, those weapons, to someone in the criminal community and charging for them, thatâs one thing.  But if youâre creating a project for the purpose of helping everyone else understand how things work and to test their own systems, and a bad actor happens to pick it up and use it too, that seems like a â something very different.</p>
+
+<p>JACK:	But I get worried for HD because he takes Metasploit to hacker conferences and hacker meetups to demo it and teach it to other people there.  Everyone knows there are criminals who attend these things.  I mean, just sharing it with the hacker chat rooms that he was part of, like Phrack; how could he have gone all this time without once seeing that the person that he just taught this to or gave it to was a known criminal?  Did you have any lawyers helping you on this project?</p>
+
+<p>HD:	No.  Once in a while Iâd have to reach out for help, but it usually wasnât from a lawyer that would â I had hired myself.  Usually it was just people I knew that happened to be lawyers who would give me advice on stuff.</p>
+
+<p>JACK:	But thatâs why Iâm asking about a lawyer, is whether or not you had some sort of fine line on what the point of Metasploit was and maybe some of the language involved with the terms of use.  Like, maybe there was something there that said you cannot use this for criminal behavior, or something.  Where was this to keep you out of trouble?  What did you to do to stay out of trouble in this sense?</p>
+
+<p>HD:	I think early on, the solution was my spouse had a get-out-jail-fund, had a lawyer fund sitting aside, so if I got dragged out in the middle of the night, she had cash that was not tied to my personal accounts or our shared accounts to find a lawyer and give me bail money, basically.  So, that was the case for about six, seven years, where I was pretty concerned about getting arrested for almost anything I was working on at the time, âcause it was all pretty close to the line, whether itâs internet scanning, whether it was the Metasploit stuff.  It really comes down to whether you think a prosecutorâs gonna make a case, whether you think â they think they can make a case.  Prosecutors donât want to lose a case, so theyâre not gonna bring a charge against you unless theyâre very certain that theyâre gonna win.  Thatâs why the conviction rates are so high.</p>
+
+<p>So, itâs one of those things where intent matters, but what really matters is whether the prosecutor really wants to go after you or not, and if you convince them that hey, Iâm not actually a bad actor and Iâm not doing this stuff, Iâm not driving this economic activity thatâs related to criminals, then thatâs helpful.  But thatâs one of the things I really donât like about US law, is the CFA doesnât care about intent, for example.  Thereâs nothing about our Computer Fraud and Abuse Act that cares whether you were doing it for good or not.  A lot of our laws are problematic like that.  It isnât just the standard section thatâs quoted; itâs also Section 1120.  Thereâs a couple other parts of the US criminal code that are just really dangerous when theyâre taken out of context or used to make a case for something that really shouldnât have been prosecuted in the first place.  So unfortunately, a lot of the US prosecutions really just come down to whether someone wants to go after you or not, and all you can do is do your best to stay above the law when you can, and when the law is really vague, do your best to not be a tempting target.</p>
+
+<p>JACK:	Yeah, but I am surprised that when I load up some software, even look at some how-toâs and videos on how to hack, there is a disclaimer at the beginning; do not use this for illegitimate purposes.  Do not break the law with this information.  When I load Metasploit, it doesnât say for pen testing only, only use on systems you have permission to, and Iâm wondering why would you keep that off there?</p>
+
+<p>HD:	I donât think it ever occurred to us to add a warning, honestly.  We figured if youâre downloading Metasploit, you know what youâre getting into.  Youâre know youâre downloading a security tool to do security testing.  Weâre not there to tell you you shouldnât jaywalk or you shouldnât firebomb your neighborâs house.  We assume people have reasonable reasons why theyâre using the software in the first place, and we donât feel like weâre enticing you to commit a crime because weâre providing them a tool.</p>
+
+<p>JACK:	Got it.  However, in the real world, you might be pressured because law enforcement says look, man, we keep finding criminals that are using your tool.  You need to do something more.  You need to put a terms of use up.  A lawyer might have â like, you might have had to get a lawyer to say hey, what do we need to do so that we donât get in trouble?  Iâm surprised none of that just hit you in the face.  The law â so, black hats are mad at you, vendors are mad at you, but the law wasnât mad at you?  Iâm surprised.</p>
+
+<p>HD:	I mean, stuff came up for sure, but mostly I was able to talk my way out of it one way or another.  I think a lot of it is â just the way to win in that space and to not go to jail was to be as loud and as blatant and as above-board as you possibly can.  So, doing a Metasploit talk at every conference, having tens of thousands of Metasploit users early on, having 200 different developers involved with the project; the bigger, the wider, the more noisy you can make the project, the less likely someone was gonna say this is a tool for just criminals and weâre gonna go after it.</p>
+
+<p>JACK:	You just have such a surprising â an adventurous life.  [MUSIC] Thereâs a big difference between your typical pen tester and HD Moore.  The typical pen tester today learns how to use Metasploit, which is the tool that HD created.  HD is the one learning how the exploits work, writing the shell code to make them work, and actively trying to find new exploits all the time.  On top of that, heâs fielding a nonstop barrage of attacks himself from creating the tool, so heâs well-versed at defending and attacking systems.  The experience he has in this space is almost unparalleled, but it was because of how much passion he has about security that got him to this point.  I just want to say to any up-and-coming pen testers out there, getting your hands on working exploits and contributing to open-source projects is a fantastic way to become fluent in this field.  There are a ton of open-source hacker tools out there on GitHub, and itâs a great experience to download the source code and see how they work, and try to improve upon them.  Even if youâre just a beginner, thereâs probably something you can do to help, whether itâs writing better documentation or improving the Help menu.  Being part of a project like that can launch your career.  HD even helped many of his contributors get jobs.  Learning to find and develop exploits would really pay off for HD, but it was a tough ride for him to hold on to.</p>
+
+<p>HD:	Yeah, I think it took about three or four years before we really turned the point from âthatâs stupidâ and âthatâs crappyâ to âthatâs a script kitty toolâ to âthat was a piece of crap and I donât like itâ to âokay, fine, Iâll use it to â hey, now everyoneâs using itâ.</p>
+
+<p>JACK:	Metasploit grew up to be one of the de facto tools used by security professionals all over.  Eventually, schools started teaching students how to use it.  I mean, can you imagine a hacking tool becoming part of the course curriculum in school?  But even more than that, it became necessary to know how to use Metasploit to pass certain exams and get certified in security.  Despite the hard start and hate it received, Metasploit grew to become an invaluable tool for the pen test community to use, and it became mass-adopted by security teams everywhere.</p>
+
+<p>HD:	By 2008, both Skape and Spoonm had moved on to other things.  Skapeâs company got acquired by Microsoft and he went and worked there, and that was the end of his contributions to Metasploit.  Spoonm went to school and kinda disappeared doing his thing for a while.  So, it was kinda just me running the project again by 2008, and Iâve been working with a guy named Egypt for a long time, contributing exploits to the project and chatting about stuff.  I invited him to come and be one of the core members.  He joined the team and we started working towards the 3.0 release, I believe, at the time.  During all that stuff, as you get closer to 2009, I was working out of the startup, not particularly happy with life.  I was pretty broke.  The startup wasnât paying me that much, I had a bunch of credit card debt, had a pretty hefty mortgage on the house, was doing Metasploit training at the conferences to kinda pay the bills and keep things going, but I was also working all day for a startup and all night on Metasploit, and every weekend, every night for years straight at that point.  Super stressed out, had a baby on the way, and when I was basically gone for paternal leave, I got an offer to acquire Metasploit by Rapid7.</p>
+
+<p>JACK:	[MUSIC] Whoa, an offer to acquire Metasploit by the company Rapid7?  Thatâs amazing.  At the time, Rapid7âs product was a vulnerability scanner, and the typical pen test scenario is to start by running a vulnerability scanner, then use Metasploit to try to get into the vulnerable systems you found.  Itâs a beautiful combination of tools, so it made sense for why Rapid7 would want to acquire the tool.  But Metasploit was open-source and a not a product that made any money, so HD was a bit skeptical to give his tool to a corporation.  But they asked him at the right time, because he was all stressed out, low on cash, and about to have his first kid.  He sorta needed a big break.</p>
+
+<p>HD:	So, yeah, when the offer came in to do something different, it was definitely tempting and spent quite a lot of time chatting with the Rapid7 team, getting a sense for what itâd look like, and eventually said okay, letâs give it a try.</p>
+
+<p>JACK:	Yeah, did you give them a heads up?  Like, hold on a second, if you take the responsibility for this, youâre gonna be taking some bullets.  Just so you know, this is kind of the heat Iâm getting here and somebody might call up to try to get you fired.</p>
+
+<p>HD:	Yeah, put it this way; they brought me on to run the Metasploit team and to build a product line, but they also brought me on as their head of security at the same time.  So, I got to take most of those bullets in the first few years.  Metasploit had a pretty strong following, but only about 33,000 active users at the time or something like that based on our download logs.  So, it was a really good opportunity to commercialize an open-source tool but keep it open-source, and then all the commercialization really happened by building a pro version of the tool and selling that instead.  So, our team was able to â basically built a new office here in Austin, hired the team, got the first commercial product out the door in about six or seven months.</p>
+
+<p>I think our team was paying their own bills within twelve months by selling our pro version of the product.  So, ended up working out pretty well.  Even now, thereâs a whole team at Rapid7 working on Metasploit full time.  It wasnât just the development side; they also were an amazing corporate shield for all the drama I was dealing with, all the law enforcement inquiries, all the random threats, all the other stuff.  They stood up and took it.  They hired lawyers on my behalf, they hired lobbyists on my behalf.  They did everything they could to make sure that Metasploit and exploit development and vulnerability research could stay a thing that you could count on, that you could rely on, and they did their best to protect the legal front.  So, outside of all the commercial terms and product stuff and all that, I give them a lot of credit for helping vulnerability research and exploit disclosure and exploit sharing be what it is today.</p>
+
+<p>JACK:	Yeah, so you said lobbyists; why would they hire lobbyists?</p>
+
+<p>HD:	Well, a lot of them â making sure that vulnerability research and disclosure and all that stuff stays legal, is educating people.  Itâs like saying hey, this is like a real, legitimate reason why people need access to information.  This is why you donât want to regulate vulnerability disclosure.  This is why you donât want to create a law making exploit disclosure illegal.  I mean, on the face of it, if someone says hey, weâre gonna prevent you from sharing tools that allow people to attack each other, youâre like yeah, that sounds like a good thing.  You donât want people sharing evil tools with each other, right?  Make that illegal.  It isnât âtil you dig a little bit deeper and realize that you really donât want to criminalize that because thatâs how your defenders are learning.  Thatâs how your actual defenders are testing their own systems.  If you donât have those tools available in turn, you have no idea how effective any of your defenses are.  It was just one of those things where, at a very surface level, it was hard to defend, and â but once you started educating people about what the benefits were and once you got more people to be aware of what you take away by criminalizing this type of work, then you try to build that support.  So, lobbyist efforts at Rapid7 were instrumental in not only splitting Metasploit framework from the Wassenaar Agreement, at least the way the US interpreted it, but protecting vulnerability research in general.</p>
+
+<p>JACK:	Yeah.  Can you explain the Wassenaar Agreement?</p>
+
+<p>HD:	Oh, sure thing.  I donât have â itâs been a while, so I donât â Iâm probably gonna get details wrong, but the Wassenaar Agreement was an international arms treaty by a bunch of countries saying hereâs the things that we will or will not export to other countries without having approvals and things like that.  Amendment â I think either an amendment to it or an interpretation of the agreement started to classify cyber security tools as weapons at one point.  The goal there is to prevent the NSO-group style attacks, right, where youâre shipping a toolkit, a software toolkit or a hardware toolkit thatâs designed to break into other peopleâs machines, and itâs really designed for the most nefarious â either surveillance use case or for actual cyber-war type use cases.  However, the language caught up a lot of other unrelated tools.  All the tools that are used for professional security testing would â if you squint at them, right, would also be classified as weapons by the armunitions, by the Wassenaar Agreement.  The company Rapid7 spent a lot of time working with lobbyists, trying to help folks understand the difference between an open-source tool like Metasploit and something thatâs more targeted, malicious, and weaponized.</p>
+
+<p>JACK:	The thing that I donât understand about the Rapid7 acquisition is how do you buy a free, open-source tool?  Why didnât they just fork it and rename it?</p>
+
+<p>HD:	Well, someone tried that, actually.  It didnât go very well.  Actually, a few people did.  Prior to Metasploit 3 coming out, when we rewrote the whole thing in Ruby, Metasploit was written in Perl.  There was a company called SAINT that released a product called SAINTexploit, which was also written in Perl.  Weâre like ah, thatâs suspicious.  At some point, someone shared a copy of SAINTexploit with us and weâre like, you know what?  Half this shell code is ours and half these exploits really look really like the code that we wrote.  There were a lot of similarities between the SAINTexploit product and Metasploit framework, too.  So, we got a little bit mad about it.  Weâre like, this is kinda bullshit.  We feel like, if youâre gonna use our code, thatâs great, but collaborate.</p>
+
+<p>Donât pretend itâs yours.  Donât say hey, I made this.  Like, no, no; this is open-source.  Contribute to it, share it.  So, we changed it.  We literally changed the commercial â the license of Metasploit to be a commercial-only license briefly, for about a year or so.  Between the 2.0 Perl rewrite and the 3.0, the brand-new 3.0 code was under a non-open-source license briefly just because of how we felt about SAINT and SAINTexploit.  Finally, when Egypt got â joined the project and weâre looking prior to the Rapid7 commercialization or Rapid7 acquisition, we ended up changing the license back to BSD because we felt like that was the right thing to do to really grow the project.  But there definitely was a knee-jerk reaction to close the license after that.</p>
+
+<p>JACK:	So, Metasploit continued to be open-source and free under Rapid7, with HD and a guy named Egypt coming on board and working hard on making it even better.  One thing that was a neverending job was getting more exploits into the tool.</p>
+
+<p>HD:	When I was working at Rapid7, every time a Patch Tuesday came out, our very first thing was how do we get exploits out as fast as possible for everything that was covered, and how do we figure out what they are?  Itâs a lot of work though; taking a binary patch and trying to figure out the bug can take a week or two just on its own, and that just gets you the bug.  That doesnât get you the exploit.  Getting the exploit to work, getting it triggered, getting it reliable, figuring out how to manage the memory correctly, figuring out the payload, threading problems with payloads, I mean, thereâs a ton of work that goes into it.  I think one of the things that â one of the reasons why I probably donât work on exploits as much anymore is theyâve gotten a lot more complicated.</p>
+
+<p>You need a much deeper set of skills to be able to work on fiddly heap exploits.  You need to basically have this huge background of knowledge just to be able to get the heap in the right state to build a exploit in the first place.  Iâm not really that great of a programmer.  Iâm not really that great of an exploit developer; I just spent a lot of time on stuff.  So, I felt like that was well beyond my ability to keep up at that point.  So, I really love logic flaws, I really love the old school stack overflows and SCH overflows and things like that.  But I feel like modern exploits, especially on ARM platforms like mobile â holy cow, thereâs a lot of effort that has to go into it just to get one working exploit.</p>
+
+<p>JACK:	Now, Iâm scared that you say that because a second ago I was calling you the patron saint of exploit development and penetration testing, and now youâre like ah, itâs too complicated for me at this point.  Good luck whoeverâs doing it now.  Who can do it now if itâs beyond your skill?</p>
+
+<p>HD:	Itâs gotta be super-specialized.  If you look at some of the Project Zero posts, I donât want â particular names in fear of getting them wrong, but thereâs some amazing folks out there, and where you see really good exploits being written is when someone has spent months and maybe years looking into the software stack around that before the exploitâs worked on.  When youâre looking into how IOS parses messages or how the heap of this particular OS or the Linux kernel is being groomed in a particular way, you need to build up this super-deep, super-specialized knowledge to be able to even start working exploits in that particular space.  Itâs not like before where once you know how to exploit one platform, one OS, the rest is all pretty straightforward.  It used to be like, okay, I know how to exploit Spark; I can exploit most other NIPS with a little bit of work here and there.  Now every OS is so different, so deep, and so complicated these days that you really have to specialize.</p>
+
+<p>JACK:	Yeah, but I feel like you really enjoy playing in the dark, and I mean, you want to be outside the known world of knowledge, okay?  So, thereâs a circle that this is the stuff we know in the world; Iâm going outside that circle and Iâm gonna discover things that the world does not know and bring it into the world of known.  That is a very difficult place to be in.  Thatâs a scary place.  You donât know where to go, which direction to go, where to point your finger.  Youâre hitting your face on the wall over and over and over, and thatâs the difficulty of finding vulnerabilities and zero-days and this kind of thing.  Even if you know that thereâs a vulnerability right there, it still can be hard to find that.</p>
+
+<p>HD:	Thatâs probably â especially with patch reversing; youâre so frustrated because you know itâs there.  You know itâs patched.  You know itâs in front of you.  You know itâs probably one line away from where youâre looking, and you canât see it.  So, these days I spend my time on network protocols and fingerprinting techniques and that type of research, where youâre going really deep on the protocol stack looking for behavioral differences and how a network respond â how a device responds in the network.  Itâs a similar challenge; you have to go find these really fiddly, really hard-to-find things and then extrapolate all this value from it, saying okay, now that I know that it responds this way and this responds that way, it must be an IOS device or these people are a kernel version or this particular update applied to it.  So, I love doing that type of work, but it is working in the dark, like you mentioned.  But itâs nowhere near as complicated as doing modern heap exploits.</p>
+
+<p>JACK:	I find this particular skill to be one of the most important skills when dealing with technology, which is being comfortable doing things in the dark, in areas that you have no knowledge of or visibility into, because when working in IT, you are constantly faced with new challenges or problems that you have no idea how to solve.  The problem might even be so weird that you donât even know what to Google, and so being able to venture out into unknown territories, even if itâs just unknown to you, youâve got to learn to be comfortable in these dark areas.  Itâs scary and frustrating to try things that you know youâre going to fail at and even look stupid doing, but the more comfortable you get in that space of working with the world of unknowns, the better youâll be next time you face the darkness, which is like, all the time.  Are you still at Rapid7?</p>
+
+<p>HD:	Oh, no, no.  I started my own company about three and a half years ago doing network discovery stuff.  So, Rumble; we help companies find every single thing possibly connected to their network environment or their Cloud.</p>
+
+<p>JACK:	Yeah, explain more.  Get a good pitch for it.</p>
+
+<p>HD:	Sure thing.  So, I spent twenty-seven years now doing pen testing and security work and building products, and the very first thing you do, whether itâs a pen test and youâre trying to break into someoneâs network or youâre building a product that does something on the network like a vuln scanner or a pen test tool, is you gotta figure whatâs out there.  You gotta scan the network.  You gotta find targets, assets, IP addresses, things.  So, we came up with a really cool scan engine that can tell you amazing stuff about everything on the network really quickly.  At this point, the product Rumble Network Discovery can now find all your networks.  So, starting with zero knowledge about your environment, theyâll do a sampling sweep across every possible routable private IP in your organization, theyâll find every populated subnet, every single device, classify every device, tell you what hardware itâs running on, and identify things like multi-owned systems that are breaching different networks.  It does it all unauthenticated, quickly, with really no interaction and no real network impact.</p>
+
+<p>JACK:	[MUSIC] What I find fascinating about HD is the struggle that he went through to make Metasploit.  I mean, the sheer skill it takes just to write exploits and payloads is already impressive, and he had to continually write new exploits as new stuff came out.  But the resolve and determination to face a constant barrage of attacks for publishing exploits and to continue publishing more is incredible.  I think I would have given in and gave up working on it if vendors are calling my boss, asking them to fire me, or if law enforcement keeps bugging me, but not HD.  He persisted through it all, because he had a vision and a belief that what he was doing was right and the whole world was wrong.  I think it turned out in his favor.  I think he was right and the world was wrong, because we saw the world slowly change and eventually agree with HD.  Microsoft drastically changed how they handle bugs now, and their security is much better than it was before.  Google puts a similar kind of pressure on companies that HD does, saying you better fix this vulnerability we found, or weâre gonna tell the world.  When stuff doesnât get fixed, they do publish it, and for governments, changing the way they view open-source tools.  What a wild ride itâs been to get some decent hacker tools out there for everyone to use.</p>
+
+<p>(OUTRO):	[OUTRO MUSIC] A big thank-you to HD Moore, a true legend in the security space.  You can learn more about what heâs working on now by visiting rumble.run.  This show is made by me, the NOP-sledding Jack Rhysider, and editing help this episode by the zero-trust Damienne.  This episode was assembled by Tristan Ledger and mixed by Proximity Sound.  Our theme music is by the encoded Breakmaster Cylinder.  Hey, HD, one last question for you.</p>
+
+<p>HD:	Yeah.</p>
+
+<p>JACK:	When youâre reviewing someoneâs code, can you tell me what bad code looks like?</p>
+
+<p>HD:	No comment.</p>
+
+<p>JACK:	This is Darknet Diaries.</p>
+
+<p>[END OF RECORDING]</p>
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

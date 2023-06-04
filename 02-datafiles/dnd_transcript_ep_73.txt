@@ -1,0 +1,508 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>WannaCry â Darknet Diaries</title>
+	<meta name="description" content="In May 2017 the world fell victim to a major ransomware attack known as WannaCry. One of the victims was UK's national health service. Security researchers scrambled to try to figure out how to sto...">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="WannaCry â Darknet Diaries">  
+	<meta name="twitter:description" content="In May 2017 the world fell victim to a major ransomware attack known as WannaCry. One of the victims was UK's national health service. Security researchers scrambled to try to figure out how to sto...">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/wannacry.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/73/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="WannaCry â Darknet Diaries" />
+	<meta property="og:description"        content="In May 2017 the world fell victim to a major ransomware attack known as WannaCry. One of the victims was UK's national health service. Security researchers scrambled to try to figure out how to stop it and who was behind it." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/wannacry.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/73/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/wannacry.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/73/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="WannaCry â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/wannacry.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 73: WannaCry</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://www.podtrac.com/pts/redirect.mp3/traffic.megaphone.fm/ADV7382284189.mp3?updated=1597690146"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/73/",
+			   "title": "Ep 73: WannaCry"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/73">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[START OF RECORDING]
+JACK:	Hey, itâs Jack, host of the show.  Listen, you might not be ready for this episode.  Thereâs a few prerequisites I recommend you do first.  First, weâre gonna be talking about the Shadow Brokers in this episode and I already covered them in Episode 53, so I highly encourage you to check that episode out first â which is just called Shadow Brokers â before this one.  Second, I made Episode 71, 72, and 73 to be listened to in that order, and since this is Episode 73, maybe check out the two episodes before this first.  Of course, you donât have to; this episode still stands on its own anyway, but thatâs my recommendation.  Okay, so with that out of the way, letâs jump right into it.
+<!--more--></p>
+
+<p>TONY:	My name is Tony Bleetman.  Iâm an emergency physician and in 2017, I was working as a freelance senior emergency physician in a number of hospitals in the UK.</p>
+
+<p>JACK:	Why did I take up this physicianâs precious time to come on a show which talks about hacking?  [MUSIC] Because he was at the center of one of the biggest ransomware attacks in history.  The date was May 12, 2017, which is a date Dr. Bleetman will remember for a long time.</p>
+
+<p>TONY:	I remember pitching up for a shift at a hospital in London at about noon.  As I walked into the office, the WannaCry screen had come up on the computers.</p>
+
+<p>JACK:	Specifically, the computers in the hospital were stuck on a red screen which said, âOops, your files have been encrypted.  Send $300 worth of Bitcoin to this address to decrypt them.â  This is a typical ransomware message.  See, if your files get encrypted and you donât have the key to decrypt them, your files are no longer readable.  Some hacker gained control over the hospitalâs computers and was demanding Bitcoin to unlock them.  Now, this ransomware which was encrypting the files was called WanaCrypt, spelled W-A-N-A, but people quickly just started calling this ransomware WannaCry.</p>
+
+<p>TONY:	I just walked into the situation and within a very short time, people understood that this was a cyber-attack affecting the health service, and communication between friends and hospitals confirmed that.</p>
+
+<p>JACK:	This WannaCry ransomware not only took over the computers in this hospital, but was hitting other hospitals in UKâs NHS, their National Health Service.</p>
+
+<p>TONY:	My take on this is quite simple; that when the technology lets us down in any circumstance, we have to fall back on old fashioned, well-worn, well-proven basic medical techniques.  We just had to rely more on clinical judgment and rely a lot less on information systems.</p>
+
+<p>JACK:	The NHS had to make a lot of adjustments to stay operational.</p>
+
+<p>TONY:	If you think about the process of a patient attending an emergency department, someone has to register them, someone has to order blood tests, and someone has to order x-rays and CT scans.  Someone has to communicate with their own family doctor once theyâve finished, and one has to transfer information around the hospital.  When thatâs all missing, you have no computerized registration of patients, your IC package that tells you where patients are at any time is not working, so we had to compensate for all these things by doing old fashioned things.</p>
+
+<p>When a patient came in, they were registered on paper.  We had a big whiteboard on the wall and so, we could write down the names of patients and identify their location within a rather large department.  Because we didnât have computerized blood results from blood tests from the lab, every half an hour we sent a runner to the labs to have a manual printout of the blood tests and deliver them to the department by hand.  We had to look at x-rays on portable machines because we couldnât see them on computers.  Things that involved hi-tech interventions were suspended or we found old fashioned alternatives.</p>
+
+<p>JACK:	Now, this ransomware was targeting Windows computers and specifically, Windows computers that were connected to the network.  Not all Windows computers in the hospital are actually part of the network, [MUSIC] partly because of this exact reason.  Some systems like CT scanners were just not plugged into the network with an ethernet cord or anything like that.</p>
+
+<p>TONY:	Well, one of the things that we learned is that when your computers are not networked â I mean, a CT scan had its own internal hard drive, so we relied on that.  It was limited to a certain amount of memory every day, so we had to restrict the number of scans that we ordered.  What it meant was, because â we had to [00:05:00] fall back on machines that were not connected to the network, so standalone diagnostic machines that were not connected to the network were unaffected, so we could run some basic blood tests on isolated machines, and we could run CT scans on machines that were not affected by the virus.  It was quite useful.  If machines are autonomous and not connected to the wider network, which we used to think was a hindrance than a problem, it actually saved their function because they were not taken out by the WannaCry virus.</p>
+
+<p>JACK:	The NHS had to cancel 6,912 appointments because of this.  But as of right now, it doesnât look like anyone died due to this attack.  While battling with this problem, the hospital was learning how wide-spread this was.</p>
+
+<p>TONY:	We switched on the news and we spoke to friends in other hospitals, and it was obvious very, very early on that this was a national â if not international â problem across the country.  Some of the things that we relied upon; trauma centers were temporarily closed, so we had to deal with any trauma cases coming in because the surgeons in the trauma centers were unhappy to operate without CT scans that they could see in the operating room.  For a short while, trauma centers werenât receiving patients, or some of them werenât, and half the trauma centers were also not receiving patients because they were computerized as well.</p>
+
+<p>JACK:	The BBC was playing an interview with Amber Rudd, the Home Secretary of the UK.  Hereâs a clip.</p>
+
+<p>AMBER:	Weâre working very hard to make sure that we help the NHS put their systems back in order.  So far, weâve had reassurance from them that no patient data has been compromised.  The National Cyber Security Center is working with them to end the disruption, to contain it, and to make sure that we learn lessons from it.</p>
+
+<p>HOST:	Can you give us the figures as you understand them at this stage about how many hospitals, how many trusts are affected?</p>
+
+<p>AMBER:	Well, we understand that forty-five have been affected out of several hundred.  Most of them are being very cautious about this.  Some of them are making changes, some of them arenât.  Some of them are managing to carry on with their daily work despite these difficulties.  But can I also just point out that this particular attack, this cyber-attack, hasnât been particularly focused on the NHS?  Itâs been a worldwide attack.  Itâs affected a hundred countries, different organizations, but itâs just in the UK that itâs been particularly impacted on our NHS.</p>
+
+<p>JACK:	[INTRO MUSIC] The WannaCry ransomware that was unleashed on the world was ripping through thousands of computers, causing destruction everywhere.  This is the moment that all IT and security teams both fear and prepare for.</p>
+
+<p>(INTRO):	These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.</p>
+
+<p>JACK:	Okay, so what do we know at this point?  Itâs May 12th, 2017 and the world is being hit by a huge ransomware campaign.  The NHS is one of the bigger networks to be hit by this.  The new is reporting on this.  Now, when something hits the world on a scale like this, it gets the attention of a lot of security researchers.  The whole security community is buzzing about this.  For instance, FireEye was one of the companies that began researching WannaCry.</p>
+
+<p>JOHN:	My name is John Hultquist.  Iâm the senior director for intelligence analysis at FireEye.</p>
+
+<p>JACK:	FireEye is a threat intelligence company.  They spend all day, every day, investigating emerging threats and they provide many tools and services to help companies detect and respond to cyber-attacks.  FireEye is a major player in this space and have been called to investigate many high-profile cases.  Now, by this time, Twitter was going crazy talking about this.  This was a huge attack, hitting companies all over the world.  While companies like FireEye canât investigate every new piece of malware, this one was big enough to pay attention to.</p>
+
+<p>JOHN:	Yeah, I think that there was good evidence to believe that this was hitting several organizations simultaneously.  We had reason to believe it was going to hit even more of our customers.  Usually, in circumstances like that, we spin up a community and protection event.  Thatâs where we basically bring all the power of FireEye, [MUSIC] all the different divisions together literally into a single chatroom, and we start trying to break down the problem as fast as we can.  One big piece of that with this was getting our hands on the malware and starting to â have the reverse-engineers start ripping it [00:10:00] apart to look for clues as to what was going on, because we thought that this was ransomware.  We didnât know who it belonged to.  We were just trying to figure out why it was moving so quickly at some point.  We were essentially asking a bunch of questions that took us a while to answer.</p>
+
+<p>JACK:	Now, FireEye wasnât the only group looking into this.  When something like this hits, a lot of companies have to investigate.  For instance, this was looking like it was hitting Windows machines specifically, so Microsoft would absolutely have to investigate this, too.  But think about all the antivirus companies or threat detection systems that are out there.  These companies would all pay attention to an attack like this so that they can find a way to detect and block stuff like this from happening to their customers.  Dozens of major companies were all scrambling to get a copy of the WannaCry ransomware.  On top of that, you have a lot of independent security researchers who are good at reverse-engineering who also try taking a look.</p>
+
+<p>This was an exciting time for the security research community.  This was something brand-new, and it was hitting hard and spreading fast.  Itâs exciting, like when your favorite author publishes a new book or a favorite video game launches a new level to try.  Thereâs this magical moment in time where thereâs just no blog posts about this, thereâs no news stories, and nobody understands whatâs happening.  So, people everywhere are racing to get some answers.  Since nobody knows anything about this malware, everyone has to start from square one.  You might be the one who finds the hidden key that unlocks this whole mysterious malware.  Itâs adventurous and exciting to be part of the investigation even if youâre just an independent researcher.  Now, another person who was researching this was Matt Suiche.</p>
+
+<p>MATT:	My name is Matt Suiche.  Iâm the founder of Comae Technology.  Itâs a small startup focused on incident response.  Back in May 2017, most of people in InfoSec, we also â that there was a ransomware that was targeting a bunch of companies, and people were all posting screenshots all over Twitter.  Then the first thing everyone was trying to do was to get samples of that ransomware.</p>
+
+<p>JACK:	Matt is a French security researcher, also an entrepreneur.  Heâs developed a few companies at this point, but the one heâs building now is called Comae.  It specializes in memory forensics.  This new ransomware interested Matt, and he grabbed a sample of the malware and began investigating.</p>
+
+<p>MATT:	Well, the thing to keep in mind for malware and especially ransomware; theyâre very easy to analyze because they are very redundant.  What they do is always the same thing.  Most of the time there is no obfuscation.  You can get a clear idea of what malware or ransomware is doing fairly quickly, like around an hour.  Itâs not like you have to analyze a root key, anything like this.  You can get a very good idea of the big picture of what they do.  The idea was just trying to understand what it was doing to be able to write a short writeup, because everyone was panicking around it.  Usually, when itâs something like this, especially as a small startup, itâs interesting to release something before everyone else because large companies will not be able to publish blog posts as quickly because of their own internal cycles for publishing anything.  That one, the idea was first to analyze what it was doing, how it works, kind of like what it was doing.</p>
+
+<p>JACK:	Now, malware like this is precompiled which means if you look at the program itself, it just looks like gibberish.  Itâs machine code.  A computer understands what to do with it, but itâs not human-readable.  You have to use a reverse-engineer tool like IDA Pro or Ghidra [MUSIC] to convert it to assembly link which is human-readable, but itâs very rudimentary.  Like, put this data in the memory, then move it from here to there, and then remove the data from the memory.  You donât see if L-statements and things that make sense, so because itâs so low-level, it requires a lot of skill to know how to reverse-engineer a program to figure out what it does, which in my opinion is pretty hard to do.  But Mattâs good at this, so he dove into the code and saw something remarkable.</p>
+
+<p>MATT:	On the exploitation bot, so, what was pretty interesting is â and having even before analyzing it, people had a strong suspicion around it anyway â is oh, it was using the DoublePulsar on EternalBlue that was leaked a few months before by the Shadow Brokers.</p>
+
+<p>JACK:	The exploit this malware was using was EternalBlue.  Now, letâs back up a second; one month before this WannaCry outbreak, the Shadow Brokers gave the world EternalBlue.  You remember Shadow Brokers, right?  If not, go check out Episode 53.  But the [00:15:00] story goes that someone hacked into the NSA and stole hacking tools and exploits the NSA uses, then slowly released these tools to the public.  Now, whatâs strange here is a month before EternalBlue was released, Microsoft patched it.  Weâre not sure if NSA warned Microsoft or if Microsoft found it themselves.  Regardless, the patch came out and then Shadow Brokers gave this exploit to the world to use however they want.  Now, we still donât know who the Shadow Brokers were, but they would send messages sometimes.  At one point, they called out MalwareJake for being part of Equation Group, or NSA.  But there was more to that tweet.  It readâ¦</p>
+
+<p>MATT:	The Shadow Brokers is not in habit of outing Equation Group members, but had made exception for Big Mouth.  It was to MalwareJake and then it was saying, âKeep talking shit.  M. Suiche, youâre next.â</p>
+
+<p>JACK:	Yeah, the Shadow Brokers had mentioned Matt by name in the very tweet they practically doxxed MalwareJake as being part of Equation Group.  Was this also saying Matt was part of Equation Group?</p>
+
+<p>MATT:	That one, yeah, was nothing.  I was like well, thatâs kind of flattering but Iâm French, you know?</p>
+
+<p>JACK:	Matt is not former-NSA or Equation Group, and he didnât even have to explain this since the Shadow Brokers later clarified this in a tweet saying yeah, they know heâs not ex-NSA since heâs French-born.  Why were the Shadow Brokers talking about him?  Well, itâs kind of a mystery, actually.  First of all, [MUSIC] Matt was really fascinated with the Shadow Brokers and what they were releasing to the world.  So, he was screenshotting everything the Shadow Brokers posted, and was blogging about it a lot.  During the whole Shadow Brokers ordeal, Matt gave a talk at Black Hat about them.</p>
+
+<p>MATT:	Before we start, please raise your hand if you have never heard of the Shadow Brokers.</p>
+
+<p>JACK:	On top of that, Matt has a fairly large Twitter following, so itâs possible the Shadow Brokers were just seeing what people were saying about them.  They saw Mattâs post and liked him.</p>
+
+<p>MATT:	I was flattered though about it because itâs like oh, itâs kind of cool that theyâre mentioning me because it means everything; all my blog posts, all the analysis I did of all their release â because thatâs how they would know me.  Otherwise, there is no way they would have mentioned me.  Even at some point, they were kind of saying â I know theyâre calling me French.  Oh yeah, because I gave a keynote at Black Hat the same year.  I was giving an overview of what the Shadow Brokers were doing.  I was saying oh, you should come, we should have a beer.  Heâs like oh, I will only come if you speak at Defcon.  I will be in the first row.  An interested part of me still do thinks they are American, but itâs kind of hard to prove.  But yeah, they were friendly.  Theyâre like oh, Suiche seems to be a friendly guy.  They were definitely very entertaining.  Also, a lot of the way they speak â because the grammatical mistakes, you can tell they are completely fake.</p>
+
+<p>JACK:	Well, the way they type might be a fake accent or something, but the Shadow Brokers releasing EternalBlue to the world was not fake.  It was a very serious vulnerability which exploited the way Windows file sharing works, or SMB.  [MUSIC] If you have a vulnerable version of SMB running on your computer, a person could easily take remote control of that computer.  So, exactly one month after EternalBlue was released, WannaCry was launched which used that exploit, which is one reason why this ransomware infected so many machines; because it was using a wicked-good exploit that just came out not too long ago.  Whatâs more is that this ransomware was a self-propagating worm.</p>
+
+<p>When it would infect one computer, it would then look to try to infect every other computer in that local network.  This meant if it could just get a small foothold in a network, it could then spread to a large amount of computers inside your network.  A worm like this using a vulnerability like that is going to spread quickly, and it did.  Now, again, this exploit was patched in Windows about two months earlier, so anyone who had automatic updates on or were installing the latest security patches for Windows were not affected by this.  But as it turns out, a lot of Windows computers in the world donât update as frequently as they should, and this creates a problem.</p>
+
+<p>JOHN:	Yeah, itâs really interesting.  There were patching issues; people hadnât caught up with the patching cycle.  Thereâs no doubt about that.  But there are some places that were targeted â or, not necessarily targeted, but that were hit that patching was difficult.  I think that probably the most well-known target was the [00:20:00] NHS in the UK.  People who work in the medical arena will tell you thereâs a lot of equipment there that is just old and it canât be patched, or canât be patched because it simply will not function correctly.  Itâs not always as simple as just patch.</p>
+
+<p>JACK:	[MUSIC] In fact, this got so big and impacted so many old computers that Microsoft released even more patches.  At this point, Windows XP was no longer supported by Microsoft and they stopped making security patches for it.  But a few days after WannaCry came out, Microsoft released a patch for XP, which is very, very rare for them to release patches after they stopped supporting that version entirely.  Now, when ransomware hits your computer, it encrypts all the files on it and asks you to pay to unlock them.  Some victims were paying the $300 or $600 in Bitcoin to get their files back.  But there was a problem.  This didnât seem to work.</p>
+
+<p>A lot of people were reporting they paid but didnât get a valid key to decrypt their files.  In fact, if you analyzed the malware, it just didnât seem to contain the proper methods for restoring the files at all.  These victims who were paying were getting burned twice.  Now, at this point, security researchers were starting to think maybe this isnât ransomware.  Maybe this is disguised as ransomware and really has other intentions like destroying a target or a network or something.  A lot of questions were starting to rise up.  Do you have any â do you have some general tips for if someone gets hit with ransomware like this?</p>
+
+<p>JOHN:	I think every situation is different.  Itâs important, I think, if possible, to have a sense of whoâs doing that, right?  In this case, it was pretty clear it looked like nobody was going to get their machines unlocked.  Obviously, the tip in that case is donât pay because it would be an absolute waste of money.  But there are a handful of operators that we know pretty well and I think they all behave differently.  You have different prospects based on who youâre dealing with and what your specific situation is.  Usually, the advice is consult an expert on your specific situation.</p>
+
+<p>JACK:	Were there any of your customers that were trying to consult you that were big companies that were getting hit?</p>
+
+<p>JOHN:	Oh, absolutely.  I think at the time we were advising that this is not something that a; a criminal actor that weâre familiar with, and there didnât seem to be a payment â the payment mechanism didnât seem fully operational.</p>
+
+<p>JACK:	At this point, Johnâs team had developed a way to detect and block this activity in their clientsâ networks.  They understood this malware fairly well, but they still had more to figure out.</p>
+
+<p>JOHN:	[MUSIC] I think at that point we were â I mean, from my side, Iâm the intelligence guy â we were really trying to determine whoâs doing this?  Whatâs the motive behind this?  Is this a state actor?  Is this a destructive attack?  Can we find some sort of breadcrumbs that will take us back to other incidents?  Thatâs usually what weâre looking for.  Weâre trying to take your one, single incident and connect it to a cluster.  Hopefully, we can learn from a cluster of other incidents.  Sometimes theyâve made mistakes in their other incidents, theyâve taught us something about them, theyâve not â theyâve used infrastructure that maybe we recognize there and then we can tie them back even further.  Weâre working diligently to find those clues.</p>
+
+<p>JACK:	Well, John and his team were busy trying to figure out who did it.  I think at this time, Matt was trying to figure out how to decrypt the file somehow.  Some other people were looking into different parts of the code for other things.  Another security researcher named Marcus Hutchins was looking at the malware and saw something thatâs fairly unusual for ransomware.  He found that upon infecting a machine, one of the first things this ransomware does is try to go to a specific URL, a website.  Itâs a forty-character-long URL which just looks like gibberish.  WannaCry would check if that URL exists and if it did, it would stop running immediately.  It would not encrypt the computer.  It would not try to propagate.  It would just halt.  This is called a kill switch.</p>
+
+<p>Whoever made this ransomware wanted a way to stop it if they had to, and I can imagine a scenario where this could be useful.  Suppose whoever wrote this malware was working for a nation state and if they released this to the world and it accidentally infected their own country, yeesh, what a mess theyâd have.  If that started happening, the [00:25:00] hackers had a way to halt the entire thing worldwide by just making that URL active.  [MUSIC] But when Marcus Hutchins found this URL in the code, he did a WHOIS lookup on it to see who owned it, and the domain was not registered.  This was odd.  You would think that whoever wrote this malware would have registered the kill switch in case they needed to use it.  But it wasnât owned by anyone.  Whatâs Marcus do?  He registers the domain himself and makes the URL active.</p>
+
+<p>Instantaneously, the ransomware stopped infecting machines worldwide because as soon as a new computer would be infected, it would check to see if this domain was up.  If so, it would stop.  Any computers that were already infected were still infected, and any computers that couldnât get to the URL would still become infected, but the number of new computers getting their hard drives encrypted almost completely stopped.  Registering this kill switch turned off this attack.  Marcus single-handedly stopped one of the largest ransomware outbreaks in history.  He saved the world from hundreds of thousands more infections and billions of dollars more in damages.  He became a bit of a legend for doing this.  Hereâs Marcus in an interview with The Telegraph a few days later.</p>
+
+<p>MARCUS:	Iâve had people sort of inundating with messages thanking me, saying Iâm a hero.  I mean, I sort of just registered this domain for tracking and I didnât intend for it to blow up and me to be all over the media.  I was just doing my job and I donât really think that Iâm a hero at all.</p>
+
+<p>JACK:	Quite suddenly, all this stopped.  The malware completely lost its teeth and was just fizzling out quite abruptly.  But a few days after that, a new variant of WannaCry started spreading, infected one computer after another, and spreading in the same manner the first variant did.  Matt Suiche immediately jumped on this version.</p>
+
+<p>MATT:	I got the sample from @benkow_, analyzed it in a text like, less than a minute, because once youâre familiar with the malware, itâs quite a straightforward thing.</p>
+
+<p>JACK:	Matt had a hunch that in order to start this ransomware back up, all they would have to do is just change the domain name of the kill switch and it would start working again.  This would be easy to change.  He wouldnât even have to recompile the code; just change one character in the binary.  So, this was one of the first things Matt looked for, whether the kill switch was there and what domain was it using?  Sure enough, the kill switch was there, but this time it had a new domain name.  Still a long forty-character string, but just a couple letters had changed.  Well, Matt checked to see if that domain was registered, and to his astonishment, it wasnât.  So, he quickly got to work.</p>
+
+<p>MATT:	[MUSIC] Extract the domain name and registered it, then I started to also build a platform around it to be able to collect data on the infection.</p>
+
+<p>JACK:	Very quickly, he started seeing computers hitting his domain, checking if the kill switch was on or not.  So, he began collecting data on this which gave him a firsthand look of what this malware was doing, where it was infecting machines, and how big it was getting.</p>
+
+<p>MATT:	It is quite cool but the thing is, that one was not the main one.  Even though it got registered very early, no major infection happened.  I think it was between â even below one hundred at that point.  It was in the low-hundred infection hit.</p>
+
+<p>JACK:	Because Matt was paying close attention and knew where to look in the code, this malware didnât have a chance to spread exponentially.  Matt stopped it before it did any significant damage.  But two days after that, another variant was released, and this time it was a security team at a company called Check Point that saw the new kill switch and nobody had registered that domain, either.  So, Check Point registered it.  Quite quickly too, which meant not many machines got infected with that version, either.  Then, a few days later, a fourth variant showed up, and this time it did not have a kill switch which meant there was no easy way to stop it.</p>
+
+<p>This one had the potential of ripping through millions of computers and infecting them, but I donât think this one was very aggressive because we didnât really see it do anything.  It never really got in the wild and spread.  I guess by the time this variant was released, antivirus companies had already detected it and put out signatures for it, and people were patching their computers more, or at least closed that port on the network.  So, even without a kill switch, this new variant did not have a substantial impact.  Since then, this malware has significantly died down.  We have the people who found these kill switches and registered them to thank for stopping this from engulfing a large portion of the internet.</p>
+
+<p>MATT:	But that kill switch, I kept for around a year.  It had a few million hits pretty easily, enough that one of us â well, I donât really want to just manage it [00:30:00] on my own because the platform and everything.  I was like well, Iâm not really sure of what to do with this data anymore at this point because I donât think itâs of any interest for anyone.  I reached out to Microsoft Domestic Team, and I was like oh, do you guys want that kill switch from WannaCry?  I think it would be in better hands if itâs with you, you know?  Just so you can keep archiving it or something.  They were okay for it.  Actually, they had to step back and say well, the legal department says itâs too much of a risk.  We cannot take it.  At the end of the day, they didnât take it.  The people from the Chronicle security at Google said to take it and then I just gave it to them.  But I thought it was quite funny that Microsoft could not take it because of legal, you know?</p>
+
+<p>JACK:	[MUSIC] The estimate is that WannaCry infected 230,000 computers in 150 countries.  How many of those infected people paid up?  330 which, added up, means whoever did this made $140,000 worth of Bitcoin.  Who did this?  Well, letâs listen to a statement given by the US Department of Justice.</p>
+
+<p>DOJ:	We have unsealed criminal charges against a North Korean computer programmer for participating in a conspiracy that conducted sophisticated cyber-attacks around the world on behalf of the North Korean government.  Members of the conspiracy are responsible for some of the most damaging and most well-known cyber intrusions in history including the cyber-attack targeting Sony Pictures, the cyber-heist of Bangladesh Bank, and creating the WannaCry ransomware.</p>
+
+<p>JACK:	There you go; North Korea did this.  Specifically, theyâre charging the same person for the Sony hack, Bangladesh Bank hack, and this WannaCry ransomware.  Park Jin Hyok is the person named in the indictment.  In fact, heâs now one of FBIâs Cyberâs Most Wanted.  As people investigated this further, they found there were earlier versions of WannaCry that hadnât been effective because they werenât using EternalBlue which hadnât been released yet.  But on May 9th of 2017, a company called RiskSense published a proof-of-concept using EternalBlue as an exploit.  They even included source code and explained how to use it.  Three days later, the new version of WannaCry with EternalBlue was released.</p>
+
+<p>It looks like the same code was used in this malware, so it seems to me that someone in North Korea saw the blog post by RiskSense, copied the code from it into their existing WannaCry ransomware, and released it on the world three days later.  Itâs hard to point fingers here.  Yeah, North Korea is who pulled the trigger on all this.  Okay, but they may not have done that if they didnât see the blog post by Risk Sense.  But Risk Sense wouldnât have published that blog post if it wasnât for the Shadow Brokers releasing EternalBlue to the world.  But Shadow Brokers wouldnât have released EternalBlue if it wasnât for the NSA creating it to begin with, and EternalBlue would have never existed if Microsoft just would have caught the bug during development and testing.</p>
+
+<p>Itâs a weird series of events that led up to this massive ransomware campaign, but then was ultimately stopped because they forgot to register the domain of the kill switch.  [MUSIC] The Department of Justice showed how they found artifacts in the different variants of the WannaCry malware which led them to believe it was launched by someone in North Korea.  But Iâm willing to bet that theyâre leaving out some key evidence which squarely points to North Korea behind this.  The thing is, if the US shows what evidence they have, it might burn their spy channels into North Korea.  They have to be very careful on how much they reveal.  The indictment reads like a typical digital forensic analysis; you see IP addresses, malware analyzed, user agents, and so many more details that they were able to collect.  When the DOJ followed all these threads, it led them to North Korea.  Whoâs this Park Jin Hyok guy in the indictment?</p>
+
+<p>Well, a journalist for ZDNet, Catalin Cimpanu, really helped me understand this better because he mapped it out and started connecting the dots.  This guy Park went from North Korea to China in 2013 to study programming.  Specifically, Java, PHP, and Visual C++.  At the time, Park was working for a company called Chosun Expo Joint Ventures which is supposedly a company handling e-Commerce and lottery services for North Korea.  In 2014, Park returned to North Korea and shortly after his return, North Korea launched a bunch of hacking campaigns.  Not to mention, most of the malware used in North Korea was written in the same programming language Park had studied in China.  [00:35:00] Now, to carry out these attacks, the hackers had to get servers to use for command and control.</p>
+
+<p>Obviously, they didnât want to use a server in North Korea, so they rented a server from somewhere else in the world.  Now, to rent the server, you had to have an e-mail address.  So, the Department of Justice began submitting warrants to figure out what e-mail addresses were registering these servers.  On top of that, there were some phishing attacks which also used e-mails.  The DOJ was able to get these details and compile all these e-mail addresses during their investigation.  Letâs take a look at these e-mail addresses.  I count thirty different e-mail addresses in the indictment.  Most of them are Gmail accounts, with a few being Hotmail and AOL.  Well, since Google is a US-based company, the DOJ can get a warrant and then ask Google for information about these Gmail accounts.  From there, theyâre able to see what accounts they were connected to and what IP addresses were logging into them, and what browsers were used, and all this kind of stuff.</p>
+
+<p>Six of these accounts had used the name Kim Hyon Woo.  As you dig into that, you start seeing connections to Park.  Like, both Kim and Parkâs accounts had access to the same files and sent mail between each other.  The DOJ saw enough evidence to believe that Kim Hyon Woo was an alias of Park Jin Hyok.  So, Kim wasnât even a real person.  Then when they followed the clues, they saw that Kim was the person who registered so many of these servers and sent phishing e-mails.  They know this because they see commonalities in IP addresses and access to those Gmail accounts, and the browsers used to access them, and connected accounts.  All these things together make it clear that the same person owned all these e-mail addresses.  So, it seems that over the course of four years during which Park used thirty different e-mail addresses, he made a few mistakes where he accidentally connected his real name to his fake persona.</p>
+
+<p>Thatâs how the feds figured out who was behind this.  The FBI also followed the money.  All that Bitcoin, where did it go?  Well, it was held in a crypto-wallet at first and then transferred to a Bitcoin exchange.  Iâm assuming the FBI got logs from the exchange which showed them that whoever accessed the wallet was running Firefox Version 52.0 on Windows 7.  At the Bitcoin exchange, they transferred the Bitcoin to Monero, which is another type of cryptocurrency.  This has extra security features like the amount of coins sent are hidden and a random one-time address is created for each transaction.  Once the money is converted to Monero, itâs extra-hard to track, if not impossible.  What else do we really know about these North Korean hackers?</p>
+
+<p>Well, itâs hard to get any good information out of there since itâs so secluded, but I looked into this and found some extra stuff.  First, the intelligence agency of North Korea is known as the Reconnaissance General Bureau.  This is a military branch that conducts clandestine operations.  Now, within the Reconnaissance General Bureau is another branch called Bureau 121, and Bureau 121 is where we believe North Korean hackers are working from.  People in the security community call the North Korean hackers The Lazarus Group.  There are a couple North Korean defectors that have helped us understand what goes on there in pretty good detail.  First is Kim Hueng-kwang.  He was a professor at the university at the capital.  He says students study computer hacking in this school and then are hand-picked to go to work at Bureau 121.</p>
+
+<p>Thereâs also a defector named Jang Se-yul.  He went to school to study computer science at the same college where Bureau 121 recruits people from.  He says Bureau 121 has about 1,800 people working in it, and those people are considered elite members of the military.  Theyâre trained just like any other hacker would be; they learn how different operating systems work, how to program, how to use attack tools, and everything in between.  North Koreanâs main attack targets seem to be South Korea, Japan, and the United States.  But as you heard, they have no problem unleashing huge attacks in other parts of the world.  Now, when North Korean hackers wage their attacks, they often physically travel out of North Korea to do it.  Theyâll go to Nepal, India, Kenya, Mozambique, or China to wage their attacks because the internet in North Korea is pretty locked down, and thereâs so many people watching what goes in and out of North Korea.</p>
+
+<p>Stuff can just be easily tracked if they do anything from there so they physically get out of the country, then proxy around from there.  There are actually quite a few North Koreans who are able to leave the country.  I mean, North Korea competes in the Olympics and has a whole cheering squad and everything.  North Korea attends United Nations meetings.  North Korea has dozens of embassies all over the world, [MUSIC] and North Korea also sends hackers to other countries to hack.  Currently, India seems to be the preferred place from which to launch their attacks.  North Korea always fascinates me which is why I wanted to do this three-part series on them.  At the same time, I think places like the US are trying to hack into North Korea too, mainly to see how advanced their weapons systems are and to monitor that.</p>
+
+<p>[00:40:00] But itâs just so weird to think about the differences of why the US hacks North Korea and why North Korea hacks the US.  The US is hacking into North Korea to keep an eye on their intercontinental ballistic missiles, but North Korea hacks into the US to try to stop a movie from being made which makes fun of North Korea.  Whenever we see a cyber-attack, the hackers usually fall into one of three categories.  Itâs either hacktivism, like doing it for a bigger cause, cyber-crime, which is doing it to make money, or nation state hacking, like, doing it to spy.  But the motives for North Korea seems to fall squarely in the center of all three of these.  The Lazarus Group are hacktivists, criminals, and spies.  But I think this is the perfect military strategy for North Korea.  I mean, theyâve made millions of dollars from their hacking activities, and theyâve gotten away with it.</p>
+
+<p>They cause lots of damages to their enemies.  Look how much damage they did to Sony, all without firing a single bullet or missile.  The whole time, they can deny they did anything.  Hacking seems to be the perfect weapon for North Korea since they can do it all remotely, hide under the cover of the internet, face a lot less consequences for their actions, and do it all at a fraction of the cost of kinetic warfare.  In July 2020, the European Union imposed sanctions on North Korea.  The report specifically mentioned that the Lazarus Group is who carried out the attacks on Sony, did the Bangladesh Bank heist, and conducted WannaCry.  It says that thereâs now a travel ban in effect because of that, as well as some assets being frozen.</p>
+
+<p>This is the first time ever that the EU has imposed sanctions on another country because of a cyber-attack.  While I think itâs totally insane what North Korea has done, trying to steal billions of dollars, trying to threaten the free speech of a movie studio, and trying to destroy a large number of computers with WannaCry, I actually think this isnât peak-crazy for what North Korea might do next.  My guess is that I think weâll see even more destructive attacks that may even result in loss of life.  They obviously have the capability to cause some serious destruction, and they never seem to have any remorse for the damage they cause.</p>
+
+<p>We know they can be provoked to carry out physical attacks, so I think itâs just a matter of time before we see them unleash some kind of cyber-attack that causes major physical havoc.  2017 was a busy year for information security professionals; to go from the Shadow Brokers releasing EternalBlue, then seeing WannaCry use it like this, and then the very next month, in June, is when NotPetya hit Ukraine which also used EternalBlue.  The month after that, Equifax was breached.  Hopefully these major attacks help us wake up to the dangers that many companies face while doing business online.  Hopefully, we all learn from this and take our security a little bit more seriously, because we never know how crazy the hacker might be on the other end of that connection.</p>
+
+<p>(OUTRO):	[OUTRO MUSIC] A big thank you to Dr. Tony Bleetman for coming on the show and telling us his story.  Thanks John Hultquist, the senior director for intelligence and analysis at FireEye, and thanks Matt Suiche, CEO of Comae.  You can find links to these people and what research theyâve done in the show notes or at darknetdiaries.com.  Please remember, a lot of time and energy goes into making these episodes and I bring them all to you for free.  If youâre getting value by listening, please consider donating to the show through Patreon.  By supporting the show, it ensures we have enough resources to continue to bring you more great content.</p>
+
+<p>Oh, and as a thank-you, if you join Patreon, you get access to bonus episodes, too.  So, check those out.  Learn more at patreon.com/darknetdiaries.  Thanks.  Also, youâre invited to the Darknet Diaries Discord where you can chat with other listeners of the show.  I like to pop in on there sometimes, too.  To join us, visit discord.gg/darknetdiaries.  This show is made by me, the slow coder, Jack Rhysider.  Sound design and original music was created by the always-encrypted Garrett Tiedemann, editing help this episode by the devilish Damienne, and our theme music is by the raucous Breakmaster Cylinder.  Even though when I meet up with my other tinfoil hat-wearing friends, I secretly use aluminum foil, this is Darknet Diaries.</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

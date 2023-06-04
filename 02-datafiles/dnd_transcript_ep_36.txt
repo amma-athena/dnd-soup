@@ -1,0 +1,678 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>Jeremy from Marketing â Darknet Diaries</title>
+	<meta name="description" content="A company hires a penetration tester to pose as a new hire, Jeremy from Marketing, to see how much he can hack into in his first week on the job. It doesn't go as planned.">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Jeremy from Marketing â Darknet Diaries">  
+	<meta name="twitter:description" content="A company hires a penetration tester to pose as a new hire, Jeremy from Marketing, to see how much he can hack into in his first week on the job. It doesn't go as planned.">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/tinkersec.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/36/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Jeremy from Marketing â Darknet Diaries" />
+	<meta property="og:description"        content="A company hires a penetration tester to pose as a new hire, Jeremy from Marketing, to see how much he can hack into in his first week on the job. It doesn't go as planned." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/tinkersec.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/36/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/tinkersec.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/36/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="Jeremy from Marketing â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/tinkersec.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 36: Jeremy from Marketing</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://traffic.megaphone.fm/ADV6715709308.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/36/",
+			   "title": "Ep 36: Jeremy from Marketing"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/36">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[FULL TRANSCRIPT]</p>
+
+<p>JACK:	Hey, my nameâs Jack, the host of the show.  Before making this podcast my job was looking at my clientsâ networks to try to find ways to make them more secure.  In other words I was on defense locking things down, hardening systems, securing applications, and trying to turn off everything that didnât need to be on.  The defense team is sometimes known as the Blue Team.  Iâm on the Blue Team.  But one day we paid an attacker to come into our office and see how well I did at securing the network.  He was a professional penetration tester and I made him sit right next to me.  Attackers like this are said to be on the Red Team and this whole Red Team/Blue Team thing is just a term borrowed from the military where they had drills with attackers and defenders.
+<!--more--></p>
+
+<p>Here I am, the Blue Team, and there he was in the desk right next to me, the Red Team.  The adversary, the enemy, a hacker.  What do I do?  Do I sabotage him so he canât do his job?  Do I block his IP from getting anywhere?  It wasnât that I didnât trust him âcause he came from a very trusted company but it was that I was extremely curious at how he works.  I wheeled my chair right over to his desk and I watched over his shoulder for the whole week.  I was amazed at what he can do.  I learned so much that it forever made a permanent impact on the way I see how attackers work.  I want to give you that experience so in this episode weâre going to get geeky.  Weâre going to get really nerdy and crazy technical at times as we watch over the shoulder of a penetration tester to see exactly how they do their work and how they try to get the crown jewels of a company.</p>
+
+<p>PROX (INTRO):	[INTRO MUSIC]  These are true stories from the dark side of the internet.  Presented by Jack Rhysider, this is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	The penetration tester weâre going to watch over the shoulder of goes by the name Tinker.  He has a background in the US Marines and has been doing penetration testing for a long time, years.  When you do penetration testing for that long you end up knowing a lot about computers, like far, far, far more than the average person and even more than the average IT person.  Tinker really is top-notch at knowing how computers work in general so I called him up.  [SKYPE CALLING]  Hello?  Tinker, you there?  Hello?</p>
+
+<p>TINKER:	The cable just wasnât pushed in all the way, thatâs alright.  Itâs the nature of all â most issues are cable-related.</p>
+
+<p>JACK:	Okay, sounds like weâre gonna be in for a ride here.  So letâs start out with just tell us your name and what do you do.</p>
+
+<p>TINKER:	Sure.  My name is Tinker Secor.  I am a penetration tester or Red Teamer, depending on the nature of the engagement.  But generally speaking I hack into computers and I break into buildings in order to test my clientâs security.</p>
+
+<p>JACK:	Heâs a typical penetration tester and itâs amazing to me that this job even exists.  There are a lot of people who do this as a career.  I mean imagine if a brick and mortar-type store tested their security like this too.  Youâd have paid shoplifters trying to test how good the LP is.  LP is loss prevention for those non-criminals out there.  Youâd pay cat burglars to try to steal paintings from museums and youâd have reformed street gangsters trying to quietly rob a casino.  Maybe some of these jobs exist but [00:05:00] in the online world itâs actually very common.  Like, Iâm pretty sure that if you want to process credit cards at all, you need an audit done on your network which usually requires a penetration tester to come act like a criminal to see if they can hack into your credit card machines.  Anyway, Tinkerâs been doing this for a long time and heâs really successful at getting into networks.  Today, weâre gonna follow along with him on his assignment.</p>
+
+<p>TINKER:	It was a large national client within the United States but it kind of stretched within North America and a bit in some other continents.</p>
+
+<p>JACK:	Often what a penetration tester will do is try to find a way into the network from the internet, the outside, basically posing as just a rogue hacker online whoâs trying to find something open or a website thatâs like, exposing data.  Tinker had already done some of that for this client and they were happy with the results and they wanted to take this to the next level.</p>
+
+<p>TINKER:	They said look, we want to assume that a threat actor has breached the perimeter.  We want to assume a threat actor has either broken into the facilities, implanted a rogue device, or maybe an insider threat kind of thing.  Generally speaking, this test would cover all of it.</p>
+
+<p>JACK:	Thereâs a term in information security called Defense in Depth and this Chief Information Security Officer, their CISO, felt like their Defense in Depth was so good that they wanted to put it to the test.  Basically this concept means you create many layers of security which makes it redundant, even.</p>
+
+<p>TINKER:	I started inside.  [MUSIC]  Thatâs what we call an internal pen test.  The idea is okay, if you plan to fail and fail gracefully you want to see okay, what happens once somebody gets in?  A lot of people say itâs game-over but there are so many different ways to breach.</p>
+
+<p>JACK:	Again, I want to give a warning here that weâre going to get nerdy and technical in this episode because this story he has paints a perfect picture of what a penetration tester does.  I want to get technical because I think it will be a fun opportunity to see exactly how all this works.  Oh and thereâs also a few cuss words in this one, too.  So this company wants Tinker to do a security assessment from the inside of the company.  To do that they need to set him up with a temporary job in Marketing.</p>
+
+<p>TINKER:	They set me up basically to do content.  I went in within the Marketing Department.  I assumed the name Jeremy and I was Jeremy from Marketing.</p>
+
+<p>JACK:	You get it, right?  This Jeremy from Marketing is actually a very good hacker and his goal is to see how much he can hack into in his first week on the job in the marketing department.  The IT team and security team and even the marketing team have absolutely no idea that this new guy, Jeremy from Marketing, is an extremely trained hacker whoâs highly motivated to just hack into the network and get everything.  This isnât a far-fetched scenario; sometimes you have temps or interns or new hires that get turned into spies to work for another government to see whatâs in that network while theyâre working there and can you really trust Jeremy from Marketing?  Yeah, suppose he did all the interviews but still, I mean he really just did walk right off the street and sit down in your office.  Are you gonna give him all the passwords to file servers and logins and to the companyâs Facebook account?  Ideally your hiring process should vet him but itâs really hard to know if that person is actually trustworthy.</p>
+
+<p>TINKER:	Thereâs really only two people in the entire company who knew who I was and that was the CISO and one of his assistants.</p>
+
+<p>JACK:	The CISO is the Chief Information Security Officer and he reports directly to the CEO.  He basically got everything sorted out with HR to hire this Jeremy from Marketing.</p>
+
+<p>TINKER:	They said look, I can bring in anything I wanted.  I could bring in all my hacking gear if I wanted to but I needed to make sure that I didnât get caught.</p>
+
+<p>JACK:	Without being caught is the tricky part.  If he had a bunch of antennas sticking out of his desk or even extra laptops all around, it would surely look suspicious.  Alright, so heâs all set for his new job.  Itâs Monday morning and heâs off to work.  On the drive into the office he starts to go over his methodology and plan of attack.</p>
+
+<p>TINKER:	Get in and do password reconnaissance, active reconnaissance, vulnerability, and misconfigurations that are in numeration, initial breach, lateral movement, pivot, escalation privileges, actions and target, exfiltration, and persistence may be in there if you need to, right.  Thatâs kind of the standard approach.</p>
+
+<p>JACK:	Thatâs his plan of attack.  [MUSIC]  He drives into the office, parks the car.  Itâs a typical-looking office building; multiple floors.  His office is just one of the floors.</p>
+
+<p>TINKER:	I showed up dressed in a button-up with a tie.</p>
+
+<p>JACK:	Shows his badge to get in and asks where the Marketing Department is.  They introduce him to his new team.</p>
+
+<p>TINKER:	They said look, hereâs your cubicle, hereâs your team.  The team was told that I was a contractor.  This company used a decent amount of contractors so my being there, my role was fairly normal.  I think there might have been another person whoâd started a week earlier as an actual content creator within Marketing.</p>
+
+<p>JACK:	He takes a look at the computer that was given to him.</p>
+
+<p>TINKER:	I came in as an employee, as a contractor, but it was the same thing.  They gave me a laptop that had a very [00:10:00] standard â their standard work station image, right.  I could use that.  It was fairly locked down and they did that on purpose âcause they wanted to say hey, whatâs available to someone else or what happens if one of their employees clicks on a phish and they have that user-level starting point?  They gave me that.</p>
+
+<p>JACK:	Thatâs another good point.  When a phish or phishing e-mail is successful, often the hacker will then have access to that personâs computer who opened the phishing e-mail.  If somebody in marketing did get phished, this is a great scenario to test whether or not they could get further into the network.  I think itâs a good idea to test this.</p>
+
+<p>TINKER:	The very first day I came in with just the laptop that they gave me and maybe a Kali image burnt on a USB that I could maybe mount.  I had in my backpack my own hack box, just a little Dell laptop loaded with Ubuntu as a base image with some Kali VMs, etc.  Thatâs kind of the rogue device.  I had a standard set of equipment starting off.  Not a lot was expected of me within the first couple weeks is what my team told me but it was very much watch the security videos, Iâm not supposed to click on a phish, that sort of thing.  There was a couple things that they wanted me to start working on like an internal SharePoint.  Again, nothing major.  The culture was hey, weâll get you spun up over the next two weeks and starting on week three and four youâll start shadowing people and getting into it.</p>
+
+<p>JACK:	This gave him a lot of time to himself to see what was in the network.</p>
+
+<p>TINKER:	[MUSIC] The very, very first thing I did was plugged in their standard laptop and just get a feel for it.  I wanted to know whatâs the username schema.  Is it first initial, last name?  Does it match the e-mail?  It doesnât always match the e-mail.</p>
+
+<p>JACK:	One thing that companies do is give certain IT admins a second username, something like -adm at the end or -admin.  A username like this gives you a clue that that person probably has extra access than others.</p>
+
+<p>TINKER:	The very first thing I can do is run â pull up command.exe on the workstation.  Iâm using their tools.  Iâm not using any malware.  Just type in netspaceusers/domain and it will dump out the entire list of all users within that domain.  I can do netgroupsdomain/admins, and dump all the domain admins.  I can do netgroupsdomaincontrollers/domain and dump out the host names of all the domain controllers.</p>
+
+<p>JACK:	These commands spit out a ton of data, giving a list of all usernames, all admins, all domains, and heâs compiling this data to have it handy later in case he needs it.  These commands heâs typing arenât even hacker tools.  Theyâre just standard Windows commands there to help IT administrators do their job.  This is all part of the reconnaissance phase.</p>
+
+<p>TINKER:	Me running these commands as a user against the domain controller, thatâs how a lot of default Active Directory environments are set up.  I did this raw just so I could have it offline at night.</p>
+
+<p>JACK:	Active Directory is the mechanism that Windows computers authenticate to each other.  Hackers love attacking this because it has so much data.  It has information on all the users and all the passwords and it has tons of stuff that a hacker can use to escalate their privileges or move on to other systems.  Itâs a great place to start looking.  Thereâs a lot of standard things to look for which are like low-hanging fruit; known vulnerabilities, best practices that the IT team didnât follow.  One such bad practice is to set the admin password for Jeremyâs laptop through a group policy because this means that the hashed password would be in the group policy and since Jeremy can see the policy he could grab that hash and try to crack it.</p>
+
+<p>TINKER:	This place didnât have that so I tried a lot of the very standard things.  Went through and checked some shares just using my own credentials, using guest credentials, no credentials, and did a lot of that stuff, just basic enumeration.  [MUSIC]  Got a feel for internal SharePoint, internal intranet, that sort of thing.  What is available to the user?</p>
+
+<p>JACK:	During this time heâs also learning what kind of tools this company may be running internally.  This is helpful because if you know for instance, that theyâre running SAP then you can start looking up vulnerabilities in SAP.  He started building a map of the network.</p>
+
+<p>TINKER:	The very first day Iâm just â the idea is just sit very still, find out whatâs going on in the environment.  I kind of learned whatâs going around.</p>
+
+<p>JACK:	Something a good penetration tester will do is try to be quiet as they can and not do anything to raise suspicion just so that they arenât detected early and they know what normal looks like.  He was careful at what commands he was typing into the computer so that he wouldnât raise any sort of alarms.</p>
+
+<p>TINKER:	The workstation had a bit of antivirus and Endpoint protection.  It wasnât as robust as it could have been but it was definitely there.  Endpoint protection is one of two things or both; it either prevents what it deems as malicious software but it can also do a lot of logging.</p>
+
+<p>JACK:	Next he took a look at what tasks and services were running on his laptop.</p>
+
+<p>TINKER:	Just doing CTRL + ALT + DEL and looking at Task Manager.  Notice specific software solution that did a lot of heavy logging.</p>
+
+<p>JACK:	This means the computer he was on was sending [00:15:00] all kinds of messages to the log-collector telling it what was going on on that system.  If he was doing bad things on that computer, chances are that was going to be logged and someone else could see that and catch him.  He didnât want to raise any suspicions so he stopped pulling data from Active Directory thinking someone might catch him doing it.  Another thing he liked to do on his first day is be very visible around the office.  He wanted people to know he belonged there and he was part of the Marketing team.  Heâd take walks around frequently, get some water, go to the bathroom, chat with people.  This also let him look around the office a little and scope the place out, see what normal office behavior looks like.  He comes back to his desk and sits down and starts to pull out his rogue laptop which is full of all kinds of hacker tools.  After the break weâll see what kind of fun he can have with this, what kind of trouble he can get into.  Jeremy from Marketing pulls out a rogue laptop and boots it up.</p>
+
+<p>TINKER:	When I did plug in my actual laptop, my hack laptop, the first thing I did is run Wireshark.</p>
+
+<p>JACK:	[MUSIC] Wireshark captures all packets coming to that computer.  Itâs sort of like sitting on the front porch of your house and watching all the traffic going up and down the street.  But you really only get to see whatâs on your street, not the whole neighborhood.  In fact you really only get to see whatâs coming in and out of your own driveway.  But still, it gives you a good sense of what kind of traffic is going around.</p>
+
+<p>TINKER:	I spun up Wireshark and started trapping a lot of â sniffing a lot of the packets.</p>
+
+<p>JACK:	Primarily he was looking forâ¦</p>
+
+<p>TINKER:	What sort of hardware is on the system; laptop-wise or even server wise.  Whatâs the hostâs name schema?</p>
+
+<p>JACK:	Because while Wireshark generally only picks up traffic to that computer, it also picks up broadcast traffic, too.  These are packets that are intended for everyone on that subnet and computers make a lot of broadcast traffic.  By capturing these MAC addresses it will also tell you what kind of systems are on the network because a MAC address contains information on what manufacturer made that device.  Again, knowing this lets him blend in better.  Now heâs starting to know what kind of exploits he might be able to use.</p>
+
+<p>TINKER:	Again, the very first day, especially right at the beginning, all Iâm really trying to do is just sit very, very still and listen to whatâs going on around me, get a feel for the environment.</p>
+
+<p>JACK:	This reminds me of the quote from the spiritual teacher Ram Dass which goes like this, âThe quieter you become the more you can hear.â</p>
+
+<p>TINKER:	One thing struck me is that they didnât have a very good NAC Solution.</p>
+
+<p>JACK:	NAC is Network Access Control and itâs a technology that gives each individual computer network access.  With proper NAC, only computers that the company has authorized are allowed on the network and everything else gets no access at all.</p>
+
+<p>TINKER:	Itâs to prevent this very specific type of attack where you plug in rogue devices.  You should only plug in devices that you know are yours.  The problem is having to manage all those assets especially when you come from an open environment where bring your own device and that kind of thing can get into the internal network.  Implementing a NAC solution is a simple concept but itâs very, very difficult and typically takes several months to roll out.  They did not have network access control so I could plug in my rogue device.  But as soon as I got done with the passive sniffing, I want to know what MAC addresses are associated with servers, with laptops, and whatever else I could find.  There was sometimes even phones, right.  What were the host names for each?  I changed my host name to match their schema and I changed the first three octets of my MAC address to match their hardware, then I randomized the last three.  I did do that in order to blend in.</p>
+
+<p>JACK:	Heâs like Rambo now, painting himself with mud to avoid being detected.</p>
+
+<p>TINKER:	The long and short is I tried a couple different things and ended up in a position where I was confident that I could start doing more active reconnaissance without being found out.</p>
+
+<p>JACK:	Day one is over.  Jeremy from Marketing quietly loads up his laptops and heads home for the day.  Heâs feeling confident at this point.  Heâs collected a lot of data and starts to get the feel for the environment and starting to think about what kind of attacks he can use.  The next day he comes in, fires up Responder.  [MUSIC]  In my opinion Responder is an amazing tool.  Itâs like cheating almost for hackers.  Hereâs how I think it works.  Okay, so if you have an office job and you use a computer, do you have shared drives on that computer?  If youâre on a Windows machine you might have the M: drive or the I: drive or the Z: drive.  This is some shared network folder that other people in the office can access, too.  Okay, so suppose your Windows computer needs to connect to this shared network drive.  Thereâs a number of things it has to do.</p>
+
+<p>Usually the shared drive is like a host name.  Itâs not always an IP address so the first thing your computer needs to do to connect to that drive is to resolve the host name.  Thatâs what DNS is for.  Now, thereâs a DNS order of operation here.  Your computer will first check the internal host file to see if it has a hard-coded IP address for that server.  If not itâll then go to the DNS server to see if it knows what the IP address is.  Normally the DNS server knows the IP but sometimes it fails.  It fails [00:20:00] because maybe youâre on the wrong network, youâre not VPNâd in, the shared server might be offline.  If you ask the DNS servers whatâs the IP address for this host name and the DNS server doesnât know, then what does your computer do next?</p>
+
+<p>It asks everyone on the subnet hey; does anyone here know what IP address is for this shared drive?  Thatâs when Responder kicks in.  Responder is a lying, cheating, sneaky, ugly-looking guy who says yeah, I know exactly what IP address is for that server.  Your computer says oh great, what is it?  Responder says itâs me, Iâm that shared drive even though itâs not.  Your computer says oh, okay.  Great, let me in then.  The Responder says okay sure, no problem but first I want to make sure youâre allowed so tell me your password.  Your computer then gives Responder the password.</p>
+
+<p>TINKER:	Youâre not gonna send your raw password in clear.  Youâre going to send your authentication hash.  This sent its typically Net-NTLMv2 or v1 and thatâs a salted hash.</p>
+
+<p>JACK:	Do you see what happened here?  Responder is a hacker tool that just lies and tricks a computer on the local subnet into giving computers the hashed password to that computer.  Itâs unbelievably good at this too, and itâs almost impossible to detect since you have to have sensors on that local subnet to spot it.</p>
+
+<p>TINKER:	Generally speaking I will run Responder twice a day for maybe fifteen to twenty minutes and even intermittently at that.  I run it right in the morning and right at noon when people are logging into their computers.  Theyâre logging in the morning, theyâre logging in back from lunch.  Thatâs when a lot of that traffic comes that you can track.  Generally speaking, depending on how big the environment is, Iâll pull down ten, twenty hashes quite easily.</p>
+
+<p>JACK:	He fires up Responder in the morning and waits for hashes to come in.</p>
+
+<p>TINKER:	I pulled down maybe five to fifteen hashes total.</p>
+
+<p>JACK:	[MUSIC] Nice.  With this, if he can crack a few of these, he can then work his way into the network and get some more privileges from someone else.</p>
+
+<p>TINKER:	I pulled down these hashes.  Again, theyâre Net-NTLMv2 hashes.</p>
+
+<p>JACK:	He loads these up into his GPU password-cracking rig which is offsite at his own office.</p>
+
+<p>TINKER:	It was eight Nvidia GTX 1080 TIs mounted in a 4U Rack server.</p>
+
+<p>JACK:	Whoa, what a monster.  Thatâs like an $8,000 computer.  Basically what itâll do is take those hashes he picked up from Responder and load them up into this computer.  Then he runs a tool called Hashcat to cycle through billions of passwords a second to try to find the matching password.  A computer like that can try every word in the dictionary in like, under a second.  Then it will go and try adding numbers to the ends of words, or special symbols like a dollar sign instead of an S.  It will keep trying passwords more random and more complex over time until it finds a match.  This is brute force password-cracking.</p>
+
+<p>TINKER:	The lowest Iâve ever gotten is like, a 20% crack rate, one in five.  Somebody is statistically â Iâm gonna get that much.  Usually on those immediate standard stuff Iâll get anywhere from 50% to 75% crack rate.  NTLM, I think at that time we could do something like 300 billion guesses per second.  I want to say with Net-NTLMv2 it was only and I say only, it was only somewhere between I donât know, six to twelve billion guesses per second.  So not too many.  I ran it against our standard dictionaries and our rule sets and I didnât crack any.</p>
+
+<p>JACK:	His monster of a cracking station tried billions and billions of passwords and found absolutely no matches on any of the hashes.  This was a big surprise.  This never happens.</p>
+
+<p>TINKER:	Usually when that happens it means my tools are broken, like an update broke it or something.  I went and checked all my tools, put in known hashes.  I test hashes to make sure my tools work and those cracked just fine.  I did troubleshooting on my own stuff and it was working.  Thatâs when I stopped and went back into the intranet and looked up a security policy.</p>
+
+<p>JACK:	The security policy is going to tell you the minimum length of what a password must be and how many special characters and digits that have to be in it.</p>
+
+<p>TINKER:	Sure enough, I believe they had a minimum of twelve character passwords.  At that point started to become passphrases.  Iâm a big advocate of passphrases.  Password you can crack fairly easily but a passphrase, ideally four or five different words, completely random, thatâs much more robust that what we have today.  I said okay, alright, thatâs fine.  Itâs still upper lower number and symbol, three out of four, and it still changes every ninety days.  That means that people arenât gonna create a really hard-to-figure-out passphrase.  Theyâre gonna create something that they can remember and then iterate on it.  I changed a little bit of my attack settings to [00:25:00] account for a minimum twelve character and basically just picked longer words and longer numbers at the end.</p>
+
+<p>I did four digit numbers so you usually get the last four digits of somebodyâs Social Security Number, the current year, something along those lines.  I just picked longer words.  I went onto the website and did a full word scrape from all their stuff including a lot of stuff from the internal internet to get the cultural thing.  You get local sports teams, you get local schools, you get local street addresses, and any kind of mascots or what have you that they really identify with.  You also get cultural phrases.  I finally did that and I finally got, I want to say a good tidy handful.  I finally got a couple of clear text passwords.  But let me tell you, my equipment was sweating after that.</p>
+
+<p>JACK:	[MUSIC] Okay, now Jeremy from Marketing has a few other employeesâ passwords and really, getting this was not that difficult.  Running Responder is really simple to do and heâs using off-the-shelf parts to build a computer to crack these hashes.  It sounds amazing but if you know what youâre doing itâs really not that hard.  Now that he has a few usernames and passwords, he cracks a small smile because it feels like a big win but he doesnât want to let the other people in Marketing know that heâs doing something.  He begins to try to figure out what he can do with these accounts.</p>
+
+<p>TINKER:	Thereâs a couple things that you can do.  You can immediately try to log into a workstation.  I know their laptop is on the subnet and I do a very targeted spray with their username and their password against all of it.</p>
+
+<p>JACK:	What targeted spray means is that heâs subtly trying to remotely log into a computer using these passwords he found.  But none of the logins worked.</p>
+
+<p>TINKER:	The error message amounted to good password but not authorized to log in, not within the group that can do remote logins which is fascinating, right?  That is absolutely something that you can do but I very rarely see.  By default thatâs not set up which to me, that was kind of my first shock to the system.  Aside from the fact â Iâm like, here I am.  They require twelve character passphrases and they donât allow common users to do remote logins for their own boxes.  Iâm starting to go okay, somethingâs going on here.  What sort of place have they put me in?</p>
+
+<p>JACK:	[MUSIC]  Okay, these users cannot log in remotely but they have to be able to log in normally like when theyâre at a workstation.  He logs out of his company-issued workstation and he tries to log in with one of these usernames.  Earlier he was pulling stuff from Active Directory but because there was so much logging enabled in his laptop, he had to stop because he didnât want to bring attention to himself.  But now that he has someone elseâs password and he can act like someone else for a little while, he can use that to gather more information with.</p>
+
+<p>TINKER:	What I did with these credentials â âcause I didnât want to use my own credentials.  I didnât want anything to be tied back to me as a person.  I used these stolen credentials and at that point I logged into SYSVOL on the main controller, pulled all of Active Directory.  You can mount <a href="https://social.technet.microsoft.com/wiki/contents/articles/24160.active-directory-back-to-basics-sysvol.aspx">SYSVOL</a> and get all the group post preference.  You get scripts in there that the domain admins will run and other IT will run.  You can sometimes pull hardcoded credentials out of those.  I pulled all the users, usernames, and host names, and a myriad of other things.  With the domain controller I pulled out all the information of all the users including the groups and had a lot of recon at that point.</p>
+
+<p>It was rather successful, that first go.  Thatâs just users.  Even though I wasnât able to log into the user laptop, I was able to at least interact with the domain controller in the way that Windows allows for.  But still at this point I donât have much, right.
+JACK:	Right.  So now weâre nearing the end of the second day and Jeremy from Marketing is really struggling to get anywhere in this network.  Sure, he has a few passwords but heâs very limited at what he can do with them.  Usually by now heâs deep in the network with starting to get access to Active Directory servers, something, something bigger than this.  But heâs got nothing so far.</p>
+
+<p>TINKER:	At this point Iâm like okay well, I still have good user credentials.  What am I gonna do?  The first thing  I tried to do is just log into their e-mail using either OWA or Office 365 or whatever single sign-on that they were using.  I was able to get in.  [MUSIC]  They did not have multi-factor authentication set up on e-mail.  As luck would have it though, one of the very first e-mails that I read just rifling through someone elseâs e-mail was an e-mail saying hey, be advised next week weâre implementing multi-factor authentication in e-mail so be prepared to set that up.  Iâm like woo!  I got in early enough to where I didnât have to do that.</p>
+
+<p>JACK:	Now he starts looking through the e-mails to see if he can find anything of importance; maybe IT e-mailed them passwords at one point or something else that might be [00:30:00] helpful.  He found a password but it was for a third-party tool like a tax-assessorâs website or something.  Really, thatâs it.  He even looked for internal nodes that Outlook sometimes stores for users to see if they just wrote their passwords down on that or something but there was nothing there.  No help.  He tried a new approach.</p>
+
+<p>TINKER:	Get into their single sign-on, their internet.</p>
+
+<p>JACK:	What I see companies doing today is they create a single portal for employees to log into which then provides them access to all the tools.  This is a called single sign-on because you log in once and gets you access to many things.</p>
+
+<p>TINKER:	Single sign-on thatâs not set up properly or securely is a hackerâs dream.  All of the things are in one tidy little group and you have full access to it.  Iâve taken down entire organizations where single sign-on was there, like a hub of applications, if you will.  One of them gave me a whole lot of access.  This place though, I got in from the outside which I tried to do because I didnât want it to originate from the inside.  From the outside it required multi-factor authentication just to log in.</p>
+
+<p>JACK:	When he says from the outside he means from outside the company.  The single sign-on portal can be accessed from anywhere in the world.  Itâs right on the internet but ah, multi-factor authentication makes it much harder to log in.  This is where you need both a password and a six-digit token code generated on your phone or something to get in.  He tried to get into the portal from his laptop on the inside of the company and it didnât require a multi-factor authentication.  Yeah, now heâs in.  He looks to see whatâs there.  A bunch of different apps, payroll stuff, client databases, control panels, okay.  Heâs feeling like heâs getting somewhere now.</p>
+
+<p>TINKER:	[MUSIC] I clicked on one of the apps and each individual app required its own separate multi-factor authentication login.  I was like what?  What kind of lockdown prison is this place, right?</p>
+
+<p>JACK:	Itâs the opposite of single sign-on.</p>
+
+<p>TINKER:	Well exactly, and so what theyâve done is they set it up properly.  They had one place for everybody to go to but man, you better have your soft token or something set up.  At this point Iâm getting kind of heated.  Iâm like Tinker, youâre losing time.  You better hack into something.  I had gotten a couple of things; I hacked into e-mail but it didnât give me much.  I already have some findings.  Iâve got a report here thatâs building of things they can tighten up but nothing significant.  Pen testers, your dopamine, your adrenaline is going off those really big hacks, right.  I still at this point have not gained access to another workstation beyond my own.</p>
+
+<p>JACK:	He takes a little break, gets a drink of water, resets himself, and sits back down.</p>
+
+<p>TINKER:	I need to lat move.  I need to start getting onto some servers.  I need to start going and at least targeting some crown jewels here but Iâve got nothing.  One thing caught my eye though, in the single sign-on, was Citrix.  I, as an attacker, I love Citrix âcause what Citrix is, is it amounts to Remote Desktop through the browser.  Generally if thereâs something from Citrix, generally itâs a server of some sort thatâs hosting internal applications or something else itâs serving up.  But I see Citrix and I usually go for it âcause I can really get a good thing there, maybe dump some memory.  I click on Citrix and it asks me for multi-factor authentication and it says itâs gonna send it via SMS to this userâs cell phone.  But it only gives the last four digits of the cell phone.</p>
+
+<p>JACK:	While yes, itâs possible to hijack the cell phone, do SIM swapping or something, thatâs technically illegal and heâs not allowed to do illegal things as a penetration tester.  All he knows about this person is their name, their username, their password, and the last four digits of their cell phone.</p>
+
+<p>TINKER:	But I have their e-mail so I type in the last four of their phone number into the search bar within this personâs e-mail and I pull up one of their signatures that has their full phone number.  Okay, I have their full phone number, I have their name, I have who they are, I have everything that amounts to them within this environment.  Letâs bypass multi-factor authentication.</p>
+
+<p>JACK:	[MUSIC] Okay, so hereâs what heâs gotta do.  Heâs gotta click on that login to Citrix which will then send a text message to the phone of that user and heâs gotta somehow get that text message, enter it into this website all within sixty seconds before the code expires.  This isnât gonna be easy.</p>
+
+<p>TINKER:	I have this phone number.  I called the person.  I gotta make sure none of the people around me are hearing me at this point, right?  But I put on my headset, put on my own phone, and I called this person.  They answer; Jane from Accounting.  I lie to them and then I say hey, Iâm somebody [00:35:0] else from IT and weâre gonna migrate your Citrix since itâs within single sign-on.  This person has no idea what Iâm talking about.  Theyâre not IT and so theyâre like, all they hear is computer gobbly gook.  Theyâre like yeah, that sounds fine.  Why are you calling me?  Iâm like well, Iâm gonna send you a pin number that I need you to read back to me that authenticates that it is your account but I need you to know as your IT, I will never ask for your password.</p>
+
+<p>Again, this gives them a sense of security.  I obviously already had their password but it gives them a sense of security and says okay, well theyâre not gonna ask for my password.  Thatâs what matters so Iâll read off this pin.  I said okay, Iâm about to send you a text message.  Youâll receive it from my server, Citrix, right, and they go okay.  I go ahead and click Send MFA and they go okay, I got the text.  You just need me to read this to you?  I go yup, just read it to me.  She read it to me.  I typed it in within the minute âcause you only have about sixty seconds and it logged me in.  I go okay, well just letting you know, and this is right before lunch, go out and take a long lunch or donât interact with Citrix for at least two hours while we do the migration.</p>
+
+<p>She said okay, great, sounds good.  I go okay, sounds good.  Bye.  Iâm like okay great, finally.  Iâve got into Citrix.  I log into Citrix and thereâs no applications.  Thereâs no computers.  Itâs an empty Citrix instance.  Iâve hacked my way into a broom closet.  Thereâs nothing here.   I just bypassed multi-factor authentication through a solid social engineering exploit after cracking this personâs password which was hard to crack to begin with.  A day and a half has arrived up to this very point and Iâve got nothing, absolutely nothing.</p>
+
+<p>JACK:	At this point if you were to look over at Jeremy from Marketing youâd see him sweating and shaking.</p>
+
+<p>TINKER:	I found that generally when Iâm doing a soc eng or social engineering attack or when Iâm doing a physical break-in or what have you, when Iâm doing it Iâm calm, cool, and collected.  Iâm usually sweating like you wouldnât believe but my demeanor is on point.  Afterwards though, man, that adrenaline rush, it comes crashing down and I will, I shit you not, I will physically shake.  Iâm probably one of the most loud, outspoken introverts youâve ever met.  I am confident in front of people.</p>
+
+<p>I used to be a Sergeant in the Marine Corps and when you got a platoon full of trained killers and youâre trying to get them to do what you want them to do you have to develop confidence, or at least a projection of confidence.  You gotta lie through your teeth, right.  I will have confidence; Iâm socially adept but it still drains me, especially when Iâm doing something like this that I have to put on a heavy mask and so yeah, I get out of that.  Iâm sweating.  It took me probably about a full hour to prepare for it as I did an in-depth research on this person.  Iâve got nothing.</p>
+
+<p>JACK:	Usually heâs a lot further along at this point on his penetration test and itâs just making him really worry that heâs not gonna find anything.</p>
+
+<p>TINKER:	I go screw it; Iâm gonna go all out at this point.  As people start leaving to head home I say hey, Iâm gonna stay back and finish trying to knock out some more of these onboarding videos and nobody seemed to mind.</p>
+
+<p>JACK:	[MUSIC] He sits and waits, sitting in his cubicle watching everyone leave the office.  He keeps peering over and seeing if anyone has left.  He sits back down and waits some more.</p>
+
+<p>TINKER:	I waited until the cleaning crew came.  I waited until the cleaning crew left.  I think I was the only one on that floor.  I believe there was maybe a couple other people working on different floors but I was the only one on that floor.</p>
+
+<p>JACK:	He starts walking by every cubicle looking to see if any computers were logged in while that person went home.  No computers were left logged in but he does see some people did leave their computers behind.</p>
+
+<p>TINKER:	I said you know what, Iâm just gonna steal laptops.  I donât even care at this point.  I go start plugging into my colleagueâs laptops that left their laptop there but two things kind of jumped out.  The biggest thing was they had encrypted hard drives so even if I mount and boot from USB which I was able to do, I couldnât mount their hard drive.  It was encrypted and so I couldnât pull off any kind of local admin hash.</p>
+
+<p>JACK:	Ah, again blocked.  All these little safeguards in place are really giving him a hard time to get anywhere.  Even when nobody is in the office he still canât access peopleâs laptops.  Heâs tired, heâs hungry, heâs nervous, and his frustration is just building.</p>
+
+<p>TINKER:	I said screw it, Iâm gonna go after the IT shack.</p>
+
+<p>JACK:	Okay, so the IT shack is the room where the IT help desk keeps all the computers.  Like, they probably have ten, twenty, a hundred computers in there.  If he can get into this room heâd have access to a lot of workstations and he thinks maybe if he gets his hands on these he can get somewhere.</p>
+
+<p>TINKER:	Going up to the IT shack, during the previous [00:40:00] couple days, whenever Iâd get up and walk Iâd try to make people see me so that they know Iâm supposed to be there.  Iâm doing kind of reconnaissance on where everything was.  By that time I knew where the break room was, I knew where the guards hung out, I knew where the IT shack was.  First thing I had done previously was check where all the cameras were and there was not a camera looking at the door to the IT shack.  I knew that visually I was fine but when I went to the IT shack I wanted to make sure there was no one around the corner.  I wanted to sit there and pause.</p>
+
+<p>JACK:	He stands and waits right around the corner from the IT shack door and he tries to listen to see if anyone is around.</p>
+
+<p>TINKER:	In order to really cast your hearing out to hear as best you can, thereâs a couple things that you can do.  One is slow down your own breathing to slow your heart down âcause if your heartâs beating thatâll actually fill your ears with a pump, pump, pump of blood so you need to calm yourself completely down.  I tilt my head down.  I looked down because I want to focus.  Iâm not necessarily closing my eyes but I want to focus on my hearing so Iâm making sure that Iâm not looking at anything in particular.</p>
+
+<p>Then I open my mouth slightly and the reason why you do that is you have your jaw muscles; when you have a clenched or closed mouth, your jaw muscles will actually come right up near your ear canal and kind of close it off slightly.  You can try this even at home.  Get to a place where you have your jaw closed and just listen for a while.  You can do this at night and then open your mouth comfortably wide open.  You donât want to strain yourself but comfortably open to move your jaw bone away from your ear canal.  Youâll find that that opens your ear canal wide open and you can hear a lot more.  I say get context; not only can you hear further but you can hear more things.  Does that make sense?</p>
+
+<p>JACK:	Yeah, I love pen testers.  Itâs like youâre Felix the Cat; you have a bag full of tricks and you never know when you need it but you just have them ready to go.</p>
+
+<p>TINKER:	Thatâs the thing, we try to be Jacks of all trades and you try to study as many things as possible.  Iâve pulled that trick out of being in the Marine Corps when you have to do night missions.  Little things that you pick up along the way that I tell you, they come into play.</p>
+
+<p>JACK:	After standing around the corner from the IT shack door for a good thirty seconds listening for anything, it seems like the coast is clear.  Time to move in.  He gets his lock picks ready and is prepared to move to the door and start picking the lock.  He turns the corner and to his surprise a door stopper is stuck in the door which is just barely keeping the door open slightly.  Alright, lucky break.  He wonât have to pick the lock now.  But this gave him a totally different sensation.  Was someone in there?  If so, is he gonna have to wait even longer for them to leave?  He tries to look through the crack but he canât see much.  Screw it, heâs going in.</p>
+
+<p>TINKER:	[MUSIC] I walk in real quick and I see stacks and stacks of laptops.</p>
+
+<p>JACK:	Nobody was in the room.  Someone accidentally left the door open all night.</p>
+
+<p>TINKER:	I come to find out later on it was literally a person had forgotten their keys and so they left it propped open to go to the restroom and never came back to shut the door.</p>
+
+<p>JACK:	Heâs standing in the IT shack in front of like, seventy-five laptops or more.</p>
+
+<p>TINKER:	Iâve got an option here.  I can stay in the shack and do all my things there or I can take what I need and move over to my desk or conference room, whatever, and do it elsewhere.  Thereâs a give and take of both.  If I stay in the shack no one will see me hacking into these computers and so if I stay in there I protect myself against the bulk majority of people that will be walking through in the middle of the night if they came in after hours for whatever reason.  But if I stay in there and an IT person comes in, which plenty of IT people work overnight or have to come in for a call or something, Iâm caught red-handed.  Iâve got no excuse for being in there.</p>
+
+<p>I make a call that Iâm gonna start hauling as many of these computers to my desk and then from my desk, bring them up and if someone comes by hopefully Iâve got them tucked away or whatever and I can pretend that itâs mine or whatever.  I can hear them coming, I can hide it and go back to work.  I start taking armloads, like full handfuls of these laptops to my cubicle area and stacking them underneath my desk.  I ended up grabbing â I made, I donât know, three or four trips and ended up grabbing about thirty laptops before I said you know what, this is probably enough.  I went back to my cubicle at this point, shut the door, and just started trying to boot from USB and mount as many hard drives as possible.</p>
+
+<p>JACK:	He starts going through each laptop one by one, spending hours on them trying to find if any of them have an unencrypted drive.  He finds two in the whole stack that were either old images or didnât get encrypted.  Now that he has an unencrypted hard drive he dumps the local administrator hash from that laptop.  Once he has this hash he starts running it through that monster password cracking station he has and he tries to crack the admin password.</p>
+
+<p>TINKER:	I crack it rather quickly.  It was actually the company name and the year with a capital first letter on the company name, a very weak password.  [00:45:00] I was like are you kidding me?  Everything else Iâve found has been amazing and this is it?</p>
+
+<p>JACK:	Just to test the password he tries logging into his own workstation with it and the admin password worked.  Bingo.  This means the admin password that he just found is likely the admin password for all the userâs laptops in the office which should allow him to log into any userâs laptop.  Finally heâs making progress.  This is a big break.  He starts putting the laptops back in the IT shack.</p>
+
+<p>TINKER:	I took pictures of where they were so that â they were out of order by this point but I put them, I mean, stacked about as precisely as I possibly could.  Anything I touch, I put it back as closely as I found it so that it doesnât look like itâs been disturbed.  Iâm like okay, well great.  I got a lucky break.  I can now use this to spray everything, right?  At this point Iâm beat and I go home and I sleep.</p>
+
+<p>JACK:	Feeling rested and happy that he has an admin hash and a password, he comes back into the office finally ready to dig deep into the network.</p>
+
+<p>TINKER:	I come back in and okay, Iâve got the best thing that I have; Iâve got a local admin hash.  First thing I try to do is pass the hash which just uses the actual hash as a password.</p>
+
+<p>JACK:	Which is a great technique.  Often when youâre logging into another computer your computer hashes your password and gives it to that other computer to log into so if you have the hash, just give him that and that could authenticate you.  But in this case it wasnât working.  There was some kind of error but last night he cracked the local admin password.  IT administrators will often reuse this password so this local admin password might actually work on every laptop in the whole company.  He tries to remotely log into another computer using this local admin and password.</p>
+
+<p>TINKER:	But it wasnât working.  The local admin hash was not letting me log into â again, it comes up as valid credential but youâre not allowed to log in.  Iâm like, this is asinine.  Even the local admin needs to be able to log in.  Itâs not letting me.</p>
+
+<p>JACK:	He logs into his own laptop again as local admin to try to figure out whatâs going on.</p>
+
+<p>TINKER:	When I log in with the local admin password they donât have access to the full computer.  [MUSIC]  The local admin, the local administrator, does not have full access to the rest of the hard drive.  It doesnât have access to the user level which â this doesnât make sense âcause thatâs how itâs set up.  That admin has access to everything.  Again, Iâm punching myself in the face.  It turned out that they were using a third-party non-Microsoft tool to do access control and user control, etc.</p>
+
+<p>JACK:	This is quite impressive.  While the password was probably used for everyoneâs laptop the admin user doesnât have that many rights at all.  Iâve never heard of this myself.  But yet, this is another safeguard that this company has put in place in case this password got leaked which was really hard to find to begin with.  This would stop them even further.</p>
+
+<p>TINKER:	Now Iâm angry.  At this point I can pop a shell from my computer but â to my rogue computer.  With this pass I can log in anywhere and get a shell if I have physical access to somewhere but it doesnât give me any rights.  I donât have anything.  Iâve got this tiny little niche.</p>
+
+<p>JACK:	I would be angry too.  So many of his exploits and techniques should have given him access to the whole company by now but this company was foiling his every single move and all his techniques.  Now heâs tired of trying to fly under the radar.  Heâs ready to try an exploit on another computer that might make a little noise.  From there, if he can get into a computer he can see if thereâs anything good on that and move around to another computer.  He scans his own computer to see if it has a vulnerability that he can exploit.</p>
+
+<p>TINKER:	I tried a variety of them but the one that worked was unquoted service path which the way Windows works, is if say you want to run a program at startup and itâs designed to run this program at startup.  But one of the folders that you run this program in has spaces in it.  If you donât put quotes around that full path, what Windows will do is attempt to run up to the space as if that word, say it was something that said Citrix space Server.  Thatâs a BS one.  It would try to run Citrix as an executable first before it tried to run Citrix server as a directory.  If you go in there, if you have ReadWrite and you can create a program, a malicious program thatâs named Citrix as opposed to Citrix space Server, it will run your program as in this sense, system because this system was calling it.  I found a directory that let me do this.  It wasnât Citrix space Server but Iâm like okay, great.  But I ran a check to see if I had ReadWrite and it said I didnât.  At this point Iâm like well, fuck it.  Iâm done.  This is horrible.</p>
+
+<p>JACK:	[MUSIC] Without the ability to write to the remote computer, heâs unable to exploit that thing.  Because it said he didnât have the ability to write, he just gave up at this point, totally out of ideas.  He put his elbows on his desk and he put his head in his hands, completely [00:50:00] dumbfounded.  Heâs now on day three and still has not gained access to any computer outside his own and a couple of powered-off ones in the IT shack.  His report and findings so far looked dismal.  This has been the hardest assignment heâs ever had.  Now day three is over and he heads home.  Morning comes.  Itâs now Thursday and heâs getting ready to go into the office.</p>
+
+<p>TINKER:	I call up an associate of mine.  I told him hereâs everything I did, but I ran the check to see if I had privs and it said I did not have writability.  He goes well, did you try it anyways?  Iâm like oh, goddammit.  No, I didnât.  I just assumed.  I went ahead and tried to write to it and I could.  [MUSIC]  Even though Windows came back and told me I couldnât, I was allowed to write.  This kind of tells you donât listen to the output of the tools that youâre trying to hack into.</p>
+
+<p>Turned out again, this third party software that ran all the access control, the third party allowed them to write even though the native Windows didnât.  Third party superseded native Windows.  At this point I now have a meaningful way to escalate privileges to system level and I tried it out.  I went with my colleague; he wrote a stager and I wrote the malware for it.  He wrote an executable that will then call my PowerShell, reverse shell.  I think it was just a tweaked version of Veil or some sort of PowerShell, remote shell.  We tested on my own workstation, unplugged from the domain.  At this point Iâm getting kind of gutsy here and it worked.</p>
+
+<p>JACK:	Okay, so for this exploit hereâs what needs to happen.  First he has to put the exploit on a USB drive and then physically take it to another computer.  He would do this while a person wasnât at their desk.</p>
+
+<p>TINKER:	Log out of their user, log in as the local admin, drop two sets of malware.</p>
+
+<p>JACK:	Drop it in as in copy it from the USB to the computer and then log out as admin.  Then when the user comes back and logs in, his malware should give him remote access to that computer.</p>
+
+<p>TINKER:	Even though I found this way to do it, itâs still under â a person has to break in by this point to have physical control.  Iâm like you know what?  Screw it.  Weâre gonna do this.</p>
+
+<p>JACK:	He thinks over this plan.  This is a risky move but if done right could get him access to that personâs computer.  So whose laptop would be worth getting into?  Maybe the CEOâs.  Hm, yeah, but they werenât at this office.  Who else?  The IT team.  [MUSIC]  Perfect.</p>
+
+<p>TINKER:	Iâm gonna go straight for IT.  Iâm gonna hit IT and Iâm gonna take them down.  Iâm gonna get system level remote access.</p>
+
+<p>JACK:	With this remote access youâd be able to do everything including reading the CEOâs e-mails.  The plan was to wait until lunch when he could go over to the IT teamâs computers and put this malware on it.  He waits and waits, peering over his cubicle from time to time.  He watches a few more of those onboarding videos for Marketing and waits until lunch.  The Marketing team asks him to go to lunch and heâs like no, no, Iâm fine but they kept insisting and heâs like no, really, I want to stay so his team leaves him behind.  He thinks okay, nowâs a good time.</p>
+
+<p>TINKER:	I set up a listener on my rogue machine and I go start walking.  Iâve got a little thumb drive with my malware on it and their antivirus didnât detect it âcause we kept it very low level.  I go over to the IT area and I shit you not, the bulk majority of IT are sitting there eating lunch at their desk.  Iâm like a) thatâs not healthy.  Thatâs not good work.  You need to get away from your computer.  You need to stand up.  You need to walk.  But are you kidding me?  This is not saying this is a valid defense technique, seriously.  One person can be there if they really need to but people need to get up and move away from their computers, even IT.  Iâm frustrated.</p>
+
+<p>I start walking and pacing around.  At this point Iâm getting kind of heated.  Iâm losing my cool.  I go around a corner; I finally find an area that doesnât have anybody and sure enough itâs Finance.  Iâm gonna take down Finance.  I go up there.  As Iâm up there I see one lady sitting down next to one of these cubicles and Iâm just gonna go for it.  I tell her; I go look, Iâm IT.  Iâm about to do some updates.  She goes okay, sounds great.  I go ahead and do it.  I pop it up and about thirty seconds it takes me to log out, log back in, drop the malware into the correct folder, log out again, and then leave.</p>
+
+<p>JACK:	He goes back to his desk and waits.  Now what heâs waiting for is that lady from Finance to finish her lunch and to log back into her computer.  He pulls Metasploit up and waits and watches.  Metasploit is like a hackerâs tool bag.  It contains hundreds of exploits and tools to hack into stuff.  Heâs got this hack all set up.  Heâs staring at his screen and it says the listener is running and waiting for mode activity or something like that.  If everything is set up right, when she comes back and logs into her computer heâll then have remote access to that ladyâs computer in Finance.  The screen will say Meterpreter Session One [00:55:00] Open.  He waits for activity.  Nothing.  Nothing.  He peeks over the cubicle wall sometimes to see if he can see her but he canât see anything.  He waits longer, longer.  He just keeps waiting.  Come on, lady.  The wait is killing him.  Itâs now been forty-five minutes at this point and heâs starting to think it didnât work.  She had to be back by now and for some reason, whatever reason, the malware just didnât work.</p>
+
+<p>TINKER:	Iâm about to give up.  I see Meterpreter Session One Open, right, and Iâm like oh yeah, there it is.  Then I see Meterpreter Session Two, Session Three, Session â it popped eight shells.  It tried to call this thing eight different times.  Iâm like yes, Iâm in, alright!  [MUSIC]  I start rifling through this personâs computer.  I get persistence.  I actually get a couple passwords for finance, some small ones.  Right as Iâm about to start dumping memory I lose my connection.  The session closed.  Iâm like oh, no.  No, no, no.  I have been without sleep, Iâve gone too far.  What the hell happened to my shell?  I get up and I make a beeline right to that ladyâs laptop âcause Iâm gonna go pop another shell, you know.  Iâm like get out of my way!</p>
+
+<p>As I go, I round this corner and this precious little old lady reminds me of my grandmother; sheâs looking up at this IT guy and sheâs like no, I donât understand.  They told me you guys were updating my computer.  Right as I come around heated, she turned and kind of glances at me and goes him!  It was him!  Iâm like oh, fuck!  I let out this high-pitched seventh-grade girl scream, you know, and I turned around and right as I turned around thereâs two more IT guys right there.  Iâm like oh, shit.  [LAUGHING]  And theyâre looking right at me like who the fuck are you and why are you calling yourself IT?  They sat me down and they said who are you?  What are you doing with these computers?  Kind of thing.</p>
+
+<p>JACK:	When a penetration tester gets caught like this, they have to think.  Should I try to escape this situation or should I just tell them Iâm here working for the CISO?  In this case he decided to say Iâm working for the CISO.</p>
+
+<p>TINKER:	At this point Iâm at the end of my rope.  Iâve done a very thorough test even more than what Iâve gone into here over a good week.  Iâve stayed late, Iâve done everything I can think of and even learned some new tricks along the way.  While I was able to find several different things, an easy password on local admin, even a shared password even though they used the other ones, some clear text credentials here and there.  A lady gave me her pin over the phone.  A lot of these things they could tighten up.  Long and short, they stopped me and we brought in the CISO.  He said hey, good job.  Hereâs the situation.  Heâs okay.  We went into an initial debrief with what I had done and how they found me.  I asked them; I go look, I ran the safest frickinâ shell that I could run.  I even tested it against your antivirus and your antivirus didnât catch it.  I was only there for thirty minutes.  How did you find me?  They said you were running PowerShell from a finance computer and finance doesnât run PowerShell.  The only people that run PowerShell are IT and maybe some of our Devs, you know, DevSecOps or DevOps.</p>
+
+<p>JACK:	Power Shell is kind of like a super command line tool in Windows and yeah, only technical people ever use it or need it.  The Finance Department would never run it so this sort of behavior is like anomaly-detection.  That lady in Finance has never, in all the years sheâs ever worked there ran Power Shell.  But this exploit did and since it was so out of the ordinary is how he got caught.</p>
+
+<p>TINKER:	But yeah, it was one of the toughest places and I like telling that story when Blue Team kicked Red Teamâs ass because it showed what worked.  Like I said, I still found a lot of different things that they could tighten up.  They werenât perfect by any stretch of the imagination but they had such robust security that they were able to not only detect me but act on it.  Itâs not enough to detect an attack.  You have to do proper response and containment and I tell you what, they had all three.</p>
+
+<p>JACK:	I imagine the IT team was proud of what they did to stop him but they remained focused and serious as Tinker went over the report.</p>
+
+<p>TINKER:	They were taking ready notes.  They didnât gloat.  They didnât rub it in and they also didnât take offense of the things that I found.  They were very professional and they said they appreciated it and looked forward to my full report.  It was the epitome of professionalism.</p>
+
+<p>JACK:	I like this story because not only do we get to see what a penetration tester does but we also get to see what steps a company can take to make it really hard for hackers to get in.  Because the harder it is, the more resource a hacker has to have.  They have to have more time or more processing power or more people or more exploits or something.  The harder you make it for them the more motivated [01:00:00] they have to be to get through it.  Theyâll probably just give up and move onto something else if itâs too hard.  Just to recap what worked here for this company, they had multiple layers of security, defense and depth.  They had a minimum of twelve character password policy which made passwords hard to crack.  They had two-factor authentication almost everywhere.  They limited access to each user which made it hard to do any remote logins.  The local admin had very limited access and the logging that was on everyoneâs computer allowed them to detect and find this hacker within minutes of him doing an exploit.  All this added up creates a nightmare scenario for Tinker and will probably be enough to create a nightmare scenario for any other hacker.</p>
+
+<p>TINKER:	The CISO was very â it was just professionalism from the top down.  You could tell that this was a culture of continual self-introspection and self-awareness as it related to their environment and continual improval.  He went in with the idea that at a certain point, you canât have a perfectly secure system or no oneâs going to be able to use it.  If someone can use it you can â an attacker can emulate that user in some form or fashion.  Heâs like, weâre getting to the point where we have risk acceptance.  If you have to break into my place and physically access a computer and do all this kind of stuff, at that point the only people Iâm really worried about are really high-end criminal groups; the NSA in Mossad.  If it takes the NSA in Mossad to hack into my place, fine.  Weâll accept that.</p>
+
+<p>JACK:	Thank you so much for sharing this story with us.</p>
+
+<p>TINKER:	Cheers, cheers.  Thank you for having me here to tell that story.  A quick shout out to the Dallas Hackers Association.  Iâve never met a more vile bunch of criminals, thieves, con artists, and hackers in my life but thereâs some good folks.</p>
+
+<p>JACK (OUTRO):	[OUTRO MUSIC]  Youâve been listening to Darknet Diaries.  Thank you to Tinker for telling us this amazing story and teaching us about pen testing.  You should follow him on Twitter because he tells a lot more stories like this.  His name there is @TinkerSec.  Also thanks to Proximity Sound for doing that voice intro.  That was really cool.  Darknet Diaries is going to do a bit of a rebrand in the next few weeks with a new logo, web page, shirts, stickers.  Iâm super excited to roll it out so look for that soon.  This show is made by me, the President of D-Corp, Jack Rhysider.  Intro music is by Breakmaster Cylinder who you could always find hanging out at the Red Wheelbarrow BBQ.</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

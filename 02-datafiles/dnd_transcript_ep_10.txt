@@ -1,0 +1,481 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>Misadventures of a Nation State Actor â Darknet Diaries</title>
+	<meta name="description" content="In today's world of intelligence gathering, governments hack other governments. This episode takes you on a ride with a nation state actor to see exactly how it's done.">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Misadventures of a Nation State Actor â Darknet Diaries">  
+	<meta name="twitter:description" content="In today's world of intelligence gathering, governments hack other governments. This episode takes you on a ride with a nation state actor to see exactly how it's done.">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/mishap.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/10/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Misadventures of a Nation State Actor â Darknet Diaries" />
+	<meta property="og:description"        content="In today's world of intelligence gathering, governments hack other governments. This episode takes you on a ride with a nation state actor to see exactly how it's done." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/mishap.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/10/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/mishap.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/10/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="Misadventures of a Nation State Actor â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/mishap.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 10: Misadventures of a Nation State Actor</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://traffic.megaphone.fm/ADV8817646028.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/10/",
+			   "title": "Ep 10: Misadventures of a Nation State Actor"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/10">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[FULL TRANSCRIPT]</p>
+
+<p>JACK:	Imagine James Bond.  [MUSIC]  Before Bond goes on a mission he gets some vital equipment from Q.  On one mission he got a special ring that had a way to emit at ultra-high frequency which when put up to a window, shattered the glass.  On this mission, Bond snuck into North Korea undetected but imagine what kind of consequences there would be if he lost the ring while in North Korea?  If the North Korean government found the ring they would analyze it and they would discover its cutting-edge technology and possibly be able to reproduce that technology for themselves, essentially putting the technology in the wrong hands.  When analyzing the ring, they may even be able to track down its origins to MI5.  This would mean that just by finding the ring alone, North Korea could deduct that there was a British spy in their country.  This could cause numerous problems, maybe even a war.  In the internet world where governments hack other governments, itâs crucial to not let the enemy know youâre there or capture your hacking techniques âcause if they do, it could have devastating consequences.
+<!--more--></p>
+
+<p>JACK (INTRO):	[INTRO MUSIC] This is Darknet Diaries, true stories from the dark side of the internet.  Iâm Jack Rhysider.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	Guys, guys, listen.  This episode is pretty serious.  It makes all other episodes seem like childâs play to me.  Iâm even nervous to tell it.  I donât think Iâm on any FBI watch-lists now but I probably will be after this episode.  Let me ask you this; who is the most sophisticated hacking team in the world?  Itâs a team comprised of graduates from MIT and Carnegie Mellon, a team that has created the most cutting-edge hacking tools, a team that can utilize an almost unlimited amount of resources.  Resources like language interpreters, huge data centers, and super computers, a team that has a history of creating encryption methods and building the internet.</p>
+
+<p>Yes, the hacking groups that are inside government agencies, otherwise known as Nation State Actors.  Most of what they do is considered top secret, so getting one of them to talk on this show is a very special privilege.  Nation State Actors are an exceptional group of hackers because they essentially have a license to hack.  They work without the fear of legal retribution.  They are often tasked with stealing secrets or disrupting the target through connected networks.  Itâs important that all of what they do goes entirely under the radar and is invisible to the target.  Donât ask me how I found this and donât ask me who, but on this episode we will hear a story from a person who has been in the innermost bowels of one of the most elite hacking teams in the world.</p>
+
+<p>NSA:	Yeah, I spent almost fifteen years with the US government running offensive cyber operations so I have many, many stories.</p>
+
+<p>JACK:	The only way they would agree to be interviewed for this show was if I kept them anonymous and disguised their voice, so what youâll hear is actually a voice actor reading the transcript of the conversation I had with them.  You might wonder whether their story is true or not, and Iâll tell you what I know.  Iâve been an InfoSec professional for over ten years and at one point, my employer sent me to a Threat Intelligence Training.  There I learned all kinds of tactics, techniques, and procedures that some of the most sophisticated hackers use.  While listening to this person tell their story, the tactics, techniques, and procedures they use match up exactly with what I learned in class.  I can vouch for that part being true, but for the rest of the story, I donât know.  Iâll let you decide.</p>
+
+<p>[MUSIC]  But youâll need some additional information.  Pretty much all governments have an Intelligence Department.  The US has the Central Intelligence Agency and the National Security Agency and others.  The goal of the Intelligence Department is to get information on enemies regarding threats to the nation.  This is done in the name of national security.  In short, governments spy on each other.  This shouldnât be news to you.  Itâs been happening for centuries.  In the past spies would go undercover and physically break into places to extract secret data.  They were highly trained at being stealthy, being able to escape and evade, and are often excellent drivers.  But now the governments rely on computers to communicate, store data, and create plans.</p>
+
+<p>[00:05:00] This exposes a whole new attack surface.  Instead of physically breaking into a building to steal documents, hackers can steal documents from the other side of the globe.  They do this to learn about an upcoming attack, or gain knowledge of where the militaryâs going, or to steal plans of a top-secret weapon.  Governments are actively hacking into other governments.  This is the new norm.  Governments have to take their cyber defense seriously if for nothing else, than to protect their data from other governments.  But what is it really like when a government hacks into another government?  Well thatâs the story weâre about to hear.  So letâs ride shotgun along with our Nation State Actor to hear exactly how they hack into another government.  This should be exciting so strap in and letâs go for a ride.  First, letâs get the mission.</p>
+
+<p>NSA:	A couple years ago we had a tasking to go after a network that belonged to a foreign government agency.  Our task was to get access to it and gather specific information.  The way the Nation State Operations work is that the cyber elements of a nation state donât derive requirements unto themselves.  They get it from someone else.  Someone else in the government or in the agency says we think this information exists on that network.  Go get access to the network.  But thatâs usually all the task is.</p>
+
+<p>JACK:	This task seems to only have a tiny amount of information.  Weâre only given a foreign government agencyâs name, some IP addresses, and a general idea of what data to grab.  This is nowhere near enough information to get started hacking into that network.  We donât know what tools to use, or what computers to target once weâre in.  Weâre going to need more information.</p>
+
+<p>NSA:	Really, the big thing for nation states in particular, weâre â not only the goal is, of course, to get access and collect your information, but overriding that goal is â you need to stay clandestine.</p>
+
+<p>JACK:	Not only do we need more information but we need to get it secretly.  There are many reasons to stay hidden when doing this mission.  Firstâ¦</p>
+
+<p>NSA:	There could be political blowback.</p>
+
+<p>JACK:	Another country could become furious if they caught us hacking into it.  Another reason not to get caught is because of the equities of our tools, exploits, and infrastructure.  Just like James Bond canât afford to lose his top-secret spying technology, a Nation State Actor also uses cutting-edge hacking techniques that they donât want the target to be aware of.  These hacking techniques can be very expensive and sometimes takes years of research and are worth millions of dollars.  Itâs imperative that we stay as invisible as possible while conducting this entire mission.  Oh, and for this story, letâs pick a random country to use as an example target.</p>
+
+<p>NSA:	Letâs go with the Peruvian Ministry of Foreign Affairs.</p>
+
+<p>JACK:	The actual target will remain anonymous.  The military sometimes uses the term âkill chainâ to describe how an attack takes place.</p>
+
+<p>NSA:	The military calls this the preparation of the battlefield but the cyber equivalent to that isâ¦</p>
+
+<p>JACK:	The cyber kill chain.  This describes the different phases of a cyber-attack.  Iâm going to explain what that means as we walk through this story.  There are seven phases to the cyber kill chain that must be conducted to complete an attack.  Phase one is reconnaissance.  [MUSIC]  In this phase we need to gather information about the target.  Like I said, we have no idea what type of exploit to use or what systems to attack.  We begin by collecting information.</p>
+
+<p>NSA:	Now Iâve got to figure out a way in, so now itâs things like passive reconnaissance and mapping.  Start figuring out what can we learn about this network without letting them know that weâre trying to learn stuff about it?  Questions like how big is the network?  What kind of systems are on it?  Hardware, software?  What kind of antivirus is deployed there?  What is my access vector?</p>
+
+<p>JACK:	The team does a scan against the target network to see what is exposed to the internet.  They begin mapping whatâs visible to the world.</p>
+
+<p>NSA:	They have a website.  Theyâre hosting the web server thatâs within their environment.  Thatâs a box on the internet with like, Apache Tomcat running on it.  Okay, so thatâs good to know.  Now I know that itâs probably a Linux box and a web server that potentially has vulnerabilities I can exploit.  Thatâs pretty interesting.  We find a couple of things like that.</p>
+
+<p>JACK:	Normally most governments and organizations keep their internet-facing devices up to date.  This is important to do because an out-of-date system has a lot more security holes than one thatâs been updated.  But in this case the web server was not fully patched, which means the team can use a known vulnerability to access it.</p>
+
+<p>NSA:	We start to come up with some potential avenues.</p>
+
+<p>JACK:	Now we have a potential point of entry into this governmentâs network but thatâs still not enough information.  Itâs important to try to understand what exactly is in their network and it would be nice if we had a map of where to go once we get in.  It would also be nice if we know who the people were that work in that office to get a sense of the team thatâs defending that network.  There are some tricky ways of figuring this out.</p>
+
+<p>NSA:	The way we can do that is that IT and InfoSec people at large are pretty friendly, open, and somewhat stupid, often.  [00:10:00] Letâs go with the Peruvian Ministry of Foreign Affairs.  Between Facebook and LinkedIn and whatever local Peruvian version of Facebook exists down there, I can probably find somewhere between fifty to a hundred, to hundreds of people that work at that organization that have profiles on those networks.  I can start to collect full names and e-mail addresses and maybe even position titles of people that work in there.  I care about the IT infrastructure, the technical infrastructure, so Iâm looking for their IT people and their security people.  I bet I can find the systemâs administrator or database administrator or someone that does IT in that organization who has announced on the internet that they exist.</p>
+
+<p>This is their name and e-mail address and this is what they do for that organization.  Once I start compiling all of that, Iâm going to start looking for things that allow me to tie them to the organization, to the things theyâre using.  The best places to do that are Google but more specifically, Reddit is amazing for this.  Then the technical forums that belong to products, for example, if I found on LinkedIn or Facebook that Bob is an IT Administrator at the Peruvian Ministry of Foreign Affairs, this gives me Bobâs full name and e-mail address.  I can then use Google to search his name and e-mail address.  I find things like Bobâs posting on this sysadmin subreddit asking questions about why his Windows 2012 server is acting the way it is, or him asking questions like Iâm running a Windows 2008 R2 box.  Thatâs my domain controller.  Do I really need to update or not?  I donât really want to but what does everybody think, should I do that?  When I find postings like that I can link them back to Bob.  I can confirm things like oh, shit, theyâre running a domain controller on a Windows 2008 R2 box.  Thatâs fantastic.  We find things in antivirus and security forums.</p>
+
+<p>JACK:	Since our target is to get specific data out of the network, itâs likely that data exists in a database somewhere.  So the team looks to the people who work there to try to find the database administrator, or DBA.</p>
+
+<p>NSA:	I found the DBA on Facebook or LinkedIn and heâs a Senior DBA.  He noted that heâs an expert on Oracle 11g.  Cool, so I can assume that theyâre probably running Oracle, roughly 11g inside their network.  I have a team of people â I have like, fifteen people who do nothing other than spend eight hours a day for six to eight weeks, searching, scouring the internet to collect the names, e-mail addresses, and phone numbers of the people that work for my target organization.  Slim that number down to the ones that work there in the particular roles that I care about, and then scour the internet for everything they publically put out there that has to do with anything technical.  That gives us little tidbits about what we can expect to find in the environment.</p>
+
+<p>JACK:	[MUSIC] After looking at the data weâve collected so far, we have discovered an incredibly important piece of information.</p>
+
+<p>NSA:	I know the Oracle database that they have in their environment likely has the data that Iâm supposed to be collecting.</p>
+
+<p>JACK:	After fifteen people have worked full-time for two months gathering as much information as they can on the target, we now have a very detailed report.  We know who works there, what their roles are, what kind of systems they run, all the way down to the version of software on those systems.  We now have a pretty good picture of their environment.  Great, so Phase One is complete.  We now move on to Phase Two of the cyber kill chain; weaponization.</p>
+
+<p>NSA:	I can now go to my leadership, my management, the ones who ostensibly own the equities that I want to now use and I can ask them for approval to do what Iâm going to do.</p>
+
+<p>JACK:	The equities are hacking techniques used to access a network, or exploits.  Some hacking techniques are known to the public and are easier to get approval for because they cost nothing to acquire and if youâre caught using the exploit itâs hard to trace it back to us since anyone in the world has access to that exploit.  But some exploits are expensive and top-secret.  These are harder to get approval for because if you get caught, the enemy could learn how to use your exploit but if youâre caught using an exploit that nobody in the world knows about, it narrows down who could possibly have an exploit like that, which could result in the attempted break-in to be traced back to us.</p>
+
+<p>NSA:	I go to leadership and I say I have this tasking from these people to go after this network.  Hereâs everything we know about the network.  These are the systems administrators, these re the security people, these are the names, e-mail addresses, and phone numbers.  Based on data points a, b, c, d, and e, we believe theyâre using this sort of antivirus and this sort of hardware.  We know they run web servers using Tomcat.  We know, based on some other forum postings that theyâve got Oracle database instances running on the inside so we put all that together and with those data points, I derive the tools and exploits that I need to use.</p>
+
+<p>Knowing that, [00:15:00] before I get in, I can get approval to use implant X with exploit Y that are specific to Oracle 11g.  Once I build out that case, I can get approval and that approval is based on the risk posed to those equities given what I know about the environment.  When I say I know that theyâre probably running this antivirus and these security tools, I can say that I have these tools and these exploits and that Iâm going to deploy in the network that are not detected by that antivirus and the security system that they have.  I had now mitigated the biggest risk of getting caught, right, which is AV or security systems flagging my tools or me throwing exploits.  If I can do that, then I can get approvals to proceed and actually execute my operation.  Sixty days, ninety days go by.  I built whatâs called a targeting package and Iâve got operational approval to use the equities to complete the task.</p>
+
+<p>JACK:	We now have a point of entry, a map of the inside, and know who to expect to be there when we arrive.  We also have all the specific exploits we need to execute this task.  This marks the end of our weaponization phase.  Phase Three of the cyber kill chain is delivery.  We need to actually send the exploit to the system in the network.  This is where the mission begins to be dangerous.  From here on out, any misstep could have terrible consequences because it could mean being caught.  If we were James Bond weâd now be fully geared up and ready for action.</p>
+
+<p>NSA:	So weâve figured out here is the internet-facing box.  The web server that theyâre using was not patched, wasnât updated, so I was able to actually use the known exploit to gain the right access to that machine.  [MUSIC]  Once I did that, I put an implant down on that machine because it was pretty safe.  It was actually a Linux server and the nice thing about Linux is no antivirus, right?  Iâm not super concerned.  Especially because itâs a web server, I donât worry about a user seeing the screen and using it and see something weird going on.  But anyway, so I get down on that box, sit there for a little bit.  Everything looks pretty good.  Thereâs not much to see; itâs a web server and itâs got a website on it, got a database back end to it.  Not a whole lot going on.</p>
+
+<p>JACK:	We are now in the foreign governmentâs network.  We have successfully infiltrated it.  Itâs like weâve snuck in the building but weâre only in the hallway.  Using the data weâve collected in the last few months, we know we need to find the administratorâs computer to gain control of it.  This leads us to the next phase of the cyber kill chain; exploitation, because if we can get on the adminâs computer, chances are they have all the keys to the kingdom.  By using their machine we can access anything we want.</p>
+
+<p>NSA:	The nice thing about landing on a server like that is one thing that servers do have, is admins logging into them to administer them.  That admin is going to log in and Iâm probably going to be able to capture his credentials or that admin is going to establish an authenticated session between that server, in this case the web server, and the adminâs machine.  Iâm probably going to be able to float across that authenticated session and move laterally to the adminâs machine.  Thereâs a variety of ways that you can do that but suffice to say, itâs either Iâm capturing his credentials because heâs going to log into administer, or Iâm just going to use his authenticated session to move laterally over.  The nice thing in this case was that we knew the admin.</p>
+
+<p>Like I said, we had done a month of open-sourced research.  Because we knew we were going to be exploiting the web server, we knew who their website administrator was, we knew the team of people inside the network that were responsible for maintaining the website, the database that sat behind the website, all the code associated with the website.  We knew all these people.  Web developers are like, the worst.  IT people post a lot of stuff on the internet.  Security post a little bit less stuff on the internet but developers and web administrators and web admin, they post everything on the internet.  Itâs ridiculous.  We found all of them and all their content and we knew them all by name.  We had pictures of all the guys associated with the website, we knew all these guys.</p>
+
+<p>What was great was that once we exploited the web server, we pretty much knew it was going to be one of three people that were going to log in and administer it.  The plan was to simply sit and wait for one of those three people to log in.  We thought we knew how they were going to log in because again, we were familiar with the systems they had deployed.  We could tell by the configuration on the web server how we could expect to see them log into that machine.  Really, it just became a waiting game for us.</p>
+
+<p>JACK:	Sometimes waiting for an admin to log in can take a long time; days, weeks, months.  One trick Iâve heard that hackers do is to sometimes cause a problem on the web server, like make the CPU spike or crash an application.  But why do this?  Well if the web server is acting problematic it will result in an admin logging in to troubleshoot it.  When they do, pow.  [00:21:00] Theyâve just walked into the trap.  But in our case the waiting wasnât that long.</p>
+
+<p>NSA:	One of the admins logs in.  We see it happen. [MUSIC]  We get the information that we need and move laterally onto his machine and we put the implant on his machine.</p>
+
+<p>JACK:	You just heard the fifth phase of the cyber kill chain; installation.  Weâve just installed an implant on the target system.  An implant is a bug, a Trojan, a remote access tool that allows us to pretty much take ownership of that computer.  For those of you familiar with Metasploitâ¦</p>
+
+<p>NSA:	Just imagine basically something like Metasploit on lots and lots of steroids.</p>
+
+<p>JACK:	The next phase of the cyber kill chain is command and control.  Just because the implant is on the machine doesnât mean itâs going to do anything.  Someone needs to tell it what to do.  In this case we now have the ability to remotely access the network adminâs computer.  This is our command and control over the target computer.  We are now very close to finishing our mission.  All thatâs left is for us to take control of the adminâs computer and then access the database and take the data we need.  So we wait a little while before getting into the adminâs computer to not look suspicious.</p>
+
+<p>NSA:	We waited about a day, day and a half to go interactive on the box, actually be using it interactively.  Once we were using it interactively, while the other person was using it, we were logged on when they were which is generally the way that works.  We started looking at screenshots of the desktop and we saw a browser open and we saw dozens of tabs open in the browser.  We started going through a lot of the screenshots and seeing the contents of the tabs.  It was the person Googling this weird behavior that Windows was doing.</p>
+
+<p>JACK:	The administratorâs computer that we had infiltrated was acting strange.  It was displaying lots of errors and certain programs were crashing.  It definitely looked like this admin had a virus of some kind.</p>
+
+<p>NSA:	At first we saw that, we were thinking well, thatâs weird.  I wonder if these problems on his computer predate our presence there.  We didnât really know but we had the sneaking suspicion that it had something to do with us.  Unbeknownst to us, and the time from when we collected our information initially through the open source and when we put the implant down, he had upgraded his operating system.  Heâd upgraded Windows essentially to the next version.  Normally the worst case scenario is that your implant doesnât work because itâs not compatible, right, for whatever reason.  Itâs not compatible and doesnât work, and that sucks and youâre really upset by that.  I would have preferred that to be the outcome here.</p>
+
+<p>Instead, the implant worked from the extent of it went down, installed where it should have, and began operating as expected.  The problem was that it wasnât playing well with the newer version of Windows that was on that box and unfortunately started causing very odd Windows behavior.  That very odd behavior took on the worst possible version which was things that were very visible to the user.  Now that weâre on the box and we know exactly what version of windows it was, we recreated it in our own lab environment.  I know what version of Windows it is and I know the hardware.  I basically rebuilt that same exact machine in our environment and tossed our implant on it and saw that our implant was causing this weird behavior.  This was really, really bad news for us because this is how you get caught.  It was terrifying.</p>
+
+<p>From the standpoint of political blowback, these things get â notifications of this sort of stuff goes up to the most senior levels of government because when you get caught on a network like this you have Prime Ministers calling each other.  If things got bad enough we would have to be informing all the way up through the leadership of the agencies and all the way up [00:25:00] into the senior leadership of government.  Everybody was very concerned at this point because we had already been on the web server.  Weâd done a lot of work already.  We felt pretty comfortable so we were already deploying pretty sophisticated big implants onto the network.  This one that was causing these problems was not a Stage 1 loader.</p>
+
+<p>This was a relatively sophisticated â actually pretty sophisticated fully featured implant at this point that we couldnât afford to lose nor could we afford to get caught on the network.  [MUSIC] Once we realized what was happening, this is again the government so all the alarms start going off.  You have to start telling a lot of people.  You have to start writing a lot of memos and going to a lot of meetings to try to get everyone up to speed on whatâs happening, what the risks are, and what weâre going to do.  Of course now, the first instinct is to delete it or remove your implant.  Unfortunately because it was already causing so many stability issues, the concern was if we try to get to it to delete it, it might make it even worse.  We didnât know so the risk was donât do anything, and right now he just thought that he was having technical problems, not that there was a security issue so we thought okay.</p>
+
+<p>The risk is either stay with what weâve got and ride out the technical stuff and hope he doesnât figure out that itâs not actually a technical problem, itâs a security problem, or we try to delete it and cause some other weird thing to happen that makes it even worse.  Then weâre totally screwed.  We decided to leave it and not delete it and take that bet.  It got worse for about a week because not only do we watch them from Googling for solutions to the problem, like Googling the symptoms that heâs seeing in Windows, weâre reading his e-mails and seeing his chats with IT people, telling them what was going on and putting in trouble tickets.  We saw the chat with this IT guy that was like hey, can you come to my desk at 2:00 to take a look?  Everyone started getting very concerned at that point, more than we already were.</p>
+
+<p>JACK:	Things are not going well at this point.  Itâs very tense and concerning in the office.  The implant being used was expensive and secret.  If it was discovered it could result in tracing it back to the attackers and losing this expensive and secret implant.  But at this point we have successfully completed six out of the seven phases of the cyber kill chain.  Thereâs only one phase left and thatâs doing the action on the objective.  In our case, our objective is to use the administratorâs computer to get the data out of the Oracle database but the team is hesitant about finishing the job.</p>
+
+<p>NSA:	The problem was that it was a big network and we knew the database that we wanted.  We knew that there was a database of a particular type that we wanted to get access to but we didnât know exactly where it was on the network.  At this point we have a high risk of getting caught.  The problem is weâre watching them troubleshooting this and if theyâre troubleshooting and troubleshooting and troubleshooting and then at some point they figure out that thereâs something really wrong here and we need to call in the security people and start looking a little bit closer.  The last thing we would want would be to have a wider presence on the network.  Even if itâs on other machines elsewhere on the network that canât, at the moment that your incident response gets involved and starts locking things down, weâre screwed.</p>
+
+<p>At that point we want to minimize our presence to the least amount of exposure that we can without losing our access.  For now, that minimization was this computer that weâre on thatâs having the problem and the web server.  That was it.  The very, very clear without even any debate, decision was sit, stay quite.  Donât do anything.  Let this play out because nobody wanted to increase the risk profile until we knew how this was going to turn out.</p>
+
+<p>JACK:	The team waits and watches.  Days go by.  Administrators trying to troubleshoot the errors theyâre seeing.  A week goes by.  He continues to troubleshoot and in the second week, the admin asks for help from IT.</p>
+
+<p>NSA:	Yeah, so second week the IT people are coming in and theyâre looking at the computer and we know that theyâre coming to the personâs desk because we see them setting up appointments.  We reached this point where we can tell in the nature of the trouble ticket, that theyâve hit a dead-end.  They canât figure out why.  They canât figure out whatâs happening.  They canât figure out the reason for whatâs happening.  They canât locate the cause and it seems nondeterministic to them.  We know why itâs happening.  I know what the implant is doing and why itâs causing Windows to behave that way, but since they donât know the implantâs there, to them the behavior is entirely nondeterministic.  Because itâs nondeterministic they canât devise the technical solution for it.</p>
+
+<p>Ultimate solution that they came to was to [00:30:00] just wipe it and start over.  It was a fancy implant but it was just user level and it was on the hard drive so at the moment they wiped the drive and reimaged it, we were fine.  They removed our implant and we were good.  It was a significant relief.  Thank God itâs over but holy shit, are we all getting fired?  Which is anyoneâs reasonable reaction to workplace events like that, where things have gone horribly wrong.  Youâre essentially in charge of that group where things went wrong.  It was all on me.  There was that moment of you know, I guess Iâll get a box and pack up my desk.  But a) itâs the government so no one gets fired and b) that really wasnât the outcome.  [MUSIC]  Thereâs a whole post mortem that we did after this to look at what happened, how it happened, why it happened, how to prevent it.</p>
+
+<p>The determination after the fact was there was no negligence at play.  No one did anything wrong.  This is just what happened.  The chance of us doing two months of research, taking thirty days to make decisions and have meetings and then executing the operation in that thirty days, one of the admins upgrading Windows.  Thatâs not a super high chance of that happening and we just got unlucky.  Unfortunately those two stars crossed in the sky and that happened.  If it had been six months and we didnât try to re-update our information and make it fresher, the outcome would likely have been well, you waited too long.  Right, you should have known that.  Too much can change in six months.  But thirty days was reasonable because again, itâs the government.  It takes thirty days to push the paperwork and get meetings and just do the administrative stuff you need to do.</p>
+
+<p>The fact that that happened in thirty days, that guy updated the Windows box; that was seen as acceptable.  The only other fallout was when we moved laterally onto that machine, should we have done anything tactically before we put the implant down on that box?  There was this debate on that.  Should we have captured the credentials and just interactively interacted with that machine just to capture things like its OS and antivirus and all that?  That was an operational decision that we made at the time, a very tactical decision.  But because we had done the open source and we knew what was there, there were seemingly less cause to do it.  That was it.</p>
+
+<p>JACK:	With the implant cleaned off the machine, the team can relax knowing their cover isnât going to be blown and their expensive exploit wonât be discovered.  What about that initial objective to get access to the database?</p>
+
+<p>NSA:	We actually never got access to the database.  Not because of this, it actually just ended up being that the network was configured in such a way that our path to get there was extremely complicated from where we were on the network to where we needed to get to.  Like any other business environment we had competing requirements.   At some point, probably a month and a half after this incident, after this small incident, we came to this point where okay, I know where the Oracle server is.  I know who the admins are but our ability to get to it is complicated.  Itâs going to take a little while.  We can do it, but do we want to do it?</p>
+
+<p>At the same time I had three other requirements that I had to satisfy.  Those requirements required some of the same people that I was currently using to work on this one, so it was like, what do we do?  Do we just cut bait and walk away or do we just all-in and go for it?  We decided to cut bait and walk away.  That happened all the time.  Because I think any hacker, whether youâre a nation state ABT or youâre a kid in your momâs basement, everyone knows that itâs a lot of luck that stuff works.  Only so much thought and intelligence goes into it.</p>
+
+<p>Itâs a lot of luck at the end of the day and Iâd say statistically in my years doing it, the luck isnât there or runs out more than half of the amount of time because itâs hard and getting harder because people are just in general more aware of cyber security and information security.  Theyâre slightly smarter, just enough to know maybe not to click on a link or maybe not to visit that website from work, or from your work computer, and maybe donât click OK when it says Flash Needs to Update.  Thereâs just enough people that are just enough smarter where this is getting that much harder every single day.</p>
+
+<p>JACK (OUTRO):	[OUTRO MUSIC]  Youâve been listening to Darknet Diaries.  For show notes and links check out darknet diaries.com.  Music is provided by Ian Alex Mac and Kevin MacLeod.</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+<p>Transcription performed by Leah Hervoly
+www.leahtranscribes.com</p>
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

@@ -1,0 +1,748 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>TeaMp0isoN â Darknet Diaries</title>
+	<meta name="description" content="TeaMp0isoN was a hacking group that was founded by TriCk and MLT. They were responsible for some high profile hacks. But in this story itâs not the rise thatâs most interesting. Itâs the fall.">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="TeaMp0isoN â Darknet Diaries">  
+	<meta name="twitter:description" content="TeaMp0isoN was a hacking group that was founded by TriCk and MLT. They were responsible for some high profile hacks. But in this story itâs not the rise thatâs most interesting. Itâs the fall.">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/poison.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/109/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="TeaMp0isoN â Darknet Diaries" />
+	<meta property="og:description"        content="TeaMp0isoN was a hacking group that was founded by TriCk and MLT. They were responsible for some high profile hacks. But in this story itâs not the rise thatâs most interesting. Itâs the fall." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/poison.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/109/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/poison.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/109/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="TeaMp0isoN â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/poison.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 109: TeaMp0isoN</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://www.podtrac.com/pts/redirect.mp3/traffic.megaphone.fm/ADV6664884913.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/109/",
+			   "title": "Ep 109: TeaMp0isoN"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/109">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[START OF RECORDING]</p>
+
+<p>JACK:	It always fascinates me how powerful a single computer is in someoneâs bedroom.  On a computer, a person can fall in love, get an education, get a job, do their job, and it gives us endless access to entertainment like movies and music.  But what really intrigues me is that keyboard and mouse can be extremely dangerous; the right combinations of keystrokes are illegal, such as hacking into a bank and stealing money, which all can be done on a computer in your bedroom.  You barely need to move your fingers much at all to make it happen, yet such a small physical movement can have a massive impact in the digital world.  Itâs asynchronous and logarithmic to the point that itâs hard to visualize.  A push of a button can bring a whole country to a halt, and the wrong combination of keystrokes can have some serious consequences for whoever pushed the button.</p>
+
+<!--more-->
+
+<p>(INTRO):	[INTRO MUSIC] These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	This is a story that Iâve wanted to do for years, but I knew it was too complex for me to do on my own, so I waited to find the right person who could tell it.  But then out of the blue, MLT messaged me on Twitter and we started talking about it.  I asked if he wanted to tell his story on the show, and he said yeah.  So, I sent him a microphone and we hit Record.</p>
+
+<p>MLT:	[VOICE MODIFIED] Yeah, Iâm just wondering about modifying my voice and masking it.</p>
+
+<p>JACK:	Yeah, weâre going to alter his voice which might make it hard to understand him at faster speeds.  If youâre having trouble following him, I encourage you to make sure youâre on 1X speed when listening, âcause youâll be able to understand him better and youâll enjoy the show longer, too.  So, MLT is what he likes to be called online, but I believe thatâs his initials.  His real name is Matt, and heâs been around computers all his life.</p>
+
+<p>MLT:	Yeah, I got my first computer when I was around four, maybe.  So, yeah, Iâve pretty much grown up with computers.</p>
+
+<p>JACK:	By the time he was twelve, he was taking more of an interest in computers.  He was fascinated by how the computer is literally connected to the whole world, and millions of other computers and people out there are all available right on his screen, in his bedroom.  He started exploring websites and seeing whatâs out there.  This fascinated him so much that he started learning how to make his own websites in HTML and taught himself how to program.  [MUSIC] But while thatâs fun and interesting, of course his main passion was video games, specifically Xbox games, and as he would play them, he was trying to find ways that he could cheat in the game.</p>
+
+<p>MLT:	Iâd prefer to just kinda try and break the game rather than play it normally.</p>
+
+<p>JACK:	He found some cheat forums that he could download a cheat and do things in the game you werenât supposed to do, and that was fun, but sometimes that would get him kicked out of certain online games.</p>
+
+<p>MLT:	But then a while after that, I started getting into modding a little bit.</p>
+
+<p>JACK:	He was just twelve years old at the time, but he was taking his Xbox apart and adding new code to it through the JTAG port on the bottom.  This would enable it to do new things, things it wasnât supposed to do.</p>
+
+<p>MLT:	I was never technically competent at it or anything, but it was just kinda what I started out with.</p>
+
+<p>JACK:	But he was learning, and he was only twelve when he was disassembling his Xbox and modifying it.  While heâs becoming a teenager, heâs getting better at programming and making websites and finding some pretty interesting chat rooms online, because around this time, there was another group of people online [MUSIC] that were also coming of age.</p>
+
+<p>HOST1:	Hacking group Anonymous has struck again, and this time claiming it has stolen thousands of credit cards.</p>
+
+<p>HOST2:	Anonymous is one of the biggest online vigilante groups.  Members hack into companies and governments.</p>
+
+<p>ANONYMOUS:	We are Anonymous.  We are legion.  We do not forgive.  We do not forget.  Expect us.</p>
+
+<p>JACK:	Thatâs a formative force for a teenager to be involved with.  While MLT was going to school, he had a front-and-center view of what Anonymous was doing.</p>
+
+<p>MLT:	I mean, I used to be in Ops IRC pretty often.</p>
+
+<p>JACK:	The Anon Ops IRC chat room was where a lot of the Anonymous members would hang out, share memes, and formulate ideas.  For a while, MLT felt loosely affiliated with Anonymous, at least curious enough to watch what they were doing and ask questions on how things were done, such as how a certain hack was done, or how did that person deface a website?  The technical aspects of what Anonymous were doing were interesting to MLT, but the thing about Anonymous is that thereâs much more noise than Signal.  The Anon chat rooms are just filled with distractions and trolls.  He liked the hacking stuff that was going on, but sometimes things didnât make sense to him or align with what MLT thought was right or wrong.  At the time, there were a lot of little satellite hacker collectives that sort of revolved around Anonymous.  They were in the same space, but not necessarily affiliated.  There was this one website that MLT seemed drawn to.</p>
+
+<p>MLT:	There was a forum called poison.org which TriCk was the administrator of.</p>
+
+<p>JACK:	So, here is where MLT first learned of TriCk.  TriCk was the name of the founder and moderator of poison.org.  [MUSIC] He seemed heavily involved with the black hat hacking scene and very knowledgeable about hacking.  MLT thought TriCkâs poison.org forum was a interesting place, and he was learning a lot by going there and reading how people hacked into certain places and stuff.</p>
+
+<p>MLT:	Itâs just like a generic hacking forum, I think, like Hack Forums or Leakforums or one of those kind of websites.</p>
+
+<p>JACK:	Some people were just posting screenshots of stuff they hacked into.  Some people posted tips and tricks on how to exploit other things.  MLT was drawn to the site and liked what he saw there, and was naturally curious about TriCk, the guy who ran the site.</p>
+
+<p>MLT:	I knew other hackers on MSN Messenger who then eventually introduced me to TriCk.</p>
+
+<p>JACK:	MLT and TriCk sort of hit it off together.  They both got along pretty well.  MLT was fascinated that TriCk had started this hacker forum, and TriCk liked that MLT knew some hacking skills and was curious to learn more.  Do you remember the first thing you hacked with TriCk?</p>
+
+<p>MLT:	The first major hack that I did with TriCk was the English Defense League.</p>
+
+<p>JACK:	Now, I had to look up who the English Defense League was.  Being American, I just was not aware of this group.</p>
+
+<p>HOST3:	The English Defense League has become the most significant far-right street movement the UK has seen since the National Front in the 1970s.</p>
+
+<p>PROTESTER:	God bless every single person in his country, of all religions, creeds, and cultures.  You know what?  Even God bless the Muslims.  Theyâll need it for when theyâre burning in hell.</p>
+
+<p>JACK:	From watching just a few videos about them, it seems to me that their mission is to spread hatred towards Muslims.</p>
+
+<p>MLT:	Yeah, in the UK, theyâre a very well-known right group thatâs openly Islamophobic, so Iâm assuming thatâs probably why he wanted to target them.</p>
+
+<p>JACK:	You see, both MLT and TriCk were from the UK, and while MLT didnât really associate himself to a religion, TriCk was a devout Muslim and was not happy seeing people like the English Defense League on the telly spouting anti-Islamic slurs.  TriCk didnât want to physically confront these people, though.  He could get hurt pretty bad.  But TriCk was pretty good at computers and hacking, and found this group to be absolutely insufferable.  So, TriCk told MLT this is the target, the English Defense League.  Letâs see what we can do to them.  MLT was in, because why not?  The group seemed particularly mean, and MLT was wanting to learn how to hack and needed a good target.  Might as well try to hack the EDL.</p>
+
+<p>MLT:	Well, at the time, they used to run the website englishdefenseleague.org which was a forum board running MyBB which is a type of forum software.  We actually developed a zero-day exploit at the time that allowed us to spawn a shell on MyBB, and then from there we just exfiltrated the database and dumped it online.</p>
+
+<p>JACK:	Well, you say it so casually, but talk about that.  Was it you that got the shell or was it TriCk?</p>
+
+<p>MLT:	It was me that identified the vulnerability and it was TriCk that actually exploited the vulnerability to spawn the shell.</p>
+
+<p>JACK:	Yeah.  Yeah, I mean, that sounds exciting.  What were you, like, thirteen, fourteen?</p>
+
+<p>MLT:	I would have been around fifteen, sixteen then.  Maybe fifteen.</p>
+
+<p>JACK:	Okay, yeah.  So, then you were going to school still, right?</p>
+
+<p>MLT:	Yeah.</p>
+
+<p>JACK:	This must have been probably late at night.  You had a computer in your bedroom?</p>
+
+<p>MLT:	Yeah.</p>
+
+<p>JACK:	This was on the weekend or at night or something?</p>
+
+<p>MLT:	Yeah, mostly weekends and night times.</p>
+
+<p>JACK:	Yeah, thatâs just exciting.</p>
+
+<p>MLT:	Oh yeah, it was definitely fun at the time.</p>
+
+<p>HOST4:	[MUSIC/SHOUTING] Individuals claiming to be part of the international internet sabotage group Anonymous have published phone numbers and addresses of supporters of the English Defense League as part of what Anonymous says is the first phase of a campaign to destroy the far-right group.</p>
+
+<p>JACK:	Under the name of Anonymous, they made an online post with all the data they took.  TriCk and MLT posted the whole database of everyone whoâs ever donated to the EDL in the past, exposing some people who probably didnât want to be exposed this way.  But they didnât stop there; they just carried right onto the next group.</p>
+
+<p>HOST4:	Another far-right group, the British National Party, has also suffered its membership database being hacked, which led to the organization struggling to recruit new members, as they feared social ostracization as a result of being linked to the radical group.</p>
+
+<p>JACK:	[MUSIC] Now, TriCk was the same age as MLT.  They were both just teenagers, and these two attacks they just carried out made the news throughout the UK.  Sky News had a story about it.  BBC was running articles.  It was wild for them to see how the UK reacted to a few teenagers screwing around on their computers on the weekend.  But this kind of stuff is what fueled them to do more.  That was cool.  That was fun.  A lot of people thought what they were doing was great and that the EDL deserved it.  TriCk wanted to take it up a notch and decided to convert his poison.org website into a hacker group called TeaMp0isoN.</p>
+
+<p>MLT:	TriCk asked a few of the more talented people from the forums if theyâd be interested in joining TeaMp0isoN.  I was one of those people.  Then he went around to ask if I wanted to help co-lead the group with him.</p>
+
+<p>JACK:	Thatâs how MLT became the co-leader of the TeaMp0isoN hacker group and became fully entrenched in the hacker scene.  By this time, theyâve also separated themselves from Anonymous, sometimes only popping in the Anon IRC chat rooms just to try to take over the channel or cause a ruckus.  By this point, MLT and TriCk have hacked into numerous websites and were learning quickly and eager to do more.  So, TeaMp0isoN continued attacking more websites.  Their early objectives were simply to try to deface their target websites.  That is, to change whatâs said on the site and write their own message up on there, to first prove that they were there and to second, send whatever message they wanted to send, sort of like digital graffiti on the internet.  But as MLT saw what websites were being defaced, it made him think about his morals.  What kind of website defacements are good and what arenât?</p>
+
+<p>MLT:	I guess it depends on a few different factors.  Motivation, for one.  For example, if itâs a perfectly legitimate website, then itâs probably immoral to do so, but if it was say, like, I donât know, a terrorist organization or something along those lines, then I think itâs perfectly morally justified.</p>
+
+<p>JACK:	I guess it is morally justified to attack a terrorist organizationâs website.  Okay, I guess Iâm on board with that.  But MLT thought Anonymous was attacking websites for no reason sometimes.</p>
+
+<p>MLT:	Yeah, I feel like Anonymous are just honestly all over the place.  A lot of the time theyâll just target some random low-hanging fruit and then come up with some moral explanation as to why it should be a target.</p>
+
+<p>JACK:	Yeah, but Iâm wondering if you had a strong moral outset to starting all this.  Did you feel that governments were tyrannical?</p>
+
+<p>MLT:	No.</p>
+
+<p>JACK:	Did you feel likeâ¦?</p>
+
+<p>MLT:	Definitely not.  Iâd say within TeaMp0isoN, I was probably the outlier in that respect, because TriCk was definitely politically motivated and was doing it for morals.  But personally, I was just doing it just kinda to gain more skills and see whether I was capable of it.  I was never really politically motivated or anything along those lines.</p>
+
+<p>JACK:	Yeah, but there was something that â I mean, if you saw somebody doing something thatâs like, wow, thatâs actually hurting some people, small businesses or whatever that donât deserve it, you would have stepped aside and said Iâm not gonna be part of this.  But something drew you to be part of TeaMp0isoN and Iâm trying to figure out â what was it that you said; I want to â letâs create something.  I want to be part of this.  What was that thing?</p>
+
+<p>MLT:	I feel like the main draw with it was when I got to learn with a group, I knew that I was â but at the time, I was nowhere near as skilled as TriCk, so I was just told that I wouldnât be able to learn what â from what he was doing, really.  [MUSIC] Yeah, it would take â it was never really about politics at all for me.</p>
+
+<p>JACK:	I might go so far as to say MLT was there because of curiosityâs sake.  At one point he told me he just wanted to see if he could do it, as in, hereâs the target; could you get in?  Okay, challenge accepted, kinda thing.  MLT really wanted to learn more along the way.  It doesnât sound like he considered himself a hacktivist or anything.  He was just poking at the world in his own curious way.  But along the way, he was watching how fired up TriCk would get over different political causes and stuff.</p>
+
+<p>MLT:	Yeah, I mean, during TeaMp0isoN, I chatted with him pretty much several hours a day, every day.  I mean, he seemed like a pretty nice person.</p>
+
+<p>JACK:	Yeah, what was he like just in those chats?</p>
+
+<p>MLT:	Pretty normal for the most part.  I mean, he was obviously politically motivated, but it didnât seem like he was an extremist or anything like that.  Heâd have no problem talking to people from â like, talking to people who might necessarily respect his religion or anything like that.  He just seemed indifferent to it.</p>
+
+<p>JACK:	MLT was learning a ton about hacking from TriCk and other members of TeaMp0isoN.</p>
+
+<p>MLT:	Yeah, but actual core members were me, TriCk, NC, and Hex.  There was a few other people who were affiliated, but they werenât directly involved.</p>
+
+<p>JACK:	A lot of their targets were picked by TriCk, because TriCk really did feel strongly about certain things politically.  He was Muslim, and at the time, there was a lot of tension between the West and Islamic extremism like Al-Qaeda and ISIS.  So, there was a lot of emotion in the air, and it was easy to find targets that made TriCk mad.  But sometimes they would just pick targets just to mess around with.  Like, this one time, they decided to hack a celebrity.</p>
+
+<p>MLT:	I wasnât actually directly involved in this one, but I can tell you exactly how it happened.  [MUSIC] Basically, it was done by TriCk and a few members of a group known as Z-Company Hacking Crew?  Facebook used to use Facebook query language at the time.</p>
+
+<p>JACK:	This other group called Z Hacking Crew also seemed focused on finding Islamophobic Facebook pages and trying to hack them or do something to them.  While doing that, they were getting pretty familiar with how Facebook worked, and together with TriCk, they discovered a way to exploit the Facebook query language to make posts for any user they wanted.  So, at first they used this exploit to attack racist and Islamophobic Facebook pages, which, that was their original intent.  But when all that was done, they decided to aim higher on the target list, targeting the French presidentâs Facebook page, Nicholas Sarkozy, and they were able to post something to his page as the president.  Then they shifted their attention to the head of Facebook itself.</p>
+
+<p>MLT:	Mark Zuckerberg.</p>
+
+<p>JACK:	They posted to Facebook as Mark Zuckerberg, saying something like, if Facebook is a social network, it should do some social good, too, instead of just being for profit.  Yeah, once again, this was something that TeaMp0isoN did, which reverberated across the internet.  For Mark Zuckerbergâs own account on Facebook to have an unauthorized posting, thatâs an interesting news story, all done by a couple of teenagers.  Okay, so letâs move on to Tony Blair.</p>
+
+<p>MLT:	Yeah, so, with Tony Blair, that was TriCk again.  That was one of the other attacks that I wasnât directly involved in, but basically he used a zero-day exploit that affected the webmail service that â I donât know if it was Tony Blair himself or one of Tony Blairâs staffers, but he used an exploit to gain access to the e-mails, and then within the e-mails, he found an address book which had a bunch of personal information on politicians and stuff, like phone numbers and that sort of thing.</p>
+
+<p>JACK:	Okay, so TriCk used some kind of exploit to get the contacts list that Tony Blair had on his e-mail account.  Thatâs interesting, but at first glance, this doesnât seem that important to me.  He wasnât able to read Tony Blairâs e-mails or anything.  He just saw Tony Blairâs contacts; names, phone numbers, e-mail addresses.  [MUSIC] But this is actually a bit more serious than that.  First of all, Tony Blair is the former Prime Minister of the UK, so this was a high-profile target.  If Tony Blair gets compromised, you know the MI5 or GCHQ are gonna come in to investigate, and where does that investigative trail start?  With some Twitter posts.  TriCk himself was posting this all over Twitter, and while a regular person canât see who owns a Twitter account, Twitter has some extra insight into this; they can see where the user connected from, what devices they used, what e-mails are registered to the account, and if the MI5 is involved, itâs probably pretty easy for them to get Twitter to turn over the information of whoeverâs posting to the TeaMp0isoN Twitter account.</p>
+
+<p>But TriCk hid his tracks very well, always using a proxy or VPN or even a Tor client to connect to Twitter.  But Twitter would only need him to mess up once for them to see his real IP.  Internally, within TeaMp0isoN, this felt like a big win, hacking the former Prime Minister.  What would be next, the Queen herself?  Well, they donât hack the Queen, but stay with us because when we come back, it gets much more serious.  Now, while TeaMp0isoN sort of sprang out of Anonymous and was once loosely affiliated with them, they started doing things to upset Anonymous.  There was another hacker group that came from Anonymous called LulzSec, and they were doing things like hacking PlayStation and the CIA and some other high-profile accounts.</p>
+
+<p>MLT:	The situation with LulzSec, they made some threats over Twitter and then â I wasnât even involved at this point, but TriCk was arguing with them over Twitter and stuff.  Then Sabu from LulzSec, he started making up a bunch of lies about me.</p>
+
+<p>JACK:	Itâs not clear what started this Twitter spat, but Sabu, a member of LulzSec, and TeaMp0isoN werenât getting along.  MLT and the crew at TeaMp0isoN did some research on Sabu and found where he worked, and they broke into some computers where Sabu worked, and showed a screenshot of this to Sabu, proving they were in his work computers.</p>
+
+<p>MLT:	At first he denied ever working for it, but if you look at his Twitter profile now, heâs admitted that he did.</p>
+
+<p>JACK:	This, of course, escalated the situation.  Next, LulzSec allegedly started DDossing the poison.org website and trying to deface it, or at least making spammy posts on it there, and Sabu continued to talk trash about TeaMp0isoN on Twitter.</p>
+
+<p>MLT:	He started spreading a bunch of faked logs.  Basically, he faked an entire IRC conversation, but made it look like TeaMp0isoN was some sort of PSYOP controlled by LulzSec.  Like, he was trying to act like LulzSec was TeaMp0isoN all along to deflect away from the fact that heâd been hacked.</p>
+
+<p>JACK:	Weird stuff going on for sure, but I actually see this all the time with these underground hacker groups; they often turn on each other and try to dox each other and attack each other.  Itâs weird.  Did anybody at school know that this was some of the stuff you were into?</p>
+
+<p>MLT:	Nobody in school knew anything about TeaMp0isoN, although I did get in trouble in school for hacking-related things a few times.</p>
+
+<p>JACK:	Like the schoolâs computers and stuff?</p>
+
+<p>MLT:	Yeah, like one time I SQL-injected the schoolâs website and defaced it.  Then another time, I wrote an e-mail spoofer and I was sending spoofed e-mails from the principalâs e-mail address to some random studentâs e-mail address and getting people put on detention and things like that.</p>
+
+<p>JACK:	This hack on his schoolâs website resulted in him getting in trouble at school.  His parents were not happy about this and they gave him a stern talking-to, and they grounded him from using computers for a while.  Little did they know that the incident at the school was just a tiny blip on the long list of things that MLT was getting into.  So, what happens with P. Diddy?</p>
+
+<p>MLT:	The situation with P. Diddy was quite a crazy one.  So, basically, we managed to get access to an internal machine in a hotel.</p>
+
+<p>JACK:	[MUSIC] Okay, so, to get into this hotelâs network, it started with a phishing e-mail.  They crafted an e-mail that looked like it was from another employee at that hotel, and it was asking this person to open the attached Zip file and run the app inside it.  Well, the app was malware, so when the employee opened it, it gave TeaMp0isoN access to the computer in the hotel.</p>
+
+<p>MLT:	From using that access, we performed some lateral movement and gained access to some other machines on the network.  Some of those machines were security cameras, and literally as we are sitting watching these security cameras, P. Diddy casually walks into the hotel and checks in at the front desk.</p>
+
+<p>JACK:	Well, it was complete chance that they saw this.  P. Diddy is Sean Puffy Combs, a very popular rapper at the time.  But seeing Puff Daddy himself on the camera was just a small thing, because TeaMp0isoN was in the computer at the front desk that he just checked into, and they watched the data go across the screen saying that Sean Puffy Combs has just checked in and paid for his room.</p>
+
+<p>MLT:	Heâs using his Amex Black card, which has an unlimited credit balance.</p>
+
+<p>JACK:	They were able to see what Puff Daddyâs credit card number was, and snagged it.</p>
+
+<p>MLT:	We basically just donated a few hundred thousand dollars to charity and then bought pizzas for anyone who asked on Twitter.  [MUSIC] P. Diddy got extremely frustrated about it, like tried hiring a team of private detectives and all kinds of crazy stuff.</p>
+
+<p>JACK:	Yeah, and so, did P. Diddy ever figure out who was behind this?</p>
+
+<p>MLT:	No, he did not, but thereâs quite a few articles that state he hired a team of private detectives to try and find out who the perpetrators were.</p>
+
+<p>JACK:	Howâd you feel about that?  Did you feel like yeah, good luck, youâre never gonna find me, Iâm better than that?</p>
+
+<p>MLT:	Yeah, I mean, thatâs how I felt at the time, but I feel like these days I probably would be a bit more paranoid.</p>
+
+<p>JACK:	Were you feeling like you were untouchable, unstoppable?</p>
+
+<p>MLT:	Yeah, pretty much.  Back then, I definitely had a huge ego and just thought that I was never gonna get caught.</p>
+
+<p>JACK:	Yeah, tell me about that ego.  What was â describe it more.</p>
+
+<p>MLT:	Well, it was just a case of thinking I was a lot more skilled than what I actually was and thinking I was a lot better at covering my tracks than what I actually was.  Then soon enough, I found out that wasnât the case at all.</p>
+
+<p>JACK:	Okay, letâs see, what else do we got here?  BlackBerry attack; were you part of that?</p>
+
+<p>MLT:	Yes, I was.</p>
+
+<p>JACK:	So, what was going on to even want to attack BlackBerry?</p>
+
+<p>MLT:	Well, it was TriCkâs idea to attack it because it was during the London riots back in 2012 or 2011, maybe.</p>
+
+<p>JACK:	August, 2011.</p>
+
+<p>MLT:	Since BlackBerry was a huge phone provider at the time and BlackBerry Messenger was all the rage, BlackBerry agreed to cooperate with the police and hand over information on BBM users, like, who were taking part in the rioting.  As a result, TriCk decided to attack BlackBerry.</p>
+
+<p>JACK:	Okay, so, the target is acquired.  Letâs go after BlackBerry, so what happened?</p>
+
+<p>MLT:	Yeah, the method for gaining access to BlackBerry was totally different than our usual methods.</p>
+
+<p>JACK:	[MUSIC] Okay, so, their method here is quite involved.  First, they gathered a list of as many employee names as they could who worked at BlackBerry.  Then they had a friend who had several database dumps of various breaches over the years, and they took these names of BlackBerry employees and searched the database dumps to try to find some matching names, and they found some, quite a few, actually.  But from there, they looked to see if any of those employees had Gmail accounts.</p>
+
+<p>MLT:	We called them all up, pretending to be from Google, and we told them that thereâs been a brute force attempt on a Gmail account and that itâs been locked for security reasons.  Then we would say that in order to unlock their account, we were gonna send them an unlock code.  Then from there, we would just do a password reset request on their Gmail account and from there, theyâd get a text message from Google with a code.  Then theyâd just read it aloud over the phone, pretty much, no questions asked.</p>
+
+<p>JACK:	Now, once they got into some BlackBerry employeesâ Gmail accounts, they looked to see if there were any e-mails regarding BlackBerry.  Thatâs where they found that yeah, some peoplesâ e-mails they got into had an account at blog.blackberry.com.  Now, this BlackBerry blog was just a WordPress site, and so, they went to the WordPress admin panel and said, I forgot my password, and the WordPress site would e-mail them a link to make a new password.  Well, they already had access to the Gmail account, and so, they just clicked the link and created a new password, and thatâs how they got into blog.blackberry.com.  TriCk crafted up a message to post to their blog.  The message that looks like it was posted on the BlackBerry blog website is âDear RIM, you will not assist the UK police because if you do, innocent members of the public who are at the wrong place at the wrong time and owned a BlackBerry will be charged for no reason at all.â  It goes on and on.  Itâs signed TriCk, TeaMp0isoN.  Greets to Insane, Hex, MLT, Black Hacker, Knowledge is Power, Twitter, TeaMp0isoN, TriCk.</p>
+
+<p>MLT:	Thereâs a lot of mixed feelings in regards to that particular hook.  Like, a lot of people thought it was a good thing.  Other people thought it was terrible and a really bad thing to do.  But as for me personally, I donât necessarily agree with it, but I was just curious to learn that particular method of social engineering.</p>
+
+<p>JACK:	As you can hear, a lot of what went on at TeaMp0isoN was TriCkâs doing.  Either he did it himself or told the team this is the target, and he crafted all the communications and messaging that TeaMp0isoN was putting out there, such as having strongly-worded messages to BlackBerry.  Did you know where he lived?</p>
+
+<p>MLT:	Small Heath, Birmingham.  Other than that, I donât know anything more specific, no address or anything.</p>
+
+<p>JACK:	[MUSIC] TriCk was born in the UK, but his family was born in Pakistan, and they were Muslims and raised him to be Muslim, too.  It sounds like TriCk was becoming more opinionated about who to hack based on his politics and culture.  Together, TeaMp0isoN went on to hack so many more sites.  The United Nations, NATO, and many more.  If you were to put a number on it, how many things do you think you â TeaMp0isoN hacked?</p>
+
+<p>MLT:	At least a few thousand.  That 1,400 number, itâs just â thatâs a list of mirror defaced pages from Zone-H.</p>
+
+<p>JACK:	Okay, so, Zone-H; this is a website that hackers will post proof of what theyâve hacked into.  This sort of shows your reputation and history of what your group has done over time.  On this Zone-H website, TeaMp0isoN has over 1,400 different websites listed that they claim they hacked into between 2010 and 2013.  But you can probably guess that if you hack into 1,400 different websites and deface them, itâs probably not all for political reasons.  There were some wide nets that TeaMp0isoN would cast sometimes just to see if any of the websites on the internet were vulnerable to something.  So, if they had a hit, theyâd get in there and deface the front page, showing TeaMp0isoN was here, because the websites they got into were all over the place; DVD review sites, backpacking sites, antiques, Teddy Nation, poker review sites, catering sites, and so many more random sites.</p>
+
+<p>MLT:	All of the Zone-H reports that are just like kinda random sites, that was before TeaMp0isoN came into the public limelight.  So, most of the hacks we did after that point, we didnât even bother to submit to Zone-H, but thatâs when we specifically began to go after a target that we would choose between the team rather than just any random website.</p>
+
+<p>JACK:	MLT says he wasnât involved with these hacks because that was before TeaMp0isoN was formed.  But now that TeaMp0isoN is here, heâs definitely involved now in a big way.</p>
+
+<p>MLT:	For some of it, I was above and personally â UK Ministry of Defense, quite a few US government websites, every Australian government website, which was quite an interesting story, but that gave us access to hundreds of .gov, .au sites.  Efnet was one of the last hacks I pulled off before I quit TeaMp0isoN.  Probably one of the most difficult ones was when we gained access to F-Secure through about â a grand total of three minutes, maybe.</p>
+
+<p>JACK:	Yeah, and what kept you doing it?  Was it just a sense of friends hanging out or was there â what did you feel?  You said itâs not really politically motivated, but did you feel that there was some sort of social justice that you wanted to make right in the world?</p>
+
+<p>MLT:	It was honestly never really about that, for me.  Itâs just, I realized I was surrounded by people who knew more than me and I just wanted the opportunity to learn.  It was probably a stupid idea because of all the repercussions itâs caused.</p>
+
+<p>JACK:	Okay, but thereâs a lot of work here.  I donât know, it just â that doesnât â itâs not sitting right with me that thatâs all you were there for, is just because oh, I want to learn more.  I donât mind breaking some laws.  I donât mind stealing a hundred thousand dollars from P. Diddy.  I just want to learn.  Like, it seems like a â thereâs something more to it to me.</p>
+
+<p>MLT:	Honestly, I donât know what else to say other that I was just a dumb teenager at the time.  I was curious more than anything.  If I was ever in it for the money, Iâm sure I could have definitely made some money.</p>
+
+<p>JACK:	Well yeah, why didnât you decide to do that?</p>
+
+<p>MLT:	I feel like if I was black hat now rather than back then, then I would be deciding to do that, [MUSIC] but back then, it never really crossed my mind, probably.</p>
+
+<p>JACK:	After talking with him a little more, I came to the conclusion that MLT did all this with TeaMp0isoN partly because he was a rebellious teenager, partly because he was curious, partly because he wanted to learn more, partly because these were his friends and he had been through a lot with them, and partly because it was an absolute adrenaline rush when you hack into something.</p>
+
+<p>MLT:	I mean, I feel like that was also a big part of it, the adrenaline rush, âcause when you pop a shell on a government server, itâs just like, the rush you get is kind of addictive, in a way.</p>
+
+<p>JACK:	Did TeaMp0isoN make money from any of this stuff?</p>
+
+<p>MLT:	I know that I made no money personally and neither did TriCk.  Iâm not sure about Hex or Insane, but if he did make money, it was definitely not due to anything that I carried out.</p>
+
+<p>JACK:	Was there anything that anyone did that you were like whoa, thatâs too much, thatâs going too far, Iâm not feeling comfortable with that?</p>
+
+<p>MLT:	Thatâs exactly how I felt when TriCk did the stuff at the anti-terror hotline.</p>
+
+<p>JACK:	The Anti-Terrorist Hotline was set up by the UK government.  It was set up for citizens to report suspected terrorism.</p>
+
+<p>HOST5:	The Anti-Terrorist Hotline is confidential.  Itâs there just in case you see anything unusual.  If you suspect it, report it.</p>
+
+<p>JACK:	This was what TriCk wanted to attack.</p>
+
+<p>MLT:	He compromised a PBX server that was based in the Philippines, and then he wrote a script using Asterisk, which spoofed caller IDs in a loop and randomly generated the caller IDs.  So, essentially, they were just getting a call from a different phone number every second.  So, no matter how many times they block the numbers, it â just continue calling.  What didnât sit well with me is the fact that itâs a denial-of-service against the anti-terror hotline.</p>
+
+<p>JACK:	TriCk had been doing this out of protest.  He wasnât happy with how a few suspected terrorists who were Muslim were being treated.  He wanted to do something about it, and he thought hitting the Anti-Terrorist Hotline was doing something about it.</p>
+
+<p>MLT:	[MUSIC] When this actually happened, my first hearing of it, I was actually on vacation in Cyprus at the time.  I was sitting in a bar and suddenly the news comes on, and itâs talking about TeaMp0isoN and the anti-terror hotline.  I literally had no knowledge about the situation up until that point.</p>
+
+<p>HOST6:	The details of these attacks usually take time to emerge, but in this case, they came in under twenty-four hours.  Now, TeaMp0isoN is an anarchist, hacktivist group, and it began by jamming the UKâs counter-terrorism hotline with hundreds of computer-generated calls in whatâs known as a denial-of-service attack.  These have been seen lately crashing websites like the Home Office last weekend.  Now, TeaMp0isoN was protesting over the extradition of alleged terror suspects from Britain to the US.  The group then called the terror hotline to explain its actions and to mock officers, and who â the officers then warned them that they would be traced and reported to the FBI.</p>
+
+<p>MLT:	Yeah, itâs pretty much panic by that point, âcause I mean, it was pretty obvious that that was going to be the final straw.</p>
+
+<p>JACK:	Why?</p>
+
+<p>MLT:	Well, I mean, itâs already been causing a bunch of problems for law enforcement, and then TriCk decides to go and attack the Met Police, out of all people.</p>
+
+<p>JACK:	Yeah, but I mean, youâve already â heâs already attacked Tony Blair and so, if youâre gonna get the prime minister, thatâs gonna attractâ¦</p>
+
+<p>MLT:	Yeah, but Iâm â I feel like the main difference between most of attacks though is that the reasoning for attacking the anti-terror hotline was basically in support of terrorism.</p>
+
+<p>JACK:	What do you mean?</p>
+
+<p>MLT:	Like, back then, he was complaining about terror suspects being extradited, or if you looked into the cases of who he was complaining about, it was like, one of them was bin Ladenâs right-hand man, for example.  Itâs hardly like they were innocent people that he was protesting about.  I told him at the time youâve gone too far, and then I think it was maybe one day before I returned from Cyprus, there was a BBC article stating that a seventeen-year old TeaMp0isoN member had been arrested.  There was only two members of TeaMp0isoN in the UK, both of who were seventeen, and he was one of them and I was the other.  Obviously I knew I hadnât been arrested, so I just assumed it must have been him.</p>
+
+<p>JACK:	Right.  So, what did you feel when you read that?</p>
+
+<p>MLT:	I was pretty paranoid, panicking.</p>
+
+<p>JACK:	You were in Cyprus with your parents?</p>
+
+<p>MLT:	Yeah, yeah.  I was at the time.</p>
+
+<p>JACK:	Did they notice you being paranoid and panicking?</p>
+
+<p>MLT:	Not that Iâm aware of.  In hindsight though, I think him getting arrested first was probably very beneficial for me because it gave me a chance to cover my tracks, at least.</p>
+
+<p>JACK:	MLT starts going through the process of wiping his computer and phone, and not only was he wiping that, but he was also getting into any servers that he had access to, and there were a bunch that hosted various malware and phishing sites and stuff.  He was getting into all those and destroying them, running tools like DBAN, making whatever data that was on there gone forever.  He had his laptop with him, so that was easy to wipe, but his computer at home posed another challenge.</p>
+
+<p>MLT:	I had a friend who had the key to my house at home at the time, âcause he was feeding my cat, so I told him to install Darikâs Boot and Nuke onto a CD disc, and then got him to just wipe everything off my own computer as well.</p>
+
+<p>JACK:	He had a suspicion that as soon as he gets home, heâll be arrested.  [MUSIC]
+ Cyprus is an island in the Mediterranean Sea, and from the island, MLT could see Turkey just to the north, and the thought crossed his mind a few times that maybe he should just escape to Turkey and start a new life on the run.</p>
+
+<p>MLT:	Yeah, I went home instead and faced the consequences.</p>
+
+<p>JACK:	He went back home to the UK, half-expecting to be arrested at the airport, but nothing.  He goes home, expecting the police to be there, but nothing.  He spends a quiet night at home, erasing any last bits of evidence he could.  It wasnât until a few days later that the police came.</p>
+
+<p>MLT:	It was pretty late at night, which was surprising, âcause usually itâs early in the morning.  Yeah, I was just lying in bed, pretty much drifting off, getting ready to fall asleep, and then all of a sudden, maybe fifteen plain-clothed officers come running into my bedroom.</p>
+
+<p>JACK:	Howâd they get in the house?</p>
+
+<p>MLT:	Kicked the door down.</p>
+
+<p>JACK:	[MUSIC] They rush into his room.  He stands up to take a look at them; they grab him and push him against the wall and put his arms around his back and handcuff him.  They confiscate all his computers in his home and take him down to the police station.  They keep him in a holding cell for three days while they question him.</p>
+
+<p>MLT:	Every thirty minutes theyâd loudly bang on the door of my cell, throughout the entire night, and then each morning Iâd have to do an interview.  But obviously Iâd be completely exhausted because theyâve intentionally kept me awake all night.</p>
+
+<p>JACK:	While the police didnât tell him how they found him, he had a lot of time to think about what were the possible ways they caught him.</p>
+
+<p>MLT:	Iâve got a few different theories as to that, and the first being that when TriCk taught at MI6, a lot of sketchy things started happening there as if we were being hit with a private exploit or something.  Or if it wasnât that, then something else I became aware of is when they actually arrested TriCk, his computer was still switched on and his IRC client was open, and he was in the middle of a conversation with me where I was pasting him vulnerabilities and database information from the European Union port systems without realizing that there was a police officer stood right behind him at the time.</p>
+
+<p>JACK:	They scheduled his court case for a few months out and let him go back home.  TriCk was the first to have to go to court.  TriCkâs real name is Junaid Hussain.  Even though he was arrested when he was seventeen, they were trying him as an adult, and they were specifically upset with him for attacking the Anti-Terrorist Hotline.  He pleaded guilty to it and they sentenced him to six months in prison for violating the Computer Misuse Act.  MLTâs court case came after that, and he was still only seventeen when he went before the court, so they tried him as a minor.  On top of that, they thought TriCk was the main person, so MLT should get less of a punishment than TriCk, right?  As you may remember, MLT wasnât even part of the Anti-Terrorist Hotline attack, so they didnât charge him for that at all.  Instead, they brought up his hacks that he did on the European court systems and some other targets.  He pled guilty to that and they sentenced MLT to two years supervised release.  That is, no prison time for him.  Itâs just kind of like two years of probation.  TriCk was sentenced to six months in prison, but after serving a month and a half, they let him go.  [MUSIC] When he came out of prison, MLT said TriCk changed.</p>
+
+<p>MLT:	Yeah, definitely.  He was â I mean, he was always maybe mildly extreme, but ever since getting out, it was like, just totally different.</p>
+
+<p>JACK:	Yeah, and how was it different?  What was he doing differently?</p>
+
+<p>MLT:	Well, I mean, in the past he would always talk about hacktivism as a means of getting his political message across, but when he got out of prison, he was talking a lot more about direct action, saying people needed to die and kinds of things like that.</p>
+
+<p>JACK:	What kind of people was he saying needed to die?</p>
+
+<p>MLT:	Pretty much anyone who was a non-believer, which was kind of funny because he was chatting with me at the same time as if nothing was out of the ordinary.</p>
+
+<p>JACK:	That is, TriCk was becoming aggressive to anyone who wasnât Muslim.  After prison, TriCk went back home to Birmingham, UK, and I believe thatâs where he married his long-time girlfriend Sally Jones.  Now, Sally was born in the UK and was raised Catholic, but she left the Catholic church as a teenager and joined an all-girl punk rock band.  When the Iraq war took place, she sympathized with Muslims and became Muslim herself.  Sally spent a lot of time online too, hanging out in chat rooms and being active on Twitter.</p>
+
+<p>MLT:	Yeah, Iâm pretty sure that her and TriCk met over Twitter, like, back when TeaMp0isoN was active.</p>
+
+<p>JACK:	Sally and TriCk started chatting privately and getting to know each other.  She would even join the TeaMp0isoN chat room sometimes and hang out with MLT and other members.</p>
+
+<p>MLT:	Honestly, back when I used to talk to her, she was just relatively normal.  Just a typical, normal person until she met TriCk.  She was kinda like one of TriCkâs groupies.  She just seemed kind of obsessed with him.</p>
+
+<p>JACK:	[MUSIC] They really hit it off.  Sally liked the rebel in TriCk.  TriCk liked the Muslim in her, but there was an age difference.  TriCk was eighteen and Sally was forty-four, more than twice his age.  She had a few children too, and I believe her older son was just one year younger than TriCk.  But she ultimately left her boyfriend to be with TriCk, AKA Junaid Hussain.  After Junaid got out of prison, they decided to get married.  But Junaid was different now.  Junaid had become more radicalized while in prison, and after being out for a few months, he got into some trouble.  He got into a fight with a police officer and was arrested again.  They let him go and gave him a court date, but Junaid never planned on making a court appearance.  Instead, he decided to move to Syria.  He went alone, flying to Turkey, and then crossing over the border to Syria.  Later, Sally Jones decided to go to Syria, too.  She took her nine-year-old son, little Jojo from a previous relationship, with her.  Together, she flew to Syria and reunited with Junaid.</p>
+
+<p>MLT:	He would attempt to message me regularly, but Iâd try and avoid any communications with him.  Like, for one example, the first time he messaged me from Syria was â he linked me to a website; Raqqa Is Being Slaughtered Silently.  Basically what he asked was if I was capable of hacking that website, finding out who was running it, and then passing back information onto ISIS.  [MUSIC] He was also messaging me asking if I can get credit cards for ISIS to use.</p>
+
+<p>JACK:	Yeah, Junaid Hussain had joined ISIS, a terrorist organization.  ISIS loved him; he was particularly helpful at setting up computers and their online presence.  He started a new hacker group called the Cyber Caliphate to carry out cyber attacks on behalf of ISIS.</p>
+
+<p>MLT:	I know he hacked the International Business Times.  He temporarily hacked the BBC, although he lost access very fast.</p>
+
+<p>JACK:	Junaid quickly rose to be one of ISISâ most prominent and influential English-speaking members, letting him run the English Twitter account and write articles.  In fact, Junaid became one of the best international recruiters for ISIS, because he was able to connect with English-speaking teens over social media and online in ways that other ISIS members just couldnât do.  But itâs not like you could just go to Syria and join ISIS.  Thereâs a rigorous recruitment process to prove youâre worthy.  You have to change your name and become a citizen and have someone vouch for you, and you might even be told to kill someone, like a captured prisoner or something.  Junaid changed his name to Abu Hussain al-Britani.  Sally Jones changed her name to Umm Hussain al-Britani.  Sally even began training her ten-year-old son to be part of ISIS, pushing him to become a child soldier.  At one point, Junaid got on a video call with MLT and a few others.  Junaid was holding up an AK-47 rifle in his hands and was waving it around, showing them.</p>
+
+<p>MLT:	At first, nobody took him seriously.  Everyone was saying it was an Airsoft rifle.  Then he made it pretty clear that it wasnât by showing everyone the magazine and the ammo for it and all that stuff.</p>
+
+<p>JACK:	This didnât sit well with MLT.  What his old buddy TriCk was doing was wrong, and MLT wanted nothing to do with this.</p>
+
+<p>MLT:	I was definitely against it.  As soon as he told me the kind of things he was actually doing, I just tried to cut off contact as much as possible.</p>
+
+<p>JACK:	Junaid would message him sometimes, but MLT just stopped responding altogether.  As Junaidâs prominence and power rose within the ranks of ISIS, it also meant that he became a bigger target for US forces who were actively at war with ISIS.  It became pretty clear that Junaid was a powerful recruiter for ISIS, and they wanted to stop him.  The Sunday Times listed Junaid as the third ISIL target on the Pentagonâs kill list.  Iâve got to say, itâs not easy to get on Central Commandâs kill list, especially ranked Number 3.  Just hacking stuff does not warrant that kind of attention.  Look at all the hacks that have happened over the years, and while thereâs an FBIâs Most Wanted list, none of the people on that list appear on CENTCOMâs kill list.  What Junaid did was far more sinister than just hacking places.  Junaid was not only a recruiter for ISIS, but he was also in communication with a lot of foreign members, instructing them to commit acts of violence.  He would private message people on Twitter and then take that to more secure messaging platforms and begin feeding people information, such as what targets to attack, how to make bombs, how to use weapons, and how to make money.  A few attacks that took place were linked to Junaid.</p>
+
+<p>HOST7:	Hussain is accused of being linked to the shooting attack in Garland, Texas in May, where contest participants were asked to draw the prophet Muhammad.  Investigators believe Hussain was messaging one of the gunmen to radicalize him and urge him to launch an attack, making it potentially the first ISIS-directed attack in the US.</p>
+
+<p>JACK:	Not only that, but his wife, Sally Jones, was doing the same thing.  Often, she would take over in the private messaging and offer to send new recruits manuals or books that would make someone more radicalized.  Then sheâd follow up and ask them, what kind of attack do you want to do?  Then provide more help for them to carry it out.  So, Junaid Hussain continued to help people conduct acts of terror.  This is what drew the attention of the US military.  Hacking is one thing, but urging people to commit acts of violence and helping them do it is an entirely different thing.  Because he was an ISIS member, it meant he became the target of the US military, which is how he became Number 3 on CENTCOMâs kill list.  When you get on their kill list, thereâs only one way off.  The only problem was they didnât exactly know where he was.</p>
+
+<p>MLT:	The rumor regarding that that I heard is that someone tricked him into downloading a malicious APK file onto his Android phone, and then they managed to get the geolocation from there.  [MUSIC] Iâm not 100% sure if that storyâs true; itâs just what Iâve been told from a few people.</p>
+
+<p>JACK:	Iâm not sure how they got his location, either.  However, once the US forces did learn the exact location of where Junaid Hussain was, they sent out an attack drone to fly over.  They got a fix on his location and fired a rocket towards the location, and it hit a structure and exploded, killing three people, and none of those people were Junaid Hussain.  They were just three regular Syrian civilians.  Junaid knew the US was out to get him, so him and Sally reportedly always kept their ten-year-old son close by, to shield them from drone strikes.  This seemed to work; drones did not attack while the boy was with them.  But a few weeks go by, and Junaid went on a drive without the ten-year-old boy to a gas station.  US forces got intel of his location and ordered another drone strike.  The drone flew in fast; it was too quiet to hear it coming and it was too fast to find cover, and it fired a missile directly towards Junaid Hussain.  Junaid Hussain was killed on August 25, 2015.  He was twenty-one years old.  To date, heâs the only known hacker to ever be killed by a US drone strike.</p>
+
+<p>HOST8:	US spy drones followed and tracked notorious British-born ISIS hacker Junaid Hussain for days in the middle of heavily populated Raqqa, Syria, before finally launching the Hellfire missile off a drone to kill him as he stood in the street Monday.  The US had to be sure it was him and to fire at him when civilians were not nearby.</p>
+
+<p>MLT:	I feel like Iâd be lying if I said that I felt sympathy for him.  Obviously he was a friend at one point, but considering what heâs done since then, itâs hard to feel bad for him at all.</p>
+
+<p>JACK:	What happened to Sally Jones, you might wonder.  Well, she stayed in Syria and continued to train her boy to be a child soldier for ISIS.  Thereâs even a video of a few kids killing some Kurdish soldiers, shooting them in the back of the head, and one of the kids looks like Sally Jonesâ twelve-year-old son, Jojo.  Sally denied it was her son in the video, though.  Two years after Junaidâs death, we hear this on the nightly news.</p>
+
+<p>HOST9:	News of a developing story here in the UK; weâre hearing from the government.  They have confirmed to the BBC that a notorious female British Jihadist was actually killed in a drone strike in Syria.  This is Sally Ann Jones.</p>
+
+<p>JACK:	The report also said that her twelve-year-old son was killed in the drone strike, too.  The details of this arenât clear, because Iâm not sure if the strike was intended for her or if she was just in a building that was hit with incoming shells.  If it was a drone strike just for her, it would mean sheâs the first woman ISIS member to be targeted by a drone like that, but it would also be questionable legally to attack a woman and a twelve-year-old boy who werenât active combatants within ISIS.  MLT was able to finish his supervised release without getting into any more trouble.  Still, since his arrest, MLT has kept a clean record.</p>
+
+<p>MLT:	For the last five years or so, I was doing a lot of bug bounty hunting, and I was pretty active on most of the major platforms.  But Iâve kinda shifted my focus recently to zero-day exploit development.  So like, Iâll just be ordered in say whether occasional â some IoT device for vulnerabilities, and then crafting an exploit based on that and selling it.</p>
+
+<p>JACK:	Whoa, selling zero-days is a heavy thing to be involved with.  Iâve done a few episodes on this alone.  Basically, heâll look at certain applications or devices to try to find vulnerabilities in them, but instead of telling the maker of the product about it, heâll sell those to someone else, specifically Zerodium or Trend Microâs Zero-Day Initiative.  Now, these two companies will verify that this is an actual unpatched vulnerability and pay people who bring it to them.  But they both do two totally different things with the exploits they get.  Zerodium pays more, much more, but theyâll take the exploit and sell it to government entities who will use the exploit as a weapon to attack.  You really donât know what governments Zerodium is selling their exploits to.  Trend Microâs Zero-Day Initiative doesnât pay as much but will take the exploit and develop anti-virus signatures for it and report it to the software maker so it can be fixed.  Both of these are legal for someone to report bugs to, but MLT rather report bugs to the people who will work to get the vulnerabilities fixed, instead of using his exploits as weapons.</p>
+
+<p>MLT:	Yeah, Iâd rather just stick with lower payouts and have a clear conscience.</p>
+
+<p>JACK:	Thatâs a tough decision though, isnât it?</p>
+
+<p>MLT:	Oh yeah, definitely.</p>
+
+<p>JACK:	How hard is it for you to say well, I could make much more from this, but I;m gonna do the right thing?</p>
+
+<p>MLT:	Itâs sometimes a struggle.</p>
+
+<p>JACK:	MLT has taken his interest in all this and recently started a new hacking group called 0xffff.  The big difference with this group is that itâs legal.  They develop zero-day vulnerabilities and sell them legally and ethically.  They do bug bounty hunting and more.  You can see what the group is up to by going to https://blog.0xffff.info/.</p>
+
+<p>(OUTRO):	[OUTRO MUSIC] A big thank you to MLT for sharing this incredible story with us.  Iâve been meaning to do a story on Junaid Hussain for years because itâs one of the most insane stories Iâve ever heard, but couldnât tell it unless I had someone who was personally involved with him to tell the story, and I canât think of anyone better to tell the story than MLT, so thanks for sharing this.  Hey, youâre invited to the Darknet Diaries Discord.  This is my favorite chat room on the entire internet and itâs where fans of the show hang out and ask questions and post funny memes.  Come hang out with us.  I want you there.  To join, just go to discord.gg/darknetdiaries.  This show is made by me, the crouching kitten, Jack Rhysider.  Sound design by the hidden hawk, Andrew Meriwether, and our theme music is by the buzzing Breakmaster Cylinder.  I went to a wedding the other day; both the bride and groom are Wi-Fi technicians and oh, let me tell you, the reception was great.  This is Darknet Diaries.</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

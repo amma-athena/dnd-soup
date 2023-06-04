@@ -1,0 +1,763 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>Kik â Darknet Diaries</title>
+	<meta name="description" content="Kik is a wildly popular chat app. Their website says that 1 in 3 American teenagers use Kik. But something dark is brewing on Kik.">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Kik â Darknet Diaries">  
+	<meta name="twitter:description" content="Kik is a wildly popular chat app. Their website says that 1 in 3 American teenagers use Kik. But something dark is brewing on Kik.">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/moldy.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/93/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Kik â Darknet Diaries" />
+	<meta property="og:description"        content="Kik is a wildly popular chat app. Their website says that 1 in 3 American teenagers use Kik. But something dark is brewing on Kik." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/moldy.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/93/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/moldy.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/93/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="Kik â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/moldy.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 93: Kik</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://www.podtrac.com/pts/redirect.mp3/traffic.megaphone.fm/ADV4447917089.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/93/",
+			   "title": "Ep 93: Kik"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/93">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[START OF RECORDING]</p>
+
+<p>JACK:	[MUSIC] Okay, so, this episode has mature content.  I donât recommend listening to this with young ears around or on some kind of speaker where others might hear it because this episode gets into some dark stuff, so listener discretion is advised.  Alright, so this episode is about a mobile app called Kik, spelled K-I-K.  It was made in 2010 to help mobile users be able to chat with one another easier.  See, back then, people who had BlackBerry phones had a hard time chatting with Android users and iPhone users, so some Canadian college kids made Kik to be able to let people chat freely no matter what type of phone you had.  Kik was an immediate hit.  Just one month after launching they reported to have one million users and itâs been growing rapidly ever since.  But something happened in the Kik chat app which sent this app down a dark path.
+<!--more-->
+(INTRO):	[INTRO MUSIC] These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	This is the tale of two different Kik users.  First is a guy who weâll call Doctor.</p>
+
+<p>DOC:	Some person, I donât remember their name, said that Kik was a good app to meet people on and to join some communities.  I figured well, why not?  Might as well try it.  So, I joined.</p>
+
+<p>JACK:	Sounds innocent enough.  Everyone can use new friends, right?  So, thatâs why Doctor joined Kik.  By the way, Doc is like, twenty-something years old and Iâm just disguising his voice a bit.  Now, when you join Kik, you can do so anonymously.  All the questions are soft, like it asks for your e-mail but you could just put anything in there because they donât e-mail you any sort of registration confirmation link or anything.  It asks for your phone number but you can skip that, too.  Yeah, when you get on Kik, you can be whoever you want without giving any details as to who you really are.  The other guy weâll hear from weâll call Azrael.</p>
+
+<p>AZRAEL:	Everybody was telling me to make an account just to hang out and message them on there instead of whatever we were using at the time.  I donât even remember.</p>
+
+<p>JACK:	This is called the network effect and itâs powerful.  The more people who join and want to chat with other people, the more they invite other people to join.  So, youâre either on Kik or youâre not, and if Kik is where all your friends are, you might as well get in there and be there with them.  Now, these two people, Doctor and Azrael, have entirely different stories that take them down two different paths while using Kik, and weâre gonna weave in and out and back and forth between the two of them.  This should be fun.</p>
+
+<p>AZRAEL:	[MUSIC] Kik is an old instant messaging app.</p>
+
+<p>DOC:	You can chat, share pictures, videos.</p>
+
+<p>JACK:	On the app, you can connect with someone you know and send them private messages or you can join chat rooms.  In fact, when you first install the app, it tries to show you some cool chat rooms to try joining.  Rooms have themes; like, you can join a room about Pokemon or Fortnite or different regions of the world where people live.</p>
+
+<p>DOC:	You can find different groups based on search preferences, so you can use different tags and such to try and find specific groups that might share interests with what youâre looking for.  Itâs like, really, itâs âthe road to hell is paved with good intentions.â  It has a lot of potential and being a good forum site where everyone can be there and have fun and make good groups and start good communities.  But it is not maintained well enough, so it has its darker side.</p>
+
+<p>JACK:	Ah, yes, the dark side of Kik.  Thatâs what Iâm interested in, so letâs go there.  But first, letâs back up and talk about the company who runs Kik.  Youâre gonna be very curious about this eventually, so we might as well get into it now.  [MUSIC] Kik was created by some Canadian students in University of Waterloo in 2010.  A month after launching, it had a million users.  Five years later, the Chinese company Tencent invested 50 million dollars into Kik, trying to make it the WeChat of the West.  WeChat is a massive chat app in Asia, so Tencent saw potential in Kik.  This helped explode Kikâs popularity.  By this point, the company was called Kik Interactive and they had a whole team of people working there.  There was a CEO who oversaw everything, bunches of employees, marketers, a whole team of people who were working on Kik.  Their team was expanding fast too, with dozens of employees at the time.  In 2015, Kik reported it had 240 million users and 70% of them were between [00:05:00] the ages of thirteen and twenty-four.</p>
+
+<p>AZRAEL:	I actually went and looked at the terms of service âcause I wanted to actually know what youâre supposed to do with the app.  Itâs marketed for kids thirteen and up.  Itâs actually, youâre not supposed to share any not-safe-for-work imagery.  They actually have certain words blocked so you canât name your chat certain things.  Like, you canât use any curse words in the naming of your chats.</p>
+
+<p>JACK:	Thatâs right; Kik is for kids.  In fact, if you go to kik.com/brands, which is the web page they use to pitch to potential advertisers, the title of the page says Reach Teens in Their World.  It goes on to say that one out of three American teens use Kik.  Kik loves marketing this app to teens because itâs well-known that teens are trendsetters, so if teens make a social platform popular, then everyone else will eventually come, too.  Thatâs what happened with MySpace, Facebook, and so many others.  But despite it being super popular, Kik didnât really have a way to make money.  In fact, they were losing money fast, so they had to come up with a plan to make Kik profitable.  They saw that WeChat is not only a chat app but also a payment app.  You can use it like Venmo or whatever and send money back and forth between users.  Kik wanted to do something like that but at the same time, they saw the boom in cryptocurrencies and decided to make their own cryptocoin called Kin.</p>
+
+<p>[MUSIC] In 2017, they launched Kin.  Now, to start out, Kik gave themselves tons of this cryptocurrency and they were telling people that thereâs two ways to initially obtain it; there would be a private pre-sale and there would later be a public sale.  In both methods though, people would buy this Kin with Ethereum from Kik.  The private pre-sale resulted in Kik selling 50 million dollars worth of Kin.  By the time the public sale was over, Kik had made 98 million dollars from doing this initial sale of their Kin cryptocurrency.  All that money went straight into Kikâs bank account.  The SEC warned them about raising money through cryptocurrencies like this.  They had to follow certain rules and it gets tricky.  But it didnât seem like Kik respected the rules, so in 2019 the SEC filed suit against Kik and Kin, alleging securities violations.  Weâre getting into some legal weeds here but it seems like Kik is saying that Kin is a cryptocurrency and it shouldnât be considered a security, but the SEC was saying well, if youâre using it to raise money for your company, youâre sort of treating it like it is a security.</p>
+
+<p>Kik was saying it was a currency; the SEC was saying itâs more like a stock.  Itâs tricky because, well, yeah, it is a currency.  Kik was really using it to raise money for their company, basically treating it like a security.  So, Kik and the SEC went into a fierce legal battle.  This legal battle was rough and changed everything about Kik.  The team at Kik was tied up with this lawsuit and just loved all the money they were making with Kin, so they just sort of stopped caring about Kik, their chat app.  Kin was making money.  Kik was losing money.  Itâs as if Kik Interactive split into two when they made Kin.  In fact, they made their own separate entity called the Kin Foundation which just focused on Kin.  So, in 2019, Ted Livingston, the founder of both Kik and Kin, announced that Kik would no longer be supported.  They were done with it and they were going to shift focus entirely to work on Kin.</p>
+
+<p>In fact, they took their staff of almost 100 people down to just 19 people.  The CEO said, quote, âGoing forward, our nineteen-person team will be focused on one goal; getting millions of people to buy Kin to use it.â  End quote.  So, nobody, I mean nobody was left to work on the Kik chat app.  The app was abandoned by its own company and Kik Interactive announced it would be shutting down the chat in app in October 2019.  [MUSIC] But then a company called MediaLab AI stepped in.  This is a California-based company who owns several other chat apps like Secret, Yik Yak, and Whisper.  They offered to buy Kik, so it was sold to MediaLab.  We donât know for how much but this is who owns Kik today; MediaLab AI.  So, the app is still alive and growing even today.  Now, youâre gonna find all this to be pretty important later, so thanks for sticking with me through this.  Now, MediaLab has a history of buying failing apps and trying to make them profitable.  So, whatâs the first thing they do when they buy Kik?</p>
+
+<p>DOC:	The only thing MediaLabs did was [00:10:00] the second they took over, everybody started seeing ads on the app.</p>
+
+<p>JACK:	If you use Kik today, youâll undoubtedly see ads everywhere.  Theyâre in chat rooms; theyâre in private messages.  Itâs pretty much a permanent banner at the top of the app thatâs always displaying ads.  So, that brings us to today.  I havenât seen recent numbers but the latest count that I saw was that Kik has over 300 million users and itâs owned by MediaLab AI and theyâre likely doing as little work as they can to just make it profitable and keep it going.  Alright, so you get in there, youâre playing around.  What do you discover when youâre in there?</p>
+
+<p>DOC:	So, what I discover is that there are many groups for many, many, many different things.  I join a few groups, some related to some gaming stuff, and then I start noticing that some people are talking about some more kinky groups.  Letâs call it that.  But I also start noticing some other groups that generally just share straight-up porn.</p>
+
+<p>JACK:	Ah yeah, a chat program which lets you make rooms about whatever you want and post pictures and videos of whatever you want; yeah, of course thereâs gonna be porn there.  But you know, posting porn online is typically legal.</p>
+
+<p>DOC:	As long as the porn is legal and itâs in and of itself, that the actors in it are legal and legal age in the country that theyâre from and in the country that it is being shown in and that thereâs no acts in it that are illegal such as rape, as long as that is ticked off, then it is legal to my knowledge, at least.</p>
+
+<p>JACK:	Okay.  So, howâs the porn scene on Kik?  Hereâs the thing thatâs weird already, right?  Youâve got this â target audience is thirteen to twenty-four-year-olds.  70% of their users is that and yet, thereâs porn channels.  Itâs interesting that they have that already but yeah, howâs the porn scene over there on Kik?</p>
+
+<p>AZRAEL:	It is very active.  Some of the actual social groups I joined were much less active than the porn groups.</p>
+
+<p>JACK:	So, when you get into a porn chan or room or whatever itâs called, whatâs going on there?  Are people just posting photo after photo of nudity and stuff like that or is there videos being posted, or is it â do you ask people hey, do you have something like this, or do you just â is it like TV?  You just turn it on and you see whatâs there or is there â it is likeâ¦</p>
+
+<p>DOC:	Yes to all of the above.  It depends a lot from group to group.  In a lot of groups when you join, first you are you asked to verify because there are a lot of bots on Kik, so to avoid there being bots and people who arenât active and such, youâre being asked to verify.  So, you send a message to an admin and they tell you to send something; maybe a video, some porn video so that you show that you are willing to share, or maybe a live picture of yourself or something like that.  Then you get into the group and, well, depending on the group, you can be finding all of the things that you mentioned.  Some are very, very active and people just share a lot of pictures and videos.  Other groups are less active and you have to specifically ask for what people want, so to speak.  Thatâs kind of where I got my start, actually, is trading, as itâs called, where you â where people have some request for something in porn and then you try and give it to them.  Then in return, they give something back.  It is videos and pictures, and thatâs kind of where I got really interested in it because, well, when youâve seen one pair of boobs, youâve seen them all, so â to a degree.  So, the porn part pretty quickly got boring but trading was very, very different and a lot more fun.</p>
+
+<p>JACK:	So, this is how Doctor got started trading pornography on Kik.  People would ask for certain types of explicit material, heâd hunt for it, find it, and then share it in the channel or privately to that user.  In return heâd get some other picture or video which heâd then save so that he could maybe give that to someone else someday.  This is all free, too; just show up and be active, really.  But the thing is, Kikâs terms of service strictly [00:15:00] forbids this type of activity.  So does Facebook, too.  Pornography isnât allowed to be posted on either of those platforms, but Kikâs terms of service says users arenât allowed to share material thatâs unlawful, obscene, defamatory, liablist, threatening, or pornographic, and the list goes on.  But the point here is that porn is not permitted on Kik, so it just shouldnât even be there, yet Doctor was telling us how prolific it is on there.  With a couple searches, you can quickly find channels full of porn.  Yeah, a lot of their users are teenagers, so I guess we should catch up with Azrael again for a minute.  So, while Doctor was on there trading porn, Azrael was on a whole different path.  He was just hanging out in an anime channel doing normal things that people do in chat groups, nothing kinky or weird.</p>
+
+<p>AZRAEL:	One of the chats I was an administrator for got raided [MUSIC] by a source clan â were immoral raiders and they just â somebody dropped into their chat, gave them a hashtag, they hit the chat.  They jumped in, tried a few spambots; spambots werenât spamming hard enough, so they just started threatening people.  They claimed to have our IPs and I knew that you couldnât really grab IPs without some special tools so we would remove them and it was like that for a couple hours.  I was just removing account after account after account.  Then they started private messaging me pictures of gore and claiming that they would do that to me âcause they had my address and all this and that.  I just didnât care.  Eventually I got legitimately angry and talked to a buddy of mine who was into the exploitation side of Kik and he got me my first actual mod that I could hit people with.  Thatâs where it all started, I guess.  [MUSIC] What happened was, I kinda started spotting these people that were using modified APKs.</p>
+
+<p>JACK:	APKs are what Android apps are.  Thatâs just how they are bundled and thatâs how they come.  What he found were people were taking Kik and modifying the app to do different things, pretty much hacking the app itself.</p>
+
+<p>AZRAEL:	The only exploit back then was you could turn off your read receipts and see who was reading your messages.</p>
+
+<p>JACK:	Ah, right, so when you send someone a message, itâll show you if itâs read or not.  But with this modified version of Kik, you could make it so that the messages you actually did read show as unread to others.</p>
+
+<p>AZRAEL:	I donât count that as an exploit, considering.  But then things started ramping up and the old owners of Kik released the source code.  After that, the modding community with it went wild.  Thatâs where blue mods came in, Kingskull, and all that.</p>
+
+<p>JACK:	What isâ¦</p>
+
+<p>AZRAEL:	Kingskullâ¦</p>
+
+<p>JACK:	What are these things?  What are the mods?  What â is there â what, are there bots in these things or something?  Is that what youâre talking about?</p>
+
+<p>AZRAEL:	Yes, yes.  So, my custom APK, basically it has a few basic exploits; I can see who reads my messages, I can prevent people from seeing that I read messages, I can send raw XML files which are stanzas, and all that sort of stuff.</p>
+
+<p>JACK:	Hm, interesting.  Thereâs a whole community on Kik who run customized versions of Kik that allows them to have different features that the normal user doesnât have.  Now, keep in mind, this also is not allowed in Kik.  Itâs against the terms of use.  It specifically says, quote, âExcept as permitted by us in writing, you agree not to reproduce, distribute, modify, prepare derivative works of, translate, reverse-engineer, reverse-compile, or disassemble the services in whole or in part.â  End quote.  So yeah, MediaLab doesnât want people modifying their app to make it do extra stuff like this, but apparently MediaLab isnât monitoring for this type of activity, so thereâs quite a few people doing this.  In fact, thereâs a guy named Lou who made a modded version of Kik and he was actually trying to sell it.</p>
+
+<p>AZRAEL:	He wanted you to pay fifty bucks for it but who pays for shit?</p>
+
+<p>JACK:	[MUSIC] So, this is what Azrael was seeing; modded versions of Kik, and he was fascinated by all the extra things you could do that a normal user couldnât.  On top of that, he was seeing that there were all these raider clans on Kik [00:20:00] who would go infiltrate chat channels and attempt to try to grief other channels or something.  He really didnât like that his anime channel got raided, so he modded up his Kik client to help defend his channel.</p>
+
+<p>AZRAEL:	That has a bot system where you can lock your chat so that anybody who joins is immediately removed and a couple other things like that.  You can censor words so if somebody says a censored word, theyâre removed.  My smart thing I did was I went and got a list of all the working raid bots and plugged them in one at a time into my censors list so any time anybody added the bot, removed.  So, it completely prevented us from getting raided.</p>
+
+<p>JACK:	This was cool to him at least, to have a sort of super-powered Kik client to do extra stuff that other people couldnât, but it fascinated him to the point where he wanted to know what other modded clients you could get with other features.  He eventually found one that let him send XML stanzas to other users.  Let me explain.  See, Kik uses a protocol called XMPP which sends messages from one user to another.  XMPP uses XML to encode and format the actual messages being sent.  So, just think of XML as this language that each side of the chat app understands and itâs how communication happens in the app.  Well, Azraelâs Kik client had the ability to modify the way that XML message looked when sending a message to someone.  He could essentially inject a stanza of code which is just like a snippet of code into the chat, and then this would be executed by other Kik clients that are in that chat room.  When another user would see that stanza, their client would have to process that code which would sometimes make their chat app do weird things.</p>
+
+<p>AZRAEL:	So, you could join a chat, send a stanza through the XML system and it was like oh, this user was just given admin.  Then you have admin ability.</p>
+
+<p>JACK:	[MUSIC] Whoa, to get admin ability to any chat room you wanted?  Thatâs crazy.  You can just take over any chat room any time.</p>
+
+<p>AZRAEL:	That was patched, so that isnât a thing anymore.</p>
+
+<p>JACK:	Okay, good.  Glad that was fixed.  People shouldnât be able to just take over chat rooms.  But weâre starting to see Azraelâs path take shape, here.  Heâs exploiting the Kik app to defend chat rooms.  But can you guess where this is going?  It doesnât quite seem dark yet, right?  It just kinda seems like a Nerf fight.</p>
+
+<p>AZRAEL:	Yeah.  It reallyâ¦</p>
+
+<p>JACK:	To play like, oh, Iâve got a chat room and Iâm trying to defend my chat room.  It doesnât seem that big of a deal.</p>
+
+<p>AZRAEL:	It really wasnât.</p>
+
+<p>JACK:	So, where does â how does this get worse?</p>
+
+<p>AZRAEL:	So, I started noticing other chats were getting raided and there were clans, and these clans had a large number of exploits.  I was thinking at the time if I join one of these clans, not only will I have all of their exploits but Iâll be able to learn to the point where maybe I can pivot off Kik and help people there or Iâll just have enough exploits that nobody can touch my chat room.</p>
+
+<p>JACK:	Thereâs something funny about the way you say it.  For someone just listening to it for the first time, when you say âclansâ and thereâs, I donât know, âraid clansââ¦</p>
+
+<p>AZRAEL:	It sounds very childish.  I understand, no.</p>
+
+<p>JACK:	Alright clan, hereâs what weâre gonna do; weâre gonna get together and weâre gonna raid this channel.</p>
+
+<p>AZRAEL:	Yeah.  Basically, the clan I joined at the time was called Raindrop and they were focused on just anti-toxicity, you know what I mean?  So, if one of our spies joined a chat and the chat was toxic and they would, say, share somebodyâs pictures that didnât want them shared or the admin was just really rude and mean and kicked people for no reason, we would go and take the chat.</p>
+
+<p>JACK:	So, while Azrael used to defend chat rooms from takeovers and spammers, heâs now become one of the spammers and raiders.  Now, the tactic to take over a channel is somewhat interesting.  First, a bunch of people join from his clan and then they start spamming like crazy, posting pictures, text, whatever, and it just becomes a constant stream of scrolling information.  You really canât read anything when youâre in that room.  People with slow internet connections might get lagged out.  People with notifications on might just get bells ringing constantly and yeah, the admins could kick people, but the raiders knew who the admins [00:25:00] were and would target them specifically with crazy stanzas and all kinds of private messages, XML thatâs all buggy, and things to just make their app freeze.</p>
+
+<p>Once the admins start falling out of the chat room and they can get enough people in that chat room, they can take it over.  This is the kind of stuff Azrael starts doing and was having fun with it.  While all this is going on in Kik, Doctor is still over there in some other chat rooms fulfilling peoplesâ desires to see certain porn.  Iâm not quite sure I understand this whole trade â the whole reason why anyone would want to trade, but I donât think I need to really get into it, so â âcause it just seems like oh, you want to masturbate?  Here, Iâll give you some stuff.  Itâs just weird to help people masturbate, but okay.</p>
+
+<p>DOC:	Yeah, it is weird and when you put it like that, itâs â it is very, very weird.  I found it kind of oddly fun in a way just because it was â more in the challenge because very â because I was very good at trading, very good at getting a lot of stuff, so very quickly I had more than 2,000, 3,000 items in my library.</p>
+
+<p>JACK:	Now, keep in mind, Kik is only a mobile app, so everything these guys are doing is 100% on their phone.  So when someone requested some porn, heâd have to go looking through thousands of things on his phone to get a good one and send it.</p>
+
+<p>DOC:	Yeah.  The part that made me good at trading was also that not only did I have that many â and I got more; I got over 8,000.  But I was able to pretty much memorize them.  So, I had watched most of what I got in a sort of objective manner so I knew what was in it.  So, if people asked something, I knew okay, do I have that or do I not have that?  Do I have something that falls close to those criteria?  Approximately when did I get it so that I can find it in relation to others?  Then I could scroll down and find it.  So, the challenge became people asked for something and I had this little calling signet that I posted out; âthe Doctorâs in, so if you have an itch that needs scratchingâ¦â. I had something like that.  Well, to a degree, I think itâs a big part of it and why people are into it, into trading, is not just the whole kink thing but power, really.  I think itâs the feeling of power that you get from being able to give people what they want always and that people recognize that.  When I started out, people didnât know me at all but very quickly a lot of people started noticing that I knew my business and if â and a lot of people started saying if anyone has it, itâs Doc.  Getting recognized like that is a powerful feeling and to be honest, itâs a drug in a lot of ways.  Itâs a weirdly good feeling.</p>
+
+<p>JACK:	How much time were you spending on this?</p>
+
+<p>DOC:	Way too much.  Way, way too much time on it.  This was during the first lockdown around where I lived, so I had nothing but time.  Like, it was one of the first things I did when I woke up, was see do I have any requests, anyone whoâs personally messaged me?  Then as I would go about my morning routine, get a cup of coffee and stuff, I would start looking through what they wanted, start finding some stuff, and I would go all day, pretty much.  I might be playing games on the side, maybe even chatting to some people online, but I would pretty much be on my phone the entire day.</p>
+
+<p>JACK:	Okay, so everyone has their own addiction.  Iâm not gonna judge.  Thatâs just what Doc was into.  But still, you might be asking, these are supposed to be true stories from the dark side of the internet.  Raiding chat rooms and looking at porn is not that dark.  Well, thanks for hanging out with me this long setting up the story because everything is about to get really dark from here.  This is the last chance to turn back.  After the break, it gets dark.  Doc had been on a massive porn-trading binge but eventually got a request that he didnât know how to fulfill.</p>
+
+<p>DOC:	People sometimes started asking for what they generally just called CP.  [00:30:00] At first I didnât know and as soon as you asked whatâs CP, nobody would say and they would just close the chat, block you.  But after a while I figured out CP stood for child pornography and sometimes people also just refer to it as underage which was easier to understand at first, at least.  But CP was kind of like, the code word that people used, the shorthand, and if you didnât know what it was, you werenât supposed to know, so to speak.  Those items had a lot more value.  Those were the ones that some people really wanted when they wanted to test what kind of collection you had and to see, oh, you maybe have these things and these things.  Then they start talking about age slowly.  Like, what are the age of the actresses and oh, do you have a little bit younger?  How about a little bit younger?  A little bit younger?</p>
+
+<p>It became really creepy very, very quickly and I couldnât provide and I wouldnât provide because I had some that looked very young but I knew that those were porn actresses that were like, 22+, something like that, that I had looked up to make sure.  [MUSIC] But then I started getting some items that I honestly didnât know how young they were.  People started valuing those items more in certain groups and age was all of a sudden a huge value factor, so that the lower the age would get, the higher the value item, no matter if it was picture or video.  For comparison, a picture of an underage girl, a lot of people would value as the same value as five to ten normal porn videos.</p>
+
+<p>JACK:	Now, while heâs trading porn to people all day, every day, heâs still collecting tons of porn on his phone.</p>
+
+<p>DOC:	Maybe I was trading with someone and then they start sending some, and then I have to say oh, no CP, dude.  But I would still get these things and see them.</p>
+
+<p>JACK:	He was shocked that people had this type of content.</p>
+
+<p>DOC:	At first, some of the stuff I saw made me horrified.  Like, who would even keep this around and why would people send me this when I didnât even ask for it?</p>
+
+<p>JACK:	Then after he saw this a few more times, the shock wore off and after he saw it a few more times after that, heâd save that photo or video to his phone, still not giving it to others when they asked but keeping it because he was a collector.</p>
+
+<p>DOC:	Over time I got jaded, so I really didnât see the age as much anymore.  At some point I realized that hey, I have access to a lot of these â a lot of people are asking for it.  Well, sure.  The power got to my head and I was like okay, sure, I can distribute some of it.  But then I set a limit; I would not go below this age.</p>
+
+<p>JACK:	What was â what age?</p>
+
+<p>DOC:	The age was fourteen, I think.</p>
+
+<p>JACK:	Nothing below fourteen years old.</p>
+
+<p>DOC:	Yeah.</p>
+
+<p>JACK:	Mm-hm.</p>
+
+<p>DOC:	Again, as soon as I accepted that, it was just a downward spiral from there, really.  [MUSIC] After a while, some of the stuff â I just stopped caring and I just saw the value of the item itself, not what was actually in it.  It sounds horrible, I know.  It felt horrible when I realized it later but at the time, I didnât realize what I was doing and how bad it was.</p>
+
+<p>JACK:	Do you have any idea how old the people were that you were trading these with?</p>
+
+<p>DOC:	There was a wide range.  Like, the youngest people I talked to was around ten or eleven.  I wouldnât get â I never gave them any porn but a lot of people [00:35:00] were trying to â people who were child molesters, they were trying to get them to make porn and thatâs usually why they â why I got in touch with them, was not to get porn from them but because I was an admin in the same rooms, so they would come to me and say hey, this person is asking for nudes of me, and I would ban them, the people who were asking for nudes.</p>
+
+<p>JACK:	Oh, right, this app is targeted towards teens.  According to Kik, one in three American teenagers use Kik which means thereâs probably a lot of pre-teens on there, too.  Thatâs a really bad mix, when you have pre-teen children in the same chat room as people looking for child porn.  This is ugly.  This is really ugly and it canât end well.</p>
+
+<p>DOC:	The oldest I talked to I think were in their mid-sixties.</p>
+
+<p>JACK:	What the hell is a sixty-year-old even doing in this chat app?  Oh yeah, I know why; because porn and child porn is prolific on Kik.</p>
+
+<p>DOC:	I was in a lot of rooms.  When I was the most active, I was active in like, thirty or so rooms.</p>
+
+<p>JACK:	Thirty porn rooms?</p>
+
+<p>DOC:	If not more.</p>
+
+<p>JACK:	See what I mean?   I hate to say Kik just allows porn without knowing exactly what Kik is doing to stop this, but itâs incredibly easy to find porn in the app.  I mean, Doctor says he was in thirty rooms himself, so you can see that this isnât just a few bad people or just a small issue; there are a lot of people on Kik solely there for the porn.  Not only that, but many of these rooms are actively posting child porn.  How vast or how big is the child porn exchange system going on on Kik?</p>
+
+<p>DOC:	Never-ending.  If you use the right tags to search for when youâre searching for the private groups â not the private â the public groups even, you can find so many groups.  Itâs a very active scene, unfortunately.</p>
+
+<p>JACK:	So, the moderators of Kik â obviously thereâs moderators in each room but isnât Kik at all moderating any of this stuff?</p>
+
+<p>DOC:	Honestly, I donât know.  I think they try to, to some degree.  I know that they have some form of artificial intelligence running through some of the rooms looking for some things, trying to recognize some patterns and see if these and these things are posted, then they will close down the rooms, maybe ban the users, and make sure the content is no longer viewable.</p>
+
+<p>JACK:	How do you know that theyâre running that?</p>
+
+<p>DOC:	Because some people Iâve traded with, later on â if I look at the history of â chat history with them, I can go back and see oh, these things are no longer available and sometimes the rooms get shut down.</p>
+
+<p>JACK:	Okay.  I had to research this and this is what I found; Kik has a few methods to combat child pornography.  In 2015, Kik partnered with Microsoft to test Microsoftâs PhotoDNA service.  Apparently what Microsoft has is a database of known child porn image hashes.  Now, hashes arenât the images themselves; itâs just a string of text, like a fingerprint of the file.  If you have the hash, you canât generate the image from that but if you have the image, you can quickly generate a hash of that image.  So, Kik was somehow using this PhotoDNA technology to scan their images to see if there was a known child porn image on their site.  But Iâm not sure exactly how they did that or what they did when they found a match, or even if this PhotoDNA service is still in use anymore.  The last time I heard about it was in 2015.  In Docâs case, who started using Kik in 2020, he didnât see any evidence that would suggest that this isnât always on filter.  There were child porn images posted all the time to chat rooms and private messages and those rooms would stay up and online forever.  If you scroll back through the history in those chat rooms, you could see child porn that was posted long ago in the past.</p>
+
+<p>DOC:	From what I can tell, it only starts looking in the rooms and looking at individual people if they are reported for something.</p>
+
+<p>JACK:	So, if a user reports another user or chat room, then some kind of anti-child porn scan triggers and may remove content.  I guess from Kikâs point of view, [00:40:00] there are probably millions of images posted every minute in safe and clean chat rooms, so maybe itâs just too expensive or too hard to scan every image to see if itâs a known child porn image.  So, my guess is theyâre just not very thorough with trying to combat this.  But I donât want to just take one guyâs opinion about what he saw on Kik.  I want to do my own research on this and see if thereâs other evidence I can find about child porn on Kik.  Of course, Iâm not gonna go on the app and look for it myself.  Uh-uh; Iâm staying far away from that for sure, but if I search the internet for Kik and child porn, news stories just start jumping out at me.</p>
+
+<p>HOST1:	A Calabash man is accused of using an app to receive and send sexually explicit photos and videos of minors.  According to arrest warrants, 19-year-old Benjamin Lindsey used Kik â thatâs a messenger app â to distribute the images.  The unknown children are between the ages of seven and twelve.</p>
+
+<p>HOST2:	The court documents say Joshua Richard Harrison confessed to posting explicit photos of children through the app Kik.</p>
+
+<p>HOST3:	Milwaukee County Judge Brett Blommeâs Instagram page is filled with personal and professional highlights on his way to the judiciary, but after a search in Cottage Grove of one of his two homes and his arrest, authorities say his computer activity on the app Kik links him to child porn, with uploaded images and videos consistent with child pornography through the Kik app on twenty-seven occasions last fall.  Judge Blomme has been on Milwaukee Countyâs Circuit Court bench since August.  His assignment; childrenâs court.  As a bond condition, heâs now banned by a court of having unsupervised contact with minors.  The judge leaves this countyâs criminal justice system knowing he will return not to dispense justice but to potentially have to accept its consequences.</p>
+
+<p>JACK:	The news articles are continuous.  There was a guy in Tuscon, Arizona who was arrested for posting child porn to a chat room in Kik.  There was a guy in New Jersey who was arrested for trying to have sex with an underage girl on Kik.  In 2020, a New York man was sentenced to eleven years in prison for possessing 1,500 images and 150 videos of pornographic material involving minors that was distributed on Kik.  In 2020, an Ohio man was guilty for distributing child porn over Kik and got twenty years in prison.  There are so many more cases; in fact, Iâm looking at a BBC article now which is simply titled Kik Chat App Involved in 1,100 Child Abuse Cases.  Just as a cursory glance, Kik has a very big problem with child abuse.  Yes, this is child abuse; in fact, the common term Iâve seen used to describe this stuff is CSAM, spelled C-S-A-M which stands for Child Sexual Abuse Material.</p>
+
+<p>Itâs simply defined as any sexually explicit image or video of anyone under eighteen years old.  This can be a very traumatic experience for kids and the trauma comes right back any time they see the image again.  There are organizations out there fighting hard to stop the spread of this.  Now, before we get into those organizations, I want to know what Kik is doing about this.  So, I reached out.  I started where I normally reach out to anyone, which is Twitter.  Thereâs a Kik account on Twitter.  It has over 300,000 followers but looking at that account, they havenât posted a single tweet since October 2019, over a year and a half ago, which was the same month that MediaLab bought them.  However, in their bio, thereâs a link for help and I need help for sure.  So, I click the link which was help.kik.com.  The first time I clicked it, I got a 404 page; Not Found.  But then I clicked it again and it sent me to a Zendesk portal that doesnât exist.  The site just says âOops, that help center no longer exists.â</p>
+
+<p>Okay, so Kik has no social media anymore and their help portal is just abandoned.  They just seem to have completely canceled their Zendesk service and didnât bother to update the URL in their Twitter bio.  Alright, so next, letâs see if I can get help in the app.  While using the app, I did find a way to message the Kik team directly which is a perfect way to get in-app help.  So, I messaged them saying I need help, and the Kik team replies, ahoy there!  I say, there seems to be a child porn problem here.  What are you doing to stop this?  Their reply was, if you believe the message you received contains illegal content, please contact your local law enforcement agency.  You can also report this to our support team.  Then they give me a link for support, but the link they give me is help.kik.com which is the same link in their Twitter bio, the link thatâs been dead for years.  So, I tell them that link doesnât work.  They reply to me, follow us on Twitter; twitter.com/kik.  Iâm like, that Twitter account has been inactive for years.</p>
+
+<p>Then they reply, howdy!  At the point, I realized I was talking with a bot and [00:45:00] was getting nowhere and I was getting more frustrated.  I really want someone from Kik to talk with me, so I looked for another way to contact them.  I go to kik.com and click the Contact button.  There are two e-mail addresses there.  One is kiksupport@medialab.la.  The other is kiksafety@medialab.la.  The .la threw me off because the companyâs name is MediaLab AI, but okay, whatever, Iâll try these e-mails.  I e-mail Kik Support asking to speak with anyone there about this.  I get a generic response; thanks for e-mailing us.  We are experiencing unusually high e-mail volume and weâll get back to you whenever we can.  They never got back to me and itâs now been three months.  I sent an e-mail to Kik Safety; no reply.  Not even a confirmation that they got my e-mail.  Yeah, thatâs also been three months of waiting with nothing from them, either.  I go back to their website.  Whoâs running Kik, I wonder?</p>
+
+<p>Thereâs a link at the bottom of the page called Safety Center.  I click it; it has lots of information on being safe in the app but then at the bottom of the page are peopleâs faces.  Meet our Safety Advisory Board.  Thereâs a picture of Anne, Brooke, Justin, and Hemu.  These are their advisors and Brooke is specifically advising them on child exploitation problems.  Perfect.  So, I message her on Twitter.  No response.  I message her on LinkedIn.  No response.  I give up on her and start going down the line.  Anne is another advisor.  I send her a tweet.  She does reply but she tells me she hasnât worked on the Kik Advisory Board in years.  I also see Justinâs on the board.  I tweet at him but he replies saying nope, I havenât been on the board for years, either.  Okay, so this entire advisory board which is posted publicly on their website is no longer valid.  Iâm starting to think they donât have any advisors at this point and have not updated their website in years.</p>
+
+<p>It feels to me like MediaLab has abandoned Kik.  Their website is defunct, their Twitter is defunct, thereâs no phone number for them because thereâs probably no one to answer the phone.  Nobody appears to be home at Kik.  But according to the Google Play Store, the app is still getting updates.  About once a week itâll have some kind of update, so someone is clearly back there doing something.  But Iâm telling you, after trying for months and months and months to get ahold of someone, anyone, I was completely unsuccessful.  As far as I can tell, nobody is there.  Once again, MediaLab is who owns Kik.  They took it over when Kik was facing those SEC legal troubles and they knew it was losing money like crazy but theyâre trying to make it profitable with ads.  My theory is that itâs not profitable or MediaLab is just really trying hard to cut corners as much as they can by just not staffing effectively and not taking child pornography problems seriously.  They only do the bare minimum just to maintain the app.  To get more help, I called up my friend Katelyn.</p>
+
+<p>KATELYN:	[PHONE RINGING]	Hello?</p>
+
+<p>JACK:	Hello.</p>
+
+<p>KATELYN:	Hey, how are you?</p>
+
+<p>JACK:	Great.  Thanks so much for taking my call.</p>
+
+<p>KATELYN:	Oh, no problem.</p>
+
+<p>JACK:	This is Katelyn Bowden and sheâs badass.  In fact, sheâs so badass she started something called the Badass Army which stands for battling against demeaning and abusive selfie-sharing.  Basically, if someone takes your nude photos and posts them publicly without your consent, thatâs a problem.  Itâs devastating and Katelyn has been helping victims of revenge porn for a while now by doing things like helping people get their images removed from the internet.</p>
+
+<p>KATELYN:	Yes.</p>
+
+<p>JACK:	Have you ever had to try to get images removed off of Kik?</p>
+
+<p>KATELYN:	Yes.  Actually, that was one of the largest platforms that we worked with âcause there are so many different ways that these images are getting shared, and Kik is one of the platforms that people feel more anonymous on, so therefore theyâre more likely to do this sort of thing.  In the beginning it was almost impossible to get anything removed from Kik.  Then for like, a few months, right in the middle â I want to say it was toward the end of 2018 or so â they were really great about responding.  But it didnât last really for very long at all.  Suddenly everything just was going unanswered again.</p>
+
+<p>JACK:	When you say responding, thereâs â this is a non-consensual posting of a nude photograph; can you please remove it, and they would remove it?</p>
+
+<p>KATELYN:	Yes, they would.  Well, they would shut down the chat room that was â the picture was being shared in or they would shut down the userâs account that was sharing the image.  Or if law enforcement was contacting them, they would respond with the information that they were asked.  With Badass, we normally would use a DMCA.  There was the copyright violation and they [00:50:00] just would shut down what needed to be shut down.  It would remove the image.</p>
+
+<p>JACK:	Okay, so at some point they stopped removing images for you.</p>
+
+<p>KATELYN:	They stopped responding at all.  There wasnât even an easy way to get ahold of them.  Suddenly the e-mail â the e-mail that we had been sending our DMCAs to was no longer active.  For a while there was just no response at all.  Then eventually things were getting bounced back.  Then we found other e-mails for the company that had bought them and still just nothing.</p>
+
+<p>JACK:	Okay, soâ¦</p>
+
+<p>KATELYN:	It was like we were just throwing these e-mails out there and nobody was reading them.</p>
+
+<p>JACK:	That was a while ago.  Here we are in 2021; are â do you think these images are still up?</p>
+
+<p>KATELYN:	Well, actually, when you had brought up the subject of Kik with me, I was just curious; there was an account that I had used to infiltrate these picture-sharing groups.  I havenât used it in a while.  I havenât checked it in a while.  But it got my curiosity going and there was a court case about a year back where the creep that had been sharing the images was found guilty and sentenced and part of my job with Badass was helping the victim clean up the mess now that it was no longer needed as evidence.  So, out of curiosity, I went to that old account and I know that I had sent out DMCAs to get these images removed and then I just kind of â well, I was busy and I never really double-checked and triple-checked to make sure they were removed.  Much to my dismay, theyâre still up.  These images are found to have been illegal.  Itâs not like this is just a copyright violation or anything like that in their eyes.  These are images of a teenager that are still up and available.</p>
+
+<p>JACK:	Well, specifically under eighteen.</p>
+
+<p>KATELYN:	Yes, specifically under eighteen.</p>
+
+<p>JACK:	This is really frustrating me.  Kik has completely stopped removing revenge porn photos, too?  Or not even respecting DMCA takedown requests?  What the hell, Kik?</p>
+
+<p>KATELYN:	Well, the issue is that if Kik knows that these images are out there, they then are obligated to clean them up.  If they donât clean them up and they know about it, then theyâre in big trouble.  So, what theyâre doing right now is theyâre turning a blind eye to it.  Theyâre ostriching; theyâre sticking their head in the sand and pretending this isnât a problem.</p>
+
+<p>JACK:	Yeah, good point there.  If Kik doesnât know this is going on in their chat app, thatâs abhorrent.  If they do know and theyâre not doing anything about it, thatâs also abhorrent.  Thereâs no explaining the situation at this point.</p>
+
+<p>KATELYN:	The issue is that Kik doesnât moderate, okay?  So, thereâs nobody sitting there watching any of this stuff happen.  Unless they are being made aware of the issue, they donât know itâs happening.  Theyâre in big trouble for not moderating at all âcause theyâre allowing these illegal images to still be on their platform.  But the issue is if they know about it and they still donât do anything, then theyâre in much bigger trouble âcause then theyâre knowingly doing it.</p>
+
+<p>JACK:	Whatâs so frustrating about all this to me is that Kik doesnât seem to be held responsible for any of the problems that theyâre allowing to happen.</p>
+
+<p>KATELYN:	That is actually kind of a safe haven.  Iâm gonna say something thatâs gonna be extremely unpopular because â and even I donât like saying it.  That is that, Section 230, it makes it so that the platform itself is not responsible for what the users do on it.  If a user is committing a crime with the platform, the platform is not liable.  Until a method is found to incentivize platforms taking the initiative to delete these images and to make sure that their platforms are moderated, then thereâs no reason that they feel they need to do it.</p>
+
+<p>JACK:	Iâm getting really frustrated now.  My palms are actually sweating.  What does a person do when they get this frustrated?  Thatâs it; Iâm calling the authorities.</p>
+
+<p>JP:	[PHONE RINGING] Hi, Jack.  How are you?</p>
+
+<p>JACK:	Hi.  Thanks for taking my call.  So, letâs start out; who are you and what do you do?</p>
+
+<p>JP:	My name is JP Rigaud.  I serve as a Special Agent for the Ohio Attorney General Dave Yost Bureau of Criminal Investigation.  Iâve been an agent since 2012.</p>
+
+<p>JACK:	Okay, so, I have a crime to report.</p>
+
+<p>JP:	Oh, wait, you may have to talk to the police department for that, not me, but go ahead.</p>
+
+<p>JACK:	Okay, well, there has been quite a lot of child [00:55:00] sexual abuse material on Kik recently and I donât think Kik is moderating this.</p>
+
+<p>JP:	Weâve wanted to â it probably takes up a significant portion of not just, I think, the time of the agents that I serve with but the agencies that we help out.  Again, itâs â Jack, itâs fairly common that we are, in a sense, tackling these.  But as you know, itâs the World Wide Web; itâs huge.  Itâs well beyond what any agency themselves can take on.</p>
+
+<p>JACK:	JP went on to explain to me that whenever they receive reports of people trading child porn, they take it very seriously and investigate the person and make arrests whenever they find evidence.  The reason why I called him is because heâs dealt with this exact case a bunch of times.  Heâs dealt with child porn issues in the past and arrested people.  So, itâs true; they do take this seriously.  As we heard earlier, thereâs no shortage of news stories about people being arrested for trading child porn on Kik, which is good.  Those people should be stopped, but I feel like the common part of this story is that Kik is seemingly permitting this type of activity.  Is there some kind of legal trouble that they can get into for allowing this?</p>
+
+<p>JP:	Thatâs a good question.  I donât know.  Itâs probably a little bit too big of a â I want to say something for me to put my hands around and really, I would need to really pull in some minds in the sense of prosecution, some legal perspective on â Iâm not disagreeing with you that they should be about the work of making this a â how do I want to say it â a safer place not just for kids but for all of its users.  But I donât know that I could even speculate how that would happen.  But when I hear you say what can we do, just keep reporting.  I know NCMEC has been a fantastic organization.  In a sense, many times you see these reports of the arrests and whatnot but many times it starts from them.  In their history too, they were and they still are about the business of trying to protect and serve our communities in the sense of no, theyâre not law enforcement but they have that drive to see something resolved.</p>
+
+<p>JACK:	Okay, so his suggestion is to report this to NCMEC which is spelled N-C-M-E-C.  This is the National Center for Missing and Exploited Children.  They run something called the Cyber Tip Line.  The Cyber Tip Line was created by congress to process reports of child sexual exploitation and then take these reports and help enrich those databases of known child porn hashes as well as reporting it to law enforcement.  This is probably where that PhotoDNA service gets its hashes from.  The Cyber Tip Line puts out yearly reports on what it sees and in 2020 it received 21 million reports of child sexual abusive material.  Wow, thatâs a lot.  That poor person who has to go through all of those reports must have no hope for humanity.  But Iâm digging into this report to learn more.  Thereâs two groups of people who report to the Cyber Tip Line.  The first is just regular people like you and me.  If you see something, you can say something and tell the Cyber Tip Line.</p>
+
+<p>But in 2020 there were only 300,000 reports by the public, so whereâd those other 20 million cases come from?  The companies themselves who saw the explicit material on their platform self-reported.  For instance in 2020, Facebook the company reported 21 million times that they saw child porn on their site.  Google reported that they saw it 500,000 times.  Imager.com also reported 31,000 instances of child porn to the Cyber Tip Line.  So, how many times did Kik report child porn to the Cyber Tip Line in 2020?  Well, if I search for Kik in the report, itâs not present.  But if I search for their parent company, MediaLab, it is there and it says they reported 14,000 times to the Cyber Tip Line in 2020.  But itâs not clear if that was for Yik Yak, Whisper, or Kik since they own all these apps.  I asked NCMEC to clarify how many were for Kik specifically but they refused to provide extra detail.  Theyâre super busy anyway.  So, it seems like MediaLab is doing something but it just seems like the bare minimum here, like just enough to stay out of trouble or to be able to say in court yeah, we have filters in place and are actively reporting things to the Cyber Tip Line.</p>
+
+<p>But they can do so much more.  Theyâre letting so much go through without any consequences to the users trading it.  But are they in violation of any laws for permitting this activity?  [01:00:00] That part I donât know.  Iâm not a lawyer, but I do wonder about COPPA laws.  This is the Child Online Privacy Protection Act and it was put in place to safeguard the data of children who are under thirteen.  Now, in the terms of service on Kik, it explicitly says that anyone who is under thirteen is not allowed to use the service, but is that good enough?  I mean, we clearly know there are kids under thirteen on Kik, but does Kik know that, too?  In 2019, TikTok was under scrutiny for violating COPPA laws.  They were illegally collecting personal information from children under thirteen and they agreed to settle a lawsuit and paid 5.7 million dollars as a result of this allegation.  Surely if TikTok has been found to violate COPPA laws, then Kik must certainly be violating them too, right?  How do you get the FDC to create a suit against someone?  I donât know.  I suppose youâd have to start with evidence; screenshots, pictures, videos, chat messages.</p>
+
+<p>But thereâs no way Iâm going in there and collecting that.  You kidding me?  I know I donât have what it takes.  I think what we have to rely on is some watchdog group or government entity seeing the prolific problem that Kik is allowing and trying to bring them to court to prove what, though?  That theyâre negligent at fighting child porn on their app or even obligated to do that?  Section 230 says the app itself isnât responsible for something that the user does which might be illegal.  It might be really hard to prove anything here, so if a group brings this to court, good luck.  But that wouldnât be the first time Kik would face legal problems.  You already heard about their SEC lawsuit.  Well, they lost that case which resulted in Kik having to pay a  five-million-dollar fine.  Or, I guess the Kin Foundation had to pay that.  But even before that lawsuit, the parent company to BlackBerry issued a lawsuit against Kik saying they were infringing upon some BlackBerry copyright.  Kik settled that lawsuit and paid an unknown amount, so you can see that they havenât been the cleanest company legal-wise, but thatâs just with Kik Interactive.</p>
+
+<p>What about MediaLab AI, the company that owns Kik now?  Well, looking at PACER records, I do see a handful of lawsuits against MediaLab.  One was a teenager who claimed she was sexually harassed on Kik and she was suing simply because the app didnât warn parents clearly enough that pedophiles were active on this app.  That case got dismissed.  There was another lawsuit; it looks like WorldstarHipHop is saying that MediaLab published a copyrighted video.  That oneâs still going on, but thereâs one more thatâs pretty interesting.  MediaLab owns Whisper which is a chat app, but I guess you can share secrets with others anonymously.  Apparently in March 2020, a security researcher found that the Whisper database was sitting right there on the internet without a password.  This left a lot of people exposed; aged and locations of users were leaked.  If you looked at this database, there were 1.3 million users on Whisper who were fifteen and under.  In total there were 900 million user records in this database breach.</p>
+
+<p>So, this resulted in a class action lawsuit where people were saying they were suffering damages from getting their data exposed like this.  It should have been more secure.  MediaLab did reach a settlement agreement and paid the victims for this but we donât know how much was in that settlement.  The victims were seeking five million dollars but it just doesnât say what was agreed on.  Oh, and if you read the app reviews for Whisper, it also looks like that app is not doing well, either.  It seems like thereâs lots of scammers on the app now and maybe even prostitutes.  Users are reporting thereâs just not good moderation taking place there.  Yeah, it doesnât seem like MediaLab is the cleanest company legal-wise either, and apparently not the most secure because of their Whisper database breach.  But maybe thereâs the Parler option.  Remember Parler, that right wing social media app?  Well, after the insurrection on the US Capitol in January of this year, Google and Apple told Parler they must moderate their content or theyâll be removed from the app stores.  That was the line they drew; they had to moderate what was going on in the app.</p>
+
+<p>Parler didnât moderate their content and so, they got kicked out.  Perhaps Google or Apple should do the same with Kik.  Say hey, youâve got a real bad child porn problem going on here and youâre not working hard enough to fix it; either moderate or get kicked out.  By the way, this wouldnât be the first time Kik would be kicked out of an app store.  They were first kicked out of the BlackBerry app store after their lawsuit with BlackBerry.  BlackBerry really didnât like them after that and they just removed them from the BlackBerry app store.  Kik was also removed from the Windows Mobile app store.  This one looks to be more voluntary, though.  Kik was just done updating their Windows version and theyâre just like, weâre just done with this.  So, thatâs two app stores theyâre gone from, but theyâre still present and available in two of the biggest; Apple and Google.</p>
+
+<p>I think Google and Apple here have a solid ground to throw Kik out of the app stores.  I mean, itâs pretty easy to go into Kik and see for yourself all the child porn that exists in there.  You might have [01:05:00] to trade some child porn in order to see all the rooms to prove it yourself, but once you do, youâll be able to get access to rooms and see it for yourself.  But is that going too far, ganging up on Kik and kicking them out?  Yeah, itâs hard to know whatâs right and wrong these days, but letâs do a thought experiment.  Suppose this app had only one use which was to spread child porn.  If 100% of their users were there just for that, would anyone have a problem kicking them out of the app store then?  The question becomes how many bad users or violations does the app have to have before it can be considered for removal from the app stores?</p>
+
+<p>You know, when a bar that serves alcohol has too many reports of disorderly conduct, they can get their liquor license revoked, or if the bar doesnât prevent illegal activities going on in the bar, they can also have their liquor license revoked.  But there isnât any clear rule like that with social media apps.  The only way to get your app revoked is to have it removed from the app stores which are just private companies, and thatâs putting a lot of burden on the app stores to figure out who should stay and who should go.  It also gives them a lot of power, that they can just remove apps whenever they feel like it.  But looking at the Google Play Store, there are clear guidelines that all apps must follow to be listed in their app store.  Here, let me show you what they say.</p>
+
+<p>HOST4:	Before submitting your app, ask yourself if itâs appropriate for Google Play and compliant with local laws.  Our restricted content policies cover a broad set of topics.  Child endangerment is never acceptable on Google Play.  If an account is found to violate these policies, weâll take action, including reporting the account to the appropriate authorities.</p>
+
+<p>JACK:	Okay, so if the app is endangering children, then itâs not acceptable in the Google Play Store.  But thatâs not the intent or purpose of Kik.  Any chat app can endanger a child, so I guess it comes down to what the users are doing in the app.</p>
+
+<p>HOST4:	User-generated content hosted in your app must meet certain requirements including the implementation and use of content moderation and reporting systems.</p>
+
+<p>JACK:	A-ha, there it is; user-generated content must be moderated or you can be kicked out.  So yeah, thatâs where Iâm putting my finger, right there on that violation.  But I think it still would be pretty hard to prove you arenât moderating, because what does that even look like or mean?  Blocking curse words in chat room names could be considered moderating and they do that right now, so what do they really need to do or change here and how would they be able to prove that to Google if Google was mandating they do this?  Itâs really tricky stuff.  Also, donât just take my word for this.  Try this; Google the word Kik, K-I-K.  Then click the News tab on Google so you see all news articles about Kik.</p>
+
+<p>I guarantee you the first three, maybe even ten pages of results are all about child porn on Kik.  If all the news articles about your company are talking about child porn on your app, then that should be clear evidence that your company has a very bad child porn problem.  Other major publications have highlighted this problem, too.  Thereâs a Forbes article which is titled The $1 Billion App Kik Canât Kick its Child Exploitation Problem.  That article was written in 2017, way before MediaLab even bought them, so this isnât a new problem for Kik.  Thereâs also a New York Times article which is titled The Wild, Popular App Kik Offers Teenagers and Predators Anonymity, and that article is about how two college guys coerced a thirteen-year-old on the app to meet them in real life, and then they killed her.  If you Google other chat apps like WhatsApp, WeChat, Signal, you simply donât see articles like this or articles about child porn almost at all.</p>
+
+<p>So again, this is more proof at how rampant the child porn problem has become on Kik.  I want someone to investigate this further, to really know whatâs going on, someone who has the teeth, who can actually make something change from all this.  All I can do is underline and highlight that this is a problem, but nothing is going to actually happen from me talking about it on this episode.  Itâll be someone else who actually has power to do something that will actually make a change.  [MUSIC] That brings us back to Azrael.  Azrael is the hero you didnât know you needed.  Remember last we heard he was just getting into using modified Kik clients to take over chat rooms?  Yeah, well, he was doing good with that Kik clan and then he joined a new clan called Xensec.  Now, because he was the new guy, they wanted him to prove himself.</p>
+
+<p>AZRAEL:	What they wanted me to do was they wanted me to either bait somebody into proving themselves â proving to us that theyâre a pedo or they wanted me to grab a pedoâs IP and basically [01:10:00] get all their ISP information and all that stuff.</p>
+
+<p>JACK:	Okay, whoa, whoa, whoa, this is the first time weâve heard the word âpedoâ on here, on this interview, so was this the first time youâre experiencing that thereâs pedophilia on â orâ¦</p>
+
+<p>AZRAEL:	It was the first time that I saw that pedophilia was a large-scale problem, yeah.  Xensec focused solely on the pedophilia problem.</p>
+
+<p>JACK:	So, okay, so when they said that to you, you must have been like, the what problem?  How am I supposed to find these guys?</p>
+
+<p>AZRAEL:	Kinda, yeah.  It was like, alright, so how do I get a pedo to do this?  At the time, I had a stanza that â I plug in my link to the stanza and it basically shows up on the receiving end as an invisible picture.  Then theyâre like, why isnât this loading?  They click it; I have their IP, get all their ISP information.  So, thatâs what I used.  Basically what happened was one of our other members came in and dropped an @ of a known pedophile.  I was likeâ¦</p>
+
+<p>JACK:	You dropped a what?  An app?  An @?</p>
+
+<p>AZRAEL:	An @, so, yourâ¦</p>
+
+<p>JACK:	Oh, so itâs just your username.</p>
+
+<p>AZRAEL:	â¦profile â yeah, dropped their username.  I was like, you know what?  Fuck it.  Not doing anything.  Letâs get this dude.  [MUSIC] So, I dropped the stanza and then I said something to make it so he would open the chat.</p>
+
+<p>JACK:	Okay, so a classic phishing scheme.  He said something that he thought a pedophile would be interested in to get them to read his message.  But that stanza of code he put in the private chat would collect more information on this person if they read the message.  It basically tells the Kik client to reach out to a website for something and when the user goes to that website, Azrael can see what IP just went there and the IP can tell him what city and location this user is in.  While you can use a VPN with Kik, Iâve been told that Kik just doesnât work very well over VPNs.</p>
+
+<p>AZRAEL:	Exactly.  Let me tell you, dude, pedophiles will click anything.</p>
+
+<p>JACK:	So, he collects this extra information on the suspected pedophile and then reports all of what he finds to the admins of this new clan that heâs trying to get into.</p>
+
+<p>AZRAEL:	The adminâs like oh, you didnât even tell us you were doing that.  Thatâs great.  Youâre one of us.</p>
+
+<p>JACK:	So, he was now in a Kik clan that specifically targets pedophiles and child-porn traders.</p>
+
+<p>AZRAEL:	When I say pedophile, especially on Kik, I mean people that are sharing straight-up mega links to terabytes of CP.  Itâs just, it literally makes me sick to my stomach to think that this is out there.  You know what I mean?  People are exploiting children and people are paying for it and sharing it on a childâs app.</p>
+
+<p>JACK:	[MUSIC] Iâve been the guest of honor in this clan.  Iâve got to go in and check it out, and itâs wild.  Theyâve got bots that are there collecting all kinds of information, and any time the chat room finds a person involved with this kinda stuff or a chat room, they just feed it to the bot.  The bot has a list of all bad actors in chat rooms and when the clan is ready to do a raid, they know exactly what channel to hit.  Then the people in the clan will get their souped-up versions of Kik and go raid different chats in an attempt to take over the chat room and close it down.  They all pile into a channel and then start spamming it.</p>
+
+<p>AZRAEL:	So, thereâs two different types of spam codes.  Thereâs a QOS attack code which is literally just as much as you can pack into a single chat bubble.  Then there is crash codes.  Crash codes rely on actual zero-day exploits within the Kik system which will force-close your app if you look at the code.</p>
+
+<p>JACK:	Now, they could use some tricks to try to take over the chat and close it down, or they could just try scaring people.</p>
+
+<p>AZRAEL:	We rely honestly heavily on the fear factor.  If somebody comes in and just spams your room and you donât know whatâs happening and their account looks scary and the bot theyâre using looks scary, youâre just going to assume that person is scary.  If you are forced to exit the chat, how did they do that?  How am I gonna join back?  What happens if I join back?  You know what I mean?</p>
+
+<p>JACK:	So, youâve gone in and spammed lots of pedo rooms just â how many do you think your crew has spammed at this point, [01:15:00] or raided?</p>
+
+<p>AZRAEL:	We have hundreds.  I personally have only raided ten or so myself.  I prefer phishing at this point, taking accounts that way, because if I log into an account, I am taking that account out of play.  If he owns rooms, I can purge them.  If heâs victimizing a child, Iâve cut contact.  You know what I mean?  But we have hundreds of rooms that people who are better at spamming and attacking have taken.</p>
+
+<p>JACK:	I want to remind you that all this is done on mobile devices since Kik is just a mobile app.  How many phones do you have?</p>
+
+<p>AZRAEL:	One.</p>
+
+<p>JACK:	Youâre doing all this on one phone?</p>
+
+<p>AZRAEL:	Yes.</p>
+
+<p>JACK:	With multiple Kik apps installed?</p>
+
+<p>AZRAEL:	I have â let me count my Kik apps for you.  One, two, three, four, five, six, seven.  I have seven Kik accountsâ¦</p>
+
+<p>JACK:	So, this must beâ¦</p>
+
+<p>AZRAEL:	â¦on this one phone.</p>
+
+<p>JACK:	â¦each is a different APK âcause I donât think you can make the same APK installed, you knowâ¦</p>
+
+<p>AZRAEL:	Yes.  Yes, so I have seven different APKs.</p>
+
+<p>JACK:	So you have to have multi-task on your phone, like oh, letâs go to all these different Kik apps.</p>
+
+<p>AZRAEL:	Yep.</p>
+
+<p>JACK:	Oh man, that just must be like â that must be an evening.</p>
+
+<p>AZRAEL:	Itâs a lot to do all at once and every single time I raid, my heart is racing.  Itâs such a rush âcause thereâs â youâre doing so much all at once and if you fuck up one little thing, your raid stops.</p>
+
+<p>JACK:	Now, Doc, the guy trading this stuff on Kik, has seen these raids in his chat rooms.</p>
+
+<p>DOC:	Yeah, multiple times.</p>
+
+<p>JACK:	Of course, he finds it annoying.</p>
+
+<p>DOC:	Usually itâs not that effective but I have seen sometimes where one person comes in, starts talking, being nice, and then they realize thereâs child pornography in this room and they start sending very, very hateful messages almost as if a bot takes over, because they send it to a lot of people very, very quickly.  Then they start spamming messages, often just some long copy-paste message they send over and over and over again.  They get banned by the admin but then later, they join again.  They shouldnât be able to join because theyâre banned but they do, and then they start spamming again.  Then another person comes in and starts spamming, and then another person comes in and starts spamming.  Then thereâs usually three or four people at least that keep spamming and no matter what you do as an administrator, you cannot get them out.  They keep being able to join for some reason, and then people start leaving because itâs annoying.  Because even if you block this person yourself, you will still see that a message is being hidden from you, so you will still see these â âthis person has been blockedâ, âthis person has been blockedâ filling up your screen over and over again, so the rooms kinda die from that.</p>
+
+<p>JACK:	Has your account ever been crashed?  Does your app crash sometimes or hang or you just canât type anything anymore?</p>
+
+<p>DOC:	My app didnât crash but I know that a lot of peoplesâ apps did.  I think I was just generally using a good phone.  People on iPhones usually had their apps crash.</p>
+
+<p>JACK:	What a weird battle this is.</p>
+
+<p>AZRAEL:	In my clan right now, we have literally thousands of chats, hundreds of accounts that need to be taken down.  Thereâs only twenty of us.  We can only do so much.  Itâs gotten to the point where I literally have nightmares about a child being victimized because I didnât take out that chat or that account.</p>
+
+<p>JACK:	I thought it was ridiculous to talk about chat-raiding clans at first.  Then, I guess I still think itâs ridiculous.  Like, what does this even matter, right?  But now it looks like Azrael is a vigilante of some kind.  He uses his raiding skills for good.  He cares about combating child porn so much that he feels like itâs his duty to do something.  He canât just stop when he knows itâs constantly going on and no one is stepping up to fix this problem.  Now, Azraelâs clan has of course reported numerous people and chat rooms to Kik.  They say for the most part, Kik does not take action.  If they do take action, itâs typically months later and then they might see a ban or a [01:20:00] closed channel.  So, theyâre doing their part by telling Kik about this problem.</p>
+
+<p>AZRAEL:	Recently I tried to â so, Iâll grab somebodyâs ISP information, run that through some tools to get as much information as I possibly can, and then I will drop that to the Federal Bureau of Investigations Cyber Crime Division which is absolutely scary to me because cyber-crimes.  Iâm firmly grey hat, so I could get myself in trouble.</p>
+
+<p>JACK:	Yeah, I mean, what heâs doing is phishing people and doxxing them and heâs using a hacked Kik client that goes against the terms of use on Kik, too.  I bet if Kik knew about the clan or Azrael, they would immediately ban them from the app because theyâre breaking the terms of use, which is just ridiculous.  Yes, the power they have can be used for something awful, but theyâre using these powers to fight something much more awful on Kik.</p>
+
+<p>DOC:	At a point, I kinda realized what I was doing and how bad it was, and I â well, really, I freaked out and I didnât sleep for like, two whole days.  In my sleep-deprived state, I sent an e-mail to you which probably looked kinda panicked in a way.  It was, and I was â I needed a voice of reason, someone I trusted who knew sort of the inside of how different IT security things work and who knew the potential of me having the contacts I did, but also the danger of having the items.  I was being â Iâve been told by you that I should delete them.</p>
+
+<p>JACK:	Yeah, I said why donât you just delete everything?  Uninstall the app and stop?</p>
+
+<p>DOC:	Yeah.  In my power state, in the state of having that much power, it was tough.  It was very, very hard to do because it felt wrong.  I had worked very, very hard to get more than 8,000 items, items that I had catalogued in my head, so I knew them by heart.  I knew so many things that I had, all these things, and people look up to me.  I was being told to delete them, to throw away all this power.  It took me three more days and I talked to a friend of mine whom I really, really trust about it as well.  I ended up deleting it.  I deleted everything I had.</p>
+
+<p>JACK:	You think someone should just go shut this thing down like they did with Parler?</p>
+
+<p>DOC:	I want Kik to shut down but I also want the police to actually utilize what is right in front of them.  Kik is such an easy place to get â to spot and catch predators, but they arenât being caught in there.  Things are running rampant and they could use this tool at their disposal, but theyâre not.  While I want it to close, I also want it to be exploited by the police, so to speak.</p>
+
+<p>JACK:	You might be wondering maybe this is some sort of honeypot set up by the police.  Well, thatâs actually happened a few times.  Thereâs a Forbes article about a guy who was arrested for trading child porn on Kik.  The police commandeered his phone and got access to his Kik account, but they didnât delete it or shut it down.  They made a deal with this child porn trader to keep trading on Kik so they could collect information on other Kik pedophiles.  The guy made the deal and stayed on Kik trading child porn while the FBI watched over his shoulder.  Itâs weird and creepy as hell that this happened because this Forbes article says itâs not clear if the FBI actually caught anyone else from this operation.  Whatâs more is that Forbes asked Kik about this operation and Kik had no idea there was an undercover operation going on in their chat app.  So, this tells me Kik wasnât working with the FBI on this one.  All this is to say that yeah, while the police may be using the app to do some sort of sting operations, I donât think thereâs any major coordination between Kik and the FBI to conduct lots of sting operations or anything.  If this is some sort of honeypot, itâs permitting quite a lot of vile stuff to get through the cracks.</p>
+
+<p>KATELYN:	I absolutely do believe that Kik should be held to the same standards as every other social media platform, including Parler.  If theyâre refusing to moderate and refusing to remove illegal content, [01:25:00] then they donât have a place among the app store if thatâs the way that they want to do business.</p>
+
+<p>AZRAEL:	I have really mixed emotions about that.  This is my hacker origin story.  I came from Kik.  Everything I know came from Kik.  To have it shut down would hurt me but after everything Iâve seen and everything Iâve experienced, Iâm scared that thereâs really no other way.  I also strongly dislike the idea of the powers that be just flipping a switch.  You know what I mean?</p>
+
+<p>JACK:	No, I donât.  Why would that be a thing?  I think it would shut down this whole system and thatâd be great.</p>
+
+<p>AZRAEL:	It would, but then thatâs a scary line to cross, you know?  With Parler, I never got on Parler, so I canât exactly say they didnât deserve it.  But I donât think anybody deserves it.  You know what I mean?  Nobody should be able to just flip a switch and just end things but in terms of Kik, I think that might be the only way.</p>
+
+<p>(OUTRO):	[OUTRO MUSIC] Thank you Azrael and Doc for sharing your very personal stories with us.  Also, thank you to Katelyn Bowden and JP Rigaud for lending your voice and being part of this, too.  If you ever encounter child porn yourself, please report it to the Cyber Tip Line which you can find at cybertipline.org.  If youâre a listener all caught up and canât wait for more episodes, then you must find this show valuable, so please consider donating to the show on Patreon.  This will tell me loud and clear that you love it and want more of it, and itâll give me the means to keep it going. So please head over to patreon.com/darknetdiaries and show your support.  Thanks.  This show is made by me, the leader of the operators, Jack Rhysider.  Research and fact-checking by the disciple Sean Summers, editing help this episode by the pack leader Damienne, and our theme music is by the rust devil, Breakmaster Cylinder.  Even though the NSA is one of the few government organizations that actually listens to you, this is Darknet Diaries.</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

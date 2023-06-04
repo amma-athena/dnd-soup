@@ -1,0 +1,485 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>Operation Socialist â Darknet Diaries</title>
+	<meta name="description" content="This is the story about when a nation state hacks into a company within another nation.">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Operation Socialist â Darknet Diaries">  
+	<meta name="twitter:description" content="This is the story about when a nation state hacks into a company within another nation.">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/opsocialist.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/48/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Operation Socialist â Darknet Diaries" />
+	<meta property="og:description"        content="This is the story about when a nation state hacks into a company within another nation." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/opsocialist.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/48/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/opsocialist.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/48/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="Operation Socialist â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/opsocialist.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 48: Operation Socialist</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://traffic.megaphone.fm/ADV5331304146.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/48/",
+			   "title": "Ep 48: Operation Socialist"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/48">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[FULL TRANSCRIPT]</p>
+
+<p>JACK:	 [MUSIC] Itâs naÃ¯ve to think that nations arenât spying on each other, like deploying secret agents in each other countries.  But in the modern times we live in, when nations rely so heavily on computers to store communications and data, that spying is now done online.  Governments train people to become elite hackers, to break into networks of other countries and snoop on their e-mails and databases.  You see, in cyberspace, the rules are unclear on what one nation can do to another.  The geographical boundaries are unseen and the attacks go undetected.  Even if you see an attack, itâs almost impossible to know who did it.  Nation state cyber-attacks intent on spying are covert and silent.  The malware they use can be sitting inside the network of targeted industries and organizations for years before theyâre found.
+<!--more--></p>
+
+<p>Thatâs if theyâre ever found at all; in that time, they are collecting data, spying on their targets before quietly leaving with their surveillance gear intact.  Or at least, thatâs whatâs supposed to happen.  This is the story about one of the most advanced malware toolkits ever found and how one country used it to break into a global telecom provider.  Itâs a story that attackers didnât ever want you to know about.  This attack and the malware and mission required a ton of resources to carry out, resources that only a nation state could provide, such as a team of extremely talented hackers, access to exploits that no one else had, and the motivation to infiltrate a company to steal secret information.  This is the story of Operation Socialist.</p>
+
+<p>JACK (INTRO):	[INTRO MUSIC] These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	This story begins with Belgacom.  Itâs actually now called Proximus Group now, but the story takes place when it was known as Belgacom.  Belgacom is an international telecoms company based in Belgium.  It provides mobile and internet connections and solutions for consumers and other mobile networks internationally.  Over 15,000 staff, over five million mobile customers, and 1.5 million internet clients.  Belgacom is a big player in the world of telecommunications.  In fact, itâs the largest telecom company in Belgium.  [MUSIC] With Brussels being the primary location of Europeâs political bodies and Belgacom headquartered in Brussels, you start putting two and two together pretty quickly.  Chances are, a lot of Belgiumâs top political leaders use Belgacom for their internet and mobile services.</p>
+
+<p>The client list of Belgacom includes the European Parliament, the European Council, the European Commission, but Belgacom didnât just provide mobile and internet connections; their services also include wholescale solutions for voice and mobile data services worldwide.  In fact, they have another company called BICS which is the Belgacom International Carrier Services and it provides data for 1,000 networks including 370 mobile network providers.  Basically, telecom companies in other countries can use Belgacomâs network to rebrand it and sell it as their own network.  If you think about how many text messages, phone calls, and all the internet usage that go over Belgacomâs network, that becomes kind of an attractive target for hackers.  On June 21st, 2013, the IT security team at Belgacom headquarters in Brussels noticed their e-mail server was malfunctioning.</p>
+
+<p>Staff werenât getting their e-mails.  This had happened a year before; a short period of instability that they put down as a technical fault.  Probably the same again, they thought.  Still, they needed to check it out to be sure but there was no technical fault on their mail servers.  What they found were traces of malware.  [MUSIC] A malware attack that had infiltrated their networks is a disaster for a company like Belgacom, one [00:05:00] which could cost them millions of dollars, never mind their reputation.  The head of security immediately called Fox-IT which is a security company in the Netherlands which has the reputation of doing incident response.  Within a few days, the team at Fox-IT were there at Belgacom investigating the malware.  They realized this wasnât your ordinary, run-of-the-mill malware.</p>
+
+<p>You see, there are three main categories of attacks; first youâve got your typical spray-and-pray kind of attack.  This is where someone scans the whole internet looking for any vulnerability to exploit and not really caring who the target is; just see if they can get into anything.  Then youâve got your targeted attacks.  These are people who want to gain access to a specific company or person and theyâll try to craft exploits that work specifically for that target.  But if they canât get in, they sometimes run out of resources and stop.  But then there are the APTs, or Advanced Persistent Threats.  This is an attacker who is much more sophisticated.  They have better malware, a vast amount of knowledge, a lot of motivation, and a specific objective in mind, and also considerable resources.  They might have a team of coders and electrical engineers to all assist with the attack.</p>
+
+<p>When Fox-IT investigated this malware, they thought they had an APT on their hands.  This was a very sophisticated attack which required years of research to conduct and carry out, something that not many hacker groups in the world could accomplish.  Whatâs worse for Belgacom is that this malware was not like anything the security teams had ever seen before.  They were baffled; what is this?  How did it get in?  What was it trying to do?  Over the next two weeks, they worked together to try to find out exactly what was going on.  Belgacom had been hacked.  They knew that, but how bad were they hacked, and for how long, and by who?  Initial investigations found a program that installed the malware on their networks; a dropper.  A dropper is sort of like sticking your shoe in the door of a building.  If you can get just your toe in the door, then you can get your whole foot in and open the door and get in yourself.</p>
+
+<p>A dropper lets the malware into the computer.  Whatâs weird though is that this was done in stages, a little bit at a time, hiding the evidence across multiple data files.  Once it was all there and installed, it deleted itself and left no bread crumbs behind which would give the hackers away.  This process of hiding evidence is scary to me.  It essentially wipes the logs that indicated anything was ever installed, so investigators would have a really hard time detecting this and looking back to see what was done.  Like, who does this?  Someone who doesnât want to be caught, thatâs who.  Amateurs leave tracks behind, but professionals, they donât leave anything.  [MUSIC] Analysis found the malware had started to install at the end of 2010 to early 2011.  Out of the 26,000 systems that were in Belgacom, only 124 were infected with this.</p>
+
+<p>These include their e-mail servers, some network devices, a few SharePoint servers, and about seventy individual employeesâ workstations; like, their sysadmins who had pretty much access to everything.  It was looking like this malware was brand-new, not known by any antivirus company, and was exploiting fully up-to-date software.  It meant that the bugs werenât even known to the software companies themselves.  Thoughts were quickly turning as to who might be behind this attack.  Whoâs capable of designing such a sophisticated malware?  Among the many known hacker groups, even individual hackers who are skilled in coding, this malware was on another level.  They concluded it was most likely designed and implemented by a nation state actor either from within another government itself or from a group that was funded by a government.  Highly-advanced coding, very advanced installation, technically skilled operations, and stealth-like ability to hide for long periods of time.</p>
+
+<p>On June 19th, they filed a complaint with the Federal Public Prosecutor in Belgium.  They told them they had been a victim of an advanced malware cyber-attack.  The attack, they said, was using malware, they believed, that might be nation state-sponsored.  When a company discovers they have been the victim of a cyber-attack, they need to go in their networks and clean it up as soon as possible but part of that process is the analysis and investigation of the malware to identify what it is and what itâs been doing.  This has to be done properly which can sometimes mean not letting the hackers know you found them.  The internal clean-up of Belgacomâs systems had to be done in secret, strictly on a need-to-know basis to find out just how extensive this attack was and make sure their clean-up operation got it all.  What they were doing could not get out.</p>
+
+<p>For two long months a select team of two hundred Belgacom staff worked around the clock to address the multiple issues this attack had created.  They had technical staff, lawyers, supply chain specialists, and they all came together to formulate a plan of action.  [MUSIC] [00:10:00] There was an internal crisis team to manage the investigation into the attack.  Coordinating with outside agencies included state security and federal and regional computer crimes units.  Legal advisors were needed to advise on the legal ramifications of the attack and potential options open in finding those responsible and holding them accountable.  They wanted to kick these hackers out of the network once and for all and if the world knew about this plan, then the hackers might change their tactics entirely.  For forty-eight hours across the weekend of September 14th and 15th in 2013, their clean-up plan was put into action.</p>
+
+<p>Because this attack had infected their network to the very core, they replaced a ton of Belgacomâs network devices and their systems and they reconstructed their servers and installed all-new computers.  I mean, after all, one of the safest ways to know a hackerâs gone completely is to get a new computer, right?  At that time the investigation and security teams were still trying to identify how many systems were infected and what the malware did.  Two days after this mammoth clean-up weekend, security detected another attempt to hack into their system.  A router within their international division started malfunctioning and throwing alerts.  Analysis indicated this was another attack but it seemed this time they were able to prevent it and block it from getting any further access.  Only then, once they were confident that the networks were clean, could Belgacom publically release this information that they were victim of a cyber-attack.</p>
+
+<p>On September 16th they issued a press release.  They kept it very brief; they played down the attack.  Routine checks had detected a digital intrusion in the internal IT systems via an unknown virus but this has been fixed after cleaning up the entire system with no indication of a breach affecting their customers or their customersâ data.  They wanted to reassure their clients that their data was safe and the company was adequately protected from cyber-threats.  Unknown to them, just days later after the attack, an explosive allegation of who was behind this was about to hit the worldâs press.  [MUSIC] Thereâs another character in this story, someone you may have heard of.  His name is Edward Snowden.  He was a CIA analyst and then an NSA contractor.  With his inside access, he downloaded over one million files from the NSA databases in late 2012.</p>
+
+<p>He flew to Hong Kong and then to Russia in June 2013 which was the same time Belgacom found out they were attacked.  Snowden was releasing some top-secret documents to journalists.  This Snowden leak became a big deal.  Some of the documents that Snowden leaked talked about the operations going on in GCHQ.  GCHQ, or the Government Communication Headquarters, is like the NSA but in England.  Just think about how advanced the code-breaking capabilities were for England in World War II, right?  I mean, they broke the Enigma Code.  Yeah, well, the GCHQ has been involved in code-breaking and deciphering covert signals all the way back to World War I.  They have generations of expertise all at collecting transmissions and deciphering them.  Of course, being in the modern world we are in now, that expertise carried over into the online world so GCHQ naturally is a very capable hacking group in the world.</p>
+
+<p>In June of that year, when Edward Snowden leaked information, in that leak it said that GCHQ allegedly was tapping fiberoptic cables to collect and store e-mails, social media posts, and internet search histories, and sharing this data with the NSA.  This doesnât exactly say GCHQ hacked into Belgacom, just that they were tapping going on a general.  Snowdenâs leaks also said the US government spied on thirty-eight foreign embassies using electronic surveillance and they bugged European Union offices in New York, Washington, and Brussels.  As the Belgacom team read these reports and was learning more about the capabilities of the GCHQ, they started to put in the back of their head; is it possible that the GCHQ is who hacked into Belgacom?  Five days after Belgacomâs weekend clean-up and three days after their press release, the fortieth leak from the Snowden archive was published.  It centered on Belgacom.</p>
+
+<p>[MUSIC] German online magazine Der Spiegel published that they had seen the documents from Snowden.  They said the cyber-attack on Belgacom was carried out by Britainâs GCHQ using technology from the NSA called Quantum Insert.  For Belgacom to see this Snowden leak which not only says that GCHQ was targeting Belgacom, but also to learn that they used Quantum Insert to do it with?  This was a very shocking revelation.  Iâll get to what Quantum Insert is in a little bit but Belgium and Britain are friendly nation states.  Theyâre both members of the European Union.  What was one doing spying on the other?  This wasnât [00:15:00] government spying on government; it was one government spying on a company in another government.  I mean, this is equivalent to having secret agents deployed into Belgium, break into the Belgacom offices, and steal a ton of documents on users.</p>
+
+<p>This was not right.  The documents that Der Spiegel posted showed an internal classified GCHQ presentation, like a PowerPoint presentation.  In this presentation, it talked about the attack on Belgacom and the GCHQ called this attack Operation Socialist.  With an objective to increase exploitation of Belgacom and understanding of their infrastructure, the British spies had logged it as a success.  Whatever it was they went in to do, they did it, but they were caught on the way out.  Telecom companies are used to threats and attackers trying to break into their network all the time.  Theyâre high-profile targets because getting into one of these gets you access to a lot of peopleâs data.  They manage extensive communications, infrastructures, and hold huge amounts of sensitive user data.  They have a highly-secured environment with skilled IT teams to defend their network and respond to any vulnerability.</p>
+
+<p>Theyâre pretty tuned into the many ways cyber-criminals might try to get into their systems.  But trying to defend against the GCHQ or NSA, they really need to be on another level for that.  Apparently, they werenât ready for such an attack and I donât blame them; trying to defend against attackers like this is extremely difficult, if not impossible.  For the hackers, when standard phishing attacks arenât effective, another method needs to be done in order for the malicious software to get onto those systems.  The GCHQ had to first think of a way to get this malware onto Belgacomâs network.  There are two big steps to any attack; first is getting the malware onto the network and then taking action on it once itâs in.  To get the malware onto the network, they decided to use a tried-and-true tactic which I call the old switcheroo, but this was a switcheroo unlike anything Iâve ever seen before.</p>
+
+<p>[MUSIC] Now, I should say all this is how GCHQ allegedly hacked into Belgacomâs network.  See, thereâs different sides to this story.  Thereâs the Belgacom side and what they published and then thereâs the Snowden side and what he published, and then thereâs also a bunch of security researchers that tried to figure out what was going on here, too.  We only know about this part because of what Snowden leaked and I donât think any other documents back this up.  The GCHQ knew the system administrators at Belgacom would visit LinkedIn sometimes so they decided to pull the old switcheroo on their LinkedIn.  They built a fake LinkedIn site, an exact replica of the real one, and they wanted to get the system administrator to visit it.  Yeah, they could have sent a phishing e-mail saying something like hey, we met at this conference last week; can we connect on LinkedIn?  Then thereâs a link that takes them to the fake LinkedIn site.</p>
+
+<p>But that wasnât going to be good enough because if the system administrator saw this was a fake LinkedIn site, the whole plan would have been ruined.  They needed something much, much more clever and what they used was a technology that the NSA developed called Quantum Insert.  This Quantum Insert is amazing.  Allow me to geek out on it for a moment.  First step is to clone the LinkedIn website and thatâs not so hard; with the right software, itâs a few keystroke commands and youâre done.  Then you need to put malicious software on this cloned website so if someone visited it, they would be infected.  The only complicated part about this step is to know what version of software your target is running so you can exploit their machine if they visit the link.  But once you know that, this step is easy, too.</p>
+
+<p>But hereâs where things get crazy; if the hackers had access to a router in between the victim and LinkedIn, then the hackers could then see that web traffic between the victim and LinkedIn.  What Quantum Insert does, is it uses that router to split the request to LinkedIn into two separate requests; one going to the real LinkedIn site and the other going to this fake LinkedIn site that the hackers own.  What has to happen for the attack to work is that the fake LinkedIn site has to respond quicker than the real one which then delivers the malicious software to the victimâs machine whoâs none the wiser because thereâs literally no way they can tell itâs not the real LinkedIn site.  The URL says LinkedIn, the SSL cert is signed, the site looks like LinkedIn.  Even all their friends and posts are there.  Itâs just, this rogue website injected some malicious software into the real one by splitting the traffic at the router.  Itâs really quite incredible.</p>
+
+<p>This is sort of like a man-in-the-middle attack but itâs also a timing attack because the fake LinkedIn site has to respond quicker than the real one and then rejoin the data in the data stream as the user requested it.  The malware had to have taken at least a year to create and this is on such another level that I can barely understand how itâs physically possible.  But again, in order for this to work, the attackers need access to a router between the victim and LinkedIn, so you might be wondering how does the GCHQ control any router between an admin at [00:20:00] Belgacom and LinkedIn?  Well, they might not, but the NSA probably does.  See, LinkedIn is an American company so probably, the traffic has to travel through the US, right?</p>
+
+<p>The leaked documents from Snowden show the NSA does control some internet backbones and routers so itâs possible that the NSA helped the GCHQ conduct these attacks to get the initial access.  Or maybe itâs possible that Belgacom first hops over to UK before going undersea to the US to get to LinkedIn.  If thatâs possible, then GCHQ might be controlling a backbone router in the UK somewhere.  Like I said, this is sort of a man-in-the-middle attack but actually, some call it a man-on-the-side attack, where the attackers can read and add new messages into the communications between the user and the legitimate web server.  For this to work, they use something called a Quantum Server which is just a web server that has an extremely fast response time so that it can get the web traffic there before the legitimate server does.  This is what I mean by how sophisticated of an attack this was.  You need to have control of a backbone of the internet to carry this out and thatâs just to phish the user; we havenât even gotten to the malware yet.</p>
+
+<p>[MUSIC] Belgacom is a company thatâs 53% owned by the Belgium government.  This made them extra-keen to find out who had targeted the countryâs biggest telecoms company.  Belgacom had informed the authorities as soon as they found the malicious software on their systems.  Belgiumâs Secret Service, their federal police, their military intelligence, and their computer emergency response team came together to investigate this attack.  They code-named their investigation Trinity.  Belgium wanted to send a clear message of anyone thinking of attacking them through cyber-means; they would investigate and track down who was responsible and they would make sure these people were held accountable.  But in August 2013, two months after the Snowden leak, suddenly all the malware that infected Belgacom started deleting itself.  Someone hit a kill-switch and was removing the malware from the network and all traces of it, but the Belgacom security team had made copies.</p>
+
+<p>They discovered the data extracted by the malware had been exported from their internal computers out to outside servers, servers they were confident were controlled by the hackers.  Naturally, they followed this trail.  It seemed, through the IP addresses of these servers that they discovered, these were rented under fake names and addresses and they were registered in the UK to what they thought were front companies.  The payment details for renting the servers were from cards issued from the UK but when they checked out, the pre-paid cards issued to anonymous buyers, making whoever rented these servers impossible to trace.  The Trinity team are the Belgians that were investigating this malware.  Since the road to tracing it led to these servers in the UK, they approached the British Home Office to ask them to help investigate this.</p>
+
+<p>They wanted to know more details about these servers so they could potentially identify the hackers but the British Home Office responded to the Belgians by saying quote, âWe have decided to refuse this help.  The United Kingdom believes that this could jeopardize our sovereignty, security, and public order.â  End quote.  Whoa.  [MUSIC] It was soon after these discoveries that Snowden documents were released and the GCHQ were publically accused of being behind this cyber-attack on Belgacom.  The documents themselves were not considered useful to the investigation for the Belgian police and thatâs because Snowdenâs documents were released by the media and not handed directly to the police.  The chain of evidence would be difficult to prove.</p>
+
+<p>Belgium was now in a difficult position; they wanted to bring the hackers to justice but if it was the intelligence service of the British, an allied country and fellow EU member, well, that changes the lay of the land more than a little.  Suddenly politics get involved and the worry of a diplomatic fallout is [00:25:00] a messy dispute.  I mean, what does Belgium do with Snowden?  The federal prosecutors actually considered getting Snowden to Belgium from his exile in Russia.  The thoughts there were that he could testify about these documents and their authenticity but that would not go down so well with the US because the US wanted Snowden back in the US and charge him for espionage.  Then thereâs the UK; if Belgium started arresting their spies, that too would have a lot of political blowback.  They were gonna need to tread very carefully.  Towards the end of 2013, federal prosecutors went to Europol for help but they hit a brick wall.</p>
+
+<p>Europol said they couldnât investigate other EU member states so that just didnât go any further because thereâs no precedent for this.  This was the first known attack ever from one EU member state to a fellow EU member state.  Itâs not something people knew how to respond to.  They were used to a clear enemy state where thereâs an obvious good guy and a bad guy but this muddied the water and made it very political.  Let me remind you of all the Belgian politicians that may have been snooped on during this attack; wherever these hackers were, they might have gotten an inside peek at Belgian politics.  [MUSIC] The Snowden leaks threw the concepts of mass-surveillance into the public realm.</p>
+
+<p>The documents he exposed highlighted covert operations the public were not supposed to know about and they raised a lot of questions, questions on where the line is, where the balance is between covert intelligence through cyber-exploitation and the publicâs right to privacy.  Not to forget that in the middle of it is the vital role that intelligence plays in keeping our nations safe, protecting us from serious threats both on cyber-space and on the ground.  The question everyone was debating was whether this balance had tipped too far and gave the intelligence agencies too much free reign.  The cyber-attack on Belgacom caused some serious ripples around the telecommunication industry and it wasnât just the telecoms community who worried.</p>
+
+<p>REPORTER1:	Final storyâ¦</p>
+
+<p>JACK:	2014, ten months after the Belgacom and GCHQ leak was publishedâ¦</p>
+
+<p>REPORTER1:	Internet service providers and six countries have filed a legal complaint against the British spy agency the GCHQ.</p>
+
+<p>JACK:	A group of internet service providers came together and launched a legal action against the GCHQ.</p>
+
+<p>REPORTER1:	Covert mass-surveillance, legal action was taken against the governmentâs communications headquarters by internet providers of the US, UK, Netherlands, South Korea, Zimbabwe, and also in Germany.  GCHQ is accused of using a malicious software program to break into networks and to collect data on users.  The decision for court action follows reports of mass government surveillance by American whistleblower Edward Snowden.  The UK spy agency has been under mounting criticism for gathering secret intelligence and sharing it with American partner, the National Security Agency.</p>
+
+<p>JACK:	They based their case on the Belgacom attack.  They said the GCHQ had made it clear that independent operators were targets they could infiltrate, turning those operators into unwitting providers of usersâ sensitive data.  They were worried that they might have been targeted themselves or that they would be in the future.  These organizations referenced the Belgacom attack and they filed a complaint with the Investigatory Powers Tribunal.  This is an independent body appointed by the Queen of England herself and deals with any complaints about the UK intelligence community; complaints about MI5, MI6, and the GCHQ.  A lot of organizations called these attacks unlawful and destructive.  Public outcry came from RiseUp and May First, GreenNet in the UK, Greenhost from the Netherlands, Mango in Zimbabwe, Jinbonet in Korea, and the German hacker collective, The Chaos Computer Club.</p>
+
+<p>Speaking through the civil liberties charity, Privacy International, they said the Belgacom engineers were targeted for intrusive surveillance.  These people were not threats to national security; they were tech staff who worked at Belgacom with admin access rights to the networks that GCHQ was interested in.  They claimed the actions of the GCHQ were unacceptable and a breach of trust.  If an individual had carried out these actions, theyâd be looking at a long list of criminal offences.  This was the third legal action that Privacy International had taken the lead on against the GCHQ, all based on intelligence operations that were revealed in the Snowden leaks.  Belgacom remained in the spotlight and the Belgian authorities were watching with interest on what the result of this legal action was going to be.  They would have to wait almost two years for the Tribunal to finish their investigation.</p>
+
+<p>While the Belgian government and federal prosecutors were investigating the attack, the company had managed to clean up their systems and continue with their business.  Those involved with the clean-up still had one question; what was the malware that was infected on the Belgacom network and what was it doing?  In November 2014, Symantec exposed a serious and advanced malware framework they referred to as Regin, an advanced and sophisticated [00:30:00] malware toolkit believed to be the work of a nation state actor.  Kaspersky immediately followed up with a report of their own which is not unusual for security researchers.  Thatâs what they do; they discover and analyze new cyber-threats and they publish their findings but what was unusual about these Regin reports was that Regin was not new.  Security companies had been tracking this malware for years and it was used in attacks all over the world.</p>
+
+<p>Within weeks of these publications, Regin was matched with the malware found on the Belgacom systems.  [MUSIC] After the Quantum Insert phishing method was done on Belgacom, then this malware was installed on the targetâs computers which was called Regin.  The malware-scanning website VirusTotal had actually seen this malware as far back as 2009, four years before it was seen on Belgacom.  No one really knew what this malware did or what it was about back then.  In April 2011, Microsoft suddenly picked up on them and added protection against them in their programs.  These were some early samples of Regin.  The Regin malware has a trackable history of its attacks.  In spring of 2011, the European Commission discovered it had been hacked.  It was a sophisticated attack using a zero-day exploit.  Multiple systems at the European Commission and European Council were infected before the attack was discovered.</p>
+
+<p>Fast forward two years to 2013 and Belgacom is attacked.  Five months later, around November 2013, another attack is discovered but this time it was targeting a Belgian cryptographer and professor, the same guy who figured out the technology behind smart payment cards and still carries out research and advisories on security.  All these attacks used Regin.  Kaspersky had been tracking Regin ever since 2012; Symantec since 2013, and F-Secure around the same time, too.  This malware had been hitting telecoms companies, research institutions, financial institutions, and government agencies across the world in at least fourteen different countries.  Afghanistan, Belgium, Brazil, Germany, Russia, Iran, Syria, and India are just a few that have seen Regin.  At the same time of exposing Regin in 2014, researchers had seen over one hundred victims.</p>
+
+<p>Almost 50% of the computers known to be infected by Regin were inside internet service providers, most likely because the hackers wanted surveillance on targets who were customers of these ISPs.  28% of the computers infected were telecommunication backbone providers like Belgacom.  Their network infrastructure and the data going through them would be very attractive for hackers.  Analysis of Regin revealed some similar features to other malware like Flame and Duqu.  Flame was a spy tool used to collect data to target individuals and businesses just like Regin did.  Duqu was malware that favored hacking the venues of important meetings between world leaders.  Okay, so there were similarities between this malware, right?  Get this; Duqu is thought to be created by the NSA and Unit 8200 in Israel and Flame is thought to be created by the NSA and GCHQ.</p>
+
+<p>This indicates that there may be a common author in all this malware which could possibly be the NSA.  A previous Regin attack going straight for the system administrators of a telecom company had some striking parallels.  Kaspersky reported Regin used a payload to steal usernames and passwords of system administrators at a telecom company.  They didnât want to name the company or where in the Middle East, but it seems like access to mobile traffic was the objective.  If you dig into these tech reports a little more, you see pretty quickly just how advanced this malware is.  Regin is the ultimate hackerâs toolkit.  Rather than just a program that can install, infiltrate, monitor, and extract data and then remove itself, itâs built on a more flexible and customizable module system.  [MUSIC] It can be added to, changed, altered, all in accordance with what the target is and the objective is.</p>
+
+<p>Itâs a framework that can be used to adapt and change however the hacker wants.  Regin, it seems, is not just a piece of malware thatâs designed to carry out one planned campaign; itâs a platform aimed at Microsoft computers that can be used again and again with multiple modules.  Seventy-five modules have been found so far and weâre used to malware coming from cyber-criminals looking for monetary reward to hold data hostage or steal it or sell it, but now we see that some of the most advanced malware is being used to spy on enemy states.  Stuxnet proved just how powerful a virus can be if developed by the right people with the skills and resources to do it and Regin is also extremely sophisticated, too.  But itâs not designed to destroy; itâs designed to spy, to watch, listen, capture, and remain hidden at all costs.  Regin was designed to provide extensive remote control of the target systems.</p>
+
+<p>It can take screenshots, steal files, collect keystrokes, access e-mails, and data from network traffic.  Regin also has an unusual ability not common in malware infections; it has the ability to infiltrate [00:35:00] GSM systems which are mobile base stations, giving the hackers control over mobile networks.  Potentially, this means they could listen to and record calls and intercept and redirect them.  Regin gets in and opens doors to allow different types of attacks to be carried out on the targetâs network.  Itâs a powerful malware kit that not only performs its own actions but lays the groundwork for more specific attacks.  We still donât know what the objective is for this attack but itâs possible that the objective was to attack and gain access to routers in Belgacomâs international networks, to intercept mobile traffic communications going through other nations.</p>
+
+<p>The data they could gain from this added together would give them a pretty good idea of the user and exactly what they were doing day-to-day.  Belgacom customers included some fairly powerful people, decision-makers within various European political bodies who all have their headquarters in Belgium, and there were customers in Middle Eastern countries who used the Belgacom international network as a rebranded mobile provider.  Regin is delivered in five separate stages.  Once activated, they follow on from each other, with each one providing an encryption key to unlock and activate the next.  Stage one is the installer, getting the malware onto the target system.  Stage two-to-five are fully-encrypted.  Just in case security researchers find it, itâs gonna be hard for them to figure out whatâs going on here.  To understand this malware and to figure out exactly what itâs capable of, you need all five stages in order to decrypt at all.  These features were no doubt purposely designed within Regin.</p>
+
+<p>Remember, a primary objective of this malware is to remain hidden and not leave any trace of its presence.  The creators need it to be impossible to crack and must not, under any circumstance, be trackable back to who created it.  Many extra safeguards were put in place with this malware.  Extreme care was used when building it.  [MUSIC] Once malware is inside a target system, it needs a way to communicate back to the hackers and pass them the data that it finds.  This is usually done by a command and control server thatâs controlled by the hackers.  Elaborate communications are set up for the infected machines to report back to the attackers through these command and control servers but instead of direct communications like usual, the infected systems talk to each other first on the network and then through a central hub which then communicates back to the command servers.</p>
+
+<p>Regin hides the data and the extended attribute section within a packet, splitting its data across multiple packets to hide whatâs being stolen.  This makes it really hard to spot the data being stolen since itâs encrypted, itâs in the section of a packet you donât normally look for, and itâs broken up into tiny pieces.  Once enough of the packets are collected, the data is then linked together and turned into a single, readable file.  When Regin infects a machine, it gets assigned a virtual IP address.  This forms a VPN layer on top of everything else.  The attackers can then use this to keep inside the infected machine without drawing attention to their presence.  This helps them hide the traffic even more.  The traffic looks like expected traffic in the network so the security team doesnât see any spikes or any suspicious activity.</p>
+
+<p>They use a variety of transport protocols to also disguise their communication to the infected servers.  They sometimes used UDP, they sometimes used TCP, they sometimes sent data over HTTP cookies.  A lot was done over your typical SSL and even SMB.  With all these covert channels being used, it allowed the attackers to use this malware for years before it was detected.  Obviously, a lot of time and money was spent making this malware.  The longer that the hackers can use it before it goes noticed, the more value they can get out of it.  Because once it becomes discovered, then it gets patched and it gets detected by Antivirus.  If the attackers use it again, people can quickly point fingers at who it might be.  With any malware attack, finding who did it is really hard.  This becomes especially hard when indications point to nation state espionage.</p>
+
+<p>No one wants to raise their head above the pulpit and expose a nation stateâs weapon in the fight for national security.  While the security companies are not keen to name names on the creators of Regin, they do all seem to agree that it is state-sponsored malware.  Maybe they were just being cautious on what they expose because it is scary for a security researcher to expose a weapon of a nation state actor to the world.  If that threat actor knew you were about to publish that report, they might do something to stop you from doing it.  In December 2015, the Investigatory Powers Tribunal was done with their investigation.  This is the UK body appointed by the Queen to investigate allegations against MI5, MI6, and GCHQ.  This is where the internet service providers in six countries filed their legal complaint with.</p>
+
+<p>The Tribunal heard the case that these ISPs said the GCHQ hacked Belgacom and it was illegal.  The Tribunalâs job is to investigate these complaints to decide whether the agency in question [00:40:00] acted improperly.  During the tribunal, to everyoneâs surprise, the GCHQ did admit to carrying out hacking operations in the UK and abroad which to me is a big deal; for the GCHQ to officially say they do hacking?  Yeah, I donât think they publically admitted to that previously.  We even learned that in 2013, about 20% of its intelligence reports came from information that was from hacking operations.  They also said that computer network exploitation, or otherwise known as hacking, has protected the public from threats and can often be the only way to gather certain intelligence.  But after the Tribunal heard the case and spent a few years looking it over, they came to a conclusion; the Tribunal ruled in favor of the GCHQ.</p>
+
+<p>The ruling said that they were satisfied with the correct balance between safeguarding the public on one side and protecting an individualâs rights and privacy on the other.  Really, the Tribunal said the computer network exploitation, or hacking carried out by the GCHQ was legal and didnât infringe upon individual rights.  That seems to be the end of the lawsuit.  In 2016, the Belgacom cyber-attack in GCHQ involvement was still being questioned.  Alexander De Croo, the Deputy Prime Minister for Belgium, made some unexpected comments while at a conference.  He was participating in the World Economic Forum in January, 2016 in Davos, Switzerland.  He was asked how Belgium protects its citizens from being spied on by an ally.  His slightly uncomfortable response was definitely surprising.  Hereâs what he said.</p>
+
+<p>REPORTER2:	How does Belgium protect its citizens from being spied on by allies?</p>
+
+<p>ALEX:	You want me to say we do it in a good way or in a bad way?</p>
+
+<p>REPORTER2:	The bad way would be better, more entertaining for us.</p>
+
+<p>ALEX:	Well, no, mainly weâve had one case where a big teleco that basically came out.  Yes, it seems that there had been infiltration.  The whole question is, did we agree or not?</p>
+
+<p>REPORTER2:	Infiltration by who?</p>
+
+<p>ALEX:	Infiltration â itâs not defined.</p>
+
+<p>REPORTER2:	The Germans?</p>
+
+<p>ALEX:	But based on the Snowden slides, you could infer something.  The whole question of course is â and even me; I mean, Iâm not the Minister of Justice.  I donât get access to everything.  My question was, did we agree or not?  It might very well be that the Belgian intelligence services said yeah, why not?  Please go ahead.  The whole question is who is giving an okay to that or not?</p>
+
+<p>JACK:	Again, that was the Deputy Prime Minister of Belgium giving a suggestion that possibly the Belgium government also agreed to this attack.  For the UKâs intelligence services, thatâs MI5, MI6, and the GCHQ, any surveillance operations that are considered intrusive and that intercept communications need the approval of the Secretary of State.  A Foreign Secretary is responsible for GCHQ, keeping the Prime Minister and the Secretary of State up to date on their activities.  For something like Operation Socialist, it most likely would have gone all the way to the Foreign Secretary and Secretary of State for approval.  [MUSIC] But did that approval involve asking permission from Belgiumâs State Secretary Services, and did they give it?  We donât know, and this, of course, is where all this stops.</p>
+
+<p>The intelligence operations of any country are not open to the public and the GCHQ, or the NSA, or the Belgium intelligence services will never confirm or deny any suggestions or allegations about their operations.  Really, we will never know.  The only thing we have are those leaked Snowden documents and these large, moving shadows just below the surface.  Thereâs no hard evidence who was behind this or what was taken.  Belgacom themselves have never publically commented on the allegations that it was the GCHQ or NSA that hacked them.  Although the exact data that the malware may have extracted from their systems is unknown, Belgacom stated that the traffic from the malware was very low and they didnât believe that it was an aim to extract bulk data from their networks.  Since the attack, Belgacom has a new CEO and they rebranded to Proximus, both changes that they implemented in 2014.</p>
+
+<p>At the end of that year the company still had a 41% in the Belgium mobile market.  The cyber-attack didnât seem to affect their share price.  They were up 40% a year after the hack.  Proximus, as theyâre now known, have invested heavily in cyber-security since this attack was discovered in 2013.  The company now has an internal cyber-security program costing fifteen million euros and a cyber-security incident response team.  They also continue to have ethical hackers and penetration testers to test out the security to highlight any gaps.  Itâs obvious that they tried to learn from this attack and strengthen their security as much as possible and at significant cost.  The Trinity investigation into this cyber-attack reached its final stages [00:45:00] in September of last year.</p>
+
+<p>The Belgian federal prosecutors submitted their confidential investigation report to the Belgian government.  The report is believed to confirm the attack on Belgacom had been ongoing for around two years before it was discovered by the IT team.  It also said the investigators believed Operation Socialist must have been approved on a high level of the British government before it was implemented.  With no firm evidence that would hold up in court on who was behind this attack, no individual prosecutions were going to happen.  The investigation into the Belgacom cyber-attack appears to have been closed.</p>
+
+<p>[MUSIC] This story is about a communication provider allegedly hacked on a grand scale by a nation state using a few very advanced pieces of malware.  The Quantum Insert technique and the Regin malware give us a peek as to how sophisticated nation state malware is.  There are surely many more things behind this that we donât even know about.  For the victims of a cyber-attack like this, itâs a David and Goliath scenario, but one that David has no way of winning.  Craig Mundie is the advisor to the CEO at Microsoft.  A few years back he was speaking at the School of International and Public Affairs at Columbia University.  There, he had this to say.</p>
+
+<p>CRAIG:	The real problem right now is that if a nation state chooses to use their full array of capabilities against even a sophisticated business, the business almost doesnât stand a chance.  Part of the problem weâve got is that people are still thinking that if they use conventional defensive techniques to improve the perimeter security of their network, that theyâre going to be okay.  That may be sufficient against malicious mischief or petty criminals but itâs questionable against sophisticated organizations and itâs probably hopeless as a defense strategy against the government.  The reason is governments donât confine themselves to the network means of attack.</p>
+
+<p>Theyâll come in and bribe your system administrator.  Theyâll come in and threaten to do evil things to his family or whatever it might be.  People become a key component of compromise.  Itâs always been true but we now start to see those kind of national techniques being applied in these economic espionage cases.  Therefore, even if your CIO tells you that heâs happily got the perimeter secured, you really canât believe that.  I think, whether youâre a business or a government now, you really need to start to think wow, thereâs really sophisticated actors here and if I have anything I really care about, Iâm going to have to take some additional steps to try to protect these things.</p>
+
+<p>JACK:	[MUSIC] Even if conclusive, no-doubt evidence can be found which of course it canât, the political ramifications of Belgium seeking criminal charges against a nation state attacker is huge.  The twist in the tale here is that this was an alleged nation state attack on a friendly, allied state; not a hostile one.  On top of that, it was an attack on a company in a friendly, allied state.  Because of that, the rules are different, the response is different, and the outcomes for those who are hacked are different.  It really seems to me that in cyber-space there are no boundaries and that political agreements are ignored, and friendly nations might be foes, and information sharing is happening on back channels.</p>
+
+<p>The online world offers a level of anonymity, of deniability; as long as your skills are up to scratch so that all rows leading back to you are blocked.  This is something not only criminally-minded hackers are taking advantage of, but nation states too in this ever increasing, developing landscape of cyber-crime and cyber-warfare.</p>
+
+<p>JACK (OUTRO):	[OUTRO MUSIC] Hey, if you canât wait for the next episode to come out, guess what?  You can get bonus episodes over on Patreon.  There are now three bonus episodes available for you there, right now.  Patreons also get an ad-free feed too, so you donât have to listen to ads anymore.  By being a Patreon supporter, it helps everything.  It helps keep ads to a minimum, it helps support the show to hire extra help which helps get you more episodes.  This show might not even be here today if it wasnât for the Patreon supporters so thank you very much, everyone who has donated.  Please consider signing up there and giving something to support the show.  [00:50:00] This show is created by me, the bod guy, Jack Rhysider.  Writing help for this episode was by Fiona Guy.  Editing help was from the key-tapper Damienne and our theme music is by the beat-builder Breakmaster Cylinder.  Even though people ask me how to hack their girlfriendâs Facebook account every time I say it, this is Darknet Diaries.</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

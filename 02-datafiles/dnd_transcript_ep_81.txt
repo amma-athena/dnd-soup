@@ -1,0 +1,662 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>The Vendor â Darknet Diaries</title>
+	<meta name="description" content="In this episode we hear a story from a social engineer who's job it is to get people to do things they don't want to do. Why? For profit. ">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="The Vendor â Darknet Diaries">  
+	<meta name="twitter:description" content="In this episode we hear a story from a social engineer who's job it is to get people to do things they don't want to do. Why? For profit. ">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/thevendor.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/81/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="The Vendor â Darknet Diaries" />
+	<meta property="og:description"        content="In this episode we hear a story from a social engineer who's job it is to get people to do things they don't want to do. Why? For profit. " />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/thevendor.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/81/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/thevendor.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/81/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="The Vendor â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/thevendor.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 81: The Vendor</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://www.podtrac.com/pts/redirect.mp3/traffic.megaphone.fm/ADV5381316822.mp3?updated=1607279433"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/81/",
+			   "title": "Ep 81: The Vendor"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/81">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[START OF RECORDING]</p>
+
+<p>JACK:	Alright, so I need to start this episode by giving a clear warning; this episode is going to get deep into drugs and overall is adult-themed.  You may want to wait until the little ones go to sleep before tuning into this one.  You ever think about how many of us got through high school by just the skin of our teeth?  Weâre just so young, naive, fearless, and feel like we know it all.  With an attitude like that, weâre bound to make some kind of grave mistake in our teenage years, and many of us do.  We crash our parentsâ car, try drugs, cigarettes, alcohol.  We skip school, hang out with the wrong kids, steal, cheat, get pregnant, or expelled.</p>
+
+<!--more-->
+
+<p>These are all common stories that every high school principal has heard all too often.  Now, some kids try something bad and they get caught, and they get in trouble, and they decide not to do that again.  But other kids try something bad and they get away with it. Itâs all up side for them â they donât experience any negative consequences.  So, they try it again, and again, and again, and before you know it, theyâre habitually doing something wrong which can send a teenager on a trajectory that can take a decade to recover from.  This is actually a story about the darknet.  How about that?  Itâs a story about how a darknet market drug dealer got started, rose to power, and how it all came crashing down.</p>
+
+<p>INTRO:	[INTRO MUSIC] These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	I donât know if you want to go nameless in this or you want me to use a fake name, or what do you want to do?</p>
+
+<p>V:	Yeah, I think you can just use a fake name.  If itâs easier to call me by a letter in the alphabet, you can do that.</p>
+
+<p>JACK:	Okay, so letâs pick a letter, then; V.  This is V.  V doesnât want to reveal his real name and that sort of thing, but I want you to know, the listener, that I have fact-checked Vâs story by looking through public records using his real name, and I saw screenshots and documents which confirmed as much of the story as I could.  Vâs story starts in high school and while there, he was hanging out with some questionable kids.  Like, can you describe the people a little bit?  Are they skateboard punks?</p>
+
+<p>V:	Yeah, skaters, kids who were just burnouts.</p>
+
+<p>JACK:	Did you skate?</p>
+
+<p>V:	I did not skate, no.  I was probably the most un-athletic person you could imagine.  I lift weights and stuff like that, but outside of that, I never played a sport.  I was the music kind of kid and I was in school â in school, I was part of that cool kid crew, but not immediately.  I was homeschooled for a good portion of my life, so my social skills did not really creep in until much later.  But once they did, yeah, I was a popular kid but I was also a music kid.  I wasnât a sports jock or anything like that.  It was different for me.</p>
+
+<p>JACK:	V grew up in an upper-middle class family.  Thatâs not to say the family didnât have money troubles, but it does mean he never went hungry.  He always had clothes, a safe place to live, he could visit a doctor anytime he needed, and he was attending a private school.  His parents got him into learning musical instruments when he was young, and he kept playing it all the way through high school.  But his friends that he was hanging out with in high school, they werenât the best influence.</p>
+
+<p>V:	Werenât really about school or wanted to do other things â not looked at with the utmost respect.  Yeah, a lot of those types.</p>
+
+<p>JACK:	I laugh at skateboard punk âcause I was a skateboard punk in high school myself.</p>
+
+<p>V:	Yeah, yeah.  Well, there were a few â quite a few of those, and a lot of those guys were selling weed and stuff like that, so I kinda fell in with that crew.  I started smoking weed actually before I drank, when I was like seventeen, sixteen, seventeen.  Then from that point â Iâve always had a business-oriented mind.  I was like well, I can easily smoke for free if I buy more weed and sell it at a higher price, so thatâs what I started to do.  One of those burnouts that I was talking about showed me the original Silk Road and my mind was blown.  [MUSIC] I think I ended up â this was around when Bitcoin was trading at maybe like 30 or 40 bucks, so it was [00:05:00] like, I got to the point where I would just pick up some exotic eighths of weed or whatever and eventually up my quantity.</p>
+
+<p>JACK:	Yeah, so you were buying on Silk Road?  Was that your main supplier as a high-schooler?</p>
+
+<p>V:	When I was a teenager, I was buying on the Silk Road.  I didnât have any money at the time, so I would actually have people front me.  [MUSIC] It got to the point where this kid that I knew that was one of those skater punks I talked about earlier would give me money to buy him a pound.  I didnât tell him where it was coming from but I said hey, I have somebody that can ship to me from California or whatever.  He was like, okay, the stuff youâve been getting me is â have been really good, so letâs do that.  I was like, okay.</p>
+
+<p>JACK:	He wasnât very good at staying private back then.  He didnât know how to do it, really.  At sixteen, seventeen, you donât know all the tricks and how to hide from the feds.</p>
+
+<p>V:	I remember the first time I used it.  I was like hey, do you â like, I remember private messaging some vendors and I was like, do you guys take PayPal?  Just being laughed away, like get the hell out of here, man.  I learned a lot through the darknets about Bitcoin and PGP and cyber-security.</p>
+
+<p>JACK:	Of course, he didnât want to send packages to his home address.  That would raise suspicion maybe with his parents, so he sent packages to another address.  He actually had another family member who he could ship stuff there, and they would accept packages in exchange for some cash.</p>
+
+<p>V:	Yeah, that was a pretty good summer for me, especially just being eighteen and just heading off to school.  I had a pretty good nest egg getting started.</p>
+
+<p>JACK:	That was Vâs senior year in high school and the summer after that.  Then he was looking at what colleges to go to.  The state college where he lived looked pretty good, so he applied there and got accepted with a music scholarship.  [MUSIC] So, off to college he went.  He moved to the town where the university was and got a roommate and was attending classes.</p>
+
+<p>V:	 I was in college for music and I was also â at the time, I was a pre-med major.  My first year, I â because I had a â I had a music scholarship, so I had to major in music in order to keep that scholarship.</p>
+
+<p>JACK:	But while there, he learned quickly what kind of drugs the college kids were interested in.</p>
+
+<p>V:	Eventually, once I got to college â at some point in college, Silk Road went down.</p>
+
+<p>JACK:	Oh, so I should quickly explain what a darknet marketplace is.  I think you understand already; itâs just a place to buy and sell illegal drugs online, but these places arenât on the regular internet.  Itâs on kind of a secret version of the internet called Tor.  Whatâs so special about Tor is that that protocol is anonymous by default.  Once you connect to Tor, your IP address gets hidden so nobody can track where youâre connecting from.  It doesnât quite make you anonymous because if you get on Tor and then tell people your real name and address, you unveiled yourself.  But it does help you stay anonymous if thatâs what you want to be.  Online drug dealers typically want to be anonymous.</p>
+
+<p>[MUSIC] But I should clarify something here; buying illegal drugs online is, well, illegal, just like buying them on the streets, so the feds are actively trying to find whoâs running these darknet marketplaces and working towards shutting them down.  According to the FBI, Silk Road emerged as the most sophisticated and extensive criminal marketplace on the internet at the time.  A darknet marketplace typically sells illegal stuff; drugs and other illegal things like weapons and fake driverâs licenses.  The FBI took down Silk Road and arrested its owner on October, 2013.  When that happened, users of the site flocked to other marketplaces.  V here just moved to Agora, another darknet market.  Now, by this point, he learned that the people in his college were mostly interested in a different drug other than weed.  He doesnât want to say what kind of drug, but he was buying them on the Agora marketplace and selling them on campus.</p>
+
+<p>V:	To the fraternities, to anyone who would really buy in bulk from me.  They were pills; it was in pill form, so I would be selling basically K-PAX which are just 1,000 pills to whoever wanted them.  I would be getting 10,000 - 20,000 of those from the darknet.</p>
+
+<p>JACK:	Now, he was staying in an apartment on campus with a roommate, but he knew not to send these drugs to his own apartment.</p>
+
+<p>V:	I had a lot of friends in apartments and these are college kids that need money and that donât really want to sell pizza, so I would give them an easy $100, $150 bucks for every drop and just be like hey, this package is coming.  Donât worry about whatâs in it, but Iâm gonna pay you for your services and Iâm gonna continue to use you every week, so these guys were bringing in [00:10:00] anywhere from $150 to $300 a week which is some nice extra pocket change when youâre in college.  Thatâs extra pizza nights or whatever.  I never shipped to my own address at that point because I just knew so many people that were willing to let me use their address.</p>
+
+<p>JACK:	It sounds clever, but do you think it was actually effective?  Because letâs say the feds go to your friendâs apartment and say alright, we know thereâs some drugs that got shipped here.  Whatâs the deal?  Donât you think theyâll say oh yeah, itâs this guyâs stuff.  Itâs not mine.</p>
+
+<p>V:	Yeah, thereâs always that risk, right?  Thereâs always that risk that somebodyâs gonna tell on you, but thereâs only so much you can really do.  I mean, besides me starting a shipping business in a warehouse, itâs â thereâs not really anything you can do to ship large quantities except to really trust your circle.  But thereâs always that risk that somebodyâs gonna flip.  Eventually, I had sold to a roommate âcause I got greedy.  He was an idiot and sold to an undercover officer.  They had done three controlled buys with him and one of the controlled buys was in a car; one of the controlled buys was in his room in the apartment.</p>
+
+<p>JACK:	These undercover officers had collected enough evidence to get a search warrant for Vâs apartment to look for drugs that his roommate was selling.</p>
+
+<p>V:	[MUSIC] They didnât know I existed.  Eventually, one day I was in my apartment and my room â there was a knock on the door.  My roommate answered the front door.  I was in my room in my separate bedroom and my roommate answered the door.  I heard some cops say hey, is there anyone else in the apartment?  I freaked out because I had 5,000 or 6,000 pills in my room.  Actually, it was a little more than that.  I was trying to stuff them all into my safe and they were at my door like open the door, open the door.  I was like, Iâm getting dressed, Iâm getting dressed.  They burst into the room once I opened it, and basically found all my pills.  I was arrested.  I wasnât even on the warrant.</p>
+
+<p>JACK:	Whatâs that feeling like with the feds banging on the door as youâreâ¦?</p>
+
+<p>V:	Those werenât feds.  That was a state case, but that feeling was not good.  Itâs the same feeling every time.  Itâs just a feeling of non-belief, really.  Itâs just, your stomach sinks as low as it can go and youâre like, holy shit, my worst nightmare is happening.</p>
+
+<p>JACK:	All his stuff got confiscated.  He went down to the police station and got booked, but was able to make bail pretty quick, so he got out of jail and was facing felony charges for this.</p>
+
+<p>V:	Yeah, it was a felony possession with intent to distribute.  I didnât think the school would find out.  My lawyer told me the school probably wouldnât find out.  Turns out they did, so I was referred to the Student Conduct Office and they were like hey, weâre gonna let you finish out your semester, but youâre gonna be suspended for the next year.  I thought I was gonna get kicked out, so that was really good news to me.  But yeah, so the next year, I kinda was just â kinda spent laying around not doing much.</p>
+
+<p>JACK:	Now at this point in the story, it could go in a lot of directions, right?  Iâm always fascinated by why we choose what we choose to do.  [MUSIC] V here could wait another year and go back to school again and try to finish up his pre-med or he could try switching schools so he doesnât have to wait at all.  He could possibly get a good paying job and not worry about school at all anymore.  He was twenty-one at this time and he was still waiting for his sentence and everything from his arrest.  Maybe youâve been in a similar situation where when youâre young, you tried real hard to accomplish something great like pre-med school, but it just failed big-time.  It took all the wind out of your sails and you felt like well, crap, now what do I do with my life?  On top of it all, he needed some cash to get by, so he had to figure out something quick.</p>
+
+<p>V:	I was financially driven at that point because like I said, I had already been charged.  I was kind of pending a judgment on that case and I was like, look â I basically told myself Iâm expelled from school, I am not gonna be able to get a job, I have a charge on my record thatâs pretty serious.  I donât want to bag groceries for $10 an hour.</p>
+
+<p>JACK:	So, he decides to get back into drug dealing on the dark web.  But this time he wanted to be a vendor because he was buying drugs on darknet marketplaces and selling them locally, but now he wants to get drugs locally and sell them on the darknet markets.  This way, he only has to interact in-person with the one supplier who he trusts, and not a lot of individual buyers.</p>
+
+<p>V:	I want to do this.  I think itâs the most â I think this is the way that I could mitigate risk the most while making the most money.  It was a [00:15:00] no-brainer for me.</p>
+
+<p>JACK:	Well, isnât the being arrested for this exact same thing supposed to deter you from this?  Here, it did the opposite.</p>
+
+<p>V:	Yeah, but it was deterring me â the only reason that I got caught in that situation was because I did an in-person sale.  You know what I mean?  What Iâm talking about is itâs way easier for me to not get caught if Iâm doing anonymous sales on the dark web.  No oneâs gonna know who I am.  Iâm shipping out from a return address that doesnât exist.  Itâs not even me really doing the shipping.  But yeah, the justice system is supposed to work in that when you get arrested, youâre supposed to be rehabilitated and not do that again.  But like I said, I hadnât really been punished yet.  I had made bail and I was just kinda out and doing my thing.</p>
+
+<p>JACK:	This is almost immediately after being arrested.  Well, it was before your sentencing at least, so it was within a few months.</p>
+
+<p>V:	Yeah, but Iâm still â I was pending on that case for a long time because I actually â my lawyer had actually gotten the case thrown out and then the state appealed and it was brought back.  There was a whole lot of back and forth, so that case was pending for more than actually two years.  It wasnât resolved for literally two years.  So, basically a year after that, after the initial arrest, the idea formed in my head to start looking into this.</p>
+
+<p>JACK:	Heâs got the idea to be a vendor on these marketplaces, but the first thing he needs to do is find a supplier.  This whole time, he had kept in contact with his old buddies from high school who were selling weed back then.  Well, this one guy was still selling drugs all these years later.</p>
+
+<p>V:	[MUSIC] Eventually, he got to the point where he was way, way, way bigger than I was and I kind of would go through him for certain stuff that I needed that I couldnât necessarily get off of the dark web or that would just be more convenient for me to get in-person.  Eventually, his bread and butter became cocaine.</p>
+
+<p>JACK:	He was getting cocaine from a big supplier who was a few hours away.</p>
+
+<p>V:	I kinda knew at that point that there was a market for this stuff on the darknet because the stuff that I had gotten, the cocaine that I had gotten off the darknet was kinda weak.  It wasnât great.  There was a lot of in-fighting between vendors at that time.  No one really led the pack.  I think that there was a vendor that had just either stopped or gotten nabbed or something, and so everyone was kind of in disarray.  It was kind of the perfect time to get in.  Thatâs what we did.  I kind of was able to convince him and say hey, look, you have a really great product here.  I think we can have competitive pricing.  I think we have the best quality.  Letâs rock and roll, man.  Letâs get this shit done.  I convinced him and we both got on board together and made it happen.</p>
+
+<p>JACK:	V brings his friend into this, another guy he trusted and who also needed cash, too.  The two of them got started working on this.  Now, V lived in a different town from where the supplier guy was, but he was trying to find a place to stay nearby to do this business.</p>
+
+<p>V:	He said, are you living here this summer?  I was like yeah, Iâll move down here for the summer.  Heâs like alright, well, youâre gonna need a place for you and â you and my friend who was with me.  Letâs call him Paul.  So, me and Paul â he was looking around for an apartment for us, for me and Paul.  I was like well, how are you gonna get the apartment, because I â obviously, we canât have it in our names.  Heâs like, I got a guy for it.  He had a guy that would actually find people to sign leases on apartments and then just not live there.  He would pay them a set amount of money to put their name on the lease.  It was really cool because we were living in this place that wasnât connected to us in any type of way.  If we werenât there and a raid was conducted or something, itâs not our shit, which was pretty cool.</p>
+
+<p>JACK:	V and Paul move into this apartment which wasnât in their name, and they started setting up shop.  [MUSIC] Now, at this point, V was pretty familiar with the way darknet marketplaces worked and got right to work trying to establish himself as a vendor.  First, he had to do a lot of research to figure out where to set up shop.</p>
+
+<p>V:	From my side, from my end, what I did was I â like you said, I did all of the research on the markets that I needed.  I did all of the research on the best wallet that we should have.</p>
+
+<p>JACK:	Yeah, so to do business on these [00:20:00] darknet markets, you want to be as anonymous as possible.  Bitcoin, of course, is a way to transfer money digitally and anonymously.  But if you have a lot of Bitcoin, you want to keep that secure.  Keeping it on an exchange has two big risks; first, the Bitcoin exchange might just go down or get hacked and you could lose all your money.  Second, the feds might issue a warrant to that Bitcoin exchange and try to get information on who owns that wallet.  This wasnât an option for him to keep his Bitcoin on an exchange.  Instead, he used a cold wallet and sometimes a hardware wallet.  Let me go one more level deep; each Bitcoin wallet has a private key.  This is a sixty-four character string.</p>
+
+<p>Whoever has this private key can spend or transfer the Bitcoins in that wallet.  Itâs very important that you protect this private key at all costs.  But people have a really hard time memorizing a sixty-four-character-long string, so this is where a seed phrase comes in.  A seed phrase is just a bunch of random words together, something like wish, collapse, practice, feed, shame, open, despair, creek.  Now, this seed phrase is whatâs used to create the private key.  People store these seed phrases on a piece of paper or in a vault as a last-ditch effort for recovering their Bitcoin wallet if their computer gets ruined or something.  If you have the seed phrase, you can generate the private key, and if you have the private key, you can do whatever you want with that Bitcoin wallet.  V had to set all this up.</p>
+
+<p>V:	I also had the seed memorized and all that.</p>
+
+<p>JACK:	I love this because this tells me heâs getting really serious about his security and privacy.  If he can commit his seed phrase to memory, then he never has to worry about losing his private key or storing it in a place that get hacked.  He can quickly generate the private key whenever he needs, make the transfers, then delete that private key when done.  Itâs brilliant.  Of course, besides this, heâs also using hardware wallets.  Two common brands are Ledger and Trezor.  These are USB devices that store the private key so you can unplug them from your computer and store them in a safe or something.  When you want to use them again, you plug them in, make the transfer, and unplug them.  Theyâre also great ways to keep your Bitcoin safe.  Okay, so heâs got his Bitcoin wallet figured out.  Next, after doing a bunch of research, he decided to set up shop on the AlphaBay darknet marketplace.  Now, I did a whole episode on AlphaBay called Operation Bayonet.  Itâs Episode 24, so check that out if you want the full story on AlphaBay.  So, he starts setting up his account there.</p>
+
+<p>V:	Well, there were a lot of things you had to memorize.  Once we had the account set up, you want to memorize your username, obviously, you want to memorize your password, and you want to memorize your PGP credentials and all of that.  I just kind of had a string of letters that I thought was random, and they were probably like twenty-five to thirty characters in length each, so I kinda sat there and had them on a piece of paper and memorized them; said them over and over like I was studying for a test, really.  You know?</p>
+
+<p>JACK:	Now, one reason he wants to memorize all this is because he wants to leave no digital trail of any of this stuff.  If some law enforcement officer grabs his computer, he didnât want to just have a page of passwords that were listing all the keys to the kingdom.  He knew that if he kept all this stuff in his head only, it would never end up in the hands of someone he doesnât want seeing it.  But thereâs a lot more stuff he had to do to stay anonymous.</p>
+
+<p>V:	I used Tails.</p>
+
+<p>JACK:	Tails is great.  I use it all the time, too.  Tails is a Linux operating system, but itâs designed to completely forget about everything you did when it shuts off.  [MUSIC] Basically, you power up Tails which has a browser and automatically connects you to Tor, and you can do all your work on it.  But when you shut it down, it wipes everything you did.  Thereâs no record or trail of anything.  Thereâs no browser cache, no passwords saved, no downloads saved, nothing.</p>
+
+<p>V:	I installed it on a USB.</p>
+
+<p>JACK:	But see, thatâs whatâs slick about it; you have Tails on a USB drive and you plug it into your computer, boot to USB, and it boots up into Tails.  When Tails runs, it runs entirely in memory, in RAM.  Remember, RAM doesnât save any data when the computer is shut down, so it just gets flushed out automatically.  But now youâre starting to see the other benefit to memorizing his passwords, Bitcoin phrase, and PGP keys, because every day when he boots up his computer, heâs got to enter all this stuff in again.  Okay, this is great, but now we need to set up connectivity to the internet.  Surely you donât want to use an ISP connection which is registered to your real name.  If any law enforcement gets your IP and traces it back, the ISP can quickly find out it was you who connected.  Thereâs a few options here; you could set up a VPN or you could go to a different coffee shop or library every day, because youâre gonna want to switch it up often so you donât get caught going to the same place every day.  But V had a different solution.</p>
+
+<p>V:	We actually had somebody from Comcast.  I guess he worked for them, but also [00:25:00] had his own side thing going on.  We had routers in the apartment that were in other peopleâs names and stuff, so we didnât really have to leave.</p>
+
+<p>JACK:	Okay, thatâs cool.  They got a clean, anonymous internet connection that canât be tracked back to them.  Sounds great.</p>
+
+<p>V:	I didnât use a VPN.  From my understanding, there was no â I didnât see any significant benefit in using a VPN.  It just made all of my shit slower, so I didnât use it.  I tried to find a definitive answer on that and it was not â there was nothing that was definitive.</p>
+
+<p>JACK:	Thereâs a debate about this.  Iâm not entirely sure myself.  I would probably err on the side of caution and use a VPN and Tor because a VPN encrypts the traffic while Tor anonymizes it.  Theyâre two slightly different things.  If you connect to Tor, your ISP can detect that you did that.  But thatâs about all they can figure out about you.  They just know that you went to the darknet; not which website you went to, though.  Using a VPN means your ISP no longer knows you went to Tor.  But your VPN provider now knows youâre on Tor, so itâs just a matter of moving that line about who knows you went to Tor.  Anyway, another big important part of starting the day was handling PGP.  PGP stands for Pretty Good Privacy and itâs a method for encrypting your communication.  You can set up your chat messages on AlphaBay to encrypt using PGP, so even if the feds sees the servers, they couldnât read your messages because theyâre encrypted with PGP.  Now, logging into AlphaBay isnât just as simple as putting in your username and password.</p>
+
+<p>V:	Username and password, but then you also have to decrypt a message using your PGP authentication.  They would be like, they would send you â you upload your public key to AlphaBay, I guess, and then theyâre able to â they encrypt a message with your key, I guess, and then theyâre like, decrypt this message or something.  Every morning or every time I logged in, I would have to copy and paste this block, decrypt it.</p>
+
+<p>JACK:	Now, Tails has tools to help you with this.  [MUSIC] First, he would need to generate his private PGP key every time he booted up Tails.  He would do this by entering his PGP passphrase into an app on Tails which would then generate the private key.  Remember, heâs memorized his PGP passphrase just to make this part easier for him.  Then he could copy the encrypted message into some kind of decryption app and he could read the message and pass the challenge.  Phew; all that just to log into his AlphaBay account every day.  Thatâs a lot of work.  Actually, he would probably do it more than once a day because in order for him to erase all his digital tracks on his computer, all he needs to do is shut it down and Tails erases everything.  If he was going out of his apartment for a while, heâd probably shut down his computer in case someone got into his apartment while he was gone.</p>
+
+<p>But this is what it takes to stay anonymous and secure.  Just to recap quickly; in order for him to log-in every time, he would need to boot to a fresh operating system, Tails, enter in his PGP passphrase to generate his private PGP key, enter in his Bitcoin passphrase to generate his private Bitcoin key, connect to Tor, find the URL to AlphaBay login, decrypt the PGP challenge, and then heâs in.  Oh, and all the while, heâs on a clean WiFi connection, too.  Can you see now why someone might slip up or get lazy and take shortcuts with this?  Imagine having to do this every time you came to work.  Companies all over the world set up single sign-on to make it easier for employees to log-in, but this is the opposite of easy.  Anyway, now that heâs got his AlphaBay account all set up, heâs got to apply to be a vendor.</p>
+
+<p>V:	 At the time, all you really needed to do was pay money to a wallet that AlphaBay gave you.  You would sign up as a user account, I think, or you would sign up as a new account, maybe not as a buyer or seller yet, and then they would be like alright, if you want to apply for seller status, send $500 to this address or whatever.  At that point, once you did that, you were verified as a seller and could start selling.</p>
+
+<p>JACK:	Alright, so you might be wondering why he had to send $500 in Bitcoin to AlphaBay to be a seller.  Well, thereâs this thing called escrow there.  Basically, when you sell something, the buyer pays the money but it doesnât go to you.  It goes to AlphaBay where it sits and itâs held by them.  Then AlphaBay says okay, look, we got the money, this guy looks legit.  Go ahead, send him the cocaine that he bought.  So, then you send the drugs and wait, and wait, and wait.  After the buyer gets the drugs and tries it and thinks itâs legit and itâs good, he goes back to AlphaBay and says okay, I got the drugs and theyâre all good.  Then AlphaBay releases the Bitcoin and sends it to the seller.</p>
+
+<p>V:	If you were just shipping rocks to somebody, like literal rocks, they would â the buyer could say hey, this guy shipped me fucking rocks and everything; you donât get your money.  Thereâs an incentive there to actually [00:30:00] ship product, you know?  I hated escrow, every â I hated the idea of escrow just from the start because what if the market goes down?  What if the market exit scams?  What if a customer says the product is not what it says it is but I know that it is the product, you know what I mean?  Itâs a pain in the ass and youâre dealing with disputes all the time.  So, I tried to get to the point where we were generating enough sales that I could apply for finalized early status.</p>
+
+<p>JACK:	Oh yeah, the finalized early status, or FE, is what every vendor wants.  This means youâve had enough legit transactions that AlphaBay sees youâre a trusted vendor and no longer holds your money in escrow.  As soon as someone buys from you, you get your Bitcoin right away and you can ship the product to the person.  He wanted to get to this status as quick as possible.  Okay, so he needs to send $500 in Bitcoin to this darknet market.  [MUSIC] Now, he has to actually get some Bitcoin to do that with.  I mean, heâs starting with an empty wallet.  Many Bitcoin exchanges are regulated by the feds, and V didnât want to buy a Bitcoin from a place that could send information to the authorities.  On top of that, thereâs a lengthy process of connecting your bank account to an exchange, transferring your money to it, and then having to wait for your funds to clear before buying Bitcoins with it.  It can take a few days sometimes.</p>
+
+<p>So, he researched it and found a site called LocalBitcoins.  Now, Iâm not sure exactly how LocalBitcoins works because Iâve never used it and it seems really weird to me, but from what I understand is that there are users on LocalBitcoins that say hey, send me some money, give me some cash and as soon as I get it, Iâll turn around and send you Bitcoins for the same amount minus a fee.  Thereâs this whole trust thing now with Local Bitcoin users, like if I give them cash, are they really gonna send me Bitcoin?  But now you have to figure out how to get people cash.  There are a number of options, though.  You could send someone a MoneyGram or a Western Union or just meet them locally and give them cash, or send them cash in the mail.  V looked at his options and chose the best one for him.</p>
+
+<p>V:	Went to LocalBitcoins and direct deposited money into somebodyâs account.  When you go to a bank and direct deposit money like that, they donât ask for ID, so I just direct deposited it into the account that was listed and I got the Bitcoin immediately; sent it to my wallet.  I wasnât tumbling at the time but I sent it to my wallet and then I sent it from my wallet to the AlphaBay wallet.</p>
+
+<p>JACK:	There you go; he found a user on the site, deposited cash in their bank account, and got the Bitcoin immediately.  Crazy, huh?  This is a weird way to get Bitcoin because it circumvents the exchange and youâre dealing with just another person in the world who wants to sell their Bitcoin, which means itâs off the radar of any audits, regulations, or databases that you ever bought Bitcoin.  Itâs like an anonymous way to buy it.  So now, heâs got all the things ready to start selling.  This was a lot of work to get here, but like any new entrepreneur, getting traction with sales is hard. Stay with us because after the break weâll hear some pretty clever marketing tricks he used to get started.</p>
+
+<p>Ok so imagine youâre the new guy on a darknet marketplace. Youâre posting that youâve got cocaine for sale. But literally nobody knows who you are. You have 0 sales, 0 reviews. Whoâs going to from you? No one. Youâve got no reputation.</p>
+
+<p>V:	It was difficult to get off the ground.  [MUSIC] There was a forum that I went to a lot where â Iâm not gonna name the actual forum, but itâs a forum where buyers from the darknet kinda congregate and itâs kind of like a group for connoisseurs, sort of.  They want the best product.  Thereâs threads for cocaine, thereâs threads for weed, thereâs threads for pills, thereâs threads for acid, et cetera, like who has the best whatever.  People post reviews there and also, vendors post sales there and advertisements.  I was the new â I was green, so I started posting there like hey, Iâm willing to send out free samples to people, blah, blah, blah.  When you send out a free sample or when you offer free samples, anyone and their motherâs gonna come because itâs free, right?  There was a bunch of people.  I think it was a free sample in exchange for a review on this particular forum and this particular thread, in the cocaine thread.</p>
+
+<p>I sent out a bunch of samples.  Eventually the packs landed, they got their product, whatever, and a few reviews started to roll in.  I posted some listings.  I think the first sale probably came â the first actual sale where we had sold our first gram of cocaine on the darknet came about two weeks after the vendor account was formed, after all of the free samples went out, and after [00:35:00] three or four pretty positive reviews came out.  At that time also, Redditâs darknet market subreddit was still up, so people were posting reviews there.  We got a lot of exposure pretty early just due to my free samples and the advertisements I was doing just all of the time.  Once those free samples landed, once I got â that was when I got my first sale, was two weeks after that.  From there, it just grew.  The next day we probably had two or three that we had to send out.  Within a month or two, we went to ten at the end of the month.</p>
+
+<p>JACK:	This was the start of his online darknet marketplace selling spree.  Every day he would repeat the same process of wake up, go through the fifty steps to log into AlphaBay, check his orders, print out the labels of where things were going, and then get the drugs from his supplier, package them up, and ship them out.  I donât think he put a valid return address on the product because if it got lost in the mail, oh well; he didnât want it coming back to him, thatâs for sure.  He took great care to try to make the package look as normal as possible so it wouldnât look suspicious to anyone along the way.  Oh yeah, so letâs talk about packaging.  To run a business like this, you need to know a lot about packing and shipping.</p>
+
+<p>V:	When I sent out my stuff, it would be double-vacuum sealed and then Mylar would be used as an extra form of protection for any odors or whatever.  Then I had a visual barrier on top of that.  I was just told always that Mylar is expected and wanted by the buyer, so I just did whatever was the best â that the buyers considered the best OpSec.  Thatâs what I always followed and I had received â when I was still buying, I had always gotten packages that had been Mylar and then there would be a vacuum seal, and then another vacuum seal, and then your product.  That was why I used Mylar.  Do I think it actually had any effect on keeping dogs from sniffing the packages?  I have no idea.  I donât know.  I do know that as far as I know, no package has ever been â no package on my end has ever been seized.  I think that we did a pretty good job with that.</p>
+
+<p>JACK:	Okay, so heâs getting orders coming in.  Heâs shipping drugs to people, but he still had to wait for people to come back to AlphaBay and click that they got the order and it was good in order for him to get paid.</p>
+
+<p>V:	A lot of people donât, and thatâs the problem.  You have an auto-finalize on pretty much every market you can â it auto-finalizes your order if you donât report a problem with it, but it doesnât auto-finalize your order for two weeks.  Usually when I sent out an order, it would get there in two days.  So, if you werenât being a lazy piece of shit, you could just log in to AlphaBay and release your funds and everything is gravy, whatever.  But a lot of people will get their stuff, forget to log back in, and itâs not even being a piece of shit; itâs just like, people forget.  Iâm now stuck with my thumb up my butt waiting for my money to come through.  Cash flow could be a problem if you only have escrow enabled.  Thatâs why I tried to get FE enabled as quickly as I could.</p>
+
+<p>JACK:	When you finally got FE enabled, do you remember what that feeling was like?</p>
+
+<p>V:	It wasnât like a feeling of accomplishment.  It was more like thank god, because now I can actually start to â we can actually start to increase volume here and kinda commit to this because before we had a cash flow problem where we werenât getting our money on time.  Now, the moneyâs coming to us first.  We can turn over that cash into more cocaine, whatever we need to do with it, and it was just â it just made the process pretty much â there were way less headaches once finalize early was enabled.</p>
+
+<p>JACK:	Okay, things were going pretty good for V and his buddy and his supplier on higher up, but thereâs another piece to this puzzle; cashing out of all that Bitcoin.</p>
+
+<p>V:	[MUSIC] Well, we had to convert because we had to â the product that we were getting was in cash, so the cocaine that we were getting was in cash, so we had to have constant cash flow and cash-out.</p>
+
+<p>JACK:	They needed cash, but you canât just deposit Bitcoin into your bank account.  First, banks just donât accept it and probably at this time, they didnât even know Bitcoin existed.  But second, it might be dirty Bitcoin.  I mean, itâs coming straight from AlphaBay, right?  You donât want that going somewhere that can be traced to you.  So once again, he goes to LocalBitcoins.</p>
+
+<p>V:	Once we started selling, [00:40:00] I had set up a LocalBitcoins account for cash-in-mail.  Basically with LocalBitcoins, you had different options to pay.  At that time, cash-in-mail was an option.  Iâm not sure if it still is, but cash-in-mail was an option, PayPal was an option, direct deposit was an option.  You had Venmo, you had Zelle, and I set up basically cash-in-mail and that was it.  I had a really low rate.</p>
+
+<p>JACK:	Okay, you get it, right?  This is the opposite of how he bought Bitcoins.  But now what he set up is when people sent him cash in the mail, as soon as he gets it, he would log into his Bitcoin wallet and transfer the Bitcoin to the person who just bought it.  But letâs talk about fees.  When he was selling Bitcoins to people, he was charging a small fee to make the trade.  This was typical for people making trades here, but he was charging a very low fee sometimes, even below market value because he just wanted the cash, not to profit from this trade.</p>
+
+<p>V:	Eventually though, I got disgruntled with that because I got a little paranoid.  I was dealing with too many people and I had to give addresses and stuff like that.  I found a trader who â I was doing cash-in-mail with them and I hadnât â I had a burner address that I would send the money to and stuff, and they were very consistent.  Eventually I messaged them and I saw where their return address was.  Their return address happened to be within an hour of me, where I was.  I was like hey, is there any way we could do something in person?  I know that you probably want your identity secure and everything like that, and I want mine secure too, but I have a pretty large volume of Bitcoin and I need to move it weekly, blah, blah, blah.</p>
+
+<p>JACK:	The trader wasnât interested in a physical meetup.  Thatâs just too risky.  But he kept using them to do cash-in-mail trades.  Weâre talking $10,000 and $20,000 trades, here.  Yeah, imagine $20,000 in cash coming through the mail.  Then he would turn around and send the Bitcoin for that, or maybe heâd send the Bitcoin first and then get the cash second.  Either way, it sounds risky to me, which is why he got fed up with the process.  He did this a few more times with this particular trader and then asked them again, look, is there any way we can just meet up in person and do this trade?  They finally said yes.  [MUSIC] They picked a spot about halfway between each other to do the meet and trade.  It was at a public place, a grocery store where the tables are where you can eat.  The plan was they would meet, he would pull out his computer or phone, transfer the Bitcoin, and then they would hand him the cash once it cleared.  For this particular trade, weâre talking a $30,000 transaction.  Once the transfer was complete, they would both part ways.  So, he arrives at the grocery store.  They message him saying what table theyâre at.  He goes up to the person sitting at the table, and itâs not who he expected.</p>
+
+<p>V:	But this was like, completely shocking.</p>
+
+<p>JACK:	It was a woman.</p>
+
+<p>V:	I didnât expect a woman in the first place, obviously.  I expected some guy, a neck beard, or whatever.  Iâm gonna be honest, man; she was a pretty attractive woman in her maybe thirties and had kids and stuff.  I guess she had a husband.  But she was a pretty good looking woman, drove a Mercedes.  Would never think that she knows anything about Bitcoin or the darknet or anything like that.  Just looks like a well-to-do person from the state I was in, you know what I mean?  You would never think twice.  It was pretty crazy.</p>
+
+<p>JACK:	This was an intense meeting, though.  Thereâs some sweaty palms here for sure.  I mean, thirty grand is going to be transferred between these two right now.  Heâs going to give her $30,000 in Bitcoin and sheâs going to give him $30,000 in cash.  Once you transfer Bitcoin to someone else, thereâs no way to reverse it.  A lot can go wrong here.  She could just take the Bitcoin and run off, or she could give him the cash and then follow him to his car and steal it back.  Itâs nerve-wracking for sure.  What are you gonna do, sit there and count out $30,000 on a table in a grocery store?  Thatâs pretty suspicious.  You just have to trust that itâs all there.</p>
+
+<p>V:	It was a pretty high-profile exchange because there was a lot of trust that had to be between us, you know what I mean?  I think she was scared of me a little bit and it freaked me out.  It was just, fear was the motivator there.</p>
+
+<p>JACK:	Theyâve done business a few times in the past through the mail, so he gave it a shot and it worked.  She got her Bitcoins, he got his cash, and they both drove home safe and sound.  But this started a new relationship with her which turned out to be a weekly meeting.  Every week they would do this exchange.</p>
+
+<p>V:	Pretty much thirty grand a week, thirty to forty grand a week.</p>
+
+<p>JACK:	Thirty to forty grand a week in a package.  Wow.</p>
+
+<p>V:	Yeah.</p>
+
+<p>JACK:	Thatâs a lot of money.</p>
+
+<p>V:	All $100 bills.  Volume goes down in higher [00:45:00] denominations and stuff like that, but yeah, it wasâ¦</p>
+
+<p>JACK:	Where do you think she was getting tons of cash over and over and over?  Who comes up with thirty grand a week to give out?</p>
+
+<p>V:	Well, she would â what she would do is, I would sell to her at a rate that was below market, so sheâs basically getting Bitcoin â sheâs getting the Bitcoin â Iâm selling her the Bitcoin, right, and sheâs gonna be like alright, Iâll give you the cash but Iâm gonna give you market minus 6%, right?  Then, so, what she does is now sheâll go back onto LocalBitcoins and sell that same Bitcoin that I just gave her, that I just sent her to her wallet, for 6% over market.  Now sheâs making 12% on the forty Bitcoin that I gave her.  Itâs a pretty good return.  Sheâs just turning over cash constantly, so sheâs got a constant cash flow, but pretty much like me except it was legitimate, I think, hopefully.</p>
+
+<p>JACK:	Whoa.  [MUSIC] Crazy what goes on out there, huh?  I never knew these kind of meets and exchanges are taking place out there, but there you go.  Oh, and V gave me her screen name, and I looked her up.  She has an interesting reputation, actually.  Her name actually appeared in the Silk Road court records.  She was apparently a vendor there and got busted, so she switched to being a Bitcoin exchanger?  Which apparently was going well but itâs kind of confusing that she was part of the Silk Road rollup but still actively doing this.  Iâm not sure what happened to her with Silk Road, but it was clear to him that sheâd been doing this for a long time.</p>
+
+<p>V:	Now somebodyâs seen your face that â youâre bringing somebody new in and you donât really know who they are, but it was necessary.  At some times, yes, OpSec is very important and could I have sent somebody out there to handle the money or whatever?  I tried it before and it didnât go well.  Some things you have to handle yourself and you kind of have to put faith wherever you put faith and hope that it goes okay.  Thereâs times where you kind of have to expose yourself.  At least in my instance â I donât know.  Thereâs people smarter than me that have successfully either laundered their Bitcoin or got it into cash some other way, but for me, that was the easiest way for me and I felt the most secure way at the time.</p>
+
+<p>JACK:	Now things are really churning.  Heâs got the FE status on AlphaBay and he actually opened up as a vendor on Dream Market too at this point, and heâs got a great supplier of cocaine, heâs got a fair amount of orders coming in, and heâs got this Bitcoin exchanger delivering cash.  Now, even though heâs getting thirty grand a week from all this, he wasnât able to keep all that.</p>
+
+<p>V:	There was overhead.  We had to pay the shippers, we had to pay my buddy, I had to pay my higher up a percentage, my pocket maybe â honestly probably only three or four grand a week.</p>
+
+<p>JACK:	That was for the first few months.  By the time this thing really kicked up, he was pulling in more like $10,000 a week.  With that amount of cash, he decided to buy a car.</p>
+
+<p>V:	I mean, we had a dealership that â well, my higher up had a dealership.  He knew everybody in the city we were in and he knew all the people there.  They were into some stuff that was not so clean.</p>
+
+<p>JACK:	He bought a BMW at this place.</p>
+
+<p>V:	I was able to get a Beamer through them, but most of the money I kept.  I had better weeks than that, I had worse weeks that that.  Most of the money, you canât really put this in there, but most of the money â I didnât really spend anything.  It was just, it kinda just went into my pocket and stayed there.  I paid rent and everything but that was pretty much it, and I bought a car.  That was it.</p>
+
+<p>JACK:	While he was busy with his business, he would occasionally visit his parents.</p>
+
+<p>V:	But I would still â I was still only about an hour and a half from my parents.  [MUSIC] I would come home and Iâd be like â they would be like, what are you up to?  Because they knew that I was living in another city and they were like well, what are you doing?  I was like well, Iâm â I started trading Bitcoin.  This was after the bubble.</p>
+
+<p>JACK:	Heâs talking about the Bitcoin bubble in November, 2013.  This is where Bitcoin rose all the way to $1,000 per Bitcoin.  But for the next two years after that Bitcoin kinda went down to $200 â $#500 per coin, and this was the time when he was doing all this. Oh and keep in mind, heâs still just twenty-two years old at this point.</p>
+
+<p>V:	Bitcoin was a household name at that point and I was like yeah, Iâm trading Bitcoin on this â on LocalBitcoins or whatever and Iâm making a 7% profit on every trade that I make or whatever.  But I was like, I have all that stuff that I [00:50:00] need.  They were like, okay.  At first, they were like, okay.  Eventually my mom kinda caught on because sheâs smart.  I had come home one time with a new BMW and my mom was pretty much like hey, letâs go to dinner.  Letâs go to a popular city and letâs go have some dinner somewhere.  I was like, okay.  She takes me down, we get a bottle of wine and then another bottle of wine, and my mom doesnât drink.  Iâve never really sat down and drank with my mom or gotten drunk with my mother.  Sheâs not like that.  Sheâs not that type of person.  But the situation I guess called for it at the time and she was like, so what are you really doing?  I was like, what do you mean?  Iâm selling Bitcoin.</p>
+
+<p>She was like, no youâre not.  I know youâre not doing that.  Whatâs up?  What are you doing in the city that youâre in?  I was like â eventually, I knew that she knew and I just kinda spilled the beans.  I said Iâm selling cocaine on the internet.  She was like, what do you mean youâre selling cocaine on the internet?  She didnât know how any of that worked.  I was like, Iâm being very safe and I â this is the best way that I know how to do it and Iâm making good money.  I never said I liked it or anything like that but I was like, I need money and this is what Iâm doing for money.  She kinda calmly took that in and was like, you need to stop doing that soon.  I said, okay.  She said, you need to stop doing that by â and then she gave me a month, like a month that I should stop by.</p>
+
+<p>I was like okay, Iâll stop.  But she didnât react in the way that I expected her to react.  I expected her to freak out and be like, what the hell are you doing?  Youâre being an idiot.  You just got arrested.  But she didnât react like that at all.  It was more like okay, I understand, but this is a risk that you donât need right now, so stop at this point.  But I think I had told her the details that were kind of so above her head â it was a sophisticated operation, you know what I mean?  It wasnât like something that â it wasnât like I was selling cocaine on the street corner or something like that.  It was something that was very organized and run like a business, you know?  I donât think she worried as much as she probably should have, but it made me more comfortable, thatâs for sure.</p>
+
+<p>JACK:	[MUSIC] He didnât stop.  Iâm not sure if he had any intentions of stopping because this was great money.  Every month the number of orders would grow and grow, starting from ten orders a month to thirty orders a month, and soon hundreds of orders a month.  He was selling cocaine by the gram, the eighth, and in quarters.  Sometimes he would sell whole ounces.  But the margins just didnât make sense for him to do that all the time.  Sometimes he would sell heroin, too.  He was establishing some direct sales with people, not through darknet marketplaces; just directly through secure e-mail.  Business was booming.</p>
+
+<p>V:	I think at our highest point we were shipping out â I think our best day was maybe forty or forty-five packages which was a lot.  Thatâs a lot of labels, a lot of vacuum sealing, a lot of Mylar.  That was a milestone for us.  That was like, we made it, you know?</p>
+
+<p>JACK:	Alright, so whyâd you stop?</p>
+
+<p>V:	I really stopped because at that point â we had just gotten to the point where I was burnt out, my shippers were burnt out.  I started getting paranoid, the price of cocaine was all over the place.  My buddy had left so I was kinda on my own.  I just thought it was kind of a good time to wrap up shop.  My higher up wasnât happy with that decision but respected it in the end.  It was just the stress and the paranoia level.  I was like, somethingâs gonna happen to me.  I donât want to do this anymore.  It became not exciting; it became more of a chore than it was something new and exciting at that point, you know?  It wasnât anything that was really exciting to me anymore.  So, I decided to hang up my hat.</p>
+
+<p>JACK:	He took down his listings on all the darknet markets, shipped out all his last orders, and shut down his vendor account.  Then he did one last cash-in on all his Bitcoins and stopped [00:55:00] dealing on darknet markets.  Did you move back home with your parents or what happened after?  You had an apartment there just for that, so whereâd you go?</p>
+
+<p>V:	Yeah, I kept the apartment.  I stayed in the apartment.  I kinda just hung out with friends that I had there for a while.  I did move back home for a brief period.</p>
+
+<p>JACK:	What was the plan?  What were you gonna do next?</p>
+
+<p>V:	Actually, my sentencing was coming up for that original case that I talked about.</p>
+
+<p>JACK:	Oh jeez, they still havenât â you still didnât get sentenced?</p>
+
+<p>V:	It hadnât been resolved.</p>
+
+<p>JACK:	Oh, my god.</p>
+
+<p>V:	That was another reason that I had stopped.  I forgot to include that, but I was potentially going to prison.  There was no way that I was gonna be able to operate from prison if I went, so I shut down for that reason as well.  I think that February, I had a sentencing date or something and I actually got arrested again driving really fucked up.  [MUSIC] I was driving, I had just dropped off money to my higher up again âcause we were still doing some street-level stuff.  I dropped off money for a kilo or something like that.  I was just really messed up on pills; Xanax and just all this shit that I had been taking because my stress level was out of control.  The stress was high because I had an upcoming sentencing date, I had no idea what was really gonna happen, if I was going to prison or not.  I was paranoid about the vendor account, I wasnât sure if my OpSec was good enough, I wasnât sure if maybe â I had just read an indictment on somebody recently, I think at the time when the feds were basically intercepting packages, acting as buyers, and I was paranoid that maybe that had happened to me.</p>
+
+<p>There were a string of packages that went missing in the postal system and I was worried about that.  Just all of that combined with overall anxiety, it was just a lot.  To combat that, I took a large volume of depressants and similar to Xanax and Percocets and Oxys and all of that, so yeah, the stress level was super high at that time.  I was driving back and I kinda fell asleep at the wheel and crashed into the median, got out of my car and looked at it, and my one wheel was hanging off and I was like, this is totally â I can totally drive this home.  So, I got back in the car and started driving again, and I heard the lights behind me, pulled over.  I had a hundred Xanax pills in my pocket and they didnât believe that they were for personal use, so they charged me with another felony, booked me.  Judge said no bail because I had another pending case, and got locked up for basically six months total on the original case that I had plus this one.</p>
+
+<p>JACK:	The ride was over, I guess.  Locked up at twenty-three.  In total, he spent a year as a darknet marketplace vendor.  Whatâs ironic here is that the police had no idea he was a former vendor.  He was locked up for his previous charge of selling drugs in college and driving while intoxicated.  His OpSec apparently was good enough to not get caught for all the stuff he did.  Selling cocaine either online or in the streets is a major crime in the US.</p>
+
+<p>V:	[MUSIC] I got out of county.  I went to county prison.  I got out of county prison and immediately â voluntarily, I flew out west to a rehab center.  I was still on probation and under the condition of that probation, I had to fly back every forty-five days to check in with my probation officer.  It was very stupid, but that was one of the conditions.  So, every forty-five days, I would fly back from the rehab center I was at and check in with her, come back to the state I was in and continue rehab treatment.  This had gone fine the two times I had done it already.  My third time, I fly back home, I get in late night, and in the morning my mother drives me to the probation office in the state that I have probation in.  She parked the car, I get out, I go inside, and the probation officer is like hey, weâre gonna go down this hallway, actually.  I said okay, [01:00:00] âcause her room is right there on the right, so I was like, this is weird.  I wonder whatâs going on.  We go down the hall and sheâs like alright, come this way with me.  We turned left.</p>
+
+<p>I walk into this conference room and thereâs two ATF agents there.  Then they handcuff me, put me in the seat, and they were like, we know who you are.  We just arrested your higher up months ago and they kinda laid out printouts of my AlphaBay listings.  They said the vendor name that I had.  They were like, we know youâre this vendor name.  They had printouts of my cocaine listings, they had printouts of the heroin listings, they kinda had me pretty much dead to rights.  They had a stupid video that my higher up had on his phone, and it was just â they were just like, you can either give up your phone right now or we can get a warrant for it, so I gave my phone to them.  As I was sitting there, I was like, thereâs only one person who could have given them this level of access to this information, and I knew who it was.  It was my higher up, and I was like â at that moment, I was like, itâs â he absolutely just destroyed me.</p>
+
+<p>JACK:	Now, his higher up was the guy who was giving him all the cocaine to sell.  V knew this guy ratted him out because of a call he got from his higher up a month earlier.</p>
+
+<p>V:	He had called me when I was in rehab and was like hey, I got indicted and Iâm on the run right now.  I was like, what do you mean youâre on the run?  They were like well, they let me out because â at the time, I didnât really know how the federal system worked, but they had let him out because he had agreed to talk.  They let him out and he went on the run to up north somewhere and didnât come back for months.  He was like yeah, Iâm on the run right now.  [MUSIC] Be careful.  They have my phone.  I donât really know whatâs on it.  I was like, holy shit man, why are you â I hung up the phone and I messaged him on a messaging app and I was like, why would you call me?  This is so fucked up.  Iâm scared, you know what I mean?  At that point, I kinda â in the back of my mind I kinda knew I was fucked because it was not a good situation.  They had told me when I was back in this conference room, theyâre like, we have your higher up.</p>
+
+<p>They donât specifically say heâs â he gave information that led to you because they wonât say that, but you can kinda put the pieces together.  I decided to cooperate with the government and â âcause they were looking for a lot of information related to him because he had a lot of street stuff going on.  I decided to cooperate with them and give them what I knew.  It kinda started from there.  My mom came in.  I asked them if I could see my mom because I wasnât sure if I was ever gonna see my mother again, honestly, because I wasnât sure when I was gonna get out or if I would get out or how bail worked or anything like that in the federal system.  My mom came in, went white as a ghost, started bawling her eyes out, and it was a super traumatic situation and super uncomfortable.  I told my mom I love you and things are gonna be alright.  They took me in the car, they drove me back to the state that the indictment came out of, and basically I had an arraignment hearing.  The judge knew â well, the main prosecutor knew that I was willing to cooperate so they let me out that day which was bizarre, with an ankle monitor.</p>
+
+<p>That was pretty much it that day.  It felt like a dream.  I remember going out to dinner with my parents that night because we were celebrating that they had let me out.  The next day it hit me like wow, Iâm really in the hole here, you know what I mean?  I gotta do a lot to get this sentence down because then, I was looking at actually a ten-year mandatory minimum because I had prior cases and I had that criminal history, and I had a five-year mandatory minimum for the cocaine distribution.  They charged me with conspiracy to distribute 500 grams or more of cocaine.  [01:05:00] They didnât charge me with any heroin and I think if I had chosen not to cooperate with them, they would have hit me with that charge as well.  I got lucky there.  But still, I was looking at ten years.  They made it clear to me like, youâre looking at ten years.</p>
+
+<p>JACK:	V didnât want to go to prison for ten years.  He decided to cooperate with the feds which means he was going to start snitching.  Besides not wanting to go to prison, he felt like his higher up snitched on him first, so he was just gonna snitch back.</p>
+
+<p>V:	[MUSIC] Basically, the way it works in the federal system, you canât â itâs very black and white.  If you tell, even if somebody told on you first and youâre just telling on them and their operation, youâre both snitches, right?  It doesnât matter if the first person told first and you were caught in the â you were caught in that.  If you snitch as well, youâre also a snitch.  Thereâs no mitigating factors like oh, well, youâre less of a snitch than this guy because he screwed you over first.  It doesnât work like that.  So yes, I consider myself a snitch.  Itâs not something that I consider damaging to my moral character.  Itâs not something that I wake up and Iâm like oh, jeez, I wish I hadnât snitched on the guy that snitched on me, like wow, thatâs so terrible of me.  The guy screwed me over and I did what I had to do.  Did I maybe put people that were not super connected towards him away?  Most likely, but you do whatever it takes to get out as soon as possible.  I think that a lot of people donât understand that.</p>
+
+<p>If youâre looking at ten years, you can say from your chair, if youâre not a criminal, like oh, you should have taken that time, man, you should have taken that on the chin.  Unless youâre in it, man, and you see ten years flash before your eyes, then you can say something.  Like yeah, I took that on the chin.  But if youâre not in the game and youâre like oh, well, you shouldnât have snitched or whatever, I donât want to hear it from you.  You know what I mean?  Itâs just not the same.  Youâre not in the game so you donât get to form an opinion on that.  Thatâs just my â thatâs just the way I look at it.  A lot of the stuff they had me do was sit down for proffer sessions and they would ask me questions based on the individual they were looking for.  They would be like, do you know who this or that is?  I would say yes or no.  They would show photographs and they would say like, did he â was he present at this time on this day?  I either answered yes or no.  The people that I was able to identify and the people that I was close with, these were all people that were highly connected to my higher up.</p>
+
+<p>Like I said, my choice to cooperate was based on his cooperation and his willingness to just take me down without blinking an eye.  I chose to cooperate on that basis, but also even if he hadnât, I most likely probably would have because self-preservation would have kicked in there.  I donât want to make any excuse for that; I only snitched because he snitched on me first.  I donât think that was the case.  I think that I probably would have done that regardless.  The people that I did know and that I was close to and that I still had a number for and that I met up with previously, some of those people the feds were super interested in and wanted me to set up basically a controlled buy.  So, one of the shippers for another operation that my partner had or my higher up had, I was actually â I actually knew him pretty well âcause he had worked for me at one point.  He was selling weed, I guess, and they were like yeah, why donât you go buy some weed from him?</p>
+
+<p>[MUSIC] They wired me up.  They gave me â they put in my wallet this microphone, but it looked like a credit card.  It was like a credit card that goes in your wallet, but it has three little dots on it.  Itâs super clear audio.  I went in there and I bought â I was like hey, whatâs up, man?  Everything was cool.  I bought weed from him and I brought it out.  They log everything, every purchase that they make âcause they give you cash to buy the drugs with, but thatâs all coming out of the budget and stuff like that.  It was just a super â I felt like [01:10:00] I was in almost like a weird movie, you know what I mean?  I had these guys picking me up at my house and taking me to do these either sit-downs where I was wired up or controlled buys or whatever they needed me to do just to get my sentence reduced as much as I could.  I did whatever it took.</p>
+
+<p>JACK:	Now, while the feds told him heâs looking at a minimum of ten years in prison, I think that probably wasnât true.  He probably would have got something like five years, but thatâs just a strategy that the feds use to try to get you to cooperate.  He was living at home during all this and was able to convince the ATF and FBI that he needed his ankle monitor removed in order to do these controlled buys.  They agreed and took it off.</p>
+
+<p>V:	I cooperated for a good eight months.</p>
+
+<p>JACK:	Now I was able to look up his criminal record online. And itâs interesting because a lot of his court records are sealed, meaning they arenât visible to the public. And I always had a hunch that the reason they seal court documents is because the person has flipped and is working with the feds. And they donât want anyone knowing this guy is actively snitching. Anyway, Eventually the feds got enough information out of him, and brought him before the judge for the sentencing. He was given a split sentence. He had to spend 6 months in prison, 12 months of house arrest, and 4 years of supervised released.  Also he had to pay a $100 fine. So he went back to prison for the 2nd time in his life.</p>
+
+<p>V:	[MUSIC] Itâs a very strange environment.  I think that prison taught me that you have to look out for yourself at all times.  You have to keep your head down, stay healthy.  Take care of yourself is the number one advice I would give to anybody, you know what I mean?  Donât trust anyone.  I did a very short sentence so I was able to skate by by just keeping my head down and not really talking to anybody that I â that didnât need to be spoken to.  I would say that it changed me in the way that youâre always around people 100% of the time.  You have to be watching your back 100% of the time.  Yeah, did it harden me up?  I donât think so.  I donât think I was in there long enough.  If I was in there for a longer period of time, I think I would have been permanently changed, yeah.</p>
+
+<p>JACK:	When he got out of prison, he was basically under house arrest with an ankle monitor on at all times so his probation officer could see where he was.</p>
+
+<p>V:	Basically, the way that worked was you could get out for â I had gym hours, I had school hours, I had some other stuff in there.  If you had a doctorâs appointment you would get out, but overall, that went pretty smooth, but slow.  I actually got off early.  I wasnât supposed to get off the ankle monitor for a couple more months and I got off of it because of corona.  My probation officer actually called me and was like hey â just a random day â he was like hey, Iâm taking you off the ankle monitor.  I was like â I asked him why.  Heâs like, do you want me to keep it on?  I was like, no.  He was like, alright, just take some scissors and cut off the ankle monitor.  I was like, okay.  At first I was like, sweet; Iâm not on an ankle monitor anymore.  Then I realized I still couldnât go anywhere because it was corona and everything was shut down.  The same rules kind of applied.  It was actually almost even worse because school moved virtual and all of that.  Iâve been in the house a lot more than I was when I was on the ankle monitor.</p>
+
+<p>JACK:	I guess if you ever want to know what itâs like having probation or house arrest, this year has taught us what thatâs like.  Everything was shut down this whole year and we couldnât go out or do anything.  I guess that makes it an easy year to serve probation through though, huh?</p>
+
+<p>V:	Iâm actually on probation for a couple more years, but I donât â Iâm not gonna be on for as long as I thought I was gonna be on for.  Yeah, in the next couple of years Iâll be off, but Iâm still on probation so I still talk to a PO and everything.  But the hardest part is definitely behind me.  I do what I â I try my best to repair the damage that Iâve done, you know?  I know that the choices I made were not good choices and I hurt a lot of people.  One of the questions that I got a lot on the â I just want to address this, but one of the questions that I got a lot on the AMAâ¦</p>
+
+<p>JACK:	Oh, so you might be wondering how I found this guy.  Yeah, he popped into Reddit one day and made a post saying Iâm a former darknet market drug dealer.  Ask me anything.  So, I immediately asked him hey, can I interview you to hear the whole story?  So, here we are.</p>
+
+<p>V:	One of the questions that I got a lot on the AMA â they werenât really [01:15:00] questions, but they were like, how do you feel knowing that you ruined peopleâs lives?  You sold heroin and most likely killed people or potentially could have killed people.  I want to make it clear that I regret what I did and I donât try to glorify any of my actions or my activities or anything like that.  There was no reason for me to have done what I did.  I definitely regret selling heroin on the darknet.  I also want to make it clear that I respect peopleâs ability to make a choice, right?  Thereâs two people on the end of that situation.  The other thing I would say is that purchasing drugs on the darknet is not an impulsive decision, right?  Thereâs a lot of steps that have to be taken before youâre able to actually press that Buy button.</p>
+
+<p>Then once you press that Buy button, thereâs another two to seven days or even longer before you get your product, so itâs not like youâre getting in the car, youâre driving down to the block, and youâre picking up a bag of heroin or whatever.  Itâs completely different.  The people that have access to this, that have access to the dark web, that have access to $200/gram heroin are not people that, in my mind, are really hard-up.  I just donât see it the same way that other people do.  Itâs a lot safer buying from â buying stuff on the darknet than it would be buying stuff on the street, and thatâs almost true 100% of the time.  Thatâs what I would say.  I donât glorify my actions.  I regret what I did, but at the same time, Iâm here to share a story.  Iâm here to kind of enlighten people to what the federal system is like, to what it was like for me during the time that I was actually vending.  I just wanted to put my story out there.  It had nothing to do with glorifying what I did.  That was never my intention ever.</p>
+
+<p>OUTRO:	[OUTRO MUSIC] A big thank you to v for sharing your story with us. If youâre interested in contacting V, his email address is in the show notes or at darknetdiaries.com. I call this show Darknet Diaries not because itâs focused on the darknet but because I like to think of the darknet as all this secret and hidden stuff that happens online, stuff we werenât ever supposed to see or know about.  Thatâs why I donât just cover stories about the darknet.  But hey, this is actually the third episode Iâve done about darknet markets and if you want to hear more about them, check out Episode 24, Operation Bayonet which is about AlphaBay, and check out Episode 58 which is called OxyMonster.  Thatâs about another vendor.  The other day, someone told me they were listening to this show while going for a run, but they got so sucked into it that they ended up running farther than Forrest Gump did.</p>
+
+<p>If you love this show that much, consider donating to it to help keep the WiFi on.  Please visit patreon.com/darknetdiaries to become a member.  Oh, and as a thank you, youâll get bonus episodes and an ad-free feed.  This show is made by me, the guy whoâs always on dark mode, Jack Rhysider.  Sound design this episode was by Andrew Meriwether who loves staring at dry paint.  Editing help this episode is by the market-manipulator, Damienne, and our theme music is by the botnet known as Breakmaster Cylinder.  Even though I upgraded the RAM in my computer just so I could run Slack, this is Darknet Diaries.</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

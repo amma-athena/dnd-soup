@@ -1,0 +1,525 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>Hot Wallets â Darknet Diaries</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Hot Wallets â Darknet Diaries">  
+	<meta name="twitter:description" content="">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/hotwallet.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/119/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Hot Wallets â Darknet Diaries" />
+	<meta property="og:description"        content="" />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/hotwallet.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/119/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/hotwallet.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/119/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="Hot Wallets â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/hotwallet.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 119: Hot Wallets</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://www.podtrac.com/pts/redirect.mp3/traffic.megaphone.fm/ADV7854332536.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/119/",
+			   "title": "Ep 119: Hot Wallets"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/119">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[START OF RECORDING]</p>
+
+<p>JACK:	 Oceanâs Eleven was a cool movie, an elaborately-planned casino heist where the thieves were trying to steal millions of dollars in cash by bypassing all kinds of physical security and tricking the guards.  It was a thrill to watch, but I wonder if the great heist films are coming to an end, because the largest robberies are all done over computers now, and itâs just not visually stimulating to watch someone sit at a computer pushing buttons, transferring money from one account to another.  But even if it was, does it sound interesting if Fast and the Furious 27 was all about who could pull off the best NFT scam?  Or what if Reservoir Dogs was remade and instead of stealing jewelry, they tried to steal the private key to someoneâs Dogecoin wallet; Reservoir Doge?  [INTRO MUSIC] Or what if there was a Lock, Stock, and Two Smoking ICO Scams?  I donât know, maybe this is the future of heist films because art imitates life, and cryptocurrency heists are where the biggest thieves are playing today.
+<!--more-->
+(INTRO):	These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	Alright, so, who are you and what do you do?</p>
+
+<p>GEOFF:	So, Iâm Geoff White and Iâm an author and investigative journalist.</p>
+
+<p>JACK:	Geoff is a fantastic investigative journalist doing a lot of work for the BBC, and heâs been tracking a particular story for a while now, and Iâm fascinated with it.  So, I wanted to bring him in here to talk about what heâs been looking into.  The story starts with NiceHash.</p>
+
+<p>GEOFF:	[MUSIC] NiceHash is a cryptocurrency business.</p>
+
+<p>JACK:	Iâve actually used this service before; itâs a Bitcoin mining pool and itâs based out of Slovenia.  Mining Bitcoin by yourself is hard to get any rewards, but if you pool your resources with other miners, you get a much bigger chance of making some money from it.  So, with NiceHash, all these Bitcoin miners pool their resources together to make more money for mining.  The service was one of the most popular Bitcoin mining pools in 2017, which means it made a lot of money.  It would just keep a small fee and then issue the payouts to all the miners.</p>
+
+<p>GEOFF:	Itâs December 4th, 2017.  Employees at NiceHash start to get phishing e-mails sent to them, which is the classic way in, of course.  Around this time, lots of phishing e-mails were targeting lots of people at lots of cryptocurrency businesses.  Sooner or later, because itâs a numbers game, it seems somebody at NiceHash inadvertently clicked on the e-mail, opened the link, opened the attachment, and got themselves infected.</p>
+
+<p>JACK:	[MUSIC] The attackers used the malware to get into the employeeâs computer, and from there they burrowed their way deeper into the NiceHash network, pivoting and escalating their privileges, and this particular attacker was looking for a very specific thing; NiceHashâs Bitcoin wallet private keys.  If they could manage to get their hands on the private key, they could empty NiceHashâs wallet entirely and maybe some of the customersâ wallets too, because when NiceHash payed out the people in the mining pool, some people just kept their money at NiceHash, accumulating Bitcoin but not cashing it out.  There were a lot of users who were not cashing out their Bitcoin that they earned; maybe theyâd come in once a month and transfer their coins outta there.  But this attacker got into NiceHashâs systems and found where the private keys were for the Bitcoin wallets and just drained everything they could out of it, stealing a lot of money from NiceHash.  Do we know how much they took?</p>
+
+<p>GEOFF:	Yes and no, which sounds like a peculiar answer to give.  We know the point it was hacked.  This was in December 2017; they transferred out Bitcoins worth about $75 million.  So, the reason Iâm saying no, we donât know how much it was worth, was because at this time youâll remember Bitcoinâs value was swinging absolutely massively, so this was the era when it was peaking, I think, at about $20,000 per Bitcoin.  So, at the time of the hack, it was about $75 million.  Subsequently it might have been less, but in the intervening years, it will have been more.  All we can do is a snapshot of time at the time; $75 million.</p>
+
+<p>JACK:	$75 million in Bitcoin stolen, gone just like that.  Thatâs a lot of money.  I mean, thatâs bigger than any bank robbery ever in the US.</p>
+
+<p>GEOFF:	Largest theft in the history of Slovenia, according to somebody who worked for NiceHash at the time.  So, certainly in Slovenian terms, an absolute mega-haul.</p>
+
+<p>JACK:	The thing about cryptocurrency is once itâs stolen, itâs gone.  Thereâs no way to reverse the charge or call the bank and say hey, this was stolen; please freeze the account that stole it.  No; Bitcoin is a type of currency thatâs decentralized, meaning thereâs no central controlling entity or place or person that you can call for help.</p>
+
+<p>GEOFF:	So, NiceHash starts investigating.  Theyâre obviously trying to trace down the money.  Obviously, NiceHash is full of very clever people who do cryptocurrency all the time, so part of their effort is to try and trace where the cryptocurrency is going, to try and keep track of it, and as a lot of your listeners will be very familiar with, thereâs now a game of cat-and-mouse.  The hackers start to move the transactions through, move the money through to different cryptocurrency wallets, possibly into different types of cryptocurrency, so swapping it from Bitcoin into other cryptocurrencies, and the investigators at NiceHash initially are pursuing it and trying to keep track of it and trying to keep track of where this money goes, which gets increasingly more complicated the more efforts the hackers make to move it around.  Sooner or later this crosses the radar, it seems, of US investigators, almost certainly the FBI, who get involved and start trying to do that tracing effort as well, because pretty soon the US government and the FBI have a sense of whoâs behind this hack and how serious it might actually be.</p>
+
+<p>JACK:	You know, do you have any real â any understanding of why the FBI would be investigating a Slovenia company?</p>
+
+<p>GEOFF:	Yes.  The FBI are constantly on the lookout for leads on investigations that theyâre running, so the FBI have, for a long period of time, been tracking various cyber-crime gangs, and theyâre quite canny.  Across the world, whenever thereâs a computer hack, particularly if itâs a cryptocurrency exchange attack and the FBI have been tracking a cryptocurrency exchange gang, they will start to look at that and think hang on, does this have any of the indicators, does it have any of the likely fingerprints connecting it to an investigation weâre already running?  Weâve seen this before in the case of the attack on Sony Pictures Entertainment back in 2015.  Subsequent to that, another attack by the same gang on Bangladesh Bank, the central bank of Bangladesh.  The FBI start looking at that and thinking hang on, weâre seeing some commonalities.  So, the FBI are constantly scanning around the world, aware that the hackers that theyâre chasing can be operating in almost any country around the world, and trying to connect the dots between fresh attacks and fresh cyber-attacks and ones that the FBIâs already got on its radar to see if it can lump in that attack with another attack and potentially charge the same gang with both.</p>
+
+<p>JACK:	Mm-hm.  So, with this in â now the FBI is investigating, did they ever discover who stole the $75 million?</p>
+
+<p>GEOFF:	[MUSIC] Well, according to the FBI, this was the work of the Lazarus Group, who â believed to be working on behalf of the North Korean government.  These are North Korean state hackers who are going around the world and in a lot of cases, trying to get their hands on as much cash, as much foreign currency, certainly, as possible so they can transfer it back either to North Korea directly or for the use of North Korea in other foreign countries.  So, these are the kind of jigsaw pieces that the FBIâs starting to put together.</p>
+
+<p>JACK:	Oh, whoa; this is somehow surprising and not surprising at the same time.  Itâs surprising that a nation state actor, a government organization, would be in the business of cyber crime.  But itâs not surprising because the North Korean government is just weird.  I mean, theyâre really, really weird.  But this is also surprising because this is the first time North Korea has ever stolen cryptocurrency before.  Specifically, they broke in and stole Bitcoin from a company in Slovenia.  Where the heck did they learn how to do this from?</p>
+
+<p>GEOFF:	Theyâd been experimenting with cryptocurrency, so youâve got to think back slightly earlier than this attack, and this is December 2017.  May 2017, of course, was the WannaCry cyber-attack, the ransomware attack that hit multiple countries around the world, hundreds of thousands of devices infected and so on.  Classic ransomware attack, but spread through this incredible sort of auto-spreading and auto-detonating technology.  Whatâs interesting about that from a cryptocurrency point of view, because the WannaCry attack was also attributed to the Lazarus Group, was that in the wake of the WannaCry attack, there was obviously this question around how the ransom payments â which were obviously in cryptocurrency, in Bitcoin, in this case â how those ransomware payments would be gathered together and distributed and laundered.  They didnât make huge money out of â a huge amount of money out of WannaCry; I think they barely â at the time, I think it barely topped a million dollars, which is sort of almost laughable among ransomware gangsâ profit margins.</p>
+
+<p>But the interesting thing about WannaCry was the efforts that the hackers made to launder the money.  You could see â because the cryptocurrency transactions are transparent and available on the blockchain âyou could see in the months after WannaCry the money being moved around, moved to different wallets, tumbled, as the terminology says, into different wallets, and eventually disappearing into one cryptocurrency exchange, never to be seen or at least never to be traced again.  So, youâre right; North Korea hadnât really done a huge amount of cryptocurrency theft, bare cryptocurrency theft.  They definitely experimented with moving cryptocurrency around and laundering it, and in hindsight, maybe the WannaCry cyber-attack â part of the motivation was to get the hang of â if indeed it was North Korea behind it â getting the hang of laundering cryptocurrency so that they could then go on to do hacks like the one on NiceHash in December.</p>
+
+<p>JACK:	Oh boy, this does not bode well.  If North Korea learned how to launder Bitcoin from WannaCry and theyâre already equipped to carry out hacking campaigns and they use these offensive techniques to get in and steal $75 million from NiceHash, this win for them could mean North Korea is going to go full throttle and start attacking all cryptocurrency companies, looking for big licks.  [MUSIC] Because, North Korea has been robbing banks for years at this point.  In fact, Geoff came on the show before to tell us about the time when North Korea robbed the Bangladesh Bank.  Thatâs Episode 72.  But when you rob a bank, itâs a lot harder to launder the money versus when you steal some crypto.  Crypto is private and anonymous by design.  Itâs much easier to move the crypto around and hide behind the wallets.  Like for instance, if this money was stolen from a bank, there would be an immediate sense of urgency to get that money out.  It might have been transferred to another bank, and then theyâd have to deploy a whole network of money mules to try to quickly cash out all the money they stole.  But when you steal Bitcoin, thereâs no sense of urgency.  You can just let it sit there until youâre ready to cash it out.  Nobody can touch it or freeze it on you.  The scary thing is that North Korea needs money badly and isnât afraid to commit heists and robberies to just steal as much as they can.  So, as they learned about crypto, this must have been seen as a great opportunity for them.</p>
+
+<p>GEOFF:	Absolutely, yes.  The direct â the trajectory, really, of the North Korean Lazarus Group, according to both US investigators and the United Nations who keep an eye on North Korea and its activities, the direction of travel for its hackers I think really has been cryptocurrency.  In the years following the NiceHash attack and the WannaCry ransomware attack, there was just this proliferation of loads and loads of different tactics of targeting people and loads and loads of different methodologies for doing it.</p>
+
+<p>JACK:	Many crypto companies reported they received phishing attacks since 2018 onward that seemed to be coming from the Lazarus Group.  These are almost always e-mails that employees would receive to try to trick the employee to read the e-mail, download the attachment, and open it.  These phishing e-mails werenât some spray-and-pray kind of attack where theyâre sending out millions of e-mails a day.  No, these phishing e-mails were often very well-crafted to target a specific person at a specific company, and they were well-designed.  One of these phishing e-mails targeted an employee who worked at a crypto company, and what the attackers did was they looked on LinkedIn to see who worked at that company, and found an employee that they think would have access to what they wanted [MUSIC] and would be susceptible to a phishing attack.  So, they crafted an e-mail which was trying to recruit that person to come work at a different company.</p>
+
+<p>GEOFF:	It just looked like the dream job, just absolute dream job; all the things you want, loads of money.  Unfortunately, of course, the dream job doesnât exist.  Itâs been made up by the computer hackers to appeal to exactly this individual, because theyâve managed to research that person on LinkedIn and said oh, they work for this company, work for that company; theyâd probably be interested in this job.  So, the employee thinks well, Iâll open this job ad and see what happens and what it looks like.</p>
+
+<p>JACK:	He read the e-mail and was curious to learn more.  It said there was more information in the attached document.  He was interested and downloaded the attachment.  It was a Word doc, and when he opened the Word doc, a pop-up showed up which said this document is protected by GDPR regulations.  Please click to accept the GDPR terms.  Well, as you can imagine, this button had nothing to do with GDPR, and when he clicked OK is when the Word doc executed a script which infected that employeeâs machine.  With that, the North Korean hackers were in his computer, hunting for the crypto wallets that that company controlled.  I find this fascinating because time and time again, Iâve heard penetration testers do this exact same thing; they want to target a company, so they go to LinkedIn, find some people to target, and craft some phishing e-mails, and they get into the company that way.  Social media just makes this kind of attack so much easier.  The thing is, we donât know how many crypto companies were robbed by North Korea.  Companies feel embarrassed when they get hacked like this.  Theyâd lose customers if they publicly announce theyâve been hacked.  So, even when a company reports this to the authorities, those companies can still remain nameless.  But what we do know is that North Korea has steadily and persistently attacked and stole cryptocurrency from companies for years.</p>
+
+<p>GEOFF:	So yeah, so you start off with $75 million or thereabouts at NiceHash, and this sort of develops and gets bigger and bigger.  At one stage, the FBI are talking about the stealing of $230 million.  This is from an unnamed cryptocurrency exchange.  Absolutely astonishing amount of money.</p>
+
+<p>JACK:	$230 million stolen from one exchange?  Unbelievable, and with little to no punishment?  Of course North Koreaâs gonna continue on this robbery spree.  Whoâs gonna stop them?  [MUSIC] Well, the FBI investigated this $230 million heist and tried to figure out who cashed this money out.</p>
+
+<p>GEOFF:	Obviously one of the things you can do when someone steals cryptocurrency is you can trace it, because cryptocurrency transactions are recorded on the blockchain and you can â anybody can go to the blockchain and look at where they go.  This is the game now; investigators, law enforcement, and private companies are constantly on the case when these hacks happen, trying to work out where the money goes.  What theyâre hoping is they can chase it to somewhere thatâs legitimate, or at least they can chase the money into a cryptocurrency exchange that will answer the phone to law enforcement.  So, law enforcement see these transactions through the blockchain, they go a-ha, theyâre now putting it into this cryptocurrency exchange.  Weâve got a number for them; letâs give them a bell and see if we can get them to stop the money.  Now obviously, not all cryptocurrency exchanges are gonna do that, but some of them â quite a lot of them, actually â do want to answer the phone to law enforcement.  They donât want to be part of criminality, so you can call them up.  They managed to trace the money to a particular cryptocurrency exchange, and what was good about this exchange was theyâd implemented what are called Know Your Customer controls, so this is â youâll have been through it; Iâm sure lots of your listeners will have been through it.  You try and set up a bank account, they want you to hand over ID.</p>
+
+<p>Increasingly with cryptocurrency exchanges, the legitimate ones, theyâre doing the same thing.  If you set up an account at one of these places, youâll probably have had to send your ID, your passport or whatever.  So, one of the exchanges into which this $230 million of stolen cryptocurrency vanishes is one of these legitimate exchanges that asks for ID for customers.  So, the FBI think right, we can phone these guys up, this cryptocurrency exchange, and we can ask for the ID for the customers that set up the accounts that the stolen money went into.  Thatâs a pretty good â thatâs gonna be a good lead.  So sure enough, they do; they make contact with the exchange and say look, hereâs the accounts.  Please give us the IDs of the people who set up these accounts.  The cryptocurrency exchange obliges and sends the FBI a screen-grab, an image of the ID of the person who set this thing up.  What the cryptocurrency exchange has is a photo, a webcam photo, of someone sitting in a chair.  Heâs got quaffed hair, heâs holding up a South Korean driverâs license, I think it was.  Heâs wearing a little white t-shirt.  The driverâs license has got this guyâs â his name and his address and his ID and everything on it.  So, I imagine the FBI at this point are thinking great, [MUSIC] this seems to be the guy whoâs helping launder the stolen $230 million.  But thereâs a bit of a snag because thereâs two accounts that are being used, and the FBIâs asked for the IDs for both of the account holders.</p>
+
+<p>So, the first ID comes and itâs this South Korean guy holding up a South Korean driverâs license.  Badda-boom.  Second picture arrives for the second account holder, and this time itâs a German guy and heâs holding up a different type of ID and heâs got a bald head and it was completely different.  But then as you compare the two photographs, which the FBI must have done, things start to look a bit skewy because theyâre both wearing the same t-shirt.  Thatâs weird, thatâs a coincidence.  Then their fingers are in exactly the same positions around the ID, and theyâre sort of sitting in exactly the same chair.  As you look close, you realize their pictures have just been Photoshopped or at least manipulated somehow.  Theyâve basically taken the heads off the two different pictures and put them onto the IDs.  Basically, a pictureâs been ripped off the internet and they â the hackers have effectively faked the pictures on the ID, faked the pictures on the photograph, convinced the cryptocurrency exchange these are real people who want to set up an account, used that to set up the account, and washed the $230 million through it.  So, the FBIâs dream of knocking down the door of these two chaps with their IDs on display vanished into thin air, unfortunately.</p>
+
+<p>JACK:	Huh, interesting.  Theyâve got fake IDs and have figured out how to cash out their stolen money without getting caught.  You might wonder hey, there are banks in North Korea, right?  Why isnât there a crypto exchange in North Korea where the Lazarus Group can just send their Bitcoin there and cash it out without having to use any fake IDs?  Well, for a few reasons.  First, it would be obvious if you saw the stolen Bitcoin wallet go to an exchange in North Korea that itâs gonna be the North Koreans who did this, and North Korea doesnât want to take credit for any of this.  They are already in trouble and getting sanctioned and just donât want to make things worse, so they always deny that they had anything to do with these heists.  But second, weâre talking $230 million cash-outs here.  It kind of breaks my brain to think this through, but where would a North Korean crypto exchange get $230 million to give to someone who wants to cash that much out?  They would have to have that kinda cash on hand to pay it out, and itâs not like you can just start an exchange and only do payouts.  The reason why exchanges work is because the exchange has enough people buying crypto with the cash, and they can pay out whatâs needed.</p>
+
+<p>Like I said, that kinda breaks my brain to fully understand that, but suffice to say, thereâs no crypto exchange in North Korea, so they have to use exchanges in other countries to get their money out.  [MUSIC] They donât actually cash it all out at once; North Korea has this technique they use called peel-chaining.  See, once money gets stolen, the wallet it went to actually gets flagged so exchanges know not to do business with that wallet.  So, like if you stole $75 million and transferred it to your wallet, the FBI might flag your wallet and tell exchanges hey, donât do business with this.  So, if you then send your money to Coinbase, Coinbase might freeze your funds and turn it over to the FBI.  So, what North Korea does since they know their wallets are being watched is they transfer all their money to a brand-new wallet, and quickly, before it can be flagged as a stolen wallet, they take a small chunk of money, maybe five grand or fifty grand, send that to an exchange to quickly get it cashed out using one of these phony IDs they have, and then they continue doing this until theyâve cashed out all of what they want, transfer all the money to a new wallet, peel off a little, send it to an exchange, and do it again, transfer money to a new wallet, peel a little off, send it to an exchange, and just keep repeating.  This is the peel chain laundering technique that they use.  By the way, I learned all about this peel-chaining technique from Geoffâs book that he just published called The Lazarus Heist which goes into great detail about this and so much more.</p>
+
+<p>GEOFF:	Exactly, and this is the interesting thing about North Koreaâs efforts to steal money generally, is â I think when I started out with Season 1 of The Lazarus Heist, the podcast that we did that led to the book, my assumption was well, all this money sort of washes back to North Korea, all these allegations of stolen money.  If thatâs whatâs happening, then it must end up back in North Korea.  I had this image, I think â I donât know, maybe Kim Jong-un writhing around in a pit of money.  But thatâs not necessarily how it works, because as you say, once you get your stolen Bitcoin or whatever it is back to Pyongyang, if it is indeed them behind it, youâve gotta sort of take that cryptocurrency and swap it into something.  Obviously in North Korea, thatâs just [MUSIC] Korean â North Korean won; itâs just the local currency.  What often happens instead is this cryptocurrency is just left in wallets around the world, wallets connected to the internet, that can then be used for things North Korea would want to buy.</p>
+
+<p>So, if North Korea wants to purchase something in, I donât know, Kazakhstan or Russia or Brazil, they can use the money locally, if you like.  They donât keep the money back in North Korea; they have the money stashed out in other places so that they can buy things they need, because they canât dispatch the money from North Korea to go and buy them.  Itâs much better to have, if you like, local credits that you can spend in different countries that you need.  Thatâs why cryptocurrencyâs really useful, is if youâve got your money stashed in Russia and you want to buy something in Russia, fair enough.  But if you want to buy something in Brazil, youâve got to move the money from Russia to Brazil.  Whereas with cryptocurrency, itâs accessible anywhere in the world.  Thatâs one of the joys of it.  So, for people like North Korea who are seemingly stashing this money around the world, itâs really useful âcause they can make purchases in different countries with it.</p>
+
+<p>JACK:	Oh, thatâs very interesting.  I never thought of that.  But okay, so still, can you give us any kind of idea on how they might be laundering it?  Because it â like you said, it is becoming more regulated and itâs more difficult to get it out, because then itâs tied to a real bank account somewhere in the world.</p>
+
+<p>GEOFF:	Yeah.</p>
+
+<p>JACK:	Maybe there are just places in the world that is not regulated, like you can find some back street exchange in some third world country or something.  I donât know.</p>
+
+<p>GEOFF:	Yeah, yeah.  Exactly.  Itâs a really interesting picture, this one, and there have been instances of hacks where â particularly recently because the investigators, both law enforcement and also private industry investigators of cryptocurrency, are getting so quick and so fast and so thorough at chasing the stolen money, stolen cryptocurrency, that itâs really difficult for those whoâve stolen it to launder it because all eyes are then on those hot wallets, if youâd like, those â I say hot wallets; I mean hot as in stolen money wallets.  So, thereâs instances in which the hackers are sort of caught out because theyâve got the money in a wallet, but as soon as they try and move it somewhere, as soon as they try and cash it out, the investigators are gonna try and get one step ahead of them, contact the company thatâs doing the cashing out and say hang on, thatâs stolen money; you canât transfer that.  You canât transfer that into fiat currency; pounds, dollars, and so on.</p>
+
+<p>So, the hackers face this really interesting challenge of trying to sort of [MUSIC] find those â as you say, those back streets, if you like, in the cryptocurrency market, so the exchanges arenât doing Know Your Customer, the exchanges that donât care that theyâre handling stolen money.  The other thing theyâre going to is tumblers, is Bitcoin mixers and cryptocurrency mixers who will take your cryptocurrency, mix it with other peopleâs.  If you imagine a whole bunch of bank notes on the table, you stick your stolen bank notes in the middle, you wash them all around with the other notes, and then you get some notes back, but some people get some other notes back.  Really difficult to work out which bank notes came from the drug deal.  So, these mixers are effectively a cryptocurrency version of that.  You stick your money in, it gets washed with some other peopleâs, you get your money back, but itâs really hard for investigators then to say look, the money that went into that hole there is the same as the money that came out of that hole over the other side of the mixer.</p>
+
+<p>So, thatâs one other thing theyâre doing.  The other thing is North Koreans are allegedly, along with other cyber-criminals, relying on some networks of people, of individuals who offer to take bits of cryptocurrency and try and cash them out, try and convert them into different types of things.  The US has charged a couple of Chinese chaps with offering exactly this kind of service, probably in exchange for a fee, using little bits of cryptocurrency and changing it into real-world money, in some cases using things like iTunes gift cards, anything they can do to eke out this money.  But the overall picture with this is if youâve stolen letâs say $230 million of cryptocurrency, itâs just not possible in this situation, this world right now, to suddenly swap that into $230 million of real money, of actual US dollars, bank notes.  You canât do that.  Youâve got to do it slowly.  Youâve got to eke it out.  So, thereâs a handbrake being applied to all of this which is really interesting.</p>
+
+<p>JACK:	All this takes a special kind of skill.  You canât just Google how to launder $200 million in Bitcoin and follow some step-by-step guide.  This is a dark art of sorts, finding the cracks in the walls that should stop people from doing this and exploiting them.  This means as years go on, the Lazarus Group is getting better and better at finding large piles of crypto, stealing it, and laundering it, which means theyâre starting to venture out into new crypto territories.</p>
+
+<p>GEOFF:	Yeah, this is where it gets really weird and interesting.  Thereâs this very peculiar story that emerges about a company setup called Marine Chain.</p>
+
+<p>JACK:	Okay, so Marine Chain was this cryptocurrency startup.  I think they were working on an ICO where they wanted to raise money from investors to issue crypto coins for however much they bought in.  This company was based in Singapore, but then out of nowhere, this guy [MUSIC] Tony Walker just decided to join the company.</p>
+
+<p>GEOFF:	Tony Walkerâs the brains behind Marine Chain.  He says look, youâre gonna set up this company.  I know all the business side.  Heâs got a sort of fancy slide deck that shows how much money theyâre gonna make.  Theyâre gonna be in for tens of millions of dollars off the back of this.</p>
+
+<p>JACK:	Tony Walker starts helping this Singapore-based company launch, but he doesnât seem very focused on the business.</p>
+
+<p>GEOFF:	So, your chap in Singapore, Jonathan Foong Kah Keon, starts to get a bit suspicious about this but keeps going with this guy Tony Walker âcause it looks like itâs going okay.  They are getting interested in this and potentially theyâre getting investment.  But gets increasingly suspicious, and then Tony Walker starts asking your Singaporean chap, Jonathan Foong Kah Keon, to have his name on the business; the business needs to be registered in his name.  The Singaporean chap says well no, Iâm not sure about that.  Thatâs gonna cause problems.  But Tony Walkerâs insistent on this.  Then things get a bit weirder.  Tony Walkerâs name appears on contracts, but heâs not signing himself Tony Walker; heâs signing himself Julian Kim.  By this point, a lot of alarm bells should be ringing âcause itâs clear somethingâs going wrong with this business.  Thereâs something very peculiar about this Marine Chain business.</p>
+
+<p>JACK:	Well, Marine Chain starts getting talked about on forums and on Reddit, and someone made a comment about Marine Chain.</p>
+
+<p>GEOFF:	And says just sort of out of the blue, no, I donât think you should; I think this is a bit of a scam.  By the way, I think itâs a North Korean-motivated scam.  [MUSIC] This just drops on these forums.  Whatâs weird about this is the key comment comes on a Reddit forum from a user calling themselves ArsenalFan5000, Arsenal being a very famous football team in the UK, which probably needs no introduction.  So, some football fan is popping up on Reddit and saying no, you shouldnât invest in Marine Chain.  I think itâs a North Korean front operation.  Now, whatâs weird about that is at that point in time, I donât think anybody had actually clocked that, and yet this user whoâs apparently some football fan on Reddit pops up and says, you know, I think itâs North Korean.  Whatâs weird about ArsenalFan as well is this user posts that comment and nothing else.  No other discussion.</p>
+
+<p>Itâs the only comment they post on the whole forum, and then they just vanish and disappear.  Turns out, they were on the money.  As other people start investigating, they uncover different links to North Korea for Marine Chain, and it does turn out to be a North Korean front operation.  So, there was a of people that felt pretty glad they didnât invest in this particular firm.  Now, whatâs interesting about Marine Chain is â partly thanks to being exposed by people like ArsenalFan5000, the company just folds.  So, it just vanishes and disappears.  Tony Walker, AKA Julian Kim, just drops off the face of the earth, drops off the radar at least for the moment under those particular pseudonyms and is never heard of again.  So, Marine Chainâs an interesting facet to this.  Itâs a North Korean attempt at an initial coin offering, an ICO that never really lands, never really takes off.</p>
+
+<p>JACK:	Whoa, this is a totally new type of tactic for North Korea, to launch an ICO.  [MUSIC] Hereâs the thing; in 2018, it was quite the year for ICOs.  ICO stands for initial coin offering.  Itâs kind of like a company starting a business, and to raise money to kickstart it, they sell this new type of crypto to early investors.  If the company does well, then the value of the coin goes up, and if the company does poorly, the value of the coin goes down.  2018 was sort of a boom year for ICOs.  There were lots of them springing up everywhere, and people wanted to invest in these companies.  But not all these ICO projects were good.  In 2018, there was a company called Guiyang Blockchain Financial Co which launched its own ICO.  They raised $60 million and then disappeared, exit scamming all their investors.  So, I think North Korea may have taken notice of this and tried dabbling in their own exit scam by launching what looked like a real company, but then possibly they had the intention of pulling the rug out from investors.  We donât know what the real intentions were for this Tony Walker guy, but this might have been an indicator that North Korea is trying to conduct their own exit scams now.  Wild.  Is there any scenario where itâs just maybe somebody from North Korea and not the North Korean government?  âCause you know, itâs â I imagine anyone whoâs doing it from North Korea is the North Korean government, but maybe thereâs a scenario where I havenât considered.</p>
+
+<p>GEOFF:	Itâs a good point.  I think broadly speaking, you have to realize in North Korea, if you have an internet connection and a laptop, itâs because youâve either been given it or granted access to it by the North Korean government.  Itâs a point maybe a lot of your listeners will know, but just to stress this, it is not the case in North Korea that you can go out and get a laptop and get â be connected to the open internet as you can in most other countries in the world.  Itâs incredibly well-policed and restricted.  [MUSIC] So, if youâre talking about somebody like Tony Walker, AKA Julian Kim, who sets up online, whoâs having Skype conversations with people, whoâs e-mailing people back and forth, whoâs setting up websites, thatâs gotta be somebody in North Korea whoâs got an internet connection with a laptop or possibly a North Korean whoâs outside the country and has got an internet connection, a laptop.  Either way, thatâs government sanctioned, okay?  So, to get out of North Korea, the North Korean government needs to give you the say-so and the okay to do that, or to be in North Korea with an internet connection and a laptop; the governmentâs gotta be okay with that.  So, really, all roads lead back to the North Korean government.  Itâs almost inconceivable that Marine Chain, if it is North Korean, could have been done without the say-so, the express say-so, of the North Korean regime.</p>
+
+<p>JACK:	Iâm gonna take a quick ad break here but stay with us âcause when we come back, North Korea sets some new records.  [MUSIC] So, while I was making this episode, I was doomscrolling on Twitter and I came across this tweet which was so remarkable that I just had to call the guy up who tweeted it to hear the story.</p>
+
+<p>JON:	Iâm Jon Wu.  I am head of growth at Aztec Network.</p>
+
+<p>JACK:	Aztec is a crypto company which aims to make your cryptocurrency usage more private, and to do that, you can use their system to move your money around.  They sort of shield it so that you can move it around without anybody knowing that youâre doing that.  But because their tool is catching on, a lot of people are using it and moving their money around through Aztecâs network, which means at any point, theyâve got control over quite a bit of their userâs money.</p>
+
+<p>JON:	Yes, so if you look at all the public dashboards, our smart contract holds about $15 million last I checked, although the market has come down a bit and weâve had â again, depending on Eth price, but as of a couple weeks ago, $80 to $100 million of throughput.  So, certainly a lot of value has moved through the system.</p>
+
+<p>JACK:	Now, Aztec is growing which means theyâre hiring and have open positions, and Jon is the one who looks at resumes and does interviews to hire new people who work there.</p>
+
+<p>JON:	Yeah, thatâs right.  So, we get lots of inbound resumes all the time for our full-stack engineering roles and smart contract dev roles.  Iâm on the hiring team at Aztec.  So, I got automatically assigned a resume that had already been internally reviewed and looked super legit.  The person had a GitHub with a bunch of projects on it and had a resume with some things that Iâd heard about like F2Pool.  The name was Bobby Sierra.</p>
+
+<p>JACK:	[MUSIC] He set up a time to do an interview with Bobby Sierra, a remote one through video conferencing.  John and Bobby both got on the video call.</p>
+
+<p>JON:	I immediately noticed that the personâs camera was off and that there was a little bit of latency, but also that there was just a lot of background noise, so just a bunch of chatter in the background.</p>
+
+<p>JACK:	Did you ask to turn the video on?</p>
+
+<p>JON:	I did, and he made some excuse about how he couldnât do so.  I talk to folks not infrequently who are uncomfortable on video, but it is one of the best tools that we have for validating identity.  Bobby Sierra, again, not to be stereotypical, but itâs obvious on the face that Bobby Sierra is a Western name and this person had a heavy Korean accent.  The way I was able to tell is Iâm Asian too; Iâm Taiwanese.  I grew up in an immigrant community around New York, and some of my absolute best friends growing up were Korean.  I spent a lot of time in Korean households, and I was like, this guyâs obviously Korean.  Iâve heard an accent like this and some of the mannerisms a thousand times.  Then I kind of flat-out asked him, where are based?  He said Iâm based in Hong Kong.  Iâm like, thatâs not what your resume says.  Your resume says youâre based in Canada.  Then he did this multiple times through the call, but then he would just mute me.  He would just go on mute and then he would come back online and pretend like nothing happened.</p>
+
+<p>JACK:	Did you ask any technical questions that he knew?  Like, did he know his chops about what you wanted him to know?</p>
+
+<p>JON:	No, absolutely not.  He didnât say almost anything coherent.  [MUSIC] He kinda just kept repeating stuff like Iâm an experienced blockchain developer or Iâve worked on many successful projects, Iâll bring you a lot of success.  Of course, the infamous line from his cover letter was âthe world will see a great result from my handsâ, which was just so villainous-sounding as to be comical.  So yeah, no, he really couldnât answer any technical questions.  Couldnât even answer the basic questions of where he had worked previously.  The whole thing was super bizarre and he was just either unfazed or didnât understand when I was pointing out red flags and inconsistencies.  He was clearly spoofing someoneâs legitimate resume and pretending to be them, like, had just downloaded it from an open resume site or a recruiting site.</p>
+
+<p>But it was when I was like hey man, it says here that you worked here at F2Pool.  Tell me about F2Pool.  If I were to recreate what he said, he literally was like, yeah, and then muted.  I was like hey, are you there?  I would say at least a minute or two minutes went by just silence on the other line.  I was like, no one does this.  It doesnât matter how incompetent you are.  If you think about â thereâs two axes Iâm judging on this interview; are you competent or incompetent?  Thatâs the standard interview framework.  Like, am I gonna move you on to the next step or not?  But the other one that you donât consider usually when you talk to someone is like, is this person nefarious?  It wasnât until he kind of went dark for like, two minutes after being asked a really simple question, and then came back again with this renewed purpose, like pretending like that didnât happen.</p>
+
+<p>Like, I want to work with you, Iâm an experienced blockchain developer, Iâll make you successful, that I was like dude, somethingâs going on here.  Itâs a scam, itâs a behavioral hack, and thatâs when I hung up.  Honestly, right when I left the call room, I shut the door to the call room, and I remember being in the office and I was like guys, I think I just interviewed a North Korean hacker.  That was my intuition.  My intuition â and it was biased from weeks of having observed it and reported on it, and I had already been covering some of these security hacks of really famous crypto individuals like Arthur0x and a lot of the coverage on Lazarus Group, so I was already primed to be thinking about this.  So, between that, his undeniably Korean accent, and just how sketchy and scammy it was, that was kind of my intuition.</p>
+
+<p>JACK:	Jon was actually pretty spooked by this.  I mean, if this was a North Korean, thatâs a pretty close encounter, to be on a video call with him, to have this whole e-mail exchange, to be opening resumes and e-mail attachments.  [MUSIC] He starts retracing his steps, trying to remember exactly how much he shared with this Bobby Sierra.  Did he do any screen-sharing?  How much did he explain about the company and what tech they use?  Jon was on high alert and feeling pretty disturbed by this.  So, he tweeted the whole encounter.</p>
+
+<p>JON:	The tweet went super viral because, you know, frankly it was entertaining.  Even when I was in the room, I was kinda laughing at myself.  I was like, who is this guy?  This is so crazy.  You donât have interviews like that ever, you know?  You donât ever have those.  Itâs rare to have an experience in your life where thatâs just so surreal.  Youâre like, is this happening?  Like, this personâs just making stuff up and their resumeâs not consistent with their GitHub, is not consistent with their real name, and their quote, unquote real name is âBobby Sierraâ and his cover letter sign-off is âthe world will see a great result from my handsâ.  So, it was just a funny thread and it just went super viral.  It instantly got thousands of likes.</p>
+
+<p>JACK:	Some people were saying no, dude, this is typical; if you interview enough people for a while, thereâs some really weird ones that just show up.  So, Jon was starting to doubt that it was North Korea, but another crypto investor who had his digital assets stolen a little before this said it was definitely North Korea because heâs seen this before.  So, Jon wasnât sure again.</p>
+
+<p>JON:	But then yesterday, I think, this week, the US Treasury published a sixteen-page advisory on North Korean overseas IT workers.  That advisory explained almost to the word the tactics that this guy Bobby Sierra was using on me.</p>
+
+<p>JACK:	This advisory from the US Treasury and the FBI says that North Korea has been trying to dispatch IT workers to work for companies all over the world remotely, posing as non-North Koreans.  Some of these people, when they get hired, they donât even do the work; they just hire a subcontractor to actually do the job that they were supposed to do.  Once again, North Korea has flabbergasted me.  I mean, what level of social engineering even is this, to try to get a job at the very place you want to rob, and itâs done by the worldâs worst social engineer?  Itâs bold and ridiculous at the same time.  One thing that seems clear from this is that the Lazarus Group is on a tenacious mission to steal crypto from people and places all over the world, and theyâre pretty creative at coming up with new ideas on how to do it.  [MUSIC] Itâs almost like the Lazarus Group has a whole RND department that cooks up ways to steal money.</p>
+
+<p>GEOFF:	One of the amazing things was the rash of cryptocurrency trading apps that they launched around the 2018 period.  First one we think was May 2018; this was the thing called Celas Trade Pro which was basically a sort of cryptocurrency trading app.  The idea was youâd plug in your cryptocurrency wallet and it would assist you through the process of this.  This was set up with a very glitzy-looking website.  All looked very above the board to those who were giving it a casual glance.  The idea was download this app; itâll give you cryptocurrency trading advice and allow you to sort of do this if you connect your wallet to it.  Unfortunately, behind this was a piece of malicious software, so when you downloaded it, you effective â getting the hackerâs backdoor access to your machine.  Of course, as soon as you connected your cryptocurrency wallet, youâll potentially give them access to it and they could steal your money.  So, that was Celas Trade Pro which was the initial iteration of this.</p>
+
+<p>It didnât take long for the tech security community to clock that this was malicious, so Celas gets reported on, lots of reports come out about the fact that thereâs actually malware within this, but it doesnât really seem to matter to the hackers behind it who are allegedly the North Korean Lazarus Group, âcause they just relaunch under different names.  Thereâs this bewildering variety of different cryptocurrency apps that come out in sort of 2018, 2019.  Theyâre just the same malicious software just rebadged and repackaged.  So, Union Crypto Trader, QPay Wallet, CoinGoTrade, Crypto Neuro Trader.  Ant to Whale was one of my favorite ones.  Theyâre just the same piece of malware just dressed up in different iterations, and it seems that they think so long as we can keep rebadging this, weâll keep finding suckers.</p>
+
+<p>JACK:	So, they set up these crypto apps that would be viruses, malware of some kind.  Do you think they ever actually hit anybody with this and stole some money from people?</p>
+
+<p>GEOFF:	Yeah, yeah.  It did actually work.  I mean, the recorded case according to the US investigators is August 2020.  Thereâs a financial services company in New York who downloaded a thing called Crypto Neuro Trader, and the Lazarus Group apparently got away with $11.8 million.</p>
+
+<p>JACK:	In 2018, another crypto exchange was robbed.  This time, it was Coincheck, based out of Japan, and this was an exchange that handled different cryptocurrencies; Bitcoin, Ethereum, and Nem tokens, N-E-M.  Well, someone hacked into this exchange, looked for the crypto wallets, and found the Nem hot wallet.  They emptied the whole thing.  About 500 million Nem were in that hot wallet, and at the time, one Nem was worth one dollar.  So, this resulted in a theft of $500 million worth of crypto, which was the largest heist ever, larger than any bank heist or crypto-heist ever reported at the time.</p>
+
+<p>GEOFF:	The thing about Coincheck is the attribution.  It is not clear to me and I donât think itâs clear to investigators whether this was North Korean.  One of the issues with that is the malware that apparently was used to break into Coincheck was commodity malware, so itâs quite difficult from that perspective to attribute it.  You canât say well, this is particular malware that weâve only seen used in these particular attacks by these particular groups.  I think thatâs â that was one of the issues around it.  There was some talk in the media about this being the work of North Korea.  Certainly itâs a cryptocurrency attack.  Itâs in the Asian area.  That sort of maybe points to Lazarus Group, but beyond that, for me anyway, you need a few extra bits of evidence.  As I say, the malware didnât really point to it.  Then there was the whole laundering procedure and the cashing-out procedure for this.</p>
+
+<p>So, some of those Nem coins that were stolen from Coincheck eventually ended up being sold as cryptocurrency assets on dark web sites where they were sort of offered at a discount.  Didnât quite look like some of the other laundering cash-out operations that have been attributed to Lazarus Group.  So, for lots of different reasons, thereâs a bit of a question mark over Coincheck.  Look, that attack is still being investigated.  Japanese police are still all across it.  Coincheck still I believe working with law enforcement to check into it.  So, there may be news on that, there may be movements on that, and the Lazarus Group story just keeps developing, developing, so keep a watching brief on that.  But for the moment, Iâm not sure whether Iâd add Coincheckâs $530 million to my tally of suspected Lazarus Group cryptocurrency wins.</p>
+
+<p>JACK:	Okay, so, weâll put a question mark on whether or not North Korea robbed Coincheck.  [MUSIC] But then in September 2020, there was another big robbery at another crypto exchange.</p>
+
+<p>GEOFF:	This is the attack on KuCoin, another cryptocurrency exchange based, I believe, in Singapore, this one.  This was various different types of cryptocurrency assets, so some of it was in Bitcoin, some of it was some â in some really obscure types of cryptocurrency and crypto asset.  Some ERC-20 tokens were taken, some stablecoins, so itâs a mix, a mixed bag of stuff once the hackers got in.  Because once they get in, itâs not just one wallet they have access to.  If theyâve got this kind of blanket backdoor access, theyâve got access to the entire safe and whateverâs in there, so they start pulling out this money.  If you totaled it all up, certainly at the time, this would be worth about $275 million.</p>
+
+<p>JACK:	$275 million.  This one is firmly attributed to being North Korea.  It has all the signs of what previous North Korean crypto-heists look like, as well as the laundering techniques they used after.  Now, as if that wasnât enough, March 2022, we saw a new record for the largest cyber-heist ever.  This time was on the Ronin network.  The Ronin network is, well, itâs hard to describe.  Thereâs this NFT game called Axie Infinity which is one of the first NFT games out there and itâs also one of the most popular.  To play it, you need to deposit your money into this Ronin network.  So, thereâs a lot of money tied up in this Bridge network.</p>
+
+<p>GEOFF:	The Ronin Bridge in the middle is the conduit and like any conduit for money, particularly these new types of money, these new crypto assets, itâs a target for the hackers.  They seem to have discovered some vulnerability here.  They were able to take over different nodes in the Ronin Bridge and steal what was valued at the time as $625 million, [MUSIC] which I just think we need to take a step back and â I mean, that is â I think â Iâm gonna go out on a limb here and Iâve been trying to get people to call me out on this, but I think itâs â from what I can remember, that is the largest single amount of money stolen in a single hack of all time, I think.</p>
+
+<p>JACK:	Heâs right; $600 million is the largest heist ever.  It beats the biggest bank robberies, the biggest exit scams, even the biggest crypto-heists.  Yeah, many security researchers have attributed this attack to be the work of the Lazarus Group once again.  If we add all this up, it brings the crypto-heists alone to somewhere around two billion dollars.  Thatâs not even adding up all the bank robberies theyâve done.  Two billion dollars stolen by North Korea.  All this is happening, which â itâs confidently being blamed on North Korea.  Has North Korea taken credit for any of this and said yeah, we did do that?  Or whatâs their stance here?</p>
+
+<p>GEOFF:	No, North Korea has denied any connections to any of these hacks at all.  The official publication in North Korea which is sort of as close as you get, really, to a government spokesman, certainly that I know of, has said that these are effectively smears by the US government and its allies, trying to besmirch the good name of North Korea.  So no, theyâve denied all of it.  There is one point Iâd raise though, which is sort of speculative and a bit off my patch, but I sort of think of this from a geopolitical diplomacy point of view.  If it is the case that North Korea has got this two billion dollars theyâve stolen, if the investigators are right in their accusations, and if North Korea are having this immense trouble laundering it, which from what weâve talked about with this podcast, I think thatâs fair to say, thereâs money sort of sitting out there that if North Korea one day confessed to it if it indeed is them, they could sort of maybe offer to, I donât know, repatriate it.  At this stage itâd be worth even more, potentially, than when they stole it.</p>
+
+<p>Could that become part of a diplomatic negotiation in the future, a sort of â an amnesty like when criminals try and use returning their assets to try and bargain for a lower sentence.  Could it somehow form some part of the diplomatic negotiations?  As I say, this is outside my remit as a tech journalist, but I do wonder whether someday this could form part of it.  There is precedent for that; [MUSIC] I mean, North Korea had, according to the US government, money in a bank, $25 million worth of money in a bank in Macao, and that money was frozen when the US government took action against that bank.  That froze money and that bank in Macao became a sort of bargaining chip around the negotiations around nuclear weapons and so on.  North Korea said we want that money back and maybe our nuclear negotiations will be affected by whether you give us that money back.  In the end, by the way, they got the $25 million back and kept testing nukes and testing missiles.  So, I guess North Korea won that poker game in the end.  But could this stolen cryptocurrency money, this two billion dollars, form part of some negotiation of diplomatic solution in the future?  I donât know.  Iâm going out on a limb there, but I think itâs an interesting question to consider.</p>
+
+<p>JACK:	Now if you recall, the US has indicted a North Korean named Park Jin Hyok for the attacks on Sony and the Bangladesh Bank.  But since then, the US has indicted more people involved with these cyber-heists.</p>
+
+<p>GEOFF:	Yes, there have been multiple indictments around the crypto-heists.  So, there were the two Chinese individuals I talked about earlier who were accused of helping North Korea launder stolen cryptocurrency through bank accounts in China and also through iTunes giftcards, bizarrely.  Also, in addition to Park Jin Hyok, the individual who was indicted in September 2018 for Sony, WannaCry, and the Bangladesh Bank heist, the US have now added accusations against two other people, and they are Jon Chang Hyok and Kim Il, who, callback to earlier in the episode, the US says is the real name of Tony Walker and Julian Kim, the man who was responsible for setting up Marine Chain.  So according to the US government, Tony Walker and Julian Kim, this chap who was going on Skype and asking people to help invest in this weird BOAT coin marine shipping cryptocurrency thing was actually Kim Il, an operative of the North Korean government.  So again, you can go on the FBIâs Cyberâs Most Wanted list and take a look at all the pictures of Kim, Park, and Jon and take a look at them.</p>
+
+<p>JACK:	Huh.  I wonder, will it ever stop?  [MUSIC] This seems to be working very well for North Korea, so I donât see any reason why they would stop.  Are they just gonna keep on stealing from people forever?</p>
+
+<p>GEOFF:	North Koreaâs trapped in this loop, right?  They desperately want to stay at the international table.  They want to negotiate with the United States.  How does a country of 25 million people thatâs desperately poor â you know, Burkina Faso saying they want a meeting with Joe Biden.  Why on earth would he meet with Burkina Faso?  Well, if Burkina Faso had a nuclear weapon, well then youâd meet with Burkina Faso.  Thatâs the argument.  So, North Korea, we are â our only way in to power is nukes, and thatâs the decision theyâve made.  Nukes means they get hit with sanctions, means they have no money, but they need money to keep the nukes going.  So, how do you get the money?  Well, then you steal it.  Then you get hit with more sanctions, so youâre still short of money, so you steal it.  Youâre just in this loop, this awful, chronic, grinding loop.  Whatâs at the heart of it all is nukes, âcause nukes is their way to stay at the international table.  Thatâs whatâs motivating North Korean society.  Itâs whatâs motivating, according to the investigators, all of the computer hacks and so on.  Itâs grinding and the people who are caught in the wheels of that grinding are North Koreaâs 25 millions citizens who of course live in absolute poverty because when the government gets any money, they just spend it on nukes and missiles and propping up the leadership and the cadre of people.</p>
+
+<p>JACK:	Cryptocurrency is a wild place to be a player in right now.  You should expect to be attacked.  If it isnât by teenagers trying to break into your e-mail or SIM-swap you, then it might be by scammers or people phishing you to try to get into your crypto wallet.  If youâre a company with large crypto holdings, then you are probably on North Koreaâs radar.  When youâre being targeted by a nation state actor, thatâs a serious amount of defenses that you should be putting in place.  Itâs a hard game to play in right now.  But listen, all the stories Geoff shared with us today, theyâre all in this book which he just published, called The Lazarus Heist.  Itâs great; itâs wonderfully written and researched and goes into great detail about all of what the Lazarus Group has been up to.  But what we talked about in this episode is just one chapter in that whole book, so if you want to hear more about all the craziness that North Koreaâs doing, go check out this book, The Lazarus Heist.</p>
+
+<p>(OUTRO):	[OUTRO MUSIC] A big thank you to Geoff White for coming on the show and telling us about the stories heâs been investigating.  I recommend his book, The Lazarus Heist.  I have an affiliate link for it in the show notes.  This is also the second time Iâve had Geoff on the show, so if you want to hear another episode with him, go back to Episode 72 called The Bangladesh Bank Heist, or even go back to Episode 71 where I interview a North Korean refugee to talk about the information monopoly that the government has on North Korea.  This show is made by me, the brave little CPU, Jack Rhysider.  Sound design was created by the memory-intensive Andrew Meriwether, editing help this episode by the defragged Damienne, and our theme music is by the smoking Breakmaster Cylinder.  Oh, I have this great joke Iâm working on about documentation, but itâs not done yet.  This is Darknet Diaries.</p>
+
+<p>[END OF RECORDING]</p>
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

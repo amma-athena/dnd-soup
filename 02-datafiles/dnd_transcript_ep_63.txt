@@ -1,0 +1,709 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>w0rmer â Darknet Diaries</title>
+	<meta name="description" content="The hacker named w0rmer was active within AnonOps. These are Anonymous Operations which often organize and wage attacks on websites or people often with the purpose of social justice. Eventually w0...">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="w0rmer â Darknet Diaries">  
+	<meta name="twitter:description" content="The hacker named w0rmer was active within AnonOps. These are Anonymous Operations which often organize and wage attacks on websites or people often with the purpose of social justice. Eventually w0...">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/w0rmer.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/63/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="w0rmer â Darknet Diaries" />
+	<meta property="og:description"        content="The hacker named w0rmer was active within AnonOps. These are Anonymous Operations which often organize and wage attacks on websites or people often with the purpose of social justice. Eventually w0rmer joined in on some of these hacking escapades which resulted in an incredible story that he will one day tell his kids." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/w0rmer.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/63/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/w0rmer.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/63/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="w0rmer â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/w0rmer.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 63: w0rmer</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://traffic.megaphone.fm/ADV3183643348.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/63/",
+			   "title": "Ep 63: w0rmer"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/63">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[FULL TRANSCRIPT]</p>
+
+<p>JACK:	The news today is crazy.  Thereâs injustice happening all around us but itâs not clear what we should do about it.  Or as Bob Dylan said, yes, and how many times can a man turn his head and pretend he just doesnât see?  This is a story about how one guy decided enough is enough and took matters into his own hands, and the only way a hacker knows how.</p>
+
+<p>JACK (INTRO):	[INTRO MUSIC] These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]
+<!--more--></p>
+
+<p>JACK:	[MUSIC] This episode does have foul language and some light descriptions of nudity.  If thatâs an issue for you, youâve been warned.</p>
+
+<p>W0RMER:	Iâm sorry, whatâs that?</p>
+
+<p>JACK:	I can use this call to â for the podcast Darknet Diaries?</p>
+
+<p>W0RMER:	Oh of course, of course.</p>
+
+<p>JACK:	So, yeah, I want to hear all about it.  I want to hear what happened to you, how you got in trouble, and all this stuff.  Are you ready to start from the beginning?</p>
+
+<p>W0RMER:	Yeah, yeah.</p>
+
+<p>JACK:	Hackers sometimes have two names; the name they use online, like a cloak, the one they go by that all their friends online know them as even if they donât know them at all.  Then thereâs their real name, the name their family uses.  Sometimes thereâs a night and day difference between the personas associated with these names, literally; one used only during the day and the other at night, in the darkness of the internet.</p>
+
+<p>W0RMER:	Yeah, from pretty early on, hacking for a cause versus hacking for a malicious â just to do it.  I mean, just to do it was a lot of my early hacking days.  I needed access or Iâm bored; let me go hack this site up or hey, new zero-day, let me go try it out.  But that focused me into that realm.</p>
+
+<p>JACK:	His love of computers led him into hacking, all kinds of hacking; knocking websites offline, getting into their databases and defacing them were all things that he knew how to do and was doing, sometimes just for fun, sometimes for a cause.</p>
+
+<p>W0RMER:	But yeah, so that kind of lent itself from the adoption of Anonymous by me.  They seem to have the same ideals, they like to do funny shit just for funniness and I was all about that, but I also liked the fact that there was a little bit of social justice in there.  Hey, weâre gonna go harass these people but itâs for this cause.  At the time, apolitical; thereâs no right, thereâs no left, thereâs no wrong or right.  It was just this was something to do.  There was a lot of fervor behind this mask and this identity of non-identities.</p>
+
+<p>JACK:	This is w0rmer.  At least, thatâs his online name, his Anonymous identity.  When I say w0rmer is his Anonymous identity, I mean that is the name he would use while hanging out with Anonymous online in chat rooms and around the internet.</p>
+
+<p>W0RMER:	I had the technological know-how to see the hacks.  I had been on the AnonOps channels and stuff as they were doing these giant DDosses and I watched and learned the organization as it was being managed; the secret rooms and all that good stuff.</p>
+
+<p>ANON:	We are Anonymous.</p>
+
+<p>JACK:	Nobody is really a member of Anonymous.</p>
+
+<p>ANON:	We are legion.  We do not forgive.</p>
+
+<p>JACK:	At the same time, everyone is really a member of Anonymous.</p>
+
+<p>ANON:	We do not forget.  Expect us.</p>
+
+<p>JACK:	Itâs not a well-defined group but w0rmer here had been watching what they were doing for years and sympathizing with a lot of [00:05:00] their causes.  For instanceâ¦</p>
+
+<p>SPKR1:	Shut it down.  It is time to shut down this terrorist organization, this terrorist website Wikileaks.  Shut it down, Attorney General Holder.</p>
+
+<p>JACK:	In 2010, Wikileaks, a site that was releasing secret documents to the public, rose in popularity.  Wikileaks was based on the idea of letting the people judge these secrets and government activities, or scandals, for themselves.  But many of those in power saw Wikileaks as a big problem.</p>
+
+<p>SPKR2:	I think the man is a high-tech terrorist.  Heâs doneâ¦</p>
+
+<p>SPKR3:	Assange.</p>
+
+<p>SPKR2:	Yeah.  He needs to be prosecuted to the fullest extent of the law and if that becomes a problem, you need to change the law.</p>
+
+<p>JACK:	Many people and Anonymous loved the idea of people in power falling due to a scandal coming to light.  But let me remind you this was ten years ago; a lot about Assange and Wikileaks has changed since then but at that time, Anonymous liked Wikileaks and thought it was cool.</p>
+
+<p>REPORTER1:	[MUSIC] The founder of Wikileaks has warned that it may soon have to stop publishing secrets because of a cash crisis.</p>
+
+<p>JACK:	But in January 2010, PayPal suspended and froze all donations to Wikileaks.</p>
+
+<p>REPORTER1:	Julian Assange says the outfit is feeling the pinch because of a financial blockade by several US firms.</p>
+
+<p>JACK:	This made a lot of people in Anonymous outraged so a group of Anonymous people decided to take PayPal offline.</p>
+
+<p>REPORTER2:	Anonymous hacktivists, hacker activists, have basically gotten together and are exacting revenge for what they see is attacks on Wikileaks and theyâre targeting a number of corporations that have cut off their ties with Wikileaks; Mastercard, VISA, PayPal, also the Swiss bank that shut down Julian Assangeâs account in Switzerland.</p>
+
+<p>JACK:	So, were you watching some of that stuff go down?</p>
+
+<p>W0RMER:	I was in the chatrooms when that was going on, yeah, from the planning phases to the kicking it off and getting everyone on board.  In fact, I believe around a similar time, I wrote a Python application that would actually look at Twitter trends and then inject our call-to-action to try to force the hand of okay, well, hereâs this trending thing, hereâs this thing we want to talk about; quickly inject it into the stream a couple times and move onto the next one.  I was definitely part of the machine, getting people involved and understanding the attacks and why people were doing it and how they were organizing it.</p>
+
+<p>JACK:	Fourteen people were arresting for this attack on PayPal.  W0rmer didnât get caught this time.  [MUSIC] But, he wormed his way deeper into Anonymous.  It had become part of his identity.  He saw the next big movement starting up.</p>
+
+<p>W0RMER:	Around 2010, 2011, the Occupy movement had started.</p>
+
+<p>JACK:	He was upset that banks, the one-percenters, were getting bailed out.  The 99% rest of us had to carry the burden.  He wanted to get the message out.</p>
+
+<p>W0RMER:	I did Anon communications, so if we needed something or if we had an event that we were doing or a call-to-action, I would go and amplify that through your Anon news and etc, etc.  I would throw that up and to get it into the masses.  I did the hacker channels, right?  They were dedicated channels where if you were a hacker, they would bring you into that.  I hadnât yet really broken the law but I was still helping out.</p>
+
+<p>JACK:	Anonymous was known for exposing issues that they thought the public should know about.  This morphed into a sort of online township rebellion.  Why stand on a silent platform?  Fight the war.</p>
+
+<p>W0RMER:	By this time, Iâm already very Rage Against the Machine.  Fuck the government, fuck this.  Iâm going all-in and hereâs a cause where the rest of the people around me are also for it, you know?</p>
+
+<p>JACK:	It became a movement to just get â letâs get the truth out there and expose some things.  I could see why you were swept up in the fervor now.</p>
+
+<p>W0RMER:	Right, and remember the hacker manifesto; it is that all information should be free, so it was ingrained in me by this point.  Everything should be free.  Look at these whistleblowers, look at this.  Yeah, it was really easy for me to get swept up in a radicalized â I already had the prerequisites.  I just needed someone to point my anger somewhere and Anonymous, at that time, did just that.</p>
+
+<p>JACK:	One of the prerequisites he had was that he was becoming a skillful hacker; not just taking websites offline by flooding them with packets, but he was also learning how to wiggle his way into a website with precision and gain access to the back-end database.  With these skills and Anonymous lighting the fire behind him, it was soon gonna be time for w0rmer to jump into action.  [MUSIC] [PROTESTING] In 2011, the Occupy movement protests [00:10:00] beganâ¦</p>
+
+<p>PRTSTRS:	Occupy Wall Street!  Wall Street!  Wall Street!</p>
+
+<p>JACK:	â¦calling witness to wealth inequality in the US.</p>
+
+<p>PRTSTR1:	Itâs immoral not to stand up and say something.</p>
+
+<p>JACK:	[CHANTING] There was an injustice here and w0rmer wasnât going to sit and do nothing.  This movement moved him to get up and go protest himself, in person, in a small town in Michigan where he was living at the time.  He was protesting downtown and then camping there all night.  Twenty-four hours a day, he was making a statement.</p>
+
+<p>PRTSTR2:	The police use batons to clear them out, that the police threw their stuff into garbage trucks, into rubbish trucks, and told them they could come and get it back in the morning.</p>
+
+<p>JACK:	But cities were not always happy with this.  Some had called in the police to clear out these camps.  [SHOUTING, COMMOTION]</p>
+
+<p>POLICE:	Ladies and gentlemen, at this time we ask that you walk out to the sidewalks.</p>
+
+<p>JACK:	But when the cops started doing things they werenât supposed to be doing, thatâs when Anonymous started keeping a close tab on them and recording what they were doing.</p>
+
+<p>POLICE:	â¦after itâs clean, as was stated in the legal notice.</p>
+
+<p>W0RMER:	Well, at that time, I was doing cop watch.  There were still some camps that were running but they were all pretty much getting their eviction notices.  So, Iâm watching this one particular one.  I donât remember the state but I remember the event; these cops were marching in on this place.  They had already harassed the camp multiple times, flashing their lights to try to wake everybody up, that kind of stuff.  As theyâre coming through, the camera people on the ground were trying to record and get their IDs, right?  Trying to get their numbers.  We noticed that their numbers were blacked out.  They had put black tape over them.  I was just like, whoa, whatâs going on?</p>
+
+<p>We had reports of people switching districts, so they would raid a camp not in their police district in case they had friends or family that ran into it, doing all these kinds of little things.  So, Iâm watching this elderly woman [COMMOTION] and she starts having a seizure.  This cop, assuming automatically that sheâs resisting, continues to start beating her.  [MUSIC] The oh-my-god-that-could-be-me hit me like a ton of bricks and action had to happen.  It had to happen.  Theyâre arresting everybody, theyâre shutting down our camp, everythingâs just starting to come to that head.  I said thatâs it.  I can do something.</p>
+
+<p>JACK:	W0rmer begins to morph from an activist into a hacktivist and enters some dark waters on the internet.  He finds out Anonymous had already started something called Operation Pig Roast.  After the break, w0rmer goes head over heels into it all.</p>
+
+<p>W0RMER:	They were going around for the Occupy movement and finding this private information about these police officers because they had started hiding their badges and stuff.</p>
+
+<p>JACK:	W0rmer, the hacktivist, has moved his camp from downtown on the streets to back home in his bedroom where he can try to use hacking to expose the police that were covering up their names and badge numbers and sort of pull that tape off, digitally.  Anonymous didnât want these cops being anonymous.</p>
+
+<p>W0RMER:	Weâre after cops.  Iâm gonna find âem all.</p>
+
+<p>JACK:	[MUSIC] He would first scour Google looking for any lists of police officers in his town and then try to match them with faces and try to identify them in the protest videos.  This was something but it wasnât enough.  W0rmer wanted to know more.</p>
+
+<p>W0RMER:	I was after names and addresses.  If you didnât want to follow your own laws to use your number on your badge so at least you could [00:15:00] be accountable for your crimes, then Iâm gonna make it really easy to go back and check to make sure hey, this guy did this thing.</p>
+
+<p>JACK:	W0rmer decides to hack the police.  He started getting a list of police department websites and looking at them to see if there was any way to hack into them to see maybe he could find a list of police officers.  Back then, you were kind of doing something new which was going after cops.  Not many people had done that yet.  Did it kind of feel like this was a forbidden target?  Did it feel really, really, really wrong to you, or what?</p>
+
+<p>W0RMER:	I have cops in my family.  I donât hate cops.  I hated what these particular cops were doing.  I came into this knowing that at some point I was gonna be caught, at some point I was gonna be held responsible, and we just had to do it.</p>
+
+<p>ANON:	Sit back, grab some popcorn, and enjoy the ride.</p>
+
+<p>JACK:	[MUSIC] The Anonymous Operation Pig Roast went into full effect.</p>
+
+<p>ANON:	We couldnât sit idle while we watched our brothers and sisters being beaten.</p>
+
+<p>JACK:	W0rmer joined up with a hacking crew called CabinCr3w and he began a roaring rampage of hacking the police.</p>
+
+<p>ANON:	Weâre the Cabin.  Weâre the 99%.</p>
+
+<p>JACK:	He would ask other people in Anonymous to send him links to every police departmentâs website in the US.  He would build a long list of these websites and then he would use his computer to programmatically scan each website to see if any of them were vulnerable.  The first one that he found that was vulnerable was the police departmentâs website in West Virginia.  He found the website was vulnerable to SQL injections, a common vulnerability on many websites.  So, he hacked into the West Virginia Police Departmentâs website using an SQL injection and this allowed him to peek behind the website and see the database underneath.  That database had a list of all the police officers in that department.  You got the database which had 150 law enforcement officer usernames, passwords, home address, home phone number, cell phone number.</p>
+
+<p>W0RMER:	Yeah, yeah.</p>
+
+<p>JACK:	I mean, what are you doing with this data then, once you have a database dump of a police department?</p>
+
+<p>W0RMER:	Pastebin or Ghostbin or one of the bins and then send it out.  It wasnât for me to be judge and executioner.  My job was the way I saw it.  Anonymous as a whole wanted and needed for whatever reason, this information.  I donât need to agree or know or any of that; hereâs my job, Iâm gonna go do it.</p>
+
+<p>JACK:	So, w0rmer would publish the personal information on all these police officers that he could find, posting it to places like Pastebin which is a place you can write text anonymously and it pretty much stays there forever.  But of course, as soon as it was posted there, it was also tweeted out and spread on all the Anonymous channels so the world could see the personal information of these police officers.  This is what you call doxxing the police.</p>
+
+<p>ANON:	Remember, donât dox and drive.</p>
+
+<p>JACK:	Yeah, I mean, Iâm trying to guess at what youâre hoping happens here might be that somebody catches one of these police officers on a video, they see their badge number or something, and now they can look up on Pastebin this is the guy â this is the actual police officer, this is where he lives, and all this kind of stuff.  Is that what you were kind of hoping, is that somebody else makes the connections after you?</p>
+
+<p>W0RMER:	Well, right, right, and the real-life effect was cops stopped getting on and doing these big press conferences where they talked about how they destroyed Occupy movements, right?  Because every time a police officer had been in front of that camera, we had Doxxed them.  That just got bigger and bigger.  There was the real-life ramifications of that; what we were trying to do was accomplished.  We had them hey, if youâre gonna do this, cool, thatâs your job.  Youâre gonna be a cop, thatâs your beat.  Cool; this is my job.  This my beat.</p>
+
+<p>JACK:	As w0rmer would hack the police, put everything into Pastebin and then publish it, he was also tweeting this.  Hereâs one; on February 7th, 2012, username Anonw0rmer posted on Twitter #op, #pigroast, and #CabinCr3w, and then with Pastebin links to the website where he dumped the whole database of police officer names.  At this point, the West Virginia gazette noticed the dump and wrote an article about this.  W0rmer tweeted, quote, âWas that us?  ROFL.  Yeah?  Oops.â  End quote.  The next police department website he found vulnerable was Alabama Department of Public Safety which included the National Crime Information Center data.  Like, this website had access to databases such as the sex offender registry, vehicle registration information, and other personal identifying [00:20:00] information.  But all w0rmer was interested in though, was the police officerâs personal information.  So, he grabbed that and he started to put it together in another Pastebin dump but this one was a little different.  This one is a little bit interesting.  This Pastebin, you started a new thing.  Why donât you tell me what that Pastebin was about?</p>
+
+<p>W0RMER:	You wanted the effect; you wanted to anger people.  We werenât just hacking.  We were hacktivists and so you kind of had a little pizazz in it, right?  [MUSIC] We were having people send us shots of them in various things of undress holding up these come-at-me-bros.</p>
+
+<p>JACK:	Yeah, he actually did have the audacity to tweet at the FBI where he said quote, âCome at me, bro.â  End quote.  So, as w0rmer would put together his Pastebin post, he was adding extra pizazz; first, at the top of the post, he would spend a lot of time making some ASCII art.  Since Pastebin only lets you post words and no pictures, he used just letters to make pictures and put them in the post.  Okay cool, but this is where things get weird.  In this post he added a link to an image of a mostly naked woman but you canât see her face and sheâs holding a sign.  So yeah, I mean, tell me about that picture.  What does that picture â describe that picture to me.</p>
+
+<p>W0RMER:	Well, Iâm trying to remember which one was the first one.</p>
+
+<p>JACK:	Well, it has her breast in sort of a bikini and then it said âPwNd by w0rmer &amp; CabinCr3w &lt;3 u BiTchâs.â</p>
+
+<p>W0RMER:	She had taken a bunch of photos holding these different signs I had told her about, or asked her to print up.  So, that included into one of my hacks.</p>
+
+<p>JACK:	Who was she again to you at the time?</p>
+
+<p>W0RMER:	Iâm working on this decentralized platform dick-deep in C code, and in comes this Australian woman.  She had seen something where the dogs were being abused and she wanted answers.  She wanted this shit taken care of.</p>
+
+<p>JACK:	So, she joins this Anonymous chatroom that w0rmer was in and started asking a bunch of questions like can you find out whoâs doing this animal abuse kind of stuff?</p>
+
+<p>W0RMER:	But the line that won her over was tits or get the fuck out.  Didnât have time for your BS, donât have time for whatever youâre coming at me with.  Iâm building something great.  I did that and she put a picture down with her head cut off of her in a bikini looking beautiful on the beach, and that was it.  [MUSIC] I fell for her that day.</p>
+
+<p>JACK:	So, she was just kind of on the fringes of Anonymous, just kind of looking for information but not really involved.</p>
+
+<p>W0RMER:	Right, right, and didnât really want to be involved in any of it.  She just, hey, hereâs a cause I think you guys should hear about.</p>
+
+<p>JACK:	W0rmer starts flirting with this Australian woman.  He starts liking her more and more and he finds himself chatting with her for hours and hours.</p>
+
+<p>W0RMER:	We had talked to each other online in Skype calls and stuff like that.  Iâd obviously seen her in various forms of undress.  It was just, we hadnât â I was in America, she was in Australia.  Essentially, weâd private message and weâd just talk, like human to human.  What are you looking for?  Or what kind of dreams are you about?  Whatâs your life like?  We just started talking and I just fell for her.  She was a genuine person.  She talks and emotes literally with the feelings of herself.  Thereâs no hiding behind things.  I didnât have to guess what she was doing or feeling or thinking.  Sheâs pretty forward with it.  We got engaged shortly after.</p>
+
+<p>JACK:	Have you met each other before you got engaged?</p>
+
+<p>W0RMER:	Nope, no, no.  You can, if you go through my Anonw0rmer tweets, too, you can even see how that kind of goes on fruition but essentially once we started talking and again, Iâm hacking by day and at night âcause sheâs sleeping or working, right?  Sheâs in Australia so itâs a whole twelve-hour difference.  Iâm hacking and doing my stuff in the day and then Iâm spending nights talking to her.  Iâm tired and all that other stuff.  Iâm a thirty-something year old dude.  Like hey, hereâs a hot chick and she seems to be cool.  Everything that weâre doing in our â both in our social lives and as weâre talking, seem to be genuine.  I feel one way, she feels the same way.  I saw no reason â I couldnât think of a reason.  We had covered broad topics; everything from how do you see the future, what kind of plans, all that kind of stuff.  By this time, [00:25:00] I think anyone whoâs ever had an online relationship knows how quickly these things can just snowball up, right?</p>
+
+<p>JACK:	Now, when w0rmer got these photos of this woman, heâs a hacker, right?  One of the first things he does is look to see what metadata there is in her photos.  He sees the photo was taken in Thailand and asks her about it.  She says yeah, she took it while on vacation.  So, he asks her for more photos and these all have that Exif metadata in them and he was able to look to see where these photos were taken.  He tracked it down to a house in South Victoria, Australia.  He finds the exact address through the geolocation data in the photo and asks her whatâs this address?  Sheâs like yeah, thatâs where I live.</p>
+
+<p>Now, over the next few days, they become better and better friends and he asks her to print out some paper signs and pose with these signs because he thinks this would be a great calling card to post with each police department database he leaks; a woman in a bikini with a sign that says âHacked by w0rmerâ or something like that.  So, she sends him these photos of her in different poses with different signs.  Alright, West Virginia Chief of Police site down; tweeted about it.  Youâre in the news.  That tweetâs done.  You got the DPS Alabama Police Department; thatâs been owned.  At the bottom of that Pastebin is a picture of your girlfriendâs breasts in a bikini that says something like âPwNd by w0rmer &amp; CabinCr3w &lt;3 u BiTchâs.â</p>
+
+<p>W0RMER:	Yes, yes.</p>
+
+<p>JACK:	Department of Safety; âHacked by @AnonW0rmer for #OpPiggyBank.â  Thereâs a Pastebin link, #CabinCr3w, #Anonymous.  âThis CabinCr3w is proud to present and release texasdps.state.tx.us data.â  At the bottom is another â is the same female, your girlfriend, with scantly something-or another and it says âWe are ALL Anonymous.  We NEVER forget.  We NEVER forget.  &lt;3 Anonw0rmer.â  February 10th, I mean, youâre just rapid-fire at this point.  The very next day, Twitter user Anonw0rmer posts âMy baby SETS standards!  wAt U got?â  Then youâve got like, five images of her.  #CabinCr3w.  I have these images here, so youâve got again, a bikini, no bottom but the bottom of her is covered up by a sign that says âCome at me bro.  Anonw0rmer.â  Her underwear, her underwear is there and it says âProudly poked by w0rmer.  AnonLove.â</p>
+
+<p>W0RMER:	Weâre so classy, by the way.</p>
+
+<p>JACK:	Yeah, thatâs â sheâs got just real short-shorts on, and this one with no top but you canât see her breasts; sheâs turned with her back towards you and it says âW0rmer pwned your ass and mine.  You mad, bro?â</p>
+
+<p>W0RMER:	I have a way of also inciting anger in people and I think thatâs obvious too, in what I was doing.  I was egging everybody on.  But a little backstory on that; so as you can see, all of them are pretty in-your-face and theyâre trying to get and investigate or really after me.  I already knew the GPS Exif data was in them and so I had a whole workflow for that.  I had my dirty images and then I would clean them and put them in another file.  When I went to publish that, I went one, two, three, and so, man, I need one more photo.  I grabbed the wrong one, put it in there, and hit tweet.</p>
+
+<p>JACK:	[MUSIC] He accidentally posted one of her photos that he didnât clean the metadata off of which means in the file was data of where that photo was taken.</p>
+
+<p>W0RMER:	I slipped up and I just remember if there was a camera, right?  Turning to the camera and being like, fuck.  But maybe theyâll miss it, right?  Maybe they just wonât â maybe theyâll run through the first three and be like eh, nothing here.  Thatâs not what happened by the way, though; spoiler alert.</p>
+
+<p>JACK:	The police were not happy with whoever Anonw0rmer was.  I mean, how could they be?  He was doxxing the police themselves.  Of course, they want to know who was doing this and arrest him.  So, an investigation started.  [MUSIC] A Special Agent for the cyber squad of the FBI began investigating him.  He called up the West Virginia Police Department wanting to look at all the logs of the hack, and then the Alabama Police Department to see their logs, and then the Texas [00:30:00] Police Department to see them, too.  To the FBI this all looked like it was exploiting the same SQL injection vulnerability.  Not only that but Anonw0rmer was claiming responsibility for each of these hacks on Twitter so it obviously was the same person.  But not only that; the logs of each of these hacks all seemed to be coming from the same IP address.  The FBI learned this IP address was for a residential internet connection tha-t AT&amp;T provided.  The FBI submitted a warrant to AT&amp;T asking for what customer had that IP?</p>
+
+<p>This led them to an apartment and person in Galveston, Texas which was exactly where w0rmer was living at the time.  But it wasnât w0rmerâs name or address; he was too clever for that.  Instead, he hacked into his neighborâs WiFi and did all these hacks from there.  So, when the FBI called his neighbor, they didnât really understand or know anything and this didnât really help the investigation.  It was kind of a dead-end.  The FBI began looking at these photos that w0rmer was posting of his girlfriend.  [MUSIC] W0rmer had erased the geolocation data of all these photos except for that one last photo and the FBI saw the longitude and latitude of where that photo was taken which was a house in South Victoria, Australia; w0rmerâs girlfriendâs house.  The FBI looked up who lives there and found her name, and then the FBI looked up her Facebook profile and saw sheâs in a relationship with a guy named Higinio Ochoa.  Hm.  The FBI continued to analyze all the stuff w0rmer posted.</p>
+
+<p>W0rmer posted other pictures, too; screenshots of the hacks he did, and the FBI examined each of these screenshots.  The metadata was erased and cleaned but in the screenshot itself showed a username that was logged into one application.  The username was Hig Ochoa which could be short for Higinio Ochoa which as a silent g in it.  Next, the FBI did some open-source intelligence, just Googling things like putting w0rmer and Higinio Ochoa together and sure enough, these two names did have connections.  There were some blog posts that connected both of these together, and the FBI learned that Higinio Ochoa was the neighbor of that person who they first tracked that IP to.  With this, the FBI had enough information to positively believe that Higinio Ochoa was the name of the person conducting these hacks on the police departments.  I mean yeah, walk me through how â between now and when you get caught.  How did they catch you?</p>
+
+<p>W0RMER:	Iâm sitting there one day.  I notice thereâs a new Cisco wireless AP.</p>
+
+<p>JACK:	Basically, he was in his apartment and he wanted to see what WiFi signals there were in the area.  A new one popped up and he looked to see what brand of router was broadcasting this WiFi, because he was probably looking at this to see if he could hack into another neighborâs WiFi.</p>
+
+<p>W0RMER:	Huh, thatâs weird.  A, because Ciscoâs not a brand you see in an apartment complex.  Itâs not â youâre usually AT&amp;Ts or TP links or something cheesy like that.  But this particular one was a Cisco.  [MUSIC] So, cracked into that.  Scanned, realized it was hooked up to a laptop.</p>
+
+<p>JACK:	At the same time, construction started on the street outside his apartment.</p>
+
+<p>W0RMER:	All of a sudden, it started getting roadwork done on it.  In Texas, itâs pretty common but there was something strange about it.  The people that would show up and they would act like they were working, right, but never do anything.  I was like okay, somethingâs going on.  I remember walking outside and seeing the actual undercover agent that was watching me, just smoking cigarettes, throwing them over the balcony.  That was a tell, too; this dude had been here chain smoking for god knows how long, âcause I donât just leave every day.</p>
+
+<p>JACK:	He assumes heâs being watched both in real life and online.  He feels too close to the fire.  He closes shop.</p>
+
+<p>W0RMER:	I was like well, thatâs the guy, you know?  Iâm not gonna push him, Iâm not gonna whatever.  Iâm done.  It got to the point to where I didnât want to do this anymore.  I had done my job, I had done Occupy, I had done this.  I had a beautiful new fiancÃ©.  I need to get on with life.</p>
+
+<p>JACK:	Thereâs a love story involved in this, too.  I wasnât expecting this.</p>
+
+<p>W0RMER:	That, I think, is the loss of it, right?  You have this angry adult who goes out and frickinâ wreaks havoc on a particular thing and here this beautiful Australian woman comes in and heâs like nah, Iâm good.  Just wants to sail away and be happy in Australia.  [00:35:00] Yeah.  I think itâs every nerdâs dream, right?  Yeah, I totally met her in a hacker chat room, man.</p>
+
+<p>JACK:	At this point heâs about thirty years old.  Itâs March 2012, and itâs just 10:30 a.m.</p>
+
+<p>W0RMER:	Iâm downloading this database.  I wake up, I check on it.  Iâm like man, I need some fucking coffee.</p>
+
+<p>JACK:	But itâs early for a hacker.  While heâs getting his coffee, heâs really thinking heâs done with hacking.  He just wants to be with this girl in Australia and forget about hacktivism, at least for now.</p>
+
+<p>W0RMER:	I stumble over to the coffee machine, I turn on the coffee, it pours out.  I made a whole cup of coffee, right.  [JINGLING] So, I hear this jingling.  Iâm like what the fuck?  I go and I go look through the peephole and I see the groundskeeper guy trying to let in what looks like five heavily armed men wearing ski masks and shit, right.  [MUSIC] Iâm drinking my coffee and in the back of my head, Iâm like I have time to grab this thing and throw it in the fire and just let it burn.</p>
+
+<p>JACK:	Heâs referring to his laptop.</p>
+
+<p>W0RMER:	Iâll open the door and Iâll plead not guilty.  So, it did cross my mind.  But at the end of the day, Iâm just like you know what?  I signed up for this.  I knew this day was coming.  So, I unbolted the doors, opened it up, and all you hear is âFBI!  Hands up!â  Literally, Iâm in my boxers with the cup of coffee.  Iâm just like, this is it, man.  Letâs go.  I asked the guy for my pants âcause they immediately went and put my hands in cuffs.  Took my coffee; they didnât give me my coffee.  Assholes.</p>
+
+<p>JACK:	Did they give you pants?</p>
+
+<p>W0RMER:	They did let me wear pants, yes.  They let me put my pants on.</p>
+
+<p>JACK:	Now fully clothed, heâs an open book to the five, armed FBI and police officers in his apartment.  Theyâre going through all his stuff and asking him a bunch of questions.</p>
+
+<p>W0RMER:	Iâll cop to anything I did; you just ask me.  You know what I mean?  If I did it, Iâll say yeah, I did it.  If I didnât, no, I didnât.  He pretty much did what we just did; he printed out my timeline and just tweet by tweet, is this you?  Iâm like yup, thatâs me.  Is this you?  Yup, thatâs me.  Is this you?  Yup, thatâs me.  Is this you?  Nope, thatâs not me.  I didnât do any of that.  That was it.  But I mean, it was a shock to my whole family.</p>
+
+<p>JACK:	[MUSIC] W0rmerâs real name is in fact Higinio, or Hig, for short.  The FBI had the right guy and this is when everything that was dark is now exposed to the daylight.  He led such different lives that his family didnât even know he was a hacker.  He didnât tell them about the photos of the breasts or whose breasts they were, or that he had fallen in love with the woman behind them.</p>
+
+<p>W0RMER:	They asked my family, you know what I mean?  Like hey, what do you know about his Australian girlfriend?  My familyâs like, what the fuck are you talking about?  Heâs a nerd.  He ainât got no girlfriend.  Oh no, heâs got an online girlfriend.  No, he doesnât have an online girlfriend.</p>
+
+<p>JACK:	The FBI starts talking to Higâs parents and thatâs when his parents learn that heâs been engaged.  The FBI agent saysâ¦</p>
+
+<p>W0RMER:	Theyâre engaged.  Theyâre just like, excuse me?  My sonâs engaged to an Australian woman?  Theyâre like yeah.  Theyâre like, youâre fucking crazy, dude.  We donât know what youâre talking about.  It was a shock to everybody.</p>
+
+<p>JACK:	The police process him, take him down to jail.  He gets out on bail that day.  He gets a lawyer and starts working on different kinds of plea deals he might have options for.  Like, heâs willing to admit heâs guilty for all these things heâs done, so maybe by cooperating with the cops he might not get that hard of a sentence.  Heâs got a date set for this trial but in the meantime, heâs not allowed to use a computer at all.  All his Skype and chat messages with his online girlfriend, they suddenly stopped.  But love moves faster than the law and it transcends the internet.  She doesnât know why heâs suddenly stopped talking to her, so she starts trying to figure it out.  [MUSIC] She learns he was arrested for hacking and with that, she feels a sense of loss.  Just yesterday her relationship was getting hot and heavy but now it was suddenly gone.  They were ripped apart from each other.  This wasnât okay for her.  She was heartbroken.  She told him Iâm coming, Hig.  Meet me at the airport.</p>
+
+<p>W0RMER:	Iâm sitting at this airport and my momâs still completely shocked that I even talk to girls, more or less have a fiancÃ©.  All we know about her is sheâs got big boobs, sheâs blonde, and Australian.  [AIRPLANE JETS] Weâre sitting at the airport, weâre waiting for her to come in [00:40:00] and youâre just, youâre looking at the top of this escalator.  The first blonde that comes over is a six-foot-tall blonde, looked almost like a dude, and I was just like oh great, here it goes.  My mom just starts laughing.  Thatâs what you get, right?  You go online, youâre dating, you think you got this hot chick, itâs really â itâs another thirty-year old man, man.  Good luck, good job, baby.  Prisonâs gonna do good for you.  I was like Jesus, man, this sucks.  Then she goes all the way down and sheâs walking towards me.  Iâm just like Jesus, dude, please donât be it.  Please donât â and she even stopped to look for directions, and then walks off.  So, Iâm like oh my god, thank god.  Just as that walked away, here comes by 5â2 beautiful fiancÃ© over the escalators, come downâ¦</p>
+
+<p>KYLIE:	He just ran up to me, gave me a giant hug, [MUSIC] and it was the best, to this day, the best hug Iâve ever gotten.  It was just like, everything clicked into place.  It was just â it was, I mean, I can still â I still get goosebumps thinking of that very first time that we met.  It was just amazing.</p>
+
+<p>JACK:	This is Kylie, the Australian girlfriend, his fiancÃ©, the voice behind the breasts that are maybe the most famous hacker calling card in federal history.  When you joined the chat room, what did you guys â how did you connect?</p>
+
+<p>KYLIE:	He said to me tits or get the fuck out.  [LAUGHING]</p>
+
+<p>JACK:	What did you do after that?</p>
+
+<p>KYLIE:	I had no idea what that meant so when he explained it to me, I thought you know what?  Iâm just gonna send this guy photos, so I sent him a couple of photos; one of me in a bikini that I had been in in Thailand recently, and then another one in a very, very tight black dress that I was wearing to a concert.  I sent him a couple of pics.  Heâs like wow, sheâs real.  This is a girl, she has tits.  Sheâs got great tits.  We just started talking and it became romantic pretty quickly.  Heâs charming, he is a great social engineer, and heâs very smooth at getting â making girls take notice and so, thatâs what happened.  He was just really sweet and I fell for it.</p>
+
+<p>JACK:	So, at some point he asked you to take specific photos that say like, âPwNd by w0rmerâ and stuff.</p>
+
+<p>KYLIE:	He did, so he sent me a bunch of slogans.  Okay, Iâve got a great body, and at the point in my life, I loved how I looked.  Great body, Iâm like yeah, why not?  Youâve got it, flaunt it.  I took these photos in various poses and when I saw them released, I didnât have an issue with it.  I had took, you know, printed out these signs and I held them up in different poses, different bikinis, and just sent them to him.  I had no clue that it would have gone past â I mean, I had no idea, Jack.  When he finally admitted he was a hacker and that he hacked, I didnât understand what that meant.</p>
+
+<p>JACK:	When she did learn he was a hacker she wasnât entirely on board with it.</p>
+
+<p>KYLIE:	Now, Iâm gonna be clear with something; when I found out what he was hacking for, we had a huge fight about it because coming from â I was working as an immigration officer.  I had that law enforcement background and we had a huge fight over the fact that he released the police officerâs names to the point where Iâm like, what would you do if you hacked immigration?  Would you release my details, too?  We actually, if memory serves me correctly, we broke up for a few days over it.  Anyway, while I donât support what he did, I understand why he did it.  I donât support the hack.</p>
+
+<p>JACK:	But she did love him.  She loved how intelligent and passionate he was about things that were going on in the world, so while they disagreed on this one thing, they clicked on pretty much everything else.  Now that she was in Texas with her love, her fiancÃ©, she was happy.</p>
+
+<p>W0RMER:	The court case was ongoing at the time so I was like man, we gotta get married, we gotta get married.  We donât have time to plan a big wedding or anything like that.  Letâs go just grab a dress; Iâll grab the thing.  Weâll find some close friends, weâll grab them, and weâll show up and weâll just get married.  Thatâs what we did.</p>
+
+<p>JACK:	Isnât it weird to arrive in a new country, marry somebody whoâs gonna just disappear any day?</p>
+
+<p>KYLIE:	Oh my god, when I look back at it, I think what the heck was I doing?  In hindsight, itâs crazy.  I mean, it is crazy.  I tell people now; I met him on the internet.  Ten days later, he proposed.  Seven weeks later I flew here and six days later, we were married.  Eight weeks and one day from the day we said hello, we were married.</p>
+
+<p>W0RMER:	It was like okay, cool, now weâre married.  [00:45:00] What comes next?  Thatâs about the time when the sentencing came about.</p>
+
+<p>JACK:	They had a few monthsâ time between when he got arrested and when he was going to be sentenced for his crimes.  While he had been lucky in finding love, he wasnât so lucky in court.  For instance, he didnât get lucky with his judge.</p>
+
+<p>W0RMER:	Around the same time I got arrested, Anonymous had Doxxed a Texas judge, right?  That Texas judge ends up being my judge.</p>
+
+<p>JACK:	[MUSIC] An understandably upset judge gave Hig, our newlywed, twenty-seven months in prison and three yearsâ probation.</p>
+
+<p>W0RMER:	And stuck me in Elkton, eventually, in Ohio.  I was on a FCI, so I was essentially locked up with 95% pedophiles which â not a great fucking two years.</p>
+
+<p>JACK:	But just a few days before going to prison, Kylie and Hig found out they were going to be parents.  Kylie was pregnant and so after he goes off to prison, Kylie moves in with Higâs parents and while the two first met on opposite sides of the world and they came together physically for a few months, theyâre now being forced apart once again.  Kylie spends a lot of time thinking about Hig now, and Hig spends a lot of time thinking about Kylie and his baby.</p>
+
+<p>W0RMER:	Iâm not gonna be there for the birth.  Iâm not gonna see his first walk.  Iâm not gonna be there for the first words.  But you canât â thereâs a saying in prison; you do your time.  Donât let your time do you.</p>
+
+<p>JACK:	Kylie was able to come visit him once in prison before she had the baby.  It wasnât easy.  The prison didnât want him to have visitors and there was this whole ordeal.  The prison guards finally let them talk through a sort of TV phone system even though she was right there at the prison where he was held.  It was weird.  She cried the whole time she was able to talk with him.  She goes back to Texas and Higâs parents help her plan for the baby.</p>
+
+<p>KYLIE:	You know how you see those TV â that scene in a TV show where somebody looks like theyâre in this fog, itâs all foggy and confusing?  I kid you not, I came home from the hospital with this baby and thatâs how I felt.  It felt surreal.  What the hell?  Iâm in America.</p>
+
+<p>JACK:	She had a baby boy.  They named him Brody.  She wanted Hig to meet the baby, so she took the baby to prison.</p>
+
+<p>KYLIE:	It was surreal; here I am, Iâm taking this child of his in thatâs seven weeks old that heâd never â heâd seen a couple of photos of.  When theyâre in prison, you can hug and kiss and hello, goodbye, and thatâs it.  You canât touch, you canât hold hands.  If you do, the prison guards come and yell at you.  But he was allowed to hold Brody so the entire time, he just held Brody and couldnât stop looking at him.</p>
+
+<p>W0RMER:	I donât know how else to put it but after you just finally hold your firstborn child, the fact that you have to go back inside and some dudeâs gonna look at your butthole to see if you have any drugs kind of takes the fun out of the moment.</p>
+
+<p>JACK:	[MUSIC] Hig had to serve two years in prison.  Kylie was a single parent for those two years which was really hard for her.  He kept asking her to send stuff like books and printouts of articles and stuff like that which she was happy to do, but she was exhausted and couldnât keep up.  Other Anonymous members were helping him out too, going through her to send him stuff like money and letters.  Anons knew that one of their members had fallen and they wanted to take care of him however they could.  In their eyes he fell honorably serving a higher purpose.  Their actions showed respect to him.  While he saw her a couple of times in the first year in prison and would sometimes see pictures of his son, it was still a long wait ahead of him and Kylie had serious struggles in America.  She often thought about moving back to Australia for two years and then coming back when he got out because in Australia, she could get support from her family; she knows the place better.  Itâs her home.  But here, sheâs in America, a place she barely knows, raising a kid to a husband whoâs in prison.  After two years of prison time, Hig gets out.  He had to go to a halfway home in Texas a few hours away from Kylie, so Kylie goes to Austin and meets with his probation officer to try to figure out when she can see him.</p>
+
+<p>KYLIE:	Get up there, move into the apartment.  Again, Anonymous were the ones who got that apartment for us.  I had a job lined up for him, we had an apartment.  People moved us up there, they paid up.  We will be forever indebted to Anonymous because they made it happen.  Here am I and [00:50:00] Brody in this apartment.  His probation officer comes to see us three days after I moved in.  Heâs just come to inspect the house.  Heâs like okay, the only thing is, you have to cut your internet off until we say that itâs okay to be put on.  Okay, not a problem.  She said okay, so Iâm gonna go and see him at the halfway house.  Iâm gonna tell them heâs to be released.  Heâs got a great home to go to.</p>
+
+<p>JACK:	Even though he was in the halfway home, it still took them two weeks before they could see each other.</p>
+
+<p>KYLIE:	Itâs funny you know, Brody, he had the most amazing long brown curly hair and he looked like a girl.  I let it grow so long but I refused to cut my babyâs hair until daddy was there.  Poor Brody, weâll look back at his photos; he had these little hair clips, looking like a girl.  I remember the first time taking Hig to the halfway house and we were able to get some scissors and we stood there in the walkway and cut his hair together.  That was just â it was crazy.  Iâm standing in a halfway house, borrowing scissors from a prison guard or a halfway house guard, and cutting Brodyâs hair for the very first time.  I still have that hair.  Like a crazy mother, I kept it.</p>
+
+<p>JACK:	Eventually he finished his time in prison and his halfway house and his probation time, and he was once again a free man, free to move in with his wife and child.  Even though they had been married for two years by the time he got out of prison, they still had a lot to learn about each other.  Do you feel like you owe your wife still for helping you through all that?</p>
+
+<p>W0RMER:	That is a loaded question; did she e-mail you right now?</p>
+
+<p>JACK:	[LAUGHING] No.</p>
+
+<p>W0RMER:	Did she e-mail you?</p>
+
+<p>JACK:	Because I can just imagine it as married and having the kids; thereâs all this stress.  Like dude, come on, [MUSIC] I got your ass a job out of jail and I moved here for you.  Come on, youâve gotta at least get up and get the kid this morning.</p>
+
+<p>W0RMER:	Well, the rule goes, if she was to die tomorrow, I owe her two years of solitude, guaranteed.  I could die tomorrow and she could marry somebody immediately afterwards.  When youâre in the prison and when youâre in doing the time, youâre not looking at the effort that it takes to keep you afloat, you know what I mean?</p>
+
+<p>JACK:	Oh yeah.</p>
+
+<p>W0RMER:	Youâre trying to live in a place you donât want to be.  Youâve got other worries.</p>
+
+<p>JACK:	I donât know her at all but I could just see someone playing that card like hey, you owe me on this so much for so many things, even eight years later.  Itâll still come up sometimes.</p>
+
+<p>W0RMER:	Well, I mean, sheâs not vindictive.  I think after eight years of marriage, or the last six, I think, I believe Iâve done pretty good at returning the favor.  But yeah, itâs very much in the â I canât play the pity card, right?  Like oh, you donât even love me.  You know what I mean?  That doesnât work.  My wife gave up her life, literally came over here for me.  So, to say I owe her for two years is an understatement.  I owe her for the entire time that sheâs been over here and the time that sheâs given up.  Whether or not that works, I donât know, Iâm still living and breathing.  She hasnât poisoned me yet.</p>
+
+<p>KYLIE:	Tonightâs the night.</p>
+
+<p>W0RMER:	She says tonightâs the night, so maybe tonight.  But otherwise yeah, otherwise all feels good.</p>
+
+<p>KYLIE:	Let me tell you, up until about a year ago, that would come up a lot.  I would say to him all the time I have give up my life, I have moved to this country, I have given you everything.  When are you gonna grow up?  When are you gonna start being the man I married?  You know what?  It was hard for him; it took him a long time to become back to who he was.  Prison, he had it good in prison, but it still changed â prisonâs not fun and he was really lost when he got out.  We almost didnât make it on so many occasions and it would come up all the time; I gave up everything for you, I gave up everything for you.  Honestly, about a year ago, he just came back to the person that I knew he was.  [MUSIC] Iâve stopped saying to him you owe me two years, you owe me two years.  The last year of our marriage has been better than itâs ever been but we almost didnât make it quite often and you know what?  What held us together, for me, was I gave up my life, I gave up my country, I gave up a great career.</p>
+
+<p>I had just finished building a house, rented it out the month before for an investment property.  Because I sold it so quickly, I ended up making no money.  I gave up everything.  I refused to have to be stuck in America, divorced from my husband, and trapped here because we would never take either parent away from the kids.  That was the thing; if I was gonna divorce him, I would be stuck in a country that no offense, I donât want to be in unless Iâm [00:55:00] married.  That was my motivation.  His motivation is you know, weâve been through so much, we love each other, the kids.  But that, for me, I was determined to not have done it all for nothing.  Obviously, my kids, theyâre absolutely worth it but on the other side â about a year ago we finally just fell into a very good groove but it took years.  We almost didnât make it, Jack.  We almost didnât.</p>
+
+<p>JACK:	Wow.</p>
+
+<p>KYLIE:	Yeah, it was crazy.</p>
+
+<p>JACK:	So, if your kids grow up to become hacktivists, do you have any advice for them?</p>
+
+<p>KYLIE:	[LAUGHING] After I finish screaming for like, three days straight, I will tell them do not do it.</p>
+
+<p>W0RMER:	Yeah, this stuff can really hurt you in the bad end.  But Iâm a hacker; Iâm born a hacker, Iâve been a hacker my entire life, and I expect my kids to be the same.</p>
+
+<p>KYLIE:	I do not, do not at all and will never recommend hacktivism for anyone.  I understand there are points, there are things that you want to change in this world, but let me tell you right now, Jack; nobody remembers that Hig hacked the cops because cops were being dicks.</p>
+
+<p>W0RMER:	The best I could say is hey, if youâre willing to go out there, if thatâs something you want to do, I can tell you right now it sucks and itâs a long, whole lot of suckiness for a long time.  But donât stand for something youâre not willing to fall for.</p>
+
+<p>KYLIE:	Nobody is ever gonna remember that he hacked them to try to stop them from beating up other people.  All that they are going to remember is that he hacked the police.  We have been, for the last eight years, to this day â oh my god and please, if nothing else, please play this part; people still, after eight years, wonât employ him because they are scared heâs going to hack them.  He is not gonna lose his family to hack.  If my kids ever want to get into hacktivism â if I have to lock them up in a room for ten years, I will do that because I refuse to let that happen.  We have been homeless, we have been hungry, weâve had â heâs been offered job after job that heâs supposed to start the following week that gets canceled the Friday before, offers of $125,000.  [MUSIC] Jack, we have been homeless to the point that our pipes froze, we had holes â it was holes in the winter, it was horrible.  I will never ever recommend hacktivism to anyone.</p>
+
+<p>If you want to make a point, if you want to change the world, then do not put yourself at risk because at the end of the day, whatever youâre trying to rectify is not gonna be rectified.  All thatâs gonna end up is that youâre gonna end in prison.  Prisonâs the easy part; youâve got two years in prison, ten years in prison, whatever.  Thatâs the easy part because for the rest of your life you are going to be turned down for employment.  People are gonna be scared that youâre gonna hack and itâs going to ruin so many aspects of your life.  I can not tell you the struggle even after eight years; hacktivism is not worth it.  Find another outlet.  Find a better way to do something because the only thing youâre gonna change is the fact that you will ruin the rest of your life.</p>
+
+<p>JACK:	Hig and Kylie are still together today after eight years of marriage.  Or six years, however you want to see it.  In that time, theyâve had two kids together.  Despite all the separations and reunions and struggles, theyâre doing pretty good now.</p>
+
+<p>JACK (OUTRO):	[OUTRO MUSIC] A big thank you to our guests this episode Hig and Kylie.  I didnât know I was getting into a love story when I started this but here it is, happily ever after and all that.  This show is created by me, kidvid19, Jack Rhysider.  This episode was produced by the resilient Jake Warga, sound design by the fine-tuned Andrew Meriwether, and editing help from the sparkling Damienne.  Our theme music is by the book-writing Breakmaster Cylinder.  Even though when I show my password to other people, they say itâs very strong, I still sometimes get hacked; this is Darknet Diaries.</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

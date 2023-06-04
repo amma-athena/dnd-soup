@@ -1,0 +1,545 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>The Whistleblower â Darknet Diaries</title>
+	<meta name="description" content="In this episode we hear a story from a social engineer who's job it is to get people to do things they don't want to do. Why? For profit. ">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="The Whistleblower â Darknet Diaries">  
+	<meta name="twitter:description" content="In this episode we hear a story from a social engineer who's job it is to get people to do things they don't want to do. Why? For profit. ">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/whistleblower.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/80/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="The Whistleblower â Darknet Diaries" />
+	<meta property="og:description"        content="In this episode we hear a story from a social engineer who's job it is to get people to do things they don't want to do. Why? For profit. " />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/whistleblower.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/80/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/whistleblower.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/80/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="The Whistleblower â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/whistleblower.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 80: The Whistleblower</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://www.podtrac.com/pts/redirect.mp3/traffic.megaphone.fm/ADV9145504181.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/80/",
+			   "title": "Ep 80: The Whistleblower"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/80">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[START OF RECORDING]</p>
+
+<p>JACK:	How persuadable are you?  I think most of us think we make complete and logical decisions ourselves and weigh all the consequences and weâre not influenced by marketing campaigns.  But I think overwhelmingly, weâre more persuadable than we think.  Thereâs this mint study I find fascinating.  Some psychologists did this research in restaurants.  They found that if the server gave the customer a mint along with the bill, the amount of tips went up by 3%.  Why?  Well, itâs because the server gave them a small gift.  As a human, when someone gives us something, even as small as a mint, we want to give something back.  But check this out; when the server gave two mints with the bill, the tips went up by 14%.  But thereâs more.  If the server gave one mint with the bill and then walked away but then stopped and came back and said youâre nice diners; here, take an extra mint, this resulted in tips increasing by 23%.
+<!--more-->
+Incredible.  Such a small gift given at just the right time with the right message has quite an effect on us.  See, these are the things I donât think weâre consciously aware of.  I donât know how much Iâm going to tip until I get the bill, and then I do this little math game to figure it out.  If at that same time Iâm also given a little gift and told something nice, yeah, I think this kind of stuff does work on me and I donât even realize it.  But those are small things.  Surely I wouldnât be so easily persuaded to do something bigger, right, like turn against my company and cause it to have major financial loss.  Thatâs quite a big decision to make.  But this story is about a guy who persuaded someone to do exactly that.</p>
+
+<p>(INTRO):	[INTRO MUSIC] These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	Our story today comes from a character weâre going to refer to as Paint Parrot.  Itâs sort of a nickname he goes by.  Paint Parrotâs a social engineer unlike any Iâve ever seen.  If you donât know what a social engineer is, itâs basically just someone who can persuade other people to do things they donât want to do through different psychological tricks.  But his story starts far away in Afghanistan.</p>
+
+<p>PAINT PARROT:	I was in a part of the British Army called the Royal Artillery, which everyone assumes straightaway is going to be to do with big guns and things like that, but we were actually a UAV unit, so unmanned air vehicles; drones.  We were a drone unit within the Royal Artillery.  Our job was obviously to find, fix, finish, and build up that intelligence cycle for the guys on the ground to then go out and do operations against, I donât know, like the Taliban, weapons caches or yeah, to try and track people planting IEDs in the roads.  Or, yeah, trying to find high-value targets that Special Forces guys can knock on the door, basically.</p>
+
+<p>JACK:	Paint Parrot said he was only in charge of unarmed drones; no predators launching missiles down on targets.  Instead, theyâre sort of like eyes in the sky and would watch the ground to gather as much intelligence as they could.</p>
+
+<p>PAINT PARROT:	Yeah, it was a unique and yeah, quite exciting role.  Mentally quite taxing âcause a lot of the time you feel like your hands are tied.  Youâre looking at stuff and yeah, you want to be able to do something especially when youâre seeing friendly troops getting in contact with the Taliban and you want to be able to intervene but all you can do is watch.  Itâs quite a surreal time.</p>
+
+<p>JACK:	[00:05:00] What he was after was good intel that his team could use to have the upper hand which I guess is like espionage work; a spy in the sky.  But after a while, he completed his duty and left the military which means he needed to find work as a civilian.  At first, he assumed he would just do what a lot of his peers were doing.</p>
+
+<p>PAINT PARROT:	Originally, I wanted to do what a lot of ex-army guys do and just be a bodyguard âcause it can be quite lucrative contracting in places like Iraq and Afghanistan.  That was kind of the original plan.  But while I was doing the training, I became good friends with the guy who ran the training company and I started out going back with him as an instructor.  Then that evolved into me getting involved in some of his projects that he was doing that werenât training.  It was sort of live operations, if you will.  Thatâs kinda how, yeah, kind of â he sort of filtered me into less bodyguard stuff and more security and risk assessments and yeah, following people and gathering evidence for â yeah, whatever, it was just normal sort of lawyer cases.  I need to get information to discredit the other party.</p>
+
+<p>JACK:	[MUSIC] Now, thatâs an interesting transition, getting intel for lawyers.  This is sort of like being a private eye but heâs trying to find dirt on the other side of legal cases, so he was gathering intelligence for companies, lawyers, court cases.  For example, this one time he said there was a copyright infringement case.</p>
+
+<p>PAINT PARROT:	Yeah, someone had their â they were claiming rights of intellectual properties.  Itâs something of a business idea.  In order to try and catch the other party out, weâd organize â have a meeting in a conference room at a hotel, no lawyers present, and just the two guys that were arguing could talk it out and hash it out.  What we had actually done is bugged the room and had our lawyer basically downstairs listening to the audio and kind of baited the other guy into admitting that he had stolen the intellectual property and bragging that he was gonna get away with it.  Thereâs a slight sex appeal to corporate intelligence, I guess.  Itâs kinda like this whole world that â I was in the military and things that you never really â you see it in the movies.  You donât really know that it exists.  You learn a lot of social engineering âcause youâre constantly having to talk your way into places you shouldnât be.  Youâre constantly having to phone somebody up and fish information out of them and try to get them to reveal things that they shouldnât do, or pretending to be someone else.</p>
+
+<p>JACK:	He would sometimes travel around, do training sessions, and would teach others how to gather intel like this, covertly.</p>
+
+<p>PAINT PARROT:	After, yeah, getting more and more into it, one trip to the states, I met a private intelligence company that was a DOJ contractor.  Thatâs kind of where it all escalated from there and became something else.</p>
+
+<p>JACK:	Okay, so, this DOJ contractor was an intelligence-gathering company and they wanted to increase their presence in the UK where Paint Parrot lived.  They knew of this London-based company which was collecting intelligence there, and they introduced Paint Parrot to this small intelligence firm in the UK to see if he could help them out.</p>
+
+<p>PAINT PARROT:	This is kind of where I first got introduced into yeah, the world of whistleblowing, basically.</p>
+
+<p>JACK:	[MUSIC] Hereâs where we get to whistleblowers.  In a nutshell, the Department of Justice doesnât like it when corporations break the law.  They want to bring these businesses to justice, but itâs not so easy for the DOJ to know when something illegal is going on inside a company.  The DOJ gives out monetary rewards to whistleblowers who can provide detailed firsthand observations of misconduct by a company which results in a successful enforcement action that returns a significant amount of money to harmed investors.  Basically, if someone inside the company comes forward and provides enough evidence that this company was breaking the law and it results in a fine imposed by the SEC, the whistleblower will get a percentage of that fine.  But the DOJ canât handle all of this intel being sent at them by themselves, so they contract this work out to companies like this DOJ contractor the Paint Parrot just met.  But this London group that he also just met with was in the process of handling one of these whistleblower cases.  Now, this case is still ongoing, so we canât discuss specifics, but he can talk a little about it.  First, like in any whistleblower case, thereâs a company that did something wrong.</p>
+
+<p>PAINT PARROT:	[MUSIC] Brief overview, a certain large company was â in order to get a competitive edge â was bribing government officials in exchange for access to oil.  They were paying off people, they were shipping cash across borders into other countries in order to pay off government officials [00:10:00] in order to get their supply over other corporations, their competitors.  They were also â in the end, it sort of came out they were also manufacturing fake shipping manifests, the ships that never left or never existed in order to move what weâve assumed is large quantities of oil or something.  They were moving it anonymously in order to bolster their stocks all off the record and things like that.  We have a feeling that was then used in other countries, basically, in order to shift the balance of whatever it be; political power or whatever.  But they were basically shipping, yeah, some oil that wasnât even accounted for.  They were using some of these to ship cash as well that wasnât â it was sort of off the books by saying oh, we paid for this vessel to leave, and this vessel never existed.  The manifest is â it never existed, but they can attribute millions of dollars to that â this cost.  That money then obviously went somewhere else in cash.</p>
+
+<p>JACK:	So, this giant multinational corporation was doing a bunch of illegal things but it wasnât public, so nobody knew they were doing this.  Only a few people inside the company were aware that this company was breaking the law.  But there was this one guy who worked for this company who was upset with this company.</p>
+
+<p>PAINT PARROT:	He was in a Southern African country.  He was their representative, basically.  He had his own business but he also had business cards with discommodity companies, local.  He was their in-country representative.  He was a contractor rather than actually on their payroll.</p>
+
+<p>JACK:	Okay.  But I mean, how did they get connected to your company?</p>
+
+<p>PAINT PARROT:	How he got approached is â I think he tried to sue a company for money that they owed him [MUSIC] when he had left.  I think thatâs how it started.  He ended up with a grudge against this company and someone obviously caught wind it of it and introduced him to where I was working â Iâd say this is before I came along â and was like, look, you didnât win the lawsuit.  If you know of anything that theyâve done wrong â âcause I think he mentioned some of it in the lawsuit and he was â kind of took it âcause he lost the lawsuit and no one took any of it seriously.  He then got introduced to this intelligence firm and they were like okay, this â if you can prove this, this, and this, then itâs a whistleblower case.  Thatâs kind of how it all started.</p>
+
+<p>JACK:	This guy wasnât interested in being a whistleblower at first, but this UK intelligence firm convinced him that being a whistleblower was the right thing to do and to come forward with this evidence to the DOJ.  He agreed to provide them with testimony and the necessary information for the case, but then things got a little crazy.  Paint Parrot gets brought into this UK intelligence firm to take a look at this case.  They have this guy with enough evidence to slap a huge fine on this company.  They just need him to come forward with it, but this guy was a bit of a loose cannon.</p>
+
+<p>PAINT PARROT:	Letâs just say the situation was complicated and the witness was at risk, predominantly at risk of themselves, but they were making threats towards their own family and kids and things like this.</p>
+
+<p>JACK:	Their star witness had freaked out.  He disappeared from his home in Africa, threatened to kill his wife and family, and cut off all contact with this intelligence company that Paint Parrot was working for.  It looked like he had gone to the UK where Paint Parrot was.  Oh, and I actually took a look at this guyâs Facebook page.  He is very strange.  He calls himself the Old God and goes around blessing people he thinks are merciful.  His pictures he posts are pretty odd, too.  Some are straight-up amateur porn, some with his face painted in a very crude way, and he posts a lot of weird conspiracy theory stuff.  This is what Paint Parrot walked into.  As being the new guy at work, this was his first assignment.</p>
+
+<p>PAINT PARROT:	Itâs just kind of can you secure the family, make sure the house is secured, and then can you try and track down and find our whistleblower?  I appreciate this doesnât paint this world in a great light âcause you know, Iâm kind of being brought in on whatâs essentially a fuck up.  But of course, it sounded interesting.  I get told that the FBI are involved and all this kind of thing so yeah, Iâm like, okay, letâs do this.</p>
+
+<p>JACK:	[MUSIC] He begins his search by getting to know the guyâs family.  He asked them about the targetâs typical schedule and any favorite places that he tends to go.  They had to do this safely, without bringing any harm to him or the guyâs family, which means a lot of his intel that he gathered had to be secret.  So, he begins scouring the internet to try to find information about this guy.</p>
+
+<p>PAINT PARROT:	Weâre humans.  Weâre creatures of habit.  Letâs find out the restaurants he likes to go to, [00:15:00] who â places he kind of normally in his daily routine canât do without; if he always buys a bagel from this one food shop, okay, well, letâs check that out at the sort of time of day that he would go there.  It was initially just gathering a list of information about his family and sort of other friends and contacts that we got in touch with to try and track him down.  Then it was, like I say, he started posting a lot of stuff on social media.  Heâs putting pictures on Facebook almost daily and Iâm trying to figure out whatâs in the backgrounds to try and pin down whereabouts he is in London.</p>
+
+<p>JACK:	When you take a photo with a digital camera, a bunch of data like the date and time and even GPS location are stored as metadata inside the picture.  It used to be that when you uploaded a photo to Facebook, all of that metadata could be downloaded and viewed.  Obviously, this raised a lot of privacy concerns, so Facebook and other social media platforms began automatically deleting metadata from uploaded photos.  Paint Parrot couldnât just download the photo and look at the metadata and see where it was taken.  He had to actually identify things in the background of the photos to try to figure out where these photos were taken and where his target was.</p>
+
+<p>PAINT PARROT:	Instead, I was actually having to identify what was in the background of the photos; yeah, looking at the time he had uploaded it and looking at the frequency of when he was uploading pictures.  It was oh, right, okay, that was taken this morning.  He uploaded it at that time.  A couple of hours later; okay, this pictureâs a couple of miles away, to kind of build an idea of what area heâs in and then just try and narrow it down and close the net, so to speak.</p>
+
+<p>JACK:	He figured out from the photos this guy was staying in a hotel.  Looking at the background landmarks and stuff in the photos, he narrowed his location down to a general part of town that has a few well-known hotels.  Now, he has to figure out what hotel this guyâs staying in.  Maybe to you and I thatâs a little hard, but to Paint Parrot, thatâs nothing a little social engineering canât figure out.</p>
+
+<p>PAINT PARROT:	[MUSIC] The first thing then, is I start calling these hotels.  Letâs pretend Iâm calling them saying Iâve got the guyâs laundry.  Calling; oh, I work for so-and-so laundry.  I would just quickly Google the dry-cleaning company thatâs down the road, kind of thing.  Itâs like, I work for so-and-so; weâve got clothes here.  He said he was staying with you guys but we havenât got the room number.  I know heâs expecting it today.  Is there any chance you can give us the room number?  We can make sure â we can bring his dry cleaning up to him, soft.  Obviously, most of them were like no, we havenât got a guest by that name, blah, blah, blah.  But we eventually found the right one after about the fourth or fifth attempt.  Someone in reception let it slip, gave us the room number and everything.  We were like alright, cool.  We know heâs staying here.  We know heâs in that room number.</p>
+
+<p>JACK:	Excellent; success.  The call worked and he had the information he needed, so now heâs gonna go find the target.</p>
+
+<p>PAINT PARROT:	Once I had the room number, I just walked straight past reception, walked straight upstairs, found the room, and just kind of where it was corridor-wise, and just lingered around, I guess, in the right sort of way that â sitting on the â I think it was a sofa at the end or something, just one of those random bits of hotel furniture, and just kinda hung around there playing on my phone until I confirmed that he was actually staying in that room.</p>
+
+<p>JACK:	So, he waited nonchalantly outside the guyâs hotel room to make sure it was his room.</p>
+
+<p>PAINT PARROT:	Yeah, itâs not quite the classic spy with the eye-holes cut out in the newspaper, you know?</p>
+
+<p>JACK:	[MUSIC] Suddenly, the guy comes out of his room and starts walking to the lobby.  Paint Parrot sees him but he didnât want to confront the whistleblower immediately.  Remember, they need this guy on their side if they want to use him against this company.</p>
+
+<p>PAINT PARROT:	Initially itâs try and talk to him and try and bring him back on-board.  We know heâs there, seen heâs got his phone on him.  Weâve got eyes on him when heâs walked out and Iâve got one of the bosses of the company to give him a call and try and talk him âround.  You could see his phone rings; takes the phone out of his pocket.  I can see heâs ignoring it.  Itâs like, okay, I kind of know weâre starting to get a â losing the control.</p>
+
+<p>JACK:	So, whatâs your pulse rate in these situations?  Are you cool and calm or nervous and sweaty?</p>
+
+<p>PAINT PARROT:	The amount of times Iâve followed someone or be looking at someone through a camera here and youâre like â you think shit, theyâve seen me.  Theyâre looking right at me.  You look at the photos; it looks like theyâre looking right at you.  You follow someone for ages and because they just casually look over their shoulder at some point, even though youâre across the street and a good thirty meters back or something, because theyâve looked over, you get that paranoia of instantly thinking theyâve spotted me.  But the more and more Iâve done it, once you realize that everyone else around you is nowhere near as aware as you are, âcause youâre in this heightened state, [00:20:00] you almost get this feeling of you can go anywhere.  You can walk anywhere.  As long as youâre confident enough, people are easy.  If you look like you belong somewhere, people wonât question you.  Itâs generally that simple.</p>
+
+<p>JACK:	So, Paint Parrot continued to track and follow this guy for a while.</p>
+
+<p>PAINT PARROT:	This went on for a couple of days, trying to make a soft approach and just try and bring him back in.  Once it was quite obviously established thatâs not what you wanted to do â and he started posting more and more stuff on social media now in relation to this case.  He actually posted a list of e-mail addresses and names of people at the DOJ in the US.</p>
+
+<p>JACK:	Huh?  Thatâs really odd.  Heâs trying to dox the Department of Justice?  That makes no sense because thatâs not the target organization you want his help on.</p>
+
+<p>PAINT PARROT:	No.  As I said, this guy completely lost the plot.  I donât know if it was a mental breakdown or what or if heâs just crazy but yeah, he kind of â heâd done the same for the company that he was blowing the whistle on as well, so he kind of put his hands up and said Iâm a whistleblower, and he listed the names of â DOJ names and e-mails, FBI names and e-mails, and names and e-mails of the top people at the company he was blowing the whistle on.</p>
+
+<p>JACK:	At this point, the team decides this guy is no longer worth the risk, so Paint Parrot takes all the information he has; the guyâs location, texts, audio recordings of him making threats against his wife and family, and prepares a nice little file to pass along to London law enforcement so they can arrest him.</p>
+
+<p>PAINT PARROT:	Yeah, I kinda packaged it all in a nice way to sort of present and resolve the situation.  They were like oh my god, yeah, we never had anyone do this before.  Itâs absolutely brilliant.</p>
+
+<p>JACK:	The police had enough evidence to bring that guy in and question him.  This means they lost their whistleblower.  What do you do with this case now?  After the break, weâll find out.  Stay with us.</p>
+
+<p>PAINT PARROT:	The conversation shifted over the course of a few days to well, now we donât have a witness and we still want this case.  It was like, we â you managed to find him and track him down.  How would you feel about â letâs try and find a new witness or two for this investigation.</p>
+
+<p>JACK:	Now, you might be wondering why does this UK intelligence firm that Paint Parrot works for even care about finding a whistleblower and bring this case to justice?  Well, itâs simple; money.  [MUSIC] Check this out, when a whistleblower reports a crime to the SEC and the SEC issues fines for that company, the whistleblower will get a cut of the fines collected.  In fact, the SEC can reward up to 30% of the fines collected back to whoever brought them the evidence that a crime was committed.  But thatâs not always just the whistleblower who brings it forward.  A company like the one Paint Parrot works for would outline all the laws broken, compile all the evidence neatly, and handle the whistleblower.  Then Paint Parrotâs company would deliver it to the DOJ contractor whoâs based in Washington DC, and that company has an in with the DOJ and the SEC to get the attention of the right people to get this moving quickly.</p>
+
+<p>That 30% might be split three ways between the whistleblower, the company Paint Parrot works for, and the DOJ contractor.  That means if a company is fined 500 million dollars, 30% of that is 150 million dollars.  So, 150 million dollars split three ways, this is why the intel firm that Paint Parrot worked for wanted this case.  This was a huge company committing massive crimes that could result in billions of dollars in fines.  Thatâs just a fascinating business model that this intel firm was doing; to go seek dirt on a company and then find a whistleblower in that company who can testify that crimes were committed all so this company can get the [00:25:00] reward in the end.  At this point, they knew what crimes were committed by this company, and now they just needed to find a person on the inside of the company to come forward with the evidence.  This group wanted Paint Parrot to approach somebody who was part of the company and convince them to turn into a whistleblower.</p>
+
+<p>But they needed to find the right person, someone whoâs willing to do it and would have access to the right evidence.  While Paint Parrot had done some social engineering and intel-gathering in the past, this was totally new territory for him and definitely in the moral gray area, because the new goal is now to create a whistleblower to find someone who didnât necessarily think to become a whistleblower and then convince them to detonate a bombshell allegation against the very company they work for.  But Paint Parrot was up for this challenge.  He knew they would have to be really smart about the approach if they were gonna do this.</p>
+
+<p>PAINT PARROT:	Itâs not like you can just knock on the door of a company and follow someone out and tap them on the shoulder on the street and go hey, do you want to come forwards and be a whistleblower?  That kinda doesnât work.  You have to cultivate.  This is what weâd call human intelligence, but itâs basically social engineering.  Youâve got to build a story that puts you on a like-for-like with the individual you want to target.  Youâve got to very, very quickly be memorable to them and be their best friend before you even approach the subject of whistleblowing.  Youâve got to have enough things in common and â stupid shit like I the same movies, the same TV shows, go on vacations at the same places to the point where theyâre like oh my god, I found someone thatâs into the same stuff as me.  Do you want to grab a beer later?  You can then start building on a relationship with them.</p>
+
+<p>JACK:	How much experience have you had with something like that before this, to get close to a source like that without them knowing who you are?</p>
+
+<p>PAINT PARROT:	I had a minimal exposure to it but never done more of a long game like this.  What Iâd done before was a couple of days, just trying to â maybe just trying to bump into someone and get some information out of them in a bar or knocking on the door pretending to be someone else, or getting the job in a warehouse to try and find someone thatâs stealing stock.  Never playing the game or playing a role to this sort of level.  Never tried it at this point but I was like hey, Iâve done it for smaller stuff, so surely itâs just do the same thing but longer, right?</p>
+
+<p>JACK:	[MUSIC] Paint Parrot and his team began looking for employees of this company to try to find someone who could be a whistleblower.  Now, if you donât know, you can go on LinkedIn, search for a company, and see thousands of employees that work for that company.  From there, you can try to find people who would be in the position to know what dirt this company has.  Because after all, a whistleblower has to testify in court to say that they they saw this company commit crimes.  It canât just be anyone who works there.  They slowly start going through individuals of this company, narrowing it down.  Then when they find people who would be in the know, they start scouring their social media profiles, trying to figure out if this person could be persuaded to be a whistleblower, because you sorta need to find someone with strong morals and ethics whoâs willing to do the right thing and is willing to work with the SEC, because at the end of the day, a whistleblower has to decide, what do they care about more; this company they work for or justice for the crimes that were committed?  Eventually, Paint Parrot and his team zeroed in on a person.</p>
+
+<p>This guy ticked all the boxes of someone who would know enough to testify, has the morals and ethics to want to do the right thing, was American, so he could be patriotic, and as a bonus, the target was living in the UK right where Paint Parrot was.  This was now their target and their mission is to convince this guy to blow the whistle on the company he worked for.  Now that theyâve identified their target, Paint Parrot got to work learning as much about this guyâs life as possible.</p>
+
+<p>PAINT PARROT:	[MUSIC] Thatâs when itâs like, youâre trying to just use your standard sort of open-source intelligence type techniques, just try and get as much of information as we can.  Letâs look at his â try and build up who and where his family are, use Facebook so we can get pictures of his family first and last names, locations.  I found out heâs from a certain state.  Okay, so now weâre just looking at people who match their names in that state.  Eventually you start whittling down the list of where I had his mumâs landline and mobile phone number, all just through open-source intelligence, looking at Facebook, Instagram.  Found heâs still got an old MySpace.  You know, all this kind of stuff, and weâll build up a picture of this guyâs life.  Where does he go?  When does he go on holiday?  When does he travel back to the states?  Where does he go on holidays?  Anywhere he goes [00:30:00] regularly.</p>
+
+<p>JACK:	This is all pretty basic research.  Most of the information theyâre getting is just from public social media profiles, but he was also looking up things like voter registration databases, real estate listings, and other online resources to fill out their picture.  But most of what theyâre getting is just stuff thatâs publicly out there, ready for anyone to find.</p>
+
+<p>PAINT PARROT:	Yeah, weâve managed to get his mobile phone number by this point.  Weâve got a wealth of information about his daily life from various social media and his wifeâs social media and stuff like that.</p>
+
+<p>JACK:	Oh yeah, thatâs a good tip; if the target is not showing much on social media, find their spouse because their spouse might be posting all the info like where theyâre traveling, what food theyâre eating, pictures of themselves.  It sometimes can be a much better source of information than the target themselves.</p>
+
+<p>PAINT PARROT:	Weâve got historical data of his family and where they currently are living and his relations, and how often he generally travels back to the states.  We almost build out what we call a âpattern of lifeâ on the person.  We use that to then start trying to decide how weâre gonna fit ourselves â basically, how Iâm gonna slot into this guyâs life.</p>
+
+<p>JACK:	Thatâs the question, right?  With all this information, how do you approach the person to convince them to be a whistleblower?  If you just phone them up and say hey, do you want to be a whistleblower, that seems odd and you might instantly lose them.  If you want to persuade someone, the best way to do it is to get them to believe itâs their idea.  [MUSIC] So, thatâs the plan.  Paint Parrot was going to enter this guyâs life, become friends with him, and then slowly plant the idea that whistleblowing is a great idea.  This means Paint Parrot needs to come up with a pretext, a backstory as to who he is and then meet this guy.  Paint Parrot builds an identity online.  He creates a fake LinkedIn profile and business cards to look like he works at another company with a similar job as the guy heâs targeting.  In fact, he purposely made his profile a bit less accomplished as his target so his target wouldnât feel intimidated.  Paint Parrot begins memorizing his pretext.</p>
+
+<p>PAINT PARROT:	Weâd get a load of â in the UK â pay-as-you-go SIM cards and secondhand phones, stick a pay-as-you-go SIM in it.  Never really put any money on it unless we actually had to make a call from it, but half the time you just give out that number for people to call you on it.  A lot of these phones ended up with little stickers on, so you put them in a rubber case or whatever, but when you took the case off, it would have a little sticker on the various case names that â the code name that attributed to the project or case on the back of it.  I think at one point I had like, six phones.  I had to take the rubber cases off sometimes to remind myself of what phone was for what job and for what personality I had there.</p>
+
+<p>JACK:	Do you stare in the mirror and call yourself by your fake name and try on different accents and stuff?</p>
+
+<p>PAINT PARROT:	No.  Generally, this kind of thing â some people might argue this, but I always use my real first name because thereâs nothing worse than when someone shouts your name and youâre not using your real name and you donât respond to it.  My nameâs not Dave and thereâs no point me introducing myself to people as Dave because especially after doing this for a while, you are gonna have a few drinks at some point.  If youâre talking to someone else and your target turns around; she goes Dave, and you just completely ignore it because itâs not your actual name, it can land you in the shit.</p>
+
+<p>JACK:	Or somebody coming into the bar and shouting your real name and then, explain yourself.</p>
+
+<p>PAINT PARROT:	Exactly.  Yeah, if youâre sitting there and youâve told this guy your nameâs Dave and someone comes in going hey, Fred, Fred!  Fred, why are you ignoring me, Fred?  Youâre like, fuck off.  Yeah, you see that sort of stuff in the movies, donât you?  Yeah, it just doesnât work like that.</p>
+
+<p>JACK:	At this point, Paint Parrot has spent weeks learning about every aspect of his target.  He has his own story cooked up along with fake business cards and a fake social media profile, and now he thinks itâs time to make first contact.  [MUSIC] Paint Parrot knows this guyâs routine is to go to the bar every Friday night with some coworkers, have a few drinks, and then a few hours later, the coworkers leave and his wife comes and a few friends to have a few more drinks.  His plan is to somehow make first contact just as his coworkerâs leaving and the targetâs wife is showing up because at that point, the guy would already have a few drinks in him and be comfortable with the territory and wouldnât have any of his work friends around.  Paint Parrot knew this was going to be a long game.  He didnât think he was just going to be able to meet this guy in a pub one night and convince him to be a whistleblower that same night, so his plan was just to become friends with him at first and gain trust.  Friday night comes.  Paint Parrot and a few of his coworkers head to the pub where they know this guy will be.</p>
+
+<p>PAINT PARROT:	Yeah, Iâm in this bar just with a couple of other colleagues just kind of, [00:35:00] yeah, be seen in the bar and not be that creepy weirdo just on his own âcause that also doesnât work.  Once I feel like heâs drunk enough and you get to the point where the barâs busy, that youâve actually got a queue to get served, I kinda slip myself in front of him in the queue and Iâm just on a fake phone call to whoever.  Iâm talking about trying to get this place booked.  Itâs about this up-and-coming ski trip.  Iâm right in front of the guy, sort of â heâs literally on my left shoulder kinda thing.  Iâm talking about it loud enough that he can hear âcause obviously itâs a bar, and Iâm starting to really moan and complain that I canât get this place booked.  I had heard great reviews about it, Iâd been there another time of year, I really wanted to do the run up to Christmas which was the dates that he does.  I really want to do it this year âcause Iâve heard itâs amazing.</p>
+
+<p>JACK:	See, Paint Parrot knew so much information about his target.  He knew that this guy booked that exact room just weeks earlier, so heâs being all loud and rude on this phone call and putting on a show about not being able to get that room.</p>
+
+<p>PAINT PARROT:	Yeah, so Iâm there obviously making a scene; said, oh, for fuck sake, I was dying to take you guys there.  I canât get it booked.  I made a â Iâm sorry I made these promises to you guys.  Iâll try and figure it out.  Itâs supposed to be an amazing place.  Itâs beautiful, itâs stunning, the skiing is brilliant.  Iâm just saying this loud enough that the guy can hear and Iâm subtly repeating the name of the villa a few times in this fake phone call so it kind of reestablishes it, âcause you might hear it once in passing and he might miss it.</p>
+
+<p>JACK:	Are you looking at this guy to see if heâs picking up on you or watching what heâs doing?</p>
+
+<p>PAINT PARROT:	No, I couldnât â obviously Iâm aware heâs still just behind my left shoulder and Iâm trying to sort of use the drinks and the mirrors behind the bar and whatever is there to try and catch a glimpse of his reflection here and there to slowly see that heâs starting to twig.  I kind of carry on talking about â I canât book it.  I hang the phone up.  Iâm like, this is fucking bollocks, kind of thing, and the guyâs like hey, man, you alright?  Iâm like no, mate.  Itâs bullshit; Iâve been trying to book this place and itâs already booked up.  I promised my friends I was gonna.  I guess I was too slow in doing it.  Here is someone else has swooped in and booked in.  He kinda said oh, I heard you say so-and-so, the name of the place.  I was like yeah, thatâs it.  I was like well, howâd you know it?  Heâs like oh, Iâm the fucking asshole that booked it.  [MUSIC] Bang, there we are; conversationâs started.</p>
+
+<p>JACK:	The magic of this is the fact that Paint Parrot didnât approach the target.  He got the target to break the ice.</p>
+
+<p>PAINT PARROT:	You want them to make the first conversation with you, okay?  âCause people are inherently suspicious; if I go up to this person and go oh, hey, youâre so-and-so, itâll generally get their guard up.  But if they overhear you talking about something in a bar or whatever that is so unique and tied into their lives, they almost feel â especially after a couple of drinks â obligated to say oh my god, I know that, or I know where that is.  I go there.  Itâs them then starting the conversation which instantly makes them feel at ease.  You see what I mean?  Itâs a psychological thing, I guess.</p>
+
+<p>JACK:	So, back at the bar, Paint Parrot got the guy to initiate conversation, but thatâs just the first step.  Now heâs gotta capitalize on this opportunity.  Heâs got this one shot to cement a friendship with this guy or else he might lose months of research and work that he built up for this moment.</p>
+
+<p>PAINT PARROT:	[MUSIC] Obviously, Iâm at the bar.  I get served before him.  Thereâs obviously a queue; Iâm like look, dude, I just want a drink, kinda thing.  Heâs like yeah, and weâre kinda talking at that point.  Yeah, one of my colleagues thatâs one of my drinking buddies in the bar kinda comes up, taps me on the shoulder and says donât worry about me, we gotta go.  Iâm like oh, okay, I guess Iâll stay here on my own kind of thing and just finish this drink.  Iâm talking to this guy.  Heâs obviously like, donât be stupid, come and sit with us.  Thatâs it.  Iâve now sort of put myself into this guyâs life.</p>
+
+<p>JACK:	Paint Parrot got a seat at the table.  He was in.  Once he sat down, this is where all of that research on the target and his wife comes into play.  Paint Parrot already knew their favorite bands and he knew where they liked to go on vacation, what they liked to do, so he was finding ways to casually bring this up into conversations to make himself look like the perfect friend they never knew existed.</p>
+
+<p>PAINT PARROT:	Youâre just trying to show that youâre into the same things as they are.  Like when you meet someone, and theyâre into all the same stuff as they are.  You could go anywhere and do anything with them.  Youâre gonna have a great time.  Thatâs how you want them â you want them to arrive at that kind of conclusion in their minds.  Stay, chat, laugh, have a few drinks.  All of a sudden we got so much in common.  After a few drinks itâs like look, hey, I really should shoot.  Iâve got some stuff on [00:40:00] my desks that Iâve gotta try and get on top of over the weekend.  It sucks to work over the weekend but Iâve gotta do it, kinda thing.  You kind of hope that they come up with look, do you want to grab a drink again sometime or whatever?  If it feels like theyâre not gonna do it, I just went with the look, thereâs my card.  Give us a call if you fancy catching up or something like that.  I think within about ten minutes of leaving, he had dropped me a text and it says hey, man, it was good to meet you, kind of thing, blah, blah, blah.  Yeah, definitely, letâs grab a drink.  Weâre doing something or other later on that week.  Heâs like, you should totally come.</p>
+
+<p>JACK:	Boom.  Wow.  I canât tell if Iâm more impressed or terrified by this whole thing.  To think that a stranger you meet in a public space might actually be part of a team of people who have spent months researching every part of your life with the specific goal of manipulating you and influencing you to do something, to make a major life decision, this is pretty crazy.  Stay with us because after the break, weâll hear how he plays the long game.  Paint Parrot has completed Step 1 of his mission.  He has successfully initiated contact and made a connection with the target.  Now he needs to slowly build up a sense of trust before he can say anything about whistleblowing.</p>
+
+<p>PAINT PARROT:	Youâve got to really get that trust with them before you can move on to the next step.  Yeah, the next few weeks, I am the person he met in that bar, for all intents and purposes, and going for drinks.  Slowly you start building up more stuff about work.  Yeah, and fortunately, this company had made the press, because the case had already started.  There was a subpoena issued, so they were aware of it in their office and things like that.  You can slowly start building up about oh my god, you work for so-and-so doing â I forgot, arenât they under like, US investigation or something at the moment?  You kind of build that into conversation slowly.  I kinda slowly, slowly brought it up.  I think it was at a BBQ or something on a Sunday.  I sort of mentioned it quietly to one side to him.</p>
+
+<p>JACK:	[MUSIC] I have to laugh at this point because itâs only been a couple weeks and Paint Parrot is at his targetâs friendâs house hanging out with the gang at a Sunday BBQ.  I just imagine him wearing a floral shirt and sunglasses, music playing, holding a beer and a hot dog.  Thatâs him on the job on a Sunday afternoon.  This is his career now.  Because he wasnât at this BBQ just for fun; this was a moment for him to start closing in on his final goal.</p>
+
+<p>PAINT PARROT:	Weâre there having this BBQ and I kinda call to him and his wife to one side.  Iâm like look, you notice this investigation?  Obviously, itâs a US investigation, right?  Is that gonna affect you guys?  Could you end up being arrested and sent back to the states?  âCause that would suck, kinda thing.  Kinda just plant the seed and a little bit of fear on it.  Just left it with him to simmer.  The key thing is mentioning it in front of his wife.  If you can get the wife to worry, then heâs gonna worry more.  Heâs not just gonna worry at work; heâs gonna worry at home.  Thatâs kind of what you want.  Once he started getting worried, we met up â I think it was the next time we met up, it was just having drinks, the three of us.  I said I know a lawyer that deals with this kind of stuff, and he deals with a lot of American cases and things like that.  I go, do you want me to have a chat with him and see if I can find out if thereâs any way he can help you out?  Heâs obviously like yeah, yeah, please, if you could help us, that would be amazing.</p>
+
+<p>JACK:	Paint Parrot has engineered this whole situation so that it looks like heâs just helping out a friend in need.  He hasnât said anything about whistleblowing.  Heâs set it up so his [00:45:00] target feels like he might be in trouble and fortunately his new friend, Paint Parrot, might be able to save him.  At this point, itâs time for Paint Parrot to make his final move.</p>
+
+<p>PAINT PARROT:	Obviously, I go away.  I know exactly what weâre gonna do because itâs all our plan at the end of the day.  I leave it a few days, a week.  I get in touch with him like hey, you know that thing we spoke about?  I was like, I could introduce you to someone that could kind of help you out.  Heâs like oh my god, brilliant.  We arrange a meeting in a conference center in a set of nice apartments in London.  I basically walk him up and introduce him to the lawyer that deals directly with the â heâs a British lawyer who deals directly with the DOJ on these cases.  I basically make an instruction and sit there for about five minutes before just kind of leaving the room and leaving him to it.</p>
+
+<p>JACK:	So, as we know, that lawyer was there to help him blow the whistle on the company he worked for.  It must have been a bit of a shock for this guy to realize this wasnât just some friendly lawyer, but a person who knows this case inside and out.  In that room, the lawyer explains to the target that the DOJ is looking for a whistleblower and promises that he will be granted full immunity from any of the companyâs wrongdoings if he works with them.  The whistleblower agreed to cooperate and just like that, months of research, planning, chasing, and deception was over.</p>
+
+<p>PAINT PARROT:	The next thing I notice, I met up with him after that to give him a burner phone and a few other bits of equipment and obviously, the whole dynamicâs changed.  Heâs kind of weirded out.</p>
+
+<p>JACK:	Do you ever tell this guy look, I just did this because it was my job?</p>
+
+<p>PAINT PARROT:	No, I have no contact with him after.  Yeah, once he gets handed off andâ¦</p>
+
+<p>JACK:	Well, have you ghosted him?  Did he text you like bro, arenât we hanging out this weekend?</p>
+
+<p>PAINT PARROT:	They get told.  It all gets explained to him and he gets told, you know, the ins and outs of my role, but that you wonât have any more contact with this guy.  You knew him as whatever; if you are to bump into him in the street sometime or anything like that, you never met him.  Itâs kind of, thatâs that.  The phone number that was being used, that SIM card gets pulled out, snapped, and thatâs it.</p>
+
+<p>JACK:	I wonder if he felt used at that point or what.</p>
+
+<p>PAINT PARROT:	Probably, but I mean, at this point heâs been â heâs doing a patriotic thing, helping a US investigation.  Heâs obviously had the carrot of the huge financial reward dangled in front of him.  I think thatâs probably enough to calm most peopleâs doubts about it.</p>
+
+<p>JACK:	[MUSIC] You might be wondering where all these laws come from.  In 2010, the United States passed a Dodd-Frank Wall Street Reform and Consumer Protection Act.  This was just a little over a year after the 2008 financial crisis when Wall Street executives and shady mortgage companies tanked the world economy.  The Dodd-Frank Act was designed to stop something like that from ever happening again.  One part of that bill had to deal with corporate whistleblowers, the people who come forward when they see their organization are doing something wrong or illegal and tell the government.  Whistleblowers had already received protection from the feds when they came forward, but this bill did something new.  To encourage more people to flip on their companies and report wrongdoings, this new law said whenever a whistleblower comes forward to provide good information in a case that results in a fine of over a million dollars, the whistleblower is awarded a bounty of anywhere from 10% to 30% of that fine which, if you do the math, a 10% bounty on a million dollar fine is $100,000.</p>
+
+<p>But these fines are often way up in the tens of millions of dollars, meaning that whistleblowers could be in a position to make a lot of cash by telling on their companies.  In this case, Paint Parrot said the DOJ was estimating the fine could be in the billions of dollars because of how much corruption this company was accused of.  10% of one billion dollars is 100 million dollars.  Paint Parrot said that in situations like this, the reward would actually get split three ways between his British intelligence company he worked for, the American company that partnered with the DOJ, and the whistleblower himself.  Even if this was split three ways, thatâs still life-changing money for everyone.  Looking at the SECâs website in October 2020, the SEC paid out the highest reward ever to a whistleblower; 114 million dollars.</p>
+
+<p>To date, theyâve paid out over 700 million dollars to different whistleblowers.  Thatâs why this company Paint Parrot worked for was in the business of bringing whistleblowers forward, because they wanted a chunk of this change.  Thatâs one of the weirdest business models Iâve ever heard of; a company in the business of making whistleblowers.  Yeah, and letâs back up for a second.  This is the whole impetus of why your company, your [00:50:00] agency, wanted to do this, is because they wanted to get â cash in on this sort of bounty, and thatâs why theyâre like, letâs make the whistleblowers, letâs find the whistleblowers before theyâre even ready to whistle-blow so that we can cash in on this bounty, âcause that would be a lot for that company.</p>
+
+<p>PAINT PARROT:	Exactly.  Thatâs retirement money for the guys that own the business.  These things take years and years and years to pay out.  Itâs not a quick sort of get-rich-quick scheme for them.  I think only like 20% of them or something like that ever pay out, so it kind of becomes a game of volume, so the more whistleblowers or more cases they can find, the more chance they have of one of them paying out.  Obviously thatâs not something we say to the whistleblowers, that thereâs only a percentage chance that itâs actually gonna pay out.  Thatâs, yeah, because then you lose that whole financial incentive for them.</p>
+
+<p>JACK:	Yeah, these groups donât even know if the SEC will for sure pay out a bounty or not.  On one hand, more whistleblowers might come forward to protect from sketchy business practices which is obviously good, but youâve also got this weird, secretive industry now of professional whistleblower-chasers and groomers who are gathering information on people and convincing them to upend their lives knowing thereâs a chance they wonât receive anything from it.  As for the specific whistleblower in this case, Paint Parrot says the SEC is still investigating this, so we donât know if heâll get his payout or not.  [MUSIC] Letâs zoom out a little bit.  After this, this seemed to be â like you said, itâs still ongoing, so these things take a long time, but it seemed to be a successful mission for this agency that you were working for, right?  Letâs go find a whistle â letâs go make a whistleblower.  You found â made one.  Did they say okay, letâs do it again?</p>
+
+<p>PAINT PARROT:	Yeah.  Basically, right after finishing that, destroyed that SIM card and that burner phone â and I probably took a weekend off â and before I knew it, it was like ah, as you did that one so well, weâre starting to look at this company, and kinda the same process starts all over again.</p>
+
+<p>JACK:	Wow.  Paint Parrot kept on doing this sort of whistleblower cultivation with that company for a few more years until he decided to go his own way and start his own company which does surveillance work.  He says heâs mainly given up on the corporate intelligence beat and instead he mostly focuses on penetration testing, social engineering, and red teaming.</p>
+
+<p>(OUTRO):	[OUTRO MUSIC] A big thank you to Paint Parrot for sharing his story with us.  This one was wild, wasnât it?  If you like this show, if it brings value to you, consider donating to it through Patreon.  By directly supporting the show, it helps keep ads at a minimum.  It helps get people to make the show and it tells me you want more of it.  Please visit patreon.com/darknetdiaries and consider supporting the show.  Thank you.  This show is made by me, the public eye, Jack Rhysider.  This episode was produced by the not-so-green Christian Green.  Sound design and original music was created by the mesmerizing Andrew Meriwether, editing help this episode by the slow-dancer Damienne, and our theme music is by the bouncy Breakmaster Cylinder.  Even though I would sometimes get in trouble for reserving a conference room all day because I thought my cubicle was just too small, this is Darknet Diaries.</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

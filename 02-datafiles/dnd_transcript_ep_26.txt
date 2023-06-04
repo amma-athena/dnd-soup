@@ -1,0 +1,501 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>IRS â Darknet Diaries</title>
+	<meta name="description" content="The IRS processes $3 trillion dollars a year. A lot of criminals want to get a piece of that. In 2015 the IRS had a large data breach. Hundreds of thousands of tax records were leaked. What happene...">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="IRS â Darknet Diaries">  
+	<meta name="twitter:description" content="The IRS processes $3 trillion dollars a year. A lot of criminals want to get a piece of that. In 2015 the IRS had a large data breach. Hundreds of thousands of tax records were leaked. What happene...">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/irs.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/26/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="IRS â Darknet Diaries" />
+	<meta property="og:description"        content="The IRS processes $3 trillion dollars a year. A lot of criminals want to get a piece of that. In 2015 the IRS had a large data breach. Hundreds of thousands of tax records were leaked. What happened and who was behind this? Listen to this episode to find out.<br><br>For show notes visit <a href='https://darknetdiaries.com/episode/26'>https://darknetdiaries.com</a>." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/irs.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/26/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/irs.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/26/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="IRS â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/irs.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 26: IRS</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://traffic.megaphone.fm/ADV3145014219.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/26/",
+			   "title": "Ep 26: IRS"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/26">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[FULL TRANSCRIPT]</p>
+
+<p>JACK:	Internal Revenue Service is the American tax collection agency and guess how much money they collect every year from American taxpayers.</p>
+
+<p>COMMâR:	We collect three trillion dollars a year in a voluntary compliance system.</p>
+
+<p>JACK:	[MUSIC] Thatâs the IRS Commissioner himself.  Three trillion dollars is a lot of money that travels through the IRSâs fingers and something Iâve learned over the years is that if that kind of money is going through an organization, itâs going to attract criminals and hackers like a hound dog attracts fleas.  A lot has to be done to protect the IRS from attackers.  There are problems; first of all, the budget is shrinking.  Again, hereâs the commissioner from 2015.
+<!--more--></p>
+
+<p>COMMâR:	The IRS is now at its lowest level of funding since 2008.  If you adjust for inflation our budget is now comparable to where we were in 1998.  While our budget has been shrinking however, the taxpayer base has grown by millions.  But after five years of budget cuts and a hiring freeze that has lasted for four years, people need to understand that the IRS is going to have to do less with less.  It means that both enforcement and tax payer service will suffer.</p>
+
+<p>JACK:	From 2010 to 2015 the budget had gone down by 20%.  You can already start to guess what kind of impact this may have on an organization.</p>
+
+<p>COMMâR:	Between 2010 and 2014 the IRS lost over 13,000 employees.  We expect to lose another 3,000 more or less through attrition by the end of this year.  We have only 650 employees out of 87,000 who are twenty-five or younger.</p>
+
+<p>JACK:	87,000 employees and only 650 of them are under twenty-five?  Thatâs like, less than 1%.  Huh.  Combine the dwindling staff and the budget cuts with aging equipment and computers and you can start to see that this could become a serious problem, and a problem for the IRS is a dream come true for hackers.</p>
+
+<p>JACK (INTRO):	[INTRO MUSIC]  These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	2015 was a year full of data breaches.  Starting the year off were two big breaches from healthcare providers.  In February, Anthem announced that eighty million patient records were stolen.  [MUSIC]  Discovered around the same time was Premera Blue Cross and they found that possibly the same actors were in their network and admitted to a breach of eleven million patient records.  So just in the first quarter of 2015 we saw almost one hundred million patient records get pinched by hackers.  They didnât actually steal medical records; instead they grabbed stuff like names, birthdays, medical IDs, social security numbers, street addresses, e-mail addresses, employee information, and income data.  People werenât sure what it could be used for and whoâs doing this and why.</p>
+
+<p>Was it just being sold on the dark market for a quick Bitcoin?  Was this information collected as part of a multi-stage attack?  In what ways could this information be valuable to hackers?  How can you make money if you know someoneâs name, address, social security number, and stuff like that?  Iâll let you think about that for a minute.  Letâs talk about the IRS.  For my non-American listeners, the Internal Revenue Service is the US government agency that collects taxes.  Most US citizens and businesses have to report their income to the IRS every year and pay taxes based on how much money they made.  The IRS has to process hundreds of millions of tax forms a year.  Itâs an archaic and overly-complicated system.  Basically us Americans pay a percentage of the money we make to the government so they can pay off national debts for military, social security, medical care for the elderly, and stuff like that.</p>
+
+<p>The US government needs a lot of our money.  On average they take about 14% of our paychecks.  If you made $67,000 dollars a year, they want $9,000 of that.  But hereâs the thing; Americanâs donât save up $9,000 to give it to them every year.  We simply ask our employers to take out that money from our paycheck before we even get it.  That way itâs all paid up and stuff.  But we donât always know how much to pay and sometimes we underpay and come tax time we have to pay a little bit more.  But what a lot of people actually do is overpay and then the IRS gives us back the money we didnât need to pay.  This can sometimes be a nice-sized tax return, thousands of dollars.  This process of tax filing is all super complicated and traditionally the IRS has handled all of this through paper forms.  If you wanted to see your old tax records you had to fill out the IRS form 4506 and pay $50 and you can get your old tax record sent to you in the mail.</p>
+
+<p>But in the last decade theyâve been moving to electronic filings where you can do the whole thing through the website, irs.gov.  In January 2014 they made a new feature to irs.gov website called Get Transcript.  [MUSIC]  This would allow you to see your tax records from last year in case [00:05:00] you wanted to use them to help submit for this year.  It was a fantastic feature and right away millions of Americans were using it to look up their tax forms from last year.  Normally when you sign up for a bank account or medical provider youâre put through a sign-up process which often includes setting up a password and then some account recovery questions such as where you met your spouse or what high school you went to.  The irs.gov website is different.  They use something called instant KBA, or knowledge-based authentication.</p>
+
+<p>This is a series of questions they ask that only you would know the answer to, like what your mortgage payment is and where you bought your car.  Itâs called instant KBA because they already have the answers on their side.  This is a little different than a bank account where when they ask you the question, they donât know the answer and you put the answer and then they save that for next time.  With instant KBA they already know what high school you went to from your credit records.  The IRS partners with one of the big credit reporting companies like EquiFax to learn more about you.  Through this the IRS knows what streets you previously lived on and what credit cards you currently have and stuff like that.  When you want to use the Get Transcript feature of the irs.gov website youâre asked a series of questions like this, questions only you would know the answer to which proves who you are and then they show you your old tax records.</p>
+
+<p>But can you maybe guess at what a few problems are with this instant KBA?  Well first of all, the IRS says 22% of people cannot answer the questions correctly themselves.  Do you remember your phone number you had ten years ago or the address you had in college?  Maybe, but when youâre seventy will you?  Hereâs another problem with instant KBA; you canât opt out of it.  The IRS and EquiFax have collected and stored this information about you that you didnât give them authorization to keep.  It can become a privacy issue.  In fact NIST, a government-ran standards board, comments on this specifically, saying âIt is inappropriate to involuntarily expose the privacy of unknown citizens of an instant KBA authentication scheme unless the risk is close to zero.â  Another big issue with this knowledge-based authentication relies on knowing secret information about you.</p>
+
+<p>As our data becomes more exposed to the world through breaches, this secret information is no longer secret.  [MUSIC]  Letâs go back to 2014 when this Get Transcript service was first introduced to the irs.gov website.  Letâs say we wanted to get our old transcripts.  First off, the site asks the following: name, social security number, address.  Now historically your social security number is private and only a few people would know it but as data breaches happen, itâs becoming not as private anymore.  Name and address are not that hard to figure out so these first questions could easily be defeated with anyone knowing this about you.  At this point they make you sign up with an e-mail address and they send you an e-mail for next steps.  Then youâre presented with four multiple choice instant KBA questions.  Hereâs a few samples.</p>
+
+<p>Please select the county of the address you provided.  Well, obviously you can look that up on any map, so thatâs easy.  Next question.  According to our records, you previously lived inâ¦insert town.  Please select the street which you resided on in that town.  Well, itâs a multiple choice question so you can look at the answers and rule out any streets that donât exist in that town and then youâd have a fairly high chance of getting the answer right.  Please select the city you previously resided in.  Well, if the hacker had any data on you from previous breaches then this is probably included.  Or heck, the answer might even be in the previous question.  According to our records, you graduated from which of the following high schools?  Well, have you been on Facebook lately?  Pretty much everyone is on there and they all love to write what high school they went to so this is usually pretty easy to find.  Thatâs it.</p>
+
+<p>If you answer those questions correctly you get the historic tax records for that person.  If you really look at it, because itâs multiple choice questions, we have a shot at getting all the questions right without even having breached data, just by Googling a person and where they used to live and stuff.  This Get Transcript option at the irs.gov website was used by millions of people in 2014 and then again in 2015.  It was a great feature but you may have noticed by now that the authentication method maybe wasnât that secure.  Letâs go to February 2015, same month that the Anthem breach was discovered.  A guy named Michael Kasper goes to file his taxes.  He fills out all the forms electronically and hits Submit but somethingâs wrong.  The IRSâs website is telling him heâs already submitted his taxes but thatâs impossible.  He hasnât submitted it yet.  He calls the help line and you know what?  Iâll let him tell the story.</p>
+
+<p>MICHAEL:	On Monday morning I called the IRS and they confirmed my identity by asking tax history-related questions and showed me that a deposit was being made the same day that I was calling into somebodyâs account, but that it was too late to stop it at that point.</p>
+
+<p>JACK:	The IRS just told him that someone else filed a tax return in his name and a check was sent to that person.  It had already been deposited.  The IRS wasnât able to tell him anything else like how much the check was worth, what bank it was deposited, or anything like that.  The IRS canât disclose this because of privacy.</p>
+
+<p>MICHAEL:	I was frustrated by that.  [00:10:00] Thatâs when I tried the Get Transcript function on the IRS website to see if I could get a transcript and found out someone else had already registered their e-mail address with my social security number.</p>
+
+<p>JACK:	It appeared someone had already gone through the steps of doing a Get Transcript under Michaelâs tax records and made an account as him.  At this point Michael didnât know what to think.  He wondered if he got hacked or if someone stole his wallet or identity, or what had happened.  Is it his fault this is happening?  Over and over Michael had asked for more information about who filled out his taxes but the IRS was refusing to give any information.  The law clearly states the IRS cannot share tax information with anyone and he wasnât able to log into the IRS website and do the Get Transcript function because someone else already registered as his name.  He felt stuck but he came up with a new plan.  He figured out if you fill out the IRS form 4506 and include $50 theyâll send you a physical copy of your tax return.</p>
+
+<p>MICHAEL:	I found out I could get a photocopy for $50.  They had been telling me I couldnât get the information but if I paid $50 I could get it.  So March 17th, I got a photocopy of the return which is when I found out that whoever filed had seen my 2013 return because the information was almost identical.</p>
+
+<p>JACK:	This was freaky.  He was starting to put the pieces together now.  Someone definitely did the Get Transcript process on irs.gov website, got a copy of his old tax return, and submitted a new one for this year.  He looked at the tax return someone else submitted and they got a refund for $8,936.  This was money the IRS owed Michael yet they sent it to this other person.  Michael looked closer at his tax returnâ¦</p>
+
+<p>MICHAEL:	And saw the bank account number.</p>
+
+<p>JACK:	Michael is a smart guy, an engineer even, and wasnât getting any help from the IRS and he was getting angry, angry that someone else stole his money from him.  He decided to try to figure this out on his own.</p>
+
+<p>MICHAEL:	But I contacted the bank in Pennsylvania.  They confirmed a deposit was made.  I guess the metadata in the deposit actually showed my name and my social security going into someone elseâs checking account.  They told me the location, Williamsport, Pennsylvania where all the money was withdrawn.  I contacted the local police there.</p>
+
+<p>JACK:	[MUSIC]  The police called him back right away and wanted to know more.  They opened up a case and began investigating who deposited the check.  On that same day, Michael got a letter.</p>
+
+<p>MICHAEL:	I got a letter in the mail from the IRS that they had, six weeks later, received my documentation and that they would get back to me in six months.</p>
+
+<p>JACK:	This kind of made Michael mad.  Almost immediately upon getting his tax records he was able to make a lot of progress by opening a police investigation, and here the IRS is saying itâs going to take them six months to investigate this?</p>
+
+<p>MICHAEL:	I also got a letter that week from Anthem Healthcare offering me free credit monitoring.  I donât really know if that is related to how my information was obtained.</p>
+
+<p>JACK:	Michael had his personal information stolen in the Anthem breach and remembered the data stolen in the Anthem breach included his name, social security number, and past addresses.  This would probably be enough to pass the KBA and do the Get Transcript.  The police went to the personâs house in Pennsylvania and they found this person who deposited the check was a young female college student.</p>
+
+<p>MICHAEL:	She had responded to a Craigslist ad offering a job opportunity.</p>
+
+<p>JACK:	Oh yeah, the old money mule scam.  Okay, hereâs how this works.  [MUSIC]  Criminals who need to move money around will offer up jobs on Craigslist saying something like an international finance company needs assistance writing letters.  Then theyâre given the job interview and get hired.  First theyâre given some basic tasks to do like correct some English on some e-mails.  These basic tasks are just there to earn trust, then the criminals will give some sad story about how they need to pay a client immediately but funds are tied up.  They ask the victim hey, if we send money to you, could you then send the check to the client?  If they agree, a money mule is born.  Itâs very illegal to be a money mule and this young woman had no clue it was illegal.  She just needed some extra cash to get through college.</p>
+
+<p>MICHAEL:	Money was deposited into her account and then she wired large amounts of it to Nigeria through Western Union.</p>
+
+<p>JACK:	She sent $7,000 to Nigeria and as a reward she was able to keep the other $1,900 which she used mostly on rent, leaving just $5 left in the account when the police caught her.  She was arrested for being a money mule and later got out on bail, having to pay $8,500.  Michael was frustrated with this whole ordeal so at the end of March he contacted the journalist Brian Krebs to share his story.  Right away, his story showed up on Krebs on Security, a blog about breaches and security.  The IRS noticed this blog post and eventually refunded the money back to him but this took months.  Michael wasnât the first to report this kind of fraud in 2015.  Many more people were having the same issue, thousands of others.  The IRS began looking into it.</p>
+
+<p>The commissioner of the IRS, John Koskinen, called together a security summit to determine whatâs going on.  They saw this post on Krebs on Security and they were also told by the Utah State Tax Commissioner that they were seeing ten times [00:15:00] as much tax fraud this year compared to last year.  The IRS was seeing that on a lot of these fraudulent tax returns, the tax forms were filled out exactly the same as the previous year, complete with any typos that were on the year before.  This made it obvious that someone had gotten a bunch of peopleâs tax returns from last year and were submitting them fraudulently this year.  The IRS went and looked at these fraudulent tax returns to see if there was a Get Transcript request on the website and sure enough there was.  A lot of them were using the same exact e-mail address; hundreds, maybe thousands.</p>
+
+<p>This was obviously a flaw in the IRSâs system, to have thousands of tax returns linked to the same e-mail address.  The IRS conducted a deep dive investigation to see what was going on.  Two months after that Krebs article, the IRS had figured it out.  Through commonalities in e-mail addresses they found out that this crew had issued 13,000 fraudulent tax returns and if you add up all 13,000 tax refund checks, this crew stole around forty million dollars from the US Treasury.  I want to take a moment to reflect on this for a second.  When we hear about a breach of personal data stolen like at Anthem, we wonder how much this data can be worth and how could criminals use this to make money?  Of course the obvious answer is that this information can be sold to others but using it to steal money from the IRS is not only more lucrative, itâs downright genius.</p>
+
+<p>These criminals knew the tax system well enough that they used data stolen from a breach to get old tax transcripts and then they used those old tax filings to submit that personâs taxes this year.  Then they had to set up a whole network of money mules and keep in mind, this requires Craigslist ads, and job interviews, and all this other stuff.  Then they had to launder the money all the way back to them.  They did this 13,000 times in about three monthsâ time.  Unbelievable.  By this point in May, IRS was on really high alert for fraudsters and criminal activity.  This is when they noticed a really large spike in people using the Get Transfer option on the irs.gov website.</p>
+
+<p>[MUSIC]  This Get Transfer feature of the website was so popular that over twenty million requests were seen just in that year so during tax time thatâs over 100,000 requests a day for the Get Transcript.  But this spike was much more than that.  This was like, hundreds of thousands more all in one day.  In fact, it was so many requests that the systems started getting backed up and the IRS thought they were under a denial-of-service attack.  They were able to keep the site up and sustain the flood of usage and things died down.  A week later on May 21st, the security center within the IRS had discovered something terrible.  It wasnât legitimate users trying to do the Get Transfer of tax records.  It was hackers, fraudsters, thieves.  Over 200,000 suspicious attempts were made to Get Transcripts of taxpayers and half were successful.</p>
+
+<p>The thieves successfully used the Get Transcript feature of the irs.gov website to obtain the tax records of 100,000 people.  Now keep in mind, this isnât a hack.  The thieves didnât use any trick or exploit or vulnerability.  They simply found a way to navigate through the authentication system, probably by using some personal information they obtained from other breaches.  But even though this isnât a hack, itâs certainly a breach of data, very personal data, and itâs super scary to think about what criminals like this will do with your past tax records.  These people have a lot of resources and time to move fast and steal a lot of money so this could possibly cause problems for those people for years or even life.  Once the IRS detected that 100,000 tax records were stolen from their website they immediately disabled the Get Transfer feature.  Five days later they announced to the public that there had been a breach and 100,000 tax records were stolen.  The IRS made a bunch of corrective actions after this breach.  Hereâs the IRS Commissioner.</p>
+
+<p>COMMâR:	Letters have already gone out to the approximately 100,000 tax payers whose tax information was successfully obtained by unauthorized third parties.  We are offering credit monitoring at our expense to this group of taxpayers, weâre also giving them the opportunity to obtain an Identity Protection Personal Identification Number, or IP PIN, as itâs known.  This will further safeguard their IRS accounts.  The Get Transcript application has also been taken down while we review options to make it more secure without rendering it inaccessible to legitimate taxpayers.</p>
+
+<p>JACK:	The IRS created this option to get an IP PIN, or Identity Protection Personal Information Number.  This is a six-digit code that the IRS can issue you which would then be required to complete your tax return.  This makes it harder for the criminals to submit taxes if they donât know this PIN.  The news of the IRS being breached was the top story in almost all news outlets in the US.  Citizens were angry, congress and senators had questions.  A full senate committee hearing was held to have the IRS testify.  This is the IRS Commissioner John Koskinenâs opening statements.</p>
+
+<p>COMMâR:	The unauthorized attempts to access information using the Get Transcript application were made on approximately 200,000 taxpayer accounts from [00:20:00] questionable e-mail domains and the attempts were complex and sophisticated in nature.  These attempts were made using taxpayerâs personal information already obtained from sources outside the IRS.  During the middle of May our cyber-security team noticed unusual activity on the Get Transcript application.  They ultimately uncovered questionable attempts to access the Get Transcript application.  Of the approximately 100,000 successful attempts to access the application only 13,000 possibly fraudulent returns were filed for tax year 2014, for which the IRS issued refunds totalling about $39,000,000.</p>
+
+<p>JACK:	In this hearing we also hear from Michael Kasper, that guy who tracked down who stole his tax return himself.  In fact the clips you heard earlier from him are from this senate hearing.  In fact there were multiple hearings that went on for hours and hours.  During the hearing we hear a little bit about the types of computer problems the IRS faces.</p>
+
+<p>COMMâR:	We are running an antiquated system with some applications that are fifty years old, as noted in some cases.  Noted, we havenât even been able to provide patches for all of the upgrades.  Some of our systems donât have patches âcause theyâre no longer supported by the provider.</p>
+
+<p>JACK:	On one report after an inspection they found that over 30%of the systems in the network werenât being monitored at all.  If you stop to think for a moment, the IRS has pretty much every US citizen as a customer or client.  Compare that to Facebook which only has about 68% of the US population as users.  The IRS has a lot of users and with 87,000 people on the staff there are a lot of computers.  At some point the size of the network becomes so big that it becomes a logistical nightmare to keep it secure.  Both Democrats and Republicans offered their support and assistance to help the IRS combat this problem.  They seemed to genuinely want this problem fixed.  Hereâs what one senator said to the IRS Commissioner during the testimony.</p>
+
+<p>SENATOR:	I told you yesterday on the phone, Iâm here to help.  How can I help you?</p>
+
+<p>JACK:	The senator seemed to understand the enormous complexity that the IRS faces in this situation and actually felt bad for the IRS Commissioner.</p>
+
+<p>SENATOR:	Mr. Koskinen, you have a tough job.  Thereâs no question about it and I donât know anybody that approaches it with a smile like you do.  Iâd be upset every day.  I think thereâs something wrong with you that youâre not upset every day.  [LAUGHTER]</p>
+
+<p>JACK:	At some point in the hearing the senators wanted to know who was behind this attack.</p>
+
+<p>COMMâR:	News reports indicate that the recent IRS identity thieves may have been in Russia.</p>
+
+<p>JACK:	The IT inspector who conducted a security audit on the IRS commented on this.</p>
+
+<p>INSPECTOR:	Eventually we were able to track them down but at this stage when the report â there was a report that it was solely Russia and I want to make it clear thatâs not the case.  Itâs beyond Russia.  I just wanted to get that on the record.</p>
+
+<p>COMMâR:	When you say beyond Russia, what do you mean?</p>
+
+<p>INSPECTOR:	That there are other domains â the domains are located in nations other than Russia, in addition to Russia.</p>
+
+<p>JACK:	When the IRS became aware of this breach they immediately contacted Homeland Security to help them investigate who was behind this.  Knowing that a lot of fraudulent uses of the Get Transcript had occurred, the IRS went back to look at the database.  Over 23,000,000 times the Get Transcript service was used that year.  The security team combed through those 23,000,000 requests and found more fraudulent requests.  Three months after the initial discovery of the 100,000 stolen tax records, the IRS announced there were another 220,000 tax records that were illegally accessed.  This raised the full number of stolen tax records to 334,000.  Looking at some numbers here, it looks like the thieves were able to access about 54% of the transcripts they attempted to get from the website.  Compare that to the 22% success rate for normal people.</p>
+
+<p>It seems like criminals are better at knowing your personal information than you are.  Thatâs just fascinating. If you remember, the IRS started using this IP PIN thing to add additional level of security to your taxes but this had a few problems of its own.  First of all, your PIN is issued through the website.  Compare that to where your bank sends you your PIN in the mail.  If you lost your IRS PIN and you wanted to recover it, you had to go through the same irs.gov website to answer the same weak KBA questions that the attackers defeated to get your transcripts.  Guess what?  The criminals figured this out and began stealing PINs.  On February 2016, the IRS issued a statement saying that there were over 464,000 unauthorized attempts to get the PIN.  The hackers successfully got 101,000 PINs from taxpayers.</p>
+
+<p>Then the IRS discovered something else.  They conducted another audit on the people who did Get Transcript on the website.  They found the number was higher than they initially thought.  First the IRS said it was 101,000 people and then they discovered it was 334,000.  Now the IRS is saying itâs twice that; 724,000 people got their tax returns stolen by criminals through this Get Transcript feature of the website.  [00:25:00] More letters were sent and more free credit monitoring was issued.  Within the IRS is a whole department called the IRS Criminal Investigation Division and the IRS itself has over 2,000 special agents that specifically investigate tax fraud.  These special agents will work with the FBI, secret service, Homeland Security, and local police to track and catch these criminals.</p>
+
+<p>But as budget cuts hits the IRS, this means about 4% of the special agents lose their job each year.  When thereâs less investigations thereâs less arrests.  The IRS Criminal Investigation Division opens about 3,5000 cases a year and they actually catch and convict about 3,000 people a year.  Did they find out who did this and bring them to justice?  Iâm not sure.  Hereâs what I found, though.  [MUSIC]  The Department of Justice issues a press release each time someone gets sentenced for stolen identity refund fraud.  It lists hundreds and hundreds of cases going all the way back to 2010.  I started combing through it looking at case notes, and dates, and crimes to see if anything matched this.  Stuff started showing up.  Probably the biggest one I saw was a Nigerian man who was caught and sentenced to fifteen years in prison for running one of the biggest tax fraud schemes ever.</p>
+
+<p>Hereâs what happened; a bunch of people in the state of Oregon were reporting that someone had submitted their tax refund for them.  The IRS criminal investigation team looked into it and found that someone was fraudulently submitting tax returns for the people in Oregon and taking all their refunds.  They tracked this activity back to a Nigerian man named Kazeem who was living in Maryland.  They arrested him and found in his house 150 prepaid credit cards, $40,000 in money orders, and $14,000 in cash.  During trial they learned what happened.  Kazeem had purchased personal identification information from a Vietnamese hacker, specifically 259,000 records from a company in Oregon.  Perhaps the Vietnamese hacker stole a database from a credit agency or a medical facility in Oregon.</p>
+
+<p>Kazeem then used this information to do Get Transcript on the irs.gov website and also get the PINs from the website to submit tax returns for those people.  He submitted 10,000 tax returns which would have resulted in $91,000,000 if he got all the returns but a lot of them didnât get accepted.  He was only successfully able to get $11,000,000 back from fraudulent returns.  To throw the police off he funnelled a lot of the money through Nigeria and then back to him.  He had five other people working for him, all who were arrested and put in prison.  Maybe this guy Kazeem was one of the bigger players in this breach but I donât think he was the only one.  Looking through the other arrests on the DOJâs website, I see some more, this time even more close to home.</p>
+
+<p>Thereâs a Texas guy that was caught and arrested for fraudulently using the Get Transcript feature and getting peopleâs information and submitting their tax returns for them.  He was sentenced to two years in prison. Then there was a Georgia couple who were arrested for exploiting the Get Transcript feature and got over $1,000,000 in tax refunds.  They were both put in prison for years, too.  Then there was another guy in Texas who was also caught using the Get Transcript feature and submitted false tax returns, too.  In fact, as I started looking at whoâs been submitting fraudulent tax returns like this, the bottom of this story began to fall out.  Take the case of Danielle, for example.  Sheâs a 27 year old exotic dancer in Tampa, Florida but she was arrested for tax fraud.  She had stolen over $1,000,000 in tax refunds from people she didnât know.</p>
+
+<p>She continued to get away with it for four years.  In fact, in some circles sheâs known as a pioneer of this stuff.  She would organize something called drop parties.  This is where you get together and swap tactics, stolen personal information data, and teach others how to do it.  She was eventually caught and put in prison.  This made me look up the term drop party.  This could have been a term she invented but itâs slang used in some circles specifically  in Tampa, Florida because only in Tampa have I found the term drop to mean tax fraud.  Okay, okay, Iâm gonna play you something that might blow your mind but I want to warn you, itâs not safe for work.  If you have young kids or something you may want to skip ahead three minutes.  Hereâs the thing; gangster rappers sometimes boast about the crimes they commit right in the lyrics.  They talk about shooting people, stealing stuff, and drug dealing.  But listen to this song.</p>
+
+<p>J-CREEK:	[MUSIC] Yours truly, J-Creek, Tom Creek, nâ.  Tax season again.  I need a drop hoe bitch.  I wanna be your boyfriend.  I want a drop hoe.  I need a drop hoe.</p>
+
+<p>JACK:	What?  This song called Drop Hoe is a ballad about a guy trying to find a girlfriend who makes a living off of identity theft tax fraud.  It practically goes through step-by-step on how to do it.  Hereâs some more lyrics.</p>
+
+<p>J-CREEK:	[MUSIC] Said her home girl came with a few names, told me all a nâ need is a laptop, and she gonna show me what to do to make a tax drop.</p>
+
+<p>JACK:	Said her home girl came with a few names, told me all a guy needs is a laptop, and sheâs gonna show me what to do to make a tax drop and Ima steal your information on the W-2.  Say she needs an address to get more cards.  Wanna be a hood rich honey?  Ima show you.  Told me get a date of birth, donât forget the social.  She got them stacks then went tax on the turbo.</p>
+
+<p>J-CREEK:	[MUSIC]  Trying to find a drop hoe, it ainât hard.  No, you can look for new rims and a paint job.  [00:30:00] Keep her hair done, nails done, nice clothesâ¦</p>
+
+<p>JACK:	Wow.  Just wow.  He even said what tools he used, Turbo Tax.  I mean, how popular is this crime?  You have to hand it to the gangster rap community.  They donât hoard their exploits; they share them openly on the public stage.  Itâs kind of like theyâre saying hey, this is what we do down in Tampa.  But seriously, has tax fraud gotten to the point where gangster rap is in on it?  Yeah, I guess so.  It appears especially so in the southeast of the US.  Alabama, Georgia, Louisiana, and Florida top the charts for the most arrests made for stolen identity tax fraud.  These states are ridiculously higher than the others.  Keep in mind, theyâre exploiting people from all around the country but for some reason in this region, a skill is passed around on the streets and at drop parties.</p>
+
+<p>At some arrests Iâve read itâs been an elaborate scheme where one member of the crew will go work at a company and steal all the W-2s and then another will file the taxes and then someone else will work at a cash-checking place and knowingly cash fraudulent checks.  This kind of stuff is seen over and over in these states.  Itâs crazy.  This is what I mean by the story becomes bottomless as Iâm trying to figure out who is behind this, because thereâs just so many of these cases and itâs a gray line between tax fraud and Get Transcript and stolen identities.  But knowing this we do get a glimpse on whoâs using your information and how itâs being used against you.</p>
+
+<p>You may think this isnât your problem, itâs the IRSâs problem, but if you rely on or expect a large tax return and someone else gets it instead of you, itâs your problem now.  Sure, the IRS may spend six months investigating and pay it back to you but that delay can be a nightmare.  We need to protect ourselves.  The IRS brought back the Get Transcript feature on the website and now it requires additional information like you need to know your mortgage account number and phone number to get your transcript.  But you can see this KBA authentication method is starting to show its age and may not be secure anymore because the information that only you know is now known by hackers around the world.  Who knows what was stolen from that EquiFax breach?  Maybe the entire KBA database.  This could have exposed all of our secret information which would have completely nullified the KBA altogether.  The KBA system is not just used at the IRS.</p>
+
+<p>You can also see it over at annualcreditreport.com so itâs possible these thieves are targeting your credit records, too.  Maybe they already have and nobody noticed or disclosed of this breach.  Itâs also possible that with enough information about you, someone can open a credit card in your name and take loans out in your name.  Not only does a breach with your data impact your tax refunds but it can now put you in a serious debt that you didnât actually spend.  The IRS faces thousands and thousands of people trying to conduct tax fraud every year.  Theyâre successful at stopping most of it and even putting thousands of fraudsters in jail but the security they put in place today may not work next year.  The IRS doesnât have traditional security problems that take traditional security solutions.</p>
+
+<p>Theyâre developing extremely advanced filters and algorithms to detect fraud and have done an amazing job at mitigating it.  But itâs one of those things that will never get down to zero because fraudsters will continuously be looking for loopholes or weak security measures and exploit them whenever they can.  I canât imagine the nightmare of trying to secure the IRS.  Because it collects over three trillion dollars in tax revenue a year, itâs a red hot target.  The IRS sees an endless amount of attacks, scams, frauds, and thieves, especially during tax season when criminals can try to hide in the mass amounts of tax returns being sent.  One of the biggest problems with the IRSâs website is that it has to be easy enough for the elderly to use but actually secure at the same time.  Iâm not sure if forcing everyone to register with an e-mail or two-factor authentication is even doable.</p>
+
+<p>Itâs such a complex issue that it actually gave me a headache trying to figure out a solution to this problem.  This is the new threat landscape that governments have to face though, and these attacks are getting bigger and more sophisticated.  In 2016 we saw a rash of companies getting breached and what was stolen was simply their W-2 tax statements.  Past and present employees from CGATE and Snapchat had their W-2s stolen which was enough information for those street gangs to file returns and open credit cards up in your name.  Iâll leave you with some recommendations on how to keep yourself safe with the IRS.  First, go to irs.gov and register at the site.  Link your identity to your e-mail address.  This will prevent criminals from registering for you.  This is a simple thing to do so thereâs no excuse not doing it.</p>
+
+<p>If you want to take it a step further, register for the IP PIN.  This is a unique number that you must have to complete your taxes but the problem is you canât opt out of the IP PIN and it changes every year.  If you take this path, youâre taking it for life. Third, freeze your credit at all free credit monitoring agencies.  This way, nobody can take loans out in your name or open new lines of credit.  Lastly, file your taxes early before the bad guys can do it for you.</p>
+
+<p>JACK (OUTRO):	[OUTRO MUSIC]  Youâve been listening to Darknet Diaries.  This show is made by me, Mr. Ribbit, Jack Rhysider.  When I say it was made by me, I mean everything; the research, the writing, the music design, the editing, and the narration.  It takes a lot of work to make each episode so I would really appreciate it if you showed support [00:35:00] by going to patreon.com/darknetdiaries and donate to the show.  Donations can only bring good things like better audio, better stories, more stories, and less ads.  The theme music for this show was created by the beat master toe-tapper Breakmaster Cylinder.  Peace.</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+<p>Transcription performed by Leah Hervoly
+www.leahtranscribes.com</p>
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

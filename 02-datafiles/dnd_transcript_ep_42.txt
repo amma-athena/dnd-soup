@@ -1,0 +1,661 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>Mini-Stories: Vol 2 â Darknet Diaries</title>
+	<meta name="description" content="Three stories in one episode. Listen in on one of Dave Kennedy's penetration tests he conducted where he got caught trying to gain entry into a datacenter. Listen to a network security engineer tal...">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Mini-Stories: Vol 2 â Darknet Diaries">  
+	<meta name="twitter:description" content="Three stories in one episode. Listen in on one of Dave Kennedy's penetration tests he conducted where he got caught trying to gain entry into a datacenter. Listen to a network security engineer tal...">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/shells.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/42/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Mini-Stories: Vol 2 â Darknet Diaries" />
+	<meta property="og:description"        content="Three stories in one episode. Listen in on one of Dave Kennedy's penetration tests he conducted where he got caught trying to gain entry into a datacenter. Listen to a network security engineer talk about the unexpected visitor found in his network and what he did about it. And listen to Dan Tentler talk about a wild and crazy engagement he did for a client." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/shells.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/42/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/shells.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/42/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="Mini-Stories: Vol 2 â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/shells.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 42: Mini-Stories: Vol 2</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://traffic.megaphone.fm/ADV2845437271.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/42/",
+			   "title": "Ep 42: Mini-Stories: Vol 2"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/42">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[FULL TRANSCRIPT]</p>
+
+<p>JACK:	Hey, itâs Jack, host of the show.  A long time ago I set up a file-sharing website at home on a Raspberry Pi.  I set it up to make it easy to transfer files between me and anyone I needed to send files to.  It was a simple website; drag and drop the file onto the webpage and boom, itâs hosted on my website for like, a week, and then it gets deleted.  I knew it wasnât secure so I never posted anything that was sensitive to it but I also took this opportunity to see if I could detect anyone trying to hack into the thing.  I set up all my best sensors I had at home; a firewall, an intrusion detection system, full packet captures using Security Onion, I turned on tons of logging and watched but nothing happened.  Nobody knew my site existed to even think about trying to exploit it.  Oh, well.
+<!--more--></p>
+
+<p>I forgot about that little website for years but last week I went to check on it and there was a suspicious file uploaded not by me.  [MUSIC] I checked into it and whoa, someone uploaded an exploit and gained access to my Raspberry Pi.  A hacker was in my house.  Okay, jeez, quick, what do you do?  Perhaps some people would feel freaked out, violated, or get anxiety because itâs scary knowing someone is in your computer looking at your stuff.  You have no idea who they are.  But me, well, I stayed calm because I expected this to happen so I isolated the whole thing on its own network and it just wasnât possible for them to move to any other computer or get anything good off this Raspberry Pi.  You could say this was sort of a honeypot.  I traced their footsteps and looked at everything they did.</p>
+
+<p>Pfft, amateurs.  They used an off-the-shelf PHP script to exploit the thing.  They didnât cover their tracks.  They checked a few directories looking for anything good.  This server had nothing, not even a database.  They tried getting the root and hopping to some other devices in the network but yeah, no luck.  This system wasnât even allowed to connect to the internet so they left.  Yeah, not really that exciting.  I turned that Raspberry Pi off and reformatted the SD card.  But you know what?  I did learn something cool along the way, and weâre gonna get into a similar story today that I think youâll learn something interesting too, on what to do when this happens in an important network.</p>
+
+<p>JACK (INTRO):	[INTRO MUSIC] These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	[MUSIC] Okay, so this is another Mini-Stories episode.  There are three stories in one.  These are stories that are too good to pass up but not long enough to make into a whole episode.  There are a few cuss words in this one, just to let you know.  Alright, so letâs call some hackers.  [SKYPE CALLING] Hello?</p>
+
+<p>DAVE:	Can you hear me?</p>
+
+<p>JACK:	This is Dave Kennedy.  Heâs quite known in the InfoSec space.  Heâs built some highly popular hacking tools and helped start DerbyCon which is a popular hacking conference in Kentucky.  But probably the thing heâs most proud of, his crowning achievementâ¦</p>
+
+<p>SEAN:	Hi.</p>
+
+<p>JACK:	â¦is this.</p>
+
+<p>SEAN:	How are you?</p>
+
+<p>ELLIOT:	One second, just finishing up an e-mail.</p>
+
+<p>JACK:	This is a clip from Mr. Robot.  Elliot, the character in the show, is trying to hide from someone and slips into a conference room and tries to social engineer his way into a meeting thatâs in progress.</p>
+
+<p>ELLIOT:	We should get started.</p>
+
+<p>SEAN:	I think youâre in the wrong room.</p>
+
+<p>ELLIOT:	Iâm sorry, you are?</p>
+
+<p>SEAN:	Sean, head of sales.</p>
+
+<p>ELLIOT:	Sean, of course.  Dave Kennedy.  I work with Craig on the Q4 push.  I had longer hair, then.</p>
+
+<p>JACK:	Hah.  Thereâs no coincidence that Elliot uses Dave Kenney as his fake name while trying to social engineer his way into this thing.  Itâs because Dave is a social engineer master.  Daveâs reputation precedes him.  So, how does a big-time InfoSec guy like this get started?  Playing video games in high school.</p>
+
+<p>DAVE:	I was programming MUDs back then and I was one of the guys that ran the actual MUD and kind of promoted it and grew it and everything else.  Thatâs where I started learning some C and C ++.</p>
+
+<p>JACK:	MUD stands for Multi-User Dungeon.  Think of it like World of Warcraft but with absolutely no graphics.  Itâs all text-based but still online where you can group up and quest, and raid, and fight everything.  He realized college wasnât right for him after high school so he decided to join the army.  [MUSIC] He headed down to the army recruiterâs office.</p>
+
+<p>DAVE:	The guys just didnât seem very happy there and Iâm like man, why would I want to join this if the folks that are trying to recruit me arenât happy about their jobs or what theyâre doing?  I was actually walking out; Iâm not even gonna join the military and I saw these four really buff marines walking in-sync and theyâre wearing the dressed blues and just looked sharp as heck.  I was like man, I want to be like that.  I walked into the marine recruiting station and I was a really overweight kid and didnât have a lot of physical fitness or anything like that.  I said hey, [00:05:00] I want to become a marine.  I tested very highly on the ASVAB which is the aptitude test for the military.  What was great about the Marine Corps is they guarantee your position and I wanted to do something like hacking and wanted to get into more of the intelligence side of things.  I was able to go into the military intelligence side and work in signals intelligence which was a ton of fun.</p>
+
+<p>JACK:	He was stationed in Hawaii in Ford Meade and did two tours in Iraq.  He got to do fun stuff like forensics and research and cyber-warfare.  He got out of the military and joined a small consulting shop.  Back then penetration testing and security in general was in its early stages.  Social engineering, the deceptively benign-sounding name for tricking people into giving up their passwords, that really wasnât that big of a thing yet.  Web applications werenât really getting that much attention from the security professionals.  Dave headed up the penetration testing division, then eventually became the VP of consulting and it was at this, his first job, where he learned a lot of new skills and different programming languages like Python.</p>
+
+<p>DAVE:	Then I had a really great opportunity hit me to be the Chief Security Officer over at Diebold which at the time I think I was like twenty-six or twenty-seven years old which was awesome, being a VP of a â security of a Fortune 1000 company.  Really had no idea what I was doing but it turned out to be a really, really awesome position.  I learned a ton from that.</p>
+
+<p>JACK:	Twenty-seven and the VP of a Fortune 1000 company?  Whoa.  He was young and motivated to learn.  He picked up all kinds of skills that he used to then start up his own company which he called TrustedSec and then he started Binary Defense.</p>
+
+<p>DAVE:	TrustedSec is a information security consulting company.  I started it literally in the basement of my house, and Binary Defense as well.  I started Binary Defense and theyâre both two different companies, two separate companies, and I did that for a very specific reason.  Consulting is very specific and I didnât feel like we could be the same company doing the same work and also doing the monitoring, detection of an organization as well, like giving heads up or making ourselves look good when weâre doing an assessment.  I really split the companies up early on.  I think we have about 162 employees now.</p>
+
+<p>JACK:	The story weâre talking about today is about an assignment with TrustedSec.  For this engagement, the client was a large retail company with retail stores all over the US and they wanted Dave to test the security of the store.</p>
+
+<p>DAVE:	[MUSIC] We had a few objectives; one is to be able to steal stuff from the store.  The other objectives were to get access to the corporate headquarters.</p>
+
+<p>JACK:	Steal stuff from the store is actually going into the store and grabbing stuff off the shelves?</p>
+
+<p>DAVE:	Oh yeah.  Yeah, absolutely.  As well as could you get access to the back-store area where they have the point-of-sale systems and the base servers.  Could we get into them and plant stuff in?  It was a lot of fun.</p>
+
+<p>JACK:	If you think about it, this type of work is simply quality assurance.  Companies have been doing quality assurance testing for decades, making sure their product is within spec.  Now in the modern age, the way some companies test quality assurance is to hire a bad guy to see how good their security is.</p>
+
+<p>DAVE:	We did some reconnaissance ahead of time.  We went to the store, purchased a couple of things legitimately, went to a different store, looked at who the employees were, how they operated when they took lunch breaks, the least amount of personnel during times.  We had all of that kind of mapped out for when we were actively going after this organization.</p>
+
+<p>JACK:	While he was there, he noticed these stores all have LP.  You know what LP is, right?  Itâs Loss Prevention and itâs typically a person standing near the front door of the store watching every customer coming in and going out to prevent people like Dave from stealing things.  First, Dave got to test how good their LP is.</p>
+
+<p>DAVE:	If you come in wearing a suit, youâre pretty much not going to be looked upon.  You come in dressed up as a â ripped jeans and dirty hair, or something like that, I donât know, looking suspicious, looking to your left and right; maybe thatâs a way that you get identified.  But for us, we usually come in looking professional and looking in a way that weâre not suspicious.  Weâre not looking over our shoulders.  Weâre not looking nervous; weâre looking like a customer.  We might actually buy some things with cash just to throw everything off.  Itâs more so just trying to be and act like you play a part of that role and that you fit.  We just started grabbing a bunch of things from the store, shoved them into our backpacks.</p>
+
+<p>JACK:	During this time, the LP is looking for shoplifters but Dave brought help to handle that, a second person to distract the LP.</p>
+
+<p>DAVE:	Itâs very difficult to keep an eye on everybody thatâs in the store so thereâs only a finite amount of personnel.  If you can do some distractions in different locations that have much lower levels of personnel, you have a much higher percentage of being successful.  Things that can take time away from the person, like if we have two people, we can do a diversion for one; have them communicate and talk.  The other personâs doing nefarious things.  That works out really well with us when we have two people doing it.</p>
+
+<p>JACK:	At this point, Dave has a bag full of stuff he stole and is walking around the store.  This is a multi-floor store so he goes up to the second floor and he even goes up to the third floor.</p>
+
+<p>DAVE:	When we walked in the store, itâs just a regular person.  [00:10:00] When they werenât looking, we just went into the back.  [MUSIC] We were basically in the back for I donât know, twenty minutes, thirty minutes.  We have these little devices that we call TAP devices that have cellular communications so we donât have to worry about the firewalls but it still allows direct access to their network.  We plug that into another network that has two ports on it.  Just unplug the one Ethernet cable, plug the other one in, and then was able to basically have direct access to their back-end infrastructure, their card-holder environment and the retailâs enterprise network.</p>
+
+<p>JACK:	Okay, heâs stolen stuff and now tapped into the network and got access into their back-end infrastructure through this network port.</p>
+
+<p>DAVE:	They had iPads for cashing people out and things like that.  We took two of the iPads.</p>
+
+<p>JACK:	Jeez, Dave is on a roll here.  Now they have access to customer credit card information and internal company data.  They came out from the back room to see what other things they could take from the store.</p>
+
+<p>DAVE:	Then we saw the cash register and it was on this podium.  We just had one of our folks â there was two of us.  One of them was just basically asking about a bunch of stuff.</p>
+
+<p>JACK:	He was distracting the LP.</p>
+
+<p>DAVE:	I basically took a screwdriver and removed it from the back, unbolted it from the thing and walked out with the cash register.  This is a big cash register; this isnât like a small thing.  I took the whole cash register with all the money inside of it.  I mean, itâs extremely heavy.  I carried that out, literally, and walked out of the store without anybody â one of the employees looked at me and kind of looked at me weird but then I just kinda waved and walked out and that was the end of the story.  We walked out, got in our car, and drove off.</p>
+
+<p>JACK:	Dave walks out of the store with a big old heavy cash register full of cash, two iPads in his backpack, and a ton of other store merchandise.  Unbelievable.</p>
+
+<p>DAVE:	You know, itâs a rush.  I get nervous every single time I still do it.</p>
+
+<p>JACK:	Dave now tries to test another store to see how theyâd handle him.</p>
+
+<p>DAVE:	For one of the stores, we called ahead and we spoofed our number coming from the corporate offices and claimed to be one of their main IT folks, and that we were going to be doing an upgrade to the store location for faster bandwidth and everything else.  They were super excited about that so they let us right in.  We had fake business cards.</p>
+
+<p>JACK:	This is one of Daveâs specialties; social engineering, spoofing phone numbers, acting like IT from corporate office.  Heâs a master at this.  When he did this, it worked like a charm.  They escorted him right into the back room, showed him the computers, and left him there unsupervised for thirty minutes while he hacked into the network.  Again, unbelievable.  Dave explained to the head of security how they could get into everything so easily and this kind of shocked him.  They wanted Dave to now test the security in their corporate headquarters to see if they could break into the data center there.</p>
+
+<p>DAVE:	Hereâs where we actually got busted.  It wasnât the store location that didnât have the most amount of security; it was the enterprise location that didnât have much security at all.</p>
+
+<p>JACK:	First, they had to figure out how to get into the building of headquarters.</p>
+
+<p>DAVE:	What we did is, we looked at the front location.  The front location, you had a lot of people badging in.  However, one of the side doors, people could just walk out.  You didnât see anybody walking in but you could see people walking out, especially during lunch and dinner, things like that.  During lunchtime, we waited outside and saw somebody walking out and we just pretending to be on the phone.  Weâre dressed up in a suit.  As soon as the door was about to close, we grabbed it and we walked right in.  It was really easy to get into the building itself.</p>
+
+<p>JACK:	[MUSIC] Itâs easy for Dave because he knows all the tricks and has done this a bunch of times.  When you do something a lot, you get pretty confident with what youâre doing.</p>
+
+<p>DAVE:	You just walk around like you belong.  You walk around, you pretend that youâre on the phone.  Youâre with somebody else, youâre pointing at something, youâre pretending that youâre having a meeting.  You just keep walking around the building until you find the objectives that you need.  We found the data center.  The data center was locked and there wasnât a lot of traffic, especially during lunchtime.  We went to this conference room which was a conference room tucked away on the side.</p>
+
+<p>JACK:	They sat down and acted like they belonged there.  From here, they planned their next steps.  They wanted in the data center but that door was locked and chances are, itâs harder to piggy back into a data center and just follow someone else in.  But a good social engineer doesnât always have everything planned out.  Sometimes they just have to take it step by step, see how far they can get, and then figure out what they can do from there.  They looked around to see what they could use in this conference room.</p>
+
+<p>DAVE:	There was a conference bridge on there, like a phone there.  We called from the bridge and I called the data center number.  The way that I was able to do that was first calling the receptionist first and saying hey, whatâs the data centerâs extension?  They gave it to me, then I called the extension.  Before we called the extension, we did some research on individual people in the company and I found a person in IT that had access to the data center so I called this phone.</p>
+
+<p>Iâm like hey, letâs say his nameâs Bob.  Iâm like hey, itâs Bob, Iâm here with a bunch of auditors for PCI work.  They need to do just a quick site audit of the data center.  Could you let them in just so we can get this last part of this compliance thing taken care of for the Payment [00:15:00] Card Industry?  Threw out a bunch of acronyms, things like that.  The person at the data center was like hey, who did you say you were again?  Iâm like oh hey, itâs Bob.  Just trying to get this audit done.  Heâs like Iâm best friends with Bob and youâre definitely not Bob.  I donât know who you are or why youâre calling from a conference room thatâs downstairs, but somethingâs not right here.</p>
+
+<p>JACK:	Shoot, heâs been caught.  Of all the people to impersonate, he picked someone that person on the phone actually knew.  Quick, what do you do?</p>
+
+<p>DAVE:	We rushed out of the building really quick before we got busted.</p>
+
+<p>JACK:	Dave escapes and thatâs always the second objective to a social engineer if they get caught, to try to escape because part of this is testing their incident response.  Their response was pretty poor if they let Dave get away.  But Daveâs objective was not complete.  The company tasked him with getting into the data center so he needs to go back and try again.  But now on one hand, he knows more about the location and on the other hand, it might be trickier because maybe theyâre on high alert now.</p>
+
+<p>DAVE:	We rebroke back in two days later, same method for piggy-backing, and then we waited past lunch until everybody came back and we just sat.  There was a little break room right outside the data center and we just sat and watched who had access to the data center and who didnât.</p>
+
+<p>JACK:	[MUSIC] They noticed to get into the data center, you need an RFID badge.  This is one of those proximity cards where you swipe a credit card-looking thing near the door and it unlocks the door.  Well, they came prepared for that.</p>
+
+<p>DAVE:	Weâve created our own custom backpacks that are over-amplified and we can usually get a little bit of distance, a few inches away from an individual and their badge and be able to collect.  We can just walk past somebody and clone their badge and be able to replicate it.  We can clone as many you want to.  We can actually imprint new badges.  What we usually do is weâll get pictures from outside the facility of their badges and then we have a printer in our car; itâs like a portable printer.  Weâll print badge IDs that look like theirs as well, with our pictures on it.  Then weâll just imprint those badges with their identification and their badge cloning.  Just by walking past them you can literally just clone a badge, as many as you want to.</p>
+
+<p>JACK:	They do just that.  They prepare to use their RFID key card cloning machine to walk past someone coming in or out of the data center, clone it, and then go make a copy off-site.  As theyâre watching people go in and out of the data center, they pick someone, a mark.</p>
+
+<p>DAVE:	Weâre able to walk past the person, grab them and say hey, Iâm a new employee here, blah, blah, blah, just ask a bunch of questions. We cloned his badge at the same time.</p>
+
+<p>JACK:	Success, they got the digital key they need to get into the data center.  They need to leave and go print it on a badge.  They pack up and head out.</p>
+
+<p>DAVE:	Came back at night, badged ourselves in, and got into the data center that way.  We signed in as we were supposed to âcause there was somebody in there.  Didnât even question us or ask us, just kind of looked at us.  We signed in, they went back to their computer, and then we essentially had free access to roam the data center.  What we did is we placed another TAP device in one of the core networking switches which gave us â we confirmed the DHCP and we were able to communicate with different things.  Once we had that, we essentially had direct access to their entire environment; took pictures, and selfies, things like that.  There was actually a bathroom in the data center which I thought was really weird, so we used the bathroom.  Then we walked out.</p>
+
+<p>JACK:	Mission accomplished.  Feels good.  But Dave is in a funny place because when heâs successful, it means his clientâs security wasnât strong enough.  It sort of means he has to go to them with bad news.</p>
+
+<p>DAVE:	Itâs almost always shock.  They assume that they have problems or exposures but they probably donât realize to what extent that is.  Our job isnât to say listen, youâre doing all this wrong.  Our job is to highlight the things that theyâre doing well, as well.  Hereâs the things that you did well and hereâs the things that actually thwarted or stopped us.  Hereâs the things that you do very good and here are some of the things that we identified that are really good for you to address based on criticality or risk towards your organization, and hereâs how you address them.  Hereâs how you fix them. Itâs not just about smashing and grabbing and being an awesome hacker and doing all these crazy things.  Itâs really about making the customer better, making the people that youâre testing better in the long run.</p>
+
+<p>I think thatâs really important that we lose a lot in this industry of, is that most folks just focus on hey, Iâm the best hacker in the world.  I just destroyed everything.  Good luck.  Then kinda leave it there, whereas as an industry, we really have to focus more on the teaching aspects around hey, how do they actually fix this, how do they actually address it?  What are the things that they could do to get better and make it harder for attackers to get in?  Thatâs really our ultimate goal.</p>
+
+<p>JACK:	Dave met with the company and coached them how to shore up their defenses.  As you may have guessed, this episode and past episodes, those RFID badges, yeah, theyâre vulnerable to cloning which makes it easy to bypass those locks.  Some companies have moved away from using badges like this and have switched to something else like maybe a magnetic stripe card which has its own weaknesses but it makes cloning it a little bit harder.  [00:20:00] Other companies require a biometric ID to get into doors, so like a fingerprint or an eye scanner.</p>
+
+<p>Iâve been in a big data center that did all this and more; an RFID badge just to get into the parking lot, a pin to get into the building, then to get into the data center area in the building you had to swipe a magnetic card, enter a little chamber which weighed you, and then did a retina scan and then allowed only one person through at a time with a guard watching every single person coming in and out.  Then to top it off, I needed an old-fashioned, regular key to get into the actual cage where my clientâs servers were.  Oh, and as a side note, I thwarted all this security a few times and snuck my girlfriend in without going through any of this but thatâs another story.  Dave gave a bunch of tips to this client.</p>
+
+<p>DAVE:	When we debriefed them, we worked with them again the next year, and they had really taken the results and addressed them.  They ended up switching to a different solution and away from proximity cards.  They actually did a technology improvement and enhancement and put also additional controls in place like instead of that back area being there, you had to go through mantraps and things like that to get in and out of the building.  They did a really good job and we actually got busted the year after that in both the retail location store as well as the corporate headquarters.  It was a good success story.</p>
+
+<p>JACK:	[MUSIC] Yeah, might as well start out with your name and what do you do?</p>
+
+<p>CLAY:	My name is Clay.  I am an InfoSec engineer.  I work at a university so Iâm InfoSec for an entire school.  Yeah, we have a lot of Linux machines.  Weâve also been migrating a lot to the Cloud.</p>
+
+<p>JACK:	Clay does a lot of IT work for this school, this big university, ranging from anything from coding to system administration, web app security, setting up the network, and even doing penetration tests.</p>
+
+<p>CLAY:	I also help generate best practices if they have â if sysadmins or programmers have questions, they can come to me and if I donât know the answer off the top of my head, I do the research and get back to them.</p>
+
+<p>JACK:	One of Clayâs responsibilities is to take care of threats that are found in the network.  One thing he battles a lot with isâ¦</p>
+
+<p>CLAY:	Cryptominers.  [MUSIC] Being in this environment, in academia, itâs really hard to have all of the systems on the network managed.</p>
+
+<p>JACK:	A managed system is just a computer that Clay is aware of and can access, and somewhat control.  An unmanaged computer on the network, Clay has no control over it and may not even know it exists.  Obviously if youâre a system admin, you want to be able to access all the computers on your network but at the same time, itâs impossible to manage every computer at a university; students bring their own devices into the network all the time.  But yeah, something Clay battles with frequently is cryptominers.  This is where a student might install a Bitcoin miner on a computer in the lab or in a research center, and then the Bitcoin miner will consume a ton of CPU or graphics processing to try to generate some crypto-coins and automatically get deposited into the studentâs wallet, and will actually get an alert when this happens.</p>
+
+<p>CLAY:	We have an IDS in place.  Thatâs typically how weâll be notified of these events.</p>
+
+<p>JACK:	An IDS stands for Intrusion Detection System.  This is a device that inspects every packet coming in or out of the network and checks to see if that packet matches any known signature for some kind of security issue.  In this case, it matches the signature for cryptomining because when it connects to the block chain or pools, or whatever, it then recognizes this as a miner and triggers an alert.</p>
+
+<p>CLAY:	Yeah, then the fun begins.  We can isolate the machine, usually myself and a sysadmin just so we have two pairs of eyes.  Itâs always better than one.  Weâll go and weâll start the investigation.  Weâll look at running processes, weâll look at the bash history, things like that.  Weâll look at open ports.  [00:25:00] If itâs like running netstat, we can see if itâs listening or if thereâs a connection that is established.  There isnât always but yeah, we look at all those things.</p>
+
+<p>JACK:	Itâs fun because when detecting something as wrong in the network and then you find it and isolate it and squish it, itâs just exciting.  As a sysadmin, most of your job isnât tackling live security issues so when itâs happening, it is exciting.  Honestly, itâs always fun to catch someone in the act thatâs doing something they shouldnât be doing and go and bonk them on the head and tell them not to do that anymore because theyâre usually blown away that youâve figured out it was them.  This paints a picture of what kind of stuff Clay works on.  But Clay also sometimes does this on the side a little.  He has a few clients and he helps secure their network.  When they have an issue, they call him up.  One day, they gave him a call.</p>
+
+<p>CLAY:	This was just a normal day at work.  I got an e-mail from the client.  Something doesnât seem right; something doesnât look right.  The application is acting kind of funky or somethingâs off.  Iâm like okay well, let me grab a cup of coffee and come and check it out.</p>
+
+<p>JACK:	Basically, one of the faculty or staff at the school was complaining about a slow website which was running Linux which is a server that Clay can access and check into.  The Linux server runs this website and Clay looks around at the thing.  Heâs checking things like does the website load?  Yeah, it does.  Itâs working okay.  Is the server running high CPU or is low on disk space?  No, thatâs fine, too.  Things seem okay and maybe a junior-level sysadmin would stop here and just try to let it sort itself out or reboot the machine and be done.  But Clay is not a junior sysadmin.  Heâs a senior security engineer so he takes another look.</p>
+
+<p>CLAY:	[MUSIC] I want to see whoâs logged in, if anyone is logged in.</p>
+
+<p>JACK:	He checks here to see if any developers are in there messing around or another sysadmin doing something or anyone fiddling with this.  He doesnât see anyone else there so he does his usual rounds.</p>
+
+<p>CLAY:	[MUSIC] Is the database up and running?  Is the VPN up and running?  How does that look?  Just standard stuff, right, looking over the whole application site, making sure things are running, doing a quick top making sure nothing is running extremely high, taking up a lot of load, using a lot of memory, those sorts of things.</p>
+
+<p>JACK:	At first glance all this seems okay still.  But then a second look through everything, he finds something.</p>
+
+<p>CLAY:	I found that there was a root shell open.</p>
+
+<p>JACK:	[BEEPING] A root shell is open on this server.  Let me explain; on Linux, this super user or administrator is called root.  [MUSIC] This user account has full privileges to everything on the server.  What Clay sees is that someone is logged in as root.  Having a shell is another way of saying someoneâs logged into the command line.  Now, you and I might think oh, itâs just another administrator doing work, but the school has set up the network correctly.  See, itâs not good to allow anyone to log in as root because you have no idea who that is logged in as root, and every hacker on the planet knows this username exists and will try to brute-force the password to it if you give them a chance.  The school set it up so that individual users like Clayâs username, has access and admin capabilities and super user privileges.  Clay knows that under no circumstance should anyone ever be logged in as root, but here there is.  Someone is logged in as root.</p>
+
+<p>CLAY:	I immediately start thinking to myself, oh crap.  We do have a compromise.  It is a root-level compromise.  Now my heart starts pounding a little bit stronger and I start thinking well hell, what the hell do I do next?</p>
+
+<p>JACK:	Okay, so in the physical world this is equivalent to coming home and seeing your front door is wide open and there are muddy tracks leading into your house.  The feeling of discovering someone is in your server that shouldnât be there and for them to have root level access to it is really, really scary.</p>
+
+<p>CLAY:	I looked to see how they got in and block it.  Do I just sever the connection and hope they donât come back before I can patch the stuff, or what?  All of these thoughts are just racing through my mind.</p>
+
+<p>JACK:	Clay takes a step back, and a deep breath.  All of a sudden, heâs hyper-focused on this issue now.  Anything else that he was thinking about doing that day is no longer in his thoughts.  This is all he can think about.</p>
+
+<p>CLAY:	I said well, the best thing to do is determine how the hell they got in and try not to make a lot of noise on the system while Iâm doing this because I donât [00:30:00] know if theyâre active, if theyâre like sitting at the shell actively looking at stuff, or if they just have a shell open and itâs in the background.  Or maybe that shell is just waiting for a command or something.  I donât know exactly whatâs going on so I want to be careful and I want to go slowly, and I want to find out what the hell happened.  [MUSIC] Being a web application, I knew it had to be probably SQL injection.  Cross-site scripting thing probably wouldnât lead to this level of compromise, at least not right away.  I started looking at the database.</p>
+
+<p>JACK:	This web server was running an SQL database.  This is where all the data is stored for the website.  Clay was looking at the history of commands executed in the database, trying to find anything unusual.</p>
+
+<p>CLAY:	I started looking at some of the pages that used the database more heavily than others. I did start to notice some weird shit in the database, in some of the tables.  I was able to isolate it to one of two pages that had this vulnerability.  I visited those pages and they looked okay; nothing was out of whack or funky.  No errors were being displayed or anything like that.  I thought let me just move these files and move them out of the way so theyâre not accessible anymore.</p>
+
+<p>JACK:	Clay determined that a couple of pages on this website were probably where the hacker got in, so he just took those pages offline, making it so further intrusions couldnât occur.  Removing how this person got in is one thing, but it doesnât remove them from your server.  The root user was still logged into the server but if Clay kicks them out now, they probably couldnât get back in.</p>
+
+<p>CLAY:	Tried to su the root at some point during this whole thing and I couldnât.  I knew they had changed the password.</p>
+
+<p>JACK:	Clay knows the root password to this machine but it wasnât letting him log into it.  Yikes, this just got scarier.  Not only is there someone in his server, but theyâre actively changing the passwords on it.</p>
+
+<p>CLAY:	Yes, yes.  Exactly, yeah.  Now Iâm freaking out because this system might have to be completely torn down and rebuilt.  Yes, we have backups thankfully.</p>
+
+<p>JACK:	Iâm not sure but I donât think you can kick out the root user unless you are logged in as root yourself.  When you know you have an active hacker in your network, itâs hard to know if youâre cleaning up everything when you do kick them out.  They might have an open back door or pivoted to another computer.  Itâs so stressful.</p>
+
+<p>CLAY:	This box is host.  Iâm gonna have to call the data center and have someone go to the machine, physically unplug it and call it a day, and figure out what the next steps are to rebuild. Thatâs when I said I really donât want to go down that route.  Is there anything I can do?</p>
+
+<p>JACK:	Clay is logged into this server and decides to look at the files located under /etc/passwd and /etc/shadow.  These files contain a list of hashed passwords for each user and Clay is able to see the hashed password for root.  No, this isnât the actual password; itâs a representation of the password, a long string of crazy characters that you get once you run it through an algorithm.  When you type your password in, it runs it through that same algorithm again and if itâs a matching result as that long crazy string, then the passwords match.</p>
+
+<p>CLAY:	Thatâs when I started to run John the Ripper on it.</p>
+
+<p>JACK:	[MUSIC] John the Ripper is a tool used to crack passwords.  Itâll try thousands, millions of passwords and run it through that algorithm to see if it has a matching hash.  At this point, Clay has become a hacker himself and is doing exactly what a hacker would do to crack passwords to break into a computer.  Itâs just that Clay is trying to break into his own server.  Now, to run John the Ripper, this takes a while.  Clay doesnât have a beefy cracking station so he goes on to investigate more about what this guy is doing.  He starts looking at database tables and other stuff but within a short time, there was a hit; a match on the password.  John the Ripper found what the root password was and it surprised Clay how quickly he actually found it which usually means itâs not that complicated.
+CLAY:	Yeah, so the password was mark2002.  I will never forget it.</p>
+
+<p>JACK:	He wonât forget it because itâs awesome to use hacker tools to outsmart a hacker and for it to work so effectively.  Great job, Clay.</p>
+
+<p>CLAY:	Yeah, so now starting to feel good.  Iâm much more optimistic at this point.  I start thinking I need to boot this guy off.  Iâve moved the files out of the way, I can lock down the database.  I can just shut off the database, right.  Iâll shut the database down, weâll put up a notice [00:35:00] weâre down for maintenance, not a big deal.  Then I can get back to that later in the evening or whenever.  How am I gonna boot this guy off?  What can I do to lock it down further, monitoring can I put in place that isnât already here to help me, to help throw an alert if the person should get back?  I start developing a plan.</p>
+
+<p>JACK:	[MUSIC] Itâs not so easy as just kicking the hacker out of your network.  You have to make sure you have everything in place.  If you kick the hacker out and they just have a way to come right back in, you essentially did nothing because if they set up a back door and they just come in through that, you might not even know they came back.  Clay has a plan to kick this person out but heâs going to have to do it quickly so the hacker doesnât just come right back in.  He starts to look at the server to plan every step out.</p>
+
+<p>CLAY:	I need the su to root so I do that.  Okay, so now Iâm root.  Are there any cron jobs in place?  I have his shell process; I can kill it.  Great.  Then we look at IP tables and only allow SSH access from one or two IP addresses.  Thatâs it.  I had that lined up.  I need to take down the database, put up a maintenance notice, and change the password again.  Also look for evidence of files that may have been dropped, or evidence of other back doors that might be listening or ready to listen.  Iâm looking in slash tab, looking in roots directory, looking all over for clues like that; doing it quickly but definitely coming back to that once I kill the process and change the password.</p>
+
+<p>JACK:	Okay, at this point, his plan is all sorted out.  Each command is typed out on a notepad just ready to be pasted in.  He double checks that thereâs not anything else that he missed and he thinks heâs all ready.  Three, two, one, go.  Kill the login for root, change the password, turn of the database entirely, put up a maintenance notice, and block this IP from ever connecting to this again.  He thinks thatâs it; thatâs all the commands.  Heâs watching the connections but not seeing anyone try to come back in.  It worked.  Clay feelsâ¦</p>
+
+<p>CLAY:	Amazing.  Fucking amazing.  Yeah, my heart was still racing.  I wasnât sure if it was all going to work, right, âcause I donât know what â everything that had been done.  The techniques werenât very advanced.  There wasnât a bunch of cleaning up things or cleaning up the bash history or scrubbing the logs or anything like that.  I saw no evidence of that.  It didnât seem very hi-tech so I was optimistic.  Regain control of the machine and keep the person out.  Iâm still in response mode.  I had to reach out to the owner of the system, let them know what has transpired, and I immediately start planning next steps.  Yeah, I want to run to the bar and have a beer real quick, but thereâs really no time for that.</p>
+
+<p>I also reached out to the data center just to let them know what had happened.  I just felt like that was the responsible thing to do, and briefed them on what I did and the steps I had taken, and that the vulnerability was identified and essentially fixed.  Yeah, and at that point I thought I had done my due diligence of informing all of the stake holders and now I could take a deep breath and start focusing on forensics a little bit because I wanted to save all the things, right?  I wanted to save the sequel logs, I wanted to save bash history.  I didnât find any funky binaries so that was good.  Then I had to start cleaning up the database which was a task and chore.  Yeah, and then I had to start thinking about other ways to lock down the system and other monitoring to put in place.</p>
+
+<p>JACK:	Clay went through as much of the logs as he could to retrace every step the hacker took because thatâs important and itâs the right thing to do.  If you can figure out how they got in and how long they were there and what they did while they were there, you can improve security immensely.  He determined the hacker had only been in there for a few days and they got in by using an SQL injection through the web page that he found.  He figured this out by looking at the SQL logs and through this they were able to get a shell on the server which then they escalated their privileges to root.  Once he figured all this out, Clay rolled this server back and database back to the day before the hacker got in so that if the hacker left anything behind, it was completely gone.  They fixed the SQL injection that this website had.  I think Clay did a great job handling this situation.  Besides doing sysadmin work and chasing hackers out of the network, Clay also is an organizer [00:40:00] for the WOPR Summit.</p>
+
+<p>CLAY:	The goal is to really bring together different communities that are all really involved with hacking, and making, building, and breaking things.  Itâs gonna take place at the end of March next year.  Itâs more than likely gonna be right outside the Philadelphia area.</p>
+
+<p>JACK:	Yeah, so if youâre around Philly next March, go to the WOPR Summit.  Thatâs W-O-P-R which is the name of the computer and war games.  It just sounds so much fun.  [MUSIC] For our third story here, weâll hear one from Dan Tentler which goes by Viss.</p>
+
+<p>VISS:	Iâm Viss.  I run Phobos Group.  We do interesting work for interesting people.</p>
+
+<p>JACK:	Viss was working for a company a while back as a penetration tester and security consultant.  It was a good company but for some zany reason the company ran out of money and stopped paying the employees.  So, he started his own company which was pretty much the same company but since the people were all looking for jobs, Viss just scooped them up and took the talent with him, including his co-founder, Ali.  They called it the Phobos Group.</p>
+
+<p>VISS:	Phobos Group was formed essentially because myself and Ali were just fed up with perpetuating the cycle of compliance is the bare minimum, so weâre just gonna do that; oh god weâre breached, oh, what do we do?  Oh, weâll fire the CISO.  Rinse and repeat.  Itâs this whole do absolutely the bare minimum or slightly below the bare minimum, get horribly steamrolled by malware, blame somebody, fire them, give them several million dollars as a golden parachute, bring in someone else, and the cycle repeats.  Weâre like, this is dumb.  All of the stuff thatâs happening, this is entirely smoke and mirrors and snake oil and this is stupid.  Weâre out.  Our core offerings are simulating what real bad guys do.</p>
+
+<p>JACK:	Viss is opinionated and talented in securing clientsâ networks and testing their security in a real and meaningful way.  He doesnât sugar-coat it; he finds the dirty parts of the network and tells you how important it is to clean it up.</p>
+
+<p>VISS:	Yeah, I have one.  Thereâs a company that came to us at one point a while back that said we have a bizarre problem and weâre not sure how to fix it.</p>
+
+<p>JACK:	Typically, Vissâs clients might ask for a penetration test to get things started, but in this case, they told Viss they have a problem with a specific employee.</p>
+
+<p>VISS:	They are having discussions with folks or making comments about stuff that are private, personal e-mails that people have written, not even on their work account, and itâs making these people very, very nervous because theyâre beginning to think that theyâre being surveilled and to exacerbate that problem, this person is also kind of a creeper and he keeps trying to flirt up the girls in the office and somehow he knows whoâs single and whoâs not single despite the fact that nobody talks about that at work.  They basically knew that the dude was a problem and said we need to find a way to get this guy out of the company.  Please help.</p>
+
+<p>JACK:	Thatâs unusual, okay.</p>
+
+<p>VISS:	Itâs very unusual but when you bill yourself as a company that doesnât do wham-bam-thank-you-maâam pen tests and rubber stamp security, you get the interesting stuff and not the boring stuff.</p>
+
+<p>JACK:	Hm.  Okay.  Now Iâm aware that the vast majority of security threats in the network come from the inside; something like 60% of all attacks are carried out by people in the company because theyâre doing things like simple human error.  You know what?  Iâm guilty of that.  Iâve accidentally taken down a whole network myself.  I got the ID10T award for that one.  Sometimes people just accidentally share their passwords, like when theyâre forwarding e-mail chains, or sometimes you just have someone evil in the company, a wolf in sheepâs clothing.  At this point it sounds like this creeper in their office is somehow getting data from the employees which is making people feel uncomfortable.  It sounds like it could be an insider attack.</p>
+
+<p>VISS:	We start asking questions and the story is basically that thereâs a guy that works for this company and he was in Help Desk or in low-level IT and he was your typical [00:45:00] office creeper sociopath.  He was making all the women in the office uncomfortable.  He was abrasive and he was not pleasant and he was not friendly.  He was difficult to work with but because this company â the way they explained it is well, weâre family-owned and we donât want to put a bad taste in peopleâs mouths, so they tended to not fire people.  They wanted to try to get people to leave on their own accord.  In this instance, their genius, their galaxy-brain idea, and I hope you have whiskey on-hand, was to put this guy in a position that he would hate so much that he would quit on his own accord and the problem would solve itself.</p>
+
+<p>Make the person so miserable that they leave on their own accord.  Not an uncommon thing; Websense did that to me, took several years.  Thatâs a whole other story.  But yeah, not an uncommon thing.  If you have a non-confrontational, not A-Type personality management and leadership, then you want the problem to fix itself so you orchestrate a lateral move for this person.  You dress it up as a need; oh, we need you over here way more than we need you over there.  This will be so great for you, and itâs all lies.  So, what they did was, they promoted him to the head of security.</p>
+
+<p>JACK:	What?  They promoted him to head of security?</p>
+
+<p>VISS:	They took a guy that was a problem, they took a guy that was making women in the office uncomfortable, and they promoted him to the head of security.  That gave him the keys to the kingdom.</p>
+
+<p>JACK:	Whoa.  Okay.  This is gonna be interesting.   Viss is going to try to look around the network to find some kind of reason why this guy should be fired.  But this guy has full control of the entire network.</p>
+
+<p>VISS:	He has full access, administratively, to the entire infrastructure of the company.  You have to presume that if heâs spying on other people, he would be spying on us out of a sense of self-preservation.  Itâs almost certainly, since they contacted us from their work e-mail and from their â they had several calls with us from their board room.  Almost certainly that guy had access to those conversations and he is almost certainly aware that he is now being investigated and weâre working on it.</p>
+
+<p>JACK:	Well, this is gonna be a challenge, then.  Itâs like a backwards game of Cat and Mouse where the mouse is trying to catch the cat doing something illegal or blatantly against the company rules so that he can be fired.  Iâve also heard of companies that just wonât fire anyone.  State and government agencies are like this often; you almost never hear of anyone getting fired because of poor performance.  Viss gets to work.  Step one, get out of band.  Get out of earshot.  Basically, the bosses need to get off the network to avoid the spying eyes of this guy.</p>
+
+<p>VISS:	We had them bring in personal machines, or work entirely with personal machines so that there was no way for this guy to move laterally onto their equipment.  We forced them to set up 2FA, we forced them to change all the passwords.  Then we were looking at their equipment to make sure that it was not phoning home.  The first thing we had to do to get that engagement off the ground was teach the customer how to do out-of-band communications.  Then once we got to the point where we were doing out-of-band communications, they started relaying to us the ways that he was horribly breaking his own OPSEC.</p>
+
+<p>JACK:	Okay, so even though they had stopped using the corporate network altogether and were using cell phones and text messages and a different e-mail system altogether, this guy still ended up finding out stuff that they were talking about.  For instance, they went to lunch one day and this head of security creeper guy says, âSo howâd that meeting with Phobos go yesterday?â  They texted Viss and told him about this and heâs like what?  How did they know that?  But something like that actually narrows down the possibilities pretty well.  He must know this because either one, he bugged Viss which is not likely, or two, he bugged the bossâs office, or three, he was on the call.</p>
+
+<p>VISS:	Those are the only three possible scenarios.</p>
+
+<p>JACK:	The team from Phobos goes into the office and starts snooping around.  [MUSIC] He went into meeting rooms looking for any unusual equipment, anything taped underneath a table or strange devices stuffed in a potted plant in the corner of the room, and he found stuff, all kinds of stuff.</p>
+
+<p>VISS:	The dude was physically bugging the board room and the meeting rooms.  He put cheap buy âem on Amazon, buy âem on a spy shop, type deals.  He put them inside of the receptacles for power.  He took the screw off Enemy of the State style, like Jason Bourne mode; got some cheapy audio bug and put it in the power receptacle in the board room.</p>
+
+<p>JACK:	Okay, good start; get rid of the bugs in the office.  Now the team starts looking at the network.</p>
+
+<p>VISS:	We were granted administrative access to stuff and we were able to find some of his implants which werenât even implants; they were like, PowerShell scripts to do stuff.  He was using the system against the system.  You can configure phone systems to record every phone call so thatâs what he did.  You can configure Windows Active Directory to use GPO to do basically [00:50:00] simple surveillance on all the workstations.  He had the phone system configured to record and save every phone call made so that he could review them, and he configured â I think it was a GPO that he set up to take screenshots of peopleâs machines and send him screenshots.  He was getting screenshots of every employee and he was recording every phone call.  At the end of the day, if the objective is to surveil the office, and if youâre the head of security, then you donât need to use spyware.  You can use the system to surveil the system.  Itâs been designed that way.  Itâs just a matter of whoâs driving it, right.</p>
+
+<p>JACK:	At this point the guy is starting to become aware that Viss is onto him and investigating him.  He started trying to block Viss from doing certain things.</p>
+
+<p>VISS:	He was, but he was not â he wasnât a security person.  He was a Help Desk guy that got promoted to the head of security because they wanted him to try to quit.  In terms of technical aptitude, while he was fairly technical, he was not a security guy by nature.  It wasnât very difficult to run circles around him.</p>
+
+<p>JACK:	At this point in the investigation, one of Vissâs coworkers asked to see the data center.  When they opened the network closet to see what was in there, it was all gone.</p>
+
+<p>VISS:	[MUSIC] What this guy did was he took all of their hosting and moved it to Ukraine, took all their on-premise stuff from their office and took it into his garage, put it in a two-post rack in his garage, got business cable, then started doing things like writing off his mortgage, and all of his power, and all of his water, and all of his utilities as business expenses because he was hosting â he basically, on paper, said that he was the hosting facility for the company.</p>
+
+<p>JACK:	What a crazy weirdo.  He moved all the servers to either a hosting provider he had full control over, or his garage.  Because he was the head of security, he had the authority to make all these decisions and execute them.</p>
+
+<p>VISS:	Then he was issued, I donât know why, a corporate Amex.</p>
+
+<p>JACK:	Amex is their corporate credit card, American Express.  Itâs only to be spent on business-related things like travelling to clientsâ locations or buying things for work.</p>
+
+<p>VISS:	On that corporate Amex he put all sorts of things like his groceries and his wedding reception.  Shortly after all that happened is when we got called in so one of the first things we started asking is who on earth is approving his expenses?  Yeah, then it turns out it was his boss guy and his boss guy was also completely oblivious and didnât even bother looking.  He was like oh, this is just temporary, right?  Heâs gonna go.  But he was putting almost two hundred grand a year on this corporate Amex and nobody was questioning it.</p>
+
+<p>JACK:	Viss is smart.  He followed the money.  Always follow the money.  When he showed this to the executives that this guyâs spending this much money, they sat down his boss and had a really difficult chat with him.  At this point the company has a solid case against this head of security creepo guy to fire him.  But maybe they should do more than just that.</p>
+
+<p>VISS:	There was this process of producing enough evidence to basically turn him over to law enforcement and it was just a matter of documenting all the stuff that was discovered with photos and logs, and going through all the â basically building a timeline and then turning it over to the FBI and saying this guy has broken we donât know how many laws.</p>
+
+<p>JACK:	Viss and his team did just that; they collected all the logs and evidence of any potential laws this guy broke, put it into a report, and turned it into the bosses.</p>
+
+<p>VISS:	In the state of California, the guy was breaking all sorts of laws.  Iâd have to go look them all up to get you the specific examples but if you just look for employee privacy laws, youâre going to find pages, and pages, and pages of stuff.</p>
+
+<p>JACK:	There are laws against how you can surveil your own employees in California and thatâs where this company was.  Yeah, he went way above and beyond what the laws allowed here.  Viss had lots of evidence that he was breaking all kinds of laws, and he turned this into the client.  They thanked Viss for his help and that was the end of that.  What the company did with that guy is kind of unclear but Viss heard that the FBI built a solid case against him and came in and arrested that guy, and he left the office in handcuffs.  This investigation opened the eyes of the bosses to many other problems in the company like who hired this guy and who let all this stuff just keep going on and on and on?</p>
+
+<p>The company eventually hired a bunch more IT and security staff that werenât toxic or crazy and they took back control of their own network.  The company changed the way they view firing people.  Now, theyâve learned how much it can cost a company if they donât fire certain people.  The damage from just this one person was enormous; $200,000 in corporate credit card charges, firing a lot of staff and spending months getting the network cleaned up and back to a secure place so that they can manage it themselves.  All that adds up and it would have just been a lot better if they just fired him instead of trying to place him into a situation to get him to quit.</p>
+
+<p>JACK (OUTRO):	[OUTRO MUSIC] [00:55:00] Youâve been listening to Darknet Diaries.  A huge thanks goes to Dave Kennedy for sharing his story.  You can find him on Twitter.  His name there is @hackingdave or visit trustedsec.com.  Also thank you Clay for that awesome story.  Clay is inviting all of you to check out the WOPR Summit.  Thatâs W-O-P-R-S-U-M-M-I-T.org.  If youâre in the Philadelphia area, check it out.  I first heard Clayâs story on the Getting Into Infosec podcast which is a great podcast that interviews people on how they got into infosec.  I was even a guest once.</p>
+
+<p>If you want to hear stories about how people got started doing these kinds of things, check out the podcast Getting Into Infosec.  Finally, thanks Viss for your story.  Catch him on Twitter; his name is @viss or at phobos.io.  This episode was created by me, venomwares, or you can just call me vmwares for short.  My name is Jack Rhysider and I got some production help this episode from the modest Michelle Martin.  Theme music was created by the trippy troubadour Breakmaster Cylinder.  See you in two weeks.</p>
+
+<p>[OUTRO MUSIC ENDS]
+[END OF RECORDING]</p>
+
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

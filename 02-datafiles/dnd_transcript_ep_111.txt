@@ -1,0 +1,429 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>Zeus â Darknet Diaries</title>
+	<meta name="description" content="Zeus is a banking trojan. Designed to steal money from online bank user's accounts. This trojan became big, that it resulted in one of the biggest FBI operations ever. ">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Zeus â Darknet Diaries">  
+	<meta name="twitter:description" content="Zeus is a banking trojan. Designed to steal money from online bank user's accounts. This trojan became big, that it resulted in one of the biggest FBI operations ever. ">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/zeus.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/111/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Zeus â Darknet Diaries" />
+	<meta property="og:description"        content="Zeus is a banking trojan. Designed to steal money from online bank user's accounts. This trojan became big, that it resulted in one of the biggest FBI operations ever. " />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/zeus.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/111/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/zeus.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/111/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="Zeus â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/zeus.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 111: Zeus</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://www.podtrac.com/pts/redirect.mp3/traffic.megaphone.fm/ADV9963994302.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/111/",
+			   "title": "Ep 111: Zeus"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/111">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[START OF RECORDING]</p>
+
+<p>JACK:	When you put your money in the bank, you do it for safekeeping, right?  I mean, you need to collect it somewhere, and under your mattress doesnât seem like the best idea, so we use bank accounts.  Our paychecks go into it, and we pay our bills from it.  We could take cash out or transfer money to someone else.  Yeah, itâs all pretty easy, because now we can do all this online.  Before, we had to go into a local branch and wait in a queue and get the bank teller to do what we needed.  It was a bit time-consuming and a little boring, but not anymore.  Now, we can just log into our bank account via the bankâs website and yeah, just go ahead and do whatever we need and then log out again.  Now there are apps for cell phones so that you could just do it on the go.  You donât even have to be home anymore to check your bank balance or pay bills.  All this stuff is going digital, which makes it easier for us to use.  The problem with that though is that itâs not just easier for customers to use; it also means itâs easier for criminals to rob banks.  [MUSIC] Letâs be honest about it; millions of bank accounts, from standard personal accounts to big business accounts all just sitting behind a login screen, and thatâs just a flashing beacon for hackers that have an eye for financial fraud.  Back in the mid-2000s, online banking had only been around for a few years.  It was Wells Fargo in 1995 who was the first bank to offer internet banking to its customers, and their customers loved it.
+<!--more-->
+Once that started, there was no going back, and I like to think that the definition of information security is to be able to conduct business in a hostile environment, and the internet is hostile.  If you put something like a bank online, you can absolutely expect it to be hammered on by people trying to use their computers to steal money from it, because the more the world goes digital, the more opportunities there are for criminals to do things.  Itâs like lighting up opportunities for them to find places they shouldnât be going to to steal things that donât belong to them.  We love how easy and quick it is to open an app and go to a website and do all our banking in seconds, but that same simplicity is exploited by criminals, and this story is about a powerful online banking Trojan and the minds behind it.  It grew to steal more than $70 million, and without looking like a crime had even taken place at all.  Itâs about how stealth and perseverance can seemingly make the bad guys always look like they come out on top.  Itâs the ultimate multiplayer strategy game, a game where two very capable sharp teams compete.  On one side of the board are federal agents, bank security, and security researchers, and on the other were thieves, criminals, and hackers.  Strategic, calculated moves from each side pitted one force against the other, and the outcome, well, youâll have to keep listening for that.</p>
+
+<p>(INTRO):	[INTRO MUSIC] These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	Iâm gonna take you back to 2006.  By this point, mainstream online banking had been around for about ten years.  Banking fraud wasnât exactly new and it had been going on for years, and it was just turning more and more electronic, and that meant that peopleâs bank accounts had now become fair game from anywhere in the world.  There was one switched-on guy who had been sitting and watching all this.  He was in Russia and was very interested in tapping into the neverending supply of money to steal.  He was young, just twenty-two years old, but he was ambitious.  Donât be fooled by his age, though; at twenty-two years old, he was very sharp and calculated, a meticulous planner, and a fantastic coder.  This coder went by loads of different usernames on the web and underground forums, but he eventually settled into one name, Slavik.  [MUSIC] On October 11, 2006, a new forum message appeared on the website techsupportguy.com.  This website had been going on since 1996 and was one of the first that offered free internet tech support.  In those ten years, the site gained more than 210,000 members and had twenty-seven individual forums.  On one of the forums, a user asked for help.</p>
+
+<p>He said he found some weird code on his sisterâs Windows computer and he couldnât identify it.  He posted a sample of it and asked if anyone could help figure out what this was.  The code was new and different, and not something people recognized.  The code was passed around and picked up by some security researchers, and someone called out that this code was malicious.  The researcher called this malware WSNPoem after one of the names of the directories in the malware.  So, WSNPoem, they discovered, crawled into peopleâs computers very quietly and walked around their files, their storage, and their browser, hunting for usernames and passwords that it could steal and report back to the malware owner.  It was fast, too; it would capture all the credentials on a daily basis and then seemingly send them back to the hacker that launched it.  Now, the credentials it wanted more than any others was the username and password for online bank accounts, which could be the most valuable credentials we have.  WSNPoem was a banking malware that tried to steal money from peopleâs accounts.  If it found the user details of a banking site, it would report that to the malware operator, and someone would go log into the bank and try to figure out a way to take the money that was in there.</p>
+
+<p>It was rumored at the time that this was a Russian hacker group called UpLevel who wrote WSNPoem, but really, no one knew for sure.  Things started to move pretty quickly after that.  Eight months later, in June 2007, came a bigger discovery by Secureworks.  Some researchers there found a new version of this banking malware, and they called it PRG and had it down as a more advanced and effective version than the WSNPoem malware.  Whoever was behind these attacks wasnât wasting their time, either.  In August, the Secureworks team discovered a huge database of stolen data, and they traced it back to the PRG Trojan.  Lists and lists of bank details, card details, social security numbers, usernames, and passwords were being sucked up by this banking Trojan.  Secureworks calculated that 46,000 victims who had all been hit with this malware had their data stolen.  Now it was all in this big data dump, openly sold to underworld criminals.  By December 2007, the hackers who deployed the Trojan had stolen over $200,000 from commercial bank accounts across the US, UK, Italy, and Spain.  [MUSIC] This is how it worked; the hackers were sending out malware through spam e-mails and drive-by downloads, getting it into as many machines as possible.</p>
+
+<p>Once installed, it seeked out and sucked up all the credentials stored on that computer.  Then the malware would sit and wait for users to log into their online bank accounts.  As soon as it did, the malware would alert the hackers who would then jump into the session, get on that userâs computer, and transfer money from the userâs account to their accounts.  It was as if they were in the room with the user on the same machine, taking money out of the account right under their nose.  It was sneaky and stealthy and very successful.  It was the modern-day equivalent of daylight robbery, only it was done in the shadows like an invisible invader.  These early wins were proving to the hackers that they were onto something big, and if they could just improve the malware a little bit and scale it up, they could steal a lot of money this way.  So, they continued to develop their malware and their skills.  Roll forward another six months, and there were more discoveries by Secureworks.  As they watched this Trojan expand and develop like a growing snake, there was another name change; now it was being called Zbot, short for ZeuS Bot, and this malware posed as a double-edged threat.</p>
+
+<p>[MUSIC] You see, the banking malware not only stole sensitive and valuable credentials and then robbed the userâs bank account.  That would be bad enough, right?  But then it turned this infected machine into a spy, a slave computer that was completely under control.  The machine would join a botnet, a giant network of infected machines.  The hackers were stacking up these bots and utilizing their power as a single formidable force to do some really shady stuff.  By now, everyone analyzing the different versions had trashed the idea that this was a new hacker group.  Now they were sure whoever was behind this ZeuS Bot was the same individual who had created PRG Trojan and the WSNPoem Trojan.  One author was the mastermind and whoever it was, was raking it in.  That author was the young Russian going by the name of Slavik.  By 2008, Zbot became known just as ZeuS, a name that Slavik had apparently given to it at some point through its development.  So, youâve heard of Zeus, right?  âCause itâs big in Greek mythology and a lot of people actually name their dog Zeus.  But Zeus was the king of the Greek gods, the god of the sky and thunder and lightning.</p>
+
+<p>He was the ruler, which I think is why Slavik named it this.  He liked the idea of there being a single botnet that ruled them all, and it actually seems fitting because ZeuS would eventually become the king of all banking malware.  [MUSIC] Not only was Slavik a good coder, he was also good at business, too.  He wanted to make more streams of income with this malware, and he kept updating ZeuS and developing it, and adding new features regularly.  A lot of times when malware is created, thereâs just one or two versions of it.  Whoever wrote it just does the job they need to do with it and itâs done.  But ZeuS was different.  Slavik was using it himself to rob people, but he also built ZeuS to be a crimeware kit that he could sell on underground forums and on the dark web.  It was like a DIY hackerâs toolkit so they could build their own banking Trojan botnet.  He would let others use it for a fee, and then he would even supply continued support for them, because thereâs a lot of people that want to have the power of a botnet at their fingertips, but they just donât have the skills to build one.</p>
+
+<p>So, in comes ZeuS with this easy-to-use, no-tech-knowledge-needed interface to spread and listen for commands from any of its operators.  But it was still up to ZeuSâ customers to figure out what to do with the botnet.  Back in 2007, another hacker group wanted to steal banking logins, but they were doing it through phishing e-mail, so sending out spam e-mails trying to convince people that this is their bank and they need to log in and they need to click this link.  This group in particular was doing very well at this.  They were skilled at sending out e-mails that look like they actually came from your bank, just they hadnât; they were fake e-mails with links that look exactly like the banking login site, but if you logged in, you just handed your login details to the criminals.  That group was called Rock Phish.  They specialized in phishing campaigns targeting banks to steal login details, and theyâd been going since 2005.  Their earlier campaigns always had ârockâ in the fake domain names, which is how they got their name.  Now, Rock Phish were widely considered to be one of the biggest phishing groups in the world, and by 2008, they were adding ZeuS to their arsenal.  [MUSIC] Rock Phish began pushing the ZeuS malware out along with their phishing e-mails.</p>
+
+<p>So, if you got one of these spam phishing e-mails, you could be hit in two different ways; you could either click the link and get the fake version of the bank login, and if you did put your password in, then you just gave them your password, but if you didnât do that and went to your bank account manually or used a bookmark or something, thatâs when ZeuS would kick in and capture your username and password as you typed it on the screen and send that to the hackers.  In time, Rock Phish gave way to new blood, another group called Avalanche.  But itâs probably safe to say that this new group had a few members of Rock Phish that moved into it.  Avalanche liked ZeuS too, and the better that ZeuS had become, the more popular it was with the underground criminals.  They loved the idea of buying a credential thief and botnet rolled into one.  For phishing groups like Rock Phish and Avalanche, ZeuS offered a secondary way for them to make money, and lots of it.  Layering up their e-mails like this expanded their earning potential big time.  Avalanche were also known to make use of the Cutwail botnet, which was pretty big around this time.  The Cutwail botnet, along with its friendly loader Pushdo, eventually integrated ZeuS into it, and ZeuS integrated Cutwail into it.</p>
+
+<p>It was a great combination, making it even more devastating for everyone to get infected by it, because using existing botnets to spread banking Trojans was a very effective technique.  Those botnets were already inside thousands of computers sitting and waiting for instructions; might as well put ZeuS in there to start sucking passwords up while itâs there.  ZeuS was an exceptionally clever bit of kit on a whole ânother level to your standard phishing ideas.  Once ZeuS was on a computer, it dialed into the command and control servers to get instructions on what to do next.  Now, the ZeuS crimeware kit came with ZeuS Builder, which was a nifty little program that allowed the operator to specify the behaviors and actions that they wanted each of their new bots to carry out.  It was easy to use and reliable.  ZeuS was able to carry out man-in-the-browser attacks when on a userâs computer, it would intercept the web page that the user was trying to go to and alter the HTML code that would be rendered in the browser.  So, the user still gets the website they are expecting, usually their banking homepage or something, which makes it not suspicious at all.  But now the page has new fields asking for additional details like your PIN number or social security number.</p>
+
+<p>The user has no idea that thereâs someone in the browser trying to steal this information from them.  [MUSIC] Slavik had been improving, polishing, and perfecting his version of ZeuS.  He updated it, kept adding new features, and better functionality.  This was an evolving bit of kit, and Slavik was on the ball and keen to keep everything rolling forward and doing better at every step, ambitious, greedy, even.  This guy knew what he wanted and he was pushing hard for ZeuS to get it for him.  By May 2009, the FBI was starting to receive reports of large-scale bank transfers that were fraudulently sent but had seemingly no evidence of a security breach.  An FBI Special Agent was based in the Cyber Crime Task Force in the Omaha field office in Nebraska.  He was a few months shy of his first year as a Special Agent and didnât know it, but he was about to be sucked into a complicated web weaved by a master coder determined to stay one step ahead at all times.  The First National Bank of Omaha has been around for 160 years.  Itâs family-owned and independent, and itâs a subsidiary of the First National Bank of Nebraska and offers online banking services to its customers.  In May 2009, their customers reported that they had $100,000 swiped from their bank accounts.  It just disappeared.</p>
+
+<p>[MUSIC] So, the Special Agent from the FBI gets on the case and he starts to examine the bank accounts to try to figure out what happened.  When the account transactions were examined, it didnât make sense, though.  The Special Agent was looking for someone logging into these websites, maybe from overseas or from a suspicious IP, but the stolen money was transferred by the customer from the customerâs IP at home, on the customerâs very browser.  The transfers were sending the money to accounts overseas, but the thought crossed the FBI agentâs mind that maybe these customers were just trying to commit fraud and lying that the money was stolen.  But no, thatâs too obvious; the bank could see who transfers the money, so there must have been something else here, but how could the thief be in their home doing these transfers?  The money was being transferred from the targeted accounts using ACH transfers.  This is how you usually pay someone or pay your bills online.  Now, what was weird was that for First National Accounts at least, they had a load of extra security layers before an account could even get into an online account to do anything.  Thereâs the standard username and password, but also, there was a security question or PIN number that you needed, which is good.</p>
+
+<p>Itâs an extra layer of security you want your bank to have.  Well, for First National, they used to send their banking customers a list of PIN numbers in the mail.  So, whenever they wanted to log into their online bank account, they used a PIN number from the list as well as their username and password to get in.  But First National was clever, too.  See, generally, people are creatures of habit, right?  So, First National logs metadata stuff for their customers, like when they usually log in from what IP address, and what browser they usually use, all this stuff.  So, if a login attempt happens but itâs not from the typical browser or IP address that theyâre used to seeing, then it could trigger an extra security check and block the login until the user confirmed that itâs really them.  The point of telling you all this is that thereâs all these extra security checks to make it harder for hackers to get in.  Because if you think about it, if you lived in Omaha and logged into your bank there all the time, every time, and then all of a sudden there was a strange login from Russia, that should trigger some alerts, right?  So, these extra security measures were designed to stop hackers from doing that.  Yet still, in this case, the thieves were able to get into these accounts and take large sums of money out.  So, the FBI was baffled by how they were doing this.</p>
+
+<p>Weeks later, the US security intelligence company iDefense made a find that turned everything on its head.  iDefense monitors and defends against cyber security threats, and on June 1, they found a brand-new version of ZeuS, and this one came with some pretty advanced capabilities.  To say Slavik had upped his game would be a bit of an understatement.  For the last few years, Slavik had used many different usernames on the web, but he was often seen talking about ZeuS, and took ownership as the author.  [MUSIC] He had cycled through lots of usernames like A-Z, Monstr, lucky12345, and pollingsoon before he seemingly decided to stick with Slavik.  Slavik had made a lot of money selling ZeuS as a crimeware kit.  Imagine $3,000 on average for each one he sold.  He sold a lot; by spring 2009, it was believed that there were 5,000 different customers using ZeuS.  The scale of this malware and the number of hackers using it was just huge.  But Slavik felt like he was getting ripped off, and he was not happy about it.  People were trying to resell their copies of ZeuS and their own customized versions of it using the ZeuS name that was well-known and respected because of Slavikâs excellent coding and continued updates.  They were making profit off of his work.</p>
+
+<p>There was another problem, too; banks were getting better at their online security.  There were more kinds of two-factor authentication coming in, more layers for hackers to have to get through before they could get into a bank account.  So, in early 2009, Slavik teamed up with Avalanche who were still dominating the market in their banking phishing scams, and wrote the next big version of ZeuS.  This would be called JabberZeuS.  So, the DIY kit for ZeuS gave the basic functions needed for ZeuS to steal credentials once it infected a machine, and it had the ZeuS Builder so that people could make their own botnet.  But on top of this basic package were extra modules and add-ons, too.  [MUSIC] So, there was the form-grabber made for FireFox for a cool $2,000, and there was another feature, the backconnect module, which was $1,500 and allowed the hacker to redirect any tracing of their transfers out of bank accounts back into the infected computer itself.  This is so the transfers would always just trace back to the computer of the user and not to the hackerâs computers.  The big additional module available with JabberZeuS was the Jabber chat notifier, but you had to pay an extra $500 for that.  The add-on included Jabber, which is an instant messaging app.  So with this module enabled, ZeuS was programmed to send an instant message in real time to the hackers whenever a user or an infected machine logged into an online bank account that had over a certain amount in the account balance.</p>
+
+<p>This made it even easier for whoever was running ZeuS to get notified and interact with the malware on someoneâs machine.  Can you imagine a new instant message just pop up from an infected machine telling you hey, I just found a bank account with $100,000 in it, and hereâs the username and password.  The chat messages would send you login credentials, bank account details, the balance, and the two-factor authentication code that the user used to log in with.  This allowed hackers full access to the bank account as long as they acted quick.  You see, the beauty of this new model is that hackers could sit back and see live updates via chat messages when their target logged in; what two-factor authentication code was used, what backup questions were answered, and the hackers would capture all this, and they would simply hop into that computer to process some transactions.  The computer user just had no idea that bank account transfers were being done on their machine in the background.  There was one more module available for ZeuS; the virtual networking computer module.  For $10,000, this would allow the hackers to 100% control the infected machine using an active virtual connection.  It was several steps further than the bank connect module.  It meant they could essentially tunnel all their traffic through the userâs computer to hide their footsteps.</p>
+
+<p>This way, the bank thinks the user logged in from home and not from Russia or wherever the operators were from.  With the development of JabberZeuS, Slavik was employing a small team of talented hackers to help him steal money from banks, people he knew and hand-selected, and they started to focus on corporate accounts, like big corporate accounts, with hundreds of thousands of dollars in them.  This would mean they could siphon out much bigger sums of money and transfer them to the hackersâ accounts.  But one of the biggest challenges for these thieves is after they get into someoneâs bank account, how are they gonna get the money out?  Because they have to know how to launder money so that itâs not tracked back to them.  Electronic transfers like ACH are great, but the robbers canât just transfer your money straight into their bank account, because that would lead the FBI right to them.  No, they needed to hide their trail and muddy the waters a bit, putting some distance between the fraud and their own accounts.  The answer to that is money mules.  [MUSIC] The hackers behind ZeuS needed to find people willing to act as go-betweens, a middle point between the fraud and the thieves.  Itâs sort of like an air gap for the money to make it harder to trace.  So, what they do is advertise a job on some online job board like Craigslist.  Now, obviously they donât advertise money mule for hire.</p>
+
+<p>No, theyâre very deceiving about this, perhaps posting a job for a writer or someone to do some clerical work at home.  But when they hire the person to do the work, then they ask them to commit a crime.  But the person doesnât realize itâs a crime; the thieves will say something like listen, we need to pay one of our suppliers, but our bank is having problems.  Is it possible for us to send you the money and then you write a check to them?  By the way, you can keep 5% of the money as a bonus for helping us do this.  So, the unwitting money mule agrees.  They get the stolen money added to their account, then they write a check for a little less than the full amount to go to the thievesâ account or another money muleâs account.  The reason why this is illegal is because the money mule is laundering money; theyâre taking stolen funds and passing it along.  Itâs an easy job; you donât have to leave the house, and it pays well.  So, lots of people are tricked into doing this.  It might not smell legit, but hey, if the jobâs paying nice, maybe thatâs enough to keep people from asking questions.  Just keep quiet, do the easy work, and get paid.  No big deal, boss.  I got it.  What these money mules donât realize is yeah, theyâre just moving money about, but theyâre totally liable for it and are probably going to take the rap for it.  Thereâs been so many cases of money mules going to prison for years for doing this.</p>
+
+<p>So a word of warning; if you ever see a job posting online that seems suspicious or too good to be true, it probably is.  Donât touch it.  So, once this new version of ZeuS landed, there was just an onslaught of attacks using it.  Slavik was still selling JabberZeuS version as a kit, but now he had some new terms for the older ZeuS.  He had gotten pretty sick of people ripping off his code and bootlegging different versions of it.  So, he decided to do something with JabberZeuS that was pretty rare for malware at the time; he hardcoded an ID system into it and got real selective on who he sold it to.  So, when people paid for a copy, they got one, but that would only work on one machine.  It was basically like a license that you could only run on one computer unless you paid for another copy.  [MUSIC] Slavik was tightening things up and preparing for some busy times ahead.  On June 29, 2009, employees at the First Federal Savings Bank spotted something abnormal in a clientâs bank account.  The account belonged to Bullitt County Fiscal Court in Kentucky.  Thatâs the bank account for the court in Kentucky.  The bank employee saw there had been twenty-five new employees added to the payroll system starting on June 22, just a week before.</p>
+
+<p>More than that, straight after a new employee was onboarded, they were transferred a sum of money from the account.  But the transfers were all under $10,000, which made it really hard to notice.  It was a stroke of luck that this bank employee spotted it at all.  After checking in with the Fiscal Court, the court knew nothing of this activity.  They immediately started to process and reverse these payments, because these werenât legit at all.  But what they couldnât figure out is how it had been done.  You see, this court had some extra security measures in place.  On this particular account, you needed two people to sign off on all transfers, and specifically it required a sign-off from the Bullitt County treasurer and judge, yet somehow these hackers bypassed that and got their transfers through.  Both the bank and Bullitt County reported the fraud to the FBI.  The news reached that Special Agent who was investigating the same problems in Omaha and realized pretty quick the clues matched.  These transfers looked very similar to what was going on in Omaha.  On July 2, Brian Krebs wrote an article about what happened in his Washington Post column.  He said he had a source inside the investigation who told him exactly how the hackers had carried this out.  They also told him this was the work of JabberZeuS.  First Federal Savings was a bank that had customersâ profiles in place for all their account holders.</p>
+
+<p>So, this was a profile of the usual and expected online behaviors of their customers.  This included stuff like the device and operating system they usually log in with, the browser that they usually use, and if all this matched their accounts, it would let the transaction through.  But if it didnât match, it would send another security check to the e-mail address to authenticate.  You know how it goes; when you log into Amazon or Google from a different device, you need to verify by going through an extra check before it lets you in.  Itâs the same idea here.  Anyway, so, this is what was set up on the account for Bullitt County, but what surprised people was this still wasnât enough to stop the thieves getting in and making these illegal transfers.  Why?  Because they were using JabberZeuS, and this is how they got around the security hurdles.  [MUSIC] The thieves had targeted a specific person, the county treasurer, knowing that this person is probably who had access to the bank account.  So, they infected the treasurerâs computer with JabberZeuS.  I donât know how, maybe through a phishing link or something, but they got the malware on there and it did what it was designed to do; it went off and hunted around for the username and password for the First Federal Saving online bank account.  But they needed more than that, so JabberZeuS also got them the treasurerâs e-mail account details.</p>
+
+<p>Using the backconnect and VPN modules, the crew made sure that they were going through the treasurerâs own internet connection when they logged into the bank.  This way, when anyone looked back to try to trace what happened, it would look like it was someone at the treasurerâs computer who had done this.  So, step one is complete.  Next, they logged into the bank account as if they were the treasurer, and they went to the section for details of the two people who were required to sign off the transactions for the account.  They already had the treasurerâs details; that was fine, but they needed the judge to approve these transactions, too.  So, in order to do that, they saw that the treasurer could reset the judgeâs password, and so, they just did that, and they were able to get into the judgeâs account that way.  So, once they got in, they wanted to transfer money out, and what they did is they had twenty-five money mules ready for money, and so, they just created twenty-five fake employees that would be on the payroll and made transfers of money to all twenty-five of these people, and then logged in as the judge and approved all these transfers.  It sounds like a lot of work, but I think they did it all in less than ten minutes.</p>
+
+<p>They stole $415,000 from Bullitt County doing this, and it was just sheer luck that the bank spotted this, and because they acted quickly, they were able to reverse some of these transfers and recover some of the money.  The crew behind JabberZeuS were on a roll.  They hit banks, small businesses, even schools over the following months, anywhere they found good money sitting in online bank accounts.  Their range of targets were pretty varied.  The bank account owned by All Things Possible was hit in early July.  The same day, Armstrong Fitness Ink was hit, and just over a month later, the Franciscan Sisters of Chicago had their account hacked and money stolen.  There was no one this group wouldnât steal from, but their crusade of bank fraud wasnât going to last forever.  The FBI were investigating more and more of these types of attacks.  They had begun to recognize the hallmarks of JabberZeuS.  There were a lot of common factors across this fraud, which made them think it was the same crew.  In September 2009, they finally got a break.  [MUSIC] The FBI managed to trace the domain of the Jabber server which was used to send instant messages by ZeuS.  The malware led them to a domain called incomeet.com.  The IP address led them to a server company hosted by Ezzi.net, which was in Brooklyn, New York.</p>
+
+<p>Being a US-based company, the FBI was able to issue a search warrant and see the extra details of the customer that was paying for that IP and server.  The feds went there and saw the computer that was being used.  It was running CentOS 5.0.  It had a 500 gigabyte hard drive, two gigabytes of RAM, dual-core AMD processor.  The FBIâs first question was whoâs the customer using this server?  The best information they got was that it was an individual calling themself Alexi S. who said they were from a company based in Moscow in Russia.  Back in Omaha, Nebraska, FBI engineers started to examine the contents of the server.  What they had was the full Jabber server that the JabberZeuS crew was using for their attacks.  It had logs and records of every attack, bank details and credentials that theyâd stolen, the names of the banks and businesses that have been unlucky victims, but it also had â to the sheer surprise of these engineers â the full backdated instant chat logs between members of the hacking crew.  It was all there, black and white, and it was all in Russian.  This triggered a long process to try to translate all the chats, but by the end of it, the FBI had an absolute gold mine of evidence.</p>
+
+<p>There were also a list of victims that the FBI could now go to and inform them that their accounts were hacked into.  By this time, Slavik was using ZeuS to make money in three different ways; he was using it to steal money from banks, he was renting out the botnet to people who wanted to use it, and he was selling the ZeuS malware for well over $8,000 for anyone who wanted to use it for themselves.  He was bringing in a ton of cash with this endeavor, and he wasnât slowing down, either.  He went on to add even more new features and came out with ZeuS V2, which gave the users ability to monitor network traffic, capture screenshots, record victimsâ keystrokes, steal certificates, and connect to other banking systems.  But of course, other people were seeing how effective this malware was and wanted to get in on the profits, too.  A couple of people named Gribodemon and Harderman took ZeuS and modified it to make a new malware called SpyEye.  First versions were terrible, but the kit cost just $400, compared to ZeuS which was over $8,000.  Because SpyEye was so cheap, it started to attract attention.  The more people bought it meant the creators were spending more time improving it.  As SpyEye improved, the price went up from $400 to $1,000.</p>
+
+<p>[MUSIC] The team behind SpyEye wanted ZeuSâ customers and targeted them with deals and specials which created a power struggle between ZeuS and SpyEye.  SpyEye was also programmed so that when it infected a machine, it would check to see if ZeuS was on it, and it would delete it.  So, a battle of botnets began.  Slavik, of course, did not like this and was like, nah, I donât think so.  This is rude.  So, he updated ZeuS to try to delete SpyEye, and this back-and-forth continued.  Then suddenly and strangely, in October 2010, both ZeuS and SpyEye made an announcement that ZeuS would no longer be available for sale and that the ZeuS business was going to be handed over and merged into Gribodemonâs SpyEye.  This was one weird and unexpected announcement.  One side just suddenly giving up, and now theyâre friends and merging?  Gribodemon and SpyEye looked like they were coming out of this battle victorious, and was leading the show now.  Some people thought that Slavik wanted to retire and took this opportunity to hand over the reigns and quietly slip into the shadows of the internet while someone else takes all the heat.</p>
+
+<p>But the merger never actually happened; SpyEye never took on ZeuSâ code or features or botnet.  Meanwhile, the FBI was following clues and trails and was paying very close attention to the activities of ZeuS and SpyEye.  The investigations led them to discover there was a SpyEye server in Atlanta, USA.  The FBI was able to issue search warrants to infiltrate the server and found it was controlling over 200 bots and had information pertaining to a lot of financial institutions on that server.  This gave the FBI a lot more clues as to who was behind SpyEye.  [MUSIC] Then 2011 rolls around and suddenly, the entire set of ZeuS source code is leaked online, all of it.  This meant that anyone could develop their own version of ZeuS and make more malware.  By this point, Slavik had gone dark and silent.  The ZeuS source code is available online and being used by all sorts of people with different ideas.  SpyEye was creating new updates and developing their malware, but then quietly, Gribodemon disappeared and was no longer active on the underground communities.  But while to the outside world, Slavik had seemingly disappeared and gone silent, he had in fact been working on a new version of ZeuS V2.1.  He changed it from a repeating license software to one that was based on a subscription model delivered via the Cloud.</p>
+
+<p>On 2011, ZeuS V2.1 became ZeuS Version 3, and it was the first online banking malware to be offered as a service, MAAS, malware as a service, and this would soon develop into a new version of ZeuS which had peer-to-peer capability, and that version was called Gameover ZeuS.  Gameover ZeuS was the most effective and successful version of ZeuS yet.  In September 2012, someone used it to steal $465,000 from a company and sent the money to an account in China.  In September 2012, someone used Gameover ZeuS to steal two million dollars from a US printing company.  Iâm actually not sure how successful this was or who did it, since some of these heists can ring alarms and bank employees can scramble to freeze transfers and recover the funds before the money mule can send it to the next hop.  We really donât know who was doing these heists either, since ZeuS can be used and bought by anyone.  What we know is that Gameover ZeuS was used in the robbery, but we donât know who was using it.  But these are examples of the different types of licks people were going after with it.  Regardless, if Slavik was the one behind the heist or not, he was certainly making a ton of money with Gameover ZeuS.</p>
+
+<p>[MUSIC] Gribodemon, the maker of SpyEye, went on holiday to the Dominican Republic, but little did he know, he was being watched by the FBI, and they alerted the Dominican Republic authorities to arrest him and extradite him to the US.  He was charged with bank fraud and money laundering, and he pled guilty for creating the SpyEye malware.  Gribodemonâs real name was Aleksandr Panin, a twenty-seven-year-old from Russia, and was sentenced to nine years in prison for creating the SpyEye malware.  But along with that arrest was another SpyEye developer, Hamza Bendelladj, a twenty-seven-year-old from Algeria.  He was responsible for marketing and spreading SpyEye and using it to attack victims and send spam and malware.  Hamza was sentenced to fifteen years in prison for his role in SpyEye.  In the spring of 2012, Microsoft announced they had seized over 800 domains that were used by SpyEye and ZeuS botnets.  They worked with authorities to turn over information that they discovered from this.  A few more security researchers joined in to help Microsoftâs Digital Crime Unit to attempt to take down the botnet by attacking its command and control servers and taking down domains involved.  See, the ZeuS botnet had to receive instructions from a central authority for what to do, and if you could take down that central system, the whole thing would become inoculated.</p>
+
+<p>But that central system was hosted in a place that was not touchable, so the next best thing to do is take down the domain name that points to that system, essentially making it so the bots donât know where to go for commands.  You can do this by reporting malicious domains to certain places to get them sinkholed, but this has to be a coordinated takedown, to do as much damage as possible to the botnet in as little time as possible to not allow it to recover somehow.  So, the coordinated sinkholing of domains was executed, but it did not take down the ZeuS botnet.  Gameover ZeuS was built with impressive resiliency and it just switched to a whole new set of domains and command and control server.  This was going to be very hard to take down.  [MUSIC] By the summer of 2012, the FBI had enough evidence of who was running ZeuS that they issued an indictment for ten people involved with operating ZeuS malware, but they didnât want to tip their hand and let the criminals know they were onto them, so they kept this indictment sealed and secret.  But among those indicted was Slavik, the mastermind behind ZeuS.  The FBI infiltrated the ZeuS network and had collected enough evidence to indict him.  However, they didnât know his real name and just indicted him under one of his online names, Lucky12345.</p>
+
+<p>He was being charged with conspiracy to participate in racketeering activity, bank fraud, conspiracy to violate the Computer Fraud and Abuse Act, conspiracy to violate the Identity Theft and Assumption Deterrence Act, and aggravated identity theft.  Slavik was in Russia though, which was safe from the long arm of the American law.  But of course, Slavik had no idea he was indicted and carried right on selling ZeuS to people, supporting the software, and using it to rob banks.  In November 2012, someone using Gameover ZeuS stole over $6.9 million from a single target.  If that wasnât enough, they decided to DDoS the bank for the next few days, which meant the bank was suffering from major network outages.  I mean, I guess might as well, right?  If you control a whole botnet of devices, why not use it to attack your victims when theyâre down just so you can make a clean getaway while they deal with the mess?  Jeez, the audacity.  But this $6.9 million heist was the largest known robbery done by the ZeuS malware.  We donât know who did it exactly, whether it was someone who bought it or Slavik himself.  In 2013, there was another attempt to take down the botnet, this time attempted by some researchers at CrowdStrike, a security company, and they attempted to sinkhole all the domains that were involved with ZeuS and coordinated a wide-scale attack on the network.</p>
+
+<p>They successfully sinkholed the domains, but the ZeuS botnets continued to stay up, almost without a hitch.  There was a secondary layer of redundancy that the team didnât know about, and it just fell back onto that and kept on infecting systems and robbing banks.  When a takedown attempt like this happens, Slavik is on the other side, trying hard to maintain control of the botnet and keep everything up.  He knew these kind of takedowns would be attempted and was always seemingly one step ahead and was ready, which is very impressive.  I mean, imagine a major campaign where someone is trying to completely destroy your network at work.  How many layers of redundancy and backup strategies do you have to fall back onto to maintain a completely functioning service for your customers?  The resiliency here is just amazing.  Slavik called his team the Business Club, which consisted of six members.  Each member had their own specialty; some were good at tech support, others good at creating malicious software, and some were good at recruiting money mules.  Together, the Business Club thought about other ways that the ZeuS botnet could make money, and thatâs when it hit them; ransomware.</p>
+
+<p>[MUSIC] In October 2013, they decided to add the CryptoLocker ransomware into the ZeuS malware kit.  Now, ZeuS infects computers and steals passwords, then listens for bank logins.  But when all thatâs done, it can now encrypt the system and demand payment to un-encrypt it.  Truly nasty.  The first major time we saw this in action was in November 2013.  A police department in Massachusetts was hit with ZeuS and then the ransomware CryptoLocker.  But the Business Club only demanded $750 to unlock the system, so the police department paid it, and thatâs pretty cheap when you look at how much ransomware demands are today.  By May of 2014, the FBI discovered the real identity of Slavik.  His name was Evgeniy Bogachev.  He was in his twenties, living in Anapa, Russia.  They indicted him under his real name and charged him with even more counts of bank fraud and money laundering.  In 2014 and 2015, the US Department of Justice spent an enormous amount of energy trying to take down the ZeuS botnet.  Here is the Assistant Attorney General Leslie Caldwell of the US Department of Justice Criminal Division to explain what they did.</p>
+
+<p>LESLIE:	So, hereâs what we did; beginning in the early morning hours on this past Friday and continuing throughout the weekend, the FBI and foreign law enforcement began the coordinated seizure of computer servers around the world that had backbone of both Gameover ZeuS and CryptoLocker.  These seizures took place in Canada, France, Germany, Luxembourg, the Netherlands, the Ukraine, and the United Kingdom.  Recognizing that the seizures alone would not be enough because cyber criminals can quickly establish new servers in other locations, our team began a carefully timed sequence of technical measures.  These measures were designed to wrest from the criminals the ability to send commands to hundreds of thousands of infected computers and to direct those computers to contact the server that the court authorized us to establish.  Working from command posts in the United States and at the European Cyber Crime Center in the Hague, the Netherlands, the FBI and our foreign counterparts, assisted by numerous private sector partners, worked around the clock to accomplish this redirection and to defeat various defenses built into the malware, as well as significant countermeasures attempted in real-time over the weekend by the cyber criminals who were trying to keep control over their network.  Iâm pleased to report that our actions have caused a major disruption of the Gameover ZeuS botnet.</p>
+
+<p>JACK:	Bob Anderson of the FBI explains the extent of players involved with this takedown.</p>
+
+<p>BOB:	Gameover ZeuS is the most sophisticated botnet the FBI and all of our allies have ever attempted to disrupt.  In fact, this is the largest fusion of law enforcement and industry, partner and cooperation, ever undertaken in support of an FBI cyber operation.  Todayâs actions are part of an operation called Clean Slate.  The FBIâs Pittsburgh, Omaha, and Washington field offices have led the Gameover ZeuS investigation with the assistance of our legal attacheâs offices in Canada and in Germany.  Participants in the Gameover ZeuS operation include law enforcement from the Ukraine, the United Kingdom, Japan, France, the Netherlands, and Canada, as well as our European Cyber Crime Center.  Among the many private sector partners who assisted by helping victims remediate the damage to their computers infected by the Gameover ZeuS botnet are as follows; the Microsoft Corporation, Dell Secure Works, CrowdStrike, Newstar, Symantec, McAfee, F-Secure, Abuse.ch, Afilias, Level 3 Communications, and Shadowserver.</p>
+
+<p>JACK:	The US Deputy Attorney General James Cole had some additional comments.</p>
+
+<p>JAMES:	Today weâre here to announce that over the weekend, the department disrupted two extremely damaging cyber threats.  We have also identified and charged one of the leaders of the Eastern European criminal cyber gang that is responsible for these schemes.  Evgeniy Bogachev, a Russian national, has been indicted in Pittsburgh, Pennsylvania for his role as an administrator of the Gameover ZeuS botnet.  Bogachev, a true 21st century criminal who commits cyber crimes across the globe with a stroke of a key and the click of a mouse is also charged in a newly unsealed criminal complaint in Omaha, Nebraska [MUSIC] for orchestrating a related botnet scheme.  These crimes have earned Bogachev a place on the list of the Worldâs Most Wanted Cyber Criminals.</p>
+
+<p>JACK:	A place on the FBIâs Cyberâs Most Wanted list.  Letâs see, yep, there he is.  His face is right there on the front of a big, bold Wanted poster, with some identifying details like his birthday, eye color, weight, and aliases.  But thereâs something about this Wanted poster thatâs different than all the others on the FBIâs Cyberâs Most Wanted list.  This one has a $3 million-dollar reward tacked onto it.  This is the largest reward offered by the FBI for a wanted hacker.  Huh.  While the FBI put him on the Most Wanted list in 2015, Slavik still hasnât been caught.  Heâs presumably still in Russia, and the FBI has tried to work with Russia to get custody of him, but despite their efforts, they have not been able to bring him to justice.  In total, itâs estimated that the ZeuS botnet infected 500,000 to one million computers worldwide, and 25% of those computers were in the US.  The FBI reported they estimated that the US victims lost over $100 million from fraudulent bank transfers alone, and another $27 million was collected from ransomware payments.  Thatâs a lot of money.  Whatâs surprising about this malware is while itâs used to rob banks, it didnât attack the bank directly; it attacked the customers of the banks, stealing money from usersâ accounts, which is a lot smaller payouts versus stealing money directly from the bank.  But when you can get your malware spread on a large scale like Gameover ZeuS did, a bunch of smaller payouts add up to be quite a lot, making this one of the most sophisticated and lucrative pieces of malware ever.</p>
+
+<p>(OUTRO):	[OUTRO MUSIC] This show is made by me, the FBIâs least wanted, Jack Rhysider.  This episode was written by the crime traveler, Fiona Guy.  Sound design by the splendid Andrew Meriwether, and editing help this episode by the wide-eyed Damienne.  Our associate producer just back from his trip to a cyber soiree is Ray [REDACTED].  Our theme music is by the steel-toed Breakmaster Cylinder.  When I was a kid, my grandpa used to tell me to get a job cleaning windows, so I did.  But I was also pretty good at cleaning Macs and Linux machines, too.  This is Darknet Diaries.</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

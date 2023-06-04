@@ -1,0 +1,437 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>Zain â Darknet Diaries</title>
+	<meta name="description" content="Ransomware is ugly. It infects your machine and locks all the the data and to unlock you have to pay a fee. In this episode we dive into some of the people behind it.">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Zain â Darknet Diaries">  
+	<meta name="twitter:description" content="Ransomware is ugly. It infects your machine and locks all the the data and to unlock you have to pay a fee. In this episode we dive into some of the people behind it.">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/zain.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/44/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Zain â Darknet Diaries" />
+	<meta property="og:description"        content="Ransomware is ugly. It infects your machine and locks all the the data and to unlock you have to pay a fee. In this episode we dive into some of the people behind it." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/zain.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/44/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/zain.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/44/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="Zain â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/zain.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 44: Zain</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://traffic.megaphone.fm/ADV2330388531.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/44/",
+			   "title": "Ep 44: Zain"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/44">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[FULL TRANSCRIPT]</p>
+
+<p>JACK:	[MUSIC] Ransomware is a special type of malware.  Itâs kind of new and different compared to other malware.  While most malware is quiet, downloading silently in the background, hiding itself from the victim, ransomware is the opposite.  The moment it installs on your system, it announces itâs there in the loudest and boldest way possible.  Ransomware locks down your computer completely, rendering it unusable.  The purpose is to shout out that is has taken over your machine and until you pay a fee, youâre not getting it back.  There are so many stories right now about businesses and government departments that are getting hit with ransomware and it costs them hundreds of thousands of dollars to fix.  Russian railways got hit, banks, hospitals, governments, towns.  The mobile phone operators got hit.  Universities in China were hit.  FedEx got hit in the US.  TelefÃ³nica in Spain, and Renault in France.  Theyâre all infected and their data was held ransom.
+<!--more--></p>
+
+<p>But what about the everyday person, the person who has a laptop and uses it in evenings and after work, and goes on the internet to do shopping and other stuff?  What happens when we are targeted by an internet thug?  This story is about exactly that.  Itâs a story about individual users being hit with ransomware on their own computers, and the criminal behind it was a teenage boy in his bedroom.  Thereâs a twist to this story, one that gave this criminal a hook to threaten and frighten his victims into paying ransom fees.  Itâs an example of social engineering at its best, or maybe its worst.</p>
+
+<p>JACK (INTRO):	[INTRO MUSIC] These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	This is a story about a guy named Zain Qaiser.  The year was 2011.  Zain was seventeen years old, living at home with his parents in Barking, which is in East London, UK.  At the time he was studying Computer Science at City, University which is right in the middle of London.  He spent most of his time on his MacBook Pro.  City, University was one of the first in the UK to offer degree courses in Computer Science.  More than that, they have one of the highest rates of graduate employment.  Those who complete their courses are getting good jobs in InfoSec and going off to have great careers.  Zain would not complete his courses, or graduate, or go off to have a great career.  [MUSIC] Thereâs a whole secret malware economy that exists in the dark parts of the internet.  You can hire a hacker or buy exploits, you can pay for botnet usage, or you can buy and sell stolen data from people.  Online criminals today will often only be one part of the supply chain.</p>
+
+<p>One exploit kit found for sale on the dark web is called Angler.  Some really clever hackers made it.  We think it was probably Russian-made.  Hereâs how it works; it starts by somehow getting you to visit a malicious website.  Now, websites you can visit can tell a lot about your computer.  They can check what version of Flash youâre running, or Java, and if you go to a website that has the Angler Exploit Kit running on it, itâll do just that.  Itâll check what software versions youâre running.  Itâll basically scan your computer for out-of-date software.  Itâll check your Adobe PDF Reader version, then your Silverlight version, then your Java version, then your Flash version.  If it sees any of these are out of date and have a known vulnerability, it moves onto Step Two.  It will try to exploit that vulnerability and gain access to your computer.</p>
+
+<p>Letâs dive into this for a second, here.  One of the vulnerabilities the Angler Exploit Kit will use is whatâs called a Use After Free vulnerability.  This is where the program had some data in its memory but itâs done with it and freed it, but somewhere in the program is still a reference to that part of the memory.  Okay, suppose you were eating popcorn with a friend, watching a movie.  Youâve got a bowl of popcorn on your lap and youâre sharing it with them.  They take a handful, [00:05:00] then you take a handful, then they take a handful, then you take the last handful.  The popcorn is gone.  The bowl is empty but your friend doesnât know it.  They still think thereâs popcorn in the bowl so you play a little trick on them and put a bowl of spaghetti on your lap instead.  When they go to reach into the popcorn bowl, they stick their hand in the bowl of spaghetti.  This is kind of what Use After Free vulnerabilities are like, sorta.</p>
+
+<p>Your friend was programmed to reach into the popcorn bowl, thinking there was something there, but there was nothing there.  In software world, you can put some commands in that bowl so when the software reaches for it, it executes those commands you told it to.  Kind of brilliant, huh?  Okay, enough with the bad analogies.  Angler is an exploit kit, meaning it doesnât just contain one exploit, but instead it looks all over your computer for any exploit it can use.  It might have dozens of possible exploits to try and if it finds one, it then runs commands on your computer that it shouldnât be able to run.  This is where Angler sort of stops.  Its job is really just to get in and execute the payload.  A payload could be anything, though; it could be to steal user data or passwords, it could be to tie your computer into a botnet, or it could be just to delete everything on the computer.</p>
+
+<p>In short, if you have outdated software on your computer and visit a website running the Angler Exploit Kit set to destroy your computer, your computer will then be infected in seconds and begin deleting files.  Scary stuff.  Seventeen-year-old Zain Qaiser thought this was cool, though, and thought this had potential to make him some money.  The problem was the Angler software was sort of hard to get at the time.  In early 2012, Zain was very active in chat rooms and forums using his username K!NG but with an exclamation point for the âi.â  He had an idea and he wants to put his plan into action.  [MUSIC] Zain makes contact with the Russian creators of Angler and tells them he has the skills and experience to make them a lot of money.  You provide the malware, he said, and Iâll get it infected on a lot of computers.</p>
+
+<p>Zain tells them that heâs experienced in social engineering and that heâs good at manipulating people to get what he wants, and heâs got no problem doing it.  Heâs a native English speaker and knows how the online advertising industry works.  Zain suggested a split of the profits.  It was a partnership pitch and one of the Russians were open to hearing this pitch.  An agreement was made.  Zain got started on his plan.  He got the Angler Exploit Kit which is good at getting into the victimâs computer, but thatâs all itâs good for.  You still need a payload or an action once the machine is exploited.  Zain decided to weaponize Angler with Reveton.  Reveton is a powerful ransomware that will encrypt an entire userâs hard drive with a password.  Then you have to pay money to get that password to decrypt it.  This worked perfect for Zain.  Now he has a weaponized exploit kit all set up on a website, waiting for anyone to visit it to get infected.</p>
+
+<p>But how do you trick someone to go to your website to get infected?  His idea was to buy online ads that point people to his malicious website.  Where would he buy those ads?  On porn websites.  The Russians provided him with some fake identities, and documents, and credentials so he could convince legitimate advertising agencies that he was just an everyday advertiser.  This is a typical example of malvertising.  Once people click on this link, they get redirected to a malicious website and the computer would be infected with that Reveton ransomware that Zain equipped into Angler.  Now, if youâre going to demand a ransom payment, you need to have something your victim is willing to pay for.  Sure, if you locked up someoneâs computer and say pay me to unlock it, that may work, but Zainâs plan was a little more diabolical.</p>
+
+<p>The Reveton ransomware is sometimes known as the Police Virus and thatâs because when you get infected with it, it shows you a police logo and tells you the victim has broken the law by visiting this porn site.  Not only does the computer get frozen, but all of a sudden there are words on the screen that say âpornâ and âchild pornâ and âFBIâ and âcriminal charges.â  Well, you get the idea.  For Zain to target people going to porn sites to try to get them to click on this ad so that they can be infected with the malware was a perfect match for this ransomware.  Itâs sort of a brilliant combination of social engineering and hacking.  Victims of this would not only be mad but theyâd be embarrassed, and ashamed, and scared, even.  If you infect your familyâs computer or a work computer, jeesh, what a mess it would be to explain that you were on a porn site when you got infected.  Zain was ruthless at targeting these people, and soon with his paid ads, hard drives began getting infected with this malware.</p>
+
+<p>Zainâs ransom screen would even say that the victimâs IP was reported to the police.  But to make it all go away all you have to do is pay $200 and everything is dropped.  People started paying up.  In the summer of 2012, with his agreement with the Russian crime group in place, Zain began his first stage which would become a colossal ransomware scam.  [00:10:00] Thereâs almost no website on the internet that doesnât display some sort of advertising.  An advertising space on popular websites with large traffic is in demand and advertisers will pay good money to secure that advert slot.  The problem comes in when the advert placed is just in front of malware secretly embedded in its code.  Some big-name websites have been hit with malvertising like the New York Times and The Atlantic.  These websites have high-traffic numbers and they didnât know anything about these scams that were going on.  Zain was fully aware of malicious advertising, malvertising, and he understood how to implement it.</p>
+
+<p>He acted as a legitimate advertiser looking to purchase advertising space on some of the biggest pornography sites in the world.  He took part in real-time bidding of premium ad spaces; a constant changing market, and the bidding process is competitive.  Basically, by paying for ads, he was buying traffic to his site and paid traffic got fast results.  [MUSIC] Set it up, and straight away you can see more visitors and more clicks.  All Zain needed is a click on that advert and the ball started rolling.  This knowledge was partly why Zain was of interest to the Russian crime group.  With their coding skills and his understanding of the ad market, they were onto a sure thing.  The advertising company Zain was working with knew nothing about his real intentions.  Zain laced his adverts with redirects to websites infected with malware, the Angler Exploit Kit.  Users didnât know it but as soon as their browser hit that website, Angler was scanning their system, looking for a way to infect it.</p>
+
+<p>The Angler Exploit Kit is like a sniffer dog trying to find its target.  Now, why doesnât Antivirus stop this, you might ask?  Well, first of all, a lot of people donât use Antivirus so theyâre like sitting ducks, especially if they donât update their software.  This is why Iâm telling you always update your software.  But second of all, the creators of Angler were really clever to avoid its detection.  It would constantly change domains and IPs to avoid any blacklist and it would encrypt all traffic to avoid Antivirus seeing malicious commands coming over.  It would change the way it looks to avoid any matching string detection that Antivirus might be looking for.  Itâs a rascal of a malware.</p>
+
+<p>Angler didnât even need its own files to launch an attack.  It didnât even need time on the machine before it could operate.  It can spot a vulnerability, send commands to exploit it, and then conduct whatever it needs to do on that.  On top of that, the Russian coders who made it had a zero-day vulnerability in it, too, a vulnerability in Adobe Flash that Adobe didnât even know about.  It was stealthy, cunning, and very effective.  [MUSIC] The ransomware favored by Zain and this Russian group was called Reveton.  Itâs been called the Police Virus, or even the FBI Virus, as it pretends to be an official police notice.</p>
+
+<p>REPORTER:	Target Eleven with a warning now to everyone who has a computer.  A new virus is not only infecting your computer but the crooks behind it are also extorting money.  Itâs called the FBI Virus but it has nothing to do with the agency.</p>
+
+<p>JACK:	This is ransomware with a twist of social engineering.  Itâs a psychological trick, a scare tactic.  The computer was frozen and displayed an FBI logo.  It just said âYou have broken the law.  You are facing imprisonment.  We have captured images on this adult site via your webcam.  This notice has locked and frozen your computer when you are viewing a pornography website.â  Embarrassment, shame, fear of exposure.  All emotions this malware banked on to push its users into following its instructions and paying the money to just make it all go away.  In the ransomware it even said the victimâs internet service provider had been notified by the Cyber Crimes Unit.  It even gives their IP address, host name, and it says âIllegally downloaded material has been located on your computer which has broken some copyright laws.â</p>
+
+<p>It all sounds and looks official, then says the user is subject to a fine of $200,000 or face imprisonment for up to three years.  Of course, if you want to avoid that, all you have to pay is this $200 fee and your computer will be unlocked and all criminal proceedings against you will be stopped.  It doesnât demand too much money as a ransom fee, just enough to be worth doing, but not too much that people wouldnât or couldnât pay for it.  Bitcoin was around then, the cryptocurrency, but it was only 2012 so it was only a few years since Bitcoin was created.  While Bitcoin wasnât quite popular yet and the prices were fluctuating a lot, people just werenât tech savvy enough to figure out how to buy Bitcoin and send it, so the solution was GreenDot MoneyPak prepaid cards.  These arenât linked to a bank account and each card comes with a unique fourteen-digit number.</p>
+
+<p>Once a card has been loaded with cash, you can give that number to anyone and theyâll have immediate access to those funds.  The US is the worldâs biggest user of these cards.  You can buy them at Wal-Mart, CVS, Walgreens, all sorts of big retailers, and put cash onto it.  It costs six dollars and you can deposit up to $500 on this card.  At the time, it was the [00:15:00] ideal method for anonymous internet criminals to accept money from their victims.  The Reveton ransom screen gave the user details, instructions on how to pay their fee.  Step one, take cash to one of these retail locations.  Step two, pick up a MoneyPak and buy it with cash at the register.  Step three, come back and enter the MoneyPak code into the code section on this message screen, and then click submit.  Itâs that simple.</p>
+
+<p>Zainâs paid ads taking traffic to his site was working.  People were getting their computers locked and they were paying to have it unlocked.  Money started to come in for Zain.  The next challenge was to get the cash and to make sure his Russian associates got their share.  Itâs not so easy to move a lot of money around as a criminal and not be caught by the police.  Zain would collect the money and then use Liberty Reserve to transfer it to his Russian associates, but he needed some help to do this.  [MUSIC] Liberty Reserve was kind of like the shady cousin of PayPal.  Itâs the black sheep of the digital currency family and one that was favored by a lot of cyber-criminals.  An account at Liberty Reserve didnât ask you for your real credentials, or proof, or identity, or anything in order to transfer money.  In fact, it didnât even have a full license to be operating as a funds transfer business, something which would later catch up with its founder.</p>
+
+<p>Someone who wanted to launder money quickly, and privately, and online knew this was a perfect setup.  Zain was the distributor of the malware and this ransom scam, but to launder the funds and get access to the money, he needed a middle man.  Thatâs where Raymond came in.  Heâs from Maple Valley in Washington.  Heâs thirty-five years old in 2012.  He was a student at Florida International University and his role was to cash the ransomware payments from the MoneyPak cards, and then heâd convert the cash to Liberty Reserve, transfer the money to Zain, and keep a little bit for himself.  The two got their routine polished pretty quickly.  Zain opens multiple accounts and prepaid cards using more fake identifications provided by his Russian contact, and he gives these accounts to Raymond.</p>
+
+<p>Raymond uses the MoneyPak codes for each ransom payment.  He logs into his MoneyPak account, uses the codes to transfer the ransom to fraudulent accounts.  Now, there are limits to the number of transactions and amounts of money that can be deposited through MoneyPak.  Deposits of up to $1,000 within a twenty-four-hour period seems to have been the standard allowance.  Raymond most likely had multiple MoneyPak accounts, all in fake names so that he could avoid hitting these limits.  Once he transferred the money into the accounts that Zain gave him, he could go and withdraw the money from multiple ATMs in different locations.  Then heâd send it to Zain through Liberty Reserve.  To open an account at Liberty Reserve, it was simple as name and e-mail address.  You need to convert your criminally-obtained cash so you buy what they call Liberty Reserve dollars with cash.</p>
+
+<p>That transforms your ransom cash into digital currency for a fee of about 5%.  To buy Liberty dollars, Raymond would have to go through an exchanger, someone located in a completely different country, who could purchase Liberty dollars in bulk.  Liberty Reserve itself had no identification details for the people who held accounts there.  They only had that name and e-mail address that used to open the account.  All the transfers from cash to Liberty Reserve and Liberty dollars back to cash were done through these middlemen exchanges, and technically entirely outside of Liberty Reserve itself.  All this is a complicated and technical way just to get clean cash that doesnât have a criminal trail but it was working for Zain, and Raymond, and the Russian coders.  Zain, back in London, received about 70% of the ransom payments.  That was his cut from this operation.  Pretty good.</p>
+
+<p>Money was rolling in nicely at this point and the more ads he bought on those porn sites, the more traffic heâd get to his websites which resulted in [00:20:00] more people being hit with ransomware which meant more people paying to remove it.  He was basically trading nickels for dimes.  The plan was working.  [MUSIC] He was still a student at City, University, living at home with his parents.  He didnât have any paid employment.  He didnât have any legitimate income but he was spending a lot of money that he was making through these scams.  He bought a 5,000 British pound watch.  He stayed in posh hotels and he partied with prostitutes.  He was using drugs and gambling a lot.  He was reported to have spent Â£70,000 in one London casino within a ten-month timeframe.  I wonder what he was telling his friends and family where he was getting all this money from.</p>
+
+<p>But the whole malware-as-a-business supply chain is fascinating to me.  Youâve got one team working to create the Angler exploit, and theyâre arming it with the Reveton ransomware which was made by a completely different group of people, and then Zain is there deploying it to the world to infect as many people as he could.  Then when the money comes in, Raymond over in Florida is laundering it and sending it back to Zain.  Itâs impressive how many things have to go on here for this operation to work.  Around this time, police in Spain began receiving hundreds of complaints of ransomware viruses.  A bunch of other people were investigating this, too.  The Trend Micro eCrimes Unit, The European Cybercrime Centre at Europol, the Spanish police, and Interpol all coordinated to help each other try to figure out who was behind this.</p>
+
+<p>This information-sharing allowed them to build up a pretty good picture of how the gang network was structured, including how they did traffic redirection and set up their command and control servers.  Under codename Operation Ransom, a twenty-seven-year-old Russian man was arrested in December 2012 while he was on holiday, apparently, in Dubai.  But it was discovered that he was the head of a Spanish gang.  A few months later, ten other people were arrested during six raids in MÃ¡laga, Spain.  But this group wasnât the one Zain was connected to; this was the group responsible for making the Reveton ransomware.  The police tracked them down, brought their whole operation to a crumble.  Seven Russians, two Georgians, and two Ukrainians were arrested.  Police were able to seize a lot of computers and equipment and credit cards that were used in all these ransomware attacks, and for laundering the money.  The police believed this gang was collecting more than â¬1,000,000 a year.  There were more than 1,200 reported cases of ransomware scams just in Spain since May 2011.</p>
+
+<p>But while the group who created Reveton was arrested, the Reveton software itself was in the hands of criminals like Zain to keep infecting people with it, and use it.  While this was a big success for the Spanish police to cut down on a lot of it, it didnât affect Zain at all.  [MUSIC] Three months later, in May 2013, the US government shut down Liberty Reserve.  Suspected of laundering more than six billion dollars in criminal proceeds, it had been under investigation for a while.  Its owner, Arthur Budovsky, was a shady character who had been dodging the law for years.  In 2011 he was told he needed the appropriate license to be running a money-transmitting business, but when his application failed, he simply moved his business to Costa Rica.  For two years, his operations were under police investigations with his funds being seized multiple times.  By the end of 2013, Arthur was in custody, along with seven of his employees, and Liberty Reserve had been officially seized and shut down.</p>
+
+<p>PREET:	Today we announce charges in what may be the largest international money laundering case ever brought by the United States.  Specifically, we unseal charges against Liberty Reserve and seven of its principals and employees, who for years have operated one of the worldâs most widely-used digital currencies.</p>
+
+<p>JACK:	Thatâs Preet Bharara, the US attorney for New York.  Liberty Reserve was a key part of the chain for Zain and Raymond, and the Russian crime group behind them.  Without the ability to convert the ransom payments through Liberty Reserve, they were going to have a problem.</p>
+
+<p>PREET:	Liberty Reserve was intentionally created and structured to facilitate criminal activity.  It was essentially a black-market bank.</p>
+
+<p>JACK:	When Liberty Reserve was taken down, everyone who had Liberty dollars in their accounts just vanished, and lost them immediately.  Those Liberty dollars were gone, no longer available.  Whatever value they represented in cash had now been lost overnight.  But now that the website was in the hands of the authorities, investigators started looking into who the users were for the site.  [MUSIC] Zain kept doing this but it looks like this is where Raymondâs involvement came to an end.  Raymond actually went on to secure a job as a network engineer at Microsoft and Microsoft had no knowledge of what Raymond was up to in the previous years.  To continue, Zain simply switched to a different crypto-currency platform.  The fall of Liberty Reserve highlighted his name to the investigating authorities and much of the profit-side of the scam was [00:25:00] uncovered in the following years from Liberty data.</p>
+
+<p>The authorities had followed the strings and were piecing together exactly what Zain had been up to.  As Zain continued to buy advert space, some advertising companies began getting suspicious of him.  They would challenge him and question him, and what Zain would do in response?  He tried to manipulate and even threaten the ad agencies.  He told the director of one of the companies based in Canada, quote, âReally, itâs better if we work together.  We can make some serious money together.  Itâs my way or no way.  The K!NG is back.â  End quote.  When he didnât get the response he wanted, he followed up with another threat.  Quote, âIâll first kill your server and then Iâll send child porn spam abuses to you.â  End quote.  Zain then launched a revenge distributed denial-of-service attack on these advertising sites that would host his ads.  The purpose of the DDoS attack was to make the targetâs website unavailable, essentially take it down.</p>
+
+<p>It overwhelmed that website and made it crash, making it unavailable for website users and therefore customers of the company.  Zain used his methods of attack as revenge.  It was simple retaliation.  You question me?  You donât want to come on board with me?  How dare you.  Iâll make you pay.  Zain wants to disrupt the business of those agencies and if he crashes the website, paying customers canât go to them and use their website to purchase ad space.  Itâs the core of their business.  The company was losing tons of money for every second that ads werenât being served.  Zain then launched more denial-of-service attacks against the websites that were questioning him.  Again, these were against the advertising companies who tried to stop what he was doing.  The DDoS attacks costs these businesses at least Â£500,000 and lost ads in incident response costs.  One of the ad agencies getting hit with this attack reported Zain to the police.</p>
+
+<p>The police were dispatched to Zainâs home and arrested him in July 2014, but he was released a few days later with no charges because of the lack of evidence.  Zain thought he outsmarted the police, but little did he know, the National Crime Agencyâs Cyber Crime Unit were now investigating him fully.  The fall of Liberty Reserve wasnât the only event across Zainâs active ransomware period that interfered with his operations.  In 2016, eighty-six raids in Russia arrested more than fifty individuals involved in the Lurk cyber-attack in Russian banks.  Lurk was malware that mimicked the online banking app for Russiaâs biggest bank, Sberbank.  Itâs estimated the gang behind Lurk stole forty-five million dollars from Russian financial institutions in just under two years.  In mid-2016, Angler was at its peak use, estimated to be behind 40% of all exploit kit infections.  By this time, Angler was being rented out by the crime group who owned it.</p>
+
+<p>Anyone willing to pay could get a version of it and use it however they wished.  There were quite a few people using this Angler kit to conduct these ransomware attacks; Zain wasnât the only one.  This spread the kit around the globe and was being operated by hundreds of different hackers.  The money it generated?  Researchers at Cisco Talos believe the Angler ransomware was making around sixty million dollars a year for hackers.  Cisco Talos research group looked into this a little further and found links between Angler and Lurk.  Itâs possible that in the crackdown of Lurk, they also caught some of the Angler hackers too, something that would have had an impact on the ransomware scam Zain was spearheading from the UK.  [MUSIC] In early 2017, the National Crime Agency in the UK had collected enough evidence from the Liberty Reserve servers to build a case against Zain.</p>
+
+<p>The police once again went to Zainâs house and arrested him.  Police seized Zainâs MacBook Pro and found logs, records, and data.  This tied him to the scam and that he was working with the Russian creators of Angler.  Over 3,000 chat logs and almost one million images were stored.  The computer was encrypted and was running both Windows and Mac OS.  Zain had created partitions with encrypted virtual machines, remote servers, and remote desktops.  He hid things pretty well, but this was the NCA, and itâs 2017.  They have a whole digital forensics team who can comb through everything to gather evidence.  Part of Zainâs downfall was copies of the control dashboard that he was using.  One of the cool things about Angler and Reveton was that it had these really cool dashboards that showed you how many infections there were, and where the infections were, and who paid, and all this stuff.</p>
+
+<p>This was present on his laptop and he was able to log into it.  One screenshot showed that Zain had received $14,00 in ransom payments for just July of 2014.  Multiple financial accounts were found that linked Zain to using different crypto-currencies overseas.  In February 2017 he was charged with blackmail, fraud, and computer misuse.  When he was questioned by the police, Zain told them that he was not involved with the scam and he had been hacked, but the digital forensics team was able to disprove this by collecting data on his computer.  [00:30:00] The NCA have provided some example calculations to demonstrate just how big this operation was.  They estimate that one malware infection advert showed on twenty-one million web browsers each month, with Angler being downloaded on approximately 16,000 computers.  Remember, this is one advert in one month.  From that, they estimated that 5%, so about 800 of these computers didnât have up-to-date Antivirus, and Angler could exploit the holes in their systems and deploy the ransomware.</p>
+
+<p>How many individuals paid up?  Itâs almost impossible to know, but a few research security reports suggest that the average is 40% of business ransomware victims do pay the ransom.  Letâs do some math here.  The individual people who were hit by the ransomware didnât have IT departments to turn to.  They didnât have people on-hand to advise them if this was a scam or real.  I doubt most people told anyone, and if they did, theyâd have to say they were on a porn site when this came up, which is embarrassing, not something that many are gonna want to admit to.  I think the percentage of individuals who paid up in this scam is way higher than 40%, but letâs go low; letâs say only 10% of the 800 users that were hit with the Reveton ransomware screen actually paid the ransom.  Thatâs eighty victims paying up at $200 each.  That makes Zain $16,000 a month.  With multiple adverts running per month, you can multiply these figures considerably.</p>
+
+<p>But there were costs involved with this scam, though.  It wasnât all profit-making.  Zain had to purchase the web traffic and bid for advert slots.  Raymond had to be paid to launder the money, and he had to pay exchange fees and transfer fees.  Of course, not all the profits went to Zain.  The Russians would take some of the cut, too.  The NCA had said across the five-year span of this operation, Zain moved at least five million dollars using multiple crypto-currency platforms and online accounts.  His personal profits they say were almost $900,000 by the time of his arrest in 2017.  [MUSIC] Meanwhile, in the Southern District Courts of Florida, in March 2018, Raymond was indicted and charged with conspiracy to commit money laundering.</p>
+
+<p>Raymond had been linked to the MoneyPak ransom payments and transfers through Liberty Reserve and his online username was Mike Roland.  He was charged that between October 2012 and March 2013, he was involved in laundering the money obtained by the Reveton ransom scam.  It was actually a failed transfer of $840 between two Liberty Reserve accounts that gave him away.  Prosecutors estimated that in the span of one year, Raymond moved about $93,000 collected from these ransomware payments.  Raymond went to court and was found guilty.  The judge sentenced him to eighteen months in jail with three years supervised release.  He accepted a plea deal to have one of these charges dropped. Microsoft somehow unwittingly found themselves dragged into this case after they employed Raymond, but unsurprisingly, they didnât make any official comment on this.</p>
+
+<p>Zainâs trial in the UK was scheduled for February 2018 but it was cancelled when Zain was sectioned under the Mental Health Act.  The details are unclear here; something like Zain had been put in a hospital in London for treatment.  But while there, in hospital, digital forensics showed he was still conducting ransomware scams and laundering money using the hospitalâs WiFi.  He was re-arrested again and put back in jail.  These further charges prompted a change in plea from Zain.  He now pled guilty to eleven charges in total.  Acquisition, user possession of criminal property, three counts of blackmail, three counts of fraud by false representation, and four counts of unauthorized acts with intent to impair the operations of a computer or creating risk of serious damage.</p>
+
+<p>On April 9th, 2019, Zain Qaiser was sentenced to six years and five months at the Kingston County Court.  The judge told him that his case and his cyber-attacks were so extensive, there had not been a comparable case found.  What Zain did could be classified as a common scam going around now called sextortion.  These are growing in popularity.  Theyâre so successful that criminals donât even need to put ransomware on your computer.  Sometimes an e-mail is good enough.  I mean, imagine if you got an e-mail that said hey, I know youâve been going to porn sites and Iâm a hacker.  I secretly recorded you masturbating over the web cam.  Send me Bitcoin or Iâm gonna tell your family and boss.  E-mails like this are becoming common.  I got one the other day and I traced it back to a guest blog post I wrote on a website a while back.  It had my e-mail address posted there.  These scammers scraped my e-mail off that website and sent me this e-mail expecting me to pay money.</p>
+
+<p>These e-mails are scary and itâs hard to ask for help or know what to do.  Iâm pretty sure most of them are scams, though, and some will try to show you proof by showing you your password but my Darknet Diaries listeners are savvy enough to know that there are tons of breaches [00:35:00] going on all over the world and your password is probably out there on the darknet, along with your e-mail.  Just having that really isnât proof of anything.  Without proof of anything thatâs actually embarrassing or any evidence, what are they really holding ransom?  Zain could have used his skills for good.  He could have been a white hat hacker.  He was obviously very technically skilled and good at advertising.</p>
+
+<p>He could have defended companies against threats and hacks like this.  He could have had a respectable career, but instead he chose this route.  He allowed his greed and ego to grow with him which led him straight to the arms of the NCA and FBI.  Although heâll most likely get out of jail in three years, he will probably have a hard time landing a good job after that.  If Zain is released from prison in three yearsâ time, heâll be twenty-seven years old then.  Heâll have blackmail, fraud, money laundering, distribution of ransomware, and hacker as labels that will follow him from now on, all for a few years of free money.  Was it worth it?  Only Zain can answer that.</p>
+
+<p>JACK (OUTRO):	[OUTRO MUSIC] Youâve been listening to Darknet Diaries.  Hey, if you didnât notice by now, this show has a whole new logo, new artwork, new website, everything.  Check it out at darknetdiaries.com.  If you head over there, you can also buy shirts and stickers if thatâs your sort of thing, and I hope that is your sort of thing.  This episode was created by me, the zettabyte man, Jack Rhysider.  Research and writing help this episode was by Fiona Guy; editing by the dark-haired Damienne, and the theme music was created by the trebly-talented Breakmaster Cylinder.  See you.</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

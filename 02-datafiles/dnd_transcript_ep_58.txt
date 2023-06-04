@@ -1,0 +1,517 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>OxyMonster â Darknet Diaries</title>
+	<meta name="description" content="OxyMonster sold drugs on the darknet market Dream Market. Something happened though, and it all came crashing down.">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="OxyMonster â Darknet Diaries">  
+	<meta name="twitter:description" content="OxyMonster sold drugs on the darknet market Dream Market. Something happened though, and it all came crashing down.">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/oxymonster.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/58/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="OxyMonster â Darknet Diaries" />
+	<meta property="og:description"        content="OxyMonster sold drugs on the darknet market Dream Market. Something happened though, and it all came crashing down." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/oxymonster.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/58/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/oxymonster.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/58/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="OxyMonster â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/oxymonster.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 58: OxyMonster</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://traffic.megaphone.fm/ADV3598870537.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/58/",
+			   "title": "Ep 58: OxyMonster"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/58">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[FULL TRANSCRIPT]</p>
+
+<p>JACK:	I better do a warning here; this episode is gonna talk about drugs and dark markets, through like, the whole episode.  If youâd rather not listen to me go on and on about drugs for an hour, you might want to consider skipping this one.  Also, in my hope to listen to Episode 24 first; that oneâs called Operation Bayonet which goes into detail about drugs being sold on these dark markets.  Now, you donât need to listen to Operation Bayonet first but it does explain a lot of stuff and leads you up to the events before this one so itâs a good idea to pause this one, go do Operation Bayonet first, and then come back to this one.  [MUSIC] You know, the internet has really brought to life a whole new userbase that traditionally was very different.  For instance, stock market trading; traditionally this was a very slow system.  You first needed to get extra money to invest with which was easier to get decades ago.  Then youâd call your broker to buy some stocks.
+<!--more--></p>
+
+<p>Then you wait for a while and sell it maybe years later.  During that time, you might check the paper like every day, once a day, once a week to see how things are going because thatâs all you really had access to.  But the internet has made stock market trading so different.  You now have up-to-the-second data on stock prices, incredible tools to help you spot potential buys and endless YouTube videos of people teaching you how to do it.  Stock market trading has attracted a much younger, tech-savvy audience now, too.  People are in and out of the market in just a few minutes or seconds instead of years.  You can set up trading bots or scripts and get alerts when prices hit a certain amount and itâs all done without talking to a single person.  The traditional drug dealer has changed, too; it used to be all done on the streets through in-person meetings which means to be a drug dealer, you probably want to be a mean-looking person that nobody wants to mess with.</p>
+
+<p>Youâve got to be able to hold your own if the deal goes bad and not just let someone punch you in the face and steal all your stuff.  But now, you can buy and sell drugs online and the online drug dealers are a completely different group of people.  The street smarts have changed.  Instead of being able to defend yourself in a bad deal, thatâs been replaced with knowledge of shipping and packaging.  Instead of knowing how to hide from the local police patrolling the neighborhood and how to make deals in public casually without attracting any attention; all thatâs been replaced with the knowledge of being anonymous online because the most important thing for an online drug dealer is that they have to know how to stay hidden from the feds because itâs not your average cop looking for you.  Youâve got a huge task force of federal law enforcements around the world all trying to figure out who the top sellers are of these sites.  Every move you do online is being watched by them and youâve got to be 100% that youâre maintaining your anonymity because one wrong slip-up of revealing just a tad too much information can have severe consequences.</p>
+
+<p>JACK (INTRO):	[INTRO MUSIC] These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	Us humans are addicted to opioids.  We love this stuff.  Doctors have been prescribing it to us for decades in the forms of oxycodone, hydrocodone, codeine, fentanyl, and morphine.  I might even go so far as to say there have been wars fought over this stuff.  I mean, Afghanistan exports more opium than all other countries in the world.  In 2001, [00:05:00] the US invaded it.  Iâm sure opium played some part of that war but hereâs the thing with opium; if you have some serious pain, these drugs can make you feel a lot better.  But even if you take it for just five days, you have a 10% chance of becoming addicted to it.  The longer you take it, the bigger chance you have of being addicted.  American doctors have a problem with over-prescribing medication, so doctorâs prescriptions are a huge contributing factor to the opioid addiction.  When the patient is no longer in pain and goes home from the hospital, they might start feeling sick.</p>
+
+<p>They might start feeling nauseous and sweating and chills, and vomiting and anxiety, and they crave their medication again.  But of course, the doctor wonât give them any more so to help with their sickness they turn to the streets to look for more of the same medicine.  But of course, the streets have a bigger variety of opioids and for pretty low prices, too.  Of course, one of the easiest ways to buy street drugs now is online on darknet markets.  Itâs just much easier and convenient to buy drugs online but online darknet marketplaces are shady and secretive.  Theyâre an online dealerâs playpen where real identities are hidden and illegal substances are everywhere like LSD, hydrocodone, meth, cocaine, heroin, fentanyl, itâs all there.  These markets have both sellers and buyers.  One such dark market drug dealer is named Kyle Enos.  He got arrested in the UK for selling drugs on a darknet market.  Hereâs an interview he had with UKâs National Crime Agency.</p>
+
+<p>OFFICER:	Youâve been arrested on suspicion of production and possession of a controlled drug of Class A.  Are you responsible for the production and possession of that drug?</p>
+
+<p>KYLE:	Production?  Iâve never produced anything.  I donât â I order it from online and it comes and then I basically just distribute it.  Thatâs it.</p>
+
+<p>OFFICER:	What do you offer on your profile?  What is offered?</p>
+
+<p>KYLE:	Buy-one-get-one-free.  I donât produce anything.  Iâm not an organic chemist or anything like that.</p>
+
+<p>OFFICER2:	With the fentanyl content in the drug there then, do you put any gloves on or any protective clothing when you do it?</p>
+
+<p>KYLE:	Yeah, gloves, âcause I donât wannaâ¦whatâs the word?  I donât want to contaminate it or anything like that.</p>
+
+<p>OFFICER2:	What do you see are the dangers of that drug?</p>
+
+<p>KYLE:	Well, I know itâs a strong opioid which you know, I know that is quite strong opioids.  But like I said, I got a warning on my packaging.  Itâs a very strong do not take unless you know what it is.  Like I said, itâs all measured out correctly and everything like that.  I donât mix it with anything else.  Itâs exactly as itâs advertised and I donât say hey, if youâre a newbie, try it.</p>
+
+<p>JACK:	Kyle Enos lived in Wales in the UK.  He was twenty-five years old and he was selling fentanyl on AlphaBay, Hansa, and the Dream dark marketplaces.  [MUSIC] Fentanyl is seriously toxic stuff one hundred times stronger than morphine and fifty times stronger than heroin.  Going by the name Soviet Bear, he sold fentanyl to a hundred and sixty-eight people across the UK, the US and Europe in 2016 and â17.  Four of his customers actually died after taking it because thatâs the danger of fentanyl.  Itâs more lethal than any other illegal street drug.  Kyle was caught and arrested.  On February 5th, 2018, he got sentenced to eight years in prison.  For law enforcement, busting people on the darknet is a patient game of cat and mouse.  The vendors, buyers, and admins of the websites are trying to keep out of the way of the feds.  On the darknet, no oneâs real identity is used.</p>
+
+<p>Everyone is known by their chosen username and these names are the only way to recognize anyone.  But not knowing anyone is what makes this a game of chance.  Undercover agents lie in wait.  They pay attention, they follow all the leads.  If the users of the dark markets practice good operation security or OPSEC, itâll make it extremely hard if not impossible for feds to catch them.  Usually the feds have to wait for a lucky break or for someone to mess up so they can then track that user to a real person in the real world.  Ross Ulbricht was the founder of Silk Road, one of the first big dark marketplaces.  He was caught because he made a mistake and didnât cover his tracks well enough.  By the time he realized his mistake, it was too late.  Heâd been spotted by the FBI and they were onto him.  Alexandre Cazes, he created another dark marketplace called AlphaBay.  He, too, made a mistake and used his personal e-mail in the headers of a welcome e-mail to his website.</p>
+
+<p>He used the same e-mail address that was linked to his PayPal account which led the feds right to him.  [MUSIC] To get into the darknet you have to use Tor.  Tor is a hidden network that sits on top of the internet but only people who are on this hidden network can see whatâs on Tor.  On top of that, thereâs a level of privacy that makes things a little more attractive.  It basically hides your real IP address so you canât be tracked.  The website doesnât know which IP address any visitor actually came from and neither does anyone monitoring the traffic onto the site.  Of course, just hiding your IP is not enough to keep [00:10:00] you hidden.  You need to set up a burner phone, a burner e-mail, and do things like use a secure OS like Tails or Qubes and donât give any clues as to who you are.  Like, donât use the same browser to log into Facebook because that pretty much identifies you.  When you want to buy from a darknet market, thereâs another security layer you have to consider.  To buy drugs, you need to tell the seller your address and then pay for it.</p>
+
+<p>Thereâs no payment screens or PayPal or debit card on the darknet.  To be extra-safe, you donât want the site admins to see the address you want things shipped to so you set up a secure, encrypted chat between buyer and seller.  PGP, Pretty Good Privacy, the is usual one used.  It takes an extra step to set up but itâs worth it.  A buyer wants to talk to a seller.  The seller posts their PGP encryption key on their profile.  Then the buyer uses that key to send encrypted messages to the seller.  Only the seller has the decryption key to see what was said.  This makes the message really hard to read, if not impossible to read, by prying eyes.  Then to pay for the goods you need to send money.  While historically there used to be things like E-gold and Liberty Reserve, something is far better than that now; cryptocurrencies.  Cryptocurrencies like Bitcoin are the perfect way to pay for things on the dark marketplaces.  Itâs easy to get, itâs legal to own, transactions are pretty quick, low fees, and itâs completely anonymous.</p>
+
+<p>Bitcoin is not tied to any personâs name or address or social security number.  Whoever owns the private key to unlock the Bitcoin wallet is who owns that Bitcoin.  These dark markets all accept Bitcoin.  Sometimes other coins are accepted too, like Monero.  These are virtual currencies that can be exchanged for local money.  Itâs perfect for this and cryptocurrencies are untraceable.  Actually, wait a minute.  It turns out theyâre not completely that untraceable after all.  Silk Road was one of the biggest dark markets ever but it was brought down by the feds in 2013.  Shortly after that, new dark markets were entering the ring.  The Dream Market was stood up pretty quickly and it was modeled to look and act just like Silk Road which all the other dark markets were doing the same, too.  The structure followed the same trend; there were administrators and moderators to keep the site running smoothly, vendors that sold illegal goods, and buyers looking to make purchases on the quiet.  But of course, this kind of website will attract the FBI in a major way.  Hereâs a clip from the FBIâs website explaining what darknet marketplaces are.</p>
+
+<p>OFFICER3:	[MUSIC] On darknet marketplaces, they offer illicit goods such as drugs, guns, a hacked bank account, and credit card information.  A darknet drug vendor is a little bit different than an actual street corner dealer because of the reach that they have.  They have access to hundreds of thousands of buyers at a time from across the country as well as internationally.  Just by taking down one darknet drug vendor, you can have the same effect as taking down a traditional mid-level sized drug-trafficking organization.</p>
+
+<p>JACK:	You can see as darknet markets started rising in popularity, it also attracted the attention of the feds.  Dream Market had a dual-rating system for its vendors.  It was sort of like Amazon with star ratings from buyers.  The average score from vendors was shown on the profile along with the number of positive and negative reviews they had.  Build up a good sales history with satisfied customers, and theyâd get a trusted vendor label, a sure sign to buyers that this is a vendor that they are safe to buy from.  Dream Market also had a bug bounty system going.  If anyone spotted a bug or security issue on the site, they could report it to the admins and get seventy-five bucks.  At one point, AlphaBay became the most profitable dark market on Tor and Dream Market was the second biggest.  But when AlphaBay went down, Dream Market stepped in as the new king of the scene.  It was one of the longest-running markets in the time so sure, why not go to a long-running one which has a good reputation?  This is where Kyle Enos sold drugs.  You remember him at the beginning?</p>
+
+<p>He got arrested for selling fentanyl.  The National Crime Agency in England was very unhappy about that so the NCA set up a whole operation to try to catch Kyle because they ferociously fight to get fentanyl off the drug marketplaces because of how dangerous it is.  [MUSIC] Itâs just really lethal and the worst part about fentanyl is that people mix it into heroin and cocaine and sell it to people who are completely unaware theyâre taking fentanyl at all.  Itâs like, fifty times more potent than anything you think youâre taking.  The reason why fentanyl gets laced into other drugs is because itâs cheaper to make so some suppliers will get some fentanyl and try to sell it off as heroin to make more money.  Kyle said he sold fentanyl but simply passed it from the supplier to the buyer and didnât try to hide what it was.  Kyle was caught and arrested and is serving eight years in prison.  [00:15:00] In May 2015, a new person registered an account on the Dream Market.</p>
+
+<p>The username was OxyMonster.  Just six months after that, OxyMonster got promoted to administrator of the Dream Market.  Admins are the top tiers in these markets.  They have access to everything and have to be the most trusted of all.  To be given such a role in just six months tells me OxyMonster was not new to the scene.  No sensible site admin is going to give access to someone they knew nothing about six months ago âcause they could be anyone.  Thatâs the thing about these dark markets; anyone could really be anyone, including undercover police agents.  The DEA, FBI, and NCA are known to have their agents on undercover missions posing as buyers and vendors because they can use the anonymity of the dark markets to their advantage, hiding in with everyone else, watching and collecting data.  In fact, in early 2016, the DEA started creeping around inside the Dream Market.  They were posing as buyers and identified three vendors they were interested in.  The DEA bought drugs from DigitalPossi2014, ReximusMaximus, and MethForDummies.</p>
+
+<p>They ordered these drugs and had them shipped to Miami where the DEA could inspect them for any clues.  When they got them, they had the contents forensically tested to confirm they were narcotics.  OxyMonster wasnât one of these targeted vendors but his presence on the Dream Market was about to be noticed by law enforcement agents.  [MUSIC] In January 2017, DEA agents visited the Dream Market home page and looked around.  They saw there was a link to a forum called Dread.  They clicked it and found themselves inside a message board for dark marketplaces.  They saw this was somewhere people could go to for help and advice and it was a place where admins and moderators would help out buyers and vendors to give them tips on how to do things better or stay safe and secure on the dark web.  It also seemed to be an area where any disputes between users of the site could be dealt with and sorted out.  This is where the DEA agents first became aware of OxyMonster.  The DEA is the Drug Enforcement Agency of the US.  They combat drug trafficking both on the streets and online.</p>
+
+<p>They noticed OxyMonster was helping users on this forum and they also connected him to be an admin on the Dream Market.  They looked back at all of OxyMonsterâs posts on the forum which led back all the way to May 2015.  Whoever OxyMonster was, they certainly knew a lot about drugs and how to stay hidden on the darknet.  They were familiar with a lot of darknet marketplaces.  One of the things that caught the agentsâ eye was a post from March 2016 written by OxyMonster.  It warned users any message claiming to be from mods not listing in the post.  The DEA agents started watching OxyMonster on Dream Market and on the forums.  What does he do on this site?  How involved is he exactly?  By June of 2017 it was clear that OxyMonster was selling drugs on these dark marketplaces.  He was selling things like OxyContin and Ritalin which are prescription drugs.  Well, I guess that explains his choice of username.  He had sixty sales and got good ratings, too; positive reviews from satisfied customers.</p>
+
+<p>Now that heâs selling drugs on Dream Market, this has caught the attention even more of the DEA.  OxyMonster is an admin to Dream Market, a senior moderator on the forum, and heâs actively selling drugs to site users.  That would be enough to catch the attention of the feds.  [MUSIC] Now, when you buy drugs on Dream Market, you send your Bitcoin to an escrow account.  It goes to Dream Marketâs wallet and then gets handed to the vendor.  This is an extra layer of security so that the vendor doesnât know what the buyerâs Bitcoin address was and the buyer doesnât know what the vendorâs Bitcoin address was because you donât want the feds to know your Bitcoin address because they might have ways to track it.  The feds wanted more info on OxyMonster so they watched this post on these forums.  There was something OxyMonster would write in the footer of each post.  It said basically that if this post was helpful, please consider tipping and hereâs a link to a Bitcoin address.</p>
+
+<p>Hm, the footer also encouraged people to check out OxyMonsterâs account on TradeRoute which is another dark market.  That profile confirmed he was selling drugs there too, and listed the same tip jar address.  It also told feds that OxyMonster was a mod on the now-defunct Evolution dark market.  This is like a flashing light for law enforcement; two profiles with links to three different markets with the same Bitcoin wallet.  This is a person whoâs been very active in the dark marketplace forums for two years, is an active seller on [00:20:00] multiple sites, an admin on another.  Heâs just asking to be followed up on and thatâs the problem with these sites; you want a good reputation as a seller so buyers like you but as soon as you get one, the feds start looking for you, too.  While the feds were trying to find out who OxyMonster was on Dream Market, the FBI was working with the Dutch police to take out two of Dreamâs biggest competitors.</p>
+
+<p>[MUSIC] In 2017, AlphaBay was one of the biggest dark markets selling everything from drugs to weapons to malicious software.  The FBI was watching this market for months.  In July of 2017 they arrested AlphaBayâs founder, Alexander Cazes, in Thailand and took the market offline.  Again, this is something I covered in Episode 24.  Itâs a really fascinating listen so check out the episode Operation Bayonet if you want to know more because it was a pretty impressive operation the feds pulled off there.  At the same time, multiple law enforcement agencies came together including Europol and the Dutch police to take down Hansa, the other darknet market.  When AlphaBay and Hansa got taken down, the darknet community went into a tailspin.  Vendors needed a platform to keep selling and buyers still wanted to buy drugs online.  Despite all the paranoia and suspicion, users headed straight on over to Dream Market as their next dark market.  OxyMonster was already registered on Dream when all this went down with AlphaBay and Hansa.</p>
+
+<p>It seemed it didnât spook him at all.  One month after the takedowns, OxyMonster became an official vendor on Dream Market and started shipping drugs to the US.  With Hansa gone, he easily leveled up on Dream but what he didnât know was that the DEA were watching what he was doing and trying to figure out who he really was.  By August 2017, the DEA were following up on this tip jar Bitcoin wallet that OxyMonster was so keen to advertise.  The idea that the feds had was to follow the money.  While Bitcoin is supposed to be anonymous, if you follow it closely enough, you can sometimes figure out who owns a wallet.  At least if youâre the DEA, you might be able to.  A Bitcoin wallet is just a long string of numbers and letters.  Itâs impossible to link it to anyone.  But just as dark markets have evolved, so has the technology checking out Bitcoin.</p>
+
+<p>[MUSIC] You see, Bitcoin is virtual but thereâs a solid system underneath it, a method to make sure that thereâs a public record of every transaction that passes from one person to another.  Thatâs whatâs called a block chain.  Thereâs an army of Bitcoin miners, people out there voluntarily keeping the block chain up, so that this public database is available for everyone and up to date.  But now thereâs software available that analyzes Bitcoin transactions in the block chain.  See, the block chain records every transaction and itâs unmutable so you canât delete any records out of it.  The software can look for links between wallet addresses and activity and how things are moved around, and any patterns, and that sort of thing.  There are two tools that are used to do this; one is called Chain Analysis and the other is called Elliptical.  These are the two front runners and theyâre being used by the DEA, FBI, IRS, Europol, to trace Bitcoin transactions in criminal cases.</p>
+
+<p>[MUSIC] See, all Bitcoin transactions are public record, visible on the block chain for anyone to see.  By analyzing the block chain and following transactions and wallets, you can start to build a dossier on who owns what.  For instance, there was an escrow service on Dream Market.  You send your Bitcoin there to buy a drug and once the money is collected by Dream Market, the seller is notified to send the drugs.  If the DEA knows the Bitcoin address of Dream Marketâs escrow wallet, then they can use tools to see whoâs interacting with that wallet.  Now, when someone goes to withdraw their Bitcoin and turn it into local money, this is another step that law enforcement will monitor closely.  See, most Bitcoin exchanges are regulated and need to comply with local law.  This makes the exchange trustworthy but at the same time, it also means that law enforcement agents can issue search warrants on the exchanges to see who cashed out of certain Bitcoin wallets.  You see, the DEA had a variety of ways to track some Bitcoin wallets.</p>
+
+<p>They were using these methods to watch what was going out of that tip jar address on OxyMonsterâs posts.  Now, darknet drug dealers know this and have come up with a pretty clever way to keep their cashouts more hidden; Bitcoin tumblers.  Basically, itâs the same thing as taking a deck of cards and mixing them all up on the table, spreading them all over so that you canât see which card is what.  You can send your Bitcoin to a tumbler which will then break apart your money into a bunch of various transactions, mix them up a bunch with a bunch of other peopleâs Bitcoins, and then send you your money in a new, fresh Bitcoin wallet.  The DEA has a much harder time tracking money that goes through a Bitcoin tumbler.  Iâm not sure if there even is a way to track this.  [00:25:00] Now, Dream Market had its own basic tumbling services.  I mean sure, why not?  Itâs doing a lot of illegal transactions.  Makes sense to provide a tumbling service to help its customers be more safe and secure.</p>
+
+<p>But as the feds watched OxyMonsterâs Bitcoin tip jar address, they noticed he was sending money directly to an exchange without using a tumbler, not even the tumbler thatâs on Dream Market that he was an admin of.  The feds watched and they saw that OxyMonster sent his Bitcoin to a website called localbitcoins.com.  He did this fifteen times.  This is an exchange not regulated by the US law.  Itâs based in Finland but it didnât ask you for any ID to cash out which was what OxyMonster wanted; to be anonymous when he was getting his money.  OxyMonster cashed out on his tip jar earnings.  When OxyMonster cashed out at localbitcoins.com, the DEA was able to work with the authorities in Finland to get anything they could on who owned that Bitcoin address.  Since this exchange didnât have any ID for OxyMonster, the only thing the DEA was able to get was the username that was used to log into this exchange with.  That was it.  This was the only evidence they uncovered.  OxyMonster could have used any username in the world, random digits or letters, anything.  But OxyMonster made a huge mistake and chose the username Vallerius.</p>
+
+<p>Once the agents found this account which was called Vallerius, they set about trying to find more information.  They guessed that this might be someoneâs last name so they looked at social media and searched around the internet.  It wasnât long before they found a guy online named Gal Vallerius.  Heâs a French national with social profiles on Twitter and Instagram.  Gal Vallerius was thirty-six years old and living in the Brittany region of France with his wife and child.  He had French, English, and Israeli citizenship.  The feds thought he might be the person behind the OxyMonster account.  Agents began to compare the Dream Market posts with the posts on social media, looking for similarities in the writing.  They found common words used; like for instance, both OxyMonster and Dream Market and Gal Vallerius on Twitter said âcheersâ a lot in their posts.  Both sets of posts were sometimes written in French and used exclamation marks in the same way, too.</p>
+
+<p>The DEA began to strongly suspect that Gal Vallerius was OxyMonster.  But they still needed solid evidence to secure the case against him.  [MUSIC] One thing the DEA did discover when poking around in Galâs social media was a slightly unusual interest; beards.  That is, growing and comparing beard lengths.  Gal had a long beard down to his waist and he seemed pretty proud of it.  He was a competitor in the World Beard and Moustache Championships and an active member in an app called BeardWars.  On his social media account he was posting that the next beard competition was in Austin, Texas on September 1st, 2017 and guess who was going?  Gal was going to Austin to compete in a beard competition.  When agents realized Gal was flying into the US to attend, they knew this was their chance.  The DEA contacted Homeland Security Investigations and asked for their help.  The plan was to detain Gal at the airport while he was going through customs.  They were going to tell him this is a routine check on all digital devices that he had with him.</p>
+
+<p>Remember, theyâd been watching Gal for months, slowly building a case that he was the guy behind OxyMonster profile on Dream Market.  This airport play was a big deal and the feds had to act quick.  September was fast approaching and they needed more evidence if they were going to link Gal with OxyMonster if theyâre going to get this into court.  This was a bit of a gamble for the fedâs part; they knew he was flying into the US for this three-day beard competition and they just assumed he was going to bring his laptop into the country with him.  I mean, if he was going to be coming for a few days, maybe heâd want to tend to his dark markets and do some trading while he was away, right?  I guess thatâs a fair assumption.  If they could get past whatever encryption and password protection he had on there, they might be able to get the evidence to prove that Gal is OxyMonster.  Thatâs what the cops were betting on.</p>
+
+<p>Getting into his computer would be crucial for convicting him and it posed a real challenge to authorities so they had to come up with a plan to arrest Gal at the airport with his laptop unlocked.  When we come back from the break, weâll hear what the authorities did.  [00:30:00] On August 31st, the day before the competition, Gal and his wife Yasmin flew from Paris into Atlanta International Airport in Georgia.  When they came off the plane, it was just after 1:00 p.m. in the afternoon.  At this point Gal had no idea the feds were onto him.  They were stopped at customs and taken into a side room.  The agents told them this is a routine check for US passengers flying into the country and they have to check all electronic devices for child pornography.  [MUSIC] A Homeland Security agent then searched their bags.</p>
+
+<p>He found Galâs Samsung laptop, an Apple iPhone, Yasminâs iPhone, and iPad tablet.  The custom agents asked Gal for his pins and passwords to access these devices.  Now, youâd think anyone involved in darknet trading would be guarding those passwords with their life but Gal, still thinking this is just a routine check, handed them over.  He logged into his devices and unlocked his computers for the agents.  The agents left the room with his devices and didnât come back for two hours.  Gal must have started to get nervous at some point waiting for them to return.  I mean jeesh, two hours is a long time to wait for US customs to check your devices.  I bet he regretted logging in.  I mean gosh, what is he thinking?  Now heâs stuck in a country heâs not familiar with in a side room with some customs agents.  Typically, itâs hard to argue with these guys or else you might have to go back home.  He was getting more worried.  The longer they took, the more nervous he got.</p>
+
+<p>The agents told him that they were searching his computer for child porn and he knew he didnât have any so he thought he was probably safe.  Heâs probably thinking that the custom agents wouldnât be able to recognize what dark markets were or Tor or anything like that.  A typical custom agent might not know what those are.  But little did he know, these werenât normal customs agents.  [MUSIC] In the other room, agents logged into Galâs laptop using his passwords and started to look around.  They pretty quickly found an application on his desktop called Wallet.  Inside was five hundred thousand dollars-worth of Bitcoin.  Next, they found the Tor browser and what looked like login details for Dream Market.  They were getting pretty excited now.  This was looking good.  Then they found a private PGP key labeled OxyMonster.</p>
+
+<p>A quick check and they confirmed this is the key that matched the key on OxyMonsterâs Dream Market account.  This proved that Gal Vallerius was OxyMonster.  With that, the feds had enough evidence to arrest and convict him.  When the agents finally returned to that little room where they were holding Gal in, they arrested him for conspiracy to distribute narcotics, operating a darknet marketplace, and money laundering.  He was also given his Miranda rights.  When asked about the Bitcoin they found, Gal told them he had taken money out of his bank account and just bought the Bitcoin.  After all, itâs perfect legal to hold Bitcoin.  After that, Gal asked for a Hebrew-speaking lawyer.</p>
+
+<p>The next day, a search warrant was granted for a full forensic search on Galâs laptop and phone.  The search confirmed the evidence that the agents found at the airport.  Gal was in trouble.  The World Beard Championships in Austin took place that day but without Gal.  While his competitors were doing whatever it is you do at a beard competition, Gal and his award-winning beard were in police custody and had just been indicted for conspiracy to distribute drugs.  Five months after that, in January of 2018, an announcement was made from the US Attorney General Jeff Sessions.</p>
+
+<p>JEFF:	J-CODE.  I kind of like it.  By bringing together the DEA, our Safe Streets Task Forces, our drug-trafficking task forces, our healthcare fraud special agents and other assets, and the FBI, will more than double its investment in the fight against online drug [00:35:00] trafficking.</p>
+
+<p>JACK:	[MUSIC] J-CODE stands for Joint Criminal Opioid Darknet Enforcement and was going into full effect.  This was going to be the FBIâs flagship task force to take down dark marketplaces selling opioids and bring prosecutions against the administrators and vendors.  While Gal sat in his prison cell awaiting trial, the FBI and Department of Justice were gearing up to investigate and identify more vendors and more markets across the darknet.  With more funding, more agents, more investigations, and intelligence analysts, the dark drug marketplaces were firmly in the crosshairs of the feds.  Gal was not granted bail and stayed in custody in the US.  His lawyers wanted to get rid of the evidence found on his laptop at the airport.  That was the stuff that would seal his fate.  If they could get that thrown out, Gal would have a fighting chance.  In March of 2018, seven months after his arrest, they submitted a motion to have this evidence ruled inadmissible.</p>
+
+<p>It said that Gal had voluntarily handed over his device passwords but he did that before being given his Miranda rights.  It said he did it under false information that the agents were hunting for child porn and he didnât give them consent to root through his files and folders looking for Bitcoin, dark web connections, and login details.  While the legal process for Gal was slow moving, the new FBI J-CODE team was not hanging about.  [MUSIC] On April 3rd they announced the result of J-CODEâs first mission.  They called it Operation Disarray.  Operation Disarrayâs goal was to coordinate takedown of multiple dark market vendors who were in the US.  On March 30th the team had made a total of eight arrests, conducted a hundred and sixty interviews, seized numerous weapons, computer equipment, counterfeit currency, and drugs all related to darknet markets and vendors.  If you go to the FBIâs website and look for Operation Disarray, youâll see this video of them making arrests.</p>
+
+<p>OFFICER4:	This week around the country weâre executing Operation Disarray.  The FBI headquarters has sent out information and is working in coordination with field offices all over the country.  Weâre working with all our federal partners here involved as well to go out and both encounter customers of dark web marketplaces, dark web narcotics traffickers, as well as get the word out on the dangers of potentially what theyâre purchasing.</p>
+
+<p>OFFICER5:	Youâll see from the picture at the back of the ops plan, it is on the corner, so thereâs two doors on the house.</p>
+
+<p>OFFICER4:	This morning weâve come out to execute two federal search warrants and an arrest warrant on an individual thatâs a dark web narcotics trafficker.  In particular, this trafficker is specializing in the opioid derivative of fentanyl.  We meet up here to do a pre-op briefing, talk of everybodyâs last-minute changes, what their assigned duties are, make sure that weâre all on the same page to make sure this all goes smoothly and itâs done safely.  [SHOUTING] FBI, show your hands!  Come out!</p>
+
+<p>We had successfully executed the search warrant and the search system themselves resulted in the seizure of both narcotics, a firearm, and numerous digital devices which may have been used to set up and facilitate this activity online.  The individual is transported of course to the US Marshals and to the federal courthouse to appear before a judge.  The end goal is to of course remind the end user, the end purchaser both of the dangers of the dark web marketplace and the fact that law enforcement is very cognizant of this activity and weâre going to be continuing to stay on top of it.</p>
+
+<p>JACK:	[MUSIC] J-CODE law enforcementâs newest operation against the dark markets was in full swing.  For Gal, his situation just got worse.  On April 24th another charge was added to his indictment; conspiracy to commit money laundering.  Now he had more charges.  Gal was looking at a potential life sentence behind bars if he was found guilty.  His wife desperately pleaded for him to be shown mercy but the feds werenât budging.  Along with OxyContin and Ritalin, they believed Gal Vallerius as OxyMonster was involved in the sale of methamphetamine, fentanyl, heroin, cocaine, and LSD through his roles in the Dream Market.  On May 10th, 2018 the prosecution dropped their final playing card against Gal; a motion to have his past criminal history included in his trial.  At this point, it all became clear.  Gal was not new to the darknet or selling drugs using Bitcoin.</p>
+
+<p>He was a pretty seasoned player.  They found connections of him being on Silk Road, Silk Road 2, AlphaBay, Hansa, and a long list of other dark markets under the user name Gehenna which means Hell in Hebrew.  They also said Gal had been a member of an online criminal forum since October 2016.  But I couldnât find any details about that.  Now, remember Hansa market, right?  Gal was a vendor there, too.  Now, the details are not clear here because it seems it was a different username but OxyMonster was an active seller on Hansa.  In fact, there were even chat logs where he was talking to the Dutch police through Hansaâs site.  I donât know how the DEA [00:40:00] made the connection that he was the same person but they did, perhaps because of a matching e-mail address or Bitcoin wallet or something.</p>
+
+<p>Iâm not sure but it seems like the Dutch police had quite a lot of information about him when they took down Hansa.  All this adding up was a huge hit to Gal.  Just after that, his motion to have his laptop evidence thrown out was rejected.  If Gal went to trial now, heâd be facing some very strong cases against him at this point.  The evidence of illegal darknet activities was mountainous and dating back years.  I guess he realized the game was up so Gal changed his plea to guilty.  A month later on June 12th, he accepted a plea deal.  He agreed to plead guilty to both of the charges against him in relation to selling and distributing OxyContin and Ritalin.  He would also forfeit all of the Bitcoin proceeds he had amassed through his darknet activities.  At the time this was agreed on in October 2018, this would have been over $700,000 worth of Bitcoin and Bitcoin cash.</p>
+
+<p>As Gal waited to be sentenced, the feds had to do something with all the Bitcoin that they seized from him.  See, the problem with Bitcoin is, well, itâs virtual.  [MUSIC] Itâs not widely-accepted and really isnât that much use to the Justice Department at all.  This first came up after the arrest of Ross Ulbricht of Silk Road.  The amount of Bitcoin they seized from Ross was colossal, like 170,000 Bitcoin.  Under forfeiture of assets, the feds are used to getting houses or cars or boats or jewelry, physical things that they can sell for cash.  But Bitcoin is entirely a different thing.  It was decided that Bitcoin would be treated as an asset rather than money, so it would be handed over to the US Marshals who have responsibility for disposing of the seized assets of criminals.  So, the US Marshals decided to auction the Bitcoin off.  Yeah, to turn it into cash.</p>
+
+<p>Theyâd sell it off to the highest bidder.  To do this, they have to be real careful theyâre not selling criminally-obtained Bitcoin back to criminals.  A $200,000 deposit is required and registration into the auction is required.  Government-issued IDs and documents must be presented before you can bid in the auction.  This worked and four auctions later between June 2014 and November 2015, the US Marshals had made sixty-six million dollars from the Silk Road Bitcoin.  But then where does the money go?  Well, it seems if victims of crimes were involved then some of the money goes back to compensate them, and the law enforcement agencies who worked on the case can apply to get some of the money back into their agency.  So, sometimes they get some but the rest goes straight to the Department of Justice where then they apparently hand out bits to different law enforcement agencies wherever they see fit.  In other words, we donât really know where the money goes.</p>
+
+<p>So far, they havenât done anything with Galâs $700,000 in Bitcoin.  Will they auction it off?  Probably, but the government isnât too keen on telling people how much Bitcoin they own.  There can be huge gaps between seizing Bitcoin like they did from Gal and actually putting it to auction which is weird to me but also makes it very hard to track.  We might not ever know when Galâs Bitcoins go up for bid.  Gal, of course, is never gonna see his Bitcoins again.  On October 9th, 2018, in the southern district of Florida, Gal stood in front of the judge to be sentenced.  He gave short answers in Hebrew and then the judge sentenced Gal Vallerius to twenty years in prison.  Galâs arrest and conviction took out a big player in the darknet drug markets.  It was a win for the feds who believed they proved that the dark market vendors could be tracked and identified and that undercover operations could be very effective.  But even though Gal was behind bars, Dream Market was still open for business and thriving.</p>
+
+<p>By January 2019 the feds were on a roll, though; [MUSIC] the FBIâs J-CODE team riding on the back of their Operation Disarrayâs success, were onto their next mission.  This time they called it Operation SaboTor.  On January 11th agents across the US and international law enforcement agencies worked together to identify and disrupt the big players selling drugs in the dark markets.  Pooling their resources and manpower, they were using everything available to them to make a serious impact.  Operation SaboTor was not mucking around.  A month later in mid-February, the Dream Market started to have problems.  The platform became intermittently unstable.  Vendors couldnât log in.  Buyers couldnât access the website.</p>
+
+<p>It would work and then it wouldnât work, and then it would work again.  Mods were posting to Dread, a dark market forum, and they said that Dream Market was under a DDoS attack by hackers demanding $400,000 US dollars.  But the Dream Market admin was refusing to pay and trying to find a work-around to stabilize the market.  It turned out it wasnât just Dream that was getting hit; two other leading marketplaces, Empire and Nightmare, were also getting Ddossed, too.  [00:45:00] On March 26th the US Department of Justice publically announced Operation SaboTor and its results.</p>
+
+<p>OFFICER6:	[BANGING] FBI, search warrant!  During Operation SaboTor our law enforcement partners spoke with over a hundred darknet drug buyers.  Approximately sixty-one darknet drug traffickers were arrested, fifty-one firearms were seized, almost three hundred kilograms of drugs, and over seven million dollars in cash and cryptocurrency was seized.  [BACKGROUND TALK, COMMOTION]</p>
+
+<p>JACK:	Hm, letâs put two and two together here for a second.  The feds, the FBI, is doubling down on their fight against the sale of opioid and are actively trying to find vendors and stop them.  At the same time, they just got access to OxyMonsterâs computer.  [MUSIC] Now, keep in mind, OxyMonster was an admin to Dream Market so Iâm just assuming here but it seems like a fair assumption that this means that the FBI was probably now admins of the Dream Market.  Because if I was an FBI agent on this task force, I would certainly be posing as OxyMonster who was the admin, and not show my hand.  I would save all the chat logs with other admins and dealers, and I would try to get more information from other admins.  I would certainly look to see if I could find out who owned Dream Market because the FBI has a keen interest in taking down this marketplace.  Iâm willing to bet they used their unique position here to try to take down Dream Market and the people who run the site.</p>
+
+<p>On that very same day that the FBI announced Operation SaboTor, a notice appeared on the front page of Dream.  It told users the market would be shutting down on April 30th but it would be moving to a partner platform and it would get a new onion address.  This was unusual.  If the feds got control of Dream, I donât think they would move it to a whole new website with a new URL and everything.  Maybe the owners figured out the feds had admin access and were just jumping ship.  I donât know, but this was a voluntary shut down of a really successful dark market.  Itâs not unheard of that this happens but itâs definitely unusual.  Whatâs also strange is the message wasnât signed with the usual PGP key which was expected from the marketâs admin.  But as soon as that notice went up, the DDoS attacks on Dream appeared to have stopped.  Users turned once again to the dark forums to try to get some answers but there was a new problem; the Reddit dark market forum which was available on the surface net had been banned from the site.</p>
+
+<p>A new Reddit policy meant its content violated their rules and the subreddit had been removed.  But the Dread forum was still up since itâs a forum on the darknet and more posts from mods started showing up there.  They said Dream was rebuilding and would be opening again soon as a new dark market.  It would be better-built and more resilient from DDoS attacks.  While everyone was waiting for this new Dream Market to appear after Operation SaboTor, the feds got another win, [MUSIC] this time involving big-time vendors on Dream.  Just nine days after Operation SaboTor was announced, on April 4th, three men were arrested in New Jersey.  Chester, Jarrette, and Ronald had been operating two storefronts on the Dream Market under the name sinmed.</p>
+
+<p>Under a fake company called Next Level Research and Development, these guys had allegedly bought a powder-mixer, pill-press, a tablet-making machine.  They had a DIY pill-making factory and were selling deadly fentanyl-laced heroin along with Xanax and methamphetamines.  In fact, they were up there as one of the top three Dream vendors with the most amount of sales.  Taking payments in Bitcoin, they were loading prepaid debit card accounts so they could use the crypto-cash at ATMs to withdraw the Bitcoin as cash.  The feds believed sinmed laundered 2.3 million dollars in cryptocurrency selling them through Dream Market and using the laundering method over a two-year period.  Their use of ATMs is what eventually got them caught.  Chester was charged with selling controlled substances and identity theft and Jarrette and Ronald were faced with conspiracy and money-laundering charges.</p>
+
+<p>Right at the same time, Dream users began to report that Dream support staff were scamming vendors.  They were locking down peopleâs accounts and asking for vendorâs passwords and recently-used Bitcoin addresses to verify their identity.  If the vendor sent their password over, the password was then changed and their PGP key removed so the vendor couldnât access their account at all.  With echoes of what the feds did when they took over Hansa, this was not good news for Dream.  For two months nothing happened.  Dream planned on switching to a new URL but just hadnât.  Then in July a new market popped up and it was an [00:50:00] almost exact replica of Dream.  It was called the SamSara market.  Was this the new market that Dream mods promised?  Maybe.  I guess it seemed so but it was slow-going.  Dream users were suspicious, with many fearing that this is just a honeypot set up by the feds to capture more vendors and buyers.</p>
+
+<p>But the site looks good, it works good, and began getting some traction.  However, in November 2019 it went offline.  The site admins said theyâre experiencing a massive DDoS attack and have gone offline.  Itâs been down for months now.  Itâs still down during the time of this recording.  Iâm not sure if itâs coming back or what.  Perhaps this is another move executed by feds through J-CODE since they donât seem to be letting up on the persistent attack on all these sites.  [MUSIC] Ross Ulbricht, the founder of Silk Road, the first big dark market, he got prison for life.  Alpha Bayâs founder, Alexandre Cazes, could possibly have the same charges but heâs dead now.  OxyMonster was administrator, senior mod, and active vendor on Dream Market whoâs now in prison for twenty years.  His darknet career is over and Dream has gone down.</p>
+
+<p>His Bitcoin fortune has been handed over to the feds and heâll now spend decades behind bars which makes me wonder if heâs gonna come out with the most epic beard of all time.  Some prisons allow prisoners to grow beards, especially for religious reasons, but others force people to trim it back to a quarter-inch in length for security reasons.  What got Gal identified and caught was because of a mistake on his part; not using a tumbler for the Bitcoin tip jar, using the same tip address in multiple places, and sending his tips to an exchange with his last name as his login.  Gal was not new to dark markets.  He had been around the block a long time yet he still left a trail.  Itâs easy to see the mistakes Gal made now but itâs not so easy to stay safe when youâre juggling dozens of accounts, hundreds of thousands of Bitcoin, and doing it for years and years and years.</p>
+
+<p>One or two little slip-ups is all it takes.  Gal had no idea the feds were onto him and just how much they had traced back to him.  The good news of this story is that some fentanyl vendors have been rooted out and stopped.  This is a seriously messed up drug that has no business in any drug dealerâs hands.  I know Iâve mentioned fentanyl a few times in this episode but Iâm not sure you fully understand the dangers of it.  Fentanyl was first prescribed by doctors, specifically if youâre suffering from some extreme pain due to cancer and thereâs no other opioids that are actually working on you.  The doctor might prescribe you a fentanyl patch or a lollipop but this is a potent drug.</p>
+
+<p>The smallest pinch of fentanyl is lethal.  To give you a better idea, a typical single pill of ibuprofen is two hundred milligrams.  A lethal dose of fentanyl is one milligram.  That one tablet is two hundred times the lethal dose if it was fentanyl.  Yes, people are dying from overdosing on prescription opioid-based drugs and if they canât find those, theyâll find heroin and possibly overdose on that.  But fentanyl is in a whole other league because itâs so potent.  Itâs so easy to die from which is why fentanyl has killed over 95,000 people in the last five years which is about 60% of all opioid deaths.  I mean, just listen to what happened in this small town in West Virginia.</p>
+
+<p>REPORTER:	Huntington, once a thriving industrial hub, had been crippled by years of job loss, rising crime, and 1,600 overdoses the previous year.  [SIRENS] The calls started coming in at 3:21 on a warm August afternoon.  In just four hours, twenty-six people had overdosed on a batch of fentanyl-laced heroin.</p>
+
+<p>JACK:	Why is fentanyl all of a sudden the leading cause of opioid deaths?  One big reason is because itâs synthetically made.  Anyone can just order a bunch of it from China and get it shipped to you.  From there, you can try your hand at making heroin-laced fentanyl for much, much cheaper which results in a lot of money for drug dealers.  But can I switch gears here and just rant for a second?  Yeah, people are making huge bank off the sale of fentanyl.  Iâm mad about it because theyâre doing it recklessly.  The US government has tried to make policies to make sure doctors only prescribe fentanyl to patients who really need it, to patients who have pain so severe that no other opioids work anymore.  But the group that controls this regulation is McKesson, one of the largest drug distributors.  They didnât control the distribution of fentanyl very well.  They made it easy for doctors to prescribe.</p>
+
+<p>This mismanaged program resulted in major fentanyl manufacturers like Johnson &amp; Johnson and Cephalon to go nuts encouraging doctors to prescribe fentanyl.  [00:55:00] These companies made hundreds of millions of dollars from that single drug which resulted in many deaths and addictions and deaths from addictions.  Things got so bad that both Cephalon and Johnson &amp; Johnson were investigated by the US government and fined massive amounts.  Johnson &amp; Johnson faced a multi-billion-dollar lawsuit for misrepresenting the dangers of opioids to doctors.  Cephalon was hit with a 250-million-dollar lawsuit for trying to turn fentanyl into a routine pain management drug.  These are the legal fentanyl makers and pushers making huge amounts of money from these drugs in reckless ways and illegal ways.  But in my opinion the worst of these drug makers was Insys.  Listen to this clip from NBC News that explains the trouble they got into.</p>
+
+<p>REPORTER2:	Five top drug company executives have been found guilty in a bribery case involving the opioid fentanyl.  The multi-billionaire founder of Insys Therapeutics and four other top execs convicted of racketeering.  Prosecutors say their scheme involved bribes, kickbacks, even lap dances for physicians who prescribed large amounts of the companyâs fentanyl spray to patients who did not need it.</p>
+
+<p>JACK:	You see this?  This is bad.  The legal drug dealers have gotten scores of people addicted to fentanyl who had no business taking fentanyl.</p>
+
+<p>REPORTER2:	Sarah Fuller didnât have cancer.  She was plagued with chronic neck and back pain from two car accidents but her doctor, Vivienne Matelon, actually brought an Insys sales rep to an appointment.  Fourteen months after she started taking Subsys, Sarah was found dead on her bedroom floor.  What killed your daughter?</p>
+
+<p>DEBORAH:	Well, technically fentanyl.  But a drug company who couldnât care less about a human life.</p>
+
+<p>JACK:	A court case against Insys went on for a while and ultimately resulted in a fine of 225 million dollars which actually bankrupted Insys.  But with the company fined, prosecutors then went after top executives.  John Kapoor, being the CEO and founder of Insys, was the main target.  He was found guilty for getting doctors to over-prescribe fentanyl to patients who had no business taking it, all so Insys and John Kapoor could make more money.  [MUSIC] One of the pieces of evidence that came up in John Kapoorâs court case was this music video.</p>
+
+<p>RAPPER:	I love titrations, yeah, thatâs not a problem.  I got new patients and I got a lot of âem.</p>
+
+<p>JACK:	Iâll just let you listen to the first verse.</p>
+
+<p>RAPPER:	If you wanna be great, listen to my voice.  You can be great but itâs your choice.  A Bean, Z Real back again.  2015, let me begin.  Insys Therapeutics, that is our name.  Weâre raising the bar and weâre changing the game.  To be great, it takes a decision.  To be better than the competition.  VIP service like theyâve never seen, going deeper than Dan in the submarine.  Build relationships that are healthy, got more docs than Janelleâs got selfies.  What we built here canât be debated.  Shout out to Kapoor for what youâve created.  While the competition just making noise, weâre making history âcause weâre great by choice.  I love titrationsâ¦</p>
+
+<p>JACK:	VIP service like youâve never seen?  Shout out to Kapoor?  I got new patients and I got a lot of âem?  It goes onto say how well they treat their reps.  They even have a rapping fentanyl spray bottle who goes onto say that other fentanyl drugs are like prescribing Xylitol which is just a sweetener.</p>
+
+<p>RAPPER:	This ainât no fight at all.  If youâre trying to ball, Iâll substitute you like you was Xylitol.  Beast.</p>
+
+<p>JACK:	Strangely enough, the guy inside the fentanyl spray bottle in the music video was an executive at Insys also and he got in trouble for this too and was found guilty.  So, John Kapoor was found guilty for racketeering.  Just last week in January 2020, we heard what his sentencing was.</p>
+
+<p>REPORTER3:	[MUSIC] The highest-ranking drug company executive convicted in the opioid crisis is headed to prison but the sentence is not harsh enough for some who say he got away with murder.  A judge sentenced Insys Therapeutics founder John Kapoor to five and a half years for his role in bribing doctors to prescribe the powerful pain killer Subsys.</p>
+
+<p>JACK:	[MUSIC] OxyMonster is serving twenty years in prison for selling opioids on the Dream Market.  Kyle Enos is serving eight years for selling fentanyl to a hundred and sixty-eight people, four of which died from his drugs.  Billionaire John Kapoor, founder of Insys, who was found guilty for influencing doctors to over-prescribe fentanyl to patients who didnât need it â oh, and the court records show the FDA estimates that eight thousand people died from taking the fentanyl spray that Insys produced.  That guy got five and a half years in [01:00:00] prison.  [MUSIC] Wouldnât it be weird if OxyMonster and John Kapoor ended up as cell mates?  Itâs just interesting to see these two drug dealers, both guilty for unethically selling the same drug but theyâre both locked up for two totally different reasons.</p>
+
+<p>Oh, and I should add here that itâs been a week since John Kapoor has been sentenced to five and a half years in prison and guess what?  He hasnât gone to prison yet.  Heâs still home because heâs trying to get a suspension of the sentence until his appeal is completed which might be months or a year away.  Hm, but you know what?  John Kapoor is seventy-six years old right now so if he serves five and a half years in prison, heâs gonna get out when heâs eighty-two years old.  What bothers me still is that these huge pharmaceutical companies who manufacture and distribute fentanyl recklessly are some of the biggest makers for Naloxone and Suboxone which are the drugs used to treat opioid addiction.</p>
+
+<p>These companies are making billions and billions and billions now by selling drugs to treat this opioid crisis that they had a hand in creating.  To me, this is the worst part of the opioid epidemic; is that these major drug manufacturers let the genie loose.  They recklessly got us addicted and are now making big money off the aftermath of it all.  You probably know somebody whoâs died from fentanyl.  Prince, Tom Petty, Mac Miller.  They all died from an overdose of fentanyl.  They didnât know they were taking too much.  They werenât trying to die.  It wasnât their fault.  Fuck fentanyl and everything about it.</p>
+
+<p>JACK (OUTRO):	[OUTRO MUSIC] Hey, Darknet Diaries is now on the darknet.  What do you think of that?  You can visit us there at uka5ybpmh3u54dkv.onion.  This show is created by me, the original mini-mind, Jack Rhysider.  This episode was written by the dark mouse, Fiona Guy, audio editing by the font-conscious Damienne, sound design by the merry Andrew Meriwether.  Theme music is by the bubbling Breakmaster Cylinder.  Even though I get downvoted every time I say it, this is Darknet Diaries.</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

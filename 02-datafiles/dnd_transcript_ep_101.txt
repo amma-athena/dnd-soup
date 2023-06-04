@@ -1,0 +1,688 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>LoterÃ­a â Darknet Diaries</title>
+	<meta name="description" content="In 2014 the Puerto Rico Lottery was mysteriously losing money. Listen to this never before told story about what happened and who did it.">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="LoterÃ­a â Darknet Diaries">  
+	<meta name="twitter:description" content="In 2014 the Puerto Rico Lottery was mysteriously losing money. Listen to this never before told story about what happened and who did it.">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/loteria.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/101/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="LoterÃ­a â Darknet Diaries" />
+	<meta property="og:description"        content="In 2014 the Puerto Rico Lottery was mysteriously losing money. Listen to this never before told story about what happened and who did it." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/loteria.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/101/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/loteria.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/101/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="LoterÃ­a â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/loteria.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 101: LoterÃ­a</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://www.podtrac.com/pts/redirect.mp3/traffic.megaphone.fm/ADV9779985206.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/101/",
+			   "title": "Ep 101: LoterÃ­a"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/101">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[START OF RECORDING]</p>
+
+<p>JACK:	When I was a teenager living at home with my dad, it always felt like he was invading my privacy.  He would do things like open and read the mail that I got, or he would go into my room when I wasnât there.  He says he was picking up trash or collecting dirty cups, but I always suspected he was going through my things for some reason.  [MUSIC] Sometimes heâd barge into my room when I was there, too, and I didnât like that.  What if he saw me doing something on my computer that I didnât want him to see?  So, I set up an early warning system so I would know when he was coming.  I would sometimes put sheets of newspaper just outside my door.  Iâd arrange it in such a way that heâd have to step on it to get to my door, and the crinkle of the newspaper would tip me off that someoneâs coming.  This worked for a while, especially just hearing him complain ah, thereâs newspaper all over the floor; whatâs going on out here?  That way, I would know heâs coming in.  But one day, he decided to be tricky.
+<!--more-->
+He wanted to come in my room but didnât want to make noise with the newspaper, so he came up to my door very slowly and quietly, and gently picked up the newspaper so that it didnât make a single crinkle noise.  With the early warning system deactivated, he opened my door and came right in.  I was sitting on my bed reading one of my schoolbooks.  I was baffled that he didnât trip my alarm and I asked dad, how did you get in without the newspaper making noises?  He held up the paper to show me he had picked it up, and he said Iâm always two steps ahead of you.  Glad to see youâre doing homework, and left.  Well, little did he know that I was four steps ahead.  I had wired a proximity sensor up to my door that he didnât know about, and if someone came up to the door, a little light would blink in my room, letting me know that someoneâs getting close.  When he came up to get the newspaper, I saw the little light blink.  I was playing games on my computer and I turned the monitor off, grabbed a schoolbook and jumped in bed, and acted like I was reading.  This is what you have to do sometimes to catch someone in the act.  Two steps ahead isnât enough.  Sometimes you need to be four steps ahead.</p>
+
+<p>(INTRO:)	[INTRO MUSIC] These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTO MUSIC ENDS]</p>
+
+<p>JACK:	[MUSIC] Content warning; there are multiple swear words in this episode.  If youâd rather not hear bad language, youâve been warned.  Okay, so you donât want your real name.</p>
+
+<p>OS:	No.</p>
+
+<p>JACK:	Okay, so weâll just make up â weâll just make up something; Frank or Tim orâ¦</p>
+
+<p>OS:	I donât know.  Like, Iâll fucking do a random name generator.  Letâs see what that says.  How about that?</p>
+
+<p>JACK:	Yeah.</p>
+
+<p>OS:	Weâll let the ether tell us what it should be.  Letâs call it Owl Stalker.</p>
+
+<p>JACK:	Wait a minute.  What kind of name generator are youâ¦?  Itâs like a video game name generator?</p>
+
+<p>OS:	Basically, yeah, dude.</p>
+
+<p>JACK:	Owl Stalker?</p>
+
+<p>OS:	Yeah, why the fuck not?</p>
+
+<p>JACK:	Alright, I tried to use that name, but I just canât bring myself to call him Owl Stalker this whole episode, so Iâm just going to abbreviate his name to O-S and call him Os for short.</p>
+
+<p>OS:	Yeah, just from a background perspective of early days, I used to run around in the warez scene as a wares administrator and a rooter, and also a crypto encryption cracker for games in disk.  So, some of the largest groups that are out there, I was actually not only hosting for the zero-day drops of the warez scene, but also producing zero-day for the warez scene.</p>
+
+<p>JACK:	Ah, the old warez scene in the 90s.  Warez is short for softwares, but it specifically means pirated software.  [MUSIC] Warez groups would buy software, whether a video game or an app, and then crack it so that you wouldnât need a license or a serial key for it to run, and then distribute it for anyone to download and use free of charge.  In the warez scene of the 90s, you could download pretty much any popular game or app without paying for it.  Today, thatâs kind of gone away since apps and games require internet connections for them to run, but this was the 90s where internet wasnât that fast, and this was also a time before torrenting was a thing.  So, he was on IRC, the Internet Relay Chat, and was setting up servers to be the place to go when you wanted to download the pirated software.  But he wasnât always distributing pirated software.  When he got his first gateway computer, he wasnât sure what to do with it, [00:05:00] but then a friend told him to check out IRC, where he can meet others.  So, he figured out how to get into chat rooms to see what was there.</p>
+
+<p>OS:	My nice baud modem decided to dial-up a pop-on.  The first ten minutes that Iâm in, I actually get popped.  I had to rebuild my computer all the way from the ground up and at that time, it was all floppy disks to build the system, and I vowed to never let that happen again.  I was pissed.</p>
+
+<p>JACK:	This is what started him down a tour of the dark side.  He was already fascinated with what computers could do, and so when his computer got hit with a virus, it immediately fascinated him to want to know more.  He started asking around about how something like this could happen, which led him eventually to these warez groups which were doing illegal things.</p>
+
+<p>OS:	So, I went and learned and trained and taught myself actually how to program.  Then I actually kinda just made a decision as I matured and I saw some of the other big groups really starting to get taken down, like our peer groups in that warez scene starting to get hit really hard; several friends of mine that, you know, I had met through the years of being in that scene actually going to jail.  I was like dude, I donât want that to be me.</p>
+
+<p>JACK:	So, he decided to go in a totally new direction in life.  After being hunched over his PC for years, secluded in his bedroom, he straightened his back and went outside, and started training.</p>
+
+<p>SERGEANT:	One, two, three, four, United States Marine Corps.</p>
+
+<p>PRIVATES:	One, two, three, four, United States Marine Corps.</p>
+
+<p>OS:	Alright, I chose the Marine Corps specifically âcause it was â I shopped around.  All the other branches had already built cyber-security units and were already in the process of â they were one step ahead of where the Marine Corps was, and so I said you know what?  I want to go in the Marine Corps specifically for this.  I walked into a recruiting station and said hey, are you guys doing stuff with computers, to protect computers?  It wasnât even cyber-security, right?  That didnât even have a name at that point.  They were like hey, look, we really donât have a whole lot of options here.  Weâll see how you test.  I tested really high on the entry level and was guaranteed to go into the role that I played in the military which was the cyber-security side of the house, right?</p>
+
+<p>SERGEANT:	If I die in the combat zoneâ¦</p>
+
+<p>PRIVATES:	If I die in the combat zoneâ¦</p>
+
+<p>SERGEANT:	Hike me up and ship me home.</p>
+
+<p>PRIVATES:	Hike me up and ship me home.</p>
+
+<p>JACK:	The Marine Corps boot camp is thirteen weeks long, and itâs brutal.  By the time youâre done, youâll be in the best shape of your life.  There are no computers in boot camp.  Instead, youâre trained on how to be a killer.  You learn to fight, you learn to use weapons, you learn to overcome fear and any obstacle that might be in your way.  I say all this because it reminds me of a very specific scene in the movie Full Metal Jacket.</p>
+
+<p>HARTMAN:	Toejam!</p>
+
+<p>TOEJAM:	Sir, yes, sir!</p>
+
+<p>HARTMAN:	0300; infantry.</p>
+
+<p>JACK:	The movie follows marines through boot camp and into the Vietnam war.</p>
+
+<p>ADAMS:	Sir, yes, sir!</p>
+
+<p>HARTMAN:	0300, infantry.</p>
+
+<p>JACK:	When theyâre finished with boot camp, thatâs when theyâre assigned their occupation.</p>
+
+<p>ADAMS:	Sir, yes, sir!</p>
+
+<p>HARTMAN:	1800; engineer.  You go out and find mines.  Cowboy!</p>
+
+<p>COWBOY:	Sir, yes, sir!</p>
+
+<p>HARTMAN:	0300; infantry.  Taylor!</p>
+
+<p>JACK:	Then, one guy stands out; Joker.</p>
+
+<p>HARTMAN:	Joker!</p>
+
+<p>JOKER:	Sir, yes, sir!</p>
+
+<p>HARTMAN:	4212; basic military journalism.  You gotta be shitting me, Joker.  You think youâre Mickey Spillane?  You think youâre some kind of fucking writer?</p>
+
+<p>JOKER:	Sir, I wrote for my high school newspaper, sir.</p>
+
+<p>HARTMAN:	Jesus H. Christ.  Youâre not a writer.  Youâre a killer.</p>
+
+<p>JOKER:	A killer; yes, sir!</p>
+
+<p>OS:	[MUSIC] I didnât think about the fact that the Marine Corps is this elite military and theyâre trained to do nothing but kill, right?  Thatâs literally all they are.  I looked at it more as a means to an end, to go get the hands-on experience, right, from the government and really get trained up on government capabilities.  Thatâs kinda how I looked at it, then I hit boot camp and went oh fuck, what did I do?  Got stripped of everything that I was and rebuilt to who I am to some degree today, right?  But how did I come back and go into that computing side of it?  I mean, that was my end goal.  I set a goal prior to going in and I made agreements with the Marine Corps that I would be provided that.  Well, of course, now, later on, Iâm realizing how lucky I was, because there are no guarantees.  When you sign a contract with the government, whatever, military or any other freaking government service, youâre not guaranteed a damn thing, and particularly with the military, right?  But how I transitioned back in out of that fighting mentality â I mean, I always kept it with me, right, because we were trained to fight first.  But what was really cool is that [00:10:00] we were the ones that were defining how to fight with digital aspects first.</p>
+
+<p>JACK:	So, were you doing mostly offensive or defense, forensics, incident response?</p>
+
+<p>OS:	So, I did both.  It just really depended on where I was and what I was doing. When I was typically not in a forward-deployed state, then it was defensive.  Even in a deployed state, we would do defensive forensic stuff, you know, working with our signals intelligence or intelligence professionals as well.  We would take and consume that.  They would bring us physical devices, like I said, chip off-type stuff, like where we would actually go desolder chips on a board and actually analyze it at that level, but then also offensive kind of stuff.</p>
+
+<p>JACK:	How long did you spend in there?</p>
+
+<p>OS:	I spent five years active duty, long enough to realize that I made a really freaking awesome and terrible decision all in one.</p>
+
+<p>JACK:	Why was it awesome and terrible?</p>
+
+<p>OS:	Well, it was awesome because I got to go do some really cool shit and learn a lot of really cool shit, and it sucked because â I mean, again, go talk to a marine; you hate it while youâre in and you love it while youâre out, right?  The life of a marine is not â itâs not an easy life, man.  Itâs not at all.</p>
+
+<p>JACK:	But this experience really did level up his understanding of computers, and specifically cyber-security.  So, with this experience and know-how, he landed a job at a consulting company.</p>
+
+<p>OS:	They were doing forensics and other cyber-security kinda stuff, right?  This is early 2010s, just to give perspective of timeframe here.  I got cherry-picked by an individual to come into this consulting firm.</p>
+
+<p>JACK:	They had him start by doing digital forensics; analyzing an infected computer to try to understand more about the malware, looking for clues in a network or system that showed signs of intrusion, stuff like that.  But they also had him doing some attack-type work too, where he would be assigned to try to get into a computer or a website or a network to test how secure it was.  He did that for a while, but then he got a new assignment.  [MUSIC] The government of Puerto Rico hired this consulting agency to come do some work.</p>
+
+<p>HOST:	18 degrees above the Equator at that sweet spot where the Atlantic embraces the Caribbean is the island of Puerto Rico.</p>
+
+<p>OS:	In Puerto Rico, they sold the work and they were like okay, cool.  We need to staff resources.  Hey, do you have availability?  Cool.  Welcome to this project.  Thatâs just kinda how it goes.  In consulting firms, you get assigned to projects, right?  It was sold to me as â initially that we were going down there to do IT operas â like, operational improvements.</p>
+
+<p>JACK:	What he was told was that for this project, him and a team would go down, audit the network, evaluate it, and see if there were any areas to improve to make the network more secure.  Okay, so you pack your bags, you head out.  How long did you think you were gonna be there?</p>
+
+<p>OS:	Thatâs a hilarious question.  I realistically thought that I was only gonna be there for maybe two to three weeks tops.  We were gonna come in, evaluate their technical capabilities and look at like okay, cool, you got this 1970s IBM mainframe.  You might want to update that, right?</p>
+
+<p>JACK:	Little did he know, he would be staying there much longer than a few weeks.  He arrives in Puerto Rico, and all goes as planned for a while.  He sees whatâs there and yeah, there are areas for them to improve the network to make it easier to maintain, get work done, and be more secure.  So, heâs writing up all his findings and giving them suggestions on how to improve.</p>
+
+<p>OS:	Then the next thing I know, weâre in the middle of a meeting with the governor of Puerto Rico and heâs like, I love the work that you guys have going on and that youâve done for us.  I have a problem.  He goes, we are losing millions and millions of dollars a month through the lottery of Puerto Rico, and we donât know how.</p>
+
+<p>JACK:	[MUSIC] Now, to begin with, the governor of Puerto Rico is the highest person who has executive authority there, so the fact that they got to meet with the governor was pretty interesting.  But this is a unique challenge, huh?  To help figure out how theyâre losing millions of dollars through their state lottery.  Os was intrigued by this problem, but he wasnât sure where to start.  He had to learn and get familiar with how the lottery system worked.  The lottery had weekly drawings.  [00:15:00] The drawings themselves were physically done live on TV, not electronic like how some lotteries are.  A bunch of balls go into a drum, and then they draw one ball out at a time, showing the camera, and thatâs how the winning numbers are announced.</p>
+
+<p>People would buy lottery tickets at special places that sold them, and if your numbers matched the numbers drawn, you win money.  You donât have to match all the balls, though.  Even a partial match, like if your ticket contained three out of the five numbers, you also won.  This Puerto Rico lottery is a big deal.  Itâs been running since 1934 and is ran by the Department of Treasury.  Of course, a lottery is set up to generate revenue for the government, since the amount of the payoffs is never more than the amount of money generated through ticket sales.  But in this case, the payouts were more than the ticket sales; a lot more.  Millions of dollars were being lost in the lottery.</p>
+
+<p>OS:	We regrouped as a team and said hey, letâs think through this.  What are all the possible reasons behind it?  Maybe systems arenât just communicating and updating fast enough because the network connectivity between Building A and Building B is absolutely horrible.  Maybe some clerical error in their systems, like their â weâre talking, you know, as we started to do our IT analysis, they were still running Windows 95 on some systems in the early 2010s, right?  Itâs like, hm, okay, so maybe youâre just â your processes arenât that good.  Maybe they havenât done a reconciliation of their books in a long time, so hey, letâs bring in our forensic accountants and have them go actually look at their numbers.</p>
+
+<p>JACK:	So, their forensic accountant looked through the ledger; how much was paid out and how much was bought.  Yeah, sure enough, millions of dollars more were paid out than were bought, which means the lottery was losing money, which is not supposed to happen.  The lottery is set up to always generate money, not lose money.  But these accountants couldnât figure out why.  They did confirm that there were significant losses in the system, but from their analysis, it looked like all of the money was just going to legitimate winners, [MUSIC] and nothing suspicious at all.  This mystery grew deeper.</p>
+
+<p>OS:	We then went and started at the very onset of the process.  Like, letâs go physically look at where the actual lottery balls are stored and how theyâre stored.</p>
+
+<p>JACK:	Now, since this is the governor asking for help, they had all the clearances and permission they needed to make a visit where the lottery is conducted.  He got to get up close and personal with the lottery balls themselves and analyze them.</p>
+
+<p>OS:	Yeah, I got to touch and examine the balls, dude.  It was pretty fun.</p>
+
+<p>JACK:	The balls seemed fine.  None of them were an odd weight or size that would make them more or less likely to be drawn.  It didnât seem like that was the problem.  So, next, he looked around and askedâ¦</p>
+
+<p>OS:	Who all has access to this?  Alright, you got cameras, you got door badge access systemsâ¦</p>
+
+<p>JACK:	He was given the names of everyone who had access to the lottery equipment.  Controls seemed to be properly in place.  Only a few people had access to the balls and drawing room.</p>
+
+<p>OS:	Then we start down the process of okay, so, day of or day before, whatâs your process?  Do you have a reconciliation?  Yep, all of these balls get moved â these racks of lottery balls get moved over and get staged.  They get counted again, they get allocated, they get signed off on.  Thereâs the huge accountability process pre-day.  The same day of the lottery drawing, they go through again first thing in the morning.  They do a check-in at lunch and then right before the actual drawing itself, they do another check and then they roll them out to the public view.</p>
+
+<p>JACK:	So, the public view is really TV.  Every week, the drawing is done live, broadcasted on their local TV channel.  This is a big deal in Puerto Rico; many tune in while holding their tickets to see if their numbers are drawn.</p>
+
+<p>OS:	We actually had the opportunity to walk out with the balls.</p>
+
+<p>JACK:	He means he was able to shadow and keep his eye on the lottery balls at every step of the way between when he examined them and when they were drawn on live TV.  This way, nothing could be swapped or changed on his watch.</p>
+
+<p>OS:	[MUSIC] So, we walked the balls out to â with the actual employee.  There was two employees that were assigned to do nothing but manage the lottery balls.  Thatâs it.  That was their sole job.  Day in, day out, they would go in, do accountability, reconcile sheets, and basically count them, make sure everything was good to go.  The way that they sort them; itâs not like we â how we see here in the United States, ours are, [00:20:00] where theyâre these plastic ping-pong balls.  These are like little plastic beads â theyâre a little bigger than a bead, but they have a hole through the middle of them and theyâre stored â instead of a plastic container with locks on them, theyâre stored â they slide the beads down a metal rod and each rod held a certain number of lottery balls, and they would lock, each one of those.  So, it was like this gigantic wooden box with ten rows of these lottery balls in it with ten locks on the front of it, right?  So, theyâre rudimentary but tamper-proof to some degree, but they had full accountability day in and day out of them.  Even more heightened on the day of drawing, they had full accountability of the physical asset that â the lottery balls themselves.</p>
+
+<p>Once they would actually go through, they would dump them into the hopper, and then it would actually do the hopper draw.  It would actually roll a ball down.  There was a panel of employees for the lottery of Puerto Rico that sat up front that that ball, when it came out â they started from left to right â the first person on the left would get it, put the ball on the little â on the actual tray.  They would have the empty trays and theyâd slide the ball down the little empty tray, document on a piece of paper what the number was, and then they would continue to do that for the entire drawing, and it would go all the way down.  Then whenever they would fill up an actual lottery ball holder, they would lock them up, they would hand them back to the individual.  They had chain of custody forms and all sorts of craziness.  Then it would go â then all of those paper sheets would actually go into a review room where there were four analysts that would sit in a review room, and they had them â from start to finish, they had them in order.</p>
+
+<p>So, they would watch a video and pair up how the balls were inside of the actual metallic rack and validate that yes, thatâs correct; thatâs the correct ball, thatâs the correct drawing number, et cetera, et cetera, et cetera, right?  Then what â that would get them put into the computing system for the lottery of Puerto Rico, and what would happen then is that would go back into a database, and that database would then be shared with the government of Puerto Ricoâs printing group, and they would go do a print run of all of the winning numbers in the newspaper.  Then they would also take and actually do â on the news that night â a live notification.  Itâs published live; the Puerto Rican lottery, you can watch it locally and national TV live, but then they do a recap on the news like we do here in the United States to some degree.  So, the physical security process was fully sound.  There was nothing that we could find that was amiss.  It was like okay, theyâve got accountability all the way through when theyâre printing the numbers.  We even validated the numbers, right?  Weâre like, thatâs right in the paper.  Yep, itâs right on the news.</p>
+
+<p>JACK:	So, after analyzing the system, they felt like the physical security of the balls and drawing process was fair and secure.  Their next step was for them to follow the numbers.  Once the officials recorded the winning numbers, where do they go next?  Well, another government department handled the next part.  See, there was one department in charge of the drawing, and then there was another department in charge of the payouts.  So, they went to the payouts department and they found the systems where the winning numbers were entered.  They confirmed that the winning numbers did in fact match up with what was actually drawn.  Next, there is a database that gets updated.  The database has a list of every single lottery ticket purchased and what numbers that ticket had.  The database takes the winning numbers and updates all the tickets in the database to indicate if the ticket is a winner and how much should be paid out.  They go and meet with the team that manages this database.</p>
+
+<p>OS:	The database administrator goes, who are you and why are you here?  Whoâs authorized you to be in here to audit me?  I know how to do my job.  Leave me alone, and really was standoffish.  Iâm like hm, thatâs a little odd.</p>
+
+<p>JACK:	That is a little odd, but when I was the admin of firewalls for a company, I was very protective of them, myself.  I, too, would ask for credentials of anyone asking to see whatâs inside, just to make sure.  So, maybe this is fine.</p>
+
+<p>OS:	So, at that point, weâre like okay, we gotta look at the database system itself.  So, itâs a Db2 database and Iâm like alright, thatâs a pretty sound, solid financial database.  I mean, companies today still use it; highly transactional, makes sense.  [00:25:00] Go through, look at the security configurations and settings.  I didnât know enough about it, so we hired a professional to come in that was specifically a Db2 database administrator.  He looks at it and heâs like dude, everything looks sound and solid.</p>
+
+<p>JACK:	The database administrator checked a few things, first seeing who has access, and it was everyone who was supposed to have access; just the IT team who was responsible for maintaining it.  Nobody else.  Next, he looked at the logic of how the database gets updated, but that was fine.  The tickets that should have been winners were updated properly, and the tickets that were losers were shown to not pay out anything.  So, this database looked fine.  Next, he went down to where people were buying lottery tickets and getting paid for their winnings.</p>
+
+<p>OS:	We audited that process, where individuals would go cash in their lottery tickets.  We went and audited several of those stations on the island âcause they were specific locations.  Itâs not like you could go to any gas station.  They had very specific set up locations where you could go cash in your lottery ticket for winnings.</p>
+
+<p>JACK:	This, too, all looked just fine.  Nothing strange or unusual here, either.  [MUSIC] So, him and the team looked again to see how much money was missing from the lottery while they had watched the whole thing take place.  Something strange happened; the lottery showed no losses for the weeks that they were there investigating this and shadowing people and auditing the payout stations and analyzing the databases.  Huh, thatâs odd.  But thatâs a clue in itself.</p>
+
+<p>OS:	Thatâs why we kinda saw a slow trickle when we first got to the island and were inside.  Really, we identified the hard stop was when we went and actually had the interview and sat with the database team.</p>
+
+<p>JACK:	That was the same database team that was questioning him for being there, so his hunch was that if this stopped happening once he started poking his nose in things, then he thinks this might be an insider.</p>
+
+<p>OS:	So, we take this all back to the governor and weâre like man, there â the only thing that this is pointing to â youâve got an insider somewhere, and we donât know what it is.  Itâs on the digital element.  The governor of Puerto Rico looks at me and the team and goes, I know youâre here for security elements.  Go do whatever you have to do to figure this out.  You are indemnified of anything â of any digital crime or physical crime on the island to figure out how the hell Iâm losing this money.  I said, can I get that in writing?  He said, absolutely.  So, to this date, I own an indemnification of committing any crime on the island of Puerto Rico, which is pretty cool.  Iâm like, fuck yeah.</p>
+
+<p>JACK:	Now, by this point, heâs been there for over a month trying to figure this out.  So, while he thought he was only gonna be there a few weeks, heâs now flying into the island every week and flying back home on the weekends.  But now, he suspects someone inside the lottery is doing something sneaky.  But who?  Stay with us because after the break, he goes four steps ahead.  Os has examined every aspect of the network and found nothing that would suggest the lottery is losing money.  He has confirmed that before he got there, it was losing a lot of money, but whatever was happening stopped since heâs arrived.  This makes him believe that thereâs an insider somewhere that stopped once they saw he was investigating.  But now the governor of Puerto Rico, the highest executive position on the island, has granted him full indemnity and that he may investigate this however he wants, even if it requires breaking the law to do it.</p>
+
+<p>OS:	[MUSIC] Absolutely.  Thatâs why they gave me indemnity, âcause Iâ¦</p>
+
+<p>JACK:	You were referring to â can I break into a network?</p>
+
+<p>OS:	Can I break into a building?</p>
+
+<p>JACK:	Like, were you asking the governor that?</p>
+
+<p>OS:	Yeah.  I was like, what do you mean by free reign?  Heâs like, do whatever you need to do.  I was like, so youâre telling me I could go break into a building and I wonât get arrested if â or, if I get arrested, then Iâm indemnified and youâll drop all charges and youâll bail me out?  Heâs like yeah, and Iâll invite you over to my house to have Chinchon and freaking â some Cuba libres.</p>
+
+<p>JACK:	This is exciting.</p>
+
+<p>OS:	I geeked out.  Like, what the fuck?  He was totally â like, me being a pen tester, Iâm like, what the fuck?  I just got indemnified by the government of Puerto Rico to do what?  Okay.</p>
+
+<p>JACK:	This is so unusual.  I donât even â because heâs pretty much been given permission to hack into the [00:30:00] government of Puerto Rico to find this insider, which is like a penetration test, right?  But typically this is done just to check how secure the network is.  In this case, he was going to hack into the network to try to catch someone conducting criminal activity inside the lotteryâs network.  So, thatâs a totally different objective from a normal penetration test.  Also, pen testers typically have whatâs called a get out of jail free card, where the head of security has granted them permission to hack into the network or break into the building.  But in Osâ situation, he has a literal get out of jail free card from the governor which allows him to break laws if he wants.</p>
+
+<p>If he gets arrested, he could just show it to get out of jail.  Now, Os has done a number of penetration tests before he did offensive work while in the Marines, but heâs also conducted a number of them as a consultant.  So, heâs experienced at this and already has a good lay of the land since heâs been there auditing this whole process for the last month.  He knows how everything is working and who all the people are that make it work.  The first thing he does is notify the FBI.  Now, you might be wondering, why would be FBI be interested in whatâs going on in the lottery of Puerto Rico?  Well, thatâs because Puerto Rico is a territory of the US, so thereâs actually an FBI field office over there, and Os thought this was a criminal case worthy of the FBI knowing about, and that he was investigating it and had permission to do so.</p>
+
+<p>OS:	They were like alright, go investigate, get everything that you can.  You have carte blanche to do whatever you want, right?  Like, literally carte blanche.  Mind you, up into that point, I had been suit and tie every freaking day, right, as a consultant is, usually on your customerâs site.  I freaking dropped into straight civilian clothes, acting like a tourist.  I did some things to change my appearance and walked right into the government building and started to look around.</p>
+
+<p>JACK:	He went into this building because he knew this is where the database and main network for the lottery payout system actually sat.  He figures if he can get into the building, he might be able to get into the network covertly.  But you might wonder if he has full permission from the governor, why not just get official authorization to log into the network systems himself?  Well, he did that, remember?  He found nothing.  That might have been because itâs very obvious that he was in there looking around for this particular thing.  If youâre some insider hacking the system and youâre trying not to get caught, youâre not gonna be in the network doing bad stuff when you have auditors looking over your shoulder, right?  So, he wants to go in covertly to see if he can find malicious insider activity when they think they arenât being watched.  [MUSIC] So, he heads into this government building with the goal of finding a way into the network.  But to be successful, he needs to bring some supplies.</p>
+
+<p>OS:	Full-on lock pick set.  Like, that was number one.  I had two laptops with me.  I carried them everywhere I went.  I had my forensics laptop and my offensive security laptop.  The standard tools that I also carry is a pocket knife and a flashlight, right?</p>
+
+<p>JACK:	Looking like a tourist, he heads into the government building.  Now, this is a publicly-accessible building with places that citizens can go and take care of things like permits or even cash in lottery tickets there.  On top of that, heâs been in this building a few times already as he was auditing the whole lottery process.</p>
+
+<p>OS:	There was a door that â where I knew the finance office was.  Like, the finance office, youâre â say youâre walking down a hallway and you come to a T intersection.  To the right, there was a sign that said Finance but straight ahead, like ten feet ahead past that T intersection on the right-hand side, there was a door.  I was like hm, I wonder if thatâs where they keep physical financial records.  Might be a computer in there thatâs unlocked, right?  So, thatâs what I was thinking off the top of my head.  I look up and thereâs no cameras pointed at this door.  Theyâre pointed down the main corridor facing towards where the entrance of the government of Puerto Ricoâs entrance is, and then down the corridor of where the finance office main door is, but thereâs not one facing â or towards me or facing behind my back at that door, because there was an end of a hallway.  So, there was nowhere you could go, basically, at the end of it.  So, Iâm like okay, so I just lean up against the freaking wall and jiggle the handle.  Itâs locked, so I pull out my lock pick set.</p>
+
+<p>JACK:	He starts trying to pick the lock which is not a fast or easy thing to do.  It takes time and patience and lots of trial and error.  You might not have the right tool at first and you need to try a different one.  You donât know if you need to turn the lock to the right or left to unlock it, so itâs kind of like throwing darts in the dark.  At the same time, heâs nervous and someone could be coming around the corner at any moment and see what heâs doing and question him.  But after a short while, he gets the lock open [00:35:00] and opens the door.</p>
+
+<p>OS:	[MUSIC] I pop the lock on this door.  I was correct; it was the Finance Department.  I was correct; itâs where all the physical freaking documents were.  I was correct that there were computers in there.  I was incorrect in identifying that there might be people fucking sitting in there.  So, four people turn the fuck around and look at me and go, what are you doing here?  How did you open that door?  That doorâs supposed to be locked.  Iâm like oh, shit.</p>
+
+<p>JACK:	He just goes right back out into the hallway and closes the door.  He sees that people were getting up to come see what he was doing.</p>
+
+<p>OS:	I was like oh, here I go, Iâm going to fucking Puerto Rican jail.  This is gonna suck, right?  I was freaking the hell out, dude.  I didnât know if I could believe the governor of Puerto Rico or not.  Is he really gonna bail me out of jail?  How long is it gonna take for them to realize that Iâm in jail, right?  Those are thoughts going through my head when that happened.</p>
+
+<p>JACK:	He had to think fast.  He did some mental calculus; should he run?  Well, that would certainly make him look more suspicious and it could get him kicked out of the building for good.  Instead, he wanted to contain this problem to just this office, so he walks around to the front door of this finance office and he tries to think of a story.  Because heâs been there before, he remembers that the floor above him is where the passport office is, and thatâs what he decides to use as an excuse.  He was going to act like a lost tourist not able to speak Spanish and was looking for the passport office.  So, he puts on a face and walks into the finance office.</p>
+
+<p>OS:	Iâm like hey, I was told to come here because this is the passport office.  So, the director of finance for the entire government of Puerto Rico was one of the guys that was sitting in the back, right?  He walks out and heâs like, that door was not unlocked.  I was like, it was.  I just pushed on it.  I donât know.  Sorry, sir.  Iâm reallyâ¦I lost my passport.  Iâm trying to go to Cuba.  Because at the time, you could fly from Puerto Rico to Cuba.  You couldnât fly direct from the United States to Cuba, but you could fly to Puerto Rico and then fly from Puerto Rico to Cuba as a United States citizen, right?  This director of finance was giving me the side eye but heâs like yeah, follow me.</p>
+
+<p>JACK:	He gets escorted to the passport office.  He was trying to contain his stress on the way, and on the walk there, the head of finance was curious of the situation.</p>
+
+<p>OS:	Well, he drops me off at the passport office and I walk in.  Iâm like hey â so, I fill out a bunch of documents and act like I need to get a freaking â my passport, basically, freaking renewed because I had lost it or whatever, and waited âtil he left.  I just kinda sat âcause there were quite a few people in there, and I just sat and just kinda waited for about half an hour or so, if I recall, and then bounced out and continued on down the path.  Totally almost got fucking popped.</p>
+
+<p>JACK:	He left the building.  That was enough excitement for a day.  Who knows what would happen if they called security on him or caught him on another floor trying to open other doors?  He decided to leave and let things cool down.</p>
+
+<p>OS:	Ended up in a â and going back the next day.  I had already seen what looked like a lunch room area up on the third floor.  So, this is â mind you, the government buildingâs like, seven stories tall.  I was like, it looks like a little lunch room.  I was like, Iâll go check that out today.  So, I head up to the third floor.  Mind you, Finance was on first floor.  Second floor was the passport office, so â opsec was in terrible aspects of multiple things, and I included this in my report to the governor of Puerto Rico.  I was like dude, you have all these financial records that are sitting â your physical financial records are sitting on the first floor.  You have hurricanes and flooding continuously on this island; you might want to think about moving that to a higher level.  Shit like that.  Those were kinda other recommendations that we were putting out there for him.</p>
+
+<p>JACK:	He gets up to the lunch room area, then walks around the hallways near there.  He sees another door and tries to guess whatâs inside it.  He puts his ear up to the door.  No noises are coming from inside.  There are no windows to see in, either.  He walks around the halls.  No signs as to what this office might be, and itâs not connected to any others; itâs sort of a secluded office with no signage.  Hm.  He pulls out his lock picks and starts working on the lock.  [MUSIC] After a few minutes, he gets it open and looks inside.</p>
+
+<p>OS:	When I opened the door, man, itâs like, freaking inch and a half, two inches of fucking dust all over the fucking floor, dude.  I look to my right and thereâs three PCs lined up in a row that have plastic pulled over them.  Thereâs no lights on in here, so Iâm like okay, cool.  [00:40:00] So, I literally pull my flashlight out and make my way over the computers, dude.  Lo and behold, oneâs running.</p>
+
+<p>JACK:	Nice.  This is great for him; a room that nobody ever visits.  Itâs dark, itâs quiet, and it has a running computer.  This could be gold.  If this computer is connected to the lottery network, then he can use it to watch and gather data he needs to catch the insider.</p>
+
+<p>OS:	I close the door behind me and I actually set my laptop up against it so if, for whatever reason, someone came in, it would knock it over and alert me to â it wasnât a big room.  It was probably the size of â Iâd say it was probably a fifty foot by fifty foot, but it would give me enough time to at least lock down everything that I was doing.  Iâm like, oh, sweet.  Letâs go check this out.  So, I lift the plastic off the monitor.  Iâm like, letâs see if it even works.  Turn the monitor on; presented with a log-in screen for Windows 98 with the admin account.  Iâm like hm, itâs not gonna be this easy, right?  Like, admin, admin.  Nah, doesnât work.  So, I sit there and Iâm like, letâs just sit here and think through this and logically â if I were the administrator or system administrator for the government of Puerto Rico and was running a 1998 system, what would I use as the password for admin to get on the system?  So, I run through your typical default list of passwords for admin, like admin/admin, admin/administrator, admin/root, freaking â et cetera, et cetera.  I try this over a period of a couple hours âcause I didnât want to potentially trip if they had any alarms, like multiple failed log-in attempts on a system.</p>
+
+<p>JACK:	None of his log-in attempts worked.  He couldnât guess the right password.  He found some open Ethernet ports and tried plugging into them, but none of them worked.  He thought about unplugging the one running computer from the network and plugging his laptop into it, but he wasnât sure if this computer was running anything important.  He wanted to be as quiet as possible.  So, he went home for the night to rethink and strategize.</p>
+
+<p>OS:	Iâm like, alright; Metasploit, what do you have for 1998 Windows systems?  There was a boot screen freaking â what is it?  The accessibility feature â I canât remember what the actual vulnerability was, but basically ended up being able to create an exploit that I could plug in a USB and bypass the log-in screen.</p>
+
+<p>JACK:	Okay, so Metasploit is a really cool toolkit with lots of exploits and vulnerabilities that are all prepackaged and ready for you to just hack into things.  He creates this USB drive with the exploit payload on it, and if the exploit works, he should be able to just go back to that computer, plug in the USB drive, and get into the system.  [MUSIC] So, he goes back the next day, heads up to the same room, picks the lock to get it open, puts his laptop against the door as a rudimentary alarm system, and pulls out his malicious USB stick, and puts it in the computer running Windows 98.</p>
+
+<p>OS:	Drop it in, get full access.  Sweet.</p>
+
+<p>JACK:	Heâs now on this computer as an administrator.  Amazing.  But he quickly realizes heâs only administrator for this computer.  It doesnât give him access to anything else.  He checks the network status.  Yes, this computer is on the network and yes, he can reach the lottery network from here.  Fantastic.</p>
+
+<p>OS:	Iâm like, alright, Iâve got this access into this system, Iâm local admin.  Is there any antivirus running on it?  It didnât flag for my exploit to come on, so thatâs kinda cool.  No local antivirus on the system.  Connected to the network.  So, Iâm like alright, so, I have a couple options here; I can either unplug and hope that theyâre not doing freaking 802.11x, like NIC-based security or if theyâre doing Mac address filtering security, et cetera, et cetera.  I start thinking through, like, what are my options here?  Do I install tools locally on this system or do I unplug the NIC from the system and then jack in with my pen testing laptop?  Well, in the meantime, Iâm like alright, well, I have local admin.  Let me go ahead and dump the credential files.</p>
+
+<p>JACK:	When you have users on a computer, their username and password hash is stored somewhere on that computer.  When youâre administrator, you can see the password hash.  Now, the password hash isnât the password; itâs the result of the password when itâs passed through an algorithm, and it looks like scrambled letters.  So, he grabs this hash file to try to crack the passwords on this computer, because [00:45:00] with the USB exploit he used, he just bypassed the log-in process.  He didnât actually use a password to get in.  So, he thinks if he can crack the password on this computer, then he can try using this username and password to get into other computers on the network.</p>
+
+<p>OS:	So, I dropped that to my thumb drive, pull that off, throw that into my pen test laptop.</p>
+
+<p>JACK:	He then runs a tool called John the Ripper to try hundreds of thousands of passwords to see if they match the hash.  The program can try hundreds of passwords per second or more depending on how fast the computer is, so he knows this will take a while, and just lets it run.</p>
+
+<p>OS:	So, Iâm like you know what?  Fuck it.  They havenât been aware that this systemâs online.  Theyâre not gonna know if it goes offline, so I unplugâ¦</p>
+
+<p>JACK:	He only unplugged the network cable, not the power cable.</p>
+
+<p>OS:	â¦and actually leave it unplugged overnight just to see what happened, right?  So, I leave the room, I leave it unplugged overnight, go and build another thumb drive that has a bunch of tools on it like Nmap and freaking man-in-the-middle tools.  But basically, I build my tool suite onto a thumb drive that I can take and actually just run off of my thumb drive instead of installing directly onto the system, right?</p>
+
+<p>JACK:	[MUSIC] With all kinds of extra tools, he heads back the next day, goes up to the floor, picks the lock, gets back in, sets the laptop against the door, and goes back to the computer.  He plugs the computer back into the network port and all is fine.  So, he plugs in the USB drive and starts to run one of these tools he brought.</p>
+
+<p>OS:	So, I actually enumerate the network.</p>
+
+<p>JACK:	This is the typical first thing a pen tester does to get a lay of the land.  Enumerating the network is basically getting a map of whatâs out there.  You can ask certain systems what other computers do they know about, and theyâll be happy to tell you.  Nmap scans are also common which can scan a whole range of IP addresses inside the network to see if anything responds.</p>
+
+<p>OS:	I knew the IP address ranges for the IT systems over in the lottery, so I was like well, let me see if I can ping those IP addresses and see how this network looks.  It was like â basically looked flat.</p>
+
+<p>JACK:	I like to think of a flat network like an empty hull of a ship.  If itâs just one big, open space in the hull and thereâs a hole in the hull, the entire hull can fill up with water.  So, a good idea is to segment your network so that if someone gets into one part of your network, they are completely blocked off from getting into other parts.  So, what he found is this long-forgotten computer not only was connected to the network, but it could reach every part of the network since nothing was blocking it.  This was fantastic for Os who wanted to find a way into the systems he thought were suspect.  But now itâs closing in on the end of the third day.  Heâs thinking itâs starting to get risky if he has to come back here every day and pick a lock and sneak in, so he sets up a reverse shell to this computer.  This allows him to go back to the hotel and from there, he can remotely connect into this computer and use it as if heâs sitting right in front of it.  So, he goes back to the hotel and looks at the scans that he was doing on the lotteryâs IP range.</p>
+
+<p>OS:	I find a web server that has port 80 and Iâm like alright, thatâs cool.  I wonder if itâs open from the outside.</p>
+
+<p>JACK:	By âopen to the outsideâ, he means can he get to it from the World Wide Web and not the local network?</p>
+
+<p>OS:	So, I ran a scan on the outside of the network as well.  Again, fortunately for us, we had already been given the IP addresses for the entirety of not just the lottery, but the government of Puerto Rico because as we were talking with them, weâre like look, maybe someone compromised them from the outside and youâre getting money siphoned off, right?  Maybe thatâs a possibility.  So, we asked and they provided.  So, I run a port scan against the outside, find the web server that enumerates at the same version of Drupal that I had.  I go through the Metasploit table; thereâs an exploit for remote code execution, exploit for â and itâs running on a Linux system.</p>
+
+<p>JACK:	So, when trying to exploit a system and get unauthorized access to it, the more you know about it, the better.  A scan might show you what kind of server is running, what kind of web framework is on that.  In this case, Drupal was the web framework and the operating system was Linux.  On top of that, you might get versions of what software is on that system.  If you know what version itâs running, you can go look to see if that version has any known vulnerabilities that you can exploit.  Os found a vulnerability for that version of Drupal and tried to exploit it from the outside, and [MUSIC] bingo, it worked.  He got in, which is always a rush to hack into a system from the outside.</p>
+
+<p>OS:	I was like, holy fuck yes.  Literally, the whole team was sitting around the table and Iâm sitting there freaking â Iâm drinking a Mai Tai at this point.  Iâm like fuck yes, check this out.  Iâm doing my due diligence with screenshots and all that other shit, right?  They were like, are you fucking serious?  Iâm like, yeah.  So, I do general commands to show [00:50:00] who am I, and it shows root.  Then I actually do freaking a dump of basically the file structure and freaking show that itâs actually the Puerto Rican web server, right, not just some random-ass server, dude.  Start pinging internal IP addresses that they had already grabbed forensic images off of as well, too.  They were like, holy shit.  Iâm like yeah, from the hotel WiFi, bro.  Whatâs up.</p>
+
+<p>JACK:	Excellent.  Heâs now in a system inside the lotteryâs network, and from here heâs able to get into other computers and route traffic to this Linux server so he can capture and analyze the traffic in the network.  This is the man-in-the-middle attack that he was wanting to do.  Itâs kind of like a wire tap but for network traffic.  So, once heâs got all this set up, he watches the traffic day in and day out.</p>
+
+<p>OS:	Basically, this is â yeah, weâre about, what, month three and a quarter at this point.  So, what we did is we actually started laying low once I actually had popped everything and had access, and just started monitoring.  We were sitting just at the hotel monitoring.  Iâm chilling, hanging out.  We know that the drawing goes, we know that the actual input goes the night of the drawing, but doesnât start the payouts âtil the morning.  We see a log-in from the individual â one of the database individual systems into the mainframe, which was abnormal to see that.  Then, at that point we said okay, we need to go basically get on this mainframe.  So, the governor of Puerto Rico forced the CIO to give us physical access into that mainframe.  They basically pulled the CIO from his job and placed him on temporary leave.  We have administrative access on this mainframe, this IBM mainframe where the database is running, and we put some monitoring tools on and just started monitoring.</p>
+
+<p>JACK:	They were able to watch the logs of the database; who logs in, what changes do they make, what data is being updated.  With a database like this, there are tons of changes.  So, when someone comes to cash in their winning lottery ticket, they take it to a place where they can cash it, and the clerk scans the ticket.  At that point, the scanner will check the database to see if itâs a winning ticket or not.  So, already the database has a read operation that would show the logs.  Then the database tells the clerk this is a winning ticket; you should pay this amount.  When the clerk pays it, it updates the database to indicate this ticket has been paid and it shouldnât be cashed out again.  So, every lottery ticket that gets paid, thereâs an update to the database, which means thereâs a lot of logs that heâs gotta sift through to try to find anything unusual.  So, heâs watching these transactions happen all day, every day.  A clerk scans a winning lottery ticket; itâs a winner and should be paid out for a dollar, and the clerk pays out the dollar.  Nothing odd there.  But as he looks closer at these logs and analyzes them more, he sees something.  [MUSIC] He sees someone change the payout amount for a winning lottery ticket.  They went into the database and made the payout higher than it actually was.</p>
+
+<p>OS:	The payout was supposed to be a dollar, but it would change to like, $10,000.  You would see the transaction for $10,000 exit, and then you would see the amount that was actually paid out go back to a dollar in the database.</p>
+
+<p>JACK:	This was it.  This was the smoking gun.  Someone inside the lottery IT team was going into the database and changing one number, waiting for the payout to happen, and then changing it back.  This is why when they audited all the transactions before, they didnât find any sign of this happening, because someoneâs going in the database and wiping the evidence.  It was only from sitting patiently, doing some real-time monitoring of logs, collecting network traffic, and watching these tickets get paid out that they caught this.</p>
+
+<p>OS:	At the point that I had actually dropped in and we were monitoring and we see this, I immediately have to contact the bureau, the FBI field office in Puerto Rico.</p>
+
+<p>JACK:	The governor wanted whoever was behind this arrested and instructed him to contact the FBI.  Remember, Puerto Rico is a territory of the US, so thereâs an FBI field office on the island.  But before he could give the FBI all this evidence, he needed to figure out who the person was that was making these changes, because the problem was whoever was doing this was using the username âserviceâ to make these changes, not his actual username.  So, it wasnât clear who was going in and making these changes.  [00:55:00] But the thing about this database, because itâs a super-secure database, the only way to actually make changes to it is to physically go into the data center room where the server was and log into it that way.  There was no way to connect into this thing remotely.  This is great because now he just needs to know who was in the room during that time that the change was made, and thereâs an easy way to figure that out; security camera footage.  Os gets access to the video and rewinds it to that moment.</p>
+
+<p>OS:	[MUSIC] Weâd see him walk into the server room like, two seconds later, log into the mainframe, be there for a few minutes, and then leave.  So, we were able to tie hey, there was a transaction that occurred between here and here.  What was this at this time?  So, what they started doing is taking snapshots on that database, like literally on the hour, basically, and they were able to actual â what we were able to point out is look, last nightâs synchronization of this, this ticket should have paid out a dollar.  It changed at this time.  Hereâs camera feed, hereâs network access into the mainframe, hereâs camera feed access to him walking into the server room where the mainframe is, hereâs the modification into the payout table, and hereâs a modification of the actual payout table being done again.  Hereâs him walking out of that server room, badging in back into the database, or the IT room, and hereâs video feed footage of that as well.  So, we nailed, tied down, all the way up.</p>
+
+<p>JACK:	So, this explains what was happening inside the network at the time, but what about whatâs happening outside the network at the payout stations?  This operation must have been coordinated with someone outside.</p>
+
+<p>OS:	Yep, so they would say I will be at this payout station at this time, so this guy would go in ten minutes beforehand, change the payout amount.  The person will walk up with a boleto, take a number.  They would actually type in the boleto serial number, and it would be for $10,000 versus a dollar.  He would see the transaction process and then immediately go flip it back to a dollar.  So, the individuals on the end, at the payout stations, didnât know.  They were like oh, this is a $10,000 winning ticket; sweet.  Hereâs your $10,000.</p>
+
+<p>JACK:	Os has cracked the case.  Heâs figured out how the millions of dollars are being stolen from the lottery, and he knows exactly who did it with all the evidence showing how it was done.</p>
+
+<p>OS:	We called the bureau.  Weâre like dude, weâve got soup to nuts evidence of freaking fraud right here.  Like full on, we know that this is happening; definitive â this individual is fully active and doing this.  The bureauâs like cool, wrap up all your information.  This is kinda freaking fun.  When you meet with the bureau to do data drops, you think youâd go to a field office and go hand them whatever evidence you had.  Well, thatâs not the case here.  Because we were the gringos on the island, because they had freaking taken and actually put the CIO on leave, and basically we had interviewed and there was already enough noise fluttering around and people were starting to kinda talk.  The FBI mentioned to us that hey, thereâs chatter in the cartels that thereâs gringos on the island actively investigating.  Be heads up.  Thatâs why we went in to wait for a little while post me actually having access.  One, I needed to collect evidence, and two, we were laying low because the cartel â there was chatter from the FBI that the cartel was aware that there was some sort of investigation going on.  But once we actually â so, this is the fun part, though.</p>
+
+<p>Again, what I was trying to say is that you would think that it would be a field office that you go walk this data into.  Well, no.  Here, Iâm a gringo in freaking Puerto Rico, right?  They call outsiders gringos, right?  So, they â the FBI, instead of having â and this tripped me the fuck out because I had worked with them tons in the military, right?  It tripped me the fuck out when they go yeah, meet us at the mall food court and just bring it all on a thumb drive.  [MUSIC] Iâm like, what the fuck?  So, I go to the Puerto Rico mall to meet the bureau to transfer the empirical data that we have at this point on at least this database administrator making these manipulations and payouts, right?  And literally meet these two guys wearing casual clothes.  We go order our food at the little food stall.  Weâre walking with the trays [01:00:00] and heâs like, you got that thumb drive?  Just drop it on my tray while weâre walking.  Then I do; he grabs it, puts it in his pocket, and we go sit down and eat lunch.  Kinda fucking wild, right?  Itâs like, what the fuck?</p>
+
+<p>JACK:	Supposedly the reason for this is safety and security.  There are drug cartels on the island and the FBI knows that the cartels are watching the FBI field office very closely and knows everyone who comes in and out.  Since Os was already being talked about by the cartel, they didnât want to tip off anyone that Os might have found something and was meeting with the FBI.  So, they made it look like it was just a casual lunch meeting.  Surely you wouldnât pass along top-secret evidence to someone in a public place where anyone can hear, right?  That was exactly why they did it there.</p>
+
+<p>OS:	Whenever I made that dead drop to them, they jumped on and looked at it, right?  But I get a call like, 7:00 that night; hey, meet us at X location.  We want a debrief basically of whatâs on here and walk us through like Iâm talking to you right now on the details of whatâs happened.  I had my significant other actually traveling into town that was supposed to be there at like, 9:00.  I didnât get out of my debrief until like, freaking almost midnight, and missed picking my significant other up at the airport.  They were standing at the airport in the dark with the lights off, and I wasnât able to leave âcause Iâm doing a debrief to the FBI.  I tell them hey, my significant other is over at the airport.  Would yâall mind going and picking them up?  They go, sure.  So, they drive by.</p>
+
+<p>JACK:	But the FBI didnât pick anyone up.  They just drove by and said they didnât see anyone, and left.  So, by the time the debrief was over, Os calls his significant other to see what was going on.</p>
+
+<p>OS:	My significant other was just fucking furious, bro.  Like, just absolutely beyond pissed off.  Here I am; I canât explain shit to them.</p>
+
+<p>JACK:	The reason why he canât explain this is because itâs a classified case.  He canât explain that he was with the FBI the whole time, because what if the cartels are tapping his phone or something, right?  So, all Os could do is just make up a story.</p>
+
+<p>OS:	Iâm so sorry.  I fell asleep.</p>
+
+<p>JACK:	But of course, that wasnât the case.  He just couldnât explain.  At least, not here, not now.  But he returns back to his hotel and stays on the island a little longer to assist the FBI.</p>
+
+<p>OS:	They basically put us on monitored custody.  They were following us everywhere we went.</p>
+
+<p>JACK:	He kept meeting with the FBI to provide more evidence and information that he had access to that might help the case.</p>
+
+<p>OS:	The bureau took over most of the investigation.  We had some limited support to them as more ancillary and informational just to fill in gaps that they werenât able to pick up out of what we had provided and whatnot.</p>
+
+<p>JACK:	The FBI was uncovering evidence that the names Os had provided were linked to a cartel on the island, [MUSIC] basically an illegal drug smuggling group.  The FBI somehow found a cartel member with lottery tickets and confiscated the tickets from him.  They call the lottery tickets boletos there, and so, the FBI was curious; what if they try to cash in these boletos?  So, they get someone to go undercover into a payout station and hand them one of these boletos that was from a cartel member.  The payout clerk looks at the serial number on the ticket, and back at the undercover agent, and doesnât even try to cash the ticket.  Instead saysâ¦</p>
+
+<p>OS:	Pull around back into the garage and then someone would help them out shortly, which turned out to be the individual was told to pop their trunk, donât look back, and go drive to this location.  So, they popped their trunk, stuff was put into it, they drove to basically where â not where they were told to go and basically wherever they went, I donât know.  They popped the trunk to look in there to find that they had like, fifty kilos of cocaine and forty freaking assault rifles, man.  So, not only were they stealing money from the government of Puerto Rico, they were also running guns and drugs through that process.</p>
+
+<p>JACK:	Apparently the people who worked at the payout station itself were also part of this.  They had a system set up that if someone came with a specific ticket, it meant they were a driver for the cartel and here for a pickup.  So, when the FBI pulled around back and got the car loaded up with cocaine and weapons, this was quite a surprise.  They realized they had stumbled upon something much bigger than just lottery fraud.  But somehow it was all linked together.</p>
+
+<p>OS:	[01:05:00] So, a pretty elaborate scheme from the cartel.  So, at that point, the bureau literally safety-extradited us off the island.  They were like, yâall gotta get the hell outta here.  Like, yâall â youâve interrupted a huge cartel operation and weâre gonna do the takedown, and yâall need to get the hell off the island.</p>
+
+<p>JACK:	So, of course Os booked it out of there.  This is why he didnât want to have his name mentioned in this episode, because his life was in danger for uncovering this cartel operation in Puerto Rico, which means that even though he still has indemnity from the governor to commit crimes on the island, heâll likely never go back.  The FBI indicted ten people involved in this case.  An indictment is just a charge against someone basically listing reasons why these people should be arrested.  The indictment claims that these people took 12 million dollars to a nearby island and bought cocaine and brought it back to Puerto Rico.  They used boats and airplanes to traffic the drugs in, and used BlackBerry phones to communicate with, and they even had spiritual rituals before doing a big buy.  They intended to distribute and sell this in Puerto Rico for financial gains.  The indictment also claims that three of the people listed were involved with laundering money through the lottery.  In total, the FBI believed that these ten people illicitly generated 127 million dollars from the sale of drugs and weapons and lottery tickets.</p>
+
+<p>The feds wanted to try to seize all this money if they found it, as well as planes, boats, cars, and property that was part of the operation.  As I looked through this case, it links back to a case where a few years earlier, twenty other people were arrested, including the leader of this cartel.  A lot of evidence points to testimony from what those people said in their trial.  Ten individuals were arrested from this operation that Os uncovered.  The first few I looked at all pled not guilty at first, and then switched to guilty.  Those people got five to fifteen years in prison for this.  One guy held onto his not guilty plea, which meant that this case went to trial, which is cool for me because now I can see a lot more details about this case, because the court transcripts are publicly available.  It turns out they were using these winning lottery tickets to launder money.  Hereâs how they did it; [MUSIC] the court records show that they had someone inside the lottery who would produce winning lottery tickets.  Then those winning lottery tickets were sold to people in the cartel for 20% more than whatever it was worth, so if the winning lottery ticket was worth $10,000, the cartel members could buy the ticket for $12,000.  The reason for this is because the cartel had a lot of illicit cash and they wanted a way to make the cash look legitimate.  So, when theyâd cash in the winning lottery ticket, they would get a check from the Puerto Rico lottery and take the check to their bank to deposit it.  This would allow them to legally declare their winnings on their taxes.  This way, they had a nice, clean record of where they got their money from.  Sneaky stuff.</p>
+
+<p>Anyway, this guy who went to trial was found guilty, and the judge sentenced him to life in prison not just for this lottery stuff but also for the cocaine and weapon smuggling.  So, this brings us to the guy inside the IT department at the lottery.  He was one of the ten that got arrested, and he appears to be a really dangerous guy.  He was being charged with all four counts of drug running and lottery fraud, but I called up Puerto Rico and I spoke to someone who was close to him, and they said he was a good guy and just fell in with the wrong crowd.  See, besides being an IT guy, he also had a private pilotâs license and liked flying planes, and on the weekends he would charter tours in his planes to show people around the island.  Well, this cartel heard about his planes and hired him to move some drugs from one island to another.  Eventually, he was being hired to do more and more trips for the cartel.  He got out on bail while the courts figured out what to do with him.  At first he pled not guilty, but then he came back into court and changed his plea to guilty.  The court said okay, come back in four months and weâll determine your sentence.  Well, in that four-month timeframe, he somehow got involved with this cartel again and was part of a mission where he had to capture someone and take them somewhere, and in that mission, he was shot and killed.  The police found $30,000 in his car after that.  This is a surprise ending for me.  The IT guy who was changing the numbers in the database was shot and killed in the end?  While playing the lottery itself is a gamble, this guy was gambling with his life.  When the stakes are that high, you might either get rich or die trying.</p>
+
+<p>(OUTRO):	[OUTRO MUSIC] A big thank you to Owl Stalker, Os, for sharing this story with us.  Heâs been sitting on this one [01:10:00] for a while, not telling anyone this whole story, and Iâm thrilled to be sharing it with you which is the first time this storyâs ever been told publicly.  If you like stories like this, if you think theyâre valuable, please consider supporting the show.  Iâm an independent creator and I can focus on this full-time through listener support.  If you donate to the show, youâll get bonus episodes and an ad-free version of the show.  So, please visit patreon.com/darknetdiaries and consider supporting the show.  Thank you.  This show is made by me, El Lince Oscuro, Jack Rhysider.  Sound design and original music was created by the Lobo Loco Andrew Meriwether.  Editing help this episode by the Siempre Lista, Damienne, and our theme music is done by the Melodica Breakmaster Cylinder.  Hey, what do you call two monkeys that share one Amazon account?  Prime mates.  This is Darknet Diaries.</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

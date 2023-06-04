@@ -1,0 +1,845 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>Jet-setters â Darknet Diaries</title>
+	<meta name="description" content="How bad is it if you post your boarding pass on Instagram. Our guest Alex decides to figure this out for themself and has quite a story about what happened. We also hear from TProphet whoâs here to...">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Jet-setters â Darknet Diaries">  
+	<meta name="twitter:description" content="How bad is it if you post your boarding pass on Instagram. Our guest Alex decides to figure this out for themself and has quite a story about what happened. We also hear from TProphet whoâs here to...">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/airplane.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/84/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="Jet-setters â Darknet Diaries" />
+	<meta property="og:description"        content="How bad is it if you post your boarding pass on Instagram. Our guest Alex decides to figure this out for themself and has quite a story about what happened. We also hear from TProphet whoâs here to give us some travel hacks to save tons on airfair when we start traveling again." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/airplane.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/84/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/airplane.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/84/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="Jet-setters â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/airplane.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 84: Jet-setters</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://www.podtrac.com/pts/redirect.mp3/traffic.megaphone.fm/ADV4942283554.mp3?updated=1610924997"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/84/",
+			   "title": "Ep 84: Jet-setters"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/84">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[START OF RECORDING]</p>
+
+<p>JACK:	[MUSIC] I went to Europe once, all by myself.  I had to save up for like, a year to afford to go but once I got there, I had no money to do anything so I sometimes snuck into places.  I wonât say specifics but Iâll give you some ideas.  I snuck into a castle once.  Yeah, my trick was to find the gift shop and see if the tours dumped out in the gift shop or something and sure enough, they did.  So, I went in through the exit.  The castle was pretty cool.  I was able to scramble up long, twisting stairwells and get into higher floors and look at rooms and stuff.  Eventually another tour came through and I just jumped in that and went back out.  I had such little money on that trip; I remember once going to a hamburger stand and literally asking for half of a hamburger because I didnât have enough for a whole one.
+<!--more-->
+The guy was flabbergasted but he was nice and gave me a hamburger with nothing extra on it, just plain, and told me I couldnât even use any ketchup.  Another time I remember going on a train with no ticket and just hiding in the bathroom the whole trip.  When the train stopped at my station, I just ran off real quick.  But ah, I miss traveling.  You ready to take some trips again?  I think weâre all itching to go on vacation when life returns to normal.  But donât take off just yet.  In this episode, I have two stories for you.  The first one is about an airplane boarding pass and the second is some travel hacks that youâre just not gonna believe.</p>
+
+<p>(INTRO):	[INTRO MUSIC] These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	For this story, Iâm talking with a person whose hacker name is âAlexâ.</p>
+
+<p>ALEX:	Do you want to hear the story of why they call me âAlexâ with the quotes?</p>
+
+<p>JACK:	Yeah.  You always use it in double quotes there.</p>
+
+<p>ALEX:	Yeah, itâs in double quotes.  In fact, why is it in double quotes?  Who does that?  The answer is because when I wrote this blog post a few years ago, Vice Magazine, they read an article about my blog post where they referred to it and they said oh, according to a blog post written by a hacker who goes by the name âAlexâ in double quotes, and thatâs my real name.  Thatâs not my hacker name.  I just had my real name on the blog.  They just said oh, thatâs this hacker called âAlexâ, and so thatâs my hacker handle now, I guess.</p>
+
+<p>JACK:	Okay, so their name is just Alex, and Alex lives in Australia.  By trade, Alex works on the red team.</p>
+
+<p>ALEX:	My job is to hack the places that I work exactly like a real attacker would, as realistically as possible but then instead of selling all the data on the dark web, we show them how we did it instead.  Metaphorically, my job is to commit crimes and then write very, very detailed confession letters.</p>
+
+<p>JACK:	Yes, but youâre not bringing me a red team story today.  Youâre bringing me a different story.</p>
+
+<p>ALEX:	Nope.  Weâre just talking about a fun thing I love to do on the weekends, I guess.</p>
+
+<p>JACK:	Alex has a blog.  Itâs called mango.pdf.zone where they document different things theyâve hacked.  Like once, Alex got permission from a friend to hack into her stuff and so Alex went about doing that just to see if they could.  Itâs an amazing story which I learned a lot from.  Then normally Alex gets permission from the person before trying to hack them.  But one day Alex got a tip, a tip that asked if they could hack someone way outside of Alexâs friend group.  [MUSIC] So, how did this all start?</p>
+
+<p>ALEX:	It all started one Sunday afternoon when I was sitting at home at my desk, drinking from my water bottle in a way that did not possess any intent to subvert the commonwealth of Australia, where I live.  Suddenly, my â I got this message in the group chat.  The message just said @Alex, can you hack this man?  It was a link to an Instagram post by former prime minister of Australia, Tony Abbott.</p>
+
+<p>JACK:	Well, thatâs quite the audacious challenge, isnât it?  To hack the former head of state of the country where Alex lives in?  But this was not for some political agenda or even to get even with former PM Tony Abbott.  No, it was much smaller than that.  Tony Abbott is on Instagram and he just posted something that was very interesting to Alex.</p>
+
+<p>ALEX:	Months before this, I was talking to people about boarding passes and saying yeah, people post their boarding pass online all the time.  They just post it on Instagram saying âgoing on holiday; check it out.â  But they donât realize that their boarding pass can be used for bad identity fraud somehow, so some hacker is just browsing #boardingpass on Instagram, being like yum, yum.</p>
+
+<p>JACK:	Thatâs exactly what Tony Abbott [00:05:00] just posted on Instagram; a picture of his boarding pass.  I donât know why.  I guess he was just showing off for the gram that heâs traveling around or something.  But it doesnât matter.  What does matter is Alex was telling people that this is a bad thing to do.  But can Alex prove why this is bad?</p>
+
+<p>ALEX:	The post was a picture of his boarding pass for a flight and heâs like, taking a picture of the boarding pass.  Itâs kind of in his lap.  Heâs sitting in the plane and itâs just a photo of the boarding pass.  Itâs just showing that hey, Iâm on a plane.  The caption is something like âIâm coming back to Australia.  Hello,â or something.</p>
+
+<p>JACK:	Okay, so the first thing that comes to mind for me is that if you post your boarding pass, people immediately know youâre not home and might take that opportunity to break into your home and rob you.  So, thatâs one thing and thatâs a big thing, but is anything really bad about showing the world what flight and seat youâre gonna be on?  I mean, itâs not like heâs posting his credit card or even passport which has details that he doesnât want people seeing.  So, Alex was curious exactly what information is contained on a boarding pass.</p>
+
+<p>ALEX:	When you get a boarding pass from an airline or when I have at least, they donât really tell you that itâs secret, right?  When you type the booking reference into a website, it doesnât come up as dots like a password.  You can just type it in and you can see it as youâre typing.  Thatâs sort of what people have learned means oh, okay, that means itâs not secret.  But actually, it is secret.  So, I think the messaging from the airlines is a bit confusing as to whether your boarding pass/booking reference is meant to be secret or not.</p>
+
+<p>JACK:	So, that was the situation when Alex received this text asking if Alex can hack the former PM.  Alex knew that this boarding pass contains sensitive information but did they really know how to get that or what someone could do with that?  So, Alex took on the challenge of hacking the former PM Tony Abbottâs boarding pass to try to figure it out for themself.</p>
+
+<p>ALEX:	[MUSIC] I was curious.  I kind of just wondered oh, this famous person has done this thing that could be bad or dangerous.  Is it?  Is it dangerous?  How bad is it?  What has happened?  I didnât know.  I didnât even know anything about what youâre meant to do with a boarding pass but I wanted to find out.</p>
+
+<p>JACK:	So, Alex who has training and experience as a red teamer and security incident responder began to figure out what they could do with this photo.  Whatâs the tool you used to get started hacking this boarding pass?</p>
+
+<p>ALEX:	Oh, I tried to use the most elite hacker tool I know, so I opened up Google Chrome and just started typing in the bar at the top that Googles things.</p>
+
+<p>JACK:	Yeah, itâs true; Google has probably helped more hackers than any other tool in history.</p>
+
+<p>ALEX:	I knew there was something bad about posting your boarding pass and I knew that something bad could happen if someone else had it but I had never done it before and I didnât know where am I supposed to look, which information is the secret, important information.  I donât know.</p>
+
+<p>JACK:	After some Googling, Alex found out that their first target should be the bar code on the boarding pass.  This bar code contains all the important information for a personâs flight, including the booking reference number that Alex needed to gain access to Abbottâs account.</p>
+
+<p>ALEX:	I tried to scan the bar code just using a bar code scanner app on my phone but it didnât work.  I thought oh, okay, maybe itâs too blurry.  So, I tried making the picture bigger but then it still didnât scan.  Okay, so I went into Photoshop and tried to turn up the contrast and make the little bars more obvious so that the app could pick it up but it still wasnât scanning the bar code.  I spent a long time, like maybe fifteen minutes looking at this image, trying to fix the bar code.  Then after that time, I noticed that the booking reference is also just printed on the baggage receipt in text.  You could just read it with your eyes; you donât need the bar code scanner app at all.  I was like wow, I graduated university but it did not prepare me for this moment.</p>
+
+<p>JACK:	Okay, so the bar code wasnât even needed here.  The airline just printed the booking reference number right on the ticket in plain text.  Once they realized that, Alex went to the airlineâs website to see what access this gets you.</p>
+
+<p>ALEX:	 [MUSIC] So, I went to the Qantas website â thatâs the airline â and I went to the Manage Booking page where you log in with your booking.  Thereâs two things you need to manage a flight booking.  The first one is the booking reference which I just got and the second one is your last name.  I knew the last name; it was Abbott.  It was also printed on the boarding pass.</p>
+
+<p>JACK:	So, taking these two pieces of information that Tony Abbott just posted to his Instagram account, Alex tries to log in to the airlineâs website with these details.</p>
+
+<p>ALEX:	I was kind of hoping that the second thing you need would be a password or something more secret, but then I realized that the booking reference is the password.  I was like, okay.</p>
+
+<p>JACK:	Yeah, it turns out thatâs all you need to log into the site with.</p>
+
+<p>ALEX:	So, I typed in the booking reference and last name and just clicked Log In.  I havenât done any hacking here.  Iâve just read a six-digit code and typed it in.  Then when I hit Log In, it was like hello, Mr. Abbott.  Welcome to your flight and stuff.  Hereâs all your flight details.  I was like, oh.</p>
+
+<p>JACK:	Alex was now logged into Qantas Airlineâs [00:10:00] website as the former Australian Prime Minister Tony Abbott without his permission.  This felt illegal but at the same time, they just entered in some basic information that Abbott himself posted publicly on Instagram.  Iâm not even sure if this is classified as logging into a website.  Like Alex was saying, they donât obscure the booking reference when youâre typing it in, so it doesnât feel like a password.  Then itâs printed right there on your boarding pass.  So yeah, airlines just donât seem to be treating this as sensitive information.  Like, airlines arenât telling you to keep this secret and to not share it with others.  This isnât an area of their website where you can do much, especially after the flight has taken off.  You canât buy tickets or make reservations here.  No, itâs just there to check your flight status.</p>
+
+<p>Yeah, itâs a gray area on whether this is a super-private area of the website or if itâs just security through obscurity kind of thing.  But Alex was in there now and was looking around to see what was there.  At first it didnât look like there was anything important.  The flight had already happened so it wasnât like they could change the booking or anything and Alex could see that the flight was booked through a travel agency.  Then Alex found Tony Abbottâs frequent flyer number.  But what are you gonna do with that?  This is not really a piece of identifying information and doesnât do much, so even though Alex logged in, there really wasnât anything on this website that would be a privacy problem or security concern.  At this point, Alex was relieved to not have found anything.  But what else could there be?</p>
+
+<p>ALEX:	I wasnât gonna give up just because there was nothing that I could see on the web page.  Iâm not gonna stop just âcause a web page says weâre done.</p>
+
+<p>JACK:	Oh yeah, thatâs right, âcause youâre a red teamer and you have access to the elite hacking tools such as Kali Linux, and you probably got an old back track hanging out somewhere.</p>
+
+<p>ALEX:	Jack, you canât say that to me.</p>
+
+<p>JACK:	Alex wanted to analyze the website further and look for any hidden data that might be obscured somewhere.  Maybe thereâs secret information buried somewhere on the website and you need a super-special hacker tool to see it.</p>
+
+<p>ALEX:	Then I used the only hacker tool I know which is to right click on a page and then click Inspect or Inspect Element.  That opens up the page source of the page.  It shows you the HTML of the page.  Listen, somebody might one day try and tell you that this is hacking or this is an advanced computer skill.  Itâs definitely not.  Anyone can do this.  This is a tool that programmers use to try and understand websites.  Itâs not made for hacking.  This is not an advanced, elite hacking tool.  Anyone can do it.  I hope thatâs clear.</p>
+
+<p>JACK:	So youâre saying right click, View Source is not illegal.</p>
+
+<p>ALEX:	Iâm not a lawyer but Iâm confident on that one.</p>
+
+<p>JACK:	Yeah, so the way a website works is your browser asks the web server for the information on the site.  The web server sends the data over formatted in HTML.  Now itâs just a matter for the browser to format and display the website.  But yeah, in order for the browser to know what to display, it must have that HTML.  Since the dawn of browsers, you were always able to right click on any website and then click View Source and see the raw HTML.  Itâs not illegal to view source because every website you ever visited ever, the browser is viewing the source for you.  But the reason why Alex did this is because sometimes thereâs extra bits of information that might not be displayed in the browser but it is there in the HTML.</p>
+
+<p>ALEX:	When I started looking at the page source, I was like okay, yep, this is a web page, and so I kind of scrolled around âcause I didnât know what I was looking for.  I was just kind of wondering if there was more stuff in there.  Then eventually after scrolling around I noticed there was this big section of JSON, this big section of data just in the page which is â I mean, sometimes that happens in web pages but itâs kind of strange for the page to have a whole bunch of extra data in there that itâs not showing.</p>
+
+<p>JACK:	JSON data is just another way to format data.  It works particularly good for web browsers to parse it and read it, and Alex said this chunk of data was just a little too big for them to look at and understand; long lines of text and data and numbers.  Itâs not encrypted; itâs just hard to read.</p>
+
+<p>ALEX:	I realized that I wasnât gonna find the passport number or anything like that by just rummaging around in the HTML ball pit, so eventually I just searched for âpassportâ in the page.  [MUSIC] One of them was this thing called Passport and it had a thing called Date of Birth and it had a thing called Document Number.  The Document Number sure looked like a passport number.  Then I sort of looked at the birthday and it was the same birthday that Tony Abbott had when I looked him up on Wikipedia.  I was like, oh no.  Itâs just there.  Itâs just in the page.  At that point, I was fairly sure I was looking at the extremely secret government-issued ID of the former prime minister of Australia and former servant to Queen Elizabeth and I was kind of worried that maybe I was doing something wrong somehow, but not enough to stop [00:15:00] looking.</p>
+
+<p>JACK:	This, I would say, is a privacy problem.  By posting your boarding pass, someone can use that information to log into the airlineâs website and click View Source and see your birth date, passport number, frequent flyer number, and flight details.  With this information, a bad actor could do some nasty stuff.  You donât want to be just telling the world what your passport number is.  Somewhere in here, Alex dubbed this the Do Not Get Arrested Challenge of 2020 because this felt wrong but where was the line?  Alex wasnât sure.  So, at this point, I mean whatâs the nerves feel like for you?</p>
+
+<p>ALEX:	At this point I was like hah, I think I have the former prime ministerâs passport number.  I was thinking oh boy, oh jeez, because for all I know, other people are looking at this page at the same time as me.  Thereâs no guarantee that Iâm the only one here.  So, this is basically public, this passport number, and so I was thinking okay, I better get someone somehow to reset his passport number like you reset a password.  Can you even reset a passport number?  Then I was thinking, this all seems okay but is it possible that Iâve done a crime?  After I found the passport number, I was wondering well, is there anything else in this page or is it just the passport number?  So, I wondered if there was a phone number, so I searched for phone and number and things like that but nothing came up.  But then I, in an extremely big-brain move, searched for 614 which is the first three digits of an Australian format phone number.  [MUSIC] That led me to this really weird section of text in the page.  There was a phone number that was enough digits beginning with 614, but it didnât just say like, phone number equals this.  It had all this strange uppercase, all caps spaghetti airline code.  Like, the phone number said all caps CTCM SPACE QF SPACE HK1 SPACE and then the phone number.  There was all this other weird uppercase stuff all over the place.</p>
+
+<p>JACK:	It turned out that Alex had found a section of the code called SSR for Special Service Request.  This is a special airline language thatâs code for things like whether or not this passenger wants a vegetarian meal or the passenger is an unaccompanied minor.  In Tony Abbottâs SSR, Alex could see notes left by the airline and one of the notes started with the code CTCM.  When Alex looked up what CTCM meant, it was a note that contained the passengerâs phone number.  This is so if the airlines need to text you about delays or whatever.  At this point, Alex thought theyâre now looking at Tony Abbottâs phone number.  This was about the point where Alex knew they needed some help.  After all, this was the Do Not Get Arrested Challenge of 2020, so Alex reached out to the Australian Free Government Legal Aid Hotline.  But whoever answered the phone, they just didnât know enough about computers to be able to help Alex with this.</p>
+
+<p>ALEX:	I didnât think that anything I had done sounded like a crime but I understood that sometimes when the other person is famous or something, that things can suddenly become a crime.  So, I was like well, what if itâs the former prime minister?  Is it illegal to do this?  I donât know.  I donât know the laws, so I should probably try and find an adult who can tell me how it all works.</p>
+
+<p>JACK:	When the free telephone lawyer told Alex they didnât know, Alex went looking for themself to understand if they had committed any crimes.</p>
+
+<p>ALEX:	I was kind of just Googling it, being like hey, what are the laws?  Can I read them?  It turns out there is.  Thereâs this thing called the Legislation and itâs just the laws written down.  I had no problem scrolling through and reading all the HTML of that page, but whoever wrote the legislation was just making up words.  There was just so many complicated words and itâs so not obvious what they mean.  But I was eventually able to divine from the Times New Roman tea leaves that having the passport number shouldnât be a crime.  That seems fine.  I was worried about defamation which is where you publish it and it makes someone look bad, but I realized that in the laws it says that itâs not defamation if itâs true.  So, just publishing that itâs a true story, thatâs okay.  But then the laws that I read that were about computers were like, itâs illegal to do anything with a computer.  If you ever log in to a computer, thatâs a crime.  So, I was like oh, okay, I should ask a lawyer about this.</p>
+
+<p>JACK:	Okay, letâs take a moment to gather ourselves here.  Alexâs whole goal in doing this was to show their friends that they should not be posting photos of their boarding pass on Instagram and now Alex has this really cool story about how the former PM posted his boarding pass and how Alex was able to easily get all kinds of private information just from that.  Alex wants to blog about this or at least be able to show this to their friends.</p>
+
+<p>ALEX:	My end goal was to publish a blog post about all this and also fix the problem.  So, step one was to figure out whether Iâve done a crime.  [MUSIC] Step two was to notify somebody that this happened so they can fix it and notify someone that the passport [00:20:00] number got made public.  Maybe Tony Abbott, maybe the government.  Step three was to get permission to publish that blog post about it and step four was to tell the airline, tell Qantas that â about the fact that all this information was just in the page so they can fix it.</p>
+
+<p>JACK:	At this point in the story, Alexâs interpretation of the law puts them on the safe side.  But is Alexâs interpretation actually good enough to stay out of jail?  Interpreting the law is very tricky, so they continued calling lawyers and seeking help to get some answers which was not so easy because they didnât want to admit anything.  Alex just wanted to know hypothetically if somebody did do this, would it be illegal?  Eventually Alex heard enough people say itâs probably safe and Alex was feeling confident enough.  But I want to emphasize something here; Alexâs motives mattered on whether or not this was illegal.</p>
+
+<p>This was done for research and to do responsible disclosure so even though this was legal for Alex to do, it probably wouldnât be legal for a criminal to do the same thing but with the intention of doing some kind of malicious activity.  Step two was to notify Tony Abbott that his personal information might have been seen by other people.  That should be easy enough; I mean, his personal number was just one of the things that Alex found in the HTML.  Plus, he obviously was on Instagram since he posts photos there.  So, Alex could just call Tony Abbottâs cell phone directly to report this or send him a DM on Insta.  But what are you gonna say?  Uh, hi, Mr. Abbott?  I hacked your boarding pass.</p>
+
+<p>ALEX:	Thatâs the other thing, is that I wanted to be really careful about the way I reported it or communicated it because itâs â there sometimes is this yikes thing that happens.  Iâm sure youâve seen where someoneâs trying to be responsible and report a security problem and help the person fix it but the people misunderstand and they think that youâre trying to hack them or ransom them or something and they get really mad.  I didnât want to play that game.</p>
+
+<p>JACK:	Okay, so, no, Alex didnât want to just DM Tony Abbott about his passport but Abbott left office in 2015 so now Alex had a new challenge.  Who in the government do you call to leave a message for the former prime minister?  Alex reached out to some friends to see if they had any advice.  At first there was nothing but then one friend had an idea.</p>
+
+<p>ALEX:	One of my hacker friends told me to call 1300 CYBER1.</p>
+
+<p>JACK:	[MUSIC] 1300 CYBER1.</p>
+
+<p>ALEX:	I was like, excuse me?  Thatâs not real.  You canât be serious.  You canât say that.  But apparently thatâs the Australian phone number to call Cyber or something.  Iâm not really sure but you know I called that number.</p>
+
+<p>JACK:	You called Cyber?</p>
+
+<p>ALEX:	I instantly dialed 1300 CYBER1 and the person on the other end was like, hello?  I was like, incredible.  Itâs real.  I vaguely explained what was going on and they said oh yeah, no worries.  Hereâs this e-mail address where you can report this to ASD.  ASD is the Australian Signals Directorate.  Itâs like the Australian equivalent of NSA.</p>
+
+<p>JACK:	Admitting all this to the Australian version of the NSA?  That seemed a bit intense but apparently in Australia, thatâs who you go to for stuff like this.</p>
+
+<p>ALEX:	I wrote them an e-mail just like the person said and I said you know, hello, I found the former prime ministerâs passport number.  Hereâs the last digit and stuff to prove that I found it.  Let me know if I can help.  Let me know if this is useful for you.  They replied instantly which is great âcause no one else had been replying instantly.</p>
+
+<p>JACK:	They replied right away and it was interesting because the e-mailâs subject said Security Level Sensitive which is some kind of security rating the ASD assigned to the e-mail which was pretty interesting to Alex.</p>
+
+<p>ALEX:	I knew that I had made it to the big time.</p>
+
+<p>JACK:	In their reply that ASD asked for more information from Alex.  Once Alex gave it to them, Alex says they basically told them alright, thanks for the help, kid.  Weâll take it from here.  So, that seemed like it was the right thing to do and at least security would be addressing something with the former prime minister.  Like, maybe someone was calling him right now saying take those images down from Instagram.  But next, Alex wanted to let Qantas know about this vulnerability on their website.</p>
+
+<p>ALEX:	I wanted to tell them hey, inside the page source of the Manage Booking page is â you send the passenger their own passport number and their own phone number and their own â whatever else is in that weird uppercase spaghetti.</p>
+
+<p>JACK:	Alex found an e-mail for the security team at Qantas and told them about this vulnerability.  Just like with ASD, Qantas sent them an e-mail that basically said thanks, weâre on it, and then radio silence.  So, thatâs two official bodies alerted and both times they said they would take it from there.  So technically, Alex had done all they needed to do.  But now, Alex wanted to get some kind of permission to be able to post this story on Alexâs blog.  So, you wanted permission to post this and specifically you wanted permission to post hey, this is Tony Abbottâs, not just like, hereâs what you can do with a boarding pass.</p>
+
+<p>ALEX:	Yeah, I wanted to tell the whole story exactly as it happened to me without leaving out anything important.</p>
+
+<p>JACK:	Why is this?  âCause I like this.  I like it when people blog and stuff, so why is it important to you to publish this story?</p>
+
+<p>ALEX:	Lots of reasons but firstly I love writing dumb blog posts where I [00:25:00] do stupid jokes and also try and say something meaningful.  Love to do that.  But I wanted to show all the details and how simple it was because I wanted everyone to feel like oh, I could do that.  The idea is yeah, you absolutely could do this.  I didnât do anything special.  Anyone could have done this.  I wanted to show that oh, well, if itâs that easy for it to happen to somebody famous, then it could happen to anyone.</p>
+
+<p>JACK:	Alex seems like a good person.  They wanted to get that stamp of approval or at least let Tony Abbott know that his name was going to be attached to the story.  But the only problem wasâ¦</p>
+
+<p>ALEX:	I didnât really know who I needed to get it from.  I was like, from the government?  From Tony Abbottâs â does he have a security team?  I donât know.  Do I tell Tony Abbott himself?  I didnât know.</p>
+
+<p>JACK:	Right.  So, how did you go about trying to figure it out?</p>
+
+<p>ALEX:	I spent a long time not finding anyone to talk to.  I spent a long time not knowing how to contact his staff or who to contact, and a lot of time waiting for the government to reply to e-mails that they never would reply to and never did.  But then one day, in a burst of motivation or something, I told a journalist friend about this and asked them if they knew how to â what I should do next.  They had really, really good ideas âcause theyâre a professional journalist.  So, they said I should try and find his former staff from when he was the prime minister, so his former ministers and stuff, and contact their offices and see if they have his contact details.</p>
+
+<p>JACK:	The logic here is that Alex didnât want to call Tony Abbott directly.  They wanted the office of Tony Abbott to let his people know about this because surely a former PM has people, right?  Alex thought that the current administration might have connections to the former administrationâs people.  Alex went to Wikipedia and searched through Tony Abbottâs staff when he was in office.  Minister of the Arts?  No, heâs retired.  Minister of Agriculture?  No, heâs retired too.  Eventually Alex noticed one name that did sound familiar.</p>
+
+<p>ALEX:	One of his former ministers was Scott Morrison who is the current prime minister of Australia today.  I was like oh, well, he definitely has an office.</p>
+
+<p>JACK:	Calling the current prime ministerâs office looking for the old prime minister; yeah, that sounds like a good plan to me.</p>
+
+<p>ALEX:	I was like, hello?  I was trying to explain that hi, I know that this is not Tony Abbottâs office but I was wondering if you had his contact details âcause I have this media inquiry which is what my journalist friend said to say.  The person I was talking to interrupts and explained so, Tony Abbott isnât the prime minister anymore.  This is actually Scott Morrisonâs office.  I was like yeah, I know.  Please, can you check if you have the contact details?  She said that she wouldnât have them and went to check for like a long time, like maybe fifteen, thirty seconds.  Then after that time she was like oh, actually, I can give you Tony Abbottâs personal assistantâs mobile number.  Is that good?  I was like yes, that is extremely good.  Thatâs what Iâve been looking for this whole time.  Yes, thanks.</p>
+
+<p>JACK:	Alex jots down the number, hangs up, and dials that number.</p>
+
+<p>ALEX:	Then I called it right away and I â the person who answered, I was like hello, is this Tony Abbottâs personal assistant?  The person was like no, actually, thatâs not me but I am one of Tony Abbottâs staff.  I was like, amazing, incredible.  This is what Iâve been trying to find for months.  I started explaining the thing that Iâd rehearsed on the phone so many times, explaining the security issue and I want to report it.  Halfway through, the person says sorry, who are you and what organization are you calling from?  I was like oh, no, no, Iâm just Alex.  Iâm just a person.  Iâm not calling from anywhere.  I just found this thing.  But they were understanding and they were like, Iâll have to call you back.</p>
+
+<p>JACK:	It sounds straightforward but getting this far actually took a long time, like at least a month of trying to figure out someone close to Tony Abbott to explain the impact of posting his boarding pass on Instagram like that.  This felt like major progress.</p>
+
+<p>ALEX:	An hour later I get a call from another number that I donât recognize and itâs a beautiful moment for me because he says [MUSIC] that he knows what Iâm talking about.  Heâs like yes, Iâve seen the e-mails from ASD.  Iâm currently in the process of getting Tony Abbott a new passport number.  Itâs like, amazing.  Itâs so good for me to talk to someone who knows what Iâm talking about.</p>
+
+<p>JACK:	Wow, success.  After all this time, Alex finally got confirmation that all those e-mails werenât just going into the void.  I didnât even know you could get a new passport number but apparently that is a thing.  Thanks to Alex, Tony Abbott was getting a new one.  Alex said this phone conversation went on for a while, discussing things like how they found all this information on Tony Abbott and what kind of stuff Alex wants to put in the blog post.  The assistant asked to see a draft of the blog before Alex posted it so they can review it.</p>
+
+<p>ALEX:	Then he says these things do interest him.  Heâs quite keen to talk to you.  I was like, excuse me?  Tony Abbott wants to call me on the phone?  I suppose I owe this service to my country at this point.  What does he want to talk about?  He said oh, heâs â just to pick your brain on these things.  Heâs quite keen to learn about it or something.  I was like, alright, letâs absolutely go.</p>
+
+<p>JACK:	So you set up a date for the call and then, what, does Tony Abbott call you or you call him?</p>
+
+<p>ALEX:	[00:30:00] No, yeah, then my phone rings at 3:30 as we planned and itâs from a private number; nice.  On the other end is Tony Abbott.  He started telling me about how â mostly the thing that he wanted was to check that his understanding of how that I found his passport number worked; like, check his understanding was correct, and it was.  He also wanted to ask how to learn about the IT, which is what he called it.</p>
+
+<p>JACK:	How long did you guys talk?</p>
+
+<p>ALEX:	How long did we talk?  About half an hour, an hour?  At least half an hour.</p>
+
+<p>JACK:	Whoa.</p>
+
+<p>ALEX:	I mean, we had a lot to â and he had lots of questions like how did it all happen and what can I do to learn about it?  He was telling me about how he tried to log into a Microsoft Teams meeting earlier and he got fairly bamboozled by that whole process of trying to do it.  He said he can now log into a Teams meeting in a way that he couldnât before.  Then suddenly he said you could drop me in the bush and Iâd feel perfectly confident navigating my way out, looking at the sun and the direction of rivers and figuring out where to go but this?  Hah.  That was some incredibly powerful Australian energy.  Thatâs like, the most Australian thing anyoneâs ever said about â that anyone could ever say, saying oh, being dropped into the bush?  No worries.  Thatâs easy; I can just navigate my way out.  Thatâs normal.  But learning how to use a computer?  Hm, thatâs hard.  Hm.  Like, who does that?</p>
+
+<p>JACK:	Alex talked Tony Abbott through the entire process of how they ended up with his passport number.  Then Alex started answering some tech questions that Tony had.</p>
+
+<p>ALEX:	Then at one point he asked is â if there was a book that he could read to learn about the basics of IT, since he wanted to learn how it works.  I was like oh, I mean, there probably is a book out there called The Basics of IT or IT for Dummies or something but it probably wonât help because I didnât learn from a book.  Everyone just figures it out.  So, I told him the story about my mom which was that when I was growing up, my mom always said there were too many buttons and that she was afraid to press the buttons âcause she didnât know what they did.  I would always say no, no, no, mom, you just gotta press all the buttons and then you know what they do.  I donât know if that helped him.</p>
+
+<p>JACK:	Did you actually tell him about your mom?</p>
+
+<p>ALEX:	Yeah.  Is that okay?</p>
+
+<p>JACK:	No, I think itâs brilliant.  That chat that Alex had with Tony Abbott about his mom, yeah, that resonates with me.  My parents, heck, even my grandparents have been using computers way longer than I have yet for some strange reason, Iâm better at computers than they are, way better.  What is with that?  Well, for one, when I got a computer, I felt compelled to push buttons.  They were afraid to push buttons which always reminds me of this quote from The Hitchhikerâs Guide to the Galaxy.</p>
+
+<p>TRILLIAN:	Buttons arenât toys.</p>
+
+<p>ZAPHOD:	Buttons arenât toys.</p>
+
+<p>JACK:	Yes, they are.  To me, buttons are toys.  I want to push them all to see what they do.  Something inside me just canât help it and itâs this innate curiosity of mine that has absolutely led me into a lot of trouble with computers.  Iâve ruined them, deleted important stuff, and whoopsed the whole thing many times.  But then, you know what?  I had to rebuild and restore it and fix it.  So, for me, the way I learned how to be good at IT was simply being fearless at pushing buttons.  Yes, sometimes I had really bad moments like that time in â05 when I somehow wiped twenty gigs of music from my iPod.  Man, Iâll never forget that.  That was the worst data loss experience ever for me but itâs moments like that that really teach you how to respect the tech.  Thatâs my suggestion at getting good at IT, too; push the buttons and push them a lot.  Well, so after Alexâs call with Tony Abbott, Alex got approval to publish the blog post.  So, it was published.  The post was a hit too, echoing across many tech publications as a lesson to be learned on why you donât post pictures of your boarding pass to social media.  But it also meant that the Do Not Get Arrested Challenge of 2020 was a success.  Weâve got one more story for you after the break.  Stay with us.  Alright, so I have another flight-hacking story for you.  This one is from TProphet.</p>
+
+<p>TPROPHET:	TProphet.</p>
+
+<p>JACK:	Now, TProphet is no stranger to the hacking scene.  I asked him how many Defcons has he been to?  He told meâ¦</p>
+
+<p>TPROPHET:	Yeah, all of them.</p>
+
+<p>JACK:	So, the first Defcon was in 1993 and has been a yearly event since.  So, going to all of them is quite an accomplishment.  Now thereâs over 30,000 people who attend Defcon but that first one, like only 100 people showed up and TProphet was one of them.</p>
+
+<p>TPROPHET:	It was at the Sands and we had maybe fifty people in one small room.  Yeah, thatâs kinda how it started and it just grew from there.</p>
+
+<p>JACK:	You can imagine someone whoâs been in the hacker scene for over thirty years must have a lot of stories, right?  Yeah, well, TProphet isnât sharing any of those stories with us today.  I wish, but maybe another time.  But TProphet likes to write.  No, Iâm not talking about the 120,000 tweets heâs written at this point.  Heâs a regular contributor to the 2600 Magazine, The Hacker Quarterly.  But he also likes writing a travel blog called [00:35:00] seat31B.com.  This travel blog is unlike any travel blog Iâve ever seen.</p>
+
+<p>TPROPHET:	In my free time, I like to travel.  My goal is to join the Travelersâ Century Club which means that you visited at least 100 countries or territories around the world.  Iâve been to all seven continents so far.</p>
+
+<p>JACK:	Even Antarctica?</p>
+
+<p>TPROPHET:	Yeah, including Antarctica.  I went with a bunch of hackers, actually.  The tour camp people and Tour Con did a cruise to Antarctica a few years ago called World Tour and so we went down.  Hackers took over a ship; we had a 3D printer.  It was awesome.  It was like a former Norwegian icebreaker with mostly Russian crew which was pretty fun.</p>
+
+<p>JACK:	So, his blog is basically a bunch of travel hacks.  Now, you might think oh, travel hacks.  Yeah, Iâve seen stuff like that on BuzzFeed.  Like, when traveling, wrap your shoes up in a shower cap so that you donât get your clean clothes dirty.  Or hereâs a real advanced one; enable private browsing when booking your flight because sometimes websites will jack up the price next time you visit their site, knowing that you made up your mind and youâre ready to buy.  But TProphetâs blog goes way beyond these amateur-level tips.</p>
+
+<p>TPROPHET:	I look at things from the hacker perspective and that includes getting there âcause one thing about travel is it can be pretty expensive, right?  But I donât like to pay money for things if I donât have to pay money for things.  Iâm kind of an extreme couponer and that guy thatâs like, going through the self-checkout with every single stacked coupon you can possibly do to get a pizza for $0.03, thatâs me.  I buy stuff I donât even want to eat because I can get it cheap or free and I kinda do almost the same with plane tickets.</p>
+
+<p>JACK:	Now, my tricks to get cheap flights is to first do a comparison of all the flights to find the cheapest one.  My second trick is to always book at least thirty days in advance which can save hundreds of dollars.</p>
+
+<p>TPROPHET:	Those are decent rules to try to follow but theyâre not â youâre actually paying cash for a flight if you do that.  Money is leaving your bank account.  I donât like paying money for flights.</p>
+
+<p>JACK:	Ooh, Bitcoin.</p>
+
+<p>TPROPHET:	No, no, Bitcoinâs money.  You can turn it into money.  No, I like paying points for flights because if you can get points for free and you pay for your flights with points, then you didnât actually spend any or maybe not much money on your flight.</p>
+
+<p>JACK:	[MUSIC] Uh-huh.  See?  TProphet has figured out a way to get free flights to almost anywhere in the world by using points to buy tickets.  This is so much different than a travel hack which might save you twenty dollars or something.  Yeah, people who travel a lot get frequent flyer miles which are the same as airline points and this is a way for airlines to give thanks to their loyal customers.  You can exchange frequent flyer miles or points for free trips to places.  Now, historically, airlines gave these to loyal customers, people who flew a lot.  But in the last few decades, airlines have been looking for new ways to find customers and can sometimes offer these points as a sort of marketing strategy.</p>
+
+<p>TPROPHET:	Generally speaking, what I do is I use my good credit to take the banks to the cleaners.  They are falling all over themselves to give me credit cards and thatâs totally fine.  Iâll sign up for all of them.  I get the points that go with the cards but if you can bank a bunch of points that the bank essentially gave you for very little or free, a points bank can turn into tickets that are worth way more than you would ever pay for the points, especially if you can get them free through credit cards.</p>
+
+<p>JACK:	Using this basic strategy, TProphet has gone to some pretty exotic places.</p>
+
+<p>TPROPHET:	I can actually talk about a trip that I took to St. Helena.</p>
+
+<p>JACK:	Whereâs this?</p>
+
+<p>TPROPHET:	St. Helena is a British territory in the South Atlantic.  Itâs the final resting place of Napoleon.</p>
+
+<p>JACK:	South Atlantic; I canât â I still donât even picture this.  So, this is off of Africa?</p>
+
+<p>TPROPHET:	Yeah.  Well, you know where Walvis Bay is, right?</p>
+
+<p>JACK:	No.</p>
+
+<p>TPROPHET:	Namibia.</p>
+
+<p>JACK:	No.  Okay, Iâm sorry.</p>
+
+<p>TPROPHET:	Not Nambia, as the president says.  Namibia.</p>
+
+<p>JACK:	Namibia.  Thatâs Africa.</p>
+
+<p>TPROPHET:	Yeah, yeah, exactly.  Africa.</p>
+
+<p>JACK:	Okay.</p>
+
+<p>TPROPHET:	So, go to Walvis Bay and head due west for around four and a half hours on a plane equipped with special extra tanks to make it that far.  Then land at the windiest airport in the world.</p>
+
+<p>JACK:	Okay, so if I were to fly from the US to â whatâs this place called again?</p>
+
+<p>TPROPHET:	St. Helena.</p>
+
+<p>JACK:	St. Helena.</p>
+
+<p>TPROPHET:	Wonderful place to visit, by the way.  I totally recommend it.</p>
+
+<p>JACK:	How much would that cost in airfare for a typical person?</p>
+
+<p>TPROPHET:	That depends.  Do you want to sit all the way in the back in the middle seat with somebody reclining into you and a baby throwing up in your lap, or do you want a personal lie-flat suite with champagne and caviar brought to you, where youâre waited on hand and foot the whole way?</p>
+
+<p>JACK:	What did you choose?</p>
+
+<p>TPROPHET:	[00:40:00] Of course the latter.</p>
+
+<p>JACK:	[MUSC] Thatâs the other thing about TProphet; heâs not just trying to squeeze his way onto the cheapest seat of the plane just to get somewhere for free.  No, he upgrades the experience to sit in the special seats at the front of the plane, like the ones that recline all the way down into a flat bed.  Okay, so to get from say Seattle to St. Helena on a lie-flat business class ticket would be how much?</p>
+
+<p>TPROPHET:	Business class?  You would be paying somewhere in the neighborhood of $10,000 for that if itâs business class.  But I didnât go business because thatâs so gauche.  I went first class for part of it where they bring you the cru champagne.</p>
+
+<p>JACK:	Okay.  I didnât know there was a difference between business and first.</p>
+
+<p>TPROPHET: 	Oh yeah, yeah.  First class is â I mean, just to give you an idea of first class; on this particular trip, the first class lounge in Hong Kong, Iâm pretty sure Elon Musk was in there.  The reason why thereâs first class is because who youâre flying with are people like Hong Kong movie stars and celebrities, billionaire hedge fund managers.  Theyâre paying more money so they donât have to be around you.  Thatâs really what this is.  Itâs not all that much better than business class.  You get a lie-flat seat in both cabins.  You get pretty nice food in both cabins.  You get some really ridiculous expensive luxury stuff in first class.  They bring you a box of chocolates before you leave thatâs pretty nice, and you get access to lounges that are not for you.  In fact, thereâs so much not for you that when I started walking to the first class lounge in Hong Kong, I got swarmed by easily eight Cathay Pacific staff who came out of nowhere.  It was just like, bam.  Thereâs all these people there and theyâre like sir, can we see your ticket?  When they looked at it theyâre like oh, right this way.  I donât exactly look like a fancy billionaire hedge fund manager, right?</p>
+
+<p>JACK:	I mean, Mark Zuckerberg wears a sweater, wears a hoodie sometimes, soâ¦</p>
+
+<p>TPROPHET:	Yeah, exactly.  Thatâs the thing.  Thereâs now a mental model that they assume youâre some kind of Silicon Valley entrepreneur or something, so I just try to give off that vibe now.</p>
+
+<p>JACK:	Yeah, did you â where did you fly out of to get there?</p>
+
+<p>TPROPHET:	I started in Seattle, flew to San Francisco and then did first class â San Francisco on that trip and then I did first class from there to Hong Kong.  Then business from Hong Kong to Johannesburg because thatâs the only cabin the Cathay operates to there.  But that would have been around an $11,000 flight if I paid for it, just for that part.</p>
+
+<p>JACK:	Right.  So roughly $11,000 plane ticket is what a normal person would have to pay for that.</p>
+
+<p>TPROPHET:	Yes.</p>
+
+<p>JACK:	What did you pay for it?</p>
+
+<p>TPROPHET:	70,000 Alaska Airline Mileage Plan points and around $22.00 in taxes.  I got all those points for free.</p>
+
+<p>JACK:	[MUSIC] Free?  That means the only out-of-pocket cost he had to pay for his flight there and back was $22.00 in airport fees and heâs traveling on the luxury seats?  These kind of seats are not typically offered to people like you and me.  Youâve gotta know that this even exists and then itâs crazy expensive.  Yet, he got these tickets for free.  Thatâs just incredible.  But how do you get 70,000 Alaskan Mileage points for free?</p>
+
+<p>TPROPHET:	The typical way most people get points with Alaska Airlines is by flying Alaska Airlines but thereâs tons of other ways that you can get points.  These frequent flyer programs partner with banks and Alaska Airlines partners with the Bank of America.  The thing with their partnerships is they give you a big bonus to sign up for their credit card.  Right now you can get 40,000 Alaska Airlines bonus miles in addition to I think $100 statement credit just for a card sign-up and needing their minimum spend which is I think $2,000.</p>
+
+<p>JACK:	Thatâs $2,000 a year?</p>
+
+<p>TPROPHET:	No, itâs just one time.</p>
+
+<p>JACK:	Oh, okay.</p>
+
+<p>TPROPHET:	So, put everything that youâre gonna buy on a card for any given month on that card and youâll get one mile per dollar that you spend on the card and then in addition to that, theyâll give you the sign-up bonus.</p>
+
+<p>JACK:	Okay, so thatâs 40,000?</p>
+
+<p>TPROPHET:	Well, you get 40,000 for that card but then the Bank of America has a business card too and I own a rental property so Iâm clearly a business owner, so I can sign up for the business card.  If I was ever gonna buy anything for the rental property, I could do it on that.  Thatâs another 30,000 points that you get for that card.</p>
+
+<p>JACK:	Just signing up, orâ¦?</p>
+
+<p>TPROPHET:	Signing up and meeting the minimum spend which is generally minimal, so I had some â I had to genuinely own a rental property.  I had some expenses that needed to be paid relative to improvements for that property, so I put all of that on the second card, on the business card, and between the personal card and the business card â and it [00:45:00] wasnât exactly this but very, very close â I ended up with 70,000 points.  So, what did I do?  I used my good credit and a little extreme couponing to get all the way to Johannesburg essentially for free.  It was maybe $22.00 in taxes.</p>
+
+<p>JACK:	Ah, very clever.  I love the way hackers think.  Theyâre always trying to figure out new ways to exploit the system.  One time in college, we had to buy textbooks for our classes, right?  It was like, $100 per book.  One of the other guys in my class came to school with a book which said Property of the School Library on it.  I asked him, can you actually just borrow a book all semester?  Heâs like, no, but the late fees for borrowing it only add up to $50, so itâs cheaper to just borrow it and then pay the fee at the end versus buying it.  If youâre that kind of person who thinks like this, I got news for you; you have the mentality of how a hacker thinks.</p>
+
+<p>TPROPHET:	But thatâs Johannesburg, South Africa and you donât want to hang out there.  Itâs not a very safe city.  I wanted to go onward from there to St. Helena.  The way that I did that wasnât in a first class cabin.  You can be strategic about how you mix this up.  The way to fly to St. Helena; thereâs one airline that goes and itâs called Airlink.  Theyâre a partner of but not owned by South African Airlines and thereâs literally no way to book that thing with regular points.  The only airline that they partner with where you can use their points is South African and getting South African Voyageur points just means that you have to fly South African Airlines a lot.  They donât have a lot of ways to get those points that are easy.  But Chase allows you to spend Ultimate Rewards points through their Expedia portal and you can buy cash flights with that.  This flightâs around almost $1,000 from Johannesburg to St. Helena and back but I was able to redeem Chase points at 1.5 cents per point for that flight.  So, I went Johannesburg to St. Helena and then St. Helena back to Cape Town since I wanted to return from Cape Town.</p>
+
+<p>JACK:	With his flight booked, he set off on his trip.  [MUSIC] Yeah, these were long flights, so he did take advantage of those lie-flat seats and fell asleep.</p>
+
+<p>TPROPHET:	Oh yeah, like a baby.  Itâs super nice.  They have turndown service, so they give you pajamas; theyâre free.  Then when you go to â you finish your dinner.  They bring out a five-course meal.  Thereâs a menu so they come out just like waiters and theyâre like well, sir, these are the options that we have today and just pick anything that youâd like.  Then they just bring you a multi-course meal on a linen tablecloth with the whole very intricate china service, with all the different sizes of forks and stuff.  Itâs super fancy but if youâre a billionaire, you expect this, right?  Theyâre giving you the level of service that hedge fund billionaire managers and celebrities get.  Thatâs what they bring for you.  Itâs just, theyâd really rather people like me not know this is a thing because I was definitely polluting their rarefied atmosphere.</p>
+
+<p>JACK:	Okay.  So, this sounds too easy; to sign up for two different credit cards, spend money on them, and youâre flying first class with this kind of service.  It just sounds too easy.  Iâm surprised that American â Alaskan Airlines hasnât realized that how simple it is and said well, you can only pay for half your flight like this or something.</p>
+
+<p>TPROPHET:	No, no, no, itâs not easy at all, man, âcause you have to find availability and then you have to know how to book this.  Alaska doesnât put Cathay Pacific flights on their website.  Theyâll never show up if you do a search.  You have to call somebody who books them in a different system and then they donât have a really good way to search with Alaska Airlines, so you have to use the websites of other airlines.  Like, the one that I use the most for finding Cathay flights is Qantas.  You look for a flight that you could book with Qantas points and those flights are usually available to also book with Alaska points.  Thereâs some rules; itâs like, thereâs usually one fewer seat than you see available with Qantas.  Itâs available to Alaska.  Then you have to call and when you get somebody whoâs like, dusts off their manual and realizes how to book this thing, then you can get it.  But I mean, Cathay doesnât want to give these away.  They only do it to maintain credibility in their program and they especially donât want to give these seats away to partners, so there was â there will be one day you can go in a given [00:50:00] month and youâve got to book almost a year in advance to be able to get this so yeah, itâs not easy.  In factâ¦</p>
+
+<p>JACK:	Why is it only one day you can go?</p>
+
+<p>TPROPHET:	Well, they only release a handful of seats and so you have to find those, jump on them, and book it really early, as soon as itâs available.  They release seats to their own Asia Miles members before they release to partners.</p>
+
+<p>JACK:	Okay, so this is becoming more complicated just because itâs one of those â youâre not â this isnât for you kind of service or, you know, airfare.  Itâs not for you.</p>
+
+<p>TPROPHET:	No, itâs not for you.  Itâs for you if you work really, really hard and really want to be there but yeah, no, itâs not like you can just go get some credit cards.  The points guy makes it seem really easy to do that âcause they make most of their money with commission links for credit card sign ups, so theyâre totally right on the earn side that earning points is relatively easy by signing up for cards and you do need to be strategic how you do it and you definitely donât ever want to play this game if youâre the kind of person that gets into debt, so you will pay way more in interest to the bank than you ever would save in flights.  If you havenât paid off all your credit cards, if you have any debt at all, this game is not for you.  I have a mortgage but thatâs it.</p>
+
+<p>But if youâre the kind of person that can pay off your card every month and you can be really strategic about what you sign up for and you can stay on top of these cards and their annual fees and cancel them before the new fees come due, then you can really rack up a lot of points.  Just think like a hacker and keep the detailed notes of a freak.  Thatâs basically the plan.  Then finding the farers, yeah, it isnât super easy.  You have to know that with Alaska points, you can book a flight on Cathay Pacific over the phone which you found on Qantasâ website.  Qantas and Cathay Pacific are not the same airline, so thatâs the challenge that youâre up against when you actually want to use these points.</p>
+
+<p>JACK:	Do you have to call someone and realize this personâs not gonna help you and try calling another day and try it over and over until you finally find somebody who knows exactly how to get through the Qantas website to find the flight you need?</p>
+
+<p>TPROPHET:	We have a word for it; HUACA.</p>
+
+<p>JACK:	What is that?</p>
+
+<p>TPROPHET:	Hang up and call again.</p>
+
+<p>JACK:	Oh, okay.</p>
+
+<p>TPROPHET:	Thereâs a scene of people that are into this kind of stuff, so itâs â yeah, I mean, we have our own words and HUACAâs a word.</p>
+
+<p>JACK:	Crazy, huh?  Not only is he able to get on free flights but heâs getting on flights that even travel agents donât know exist.  But all these methods and schemes are all legit and legal.  The airlines are the ones who set these systems up and while it seems like heâs exploiting the system, heâs really just using it the way it was intended, just kind of in an extreme couponing kind of way.  Okay, so letâs say Iâm not as exotic as you in trying to go to all these crazy places.  Is it just as easy for me to sign up for two credit cards, get those points, and then travel all over the US on just regular class tickets and get tons of free flights that way?  Is that as simple as that?</p>
+
+<p>TPROPHET:	You can.  Itâs not the best way to spend the points though because the value that youâre gonna get redeeming points for premium cabin international flights is far and above what you would get by redeeming for, say, a flight to Tulsa, right?</p>
+
+<p>JACK:	Ah, yes, thereâs this whole theory of how to use your points in the most effective way that comes into play.  Just credit card points by themselves are actually worth money.  I mean, you can use them to pay off the credit card if you want or get gift cards in stores that youâre already visiting.  So you might want to calculate how much youâre getting per point if you book a domestic trip using this.</p>
+
+<p>TPROPHET:	Suppose that a 70,000-point flight costs $7,000 normally.  Well, thatâs around $0.10 per point, right, in value.  If the flight was $11,000, itâs even more.</p>
+
+<p>JACK:	Alright, so if you bought an $11,000 trip with those 70,000 points, youâre getting $0.15 per point which means the more expensive the trip is, itâs actually a better value as far as where you spend your points.  Think about it like this; imagine going to a buffet but youâre charged on how much your food weighs.  Well, a potato is pretty heavy versus, say, a salad so you can either have one potato or five giant salads for the same price.  So, you could run calculations all day trying to figure out the most cost-effective way to spend your points, but I first laughed at TProphet for wasting money on first class airfare, knowing that itâs just overpriced.  But first of all, he got it free.  Second of all, flying from San Francisco to Hong Kong is a fourteen-hour flight and Hong Kong to Johannesburg is another thirteen-hour flight.  When youâre doing trips that long, it is really nice to have a bed to sleep in on the way.  Yeah, I guess Iâm just flabbergasted at this point.  Gosh, to [00:55:00] understand all this, itâs a little dizzying to know all these options.  I think most people donât even understand all these options exist out there when just â you â when I book a flight, I go to Hipmunk and then I find the cheapest one and I get on it.</p>
+
+<p>TPROPHET:	Thatâs a totally valid approach if travel isnât a super high priority to you and you donât want to throw a lot of your personal bandwidth at it.  I have a small business helping people book flights and so I just work in these programs every day.  I got into owning a business doing this by just doing it with my own personal travel and then it kind of grew into a blog and then it grew into the small business that I have.  Clearly, Iâve taken this way farther than most people do and thatâs totally okay.  The thing to know is that if you want to consume the output of what getting a bunch of points can get you, there are people who for money will help you with this.  Theyâre just professional travel hackers and that is a thing.  Totally okay to go that route if you donât want to learn it all on your own.</p>
+
+<p>JACK:	See, I didnât even know any of this existed until now but as it turns out, TProphet actually started a company which helps people do this and his website is called Award.Cat and thereâs another epic trip TProphet went on.  In 2019, he went to travel from Seattle to Sri Lanka which is an island off the southern tip of India.</p>
+
+<p>TPROPHET:	[MUSIC] I booked Seattle, LA on Alaska first class, Alaska and then this was again using Alaska Mileage Plan miles.  Thatâs my favorite way to get Cathay Pacific.  Cathay Pacific first, LA, Hong Kong, and then Cathay Pacific business âcause thatâs the only cabin they operate from Hong Kong to Sri Lanka.</p>
+
+<p>JACK:	Okay, so just regular class to LA?</p>
+
+<p>TPROPHET:	No, no, regular first class on Alaska.  So like, in the front of the plane.</p>
+
+<p>JACK:	Okay, so first class to LAâ¦</p>
+
+<p>TPROPHET:	But not a lie-flat seat âcause Alaska just has those recliners, right?</p>
+
+<p>JACK:	Yeah, itâs just the extra-wide one.</p>
+
+<p>TPROPHET:	Yeah, itâs the extra-wide one.</p>
+
+<p>JACK:	So, itâs first class there to LA and thenâ¦</p>
+
+<p>TPROPHET:	Then the fancy Qantas lounge in LA, the Qantas first class lounge.  You get lounges too with these tickets.  You can be in the very, very fancy lounge.</p>
+
+<p>JACK:	Whatâs in the fancy lounge in LAâs Qantas?</p>
+
+<p>TPROPHET:	Itâs the best first class lounge in the US.  They bring you a proper Australian breakfast which was very much appreciated âcause I started way too early in the morning.</p>
+
+<p>JACK:	In LA.</p>
+
+<p>TPROPHET:	In LA.</p>
+
+<p>JACK:	Okay.</p>
+
+<p>TPROPHET:	I mean, theyâre â yeah, itâs Qantas.</p>
+
+<p>JACK:	Yeah.</p>
+
+<p>TPROPHET:	Yeah, I mean, itâs nice.  They have fast WiFi, itâs â they have tableside service.  They just kind of bring food to you.  You donât have to go to a buffet or anything.  Theyâre just like â they wait on you hand and foot in there.  You get massage chairs.  Itâs really nice.</p>
+
+<p>JACK:	Now, in case you donât know, in these first class lounges, everything is free.  Free WiFi, free buffet with food, free alcoholic drinks.  In this one, there was a free massage.  That is included with the flight or you have to pay extra for that, or how did you get in there?</p>
+
+<p>TPROPHET:	No, itâs included âcause youâve got a first class ticket, so youâve got all the first class services and amenities including the fancy lounge.</p>
+
+<p>JACK:	Yeah, okay, soâ¦</p>
+
+<p>TPROPHET:	I could have gone to the Cathay lounge but the Qantas oneâs fancier and Cathay and Qantas are partners, so I was able to get into the Qantas lounge.</p>
+
+<p>JACK:	Okay, so then you get on your Cathay flight.  Thatâs a first class to Hong Kong.</p>
+
+<p>TPROPHET:	Yeah, you know, cru champagne, caviar, the whole nine yards.  I donât eat caviar.  Canât do the fish.  But yeah, you get waited on hand and foot, turndown service, everything.  Itâs super nice.  Then in Hong Kong, somebody meets you at the plane and they whisk you through back corridors to your next flight, expedited security, the whole nine yards.  You walk off the plane; youâre one of the first people off and thereâs somebody holding a sign with your name on it and theyâre like, right this way, Mr. TProphet.  Yeah, itâs just like boom, they just whisk you to the next gate.  Full VIP security treatment, the whole nine yards.  You go through a special security.  Itâs not the normal one.  Itâs a special one just for you.  Yeah, then youâre on â then I was on my next flight to â which was pretty empty â to Sri Lanka.</p>
+
+<p>JACK:	But while he was on the trip to Sri Lanka, disaster struck and I donât mean he lost his baggage or his headphonesâ battery went dead.  Much worse than that.</p>
+
+<p>HOST:	We begin tonight with a horrific scene unfolding overseas.  Eight bomb attacks targeting Christians and tourists in Sri Lanka and a ninth bomb targeting police.  The series of explosions tearing through churches filled with worshipers attending Easter Mass.  More than 200 people killed.  Hundreds hurt.  Several Americans among the victims.</p>
+
+<p>JACK:	He learned about this just before he started the trip so he could have canceled this whole flight but he scheduled this a year in [01:00:00] advance and went through a ton of hoops to make this happen.</p>
+
+<p>TPROPHET:	Well, I could have left the airport if I wanted to but thereâs â the whole country was on state of emergency curfew lockdown.  Itâs like, not a â when thereâs just been a series of coordinated terrorist attacks in a country, this isnât a really fun time to be running around being a tourist.  You donât want to do that.</p>
+
+<p>JACK:	You booked this whole flight a year in advance?</p>
+
+<p>TPROPHET:	Yeah, I booked it almost a year in advance which was why I didnât want to give it up, why I was like okay, what can I do to go onward from Sri Lanka?</p>
+
+<p>JACK:	Yeah, so you â the thing is is that youâre arriving in this place that you donât want to be in and so youâve gotta â youâre looking for a flight out but usually you buy a flight a year in advance for the cheapest price.</p>
+
+<p>TPROPHET:	Well so, hereâs how I did this.  SriLankan Airlines is part of oneworld.  So is Cathay Pacific, so I looked for how I could get onto SriLankan Airlines onward to somewhere.  There were two places I looked at; one was the Maldives and the other was the Seychelles.  The thing with the Maldives is itâs really, really expensive once you get there.  Itâs a place to go for a honeymoon or a babymoon or something.  I donât have any romantic whatever.  In fact, I had just been broken up with so I was like, not really in the mood for that.  So, I looked at the Seychelles and thereâs mid-range places that mostly cater to French people, for some reason.  So, thatâs fifty, sixty, seventy dollars a night.  I thought okay, thatâs a little more reasonable.  I can do that in a rental car and Iâll be really near these â and the beaches in the Seychelles are all public so even if thereâs a really fancy resort there, you can still go to the beach.  Thatâs what I did.  I booked a local place which was thoroughly immemorable but it was fine.  I booked a local car and I booked SriLankan Airlines to the Seychelles onward from Sri Lanka on an itinerary that all walked.</p>
+
+<p>JACK:	[MUSIC] So, to buy that flight to Seychelles was â you used points to get there too or did you have to pay out of pocket?</p>
+
+<p>TPROPHET:	Of course.  So, I used my favorite friend, British Airways Avios.  What I did is I transferred some points from Chase over to British Airways and I used British Airwaves program to book on SriLankan Airlines.  I got right up in the front.  I got to sit next to the chief engineer which was super fun.</p>
+
+<p>JACK:	How long was this flight?</p>
+
+<p>TPROPHET:	Itâs maybe a four-hour flight.</p>
+
+<p>JACK:	Wow, thatâs farther than I thought.</p>
+
+<p>TPROPHET:	Yeah, itâs not super far.  Itâs four hours up there.  Youâre going from Sri Lanka all the way to â off the coast of â itâs actually off the coast of Mogadishu.  If you go due west, then youâre in Somalia.</p>
+
+<p>JACK:	I think this is an extraordinary skill or knowledge set to have; to first understand what banks and credit card companies offer the most points for using their cards, then to know what airlines these points can be redeemed at, then to know what trips those airlines offer with those points and then to be able to navigate this whole system to make changes so that even if thereâs a terrorist attack, you still have a lovely time.</p>
+
+<p>TPROPHET:	Yeah, itâs pretty fun.  Onward from the Seychelles; so, hereâs the thing, coming back, I had a ticket coming back from Sri Lanka and I had to â it wasnât only getting from Sri Lanka to somewhere else.  It was also fixing my return, right, âcause I had booked that well in advance as well.  It was on Qatar Qsuites.</p>
+
+<p>JACK:	Oh, right, so he didnât go back the way he came.  His return trip was to go from Sri Lanka to Doha, Qatar, a country in the Middle East, then take one of those Qsuite flights all the way to Los Angeles back home.  These Qsuite seats are amazing.</p>
+
+<p>HOST2:	Each spacious seat a private, personal living space, sets a new precedent in comfort.  Featuring maximum compatibility for all your devices including HDMI and USB ports.  Your seat also comes equipped with ambient adjustable mood lighting and fully lie-flat beds.</p>
+
+<p>JACK:	These luxury seats sometimes have multiple TVs in your seat.  Qsuites has one TV in your suite, but the thingâs like a 23-inch plasma screen and you get a table next to you to put your laptop on and thereâs ports all over the place for laptops or tablets, whatever, which is really nice for a sixteen-hour flight.</p>
+
+<p>TPROPHET:	Which are really, really, really hard to book.  Itâs the best business class in the world.  Thereâs this door that slides shut, you get your own little suite.  Itâs pretty amazing.  I didnât want to give that up.  What I ended up doing was looking and there was availability from the Seychelles up to Doha.  What I ended up doing was just throwing myself on the mercy of American Airlines, so I found an itinerary that could work, but normally American charges you a lot of money to change a flight.  Itâs like, $150 change fee plus the difference in the miles.  I called them up and Iâm [01:05:00] like um, there were just terrorist attacks in Sri Lanka and Iâm not going there anymore.  Is there any possible way youâd make an exception and change the return from â to a different city?  I know this isnât in policy but terrorism; a terrorist attack.  Theyâre like yeah, weâll make a one-time exception because thereâs active attacks going on in that country but donât expect this in the future, blah, blah, blah.  They did charge me the difference in miles which was another 5,000 miles, I think.</p>
+
+<p>JACK:	He was able to arrange his flight back again using just points, but he couldnât get the timing just right.  His trip was screwed up just a little bit, so he had a fourteen-hour overnight layover in Qatar.  One option is just to sleep at the gate in the terminal somewhere.  Iâve done this before; in fact, I slept right on the doorway to my gate so that when they open the door and start letting passengers on, they would have to wake me up.  But of course, TProphet has a better plan.</p>
+
+<p>TPROPHET:	Fun thing; Qatar Airlines, if you have a business class ticket, you can buy up to the first class lounge.  The first class lounge has bedrooms.  Theyâre like little hotel rooms.  I paid around $70 to get one of those bedrooms and I was able to just sleep overnight in the first class lounge, come out, have a very fancy breakfast in the morning, and then hop my flight back to LA.</p>
+
+<p>JACK:	Do you have something booked for the future?</p>
+
+<p>TPROPHET:	I do.  Iâve got a flight to Uzbekistan, returning from Kazakhstan, and thatâs in May.</p>
+
+<p>JACK:	So youâre flying to Uzbekistan, then flying to Kazakhstan, then flying back?</p>
+
+<p>TPROPHET:	Yeah.  Itâs a little dicey though âcause itâs in May.</p>
+
+<p>JACK:	Yeah, thatâs a little early.</p>
+
+<p>TPROPHET:	Itâs from Vancouver, BC âcause here in the Pacific Northwest, we have three major airports; Seattle, Portland, and Vancouver, BC.  A lot of the time, fairly often I end up flying from Vancouver when Iâm going internationally âcause itâs just easier to find availability.  This is on Turkish from Vancouver to Istanbul and then Istanbul to Tashkent, and then Iâm returning from Almaty to Istanbul and Istanbul back to Vancouver.</p>
+
+<p>JACK:	These are all first class?</p>
+
+<p>TPROPHET:	Business.  Thatâs what Turkish operates.  They have the worldâs best catering on board.  Thatâs their thing.  Theyâve got an on-board chef.</p>
+
+<p>JACK:	Wow.</p>
+
+<p>TPROPHET:	Itâs pretty fun.</p>
+
+<p>JACK:	Wow.  Thatâs something.  So, where do we learn more about how to do this or do you want to talk about how you can help people?</p>
+
+<p>TPROPHET:	Sure.  You can check Award.Cat and thatâs our paid service.  If you want to read my blog, itâs kind of out of date but thatâs seat31B.com.  Thatâs S-E-A-T 31B like âboyâ .com.</p>
+
+<p>JACK:	Why is 31B the thing â the seat for you?</p>
+
+<p>TPROPHET:	For me â keep in mind, I like this fancy stuff sitting up in front, but for me, remember, my goal is to join the Travelerâs Century Club.  I want to visit 100 countries or territories and thatâs kind of the track that Iâm on right now which means that if Iâm going somewhere like Palau and the only seat is the one all the way in the back next to the toilets that doesnât recline, I am happy to have that seat as long as itâs free.</p>
+
+<p>JACK:	These are all legal ways to get free flights.  Not only does TProphet follow the letter of the law, but also follows the spirit of the rules.  But there are people doing some gray and even black hat travel hacks out there.  For instance, thereâs this one crazy dude who prints up fake business cards just to get better deals in places.</p>
+
+<p>HACKER:	[MUSIC] My business cards are not a hoax, okay?  Itâs a matter of excellence.  If itâs $1,000 a night but Raytheon gets it for $195, I think youâre a schmuck if you donât become a Raytheon employee through Vistaprint for $4.95.</p>
+
+<p>JACK:	Yeah, so he uses a fake business card to sort of prove he works at some place to get a corporate discount.  Another thing this guy likes to do is book a refundable ticket which comes with free access to the airportâs first class lounge, and then heâll go to the lounge all day and do work, and then heâll cancel his flight and get his money back which essentially gave him free lounge access.  What heâs doing is wrong and he knows it.  You know what?  If airlines figure out that youâre trying to cheat the system, theyâll come at you and cancel your flight.  Thereâs a thing called a contract of carriage which many airlines adopt as their rules.  If you break the rules by misrepresenting yourself or just being too much of a pain in the butt, theyâll straight up cancel your return trip home and leave you stranded, so you really got to watch out what advice you follow.  Another gray area of getting free flights is this whole credit card juggling thing where you just go back and forth paying off credit cards with credit cards to get free points.</p>
+
+<p>Of course, credit card companies donât like it and will try to spot this sort of thing.  Also, I want to [01:10:00] reiterate this whole method that TProphet uses to get points through credit cards; only try that if youâre good at paying off your credit cards every month.  If you have to pay interest fees to get points, itâs never worth the points.  This method isnât for everyone and thereâs also black hat methods for free flights.  Like, this is when youâre stealing other peopleâs miles or points and transferring them to your account.  Because if you could somehow put 100,000 points into your account, you could fly wherever you wanted for free and you could do this by hacking into someone elseâs credit card rewards portal and transferring the points to you or hack into the airlines themselves and just put points into your account.  Donât do that because thatâs illegal.  But if youâre really bent on hacking an airline to get free flights, there is a legal way to do that.  United Airlines has a bug bounty program where they pay rewards for anyone who can find vulnerabilities in their systems.  Guess what?  They can pay you in rewards points if you prefer.  So, go check out their bug bounty program, figure out whatâs in scope, and go hack your way to some free trips.</p>
+
+<p>(OUTRO):[OUTRO MUSIC] A big thank you to Alex Hope, AKA Mango PDF for your story.  You can find more about Alex at his blog which is mango.pdf.zone.  Also, thanks to TProphet for sharing some pretty extreme flight hacking tips with us.  You can read his blog at seat31B.com and check out Award.Cat if you want help spending your travel points effectively.  If you like this show, if it brings value to you, consider donating to it through Patreon.  By directly supporting the show, it really does help keep the show going because most of all, it tells me that you like it and want more of it.  Please visit patreon.com/darknetdiaries and consider supporting the show.  Thank you.  This show is made by me, the low-flier, Jack Rhysider.  This episode was produced by the travel-sized Christian Green and our theme music is done by the sonic booming Breakmaster Cylinder.  Even though I root around in an HTML ball pit just for fun sometimes, this is Darknet Diaries.</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>

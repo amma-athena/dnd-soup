@@ -1,0 +1,536 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Page Info -->
+	<link rel="shortcut icon" href="/imgs/favicon.png">
+	<title>The Athens Shadow Games â Darknet Diaries</title>
+	<meta name="description" content="Vodafone Greece is the largest telecom provider in Greece. But in 2004 a scandal within the company would pin them to be top of the news cycle in Greece for weeks. Hackers got in the network. And w...">
+	<meta name="keywords" content="darknet, diaries, podcast, darkweb, dark, web, stories, crypto, hacking, hackers, hackable, breach, virus, malware, botnet, intrusion, sysadmin, privacy, Internet, infosec, security, information security, secops" />
+
+
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="The Athens Shadow Games â Darknet Diaries">  
+	<meta name="twitter:description" content="Vodafone Greece is the largest telecom provider in Greece. But in 2004 a scandal within the company would pin them to be top of the news cycle in Greece for weeks. Hackers got in the network. And w...">
+	<meta name="twitter:image" content="https://darknetdiaries.com/imgs/shadowphone.jpg" />
+
+	<!-- Facebook OpenGraph -->
+	<meta property="og:url"                content="https://darknetdiaries.com/transcript/64/" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="The Athens Shadow Games â Darknet Diaries" />
+	<meta property="og:description"        content="Vodafone Greece is the largest telecom provider in Greece. But in 2004 a scandal within the company would pin them to be top of the news cycle in Greece for weeks. Hackers got in the network. And what they were after took everyone by surprise." />
+	<meta property="og:image"              content="https://darknetdiaries.com/imgs/shadowphone.jpg" />
+
+
+
+	<!-- Podcasts -->
+	<meta name="apple-itunes-app" content="app-id=1296350485">
+	<link rel="canonical" href="https://darknetdiaries.com/transcript/64/">
+	<link type="application/rss+xml" rel="alternate" title="Darknet Diaries" href="https://feeds.megaphone.fm/darknetdiaries">
+
+
+	<link rel="image_src" href="https://darknetdiaries.com/imgs/shadowphone.jpg">
+
+	
+	<!-- Font Embed Code -->
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="/css/custom.css">
+	
+
+	
+	<!-- Extra Header JS Code -->
+	
+	
+	
+</head>
+
+
+<body class="loading" data-site-url="https://darknetdiaries.com" data-page-url="/transcript/64/">
+
+
+	
+
+<header class="header">
+
+	<div class="wrap">
+		
+		<a href="/" class="header__title">
+			Darknet Diaries
+		</a>
+		
+
+		<div class="menu">
+			<div class="menu__toggle js-menu-toggle">
+				<div class="menu__toggle__icon"><span></span></div>
+			</div>
+			<div class="menu__wrap">
+				<ul class="menu__list">
+					
+					<li class="menu__list__item">
+						<a href="/episode/" class="menu__list__item__link"><h5>Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/bonus/" class="menu__list__item__link"><h5>Bonus Episodes</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/es/" class="menu__list__item__link"><h5>EspaÃ±ol</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="https://shop.darknetdiaries.com" class="menu__list__item__link"><h5>Shop</h5></a>
+					</li>
+					
+					<li class="menu__list__item">
+						<a href="/search/" class="menu__list__item__link"><h5>Search</h5></a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+
+	<div class="loader"><svg width="120" height="30" viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="60" cy="15" r="9" fill-opacity="0.3"><animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" calcMode="linear" repeatCount="indefinite" /></circle><circle cx="105" cy="15" r="15"><animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" calcMode="linear" repeatCount="indefinite" /><animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" calcMode="linear" repeatCount="indefinite" /></circle></svg></div>
+
+	<div class="page-loader"></div>
+
+	
+	<div class="page">
+
+		<div class="page__content" data-page-title="The Athens Shadow Games â Darknet Diaries">
+
+			<section class="hero hero--single">
+
+	<div class="hero__image" style="background-image: url(/imgs/shadowphone.jpg)">
+		<div class="hero__overlay"></div>
+	</div>
+
+	<div class="wrap">
+
+		<h1>EP 64: The Athens Shadow Games</h1>
+	</div>
+
+</section>
+
+<section class="single">
+
+	<div class="wrap">
+
+		<article class="single-post">
+	
+			<script>
+			window.playerConfiguration = {
+			"options": {
+	            "themeHtml": "https://darknetdiaries.com/css/player-theme.html",
+	            "themeCss" : "https://darknetdiaries.com/css/player-theme.css"
+	         },
+			 "extensions": {
+			   "EpisodeInfo": {},
+			   "Share": {}
+			 },
+			 "podcast": {
+			   "feed": "https://feeds.megaphone.fm/darknetdiaries"
+			 },
+			 "episode": {
+			   "media": {
+			     "mp3": "https://traffic.megaphone.fm/ADV9747880751.mp3"
+			   },
+			   "coverUrl": "https://darknetdiaries.com/imgs/darknet-diaries-sm.jpg",
+			   "url": "https://darknetdiaries.com/episode/64/",
+			   "title": "Ep 64: The Athens Shadow Games"
+			 }
+			}
+			</script>
+			<script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="playerConfiguration"></script>
+
+			
+			<p><a href="/episode/64">Episode Show Notes</a></p>
+			
+
+			<pre>
+							
+			<p>[FULL TRANSCRIPT]</p>
+
+<p>JACK:	 [GREEK] Do you remember the Olympics of 2004?</p>
+
+<p>ANNCR:	Citizens of the world, welcome to Athens.</p>
+
+<p>JACK:	It was in Athens, Greece where the first Olympics ever took place.</p>
+
+<p>ANNCR:	Olympic Games, welcome back to Greece.  [CHEERING] [GREEK]
+<!--more--></p>
+
+<p>JACK:	[MUSIC] It was also just three years after 9/11 and thereâs always a fear that terrorists may strike at the Olympics.  In the 1972 Olympics, eleven people died in the Munich massacre.  In the 1996 Olympics in Atlanta, Georgia a bomb went off in the Centennial Olympic Park, killing one person and injuring over a hundred others.  In the South Korean winter Olympics of 2018, there was a pretty destructive hack that took down a lot of the Olympic village.  So, how does a country ramp up to protect itself from terrorism at the Olympics?  What does an attack even look like in todayâs modern world where hacks can be conducted silently without anyone knowing?</p>
+
+<p>JACK (INTRO):	[INTRO MUSIC] These are true stories from the dark side of the internet.  Iâm Jack Rhysider.  This is Darknet Diaries.  [INTRO MUSIC ENDS]</p>
+
+<p>JACK:	Wiretapping; everyone knows what wiretapping is.  Itâs one of the oldest hacking techniques out there; secretly listening into conversations without permission or an invite.  It can be a great method to get information that youâre not supposed to have.  [MUSIC] When telephone exchanges were manually operated to connect calls, physical wires were the key to a successful wiretap.  If you wanted to be a master wiretapper, you needed to master location of the wires and break out some crocodile clips and clip it to the right ones.  As technology advanced, wiretapping did, too.  Soon there was a secret little device you could plant inside telephone handsets.  In May 1972, members of a re-election group supporting Richard Nixon broke into the Democratic National Committeeâs Watergate offices and wiretapped their phones.  A month later they returned with a new microphone to get a better listen.  Caught by a security guard, their covert operation was over.</p>
+
+<p>Within a year it had come to light that Nixon was secretly recording all conversations happening inside the Oval Office.  These acts and the attempt to cover it up ultimately ended his political career.  Today, itâs all about the tech.  Sure, the wires are still important; there would be no telephone switch exchanges without them but itâs the hardware and software that runs a now fully-electronic switch exchange; the ability to interconnect and route calls all over the world in a fraction of a second.  The thing about wiretapping is that itâs a secretive activity by its very nature.  If you were supposed to be listening to that call, the caller would know and would have dialed you in.  There are two types of wiretaps; thereâs the legal kind done by law enforcement to help solve crimes using lawful interception technology and then thereâs the not-so-legal kind, the kind thatâs done by unauthorized parties and not approved, the kind done by hackers.  [MUSIC] Thirty years ago, a telecom company was created in Greece.  It was called Panafon.</p>
+
+<p>They were your basic run-of-the-mill company; running lines to residential buildings and commercial buildings, routing, and connecting calls.  About ten years after launch they were acquired by Vodafone which is a major [00:05:00] telecom company based in the UK.  So, Panafon was re-named to Vodafone-Panafon but itâs just better known as Vodafone Greece.  Every time I say Vodafone in this episode, Iâm particularly referring to the Vodafone Greece section of Vodafone.  Itâs like its own unit within Vodafone.  In January 24th, 2005, the system administrators at Vodafone Greece started getting error messages for their telecom switch exchange devices.  The errors were saying that text messages from other carriers werenât being delivered properly.  By this point, Vodafone Greece was pretty big; they had like, 1,500 employees.  The error message at Vodafone Greece really concerned the tech teams.  They started going through the error logs and troubleshooting and looking at system data dumps for this fault.</p>
+
+<p>But they couldnât figure out why some text messages werenât getting delivered.  So, they contacted their equipment provider which was Ericsson.  Now, Ericsson is an enormous company based in Sweden whoâs been going well for like, a hundred years.  Ericsson was one of the biggest telephone equipment manufacturers around.  Weâre talking 40% of the entire worldâs cellphone traffic goes over equipment that Ericsson made.  So, theyâre huge.  Being that big and at it for a hundred years, they knew this game inside and out so Vodafone Greece contacted Ericsson to ask them what are these error messages?  Why canât these text messages get delivered?  Ericsson began troubleshooting and looking into it.  Things didnât get any better for Vodafone in the meantime.  Theyâre getting all these complaints from cell phone customers who werenât happy their texts werenât sending.  To make things worse, on January 31st, Vodafoneâs network planning manager submits his resignation.  The network planning managerâs name was Kostas Tsalikidis.</p>
+
+<p>He had been with Vodafone Greece for eleven years but he was really wanting to quit his job.  [MUSIC] Kostas was good at his job.  He was experienced and detailed.  He kept notebooks of his networks and put in the extra hours needed to keep the network running cleanly.  He had an engineering degree specializing in telecommunications, and then a Masters in Computer Science.  Just the year before this, Greece had hosted the Summer Olympic Games in Athens, a huge event for the country.  For Vodafone and for Kostas, these months before the opening ceremonies on August 13th were full of long and tiring days.  They were planning and implementing new systems, setting up upgraded networks to make sure they could handle the tens of thousands of people who were going to flood into Greece for the Olympic Games.  Plus, all the extra police and military personnel that needed to be there, they all needed communication systems, too.  That was a huge project for Kostas.  But then five months later he wanted to quit?</p>
+
+<p>Vodafone refused to accept his resignation and persuaded him to take some time off instead.  So, he took a little break and then came back to work in the middle of February.  Weeks later, on March 4th, Ericsson had some big news for Vodafone Greece.  Theyâd been digging around on these devices looking for where the error message was and they found something they werenât expecting to find.  [MUSIC] First, they found two files and one was a list of cell phone numbers.  They had no idea why this big list of cell phone numbers was stored in this location.  It was unusual but it is a telecom provider, so maybe thereâs just cell phone numbers all over these devices.  But their investigation revealed a pre-compiled binary executable program.  Ericsson had no idea why this executable program was there in the switch.  They couldnât tell what these executable files did because they were not human-readable.  But this program existed on the telecom switch right next to the unusual set of cell phone numbers.</p>
+
+<p>Now, Ericsson had a line of digital telephone exchanges that they called A-X-E, AXE.  These AXE devices were exchanges that Vodafone Greece used.  The software was all written in PLEX code which is not that common and pretty complicated.  The executable files must have been created using the PLEX code in order to run on this particular telecom switching system, the AXE.  Ericsson had no idea what this extra code was doing or why it was there, and it perplexed them.  Vodafone Greece had no idea either, so Ericsson decided to try to figure it out.  To figure out what it was doing, they had to rebuild it in the PLEX language which was not an easy task.  They reverse-engineered this executable code and put it back into its original language.  This took a long time.  Ericsson actually outsourced a lot of their software development for the AXE exchange to a local company called Intracom Telecom.  This company took five weeks and was able to reverse-engineer the code.</p>
+
+<p>After they did that, they were left with a program that was [00:10:00] 6,500 lines long.  This rogue program that was on this telecom switch was using that long list of phone numbers that was also found.  This meant the two unusual files were somehow linked.  The problem was, they didnât write or authorize this code so Ericsson goes straight back to Vodafone Greece and asks them, do you know anything about this code?  No.  Vodafone doesnât know either.  Itâs not their code and it would be unusual for a company like Vodafone to design custom software for one of these exchanges.  Typically, Ericssonâs customers only change the config files on these devices so it was really weird that a whole extra piece of executable software was on Vodafone Greeceâs telephone exchange systems without anyone knowing why it was there or how it got there.  Ericsson came to the conclusion this is malware, deeply imbedded, sophisticated rogue software, and its function was to secretly use Vodafone Greeceâs network to wiretap that list of cell phone numbers.</p>
+
+<p>Whoever put it there was listening in to calls of 106 cell phone numbers.  [MUSIC] The Vodafone systems had the malware installed in two of their central offices and four of their switches used for routing cell phone calls, switches that had been provided by Ericsson.  More than that, the malware was using Ericssonâs own lawful intercept technology installed on Vodafone Greeceâs systems to carry out the wiretaps.  Those cell phone numbers it was spying on, they belonged to some of the most senior government officials in Greece including Greeceâs prime minister and his wife.  This was a discovery of epic proportions.  Cell phone calls are supposed to be private.  You dial, you connect, you have your conversation, you hang up.  That connection is between your cell phone and the person youâre calling; no one is supposed to be listening in, including your cell provider.</p>
+
+<p>But if thereâs an official warrant signed by a judge that orders them to tap it, then and only then is it legal for someone else to secretly listen in.  This is called lawful intercept and itâs a legal wiretapping that a telecom provider can do with a judgeâs approval.  Itâs where law enforcement intercepts the calls for a specific person or a group of people believed to be involved in serious criminal activity.  Itâs not just limited to phone calls; texts, e-mails, video calls, and instant messaging can all be intercepted, too.  For a telecom company like Vodafone, they have no option but to comply when presented with a legal warrant.  [MUSIC] It is, put simply, spying on a customer for purposes of criminal investigation.  A telecoms provider canât tell the customer that theyâre doing it and the intercepted data is all sent back to law enforcement.</p>
+
+<p>Lawful intercept isnât the same as mass surveillance.  Itâs targeted, focused on just one person or a small group of people.  Generally, itâs looking for specific information and not just trying to capture anything and everything.  Most developed countries now have laws in place to allow wiretapping or lawful intercept.  The terrorist attacks weâve seen in the last few years have prompted this kind of standard across the board in many nations but this story happened back in 2004 and in Greece at that time, the laws for lawful intercept were not in place yet.  It was not legal for authorities to do wiretapping even with a judgeâs order.  Meetings were held about it in 2002 and then again in 2003, and the Greek government discussed how lawful intercept should be implemented in the top three telecom providers in Greece which was Vodafone, Cosmote, and TIM.</p>
+
+<p>But when the Olympic Games started in 2004 and when this malware was found in 2005, the presidential decree had not yet been passed which implemented and regulated lawful intercept in Greece which means whoever was doing this wiretapping was doing it illegally.  It must not have been the Greek authorities.  Now, Ericsson sells its exchange systems in 180 countries all over the world and much of it is standardized telecoms equipment.  It has the same base software and configurations for everyone.  Ericssonâs products are used in a lot of countries and their software needs to facilitate wiretapping so that telephone providers in countries with lawful intercept can carry out a lawful wiretap.  On the tech side, Ericsson implemented lawful intercept technology directly into their telephone switches.  There are two parts to this and this is kind of important, so listen up.  The first part is the remote-control equipment subsystem or RES which actually does the wiretapping.  Then thereâs the interception management system, or IMS, which is the user interface that controls this wiretapping feature.</p>
+
+<p>The authorities can log into IMS, enter the phone number that theyâre permitted to tap, and [00:15:00] then that communicates to RES which actually does the actual tapping and then sends that data back to IMS where the authorities can then capture that data and store it.  Iâm gonna use this term RES a lot, so let me repeat it; RES is the feature on these telephone switches that actually conducts the wiretapping.  The IMS feature is the interface used to control it.  On this IMS interface, there are logs and permanent records created whenever a wiretap is conducted through the RES software.  At any time later on, they can check to make sure that there were no unauthorized wiretaps going on and that both systems match up.  This makes the process of lawful intercept easy to do and makes sure thereâs records of it.  Ericsson implemented this RES technology in a lot of their telecom switches and was rolled out all over the place, but in order to use it you had to pay an extra licensing fee which is tens of thousands of dollars in order to get the IMS part of it to work.</p>
+
+<p>What happened with Vodafone Greece is that they updated their AXE, the exchange switch, with Ericsson back in 2003 which included the RES software as standard.  They didnât purchase or activate the front-end IMS system because they didnât have to; law enforcement was never going to come with a warrant.  It wasnât legal to do in Greece.  So, the RES system sat there in the background.  It wasnât being used by anyone at Vodafone Greece.  It didnât affect any of the other operating processes and didnât cause any trouble.  But it turned out it was the door that the hackers used to initiate these illegal wiretaps.  Whoever did this essentially hacked their way into Vodafoneâs systems and secretly activated this software.  They used the software on Vodafoneâs systems to illegally wiretap the countryâs top officials and completely hide the fact that they were doing it from Vodafone.  The hackers realized that RES was the perfect weapon to conduct these wiretaps with.</p>
+
+<p>It was already on the system; they just needed to enable it if, of course, the right know-how and malware could be developed and installed to do it.  Ericsson told Vodafone Greece they discovered this malware and they gave them a list of the 106 cell phone numbers that the system had been wiretapping.  Thatâs 106 cell phone numbers that every time a call was made to or from those numbers, someone else was listening, a silent third-party at the end of the line listening, recording, note-taking, and archiving.  The two callers had no idea that they were being spied on.  Nothing sounds different; there were no crackles or delays to suggest that the conversation wasnât private.  You can think of your cell phone as both a transmitter and receiver.  [MUSIC] When you use your cell, your handset talks to the nearest cell phone tower which connects your phone to a cell switch center.</p>
+
+<p>During your call, your speech is encoded to digital data thatâs then sent via radio waves to your friendâs phone and converts it back to speech again.  The cell switch exchanges like the one Vodafone Greece had from Ericsson worked by routing your call across various interconnected exchanges to get to where you wanted to go.  The digital speech data is encrypted but when it goes into the switching center and when it leaves the center, that bit in between while itâs passing through and being routed temporarily is unencrypted.  This is all done electronically and remotely for every call, so these exchanges are a core part of Vodafoneâs network and essential to making phone calls.  For something as big as Vodafone Greece, these exchanges were probably pretty massive.  I couldnât find a picture but I imagine it to be rows of cabinets with hi-tech servers, switches, and miles and miles of wires connecting them all together; flashing and blinking lights constantly on the go as they communicate with each other 24/7.</p>
+
+<p>The lawful intercept RES software usually works by making a parallel copy of the digital speech data and sending it off to the law enforcement agency that requested the wiretap.  The hackers for Vodafone Greece had their wiretaps set up in exactly this way, but the data was sent to shadow cell phones instead.  So, to get a copy of the call, it would just look like another outgoing call, nothing suspicious.  It sent a text message to the shadow phones with the metadata of every call; the cell number, the date, the time, and the call duration.  So, think about it, youâve got the Greek prime minister who picks up his cell phone and calls the minister of public order and while heâs listening and ringing and waiting for the minister to answer, another cell phone is ringing at the same time, a shadow cell phone held by the hackers.  When the minister picks up and they start chatting, that cell phone also gets picked up and they start listening.</p>
+
+<p>When the PM disconnects, so does this shadow cell and all that data was being recorded, bundled up, and sent to another location where it was being stored for safe keeping.  With multiple numbers being wiretapped like [00:20:00] this, one shadow cell is not going to be enough.  What if two of the targets make phone calls at the same time?  So, hackers had a total of fourteen shadow cell phone lines which would pick up and listen to any of the phones that were on that list of 106 phone numbers.  If the target makes a call and the first shadow cell is busy, it just jumps to the next and then the next until it gets an open line to listen in on.  When Ericsson told Vodafone what they found and what it was doing, the Vodafone Greece team started trying to isolate the malware.  Three days later they managed it.  Now, by this point, it was March 8, 2005.  The CEO of Vodafone Greece, Giorgos Koronias, needed to decide what he was going to do next.</p>
+
+<p>His decision was, letâs say, a little sloppy.  When thereâs an infiltration in any company, even back in 2005, thereâs a standard procedure to follow; isolate the malware.  If youâre interested in who did the hack, which in this case you would definitely be interested in whoâs listening in on the prime minister, if thatâs the case then you would try to trace it back to the hackers, and you would also inform the relevant authorities, and youâd protect your clientsâ services and data.  The problem Giorgos had was the scale of this attack and all the targets in it.  While the hackers had used Vodafoneâs systems and existing software to do it, it wasnât Vodafone Greece that they were interested in.  It was senior members of the Greek government.  This was a serious attack, one with huge consequences.  I mean, this malware was allowing unknown hackers to probably record calls and listen in on communications from these cell phones.</p>
+
+<p>What kind of conversations was the Greek prime minister having on his cell?  What about the head of foreign affairs?  Discussions on domestic and foreign policies, trade deals, defense strategies, and potentially discussions involving state secrets.  The kind of information that could have been intercepted here could have international repercussions for Greece.  It was a disaster on every level and Vodafone Greece was ground zero.  On March 8, four days after Vodafone found out they had malware, there was some tense meetings held in the head offices.  Their network staff and Vodafone bosses seemingly had heated and at times angry communications on that day.  I could only imagine the variety of reactions they must have had to this.  I mean, it makes perfect sense here for people to get emotional and even go through the five stages of grief; at first not believing they had malware and some hackers were doing it, but then when that was proved without a doubt, they must have been angry that somebody was doing this.</p>
+
+<p>Then when that passed, they must have felt âif onlyâ or guilty for letting this happen.  Then at some point they might have felt depressed or sad that their network was compromised.  Only after you get through those stages can you then work on accepting the situation and moving forward towards a solution and next steps.  Nothing was done as a result of the meetings on March 8.  [MUSIC] But on March 9, Giorgos, the CEO, instructed his team to fully deactivate and delete the malware from the infected Vodafone systems.  He wanted it stopped in its tracks; cut it off and get rid of it completely so it couldnât do any more damage.  This might seem like a good idea at first, to get rid of the malware ASAP.  But incident response teams typically donât like to do that because the moment you delete that malware it instantly lets the hackers know theyâve been discovered.  They can either go on the run and hide all their tracks or conduct a backup plan like get another way into the network and snoop on calls a different way.</p>
+
+<p>A typical incident response team will start by collecting a ton of logs and saving it and taking snapshots of everything because you run the risk of losing this data as time goes on.  Then try to discover exactly how it got infected so that they could permanently close the doors so that the hackers would not have the ability to come back.  Lastly, try to find out any clues that lead back to the hackers.  I mean, if they had fourteen shadow phone lines set up, wouldnât it be a lot easier to trace these calls while the phones were active?  But the CEO insisted on taking them out and shutting down these lines before anything else.  So, thatâs what the tech teams did.  They deleted the malicious code on these phone exchanges and they proceeded to disable all fourteen shadow phone lines that were used to send tapped calls to.  With that, the malware was gone and the shadow phone lines were disabled and the wiretapping was stopped.  So far, this storyâs pretty good, right?</p>
+
+<p>A major telecom company gets hacked and their target is to wiretap calls to and from the heads of state.  Sounds like high stakes and exciting.  Now you probably want to know who would do it and what happened after this.  But this storyâs about to get totally off the rails.  This is why I love non-fiction because the truth is so insanely strange sometimes, so stay with us through the break.  [00:25:00] Okay, so get this; on March 9th they delete the malware.  Okay, fine.  But on March 10th, the very next day â you remember Kostas Tsalikidis, right?  He was the network planning manager for Vodafone Greece and just two months ago he tried to submit his resignation letter but Vodafone begged him to stay, so he did.  Kostas was a real technical guy so Iâm thinking he was probably aware that this serious malware issue was happening within Vodafone Greece.  Well, Kostas was thirty-eight years old and was living in a loft apartment just outside Athens; nice place about seven miles away from work.</p>
+
+<p>His parents were living in the same building and that morning, while the Vodafone CEO Giorgos was trying to figure out how he was going to tell the prime minister of Greece that a wiretapping was going on, Kostasâs mother came into his apartment and found her son hanging from a rope in the bathroom doorway.  [MUSIC] She instantly panicked.  A few minutes later, his brother Panagiotis arrived.  He found his mother hysterical in the hallway.  He saw Kostas hanging there so he cut down his younger brother.  Kostas was dead.  He had taken his own life.  Panagiotis, his brother, was in disbelief.  Just before he called the police station, he called his wife and asked her to bring his camera to the apartment.  He didnât believe this was suicide.  Kostas was recently engaged and his wedding date was just in three months.  He had made arrangements to take a vacation in just a few weeks.  He had been making trip plans with his fiancÃ© just the days before.  He was in a happy and settled relationship and he had no money troubles.  There had been no signs of depression or anything to indicate he was ever contemplating suicide.  Panagiotisâs wife, Kostasâs sister-in-law, spoke to a journalist named Elizabeth Filipouli about his death.  Hereâs that clip.</p>
+
+<p>SISTER:	I had never seen such a perfect body lying down dead in my life.  The way of death is written somehow on his body as an expression.  Kostas was calm, was smiling.  He had his eyes closed.  He had his mouth closed.  He hadnât any possible blueish color like we have seen in hanging bodies.  It was like a stage thing.  It was as if somebody had designed something that worked out perfectly.  Nothing on his face would say that Kostas went through any death-fight or any kind of pain, physical pain.</p>
+
+<p>JACK:	The night before he was found dead, Kostas had talked to his fiancÃ© on the phone.  Their phone records show he called a Vodafone corporate number but investigations donât seem to have figured out who he spoke to.  Then he sends a huge e-mail to Vodafoneâs technical directors at 4:20 in the morning.  It was two pages long and went through all the outstanding work that had to be done on the different networks.  Three hours later he was found dead.  [MUSIC] Panagiotis took photographs of Kostas that morning.  He wanted a permanent record of how his brother looked just after he had been found.  When the police arrived at the apartment, they took statements from the Kostas family.  The police didnât take photographs of the scene.  They didnât dust for fingerprints or do any crime scene investigations.  They saw no reason to doubt that Kostasâs death was a suicide.  There were no signs of forced entry.  The apartment was in order.</p>
+
+<p>There was no indication of a struggle.  Kostasâs body was taken to the morgue to get [00:30:00] ready for an autopsy the following day.  On that same day, March 10th, Giorgos, the CEO, had arranged to meet with the director of the Political Bureau of the Prime Minister and the political order minister.  The prime minster was away at a terrorism summit.  Giorgos sat and explained the wiretapping discovery to the two ministers.  He then handed over a list of cell phone numbers that had been targeted and the incident case description technical report prepared by Ericsson.  Oh, and get this; on that very same day, a new law went into effect.  This was the day that the presidential decree regarding lawful interception in Greece came into effect, right in the middle of the biggest telecoms provider illegal wiretapping scandal ever seen.  Greece passed a law that created a process for lawful intercept; legal wiretapping.  The timing was ridiculous.</p>
+
+<p>When the prime minister learned of the wiretapping, he immediately ordered a preliminary parliamentary investigation into what happened.  On March 11th, the Greek minister of justice, along with the attorney of the Supreme Court, met with the CEO of Vodafone Greece to get more details on this attack.  The investigation was to be done in secret.  They didnât want any details made public yet.  This would go on to be a huge investigation.  They ultimately spent the next eleven months gathering evidence and hearing testimony from all companies involved and anyone else who thought they might know something.  Giorgos, the Vodafone CEO, maintained that he knew nothing of the lawful intercept RES software.  He said he didnât know it was included with the upgrade package that they received from Ericsson.  He also said his company didnât have the knowledge and capability to do anything like this even though Ericsson software is what could.</p>
+
+<p>The investigation called for people from Ericsson to come give testimony.  Remember, Ericsson is the company that made the phone switches and devices, and theyâre the ones who kind of discovered this malware.  Even the CEO of Ericsson flew into Greece to give testimony.  Ericsson said that Vodafone knew the RES software was present on these devices when they sold it to him and that someone from Vodafone Greece even had to sign off confirming that they knew this feature existed.  The investigation pulled up the receipt to look to see who signed for this and guess who it was?  Their network planning manager, Kostas, the guy who died.  Giorgos, the CEO of Vodafone, gave testimony, too.  When questioned about Kostasâs death, Giorgos tried to distance himself from it, saying it was a tragic suicide entirely unrelated to the wiretapping ordeal.  They asked him if Kostas knew about the malware.</p>
+
+<p>Giorgos said it was possible that Kostas could have stumbled upon it himself since his role was technical enough and he had that level of access to get into those systems.  As this investigation went on for months and months, evidence started to disappear.  [MUSIC] At the physical location of where the exchanges were that had malware on them, thereâs a little visitorâs sign-in sheet.  It was Vodafone Greeceâs policy to destroy these sign-in sheets after six months so by the time investigators requested records of who had visited these locations around the time of the wiretapping, those sign-in sheets had already been destroyed.  Policy or not, it seemed to be a bit suspicious that this key piece of evidence in one of the biggest telecom investigations ever happened to be destroying evidence because of a corporate policy.  These sign-in sheets might have revealed who had been in the facility at the time the malware was installed.</p>
+
+<p>On top of that, Vodafone upgraded two of the servers that were part of this hack and after the upgrade, all access logs to the management server were wiped.  Again, these logs of who accessed these systems, when and what did they do, they were all critical logs, but they were gone.  Weirdly there were no backups of this, either.  Then thereâs the transaction logs of the switch exchanges.  Now, they would have been useful but nope; due to lack of space, Vodafone Greece only kept these logs for five days.  Although Vodafone had clear explanations of why these actions were taken, the damage they did to the investigation into this hack was pretty substantial.</p>
+
+<p>A proper incident response team would have collected all this information right away and stored it in safe keeping and did snapshots and kept backups, but this investigation was not being conducted by a proper incident response team.  But this was in 2005, before good response methodologies had been widely adopted.  On February 2nd, 2006, the Greek government decided to tell the world about this hack.  They held a press conference announcing that this will be an issue of national security.  [MUSIC] The Greek government spokesman, the minister of justice, and the minister of public order were all in attendance.  The press came in, turned on their cameras and recorders, and listened to the ministers give their talking points.</p>
+
+<p>MINISTER:	[FOREIGN] [00:35:00] The title of this case could be Phone Wiretapping.  Among the phones wiretapped were the Greek prime ministers, members of the government, an ex-minister, a member of the Opposition Party, and a number of private phones.  This wiretapping was performed by so-far unknown persons with the use of highly sophisticated technology.</p>
+
+<p>JACK:	The group of journalists that were there to hear this press conference were all shocked.  They learned for the first time how the discovery was made in March 2005 and that a preliminary judicial investigation into the hack had now been concluded.  More information on who had been wiretapped came out, too.  The victims of this wiretapping included the prime minister and his wife, foreign ministry officials, Navy staff, and members of the ministries of defense, public order, and merchant shipping.  They all had their phones tapped.  The Greek minister of public order did what he could to try to track down those shadow phone lines and advised they were in fixed locations across Greece.  Hereâs the Greek minister of public order explaining to the press.</p>
+
+<p>MPO:	There were fourteen to sixteen mobile phones operating as shadow devices of the tapped numbers.  When a call was received by the intercepted phone, it was immediately connected with one of the shadow phones through the lawful interception software.  Apparently, this shadow phone was taping the conversation into another software.</p>
+
+<p>JACK:	Okay, so these shadow phones lines were directing the wiretapped calls to actual mobile phones.  Investigators were able to track the locations of these mobile phones based on which cell towers they communicated with at the time when the wiretapped calls were made.  Using this method, investigators were able to identify four Vodafone antennas that had been directing calls to the shadow phones.  The locations of these antennas gave investigators an idea of what part of town these phones were in when they received these calls.  The location was a two-kilometer radius around central Athens in an area called Lycabettus Hill.  This preliminary investigation was now closed.  He wasnât able to give any more information at this time.  Everyone in Greece stood up and paid attention to this news.  Greek journalists were shocked at finding this out.</p>
+
+<p>The Greek authorities who should have been informed the moment the hack was discovered were shocked that they werenât informed.  Then the Greek citizens who were now getting worried about the security and privacy of their own telephone conversations were also surprised.  When the floor was open for questions, reporters immediately asked if a foreign country was behind this attack because when the targets were government officials, it just seemed like the logical conclusion.  One reporter pointed out that Lycabettus Hill is where the US and British embassies are located.  If cell phones were being used in those buildings, they would have hit one of those four towers that were identified as the towers used by these shadow phones.  [MUSIC] The ministers advised that no conclusions can be drawn yet.</p>
+
+<p>The investigation was still ongoing and they recognized this was a pretty sophisticated malware; to first gain access to a large telecom provider, then to write malware in the PLEX coding language which required intimate knowledge of both Vodafoneâs network and Ericssonâs devices, and then to also set up fourteen shadow phone lines with automatic recording mechanisms for all incoming calls.  To top it all off, all this went undetected for like, eight months.  This is not something your average cyber-criminal will know how to do.  Itâs not something your typical hacktivist will be capable of.  No, no, no; this is far more advanced, something that would require a great deal of time, knowledge, skill, money, and effort to pull off.  Not many people would be able to do something this extraordinary.  Kostasâs brother Panagiotis also listened closely to this press conference.  He was deeply concerned.</p>
+
+<p>I donât think he knew anything about this hacking incident until a year after his brother died.  He immediately contacted the Athens prosecutor who was investigating his brotherâs death.  He wanted the death investigation expanded to include this wiretapping affair.  He wanted to know if there was any connection between the two.  Panagiotis requested the investigators exhume Kostasâs body because he wanted to look for further signs of murder.  So now itâs 2006, over a year since the malware was found and the news of the wiretapping hack at Vodafone Greece was out.  The Hellenic Authority for the Information and Communication Security and Privacy, or ADAE for short, also began their own investigation.  Officially, the ADAE is the investigating body for information, communication, and privacy in Greece.  They really should have been told as soon as this hack was discovered because they have the expertise to investigate the technical aspects of this incident.</p>
+
+<p>They have the technical knowledge to collect and preserve the logs and unpack the malware and figure out [00:40:00] how it was all working.  A year after the malware was discovered, the ADAE began their investigation and they released two preliminary reports in March and April of 2006 with their findings.  Now, these were released in Greek, obviously, and they donât seem to be publically available.  But there is a fascinating article in the IEEE Spectrum, a technical magazine, which goes over this ADAE report.  Itâs called The Athens Affair [MUSIC] and two Greek university professors who taught computer science and technology wrote this IEEE article.  They really got into the technical details of how the hackers pulled this off.  In June and August of 2004, the shadow phones started to be registered which was just before the Olympics in Athens.  This was followed by the malware being installed on three of Vodafoneâs exchanged on August 4th.</p>
+
+<p>The hackers then set up the targetâs cell phone numbers all in time for the opening ceremonies of the Olympic Games of August 13th.  In October, the malware was installed on a fourth exchange but it wasnât used for wiretapping any cell phones.  A feature of the Ericsson AXE switches is to be able to install new software without having to reboot the whole system because restarting would cause an interruption to Vodafoneâs services and users.  There would be dropped calls, no connections, messages not sent, whatever.  The perpetrators liked the fact that a reboot wasnât required to install their rogue software.  This feature was also great for Vodafone and Ericsson texts.  Thereâs a point in the mobile connections where the voice call is unencrypted so the phone company can process it.  Well, thatâs the vulnerable point.  Both lawful and it turns out unlawful wiretaps rely on this temporary vulnerability to get a copy of the streamed data they need.</p>
+
+<p>This is where itâs picked up, replicated, and sent off to the shadow phones all without the callers or cell phone providers having any idea.  Now, the RES software on the Vodafone Greeceâs systems is what has the capability of doing lawful intercepts or wiretapping by authorities.  This is what the hackers used to conduct their wiretapping and they bypassed the interface which would have logged what was going on.  If anyone looked at the systems, it would show no eavesdropping was conducted.  This malware was really stealthy.  Its activity left no trail, no bread crumbs, and hid all its operations to remain entirely invisible across the Vodafone systems.  It was programmed to modify the commands which would list active processes, hiding itself even better.  The hackers also added themselves logging credentials so they could get access to these exchange switches at later dates.</p>
+
+<p>They included a back door so they could always get back in and make changes or updates.  This was done by changing the exchangeâs command parser.  If they entered a command followed by six spaces, this would act as a deactivation tool.  It shut down the exchangeâs transaction logs and silenced any alarms that would have alerted Vodafone texts.  This way, the commands they had in the malware to operate the RES for the wiretaps could be executed without raising any flags at all.  It was extremely well thought-out and very cleverly programmed.  So, who would do such a thing?  Stay with us because after the break weâre gonna shine a light on these shadow phones.  The hackers werenât entirely so stealthy.  [MUSIC] Remember the beginning of this story, how it all started?  That some text messages couldnât get sent and there were errors and thatâs what triggered this all?  Well, the hackers updated their malware which was on these telecom switches but there was something wrong with the malware and it caused some text messages to not get delivered.</p>
+
+<p>Up to this point, the wiretapping virus caused no impact to Vodafoneâs systems but this update did have an impact and it was with that update to the malware that all this became unraveled.  So, the timeline is this; the hackers were in the Vodafone Greeceâs network actively wiretapping calls for a period of five months.  Then when this error message showed up, Ericsson spent five weeks [00:45:00] reverse-engineering the rogue software and once it was determined that illegal wiretapping was going on, Vodafone Greeceâs CEO called for the immediate removal of the software.  In total, the hackers were wiretapping calls for nine months.  Four months after the public press conference, the investigation into Kostasâs death was concluded.  The Supreme Court prosecutor reported on June 20th, 2006 that there was no evidence of any criminal act against Kostas.</p>
+
+<p>His autopsy had shown no injuries to his body.  The rope around his neck had been tied with a standard knot positioned at the back of his head.  His hyoid bone, that small bone in the back of your neck, was still intact.  The cause of death was determined as hanging by noose.  This was not a ruling that the Kostas family was satisfied with.  They all reported he was happy and making plans for the future, but they did say that about a month before he died, he sent some text messages to his fiancÃ© with strange comments.  [MUSIC] Leaving Vodafone Greece was a matter of quote, âlife and death.â  Unquote.  Kostasâs texts went on to say that Vodafone was in trouble and that this was the trouble that quote, âthreatened its very existence.â  Unquote.  His fiancÃ© Sarra never did find out what he meant by those words.</p>
+
+<p>Now, when Kostasâs family searched his apartment after his death, they found some pretty interesting stuff.  Kostas was a meticulous note keeper; he had notebooks for all his networks, and all that needed to be done, and what was currently working on, and what problems he needed to work on next.  You get the idea.  All notes and diagrams and scribbles.  Makes sense, right?  These networks are complicated and the family actually hired independent telecommunications experts, four of them, to try to decipher these notebooks to see if there was any clues in there.  They dug up some curious bits of information.  So, Kostas was the guy who upgraded all of Vodafone Greeceâs networks to the 2.5G platforms when they came out and now it seemed it was right around the same time that the wiretapping happened that Kostas was working on upgrading everything to 3G.  For him to do that, he had to go around all the base stations and switch centers and check all the antennas individually.  Pretty painstaking work but meticulous at the same time which meant Kostas may have been in those switches that contained the malware and he may have discovered it while there conducting some upgrades.</p>
+
+<p>In his notebooks there are references to the RES software which meant he knew they were capable of doing wiretapping and there was a diagram of two of the switch centers where the malware was discovered.  On his diagram were two little question marks next to the devices where the malware was discovered.  The prosecutor did say that Kostasâs suicide was casually linked to the wiretapping affair going on inside Vodafone at the same time.  The prosecutor also reported that Kostas had some knowledge of this malware but maybe that means he just found out about it after Vodafone found out about it.  We donât know how much Kostas knew about this wiretapping affair.  One month after this ruling, the media began reporting on some surprising events in Italy.  In July of 2006, Adamo Bove who was a network employee at Telcom Italia was found dead under a bypass in Naples.  It looked like he had jumped to his death.  Adamo had uncovered a network of illegal wiretaps inside Telecom Italia and was an informer to the Italian prosecutor looking into the scandal.  He was a whistleblower.  Hereâs Al Jazeera covering the story.</p>
+
+<p>JULIANA:	[MUSIC] Hello, and welcome to People and Power.  Iâm Juliana Ruhfus.  Itâs July 2006 and Adamo Bove, head of security at Telcom Italia, falls to his death from a motorway bridge in Naples.  Did he jump or was he pushed?  Itâs a mysterious death but the former policeman was working on mysterious cases.  Italian prosecutors had asked Bove to investigate the role of the American and Italian military Secret Services in the abduction of Egyptian cleric Abu Omar in Milan, 2003.  Tracing mobile phone calls, Bove inadvertently stumbled upon a vast secret call interception system inside Telecom Italia.  Politicians, bankers, businessmen, even footballers and referees were being monitored.  This was a scandal that went right into the nerve center of Italian power.</p>
+
+<p>JACK:	Phew, thereâs so many similarities between the death of Adamo and the death of Kostas.  They both worked for a major telecom provider, both telecom providers had recently discovered illegal wiretapping going on internally, and both of their deaths looked really suspicious.  Yet these two cases happened in two totally different countries.  After Adamoâs death in Italy, the press [00:50:00] continued speculating on the parallels between the two deaths.  On September 26th, after Kostasâs family appealed the court ruling, the court of appeals once again reached a verdict that Kostas died of suicide and his case was closed.  [MUSIC] With the ADAE investigations complete, Vodafone and Ericsson were placed on the firing line.  On December 14th, 2006, Vodafone was fined 76 million euros by ADAE.</p>
+
+<p>They blamed the company for not protecting its network well enough.  It didnât end there.  They said they thought there was an insider at Vodafone that gained the right access to install the malware.  A year later in October 2007, they were fined again; this time 19.1 million euros by the national telecommunications regulator for breaching privacy rules.  That brought the total fines to Vodafone Greece in at 95 million euros.  Ericsson didnât escape fines or blame either.  The ADAE gave Ericsson a fine for 7.3 million euros based off their belief that the malware couldnât have been installed or operated without in-depth knowledge of Ericssonâs systems.  So, Ericsson took some damage for this, too.  Five years later, Kostasâs death was officially brought up again.  Still, the family was not convinced it was suicide and now they had new evidence.</p>
+
+<p>[MUSIC] On February 8th, 2012, Kostasâs family presented new evidence to get the investigation reopened.  They had two new coronerâs reports from independent experts who cast doubt on the suicide verdict.  The knots on Kostasâs noose, they were in fact a complex knot, not a simple everyday knot that the first coroner had reported.  The rope position around Kostasâs neck and the presence of fluid in his lungs was more consistent with strangulation than hanging but there was no evidence of hypostasis where the blood collects in the legs which would have been expected in the case of hanging.  The second coronerâs report also pointed out features missing which would have been expected in a hanging death.  Projecting of the tongue, cyanosis of the face, injuries of the lower body from spasms, and limbs hitting off nearby walls or furniture both concluded although suicide was still possible, exhuming the body for further examination and testing for poisons would be a positive next step, a step that the family had wanted authorities to take back in 2006 but were denied.</p>
+
+<p>Two months after that, five years after Kostas died, his body was exhumed, dug up so they could test his body for toxins.  The toxicology report for poisons was negative.  Kostas had not been poisoned or drugged before his death but now that they had the body to look at again, they found Kostasâs hyoid bone was, in fact, broken.  This is a U-shaped bone in the front of the neck but the original autopsy report said it wasnât broken.  A broken hyoid bone is consistent with strangulation and not with death by hanging.  This could have happened after his death, like when he was buried or exhumed, so itâs impossible to know for sure when this hyoid bone was broken.  All this evidence combined resulted in a final report that Kostasâs death remained unclarified.  But on June 16th, 2014, the Athens Court of First Instance closed this second investigation.</p>
+
+<p>They did the same as the last investigation; they upheld the ruling of suicide and allowed the case to be closed and archived.  Despite new evidence, Kostasâs family were told he had still taken his own life.  The family took the case to the European Court of Human Rights.  They were determined to get a full and proper investigation for Kostas into how he had died and any connection to his death with the wiretapping scandal at Vodafone, Greece.  While they waited at the courtâs ruling, an investigation by James Bamford for The Intercept suddenly appeared.  Heâd been working with the Greek newspaper Kathimerini and one of their journalists, Angelos Petropoulos, and what they found out would turn this case on its head.  [MUSIC] In September 2014, a journalist named James Bamford spent three days in Moscow interviewing Edward Snowden for a cyber-crime documentary that he was producing for PBS.  While there, he spotted some interesting stuff in some of Snowdenâs unpublished NSA documents that talked about Greek wiretapping.</p>
+
+<p>This was a case that James was following since it was first publicized back in 2006, so he was curious.  [00:55:00] He knew about the death of Kostas and decided to do some digging.  Joining forces with Angelos Petropoulos at Kathimerini, the pair uncovered the real story that had stayed in the shadows throughout the case.  It all goes back to 2004; Olympic Games in Athens.  This was a huge opportunity for Greece, an honor to host an important international event and they spent over seven billion euros designing, building venues, and updating infrastructures in Athens and across Greece.  They were doing everything they could to showcase Greece to the Olympics around the world to ensure their success.  But these Olympics were going to be the first Summer Games to be held outside the US since 9/11.  Everyone was on high alert.  Now, I really wanted to stick my head in this story and understand this as best as I could.  So, I called up one of my listeners who grew up in Greece.</p>
+
+<p>SPKR1:	Hey, Jack.</p>
+
+<p>JACK:	Hello.  Howâs it going?</p>
+
+<p>SPKR1:	Oh, good, thanks.  How are you?</p>
+
+<p>JACK:	I donât want to say his name because he is actually connected to this story in some way but he didnât want to talk about that publically.  But the thing that you should know is that heâs been following this story all his life.</p>
+
+<p>SPKR1:	This story kind of broke when I was much younger and it was the first kind of introduction I had into the world of cyber-security, wiretapping, and just the culture.  I followed it from day one and I think itâs what got me to the place I am today.</p>
+
+<p>JACK:	Yeah, so as an eleven-year-old, this was really fascinating to him; seeing this on the news, hearing his parents talk about this.  So, he was Googling things like wiretapping and how to do wiretapping and different hacking techniques and things like that.  Today, heâs a penetration tester for some really big companies.  Itâs fascinating to see how this story had a ripple effect on him.  I asked him what kind of terrorist activity has there been in Athens leading up to the 2004 Athens Olympics?  He told me about this one terrorist group.</p>
+
+<p>SPKR1:	Which is known as the 17th of November.  They were a far-left terrorist group formed in â sometime around 1975.  Mainly they wanted the removal of US military bases from Greece and they wanted Turkey out of Cyprus who had invaded in 1974.  Now to do this, they had murdered countless US individuals.  They murdered the Athens CIA Station Chief Richard Welch, they attempted to murder one of the most prominent Greek businessmen called Vardis Vardinogiannis in a failed IED attack on his armored car.  They murdered several Greek police members including the Greek police chief as well as a UK brigadier called Stephen Saunders.</p>
+
+<p>JACK:	Not only that; I think these guys were the ones that sent the bomb threat to Air Force One when President Bill Clinton came to Greece.  The key members of this November 17th terrorist group did get caught and it ultimately got them disbanded but yeah, there was some terrorist activity before the Greek Olympics; a lot of it.  This gives us a better perspective of what Greece must have been thinking leading up to these Olympics.  Was November 17th going to come together again and do something?  Greece is sort of the border between western culture and eastern culture.  Itâs got a mix of communism and capitalism and thereâs a lot of people who feel very opinionated on which way Greece should swing.  The Greek government was concerned, very concerned, about terrorist attacks.  When James Bamford, a journalist for The Intercept, looked over some unreleased NSA documents that Edward Snowden had, he saw something in it that took him by surprise.</p>
+
+<p>He found documents that show the NSA has routinely approached host countries of the Olympics to offer help and support in providing intelligence security.  I mean, the NSA has the experience, the kit, and the expertise that a lot of these countries donât.  Greece just wasnât ready or capable to carry out any kind of mass surveillance like this.  According to these Snowden documents, the NSA started working with the Greek National Intelligence Service in the two years running up to the games.  But according to Greek law, it was illegal for the government to wiretap phones.  Initially, the Greek government did not want to do this.  They were hesitant at least, but they were nervous about a potential terrorist attack at the Olympics and the help of the NSA for the Greek government was valuable, so the Greek government secretly agreed to let the NSA into the Greek telecom system for the period of the Olympic Games.</p>
+
+<p>[01:00:00] James Bamford is a seasoned journalist whoâs exposed the NSA a few times before.  Heâs been writing about them for years, bringing up a lot of dark things into the light.  Heâs written for Foreign Policy magazine, The New York Times, Wired, The Intercept, and heâs published a few books on the NSA too, all New York Times best-sellers.  So, heâs pretty familiar with all whatâs going on there and he has insider sources everywhere.  He gave a talk at a conference called DeepSec in Vienna, Austria in November, 2015.  [BACKGROUND TALK] Itâs amazing.  This YouTube video of his talk is a gem.  He shows us top-secret Snowden docs and so much more.  Itâs been up for four years but only has 290 views.  But letâs listen in on it.</p>
+
+<p>JAMES:	The very first thing is the NSA will come into a country and theyâll say look, youâre gonna have the World Cup or youâre gonna have the Olympics or youâre gonna have some big event.  Well, you need us because we can tell you when thereâs gonna be a terrorist event because we can search through all the communications.  Have us come in, have us bug your whole telecom system, and we can help you.  Weâre there to help you.  Thatâs what they did; they got the permission from the Greek government to come in and do the bugging.  What this document here from the Snowden archive talks about is theyâve been doing this for years.  The NSA has been going around to various Olympic venues and saying weâre here to help and let us come in and bug all your phones, and after itâs over weâll disappear and youâll never hear from us again.</p>
+
+<p>JACK:	James goes on to explain that for the NSA to be most effective, they need someone good at HUMINT which is human intelligence.  They needed someone to be inside Vodafone Greece to help with this malware.  So, to help with this, James says they used a CIA agent named William Basil.  He was perfect for this; he spoke Greek, he had Greek family, he was familiar with Greece, and at the same time, he was working for the CIA.  James believed this guy Basil posed as the First Secretary of Regional Affairs for the US embassy, something that might sound official but may be not an actual role.  This guy Basil would go around recruiting insiders to help him out with this hack.</p>
+
+<p>JAMES:	Basically, now youâve got the inside â youâve got the agreement of the government, youâve got the inside person, youâve got the malware, youâve got the external intercept operations going.  What now was needed was some way to get that information after itâs been collected, after itâs been intercepted, basically, in Vodafone.</p>
+
+<p>JACK:	James goes on to explain how the shadow phones were all set up and how a mobile phone would ring whenever one of the numbers were dialed.</p>
+
+<p>JAMES:	[MUSIC] It was a very good setup.  Youâve got the agreement of the government, you put them in there, look for terrorists during the Olympics, keep everybody happy, get an inside person there, you get the malware, then you exfiltrate the intercepting communications to these untraceable cell phones and then that puts it into NSA.</p>
+
+<p>JACK:	Okay, well, then the Olympics take place and there were no terrorist attacks during the Olympics, so all went well.</p>
+
+<p>JAMES:	Thatâs supposed to be the end of the operation.  The NSA is supposed to take it all out, fly it back to Fort Meade and say goodbye to the Greek government and the Greek telecom system.  The problem was, according to my confidential source, they never removed it.  All they did was they turned it off for a day and then they turned it back on again.  But now, instead of going after the terrorists which is the whole raison dâÃªtre for the operation in the first place, now theyâre secretly turning it on the Greek government; theyâre turning it on the prime minister, his wife.  I donât know why, but they did, and the mayor of Athens.</p>
+
+<p>JACK:	Then James goes on to say that this is not the only time the NSA has wiretapped a friendly country to listen in on the leadersâ phone calls.  There was a Wikileaks article that came out which said that in 2009, the NSA was wiretapping Angela Merkelâs phone in Germany as well as 124 other top German officials.  See, while of course we can assume the NSA is wiretapping countries which are adversaries, itâs just shocking for us to hear that the NSA is wiretapping friendly nations like this.</p>
+
+<p>JAMES:	This is just standard operating procedure.  I mentioned this to a senior NSA source and said, you know, is this unusual or what?  He laughed and he says they never remove it.  Are you kidding?  Once you got it in there, you leave it in there.  Thatâs just standard operating procedure for NSA.</p>
+
+<p>JACK:	Hm, thatâs a bait-and-switch move; get the agreement first, then when the people arenât looking, switch the parameters of what youâre doing.  [01:05:00] If it hadnât been for that update in January 2005 causing the text message errors, it couldâve gone on for way longer.  Since the official reports of the ADAE back in 2006, publically at least, it seemed little ground had been gained in figuring out who these hackers were.  Official investigations had gone quiet with no new information coming to light.  But the Greek authorities had been working in the background and they were focused on these shadow phones.  It was the only lead they had to try to trace these hackers.</p>
+
+<p>They managed to trace some of the signals from these shadow phones through four active Vodafone antennas.  Even though these phones had been turned off as soon as the malware was detected, investigators found new clues.  They were able to trace the direction of the signals which pointed directly to the US embassy in Athens.  They also detected nearly forty calls to the US embassy that had been made by one of the shadow phones using a SIM card.  Plus, they discovered that these shadow phones connected calls to cell towers that were near NSAâs US headquarters in Maryland.  The evidence was starting to mount up.</p>
+
+<p>SPKR2:	There is one thing which I think kind of has gone over the head of â managed itself of everyone that was â had reported on this issue which is â at the same time this wiretapping was going on there was a massive blimp that was kind of like a Zeppelin, one of those air ships, that was flying around.  I think it had a sixteen-hour flight time.  The blimp was called Skyship 600 owned by Skycruise Switzerland which had cameras that were capable of reading license plates.  It had microphones that were capable of picking up phone calls from the air.  They could listen in on all phone calls on the ground.  They had chemical detectors and this is also something that riled up a lot of people who were seeing his massive impeachment on our privacy.  We donât want this here.</p>
+
+<p>JACK:	The Greek authorities managed to identify a cell phone store in the city of Piraeus about six miles away from Athens.  It was there that four of the shadow phones had been purchased.  They sat the owner down and showed him photos, and he recognized someone in one of the photos.  She was the wife of the First Secretary of Regional Affair which was the title of William Basil, the CIA agent based working out of the US embassy in Athens.  It had been his wife who originally purchased the shadow phones and again, it was journalist James Bamford who exposed the CIA agent and what he was doing.  In February 2014, nine years after the wiretapping had been discovered, the Greek government had issued an international arrest warrant for William Basil as a suspected CIA agent working out of the US embassy in Athens.  He was charged with espionage and eavesdropping.</p>
+
+<p>This was an unbelievably rare move for an ally country to take and one that most of the media, at least outside of Greece, didnât even catch.  But the Greeks were now confident that Basil was deeply involved in this attack on their government.  By extension, that implicated the US, too.  Did he recruit an insider to do this attack?  Did he recruit Kostas?  These are questions weâll never know the answers to.  Kostas would have been an excellent insider at Vodafone Greece.  He was in the perfect position to access all the networks they needed but he could have also been entirely innocent in all this, too.  Sixteen years on, and we still donât know.  Basil himself is now nowhere to be found.  Right after the hack was discovered, he disappeared from Greece.  In August 2005, he returned at his job in the US embassy in Athens but Basil was First Secretary; he had diplomatic immunity.  He couldnât be arrested.</p>
+
+<p>But in 2014, Basil retired which meant he didnât have diplomatic immunity anymore.  [MUSIC] So, he disappeared and now the Greek government canât find him and is still looking for him.  The case of Kostasâs death was reopened for the third time.  The first two investigations were scrutinized; the new coroner report raising doubts about his death being suicide were examined and all the information about the wiretapping was available.  So, on June 21st, 2018 the Athens prosecutor ruled that Kostas was, in fact, murdered.  In November 16th, 2017, the European Court of Human Rights ruled in favor of Kostasâs family.  The court agreed Kostasâs death was not on both occasions investigated fully despite clear inconsistencies around his death.  The Greek government was ordered to pay the Tsalikidis family 50,000 euros in damages.  An arrest warrant for murder was issued for [01:10:00] persons unknown.  Kostas hadnât taken his own life back in March 2005.</p>
+
+<p>Someone had killed him and staged his death.  We will never know for certain what role Kostas played in this affair and what exactly happened to him on March 9th, 2005.  Maybe his death had nothing to do with this hack.  Itâs only speculation to believe it did but itâs very suspicious because, I mean, if Kostas got recruited to help stop terrorists, okay, he might have gone for that.  But then when the tides changed and now theyâre spying on the prime minister, and then when all that was discovered, I could see why Kostas might have wanted to quit his job.  I could see him getting into a panic.  Itâs not unheard of that the CIA might try to murder someone.  But then at the same time, the Greek government allowed this illegal wiretapping to begin with, so maybe the Greek government didnât want to let the cat out of the bag because it would make them look bad.  Kostas loved his family and his job and his country; if he was wrapped up in all of this, it would have certainly been stressful for him.</p>
+
+<p>But now heâs dead with no answers as to why.  The hack into Vodafone Greece for their governmentâs secrets has never resurfaced in terms of what information was gained.  Like, was it even worth it?  Whether the malware used here was installed entirely remotely or maybe it was physically installed on those switches, we donât know for sure.  Thereâs a reason this case has been called the Greek Watergate.  Itâs the modern version of the Richard Nixon Watergate thatâs so well-known; breaking into offices out of hours and installing hidden microphones to be replaced with sophisticated malware?  Automated call-monitoring and hidden identities whose real faces remain in the shadows?  Itâs still kind of weird to me that Ericsson, the makers of these telecom switches, was fined seven million euros.  Because they didnât secure it enough to keep the NSA from developing malware on it?  Because the Greek government secretly allowed the NSA to install the software?  The fine on Ericsson and Vodafone Greece just didnât seem fair at the end of all this because this was approved by the Greek government and then the Greek government fined them for it?</p>
+
+<p>SPKR2: 	Well, I mean, the NSA did switch off the wiretapping tools for one day but then they switched them back on and put in a list of hundred-plus government officials.  I think thatâs why the fine came down, because if youâre Vodafone and you have knowingly put this software onto your systems, youâre not gonna go and do it in-depth post-mortem to make sure itâs actually been removed.</p>
+
+<p>JACK:	Yeah, definitely.  If I was working at Vodafone and I agreed to let the NSA come in to do some wiretapping, not only would I make sure to wipe it afterwards thoroughly, but I would probably opt for just burning those switches entirely and buying new ones.  But wait a minute, so if the NSA went to Greece to get this approval, they must have met with Greeceâs national intelligence service which is known as E-Y-P or EYP.  If EYP was involved with this wiretapping, were they also involved with the investigation of this afterwards?</p>
+
+<p>SPKR2:	The chief of EYP at the time was an individual called Yannis Korantis, I believe, and he testified in front of a parliamentary hearing that, due to the malware being removed, the deletion of the logs of this and that and the other, that severely hindered their operation.</p>
+
+<p>JACK:	Oh, this is endless.  Itâs so crazy that they specifically said there wasnât enough evidence to properly investigate this.  Of course they would say that because thatâs a defense mechanism if they wanted to hide their own tracks.  Aargh!  This just brings up so many more questions I have, like did the CEO of Vodafone even know that this deal was going on with the NSA?  What approvals did the NSA get?  Just the authorization to conduct wiretaps but not actual help from Vodafone to do it?  Did the CIA agent recruit someone inside Vodafone or did the Greek government get someone inside Vodafone to help?  Again, did the CEO of Vodafone have any awareness of any of this?  In court he said no, but how could all this go on without him knowing?  If approvals were given, then approvals were given; go ahead.</p>
+
+<p>But it just seems like the Greek government gave the NSA approval to conduct wiretaps but then didnât give them any help to get into Vodafone.  Thatâs some shady stuff that the Greek government is conducting here.  Allowing a foreign country to not only wiretap people but also hack into its biggest telecom provider to do it?  And then fine that [01:15:00] telecom provider after it happened?  Itâs just nuts, and mostly because thereâs a death involved in this case.  Like, what the heck happened to Kostas?  Let me be clear; thereâs not many deaths involved in hacker stories that I can find.  Not only that, but do you remember that Italian guy Adamo, where he was found dead after discovering wiretapping was going on in Telecom Italia?</p>
+
+<p>Yeah, well, get this; that year when Adamo found wiretapping going on in Telecom Italia was the same year that Italy hosted the Winter Olympics.  Telecom Italia is the third-largest mobile network in Greece which makes me wonder, did people in Greece get tapped through Telecom Italia, too?  Why didnât any of this come to light or show up in the investigation either?  I donât even know what happened to Adamo, either.  Thereâs so many questions but itâs been sixteen years now since this case opened and we still donât have all the answers.  Thereâs still at least two warrants for arrests that are open for espionage, eavesdropping, and murder.  So, Iâm sure this wonât be the last time weâll hear about this case.</p>
+
+<p>SPKR2:	The more questions that you ask, the more questions youâre provided with rather than answers.  Itâs kind of like an endless rabbit hole, that one thing leads to another, leads another, that leads to another.  I donât think, honestly, weâll ever find out what the true extent of the story is.</p>
+
+<p>JACK (OUTRO):	[OUTRO MUSIC] If you liked this episode, you should go check out Episode 48; itâs called Operation Socialist and itâs about another wiretapping affair that happened in Belgium.  This show is made by me, the digital Hermes, Jack Rhysider.  This episode was written by the sweet Pandea, Fiona Guy, sound design by the opulent Orpheus, Andrew Meriwether, and editing help this episode by the Electrona Damienne.  Our theme music is by the exquisite Daedala crafter Breakmaster Cylinder.  Even though Iâm still waiting for my long-lost uncle who happened to be a Nigerian prince to send me his inheritance, this is Darknet Diaries.</p>
+
+<p>[OUTRO MUSIC ENDS]</p>
+
+<p>[END OF RECORDING]</p>
+
+
+			</pre>
+
+			
+			Transcription performed by Leah Hervoly <!-- <a href="https://www.leahtranscribes.com">www.leahtranscribes.com</a> -->
+			
+
+
+		</article>
+
+	</div>
+
+</section>
+
+		</div>
+
+	</div>
+
+
+	<footer class="footer">
+
+	<div class="wrap">
+
+		<div class="parent3col">
+			<div class="column">
+				<a href="/"><h2 class="footer__text">Darknet Diaries</h2></a>
+				<ul class="socials">
+	
+	
+	<li class="socials__item">
+		<a href="http://facebook.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Facebook">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://twitter.com/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Twitter">
+			<i class="fab fa-twitter" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.instagram.com/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Instagram">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://www.reddit.com/r/darknetdiaries/" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Reddit">
+			<i class="fab fa-reddit" aria-hidden="true"></i>
+		</a>
+	</li>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<li class="socials__item">
+		<a href="https://discord.gg/darknetdiaries" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Discord">
+			<i class="fab fa-discord" aria-hidden="true"></i>
+		</a>
+	</li>		
+	<li class="socials__item">
+		<a href="https://www.youtube.com/@JackRhysider" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="YouTube">
+			<i class="fab fa-youtube" aria-hidden="true"></i>
+		</a>
+	</li>	
+<!-- 	<li class="socials__item">
+		<a href="http://uka5ybpmh3u54dkv.onion" target="_blank" rel="noopener noreferrer" class="socials__item__link" title="Onion Address">
+			<i class="fa fa-adjust" aria-hidden="true"></i>
+		</a>
+	</li> -->
+	<li class="socials__item">
+		<a rel="me noopener noreferrer" target="_blank" href="https://infosec.exchange/@jackrhysider" class="socials__item__link" title="Mastodon">
+				<i class="fa-solid fa-quote-left"></i>
+		</a>
+	</li>
+		
+</ul>				
+			</div>
+			<div class="column footer_menu">
+				<h5><a href="/episode">Episodes</a><br>
+				<a href="/donate">Donate</a><br>
+				<a href="https://shop.darknetdiaries.com">Shop</a><br>
+				<a href="/links">Links</a></h5>
+
+			</div>			
+			<div class="column footer_menu">
+				<h5><a href="/about">About</a><br>
+				<a href="/reviews">Reviews</a><br>
+				<a href="/subscribe">Subscribe</a></h5>
+				<div class="footer__copyright">
+					<span class="footer__copyright">Â© 2023</span>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+
+</footer>
+
+
+	<!-- Javascript Assets -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/js/personal-min.js"></script>
+
+	
+
+	
+	
+	
+
+	<!-- For support visit https://darknetdiaries.com/hotline -->
+</body>
+</html>
