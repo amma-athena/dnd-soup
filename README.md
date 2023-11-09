@@ -25,6 +25,10 @@ The project file structure has a python-y datafiles/scripts/venv structure, but 
 
 ``` source venv/bin/activate ```
 
+Make sure you meet the requirements.
+
+```pip install -r requirements.txt```
+
 When you wrap up your project for the day, make sure to save your requirements.
 
 ``` pip freeze > requirements.txt``` 
