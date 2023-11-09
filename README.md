@@ -15,3 +15,4 @@ Here's a project in which I:
 <br>c) analyze texts from one of my favorite podcasts.
 
 Once I get a better understanding of how this is useful for you, I'll update the readme :-)
+The project file structure has a python-y datafiles/scripts/venv structure, but that may change in the future OR I'll update this file to let you know how to use it. Not sure what the best setup for that is yet.
