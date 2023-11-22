@@ -27,7 +27,7 @@ UNTIL NOW.
 [Markdown](https://www.markdownguide.org) is a markup language. It offers some simple formatting options to make your texts easier to read. It is NOT html, nor does it pretend to be. For anything that Markdown cannot do, you can use HTML. Markdown files are stored in a plaintext file with an .md or .markdown extension. It can always be opened and read as a plain text file. It can then be converted into HTML or a print-ready document through a Markdown application that can process your md file. 
 
 ### How does Github publish a markdown file?
-In this case, it sounds as though Github supports conversion of MD to HTML on their website, but I don't know how that happens exactly. However, github does provide the options to show _Preview_, _Code_ and _Blame_. Preview shows the formatted md file, while Code shows the underlying code. That's great for me, because now I can find out how to do extra things in MD. For example:
+In this case, it sounds as though Github supports conversion of MD to HTML on their website, but I don't know how that happens exactly. However, github does provide the options to show _Preview_, _Code_ and _Blame_. Preview shows the formatted md file, while Code shows the underlying code. That's great when you see something you like in an md-file's presentation mode, because by clicing 'Code', you can learn how to do that cool thing in your own file. It's how I learned to make this cool code box:
 
 ```python
 
@@ -43,7 +43,7 @@ Then there's Jupyter Notebooks. JN _uses_ Markdown to format your texts, but is 
 
 
 ## A very quick and dirty conclusion
-While using Jupyter Notebooks is very interesting, I do believe that it is unnecessary at this point in time. An MD file will do for the requests script. Once we get to the data-analysis and graph-making part however, I'll absolutely consider using .ipynb.
+So in conclusion, the question of Markdown vs. Jupyter isn't really about _versus_ at all. One is a language, the other _uses_ that language, while also offering other nifty things and functionalities. While using Jupyter Notebooks is very interesting, I do believe that it is unnecessary for most parts of this project - at least until we get at actual data analysis and perhaps visualisation. A .md or .py file will do for the requests script. Once we get to the data-analysis and graph-making part however, I'll absolutely consider using .ipynb.
 
 
 See ya.
