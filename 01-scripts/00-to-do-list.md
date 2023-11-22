@@ -6,7 +6,7 @@ I wrote a script to request transcripts from Darknet Diaries!
 ## What improvements can be made?
 
 1. ~~Choose an appropriate filetype~~
-2. Update the script to a .md file
+2. Update the script to a .md file?
 3. Make the function to request files more elegant
 4. Remove unnecessary fluff
 5. Move on to the next step!
@@ -17,6 +17,9 @@ I wrote a script to request transcripts from Darknet Diaries!
 The filetype could be switched from a .py to a more readable filetype (like an md or jupyter notebook). However, I am unsure what the benefits and other issues with this are. Let's take a step back and discern: what is the purpose of this file for me? And what do I intend to learn from it?
 
 The main purpose for me is to a) learn how to do this and b) be able to easily re-do these steps for another project. That means that the text should read as more of a "How To" while executing the steps, rather than a clean .py-file that contains as little info as possible and is easily executable. So it's an example including explanation, or an explanation including an example. Whichever you prefer.
+
+Then again, some of the steps are just to get started. Why make that bigger than it needs to be?
+
 
 ### *To Do*
 - ~~investigate the difference and preference between a MarkDown and a Jupyter Notebook file.~~
