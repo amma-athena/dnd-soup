@@ -14,6 +14,10 @@ Here's a project in which I:
 <br>b) use beautiful soup to
 <br>c) analyze texts from one of my favorite podcasts.
 
+## Main resources used
+1. On Webscraping, using Requests and Beautifoulsoup: [Beautifoul Soup: Build a Web Scraper with Python](https://realpython.com/beautiful-soup-web-scraper-python/) 
+2. 
+
 Once I get a better understanding of how this is useful for you, I'll update the readme :-)
 The project file structure has a python-y datafiles/scripts/venv structure, but that may change in the future OR I'll update this file to let you know how to use it. Not sure what the best setup for that is yet.
 
